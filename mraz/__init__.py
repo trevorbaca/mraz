@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
-import makers
-import materials
-import segments
+from mraz import makers
+from mraz import materials
+from mraz import segments
