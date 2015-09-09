@@ -11,9 +11,9 @@ def main():
         author='Trevor Bača',
         author_email='trevor.baca@gmail.com',
         install_requires=install_requires,
-        name='khamr',
-        packages=('khamr',),
-        url='https://github.com/trevorbaca/khamr',
+        name='mraz',
+        packages=('mraz',),
+        url='https://github.com/trevorbaca/mraz',
         version='0.1',
         zip_safe=False,
         )
