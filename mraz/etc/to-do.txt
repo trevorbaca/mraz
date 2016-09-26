@@ -1,0 +1,43 @@
+TO-DO:
+
+1.  Port Dornen.
+
+2.  Set up Dornen Travis tests.
+
+3.  Design cover.
+
+4.  Build designs.
+
+5.  Equip SegmentMaker with label_voices property.
+
+6.  Extend selectors to work with named figures.
+
+7.  Extend RegistrationSpecifier:
+    * centroid spacing
+    * ChordalSpacingSpecifier
+    * multistage (breakpoin) contour specification
+
+8.  Extend FigureMaker with optional pitch-class transforms.
+
+9.  Extend FigureMaker with optional RepartitionSpecifier.
+
+10. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+
+11. Build many crossproduct makers.
+
+12. Generalize voice intermittency.
+    Denote by C a first cell; call C the (voice-)reference cell.
+    Denote by D a second cell; call D the (voice-)dependent cell.
+    Allow any leaf D_j in D to coincide with any leaf C_i in C.
+    Extend to allow any E_in in E to coincide with any D_i in D, recursively.
+
+13. Integrate formalizations of all three pedals.
+
+14. Extend FigureMaker with ClusterSpecifier.
+
+15. Integrate resonance depressed pitches.
+    Extend resonance pitches with the middle pedal.
+
+SCOPE:
+
+1.  Only two staves.

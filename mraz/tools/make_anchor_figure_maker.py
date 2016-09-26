@@ -1,0 +1,200 @@
+# -*- coding: utf-8 -*-
+import abjad
+import baca
+
+
+def make_anchor_figure_maker():
+    r'''Makes anchor figure-maker.
+
+    ::
+
+        >>> import baca
+        >>> import mraz
+
+    ..  container:: example
+
+        **Example 1.** Makes one-stage anchor figures:
+
+        ::
+
+            >>> figure_tokens = [
+            ...     [[4]],
+            ...     [[6, 2, 3, 5, 9, 8, 0]],
+            ...     [[11]],
+            ...     [[10, 7, 9, 8, 0, 5]],
+            ...     ]
+
+        ::
+
+            >>> figure_maker = mraz.tools.make_anchor_figure_maker()
+            >>> figures, time_signatures = [], []
+            >>> for figure_token in figure_tokens:
+            ...     result = figure_maker(figure_token)
+            ...     selection, time_signature, state_manifest = result
+            ...     figures.append(selection)
+            ...     time_signatures.append(time_signature)    
+            ...
+            >>> figures_ = []
+            >>> for figure in figures:
+            ...     figures_.extend(figure)
+            ... 
+            >>> figures = select(figures_)
+
+        ::
+
+            >>> segment_maker = baca.tools.SegmentMaker(
+            ...     ignore_unregistered_pitches=True,
+            ...     score_template=baca.tools.ViolinSoloScoreTemplate(),
+            ...     spacing_specifier=baca.tools.SpacingSpecifier(
+            ...         minimum_width=Duration(1, 24),
+            ...         ),
+            ...     time_signatures=time_signatures,
+            ...     )
+            >>> specifiers = segment_maker.append_specifiers(
+            ...     ('vn', baca.tools.stages(1)),
+            ...     baca.tools.RhythmSpecifier(
+            ...         rhythm_maker=figures,
+            ...         ),
+            ...     )
+
+        ::
+
+            >>> result = segment_maker(is_doc_example=True)
+            >>> lilypond_file, segment_metadata = result
+            >>> show(lilypond_file) # doctest: +SKIP
+
+        ..  doctest::
+
+            >>> score = lilypond_file.score_block.items[0]
+            >>> f(score)
+            \context Score = "Score" <<
+                \tag violin
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                        {
+                            \time 3/16
+                            R1 * 3/16
+                        }
+                        {
+                            \time 21/16
+                            R1 * 21/16
+                        }
+                        {
+                            \time 3/16
+                            R1 * 3/16
+                        }
+                        {
+                            \time 9/8
+                            R1 * 9/8
+                        }
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                        {
+                            \time 3/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                            \newSpacingSection
+                            s1 * 3/16
+                        }
+                        {
+                            \time 21/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                            \newSpacingSection
+                            s1 * 21/16
+                        }
+                        {
+                            \time 3/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                            \newSpacingSection
+                            s1 * 3/16
+                        }
+                        {
+                            \time 9/8
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                            \newSpacingSection
+                            s1 * 9/8
+                        }
+                    }
+                >>
+                \context MusicContext = "Music Context" <<
+                    \tag violin
+                    \context ViolinMusicStaff = "Violin Music Staff" {
+                        \clef "treble"
+                        \context ViolinMusicVoice = "Violin Music Voice" {
+                            {
+                                {
+                                    e'8.
+                                }
+                            }
+                            {
+                                {
+                                    fs'8. [
+                                    d'8.
+                                    ef'8.
+                                    f'8.
+                                    a'8.
+                                    af'8.
+                                    c'8. ]
+                                }
+                            }
+                            {
+                                {
+                                    b'8.
+                                }
+                            }
+                            {
+                                {
+                                    bf'8. [
+                                    g'8.
+                                    a'8.
+                                    af'8.
+                                    c'8.
+                                    f'8. ]
+                                    \bar "|"
+                                }
+                            }
+                        }
+                    }
+                >>
+            >>
+
+    ..  container:: example
+
+        **Definition.** Formats anchor figure-maker:
+
+            >>> print(format(mraz.tools.make_anchor_figure_maker()))
+            baca.tools.FigureMaker(
+                baca.tools.RhythmSpecifier(
+                    patterns=[
+                        patterntools.Pattern(
+                            indices=(0,),
+                            period=1,
+                            ),
+                        ],
+                    rhythm_maker=baca.tools.FigureRhythmMaker(
+                        talea=rhythmmakertools.Talea(
+                            counts=(3,),
+                            denominator=16,
+                            ),
+                        ),
+                    ),
+                annotate_unregistered_pitches=True,
+                preferred_denominator=8,
+                )
+
+    Returns figure-maker.
+    '''
+    figure_maker = baca.tools.FigureMaker(
+        baca.tools.RhythmSpecifier(
+            patterns=abjad.patterntools.select_all(),
+            rhythm_maker=baca.tools.FigureRhythmMaker(
+                talea=abjad.rhythmmakertools.Talea(
+                    counts=[3],
+                    denominator=16,
+                    ),
+
+                ),
+            ),
+        annotate_unregistered_pitches=True,
+        preferred_denominator=8,
+        )
+    return figure_maker

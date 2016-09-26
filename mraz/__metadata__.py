@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
-import collections
+import abjad
 
 
-metadata = collections.OrderedDict([
-    ('catalog_number', 'AWN-018'),
+metadata = abjad.datastructuretools.TypedOrderedDict([
+    ('catalog_number', 'AWN-017'),
     ('forces_tagline', 'for piano'),
-    ('paper_dimensions', '17 x 11 in'),
-    ('price', '\\euro 30 / \\$38'),
     ('title', 'Mr\xc3\xa1z'),
-    ('year', 2015),
+    ('year', 2016),
     ])
