@@ -45,18 +45,18 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                         }
                     >>
                     \context MusicContext = "Music Context" {
-                        \context PianoStaff = "Piano Music Staff Group" <<
-                            \set PianoStaff.instrumentName = \markup { Piano }
-                            \set PianoStaff.shortInstrumentName = \markup {
+                        \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+                            %%% \set PianoStaff.instrumentName = \markup { Piano } %%%
+                            %%% \set PianoStaff.shortInstrumentName = \markup {
                             \null
-                            }
+                            } %%%
                             \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                                 \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                                 }
                                 \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                                 }
                             >>
-                            \context PianoLHMusicStaff = "Piano Music LH Staff" <<
+                            \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                                 \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                                 }
                                 \context PianoMusicVoiceFour = "Piano Music Voice 4" {

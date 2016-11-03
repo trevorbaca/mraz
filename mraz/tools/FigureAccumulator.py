@@ -102,7 +102,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         '_figure_names',
         '_time_signatures',
         '_voice_name_to_selections',
-        'anchor_figure_maker',
+        'delicatissimo_figure_maker',
         )
 
     _all_voices = (
@@ -124,7 +124,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             'Piano Music Voice 3': [],
             'Piano Music Voice 4': [],
             }
-        self.anchor_figure_maker = mraz.tools.make_anchor_figure_maker()
+        self.delicatissimo_figure_maker = \
+            mraz.tools.make_delicatissimo_figure_maker()
 
     ### SPECIAL METHODS ###
 
@@ -167,7 +168,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         selection, time_signature, state_manifest = figure_output_triple
         assert isinstance(selection, abjad.selectiontools.Selection)
         duration = selection.get_duration()
-        items = self.voice_name_to_selections.iteritems()
+        items = self.voice_name_to_selections.items()
         for voice_name_, selections_ in items:
             if voice_name_ == voice_name:
                 selections_.append(selection)
