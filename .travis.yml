@@ -20,8 +20,8 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./mraz -x
-    - py.test -rf ./mraz -x
+    - ajv doctest -x ./mraz
+    - py.test -xrf ./mraz
     - python ./mraz/test/test_segments.py
 
 notifications:
