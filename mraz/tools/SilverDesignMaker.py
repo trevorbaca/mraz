@@ -65,10 +65,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 )
             if matching_transforms:
                 operator = matching_transforms[0][0]
+                markup = operator._get_markup()
                 start_cell_name = self._start_cells[start_cell]
-                label = '{!s}{!s}'
-                label = label.format(operator, start_cell_name)
-                return label
+                start_cell_name = abjad.Markup(start_cell_name)
+                markup = abjad.Markup.concat(
+                    [markup, start_cell_name],
+                    direction=Up,
+                    )
+                return markup
         message = 'can not analyze cell {!s}.'
         message = message.format(cell)
         raise Exception(message)
@@ -191,14 +195,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     g'8
                                     af'8
                                     b'8
@@ -208,7 +254,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { L }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -216,7 +283,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { r-1K }
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     af'8
                                     b'8
                                     a'8
@@ -226,7 +314,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { r-1L }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -234,14 +343,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { r-1J }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { r-2L }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -249,14 +400,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { r-2J }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { r-2K }
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     b'8
                                     a'8
                                     cs'8
@@ -266,14 +459,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { r-3K }
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -3
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     cs'8
                                     a'8
@@ -283,7 +518,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { r-3L }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -3
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -291,7 +547,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { r-4K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -4
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     cs'8
                                     a'8
                                     g'8
@@ -301,7 +578,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { L }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -309,14 +607,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { r-1J }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { r-1L }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -324,14 +664,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { r-2J }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { r-5K }
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -5
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     g'8
                                     af'8
@@ -341,14 +723,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     g'8
                                     af'8
                                     b'8
@@ -358,7 +782,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { r-2L }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -366,7 +811,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { r-1K }
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     af'8
                                     b'8
                                     a'8
@@ -376,7 +842,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { r-3L }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -3
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -384,14 +871,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { r-1J }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { L }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -399,14 +928,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { r-2J }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { r-2K }
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     b'8
                                     a'8
                                     cs'8
@@ -416,14 +987,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { r-3K }
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -3
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     cs'8
                                     a'8
@@ -433,7 +1046,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { r-1L }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -441,7 +1075,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { r-4K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -4
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     cs'8
                                     a'8
                                     g'8
@@ -451,7 +1106,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { r-2L }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -459,14 +1135,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { r-1J }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -1
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { r-3L }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -3
+                                                                }
+                                                        }
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -474,14 +1192,56 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { r-2J }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -2
+                                                                }
+                                                        }
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { r-5K }
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    \concat
+                                                        {
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \sub
+                                                                        0
+                                                                }
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \sub
+                                                                        -5
+                                                                }
+                                                        }
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     g'8
                                     af'8
