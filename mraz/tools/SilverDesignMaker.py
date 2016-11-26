@@ -22,12 +22,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
+        '_start_cells',
         )
 
     ### INITIALIZER ###
 
     def __init__(self):
-        pass
+        self._start_cells = None
 
     ### SPECIAL METHODS ###
 
@@ -38,6 +39,40 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         '''
         pass
 
+    ### PRIVATE METHODS ###
+
+    def _analyze_cell(
+        self,
+        cell,
+        alpha=False,
+        inversion=False,
+        multiplication=False,
+        retrograde=False,
+        rotation=False,
+        transposition=False,
+        ):
+        cell = cell.get_payload()
+        segment = abjad.pitchtools.PitchClassSegment(items=cell)
+        for start_cell in self._start_cells:
+            matching_transforms = start_cell.get_matching_transforms(
+                segment,
+                alpha=alpha,
+                inversion=inversion,
+                multiplication=multiplication,
+                retrograde=retrograde,
+                rotation=rotation,
+                transposition=transposition,
+                )
+            if matching_transforms:
+                operator = matching_transforms[0][0]
+                start_cell_name = self._start_cells[start_cell]
+                label = '{!s}({!s})'
+                label = label.format(operator, start_cell_name)
+                return label
+        message = 'can not analyze cell {!s}.'
+        message = message.format(cell)
+        raise Exception(message)
+        
     ### PUBLIC METHODS ###
 
     def make_stage_00(self):
@@ -109,10 +144,15 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
         Returns pitch-class tree.
         '''
-        pitch_classes = [[4, 6, 10], [9, 7, 8, 11, 9, 1], [0, 2, 3, 5]]
-        tree = baca.tools.PitchClassTree(items=pitch_classes)
+        cells = [[4, 6, 10], [9, 7, 8, 11, 9, 1], [0, 2, 3, 5]]
+        for i, cell in enumerate(cells[:]):
+            cell = abjad.pitchtools.PitchClassSegment(items=cell)
+            cells[i] = cell
         cell_markup = ['J', 'K', 'L']
-        return tree, cell_markup
+        assert len(cells) == len(cell_markup), repr((cells, cell_markup))
+        self._start_cells = dict(zip(cells, cell_markup))
+        cells = baca.tools.PitchClassTree(items=cells)
+        return cells, cell_markup
 
     def make_stage_01(self):
         r'''Makes stage 1.
@@ -151,14 +191,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { 0 }
+                                    e'8 \startGroup ^ \markup { r0T0(J) }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { 1 }
+                                    a'8 \startGroup ^ \markup { r0T0(K) }
                                     g'8
                                     af'8
                                     b'8
@@ -168,7 +208,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { 2 }
+                                    c'8 \startGroup ^ \markup { r0T0(L) }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -176,7 +216,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { 3 }
+                                    g'8 \startGroup ^ \markup { r5T0(K) }
                                     af'8
                                     b'8
                                     a'8
@@ -186,7 +226,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { 4 }
+                                    d'8 \startGroup ^ \markup { r3T0(L) }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -194,14 +234,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { 5 }
+                                    fs'8 \startGroup ^ \markup { r2T0(J) }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { 6 }
+                                    ef'8 \startGroup ^ \markup { r2T0(L) }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -209,14 +249,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { 7 }
+                                    bf'8 \startGroup ^ \markup { r1T0(J) }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { 8 }
+                                    af'8 \startGroup ^ \markup { r4T0(K) }
                                     b'8
                                     a'8
                                     cs'8
@@ -226,14 +266,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { 9 }
+                                    e'8 \startGroup ^ \markup { r0T0(J) }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { 10 }
+                                    b'8 \startGroup ^ \markup { r3T0(K) }
                                     a'8
                                     cs'8
                                     a'8
@@ -243,7 +283,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { 11 }
+                                    f'8 \startGroup ^ \markup { r1T0(L) }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -251,7 +291,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { 12 }
+                                    a'8 \startGroup ^ \markup { r2T0(K) }
                                     cs'8
                                     a'8
                                     g'8
@@ -261,7 +301,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { 13 }
+                                    c'8 \startGroup ^ \markup { r0T0(L) }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -269,14 +309,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { 14 }
+                                    fs'8 \startGroup ^ \markup { r2T0(J) }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { 15 }
+                                    d'8 \startGroup ^ \markup { r3T0(L) }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -284,14 +324,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { 16 }
+                                    bf'8 \startGroup ^ \markup { r1T0(J) }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { 17 }
+                                    cs'8 \startGroup ^ \markup { r1T0(K) }
                                     a'8
                                     g'8
                                     af'8
@@ -301,14 +341,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { 18 }
+                                    e'8 \startGroup ^ \markup { r0T0(J) }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { 19 }
+                                    a'8 \startGroup ^ \markup { r0T0(K) }
                                     g'8
                                     af'8
                                     b'8
@@ -318,7 +358,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { 20 }
+                                    ef'8 \startGroup ^ \markup { r2T0(L) }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -326,7 +366,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { 21 }
+                                    g'8 \startGroup ^ \markup { r5T0(K) }
                                     af'8
                                     b'8
                                     a'8
@@ -336,7 +376,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { 22 }
+                                    f'8 \startGroup ^ \markup { r1T0(L) }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -344,14 +384,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { 23 }
+                                    fs'8 \startGroup ^ \markup { r2T0(J) }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { 24 }
+                                    c'8 \startGroup ^ \markup { r0T0(L) }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -359,14 +399,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { 25 }
+                                    bf'8 \startGroup ^ \markup { r1T0(J) }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { 26 }
+                                    af'8 \startGroup ^ \markup { r4T0(K) }
                                     b'8
                                     a'8
                                     cs'8
@@ -376,14 +416,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { 27 }
+                                    e'8 \startGroup ^ \markup { r0T0(J) }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { 28 }
+                                    b'8 \startGroup ^ \markup { r3T0(K) }
                                     a'8
                                     cs'8
                                     a'8
@@ -393,7 +433,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { 29 }
+                                    d'8 \startGroup ^ \markup { r3T0(L) }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -401,7 +441,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { 30 }
+                                    a'8 \startGroup ^ \markup { r2T0(K) }
                                     cs'8
                                     a'8
                                     g'8
@@ -411,7 +451,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { 31 }
+                                    ef'8 \startGroup ^ \markup { r2T0(L) }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -419,14 +459,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { 32 }
+                                    fs'8 \startGroup ^ \markup { r2T0(J) }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { 33 }
+                                    f'8 \startGroup ^ \markup { r1T0(L) }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -434,14 +474,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { 34 }
+                                    bf'8 \startGroup ^ \markup { r1T0(J) }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { 35 }
+                                    cs'8 \startGroup ^ \markup { r1T0(K) }
                                     a'8
                                     g'8
                                     af'8
@@ -459,8 +499,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         Returns pitch-class tree.
         '''
         stage_00, cell_markup = self.make_stage_00()
-        pitch_classes = stage_00.get_payload(nested=True)
-        pitch_classes = baca.tools.helianthate(pitch_classes, -1, -1)
-        tree = baca.tools.PitchClassTree(items=pitch_classes)
-        cell_markup = list(range(len(tree)))
-        return tree, cell_markup
+        cells = stage_00.get_payload(nested=True)
+        cells = baca.tools.helianthate(cells, -1, -1)
+        cells = baca.tools.PitchClassTree(items=cells)
+        markup = []
+        for cell in cells:
+            markup_ = self._analyze_cell(cell, rotation=True)
+            markup.append(markup_)
+        return cells, markup
