@@ -10,6 +10,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
         >>> import mraz
 
+    Zebra.
+
     ..  container:: example
 
         ::
@@ -64,15 +66,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 transposition=transposition,
                 )
             if matching_transforms:
+                markups = []
                 operator = matching_transforms[0][0]
-                markup = operator._get_markup()
+                operator = operator._get_markup()
                 start_cell_name = self._start_cells[start_cell]
-                start_cell_name = abjad.Markup(start_cell_name)
-                markup = abjad.Markup.concat(
-                    [markup, start_cell_name],
-                    direction=Up,
-                    )
-                return markup
+                start_cell_name = abjad.Markup(start_cell_name, direction=Up)
+                if operator is None:
+                    return start_cell_name
+                else:
+                    markups.append(operator)
+                    hspace = abjad.Markup.hspace(0.25)
+                    markups.append(hspace)
+                    markups.append(start_cell_name)
+                    markup = abjad.Markup.concat(markups, direction=Up)
+                    return markup
         message = 'can not analyze cell {!s}.'
         message = message.format(cell)
         raise Exception(message)
@@ -195,56 +202,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    J
-                                                }
-                                            }
+                                    e'8 \startGroup ^ \markup { J }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    K
-                                                }
-                                            }
+                                    a'8 \startGroup ^ \markup { K }
                                     g'8
                                     af'8
                                     b'8
@@ -254,28 +219,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    L
-                                                }
-                                            }
+                                    c'8 \startGroup ^ \markup { L }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -289,19 +233,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -320,19 +259,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -349,19 +283,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -377,19 +306,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -406,19 +330,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -434,19 +353,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -459,28 +373,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    J
-                                                }
-                                            }
+                                    e'8 \startGroup ^ \markup { J }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -493,19 +386,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -3
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -3
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -524,19 +412,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -3
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -3
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -553,19 +436,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -4
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -4
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -578,28 +456,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    L
-                                                }
-                                            }
+                                    c'8 \startGroup ^ \markup { L }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -613,19 +470,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -641,19 +493,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -670,19 +517,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -698,19 +540,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -5
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -5
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -723,56 +560,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    J
-                                                }
-                                            }
+                                    e'8 \startGroup ^ \markup { J }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    K
-                                                }
-                                            }
+                                    a'8 \startGroup ^ \markup { K }
                                     g'8
                                     af'8
                                     b'8
@@ -788,19 +583,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -817,19 +607,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -848,19 +633,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -3
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -3
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -877,19 +657,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -899,28 +674,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    L
-                                                }
-                                            }
+                                    c'8 \startGroup ^ \markup { L }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -934,19 +688,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -962,19 +711,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -987,28 +731,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    \concat
-                                                        {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                        }
-                                                    J
-                                                }
-                                            }
+                                    e'8 \startGroup ^ \markup { J }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -1021,19 +744,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -3
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -3
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -1052,19 +770,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -1081,19 +794,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -4
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -4
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
@@ -1112,19 +820,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -1141,19 +844,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -1
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -1
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -1169,19 +867,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -3
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -3
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     L
                                                 }
                                             }
@@ -1198,19 +891,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -2
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -2
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     J
                                                 }
                                             }
@@ -1226,19 +914,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     \concat
                                                         {
-                                                            \concat
-                                                                {
-                                                                    T
-                                                                    \sub
-                                                                        0
-                                                                }
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \sub
-                                                                        -5
-                                                                }
+                                                            r
+                                                            \hspace
+                                                                #-0.25
+                                                            \sub
+                                                                -5
                                                         }
+                                                    \hspace
+                                                        #0.25
                                                     K
                                                 }
                                             }
