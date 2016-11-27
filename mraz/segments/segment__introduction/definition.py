@@ -14,7 +14,7 @@ assert len(design) == 22
 design = baca.tools.Cursor(source=design)
 
 accumulator(
-    accumulator.anchor_figure_maker(
+    accumulator.delicatissimo_figure_maker(
         design.next(),
         baca.overrides.beam_positions(6),
         baca.pitch.register(-8),

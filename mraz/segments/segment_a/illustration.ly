@@ -1,4 +1,4 @@
-\version "2.19.46"
+\version "2.19.51"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -13,16 +13,16 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 3/16
-                    R1 * 3/16
+                    \time 1/32
+                    R1 * 1/32
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
                     \mark #1
-                    s1 * 3/16 ^ \markup {
+                    s1 * 1/32 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -56,23 +56,23 @@
                         {
                             {
                                 \once \override Beam.positions = #'(6 . 6)
-                                e8.
+                                e32 -\staccato
                                 \bar "|."
                             }
                         }
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 3/16
+                        s1 * 1/32
                         \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        s1 * 3/16
+                        s1 * 1/32
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 3/16
+                        s1 * 1/32
                         \bar "|."
                     }
                 >>
