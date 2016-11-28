@@ -55,8 +55,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         ):
         cell = cell.get_payload()
         segment = abjad.pitchtools.PitchClassSegment(items=cell)
+        pitch_manager = baca.tools.PitchManager
         for start_cell in self._start_cells:
-            matching_transforms = start_cell.get_matching_transforms(
+            matching_transforms = pitch_manager.get_matching_transforms(
+                start_cell,
                 segment,
                 alpha=alpha,
                 inversion=inversion,
