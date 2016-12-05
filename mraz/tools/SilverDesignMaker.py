@@ -159,7 +159,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             abjad.pitchtools.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
             abjad.pitchtools.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
-        cell_markup = [_.get_expression_markup(direction=Up) for _ in cells]
+        cell_markup = [_._get_expression_markup(direction=Up) for _ in cells]
         cells = baca.tools.PitchClassTree(items=cells)
         return cells, cell_markup
 
