@@ -170,11 +170,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             ::
 
                 >>> design_maker = mraz.tools.SilverDesignMaker()
-                >>> stage_01, cell_markup = design_maker.make_stage_01()
+                >>> stage_01 = design_maker.make_stage_01()
                 >>> lilypond_file = stage_01.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
-                ...     cell_markup=cell_markup,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -199,14 +198,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { ? }
+                                    e'8 \startGroup ^ \markup { J }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { ? }
+                                    a'8 \startGroup ^ \markup { K }
                                     g'8
                                     af'8
                                     b'8
@@ -216,7 +215,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { ? }
+                                    c'8 \startGroup ^ \markup { L }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -224,7 +223,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { ? }
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    K
+                                                }
+                                            }
                                     af'8
                                     b'8
                                     a'8
@@ -234,7 +244,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { ? }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -242,14 +263,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { ? }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { ? }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -257,14 +300,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { ? }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { ? }
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    K
+                                                }
+                                            }
                                     b'8
                                     a'8
                                     cs'8
@@ -274,14 +339,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { ? }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { ? }
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     cs'8
                                     a'8
@@ -291,7 +378,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { ? }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -299,7 +397,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { ? }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    K
+                                                }
+                                            }
                                     cs'8
                                     a'8
                                     g'8
@@ -309,7 +418,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { ? }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    L
+                                                }
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -317,14 +437,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { ? }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { ? }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -332,14 +474,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { ? }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { ? }
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     g'8
                                     af'8
@@ -349,14 +513,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { ? }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { ? }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    K
+                                                }
+                                            }
                                     g'8
                                     af'8
                                     b'8
@@ -366,7 +552,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { ? }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -374,7 +571,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    g'8 \startGroup ^ \markup { ? }
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    K
+                                                }
+                                            }
                                     af'8
                                     b'8
                                     a'8
@@ -384,7 +592,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { ? }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -392,14 +611,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { ? }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { ? }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    L
+                                                }
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -407,14 +648,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { ? }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    af'8 \startGroup ^ \markup { ? }
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    K
+                                                }
+                                            }
                                     b'8
                                     a'8
                                     cs'8
@@ -424,14 +687,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { ? }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    J
+                                                }
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    b'8 \startGroup ^ \markup { ? }
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     cs'8
                                     a'8
@@ -441,7 +726,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    d'8 \startGroup ^ \markup { ? }
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    L
+                                                }
+                                            }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -449,7 +745,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { ? }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    K
+                                                }
+                                            }
                                     cs'8
                                     a'8
                                     g'8
@@ -459,7 +766,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    ef'8 \startGroup ^ \markup { ? }
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    L
+                                                }
+                                            }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -467,14 +785,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    fs'8 \startGroup ^ \markup { ? }
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    J
+                                                }
+                                            }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 5/8
-                                    f'8 \startGroup ^ \markup { ? }
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    L
+                                                }
+                                            }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -482,14 +822,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/2
-                                    bf'8 \startGroup ^ \markup { ? }
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    J
+                                                }
+                                            }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    cs'8 \startGroup ^ \markup { ? }
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    K
+                                                }
+                                            }
                                     a'8
                                     g'8
                                     af'8
@@ -507,15 +869,18 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         Returns pitch-class tree.
         '''
         stage_00 = self.make_stage_00()
-        cells = stage_00.get_payload(nested=True)
-        cells = baca.tools.helianthate(cells, -1, -1)
-        cells = baca.tools.PitchClassTree(items=cells)
-        markup = []
+        cells = stage_00.iterate(level=-2)
+        segments = []
         for cell in cells:
-            #markup_ = self._analyze_cell(cell, rotation=Left)
-            #markup.append(markup_)
-            markup.append(abjad.Markup('?', direction=Up))
-        return cells, markup
+            pitch_classes = cell.get_payload()
+            segment = abjad.pitchtools.PitchClassSegment(
+                items=pitch_classes,
+                name=cell._name,
+                )
+            segments.append(segment)
+        segments = baca.tools.helianthate(segments, -1, -1)
+        tree = baca.tools.PitchClassTree(items=segments)
+        return tree
 
     def make_stage_02(self):
         r'''Makes stage two.
@@ -824,7 +1189,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 }
 
         '''
-        stage_01, cell_markup = self.make_stage_01()
+        stage_01 = self.make_stage_01()
         cells = stage_01.get_payload(nested=True)
         cells = abjad.sequence(cells)
         parts = cells.partition_by_counts(
@@ -843,8 +1208,5 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         cells = baca.tools.PitchClassTree(items=cells)
         markup = []
         for cell in cells:
-            #markup_ = self._analyze_cell(cell, rotation=Left)
-            #markup.append(markup_)
             markup.append(abjad.Markup('?', direction=Up))
-        #raise Exception(len(cells), len(markup))
         return cells, markup
