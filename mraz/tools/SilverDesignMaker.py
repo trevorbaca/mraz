@@ -993,6 +993,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 15/4
                                     fs'8 \startGroup
                                         ^ \markup {
+                                            N
+                                            =
                                             \concat
                                                 {
                                                     r
@@ -1198,6 +1200,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 33/8
                                     cs'8 \startGroup
                                         ^ \markup {
+                                            O
+                                            =
                                             \concat
                                                 {
                                                     r
@@ -1408,6 +1412,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 31/8
                                     d'8 \startGroup
                                         ^ \markup {
+                                            P
+                                            =
                                             \concat
                                                 {
                                                     r
@@ -1535,6 +1541,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             cyclic=True,
             overhang=True,
             )
+        Expression = abjad.expressiontools.Expression
+        fused_segment_names = baca.tools.Cursor(['N', 'O', 'P'])
         segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
@@ -1544,6 +1552,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 segment = part[0]
                 for segment_ in part[1:]:
                     segment += segment_
+                name = fused_segment_names.next()[0]
+                segment = Expression.establish_equivalence(segment, name)
                 segments.append(segment)
         tree = baca.tools.PitchClassTree(items=segments)
         return tree
