@@ -93,11 +93,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             ::
 
                 >>> design_maker = mraz.tools.SilverDesignMaker()
-                >>> stage_00, cell_markup = design_maker.make_stage_00()
+                >>> stage_00 = design_maker.make_stage_00()
                 >>> lilypond_file = stage_00.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
-                ...     cell_markup=cell_markup, 
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -159,9 +158,9 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             abjad.pitchtools.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
             abjad.pitchtools.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
-        cell_markup = [_._get_expression_markup(direction=Up) for _ in cells]
+        #cell_markup = [_._get_expression_markup(direction=Up) for _ in cells]
         cells = baca.tools.PitchClassTree(items=cells)
-        return cells, cell_markup
+        return cells
 
     def make_stage_01(self):
         r'''Makes stage one.
@@ -507,7 +506,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
         Returns pitch-class tree.
         '''
-        stage_00, cell_markup = self.make_stage_00()
+        stage_00 = self.make_stage_00()
         cells = stage_00.get_payload(nested=True)
         cells = baca.tools.helianthate(cells, -1, -1)
         cells = baca.tools.PitchClassTree(items=cells)
