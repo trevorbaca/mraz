@@ -155,13 +155,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         Returns pitch-class tree.
         '''
         cells = [
-            abjad.sequence([4, 6, 10], name='J'),
-            abjad.sequence([9, 7, 8, 11, 9, 1], name='K'),
-            abjad.sequence([0, 2, 3, 5], name='L'),
+            abjad.pitchtools.PitchClassSegment([4, 6, 10], name='J'),
+            abjad.pitchtools.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
+            abjad.pitchtools.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
-#        for i, cell in enumerate(cells[:]):
-#            cell = abjad.pitchtools.PitchClassSegment(items=cell)
-#            cells[i] = cell
         cell_markup = ['J', 'K', 'L']
         assert len(cells) == len(cell_markup), repr((cells, cell_markup))
         self._start_cells = dict(zip(cells, cell_markup))
