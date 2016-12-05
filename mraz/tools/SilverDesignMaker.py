@@ -869,13 +869,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         Returns pitch-class tree.
         '''
         stage_00 = self.make_stage_00()
-        cells = stage_00.iterate(level=-2)
+        trees = stage_00.iterate(level=-2)
         segments = []
-        for cell in cells:
-            pitch_classes = cell.get_payload()
+        for tree in trees:
+            pitch_classes = tree.get_payload()
             segment = abjad.pitchtools.PitchClassSegment(
                 items=pitch_classes,
-                name=cell._name,
+                name=tree._name,
                 )
             segments.append(segment)
         segments = baca.tools.helianthate(segments, -1, -1)
@@ -890,11 +890,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             ::
 
                 >>> design_maker = mraz.tools.SilverDesignMaker()
-                >>> stage_02, cell_markup = design_maker.make_stage_02()
+                >>> stage_02 = design_maker.make_stage_02()
                 >>> lilypond_file = stage_02.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=Down,
-                ...     cell_markup=cell_markup,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -920,7 +919,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup { J }
                                         _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
@@ -929,7 +928,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     a'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup { K }
                                         _ \markup { 1 }
                                     g'8
                                     af'8
@@ -941,7 +940,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     c'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup { L }
                                         _ \markup { 2 }
                                     d'8
                                     ef'8
@@ -951,7 +950,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     g'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    K
+                                                }
+                                            }
                                         _ \markup { 3 }
                                     af'8
                                     b'8
@@ -963,7 +972,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     d'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    L
+                                                }
+                                            }
                                         _ \markup { 4 }
                                     ef'8
                                     f'8
@@ -973,7 +992,77 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 15/4
                                     fs'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -1
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -2
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -3
+                                                    L
+                                                }
+                                            }
                                         _ \markup { 5 }
                                     bf'8
                                     e'8
@@ -1008,7 +1097,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     a'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    K
+                                                }
+                                            }
                                         _ \markup { 6 }
                                     cs'8
                                     a'8
@@ -1020,7 +1119,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     c'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    L
+                                                }
+                                            }
                                         _ \markup { 7 }
                                     d'8
                                     ef'8
@@ -1030,7 +1139,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     fs'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -4
+                                                    J
+                                                }
+                                            }
                                         _ \markup { 8 }
                                     bf'8
                                     e'8 \stopGroup
@@ -1039,7 +1158,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     d'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    L
+                                                }
+                                            }
                                         _ \markup { 9 }
                                     ef'8
                                     f'8
@@ -1049,7 +1178,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     bf'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    J
+                                                }
+                                            }
                                         _ \markup { 10 }
                                     e'8
                                     fs'8 \stopGroup
@@ -1058,7 +1197,77 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 33/8
                                     cs'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -5
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -6
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -7
+                                                    J
+                                                }
+                                            }
                                         _ \markup { 11 }
                                     a'8
                                     g'8
@@ -1096,7 +1305,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     c'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    L
+                                                }
+                                            }
                                         _ \markup { 12 }
                                     d'8
                                     ef'8
@@ -1106,7 +1325,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     bf'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    J
+                                                }
+                                            }
                                         _ \markup { 13 }
                                     e'8
                                     fs'8 \stopGroup
@@ -1115,7 +1344,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     af'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -8
+                                                    K
+                                                }
+                                            }
                                         _ \markup { 14 }
                                     b'8
                                     a'8
@@ -1127,7 +1366,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    J
+                                                }
+                                            }
                                         _ \markup { 15 }
                                     fs'8
                                     bf'8 \stopGroup
@@ -1136,7 +1385,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     b'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    K
+                                                }
+                                            }
                                         _ \markup { 16 }
                                     a'8
                                     cs'8
@@ -1148,7 +1407,77 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 31/8
                                     d'8 \startGroup
-                                        ^ \markup { ? }
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -9
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    K
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -10
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    L
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    J
+                                                }
+                                            +
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.25
+                                                    \sub
+                                                        -11
+                                                    K
+                                                }
+                                            }
                                         _ \markup { 17 }
                                     ef'8
                                     f'8
@@ -1189,24 +1518,32 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 }
 
         '''
-        stage_01 = self.make_stage_01()
-        cells = stage_01.get_payload(nested=True)
-        cells = abjad.sequence(cells)
-        parts = cells.partition_by_counts(
+        stage_01_tree = self.make_stage_01()
+        trees = stage_01_tree.iterate(level=-2)
+        segments = []
+        for tree in trees:
+            pitch_classes = tree.get_payload()
+            segment = abjad.pitchtools.PitchClassSegment(
+                items=pitch_classes,
+                name=tree._name,
+                )
+            segment._expression = tree._expression
+            segments.append(segment)
+        segments = abjad.sequence(segments)
+        parts = segments.partition_by_counts(
             [5, 7],
             cyclic=True,
             overhang=True,
             )
-        cells = []
+        segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
-                cells.extend(part)
+                for segment in part:
+                    segments.append(segment)
             else:
-                part = part.flatten()
-                part = list(part)
-                cells.append(part)
-        cells = baca.tools.PitchClassTree(items=cells)
-        markup = []
-        for cell in cells:
-            markup.append(abjad.Markup('?', direction=Up))
-        return cells, markup
+                segment = part[0]
+                for segment_ in part[1:]:
+                    segment += segment_
+                segments.append(segment)
+        tree = baca.tools.PitchClassTree(items=segments)
+        return tree
