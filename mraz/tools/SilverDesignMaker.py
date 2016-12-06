@@ -6,8 +6,6 @@ import baca
 class SilverDesignMaker(abjad.abctools.AbjadObject):
     r'''Silver design-maker.
 
-    Silver design-maker.
-
     ::
 
         >>> import mraz
@@ -1066,7 +1064,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_02 = design_maker.make_stage_02()
                 >>> lilypond_file = stage_02.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=Down,
+                ...     cell_indices=False,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -1096,7 +1094,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             \bold
                                                 J
                                             }
-                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -1108,7 +1105,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             \bold
                                                 K
                                             }
-                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -1123,7 +1119,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             \bold
                                                 L
                                             }
-                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1149,7 +1144,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -1177,7 +1171,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -1302,7 +1295,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 5 }
                                     bf'8
                                     e'8
                                     ef'8
@@ -1353,7 +1345,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 6 }
                                     cs'8
                                     a'8
                                     g'8
@@ -1381,7 +1372,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 7 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1407,7 +1397,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 8 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -1432,7 +1421,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 9 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -1458,7 +1446,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 10 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -1582,7 +1569,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 11 }
                                     a'8
                                     g'8
                                     af'8
@@ -1636,7 +1622,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 12 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1662,7 +1647,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 13 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -1687,7 +1671,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 14 }
                                     b'8
                                     a'8
                                     cs'8
@@ -1715,7 +1698,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 15 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -1740,7 +1722,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 16 }
                                     a'8
                                     cs'8
                                     a'8
@@ -1867,7 +1848,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                         }
                                                 }
                                             }
-                                        _ \markup { 17 }
                                     ef'8
                                     f'8
                                     c'8
@@ -1938,5 +1918,547 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 name = fused_segment_names.next()[0]
                 segment = Expression.establish_equivalence(segment, name)
                 segments.append(segment)
+        tree = baca.tools.PitchClassTree(items=segments)
+        return tree
+
+    def make_stage_03(self):
+        r'''Makes stage three.
+
+        ..  container:: example
+
+            ::
+
+                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> stage_03 = design_maker.make_stage_03()
+                >>> lilypond_file = stage_03.__illustrate__(
+                ...     after_cell_spacing=Duration(1, 8),
+                ...     cell_indices=False,
+                ...     )
+                >>> show(lilypond_file) # doctest: +SKIP
+
+            ..  doctest::
+
+                >>> f(lilypond_file.score_block)
+                \score {
+                    \new Score \with {
+                        \override BarLine.transparent = ##t
+                        \override BarNumber.stencil = ##f
+                        \override Beam.stencil = ##f
+                        \override Flag.stencil = ##f
+                        \override HorizontalBracket.staff-padding = #4
+                        \override Stem.stencil = ##f
+                        \override TextScript.staff-padding = #2
+                        \override TimeSignature.stencil = ##f
+                        proportionalNotationDuration = #(ly:make-moment 1 14)
+                    } <<
+                        \new Staff {
+                            \new Voice \with {
+                                \consists Horizontal_bracket_engraver
+                            } {
+                                {
+                                    \time 1/2
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                J
+                                            }
+                                    fs'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                K
+                                            }
+                                    g'8
+                                    af'8
+                                    b'8
+                                    a'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                L
+                                            }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -1
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
+                                                }
+                                            }
+                                    af'8
+                                    b'8
+                                    a'8
+                                    cs'8
+                                    a'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -1
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
+                                                }
+                                            }
+                                    ef'8
+                                    f'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 15/4
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    R
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                Q
+                                                        }
+                                                }
+                                            }
+                                    d'8
+                                    c'8
+                                    f'8
+                                    af'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    bf'8
+                                    fs'8
+                                    e'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    fs'8
+                                    e'8
+                                    bf'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    ef'8
+                                    e'8
+                                    bf'8
+                                    fs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
+                                                }
+                                            }
+                                    cs'8
+                                    a'8
+                                    g'8
+                                    af'8
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
+                                                }
+                                            }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
+                                                }
+                                            }
+                                    bf'8
+                                    e'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -5
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
+                                                }
+                                            }
+                                    ef'8
+                                    f'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -5
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
+                                                }
+                                            }
+                                    e'8
+                                    fs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 33/8
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    R
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                R
+                                                        }
+                                                }
+                                            }
+                                    bf'8
+                                    fs'8
+                                    ef'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    g'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    ef'8
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    g'8
+                                    a'8
+                                    bf'8
+                                    fs'8
+                                    e'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    g'8
+                                    a'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
+                                                }
+                                            }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
+                                                }
+                                            }
+                                    e'8
+                                    fs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
+                                                }
+                                            }
+                                    b'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -9
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
+                                                }
+                                            }
+                                    fs'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -9
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
+                                                }
+                                            }
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    g'8
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 31/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \concat
+                                                {
+                                                    R
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                S
+                                                        }
+                                                }
+                                            }
+                                    b'8
+                                    af'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    fs'8
+                                    e'8
+                                    bf'8
+                                    ef'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    e'8
+                                    bf'8
+                                    fs'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    ef'8
+                                    b'8
+                                    af'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    c'8
+                                    f'8
+                                    ef'8
+                                    d'8 \stopGroup
+                                    s8
+                                    \bar "|."
+                                    \override Score.BarLine.transparent = ##f
+                                }
+                            }
+                        }
+                    >>
+                }
+
+        '''
+        stage_02_tree = self.make_stage_02()
+        trees = stage_02_tree.iterate(level=-2)
+        segments = []
+        for tree in trees:
+            pitch_classes = tree.get_payload()
+            segment = abjad.pitchtools.PitchClassSegment(
+                items=pitch_classes,
+                name=tree._name,
+                )
+            segment._expression = tree._expression
+            segments.append(segment)
+        for i, segment in enumerate(segments[:]):
+            if 6 < len(segment):
+                segments[i] = segment.retrograde()
         tree = baca.tools.PitchClassTree(items=segments)
         return tree
