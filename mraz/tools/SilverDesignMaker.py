@@ -6,6 +6,8 @@ import baca
 class SilverDesignMaker(abjad.abctools.AbjadObject):
     r'''Silver design-maker.
 
+    Bar.
+
     ::
 
         >>> import mraz
@@ -121,14 +123,22 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                J
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                K
+                                            }
                                     g'8
                                     af'8
                                     b'8
@@ -138,7 +148,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { L }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                L
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -158,7 +172,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             abjad.pitchtools.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
             abjad.pitchtools.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
-        #cell_markup = [_._get_expression_markup(direction=Up) for _ in cells]
         cells = baca.tools.PitchClassTree(items=cells)
         return cells
 
@@ -198,14 +211,22 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             } {
                                 {
                                     \time 1/2
-                                    e'8 \startGroup ^ \markup { J }
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                J
+                                            }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 7/8
-                                    a'8 \startGroup ^ \markup { K }
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                K
+                                            }
                                     g'8
                                     af'8
                                     b'8
@@ -215,7 +236,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 5/8
-                                    c'8 \startGroup ^ \markup { L }
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                L
+                                            }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -229,10 +254,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     af'8
@@ -250,10 +281,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     ef'8
@@ -269,10 +306,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     bf'8
@@ -287,10 +330,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     f'8
@@ -306,10 +355,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     e'8
@@ -324,10 +379,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     b'8
@@ -345,10 +406,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     fs'8
@@ -363,10 +430,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     a'8
@@ -384,10 +457,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     c'8
@@ -403,10 +482,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     cs'8
@@ -424,10 +509,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     d'8
@@ -443,10 +534,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     bf'8
@@ -461,10 +558,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     ef'8
@@ -480,10 +583,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     e'8
@@ -498,10 +607,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     a'8
@@ -519,10 +634,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     fs'8
@@ -537,10 +658,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     g'8
@@ -558,10 +685,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     f'8
@@ -577,10 +710,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     af'8
@@ -598,10 +737,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     c'8
@@ -617,10 +762,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     bf'8
@@ -635,10 +786,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     d'8
@@ -654,10 +811,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     e'8
@@ -672,10 +835,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     b'8
@@ -693,10 +862,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     fs'8
@@ -711,10 +886,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     a'8
@@ -732,10 +913,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     ef'8
@@ -751,10 +938,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     cs'8
@@ -772,10 +965,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     f'8
@@ -791,10 +990,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     bf'8
@@ -809,10 +1014,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                     c'8
@@ -828,10 +1039,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                     e'8
@@ -846,10 +1063,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                     a'8
@@ -919,7 +1142,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup { J }
+                                        ^ \markup {
+                                            \bold
+                                                J
+                                            }
                                         _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
@@ -928,7 +1154,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 7/8
                                     a'8 \startGroup
-                                        ^ \markup { K }
+                                        ^ \markup {
+                                            \bold
+                                                K
+                                            }
                                         _ \markup { 1 }
                                     g'8
                                     af'8
@@ -940,7 +1169,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     c'8 \startGroup
-                                        ^ \markup { L }
+                                        ^ \markup {
+                                            \bold
+                                                L
+                                            }
                                         _ \markup { 2 }
                                     d'8
                                     ef'8
@@ -955,10 +1187,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                         _ \markup { 3 }
@@ -977,10 +1215,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                         _ \markup { 4 }
@@ -993,76 +1237,119 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 15/4
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            N
+                                            \bold
+                                                Q
                                             =
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -1
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -2
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -3
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                         _ \markup { 5 }
@@ -1104,10 +1391,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                         _ \markup { 6 }
@@ -1126,10 +1419,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                         _ \markup { 7 }
@@ -1146,10 +1445,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -4
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                         _ \markup { 8 }
@@ -1165,10 +1470,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                         _ \markup { 9 }
@@ -1185,10 +1496,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                         _ \markup { 10 }
@@ -1200,76 +1517,119 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 33/8
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            O
+                                            \bold
+                                                R
                                             =
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -5
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -6
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -7
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                         _ \markup { 11 }
@@ -1314,10 +1674,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             }
                                         _ \markup { 12 }
@@ -1334,10 +1700,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                         _ \markup { 13 }
@@ -1353,10 +1725,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -8
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                         _ \markup { 14 }
@@ -1375,10 +1753,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             }
                                         _ \markup { 15 }
@@ -1394,10 +1778,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                         _ \markup { 16 }
@@ -1412,76 +1802,119 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 31/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            P
+                                            \bold
+                                                S
                                             =
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -9
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -10
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    L
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                L
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    J
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                J
+                                                        }
                                                 }
                                             +
                                             \concat
                                                 {
                                                     r
                                                     \hspace
-                                                        #-0.25
+                                                        #-0.7
                                                     \sub
                                                         -11
-                                                    K
+                                                    \concat
+                                                        {
+                                                            \hspace
+                                                                #0.4
+                                                            \bold
+                                                                K
+                                                        }
                                                 }
                                             }
                                         _ \markup { 17 }
@@ -1542,7 +1975,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             overhang=True,
             )
         Expression = abjad.expressiontools.Expression
-        fused_segment_names = baca.tools.Cursor(['N', 'O', 'P'])
+        fused_segment_names = baca.tools.Cursor(['Q', 'R', 'S'])
         segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
