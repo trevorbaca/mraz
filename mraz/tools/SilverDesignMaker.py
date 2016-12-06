@@ -6,7 +6,7 @@ import baca
 class SilverDesignMaker(abjad.abctools.AbjadObject):
     r'''Silver design-maker.
 
-    Bar.
+    Silver design-maker.
 
     ::
 
@@ -24,13 +24,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_start_cells',
         )
-
-    ### INITIALIZER ###
-
-    def __init__(self):
-        self._start_cells = None
 
     ### SPECIAL METHODS ###
 
@@ -41,50 +35,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         '''
         pass
 
-    ### PRIVATE METHODS ###
-
-    def _analyze_cell(
-        self,
-        cell,
-        alpha=False,
-        inversion=False,
-        multiplication=False,
-        retrograde=False,
-        rotation=False,
-        transposition=False,
-        ):
-        cell = cell.get_payload()
-        segment = abjad.pitchtools.PitchClassSegment(items=cell)
-        pitch_manager = baca.tools.PitchManager
-        for start_cell in self._start_cells:
-            matching_transforms = pitch_manager.get_matching_transforms(
-                start_cell,
-                segment,
-                alpha=alpha,
-                inversion=inversion,
-                multiplication=multiplication,
-                retrograde=retrograde,
-                rotation=rotation,
-                transposition=transposition,
-                )
-            if matching_transforms:
-                markups = []
-                operator = matching_transforms[0][0]
-                operator = operator._get_markup()
-                start_cell_name = self._start_cells[start_cell]
-                start_cell_name = abjad.Markup(start_cell_name, direction=Up)
-                if operator is None:
-                    return start_cell_name
-                else:
-                    markups.append(operator)
-                    hspace = abjad.Markup.hspace(0.25)
-                    markups.append(hspace)
-                    markups.append(start_cell_name)
-                    markup = abjad.Markup.concat(markups, direction=Up)
-                    return markup
-        markup = abjad.Markup('?', direction=Up)
-        return markup
-        
     ### PUBLIC METHODS ###
 
     def make_stage_00(self):
