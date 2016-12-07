@@ -3053,3 +3053,44 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 j += 1
         tree = baca.tools.PitchClassTree(items=segments)
         return tree
+
+#    def make_stage_05(self):
+#        r'''Makes stage four.
+#
+#        ..  container:: example
+#
+#            ::
+#
+#                >>> design_maker = mraz.tools.SilverDesignMaker()
+#                >>> stage_04 = design_maker.make_stage_04()
+#                >>> lilypond_file = stage_04.__illustrate__(
+#                ...     after_cell_spacing=Duration(1, 8),
+#                ...     cell_indices=False,
+#                ...     )
+#                >>> show(lilypond_file) # doctest: +SKIP
+#
+#            ..  doctest::
+#
+#                >>> f(lilypond_file.score_block)
+#
+#        Returns pitch-class tree.
+#        '''
+#        stage_04_tree = self.make_stage_04()
+#        trees = stage_04_tree.iterate(level=-2)
+#        segments = []
+#        for tree in trees:
+#            pitch_classes = tree.get_payload()
+#            segment = abjad.pitchtools.PitchClassSegment(
+#                items=pitch_classes,
+#                name=tree._name,
+#                )
+#            segment._expression = tree._expression
+#            segments.append(segment)
+#        j = 0
+#        for i, segment in enumerate(segments[:]):
+#            if 6 < len(segment):
+#                segment = abjad.sequence(segment)
+#                segments = segment.partition_by_counts([5, 4, 3], cyclic=True)
+#                segments[i:i+1] = segments
+#        tree = baca.tools.PitchClassTree(items=segments)
+#        return tree
