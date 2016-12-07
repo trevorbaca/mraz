@@ -3180,10 +3180,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     a'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     bf'8
                                     c'8
                                     g'8
@@ -3193,10 +3189,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     f'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     ef'8
                                     b'8
                                     ef'8 \stopGroup
@@ -3205,10 +3197,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     cs'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     d'8
                                     fs'8 \stopGroup
                                     s8
@@ -3216,10 +3204,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     af'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     f'8
                                     ef'8
                                     b'8
@@ -3229,10 +3213,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     cs'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     e'8
                                     fs'8
                                     af'8 \stopGroup
@@ -3241,10 +3221,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     d'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     bf'8
                                     c'8 \stopGroup
                                     s8
@@ -3252,10 +3228,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     g'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     a'8
                                     af'8
                                     d'8
@@ -3390,10 +3362,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     a'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     ef'8
                                     g'8
                                     af'8
@@ -3403,10 +3371,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     cs'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     fs'8
                                     d'8
                                     bf'8 \stopGroup
@@ -3415,10 +3379,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     d'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     c'8
                                     f'8 \stopGroup
                                     s8
@@ -3426,10 +3386,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     e'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     b'8
                                     cs'8
                                     fs'8
@@ -3439,10 +3395,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     bf'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     d'8
                                     c'8
                                     f'8 \stopGroup
@@ -3451,10 +3403,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     d'8
                                     ef'8 \stopGroup
                                     s8
@@ -3462,10 +3410,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     g'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     a'8
                                     d'8
                                     c'8
@@ -3475,10 +3419,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     d'8
                                     bf'8 \stopGroup
                                     s8
@@ -3613,10 +3553,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     bf'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     c'8
                                     g'8
                                     af'8
@@ -3626,10 +3562,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     d'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     f'8
                                     ef'8
                                     a'8 \stopGroup
@@ -3638,10 +3570,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     e'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     cs'8
                                     b'8 \stopGroup
                                     s8
@@ -3649,10 +3577,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     fs'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     ef'8
                                     a'8
                                     f'8
@@ -3662,10 +3586,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 5/8
                                     b'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     fs'8
                                     e'8
                                     c'8 \stopGroup
@@ -3674,10 +3594,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/2
                                     g'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     af'8
                                     bf'8 \stopGroup
                                     s8
@@ -3685,10 +3601,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 3/4
                                     d'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     bf'8
                                     b'8
                                     fs'8
@@ -3698,10 +3610,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 {
                                     \time 1/4
                                     cs'8 \startGroup \stopGroup
-                                        ^ \markup {
-                                            \bold
-                                                X
-                                            }
                                     s8
                                     \bar "|."
                                     \override Score.BarLine.transparent = ##f
@@ -3733,10 +3641,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     cyclic=True,
                     overhang=True,
                     )
-                parts = [
-                    abjad.pitchtools.PitchClassSegment(_, name='X')
-                    for _ in parts
-                    ]
+                parts = [abjad.pitchtools.PitchClassSegment(_) for _ in parts]
                 new_segments.extend(parts)
             else:
                 new_segments.append(segment)
