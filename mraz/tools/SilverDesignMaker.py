@@ -3179,7 +3179,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 3/4
-                                    a'8 \startGroup
+                                    a'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3294,7 +3294,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     a'8
                                     af'8
                                     d'8
-                                    fs'8 \stopGroup
+                                    fs'8 \stopGroup \stopGroup
                                     s8
                                 }
                                 {
@@ -3424,7 +3424,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 3/4
-                                    a'8 \startGroup
+                                    a'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3555,7 +3555,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                     }
                                             }
                                     d'8
-                                    bf'8 \stopGroup
+                                    bf'8 \stopGroup \stopGroup
                                     s8
                                 }
                                 {
@@ -3687,7 +3687,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 3/4
-                                    bf'8 \startGroup
+                                    bf'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3807,7 +3807,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                 }
                                 {
                                     \time 1/4
-                                    cs'8 \startGroup \stopGroup
+                                    cs'8 \stopGroup \startGroup \stopGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3849,17 +3849,19 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     cyclic=True,
                     overhang=True,
                     )
+                part_segments = []
                 for i, part in enumerate(parts):
                     name = '{}_{}'.format(source, i)
                     name_markup = [abjad.Markup(source)]
                     name_markup.append(abjad.Markup(i).sub())
                     name_markup = abjad.Markup.concat(name_markup)
-                    segment = abjad.pitchtools.PitchClassSegment(
+                    part_segment = abjad.pitchtools.PitchClassSegment(
                         part,
                         name=name,
                         name_markup=name_markup,
                         )
-                    new_segments.append(segment)
+                    part_segments.append(part_segment)
+                new_segments.append(part_segments)
             else:
                 new_segments.append(segment)
         tree = baca.tools.PitchClassTree(items=new_segments)
