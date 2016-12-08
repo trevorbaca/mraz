@@ -3178,7 +3178,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     s8
                                 }
                                 {
-                                    \time 3/4
+                                    \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
@@ -3192,12 +3192,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     bf'8
                                     c'8
                                     g'8
-                                    e'8 \stopGroup
+                                    e'8
+                                    f'8
+                                    ef'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 5/8
-                                    f'8 \startGroup
+                                    \time 1/2
+                                    b'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3208,13 +3210,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                     }
                                             }
                                     ef'8
-                                    b'8
-                                    ef'8 \stopGroup
+                                    cs'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 1/2
-                                    cs'8 \startGroup
+                                    \time 1/1
+                                    d'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3224,13 +3225,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             2
                                                     }
                                             }
-                                    d'8
-                                    fs'8 \stopGroup
+                                    fs'8
+                                    af'8
+                                    f'8
+                                    ef'8
+                                    b'8
+                                    ef'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 3/4
-                                    af'8 \startGroup
+                                    \time 1/2
+                                    cs'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3240,15 +3245,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             3
                                                     }
                                             }
-                                    f'8
-                                    ef'8
-                                    b'8
-                                    ef'8 \stopGroup
+                                    e'8
+                                    fs'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 5/8
-                                    cs'8 \startGroup
+                                    \time 1/1
+                                    af'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3258,13 +3261,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             4
                                                     }
                                             }
-                                    e'8
-                                    fs'8
+                                    d'8
+                                    bf'8
+                                    c'8
+                                    g'8
+                                    a'8
                                     af'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 1/2
+                                    \time 3/8
                                     d'8 \startGroup
                                         ^ \markup {
                                             \bold
@@ -3275,25 +3281,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             5
                                                     }
                                             }
-                                    bf'8
-                                    c'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 3/4
-                                    g'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            6
-                                                    }
-                                            }
-                                    a'8
-                                    af'8
-                                    d'8
                                     fs'8 \stopGroup \stopGroup
                                     s8
                                 }
@@ -3423,7 +3410,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     s8
                                 }
                                 {
-                                    \time 3/4
+                                    \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
@@ -3437,24 +3424,9 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     ef'8
                                     g'8
                                     af'8
-                                    b'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 5/8
-                                    cs'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            1
-                                                    }
-                                            }
-                                    fs'8
-                                    d'8
-                                    bf'8 \stopGroup
+                                    b'8
+                                    cs'8
+                                    fs'8 \stopGroup
                                     s8
                                 }
                                 {
@@ -3466,16 +3438,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                     {
                                                         R
                                                         \sub
-                                                            2
+                                                            1
                                                     }
                                             }
-                                    c'8
-                                    f'8 \stopGroup
+                                    bf'8
+                                    d'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 3/4
-                                    e'8 \startGroup
+                                    \time 1/1
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            2
+                                                    }
+                                            }
+                                    f'8
+                                    e'8
+                                    b'8
+                                    cs'8
+                                    fs'8
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3485,15 +3477,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             3
                                                     }
                                             }
-                                    b'8
-                                    cs'8
-                                    fs'8
-                                    af'8 \stopGroup
+                                    d'8
+                                    c'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 5/8
-                                    bf'8 \startGroup
+                                    \time 1/1
+                                    f'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3503,14 +3493,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             4
                                                     }
                                             }
+                                    e'8
                                     d'8
-                                    c'8
-                                    f'8 \stopGroup
+                                    ef'8
+                                    g'8
+                                    a'8
+                                    d'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 1/2
-                                    e'8 \startGroup
+                                    c'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3520,13 +3513,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             5
                                                     }
                                             }
-                                    d'8
-                                    ef'8 \stopGroup
+                                    f'8
+                                    e'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 3/4
-                                    g'8 \startGroup
+                                    \time 3/8
+                                    d'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3536,25 +3529,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             6
                                                     }
                                             }
-                                    a'8
-                                    d'8
-                                    c'8
-                                    f'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            7
-                                                    }
-                                            }
-                                    d'8
                                     bf'8 \stopGroup \stopGroup
                                     s8
                                 }
@@ -3686,7 +3660,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     s8
                                 }
                                 {
-                                    \time 3/4
+                                    \time 1/1
                                     bf'8 \startGroup \startGroup
                                         ^ \markup {
                                             \bold
@@ -3700,12 +3674,14 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     c'8
                                     g'8
                                     af'8
-                                    bf'8 \stopGroup
+                                    bf'8
+                                    d'8
+                                    f'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 5/8
-                                    d'8 \startGroup
+                                    \time 1/2
+                                    ef'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3715,14 +3691,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             1
                                                     }
                                             }
-                                    f'8
-                                    ef'8
-                                    a'8 \stopGroup
+                                    a'8
+                                    e'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 1/2
-                                    e'8 \startGroup
+                                    \time 1/1
+                                    cs'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3732,13 +3707,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             2
                                                     }
                                             }
-                                    cs'8
-                                    b'8 \stopGroup
+                                    b'8
+                                    fs'8
+                                    ef'8
+                                    a'8
+                                    f'8
+                                    cs'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 3/4
-                                    fs'8 \startGroup
+                                    \time 1/2
+                                    b'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3748,15 +3727,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             3
                                                     }
                                             }
-                                    ef'8
-                                    a'8
-                                    f'8
-                                    cs'8 \stopGroup
+                                    fs'8
+                                    e'8 \stopGroup
                                     s8
                                 }
                                 {
-                                    \time 5/8
-                                    b'8 \startGroup
+                                    \time 1/1
+                                    c'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3766,14 +3743,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             4
                                                     }
                                             }
-                                    fs'8
-                                    e'8
-                                    c'8 \stopGroup
+                                    g'8
+                                    af'8
+                                    bf'8
+                                    d'8
+                                    bf'8
+                                    b'8 \stopGroup
                                     s8
                                 }
                                 {
                                     \time 1/2
-                                    g'8 \startGroup
+                                    fs'8 \startGroup
                                         ^ \markup {
                                             \bold
                                                 \concat
@@ -3783,40 +3763,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             5
                                                     }
                                             }
-                                    af'8
-                                    bf'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 3/4
-                                    d'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            6
-                                                    }
-                                            }
-                                    bf'8
-                                    b'8
-                                    fs'8
-                                    e'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 1/4
-                                    cs'8 \stopGroup \startGroup \stopGroup
-                                        ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            7
-                                                    }
-                                            }
+                                    e'8
+                                    cs'8 \stopGroup \stopGroup
                                     s8
                                     \bar "|."
                                     \override Score.BarLine.transparent = ##f
@@ -3845,7 +3793,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 segment = abjad.sequence(segment)
                 source = segment._name
                 parts = segment.partition_by_counts(
-                    [5, 4, 3],
+                    [7, 3],
                     cyclic=True,
                     overhang=True,
                     )
