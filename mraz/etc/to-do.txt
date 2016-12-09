@@ -1,8 +1,6 @@
 TO-DO:
 
-1.  Remove PitchClassTree measures. Fix PitchClassTree above-staff markup.
-    Add staff-padded below-staff index markup. Make indices work with nesting.
-    Add below-staff indices to stage illustrations.
+1.  Add staff-padded below-staff index markup.
     Possibly implement markup tweak.
     Debug possible up-up markup contention at stage 5.
 
