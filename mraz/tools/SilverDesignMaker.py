@@ -47,6 +47,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_00.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -73,8 +74,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -84,8 +93,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -98,8 +115,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -135,6 +160,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_01.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -161,8 +187,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -172,8 +206,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -186,8 +228,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -198,20 +248,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -225,20 +283,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -250,20 +316,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -274,20 +348,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     f'8
@@ -299,20 +381,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -323,20 +413,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -350,20 +448,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -374,20 +480,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -401,20 +515,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -426,20 +548,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -453,20 +583,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -478,20 +616,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -502,20 +648,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -527,20 +681,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -551,20 +713,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -578,20 +748,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -602,20 +780,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     g'8
@@ -629,20 +815,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     f'8
@@ -654,20 +848,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -681,20 +883,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -706,20 +916,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -730,20 +948,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -755,20 +981,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -779,20 +1013,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -806,20 +1048,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -830,20 +1080,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -857,20 +1115,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -882,20 +1148,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -909,20 +1183,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     f'8
@@ -934,20 +1216,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -958,20 +1248,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -983,20 +1281,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -1007,20 +1313,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -1065,6 +1379,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_02.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -1091,8 +1406,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -1102,8 +1425,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -1116,8 +1447,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -1128,20 +1467,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -1155,20 +1502,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -1180,119 +1535,127 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 15/4
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                Q
-                                            =
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
+                                                    \bold
+                                                        Q
+                                                    =
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -2
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -3
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -1329,20 +1692,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -1356,20 +1727,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -1381,20 +1760,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -1405,20 +1792,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -1430,20 +1825,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -1454,119 +1857,127 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 33/8
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                R
-                                            =
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
+                                                    \bold
+                                                        R
+                                                    =
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -6
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -7
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -1606,20 +2017,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -1631,20 +2050,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -1655,20 +2082,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -1682,20 +2117,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -1706,20 +2149,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -1733,119 +2184,127 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 31/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                S
-                                            =
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
+                                                    \bold
+                                                        S
+                                                    =
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
-                                                }
-                                            +
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
+                                                    +
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -1934,6 +2393,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_03.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -1960,8 +2420,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -1971,8 +2439,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -1985,8 +2461,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -1997,20 +2481,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -2024,20 +2516,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -2049,16 +2549,24 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 15/4
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    R
                                                     \concat
                                                         {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                Q
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        Q
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -2095,20 +2603,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -2122,20 +2638,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -2147,20 +2671,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -2171,20 +2703,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -2196,20 +2736,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -2220,16 +2768,24 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 33/8
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    R
                                                     \concat
                                                         {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                R
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        R
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -2269,20 +2825,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -2294,20 +2858,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -2318,20 +2890,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -2345,20 +2925,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -2369,20 +2957,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -2396,16 +2992,24 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 31/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    R
                                                     \concat
                                                         {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                S
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        S
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -2477,6 +3081,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_04.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -2503,8 +3108,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -2514,8 +3127,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -2528,8 +3149,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -2540,20 +3169,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -2567,20 +3204,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -2592,23 +3237,31 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 15/4
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                Q
-                                            =
-                                            \concat
+                                            \column
                                                 {
-                                                    I
+                                                    \bold
+                                                        Q
+                                                    =
                                                     \concat
                                                         {
-                                                            R
+                                                            I
                                                             \concat
                                                                 {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        Q
+                                                                    R
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                Q
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -2645,20 +3298,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -2672,20 +3333,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -2697,20 +3366,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -2721,20 +3398,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -2746,20 +3431,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -2770,199 +3463,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 33/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                R
-                                            =
-                                            \concat
+                                            \column
                                                 {
-                                                    A
-                                                    \concat
-                                                        {
-                                                            I
-                                                            \concat
-                                                                {
-                                                                    R
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                R
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                            }
-                                    ef'8
-                                    g'8
-                                    af'8
-                                    b'8
-                                    cs'8
-                                    fs'8
-                                    d'8
-                                    bf'8
-                                    d'8
-                                    c'8
-                                    f'8
-                                    e'8
-                                    b'8
-                                    cs'8
-                                    fs'8
-                                    af'8
-                                    bf'8
-                                    d'8
-                                    c'8
-                                    f'8
-                                    e'8
-                                    d'8
-                                    ef'8
-                                    g'8
-                                    a'8
-                                    d'8
-                                    c'8
-                                    f'8
-                                    e'8
-                                    d'8
-                                    bf'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 5/8
-                                    c'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                            }
-                                    d'8
-                                    ef'8
-                                    f'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 1/2
-                                    bf'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                            }
-                                    e'8
-                                    fs'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 7/8
-                                    af'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                            }
-                                    b'8
-                                    a'8
-                                    cs'8
-                                    a'8
-                                    g'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 1/2
-                                    e'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                            }
-                                    fs'8
-                                    bf'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 7/8
-                                    b'8 \startGroup
-                                        ^ \markup {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                            }
-                                    a'8
-                                    cs'8
-                                    a'8
-                                    g'8
-                                    af'8 \stopGroup
-                                    s8
-                                }
-                                {
-                                    \time 31/8
-                                    bf'8 \startGroup
-                                        ^ \markup {
-                                            \bold
-                                                S
-                                            =
-                                            \concat
-                                                {
-                                                    I
+                                                    \bold
+                                                        R
+                                                    =
                                                     \concat
                                                         {
                                                             A
@@ -2977,11 +3482,255 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                                                     \hspace
                                                                                         #0.4
                                                                                     \bold
-                                                                                        S
+                                                                                        R
                                                                                 }
                                                                         }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
+                                                }
+                                            }
+                                    ef'8
+                                    g'8
+                                    af'8
+                                    b'8
+                                    cs'8
+                                    fs'8
+                                    d'8
+                                    bf'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    e'8
+                                    b'8
+                                    cs'8
+                                    fs'8
+                                    af'8
+                                    bf'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    e'8
+                                    d'8
+                                    ef'8
+                                    g'8
+                                    a'8
+                                    d'8
+                                    c'8
+                                    f'8
+                                    e'8
+                                    d'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                    e'8
+                                    fs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                    b'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                    fs'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    g'8
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 31/8
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        S
+                                                    =
+                                                    \concat
+                                                        {
+                                                            I
+                                                            \concat
+                                                                {
+                                                                    A
+                                                                    \concat
+                                                                        {
+                                                                            I
+                                                                            \concat
+                                                                                {
+                                                                                    R
+                                                                                    \concat
+                                                                                        {
+                                                                                            \hspace
+                                                                                                #0.4
+                                                                                            \bold
+                                                                                                S
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -3066,6 +3815,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_05.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -3092,8 +3842,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -3103,8 +3861,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -3117,8 +3883,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -3129,20 +3903,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -3156,20 +3938,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -3181,13 +3971,26 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            0
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
+                                                }
                                             }
                                     bf'8
                                     c'8
@@ -3201,13 +4004,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            1
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
                                             }
                                     ef'8
                                     cs'8 \stopGroup
@@ -3217,13 +4028,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            2
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    2
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     af'8
@@ -3237,13 +4056,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            3
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    3
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
                                             }
                                     e'8
                                     fs'8 \stopGroup
@@ -3253,13 +4080,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            4
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    4
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     bf'8
@@ -3273,13 +4108,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            5
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    5
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
                                             }
                                     fs'8 \stopGroup \stopGroup
                                     s8
@@ -3288,20 +4131,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -3315,20 +4166,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -3340,20 +4199,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -4
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -3364,20 +4231,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -3389,20 +4264,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -3413,13 +4296,26 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            0
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                                            }
+                                                }
                                             }
                                     ef'8
                                     g'8
@@ -3433,13 +4329,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            1
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
                                             }
                                     bf'8
                                     d'8 \stopGroup
@@ -3449,13 +4353,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            2
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    2
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                                            }
+                                                }
                                             }
                                     f'8
                                     e'8
@@ -3469,13 +4381,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            3
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    3
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     c'8 \stopGroup
@@ -3485,13 +4405,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            4
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    4
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
                                             }
                                     e'8
                                     d'8
@@ -3505,13 +4433,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            5
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    5
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-4){0, 1, 5}"
+                                                            }
+                                                }
                                             }
                                     f'8
                                     e'8 \stopGroup
@@ -3521,13 +4457,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        R
-                                                        \sub
-                                                            6
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                R
+                                                                \sub
+                                                                    6
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
                                             }
                                     bf'8 \stopGroup \stopGroup
                                     s8
@@ -3536,20 +4480,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -3561,20 +4513,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -3585,20 +4545,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -8
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -3612,20 +4580,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        J
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -3636,20 +4612,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -3663,13 +4647,26 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     bf'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            0
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                                            }
+                                                }
                                             }
                                     c'8
                                     g'8
@@ -3683,13 +4680,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            1
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-5){0, 1, 6}"
+                                                            }
+                                                }
                                             }
                                     a'8
                                     e'8 \stopGroup
@@ -3699,13 +4704,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            2
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    2
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                                            }
+                                                }
                                             }
                                     b'8
                                     fs'8
@@ -3719,13 +4732,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            3
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    3
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-9){0, 2, 6}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     e'8 \stopGroup
@@ -3735,13 +4756,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            4
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    4
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -3755,13 +4784,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        S
-                                                        \sub
-                                                            5
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                S
+                                                                \sub
+                                                                    5
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
                                             }
                                     e'8
                                     cs'8 \stopGroup \stopGroup
@@ -3827,6 +4864,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_06.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
+                ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -3853,8 +4891,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                J
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -3864,8 +4910,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                K
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
                                             }
                                     g'8
                                     af'8
@@ -3878,8 +4932,16 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                L
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
                                             }
                                     d'8
                                     ef'8
@@ -3890,20 +4952,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        K
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -3917,20 +4987,28 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
                                                     \concat
                                                         {
+                                                            r
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -3942,13 +5020,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            0
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                                            }
+                                                }
                                             }
                                     bf'8
                                     c'8
@@ -3962,13 +5048,21 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            1
-                                                    }
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
                                             }
                                     ef'8
                                     cs'8 \stopGroup
@@ -3978,25 +5072,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            2
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -4011,25 +5113,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            3
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    3
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -4040,25 +5150,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            4
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
                                                 }
                                             }
                                     g'8
@@ -4073,25 +5191,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            5
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
                                                 }
                                             }
                                     b'8 \stopGroup
@@ -4101,28 +5227,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -4
+                                                                5
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -4136,28 +5270,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -4
+                                                                5
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     g'8
@@ -4169,28 +5311,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -4
+                                                                5
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -4201,28 +5351,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -5
+                                                                9
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -4234,28 +5392,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -5
+                                                                9
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     cs'8
@@ -4266,25 +5432,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            0
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -4299,25 +5473,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            1
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
                                                 }
                                             }
                                     g'8
@@ -4328,25 +5510,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            2
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -4361,25 +5551,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            3
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    3
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -4390,25 +5588,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            4
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -4423,25 +5629,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            5
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-4){0, 1, 5}"
+                                                            }
                                                 }
                                             }
                                     ef'8
@@ -4452,25 +5666,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            6
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    6
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
                                                 }
                                             }
                                     af'8 \stopGroup
@@ -4480,28 +5702,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -8
+                                                                10
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
                                                 }
                                             }
                                     c'8
@@ -4513,28 +5743,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -8
+                                                                10
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     d'8
@@ -4545,28 +5783,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -8
+                                                                10
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     a'8
@@ -4580,28 +5826,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -9
+                                                                10
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
                                                 }
                                             }
                                     e'8
@@ -4612,28 +5866,36 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
-                                                            r
+                                                            T
                                                             \hspace
-                                                                #-0.7
+                                                                #-0.2
                                                             \sub
-                                                                -9
+                                                                11
                                                             \concat
                                                                 {
+                                                                    r
                                                                     \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
                                                                 }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -4647,25 +5909,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            0
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                                            }
                                                 }
                                             }
                                     b'8
@@ -4680,25 +5950,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            1
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-5){0, 1, 6}"
+                                                            }
                                                 }
                                             }
                                     af'8
@@ -4709,25 +5987,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            2
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                                            }
                                                 }
                                             }
                                     bf'8
@@ -4742,25 +6028,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            3
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    3
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-9){0, 2, 6}"
+                                                            }
                                                 }
                                             }
                                     f'8
@@ -4771,25 +6065,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            4
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                                            }
                                                 }
                                             }
                                     fs'8
@@ -4804,25 +6106,33 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \concat
+                                            \column
                                                 {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
                                                     \concat
                                                         {
+                                                            T
                                                             \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            5
-                                                                    }
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
                                                         }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
                                                 }
                                             }
                                     ef'8
