@@ -6,6 +6,8 @@ import baca
 class SilverDesignMaker(abjad.abctools.AbjadObject):
     r'''Silver design-maker.
 
+    Black.
+
     ::
 
         >>> import mraz
@@ -67,6 +69,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -90,6 +93,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -116,6 +120,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -157,6 +162,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     cs'8
                     a'8
@@ -196,6 +202,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -225,6 +232,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     c'8
@@ -257,6 +265,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     ef'8
                     cs'8 \stopGroup
@@ -302,6 +311,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     e'8
                     af'8
@@ -347,6 +357,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     a'8
                     b'8 \stopGroup
@@ -388,6 +399,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     g'8
                     ef'8
@@ -433,6 +445,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     b'8 \stopGroup
                     s8
@@ -480,6 +493,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     cs'8
                     c'8
@@ -527,6 +541,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     g'8
                     af'8
@@ -572,6 +587,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     ef'8
                     a'8 \stopGroup
@@ -616,6 +632,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     c'8
                     d'8
@@ -665,6 +682,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     cs'8
                     g'8 \stopGroup
@@ -706,6 +724,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     c'8
                     e'8
@@ -751,6 +770,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     g'8
                     b'8 \stopGroup
@@ -792,6 +812,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 18 }
                     d'8
                     cs'8
@@ -841,6 +862,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 19 }
                     b'8
                     g'8 \stopGroup
@@ -882,6 +904,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 20 }
                     d'8
                     c'8
@@ -927,6 +950,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 21 }
                     ef'8
                     d'8 \stopGroup
@@ -968,6 +992,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 22 }
                     af'8 \stopGroup
                     s8
@@ -1015,6 +1040,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 23 }
                     cs'8
                     c'8
@@ -1060,6 +1086,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 24 }
                     d'8
                     e'8 \stopGroup
@@ -1104,6 +1131,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 25 }
                     a'8
                     g'8
@@ -1151,6 +1179,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 26 }
                     e'8
                     af'8 \stopGroup
@@ -1199,6 +1228,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 27 }
                     fs'8
                     af'8
@@ -1243,6 +1273,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 28 }
                     b'8
                     fs'8
@@ -1288,6 +1319,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 29 }
                     af'8
                     ef'8 \stopGroup
@@ -1329,6 +1361,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 30 }
                     bf'8
                     f'8
@@ -1378,6 +1411,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 31 }
                     f'8
                     bf'8 \stopGroup
@@ -1419,6 +1453,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 32 }
                     fs'8
                     g'8
@@ -1464,6 +1499,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 33 }
                     ef'8
                     c'8 \stopGroup
@@ -1625,6 +1661,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -1648,6 +1685,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -1674,6 +1712,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -1711,6 +1750,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -1750,6 +1790,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -1787,6 +1828,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     e'8 \stopGroup
@@ -1823,6 +1865,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     f'8
                     c'8
@@ -1860,6 +1903,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     e'8
                     fs'8 \stopGroup
@@ -1896,6 +1940,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     b'8
                     a'8
@@ -1935,6 +1980,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     fs'8
                     bf'8 \stopGroup
@@ -1971,6 +2017,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     a'8
                     cs'8
@@ -2010,6 +2057,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     c'8
                     d'8
@@ -2047,6 +2095,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     cs'8
                     a'8
@@ -2086,6 +2135,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     d'8
                     ef'8
@@ -2123,6 +2173,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     bf'8
                     e'8 \stopGroup
@@ -2159,6 +2210,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     ef'8
                     f'8
@@ -2196,6 +2248,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     e'8
                     fs'8 \stopGroup
@@ -2232,6 +2285,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     a'8
                     g'8
@@ -2271,6 +2325,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 18 }
                     fs'8
                     bf'8 \stopGroup
@@ -2307,6 +2362,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 19 }
                     g'8
                     af'8
@@ -2346,6 +2402,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 20 }
                     f'8
                     c'8
@@ -2383,6 +2440,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 21 }
                     af'8
                     b'8
@@ -2422,6 +2480,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 22 }
                     c'8
                     d'8
@@ -2459,6 +2518,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 23 }
                     bf'8
                     e'8 \stopGroup
@@ -2495,6 +2555,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 24 }
                     d'8
                     ef'8
@@ -2532,6 +2593,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 25 }
                     e'8
                     fs'8 \stopGroup
@@ -2568,6 +2630,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 26 }
                     b'8
                     a'8
@@ -2607,6 +2670,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 27 }
                     fs'8
                     bf'8 \stopGroup
@@ -2643,6 +2707,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 28 }
                     a'8
                     cs'8
@@ -2682,6 +2747,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 29 }
                     ef'8
                     f'8
@@ -2719,6 +2785,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 30 }
                     cs'8
                     a'8
@@ -2758,6 +2825,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 31 }
                     f'8
                     c'8
@@ -2795,6 +2863,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 32 }
                     bf'8
                     e'8 \stopGroup
@@ -2831,6 +2900,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 33 }
                     c'8
                     d'8
@@ -2868,6 +2938,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 34 }
                     e'8
                     fs'8 \stopGroup
@@ -2904,6 +2975,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 35 }
                     a'8
                     g'8
@@ -2972,6 +3044,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -2995,6 +3068,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -3021,6 +3095,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -3058,6 +3133,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -3097,6 +3173,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -3236,6 +3313,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     e'8
@@ -3298,6 +3376,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     cs'8
                     a'8
@@ -3337,6 +3416,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     d'8
                     ef'8
@@ -3374,6 +3454,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     bf'8
                     e'8 \stopGroup
@@ -3410,6 +3491,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     ef'8
                     f'8
@@ -3447,6 +3529,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     e'8
                     fs'8 \stopGroup
@@ -3585,6 +3668,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     a'8
                     g'8
@@ -3650,6 +3734,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     d'8
                     ef'8
@@ -3687,6 +3772,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     e'8
                     fs'8 \stopGroup
@@ -3723,6 +3809,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     b'8
                     a'8
@@ -3762,6 +3849,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     fs'8
                     bf'8 \stopGroup
@@ -3798,6 +3886,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     a'8
                     cs'8
@@ -3939,6 +4028,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     ef'8
                     f'8
@@ -4051,6 +4141,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -4074,6 +4165,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -4100,6 +4192,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -4137,6 +4230,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -4176,6 +4270,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -4209,6 +4304,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     d'8
                     c'8
@@ -4271,6 +4367,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     cs'8
                     a'8
@@ -4310,6 +4407,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     d'8
                     ef'8
@@ -4347,6 +4445,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     bf'8
                     e'8 \stopGroup
@@ -4383,6 +4482,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     ef'8
                     f'8
@@ -4420,6 +4520,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     e'8
                     fs'8 \stopGroup
@@ -4452,6 +4553,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     bf'8
                     fs'8
@@ -4517,6 +4619,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     d'8
                     ef'8
@@ -4554,6 +4657,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     e'8
                     fs'8 \stopGroup
@@ -4590,6 +4694,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     b'8
                     a'8
@@ -4629,6 +4734,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     fs'8
                     bf'8 \stopGroup
@@ -4665,6 +4771,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     a'8
                     cs'8
@@ -4700,6 +4807,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     b'8
                     af'8
@@ -4795,6 +4903,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -4818,6 +4927,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -4844,6 +4954,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -4881,6 +4992,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -4920,6 +5032,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -4963,6 +5076,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     c'8
@@ -5025,6 +5139,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     cs'8
                     a'8
@@ -5064,6 +5179,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     d'8
                     ef'8
@@ -5101,6 +5217,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     bf'8
                     e'8 \stopGroup
@@ -5137,6 +5254,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     ef'8
                     f'8
@@ -5174,6 +5292,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     e'8
                     fs'8 \stopGroup
@@ -5220,6 +5339,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     ef'8
                     g'8
@@ -5285,6 +5405,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     d'8
                     ef'8
@@ -5322,6 +5443,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     e'8
                     fs'8 \stopGroup
@@ -5358,6 +5480,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     b'8
                     a'8
@@ -5397,6 +5520,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     fs'8
                     bf'8 \stopGroup
@@ -5433,6 +5557,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     a'8
                     cs'8
@@ -5486,6 +5611,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     c'8
                     g'8
@@ -5580,6 +5706,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             \bold
                                 J
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -5589,6 +5716,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             \bold
                                 K
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -5601,6 +5729,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                             \bold
                                 L
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -5624,6 +5753,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -5649,6 +5779,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -5664,19 +5795,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             0
                                     }
                             }
-                        _ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            5
-                                        }
-                                    \line
-                                        {
-                                            6
-                                        }
-                                }
-                            }
+                        - \tweak staff-padding #7
+                        _ \markup { 5 }
                     bf'8
                     c'8
                     g'8
@@ -5694,7 +5814,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             1
                                     }
                             }
-                        _ \markup { 7 }
+                        - \tweak staff-padding #7
+                        _ \markup { 6 }
                     ef'8
                     cs'8 \stopGroup
                     s8
@@ -5708,7 +5829,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             2
                                     }
                             }
-                        _ \markup { 8 }
+                        - \tweak staff-padding #7
+                        _ \markup { 7 }
                     fs'8
                     af'8
                     f'8
@@ -5726,7 +5848,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             3
                                     }
                             }
-                        _ \markup { 9 }
+                        - \tweak staff-padding #7
+                        _ \markup { 8 }
                     e'8
                     fs'8 \stopGroup
                     s8
@@ -5740,7 +5863,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             4
                                     }
                             }
-                        _ \markup { 10 }
+                        - \tweak staff-padding #7
+                        _ \markup { 9 }
                     d'8
                     bf'8
                     c'8
@@ -5758,7 +5882,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             5
                                     }
                             }
-                        _ \markup { 11 }
+                        - \tweak staff-padding #7
+                        _ \markup { 10 }
                     fs'8 \stopGroup \stopGroup
                     s8
                     a'8 \startGroup
@@ -5779,7 +5904,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 12 }
+                        - \tweak staff-padding #7
+                        _ \markup { 11 }
                     cs'8
                     a'8
                     g'8
@@ -5804,7 +5930,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 13 }
+                        - \tweak staff-padding #7
+                        _ \markup { 12 }
                     d'8
                     ef'8
                     f'8 \stopGroup
@@ -5827,7 +5954,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 14 }
+                        - \tweak staff-padding #7
+                        _ \markup { 13 }
                     bf'8
                     e'8 \stopGroup
                     s8
@@ -5849,7 +5977,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 15 }
+                        - \tweak staff-padding #7
+                        _ \markup { 14 }
                     ef'8
                     f'8
                     c'8 \stopGroup
@@ -5872,7 +6001,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 16 }
+                        - \tweak staff-padding #7
+                        _ \markup { 15 }
                     e'8
                     fs'8 \stopGroup
                     s8
@@ -5886,19 +6016,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             0
                                     }
                             }
-                        _ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            17
-                                        }
-                                    \line
-                                        {
-                                            18
-                                        }
-                                }
-                            }
+                        - \tweak staff-padding #7
+                        _ \markup { 16 }
                     ef'8
                     g'8
                     af'8
@@ -5916,7 +6035,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             1
                                     }
                             }
-                        _ \markup { 19 }
+                        - \tweak staff-padding #7
+                        _ \markup { 17 }
                     bf'8
                     d'8 \stopGroup
                     s8
@@ -5930,7 +6050,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             2
                                     }
                             }
-                        _ \markup { 20 }
+                        - \tweak staff-padding #7
+                        _ \markup { 18 }
                     f'8
                     e'8
                     b'8
@@ -5948,7 +6069,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             3
                                     }
                             }
-                        _ \markup { 21 }
+                        - \tweak staff-padding #7
+                        _ \markup { 19 }
                     d'8
                     c'8 \stopGroup
                     s8
@@ -5962,7 +6084,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             4
                                     }
                             }
-                        _ \markup { 22 }
+                        - \tweak staff-padding #7
+                        _ \markup { 20 }
                     e'8
                     d'8
                     ef'8
@@ -5980,7 +6103,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             5
                                     }
                             }
-                        _ \markup { 23 }
+                        - \tweak staff-padding #7
+                        _ \markup { 21 }
                     f'8
                     e'8 \stopGroup
                     s8
@@ -5994,7 +6118,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             6
                                     }
                             }
-                        _ \markup { 24 }
+                        - \tweak staff-padding #7
+                        _ \markup { 22 }
                     bf'8 \stopGroup \stopGroup
                     s8
                     c'8 \startGroup
@@ -6015,7 +6140,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 25 }
+                        - \tweak staff-padding #7
+                        _ \markup { 23 }
                     d'8
                     ef'8
                     f'8 \stopGroup
@@ -6038,7 +6164,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 26 }
+                        - \tweak staff-padding #7
+                        _ \markup { 24 }
                     e'8
                     fs'8 \stopGroup
                     s8
@@ -6060,7 +6187,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 27 }
+                        - \tweak staff-padding #7
+                        _ \markup { 25 }
                     b'8
                     a'8
                     cs'8
@@ -6085,7 +6213,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 28 }
+                        - \tweak staff-padding #7
+                        _ \markup { 26 }
                     fs'8
                     bf'8 \stopGroup
                     s8
@@ -6107,7 +6236,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
-                        _ \markup { 29 }
+                        - \tweak staff-padding #7
+                        _ \markup { 27 }
                     a'8
                     cs'8
                     a'8
@@ -6124,19 +6254,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             0
                                     }
                             }
-                        _ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            30
-                                        }
-                                    \line
-                                        {
-                                            31
-                                        }
-                                }
-                            }
+                        - \tweak staff-padding #7
+                        _ \markup { 28 }
                     c'8
                     g'8
                     af'8
@@ -6154,7 +6273,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             1
                                     }
                             }
-                        _ \markup { 32 }
+                        - \tweak staff-padding #7
+                        _ \markup { 29 }
                     a'8
                     e'8 \stopGroup
                     s8
@@ -6168,7 +6288,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             2
                                     }
                             }
-                        _ \markup { 33 }
+                        - \tweak staff-padding #7
+                        _ \markup { 30 }
                     b'8
                     fs'8
                     ef'8
@@ -6186,7 +6307,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             3
                                     }
                             }
-                        _ \markup { 34 }
+                        - \tweak staff-padding #7
+                        _ \markup { 31 }
                     fs'8
                     e'8 \stopGroup
                     s8
@@ -6200,7 +6322,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             4
                                     }
                             }
-                        _ \markup { 35 }
+                        - \tweak staff-padding #7
+                        _ \markup { 32 }
                     g'8
                     af'8
                     bf'8
@@ -6218,7 +6341,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                             5
                                     }
                             }
-                        _ \markup { 36 }
+                        - \tweak staff-padding #7
+                        _ \markup { 33 }
                     e'8
                     cs'8 \stopGroup \stopGroup
                     s8
@@ -6308,6 +6432,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -6331,6 +6456,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -6357,6 +6483,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -6394,6 +6521,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
                     b'8
@@ -6433,6 +6561,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -6462,6 +6591,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     c'8
@@ -6494,6 +6624,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     ef'8
                     cs'8 \stopGroup
@@ -6535,6 +6666,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     b'8
                     cs'8
@@ -6580,6 +6712,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     a'8
                     b'8 \stopGroup
@@ -6621,6 +6754,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     g'8
                     ef'8
@@ -6666,6 +6800,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     b'8 \stopGroup
                     s8
@@ -6709,6 +6844,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     fs'8
                     d'8
@@ -6756,6 +6892,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     g'8
                     af'8
@@ -6801,6 +6938,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     ef'8
                     a'8 \stopGroup
@@ -6845,6 +6983,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     c'8
                     d'8
@@ -6890,6 +7029,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     cs'8
                     ef'8 \stopGroup
@@ -6931,6 +7071,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     c'8
                     e'8
@@ -6976,6 +7117,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     g'8
                     b'8 \stopGroup
@@ -7017,6 +7159,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 18 }
                     d'8
                     cs'8
@@ -7062,6 +7205,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 19 }
                     b'8
                     a'8 \stopGroup
@@ -7103,6 +7247,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 20 }
                     d'8
                     c'8
@@ -7148,6 +7293,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 21 }
                     ef'8
                     d'8 \stopGroup
@@ -7189,6 +7335,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 22 }
                     af'8 \stopGroup
                     s8
@@ -7232,6 +7379,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 23 }
                     c'8
                     cs'8
@@ -7277,6 +7425,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 24 }
                     d'8
                     e'8 \stopGroup
@@ -7321,6 +7470,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 25 }
                     a'8
                     g'8
@@ -7368,6 +7518,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 26 }
                     e'8
                     af'8 \stopGroup
@@ -7412,6 +7563,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 27 }
                     af'8
                     c'8
@@ -7456,6 +7608,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 28 }
                     b'8
                     fs'8
@@ -7501,6 +7654,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 29 }
                     af'8
                     ef'8 \stopGroup
@@ -7542,6 +7696,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 30 }
                     bf'8
                     f'8
@@ -7587,6 +7742,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 31 }
                     f'8
                     ef'8 \stopGroup
@@ -7628,6 +7784,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 32 }
                     fs'8
                     g'8
@@ -7673,6 +7830,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 33 }
                     ef'8
                     c'8 \stopGroup
@@ -7749,6 +7907,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
@@ -7772,6 +7931,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
                     af'8
@@ -7798,6 +7958,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
                     ef'8
@@ -7839,6 +8000,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 3 }
                     cs'8
                     a'8
@@ -7878,6 +8040,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
                     f'8
@@ -7907,6 +8070,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
                     c'8
@@ -7939,6 +8103,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 6 }
                     ef'8
                     cs'8 \stopGroup
@@ -7984,6 +8149,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 7 }
                     e'8
                     af'8
@@ -8029,6 +8195,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 8 }
                     a'8
                     b'8 \stopGroup
@@ -8070,6 +8237,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 9 }
                     g'8
                     ef'8
@@ -8115,6 +8283,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 10 }
                     b'8 \stopGroup
                     s8
@@ -8162,6 +8331,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 11 }
                     cs'8
                     c'8
@@ -8209,6 +8379,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 12 }
                     g'8
                     af'8
@@ -8254,6 +8425,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 13 }
                     ef'8
                     a'8 \stopGroup
@@ -8298,6 +8470,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 14 }
                     c'8
                     d'8
@@ -8347,6 +8520,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 15 }
                     cs'8
                     g'8 \stopGroup
@@ -8388,6 +8562,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 16 }
                     c'8
                     e'8
@@ -8433,6 +8608,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 17 }
                     g'8
                     b'8 \stopGroup
@@ -8474,6 +8650,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 18 }
                     d'8
                     cs'8
@@ -8523,6 +8700,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 19 }
                     b'8
                     g'8 \stopGroup
@@ -8564,6 +8742,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 20 }
                     d'8
                     c'8
@@ -8609,6 +8788,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 21 }
                     ef'8
                     d'8 \stopGroup
@@ -8650,6 +8830,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 22 }
                     af'8 \stopGroup
                     s8
@@ -8697,6 +8878,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 23 }
                     cs'8
                     c'8
@@ -8742,6 +8924,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 24 }
                     d'8
                     e'8 \stopGroup
@@ -8786,6 +8969,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 25 }
                     a'8
                     g'8
@@ -8833,6 +9017,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 26 }
                     e'8
                     af'8 \stopGroup
@@ -8881,6 +9066,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 27 }
                     fs'8
                     af'8
@@ -8925,6 +9111,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 28 }
                     b'8
                     fs'8
@@ -8970,6 +9157,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 29 }
                     af'8
                     ef'8 \stopGroup
@@ -9011,6 +9199,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 30 }
                     bf'8
                     f'8
@@ -9060,6 +9249,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 31 }
                     f'8
                     bf'8 \stopGroup
@@ -9101,6 +9291,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 32 }
                     fs'8
                     g'8
@@ -9146,6 +9337,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                         }
                                 }
                             }
+                        - \tweak staff-padding #7
                         _ \markup { 33 }
                     ef'8
                     c'8 \stopGroup
