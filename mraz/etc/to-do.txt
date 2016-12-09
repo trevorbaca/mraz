@@ -1,8 +1,6 @@
 TO-DO:
 
-1.  Add staff-padded below-staff index markup.
-    Possibly implement markup tweak.
-    Debug possible up-up markup contention at stage 5.
+1.  Debug possible up-up markup contention at stage 5.
 
 2.  Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
@@ -10,54 +8,52 @@ TO-DO:
 3.  Integrate PitchClassTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-4.  Integrate PitchClassTree line-break control.
+4.  Merge everything back to mainline.
 
-5.  Merge everything back to mainline.
+5.  Build design.
 
-6.  Build design.
+6.  Describe voice-complex types.
 
-7.  Describe voice-complex types.
+7.  Make map.
 
-8.  Make map.
-
-9.  Define segments.
+8.  Define segments.
     Set cells per segment.
 
-10. Make voice-complexs starting in middle segment.
+9.  Make voice-complexs starting in middle segment.
 
-11. Establish voice colors.
+10. Establish voice colors.
 
-12. Equip SegmentMaker with label_voices property.
+11. Equip SegmentMaker with label_voices property.
 
-13. Extend selectors to work with named figures.
+12. Extend selectors to work with named figures.
 
-14. Extend RegistrationSpecifier:
+13. Extend RegistrationSpecifier:
     * centroid spacing
     * ChordalSpacingSpecifier
     * multistage (breakpoint) contour specification
 
-15. Extend FigureMaker with optional pitch-class transforms.
+14. Extend FigureMaker with optional pitch-class transforms.
 
-16. Extend FigureMaker with optional RepartitionSpecifier.
+15. Extend FigureMaker with optional RepartitionSpecifier.
 
-17. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+16. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
 
-18. Build many crossproduct makers.
+17. Build many crossproduct makers.
 
-19. Generalize voice intermittency.
+18. Generalize voice intermittency.
     Denote by C a first cell; call C the (voice-)reference cell.
     Denote by D a second cell; call D the (voice-)dependent cell.
     Allow any leaf D_j in D to coincide with any leaf C_i in C.
     Extend to allow any E_in in E to coincide with any D_i in D, recursively.
 
-20. Integrate formalizations of all three pedals.
+19. Integrate formalizations of all three pedals.
 
-21. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
+20. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
 
-22. Integrate resonance depressed pitches.
+21. Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
 
-23. Make cover.
+22. Make cover.
 
 SCOPE:
 
