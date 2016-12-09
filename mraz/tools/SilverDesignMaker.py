@@ -29,9 +29,1366 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
     def __call__(self):
         r'''Calls silver design-maker.
 
+        ..  container:: example
+
+            ::
+
+                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design = design_maker()
+                >>> lilypond_file = design.__illustrate__(
+                ...     after_cell_spacing=Duration(1, 8),
+                ...     cell_indices=Down,
+                ...     set_classes=True,
+                ...     )
+                >>> show(lilypond_file) # doctest: +SKIP
+
+            ..  doctest::
+
+                >>> f(lilypond_file.score_block)
+                \score {
+                    \new Score \with {
+                        \override BarLine.transparent = ##t
+                        \override BarNumber.stencil = ##f
+                        \override Beam.stencil = ##f
+                        \override Flag.stencil = ##f
+                        \override HorizontalBracket.staff-padding = #4
+                        \override Stem.stencil = ##f
+                        \override TextScript.staff-padding = #2
+                        \override TimeSignature.stencil = ##f
+                        proportionalNotationDuration = #(ly:make-moment 1 14)
+                    } <<
+                        \new Staff {
+                            \new Voice \with {
+                                \consists Horizontal_bracket_engraver
+                            } {
+                                {
+                                    \time 1/2
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 0 }
+                                    fs'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 1 }
+                                    g'8
+                                    af'8
+                                    b'8
+                                    a'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 2 }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -1
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 3 }
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 4 }
+                                    ef'8
+                                    f'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 5 }
+                                    bf'8
+                                    c'8
+                                    g'8
+                                    e'8
+                                    f'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 6 }
+                                    ef'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        Q
+                                                                                        \sub
+                                                                                            2
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 7 }
+                                    e'8
+                                    af'8
+                                    bf'8
+                                    cs'8
+                                    b'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    3
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 8 }
+                                    a'8
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 9 }
+                                    g'8
+                                    ef'8
+                                    f'8
+                                    c'8
+                                    d'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 3/8
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 10 }
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        5
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -4
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        K
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 11 }
+                                    cs'8
+                                    c'8
+                                    d'8
+                                    fs'8
+                                    d'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 12 }
+                                    g'8
+                                    af'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 13 }
+                                    ef'8
+                                    a'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 14 }
+                                    c'8
+                                    d'8
+                                    a'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        9
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -5
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        J
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 15 }
+                                    cs'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 16 }
+                                    c'8
+                                    e'8
+                                    f'8
+                                    af'8
+                                    bf'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 17 }
+                                    g'8
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 18 }
+                                    d'8
+                                    cs'8
+                                    af'8
+                                    bf'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        R
+                                                                                        \sub
+                                                                                            3
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 19 }
+                                    b'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 20 }
+                                    d'8
+                                    c'8
+                                    cs'8
+                                    f'8
+                                    g'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-4){0, 1, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 21 }
+                                    ef'8
+                                    d'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 3/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    6
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 22 }
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        10
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -8
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        L
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 23 }
+                                    cs'8
+                                    c'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 24 }
+                                    d'8
+                                    e'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 25 }
+                                    a'8
+                                    g'8
+                                    b'8
+                                    g'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 26 }
+                                    e'8
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        11
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -9
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        K
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 27 }
+                                    fs'8
+                                    af'8
+                                    c'8
+                                    af'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 28 }
+                                    b'8
+                                    fs'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    e'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-5){0, 1, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 29 }
+                                    af'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 30 }
+                                    bf'8
+                                    f'8
+                                    d'8
+                                    af'8
+                                    e'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        11
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        S
+                                                                                        \sub
+                                                                                            3
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-9){0, 2, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 31 }
+                                    f'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 32 }
+                                    fs'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 33 }
+                                    ef'8
+                                    c'8 \stopGroup
+                                    s8
+                                    \bar "|."
+                                    \override Score.BarLine.transparent = ##f
+                                }
+                            }
+                        }
+                    >>
+                }
+
         Returns pitch-class tree.
         '''
-        pass
+        return self.make_stage_07()
 
     ### PUBLIC METHODS ###
 
@@ -159,7 +1516,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_01 = design_maker.make_stage_01()
                 >>> lilypond_file = stage_01.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=False,
+                ...     cell_indices=Down,
                 ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
@@ -198,6 +1555,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -217,6 +1575,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -239,6 +1598,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -272,6 +1632,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -307,6 +1668,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -340,6 +1702,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 5 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -372,6 +1735,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 6 }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -405,6 +1769,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 7 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -437,6 +1802,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 8 }
                                     b'8
                                     a'8
                                     cs'8
@@ -472,6 +1838,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 9 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -504,6 +1871,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 10 }
                                     a'8
                                     cs'8
                                     a'8
@@ -539,6 +1907,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 11 }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -572,6 +1941,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 12 }
                                     cs'8
                                     a'8
                                     g'8
@@ -607,6 +1977,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 13 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -640,6 +2011,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 14 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -672,6 +2044,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 15 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -705,6 +2078,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 16 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -737,6 +2111,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 17 }
                                     a'8
                                     g'8
                                     af'8
@@ -772,6 +2147,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 18 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -804,6 +2180,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 19 }
                                     g'8
                                     af'8
                                     b'8
@@ -839,6 +2216,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 20 }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -872,6 +2250,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 21 }
                                     af'8
                                     b'8
                                     a'8
@@ -907,6 +2286,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 22 }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -940,6 +2320,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 23 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -972,6 +2353,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 24 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1005,6 +2387,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 25 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -1037,6 +2420,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 26 }
                                     b'8
                                     a'8
                                     cs'8
@@ -1072,6 +2456,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 27 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -1104,6 +2489,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 28 }
                                     a'8
                                     cs'8
                                     a'8
@@ -1139,6 +2525,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 29 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -1172,6 +2559,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 30 }
                                     cs'8
                                     a'8
                                     g'8
@@ -1207,6 +2595,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 31 }
                                     f'8
                                     c'8
                                     d'8 \stopGroup
@@ -1240,6 +2629,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 32 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -1272,6 +2662,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 33 }
                                     c'8
                                     d'8
                                     ef'8 \stopGroup
@@ -1305,6 +2696,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 34 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -1337,6 +2729,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 35 }
                                     a'8
                                     g'8
                                     af'8
@@ -1378,7 +2771,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_02 = design_maker.make_stage_02()
                 >>> lilypond_file = stage_02.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=False,
+                ...     cell_indices=Down,
                 ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
@@ -1417,6 +2810,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -1436,6 +2830,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -1458,6 +2853,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1491,6 +2887,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -1526,6 +2923,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -1658,6 +3056,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 5 }
                                     bf'8
                                     e'8
                                     ef'8
@@ -1716,6 +3115,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 6 }
                                     cs'8
                                     a'8
                                     g'8
@@ -1751,6 +3151,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 7 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -1784,6 +3185,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 8 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -1816,6 +3218,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 9 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -1849,6 +3252,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 10 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -1980,6 +3384,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 11 }
                                     a'8
                                     g'8
                                     af'8
@@ -2041,6 +3446,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 12 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -2074,6 +3480,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 13 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -2106,6 +3513,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 14 }
                                     b'8
                                     a'8
                                     cs'8
@@ -2141,6 +3549,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 15 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -2173,6 +3582,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 16 }
                                     a'8
                                     cs'8
                                     a'8
@@ -2307,6 +3717,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 17 }
                                     ef'8
                                     f'8
                                     c'8
@@ -2392,7 +3803,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_03 = design_maker.make_stage_03()
                 >>> lilypond_file = stage_03.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=False,
+                ...     cell_indices=Down,
                 ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
@@ -2431,6 +3842,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -2450,6 +3862,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -2472,6 +3885,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -2505,6 +3919,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -2540,6 +3955,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -2569,6 +3985,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 5 }
                                     d'8
                                     c'8
                                     f'8
@@ -2627,6 +4044,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 6 }
                                     cs'8
                                     a'8
                                     g'8
@@ -2662,6 +4080,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 7 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -2695,6 +4114,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 8 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -2727,6 +4147,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 9 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -2760,6 +4181,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 10 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -2788,6 +4210,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 11 }
                                     bf'8
                                     fs'8
                                     ef'8
@@ -2849,6 +4272,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 12 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -2882,6 +4306,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 13 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -2914,6 +4339,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 14 }
                                     b'8
                                     a'8
                                     cs'8
@@ -2949,6 +4375,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 15 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -2981,6 +4408,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 16 }
                                     a'8
                                     cs'8
                                     a'8
@@ -3012,6 +4440,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 17 }
                                     b'8
                                     af'8
                                     g'8
@@ -3080,7 +4509,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_04 = design_maker.make_stage_04()
                 >>> lilypond_file = stage_04.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=False,
+                ...     cell_indices=Down,
                 ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
@@ -3119,6 +4548,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -3138,6 +4568,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -3160,6 +4591,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -3193,6 +4625,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -3228,6 +4661,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -3264,6 +4698,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 5 }
                                     bf'8
                                     c'8
                                     g'8
@@ -3322,6 +4757,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 6 }
                                     cs'8
                                     a'8
                                     g'8
@@ -3357,6 +4793,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 7 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -3390,6 +4827,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 8 }
                                     bf'8
                                     e'8 \stopGroup
                                     s8
@@ -3422,6 +4860,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 9 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -3455,6 +4894,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 10 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -3494,6 +4934,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 11 }
                                     ef'8
                                     g'8
                                     af'8
@@ -3555,6 +4996,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 12 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -3588,6 +5030,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 13 }
                                     e'8
                                     fs'8 \stopGroup
                                     s8
@@ -3620,6 +5063,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 14 }
                                     b'8
                                     a'8
                                     cs'8
@@ -3655,6 +5099,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 15 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -3687,6 +5132,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 16 }
                                     a'8
                                     cs'8
                                     a'8
@@ -3733,6 +5179,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 17 }
                                     c'8
                                     g'8
                                     af'8
@@ -3815,7 +5262,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> lilypond_file = stage_05.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
                 ...     cell_indices=False,
-                ...     set_classes=True,
+                ...     set_classes=False,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
@@ -3842,16 +5289,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        J
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-8){0, 2, 5}"
-                                                            }
-                                                }
+                                            \bold
+                                                J
                                             }
                                     fs'8
                                     bf'8 \stopGroup
@@ -3861,16 +5300,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        K
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(5-6){0, 1, 2, 4, 6}"
-                                                            }
-                                                }
+                                            \bold
+                                                K
                                             }
                                     g'8
                                     af'8
@@ -3883,16 +5314,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        L
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(4-18){0, 2, 3, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                L
                                             }
                                     d'8
                                     ef'8
@@ -3903,28 +5326,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     g'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -1
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -1
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                K
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(5-6){0, 1, 2, 4, 6}"
-                                                            }
                                                 }
                                             }
                                     af'8
@@ -3938,28 +5353,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -1
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -1
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                L
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(4-18){0, 2, 3, 4}"
-                                                            }
                                                 }
                                             }
                                     ef'8
@@ -3971,26 +5378,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    0
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            0
+                                                    }
                                             }
                                     bf'8
                                     c'8
@@ -4004,21 +5398,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    1
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-6){0, 2, 3}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            1
+                                                    }
                                             }
                                     ef'8
                                     cs'8 \stopGroup
@@ -4028,21 +5414,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    2
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-30){0, 1, 3, 4, 6, 7}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            2
+                                                    }
                                             }
                                     fs'8
                                     af'8
@@ -4056,21 +5434,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    3
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-7){0, 2, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            3
+                                                    }
                                             }
                                     e'8
                                     fs'8 \stopGroup
@@ -4080,21 +5450,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    4
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            4
+                                                    }
                                             }
                                     d'8
                                     bf'8
@@ -4108,21 +5470,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                Q
-                                                                \sub
-                                                                    5
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(2-4){0, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        Q
+                                                        \sub
+                                                            5
+                                                    }
                                             }
                                     fs'8 \stopGroup \stopGroup
                                     s8
@@ -4131,28 +5485,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     a'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                K
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(5-6){0, 1, 2, 4, 6}"
-                                                            }
                                                 }
                                             }
                                     cs'8
@@ -4166,28 +5512,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                L
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(4-18){0, 2, 3, 4}"
-                                                            }
                                                 }
                                             }
                                     d'8
@@ -4199,28 +5537,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -4
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                J
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-8){0, 2, 5}"
-                                                            }
                                                 }
                                             }
                                     bf'8
@@ -4231,28 +5561,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -5
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                L
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(4-18){0, 2, 3, 4}"
-                                                            }
                                                 }
                                             }
                                     ef'8
@@ -4264,28 +5586,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -5
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                J
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-8){0, 2, 5}"
-                                                            }
                                                 }
                                             }
                                     e'8
@@ -4296,26 +5610,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     a'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    0
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            0
+                                                    }
                                             }
                                     ef'8
                                     g'8
@@ -4329,21 +5630,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    1
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(2-4){0, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            1
+                                                    }
                                             }
                                     bf'8
                                     d'8 \stopGroup
@@ -4353,21 +5646,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    2
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            2
+                                                    }
                                             }
                                     f'8
                                     e'8
@@ -4381,21 +5666,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    3
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-6){0, 2, 3}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            3
+                                                    }
                                             }
                                     d'8
                                     c'8 \stopGroup
@@ -4405,21 +5682,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     f'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    4
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            4
+                                                    }
                                             }
                                     e'8
                                     d'8
@@ -4433,21 +5702,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    5
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-4){0, 1, 5}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            5
+                                                    }
                                             }
                                     f'8
                                     e'8 \stopGroup
@@ -4457,21 +5718,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 3/8
                                     d'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                R
-                                                                \sub
-                                                                    6
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(2-4){0, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        R
+                                                        \sub
+                                                            6
+                                                    }
                                             }
                                     bf'8 \stopGroup \stopGroup
                                     s8
@@ -4480,28 +5733,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 5/8
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                L
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(4-18){0, 2, 3, 4}"
-                                                            }
                                                 }
                                             }
                                     d'8
@@ -4513,28 +5758,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     bf'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                J
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-8){0, 2, 5}"
-                                                            }
                                                 }
                                             }
                                     e'8
@@ -4545,28 +5782,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     af'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -8
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                K
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(5-6){0, 1, 2, 4, 6}"
-                                                            }
                                                 }
                                             }
                                     b'8
@@ -4580,28 +5809,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     e'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -9
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                J
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-8){0, 2, 5}"
-                                                            }
                                                 }
                                             }
                                     fs'8
@@ -4612,28 +5833,20 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 7/8
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \column
+                                            \concat
                                                 {
+                                                    r
+                                                    \hspace
+                                                        #-0.7
+                                                    \sub
+                                                        -9
                                                     \concat
                                                         {
-                                                            r
                                                             \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
+                                                                #0.4
+                                                            \bold
+                                                                K
                                                         }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(5-6){0, 1, 2, 4, 6}"
-                                                            }
                                                 }
                                             }
                                     a'8
@@ -4647,26 +5860,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     bf'8 \startGroup \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    0
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-48){0, 1, 4, 6, 7, 8}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            0
+                                                    }
                                             }
                                     c'8
                                     g'8
@@ -4680,21 +5880,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     ef'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    1
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-5){0, 1, 6}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            1
+                                                    }
                                             }
                                     a'8
                                     e'8 \stopGroup
@@ -4704,21 +5896,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     cs'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    2
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-36){0, 1, 3, 5, 6, 8}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            2
+                                                    }
                                             }
                                     b'8
                                     fs'8
@@ -4732,21 +5916,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     b'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    3
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-9){0, 2, 6}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            3
+                                                    }
                                             }
                                     fs'8
                                     e'8 \stopGroup
@@ -4756,21 +5932,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/1
                                     c'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    4
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(6-26){0, 1, 2, 6, 7, 8}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            4
+                                                    }
                                             }
                                     g'8
                                     af'8
@@ -4784,21 +5952,13 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                     \time 1/2
                                     fs'8 \startGroup
                                         ^ \markup {
-                                            \column
-                                                {
-                                                    \bold
-                                                        \concat
-                                                            {
-                                                                S
-                                                                \sub
-                                                                    5
-                                                            }
-                                                    \small
-                                                        \line
-                                                            {
-                                                                "SC(3-7){0, 2, 4}"
-                                                            }
-                                                }
+                                            \bold
+                                                \concat
+                                                    {
+                                                        S
+                                                        \sub
+                                                            5
+                                                    }
                                             }
                                     e'8
                                     cs'8 \stopGroup \stopGroup
@@ -4863,7 +6023,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 >>> stage_06 = design_maker.make_stage_06()
                 >>> lilypond_file = stage_06.__illustrate__(
                 ...     after_cell_spacing=Duration(1, 8),
-                ...     cell_indices=False,
+                ...     cell_indices=Down,
                 ...     set_classes=True,
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
@@ -4902,6 +6062,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 0 }
                                     fs'8
                                     bf'8 \stopGroup
                                     s8
@@ -4921,6 +6082,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 1 }
                                     g'8
                                     af'8
                                     b'8
@@ -4943,6 +6105,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 2 }
                                     d'8
                                     ef'8
                                     f'8 \stopGroup
@@ -4976,6 +6139,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 3 }
                                     af'8
                                     b'8
                                     a'8
@@ -5011,6 +6175,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 4 }
                                     ef'8
                                     f'8
                                     c'8 \stopGroup
@@ -5036,6 +6201,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 5 }
                                     bf'8
                                     c'8
                                     g'8
@@ -5064,6 +6230,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 6 }
                                     ef'8
                                     cs'8 \stopGroup
                                     s8
@@ -5101,6 +6268,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 7 }
                                     b'8
                                     cs'8
                                     bf'8
@@ -5142,6 +6310,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 8 }
                                     a'8
                                     b'8 \stopGroup
                                     s8
@@ -5179,6 +6348,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 9 }
                                     g'8
                                     ef'8
                                     f'8
@@ -5220,6 +6390,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 10 }
                                     b'8 \stopGroup
                                     s8
                                 }
@@ -5259,6 +6430,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 11 }
                                     fs'8
                                     d'8
                                     c'8
@@ -5302,6 +6474,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 12 }
                                     g'8
                                     af'8
                                     bf'8 \stopGroup
@@ -5343,6 +6516,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 13 }
                                     ef'8
                                     a'8 \stopGroup
                                     s8
@@ -5383,6 +6557,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 14 }
                                     c'8
                                     d'8
                                     a'8 \stopGroup
@@ -5424,6 +6599,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 15 }
                                     cs'8
                                     ef'8 \stopGroup
                                     s8
@@ -5461,6 +6637,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 16 }
                                     c'8
                                     e'8
                                     f'8
@@ -5502,6 +6679,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 17 }
                                     g'8
                                     b'8 \stopGroup
                                     s8
@@ -5539,6 +6717,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 18 }
                                     d'8
                                     cs'8
                                     af'8
@@ -5580,6 +6759,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 19 }
                                     b'8
                                     a'8 \stopGroup
                                     s8
@@ -5617,6 +6797,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 20 }
                                     d'8
                                     c'8
                                     cs'8
@@ -5658,6 +6839,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 21 }
                                     ef'8
                                     d'8 \stopGroup
                                     s8
@@ -5695,6 +6877,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 22 }
                                     af'8 \stopGroup
                                     s8
                                 }
@@ -5734,6 +6917,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 23 }
                                     c'8
                                     cs'8
                                     ef'8 \stopGroup
@@ -5775,6 +6959,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 24 }
                                     d'8
                                     e'8 \stopGroup
                                     s8
@@ -5815,6 +7000,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 25 }
                                     a'8
                                     g'8
                                     b'8
@@ -5858,6 +7044,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 26 }
                                     e'8
                                     af'8 \stopGroup
                                     s8
@@ -5898,6 +7085,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 27 }
                                     af'8
                                     c'8
                                     af'8
@@ -5938,6 +7126,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 28 }
                                     b'8
                                     fs'8
                                     g'8
@@ -5979,6 +7168,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 29 }
                                     af'8
                                     ef'8 \stopGroup
                                     s8
@@ -6016,6 +7206,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 30 }
                                     bf'8
                                     f'8
                                     d'8
@@ -6057,6 +7248,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 31 }
                                     f'8
                                     ef'8 \stopGroup
                                     s8
@@ -6094,6 +7286,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 32 }
                                     fs'8
                                     g'8
                                     a'8
@@ -6135,6 +7328,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                                                             }
                                                 }
                                             }
+                                        _ \markup { 33 }
                                     ef'8
                                     c'8 \stopGroup
                                     s8
@@ -6170,5 +7364,1386 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 if n != 0:
                     segment = segment.transpose(n=n)
                 new_segments.append(segment)
+        tree = baca.tools.PitchClassTree(items=new_segments)
+        return tree
+
+    def make_stage_07(self):
+        r'''Makes stage seven.
+
+        ..  container:: example
+
+            ::
+
+                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> stage_07 = design_maker.make_stage_07()
+                >>> lilypond_file = stage_07.__illustrate__(
+                ...     after_cell_spacing=Duration(1, 8),
+                ...     cell_indices=Down,
+                ...     set_classes=True,
+                ...     )
+                >>> show(lilypond_file) # doctest: +SKIP
+
+            ..  doctest::
+
+                >>> f(lilypond_file.score_block)
+                \score {
+                    \new Score \with {
+                        \override BarLine.transparent = ##t
+                        \override BarNumber.stencil = ##f
+                        \override Beam.stencil = ##f
+                        \override Flag.stencil = ##f
+                        \override HorizontalBracket.staff-padding = #4
+                        \override Stem.stencil = ##f
+                        \override TextScript.staff-padding = #2
+                        \override TimeSignature.stencil = ##f
+                        proportionalNotationDuration = #(ly:make-moment 1 14)
+                    } <<
+                        \new Staff {
+                            \new Voice \with {
+                                \consists Horizontal_bracket_engraver
+                            } {
+                                {
+                                    \time 1/2
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        J
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 0 }
+                                    fs'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        K
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 1 }
+                                    g'8
+                                    af'8
+                                    b'8
+                                    a'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        L
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 2 }
+                                    d'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -1
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 3 }
+                                    cs'8
+                                    a'8
+                                    b'8
+                                    af'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            r
+                                                            \hspace
+                                                                #-0.7
+                                                            \sub
+                                                                -1
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        L
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 4 }
+                                    ef'8
+                                    f'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    0
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 5 }
+                                    bf'8
+                                    c'8
+                                    g'8
+                                    e'8
+                                    f'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \bold
+                                                        \concat
+                                                            {
+                                                                Q
+                                                                \sub
+                                                                    1
+                                                            }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 6 }
+                                    ef'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        Q
+                                                                                        \sub
+                                                                                            2
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 7 }
+                                    e'8
+                                    af'8
+                                    bf'8
+                                    cs'8
+                                    b'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    3
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 8 }
+                                    a'8
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    cs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 9 }
+                                    g'8
+                                    ef'8
+                                    f'8
+                                    c'8
+                                    d'8
+                                    cs'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 3/8
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                Q
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 10 }
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    e'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        5
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -4
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        K
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 11 }
+                                    cs'8
+                                    c'8
+                                    d'8
+                                    fs'8
+                                    d'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 12 }
+                                    g'8
+                                    af'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                5
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -4
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 13 }
+                                    ef'8
+                                    a'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -5
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                L
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 14 }
+                                    c'8
+                                    d'8
+                                    a'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        9
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -5
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        J
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 15 }
+                                    cs'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 16 }
+                                    c'8
+                                    e'8
+                                    f'8
+                                    af'8
+                                    bf'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 17 }
+                                    g'8
+                                    b'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                9
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 18 }
+                                    d'8
+                                    cs'8
+                                    af'8
+                                    bf'8
+                                    ef'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        R
+                                                                                        \sub
+                                                                                            3
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-6){0, 2, 3}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 19 }
+                                    b'8
+                                    g'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 20 }
+                                    d'8
+                                    c'8
+                                    cs'8
+                                    f'8
+                                    g'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    bf'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-4){0, 1, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 21 }
+                                    ef'8
+                                    d'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 3/8
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                R
+                                                                                \sub
+                                                                                    6
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(2-4){0, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 22 }
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 5/8
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        10
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -8
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        L
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(4-18){0, 2, 3, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 23 }
+                                    cs'8
+                                    c'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    af'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 24 }
+                                    d'8
+                                    e'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    fs'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -8
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                K
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 25 }
+                                    a'8
+                                    g'8
+                                    b'8
+                                    g'8
+                                    f'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                10
+                                                            \concat
+                                                                {
+                                                                    r
+                                                                    \hspace
+                                                                        #-0.7
+                                                                    \sub
+                                                                        -9
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                J
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-8){0, 2, 5}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 26 }
+                                    e'8
+                                    af'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 7/8
+                                    g'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        11
+                                                                    \concat
+                                                                        {
+                                                                            r
+                                                                            \hspace
+                                                                                #-0.7
+                                                                            \sub
+                                                                                -9
+                                                                            \concat
+                                                                                {
+                                                                                    \hspace
+                                                                                        #0.4
+                                                                                    \bold
+                                                                                        K
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(5-6){0, 1, 2, 4, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 27 }
+                                    fs'8
+                                    af'8
+                                    c'8
+                                    af'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    a'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    0
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 28 }
+                                    b'8
+                                    fs'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    e'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    d'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    1
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-5){0, 1, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 29 }
+                                    af'8
+                                    ef'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    c'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    2
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 30 }
+                                    bf'8
+                                    f'8
+                                    d'8
+                                    af'8
+                                    e'8
+                                    c'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    ef'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            R
+                                                            \concat
+                                                                {
+                                                                    T
+                                                                    \hspace
+                                                                        #-0.2
+                                                                    \sub
+                                                                        11
+                                                                    \concat
+                                                                        {
+                                                                            \hspace
+                                                                                #0.4
+                                                                            \bold
+                                                                                \concat
+                                                                                    {
+                                                                                        S
+                                                                                        \sub
+                                                                                            3
+                                                                                    }
+                                                                        }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-9){0, 2, 6}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 31 }
+                                    f'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/1
+                                    b'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    4
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 32 }
+                                    fs'8
+                                    g'8
+                                    a'8
+                                    cs'8
+                                    a'8
+                                    bf'8 \stopGroup
+                                    s8
+                                }
+                                {
+                                    \time 1/2
+                                    f'8 \startGroup
+                                        ^ \markup {
+                                            \column
+                                                {
+                                                    \concat
+                                                        {
+                                                            T
+                                                            \hspace
+                                                                #-0.2
+                                                            \sub
+                                                                11
+                                                            \concat
+                                                                {
+                                                                    \hspace
+                                                                        #0.4
+                                                                    \bold
+                                                                        \concat
+                                                                            {
+                                                                                S
+                                                                                \sub
+                                                                                    5
+                                                                            }
+                                                                }
+                                                        }
+                                                    \small
+                                                        \line
+                                                            {
+                                                                "SC(3-7){0, 2, 4}"
+                                                            }
+                                                }
+                                            }
+                                        _ \markup { 33 }
+                                    ef'8
+                                    c'8 \stopGroup
+                                    s8
+                                    \bar "|."
+                                    \override Score.BarLine.transparent = ##f
+                                }
+                            }
+                        }
+                    >>
+                }
+
+        '''
+        stage_06_tree = self.make_stage_06()
+        trees = stage_06_tree.iterate(level=-2)
+        segments = []
+        for tree in trees:
+            pitch_classes = tree.get_payload()
+            segment = abjad.pitchtools.PitchClassSegment(
+                items=pitch_classes,
+                name=tree._name,
+                name_markup=tree._name_markup
+                )
+            segment._expression = tree._expression
+            segments.append(segment)
+        new_segments = []
+        for i, segment in enumerate(segments):
+            if i % 4 == 3:
+                segment = segment.retrograde()
+            new_segments.append(segment)
         tree = baca.tools.PitchClassTree(items=new_segments)
         return tree
