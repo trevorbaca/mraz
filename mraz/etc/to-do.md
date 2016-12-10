@@ -1,4 +1,5 @@
-TO-DO:
+TO-DO
+=====
 
 [[1.  Debug possible up-up markup contention at stage 5.
 
@@ -53,7 +54,8 @@ TO-DO:
 
 21. Make cover.
 
-SCOPE:
+SCOPE
+=====
 
 1.  Only two staves.
 
