@@ -11,15 +11,16 @@ FIGURES
    centroids. Figure braids input and generates crossproduct. Indexing
    crossproduct happens external to figure-maker.
 
-NOTE: Generalize RegistrationSpecifier in several different ways:
-    * centroid spacing
-    * some type of ChordalSpacingSpecifier to select degrees of compactness
-    * multistage (breakpoint) contour specification
+    NOTE: Generalize RegistrationSpecifier in several different ways:
+        * centroid spacing
+        * some type of ChordalSpacingSpecifier to select degrees of compactness
+        * multistage (breakpoint) contour specification
 
-NOTE: SimultaneitySpecifier to formalize patterned simultaneities in a single
-voice. Applies to output of registration specifier. (Intervals greater than an
-octave are possible only when output from registration specifier.) Implements
-list of 0 or more LMRSpecifier objects in parallel to acciaccatura specifiers.
+    NOTE: SimultaneitySpecifier to formalize patterned simultaneities in a
+    single voice. Applies to output of registration specifier. (Intervals
+    greater than an octave are possible only when output from registration
+    specifier.) Implements list of 0 or more LMRSpecifier objects in parallel
+    to acciaccatura specifiers.
 
 2. generalized successive transforms in a single voice] First version with six
    input parameters: list of 1 or more pitch-class sets; list of 0 or more
