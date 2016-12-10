@@ -1,15 +1,15 @@
 TO-DO
 =====
 
-[[1.  Debug possible up-up markup contention at stage 5.
+[[1.  Debug possible up-up markup contention at stage 5.]]
 
-2.  Integrate SetClass group-system tracking.
-    Integrate A/B differencing in group-1 labels.
+[[2.  Integrate SetClass group-system tracking.
+    Integrate A/B differencing in group-1 labels.]]
 
-3.  Integrate PitchClassTree set-class label-coloring.
-    Color set-classes that appear multiple times.
+[[3.  Integrate PitchClassTree set-class label-coloring.
+    Color set-classes that appear multiple times.]]
 
-4.  Merge everything back to mainline.]]
+[[4.  Merge everything back to mainline.]]
 
 5.  Describe voice-complex types.
 
