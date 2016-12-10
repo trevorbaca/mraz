@@ -154,29 +154,29 @@ FIGURES
 
                                   * MOMENTS *
 
-1. two too-long notes in the middle register. perhaps just an ascending major
+17. two too-long notes in the middle register. perhaps just an ascending major
 second. strking when they occur just after more elaborate figuration in the
 upper or lower registers.
 
-2. runaway trill. runaway double trill.
+18. runaway trill. runaway double trill.
 
-3. a section of nothing but overlapping durationcolored reiteration pedals.
+19. a section of nothing but overlapping durationcolored reiteration pedals.
 
-4. silence-delimited repeated lone bird call in extreme upper register.
+20. silence-delimited repeated lone bird call in extreme upper register.
 
                                    * GOALS *
 
-1. pervasive durationcolor.
+21. pervasive durationcolor.
 
-2. pervasive orchestration by register.
+22. pervasive orchestration by register.
 
                          * OTHER THINGS IN THE PIECE *
 
-1. tempo changes, metric modulations, accelerandi, ritardandi.
+23. tempo changes, metric modulations, accelerandi, ritardandi.
 
-2. mostly senza pedal to hear durationcolor differences as clearly as possible.
+24. mostly senza pedal to hear durationcolor differences as clearly as possible.
 
-3. strikingly large durations of single pitches and dyads (rather than of
+25. strikingly large durations of single pitches and dyads (rather than of
 very large chords or clusters).
 
-4. durationcolored reiteration pedals.
+26. durationcolored reiteration pedals.
