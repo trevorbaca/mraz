@@ -1,13 +1,4 @@
-[1: under- or over-accompanied featherbeam; 1 hand 2 voices] Featherbeam
-accompanied by slower-moving voice in same hand. First version with one-note
-accompaniment that lasts entire duration of featherbeam. Second version with
-one-note accompaniment that starts at beginning of featherbeam but stops before
-featherbeam stops. Third version with one-note accompaniment that starts
-exactly halfway through duration of featherbeam and stops when featherbeam
-stops. Generalized version that accompanies featherbeam with arbitrary even
-tuplet with first note of tuplet optionally rested.
-
-[2: centroid-spaced figures; 1 voice] First version with three input
+[1: centroid-spaced figures; 1 voice] First version with three input
 parameters: pitch-class set; ContourSpecifier (derived from
 RegistrationSpecifier but with notions of absolute octave removed to allow
 formalization of pure contour); centroid pitch. Figure contours pitch-classes
@@ -27,7 +18,7 @@ voice. Applies to output of registration specifier. (Intervals greater than an
 octave are possible only when output from registration specifier.) Implements
 list of 0 or more LMRSpecifier objects in parallel to acciaccatura specifiers.
 
-[3: generalized successive transforms in a single voice] First version with
+[2: generalized successive transforms in a single voice] First version with
 six input parameters: list of 1 or more pitch-class sets; list of 0 or more
 pitch-class transforms (including arbitrary permutation); optional repartition
 specifier; list of 1 or more registration specifiers; list of 0 or more
