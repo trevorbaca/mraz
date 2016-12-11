@@ -28,50 +28,30 @@ FIGURES
     legato. At slower tempi the effect re-colors one-note events. Process need
     not carry the affect of interpolation: discrete changes in durations of
     end-part rests will cause correspondingly discreet changes in legato.
-    Written-out legato transforms. || Second version scales legato-controlled
-    line with accelerandi or ritardandi. || Third version repartitions material
-    discontiguously throughout the piece. || Fourth version groups
-    rest-delimited notes together under phrase marks.
+    Written-out legato transforms. Second version scales legato-controlled line
+    with accelerandi or ritardandi. Third version repartitions material
+    discontiguously throughout the piece. Fourth version groups rest-delimited
+    notes together under phrase marks.
 
-4.  there's a type "span modulation" available within these legato-controlled
-    lines. observe first that each span comprises a "sounding" part and an
-    (optional) silent part; then it is clear that these legato-controlled lines
-    are just those lines in which the ratio between the sounding and silent
-    parts vary between spans. then a technique available is suddenly to shrink
-    the duration of each span down to that of only the sounding part of the
-    current span. so the name of the technique is something like '(subito) span
-    adjustment'. and duration of either the sounding part or silent part of the
-    current span can be acquired as the duration of the spans that follow
-    after. an important consequnce of this type of span adjustment is the
-    immediate installation of legato from note to note immediately after.
+4.  Subito span modulation. Written-out legato control defines two-part spans
+    comprising sounding and silent parts. Remove silent parts all at once
+    to effect a subito change to legato.
+    
+5.  Variable span / constant sound: successions of notes in which the sounding
+    part of each span is kept constant while span duration varies. possible.
 
-5.  there's another type of line available as a result of the independent
-    control of the sounding and silent parts of each span: successions of notes
-    in which the sounding part of each span is kept constant while span
-    duration is made to vary. tuplet monads make the notation of all cases
-    possible.
+6.  Attackpoint preservation with variable sounding part: repeat a series of
+    of span durations two or three times and vary the sounding durations on
+    each repetition. Preserves attackpoints and varies durationcolor.
 
-6.  an antecedent / consequent variation pattern may be derived from the
-    independent control of sounding and silent span parts described here. and
-    that is the statement of a phrase two times such that attack times repeat
-    exactly but that the sounding durations of the first phrase are
-    considerably shorter than those of the second phrase, or vice versa. attack
-    point constancy with sounding part variation.
-
-7.  first voice in running figuration over the course of approximately a wide
-    octave centered in, for example, the fourth octave. second voice introduced
+7.  First voice in running figuration over the course of approximately a wide
+    octave centered in, for example, the fourth octave. Second voice introduced
     as interrmittent conccurrent attacks also in the fourth octave though
-    always below the note currently sounding in the upper voice strictly to
-    avoid voice crossing. color variation follows from written duration
+    always below the note currently sounding in the upper voice to
+    avoid voice crossing. Durationcolor variation follows from written duration
     variation of the notes in the lower voice. upper voice is a stream and
-    lower voice is a rest-interpolated line. || second version develops
-    internally the durations of the notes of the lower voice. from coequal in
-    duration to the notes of the upper voice to three or four times the
-    duration of the notes in the upper voice and back again. || third version
-    develops internally the written durations of the notes of the upper voice
-    while keeping constant the span durations of the notes of the upper voice.
-    (denote by 'span duration' the duration of a note added to the durations of
-    the any rests that follow the note.)
+    lower voice is a rest-interpolated line. Second version develops
+    lower note durations from fast to slow to fast again.
 
 8.  there's a certain type of contour application that's interesting. a
     sinus-type contour given by [..., 0, 1, 0, -1, 0, 1, 0, -1, 0, ...]. has a
