@@ -95,3 +95,5 @@ SCOPE
 3.  No (struck) clusters.
 
 4.  Beams instead of slurs. Unless slurs are necessary.
+
+5.  Nondoubled tempi.
