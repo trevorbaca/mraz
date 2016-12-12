@@ -72,3 +72,5 @@ SCOPE
 2.  No featherfigures.
 
 3.  No (struck) clusters.
+
+4.  Beams instead of slurs. Unless slurs are necessary.

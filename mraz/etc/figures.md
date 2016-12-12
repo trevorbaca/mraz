@@ -53,71 +53,14 @@ FIGURES
     lower voice is a rest-interpolated line. Second version develops
     lower note durations from fast to slow to fast again.
 
-8.  there's a certain type of contour application that's interesting. a
-    sinus-type contour given by [..., 0, 1, 0, -1, 0, 1, 0, -1, 0, ...]. has a
-    certain feeling in the hand. can probabaly be played almost always with a
-    single hand (which means that two different versions of the figure can be
-    played against in each in the same rhythm or in contrasting rhythms).
-    probably pivots around the thumb. is relatively wide figuration but is not
-    a type of up- or down-arpeggiation. and is centered on a single octave.
-    although register interpolation can be applied and the whole thing can move
-    gradually up or down. call this something like "sinus contour".
+8.  Sinus contour given by [..., 0, 1, 0, -1, 0, 1, 0, -1, 0, ...]. Relatively
+    wide figuration that differs from up- or down-arpeggiation. Centered on a
+    single octave. Register interpolation moves the material gradually up or
+    down.
 
-9.  (legato) parallel dyads. in the simplest case parallel thirds, sixths,
-    fourths or fifths. seconds and sevenths are also interesting and absent
-    from the tonal repertory. parallelism can be diatonic, chromatic, mixed.
-    primary attraction is that the technique can be truly legato even in a
-    single hand (at least when kept to the interval of at most a sixth). notes
-    all carry equal duration and move uniformly up or uniformly down in the
-    base case. || second version snakes the train of parallels intervals both
-    up and down over the course of the figure, though always overly relatively
-    small intervals to ensure the efficacy of the legato. || third version
-    inserts some longer notes, though still tutti legato. || fourth version
-    slurs groups together. || fifth version interpolates rests after some
-    dyads. || sixth version interpolates rests after all dyads. || seventh
-    version combines from all of these together. || there's an open question as
-    to the pitch field that underlies the dyads (and therefore controls their
-    successive qualities).
-
-10. chordal up-parallelism and chordal down-parallelism. three or more pitches
-    in the parallelized chord. preferrably five or six. spacing as tight as
-    possible. can work extremely well in the very low registers.
-
-11. then there's the question of how to work with (probabaly arpeggiated)
-    ostinati. in the base case the ostinati are probabaly legato. variations
-    treat the notes of the ostinati with different values of interporlated
-    rest. may be enough just to ensure pitch continuance in one or more other
-    voices during all or part of the life an ostinato. differently pitched
-    ostinati can also overlap. there needn't be harmonic motion between the
-    ostinati if the notes of the ostinati are taken from a (tightly spaced)
-    string. if the overlapping, different-pitched ostinati comprise notes of
-    (slightly) different durations then there's the possibility of using
-    contrasting slur types to shape progression of ostinati from one to the
-    next. in this case the ostinati proceed according to two voices moving
-    slowly in a type of macrohocket. || second version adds a third voice in
-    pointillist counterpoint to the pair of voices that carry the ostinati.
-
-12. contrasting slur types. first version sets just two slur types against each
-    other. perhaps solid versus dashed. or perhaps two different types of
-    dashed slur. probably the greater the gapping in the slur type the greater
-    the degree of gapping between the notes the slur governs. first version
-    deploys the slur types in alternation. || second version overlaps
-    (momentarily) the slur types. || third version layers (continuously) the
-    slur types. || a compositional question arises immediately as to the
-    relationship between the piece's special slur types and the piece's
-    explicitly legato-controlled lines. are some (or all) of the special slur
-    types set equal to some of the legato-controlled lines? or not?
-
-13. spans with durations equal to a whole note or more but with a very short
-    sounding parts. special type of jewel that will let shine the durationcolor
-    of each span.
-
-14. trills internal to any of the special types of legato-controlled lines
-    described here.
-
-15. Extremely protracted section-length ritardando. Extremely protracted
+9.  Extremely protracted section-length ritardando. Extremely protracted
     section-length accelerando.
 
-16. Exact metric modulations between sections.
+10. Exact metric modulations between sections.
 
-18. Strikingly long single notes. Strikingly long dyads.
+11. Strikingly long single notes. Strikingly long dyads.
