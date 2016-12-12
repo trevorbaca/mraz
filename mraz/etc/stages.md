@@ -14,6 +14,10 @@ STAGES
     - 2, 3, 4
 
 6.  Voice regions: 4
+    * 3, 4
+    * 4
+    * 4, 5
+    * 1, 4, 5
 
 7.  Voice regions: 2
 
