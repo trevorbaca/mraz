@@ -19,6 +19,7 @@ MAP
     intermittent voice that reappears only every 10 - 15 seconds or even more
     intermittently. Potentially strong bringer of intermittency.
 
+
 3.  Inverse process of accumulation that proressively assembles atoms into
     chains and then chains into an underlying stream. Important: intermediate
     stages of process imply (silence-delimited) phrasal segmentation: exact
@@ -54,7 +55,11 @@ MAP
     8. r16 etc.] or [8.. r16 8.. r16 8.. r16 etc.] or [8 r8. 8 r8. 8 r8. etc.]
     These are the base carriers for durationcolor in the piece.
 
-11. Specific application of successive transforms: alternating alpha-inverse
+11. Highly intermittent durationcolored material. Spans with durations equal to
+    large durations like whole notes and with very short sounding parts.
+    Special jewel to let durationcolor shine.
+
+12. Specific application of successive transforms: alternating alpha-inverse
     chaining to identity of input pitch-class sets. Second version carries
     process to identity a second time with ongoing changes in register and
     dynamics governing both cycles. Third version carries process to identity a
