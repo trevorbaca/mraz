@@ -11,14 +11,14 @@ TO-DO
 
 [[4.  Merge everything back to mainline.]]
 
-5.  Describe voice-complex types.
+5.  Describe resonance types.
 
 6.  Make map.
 
 7.  Define segments.
     Set cells per segment.
 
-8.  Make voice-complexs starting in middle segment.
+8.  Make figures in middle segment.
 
 9.  Establish voice colors.
 
@@ -47,22 +47,43 @@ TO-DO
 
 17. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
 
-18. Build many crossproduct makers.
+18. Implement generalized successive transforms. Operates in a single voice.
+    First version with six input parameters: list of 1 or more pitch-class
+    sets; list of 0 or more pitch-class transforms including arbitrary
+    permutation; optional repartition specifier; list of 1 or more registration
+    specifiers; list of 0 or more simultaneity specifiers; list of 1 or more
+    rhythm-makers. Figure outputs crossproduct. Repartition specifier allows
+    differently sized output cells. Registration specifiers allow disjunct
+    register. Alternating alpha-inverse transforms to identity. Second version
+    carries process to identity a second time with ongoing changes in register
+    and dynamics governing both cycles.
 
-19. Generalize voice intermittency.
-    Denote by C a first cell; call C the (voice-)reference cell.
-    Denote by D a second cell; call D the (voice-)dependent cell.
-    Allow any leaf D_j in D to coincide with any leaf C_i in C.
-    Extend to allow any E_in in E to coincide with any D_i in D, recursively.
+19. Implement centroid registration. Operates in a single voice. First version
+    with three input parameters: pitch-class set; ContourSpecifier (derived
+    from RegistrationSpecifier but with notions of absolute octave removed to
+    allow formalization of pure contour); centroid pitch. Figure contours
+    pitch-classes according to contour specifier in dummy octave. Figure then
+    octave-transposes contoured figure to octave with best-match centroid.
+    generalized input: list of 1 or more pitch-class sets; list of 1 or more
+    contour specifiers; list of 1 or more centroids. Figure braids input and
+    generates crossproduct. Indexing crossproduct happens external to
+    figure-maker.
 
-20. Integrate formalizations of all three pedals.
+20. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+    0, ...] with relatively wide figuration that differs arpeggiation. Centers
+    on a single octave. Register interpolation moves the material gradually up
+    or down.
 
-21. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
+21. Build many crossproduct makers.
 
-22. Integrate resonance depressed pitches.
+22. Integrate formalizations of all three pedals.
+
+23. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
+
+24. Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
 
-23. Make cover.
+25. Make cover.
 
 SCOPE
 =====
