@@ -1,26 +1,25 @@
 TO-DO
 =====
 
-[[1.  Debug possible up-up markup contention at stage 5.]]
+1.  Define dynamics. Define intermittency.
 
-[[2.  Integrate SetClass group-system tracking.
+2.  Define segments.
+
+3.  Establish voice colors.
+
+4.  Make figures in middle segment.
+
+[[5.  Debug possible up-up markup contention at stage 5.]]
+
+[[6.  Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.]]
 
-[[3.  Integrate PitchClassTree set-class label-coloring.
+[[7.  Integrate PitchClassTree set-class label-coloring.
     Color set-classes that appear multiple times.]]
 
-[[4.  Merge everything back to mainline.]]
+[[8.  Merge everything back to mainline.]]
 
-5.  Describe resonance types.
-
-6.  Make map.
-
-7.  Define segments.
-    Set cells per segment.
-
-8.  Make figures in middle segment.
-
-9.  Establish voice colors.
+9.  Make cover.
 
 10. Equip SegmentMaker with label_voices property.
 
@@ -82,8 +81,6 @@ TO-DO
 
 24. Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
-
-25. Make cover.
 
 SCOPE
 =====
