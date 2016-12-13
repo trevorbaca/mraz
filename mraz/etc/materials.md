@@ -81,3 +81,13 @@ DURATION-COLORED LEGATO
 7.  Attackpoint preservation with variable sounding part. Span duration series
     repeats multiple times. Sounding durations differ on each repetition.
     Attackpoints stay the same while durationcolors vary.
+
+VOICE COLORS
+------------
+
+1.  red
+2.  black
+3.  blue
+4.  red
+5.  black
+6.  blue
