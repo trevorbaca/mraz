@@ -4,11 +4,11 @@ import abjad
 
 tempi = abjad.datastructuretools.TypedOrderedDict([
     (
-        90,
-        abjad.Tempo(abjad.Duration(1, 8), 90),
+        74,
+        abjad.Tempo(abjad.Duration(1, 4), 74),
         ),
     (
-        100,
-        abjad.Tempo(abjad.Duration(1, 8), 100),
+        111,
+        abjad.Tempo(abjad.Duration(1, 4), 111),
         ),
     ])
