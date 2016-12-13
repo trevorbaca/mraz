@@ -1,7 +1,7 @@
 TO-DO
 =====
 
-1.  Define dynamics. Define intermittency.
+1.  Define intermittency. Define silences. Define repetition.
 
 2.  Define segments.
 
