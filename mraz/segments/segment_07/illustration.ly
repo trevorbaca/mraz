@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #2
+        currentBarNumber = #3
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -56,23 +56,23 @@
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 e32 -\staccato
-                                \bar "|"
+                                \bar "|."
                             }
                         }
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 1/32
-                        \bar "|"
+                        \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 1/32
-                        \bar "|"
+                        \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 1/32
-                        \bar "|"
+                        \bar "|."
                     }
                 >>
             >>
