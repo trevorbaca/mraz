@@ -5,7 +5,7 @@ import mraz
 
 
 ###############################################################################
-##################################### [2] #####################################
+##################################### [7] #####################################
 ###############################################################################
 
 accumulator = mraz.tools.FigureAccumulator()
@@ -49,7 +49,7 @@ segment_maker = baca.tools.SegmentMaker(
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing_specifier=spacing_specifier,
-    stage_label_base_string='I',
+    #stage_label_base_string='I',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
     transpose_score=True,
@@ -70,3 +70,5 @@ accumulator._populate_segment_maker(segment_maker)
 #        baca.pitch.register(0, -12),
 #        ],
 #    )
+
+
