@@ -5,7 +5,7 @@ import mraz
 
 
 ###############################################################################
-############################### [introduction] ################################
+###################################### 02 #####################################
 ###############################################################################
 
 accumulator = mraz.tools.FigureAccumulator()
@@ -25,11 +25,11 @@ accumulator(
     )
 
 ###############################################################################
-############################### SEGMENT-MAKER #################################
+################################ SEGMENT-MAKER ################################
 ###############################################################################
 
 tempo_specifier = baca.tools.TempoSpecifier([
-    (1, mraz.materials.tempi[100]),
+    (1, mraz.materials.tempi[111]),
     ])
 
 spacing_specifier = baca.tools.SpacingSpecifier(
@@ -44,7 +44,7 @@ segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    rehearsal_letter='',
+    #rehearsal_letter='',
     score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
@@ -61,7 +61,7 @@ segment_maker.validate_measures_per_stage()
 accumulator._populate_segment_maker(segment_maker)
 
 ###############################################################################
-########################### CROSS-STAGE SPECIFIERS ############################
+############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
 #segment_maker.append_specifiers(

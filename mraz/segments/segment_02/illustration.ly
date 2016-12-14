@@ -1,4 +1,4 @@
-\version "2.19.51"
+\version "2.19.52"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -29,13 +29,13 @@
                                 #Y
                                 #DOWN
                                 \note-by-number
-                                    #3
+                                    #2
                                     #0
                                     #1
                         \upright
                             {
                                 =
-                                100
+                                111
                             }
                         }
                 }
