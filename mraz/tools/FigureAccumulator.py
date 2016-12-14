@@ -13,8 +13,6 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
     ..  container:: example
 
-        **Example.**
-
         ::
 
             >>> accumulator = mraz.tools.FigureAccumulator()
@@ -134,7 +132,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
         ..  container:: example
 
-            **Example 1.** Raises exception on duplicate figure name:
+            Raises exception on duplicate figure name:
 
             ::
 
@@ -146,6 +144,9 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                 ...         ),
                 ...     voice_number=1,
                 ...     )
+
+            ::
+
                 >>> accumulator(
                 ...     accumulator.delicatissimo_figure_maker(
                 ...         [[5, 6, 7, 8, 9]],
@@ -154,7 +155,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                 ...     voice_number=1,
                 ...     )
                 Traceback (most recent call last):
-                ...
+                    ...
                 Exception: duplicate figure name: ...
 
         '''
