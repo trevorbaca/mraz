@@ -45,7 +45,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -1531,7 +1531,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -1637,7 +1637,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -3020,7 +3020,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -4117,7 +4117,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -4879,7 +4879,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -5696,7 +5696,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -6408,7 +6408,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -7883,7 +7883,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
             ..  doctest::
 
-                >>> f(lilypond_file._get_first_voice())
+                >>> f(lilypond_file[Voice])
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
