@@ -1,46 +1,61 @@
 TO-DO
 =====
 
-1.  Build segment 7.
+1.  Write overlapping polyphony / imbrication example.
 
-2.  Make cover.
+2.  Implement PolyphonySpecifier with selectors.
+    Model conjunction.
 
-3.  Debug possible up-up markup contention at stage 5.
+3.  Implement ImbricationSpecifier selectors.
 
-4.  Integrate SetClass group-system tracking.
+4.  Implement ImbricationSpecifier edge-cases for unused pitches.
+
+5.  Generalize ImbricationSpeicifer to pitch-classes.
+
+6.  Implement ImbricationSpecifier skip-pitch tokens.
+
+7.  Implement ImbricationSpecifier best-spread behavior.
+
+8.  Build segment 7.
+
+9.  Make cover.
+
+10. Debug possible up-up markup contention at stage 5.
+
+11. Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-5.  Integrate PitchClassTree set-class label-coloring.
+12. Integrate PitchClassTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-6.  Merge everything back to mainline.
+13. Merge everything back to mainline.
 
-7.  Equip SegmentMaker with label_voices property.
+14. Equip SegmentMaker with label_voices property.
 
-8.  Extend selectors to work with named figures.
+15. Extend selectors to work with named figures.
 
-9.  Generalize RegistrationSpecifier:
+16. Generalize RegistrationSpecifier:
     * centroid spacing
     * ChordalSpacingSpecifier
     * multistage (breakpoint) contour specification
 
-10. Implement SimultaneitySpecifier.
+17. Implement SimultaneitySpecifier.
     Formalize patterned simultaneities in a single voice.
     Applies to output of registration specifier.
     (Octave-greater intervals possible after registration specifier.)
     Implement 0 or more LMRSpecifier objects.
 
-11. Implement RepartitionSpecifier.
+18. Implement RepartitionSpecifier.
     Pass to FigureMaker.
     Use in combination with successive transforms.
 
-12. Extend FigureMaker with optional pitch-class transforms.
+19. Extend FigureMaker with optional pitch-class transforms.
 
-13. Extend FigureMaker with optional RepartitionSpecifier.
+20. Extend FigureMaker with optional RepartitionSpecifier.
 
-14. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+21. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
 
-15. Implement generalized successive transforms. Operates in a single voice.
+22. Implement generalized successive transforms. Operates in a single voice.
     First version with six input parameters: list of 1 or more pitch-class
     sets; list of 0 or more pitch-class transforms including arbitrary
     permutation; optional repartition specifier; list of 1 or more registration
@@ -51,7 +66,7 @@ TO-DO
     carries process to identity a second time with ongoing changes in register
     and dynamics governing both cycles.
 
-16. Implement centroid registration. Operates in a single voice. First version
+23. Implement centroid registration. Operates in a single voice. First version
     with three input parameters: pitch-class set; ContourSpecifier (derived
     from RegistrationSpecifier but with notions of absolute octave removed to
     allow formalization of pure contour); centroid pitch. Figure contours
@@ -62,18 +77,18 @@ TO-DO
     generates crossproduct. Indexing crossproduct happens external to
     figure-maker.
 
-17. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+24. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
     0, ...] with relatively wide figuration that differs arpeggiation. Centers
     on a single octave. Register interpolation moves the material gradually up
     or down.
 
-18. Build many crossproduct makers.
+25. Build many crossproduct makers.
 
-19. Integrate formalizations of all three pedals.
+26. Integrate formalizations of all three pedals.
 
-20. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
+27. Extend FigureMaker with ClusterSpecifier (for resonance pitches).
 
-21. Integrate resonance depressed pitches.
+28. Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
 
 SCOPE
