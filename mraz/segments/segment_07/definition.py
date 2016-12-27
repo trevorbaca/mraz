@@ -26,7 +26,7 @@ accumulator(
         #cells.next(),
         list_,
         baca.overrides.beam_positions(6),
-        baca.pitch.register(-8),
+        #baca.pitch.register(-8),
         #baca.pitch.register(0),
         extend_beam=True,
         figure_name=1,

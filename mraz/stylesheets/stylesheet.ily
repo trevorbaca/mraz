@@ -1,7 +1,7 @@
 #(set-default-paper-size "arch a")
 #(set-global-staff-size 12)
 
-\include "/Users/trevorbaca/Documents/baca/baca/stylesheets/scheme.ily"
+\include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
 \include "default-instrument-names.ily"
 
 \paper {
