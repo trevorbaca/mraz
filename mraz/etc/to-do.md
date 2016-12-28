@@ -13,7 +13,7 @@ TO-DO
         * baca.overrides
         * baca.pitch
         * baca.rhythm
-        * baca.selector
+        * baca.select
         * baca.spanners
         * baca.wrap
     ... into staticmethod-bearing classes.
