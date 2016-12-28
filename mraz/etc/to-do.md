@@ -13,9 +13,9 @@ TO-DO
         * baca.overrides
         * baca.pitch
         * baca.rhythm
-        * baca.select_
         * baca.selector
         * baca.spanners
+        * baca.wrap
     ... into staticmethod-bearing classes.
 
 3.  Integrate formalizations of all three pedals.
