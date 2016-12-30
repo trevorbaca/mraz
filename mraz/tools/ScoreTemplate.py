@@ -60,11 +60,15 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                                 }
                                 \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                                 }
-                            >>
-                            \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                                 \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                                 }
+                            >>
+                            \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                                 \context PianoMusicVoiceFour = "Piano Music Voice 4" {
+                                }
+                                \context PianoMusicVoiceFour = "Piano Music Voice 5" {
+                                }
+                                \context PianoMusicVoiceFour = "Piano Music Voice 6" {
                                 }
                             >>
                         >>
@@ -74,53 +78,57 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
         Returns score.
         '''
         import mraz
-
         time_signature_context = self._make_time_signature_context()
-
         piano_music_voice_1 = abjad.scoretools.Voice(
             [], 
             context_name='PianoMusicVoiceOne',
             name='Piano Music Voice 1',
             )
-
         piano_music_voice_2 = abjad.scoretools.Voice(
             [], 
             context_name='PianoMusicVoiceTwo',
             name='Piano Music Voice 2',
             )
-
         piano_music_voice_3 = abjad.scoretools.Voice(
             [], 
             context_name='PianoMusicVoiceThree',
             name='Piano Music Voice 3',
             )
-
         piano_music_voice_4 = abjad.scoretools.Voice(
             [], 
             context_name='PianoMusicVoiceFour',
             name='Piano Music Voice 4',
             )
-
+        piano_music_voice_5 = abjad.scoretools.Voice(
+            [], 
+            context_name='PianoMusicVoiceFour',
+            name='Piano Music Voice 5',
+            )
+        piano_music_voice_6 = abjad.scoretools.Voice(
+            [], 
+            context_name='PianoMusicVoiceFour',
+            name='Piano Music Voice 6',
+            )
         piano_music_rh_staff = abjad.scoretools.Staff(
             [
                 piano_music_voice_1,
                 piano_music_voice_2,
+                piano_music_voice_3,
                 ], 
             context_name='PianoMusicRHStaff',
             is_simultaneous=True,
             name='Piano Music RH Staff',
             )
-
         piano_music_lh_staff = abjad.scoretools.Staff(
             [
-                piano_music_voice_3,
                 piano_music_voice_4,
+                piano_music_voice_5,
+                piano_music_voice_6,
                 ], 
             context_name='PianoMusicLHStaff',
             is_simultaneous=True,
             name='Piano Music LH Staff',
             )
-
         piano_music_staff_group = abjad.scoretools.StaffGroup(
             [
                 piano_music_rh_staff,
@@ -131,7 +139,6 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             )
         piano = mraz.materials.instruments['piano']
         abjad.attach(piano, piano_music_staff_group)
-
         music_context = abjad.scoretools.Context(
             [
                 piano_music_staff_group,
