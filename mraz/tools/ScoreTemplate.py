@@ -47,10 +47,14 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                     >>
                     \context MusicContext = "Music Context" {
                         \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
-                            %%% \set PianoStaff.instrumentName = \markup { Piano } %%%
-                            %%% \set PianoStaff.shortInstrumentName = \markup {
+                            \set PianoMusicStaffGroup.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                            \set PianoMusicStaffGroup.shortInstrumentName = \markup {
                             \null
-                            } %%%
+                            }
                             \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                                 \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                                 }
@@ -69,6 +73,7 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
 
         Returns score.
         '''
+        import mraz
 
         time_signature_context = self._make_time_signature_context()
 
@@ -124,12 +129,7 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             context_name='PianoMusicStaffGroup',
             name='Piano Music Staff Group',
             )
-
-        piano = abjad.instrumenttools.Piano(
-            instrument_name='piano',
-            short_instrument_name_markup=abjad.markuptools.Markup.null(),
-            )
-
+        piano = mraz.materials.instruments['piano']
         abjad.attach(piano, piano_music_staff_group)
 
         music_context = abjad.scoretools.Context(

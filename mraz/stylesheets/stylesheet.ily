@@ -162,6 +162,7 @@
         \type Engraver_group
         \alias Voice
         \dynamicUp
+        \voiceTwo
     }
     \context {
         \Voice

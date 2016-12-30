@@ -29,20 +29,7 @@
                     \time 6/32
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
-                    s1 * 3/16
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [7.1]
-                            }
-                        ^ \markup {
+                    s1 * 3/16 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -64,35 +51,11 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 3/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [7.2]
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
                     s1 * 3/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'01''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [7.3]
-                            }
                 }
             }
         >>
@@ -120,18 +83,6 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #3
                                 e'32 -\staccato [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        1
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Accidental.color = #magenta
                                 \once \override Beam.color = #magenta
                                 \once \override Beam.positions = #'(6 . 6)
@@ -196,18 +147,6 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16 -\staccato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        2
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Accidental.color = #magenta
                                 \once \override Beam.color = #magenta
                                 \once \override Beam.positions = #'(6 . 6)
@@ -272,18 +211,6 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #3
                                 e'32 -\staccato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        3
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Accidental.color = #magenta
                                 \once \override Beam.color = #magenta
                                 \once \override Beam.positions = #'(6 . 6)
@@ -341,7 +268,15 @@
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 3/8
+                        s1 * 1/32
+                        {
+                            {
+                                g16 -\accent [
+                                a16 -\accent
+                                b16 -\accent ]
+                            }
+                        }
+                        R1 * 5/32
                         \bar "|."
                     }
                 >>
