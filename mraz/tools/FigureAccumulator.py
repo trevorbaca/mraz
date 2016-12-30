@@ -96,6 +96,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
     __slots__ = (
         '_figure_names',
+        '_mraz_figure_maker',
         '_time_signatures',
         '_voice_name_to_selections',
         'delicatissimo_figure_maker',
@@ -106,6 +107,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         'Piano Music Voice 2',
         'Piano Music Voice 3',
         'Piano Music Voice 4',
+        'Piano Music Voice 5',
+        'Piano Music Voice 6',
         )
 
     ### INITIALIZER ###
@@ -122,6 +125,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             }
         self.delicatissimo_figure_maker = \
             mraz.tools.make_delicatissimo_figure_maker()
+        self._mraz_figure_maker = mraz.tools.make_mraz_figure_maker()
 
     ### SPECIAL METHODS ###
 
@@ -216,16 +220,22 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def voice_name_to_selections(self):
-        r'''Dictionary of selections keyed by voice name.
+    def mraz_figure_maker(self):
+        r'''Gets Mráz figure-maker.
         '''
-        return self._voice_name_to_selections
+        return self._mraz_figure_maker
 
     @property
     def time_signatures(self):
         r'''Gets time signatures.
         '''
         return self._time_signatures
+
+    @property
+    def voice_name_to_selections(self):
+        r'''Dictionary of selections keyed by voice name.
+        '''
+        return self._voice_name_to_selections
 
     ### PUBLIC METHODS ###
 

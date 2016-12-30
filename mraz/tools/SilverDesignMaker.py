@@ -2999,7 +2999,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 name=tree._name,
                 )
             segments.append(segment)
-        segments = baca.tools.helianthate(segments, -1, -1)
+        segments = baca.transforms.helianthate(segments, -1, -1)
         tree = baca.tools.PitchClassTree(items=segments)
         return tree
 
