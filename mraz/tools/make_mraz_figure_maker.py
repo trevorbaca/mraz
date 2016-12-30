@@ -466,7 +466,6 @@ def make_mraz_figure_maker():
                     counts=[1],
                     denominator=32,
                     ),
-
                 ),
             ),
         annotate_unregistered_pitches=True,

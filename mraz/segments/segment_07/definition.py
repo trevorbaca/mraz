@@ -34,6 +34,35 @@ accumulator(
     voice_number=1,
     )
 
+accumulator(
+    accumulator.mraz_figure_maker(
+        #cells.next(),
+        list_[:1],
+        baca.overrides.beam_positions(6),
+        #baca.pitch.register(-8),
+        #baca.pitch.register(0),
+        extend_beam=True,
+        figure_name=2,
+        talea__denominator=16,
+        ),
+    voice_number=1,
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        #cells.next(),
+        list_[:1],
+        baca.overrides.beam_positions(6),
+        #baca.pitch.register(-8),
+        #baca.pitch.register(0),
+        extend_beam=True,
+        figure_name=3,
+        talea__counts=[1, 2, 3],
+        talea__denominator=32,
+        ),
+    voice_number=1,
+    )
+
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
