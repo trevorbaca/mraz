@@ -122,6 +122,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             'Piano Music Voice 2': [],
             'Piano Music Voice 3': [],
             'Piano Music Voice 4': [],
+            'Piano Music Voice 5': [],
+            'Piano Music Voice 6': [],
             }
         self.delicatissimo_figure_maker = \
             mraz.tools.make_delicatissimo_figure_maker()

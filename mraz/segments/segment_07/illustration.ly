@@ -279,18 +279,34 @@
                         R1 * 5/32
                         \bar "|."
                     }
-                >>
-                \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 3/8
+                        s1 * 7/32
+                        R1 * 5/32
                         \bar "|."
                     }
+                >>
+                \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 3/16
                         s1 * 3/8
+                        s1 * 7/32
+                        R1 * 5/32
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceFour = "Piano Music Voice 5" {
+                        s1 * 3/16
                         s1 * 3/8
+                        s1 * 7/32
+                        R1 * 5/32
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceFour = "Piano Music Voice 6" {
+                        s1 * 3/16
+                        s1 * 3/8
+                        s1 * 7/32
+                        R1 * 5/32
                         \bar "|."
                     }
                 >>
