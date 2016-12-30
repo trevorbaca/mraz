@@ -9,13 +9,21 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.FigureAccumulator()
-design = mraz.tools.make_design_1(stop=22)
-assert len(design) == 22
-design = baca.tools.Cursor(source=design)
+maker = mraz.tools.SilverDesignMaker()
+design = maker()
+assert len(design) == 34, repr(len(design))
+cells = abjad.datastructuretools.CyclicTuple(design)
+assert len(cells) == 34
+cells = cells[45:59]
+assert len(cells) == 14
+cells = baca.tools.Cursor(source=cells)
+tuple_ = cells.next(count=len(cells))
+list_ = [tree.get_payload() for tree in tuple_]
+assert len(list_) == 14
 
 accumulator(
     accumulator.delicatissimo_figure_maker(
-        design.next(),
+        list_,
         baca.overrides.beam_positions(6),
         baca.pitch.register(-8),
         extend_beam=True,
