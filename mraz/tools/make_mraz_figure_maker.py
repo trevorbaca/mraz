@@ -4,7 +4,7 @@ import baca
 
 
 def make_mraz_figure_maker():
-    r'''Makes mraz figure-maker.
+    r'''Makes Mráz figure-maker.
 
     ::
 
@@ -13,7 +13,7 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        **Example 1.** Makes one-stage mraz figures:
+        Makes one-stage Mráz figures:
 
         ::
 
@@ -185,7 +185,7 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        **Example 2.** Makes multistage mraz figures:
+        Makes multistage Mráz figures:
 
         ::
 
@@ -423,9 +423,9 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        **Definition.** Formats mraz figure-maker:
+        Formats Mráz figure-maker:
 
-        >>> print(format(mraz.tools.make_mraz_figure_maker()))
+        >>> f(mraz.tools.make_mraz_figure_maker())
         baca.tools.FigureMaker(
             rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,

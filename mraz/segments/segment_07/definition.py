@@ -17,13 +17,12 @@ assert len(cells) == 34
 cells = cells[45:59]
 assert len(cells) == 14
 cells = baca.tools.Cursor(source=cells)
-
 tuple_ = cells.next(count=len(cells))
 list_ = [tree.get_payload() for tree in tuple_]
 assert len(list_) == 14
 
 accumulator(
-    accumulator.delicatissimo_figure_maker(
+    accumulator.mraz_figure_maker(
         #cells.next(),
         list_[:1],
         baca.overrides.beam_positions(6),
@@ -31,19 +30,6 @@ accumulator(
         #baca.pitch.register(0),
         extend_beam=True,
         figure_name=1,
-        ),
-    voice_number=1,
-    )
-
-accumulator(
-    accumulator.delicatissimo_figure_maker(
-        #cells.next(),
-        list_[:1],
-        baca.overrides.beam_positions(6),
-        #baca.pitch.register(-8),
-        baca.pitch.register(0),
-        extend_beam=True,
-        figure_name=2,
         ),
     voice_number=1,
     )
