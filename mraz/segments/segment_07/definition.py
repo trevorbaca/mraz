@@ -34,6 +34,9 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', list_[:1]),
         baca.overrides.beam_positions(6),
+        baca.tools.PitchSpecifier(
+            operators=[abjad.pitchtools.Transposition(n=1)],
+            ),
         extend_beam=True,
         figure_name=2,
         talea__denominator=16,
