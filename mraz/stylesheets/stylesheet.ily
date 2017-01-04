@@ -178,6 +178,20 @@
         \alias Voice
         \dynamicUp
     }
+    \context {
+        \Voice
+        \name PianoMusicVoiceFive
+        \type Engraver_group
+        \alias Voice
+        \dynamicUp
+    }
+    \context {
+        \Voice
+        \name PianoMusicVoiceSix
+        \type Engraver_group
+        \alias Voice
+        \dynamicDown
+    }
 
     \context {
         \Staff
@@ -186,6 +200,7 @@
         \alias Staff
         \accepts PianoMusicVoiceOne
         \accepts PianoMusicVoiceTwo
+        \accepts PianoMusicVoiceThree
     }
 
     \context {
@@ -193,8 +208,9 @@
         \name PianoMusicLHStaff
         \type Engraver_group
         \alias Staff
-        \accepts PianoMusicVoiceThree
         \accepts PianoMusicVoiceFour
+        \accepts PianoMusicVoiceFive
+        \accepts PianoMusicVoiceSix
     }
 
     \context {

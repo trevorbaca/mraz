@@ -1,4 +1,4 @@
-\version "2.19.53"
+\version "2.19.54"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -282,8 +282,7 @@
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 7/32
-                        R1 * 5/32
+                        s1 * 3/8
                         \bar "|."
                     }
                 >>
@@ -291,22 +290,19 @@
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 7/32
-                        R1 * 5/32
+                        s1 * 3/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 5" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 7/32
-                        R1 * 5/32
+                        s1 * 3/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 6" {
                         s1 * 3/16
                         s1 * 3/8
-                        s1 * 7/32
-                        R1 * 5/32
+                        s1 * 3/8
                         \bar "|."
                     }
                 >>
