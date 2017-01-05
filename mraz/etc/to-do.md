@@ -17,7 +17,7 @@ TO-DO
 7.  Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-8.  Integrate PitchClassTree set-class label-coloring.
+8.  Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
 9.  Merge everything back to mainline.

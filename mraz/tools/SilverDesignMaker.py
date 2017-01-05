@@ -1617,7 +1617,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             abjad.pitchtools.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
             abjad.pitchtools.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
-        cells = baca.tools.PitchClassTree(items=cells)
+        cells = baca.tools.PitchTree(items=cells)
         return cells
 
     def make_stage_01(self):
@@ -3000,7 +3000,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 )
             segments.append(segment)
         segments = baca.transforms.helianthate(segments, -1, -1)
-        tree = baca.tools.PitchClassTree(items=segments)
+        tree = baca.tools.PitchTree(items=segments)
         return tree
 
     def make_stage_02(self):
@@ -4097,7 +4097,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 name = fused_segment_names.next()[0]
                 segment = Expression.establish_equivalence(segment, name)
                 segments.append(segment)
-        tree = baca.tools.PitchClassTree(items=segments)
+        tree = baca.tools.PitchTree(items=segments)
         return tree
 
     def make_stage_03(self):
@@ -4859,7 +4859,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         for i, segment in enumerate(segments[:]):
             if 6 < len(segment):
                 segments[i] = segment.retrograde()
-        tree = baca.tools.PitchClassTree(items=segments)
+        tree = baca.tools.PitchTree(items=segments)
         return tree
 
     def make_stage_04(self):
@@ -5676,7 +5676,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     )
                 segments[i] = segment
                 j += 1
-        tree = baca.tools.PitchClassTree(items=segments)
+        tree = baca.tools.PitchTree(items=segments)
         return tree
 
     def make_stage_05(self):
@@ -6388,7 +6388,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 new_segments.append(part_segments)
             else:
                 new_segments.append(segment)
-        tree = baca.tools.PitchClassTree(items=new_segments)
+        tree = baca.tools.PitchTree(items=new_segments)
         return tree
 
     def make_stage_06(self):
@@ -7863,7 +7863,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 if n != 0:
                     segment = segment.transpose(n=n)
                 new_segments.append(segment)
-        tree = baca.tools.PitchClassTree(items=new_segments)
+        tree = baca.tools.PitchTree(items=new_segments)
         return tree
 
     def make_stage_07(self):
@@ -9364,5 +9364,5 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             if i % 4 == 3:
                 segment = segment.retrograde()
             new_segments.append(segment)
-        tree = baca.tools.PitchClassTree(items=new_segments)
+        tree = baca.tools.PitchTree(items=new_segments)
         return tree
