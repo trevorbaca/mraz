@@ -2,7 +2,6 @@ TO-DO
 =====
 
 0:
-    Audit scoretools.Leaf in Abjad and reduce.
     Audit scoretools.Leaf in Scores and remove.
     Audit __illustrate__() implementations and refactor with 'import abjad'.
     Add examples to Expression.markup() etc docstrings.
