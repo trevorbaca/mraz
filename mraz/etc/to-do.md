@@ -1,6 +1,38 @@
 TO-DO
 =====
 
+0.  Remove three Markup methods:
+        Markup.make_big_centered_page_number_markup()
+        Markup.make_blank_line()
+        Markup.make_centered_title_markup()
+        Markup.make_vertically_adjusted_composer_markup()
+    Refactor Markup.combine()
+    Port MarkupCommand pytests and then remove.
+    Change MarkupInventory to MarkupList.
+    Add MarkupList to global namespace.
+    Implement baca.Sequence.
+    Move the following from abjad.Sequence to baca.Sequence
+        degree_of_rotational_symmetry
+        is_restricted_growth_function
+        period_of_rotation
+    Extend baca.Sequence.map():
+        baca.Sequence.map(operand, indices=None)
+    Implement Abjad Identity ordinal constant.
+    Implement baca.Sequence.nest(operand, n=1)
+    Allow baca.Sequence.nest(operand, n=Identity)
+    Implement baca.Sequence.helianthate().
+    Write dot-chained PitchClassSegment-to-Sequence examples.
+    Remove some sequencetools functions in preference to Sequence methods.
+    Move PitchArray* classes from pitchtools into baca.
+    Kill expr.
+    Make iterate expressions enchain.
+    Make baca.PitchClassSegment.
+    Move pitchtools.Alpha to baca.tools.Alpha.
+    Move pitchtools.PitchClassSegment.alpha() to baca.PitchClassSegment.alpha()
+    Clean up PitchClassSegment, Sequence expression-tracking.
+    Rewrite Duplication examples in preparation for deprecation.
+    Port and remove all remaining scoretools functions.
+
 1.  Integrate formalizations of all three pedals.
 
 2.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
