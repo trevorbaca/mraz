@@ -1,15 +1,11 @@
 TO-DO
 =====
 
-0.  Remove three Markup methods:
-        Markup.make_big_centered_page_number_markup()
-        Markup.make_blank_line()
-        Markup.make_centered_title_markup()
-        Markup.make_vertically_adjusted_composer_markup()
-    Refactor Markup.combine()
-    Port MarkupCommand pytests and then remove.
-    Change MarkupInventory to MarkupList.
-    Add MarkupList to global namespace.
+0:
+    Audit scoretools.Leaf in Abjad and reduce.
+    Audit scoretools.Leaf in Scores and remove.
+    Audit __illustrate__() implementations and refactor with 'import abjad'.
+    Add examples to Expression.markup() etc docstrings.
     Implement baca.Sequence.
     Move the following from abjad.Sequence to baca.Sequence
         degree_of_rotational_symmetry
