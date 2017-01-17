@@ -1611,9 +1611,9 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         Returns pitch-class tree.
         '''
         cells = [
-            abjad.PitchClassSegment([4, 6, 10], name='J'),
-            abjad.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
-            abjad.PitchClassSegment([0, 2, 3, 5], name='L'),
+            baca.PitchClassSegment([4, 6, 10], name='J'),
+            baca.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
+            baca.PitchClassSegment([0, 2, 3, 5], name='L'),
             ]
         cells = baca.tools.PitchTree(
             item_class=abjad.NumberedPitchClass,
@@ -2995,7 +2995,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 )
@@ -4075,11 +4075,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         segments = abjad.sequence(segments)
         parts = segments.partition_by_counts(
@@ -4857,11 +4857,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         for i, segment in enumerate(segments[:]):
             if 6 < len(segment):
@@ -5664,11 +5664,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         j = 0
         for i, segment in enumerate(segments[:]):
@@ -6370,11 +6370,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for segment in segments:
@@ -6392,7 +6392,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     name_markup = [abjad.Markup(source)]
                     name_markup.append(abjad.Markup(i).sub())
                     name_markup = abjad.Markup.concat(name_markup)
-                    part_segment = abjad.PitchClassSegment(
+                    part_segment = baca.PitchClassSegment(
                         part,
                         name=name,
                         name_markup=name_markup,
@@ -7862,12 +7862,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 name_markup=tree._name_markup
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         segments = abjad.sequence(segments)
@@ -9371,12 +9371,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = abjad.PitchClassSegment(
+            segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 name=tree._name,
                 name_markup=tree._name_markup
                 )
-            segment._expression = tree._expression
+            segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for i, segment in enumerate(segments):
