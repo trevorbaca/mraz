@@ -2,8 +2,6 @@ TO-DO
 =====
 
 0:
-    Denamespace NumberedPitch*, NumberedInterval* (Abjad, scores)
-    Denamespace Pitch*Segment, Pitch*Set (Abjad, scores)
     Change sequence_ back to sequence in scores
     Implement baca.Sequence.helianthate().
     Write dot-chained PitchClassSegment-to-Sequence examples.
