@@ -1,13 +1,8 @@
 TO-DO
 =====
 
-0:
-    Implement baca.Sequence.helianthate().
+0.  Clean up PitchClassSegment, Sequence expression-tracking.
     Remove some sequencetools functions in preference to Sequence methods.
-    Move PitchArray* classes from pitchtools into baca.
-    Move pitchtools.Alpha to baca.tools.Alpha.
-    Move pitchtools.PitchClassSegment.alpha() to baca.PitchClassSegment.alpha()
-    Clean up PitchClassSegment, Sequence expression-tracking.
     Rewrite Duplication examples in preparation for deprecation.
     Make iterate expressions enchain.
 
