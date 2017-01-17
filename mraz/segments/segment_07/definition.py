@@ -35,7 +35,7 @@ accumulator(
         ('Piano Music Voice 1', list_[:1]),
         baca.overrides.beam_positions(6),
         baca.tools.ScorePitchSpecifier(
-            operators=[abjad.pitchtools.Transposition(n=1)],
+            operators=[abjad.Transposition(n=1)],
             ),
         extend_beam=True,
         figure_name=2,
