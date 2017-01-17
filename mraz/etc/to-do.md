@@ -2,17 +2,14 @@ TO-DO
 =====
 
 0:
-    Change sequence_ back to sequence in scores
     Implement baca.Sequence.helianthate().
-    Write dot-chained PitchClassSegment-to-Sequence examples.
     Remove some sequencetools functions in preference to Sequence methods.
     Move PitchArray* classes from pitchtools into baca.
-    Make iterate expressions enchain.
-    Make baca.PitchClassSegment.
     Move pitchtools.Alpha to baca.tools.Alpha.
     Move pitchtools.PitchClassSegment.alpha() to baca.PitchClassSegment.alpha()
     Clean up PitchClassSegment, Sequence expression-tracking.
     Rewrite Duplication examples in preparation for deprecation.
+    Make iterate expressions enchain.
 
 1.  Integrate formalizations of all three pedals.
 
