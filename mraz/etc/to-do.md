@@ -2,31 +2,22 @@ TO-DO
 =====
 
 0:
-    Audit scoretools.Leaf in Scores and remove.
-    Audit __illustrate__() implementations and refactor with 'import abjad'.
-    Add examples to Expression.markup() etc docstrings.
-    Implement baca.Sequence.
-    Move the following from abjad.Sequence to baca.Sequence
-        degree_of_rotational_symmetry
-        is_restricted_growth_function
-        period_of_rotation
-    Extend baca.Sequence.map():
-        baca.Sequence.map(operand, indices=None)
-    Implement Abjad Identity ordinal constant.
+    Denamespace NumberedPitch*, NumberedInterval* (Abjad, scores)
+    Denamespace Pitch*Segment, Pitch*Set (Abjad, scores)
+    Kill expr, arg, kwarg:
+        indicatortools, pitchtools, markuptools, sequencetools
     Implement baca.Sequence.nest(operand, n=1)
     Allow baca.Sequence.nest(operand, n=Identity)
     Implement baca.Sequence.helianthate().
     Write dot-chained PitchClassSegment-to-Sequence examples.
     Remove some sequencetools functions in preference to Sequence methods.
     Move PitchArray* classes from pitchtools into baca.
-    Kill expr.
     Make iterate expressions enchain.
     Make baca.PitchClassSegment.
     Move pitchtools.Alpha to baca.tools.Alpha.
     Move pitchtools.PitchClassSegment.alpha() to baca.PitchClassSegment.alpha()
     Clean up PitchClassSegment, Sequence expression-tracking.
     Rewrite Duplication examples in preparation for deprecation.
-    Port and remove all remaining scoretools functions.
 
 1.  Integrate formalizations of all three pedals.
 
