@@ -4,10 +4,7 @@ TO-DO
 0:
     Denamespace NumberedPitch*, NumberedInterval* (Abjad, scores)
     Denamespace Pitch*Segment, Pitch*Set (Abjad, scores)
-    Kill expr, arg, kwarg:
-        indicatortools, pitchtools, markuptools, sequencetools
-    Implement baca.Sequence.nest(operand, n=1)
-    Allow baca.Sequence.nest(operand, n=Identity)
+    Change sequence_ back to sequence in scores
     Implement baca.Sequence.helianthate().
     Write dot-chained PitchClassSegment-to-Sequence examples.
     Remove some sequencetools functions in preference to Sequence methods.
