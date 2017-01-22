@@ -1,10 +1,28 @@
 TO-DO
 =====
 
-0.  Clean up PitchClassSegment, Sequence expression-tracking.
-    Remove some sequencetools functions in preference to Sequence methods.
+0.  Refactor __getitem__() and __add__() markup expressions.
+    Implement Signature decorator and refactor Sequence, PitchClassSegment.
     Rewrite Duplication examples in preparation for deprecation.
     Make iterate expressions enchain.
+    Reimplement everything into Bača and Mráz.
+    Remove:
+        * sequencetools.remove_subsequence_of_weight_at_index() (port, remove)
+    Refactor all remaining sequencetools pytests as doctests.
+    Out-port sequencetools functions to baca.Sequence:
+        * sequencetools.increase_elements() (baca.Sequence)
+        * sequencetools.interlace_sequences() (imaginaire)
+        * sequencetools.iterate_sequence_boustrophedon (baca.Sequence)
+        * sequencetools.join_subsequences_by_sign_of_elements (lidercfeny)
+        * sequencetools.negate_elements() (baca.Sequence)
+        * sequencetools.overwrite_elements (baca.Sequence)
+        * sequencetools.partition_sequence_by_sign_of_elements (baca.Sequence)
+        * sequencetools.replace_elements: keep but refactor signature
+        * sequencetools.splice_between_elements() (sekka)
+        * sequencetools.sum_elements() (imaginaire)
+    Reimplement all remaining sequencetools functions as Sequence methods.
+    Replace all sequencetools functions calls in mainline with method calls.
+    Make all remaining sequencetools functions private but leave in codebase.
 
 1.  Integrate formalizations of all three pedals.
 
