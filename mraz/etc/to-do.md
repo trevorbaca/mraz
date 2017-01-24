@@ -1,8 +1,7 @@
 TO-DO
 =====
 
-0.  Implement something to collapse T1(Q = J + K) to T1Q.
-    Change formula_string_template to string_template.
+0.  Change formula_string_template to string_template.
     Change formula_markup_expression to markup_expression.
     Implement Signature decorator and refactor Sequence, PitchClassSegment.
     Reimplement everything into Bača and Mráz.
