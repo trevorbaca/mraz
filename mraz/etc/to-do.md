@@ -1,12 +1,11 @@
 TO-DO
 =====
 
-0.  Change formula_string_template to string_template.
-    Change formula_markup_expression to markup_expression.
-    Implement Signature decorator and refactor Sequence, PitchClassSegment.
+0.  Clean up signature decorator.
     Reimplement everything into Bača and Mráz.
     Out-port sequencetools functions to baca.Sequence:
         * sequencetools.iterate_sequence_boustrophedon (baca.Sequence)
+    Create ExpressionGallery class in Bača and author many examples.
     Build segment 7.
     Make iterate expressions enchain.
     Remove:
