@@ -50,22 +50,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -74,22 +63,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -101,22 +79,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -126,39 +93,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -1
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -170,35 +109,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -208,27 +123,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            0
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -241,27 +140,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            1
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -270,44 +153,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                Q
-                                                                                \sub
-                                                                                    2
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -320,40 +170,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            3
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -362,40 +183,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -408,40 +200,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -449,47 +212,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                5
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -4
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                K
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -501,43 +228,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -547,43 +242,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -592,43 +255,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -638,47 +269,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                9
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -5
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                J
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -687,40 +282,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -733,40 +299,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -775,40 +312,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 18 }
@@ -821,44 +329,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                R
-                                                                                \sub
-                                                                                    3
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 19 }
@@ -867,40 +342,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 20 }
@@ -913,40 +359,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-4){0, 1, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-4){0, 1, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 21 }
@@ -955,40 +372,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            6
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 22 }
@@ -996,47 +384,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                10
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -8
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                L
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 23 }
@@ -1046,43 +398,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 24 }
@@ -1091,43 +411,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 25 }
@@ -1139,43 +427,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 26 }
@@ -1184,47 +440,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                11
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -9
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                K
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 27 }
@@ -1236,40 +456,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 28 }
@@ -1282,40 +473,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-5){0, 1, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-5){0, 1, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 29 }
@@ -1324,40 +486,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 30 }
@@ -1370,44 +503,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                11
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                S
-                                                                                \sub
-                                                                                    3
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-9){0, 2, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-9){0, 2, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 31 }
@@ -1416,40 +516,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 32 }
@@ -1462,40 +533,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 33 }
@@ -1536,44 +578,22 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                     fs'8
                     bf'8 \stopGroup
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                     g'8
                     af'8
@@ -1583,22 +603,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                     d'8
                     ef'8
@@ -1610,11 +619,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
         Returns pitch-class tree.
         '''
-        cells = [
-            baca.PitchClassSegment([4, 6, 10], name='J'),
-            baca.PitchClassSegment([9, 7, 8, 11, 9, 1], name='K'),
-            baca.PitchClassSegment([0, 2, 3, 5], name='L'),
-            ]
+        J = baca.PitchClassSegment([4, 6, 10])
+        K = baca.PitchClassSegment([9, 7, 8, 11, 9, 1])
+        L = baca.PitchClassSegment([0, 2, 3, 5])
+        cells = [J, K, L]
         cells = baca.tools.PitchTree(
             item_class=abjad.NumberedPitchClass,
             items=cells,
@@ -1645,22 +653,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -1669,22 +666,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -1696,22 +682,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -1721,35 +696,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -1761,35 +712,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -1799,35 +726,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -1836,35 +739,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -1874,35 +753,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -1911,35 +766,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -2
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -1951,35 +782,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -1988,35 +795,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -2028,35 +811,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -3
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -2066,35 +825,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -2106,35 +841,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -2144,35 +855,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -2181,35 +868,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -2219,35 +882,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -2256,35 +895,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -2296,35 +911,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 18 }
@@ -2333,35 +924,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 19 }
@@ -2373,35 +940,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -6
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 20 }
@@ -2411,35 +954,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 21 }
@@ -2451,35 +970,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 22 }
@@ -2489,35 +984,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -7
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 23 }
@@ -2526,35 +997,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 24 }
@@ -2564,35 +1011,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 25 }
@@ -2601,35 +1024,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 26 }
@@ -2641,35 +1040,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 27 }
@@ -2678,35 +1053,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 28 }
@@ -2718,35 +1069,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 29 }
@@ -2756,35 +1083,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 30 }
@@ -2796,35 +1099,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 31 }
@@ -2834,35 +1113,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 32 }
@@ -2871,35 +1126,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 33 }
@@ -2909,35 +1140,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 34 }
@@ -2946,35 +1153,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 35 }
@@ -2995,10 +1178,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                name=tree._name,
-                )
+            segment = baca.PitchClassSegment(items=pitch_classes)
             segments.append(segment)
         segments = baca.transforms.helianthate(segments, -1, -1)
         tree = baca.tools.PitchTree(
@@ -3031,22 +1211,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -3055,22 +1224,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -3082,22 +1240,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -3107,35 +1254,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -3147,35 +1270,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -3185,137 +1284,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        Q
-                                                    =
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -1
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -2
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -2
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -2
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -3
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -3
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -3
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -3350,35 +1323,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -3390,35 +1339,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -3428,35 +1353,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -3465,35 +1366,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -3503,35 +1380,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -3540,137 +1393,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        R
-                                                    =
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -6
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -6
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -6
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -7
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -7
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -7
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -3708,35 +1435,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -3746,35 +1449,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -3783,35 +1462,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -3823,35 +1478,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -3860,35 +1491,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -3900,137 +1507,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        S
-                                                    =
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -10
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -10
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -10
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -11
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -11
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                    +
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -11
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -4075,11 +1556,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                name=tree._name,
-                )
-            segment._tracked_expression = tree._tracked_expression
+            segment = baca.PitchClassSegment(items=pitch_classes)
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         segments = abjad.sequence(segments)
         parts = segments.partition_by_counts(
@@ -4099,7 +1577,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 for segment_ in part[1:]:
                     segment += segment_
                 name = fused_segment_names.next()[0]
-                segment = Expression.establish_equivalence(segment, name)
+                #segment = Expression.establish_equivalence(segment, name)
                 segments.append(segment)
         tree = baca.tools.PitchTree(
             item_class=abjad.NumberedPitchClass,
@@ -4131,22 +1609,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -4155,22 +1622,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -4182,22 +1638,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -4207,35 +1652,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -4247,35 +1668,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -4285,31 +1682,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                Q
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -4344,35 +1721,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -4384,35 +1737,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -4422,35 +1751,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -4459,35 +1764,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -4497,35 +1778,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -4534,31 +1791,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                R
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -4596,35 +1833,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -4634,35 +1847,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -4671,35 +1860,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -4711,35 +1876,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -4748,35 +1889,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -4788,31 +1905,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                S
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -4857,11 +1954,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                name=tree._name,
-                )
-            segment._tracked_expression = tree._tracked_expression
+            segment = baca.PitchClassSegment(items=pitch_classes)
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         for i, segment in enumerate(segments[:]):
             if 6 < len(segment):
@@ -4896,22 +1990,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -4920,22 +2003,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -4947,22 +2019,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -4972,35 +2033,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -5012,35 +2049,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -5050,41 +2063,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        Q
-                                                    =
-                                                    \concat
-                                                        {
-                                                            I
-                                                            \concat
-                                                                {
-                                                                    R
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                Q
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -5119,35 +2102,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -5159,35 +2118,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -5197,35 +2132,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -4
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -5234,35 +2145,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -5272,35 +2159,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -5309,45 +2172,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        R
-                                                    =
-                                                    \concat
-                                                        {
-                                                            A
-                                                            \concat
-                                                                {
-                                                                    I
-                                                                    \concat
-                                                                        {
-                                                                            R
-                                                                            \concat
-                                                                                {
-                                                                                    \hspace
-                                                                                        #0.4
-                                                                                    \bold
-                                                                                        R
-                                                                                }
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -5385,35 +2214,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -5423,35 +2228,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -5460,35 +2241,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -8
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -5500,35 +2257,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                J
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -5537,35 +2270,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -5577,49 +2286,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \line
-                                                {
-                                                    \bold
-                                                        S
-                                                    =
-                                                    \concat
-                                                        {
-                                                            I
-                                                            \concat
-                                                                {
-                                                                    A
-                                                                    \concat
-                                                                        {
-                                                                            I
-                                                                            \concat
-                                                                                {
-                                                                                    R
-                                                                                    \concat
-                                                                                        {
-                                                                                            \hspace
-                                                                                                #0.4
-                                                                                            \bold
-                                                                                                S
-                                                                                        }
-                                                                                }
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -5664,11 +2335,8 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                name=tree._name,
-                )
-            segment._tracked_expression = tree._tracked_expression
+            segment = baca.PitchClassSegment(items=pitch_classes)
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         j = 0
         for i, segment in enumerate(segments[:]):
@@ -5679,11 +2347,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     segment = segment.invert().alpha()
                 elif j % 3 == 2:
                     segment = segment.invert().alpha().invert()
-                Expression = abjad.expressiontools.Expression
-                segment = Expression.establish_equivalence(
-                    segment,
-                    segment._name,
-                    )
+                #Expression = abjad.expressiontools.Expression
+                #segment = Expression.establish_equivalence(
+                #    segment,
+                #    segment._name,
+                #    )
                 segments[i] = segment
                 j += 1
         tree = baca.tools.PitchTree(
@@ -5715,20 +2383,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 } {
                     \time 1/8
                     e'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                J
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
                     fs'8
                     bf'8 \stopGroup
                     s8
                     a'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                K
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
                     g'8
@@ -5738,10 +2398,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     cs'8 \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                L
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
                     d'8
@@ -5749,23 +2405,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     f'8 \stopGroup
                     s8
                     g'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -1
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                K
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
                     af'8
@@ -5775,23 +2414,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     a'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -1
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                L
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
                     ef'8
@@ -5799,15 +2421,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     c'8 \stopGroup
                     s8
                     a'8 \startGroup \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            0
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
                     bf'8
@@ -5818,30 +2431,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     ef'8 \stopGroup
                     s8
                     b'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            1
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
                     ef'8
                     cs'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            2
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
                     fs'8
@@ -5852,30 +2447,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     ef'8 \stopGroup
                     s8
                     cs'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            3
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
                     e'8
                     fs'8 \stopGroup
                     s8
                     af'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            4
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
                     d'8
@@ -5886,37 +2463,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     af'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        Q
-                                        \sub
-                                            5
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
                     fs'8 \stopGroup \stopGroup
                     s8
                     a'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -4
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                K
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
                     cs'8
@@ -5926,23 +2477,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     b'8 \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -4
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                L
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
                     d'8
@@ -5950,46 +2484,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     f'8 \stopGroup
                     s8
                     fs'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -4
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                J
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
                     bf'8
                     e'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -5
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                L
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
                     ef'8
@@ -5997,38 +2497,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     c'8 \stopGroup
                     s8
                     bf'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -5
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                J
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
                     e'8
                     fs'8 \stopGroup
                     s8
                     a'8 \startGroup \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            0
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
                     ef'8
@@ -6039,30 +2513,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     fs'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            1
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
                     bf'8
                     d'8 \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            2
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 18 }
                     f'8
@@ -6073,30 +2529,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     af'8 \stopGroup
                     s8
                     bf'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            3
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 19 }
                     d'8
                     c'8 \stopGroup
                     s8
                     f'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            4
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 20 }
                     e'8
@@ -6107,52 +2545,17 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     d'8 \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            5
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 21 }
                     f'8
                     e'8 \stopGroup
                     s8
                     d'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        R
-                                        \sub
-                                            6
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 22 }
                     bf'8 \stopGroup \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -8
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                L
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 23 }
                     d'8
@@ -6160,46 +2563,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     f'8 \stopGroup
                     s8
                     bf'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -8
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                J
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 24 }
                     e'8
                     fs'8 \stopGroup
                     s8
                     af'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -8
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                K
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 25 }
                     b'8
@@ -6209,46 +2578,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     g'8 \stopGroup
                     s8
                     e'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -9
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                J
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 26 }
                     fs'8
                     bf'8 \stopGroup
                     s8
                     b'8 \startGroup
-                        ^ \markup {
-                            \concat
-                                {
-                                    r
-                                    \hspace
-                                        #-0.7
-                                    \sub
-                                        -9
-                                    \concat
-                                        {
-                                            \hspace
-                                                #0.4
-                                            \bold
-                                                K
-                                        }
-                                }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 27 }
                     a'8
@@ -6258,15 +2593,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     af'8 \stopGroup
                     s8
                     bf'8 \startGroup \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            0
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 28 }
                     c'8
@@ -6277,30 +2603,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     f'8 \stopGroup
                     s8
                     ef'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            1
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 29 }
                     a'8
                     e'8 \stopGroup
                     s8
                     cs'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            2
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 30 }
                     b'8
@@ -6311,30 +2619,12 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     cs'8 \stopGroup
                     s8
                     b'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            3
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 31 }
                     fs'8
                     e'8 \stopGroup
                     s8
                     c'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            4
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 32 }
                     g'8
@@ -6345,15 +2635,6 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     b'8 \stopGroup
                     s8
                     fs'8 \startGroup
-                        ^ \markup {
-                            \bold
-                                \concat
-                                    {
-                                        S
-                                        \sub
-                                            5
-                                    }
-                            }
                         - \tweak staff-padding #7
                         _ \markup { 33 }
                     e'8
@@ -6370,17 +2651,15 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
         segments = []
         for tree in trees:
             pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                name=tree._name,
-                )
-            segment._tracked_expression = tree._tracked_expression
+            segment = baca.PitchClassSegment(items=pitch_classes)
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for segment in segments:
             if 6 < len(segment):
                 segment = abjad.sequence(segment)
-                source = segment._name
+                #source = segment._name
+                source = '?'
                 parts = segment.partition_by_counts(
                     [7, 3],
                     cyclic=True,
@@ -6392,11 +2671,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     name_markup = [abjad.Markup(source)]
                     name_markup.append(abjad.Markup(i).sub())
                     name_markup = abjad.Markup.concat(name_markup)
-                    part_segment = baca.PitchClassSegment(
-                        part,
-                        name=name,
-                        name_markup=name_markup,
-                        )
+                    part_segment = baca.PitchClassSegment(part)
                     part_segments.append(part_segment)
                 new_segments.append(part_segments)
             else:
@@ -6431,22 +2706,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -6455,22 +2719,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -6482,22 +2735,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -6507,35 +2749,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                K
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -6547,35 +2765,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -6585,27 +2779,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            0
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -6618,27 +2796,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            1
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -6647,40 +2809,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -6693,40 +2826,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            3
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -6735,40 +2839,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -6781,40 +2856,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -6822,43 +2868,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -6870,43 +2884,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -6916,43 +2898,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -6961,43 +2911,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -7007,43 +2925,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -7052,40 +2938,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -7098,40 +2955,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -7140,40 +2968,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 18 }
@@ -7186,40 +2985,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            3
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 19 }
@@ -7228,40 +2998,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 20 }
@@ -7274,40 +3015,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-4){0, 1, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-4){0, 1, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 21 }
@@ -7316,40 +3028,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            6
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 22 }
@@ -7357,43 +3040,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 23 }
@@ -7403,43 +3054,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 24 }
@@ -7448,43 +3067,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 25 }
@@ -7496,43 +3083,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 26 }
@@ -7541,43 +3096,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 27 }
@@ -7589,40 +3112,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 28 }
@@ -7635,40 +3129,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-5){0, 1, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-5){0, 1, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 29 }
@@ -7677,40 +3142,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 30 }
@@ -7723,40 +3159,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            3
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-9){0, 2, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-9){0, 2, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 31 }
@@ -7765,40 +3172,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 32 }
@@ -7811,40 +3189,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 33 }
@@ -7864,10 +3213,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
-                name=tree._name,
-                name_markup=tree._name_markup
+                #name=tree._name,
+                #name_markup=tree._name_markup
                 )
-            segment._tracked_expression = tree._tracked_expression
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         segments = abjad.sequence(segments)
@@ -7909,22 +3258,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     \time 1/8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                J
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 0 }
@@ -7933,22 +3271,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                K
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 1 }
@@ -7960,22 +3287,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                L
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 2 }
@@ -7985,39 +3301,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -1
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 3 }
@@ -8029,35 +3317,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    r
-                                                    \hspace
-                                                        #-0.7
-                                                    \sub
-                                                        -1
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                L
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 4 }
@@ -8067,27 +3331,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            0
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 5 }
@@ -8100,27 +3348,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \bold
-                                                \concat
-                                                    {
-                                                        Q
-                                                        \sub
-                                                            1
-                                                    }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 6 }
@@ -8129,44 +3361,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                Q
-                                                                                \sub
-                                                                                    2
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 7 }
@@ -8179,40 +3378,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            3
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 8 }
@@ -8221,40 +3391,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     cs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 9 }
@@ -8267,40 +3408,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        Q
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 10 }
@@ -8308,47 +3420,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     e'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                5
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -4
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                K
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 11 }
@@ -8360,43 +3436,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 12 }
@@ -8406,43 +3450,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        5
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -4
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 13 }
@@ -8451,43 +3463,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -5
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        L
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 14 }
@@ -8497,47 +3477,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                9
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -5
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                J
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 15 }
@@ -8546,40 +3490,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 16 }
@@ -8592,40 +3507,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 17 }
@@ -8634,40 +3520,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        9
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 18 }
@@ -8680,44 +3537,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                R
-                                                                                \sub
-                                                                                    3
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-6){0, 2, 3}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-6){0, 2, 3}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 19 }
@@ -8726,40 +3550,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 20 }
@@ -8772,40 +3567,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     bf'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-4){0, 1, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-4){0, 1, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 21 }
@@ -8814,40 +3580,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        R
-                                                                        \sub
-                                                                            6
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(2-4){0, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(2-4){0, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 22 }
@@ -8855,47 +3592,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                10
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -8
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                L
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(4-18){0, 2, 3, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(4-18){0, 2, 3, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 23 }
@@ -8905,43 +3606,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     af'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 24 }
@@ -8950,43 +3619,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     fs'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -8
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        K
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 25 }
@@ -8998,43 +3635,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        10
-                                                    \concat
-                                                        {
-                                                            r
-                                                            \hspace
-                                                                #-0.7
-                                                            \sub
-                                                                -9
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        J
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-8){0, 2, 5}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-8){0, 2, 5}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 26 }
@@ -9043,47 +3648,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     g'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                11
-                                                            \concat
-                                                                {
-                                                                    r
-                                                                    \hspace
-                                                                        #-0.7
-                                                                    \sub
-                                                                        -9
-                                                                    \concat
-                                                                        {
-                                                                            \hspace
-                                                                                #0.4
-                                                                            \bold
-                                                                                K
-                                                                        }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(5-6){0, 1, 2, 4, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 27 }
@@ -9095,40 +3664,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     a'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            0
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 28 }
@@ -9141,40 +3681,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     d'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            1
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-5){0, 1, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-5){0, 1, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 29 }
@@ -9183,40 +3694,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     c'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            2
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 30 }
@@ -9229,44 +3711,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     ef'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    R
-                                                    \concat
-                                                        {
-                                                            T
-                                                            \hspace
-                                                                #-0.2
-                                                            \sub
-                                                                11
-                                                            \concat
-                                                                {
-                                                                    \hspace
-                                                                        #0.4
-                                                                    \bold
-                                                                        \concat
-                                                                            {
-                                                                                S
-                                                                                \sub
-                                                                                    3
-                                                                            }
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-9){0, 2, 6}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-9){0, 2, 6}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 31 }
@@ -9275,40 +3724,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     b'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            4
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 32 }
@@ -9321,40 +3741,11 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     s8
                     f'8 \startGroup
                         ^ \markup {
-                            \column
-                                {
-                                    \line
-                                        {
-                                            \concat
-                                                {
-                                                    T
-                                                    \hspace
-                                                        #-0.2
-                                                    \sub
-                                                        11
-                                                    \concat
-                                                        {
-                                                            \hspace
-                                                                #0.4
-                                                            \bold
-                                                                \concat
-                                                                    {
-                                                                        S
-                                                                        \sub
-                                                                            5
-                                                                    }
-                                                        }
-                                                }
-                                        }
-                                    \line
-                                        {
-                                            \small
-                                                \line
-                                                    {
-                                                        "SC(3-7){0, 2, 4}"
-                                                    }
-                                        }
-                                }
+                            \small
+                                \line
+                                    {
+                                        "SC(3-7){0, 2, 4}"
+                                    }
                             }
                         - \tweak staff-padding #7
                         _ \markup { 33 }
@@ -9373,10 +3764,10 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
-                name=tree._name,
-                name_markup=tree._name_markup
+                #name=tree._name,
+                #name_markup=tree._name_markup
                 )
-            segment._tracked_expression = tree._tracked_expression
+            #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for i, segment in enumerate(segments):
