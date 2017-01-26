@@ -1,8 +1,7 @@
 TO-DO
 =====
 
-0.  Clean up signature decorator.
-    Reimplement everything into Bača and Mráz.
+0.  Port signature and expression updates into Bača and Mráz.
     Out-port sequencetools functions to baca.Sequence:
         * sequencetools.iterate_sequence_boustrophedon (baca.Sequence)
     Create ExpressionGallery class in Bača and author many examples.
