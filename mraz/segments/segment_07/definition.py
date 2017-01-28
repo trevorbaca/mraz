@@ -30,23 +30,15 @@ accumulator(
         ),
     )
 
-
-r'''
-expressions=[
-    baca.sequence().accumulate([
-        baca.pitch_class_segment().transpose(n=3),
-        ])
-    ],
-'''
 accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', list_[:1]),
         baca.overrides.beam_positions(6),
         baca.tools.FigurePitchSpecifier(
             expressions=[
-                baca.sequence().map(
-                    baca.pitch_class_segment().transpose(n=2)
-                    ),
+                baca.sequence().accumulate([
+                    baca.pitch_class_segment().transpose(n=3),
+                    ]).join()[0]
                 ],
             ),
         extend_beam=True,
@@ -54,7 +46,6 @@ accumulator(
         talea__denominator=16,
         ),
     )
-
 
 #polyphony_specifier = baca.tools.PolyphonySpecifier(
 #    figure_maker=baca.tools.FigureMaker(
