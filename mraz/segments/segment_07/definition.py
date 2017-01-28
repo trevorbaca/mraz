@@ -47,38 +47,45 @@ accumulator(
         ),
     )
 
-#polyphony_specifier = baca.tools.PolyphonySpecifier(
-#    figure_maker=baca.tools.FigureMaker(
-#        baca.tools.ArticulationSpecifier(
-#            articulations=['>'],
-#            ),
-#        baca.tools.RhythmSpecifier(
-#            patterns=abjad.patterntools.select_all(),
-#            rhythm_maker=baca.tools.FigureRhythmMaker(
-#                talea=abjad.rhythmmakertools.Talea(
-#                    counts=[1],
-#                    denominator=16,
-#                    ),
-#                ),
-#            ),
-#        ),
-#    local_anchor_selector=baca.select.logical_tie(1),
-#    remote_anchor_selector=baca.select.logical_tie(2),
-#    )
+polyphony_specifier = baca.tools.PolyphonySpecifier(
+    figure_maker=baca.tools.FigureMaker(
+        baca.tools.ArticulationSpecifier(
+            articulations=['>'],
+            ),
+        baca.tools.RhythmSpecifier(
+            patterns=abjad.patterntools.select_all(),
+            rhythm_maker=baca.tools.FigureRhythmMaker(
+                talea=abjad.rhythmmakertools.Talea(
+                    counts=[1],
+                    denominator=16,
+                    ),
+                ),
+            ),
+        ),
+    local_anchor_selector=baca.select.logical_tie(1),
+    remote_anchor_selector=baca.select.logical_tie(2),
+    )
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        ('Piano Music Voice 1', list_[:1]),
-#        baca.overrides.beam_positions(6),
-#        extend_beam=True,
-#        figure_name=3,
-#        polyphony_map=[
-#            ('Piano Music Voice 2', [[-5, -3, -1]], polyphony_specifier),
-#            ],
-#        talea__counts=[1, 2, 3],
-#        talea__denominator=32,
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        ('Piano Music Voice 1', list_[:1]),
+        baca.overrides.beam_positions(6),
+        baca.tools.FigurePitchSpecifier(
+            expressions=[
+                baca.sequence().accumulate([
+                    baca.pitch_class_segment().transpose(n=3),
+                    ]).join()[0]
+                ],
+            ),
+        extend_beam=True,
+        figure_name=3,
+        polyphony_map=[
+            ('Piano Music Voice 2', [[-5, -3, -1]], polyphony_specifier),
+            ],
+        talea__counts=[1, 2, 3],
+        talea__denominator=32,
+        ),
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################

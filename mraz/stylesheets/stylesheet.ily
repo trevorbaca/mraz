@@ -155,6 +155,9 @@
         \override Stem.direction = #up
         %\override TextScript.outside-staff-priority = 0
         \override TextScript.outside-staff-priority = 800
+        \override MultiMeasureRest.color = #red
+        \override NoteHead.color = #red
+        \override Rest.color = #red
     }
     \context {
         \Voice
@@ -163,6 +166,9 @@
         \alias Voice
         \dynamicUp
         \voiceTwo
+        \override MultiMeasureRest.color = #blue
+        \override NoteHead.color = #blue
+        \override Rest.color = #blue
     }
     \context {
         \Voice
@@ -170,6 +176,9 @@
         \type Engraver_group
         \alias Voice
         \override Stem.direction = #down
+        \override MultiMeasureRest.color = #green
+        \override NoteHead.color = #green
+        \override Rest.color = #green
     }
     \context {
         \Voice
