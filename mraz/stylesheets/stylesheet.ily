@@ -166,9 +166,6 @@
         \alias Voice
         \dynamicUp
         \voiceTwo
-        \override MultiMeasureRest.color = #blue
-        \override NoteHead.color = #blue
-        \override Rest.color = #blue
     }
     \context {
         \Voice
@@ -176,9 +173,9 @@
         \type Engraver_group
         \alias Voice
         \override Stem.direction = #down
-        \override MultiMeasureRest.color = #green
-        \override NoteHead.color = #green
-        \override Rest.color = #green
+        \override MultiMeasureRest.color = #blue
+        \override NoteHead.color = #blue
+        \override Rest.color = #blue
     }
     \context {
         \Voice
@@ -186,6 +183,9 @@
         \type Engraver_group
         \alias Voice
         \dynamicUp
+        \override MultiMeasureRest.color = #red
+        \override NoteHead.color = #red
+        \override Rest.color = #red
     }
     \context {
         \Voice
@@ -200,6 +200,9 @@
         \type Engraver_group
         \alias Voice
         \dynamicDown
+        \override MultiMeasureRest.color = #blue
+        \override NoteHead.color = #blue
+        \override Rest.color = #blue
     }
 
     \context {

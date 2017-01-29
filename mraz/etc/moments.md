@@ -6,12 +6,12 @@ MOMENTS
     longer while effecting protracted crescendo. Then continues even longer at
     maximally loud fffff.
 
-2.  Pair of extremely notes in middle register. Strking just after elaborate
-    figuration in upper or lower registers.
+2.  Pair of extremely long notes in middle register just after elaborate
+    figuration in upper register or lower register.
 
-3.  Strikingly long single note.
+3.  Extremely long single note.
 
-4.  Strikingly long dyad.
+4.  Extremely long dyad.
 
 5.  Extremely intermittent crêtes d'ondes.
 
