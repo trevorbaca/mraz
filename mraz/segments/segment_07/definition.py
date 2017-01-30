@@ -16,12 +16,47 @@ assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
 assert len(segments) == 14, repr(len(segments))
 
+# 14 = 10 + 4
+
 accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', segments[:]),
         baca.overrides.beam_positions(6),
-        extend_beam=True,
         figure_name=0,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        ('Piano Music Voice 1', segments[:2]),
+        baca.dynamics.first_note('ff'),
+        baca.overrides.beam_positions(12),
+        baca.pitch.register(13, 19),
+        extend_beam=True,
+        figure_name=1,
+        ),
+    )
+
+inversion = baca.pitch_class_segment().invert()
+expression = baca.sequence().map(inversion)
+accumulator(
+    accumulator.mraz_figure_maker(
+        ('Piano Music Voice 1', segments[1:4]),
+        baca.pitch.register(14, 20),
+        baca.tools.FigurePitchSpecifier(
+            expressions=[expression],
+            ),
+        extend_beam=True,
+        figure_name=2,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        ('Piano Music Voice 1', segments[2:5]),
+        baca.pitch.register(15, 21),
+        #extend_beam=True,
+        figure_name=3,
         ),
     )
 
@@ -108,6 +143,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
+    ignore_duplicate_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
@@ -131,11 +167,10 @@ accumulator._populate_segment_maker(segment_maker)
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 1', baca.select.stages(1, 2)),
-#    [
-#        baca.pitch.register(0, -12),
-#        ],
-#    )
-
-
+segment_maker.append_specifiers(
+    ('Piano Music Voice 1', baca.select.stages(1, 4)),
+    [
+        baca.articulations.staccatissimi(),
+        #baca.pitch.register(0, -12),
+        ],
+    )
