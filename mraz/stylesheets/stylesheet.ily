@@ -28,14 +28,14 @@
             " "
     }
     evenHeaderMarkup = \markup \null
-    left-margin = 1\in
+    left-margin = 0.5\in
     oddFooterMarkup = \evenFooterMarkup
     oddHeaderMarkup = \markup \null
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
-    right-margin = 1\in
+    right-margin = 0.5\in
     markup-system-spacing.minimum-distance = 48
     system-system-spacing.minimum-distance = 24
     top-markup-spacing.minimum-distance = 18
@@ -100,7 +100,7 @@
         \name TimeSignatureContext
         \type Engraver_group
         \consists Axis_group_engraver
-        \consists Bar_number_engraver
+        %\consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
         \consists Time_signature_engraver
