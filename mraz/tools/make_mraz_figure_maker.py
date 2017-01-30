@@ -71,46 +71,46 @@ def make_mraz_figure_maker():
                 \context TimeSignatureContext = "Time Signature Context" <<
                     \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                         {
-                            \time 1/32
-                            R1 * 1/32
+                            \time 1/16
+                            R1 * 1/16
                         }
                         {
-                            \time 7/32
-                            R1 * 7/32
+                            \time 7/16
+                            R1 * 7/16
                         }
                         {
-                            \time 1/32
-                            R1 * 1/32
+                            \time 1/16
+                            R1 * 1/16
                         }
                         {
-                            \time 6/32
-                            R1 * 3/16
+                            \time 6/16
+                            R1 * 3/8
                         }
                     }
                     \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                         {
-                            \time 1/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 1/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 1/32
+                            s1 * 1/16
                         }
                         {
-                            \time 7/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 7/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 7/32
+                            s1 * 7/16
                         }
                         {
-                            \time 1/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 1/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 1/32
+                            s1 * 1/16
                         }
                         {
-                            \time 6/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 6/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 3/16
+                            s1 * 3/8
                         }
                     }
                 >>
@@ -121,59 +121,59 @@ def make_mraz_figure_maker():
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             {
                                 {
-                                    e'32
+                                    e'16
                                 }
                             }
                             {
                                 {
                                     \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #3
-                                    fs'32 [
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    d'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    ef'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    f'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    fs'16 [
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    d'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    ef'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    f'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    c'32 ]
+                                    c'16 ]
                                 }
                             }
                             {
                                 {
-                                    b'32
+                                    b'16
                                 }
                             }
                             {
                                 {
                                     \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #3
-                                    bf'32 [
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    g'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    c'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    bf'16 [
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    g'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    c'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    f'32 ]
+                                    f'16 ]
                                     \bar "|"
                                 }
                             }
@@ -258,36 +258,36 @@ def make_mraz_figure_maker():
                 \context TimeSignatureContext = "Time Signature Context" <<
                     \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                         {
-                            \time 9/32
-                            R1 * 9/32
+                            \time 9/16
+                            R1 * 9/16
                         }
                         {
-                            \time 14/32
-                            R1 * 7/16
+                            \time 14/16
+                            R1 * 7/8
                         }
                         {
-                            \time 8/32
-                            R1 * 1/4
+                            \time 8/16
+                            R1 * 1/2
                         }
                     }
                     \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                         {
-                            \time 9/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 9/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 9/32
+                            s1 * 9/16
                         }
                         {
-                            \time 14/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 14/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 7/16
+                            s1 * 7/8
                         }
                         {
-                            \time 8/32
-                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                            \time 8/16
+                            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                             \newSpacingSection
-                            s1 * 1/4
+                            s1 * 1/2
                         }
                     }
                 >>
@@ -299,118 +299,118 @@ def make_mraz_figure_maker():
                             {
                                 {
                                     \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #3
-                                    e'32 [
+                                    \set stemRightBeamCount = #2
+                                    e'16 [
                                 }
                                 {
                                     \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #3
-                                    fs'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    d'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    ef'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    f'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    fs'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    d'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    ef'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    f'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    c'32
+                                    c'16
                                 }
                                 {
-                                    \set stemLeftBeamCount = #3
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    b'32 ]
+                                    b'16 ]
                                 }
                             }
                             {
                                 {
                                     \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #3
-                                    fs'32 [
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    d'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    ef'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    f'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    fs'16 [
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    d'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    ef'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    f'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    c'32
+                                    c'16
                                 }
                                 {
-                                    \set stemLeftBeamCount = #3
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    b'32
+                                    b'16
                                 }
                                 {
                                     \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #3
-                                    bf'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    g'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    c'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    bf'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    g'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    c'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    f'32 ]
+                                    f'16 ]
                                 }
                             }
                             {
                                 {
                                     \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #3
-                                    b'32 [
+                                    \set stemRightBeamCount = #2
+                                    b'16 [
                                 }
                                 {
                                     \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #3
-                                    bf'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    g'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    a'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    af'32
-                                    \set stemLeftBeamCount = #3
-                                    \set stemRightBeamCount = #3
-                                    c'32
-                                    \set stemLeftBeamCount = #3
+                                    \set stemRightBeamCount = #2
+                                    bf'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    g'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    a'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    af'16
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    c'16
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    f'32
+                                    f'16
                                 }
                                 {
-                                    \set stemLeftBeamCount = #3
+                                    \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    e'32 ]
+                                    e'16 ]
                                     \bar "|"
                                 }
                             }
@@ -439,12 +439,12 @@ def make_mraz_figure_maker():
                 rhythm_maker=baca.tools.FigureRhythmMaker(
                     talea=rhythmmakertools.Talea(
                         counts=(1,),
-                        denominator=32,
+                        denominator=16,
                         ),
                     ),
                 ),
             annotate_unregistered_pitches=True,
-            preferred_denominator=32,
+            preferred_denominator=16,
             )
 
     Returns figure-maker.
@@ -453,19 +453,16 @@ def make_mraz_figure_maker():
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
             ),
-        #baca.tools.ArticulationSpecifier(
-        #    articulations=['.'],
-        #    ),
         baca.tools.RhythmSpecifier(
             patterns=abjad.patterntools.select_all(),
             rhythm_maker=baca.tools.FigureRhythmMaker(
                 talea=abjad.rhythmmakertools.Talea(
                     counts=[1],
-                    denominator=32,
+                    denominator=16,
                     ),
                 ),
             ),
         annotate_unregistered_pitches=True,
-        preferred_denominator=32,
+        preferred_denominator=16,
         )
     return figure_maker
