@@ -152,12 +152,25 @@
         \name PianoMusicVoiceOne
         \type Engraver_group
         \alias Voice
-        \override Stem.direction = #up
-        %\override TextScript.outside-staff-priority = 0
-        \override TextScript.outside-staff-priority = 800
-        \override MultiMeasureRest.color = #red
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #red
+        \override Beam.color = #red
+        \override Dots.color = #red
+        \override DynamicText.color = #red
+        \override Glissando.color = #red
+        \override Hairpin.color = #red
         \override NoteHead.color = #red
-        \override Rest.color = #red
+        \override RepeatTie.color = #red
+        \override Script.color = #red
+        \override Slur.color = #red
+        \override Stem.color = #red
+        \override StemTremolo.color = #red
+        \override TextScript.color = #red
+        \override TupletBracket.color = #red
+        \override TupletNumber.color = #red
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Stem.direction = #up
+        \override TextScript.outside-staff-priority = 800
     }
     \context {
         \Voice
@@ -172,10 +185,24 @@
         \name PianoMusicVoiceThree
         \type Engraver_group
         \alias Voice
-        \override Stem.direction = #down
-        \override MultiMeasureRest.color = #blue
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #blue
+        \override Beam.color = #blue
+        \override Dots.color = #blue
+        \override DynamicText.color = #blue
+        \override Glissando.color = #blue
+        \override Hairpin.color = #blue
         \override NoteHead.color = #blue
-        \override Rest.color = #blue
+        \override RepeatTie.color = #blue
+        \override Script.color = #blue
+        \override Slur.color = #blue
+        \override Stem.color = #blue
+        \override StemTremolo.color = #blue
+        \override TextScript.color = #blue
+        \override TupletBracket.color = #blue
+        \override TupletNumber.color = #blue
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Stem.direction = #down
     }
     \context {
         \Voice
@@ -183,10 +210,25 @@
         \type Engraver_group
         \alias Voice
         \dynamicUp
-        \override MultiMeasureRest.color = #red
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #red
+        \override Beam.color = #red
+        \override Dots.color = #red
+        \override DynamicText.color = #red
+        \override Glissando.color = #red
+        \override Hairpin.color = #red
         \override NoteHead.color = #red
-        \override Rest.color = #red
+        \override RepeatTie.color = #red
+        \override Script.color = #red
+        \override Slur.color = #red
+        \override Stem.color = #red
+        \override StemTremolo.color = #red
+        \override TextScript.color = #red
+        \override TupletBracket.color = #red
+        \override TupletNumber.color = #red
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     }
+
     \context {
         \Voice
         \name PianoMusicVoiceFive
@@ -200,9 +242,23 @@
         \type Engraver_group
         \alias Voice
         \dynamicDown
-        \override MultiMeasureRest.color = #blue
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #blue
+        \override Beam.color = #blue
+        \override Dots.color = #blue
+        \override DynamicText.color = #blue
+        \override Glissando.color = #blue
+        \override Hairpin.color = #blue
         \override NoteHead.color = #blue
-        \override Rest.color = #blue
+        \override RepeatTie.color = #blue
+        \override Script.color = #blue
+        \override Slur.color = #blue
+        \override Stem.color = #blue
+        \override StemTremolo.color = #blue
+        \override TextScript.color = #blue
+        \override TupletBracket.color = #blue
+        \override TupletNumber.color = #blue
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     }
 
     \context {
