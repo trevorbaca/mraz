@@ -74,6 +74,7 @@ accumulator(
         baca.pitch.register(13, 13+10),
         extend_beam=True,
         figure_name='RH1.1',
+        #imbrication_map={'Piano Music Voice 3': [4, 5, 23]}
         ),
     )
 
@@ -279,7 +280,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 segment_maker = baca.tools.SegmentMaker(
     allow_figure_names=True,
     ignore_duplicate_pitch_classes=True,
-    label_clock_time=True,
+    #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='',
