@@ -2,7 +2,6 @@ TO-DO
 =====
 
 1.  Build segment 7:
-    Redistribute voice 1 between voices 1 and 2, interlocking.
     Imbricate secondary (red) voice inside voice 1 (per-figure basis).
     Imbricate secondary (red) voice inside voice 1 (across all figures).
     Imbricate secondary (black) voice inside voice 2 (per-figure basis).

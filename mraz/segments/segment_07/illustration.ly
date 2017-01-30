@@ -17,56 +17,48 @@
                     R1 * 13/16
                 }
                 {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 7/16
+                    R1 * 7/16
+                }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 12/16
+                    R1 * 3/4
+                }
+                {
+                    \time 6/16
+                    R1 * 3/8
+                }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
+                {
                     \time 11/16
                     R1 * 11/16
                 }
                 {
-                    \time 10/16
-                    R1 * 5/8
-                }
-                {
-                    \time 13/16
-                    R1 * 13/16
-                }
-                {
-                    R1 * 13/16
-                }
-                {
-                    R1 * 13/16
+                    \time 3/16
+                    R1 * 3/16
                 }
                 {
                     \time 11/16
                     R1 * 11/16
                 }
                 {
-                    \time 10/16
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
-                }
-                {
-                    \time 14/16
-                    R1 * 7/8
-                }
-                {
-                    \time 10/16
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
-                }
-                {
-                    R1 * 5/8
+                    \time 3/16
+                    R1 * 3/16
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
@@ -98,14 +90,25 @@
                         }
                 }
                 {
-                    \time 11/16
+                    \time 4/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 11/16
+                    s1 * 1/4
                         ^ \markup {
                             \fontsize
                                 #-2
                                 0'01''
+                            }
+                }
+                {
+                    \time 7/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 7/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'02''
                             }
                 }
                 {
@@ -120,10 +123,10 @@
                             }
                 }
                 {
-                    \time 13/16
+                    \time 4/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 13/16
+                    s1 * 1/4
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -131,9 +134,21 @@
                             }
                 }
                 {
+                    \time 12/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 13/16
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'05''
+                            }
+                }
+                {
+                    \time 6/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/8
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -141,13 +156,14 @@
                             }
                 }
                 {
+                    \time 10/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 13/16
+                    s1 * 5/8
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'08''
+                                0'07''
                             }
                 }
                 {
@@ -158,100 +174,40 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'09''
+                                0'08''
                             }
                 }
                 {
-                    \time 10/16
+                    \time 3/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 5/8
+                    s1 * 3/16
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'11''
+                                0'10''
                             }
                 }
                 {
+                    \time 11/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 5/8
+                    s1 * 11/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'10''
+                            }
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
                         ^ \markup {
                             \fontsize
                                 #-2
                                 0'12''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'13''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'15''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'16''
-                            }
-                }
-                {
-                    \time 14/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 7/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'17''
-                            }
-                }
-                {
-                    \time 10/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'19''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'21''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'22''
                             }
                 }
             }
@@ -270,7 +226,7 @@
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         {
                             {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 e''16 \fff [
@@ -282,70 +238,71 @@
                                                 \concat
                                                     {
                                                         [
-                                                        RH.1
+                                                        RH1.1
                                                         ]
                                                     }
                                         }
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 d'''16
                             }
                             {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 f''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 bf''16
                             }
                             {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                a'''16 ]
+                                \set stemRightBeamCount = #1
+                                a'''16
                             }
                         }
+                        s1 * 1/4
                         {
                             {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
+                                \once \override Beam.positions = #'(10 . 10)
+                                \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                c'''16 [
+                                fs''16
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -354,119 +311,42 @@
                                                 \concat
                                                     {
                                                         [
-                                                        RH.2
+                                                        RH1.2
                                                         ]
                                                     }
                                         }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                fs''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 e'''16
                             }
                             {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 fs'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 e'''16 ]
                             }
                         }
+                        s1 * 5/8
                         {
                             {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                cs'''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        RH.3
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                b''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                cs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                b''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                f'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                a'''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 af''16 [
@@ -478,142 +358,31 @@
                                                 \concat
                                                     {
                                                         [
-                                                        RH.4
+                                                        RH1.3
                                                         ]
                                                     }
                                         }
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                fs''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                c'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                e'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                cs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b'''16 ]
+                                fs'''16
                             }
                         }
+                        s1 * 3/4
                         {
                             {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                g''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        RH.5
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                b''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                fs'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                a'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c''''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                d'''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                ef'''16 [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -622,36 +391,51 @@
                                                 \concat
                                                     {
                                                         [
-                                                        RH.6
+                                                        RH1.4
                                                         ]
                                                     }
                                         }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'''16
-                                \once \override Beam.positions = #'(12 . 12)
+                                \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                cs'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'''16
+                                \once \override Beam.positions = #'(10 . 10)
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs'''16
+                                \once \override Beam.positions = #'(10 . 10)
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf'''16
+                                \once \override Beam.positions = #'(10 . 10)
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                fs'''16 ]
+                            }
+                        }
+                        s1 * 5/8
+                        {
+                            {
+                                \once \override Beam.positions = #'(12 . 12)
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                e'''16 [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH1.5
+                                                        ]
+                                                    }
+                                        }
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -676,795 +460,464 @@
                                 d'''16
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                af'''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                b''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        RH.7
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                e'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                f'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                ef'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                f'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
                                 af'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                ef''''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                c'''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        RH.8
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                bf''16
                             }
                             {
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                c'''16
+                                b'''16
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                cs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                bf'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                e'''16
+                                cs''''16
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d''''16
                                 \once \override Beam.positions = #'(12 . 12)
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                af'''16 ]
+                                \set stemRightBeamCount = #1
+                                e''''16
                             }
                         }
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 7/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
+                        s1 * 3/16
+                        {
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                f'''16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH1.6
+                                                        ]
+                                                    }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                ef'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                bf'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                bf'''16 ]
+                            }
+                        }
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 13/16
+                        {
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                c''16 \fff [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.1
+                                                        ]
+                                                    }
+                                        }
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                f''16
+                            }
+                        }
+                        s1 * 7/16
+                        {
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                cs''16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.2
+                                                        ]
+                                                    }
+                                        }
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b'16
+                            }
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                cs''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b''16
+                            }
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                f''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                a''16 ]
+                            }
+                        }
+                        s1 * 1/4
+                        {
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                c''16 [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.3
+                                                        ]
+                                                    }
+                                        }
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                e''16
+                            }
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                cs''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b''16
+                            }
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                g''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b''16
+                            }
+                        }
+                        s1 * 3/8
+                        {
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                a''16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.4
+                                                        ]
+                                                    }
+                                        }
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                d'''16
+                            }
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                cs'''16 ]
+                            }
+                        }
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 13/16
+                        {
+                            {
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                f''16 [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.5
+                                                        ]
+                                                    }
+                                        }
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \once \override Beam.positions = #'(-4 . -4)
+                                \once \override Stem.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                ef'''16
+                            }
+                        }
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 7/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        \bar "|."
+                        {
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                e'''16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        RH2.6
+                                                        ]
+                                                    }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                af'''16 ]
+                                \bar "|."
+                            }
+                        }
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 13/16
+                        s1 * 1/4
+                        s1 * 7/16
+                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 3/8
+                        s1 * 5/8
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 13/16
+                        s1 * 3/16
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 7/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
+                        s1 * 3/16
                         \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 13/16
-                        s1 * 11/16
+                        s1 * 1/4
+                        s1 * 7/16
                         s1 * 5/8
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 11/16
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 3/8
                         s1 * 5/8
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs'16 \ff [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.1
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                ef''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b'16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.2
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                fs'16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                c''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                b'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.3
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                g''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                a''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.4
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                e''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                c''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                a''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                g'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.5
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                e''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                g''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                f''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.6
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                d''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                bf''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                f''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.7
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b''16 ]
-                            }
-                        }
-                        {
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                bf'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        LH.8
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                fs''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'''16
-                                \once \override Beam.positions = #'(-6 . -6)
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                af''16 ]
-                                \bar "|."
-                            }
-                        }
+                        s1 * 11/16
+                        s1 * 3/16
+                        s1 * 11/16
+                        s1 * 3/16
+                        \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 5" {
                         s1 * 13/16
+                        s1 * 1/4
+                        s1 * 7/16
+                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 3/8
+                        s1 * 5/8
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 13/16
+                        s1 * 3/16
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 7/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 6" {
                         s1 * 13/16
+                        s1 * 1/4
+                        s1 * 7/16
+                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 3/8
+                        s1 * 5/8
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 13/16
-                        s1 * 13/16
-                        s1 * 13/16
+                        s1 * 3/16
                         s1 * 11/16
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 7/8
-                        s1 * 5/8
-                        s1 * 5/8
-                        s1 * 5/8
+                        s1 * 3/16
                         \bar "|."
                     }
                 >>
