@@ -38,7 +38,7 @@ lh_segments = abjad.CyclicTuple(lh_segments)
 accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segments[:3]),
-        baca.dynamics.first_note('ff'),
+        baca.dynamics.first_note('fff'),
         baca.pitch.register(13, 13+10),
         baca.pitch.transpose_segments(n=0*7),
         #extend_beam=True,
@@ -127,6 +127,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.1',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -137,6 +138,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.2',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -147,6 +149,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.3',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -157,6 +160,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.4',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -167,6 +171,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.5',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -177,6 +182,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.6',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -187,6 +193,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.7',
         ),
+    voice_number=4,
     )
 
 accumulator(
@@ -197,6 +204,7 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.8',
         ),
+    voice_number=4,
     )
 
 #accumulator(
@@ -312,5 +320,13 @@ segment_maker.append_specifiers(
         #baca.articulations.staccatissimi(),
         baca.overrides.beam_positions(12),
         #baca.pitch.register(0, -12),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 4', baca.select.stages(1, 'end')),
+    [
+        baca.overrides.beam_positions(-6),
+        baca.overrides.stem_down(),
         ],
     )
