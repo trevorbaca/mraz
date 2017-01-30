@@ -445,10 +445,24 @@ def make_mraz_figure_maker():
                 ),
             annotate_unregistered_pitches=True,
             preferred_denominator=16,
+            voice_names=[
+                'Piano Music Voice 1',
+                'Piano Music Voice 2',
+                'Piano Music Voice 3',
+                'Piano Music Voice 4',
+                'Piano Music Voice 5',
+                'Piano Music Voice 6',
+                ],
             )
 
     Returns figure-maker.
     '''
+    import mraz
+    voice_names = []
+    dummy_score = mraz.tools.ScoreTemplate()()
+    for voice in abjad.iterate(dummy_score).by_class(abjad.Voice):
+        voice_name = voice.name
+        voice_names.append(voice_name)
     figure_maker = baca.tools.FigureMaker(
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
@@ -464,5 +478,6 @@ def make_mraz_figure_maker():
             ),
         annotate_unregistered_pitches=True,
         preferred_denominator=16,
+        voice_names=voice_names,
         )
     return figure_maker
