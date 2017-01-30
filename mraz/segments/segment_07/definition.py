@@ -67,6 +67,16 @@ assert len(rh_segment_lists) == 12
 #    remote_anchor_selector=baca.select.logical_tie(2),
 #    )
 
+accent_imbrication = baca.tools.ImbricationSpecifier(
+    baca.tools.ArticulationSpecifier(
+        articulations=['>'],
+        ),
+    abjad.rhythmmakertools.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=True,
+        ),
+    )
+
 accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segment_lists[0]),
@@ -74,7 +84,9 @@ accumulator(
         baca.pitch.register(13, 13+10),
         extend_beam=True,
         figure_name='RH1.1',
-        #imbrication_map={'Piano Music Voice 3': [4, 5, 23]}
+        imbrication_map={
+            'Piano Music Voice 3': (accent_imbrication, [17, 23]),
+            }
         ),
     )
 
@@ -94,6 +106,9 @@ accumulator(
         baca.pitch.register(15, 15+10),
         #extend_beam=True,
         figure_name='RH1.2',
+        imbrication_map={
+            'Piano Music Voice 3': (accent_imbrication, [18, 33, 28]),
+            }
         ),
     )
 
@@ -313,15 +328,15 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ('Piano Music Voice 2', baca.select.stages(1, 10)),
     [
-        baca.overrides.beam_positions(-4),
+        baca.overrides.beam_positions(-3),
         baca.overrides.stem_down(),
         ],
     )
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 4', baca.select.stages(1, Infinity)),
-#    [
-#        baca.overrides.beam_positions(-6),
-#        baca.overrides.stem_down(),
-#        ],
-#    )
+segment_maker.append_specifiers(
+    ('Piano Music Voice 3', baca.select.stages(1, 10)),
+    [
+        baca.overrides.script_down(),
+        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
+        ],
+    )
