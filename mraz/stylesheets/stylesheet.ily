@@ -169,15 +169,15 @@
         \override TupletBracket.color = #red
         \override TupletNumber.color = #red
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \dynamicUp
         \override Stem.direction = #up
-        \override TextScript.outside-staff-priority = 800
     }
     \context {
         \Voice
         \name PianoMusicVoiceTwo
         \type Engraver_group
         \alias Voice
-        \dynamicUp
+        \dynamicDown
         \voiceTwo
     }
     \context {
