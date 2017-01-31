@@ -82,11 +82,15 @@ accumulator(
         ('Piano Music Voice 1', rh_segment_lists[0]),
         baca.dynamics.first_note('fff'),
         baca.pitch.register(13, 13+10),
-        extend_beam=True,
+#        baca.tools.NestingSpecifier(
+#            time_treatments=['+1/16'],
+#            ),
+#        extend_beam=True,
         figure_name='RH1.1',
         imbrication_map={
             'Piano Music Voice 3': (accent_imbrication, [17, 23]),
-            }
+            },
+        time_treatments=[-1],
         ),
     )
 

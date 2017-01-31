@@ -13,8 +13,8 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 13/16
-                    R1 * 13/16
+                    \time 10/16
+                    R1 * 5/8
                 }
                 {
                     \time 4/16
@@ -63,10 +63,10 @@
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 13/16
+                    \time 10/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 13/16 ^ \markup {
+                    s1 * 5/8 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -164,7 +164,8 @@
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         {
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
                                 \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
@@ -202,7 +203,8 @@
                                 \set stemRightBeamCount = #1
                                 d'''16
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
                                 \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
@@ -220,7 +222,7 @@
                                 \set stemRightBeamCount = #1
                                 bf''16
                             }
-                            {
+                            \times 2/3 {
                                 \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
@@ -231,17 +233,17 @@
                                 ef'''16
                                 \once \override Beam.positions = #'(10 . 10)
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                a'''16
+                                \set stemRightBeamCount = #0
+                                a'''16 ]
                             }
                         }
                         s1 * 1/4
                         {
                             {
                                 \once \override Beam.positions = #'(10 . 10)
-                                \set stemLeftBeamCount = #1
+                                \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs''16
+                                fs''16 [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -479,7 +481,7 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 13/16
+                        s1 * 5/8
                         {
                             {
                                 \once \override Beam.positions = #'(-3 . -3)
@@ -799,7 +801,8 @@
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         {
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
                                 \once \override Beam.positions = #'(-5 . -5)
                                 s16 [
                                 \once \override Beam.positions = #'(-5 . -5)
@@ -813,7 +816,8 @@
                                 \once \override Beam.positions = #'(-5 . -5)
                                 s16
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
                                 \once \override Beam.positions = #'(-5 . -5)
                                 \once \override Script.direction = #down
                                 \set stemLeftBeamCount = #1
@@ -826,7 +830,7 @@
                                 \once \override Beam.positions = #'(-5 . -5)
                                 s16
                             }
-                            {
+                            \times 2/3 {
                                 \once \override Beam.positions = #'(-5 . -5)
                                 \once \override Script.direction = #down
                                 \set stemLeftBeamCount = #1
@@ -890,7 +894,7 @@
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 13/16
+                        s1 * 5/8
                         s1 * 1/4
                         s1 * 7/16
                         s1 * 5/8
@@ -905,7 +909,7 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 5" {
-                        s1 * 13/16
+                        s1 * 5/8
                         s1 * 1/4
                         s1 * 7/16
                         s1 * 5/8
@@ -920,7 +924,7 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 6" {
-                        s1 * 13/16
+                        s1 * 5/8
                         s1 * 1/4
                         s1 * 7/16
                         s1 * 5/8
