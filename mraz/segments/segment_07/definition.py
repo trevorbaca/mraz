@@ -82,10 +82,10 @@ accumulator(
         ('Piano Music Voice 1', rh_segment_lists[0]),
         baca.dynamics.first_note('fff'),
         baca.pitch.register(13, 13+10),
-#        baca.tools.NestingSpecifier(
-#            time_treatments=['+1/16'],
-#            ),
-#        extend_beam=True,
+        baca.tools.NestingSpecifier(
+            time_treatments=['+1/16'],
+            ),
+        extend_beam=True,
         figure_name='RH1.1',
         imbrication_map={
             'Piano Music Voice 3': (accent_imbrication, [17, 23]),
@@ -108,7 +108,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segment_lists[2]),
         baca.pitch.register(15, 15+10),
-        #extend_beam=True,
+        extend_beam=True,
         figure_name='RH1.2',
         imbrication_map={
             'Piano Music Voice 3': (accent_imbrication, [18, 33, 28]),
@@ -322,25 +322,25 @@ accumulator._populate_segment_maker(segment_maker)
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    ('Piano Music Voice 1', baca.select.stages(1, 8)),
-    [
-        baca.overrides.beam_positions(10),
-        ],
-    )
-
-segment_maker.append_specifiers(
-    ('Piano Music Voice 2', baca.select.stages(1, 10)),
-    [
-        baca.overrides.beam_positions(-3),
-        baca.overrides.stem_down(),
-        ],
-    )
-
-segment_maker.append_specifiers(
-    ('Piano Music Voice 3', baca.select.stages(1, 10)),
-    [
-        baca.overrides.script_down(),
-        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
-        ],
-    )
+#segment_maker.append_specifiers(
+#    ('Piano Music Voice 1', baca.select.stages(1, 8)),
+#    [
+#        baca.overrides.beam_positions(10),
+#        ],
+#    )
+#
+#segment_maker.append_specifiers(
+#    ('Piano Music Voice 2', baca.select.stages(1, 10)),
+#    [
+#        baca.overrides.beam_positions(-3),
+#        baca.overrides.stem_down(),
+#        ],
+#    )
+#
+#segment_maker.append_specifiers(
+#    ('Piano Music Voice 3', baca.select.stages(1, 10)),
+#    [
+#        baca.overrides.script_down(),
+#        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
+#        ],
+#    )
