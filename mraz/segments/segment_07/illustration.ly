@@ -45,10 +45,6 @@
                     R1 * 5/8
                 }
                 {
-                    \time 11/16
-                    R1 * 11/16
-                }
-                {
                     \time 3/16
                     R1 * 3/16
                 }
@@ -124,12 +120,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 5/8
-                }
-                {
-                    \time 11/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 11/16
                 }
                 {
                     \time 3/16
@@ -362,76 +352,12 @@
                             }
                         }
                         s1 * 5/8
-                        {
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                e'''16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        RH1.5
-                                                        ]
-                                                    }
-                                        }
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                a'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                af'''16
-                            }
-                            {
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b'''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d''''16
-                                \once \override Beam.positions = #'(12 . 12)
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                e''''16
-                            }
-                        }
                         s1 * 3/16
                         {
                             {
-                                \set stemLeftBeamCount = #1
+                                \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                f'''16
+                                f'''16 [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -689,7 +615,7 @@
                                                 \concat
                                                     {
                                                         [
-                                                        RH2.4
+                                                        RH1.5
                                                         ]
                                                     }
                                         }
@@ -742,7 +668,6 @@
                                 cs'''16 ]
                             }
                         }
-                        s1 * 11/16
                         {
                             {
                                 \once \override Beam.positions = #'(-3 . -3)
@@ -846,7 +771,7 @@
                                     \once \override Beam.positions = #'(-5 . -5)
                                     s16
                                     \once \override Beam.positions = #'(-5 . -5)
-                                    s16 ]
+                                    s16
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -859,12 +784,12 @@
                             \override TupletNumber.stencil = ##f
                             {
                                 \once \override Beam.positions = #'(-5 . -5)
-                                \once \override Script.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs''16 -\accent [
-                                \once \override Beam.positions = #'(-5 . -5)
                                 s16
+                                \once \override Beam.positions = #'(-5 . -5)
+                                \once \override Script.direction = #down
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf''16 -\accent
                                 \once \override Beam.positions = #'(-5 . -5)
                                 s16
                             }
@@ -898,9 +823,8 @@
                         \once \override Beam.positions = #'(-5 . -5)
                         s1 * 5/8
                         \once \override Beam.positions = #'(-5 . -5)
-                        s1 * 11/16
-                        \once \override Beam.positions = #'(-5 . -5)
                         s1 * 3/16
+                        \once \override Beam.positions = #'(-5 . -5)
                         s1 * 11/16
                         s1 * 3/16
                         \bar "|."
@@ -916,7 +840,6 @@
                         s1 * 3/4
                         s1 * 3/8
                         s1 * 5/8
-                        s1 * 11/16
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
@@ -931,7 +854,6 @@
                         s1 * 3/4
                         s1 * 3/8
                         s1 * 5/8
-                        s1 * 11/16
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
@@ -946,7 +868,6 @@
                         s1 * 3/4
                         s1 * 3/8
                         s1 * 5/8
-                        s1 * 11/16
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16

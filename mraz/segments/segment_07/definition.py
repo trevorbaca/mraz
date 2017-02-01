@@ -88,7 +88,8 @@ accumulator(
         extend_beam=True,
         figure_name='RH1.1',
         imbrication_map={
-            'Piano Music Voice 3': (accent_imbrication, [17, 23]),
+            'Piano Music Voice 3': (
+                accent_imbrication, [17, 23], True),
             },
         time_treatments=[-1],
         ),
@@ -110,7 +111,7 @@ accumulator(
         baca.pitch.register(15, 15+10),
         figure_name='RH1.2',
         imbrication_map={
-            'Piano Music Voice 3': (accent_imbrication, [18, 33, 28]),
+            'Piano Music Voice 3': (accent_imbrication, [22, 33, 28]),
             }
         ),
     )
