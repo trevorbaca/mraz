@@ -108,7 +108,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segment_lists[2]),
         baca.pitch.register(15, 15+10),
-        extend_beam=True,
         figure_name='RH1.2',
         imbrication_map={
             'Piano Music Voice 3': (accent_imbrication, [18, 33, 28]),
@@ -120,7 +119,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 2', rh_segment_lists[3]),
         baca.pitch.register(9, 9+10),
-        #extend_beam=True,
         figure_name='RH2.2',
         ),
     )
@@ -147,7 +145,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segment_lists[6]),
         baca.pitch.register(19, 19+10),
-        #extend_beam=True,
         figure_name='RH1.4',
         ),
     )
@@ -156,17 +153,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 2', rh_segment_lists[7]),
         baca.pitch.register(13, 13+10),
-        #extend_beam=True,
-        figure_name='RH2.4',
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        ('Piano Music Voice 1', rh_segment_lists[8]),
-        baca.overrides.beam_positions(12),
-        baca.pitch.register(21, 21+10),
-        extend_beam=True,
         figure_name='RH1.5',
         ),
     )
@@ -184,7 +170,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 1', rh_segment_lists[10]),
         baca.pitch.register(23, 23+10),
-        #extend_beam=True,
         figure_name='RH1.6',
         ),
     )
@@ -193,7 +178,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         ('Piano Music Voice 2', rh_segment_lists[11]),
         baca.pitch.register(17, 17+10),
-        #extend_beam=True,
         figure_name='RH2.6',
         ),
     )
@@ -322,25 +306,25 @@ accumulator._populate_segment_maker(segment_maker)
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 1', baca.select.stages(1, 8)),
-#    [
-#        baca.overrides.beam_positions(10),
-#        ],
-#    )
-#
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 2', baca.select.stages(1, 10)),
-#    [
-#        baca.overrides.beam_positions(-3),
-#        baca.overrides.stem_down(),
-#        ],
-#    )
-#
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 3', baca.select.stages(1, 10)),
-#    [
-#        baca.overrides.script_down(),
-#        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
-#        ],
-#    )
+segment_maker.append_specifiers(
+    ('Piano Music Voice 1', baca.select.stages(1, 8)),
+    [
+        baca.overrides.beam_positions(10),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 2', baca.select.stages(1, 10)),
+    [
+        baca.overrides.beam_positions(-3),
+        baca.overrides.stem_down(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 3', baca.select.stages(1, 10)),
+    [
+        baca.overrides.script_down(),
+        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
+        ],
+    )
