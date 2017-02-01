@@ -131,8 +131,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, figure_output_triple, voice_number=1):
-        r'''Calls figure-accumulator on figure-maker output.
+    def __call__(self, figure_contribution, voice_number=1):
+        r'''Calls figure-accumulator on `figure_contribution`.
 
         ..  container:: example
 
@@ -170,8 +170,10 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             message = 'unknown voice name: {!r}.'
             message = message.format(voice_name)
             raise Exception(message)
-        selection, time_signature, state_manifest = figure_output_triple
-        if isinstance(selection, abjad.selectiontools.Selection):
+        #selection, time_signature, state_manifest = figure_output_triple
+        if isinstance(figure_contribution.selections, list):
+            assert len(figure_contribution.selections) == 1
+            selection = figure_contribution.selections[0]
             duration = selection.get_duration()
             items = self.voice_name_to_selections.items()
             for voice_name_, selections_ in items:
@@ -183,7 +185,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                     abjad.attach(multiplier, skip)
                     selection_ = abjad.selectiontools.Selection([skip])
                     selections_.append(selection_)
-            self.time_signatures.append(time_signature)
+            self.time_signatures.append(figure_contribution.time_signature)
             figure_name = self._get_figure_name(selection)
             if figure_name is not None:
                 if figure_name in self._figure_names:
@@ -192,8 +194,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                     raise Exception(message)
                 self._figure_names.append(figure_name)
         else:
-            assert isinstance(selection, dict), repr(selection)
-            voice_name_to_selection_list = selection
+            assert isinstance(figure_contribution.selections, dict)
+            voice_name_to_selection_list = figure_contribution.selections
             first_selection_list = voice_name_to_selection_list.values()
             first_selection_list = list(first_selection_list)[0]
             durations = [_.get_duration() for _ in first_selection_list]
@@ -209,8 +211,8 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                     abjad.attach(multiplier, skip)
                     selection_ = abjad.selectiontools.Selection([skip])
                     selections_.append(selection_)
-            self.time_signatures.append(time_signature)
-            figure_name = self._get_figure_name(selection)
+            self.time_signatures.append(figure_contribution.time_signature)
+            figure_name = self._get_figure_name(figure_contribution.selections)
             if figure_name is not None:
                 if figure_name in self._figure_names:
                     message = 'duplicate figure name: {}.'

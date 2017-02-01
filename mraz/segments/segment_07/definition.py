@@ -183,19 +183,24 @@ accumulator(
         ),
     )
 
-#### LH (1) ###
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        ('Piano Music Voice 4', lh_segments[:2]),
-#        baca.dynamics.first_note('ff'),
-#        baca.pitch.register(1, 1+10),
-#        baca.pitch.transpose_segments(n=0*7),
-#        #extend_beam=True,
-#        figure_name='LH.1',
-#        ),
-#    )
-#
+### LH (1) ###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        ('Piano Music Voice 4', lh_segments[:2]),
+        baca.dynamics.first_note('ff'),
+        baca.pitch.register(1, 1+10),
+        baca.pitch.transpose_segments(n=0*7),
+        #extend_beam=True,
+        figure_name='LH.1',
+        local_anchor_selector=baca.select.logical_tie(7),
+        remote_anchor_selector=(
+            'Piano Music Voice 2',
+            baca.select.logical_tie(0),
+            ),
+        ),
+    )
+
 #accumulator(
 #    accumulator.mraz_figure_maker(
 #        ('Piano Music Voice 4', lh_segments[1:3]),

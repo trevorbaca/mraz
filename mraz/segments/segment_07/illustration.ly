@@ -56,6 +56,10 @@
                     \time 3/16
                     R1 * 3/16
                 }
+                {
+                    \time 10/16
+                    R1 * 5/8
+                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
@@ -138,6 +142,12 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 3/16
+                }
+                {
+                    \time 10/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 5/8
                 }
             }
         >>
@@ -407,6 +417,7 @@
                             }
                         }
                         s1 * 3/16
+                        s1 * 5/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
@@ -723,9 +734,10 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16 ]
-                                \bar "|."
                             }
                         }
+                        s1 * 5/8
+                        \bar "|."
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         {
@@ -827,6 +839,7 @@
                         \once \override Beam.positions = #'(-5 . -5)
                         s1 * 11/16
                         s1 * 3/16
+                        s1 * 5/8
                         \bar "|."
                     }
                 >>
@@ -843,7 +856,55 @@
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
-                        \bar "|."
+                        {
+                            {
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                fs'16 \ff [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \with-color
+                                                #darkgreen
+                                                \concat
+                                                    {
+                                                        [
+                                                        LH.1
+                                                        ]
+                                                    }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                ef''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                b'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                b'16 ]
+                                \bar "|."
+                            }
+                        }
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 5" {
                         s1 * 11/16
@@ -857,6 +918,7 @@
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
+                        s1 * 5/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 6" {
@@ -871,6 +933,7 @@
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
+                        s1 * 5/8
                         \bar "|."
                     }
                 >>
