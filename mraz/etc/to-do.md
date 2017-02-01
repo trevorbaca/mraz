@@ -24,49 +24,51 @@ TO-DO
 
 5.  Make iterate expressions enchain.
 
-6.  Integrate formalizations of all three pedals.
+6.  Turn imbrication map into ImbricationMap class.
 
-7.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
+7.  Integrate formalizations of all three pedals.
 
-8.  Integrate resonance depressed pitches.
+8.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
+
+9.  Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
 
-9.  Debug possible up-up markup contention at stage 5.
+10. Debug possible up-up markup contention at stage 5.
 
-10. Integrate SetClass group-system tracking.
+11. Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-11. Integrate PitchTree set-class label-coloring.
+12. Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-12. Merge everything back to mainline.
+13. Merge everything back to mainline.
 
-13. Equip SegmentMaker with label_voices property.
+14. Equip SegmentMaker with label_voices property.
 
-14. Extend selectors to work with named figures.
+15. Extend selectors to work with named figures.
 
-13. Generalize RegistrationSpecifier:
+14. Generalize RegistrationSpecifier:
     * centroid spacing
     * ChordalSpacingSpecifier
     * multistage (breakpoint) contour specification
 
-14. Implement SimultaneitySpecifier.
+15. Implement SimultaneitySpecifier.
     Formalize patterned simultaneities in a single voice.
     Applies to output of registration specifier.
     (Octave-greater intervals possible after registration specifier.)
     Implement 0 or more LMRSpecifier objects.
 
-15. Implement RepartitionSpecifier.
+16. Implement RepartitionSpecifier.
     Pass to FigureMaker.
     Use in combination with successive transforms.
 
-16. Extend FigureMaker with optional pitch-class transforms.
+17. Extend FigureMaker with optional pitch-class transforms.
 
-17. Extend FigureMaker with optional RepartitionSpecifier.
+18. Extend FigureMaker with optional RepartitionSpecifier.
 
-18. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+19. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
 
-19. Implement generalized successive transforms. Operates in a single voice.
+20. Implement generalized successive transforms. Operates in a single voice.
     First version with six input parameters: list of 1 or more pitch-class
     sets; list of 0 or more pitch-class transforms including arbitrary
     permutation; optional repartition specifier; list of 1 or more registration
@@ -77,7 +79,7 @@ TO-DO
     carries process to identity a second time with ongoing changes in register
     and dynamics governing both cycles.
 
-20. Implement centroid registration. Operates in a single voice. First version
+21. Implement centroid registration. Operates in a single voice. First version
     with three input parameters: pitch-class set; ContourSpecifier (derived
     from RegistrationSpecifier but with notions of absolute octave removed to
     allow formalization of pure contour); centroid pitch. Figure contours
@@ -88,7 +90,7 @@ TO-DO
     generates crossproduct. Indexing crossproduct happens external to
     figure-maker.
 
-21. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+22. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
     0, ...] with relatively wide figuration that differs arpeggiation. Centers
     on a single octave. Register interpolation moves the material gradually up
     or down.
