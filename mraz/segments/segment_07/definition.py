@@ -184,6 +184,7 @@ accumulator(
             'Piano Music Voice 2',
             baca.select.note(0),
             ),
+        time_treatments=[1],
         ),
     )
 
