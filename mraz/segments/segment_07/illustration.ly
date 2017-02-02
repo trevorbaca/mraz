@@ -56,10 +56,6 @@
                     \time 3/16
                     R1 * 3/16
                 }
-                {
-                    \time 10/16
-                    R1 * 5/8
-                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
@@ -142,12 +138,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 3/16
-                }
-                {
-                    \time 10/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 5/8
                 }
             }
         >>
@@ -415,7 +405,7 @@
                                 bf'''16 ]
                             }
                         }
-                        s1 * 13/16
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
@@ -732,10 +722,9 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16 ]
+                                \bar "|."
                             }
                         }
-                        s1 * 5/8
-                        \bar "|."
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         {
@@ -823,15 +812,16 @@
                             \revert TupletNumber.stencil
                         }
                         \once \override Beam.positions = #'(-5 . -5)
-                        s1 * 69/16
+                        s1 * 59/16
                         \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 1/4
+                        s1 * 3/16
                         {
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/7 {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs'16 \ff [
@@ -866,7 +856,8 @@
                                 \set stemRightBeamCount = #1
                                 ef''16
                             }
-                            {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b'16
@@ -878,7 +869,7 @@
                                 b'16 ]
                             }
                         }
-                        s1 * 77/16
+                        s1 * 33/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 5" {
@@ -893,7 +884,6 @@
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
-                        s1 * 5/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFour = "Piano Music Voice 6" {
@@ -908,7 +898,6 @@
                         s1 * 3/16
                         s1 * 11/16
                         s1 * 3/16
-                        s1 * 5/8
                         \bar "|."
                     }
                 >>
