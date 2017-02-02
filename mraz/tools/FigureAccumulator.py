@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class FigureAccumulator(abjad.abctools.AbjadObject):
+class FigureAccumulator(baca.tools.FigureAccumulator):
     r'''Figure-accumulator.
 
     ::
@@ -96,10 +96,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_figure_names',
         '_mraz_figure_maker',
-        '_time_signatures',
-        '_voice_name_to_selections',
         )
 
     _all_voices = (
@@ -115,103 +112,9 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
     def __init__(self):
         import mraz
-        self._figure_names = []
-        self._time_signatures = []
-        self._voice_name_to_selections = {
-            'Piano Music Voice 1': [],
-            'Piano Music Voice 2': [],
-            'Piano Music Voice 3': [],
-            'Piano Music Voice 4': [],
-            'Piano Music Voice 5': [],
-            'Piano Music Voice 6': [],
-            }
+        superclass = super(FigureAccumulator, self)
+        superclass.__init__()
         self._mraz_figure_maker = mraz.tools.make_mraz_figure_maker()
-
-    ### SPECIAL METHODS ###
-
-    def __call__(self, figure_contribution):
-        r'''Calls figure-accumulator on `figure_contribution`.
-
-        ..  container:: example
-
-            Raises exception on duplicate figure name:
-
-            ::
-
-                >>> accumulator = mraz.tools.FigureAccumulator()
-                >>> accumulator(
-                ...     accumulator.mraz_figure_maker(
-                ...         [[0, 1, 2, 3, 4]],
-                ...         figure_name='D',
-                ...         voice_name='Piano Music Voice 1',
-                ...         ),
-                ...     )
-
-            ::
-
-                >>> accumulator(
-                ...     accumulator.mraz_figure_maker(
-                ...         [[5, 6, 7, 8, 9]],
-                ...         figure_name='D',
-                ...         voice_name='Piano Music Voice 1',
-                ...         ),
-                ...     )
-
-            ..  note:: Make exception raise again.
-
-        '''
-        assert isinstance(figure_contribution.selections, dict)
-        voice_name_to_selection_list = figure_contribution.selections
-        first_selection_list = voice_name_to_selection_list.values()
-        first_selection_list = list(first_selection_list)[0]
-        durations = [_.get_duration() for _ in first_selection_list]
-        duration = sum(durations)
-        items = self.voice_name_to_selections.items()
-        for voice_name_, selections_ in items:
-            if voice_name_ in voice_name_to_selection_list:
-                selection_list = voice_name_to_selection_list[voice_name_]
-                selections_.extend(selection_list)
-            else:
-                skip = abjad.scoretools.Skip(1)
-                multiplier = abjad.durationtools.Multiplier(duration)
-                abjad.attach(multiplier, skip)
-                selection_ = abjad.selectiontools.Selection([skip])
-                selections_.append(selection_)
-        self.time_signatures.append(figure_contribution.time_signature)
-        figure_name = self._get_figure_name(figure_contribution.selections)
-        if figure_name is not None:
-            if figure_name in self._figure_names:
-                message = 'duplicate figure name: {}.'
-                message = message.format(figure_name)
-                raise Exception(message)
-            self._figure_names.append(figure_name)
-
-    ### PRIVATE METHODS ###
-
-    @staticmethod
-    def _get_figure_name(argument):
-        for leaf in abjad.iterate(argument).by_leaf():
-            markups = abjad.inspect_(leaf).get_indicators(abjad.Markup)
-            for markup in markups:
-                if (isinstance(markup._annotation, str) and
-                    markup._annotation.startswith('figure name:')):
-                    annotation = markup._annotation
-                    figure_name = annotation[13:]
-                    return figure_name
-
-    def _populate_segment_maker(self, segment_maker):
-        items = self.voice_name_to_selections.items()
-        for voice_name, selections in items:
-            music = []
-            for selection in selections:
-                music.extend(selection)
-            complete_selection = abjad.selectiontools.Selection(music)
-            segment_maker.append_specifiers(
-                (voice_name, baca.select.stages(1, 1)),
-                baca.tools.RhythmSpecifier(
-                    rhythm_maker=complete_selection,
-                    ),
-                )
 
     ### PUBLIC PROPERTIES ###
 
@@ -220,104 +123,3 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         r'''Gets Mráz figure-maker.
         '''
         return self._mraz_figure_maker
-
-    @property
-    def time_signatures(self):
-        r'''Gets time signatures.
-        '''
-        return self._time_signatures
-
-    @property
-    def voice_name_to_selections(self):
-        r'''Dictionary of selections keyed by voice name.
-        '''
-        return self._voice_name_to_selections
-
-    ### PUBLIC METHODS ###
-
-    @staticmethod
-    def boustrophedon(cells, count=2, flatten=False):
-        r'''Concatenates cells back to back.
-
-        Returns new list.
-        '''
-        result = []
-        for i in range(count):
-            if i == 0:
-                for cell in cells:
-                    result.append(cell[:])
-            elif i % 2 == 0:
-                result.append(cells[0][1:])
-                for cell in cells[1:]:
-                    result.append(cell[:])
-            else:
-                result.append(list(reversed(cells[-1]))[1:])
-                for cell in reversed(cells[:-1]):
-                    result.append(list(reversed(cell)))
-        if flatten:
-            result = [baca.Sequence(result).flatten()]
-        return result
-
-    @staticmethod
-    def merge(cells):
-        r'''Merges cells.
-
-        Returns new list.
-        '''
-        cell_ = []
-        for cell in cells:
-            cell_.extend(cell)
-        result = [cell_]
-        return result
-
-    @staticmethod
-    def repeat(cells, n=1, flatten=False):
-        r'''Repeats cells.
-
-        Returns new list.
-        '''
-        result = []
-        for i in range(n):
-            for cell in cells:
-                result.append(cell[:])
-        if flatten:
-            result = [baca.Sequence(result).flatten()]
-        return result
-
-    @classmethod
-    def reveal(class_, cells, total=None):
-        r'''Reveals `cells` to `total`.
-
-        Returns new list.
-        '''
-        if total is None:
-            return cells
-        current = 0
-        result = []
-        if 0 < total:
-            for cell in cells:
-                cell_ = []
-                result.append(cell_)
-                for item in cell:
-                    cell_.append(item)
-                    current += 1
-                    if current == total:
-                        return result
-        else:
-            cells = class_.reverse(cells)
-            cells = class_.reveal(cells, total=abs(total))
-            result = class_.reverse(cells)
-        return result
-
-    @staticmethod
-    def reverse(cells):
-        r'''Reverses `cells`.
-
-        Returns new list.
-        '''
-        result = []
-        for cell in reversed(cells):
-            cell = cell[:]
-            cell.reverse()
-            result.append(cell)
-        return result
