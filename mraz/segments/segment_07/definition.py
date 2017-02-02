@@ -26,13 +26,6 @@ assert rh_segments + lh_segments + stage_2_segments == segments
 rh_segments = abjad.CyclicTuple(rh_segments)
 lh_segments = abjad.CyclicTuple(lh_segments)
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        ('Piano Music Voice 1', segments[:]),
-#        figure_name=0,
-#        ),
-#    )
-
 ### RH (1) ###
 
 all_rh_segments = []
@@ -47,25 +40,6 @@ for i in range(8):
 all_rh_segments = baca.Sequence(all_rh_segments)
 rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
 assert len(rh_segment_lists) == 12
-
-#polyphony_specifier = baca.tools.PolyphonySpecifier(
-#    figure_maker=baca.tools.FigureMaker(
-#        baca.tools.ArticulationSpecifier(
-#            articulations=['>'],
-#            ),
-#        baca.tools.RhythmSpecifier(
-#            patterns=abjad.patterntools.select_all(),
-#            rhythm_maker=baca.tools.FigureRhythmMaker(
-#                talea=abjad.rhythmmakertools.Talea(
-#                    counts=[1],
-#                    denominator=16,
-#                    ),
-#                ),
-#            ),
-#        ),
-#    local_anchor_selector=baca.select.logical_tie(1),
-#    remote_anchor_selector=baca.select.logical_tie(2),
-#    )
 
 accent_imbrication = baca.tools.ImbricationSpecifier(
     baca.tools.ArticulationSpecifier(
@@ -206,9 +180,9 @@ accumulator(
         #extend_beam=True,
         figure_name='LH.1',
         local_anchor_selector=baca.select.logical_tie(7),
-        remote_anchor_selector=(
+        remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
-            baca.select.logical_tie(0),
+            baca.select.note(0),
             ),
         ),
     )
