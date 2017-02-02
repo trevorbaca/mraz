@@ -23,14 +23,14 @@ list_ = [tree.get_payload() for tree in tuple_]
 assert len(list_) == 14
 
 accumulator(
-    accumulator.delicatissimo_figure_maker(
+    accumulator.mraz_figure_maker(
         list_,
+        'Piano Music Voice 1',
         baca.overrides.beam_positions(6),
         baca.pitch.register(-8),
         extend_beam=True,
         figure_name=1,
         ),
-    voice_number=1,
     )
 
 ###############################################################################

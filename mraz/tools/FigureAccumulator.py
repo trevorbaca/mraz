@@ -18,7 +18,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             >>> accumulator = mraz.tools.FigureAccumulator()
             >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
-            ...     accumulator.delicatissimo_figure_maker(
+            ...     accumulator.mraz_figure_maker(
             ...         segments,
             ...         figure_name='D',
             ...         voice_name='Piano Music Voice 1',
@@ -41,12 +41,12 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             >>> f(lilypond_file[Staff])
             \new Staff {
                 {
-                    \time 10/32
+                    \time 10/16
                     {
                         {
                             \set stemLeftBeamCount = #0
-                            \set stemRightBeamCount = #3
-                            c'32 -\staccato [
+                            \set stemRightBeamCount = #2
+                            c'16 [
                                 ^ \markup {
                                     \fontsize
                                         #3
@@ -59,33 +59,33 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                                                     ]
                                                 }
                                     }
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            cs'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            d'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            ef'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            e'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            f'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            fs'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            g'32 -\staccato
-                            \set stemLeftBeamCount = #3
-                            \set stemRightBeamCount = #3
-                            af'32 -\staccato
-                            \set stemLeftBeamCount = #3
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            cs'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            d'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            ef'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            e'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            f'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            fs'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            g'16
+                            \set stemLeftBeamCount = #2
+                            \set stemRightBeamCount = #2
+                            af'16
+                            \set stemLeftBeamCount = #2
                             \set stemRightBeamCount = #0
-                            a'32 -\staccato ]
+                            a'16 ]
                         }
                     }
                 }
@@ -100,7 +100,6 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         '_mraz_figure_maker',
         '_time_signatures',
         '_voice_name_to_selections',
-        'delicatissimo_figure_maker',
         )
 
     _all_voices = (
@@ -126,8 +125,6 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             'Piano Music Voice 5': [],
             'Piano Music Voice 6': [],
             }
-        self.delicatissimo_figure_maker = \
-            mraz.tools.make_delicatissimo_figure_maker()
         self._mraz_figure_maker = mraz.tools.make_mraz_figure_maker()
 
     ### SPECIAL METHODS ###
@@ -143,7 +140,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
                 >>> accumulator = mraz.tools.FigureAccumulator()
                 >>> accumulator(
-                ...     accumulator.delicatissimo_figure_maker(
+                ...     accumulator.mraz_figure_maker(
                 ...         [[0, 1, 2, 3, 4]],
                 ...         figure_name='D',
                 ...         voice_name='Piano Music Voice 1',
@@ -153,7 +150,7 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
             ::
 
                 >>> accumulator(
-                ...     accumulator.delicatissimo_figure_maker(
+                ...     accumulator.mraz_figure_maker(
                 ...         [[5, 6, 7, 8, 9]],
                 ...         figure_name='D',
                 ...         voice_name='Piano Music Voice 1',
