@@ -1,4 +1,4 @@
-\version "2.19.53"
+\version "2.19.54"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -13,15 +13,15 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 59/32
-                    R1 * 59/32
+                    \time 59/16
+                    R1 * 59/16
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 59/32 ^ \markup {
+                    s1 * 59/16 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -56,282 +56,290 @@
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #3
-                                e32 -\staccato [
+                                \set stemRightBeamCount = #2
+                                e16 [
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                cs'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                d'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                fs32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                d'32 -\staccato
+                                d'16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                f32 -\staccato
+                                \set stemRightBeamCount = #2
+                                f16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                g32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                af32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                bf32 -\staccato
+                                bf16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                b32 -\staccato
+                                \set stemRightBeamCount = #2
+                                b16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                a32 -\staccato
+                                a16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                b32 -\staccato
+                                \set stemRightBeamCount = #2
+                                b16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                d'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                a32 -\staccato
+                                a16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                cs'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                g32 -\staccato
+                                g16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                fs32 -\staccato
+                                \set stemRightBeamCount = #2
+                                fs16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                e32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                f32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                af32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                bf32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                ef'32 -\staccato
+                                ef'16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                b32 -\staccato
+                                \set stemRightBeamCount = #2
+                                b16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                g32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                b32 -\staccato
+                                b16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                a32 -\staccato
+                                \set stemRightBeamCount = #2
+                                a16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                d'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                cs'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                af32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                bf32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                f32 -\staccato
+                                f16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                a32 -\staccato
+                                \set stemRightBeamCount = #2
+                                a16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                b32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                g32 -\staccato
+                                g16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                d'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                cs'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                f32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                g32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                c'32 -\staccato
+                                c'16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                bf32 -\staccato
+                                \set stemRightBeamCount = #2
+                                bf16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                d'32 -\staccato
+                                d'16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                af32 -\staccato
+                                af16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                ef'32 -\staccato
+                                \set stemRightBeamCount = #2
+                                ef'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                cs'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                c'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                bf32 -\staccato
+                                bf16
                             }
                             {
                                 \once \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #3
-                                af32 -\staccato
+                                \set stemRightBeamCount = #2
+                                af16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
-                                \set stemRightBeamCount = #3
-                                d'32 -\staccato
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16
                                 \once \override Beam.positions = #'(6 . 6)
-                                \set stemLeftBeamCount = #3
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                e32 -\staccato ]
+                                e16 ]
                                 \bar "|"
                             }
                         }
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 59/32
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceThree = "Piano Music Voice 3" {
+                        s1 * 59/16
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                    \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        s1 * 59/32
+                    \context PianoMusicVoiceFour = "Piano Music Voice 4" {
+                        s1 * 59/16
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 59/32
+                    \context PianoMusicVoiceFour = "Piano Music Voice 5" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceFour = "Piano Music Voice 6" {
+                        s1 * 59/16
                         \bar "|"
                     }
                 >>
