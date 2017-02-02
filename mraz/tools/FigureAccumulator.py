@@ -16,11 +16,12 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
         ::
 
             >>> accumulator = mraz.tools.FigureAccumulator()
-            >>> figure_token = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
+            >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
             ...     accumulator.delicatissimo_figure_maker(
-            ...         ('Piano Music Voice 1', figure_token),
+            ...         segments,
             ...         figure_name='D',
+            ...         voice_name='Piano Music Voice 1',
             ...         ),
             ...     )
 
@@ -143,8 +144,9 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
                 >>> accumulator = mraz.tools.FigureAccumulator()
                 >>> accumulator(
                 ...     accumulator.delicatissimo_figure_maker(
-                ...         ('Piano Music Voice 1', [[0, 1, 2, 3, 4]]),
+                ...         [[0, 1, 2, 3, 4]],
                 ...         figure_name='D',
+                ...         voice_name='Piano Music Voice 1',
                 ...         ),
                 ...     )
 
@@ -152,8 +154,9 @@ class FigureAccumulator(abjad.abctools.AbjadObject):
 
                 >>> accumulator(
                 ...     accumulator.delicatissimo_figure_maker(
-                ...         ('Piano Music Voice 1', [[5, 6, 7, 8, 9]]),
+                ...         [[5, 6, 7, 8, 9]],
                 ...         figure_name='D',
+                ...         voice_name='Piano Music Voice 1',
                 ...         ),
                 ...     )
 
