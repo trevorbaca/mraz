@@ -6,5 +6,5 @@ metadata = abjad.datastructuretools.TypedOrderedDict([
     ('catalog_number', 'AWN-017'),
     ('forces_tagline', 'for piano'),
     ('title', 'Mráz'),
-    ('year', 2016),
+    ('year', 2017),
     ])
