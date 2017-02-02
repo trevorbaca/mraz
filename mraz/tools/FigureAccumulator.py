@@ -15,22 +15,22 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
 
         ::
 
+            >>> voice_name = 'Piano Music Voice 1'
             >>> accumulator = mraz.tools.FigureAccumulator()
             >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
             ...     accumulator.mraz_figure_maker(
             ...         segments,
             ...         figure_name='D',
-            ...         voice_name='Piano Music Voice 1',
+            ...         voice_name=voice_name,
             ...         ),
             ...     )
 
         ::
 
-            >>> voice_name = 'Piano Music Voice 1'
-            >>> selections = accumulator.selections[voice_name]
+            >>> selection = accumulator.assemble(voice_name)
             >>> lilypond_file = rhythmmakertools.make_lilypond_file(
-            ...     selections,
+            ...     {voice_name: selection},
             ...     accumulator.time_signatures,
             ...     pitched_staff=True,
             ...     )
@@ -39,9 +39,8 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
         ..  doctest::
 
             >>> f(lilypond_file[Staff])
-            \new Staff {
-                {
-                    \time 10/16
+            \new Staff <<
+                \context Voice = "Piano Music Voice 1" {
                     {
                         {
                             \set stemLeftBeamCount = #0
@@ -89,7 +88,7 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
                         }
                     }
                 }
-            }
+            >>
 
     '''
 
