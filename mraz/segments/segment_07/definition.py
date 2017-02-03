@@ -53,6 +53,15 @@ accent_imbrication = baca.tools.ImbricationSpecifier(
         ),
     )
 
+flag_imbrication = baca.tools.ImbricationSpecifier(
+    baca.tools.ArticulationSpecifier(
+        articulations=['>'],
+        ),
+    abjad.rhythmmakertools.BeamSpecifier(
+        beam_each_division=False,
+        ),
+    )
+
 accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[0],
@@ -226,15 +235,18 @@ accumulator(
         lh_segment_lists[0],
         'Piano Music Voice 4',
         baca.first_note('ff'),
-        baca.register(1, 1+10),
+        baca.register(-2, -2+16),
         baca.transpose_segments(n=0*7),
         figure_name='LH4.1',
+        imbrication_map={
+            'Piano Music Voice 4I': (accent_imbrication, [0, 19, 23]),
+            },
         local_anchor_selector=baca.select.logical_tie(7),
         remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(0),
             ),
-        time_treatments=[1],
+        time_treatments=[-1],
         ),
     )
 
@@ -243,10 +255,14 @@ accumulator(
         lh_segment_lists[1],
         'Piano Music Voice 5',
         baca.nest('-2/16'),
-        baca.register(2, 2+10),
+        baca.register(0, 0+16),
         baca.transpose_segments(n=1*7),
         figure_name='LH5.1',
         hide_time_signature=True,
+        imbrication_map={
+            'Piano Music Voice 5I':
+                (accent_imbrication, [11, 18, 24, 26]),
+            },
         local_anchor_selector=baca.select.logical_tie(3),
         remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
@@ -259,9 +275,12 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[2],
         'Piano Music Voice 4',
-        baca.register(3, 3+10),
+        baca.register(2, 2+16),
         baca.transpose_segments(n=2*7),
         figure_name='LH4.2',
+        imbrication_map={
+            'Piano Music Voice 4I': (flag_imbrication, [13]),
+            },
         hide_time_signature=True,
         local_anchor_selector=baca.select.logical_tie(0),
         remote_anchor_selector=baca.tools.VoicedSelector(
@@ -276,10 +295,13 @@ accumulator(
         lh_segment_lists[3],
         'Piano Music Voice 5',
         baca.nest('-2/16'),
-        baca.register(4, 4+10),
+        baca.register(4, 4+16),
         baca.transpose_segments(n=3*7),
         figure_name='LH5.2',
         hide_time_signature=True,
+        imbrication_map={
+            'Piano Music Voice 5I': (accent_imbrication, [9, 16, 20, 25]),
+            },
         local_anchor_selector=baca.select.logical_tie(10),
         remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
@@ -292,10 +314,13 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[4],
         'Piano Music Voice 4',
-        baca.register(5, 5+10),
+        baca.register(6, 6+10),
         baca.transpose_segments(n=4*7),
         figure_name='LH4.3',
         hide_time_signature=True,
+        imbrication_map={
+            'Piano Music Voice 4I': (flag_imbrication, [14, 18]),
+            },
         local_anchor_selector=baca.select.logical_tie(0),
         remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
@@ -411,18 +436,61 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 4', baca.select.stages(1, 10)),
+    ('Piano Music Voice 4', baca.select.stages(1, 2)),
     [
-        baca.script_down(),
+        baca.wrap.leaves(baca.beam_positions(-5.5)),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 4', baca.select.stages(6, Infinity)),
+    [
         baca.wrap.leaves(baca.beam_positions(-4.5)),
         ],
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select.stages(1, 10)),
+    ('Piano Music Voice 4', baca.select.stages(1, Infinity)),
     [
         baca.script_down(),
         baca.stem_down(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 4I', baca.select.stages(1, Infinity)),
+    [
+        baca.script_up(),
+        baca.stem_up(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(1, 5)),
+    [
+        baca.wrap.leaves(baca.beam_positions(-6)),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(6, Infinity)),
+    [
         baca.wrap.leaves(baca.beam_positions(-4.5)),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
+    [
+        baca.script_down(),
+        baca.stem_down(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5I', baca.select.stages(1, Infinity)),
+    [
+        baca.script_up(),
+        baca.stem_up(),
         ],
     )
