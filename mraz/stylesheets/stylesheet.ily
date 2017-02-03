@@ -169,7 +169,6 @@
         \override TupletBracket.color = #red
         \override TupletNumber.color = #red
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \dynamicUp
         \override Stem.direction = #up
     }
     \context {
@@ -201,7 +200,6 @@
         \name PianoMusicVoiceTwo
         \type Engraver_group
         \alias Voice
-        \dynamicDown
         \voiceTwo
     }
     \context {
@@ -240,7 +238,6 @@
         \name PianoMusicVoiceFour
         \type Engraver_group
         \alias Voice
-        \dynamicUp
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \override Accidental.color = #red
         \override Beam.color = #red
@@ -287,7 +284,6 @@
         \name PianoMusicVoiceFive
         \type Engraver_group
         \alias Voice
-        \dynamicUp
     }
     \context {
         \Voice
@@ -300,7 +296,6 @@
         \name PianoMusicVoiceSix
         \type Engraver_group
         \alias Voice
-        \dynamicDown
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \override Accidental.color = #darkgreen
         \override Beam.color = #darkgreen

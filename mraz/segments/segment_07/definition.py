@@ -69,11 +69,28 @@ marcato_imbrication = baca.tools.ImbricationSpecifier(
         ),
     )
 
+staccato_imbrication = baca.tools.ImbricationSpecifier(
+    baca.tools.ArticulationSpecifier(
+        articulations=['.'],
+        ),
+    abjad.rhythmmakertools.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=True,
+        ),
+    )
+
+slur_specifier = baca.tools.SpannerSpecifier(
+    selector=selectortools.Selector().
+        by_class(scoretools.Tuplet, flatten=True).
+        get_slice(apply_to_each=True),
+    spanner=spannertools.Slur(),
+    )
+
 accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[0],
         'Piano Music Voice 1',
-        baca.first_note('fff'),
+        baca.dynamic_first_note('fff'),
         baca.nest('2/16'),
         baca.register(13, 13+10),
         extend_beam=True,
@@ -90,7 +107,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[1],
         'Piano Music Voice 2',
-        baca.first_note('fff'),
+        baca.dynamic_first_note('fff'),
         baca.register(7, 7+10),
         extend_beam=True,
         figure_name='RH2.1',
@@ -244,7 +261,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[0],
         'Piano Music Voice 4',
-        baca.first_note('ff'),
+        baca.dynamic_first_note('ff'),
         baca.register(-2, -2+16),
         baca.transpose_segments(n=0*7),
         figure_name='LH4.1',
@@ -264,6 +281,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[1],
         'Piano Music Voice 5',
+        baca.dynamic_first_note('pp'),
         baca.nest('-2/16'),
         baca.register(0, 0+16),
         baca.transpose_segments(n=1*7),
@@ -271,7 +289,7 @@ accumulator(
         hide_time_signature=True,
         imbrication_map={
             'Piano Music Voice 5I':
-                (accent_imbrication, [11, 18, 24, 26]),
+                (staccato_imbrication, [11, 18, 24, 26]),
             },
         local_anchor_selector=baca.select.logical_tie(3),
         remote_anchor_selector=baca.tools.VoicedSelector(
@@ -285,6 +303,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[2],
         'Piano Music Voice 4',
+        baca.dynamic_first_note('ff'),
         baca.register(2, 2+16),
         baca.transpose_segments(n=2*7),
         figure_name='LH4.2',
@@ -304,13 +323,14 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[3],
         'Piano Music Voice 5',
+        baca.dynamic_first_note('pp'),
         baca.nest('-2/16'),
         baca.register(4, 4+16),
         baca.transpose_segments(n=3*7),
         figure_name='LH5.2',
         hide_time_signature=True,
         imbrication_map={
-            'Piano Music Voice 5I': (accent_imbrication, [9, 16, 20, 25]),
+            'Piano Music Voice 5I': (staccato_imbrication, [9, 16, 20, 25]),
             },
         local_anchor_selector=baca.select.logical_tie(10),
         remote_anchor_selector=baca.tools.VoicedSelector(
@@ -324,6 +344,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[4],
         'Piano Music Voice 4',
+        baca.dynamic_first_note('ff'),
         baca.register(6, 6+10),
         baca.transpose_segments(n=4*7),
         figure_name='LH4.3',
@@ -382,8 +403,9 @@ accumulator._populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 1', baca.select.stages(1, 8)),
+    ('Piano Music Voice 1', baca.select.stages(1, Infinity)),
     [
+        baca.dynamic_up(),
         baca.beam_positions(10),
         ],
     )
@@ -410,9 +432,10 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 2', baca.select.stages(1, 10)),
+    ('Piano Music Voice 2', baca.select.stages(1, Infinity)),
     [
         baca.beam_positions(-4.5),
+        baca.dynamic_down(),
         baca.stem_down(),
         ],
     )
@@ -434,7 +457,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ('Piano Music Voice 2I', baca.select.stages(9, Infinity)),
     [
-        baca.beam_positions(18.5),
+        baca.beam_positions(17),
         ],
     )
 

@@ -116,6 +116,7 @@
                                     \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \dynamicUp
                                     e''16 \fff [
                                         ^ \markup {
                                             \fontsize
@@ -322,6 +323,7 @@
                             \times 5/4 {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     f'''16 [
@@ -337,38 +339,48 @@
                                                             ]
                                                         }
                                             }
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     fs'''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     af'''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
                                     ef'''16
                                 }
                                 \times 2/3 {
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     c''''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     e'''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
                                     bf'''16
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     c''''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     cs''''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     ef''''16
+                                    \once \override Beam.positions = #'(10 . 10)
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     bf'''16 ]
@@ -573,6 +585,7 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
+                        \dynamicDown
                         s1 * 3/4
                         {
                             {
@@ -872,6 +885,8 @@
                         s1 * 5/8
                         {
                             \times 2/3 {
+                                \once \override Beam.positions = #'(-4.5 . -4.5)
+                                \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'''16
@@ -887,9 +902,13 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Beam.positions = #'(-4.5 . -4.5)
+                                \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16
+                                \once \override Beam.positions = #'(-4.5 . -4.5)
+                                \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16 ]
@@ -1043,7 +1062,7 @@
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
                             {
-                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Beam.positions = #'(17 . 17)
                                 \once \override Script.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
@@ -1060,12 +1079,12 @@
                             \override TupletNumber.stencil = ##f
                             \times 2/3 {
                                 s16
-                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Beam.positions = #'(17 . 17)
                                 \once \override Script.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16 -\accent
-                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Beam.positions = #'(17 . 17)
                                 \once \override Script.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
@@ -1183,7 +1202,7 @@
                                 \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                cs''16 [
+                                cs''16 \ff [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -1220,7 +1239,7 @@
                                 \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                d''16 [
+                                d''16 \ff [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -1354,7 +1373,7 @@
                                     \once \override Stem.direction = #down
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    cs'16 [
+                                    cs'16 \pp [
                                         ^ \markup {
                                             \fontsize
                                                 #3
@@ -1481,7 +1500,7 @@
                                     \once \override Stem.direction = #down
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    ef''16 [
+                                    ef''16 \pp [
                                         ^ \markup {
                                             \fontsize
                                                 #3
@@ -1618,7 +1637,7 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    b'16 -\accent
+                                    b'16 -\staccato
                                     s16
                                     s16
                                     s16
@@ -1631,7 +1650,7 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    fs''16 -\accent
+                                    fs''16 -\staccato
                                     s16
                                     s16
                                     s16
@@ -1640,12 +1659,12 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    c'''16 -\accent
+                                    c'''16 -\staccato
                                     \once \override Script.direction = #up
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    d'''16 -\accent ]
+                                    d'''16 -\staccato ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1667,7 +1686,7 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    a'16 -\accent
+                                    a'16 -\staccato
                                     s16
                                     s16
                                     s16
@@ -1680,7 +1699,7 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    e''16 -\accent
+                                    e''16 -\staccato
                                     s16
                                     s16
                                     s16
@@ -1689,12 +1708,12 @@
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    af''16 -\accent
+                                    af''16 -\staccato
                                     \once \override Script.direction = #up
                                     \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    cs'''16 -\accent ]
+                                    cs'''16 -\staccato ]
                                 }
                             }
                             \revert TupletBracket.stencil
