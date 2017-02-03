@@ -39,7 +39,7 @@
     markup-system-spacing.minimum-distance = 48
     system-system-spacing.minimum-distance = 24
     top-markup-spacing.minimum-distance = 18
-    top-margin = 0\in
+    top-margin = 0.5\in
 }
 
 \header {
@@ -128,7 +128,7 @@
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 20
+        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 24
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
 
@@ -351,8 +351,6 @@
         \alias PianoStaff
         \accepts PianoMusicRHStaff
         \accepts PianoMusicLHStaff
-        instrumentName = \pianoName
-        shortInstrumentName = \shortPianoName
     }
 
     % MUSIC
@@ -416,8 +414,7 @@
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet
-        %proportionalNotationDuration = #(ly:make-moment 1 24)
-        proportionalNotationDuration = #(ly:make-moment 1 30)
+        proportionalNotationDuration = #(ly:make-moment 1 29)
         tupletFullLength = ##t
     }
 }

@@ -60,22 +60,7 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 12/16
-                    s1 * 3/4 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                112
-                            }
-                        }
+                    s1 * 3/4
                 }
                 {
                     \time 4/16
@@ -121,14 +106,6 @@
         >>
         \context MusicContext = "Music Context" {
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
-                \set PianoMusicStaffGroup.instrumentName = \markup {
-                \hcenter-in
-                    #16
-                    Piano
-                }
-                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                \null
-                }
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         {
@@ -428,7 +405,7 @@
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f''16 -\accent
+                                    f''16 -\marcato
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
                                     s16
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
@@ -441,7 +418,7 @@
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    b''16 -\accent
+                                    b''16 -\marcato
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
                                     s16
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
@@ -472,12 +449,12 @@
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    fs'''16 -\accent
+                                    fs'''16 -\marcato
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    g'''16 -\accent
+                                    g'''16 -\marcato
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
                                     s16
                                     \once \override Beam.positions = #'(-6.5 . -6.5)
@@ -501,7 +478,7 @@
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    a''16 -\accent
+                                    a''16 -\marcato
                                     \once \override Beam.positions = #'(-8.5 . -8.5)
                                     s16
                                     \once \override Beam.positions = #'(-8.5 . -8.5)
@@ -523,12 +500,12 @@
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    af''16 -\accent
+                                    af''16 -\marcato
                                     \once \override Beam.positions = #'(-8.5 . -8.5)
                                     \once \override Script.direction = #down
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f'''16 -\accent
+                                    f'''16 -\marcato
                                     \once \override Beam.positions = #'(-8.5 . -8.5)
                                     s16
                                     \once \override Beam.positions = #'(-8.5 . -8.5)
@@ -543,7 +520,56 @@
                             \revert TupletNumber.stencil
                         }
                         \once \override Beam.positions = #'(-8.5 . -8.5)
-                        s1 * 3/2
+                        s1 * 3/4
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4 {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16 [
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    fs'''16 -\marcato
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                }
+                                \times 2/3 {
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    bf'''16 -\marcato
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    cs''''16 -\marcato
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-8.5 . -8.5)
+                                    s16 ]
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 1/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
@@ -1256,12 +1282,10 @@
                             \override TupletNumber.stencil = ##f
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                s16 [
+                                s16
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16 -\accent
+                                c'16
                                 s16
                                 s16
                                 s16
@@ -1272,14 +1296,10 @@
                                 s16
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16 -\accent
+                                g''16
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b''16 -\accent ]
+                                b''16
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -1291,7 +1311,7 @@
                             {
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                cs''16 -\accent
+                                cs''16
                                 s16
                                 s16
                             }
@@ -1306,14 +1326,14 @@
                             \times 8/7 {
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                d''16 -\accent
+                                d''16
                                 s16
                                 s16
                                 s16
                                 s16
                                 \once \override Script.direction = #up
                                 \once \override Stem.direction = #up
-                                fs''16 -\accent
+                                fs''16
                                 s16
                             }
                             \revert TupletBracket.stencil
