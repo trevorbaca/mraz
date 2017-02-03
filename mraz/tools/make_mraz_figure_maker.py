@@ -439,10 +439,14 @@ def make_mraz_figure_maker():
             preferred_denominator=16,
             voice_names=[
                 'Piano Music Voice 1',
+                'Piano Music Voice 1I',
                 'Piano Music Voice 2',
+                'Piano Music Voice 2I',
                 'Piano Music Voice 3',
                 'Piano Music Voice 4',
+                'Piano Music Voice 4I',
                 'Piano Music Voice 5',
+                'Piano Music Voice 5I',
                 'Piano Music Voice 6',
                 ],
             )
