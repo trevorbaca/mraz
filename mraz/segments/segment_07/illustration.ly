@@ -877,12 +877,12 @@
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
                             {
-                                \once \override Beam.positions = #'(17 . 17)
+                                \once \override Beam.positions = #'(15.5 . 15.5)
                                 \once \override Script.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16 -\accent [
-                                \once \override Beam.positions = #'(17 . 17)
+                                \once \override Beam.positions = #'(15.5 . 15.5)
                                 \once \override Script.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -900,12 +900,12 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 9/10 {
                                 {
-                                    \once \override Beam.positions = #'(17 . 17)
+                                    \once \override Beam.positions = #'(15.5 . 15.5)
                                     \once \override Script.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     cs''16 -\accent
-                                    \once \override Beam.positions = #'(17 . 17)
+                                    \once \override Beam.positions = #'(15.5 . 15.5)
                                     \once \override Script.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -919,12 +919,12 @@
                                     s16
                                 }
                                 {
-                                    \once \override Beam.positions = #'(17 . 17)
+                                    \once \override Beam.positions = #'(15.5 . 15.5)
                                     \once \override Script.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f''16 -\accent
-                                    \once \override Beam.positions = #'(17 . 17)
+                                    \once \override Beam.positions = #'(15.5 . 15.5)
                                     \once \override Script.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -935,8 +935,120 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 45/16
-                        \bar "|."
+                        s1 * 5/16
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \times 2/3 {
+                                \once \override Beam.positions = #'(13.5 . 13.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                c''16 -\accent [
+                                \once \override Beam.positions = #'(13.5 . 13.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf''16 -\accent
+                                s16
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
+                                s16
+                                s16
+                                s16
+                                s16
+                                s16
+                                s16
+                            }
+                            \times 2/3 {
+                                \once \override Beam.positions = #'(13.5 . 13.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                g''16 -\accent
+                                \once \override Beam.positions = #'(13.5 . 13.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'''16 -\accent
+                                s16
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 7/16
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 9/10 {
+                                {
+                                    \once \override Beam.positions = #'(13.5 . 13.5)
+                                    \once \override Script.direction = #up
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #2
+                                    a''16 -\accent
+                                    s16
+                                    s16
+                                    s16
+                                }
+                                {
+                                    \once \override Beam.positions = #'(13.5 . 13.5)
+                                    \once \override Script.direction = #up
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    ef'''16 -\accent
+                                    \once \override Beam.positions = #'(13.5 . 13.5)
+                                    \once \override Script.direction = #up
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    c'''16 -\accent
+                                    s16
+                                    s16
+                                    s16
+                                    s16 ]
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            {
+                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                f''16 -\accent [
+                                s16
+                                s16
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 5/8
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \times 2/3 {
+                                s16
+                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'''16 -\accent
+                                \once \override Beam.positions = #'(18.5 . 18.5)
+                                \once \override Script.direction = #up
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                af'''16 -\accent ]
+                                \bar "|."
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 3/4
@@ -1028,7 +1140,7 @@
                             }
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
-                        s1 * 11/8
+                        s1 * 5/4
                         {
                             {
                                 \once \override Beam.positions = #'(-4.5 . -4.5)
@@ -1061,7 +1173,7 @@
                             }
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
-                        s1 * 5/4
+                        s1 * 11/8
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {

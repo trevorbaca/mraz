@@ -10,7 +10,7 @@ TO-DO
     Add accents and phrase markings to voice 1.
     Add accents and phrase markings to voice 2.
     Build LH voices 3 and 4 in parallel to RH voices 1 and 2.
-    Promote imbrication_map into class.
+    Promote imbrication_map into class: allow baca.beam_positions().
     Add accelerando over entire section.
 
 2.  Make cover.
