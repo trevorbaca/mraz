@@ -212,11 +212,17 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[1],
         'Piano Music Voice 5',
+        baca.nest('-2/16'),
         baca.register(2, 2+10),
         baca.transpose_segments(n=1*7),
         #extend_beam=True,
         figure_name='LH5.1',
         hide_time_signature=True,
+        local_anchor_selector=baca.select.logical_tie(3),
+        remote_anchor_selector=baca.tools.VoicedSelector(
+            'Piano Music Voice 2',
+            baca.select.note(4),
+            ),
         ),
     )
 
