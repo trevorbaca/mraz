@@ -401,6 +401,96 @@
                         s1 * 1/8
                         \bar "|."
                     }
+                    \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6 {
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16 [
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    f''16 -\accent
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                }
+                                \times 2/3 {
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    b''16 -\accent
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        \once \override Beam.positions = #'(-6.5 . -6.5)
+                        s1 * 1/4
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                \times 2/3 {
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    fs'''16 -\accent
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    \once \override Script.direction = #down
+                                    \set stemLeftBeamCount = #2
+                                    \set stemRightBeamCount = #2
+                                    g'''16 -\accent
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16
+                                    \once \override Beam.positions = #'(-6.5 . -6.5)
+                                    s16 ]
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        \once \override Beam.positions = #'(-6.5 . -6.5)
+                        s1 * 27/8
+                        \bar "|."
+                    }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 3/4
                         {
@@ -728,97 +818,32 @@
                             }
                         }
                     }
-                    \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/5 {
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 5/6 {
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16 [
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                }
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    \once \override Script.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    f''16 -\accent
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                }
-                                \times 2/3 {
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    \once \override Script.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    b''16 -\accent
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                }
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
-                        \once \override Beam.positions = #'(-5 . -5)
+                    \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
+                        s1 * 3/4
                         s1 * 1/4
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/5 {
-                                \times 2/3 {
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    \once \override Script.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    bf''16 -\accent
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                }
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    s16
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    \once \override Script.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    a'''16 -\accent
-                                    \once \override Beam.positions = #'(-5 . -5)
-                                    \once \override Script.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
-                                    e'''16 -\accent ]
-                                }
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
-                        \once \override Beam.positions = #'(-5 . -5)
-                        s1 * 27/8
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceThree = "Piano Music Voice 3" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
                         \bar "|."
                     }
                 >>
@@ -985,6 +1010,20 @@
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
                         s1 * 7/16
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
@@ -1244,6 +1283,20 @@
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
                         s1 * 303/272
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {

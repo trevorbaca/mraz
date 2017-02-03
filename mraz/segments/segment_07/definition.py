@@ -63,7 +63,7 @@ accumulator(
         extend_beam=True,
         figure_name='RH1.1',
         imbrication_map={
-            'Piano Music Voice 3': (
+            'Piano Music Voice 1I': (
                 accent_imbrication, [17, 23], True),
             },
         time_treatments=[-1],
@@ -89,7 +89,7 @@ accumulator(
         baca.register(15, 15+10),
         figure_name='RH1.2',
         imbrication_map={
-            'Piano Music Voice 3': (accent_imbrication, [22, 33, 28]),
+            'Piano Music Voice 1I': (accent_imbrication, [30, 31]),
             },
         time_treatments=[-1],
         ),
@@ -338,10 +338,10 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 3', baca.select.stages(1, 10)),
+    ('Piano Music Voice 1I', baca.select.stages(1, 10)),
     [
         baca.script_down(),
-        baca.wrap.leaves(baca.beam_positions(-5)),
+        baca.wrap.leaves(baca.beam_positions(-6.5)),
         ],
     )
 
