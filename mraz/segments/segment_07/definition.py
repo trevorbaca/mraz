@@ -57,7 +57,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[0],
         'Piano Music Voice 1',
-        baca.dynamics.first_note('fff'),
+        baca.first_note('fff'),
         baca.register(13, 13+10),
         baca.tools.NestingSpecifier(
             time_treatments=['+1/16'],
@@ -76,7 +76,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[1],
         'Piano Music Voice 2',
-        baca.dynamics.first_note('fff'),
+        baca.first_note('fff'),
         baca.register(7, 7+10),
         extend_beam=True,
         figure_name='RH2.1',
@@ -193,7 +193,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[0],
         'Piano Music Voice 4',
-        baca.dynamics.first_note('ff'),
+        baca.first_note('ff'),
         baca.register(1, 1+10),
         baca.transpose_segments(n=0*7),
         #extend_beam=True,
@@ -299,22 +299,22 @@ accumulator._populate_segment_maker(segment_maker)
 segment_maker.append_specifiers(
     ('Piano Music Voice 1', baca.select.stages(1, 8)),
     [
-        baca.overrides.beam_positions(10),
+        baca.beam_positions(10),
         ],
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 2', baca.select.stages(1, 10)),
     [
-        baca.overrides.beam_positions(-3),
-        baca.overrides.stem_down(),
+        baca.beam_positions(-3),
+        baca.stem_down(),
         ],
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 3', baca.select.stages(1, 10)),
     [
-        baca.overrides.script_down(),
-        baca.wrap.leaves(baca.overrides.beam_positions(-5)),
+        baca.script_down(),
+        baca.wrap.leaves(baca.beam_positions(-5)),
         ],
     )
