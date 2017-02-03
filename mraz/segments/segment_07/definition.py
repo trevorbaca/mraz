@@ -54,11 +54,18 @@ accent_imbrication = baca.tools.ImbricationSpecifier(
     )
 
 flag_imbrication = baca.tools.ImbricationSpecifier(
-    baca.tools.ArticulationSpecifier(
-        articulations=['>'],
-        ),
     abjad.rhythmmakertools.BeamSpecifier(
         beam_each_division=False,
+        ),
+    )
+
+marcato_imbrication = baca.tools.ImbricationSpecifier(
+    baca.tools.ArticulationSpecifier(
+        articulations=['^'],
+        ),
+    abjad.rhythmmakertools.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=True,
         ),
     )
 
@@ -73,7 +80,7 @@ accumulator(
         figure_name='RH1.1',
         imbrication_map={
             'Piano Music Voice 1I': (
-                accent_imbrication, [17, 23], True),
+                marcato_imbrication, [17, 23], True),
             },
         time_treatments=[-1],
         ),
@@ -102,7 +109,7 @@ accumulator(
         baca.register(15, 15+10),
         figure_name='RH1.2',
         imbrication_map={
-            'Piano Music Voice 1I': (accent_imbrication, [30, 31]),
+            'Piano Music Voice 1I': (marcato_imbrication, [30, 31]),
             },
         time_treatments=[-1],
         ),
@@ -131,7 +138,7 @@ accumulator(
         extend_beam=True,
         figure_name='RH1.3',
         imbrication_map={
-            'Piano Music Voice 1I': (accent_imbrication, [21], True),
+            'Piano Music Voice 1I': (marcato_imbrication, [21], True),
             },
         ),
     )
@@ -159,7 +166,7 @@ accumulator(
         baca.register(19, 19+10),
         figure_name='RH1.4',
         imbrication_map={
-            'Piano Music Voice 1I': (accent_imbrication, [20, 29]),
+            'Piano Music Voice 1I': (marcato_imbrication, [20, 29]),
             },
         ),
     )
@@ -198,6 +205,9 @@ accumulator(
         baca.nest('2/16'),
         baca.register(23, 23+10),
         figure_name='RH1.6',
+        imbrication_map={
+            'Piano Music Voice 1I': (marcato_imbrication, [30, 34, 37]),
+            },
         time_treatments=[-1],
         ),
     )
@@ -239,7 +249,7 @@ accumulator(
         baca.transpose_segments(n=0*7),
         figure_name='LH4.1',
         imbrication_map={
-            'Piano Music Voice 4I': (accent_imbrication, [0, 19, 23]),
+            'Piano Music Voice 4I': (flag_imbrication, [0, 19, 23]),
             },
         local_anchor_selector=baca.select.logical_tie(7),
         remote_anchor_selector=baca.tools.VoicedSelector(
@@ -335,7 +345,7 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.tools.TempoSpecifier([
-    (1, mraz.materials.tempi[112]),
+    #(1, mraz.materials.tempi[112]),
     ])
 
 spacing_specifier = baca.tools.SpacingSpecifier(
@@ -347,6 +357,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     allow_figure_names=True,
+    hide_instrument_names=True,
     ignore_duplicate_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
@@ -359,7 +370,6 @@ segment_maker = baca.tools.SegmentMaker(
     stage_label_base_string='7',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
-    transpose_score=True,
     )
 
 #segment_maker.validate_stage_count()
