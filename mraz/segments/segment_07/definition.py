@@ -173,7 +173,7 @@ accumulator(
 ### LH (1) ###
 
 all_lh_segments = []
-for i in range(8):
+for i in range(6):
     start = i
     stop = i + 2
     lh_segments_ = lh_segments[start:stop]
@@ -182,9 +182,9 @@ for i in range(8):
     lh_segments_ = expression(lh_segments_)
     all_lh_segments.extend(lh_segments_)
 all_lh_segments = baca.Sequence(all_lh_segments)
-lh_segment_lists = all_lh_segments.partition([3, 1, 2, 3, 1])
+lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
 #raise Exception([len(_) for _ in lh_segment_lists])
-assert len(lh_segment_lists) == 8
+assert len(lh_segment_lists) == 6
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -206,78 +206,61 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segments[1:3],
+        lh_segment_lists[1],
         'Piano Music Voice 4',
         baca.pitch.register(2, 2+10),
         baca.pitch.transpose_segments(n=1*7),
         #extend_beam=True,
         figure_name='LH.2',
+        hide_time_signature=True,
         ),
     )
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segments[2:4],
+        lh_segment_lists[2],
         'Piano Music Voice 4',
         baca.pitch.register(3, 3+10),
         baca.pitch.transpose_segments(n=2*7),
         #extend_beam=True,
         figure_name='LH.3',
+        hide_time_signature=True,
         ),
     )
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segments[3:5],
+        lh_segment_lists[3],
         'Piano Music Voice 4',
         baca.pitch.register(4, 4+10),
         baca.pitch.transpose_segments(n=3*7),
         #extend_beam=True,
         figure_name='LH.4',
+        hide_time_signature=True,
         ),
     )
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segments[4:6],
+        lh_segment_lists[4],
         'Piano Music Voice 4',
         baca.pitch.register(5, 5+10),
         baca.pitch.transpose_segments(n=4*7),
         #extend_beam=True,
         figure_name='LH.5',
+        hide_time_signature=True,
         ),
     )
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segments[5:7],
+        lh_segment_lists[5],
         'Piano Music Voice 4',
         baca.pitch.register(6, 6+10),
         baca.pitch.transpose_segments(n=5*7),
         #extend_beam=True,
         figure_name='LH.6',
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        lh_segments[6:8],
-        'Piano Music Voice 4',
-        baca.pitch.register(7, 7+10),
-        baca.pitch.transpose_segments(n=6*7),
-        #extend_beam=True,
-        figure_name='LH.7',
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        lh_segments[7:9],
-        'Piano Music Voice 4',
-        baca.pitch.register(8, 8+10),
-        baca.pitch.transpose_segments(n=7*7),
-        #extend_beam=True,
-        figure_name='LH.8',
+        hide_time_signature=True,
         ),
     )
 
