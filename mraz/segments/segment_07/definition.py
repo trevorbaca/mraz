@@ -80,10 +80,10 @@ staccato_imbrication = baca.tools.ImbricationSpecifier(
     )
 
 slur_specifier = baca.tools.SpannerSpecifier(
-    selector=selectortools.Selector().
-        by_class(scoretools.Tuplet, flatten=True).
+    selector=abjad.select().
+        by_class(abjad.Tuplet, flatten=True).
         get_slice(apply_to_each=True),
-    spanner=spannertools.Slur(),
+    spanner=abjad.Slur(),
     )
 
 accumulator(
@@ -109,6 +109,7 @@ accumulator(
         'Piano Music Voice 2',
         baca.dynamic_first_note('fff'),
         baca.register(7, 7+10),
+        slur_specifier,
         extend_beam=True,
         figure_name='RH2.1',
         imbrication_map={
@@ -138,6 +139,7 @@ accumulator(
         'Piano Music Voice 2',
         baca.nest('-1/16'),
         baca.register(9, 9+10),
+        slur_specifier,
         figure_name='RH2.2',
         imbrication_map={
             'Piano Music Voice 2I': (
@@ -165,6 +167,7 @@ accumulator(
         rh_segment_lists[5],
         'Piano Music Voice 2',
         baca.register(11, 11+10),
+        slur_specifier,
         extend_beam=True,
         figure_name='RH2.3',
         time_treatments=[-1],
@@ -194,7 +197,8 @@ accumulator(
         'Piano Music Voice 2',
         baca.nest('-1/16'),
         baca.register(13, 13+10),
-        figure_name='RH1.5',
+        slur_specifier,
+        figure_name='RH2.4',
         imbrication_map={
             'Piano Music Voice 2I': (accent_imbrication, [21, 27, 24]),
             },
@@ -206,6 +210,7 @@ accumulator(
         rh_segment_lists[9],
         'Piano Music Voice 2',
         baca.register(15, 15+10),
+        slur_specifier,
         extend_beam=True,
         figure_name='RH2.5',
         imbrication_map={
@@ -221,7 +226,7 @@ accumulator(
         'Piano Music Voice 1',
         baca.nest('2/16'),
         baca.register(23, 23+10),
-        figure_name='RH1.6',
+        figure_name='RH1.5',
         imbrication_map={
             'Piano Music Voice 1I': (marcato_imbrication, [30, 34, 37]),
             },
@@ -234,6 +239,7 @@ accumulator(
         rh_segment_lists[11],
         'Piano Music Voice 2',
         baca.register(17, 17+10),
+        slur_specifier,
         figure_name='RH2.6',
         time_treatments=[-1],
         imbrication_map={
@@ -285,6 +291,7 @@ accumulator(
         baca.nest('-2/16'),
         baca.register(0, 0+16),
         baca.transpose_segments(n=1*7),
+        slur_specifier,
         figure_name='LH5.1',
         hide_time_signature=True,
         imbrication_map={
@@ -327,6 +334,7 @@ accumulator(
         baca.nest('-2/16'),
         baca.register(4, 4+16),
         baca.transpose_segments(n=3*7),
+        slur_specifier,
         figure_name='LH5.2',
         hide_time_signature=True,
         imbrication_map={
@@ -366,7 +374,9 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.tools.TempoSpecifier([
-    #(1, mraz.materials.tempi[112]),
+    (1, mraz.materials.tempi[84]),
+    (1, abjad.Accelerando()),
+    (9, mraz.materials.tempi[112]),
     ])
 
 spacing_specifier = baca.tools.SpacingSpecifier(
@@ -377,7 +387,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    allow_figure_names=True,
+    #allow_figure_names=True,
+    final_barline=Exact,
     hide_instrument_names=True,
     ignore_duplicate_pitch_classes=True,
     #label_clock_time=True,
@@ -525,5 +536,6 @@ segment_maker.append_specifiers(
     [
         baca.script_up(),
         baca.stem_up(),
+        baca.wrap.leaves(baca.beam_positions(9)),
         ],
     )
