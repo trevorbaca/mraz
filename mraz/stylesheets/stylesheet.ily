@@ -28,14 +28,14 @@
             " "
     }
     evenHeaderMarkup = \markup \null
-    left-margin = 0.5\in
+    left-margin = 0.75\in
     oddFooterMarkup = \evenFooterMarkup
     oddHeaderMarkup = \markup \null
     print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
-    right-margin = 0.5\in
+    right-margin = 0.25\in
     markup-system-spacing.minimum-distance = 48
     system-system-spacing.minimum-distance = 24
     top-markup-spacing.minimum-distance = 18
@@ -201,6 +201,7 @@
         \type Engraver_group
         \alias Voice
         \voiceTwo
+        \override Slur.direction = #up
     }
     \context {
         \Voice
@@ -377,6 +378,7 @@
             (next-note semi-fixed-space . 0.0) 
             (right-edge extra-space . 0.0)
             )
+        \override BarLine.transparent = ##t
         \override BarLine.X-extent = #'(0 . 0)
         \override Beam.breakable = ##t
         \override Beam.damping = 99
