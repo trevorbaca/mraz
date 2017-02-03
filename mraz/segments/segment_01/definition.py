@@ -27,7 +27,7 @@ accumulator(
         list_,
         'Piano Music Voice 1',
         baca.overrides.beam_positions(6),
-        baca.pitch.register(-8),
+        baca.register(-8),
         extend_beam=True,
         figure_name=1,
         ),
@@ -76,6 +76,6 @@ accumulator._populate_segment_maker(segment_maker)
 #segment_maker.append_specifiers(
 #    ('Piano Music Voice 1', baca.select.stages(1, 2)),
 #    [
-#        baca.pitch.register(0, -12),
+#        baca.register(0, -12),
 #        ],
 #    )
