@@ -25,7 +25,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         list_,
         'Piano Music Voice 1',
-        baca.overrides.beam_positions(6),
+        baca.beam_positions(6),
         baca.register(-8),
         extend_beam=True,
         figure_name=1,
