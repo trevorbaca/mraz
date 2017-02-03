@@ -58,10 +58,8 @@ accumulator(
         rh_segment_lists[0],
         'Piano Music Voice 1',
         baca.first_note('fff'),
+        baca.nest(['2/16']),
         baca.register(13, 13+10),
-        baca.tools.NestingSpecifier(
-            time_treatments=['+1/16'],
-            ),
         extend_beam=True,
         figure_name='RH1.1',
         imbrication_map={
@@ -87,10 +85,8 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[2],
         'Piano Music Voice 1',
+        baca.nest(['1/16']),
         baca.register(15, 15+10),
-        baca.tools.NestingSpecifier(
-            time_treatments=['+1/16'],
-            ),
         figure_name='RH1.2',
         imbrication_map={
             'Piano Music Voice 3': (accent_imbrication, [22, 33, 28]),
@@ -103,6 +99,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[3],
         'Piano Music Voice 2',
+        baca.nest(['-1/16']),
         baca.register(9, 9+10),
         figure_name='RH2.2',
         ),
@@ -112,6 +109,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[4],
         'Piano Music Voice 1',
+        baca.nest(['1/16']),
         baca.register(17, 17+10),
         extend_beam=True,
         figure_name='RH1.3',
@@ -132,6 +130,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[6],
         'Piano Music Voice 1',
+        baca.nest(['1/16']),
         baca.register(19, 19+10),
         figure_name='RH1.4',
         ),
@@ -160,8 +159,10 @@ accumulator(
     accumulator.mraz_figure_maker(
         rh_segment_lists[10],
         'Piano Music Voice 1',
+        baca.nest(['2/16']),
         baca.register(23, 23+10),
         figure_name='RH1.6',
+        time_treatments=[-1],
         ),
     )
 
