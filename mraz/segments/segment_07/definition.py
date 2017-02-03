@@ -28,7 +28,7 @@ assert len(rh_segments) == 5
 lh_segments = abjad.CyclicTuple(lh_segments)
 assert len(lh_segments) == 5
 
-### RH (1) ###
+### RH ###
 
 all_rh_segments = []
 for i in range(8):
@@ -175,7 +175,7 @@ accumulator(
         ),
     )
 
-### LH (1) ###
+### LH ###
 
 all_lh_segments = []
 for i in range(5):
@@ -198,7 +198,7 @@ accumulator(
         baca.register(1, 1+10),
         baca.transpose_segments(n=0*7),
         #extend_beam=True,
-        figure_name='LH.1',
+        figure_name='LH4.1',
         local_anchor_selector=baca.select.logical_tie(7),
         remote_anchor_selector=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
@@ -211,11 +211,11 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[1],
-        'Piano Music Voice 4',
+        'Piano Music Voice 5',
         baca.register(2, 2+10),
         baca.transpose_segments(n=1*7),
         #extend_beam=True,
-        figure_name='LH.2',
+        figure_name='LH5.1',
         hide_time_signature=True,
         ),
     )
@@ -227,7 +227,7 @@ accumulator(
         baca.register(3, 3+10),
         baca.transpose_segments(n=2*7),
         #extend_beam=True,
-        figure_name='LH.3',
+        figure_name='LH4.2',
         hide_time_signature=True,
         ),
     )
@@ -235,11 +235,11 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         lh_segment_lists[3],
-        'Piano Music Voice 4',
+        'Piano Music Voice 5',
         baca.register(4, 4+10),
         baca.transpose_segments(n=3*7),
         #extend_beam=True,
-        figure_name='LH.4',
+        figure_name='LH5.2',
         hide_time_signature=True,
         ),
     )
@@ -251,8 +251,13 @@ accumulator(
         baca.register(5, 5+10),
         baca.transpose_segments(n=4*7),
         #extend_beam=True,
-        figure_name='LH.5',
+        figure_name='LH4.3',
         hide_time_signature=True,
+        local_anchor_selector=baca.select.logical_tie(-1),
+        remote_anchor_selector=baca.tools.VoicedSelector(
+            'Piano Music Voice 2',
+            baca.select.note(-1),
+            ),
         ),
     )
 
@@ -317,5 +322,22 @@ segment_maker.append_specifiers(
     [
         baca.script_down(),
         baca.wrap.leaves(baca.beam_positions(-5)),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 4', baca.select.stages(1, 10)),
+    [
+        baca.script_down(),
+        baca.wrap.leaves(baca.beam_positions(-5)),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(1, 10)),
+    [
+        baca.script_down(),
+        baca.stem_up(),
+        baca.wrap.leaves(baca.beam_positions(5)),
         ],
     )
