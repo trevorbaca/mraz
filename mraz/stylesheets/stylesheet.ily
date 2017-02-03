@@ -373,7 +373,7 @@
         \remove Mark_engraver
         \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
-        %\override BarLine.hair-thickness = 0.5
+        \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
             (custos minimum-space . 0.0) 
@@ -409,9 +409,9 @@
         \override TrillSpanner.bound-details.right.padding = 2
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
-        \override TupletBracket.padding = 2
+        \override TupletBracket.padding = 1.5
         \override TupletBracket.staff-padding = 1.5
-        \override TupletNumber.font-size = 1
+        \override TupletNumber.font-size = -1.5
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
