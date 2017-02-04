@@ -1,34 +1,40 @@
 TO-DO
 =====
 
-1.  Build segment 7:
-    Imbricate secondary (red) voice inside voice 1 (per-figure basis).
-    Imbricate secondary (red) voice inside voice 1 (across all figures).
-    Imbricate secondary (black) voice inside voice 2 (per-figure basis).
-    Imbricate secondary (black) voice inside voice 2 (across all figures).
-    Intercalate two or three figure-sized RH silences.
-    Add accents and phrase markings to voice 1.
-    Add accents and phrase markings to voice 2.
-    Build LH voices 3 and 4 in parallel to RH voices 1 and 2.
-    Promote imbrication_map into class: allow baca.beam_positions().
-    Add accelerando over entire section.
+1.  Turn imbrication map into ImbricationMap class.
+    Allow baca.beam_positions().
 
-2.  Make cover.
+2.  Reimplement all remaining sequencetools functions as Sequence methods.
+    Replace all sequencetools functions calls in mainline with method calls.
 
 3.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
     Not at initialization but at class definition.
 
-4.  Reimplement all remaining sequencetools functions as Sequence methods.
-    Replace all sequencetools functions calls in mainline with method calls.
+4.  Build segment 4.2.
 
 5.  Remove Expression.markup_expression.
     Remove Expression.string_template.
     Make Expression.get_markup() work on the fly.
     Make Expression.get_string() work on the fly.
 
-6.  Make iterate expressions enchain.
+6.  Refactor nested SegmentMaker.append_specifiers() signature from ...
+        segment_maker.append_specifiers(
+            ('Piano Music Voice 1', baca.select.stages(1, Infinity)),
+            [
+                baca.dynamic_up(),
+                baca.beam_positions(10),
+                ],
+            )
+    ... to ...
+        segment_maker.append_specifiers(
+            'Piano Music Voice 1',
+            baca.select.stages(1, Infinity)),
+            baca.dynamic_up(),
+            baca.beam_positions(10),
+            )
+    ... instead.
 
-7.  Turn imbrication map into ImbricationMap class.
+7.  Make iterate expressions enchain.
 
 8.  Integrate formalizations of all three pedals.
 
