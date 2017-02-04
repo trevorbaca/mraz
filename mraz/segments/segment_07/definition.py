@@ -273,8 +273,8 @@ accumulator(
             ),
         baca.transpose_segments(n=0*7),
         figure_name='LH4.1',
-        local_anchor_selector=baca.select.logical_tie(7),
-        remote_anchor_selector=baca.tools.VoicedSelector(
+        local_anchor=baca.select.logical_tie(7),
+        remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(0),
             ),
@@ -299,8 +299,8 @@ accumulator(
         slur_specifier,
         figure_name='LH5.1',
         hide_time_signature=True,
-        local_anchor_selector=baca.select.logical_tie(3),
-        remote_anchor_selector=baca.tools.VoicedSelector(
+        local_anchor=baca.select.logical_tie(3),
+        remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(4),
             ),
@@ -321,8 +321,8 @@ accumulator(
         baca.transpose_segments(n=2*7),
         figure_name='LH4.2',
         hide_time_signature=True,
-        local_anchor_selector=baca.select.logical_tie(0),
-        remote_anchor_selector=baca.tools.VoicedSelector(
+        local_anchor=baca.select.logical_tie(0),
+        remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(14),
             ),
@@ -346,8 +346,8 @@ accumulator(
         slur_specifier,
         figure_name='LH5.2',
         hide_time_signature=True,
-        local_anchor_selector=baca.select.logical_tie(10),
-        remote_anchor_selector=baca.tools.VoicedSelector(
+        local_anchor=baca.select.logical_tie(10),
+        remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(26),
             ),
@@ -368,8 +368,8 @@ accumulator(
         baca.transpose_segments(n=4*7),
         figure_name='LH4.3',
         hide_time_signature=True,
-        local_anchor_selector=baca.select.logical_tie(0),
-        remote_anchor_selector=baca.tools.VoicedSelector(
+        local_anchor=baca.select.logical_tie(0),
+        remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 2',
             baca.select.note(-6),
             ),
