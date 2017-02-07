@@ -28,6 +28,7 @@ assert len(rh_segments) == 5
 lh_segments = abjad.CyclicTuple(lh_segments)
 assert len(lh_segments) == 5
 
+
 ### RH ###
 
 all_rh_segments = []
