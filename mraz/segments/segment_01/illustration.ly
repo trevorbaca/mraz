@@ -319,7 +319,15 @@
                             }
                         }
                     }
+                    \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
                         s1 * 59/16
                         \bar "|"
                     }
@@ -333,11 +341,19 @@
                         s1 * 59/16
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFour = "Piano Music Voice 5" {
+                    \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
                         s1 * 59/16
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFour = "Piano Music Voice 6" {
+                    \context PianoMusicVoiceFive = "Piano Music Voice 5" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceSix = "Piano Music Voice 6" {
                         s1 * 59/16
                         \bar "|"
                     }

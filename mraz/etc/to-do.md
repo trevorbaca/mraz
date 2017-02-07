@@ -1,20 +1,25 @@
 TO-DO
 =====
 
-1.  Reimplement all remaining sequencetools functions as Sequence methods.
-    Replace all sequencetools functions calls in mainline with method calls.
+0.  Set voice colors:
+        1: red
+        2: black
+        3: darkgreen
+        4: blue
+        5: darkmagenta
+        6: darkcyan
+    
+1.  Build segment 4.2.
 
 2.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
     Not at initialization but at class definition.
 
-3.  Build segment 4.2.
-
-4.  Remove Expression.markup_expression.
+3.  Remove Expression.markup_expression.
     Remove Expression.string_template.
     Make Expression.get_markup() work on the fly.
     Make Expression.get_string() work on the fly.
 
-5.  Refactor nested SegmentMaker.append_specifiers() signature from ...
+4.  Refactor nested SegmentMaker.append_specifiers() signature from ...
         segment_maker.append_specifiers(
             ('Piano Music Voice 1', baca.select.stages(1, Infinity)),
             [
@@ -31,51 +36,51 @@ TO-DO
             )
     ... instead.
 
-6.  Make iterate expressions enchain.
+5.  Make iterate expressions enchain.
 
-7.  Integrate formalizations of all three pedals.
+6.  Integrate formalizations of all three pedals.
 
-8.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
+7.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
 
-9.  Integrate resonance depressed pitches.
+8.  Integrate resonance depressed pitches.
     Extend resonance pitches with the middle pedal.
 
-10. Debug possible up-up markup contention at stage 5.
+9.  Debug possible up-up markup contention at stage 5.
 
-11. Integrate SetClass group-system tracking.
+10. Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-12. Integrate PitchTree set-class label-coloring.
+11. Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-13. Merge everything back to mainline.
+12. Merge everything back to mainline.
 
-14. Equip SegmentMaker with label_voices property.
+13. Equip SegmentMaker with label_voices property.
 
-15. Extend selectors to work with named figures.
+14. Extend selectors to work with named figures.
 
-14. Generalize RegistrationSpecifier:
+13. Generalize RegistrationSpecifier:
     * centroid spacing
     * ChordalSpacingSpecifier
     * multistage (breakpoint) contour specification
 
-15. Implement SimultaneitySpecifier.
+14. Implement SimultaneitySpecifier.
     Formalize patterned simultaneities in a single voice.
     Applies to output of registration specifier.
     (Octave-greater intervals possible after registration specifier.)
     Implement 0 or more LMRSpecifier objects.
 
-16. Implement RepartitionSpecifier.
+15. Implement RepartitionSpecifier.
     Pass to FigureMaker.
     Use in combination with successive transforms.
 
-17. Extend FigureMaker with optional pitch-class transforms.
+16. Extend FigureMaker with optional pitch-class transforms.
 
-18. Extend FigureMaker with optional RepartitionSpecifier.
+17. Extend FigureMaker with optional RepartitionSpecifier.
 
-19. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+18. Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
 
-20. Implement generalized successive transforms. Operates in a single voice.
+19. Implement generalized successive transforms. Operates in a single voice.
     First version with six input parameters: list of 1 or more pitch-class
     sets; list of 0 or more pitch-class transforms including arbitrary
     permutation; optional repartition specifier; list of 1 or more registration
@@ -86,7 +91,7 @@ TO-DO
     carries process to identity a second time with ongoing changes in register
     and dynamics governing both cycles.
 
-21. Implement centroid registration. Operates in a single voice. First version
+20. Implement centroid registration. Operates in a single voice. First version
     with three input parameters: pitch-class set; ContourSpecifier (derived
     from RegistrationSpecifier but with notions of absolute octave removed to
     allow formalization of pure contour); centroid pitch. Figure contours
@@ -97,7 +102,7 @@ TO-DO
     generates crossproduct. Indexing crossproduct happens external to
     figure-maker.
 
-22. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+21. Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
     0, ...] with relatively wide figuration that differs arpeggiation. Centers
     on a single octave. Register interpolation moves the material gradually up
     or down.
