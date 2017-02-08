@@ -36,27 +36,33 @@ assert sum([
 
 ### STAGE 2 (B) ###
 
-#all_rh_segments = []
-#for i in range(8):
-#    start = i
-#    stop = i + 3
-#    rh_segments_ = rh_segments[start:stop]
-#    operator = baca.pitch_class_segment().transpose(n=i*7)
-#    expression = baca.sequence().map(operator)
-#    rh_segments_ = expression(rh_segments_)
-#    all_rh_segments.extend(rh_segments_)
-#all_rh_segments = baca.Sequence(all_rh_segments)
-#rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
-#assert len(rh_segment_lists) == 12
-
 accumulator(
     accumulator.mraz_figure_maker(
         stage_2_segments,
         'Piano Music Voice 5',
         baca.dynamic_first_note('ff'),
         baca.register(-7),
-        extend_beam=True,
+        figure_name='lh-4-2-ref',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.dynamic_first_note('ff'),
+        baca.register(-7),
         figure_name='lh-4-2-1',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[1:2],
+        'Piano Music Voice 5',
+        baca.dynamic_first_note('ff'),
+        baca.register(-7),
+        figure_name='lh-4-2-2',
         ),
     )
 
