@@ -388,7 +388,7 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (9, mraz.materials.tempi[112]),
     ])
 
-spacing_specifier = baca.tools.SpacingSpecifier(
+spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
     fermata_measure_width=abjad.durationtools.Duration(1, 4),
     minimum_width=abjad.durationtools.Duration(1, 24),
     )
