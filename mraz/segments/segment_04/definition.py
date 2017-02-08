@@ -52,6 +52,7 @@ accumulator(
         'Piano Music Voice 5',
         baca.dynamic_first_note('ff'),
         baca.register(-7),
+        baca.remove_duplicate_pitch_classes(),
         figure_name='lh-4-2-1',
         ),
     )
