@@ -1,14 +1,6 @@
 TO-DO
 =====
 
-0.  Set voice colors:
-        1: red
-        2: black
-        3: darkgreen
-        4: blue
-        5: darkmagenta
-        6: darkcyan
-    
 1.  Build segment 4.2.
 
 2.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
