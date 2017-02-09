@@ -79,6 +79,16 @@
                         s1 * 5/4
                         \bar "|"
                     }
+                    \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
+                        s1 * 3/4
+                        s1 * 5/4
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                        s1 * 3/4
+                        s1 * 5/4
+                        \bar "|"
+                    }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
@@ -140,6 +150,16 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
+                        s1 * 3/4
+                        s1 * 5/4
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
+                        s1 * 3/4
+                        s1 * 5/4
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
                         s1 * 3/4
                         \override Score.BarLine.transparent = ##f
                         s1 * 5/4

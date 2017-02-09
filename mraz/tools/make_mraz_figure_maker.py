@@ -447,11 +447,15 @@ def make_mraz_figure_maker():
                 'Piano Music Voice 2',
                 'Piano Music Voice 2I',
                 'Piano Music Voice 3',
+                'Piano Music Voice 3I',
+                'Piano Music Voice RH Resonance',
                 'Piano Music Voice 4',
                 'Piano Music Voice 4I',
                 'Piano Music Voice 5',
                 'Piano Music Voice 5I',
                 'Piano Music Voice 6',
+                'Piano Music Voice 6I',
+                'Piano Music Voice LH Resonance',
                 ],
             )
 

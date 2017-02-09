@@ -236,6 +236,52 @@
     }
     \context {
         \Voice
+        \name PianoMusicVoiceThreeInserts
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #darkgreen
+        \override Beam.color = #darkgreen
+        \override Dots.color = #darkgreen
+        \override DynamicText.color = #darkgreen
+        \override Glissando.color = #darkgreen
+        \override Hairpin.color = #darkgreen
+        \override NoteHead.color = #darkgreen
+        \override RepeatTie.color = #darkgreen
+        \override Script.color = #darkgreen
+        \override Slur.color = #darkgreen
+        \override Stem.color = #darkgreen
+        \override StemTremolo.color = #darkgreen
+        \override TextScript.color = #darkgreen
+        \override TupletBracket.color = #darkgreen
+        \override TupletNumber.color = #darkgreen
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
+    \context {
+        \Voice
+        \name PianoMusicVoiceRHResonance
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #darkred
+        \override Beam.color = #darkred
+        \override Dots.color = #darkred
+        \override DynamicText.color = #darkred
+        \override Glissando.color = #darkred
+        \override Hairpin.color = #darkred
+        \override NoteHead.color = #darkred
+        \override RepeatTie.color = #darkred
+        \override Script.color = #darkred
+        \override Slur.color = #darkred
+        \override Stem.color = #darkred
+        \override StemTremolo.color = #darkred
+        \override TextScript.color = #darkred
+        \override TupletBracket.color = #darkred
+        \override TupletNumber.color = #darkred
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
+    \context {
+        \Voice
         \name PianoMusicVoiceFour
         \type Engraver_group
         \alias Voice
@@ -349,7 +395,52 @@
         \override TupletNumber.color = #darkcyan
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     }
-
+    \context {
+        \Voice
+        \name PianoMusicVoiceSixInserts
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #darkcyan
+        \override Beam.color = #darkcyan
+        \override Dots.color = #darkcyan
+        \override DynamicText.color = #darkcyan
+        \override Glissando.color = #darkcyan
+        \override Hairpin.color = #darkcyan
+        \override NoteHead.color = #darkcyan
+        \override RepeatTie.color = #darkcyan
+        \override Script.color = #darkcyan
+        \override Slur.color = #darkcyan
+        \override Stem.color = #darkcyan
+        \override StemTremolo.color = #darkcyan
+        \override TextScript.color = #darkcyan
+        \override TupletBracket.color = #darkcyan
+        \override TupletNumber.color = #darkcyan
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
+    \context {
+        \Voice
+        \name PianoMusicVoiceLHResonance
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #darkred
+        \override Beam.color = #darkred
+        \override Dots.color = #darkred
+        \override DynamicText.color = #darkred
+        \override Glissando.color = #darkred
+        \override Hairpin.color = #darkred
+        \override NoteHead.color = #darkred
+        \override RepeatTie.color = #darkred
+        \override Script.color = #darkred
+        \override Slur.color = #darkred
+        \override Stem.color = #darkred
+        \override StemTremolo.color = #darkred
+        \override TextScript.color = #darkred
+        \override TupletBracket.color = #darkred
+        \override TupletNumber.color = #darkred
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
     \context {
         \Staff
         \name PianoMusicRHStaff
@@ -360,6 +451,8 @@
         \accepts PianoMusicVoiceTwo
         \accepts PianoMusicVoiceTwoInserts
         \accepts PianoMusicVoiceThree
+        \accepts PianoMusicVoiceThreeInserts
+        \accepts PianoMusicVoiceRHResonance
     }
 
     \context {
@@ -372,6 +465,8 @@
         \accepts PianoMusicVoiceFive
         \accepts PianoMusicVoiceFiveInserts
         \accepts PianoMusicVoiceSix
+        \accepts PianoMusicVoiceSixInserts
+        \accepts PianoMusicVoiceLHResonance
     }
 
     \context {
