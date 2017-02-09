@@ -219,6 +219,7 @@
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         {
                             {
+                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \clef "bass"
                                 \dynamicUp
@@ -235,14 +236,17 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 <g b f' fs' a'>8. -\marcato \ff
+                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r2
                             }
                         }
                         {
                             {
+                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
@@ -256,7 +260,9 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 r8.
+                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -264,6 +270,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
                                         ^ \markup {
@@ -278,8 +285,10 @@
                                                             ]
                                                         }
                                             }
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r2
                                 }
@@ -287,6 +296,7 @@
                         }
                         {
                             {
+                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
@@ -300,12 +310,15 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 r8.
+                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
                         {
                             {
+                                \once \override Rest.direction = #up
                                 r16
                                     ^ \markup {
                                         \fontsize
@@ -319,12 +332,15 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>8. -\marcato
+                                \once \override Rest.direction = #up
                                 r2
                             }
                         }
                         {
                             {
+                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
@@ -338,7 +354,9 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 r8.
+                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -346,6 +364,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
                                         ^ \markup {
@@ -360,8 +379,10 @@
                                                             ]
                                                         }
                                             }
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r2
                                 }
@@ -369,6 +390,7 @@
                         }
                         {
                             {
+                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
@@ -382,7 +404,9 @@
                                                         ]
                                                     }
                                         }
+                                \once \override Rest.direction = #up
                                 r8.
+                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -390,6 +414,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
                                         ^ \markup {
@@ -404,8 +429,10 @@
                                                             ]
                                                         }
                                             }
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
+                                    \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r2
                                     \bar "|"
@@ -450,16 +477,88 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
+                        s1 * 2
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                {
+                                    s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \with-color
+                                                    #darkgreen
+                                                    \concat
+                                                        {
+                                                            [
+                                                            lhr-4-2-3
+                                                            ]
+                                                        }
+                                            }
+                                    \once \override Accidental.color = #magenta
+                                    \once \override Beam.color = #magenta
+                                    \once \override Dots.color = #magenta
+                                    \once \override Flag.color = #magenta
+                                    \once \override NoteHead.color = #magenta
+                                    \once \override Stem.color = #magenta
+                                    <cs,, cs,>2
+                                }
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/1 {
+                                {
+                                    \once \override Accidental.color = #magenta
+                                    \once \override Beam.color = #magenta
+                                    \once \override Dots.color = #magenta
+                                    \once \override Flag.color = #magenta
+                                    \once \override NoteHead.color = #magenta
+                                    \once \override Stem.color = #magenta
+                                    <cs,, cs,>4 \repeatTie
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \with-color
+                                                    #darkgreen
+                                                    \concat
+                                                        {
+                                                            [
+                                                            lhr-4-2-4-a
+                                                            ]
+                                                        }
+                                            }
+                                }
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4 {
+                                {
+                                    \once \override Accidental.color = #magenta
+                                    \once \override Beam.color = #magenta
+                                    \once \override Dots.color = #magenta
+                                    \once \override Flag.color = #magenta
+                                    \once \override NoteHead.color = #magenta
+                                    \once \override Stem.color = #magenta
+                                    <cs,, cs,>1 \repeatTie
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \with-color
+                                                    #darkgreen
+                                                    \concat
+                                                        {
+                                                            [
+                                                            lhr-4-2-4-b
+                                                            ]
+                                                        }
+                                            }
+                                }
+                            }
+                        }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 1
+                        s1 * 19/4
                         \bar "|"
                     }
                 >>

@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #6
+        currentBarNumber = #4
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -1024,6 +1024,34 @@
                         s1 * 1/8
                         \bar "|."
                     }
+                    \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|."
+                    }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
@@ -1615,6 +1643,34 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|."
+                    }
+                    \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/8
