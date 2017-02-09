@@ -56,7 +56,7 @@ accumulator(
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.flags(),
-        baca.proportional_notation_duration((1, 16)),
+        baca.proportional_notation_duration((1, 10)),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8], 16),
         baca.to_octave(n=3),
@@ -214,6 +214,7 @@ accumulator(
         baca.flags(),
         baca.nest('+1/4'),
         baca.skips_before([1], 4),
+        annotate_unregistered_pitches=False,
         figure_name='lhr-4-2-3',
         remote_anchor=baca.tools.VoicedSelector(
             'Piano Music Voice 5',
@@ -231,6 +232,7 @@ accumulator(
         baca.flags(),
         baca.nest('+1/4'),
         figure_name='lhr-4-2-4-a',
+        annotate_unregistered_pitches=False,
         hide_time_signature=True,
         talea__counts=[4],
         ),
@@ -244,6 +246,55 @@ accumulator(
         baca.flags(),
         baca.nest('+1/4'),
         figure_name='lhr-4-2-4-b',
+        annotate_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea__counts=[16],
+        ),
+    )
+
+###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-33, -21]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.skips_before([1], 4),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-4-2-7',
+        remote_anchor=baca.tools.VoicedSelector(
+            'Piano Music Voice 5',
+            baca.select.rest(12),
+            ),
+        talea__counts=[8],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-33, -21]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        figure_name='lhr-4-2-8-a',
+        annotate_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea__counts=[4],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-33, -21]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        figure_name='lhr-4-2-8-b',
+        annotate_unregistered_pitches=False,
         hide_time_signature=True,
         talea__counts=[16],
         ),
@@ -275,7 +326,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    allow_figure_names=True,
+    #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_duplicate_pitch_classes=True,
@@ -312,7 +363,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice LH Resonance', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice LH Resonance', baca.select.stages(3, 4)),
+    [
+        baca.tie(messiaen=True),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(7, 8)),
     [
         baca.tie(messiaen=True),
         ],

@@ -1,22 +1,7 @@
 TO-DO
 =====
 
-1.  Build segment 4.2.
-
-2.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
-
-3.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
-    Not at initialization but at class definition.
-
-4.  Equip SegmentMaker with label_voices property.
-
-5.  Integrate formalizations of all three pedals.
-
-6.  Extend selectors to work with named figures.
-
-7.  Implement RegistrationSpecifier multistage (breakpoint) contours
-
-8.  Implement centroid registration. Operates in a single voice. First version
+1.  Implement centroid registration. Operates in a single voice. First version
     with three input parameters: pitch-class set; ContourSpecifier (derived
     from RegistrationSpecifier but with notions of absolute octave removed to
     allow formalization of pure contour); centroid pitch. Figure contours
@@ -27,10 +12,25 @@ TO-DO
     generates crossproduct. Indexing crossproduct happens external to
     figure-maker.
 
-9.  Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+2.  Build segment 2.2.
+
+3.  Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
     0, ...] with relatively wide figuration that differs arpeggiation. Centers
     on a single octave. Register interpolation moves the material gradually up
     or down.
+
+4.  Implement RegistrationSpecifier multistage (breakpoint) contours
+
+5.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
+
+6.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
+    Not at initialization but at class definition.
+
+7.  Equip SegmentMaker with label_voices property.
+
+8.  Integrate formalizations of all three pedals.
+
+9.  Extend selectors to work with named figures.
 
 10. Refactor nested SegmentMaker.append_specifiers() signature from ...
         segment_maker.append_specifiers(
@@ -65,3 +65,8 @@ TO-DO
     Color set-classes that appear multiple times.
 
 16. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().
+
+17. Teach FigureMaker not annotate only unregistered pitch-classes.
+    This will remove many annotate_unregistered_pitches=False settings.
+
+18. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.

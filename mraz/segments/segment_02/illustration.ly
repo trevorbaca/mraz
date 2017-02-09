@@ -336,6 +336,14 @@
                         s1 * 59/16
                         \bar "|"
                     }
+                    \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
@@ -355,6 +363,14 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
                         s1 * 59/16
                         \bar "|"
                     }
