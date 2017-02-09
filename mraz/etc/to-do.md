@@ -1,33 +1,27 @@
 TO-DO
 =====
 
-0.  Add LH Resonance Voice.
+1.  Implement SimultaneitySpecifier.
+    Formalize patterned simultaneities in a single voice.
+    Teach FigureMaker about SimultaneitySpecifier.
+
+2.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
+
+3.  Add LH Resonance Voice.
     Add RH Resonance Voice.
 
-1.  Integrate resonance depressed pitches.
-    Extend resonance pitches with the middle pedal.
+4.  Build segment 4.2.
 
-2.  Extend FigureMaker with ClusterSpecifier for resonance pitches.
-
-3.  Build segment 4.2.
-
-4.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
+5.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
     Not at initialization but at class definition.
 
-5.  Equip SegmentMaker with label_voices property.
+6.  Equip SegmentMaker with label_voices property.
 
-6.  Integrate formalizations of all three pedals.
+7.  Integrate formalizations of all three pedals.
 
-7.  Extend selectors to work with named figures.
+8.  Extend selectors to work with named figures.
 
-8.  Implement RegistrationSpecifier multistage (breakpoint) contours
-
-9.  Implement SimultaneitySpecifier.
-    Formalize patterned simultaneities in a single voice.
-    Applies to output of registration specifier.
-    (Octave-greater intervals possible after registration specifier.)
-    Implement 0 or more LMRSpecifier objects.
-    Extend FigureMaker with list of 0 or more SimultaneitySpecifier objects.
+9.  Implement RegistrationSpecifier multistage (breakpoint) contours
 
 10. Implement centroid registration. Operates in a single voice. First version
     with three input parameters: pitch-class set; ContourSpecifier (derived
