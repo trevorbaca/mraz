@@ -128,7 +128,8 @@
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 24
+        %\override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 24
+        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 12
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
 
