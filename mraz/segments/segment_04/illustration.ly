@@ -220,27 +220,15 @@
                         {
                             {
                                 \once \override Rest.direction = #up
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 \clef "bass"
                                 \dynamicUp
                                 r16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-1
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 <g b f' fs' a'>8. -\marcato \ff
                                 \once \override Rest.direction = #up
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2
                             }
                         }
@@ -248,18 +236,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-2
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -273,18 +249,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lh5-4-2-3
-                                                            ]
-                                                        }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -298,18 +262,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-4
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -320,18 +272,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 r16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-5
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>8. -\marcato
                                 \once \override Rest.direction = #up
@@ -342,18 +282,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-6
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -367,18 +295,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lh5-4-2-7
-                                                            ]
-                                                        }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -392,18 +308,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh5-4-2-8
-                                                        ]
-                                                    }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -417,18 +321,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lh5-4-2-9
-                                                            ]
-                                                        }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -483,24 +375,6 @@
                             \times 4/3 {
                                 {
                                     s4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lhr-4-2-3
-                                                            ]
-                                                        }
-                                            }
-                                    \once \override Accidental.color = #magenta
-                                    \once \override Beam.color = #magenta
-                                    \once \override Dots.color = #magenta
-                                    \once \override Flag.color = #magenta
-                                    \once \override NoteHead.color = #magenta
-                                    \once \override Stem.color = #magenta
                                     <cs,, cs,>2
                                 }
                             }
@@ -509,25 +383,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 2/1 {
                                 {
-                                    \once \override Accidental.color = #magenta
-                                    \once \override Beam.color = #magenta
-                                    \once \override Dots.color = #magenta
-                                    \once \override Flag.color = #magenta
-                                    \once \override NoteHead.color = #magenta
-                                    \once \override Stem.color = #magenta
                                     <cs,, cs,>4 \repeatTie
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lhr-4-2-4-a
-                                                            ]
-                                                        }
-                                            }
                                 }
                             }
                         }
@@ -535,30 +391,38 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 {
-                                    \once \override Accidental.color = #magenta
-                                    \once \override Beam.color = #magenta
-                                    \once \override Dots.color = #magenta
-                                    \once \override Flag.color = #magenta
-                                    \once \override NoteHead.color = #magenta
-                                    \once \override Stem.color = #magenta
                                     <cs,, cs,>1 \repeatTie
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \with-color
-                                                    #darkgreen
-                                                    \concat
-                                                        {
-                                                            [
-                                                            lhr-4-2-4-b
-                                                            ]
-                                                        }
-                                            }
+                                }
+                            }
+                        }
+                        s1 * 3/2
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                {
+                                    s4
+                                    <ef,, ef,>2
+                                }
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 2/1 {
+                                {
+                                    <ef,, ef,>4 \repeatTie
+                                }
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4 {
+                                {
+                                    <ef,, ef,>1 \repeatTie
                                 }
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 19/4
+                        s1 * 1/2
                         \bar "|"
                     }
                 >>
