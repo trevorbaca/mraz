@@ -36,13 +36,31 @@ assert sum([
 
 ### STAGE 2 (B) ###
 
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        stage_2_segments,
+#        'Piano Music Voice 5',
+#        baca.dynamic_first_note('ff'),
+#        baca.register(-7),
+#        figure_name='lh-4-2-ref',
+#        ),
+#    )
+
 accumulator(
     accumulator.mraz_figure_maker(
-        stage_2_segments,
+        stage_2_segments[:1],
         'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
-        baca.register(-7),
-        figure_name='lh-4-2-ref',
+        baca.flags(),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_around([1], [8], 16),
+        baca.tenuti(),
+        baca.to_octave(n=3),
+        figure_name='lh-4-2-1',
+        preferred_denominator=4,
+        talea__counts=[3],
         ),
     )
 
@@ -52,25 +70,26 @@ accumulator(
         'Piano Music Voice 5',
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
-        baca.dynamic_first_note('ff'),
+        baca.flags(),
+        baca.marcati(),
         baca.remove_duplicate_pitch_classes(),
+        baca.rests_after([3, 16], 16),
         baca.to_octave(n=3),
-        figure_name='lh-4-2-1',
-        rest_prefix=[1],
-        rest_suffix=[12],
-        talea__counts=[3],
+        figure_name='lh-4-2-2',
+        preferred_denominator=4,
+        talea__counts=[1],
         ),
     )
 
-accumulator(
-    accumulator.mraz_figure_maker(
-        stage_2_segments[1:2],
-        'Piano Music Voice 5',
-        baca.dynamic_first_note('ff'),
-        baca.register(-7),
-        figure_name='lh-4-2-2',
-        ),
-    )
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        stage_2_segments[1:2],
+#        'Piano Music Voice 5',
+#        baca.dynamic_first_note('ff'),
+#        baca.register(-7),
+#        figure_name='lh-4-2-3',
+#        ),
+#    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -99,7 +118,7 @@ segment_maker = baca.tools.SegmentMaker(
     score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
-    #spacing_specifier=spacing_specifier,
+    spacing_specifier=spacing_specifier,
     stage_label_base_string='7',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
@@ -114,10 +133,10 @@ accumulator._populate_segment_maker(segment_maker)
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
-#    [
-#        baca.dynamic_up(),
-#        baca.beam_positions(10),
-#        ],
-#    )
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
+    [
+        baca.dynamic_up(),
+        baca.clef('bass'),
+        ],
+    )

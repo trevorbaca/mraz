@@ -13,21 +13,20 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 9/16
-                    R1 * 9/16
+                    \time 3/4
+                    R1 * 3/4
                 }
                 {
-                    \time 3/16
-                    R1 * 3/16
-                }
-                {
-                    R1 * 3/16
+                    \time 5/4
+                    R1 * 5/4
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 9/16
-                    s1 * 9/16 ^ \markup {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/4 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -45,11 +44,10 @@
                         }
                 }
                 {
-                    \time 3/16
-                    s1 * 3/16
-                }
-                {
-                    s1 * 3/16
+                    \time 5/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 5/4
                 }
             }
         >>
@@ -57,98 +55,48 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         {
                             {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs16 \ff [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \with-color
-                                                #darkgreen
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-4-2-ref
-                                                        ]
-                                                    }
-                                        }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                af16 ]
-                            }
-                        }
-                        {
-                            {
-                                <g b f' fs' a'>8. \ff
+                                \clef "bass"
+                                \dynamicUp
+                                r16
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -161,13 +109,13 @@
                                                         ]
                                                     }
                                         }
+                                <g b f' fs' a'>8. -\tenuto \ff
+                                r2
                             }
                         }
                         {
                             {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                d'16 \ff [
+                                <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -180,27 +128,21 @@
                                                         ]
                                                     }
                                         }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                af16 ]
+                                r8.
+                                r1
                                 \bar "|"
                             }
                         }
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
-                        s1 * 9/16
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
-                        s1 * 9/16
-                        s1 * 3/16
+                        s1 * 3/4
                         \override Score.BarLine.transparent = ##f
-                        s1 * 3/16
+                        s1 * 5/4
                         \bar "|"
                     }
                 >>
