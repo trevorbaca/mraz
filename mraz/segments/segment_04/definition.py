@@ -46,6 +46,8 @@ assert sum([
 #        ),
 #    )
 
+### VOICE 5 ###
+
 accumulator(
     accumulator.mraz_figure_maker(
         stage_2_segments[:1],
@@ -202,6 +204,51 @@ accumulator(
         ),
     )
 
+### LH RESONANCE ###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-35, -23]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.skips_before([1], 4),
+        figure_name='lhr-4-2-3',
+        remote_anchor=baca.tools.VoicedSelector(
+            'Piano Music Voice 5',
+            baca.select.rest(4),
+            ),
+        talea__counts=[8],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-35, -23]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        figure_name='lhr-4-2-4-a',
+        hide_time_signature=True,
+        talea__counts=[4],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        [[-35, -23]],
+        'Piano Music Voice LH Resonance',
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        figure_name='lhr-4-2-4-b',
+        hide_time_signature=True,
+        talea__counts=[16],
+        ),
+    )
+
 #accumulator(
 #    accumulator.mraz_figure_maker(
 #        stage_2_segments[1:2],
@@ -257,8 +304,16 @@ accumulator._populate_segment_maker(segment_maker)
 segment_maker.append_specifiers(
     ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
     [
-        baca.dynamic_up(),
         baca.clef('bass'),
+        baca.dynamic_up(),
         baca.marcati(),
+        baca.wrap.leaves(baca.rest_up()),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(1, Infinity)),
+    [
+        baca.tie(messiaen=True),
         ],
     )

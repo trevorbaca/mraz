@@ -422,9 +422,6 @@ def make_mraz_figure_maker():
                 beam_each_division=True,
                 beam_divisions_together=True,
                 ),
-            baca.tools.FigurePitchSpecifier(
-                to_pitch_classes=True,
-                ),
             baca.tools.RhythmSpecifier(
                 patterns=[
                     patterntools.Pattern(
@@ -470,9 +467,6 @@ def make_mraz_figure_maker():
     figure_maker = baca.tools.FigureMaker(
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
-            ),
-        baca.tools.FigurePitchSpecifier(
-            to_pitch_classes=True,
             ),
         baca.tools.RhythmSpecifier(
             patterns=abjad.patterntools.select_all(),

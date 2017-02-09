@@ -280,6 +280,9 @@
         \override TupletBracket.color = #darkred
         \override TupletNumber.color = #darkred
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override NoteHead.style = #'harmonic
+        \override TupletBracket.stencil = ##f
+        \override TupletNumber.stencil = ##f
     }
     \context {
         \Voice
@@ -441,6 +444,9 @@
         \override TupletBracket.color = #darkred
         \override TupletNumber.color = #darkred
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override NoteHead.style = #'harmonic
+        \override TupletBracket.stencil = ##f
+        \override TupletNumber.stencil = ##f
     }
     \context {
         \Staff
