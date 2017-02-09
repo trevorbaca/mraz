@@ -56,6 +56,9 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.to_octave(n=3),
         figure_name='lh-4-2-1',
+        rest_prefix=[1],
+        rest_suffix=[12],
+        talea__counts=[3],
         ),
     )
 
