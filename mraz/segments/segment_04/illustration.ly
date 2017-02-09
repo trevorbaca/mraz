@@ -17,8 +17,8 @@
                     R1 * 9/16
                 }
                 {
-                    \time 5/16
-                    R1 * 5/16
+                    \time 1/16
+                    R1 * 1/16
                 }
                 {
                     \time 3/16
@@ -46,8 +46,8 @@
                         }
                 }
                 {
-                    \time 5/16
-                    s1 * 5/16
+                    \time 1/16
+                    s1 * 1/16
                 }
                 {
                     \time 3/16
@@ -60,31 +60,31 @@
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
@@ -92,13 +92,13 @@
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
@@ -150,9 +150,7 @@
                         }
                         {
                             {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                g16 \ff [
+                                <g b f' fs' a'>16 \ff
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -165,18 +163,6 @@
                                                         ]
                                                     }
                                         }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                a'16 ]
                             }
                         }
                         {
@@ -208,13 +194,13 @@
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         s1 * 3/16
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
                         s1 * 9/16
-                        s1 * 5/16
+                        s1 * 1/16
                         \override Score.BarLine.transparent = ##f
                         s1 * 3/16
                         \bar "|"
