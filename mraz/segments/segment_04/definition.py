@@ -50,6 +50,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         stage_2_segments[:1],
         'Piano Music Voice 5',
+        #baca.chord_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.register(-7),
         baca.remove_duplicate_pitch_classes(),
