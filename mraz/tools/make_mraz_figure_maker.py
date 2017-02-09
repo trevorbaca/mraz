@@ -195,12 +195,13 @@ def make_mraz_figure_maker():
             ...     stage_tokens[1:4],
             ...     stage_tokens[2:5],
             ...     ]
+            >>> segment_lists = [list(_) for _ in segment_lists]
             ...
             >>> for segment_list in segment_lists:
             ...     segment_list
-            ([4], [6, 2, 3, 5, 9, 8, 0], [11])
-            ([6, 2, 3, 5, 9, 8, 0], [11], [10, 7, 9, 8, 0, 5])
-            ([11], [10, 7, 9, 8, 0, 5], [4])
+            [[4], [6, 2, 3, 5, 9, 8, 0], [11]]
+            [[6, 2, 3, 5, 9, 8, 0], [11], [10, 7, 9, 8, 0, 5]]
+            [[11], [10, 7, 9, 8, 0, 5], [4]]
 
         ::
 
