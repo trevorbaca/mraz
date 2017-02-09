@@ -63,3 +63,5 @@ TO-DO
 
 15. Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
+
+16. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().

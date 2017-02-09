@@ -42,7 +42,7 @@ assert sum([
 #        'Piano Music Voice 5',
 #        baca.dynamic_first_note('ff'),
 #        baca.register(-7),
-#        figure_name='lh-4-2-ref',
+#        figure_name='lh5-4-2-ref',
 #        ),
 #    )
 
@@ -54,11 +54,11 @@ accumulator(
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.flags(),
+        baca.proportional_notation_duration((1, 16)),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8], 16),
-        baca.tenuti(),
         baca.to_octave(n=3),
-        figure_name='lh-4-2-1',
+        figure_name='lh5-4-2-1',
         preferred_denominator=4,
         talea__counts=[3],
         ),
@@ -71,13 +71,134 @@ accumulator(
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
-        baca.marcati(),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_after([3, 16], 16),
         baca.to_octave(n=3),
-        figure_name='lh-4-2-2',
+        figure_name='lh5-4-2-2',
         preferred_denominator=4,
         talea__counts=[1],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_around([1], [8], 16),
+        baca.to_octave(n=3),
+        baca.tuplet_bracket_up(),
+        figure_name='lh5-4-2-3',
+        preferred_denominator=4,
+        talea__counts=[3],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_after([3, 16], 16),
+        baca.to_octave(n=3),
+        figure_name='lh5-4-2-4',
+        preferred_denominator=4,
+        talea__counts=[1],
+        ),
+    )
+
+###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_around([1], [8], 16),
+        baca.to_octave(n=3),
+        figure_name='lh5-4-2-5',
+        preferred_denominator=4,
+        talea__counts=[3],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_after([3, 16], 16),
+        baca.to_octave(n=3),
+        figure_name='lh5-4-2-6',
+        preferred_denominator=4,
+        talea__counts=[1],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_around([1], [8], 16),
+        baca.to_octave(n=3),
+        baca.tuplet_bracket_up(),
+        figure_name='lh5-4-2-7',
+        preferred_denominator=4,
+        talea__counts=[3],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_after([3, 16], 16),
+        baca.to_octave(n=3),
+        figure_name='lh5-4-2-8',
+        preferred_denominator=4,
+        talea__counts=[1],
+        ),
+    )
+
+###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        stage_2_segments[:1],
+        'Piano Music Voice 5',
+        baca.chord(),
+        baca.chord_spacing_up(bass=7, soprano=9),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.remove_duplicate_pitch_classes(),
+        baca.rests_around([1], [8], 16),
+        baca.to_octave(n=3),
+        baca.tuplet_bracket_up(),
+        figure_name='lh5-4-2-9',
+        preferred_denominator=4,
+        talea__counts=[3],
         ),
     )
 
@@ -87,7 +208,7 @@ accumulator(
 #        'Piano Music Voice 5',
 #        baca.dynamic_first_note('ff'),
 #        baca.register(-7),
-#        figure_name='lh-4-2-3',
+#        figure_name='lh5-4-2-3',
 #        ),
 #    )
 
@@ -118,7 +239,7 @@ segment_maker = baca.tools.SegmentMaker(
     score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
-    spacing_specifier=spacing_specifier,
+    #spacing_specifier=spacing_specifier,
     stage_label_base_string='7',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
@@ -138,5 +259,6 @@ segment_maker.append_specifiers(
     [
         baca.dynamic_up(),
         baca.clef('bass'),
+        baca.marcati(),
         ],
     )
