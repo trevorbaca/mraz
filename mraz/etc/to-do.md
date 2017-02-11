@@ -1,6 +1,8 @@
 TO-DO
 =====
 
+0.  Make SegmentList.flatten() return a segment.
+
 1.  Generalize RegisterToOctaveSpecifier: by soprano, bass, centroid.
 
 2.  Generalize registration to work on a per-stage basis in a single figure.
