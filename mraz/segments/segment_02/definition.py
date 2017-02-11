@@ -26,7 +26,7 @@ assert stage_1_segments + stage_2_segments == segments
 
 stage_2_segments = stage_2_segments.join()
 stage_2_segments = stage_2_segments.read(2 * [5, 6, 6, 5, 5, 4])
-#stage_2_segments = stage_2_segments.remove_duplicates(level=1)
+stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 
 accumulator(
     accumulator.mraz_figure_maker(
