@@ -53,8 +53,8 @@ slur_specifier = baca.tools.SpannerSpecifier(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[0],
         'Piano Music Voice 1',
+        rh_segment_lists[0],
         baca.dynamic_first_note('fff'),
         baca.nest('2/16'),
         baca.register(13, 13+10),
@@ -73,8 +73,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[1],
         'Piano Music Voice 2',
+        rh_segment_lists[1],
         baca.dynamic_first_note('fff'),
         baca.register(7, 7+10),
         baca.imbricate(
@@ -92,8 +92,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[2],
         'Piano Music Voice 1',
+        rh_segment_lists[2],
         baca.nest('1/16'),
         baca.register(15, 15+10),
         baca.imbricate(
@@ -109,8 +109,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[3],
         'Piano Music Voice 2',
+        rh_segment_lists[3],
         baca.nest('-1/16'),
         baca.register(9, 9+10),
         baca.imbricate(
@@ -126,8 +126,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[4],
         'Piano Music Voice 1',
+        rh_segment_lists[4],
         baca.nest('1/16'),
         baca.register(17, 17+10),
         baca.imbricate(
@@ -144,8 +144,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[5],
         'Piano Music Voice 2',
+        rh_segment_lists[5],
         baca.register(11, 11+10),
         baca.imbricate(
             'Piano Music Voice 2I',
@@ -163,8 +163,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[6],
         'Piano Music Voice 1',
+        rh_segment_lists[6],
         baca.nest('1/16'),
         baca.register(19, 19+10),
         baca.imbricate(
@@ -179,8 +179,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[7],
         'Piano Music Voice 2',
+        rh_segment_lists[7],
         baca.nest('-1/16'),
         baca.register(13, 13+10),
         baca.imbricate(
@@ -196,8 +196,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[9],
         'Piano Music Voice 2',
+        rh_segment_lists[9],
         baca.register(15, 15+10),
         baca.imbricate(
             'Piano Music Voice 2I',
@@ -214,8 +214,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[10],
         'Piano Music Voice 1',
+        rh_segment_lists[10],
         baca.nest('2/16'),
         baca.register(23, 23+10),
         baca.imbricate(
@@ -231,8 +231,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        rh_segment_lists[11],
         'Piano Music Voice 2',
+        rh_segment_lists[11],
         baca.register(17, 17+10),
         baca.imbricate(
             'Piano Music Voice 2I',
@@ -263,8 +263,8 @@ assert len(lh_segment_lists) == 5
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segment_lists[0],
         'Piano Music Voice 4',
+        lh_segment_lists[0],
         baca.dynamic_first_note('ff'),
         baca.register(-2, -2+16),
         baca.imbricate(
@@ -285,8 +285,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segment_lists[1],
         'Piano Music Voice 5',
+        lh_segment_lists[1],
         baca.dynamic_first_note('pp'),
         baca.nest('-2/16'),
         baca.register(0, 0+16),
@@ -310,8 +310,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segment_lists[2],
         'Piano Music Voice 4',
+        lh_segment_lists[2],
         baca.dynamic_first_note('ff'),
         baca.register(2, 2+16),
         baca.imbricate(
@@ -332,8 +332,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segment_lists[3],
         'Piano Music Voice 5',
+        lh_segment_lists[3],
         baca.dynamic_first_note('pp'),
         baca.nest('-2/16'),
         baca.register(4, 4+16),
@@ -357,8 +357,8 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        lh_segment_lists[4],
         'Piano Music Voice 4',
+        lh_segment_lists[4],
         baca.dynamic_first_note('ff'),
         baca.register(6, 6+10),
         baca.imbricate(
