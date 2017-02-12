@@ -30,8 +30,8 @@ stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 
 accumulator(
     accumulator.mraz_figure_maker(
-        stage_2_segments,
         'Piano Music Voice 2',
+        stage_2_segments,
         #baca.chord_spacing_up(bass=6),
         extend_beam=True,
         figure_name='2-ref',
