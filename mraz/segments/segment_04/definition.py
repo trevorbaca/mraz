@@ -62,7 +62,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-1',
         preferred_denominator=4,
-        talea__counts=[3],
+        talea_counts=[3],
         ),
     )
 
@@ -78,7 +78,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-2',
         preferred_denominator=4,
-        talea__counts=[1],
+        talea_counts=[1],
         ),
     )
 
@@ -96,7 +96,7 @@ accumulator(
         baca.tuplet_bracket_up(),
         figure_name='lh5-4-2-3',
         preferred_denominator=4,
-        talea__counts=[3],
+        talea_counts=[3],
         ),
     )
 
@@ -112,7 +112,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-4',
         preferred_denominator=4,
-        talea__counts=[1],
+        talea_counts=[1],
         ),
     )
 
@@ -130,7 +130,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-5',
         preferred_denominator=4,
-        talea__counts=[3],
+        talea_counts=[3],
         ),
     )
 
@@ -146,7 +146,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-6',
         preferred_denominator=4,
-        talea__counts=[1],
+        talea_counts=[1],
         ),
     )
 
@@ -164,7 +164,7 @@ accumulator(
         baca.tuplet_bracket_up(),
         figure_name='lh5-4-2-7',
         preferred_denominator=4,
-        talea__counts=[3],
+        talea_counts=[3],
         ),
     )
 
@@ -180,7 +180,7 @@ accumulator(
         baca.bass_to_octave(3),
         figure_name='lh5-4-2-8',
         preferred_denominator=4,
-        talea__counts=[1],
+        talea_counts=[1],
         ),
     )
 
@@ -200,7 +200,7 @@ accumulator(
         baca.tuplet_bracket_up(),
         figure_name='lh5-4-2-9',
         preferred_denominator=4,
-        talea__counts=[3],
+        talea_counts=[3],
         ),
     )
 
@@ -220,7 +220,7 @@ accumulator(
             'Piano Music Voice 5',
             baca.select.rest(4),
             ),
-        talea__counts=[8],
+        talea_counts=[8],
         ),
     )
 
@@ -234,7 +234,7 @@ accumulator(
         figure_name='lhr-4-2-4-a',
         annotate_unregistered_pitches=False,
         hide_time_signature=True,
-        talea__counts=[4],
+        talea_counts=[4],
         ),
     )
 
@@ -248,7 +248,7 @@ accumulator(
         figure_name='lhr-4-2-4-b',
         annotate_unregistered_pitches=False,
         hide_time_signature=True,
-        talea__counts=[16],
+        talea_counts=[16],
         ),
     )
 
@@ -268,7 +268,7 @@ accumulator(
             'Piano Music Voice 5',
             baca.select.rest(12),
             ),
-        talea__counts=[8],
+        talea_counts=[8],
         ),
     )
 
@@ -282,7 +282,7 @@ accumulator(
         figure_name='lhr-4-2-8-a',
         annotate_unregistered_pitches=False,
         hide_time_signature=True,
-        talea__counts=[4],
+        talea_counts=[4],
         ),
     )
 
@@ -296,7 +296,7 @@ accumulator(
         figure_name='lhr-4-2-8-b',
         annotate_unregistered_pitches=False,
         hide_time_signature=True,
-        talea__counts=[16],
+        talea_counts=[16],
         ),
     )
 
