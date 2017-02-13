@@ -11,21 +11,23 @@ import mraz
 accumulator = mraz.tools.FigureAccumulator()
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
+design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
-cells = abjad.datastructuretools.CyclicTuple(design)
-assert len(cells) == 34
-cells = cells[45:59]
-assert len(cells) == 14
-cells = baca.tools.Cursor(source=cells)
 
-tuple_ = cells.next(count=len(cells))
-list_ = [tree.get_payload() for tree in tuple_]
-assert len(list_) == 14
+
+#assert len(cells) == 34
+#cells = cells[45:59]
+#assert len(cells) == 14
+#cells = baca.tools.Cursor(source=cells)
+
+segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
+segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
+assert len(segments) == 14, repr(len(segments))
 
 accumulator(
     accumulator.mraz_figure_maker(
-        list_,
         'Piano Music Voice 1',
+        segments,
         baca.beam_positions(6),
         baca.register(-8),
         extend_beam=True,
