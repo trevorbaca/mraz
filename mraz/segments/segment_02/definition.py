@@ -25,9 +25,16 @@ stage_2_segments = segments[2:6]
 concat = stage_1_segments + stage_2_segments
 assert stage_1_segments + stage_2_segments == segments
 
+counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
 stage_2_segments = stage_2_segments.join()
-stage_2_segments = stage_2_segments.read(2 * [5, 6, 6, 5, 5, 4])
+stage_2_segments = stage_2_segments.read(counts)
 stage_2_segments = stage_2_segments.remove_duplicates(level=1)
+
+measure_1 = stage_2_segments[:6]
+measure_2 = stage_2_segments[6:11]
+measure_3 = stage_2_segments[11:16]
+measure_4 = stage_2_segments[16:20]
+measure_5 = stage_2_segments[20:24]
 
 #accumulator(
 #    accumulator.mraz_figure_maker(
@@ -35,7 +42,6 @@ stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 #        stage_2_segments[:2],
 #        baca.arpeggiate_down(),
 #        #baca.chord_spacing_up(bass=6),
-#        extend_beam=True,
 #        figure_name='2-1',
 #        ),
 #    )
@@ -43,12 +49,171 @@ stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        stage_2_segments,
+        measure_1,
         baca.arpeggiate_up(),
-        baca.center_to_octave(4),
-        #baca.chord_spacing_up(bass=6),
-        extend_beam=True,
-        figure_name='2-ref',
+        baca.bass_to_octave(3),
+        baca.dynamic_first_note('ppp'),
+        baca.slur_every_tuplet(),
+        baca.staccati(),
+        figure_name='2-2-1',
+        time_treatments=[0, 0, 1],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 2',
+        measure_2,
+        baca.arpeggiate_up(),
+        baca.bass_to_octave(4),
+        baca.slur_every_tuplet(),
+        baca.staccati(),
+        figure_name='2-2-2',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 2',
+        measure_3,
+        baca.arpeggiate_up(),
+        baca.bass_to_octave(4),
+        baca.slur_every_tuplet(),
+        baca.staccati(),
+        figure_name='2-2-3',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 2',
+        measure_4,
+        baca.arpeggiate_up(),
+        baca.bass_to_octave(5),
+        baca.slur_every_tuplet(),
+        baca.staccati(),
+        figure_name='2-2-4',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 2',
+        measure_5,
+        baca.arpeggiate_up(),
+        baca.bass_to_octave(5),
+        baca.slur_every_tuplet(),
+        baca.staccati(),
+        figure_name='2-2-5',
+        ),
+    )
+
+### LH RESONANCE ###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-1',
+        remote_anchor=baca.tools.VoicedSelector(
+            'Piano Music Voice 2',
+            baca.select.note(0),
+            ),
+        talea_counts=[28],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-1-b',
+        hide_time_signature=True,
+        talea_counts=[1],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-2-a',
+        hide_time_signature=True,
+        talea_counts=[24],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-2-b',
+        hide_time_signature=True,
+        talea_counts=[3],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-3-a',
+        hide_time_signature=True,
+        talea_counts=[15],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-3-b',
+        hide_time_signature=True,
+        talea_counts=[6],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-4',
+        hide_time_signature=True,
+        talea_counts=[15],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        annotate_unregistered_pitches=False,
+        figure_name='lhr-2-2-5',
+        hide_time_signature=True,
+        talea_counts=[16],
         ),
     )
 
@@ -57,7 +222,9 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.tools.TempoSpecifier([
-    (1, mraz.materials.tempi[112]),
+    (1, mraz.materials.tempi[84]),
+    (1, abjad.Accelerando()),
+    (3, mraz.materials.tempi[112]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
@@ -92,9 +259,23 @@ accumulator._populate_segment_maker(segment_maker)
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice 1', baca.select.stages(1, 2)),
-#    [
-#        baca.register(0, -12),
-#        ],
-#    )
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(1, Infinity)),
+    [
+        baca.clef('bass'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(1, 2)),
+    [
+        baca.tie(messiaen=True),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(3, 5)),
+    [
+        baca.tie(messiaen=True),
+        ],
+    )

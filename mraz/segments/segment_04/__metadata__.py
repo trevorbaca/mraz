@@ -21,7 +21,7 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
             ),
         ('end_tempo', 84),
         ('end_time_signature', '4/4'),
-        ('first_bar_number', 3),
+        ('first_bar_number', 7),
         ('measure_count', 9),
         ('segment_count', 4),
         ('segment_number', 3),
