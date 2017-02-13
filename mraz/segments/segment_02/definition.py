@@ -45,7 +45,7 @@ accumulator(
         'Piano Music Voice 2',
         stage_2_segments,
         baca.arpeggiate_up(),
-        baca.centroid_to_octave(3),
+        baca.center_to_octave(4),
         #baca.chord_spacing_up(bass=6),
         extend_beam=True,
         figure_name='2-ref',
