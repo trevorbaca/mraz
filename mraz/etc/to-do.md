@@ -1,8 +1,7 @@
 TO-DO
 =====
 
-1.  Add PitchClassSegment.to_pitch_classes(), to_pitches().
-    Add PitchSegment.to_pitch_classes(), to_pitches().
+1.  Change named PitchSegment, PitchClassSegment repr to string content.
 
 2.  Refactor ChordalSpacingSpecifier to map over segments.
     Like ArpeggiationSpacingSpecifier.

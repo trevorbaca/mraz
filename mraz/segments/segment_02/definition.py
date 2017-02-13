@@ -14,7 +14,7 @@ design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[14:20]]
-segments = baca.SegmentList(segments)
+segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 6, repr(len(segments))
 
 # 6 = 2 + 4
@@ -22,6 +22,7 @@ assert len(segments) == 6, repr(len(segments))
 stage_1_segments = segments[:2]
 stage_2_segments = segments[2:6]
 
+concat = stage_1_segments + stage_2_segments
 assert stage_1_segments + stage_2_segments == segments
 
 stage_2_segments = stage_2_segments.join()
