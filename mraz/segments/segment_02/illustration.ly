@@ -64,93 +64,28 @@
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs'16 [
+                                fs16 [
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                c''16
+                                c'16
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                af''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g'''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                a'''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f'''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                c''''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                ef''16
+                                af'16
                             }
                             {
                                 \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                bf16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
                                 \set stemLeftBeamCount = #2
@@ -163,47 +98,10 @@
                             {
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                d'16
+                                d16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                cs''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                ef'''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs'''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                c''''16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
+                                cs'16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
@@ -215,55 +113,157 @@
                                 ef''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                b''16
+                                f''16
                             }
                             {
                                 \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                a16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b16
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                b'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'''16
+                                fs''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                cs''''16
+                                c'''16
                             }
                             {
                                 \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                e16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                ef'16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                b16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                a'16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                d16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'16
+                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16
                                 \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f''16
-                                \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                a''16
+                                ef''16
                             }
                             {
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
+                                f16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                c'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                e16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
                                 b'16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                g16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                g''16
+                                b16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                fs'''16
+                                a'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                cs'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                af16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                a'16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                b16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g'16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                c''''16 ]
+                                c'''16 ]
                                 \bar "|"
                             }
                         }
