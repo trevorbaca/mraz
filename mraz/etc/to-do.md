@@ -1,44 +1,42 @@
 TO-DO
 =====
 
-1.  Change named PitchSegment, PitchClassSegment repr to string content.
-
-2.  Refactor ChordalSpacingSpecifier to map over segments.
+1.  Refactor ChordalSpacingSpecifier to map over segments.
     Like ArpeggiationSpacingSpecifier.
 
-3.  Integrate ArpeggiationSpecifier.
+2.  Integrate ArpeggiationSpecifier.
     Generalize to work on a per-stage basis.
 
-4.  Generalize ChordalSpacingSpecifier to work on a per-stage basis.
+3.  Generalize ChordalSpacingSpecifier to work on a per-stage basis.
 
-5.  Generalize ...
+4.  Generalize ...
         RegisterInterpolationSpecifier
         RegisterSpecifier
         RegisterToOctaveSpecifier
         RegisterTransitionSpecifier
     ... to work on a per-stage basis.
 
-6.  Build segment 2.2.
+5.  Build segment 2.2.
 
-7.  Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
+6.  Implement sinus registration. Sinus contour [..., 0, 1, 0, -1, 0, 1, 0, -1,
     0, ...] with relatively wide figuration that differs arpeggiation. Centers
     on a single octave. Register interpolation moves the material gradually up
     or down.
 
-8.  Implement RegistrationSpecifier multistage (breakpoint) contours
+7.  Implement RegistrationSpecifier multistage (breakpoint) contours
 
-9.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
+8.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
 
-10. Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
+9.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
     Not at initialization but at class definition.
 
-11. Equip SegmentMaker with label_voices property.
+10. Equip SegmentMaker with label_voices property.
 
-12. Implement baca.left_pedal(), baca.middle_pedal(), baca.right_pedal().
+11. Implement baca.left_pedal(), baca.middle_pedal(), baca.right_pedal().
 
-13. Extend selectors to work with named figures.
+12. Extend selectors to work with named figures.
 
-14. Refactor nested SegmentMaker.append_specifiers() signature from ...
+13. Refactor nested SegmentMaker.append_specifiers() signature from ...
         segment_maker.append_specifiers(
             ('Piano Music Voice 1', baca.select.stages(1, Infinity)),
             [
@@ -55,28 +53,28 @@ TO-DO
             )
     ... instead.
 
-15. Remove Expression.markup_expression.
+14. Remove Expression.markup_expression.
     Remove Expression.string_template.
     Make Expression.get_markup() work on the fly.
     Make Expression.get_string() work on the fly.
 
-16. Make iterate expressions enchain.
+15. Make iterate expressions enchain.
 
-17. Debug possible up-up markup contention at stage 5.
+16. Debug possible up-up markup contention at stage 5.
 
-18. Integrate SetClass group-system tracking.
+17. Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-19. Integrate PitchTree set-class label-coloring.
+18. Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-20. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().
+19. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().
 
-21. Teach FigureMaker not annotate only unregistered pitch-classes.
+20. Teach FigureMaker not annotate only unregistered pitch-classes.
     This will remove many annotate_unregistered_pitches=False settings.
 
-22. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
+21. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
 
-23. Refactor FigureRhythmMaker to accept *specifiers.
+22. Refactor FigureRhythmMaker to accept *specifiers.
     Refactor FigureRhythmMaker to accept RestAffixSpecifier objects.
     Refactor FigureRhythmMaker to longer accept [None, 7, 8] figure tokens.
