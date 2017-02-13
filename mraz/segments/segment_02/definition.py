@@ -28,10 +28,23 @@ stage_2_segments = stage_2_segments.join()
 stage_2_segments = stage_2_segments.read(2 * [5, 6, 6, 5, 5, 4])
 stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'Piano Music Voice 2',
+#        stage_2_segments[:2],
+#        baca.arpeggiate_down(),
+#        #baca.chord_spacing_up(bass=6),
+#        extend_beam=True,
+#        figure_name='2-1',
+#        ),
+#    )
+
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
         stage_2_segments,
+        baca.arpeggiate_up(),
+        baca.centroid_to_octave(4),
         #baca.chord_spacing_up(bass=6),
         extend_beam=True,
         figure_name='2-ref',
