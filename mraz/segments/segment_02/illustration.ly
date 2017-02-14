@@ -115,6 +115,14 @@
         >>
         \context MusicContext = "Music Context" {
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+                \set PianoMusicStaffGroup.instrumentName = \markup {
+                \hcenter-in
+                    #16
+                    Piano
+                }
+                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                \null
+                }
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         s1 * 29/16
