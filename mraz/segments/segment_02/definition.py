@@ -35,6 +35,8 @@ measure_2 = stage_2_segments[6:11]
 measure_3 = stage_2_segments[11:16]
 measure_4 = stage_2_segments[16:20]
 measure_5 = stage_2_segments[20:24]
+measures = [measure_1, measure_2, measure_3, measure_4, measure_5]
+assert baca.SegmentList(measures) == stage_2_segments
 
 #accumulator(
 #    accumulator.mraz_figure_maker(
