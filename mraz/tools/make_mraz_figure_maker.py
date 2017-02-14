@@ -8,6 +8,7 @@ def make_mraz_figure_maker():
 
     ::
 
+        >>> import abjad
         >>> import baca
         >>> import mraz
 

@@ -8,6 +8,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
 
     ::
 
+        >>> import abjad
         >>> import mraz
 
     ..  container:: example
