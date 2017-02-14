@@ -118,20 +118,7 @@ accumulator(
             'Piano Music Voice 2',
             baca.select.note(0),
             ),
-        talea_counts=[28],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        'Piano Music Voice LH Resonance',
-        [[-35, -23]],
-        baca.chord(),
-        baca.flags(),
-        annotate_unregistered_pitches=False,
-        figure_name='lhr-2-2-1-b',
-        hide_time_signature=True,
-        talea_counts=[1],
+        talea_counts=[29],
         ),
     )
 
@@ -144,20 +131,7 @@ accumulator(
         annotate_unregistered_pitches=False,
         figure_name='lhr-2-2-2-a',
         hide_time_signature=True,
-        talea_counts=[24],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        'Piano Music Voice LH Resonance',
-        [[-35, -23]],
-        baca.chord(),
-        baca.flags(),
-        annotate_unregistered_pitches=False,
-        figure_name='lhr-2-2-2-b',
-        hide_time_signature=True,
-        talea_counts=[3],
+        talea_counts=[27],
         ),
     )
 
@@ -170,20 +144,7 @@ accumulator(
         annotate_unregistered_pitches=False,
         figure_name='lhr-2-2-3-a',
         hide_time_signature=True,
-        talea_counts=[15],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_figure_maker(
-        'Piano Music Voice LH Resonance',
-        [[-33, -21]],
-        baca.chord(),
-        baca.flags(),
-        annotate_unregistered_pitches=False,
-        figure_name='lhr-2-2-3-b',
-        hide_time_signature=True,
-        talea_counts=[6],
+        talea_counts=[21],
         ),
     )
 
