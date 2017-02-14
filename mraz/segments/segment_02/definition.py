@@ -29,14 +29,8 @@ counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
 stage_2_segments = stage_2_segments.join()
 stage_2_segments = stage_2_segments.read(counts)
 stage_2_segments = stage_2_segments.remove_duplicates(level=1)
-
-measure_1 = stage_2_segments[:6]
-measure_2 = stage_2_segments[6:11]
-measure_3 = stage_2_segments[11:16]
-measure_4 = stage_2_segments[16:20]
-measure_5 = stage_2_segments[20:24]
-measures = [measure_1, measure_2, measure_3, measure_4, measure_5]
-assert baca.SegmentList(measures) == stage_2_segments
+measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
+assert measures.sum() == stage_2_segments
 
 #accumulator(
 #    accumulator.mraz_figure_maker(
@@ -51,7 +45,7 @@ assert baca.SegmentList(measures) == stage_2_segments
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measure_1,
+        measures[0],
         baca.arpeggiate_up(),
         baca.bass_to_octave(3),
         baca.dynamic_first_note('ppp'),
@@ -65,7 +59,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measure_2,
+        measures[1],
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
         baca.slur_every_tuplet(),
@@ -77,7 +71,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measure_3,
+        measures[2],
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
         baca.slur_every_tuplet(),
@@ -89,7 +83,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measure_4,
+        measures[3],
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
         baca.slur_every_tuplet(),
@@ -101,7 +95,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measure_5,
+        measures[4],
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
         baca.slur_every_tuplet(),
