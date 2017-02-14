@@ -52,7 +52,6 @@ accumulator(
         baca.slur_every_tuplet(),
         baca.staccati(),
         figure_name='2-2-1',
-        time_treatments=[0, 0, 1],
         ),
     )
 
