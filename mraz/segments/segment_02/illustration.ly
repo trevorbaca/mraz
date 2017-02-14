@@ -612,10 +612,6 @@
                             {
                                 \clef "bass"
                                 <cs,, cs,>1..
-                            }
-                        }
-                        {
-                            {
                                 <cs,, cs,>16 \repeatTie
                             }
                         }
@@ -623,25 +619,19 @@
                             {
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <cs,, cs,>1. \repeatTie
-                            }
-                        }
-                        {
-                            {
                                 <cs,, cs,>8. \repeatTie
                             }
                         }
                         {
                             {
-                                <ef,, ef,>2...
+                                <ef,, ef,>1
+                                <ef,, ef,>4 \repeatTie
+                                <ef,, ef,>16 \repeatTie
                             }
                         }
                         {
                             {
-                                <ef,, ef,>4. \repeatTie
-                            }
-                        }
-                        {
-                            {
+                                \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <ef,, ef,>2... \repeatTie
                             }
                         }
