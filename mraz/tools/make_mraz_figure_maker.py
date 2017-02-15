@@ -418,12 +418,6 @@ def make_mraz_figure_maker():
                 beam_divisions_together=True,
                 ),
             baca.tools.RhythmSpecifier(
-                patterns=[
-                    patterntools.Pattern(
-                        indices=[0],
-                        period=1,
-                        ),
-                    ],
                 rhythm_maker=baca.tools.FigureRhythmMaker(
                     talea=rhythmmakertools.Talea(
                         counts=[1],
@@ -464,7 +458,6 @@ def make_mraz_figure_maker():
             beam_divisions_together=True,
             ),
         baca.tools.RhythmSpecifier(
-            patterns=abjad.patterntools.select_all(),
             rhythm_maker=baca.tools.FigureRhythmMaker(
                 talea=abjad.rhythmmakertools.Talea(
                     counts=[1],
