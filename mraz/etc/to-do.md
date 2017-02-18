@@ -1,12 +1,10 @@
 TO-DO
 =====
 
-1.  Back-apply cursors to segment 6.
-
-2.  Write FigureMaker.__call__(thread=True) examples.
+1.  Write FigureMaker.__call__(thread=True) examples.
     Implement FigureMaker.thread initialization-time property.
 
-3.  Implement:
+2.  Implement:
         SegmentList.accumulate()
         SegmentList.has_duplicates()
         SegmentList.has_duplicate_pitch_classes()
@@ -18,17 +16,17 @@ TO-DO
         SegmentList.remove()
         SegmentList.retain()
 
-4.  Implement AnchorSpecifier to wrap local and remote anchors.
+3.  Implement AnchorSpecifier to wrap local and remote anchors.
 
-5.  Refactor RestAffixSpecifier to preserve rhythmic sanity.
+4.  Refactor RestAffixSpecifier to preserve rhythmic sanity.
 
-6.  Change SegmentMaker.ignore_duplicate_pitch_classes
+5.  Change SegmentMaker.ignore_duplicate_pitch_classes
         to SegmentMaker.ignore_repeated_pitch_classes
     Implement SegmentMaker.annotate_repeated_pitch_classes.
 
-7.  Implement SegmentMaker.label_octaves.
+6.  Implement SegmentMaker.label_octaves.
 
-8.  Teach HorizontalSpacingSpecifier to withstand cases in which LH material
+7.  Teach HorizontalSpacingSpecifier to withstand cases in which LH material
     juts out farther than the time for which RH time signatures have been
     created:
         > pdfm
@@ -45,9 +43,11 @@ TO-DO
             measure_timespan = measure_timespans[measure_index]
         IndexError: list index out of range
 
-9.  Implement ScoreTemplate.voice_colors dictionary.
+8.  Implement ScoreTemplate.voice_colors dictionary.
     Model voice colors explicitly.
     Label figures in voice color text.
+
+9.  Build segment 8.3.
 
 10. Teach FigureMaker about ClusterSpecifier (cluster resonance).
 
