@@ -214,12 +214,9 @@ accumulator(
         baca.flags(),
         baca.nest('+1/4'),
         baca.skips_before([1], 4),
+        anchor=baca.anchor('Piano Music Voice 5', baca.select.rest(4)),
         annotate_unregistered_pitches=False,
         figure_name='lhr-4-2-3',
-        remote_anchor=baca.tools.VoicedSelector(
-            'Piano Music Voice 5',
-            baca.select.rest(4),
-            ),
         talea_counts=[8],
         ),
     )
@@ -262,12 +259,9 @@ accumulator(
         baca.flags(),
         baca.nest('+1/4'),
         baca.skips_before([1], 4),
+        anchor=baca.anchor('Piano Music Voice 5', baca.select.rest(12)),
         annotate_unregistered_pitches=False,
         figure_name='lhr-4-2-7',
-        remote_anchor=baca.tools.VoicedSelector(
-            'Piano Music Voice 5',
-            baca.select.rest(12),
-            ),
         talea_counts=[8],
         ),
     )
@@ -329,7 +323,7 @@ segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
-    ignore_duplicate_pitch_classes=True,
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,

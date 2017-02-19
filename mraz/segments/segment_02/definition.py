@@ -111,12 +111,9 @@ accumulator(
         [[-35, -23]],
         baca.chord(),
         baca.flags(),
+        anchor=baca.anchor('Piano Music Voice 2', baca.select.note(0)),
         annotate_unregistered_pitches=False,
         figure_name='lhr-2-2-1',
-        remote_anchor=baca.tools.VoicedSelector(
-            'Piano Music Voice 2',
-            baca.select.note(0),
-            ),
         talea_counts=[29],
         ),
     )

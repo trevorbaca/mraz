@@ -1,17 +1,13 @@
 TO-DO
 =====
 
-1.  Implement AnchorSpecifier to wrap local and remote anchors.
+1.  Refactor RestAffixSpecifier to preserve rhythmic sanity.
 
-2.  Refactor RestAffixSpecifier to preserve rhythmic sanity.
+2.  Implement SegmentMaker.annotate_repeat_pitch_classes.
 
-3.  Change SegmentMaker.ignore_duplicate_pitch_classes
-        to SegmentMaker.ignore_repeated_pitch_classes
-    Implement SegmentMaker.annotate_repeated_pitch_classes.
+3.  Implement SegmentMaker.label_octaves.
 
-4.  Implement SegmentMaker.label_octaves.
-
-5.  Teach HorizontalSpacingSpecifier to withstand cases in which LH material
+4.  Teach HorizontalSpacingSpecifier to withstand cases in which LH material
     juts out farther than the time for which RH time signatures have been
     created:
         > pdfm
@@ -28,22 +24,22 @@ TO-DO
             measure_timespan = measure_timespans[measure_index]
         IndexError: list index out of range
 
-6.  Implement ScoreTemplate.voice_colors dictionary.
+5.  Implement ScoreTemplate.voice_colors dictionary.
     Model voice colors explicitly.
     Label figures in voice color text.
 
-7.  Build segment 8.3.
+6.  Build segment 8.3.
 
-8.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
+7.  Teach FigureMaker about ClusterSpecifier (cluster resonance).
 
-9.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
+8.  Teach FigureAccumulator to populate _all_voice_names from ScoreTemplate.
     Not at initialization but at class definition.
 
-10. Equip SegmentMaker with label_voices property.
+9.  Equip SegmentMaker with label_voices property.
 
-11. Implement baca.left_pedal(), baca.middle_pedal(), baca.right_pedal().
+10. Implement baca.left_pedal(), baca.middle_pedal(), baca.right_pedal().
 
-12. Refactor nested SegmentMaker.append_specifiers() signature from ...
+11. Refactor nested SegmentMaker.append_specifiers() signature from ...
         segment_maker.append_specifiers(
             ('Piano Music Voice 1', baca.select.stages(1, Infinity)),
             [
@@ -60,32 +56,32 @@ TO-DO
             )
     ... instead.
 
-13. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().
+12. Make baca.tuplet_bracket_up() work in SegmentMaker.append_specifiers().
 
-14. Extend selectors to work with named figures.
+13. Extend selectors to work with named figures.
 
-15. Teach FigureMaker not annotate only unregistered pitch-classes.
+14. Teach FigureMaker not annotate only unregistered pitch-classes.
     This will remove many annotate_unregistered_pitches=False settings.
 
-16. Refactor FigureRhythmMaker to accept (star)specifiers.
+15. Refactor FigureRhythmMaker to accept (star)specifiers.
     Refactor FigureRhythmMaker to accept RestAffixSpecifier objects.
     Refactor FigureRhythmMaker to longer accept [None, 7, 8] figure tokens.
 
-17. Remove Expression.markup_expression.
+16. Remove Expression.markup_expression.
     Remove Expression.string_template.
     Make Expression.get_markup() work on the fly.
     Make Expression.get_string() work on the fly.
 
-18. Make iterate expressions enchain.
+17. Make iterate expressions enchain.
 
-19. Reestablish silver design transform markup.
+18. Reestablish silver design transform markup.
 
-20. Debug possible up-up markup contention at stage 5.
+19. Debug possible up-up markup contention at stage 5.
 
-21. Integrate SetClass group-system tracking.
+20. Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-22. Integrate PitchTree set-class label-coloring.
+21. Integrate PitchTree set-class label-coloring.
     Color set-classes that appear multiple times.
 
-23. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
+22. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
