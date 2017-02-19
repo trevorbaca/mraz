@@ -273,12 +273,12 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=0*7),
-        figure_name='LH4.1',
-        local_anchor=baca.select.logical_tie(7),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 2',
             baca.select.note(0),
+            baca.select.logical_tie(7),
             ),
+        figure_name='LH4.1',
         time_treatments=[-1],
         ),
     )
@@ -298,13 +298,13 @@ accumulator(
             ),
         baca.transpose_segments(n=1*7),
         slur_specifier,
-        figure_name='LH5.1',
-        hide_time_signature=True,
-        local_anchor=baca.select.logical_tie(3),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 2',
             baca.select.note(4),
+            baca.select.logical_tie(3),
             ),
+        figure_name='LH5.1',
+        hide_time_signature=True,
         ),
     )
 
@@ -320,13 +320,13 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=2*7),
-        figure_name='LH4.2',
-        hide_time_signature=True,
-        local_anchor=baca.select.logical_tie(0),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 2',
             baca.select.note(14),
+            baca.select.logical_tie(0),
             ),
+        figure_name='LH4.2',
+        hide_time_signature=True,
         ),
     )
 
@@ -345,13 +345,13 @@ accumulator(
             ),
         baca.transpose_segments(n=3*7),
         slur_specifier,
-        figure_name='LH5.2',
-        hide_time_signature=True,
-        local_anchor=baca.select.logical_tie(10),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 2',
             baca.select.note(26),
+            baca.select.logical_tie(10),
             ),
+        figure_name='LH5.2',
+        hide_time_signature=True,
         ),
     )
 
@@ -367,13 +367,13 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=4*7),
-        figure_name='LH4.3',
-        hide_time_signature=True,
-        local_anchor=baca.select.logical_tie(0),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 2',
             baca.select.note(-6),
+            baca.select.logical_tie(0),
             ),
+        figure_name='LH4.3',
+        hide_time_signature=True,
         time_treatments=[1],
         ),
     )
@@ -399,7 +399,7 @@ segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
-    ignore_duplicate_pitch_classes=True,
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,

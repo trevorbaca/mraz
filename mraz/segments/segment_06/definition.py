@@ -124,12 +124,12 @@ accumulator(
         baca.flags(),
         baca.register(0, 12),
         baca.tenuti(),
-        figure_name='v4-6-1-1',
-        local_anchor=baca.select.note(2),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(3),
+            baca.select.note(2),
             ),
+        figure_name='v4-6-1-1',
         talea_counts=[1, -1],
         time_treatments=[1],
         ),
@@ -142,12 +142,12 @@ accumulator(
         baca.flags(),
         baca.register(0, 12),
         baca.tenuti(),
-        figure_name='v4-6-1-2',
-        local_anchor=baca.select.note(2),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(9),
+            baca.select.note(2),
             ),
+        figure_name='v4-6-1-2',
         talea_counts=[1, -2],
         time_treatments=[2],
         ),
@@ -160,13 +160,13 @@ accumulator(
         baca.flags(),
         baca.register(0, 12),
         baca.tenuti(),
-        figure_name='v4-6-1-3',
-        hide_time_signature=True,
-        local_anchor=baca.select.note(1),
-        remote_anchor=baca.tools.VoicedSelector(
+        anchor=baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(13),
+            baca.select.note(1),
             ),
+        figure_name='v4-6-1-3',
+        hide_time_signature=True,
         talea_counts=[2, -1],
         talea_denominator=32,
         ),
@@ -205,7 +205,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
-    #ignore_duplicate_pitch_classes=True,
+    #ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
