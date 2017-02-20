@@ -425,7 +425,7 @@ def make_mraz_figure_maker():
                         ),
                     ),
                 ),
-            annotate_unregistered_pitches=True,
+            color_unregistered_pitches=True,
             preferred_denominator=16,
             voice_names=[
                 'Piano Music Voice 1',
@@ -465,7 +465,7 @@ def make_mraz_figure_maker():
                     ),
                 ),
             ),
-        annotate_unregistered_pitches=True,
+        color_unregistered_pitches=True,
         preferred_denominator=16,
         voice_names=voice_names,
         )
