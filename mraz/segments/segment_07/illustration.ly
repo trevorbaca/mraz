@@ -375,7 +375,7 @@
                             }
                         }
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
                         {
@@ -569,7 +569,7 @@
                             \revert TupletNumber.stencil
                         }
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         \dynamicDown
@@ -827,7 +827,7 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16 ] )
-                                \bar "|."
+                                \bar "|"
                             }
                         }
                     }
@@ -1004,7 +1004,7 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16 -\accent ]
-                                \bar "|."
+                                \bar "|"
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -1022,7 +1022,7 @@
                         s1 * 3/16
                         s1 * 5/8
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
                         s1 * 3/4
@@ -1036,7 +1036,7 @@
                         s1 * 3/16
                         s1 * 5/8
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
                         s1 * 3/4
@@ -1050,7 +1050,7 @@
                         s1 * 3/16
                         s1 * 5/8
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
@@ -1199,7 +1199,7 @@
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
                         s1 * 7/16
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
                         s1 * 3/8
@@ -1266,7 +1266,7 @@
                             \revert TupletNumber.stencil
                         }
                         s1 * 7/16
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         \once \override Beam.positions = #'(-6 . -6)
@@ -1501,7 +1501,7 @@
                         }
                         \once \override Beam.positions = #'(-4.5 . -4.5)
                         s1 * 303/272
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
                         \once \override Beam.positions = #'(9 . 9)
@@ -1640,7 +1640,7 @@
                         }
                         \once \override Beam.positions = #'(9 . 9)
                         s1 * 303/272
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
                         s1 * 3/4
@@ -1654,7 +1654,7 @@
                         s1 * 3/16
                         s1 * 5/8
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
                         s1 * 3/4
@@ -1668,7 +1668,7 @@
                         s1 * 3/16
                         s1 * 5/8
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
                         s1 * 3/4
@@ -1683,7 +1683,7 @@
                         s1 * 5/8
                         \override Score.BarLine.transparent = ##f
                         s1 * 1/8
-                        \bar "|."
+                        \bar "|"
                     }
                 >>
             >>

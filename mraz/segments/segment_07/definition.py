@@ -405,11 +405,9 @@ segment_maker = baca.tools.SegmentMaker(
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
-    score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing_specifier=spacing_specifier,
-    stage_label_base_string='7',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
     )

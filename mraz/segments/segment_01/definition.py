@@ -56,14 +56,12 @@ segment_maker = baca.tools.SegmentMaker(
     #label_stages=True,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='',
-    score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing_specifier=spacing_specifier,
     stage_label_base_string='I',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
-    transpose_score=True,
     )
 
 #segment_maker.validate_stage_count()

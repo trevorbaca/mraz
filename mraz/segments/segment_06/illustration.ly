@@ -32,6 +32,8 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 9/8
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
                     s1 * 9/8 ^ \markup {
                         \fontsize
                             #-6
@@ -51,14 +53,20 @@
                 }
                 {
                     \time 4/8
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
                     s1 * 1/2
                 }
                 {
                     \time 7/8
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                    \newSpacingSection
                     s1 * 7/8
                 }
                 {
                     \time 5/8
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                    \newSpacingSection
                     s1 * 5/8
                 }
             }

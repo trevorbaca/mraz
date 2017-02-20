@@ -16,16 +16,14 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
         (
             'end_instruments_by_context',
             abjad.datastructuretools.TypedOrderedDict(
-                [
-                    ('Piano Music Staff Group', 'piano'),
-                    ]
+                []
                 ),
             ),
-        ('end_tempo', 112),
+        ('end_tempo', None),
         ('end_time_signature', '16/16'),
         ('first_bar_number', 2),
         ('measure_count', 5),
-        ('segment_count', 5),
+        ('segment_count', 6),
         ('segment_number', 2),
         ]
     )
