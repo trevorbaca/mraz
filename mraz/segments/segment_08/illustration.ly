@@ -13,20 +13,87 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 8/8
-                    R1 * 1
+                    \time 2/16
+                    R1 * 1/8
                 }
                 {
-                    \time 13/16
-                    R1 * 13/16
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    R1 * 3/16
+                }
+                {
+                    R1 * 3/16
+                }
+                {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 2/16
+                    R1 * 1/8
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 2/16
+                    R1 * 1/8
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    R1 * 3/16
+                }
+                {
+                    \time 2/16
+                    R1 * 1/8
+                }
+                {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    R1 * 3/16
+                }
+                {
+                    \time 2/16
+                    R1 * 1/8
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
+                }
+                {
+                    R1 * 3/16
+                }
+                {
+                    \time 4/16
+                    R1 * 1/4
+                }
+                {
+                    \time 3/16
+                    R1 * 3/16
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 8/8
+                    \time 2/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 1 ^ \markup {
+                    s1 * 1/8 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -44,10 +111,113 @@
                         }
                 }
                 {
-                    \time 13/16
+                    \time 3/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 13/16
+                    s1 * 3/16
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \time 4/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/4
+                }
+                {
+                    \time 2/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/8
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \time 4/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/4
+                }
+                {
+                    \time 2/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/8
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \time 2/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/8
+                }
+                {
+                    \time 4/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/4
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \time 2/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/8
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
+                }
+                {
+                    \time 4/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/4
+                }
+                {
+                    \time 3/16
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 3/16
                 }
             }
         >>
@@ -55,58 +225,219 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 8/7 {
+                            {
                                 \clef "bass"
-                                g,,8 -\staccato -\tenuto \ppp
+                                g16 \ppp
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -117,28 +448,261 @@
                                                     ]
                                                 }
                                         }
-                                fs,,8 -\staccato -\tenuto
-                                af,,8 -\staccato -\tenuto
-                                c,,8 -\staccato -\tenuto
-                                af,,8 -\staccato -\tenuto
-                                bf,,,8 -\staccato -\tenuto
-                                r8
+                                fs16
                             }
                         }
-                        s1 * 13/16
+                        {
+                            {
+                                g16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-2
+                                                    ]
+                                                }
+                                        }
+                                a16
+                                cs16
+                            }
+                        }
+                        {
+                            {
+                                b16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-3
+                                                    ]
+                                                }
+                                        }
+                                af16
+                                a16
+                            }
+                        }
+                        {
+                            {
+                                cs16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-4
+                                                    ]
+                                                }
+                                        }
+                                a16
+                                af16
+                            }
+                        }
+                        {
+                            {
+                                bf16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-5
+                                                    ]
+                                                }
+                                        }
+                                d16
+                                c16
+                                b16
+                            }
+                        }
+                        {
+                            {
+                                d16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-6
+                                                    ]
+                                                }
+                                        }
+                                bf16
+                            }
+                        }
+                        {
+                            {
+                                b16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-7
+                                                    ]
+                                                }
+                                        }
+                                cs16
+                                f16
+                            }
+                        }
+                        {
+                            {
+                                ef16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-8
+                                                    ]
+                                                }
+                                        }
+                                c16
+                                cs16
+                                ef16
+                            }
+                        }
+                        {
+                            {
+                                c16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-9
+                                                    ]
+                                                }
+                                        }
+                                d16
+                            }
+                        }
+                        {
+                            {
+                                fs16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-10
+                                                    ]
+                                                }
+                                        }
+                                e16
+                                ef16
+                            }
+                        }
+                        {
+                            {
+                                d16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-11
+                                                    ]
+                                                }
+                                        }
+                                ef16
+                                f16
+                            }
+                        }
+                        {
+                            {
+                                a16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-12
+                                                    ]
+                                                }
+                                        }
+                                g16
+                            }
+                        }
+                        {
+                            {
+                                b16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-13
+                                                    ]
+                                                }
+                                        }
+                                a16
+                                f16
+                                e16
+                            }
+                        }
+                        {
+                            {
+                                fs16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-8-3-14
+                                                    ]
+                                                }
+                                        }
+                                bf16
+                                af16
+                            }
+                        }
+                        s1 * 9/8
                         \bar "|."
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
-                        s1 * 1
+                        s1 * 41/16
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 13/12 {
-                                g'16 -\tenuto \f
+                            {
+                                af16 \f
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -149,29 +713,141 @@
                                                     ]
                                                 }
                                         }
-                                r16
-                                fs'16 -\tenuto
-                                r16
-                                af16 -\tenuto
-                                r16
-                                c'16 -\tenuto
-                                r16
-                                af16 -\tenuto
-                                r16
-                                bf16 -\tenuto
-                                r16
+                                c16
+                                bf16
+                            }
+                        }
+                        {
+                            {
+                                b16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v6-8-3-2
+                                                    ]
+                                                }
+                                        }
+                                ef16
+                            }
+                        }
+                        {
+                            {
+                                bf16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v6-8-3-3
+                                                    ]
+                                                }
+                                        }
+                                c16
+                                e16
+                            }
+                        }
+                        {
+                            {
+                                g16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v6-8-3-4
+                                                    ]
+                                                }
+                                        }
+                                f16
+                                cs16
+                            }
+                        }
+                        {
+                            {
+                                d16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v6-8-3-5
+                                                    ]
+                                                }
+                                        }
+                                e16
+                                af16
+                                fs16
+                            }
+                        }
+                        {
+                            {
+                                e16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v6-8-3-6
+                                                    ]
+                                                }
+                                        }
+                                f16
+                                g16
                                 \bar "|."
                             }
                         }
                     }
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 1
-                        s1 * 13/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 1/4
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/8
+                        s1 * 3/16
+                        s1 * 3/16
+                        s1 * 1/4
+                        s1 * 3/16
                         \bar "|."
                     }
                 >>
