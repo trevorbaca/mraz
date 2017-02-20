@@ -52,7 +52,6 @@ accumulator(
         baca.dynamic_first_note('pp'),
         baca.flags(),
         baca.register(24, 12),
-        #baca.rests_after([1], 8),
         baca.rests_after([1]),
         baca.staccati(),
         baca.tenuti(),
@@ -86,7 +85,6 @@ accumulator(
         rh_stage_1_segments.next(1),
         baca.flags(),
         baca.register(24, 12),
-        #baca.rests_around([1], [1], 8),
         baca.rests_around([1], [1]),
         baca.staccati(),
         baca.tenuti(),
@@ -109,7 +107,6 @@ accumulator(
         figure_name='v3-6-1-4',
         preferred_denominator=8,
         talea_denominator=8,
-        #thread=True,
         time_treatments=[1],
         ),
     )
@@ -214,14 +211,12 @@ segment_maker = baca.tools.SegmentMaker(
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
-    score_package=mraz,
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
-    #spacing_specifier=spacing_specifier,
+    spacing_specifier=spacing_specifier,
     #stage_label_base_string='I',
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
-    transpose_score=True,
     )
 
 #segment_maker.validate_stage_count()

@@ -9,78 +9,95 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
     ::
 
         >>> import mraz
+        
+    ..  container:: example
+
+        ::
+
+            >>> template = mraz.tools.ScoreTemplate()
+            >>> score = template()
+
+        ::
+
+            >>> f(score)
+            \context Score = "Score" <<
+                \context TimeSignatureContext = "Time Signature Context" <<
+                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                    }
+                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    }
+                >>
+                \context MusicContext = "Music Context" {
+                    \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+                        \set PianoMusicStaffGroup.instrumentName = \markup {
+                        \hcenter-in
+                            #16
+                            Piano
+                        }
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                        \null
+                        }
+                        \context PianoMusicRHStaff = "Piano Music RH Staff" <<
+                            \context PianoMusicVoiceOne = "Piano Music Voice 1" {
+                            }
+                            \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
+                            }
+                            \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
+                            }
+                            \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
+                            }
+                            \context PianoMusicVoiceThree = "Piano Music Voice 3" {
+                            }
+                            \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
+                            }
+                            \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                            }
+                        >>
+                        \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                            \context PianoMusicVoiceFour = "Piano Music Voice 4" {
+                            }
+                            \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
+                            }
+                            \context PianoMusicVoiceFive = "Piano Music Voice 5" {
+                            }
+                            \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
+                            }
+                            \context PianoMusicVoiceSix = "Piano Music Voice 6" {
+                            }
+                            \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
+                            }
+                            \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
+                            }
+                        >>
+                    >>
+                }
+            >>
 
     '''
+
+    ### CLASS VARIABLES ###
+
+    voice_colors = {
+        'Piano Music Voice 1': 'red',
+        'Piano Music Voice 1I': 'red',
+        'Piano Music Voice 2': 'black',
+        'Piano Music Voice 2I': 'black',
+        'Piano Music Voice 3': 'darkgreen',
+        'Piano Music Voice 3I': 'darkgreen',
+        'Piano Music Voice RH Resonance': 'darkred',
+        'Piano Music Voice 4': 'blue',
+        'Piano Music Voice 4I': 'blue',
+        'Piano Music Voice 5': 'darkmagenta',
+        'Piano Music Voice 5I': 'darkmagenta',
+        'Piano Music Voice 6': 'darkcyan',
+        'Piano Music Voice 6I': 'darkcyan',
+        'Piano Music Voice LH Resonance': 'darkred',
+        }
 
     ### SPECIAL METHODS ###
 
     def __call__(self):
         r'''Calls score template.
-
-        ..  container:: example
-
-            Calls score template:
-
-            ::
-
-                >>> template = mraz.tools.ScoreTemplate()
-                >>> score = template()
-
-            ::
-
-                >>> f(score)
-                \context Score = "Score" <<
-                    \context TimeSignatureContext = "Time Signature Context" <<
-                        \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
-                        }
-                        \context TimeSignatureContextSkips = "Time Signature Context Skips" {
-                        }
-                    >>
-                    \context MusicContext = "Music Context" {
-                        \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
-                            \set PianoMusicStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Piano
-                            }
-                            \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                            \null
-                            }
-                            \context PianoMusicRHStaff = "Piano Music RH Staff" <<
-                                \context PianoMusicVoiceOne = "Piano Music Voice 1" {
-                                }
-                                \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
-                                }
-                                \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                                }
-                                \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
-                                }
-                                \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                                }
-                                \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
-                                }
-                                \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
-                                }
-                            >>
-                            \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                                \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                                }
-                                \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
-                                }
-                                \context PianoMusicVoiceFive = "Piano Music Voice 5" {
-                                }
-                                \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
-                                }
-                                \context PianoMusicVoiceSix = "Piano Music Voice 6" {
-                                }
-                                \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
-                                }
-                                \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                                }
-                            >>
-                        >>
-                    }
-                >>
 
         Returns score.
         '''
@@ -208,4 +225,5 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             ],
             name='Score',
             )
+        self._validate_voice_names(score)
         return score
