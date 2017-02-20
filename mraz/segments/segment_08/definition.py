@@ -19,28 +19,31 @@ assert len(segments) == 6, repr(len(segments))
 stages = segments.partition([1, 1, 1, 3], overhang=Exact)
 assert stages.sum() == segments
 
-#stage_3_segments = stages[0]
-#stage_3_segments = baca.Sequence(stage_3_segments)
-#alpha = baca.pitch_class_segment().alpha()
-#transposition = baca.pitch_class_segment().transpose(n=2)
-#stage_3_segments = stage_3_segments.accumulate([alpha, transposition])
-#stage_3_segments = stage_3_segments.flatten(depth=1)
-#stage_3_segments = baca.SegmentList(stage_3_segments)
-#stage_3_segments = stage_3_segments.join()
-#counts = [3, 5, 4, 3, 4, 5, 5, 3, 4]
-#stage_3_segments = stage_3_segments.read(counts, check=Exact)
-#assert len(stage_3_segments.flatten()) == 36
-#rh_indices = [0, 2, 3, 5, 8]
-#rh_stage_3_segments = baca.SegmentList(stage_3_segments)
-#rh_stage_3_segments = rh_stage_3_segments.retain(rh_indices)
-#rh_stage_3_segments = rh_stage_3_segments.remove_duplicates(level=1)
-#lh_stage_3_segments = baca.SegmentList(stage_3_segments)
-#lh_stage_3_segments = lh_stage_3_segments.remove(rh_indices)
-#lh_stage_3_segments = lh_stage_3_segments.remove_duplicates(level=1)
-#assert len(rh_stage_3_segments) == 5
-#assert len(lh_stage_3_segments) == 4
-#rh_stage_3_segments = baca.Cursor(rh_stage_3_segments)
-#lh_stage_3_segments = baca.Cursor(lh_stage_3_segments)
+stage_3_segments = stages[2].remove_duplicates()
+stage_3_segments = stage_3_segments.accumulate([
+    baca.pitch_class_segment().alpha(),
+    baca.pitch_class_segment().transpose(n=2),
+    ])
+stage_3_segments = stage_3_segments.join()
+stage_3_segments = stage_3_segments.read(
+    5 * [2, 3, 4, 3],
+    check=Exact,
+    )
+assert len(stage_3_segments) == 20
+assert len(stage_3_segments.flatten()) == 60
+assert not stage_3_segments.has_repeats(level=-1), repr(stage_3_segments)
+
+v5_indices = [0, 2, 3, 5, 6, 8, 9]
+v5_stage_3_segments = stage_3_segments.retain(v5_indices, period=10)
+v5_stage_3_segments = v5_stage_3_segments.remove_repeats(level=-1)
+assert not v5_stage_3_segments.has_repeats(level=-1), repr(v5_stage_3_segments)
+v6_stage_3_segments = stage_3_segments.remove(v5_indices, period=10)
+v6_stage_3_segments = v6_stage_3_segments.remove_repeats(level=-1)
+assert not v6_stage_3_segments.has_repeats(level=-1), repr(v6_stage_3_segments)
+assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
+assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
+v5_stage_3_segments = baca.Cursor(v5_stage_3_segments)
+v6_stage_3_segments = baca.Cursor(v6_stage_3_segments)
 
 
 ### VOICE 5 ###
@@ -48,40 +51,210 @@ assert stages.sum() == segments
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stages[2],
+        v5_stage_3_segments.next(1),
         baca.dynamic_first_note('ppp'),
         baca.flags(),
-        baca.register(-39),
-        baca.rests_after([1]),
-        baca.staccati(),
-        baca.tenuti(),
+        baca.register(-12),
         figure_name='v5-8-3-1',
-        preferred_denominator=8,
-        talea_denominator=8,
-        thread=True,
-        time_treatments=[1, 0],
         ),
     )
 
-#assert rh_stage_3_segments.is_exhausted
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-2',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-3',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-4',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-5',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-6',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-7',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-8',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-9',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-10',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-11',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-12',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-13',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_3_segments.next(1),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v5-8-3-14',
+        ),
+    )
+
+assert v5_stage_3_segments.is_exhausted
 
 ### VOICE 6 ###
 
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 6',
-        stages[2],
+        v6_stage_3_segments.next(),
         baca.dynamic_first_note('f'),
         baca.flags(),
-        baca.register(0, -12),
-        baca.tenuti(),
+        baca.register(-12),
         figure_name='v6-8-3-1',
-        talea_counts=[1, -1],
-        time_treatments=[1],
         ),
     )
 
-#assert lh_stage_3_segments.is_exhausted
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 6',
+        v6_stage_3_segments.next(),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v6-8-3-2',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 6',
+        v6_stage_3_segments.next(),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v6-8-3-3',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 6',
+        v6_stage_3_segments.next(),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v6-8-3-4',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 6',
+        v6_stage_3_segments.next(),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v6-8-3-5',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 6',
+        v6_stage_3_segments.next(),
+        baca.flags(),
+        baca.register(-12),
+        figure_name='v6-8-3-6',
+        ),
+    )
+
+assert v6_stage_3_segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################

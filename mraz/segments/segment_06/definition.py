@@ -20,25 +20,25 @@ stages = segments.partition([1, 1, 1], overhang=Exact)
 assert stages.sum() == segments
 
 stage_1_segments = stages[0]
-stage_1_segments = baca.Sequence(stage_1_segments)
-alpha = baca.pitch_class_segment().alpha()
-transposition = baca.pitch_class_segment().transpose(n=2)
-stage_1_segments = stage_1_segments.accumulate([alpha, transposition])
-stage_1_segments = stage_1_segments.flatten(depth=1)
-stage_1_segments = baca.SegmentList(stage_1_segments)
+stage_1_segments = stage_1_segments.accumulate([
+    baca.pitch_class_segment().alpha(),
+    baca.pitch_class_segment().transpose(n=2),
+    ])
 stage_1_segments = stage_1_segments.join()
-counts = [3, 5, 4, 3, 4, 5, 5, 3, 4]
-stage_1_segments = stage_1_segments.read(counts, check=Exact)
+stage_1_segments = stage_1_segments.read(
+    [3, 5, 4, 3, 4, 5, 5, 3, 4],
+    check=Exact,
+    )
 assert len(stage_1_segments.flatten()) == 36
+
 rh_indices = [0, 2, 3, 5, 8]
-rh_stage_1_segments = baca.SegmentList(stage_1_segments)
-rh_stage_1_segments = rh_stage_1_segments.retain(rh_indices)
+rh_stage_1_segments = stage_1_segments.retain(rh_indices)
 rh_stage_1_segments = rh_stage_1_segments.remove_duplicates(level=1)
-lh_stage_1_segments = baca.SegmentList(stage_1_segments)
-lh_stage_1_segments = lh_stage_1_segments.remove(rh_indices)
+lh_stage_1_segments = stage_1_segments.remove(rh_indices)
 lh_stage_1_segments = lh_stage_1_segments.remove_duplicates(level=1)
 assert len(rh_stage_1_segments) == 5
 assert len(lh_stage_1_segments) == 4
+
 rh_stage_1_segments = baca.Cursor(rh_stage_1_segments)
 lh_stage_1_segments = baca.Cursor(lh_stage_1_segments)
 
