@@ -162,6 +162,7 @@
         \override Hairpin.color = #red
         \override NoteHead.color = #red
         \override RepeatTie.color = #red
+        \override Rest.color = #red
         \override Script.color = #red
         \override Slur.color = #red
         \override Stem.color = #red
@@ -186,6 +187,7 @@
         \override Hairpin.color = #red
         \override NoteHead.color = #red
         \override RepeatTie.color = #red
+        \override Rest.color = #red
         \override Script.color = #red
         \override Slur.color = #red
         \override Stem.color = #red
@@ -225,6 +227,7 @@
         \override Hairpin.color = #darkgreen
         \override NoteHead.color = #darkgreen
         \override RepeatTie.color = #darkgreen
+        \override Rest.color = #darkgreen
         \override Script.color = #darkgreen
         \override Slur.color = #darkgreen
         \override Stem.color = #darkgreen
@@ -249,6 +252,7 @@
         \override Hairpin.color = #darkgreen
         \override NoteHead.color = #darkgreen
         \override RepeatTie.color = #darkgreen
+        \override Rest.color = #darkgreen
         \override Script.color = #darkgreen
         \override Slur.color = #darkgreen
         \override Stem.color = #darkgreen
@@ -272,6 +276,7 @@
         \override Hairpin.color = #darkred
         \override NoteHead.color = #darkred
         \override RepeatTie.color = #darkred
+        \override Rest.color = #darkred
         \override Script.color = #darkred
         \override Slur.color = #darkred
         \override Stem.color = #darkred
@@ -298,6 +303,7 @@
         \override Hairpin.color = #blue
         \override NoteHead.color = #blue
         \override RepeatTie.color = #blue
+        \override Rest.color = #blue
         \override Script.color = #blue
         \override Slur.color = #blue
         \override Stem.color = #blue
@@ -321,6 +327,7 @@
         \override Hairpin.color = #blue
         \override NoteHead.color = #blue
         \override RepeatTie.color = #blue
+        \override Rest.color = #blue
         \override Script.color = #blue
         \override Slur.color = #blue
         \override Stem.color = #blue
@@ -344,6 +351,7 @@
         \override Hairpin.color = #darkmagenta
         \override NoteHead.color = #darkmagenta
         \override RepeatTie.color = #darkmagenta
+        \override Rest.color = #darkmagenta
         \override Script.color = #darkmagenta
         \override Slur.color = #darkmagenta
         \override Stem.color = #darkmagenta
@@ -367,6 +375,7 @@
         \override Hairpin.color = #darkmagenta
         \override NoteHead.color = #darkmagenta
         \override RepeatTie.color = #darkmagenta
+        \override Rest.color = #darkmagenta
         \override Script.color = #darkmagenta
         \override Slur.color = #darkmagenta
         \override Stem.color = #darkmagenta
@@ -390,6 +399,7 @@
         \override Hairpin.color = #darkcyan
         \override NoteHead.color = #darkcyan
         \override RepeatTie.color = #darkcyan
+        \override Rest.color = #darkcyan
         \override Script.color = #darkcyan
         \override Slur.color = #darkcyan
         \override Stem.color = #darkcyan
@@ -413,6 +423,7 @@
         \override Hairpin.color = #darkcyan
         \override NoteHead.color = #darkcyan
         \override RepeatTie.color = #darkcyan
+        \override Rest.color = #darkcyan
         \override Script.color = #darkcyan
         \override Slur.color = #darkcyan
         \override Stem.color = #darkcyan
@@ -436,6 +447,7 @@
         \override Hairpin.color = #darkred
         \override NoteHead.color = #darkred
         \override RepeatTie.color = #darkred
+        \override Rest.color = #darkred
         \override Script.color = #darkred
         \override Slur.color = #darkred
         \override Stem.color = #darkred
