@@ -13,17 +13,18 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 2/16
-                    R1 * 1/8
+                    \time 21/32
+                    R1 * 21/32
+                }
+                {
+                    \time 15/32
+                    R1 * 15/32
+                }
+                {
+                    R1 * 15/32
                 }
                 {
                     \time 3/16
-                    R1 * 3/16
-                }
-                {
-                    R1 * 3/16
-                }
-                {
                     R1 * 3/16
                 }
                 {
@@ -90,10 +91,10 @@
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 2/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \time 21/32
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
-                    s1 * 1/8 ^ \markup {
+                    s1 * 21/32 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -111,17 +112,18 @@
                         }
                 }
                 {
+                    \time 15/32
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                    \newSpacingSection
+                    s1 * 15/32
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                    \newSpacingSection
+                    s1 * 15/32
+                }
+                {
                     \time 3/16
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 3/16
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                    \newSpacingSection
-                    s1 * 3/16
-                }
-                {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 3/16
@@ -225,9 +227,9 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -248,9 +250,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -271,9 +273,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -294,9 +296,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -317,9 +319,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -340,9 +342,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -363,9 +365,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -388,9 +390,9 @@
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -411,9 +413,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -437,7 +439,7 @@
                         {
                             {
                                 \clef "bass"
-                                g16 \ppp
+                                g,8. \ppp
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -448,12 +450,15 @@
                                                     ]
                                                 }
                                         }
-                                fs16
+                                r32
+                                fs,,8.
+                                r32
+                                r8..
                             }
                         }
                         {
                             {
-                                g16
+                                g,,8
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -464,13 +469,16 @@
                                                     ]
                                                 }
                                         }
-                                a16
-                                cs16
+                                r32
+                                a,,8
+                                r32
+                                cs,8
+                                r32
                             }
                         }
                         {
                             {
-                                b16
+                                b,,,32
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -481,8 +489,11 @@
                                                     ]
                                                 }
                                         }
-                                af16
-                                a16
+                                r8
+                                af,,32
+                                r8
+                                a,,,32
+                                r8
                             }
                         }
                         {
@@ -676,9 +687,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -699,7 +710,7 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
-                        s1 * 41/16
+                        s1 * 117/32
                         {
                             {
                                 af16 \f
@@ -805,9 +816,9 @@
                         }
                     }
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8
@@ -828,9 +839,9 @@
                         \bar "|."
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 1/8
-                        s1 * 3/16
-                        s1 * 3/16
+                        s1 * 21/32
+                        s1 * 15/32
+                        s1 * 15/32
                         s1 * 3/16
                         s1 * 1/4
                         s1 * 1/8

@@ -54,8 +54,10 @@ accumulator(
         v5_stage_3_segments.next(1),
         baca.dynamic_first_note('ppp'),
         baca.flags(),
-        baca.register(-12),
-        figure_name='v5-8-3-1',
+        baca.register(-27, -39),
+        baca.rests_after([7]), figure_name='v5-8-3-1',
+        talea_counts=[6, -1, 6, -1, -7],
+        talea_denominator=32,
         ),
     )
 
@@ -64,8 +66,10 @@ accumulator(
         'Piano Music Voice 5',
         v5_stage_3_segments.next(1),
         baca.flags(),
-        baca.register(-12),
+        baca.register(-39, -27),
         figure_name='v5-8-3-2',
+        talea_counts=[4, -1],
+        talea_denominator=32,
         ),
     )
 
@@ -74,8 +78,10 @@ accumulator(
         'Piano Music Voice 5',
         v5_stage_3_segments.next(1),
         baca.flags(),
-        baca.register(-12),
+        baca.register(-39),
         figure_name='v5-8-3-3',
+        talea_counts=[1, -4],
+        talea_denominator=32,
         ),
     )
 
