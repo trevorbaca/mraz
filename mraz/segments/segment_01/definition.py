@@ -75,7 +75,5 @@ accumulator._populate_segment_maker(segment_maker)
 
 #segment_maker.append_specifiers(
 #    ('Piano Music Voice 1', baca.select.stages(1, 2)),
-#    [
-#        baca.register(0, -12),
-#        ],
+#    baca.register(0, -12),
 #    )

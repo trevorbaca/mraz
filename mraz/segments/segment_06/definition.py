@@ -230,12 +230,8 @@ accumulator._populate_segment_maker(segment_maker)
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 3', baca.select.stages(1, Infinity)),
-    [
-        ],
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 4', baca.select.stages(1, Infinity)),
-    [
-        ],
     )
