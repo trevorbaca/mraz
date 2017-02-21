@@ -24,7 +24,7 @@ TO-DO
 8.  Allow talea_counts=[-1, 4].
     Allow talea_counts=[4, -1, -1].
 
-9. Fix RestAffixSpecifier to avoiding consuming extra talea counts.
+9.  Fix RestAffixSpecifier to avoiding consuming extra talea counts.
 
 10. Teach FigureMaker about ClusterSpecifier (cluster resonance).
 
@@ -54,7 +54,8 @@ TO-DO
             )
     ... instead.
 
-16. Extend selectors to work with named figures.
+16. Integrate increasingly semantic selectors.
+    Extend selectors to work with named figures.
 
 17. Teach FigureMaker to annotate only unregistered pitch-classes.
     This will remove many color_unregistered_pitches=False settings.
