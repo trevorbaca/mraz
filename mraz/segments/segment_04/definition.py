@@ -358,24 +358,18 @@ accumulator._populate_segment_maker(segment_maker)
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
-    [
-        baca.clef('bass'),
-        baca.dynamic_up(),
-        baca.marcati(),
-        baca.wrap.leaves(baca.rest_up()),
-        ],
+    baca.clef('bass'),
+    baca.dynamic_up(),
+    baca.marcati(),
+    baca.wrap.leaves(baca.rest_up()),
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice LH Resonance', baca.select.stages(3, 4)),
-    [
-        baca.tie(messiaen=True),
-        ],
+    baca.tie(messiaen=True),
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice LH Resonance', baca.select.stages(7, 8)),
-    [
-        baca.tie(messiaen=True),
-        ],
+    baca.tie(messiaen=True),
     )

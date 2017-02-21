@@ -363,21 +363,17 @@ accumulator._populate_segment_maker(segment_maker)
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
-    [
-        #abjad.label().with_indices(),
-        #abjad.label().with_pitches(),
-        baca.clef('bass'),
-        ],
+    #abjad.label().with_indices(),
+    #abjad.label().with_pitches(),
+    baca.clef('bass'),
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 6', baca.select.stages(1, Infinity)),
-    [
-        #abjad.label().with_pitches(),
-        baca.script_down(),
-        baca.stem_down(),
-        baca.tenuti(),
-        baca.tuplet_bracket_staff_padding(9),
-        baca.wrap.leaves(baca.rest_position(-16)),
-        ],
+    #abjad.label().with_pitches(),
+    baca.script_down(),
+    baca.stem_down(),
+    baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(9),
+    baca.wrap.leaves(baca.rest_position(-16)),
     )
