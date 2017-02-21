@@ -467,26 +467,23 @@
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
                                 \once \override Stem.direction = #down
-                                \once \override TupletBracket.staff-padding = #8
+                                \once \override TupletBracket.staff-padding = #9
                                 af,,4 -\tenuto \f
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #8
                                 r4
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
                                 \once \override Stem.direction = #down
-                                \once \override TupletBracket.staff-padding = #8
+                                \once \override TupletBracket.staff-padding = #9
                                 c,,4 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #8
                                 r4
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
                                 \once \override Stem.direction = #down
-                                \once \override TupletBracket.staff-padding = #8
+                                \once \override TupletBracket.staff-padding = #9
                                 bf,,,4 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #8
                                 r4
                             }
                         }
@@ -503,7 +500,6 @@
                                 b,,,8 -\tenuto
                                 \once \override Rest.direction = #up
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r4
                                 \once \override Rest.direction = #up
                                 \once \override Rest.staff-position = #-16
@@ -513,7 +509,6 @@
                                 ef,,8 -\tenuto
                                 \once \override Rest.direction = #up
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r4
                             }
                         }
@@ -528,7 +523,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 bf,,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -536,7 +530,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 c,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -544,7 +537,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 e,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                             }
                         }
@@ -559,7 +551,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 g,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -567,7 +558,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 f,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -575,7 +565,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 cs,,16 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r8.
                             }
                         }
@@ -616,7 +605,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 e,,8 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r4
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -624,7 +612,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 f,,8 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r4
                                 \once \override Rest.staff-position = #-16
                                 \once \override Script.direction = #down
@@ -632,7 +619,6 @@
                                 \once \override TupletBracket.staff-padding = #9
                                 g,,8 -\tenuto
                                 \once \override Rest.staff-position = #-16
-                                \once \override TupletBracket.staff-padding = #9
                                 r4
                             }
                         }

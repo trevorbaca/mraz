@@ -218,7 +218,6 @@ accumulator(
         baca.dynamic_first_note('f'),
         baca.flags(),
         baca.register(-39),
-        baca.tuplet_bracket_staff_padding(8),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.note(6),
@@ -238,7 +237,6 @@ accumulator(
         baca.flags(),
         baca.register(-39),
         baca.rest_up(),
-        baca.tuplet_bracket_staff_padding(9),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.note(11),
@@ -256,7 +254,6 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.flags(),
         baca.register(-39),
-        baca.tuplet_bracket_staff_padding(9),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.note(23),
@@ -275,7 +272,6 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.flags(),
         baca.register(-39),
-        baca.tuplet_bracket_staff_padding(9),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.note(27),
@@ -294,7 +290,6 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.flags(),
         baca.register(-39),
-        baca.tuplet_bracket_staff_padding(9),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.rest(33),
@@ -313,7 +308,6 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.flags(),
         baca.register(-39),
-        baca.tuplet_bracket_staff_padding(9),
         anchor=baca.anchor(
             'Piano Music Voice 5',
             baca.select.note(34),
@@ -383,6 +377,7 @@ segment_maker.append_specifiers(
         baca.script_down(),
         baca.stem_down(),
         baca.tenuti(),
+        baca.tuplet_bracket_staff_padding(9),
         baca.wrap.leaves(baca.rest_position(-16)),
         ],
     )
