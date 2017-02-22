@@ -119,15 +119,15 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 4',
         lh_stage_1_segments.next(1),
-        baca.dynamic_first_note('mp'),
-        baca.flags(),
-        baca.register(0, 12),
-        baca.tenuti(),
-        anchor=baca.anchor(
+        baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(3),
             baca.select.note(2),
             ),
+        baca.dynamic_first_note('mp'),
+        baca.flags(),
+        baca.register(0, 12),
+        baca.tenuti(),
         figure_name='v4-6-1-1',
         talea_counts=[1, -1],
         time_treatments=[1],
@@ -138,14 +138,14 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 4',
         lh_stage_1_segments.next(1),
-        baca.flags(),
-        baca.register(0, 12),
-        baca.tenuti(),
-        anchor=baca.anchor(
+        baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(9),
             baca.select.note(2),
             ),
+        baca.flags(),
+        baca.register(0, 12),
+        baca.tenuti(),
         figure_name='v4-6-1-2',
         talea_counts=[1, -2],
         time_treatments=[2],
@@ -156,14 +156,14 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 4',
         lh_stage_1_segments.next(1),
-        baca.flags(),
-        baca.register(0, 12),
-        baca.tenuti(),
-        anchor=baca.anchor(
+        baca.anchor(
             'Piano Music Voice 3',
             baca.select.note(13),
             baca.select.note(1),
             ),
+        baca.flags(),
+        baca.register(0, 12),
+        baca.tenuti(),
         figure_name='v4-6-1-3',
         hide_time_signature=True,
         talea_counts=[2, -1],
