@@ -10,7 +10,7 @@ piano = abjad.instrumenttools.Piano(
     )
 piano._default_scope = 'PianoMusicStaffGroup'
 
-instruments = abjad.datastructuretools.TypedOrderedDict([
+instruments = abjad.TypedOrderedDict([
     (
         'piano', 
         piano,
