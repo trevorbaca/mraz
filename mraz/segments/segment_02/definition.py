@@ -109,9 +109,9 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-35, -23]],
+        baca.anchor('Piano Music Voice 2', baca.select.note(0)),
         baca.chord(),
         baca.flags(),
-        anchor=baca.anchor('Piano Music Voice 2', baca.select.note(0)),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-1',
         talea_counts=[29],
