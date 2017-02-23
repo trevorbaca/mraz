@@ -16,8 +16,9 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
 
         ::
 
+            >>> score_template = mraz.tools.ScoreTemplate()
+            >>> accumulator = mraz.tools.FigureAccumulator(score_template)
             >>> voice_name = 'Piano Music Voice 1'
-            >>> accumulator = mraz.tools.FigureAccumulator()
             >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
             ...     accumulator.mraz_figure_maker(
@@ -96,29 +97,12 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
         '_mraz_figure_maker',
         )
 
-    _all_voice_names = (
-        'Piano Music Voice 1',
-        'Piano Music Voice 1I',
-        'Piano Music Voice 2',
-        'Piano Music Voice 2I',
-        'Piano Music Voice 3',
-        'Piano Music Voice 3I',
-        'Piano Music Voice RH Resonance',
-        'Piano Music Voice 4',
-        'Piano Music Voice 4I',
-        'Piano Music Voice 5',
-        'Piano Music Voice 5I',
-        'Piano Music Voice 6',
-        'Piano Music Voice 6I',
-        'Piano Music Voice LH Resonance',
-        )
-
     ### INITIALIZER ###
 
-    def __init__(self):
+    def __init__(self, score_template):
         import mraz
         superclass = super(FigureAccumulator, self)
-        superclass.__init__()
+        superclass.__init__(score_template)
         self._mraz_figure_maker = mraz.tools.make_mraz_figure_maker()
 
     ### PUBLIC PROPERTIES ###
