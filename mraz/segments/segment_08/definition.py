@@ -8,7 +8,7 @@ import mraz
 ##################################### [8] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator()
+accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
