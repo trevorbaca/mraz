@@ -105,15 +105,15 @@ accumulator(
 
 ### STAGE 1: VOICE 5 ###
 
-accumulator(
-    accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
-        #'Piano Music Voice 4',
-        v5_stage_1_segments.next(),
-        #baca.anchor('Piano Music Voice 3', baca.select.rest(0)),
-        figure_name='v5-1-1',
-        ),
-    )
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'Piano Music Voice 5',
+#        v5_stage_1_segments.next(),
+#        baca.anchor('Piano Music Voice 3', baca.select.note(0)),
+#        figure_name='v5-1-1',
+#        hide_time_signature=True,
+#        ),
+#    )
 
 ### STAGE 2 ###
 
@@ -130,7 +130,9 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments[:1], # TODO: use cursor
+        baca.anchor_after('Piano Music Voice 3', baca.select.rest(-1)),
+        baca.bass_to_octave(3),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
@@ -138,8 +140,8 @@ accumulator(
         baca.proportional_notation_duration((1, 10)),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8]),
-        baca.bass_to_octave(3),
         figure_name='v5-4-2-1',
+        hide_time_signature=False,
         preferred_denominator=4,
         talea_counts=[3],
         ),
@@ -306,7 +308,6 @@ accumulator(
         [[-35, -23]],
         baca.chord(),
         baca.flags(),
-        baca.nest('+1/4'),
         figure_name='lhr-4-2-4-a',
         color_unregistered_pitches=False,
         hide_time_signature=True,
@@ -320,7 +321,6 @@ accumulator(
         [[-35, -23]],
         baca.chord(),
         baca.flags(),
-        baca.nest('+1/4'),
         figure_name='lhr-4-2-4-b',
         color_unregistered_pitches=False,
         hide_time_signature=True,
@@ -351,7 +351,6 @@ accumulator(
         [[-33, -21]],
         baca.chord(),
         baca.flags(),
-        baca.nest('+1/4'),
         figure_name='lhr-4-2-8-a',
         color_unregistered_pitches=False,
         hide_time_signature=True,
@@ -365,7 +364,6 @@ accumulator(
         [[-33, -21]],
         baca.chord(),
         baca.flags(),
-        baca.nest('+1/4'),
         figure_name='lhr-4-2-8-b',
         color_unregistered_pitches=False,
         hide_time_signature=True,
