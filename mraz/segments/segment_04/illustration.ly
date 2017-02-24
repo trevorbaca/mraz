@@ -37,11 +37,6 @@
                     R1 * 3/4
                 }
                 {
-                    \time 3/16
-                    R1 * 3/16
-                }
-                {
-                    \time 3/4
                     R1 * 3/4
                 }
                 {
@@ -118,11 +113,6 @@
                     s1 * 3/4
                 }
                 {
-                    \time 3/16
-                    s1 * 3/16
-                }
-                {
-                    \time 3/4
                     s1 * 3/4
                 }
                 {
@@ -169,7 +159,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -188,7 +177,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -207,7 +195,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -226,7 +213,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -365,7 +351,7 @@
                                         }
                             }
                         }
-                        s1 * 155/16
+                        s1 * 19/2
                         \bar "|"
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
@@ -375,7 +361,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -394,7 +379,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -415,7 +399,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -434,7 +417,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -451,50 +433,6 @@
                         \clef "bass"
                         \dynamicUp
                         s1 * 17/4
-                        {
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                af'16 -\marcato [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    v5-1-1
-                                                    ]
-                                                }
-                                        }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16 -\marcato
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                e'16 -\marcato ]
-                            }
-                        }
                         {
                             {
                                 \once \override Rest.direction = #up
@@ -705,7 +643,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -724,7 +661,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -743,7 +679,6 @@
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
-                        s1 * 3/16
                         s1 * 3/4
                         s1 * 5/4
                         s1 * 1
@@ -756,7 +691,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 103/16
+                        s1 * 25/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
@@ -777,42 +712,36 @@
                             }
                         }
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 2/1 {
-                                {
-                                    <cs,, cs,>4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-4-a
-                                                        ]
-                                                    }
-                                            }
-                                }
+                            {
+                                <cs,, cs,>4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-4-a
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/4 {
-                                {
-                                    <cs,, cs,>1
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-4-b
-                                                        ]
-                                                    }
-                                            }
-                                }
+                            {
+                                <cs,, cs,>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-4-b
+                                                    ]
+                                                }
+                                        }
                             }
                         }
-                        s1 * 3/2
+                        s1 * 2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
@@ -833,43 +762,37 @@
                             }
                         }
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 2/1 {
-                                {
-                                    <ef,, ef,>4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-8-a
-                                                        ]
-                                                    }
-                                            }
-                                }
+                            {
+                                <ef,, ef,>4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-8-a
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 5/4 {
-                                {
-                                    <ef,, ef,>1
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-8-b
-                                                        ]
-                                                    }
-                                            }
-                                }
+                            {
+                                <ef,, ef,>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-8-b
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 1/2
+                        s1 * 1
                         \bar "|"
                     }
                 >>
