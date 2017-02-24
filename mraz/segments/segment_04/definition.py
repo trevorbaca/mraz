@@ -27,17 +27,9 @@ stage_4_segments = stages[3]
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
-### STAGE 1 ###
+################################### STAGE 1 ###################################
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 3',
-#        stage_1_segments,
-#        figure_name='stage-1-segments',
-#        ),
-#    )
-
-### STAGE 1: VOICE 3 (realizing voice 4) ###
+# (STAGE 1: VOICE 3 [4])
 
 v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
 v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
@@ -104,29 +96,21 @@ accumulator(
         ),
     )
 
-### STAGE 1: VOICE 5 ###
+# (STAGE 1: VOICE 5)
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 5',
-#        v5_stage_1_segments.next(),
-#        baca.anchor('Piano Music Voice 3', baca.select.note(0)),
-#        figure_name='v5-1-1',
-#        hide_time_signature=True,
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        v5_stage_1_segments.next(),
+        baca.anchor('Piano Music Voice 3', baca.select.note(0)),
+        figure_name='v5-1-1',
+        hide_time_signature=True,
+        ),
+    )
 
-### STAGE 2 ###
+################################### STAGE 2 ###################################
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 4',
-#        stage_2_segments,
-#        figure_name='stage-2-segments',
-#        ),
-#    )
-
-### STAGE 2: VOICE 5 ###
+# (STAGE 2: VOICE 5)
 
 accumulator(
     accumulator.mraz_figure_maker(
