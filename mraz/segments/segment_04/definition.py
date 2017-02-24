@@ -20,7 +20,8 @@ stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
 
 stage_1_segments = stages[0]
-stage_2_segments = stages[1]
+stage_2_segments = stages[1][:1].repeat(n=9).cursor()
+stage_2_segments_remainder = stages[1][-1:]
 stage_3_segments = stages[2]
 stage_4_segments = stages[3]
 stage_5_segments = stages[4]
@@ -130,7 +131,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1], # TODO: use cursor
+        stage_2_segments.next(),
         baca.anchor_after('Piano Music Voice 3', baca.select.rest(-1)),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -150,7 +151,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -166,7 +167,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -184,7 +185,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -202,7 +203,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -218,7 +219,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -234,7 +235,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -252,7 +253,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -270,7 +271,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments[:1],
+        stage_2_segments.next(),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -284,6 +285,7 @@ accumulator(
         talea_counts=[3],
         ),
     )
+assert stage_2_segments.is_exhausted
 
 ### STAGE 2: LH RESONANCE ###
 
@@ -376,7 +378,7 @@ accumulator(
 #accumulator(
 #    accumulator.mraz_figure_maker(
 #        'Piano Music Voice 5',
-#        stage_2_segments[1:2],
+#        stage_2_segments_remainder.next(),
 #        baca.dynamic_first_note('ff'),
 #        baca.register(-7),
 #        figure_name='v5-4-2-3',
