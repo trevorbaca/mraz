@@ -841,20 +841,106 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
+                        s1 * 35/4
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                {
+                                    r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lhr-4-2-3
+                                                        ]
+                                                    }
+                                            }
+                                    <cs,, cs,>2
+                                }
+                            }
+                        }
+                        {
+                            {
+                                <cs,, cs,>4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-4-a
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <cs,, cs,>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-4-b
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        s1 * 2
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                {
+                                    s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lhr-4-2-7
+                                                        ]
+                                                    }
+                                            }
+                                    <ef,, ef,>2
+                                }
+                            }
+                        }
+                        {
+                            {
+                                <ef,, ef,>4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-8-a
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <ef,, ef,>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lhr-4-2-8-b
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
                         \override Score.BarLine.transparent = ##f
                         s1 * 1
                         \bar "|"

@@ -352,91 +352,91 @@ assert stage_2_segments.is_exhausted
 # TODO: reintegrate resonance
 # (STAGE 2: LH RESONANCE)
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-35, -23]],
-#        #baca.anchor('Piano Music Voice 5', baca.select.rest(4)),
-#        baca.anchor('Piano Music Voice 5', baca.select.leaf(0)),
-#        baca.chord(),
-#        baca.flags(),
-#        baca.nest('+1/4'),
-#        #baca.skips_before([4]),
-#        baca.rests_before([4]),
-#        color_unregistered_pitches=False,
-#        figure_name='lhr-4-2-3',
-#        talea_counts=[8],
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        #baca.anchor('Piano Music Voice 5', baca.select.rest(4)),
+        baca.anchor('Piano Music Voice 5', baca.select.rest(24)),
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        #baca.skips_before([4]),
+        baca.rests_before([4]),
+        color_unregistered_pitches=False,
+        figure_name='lhr-4-2-3',
+        talea_counts=[8],
+        ),
+    )
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-35, -23]],
-#        baca.chord(),
-#        baca.flags(),
-#        figure_name='lhr-4-2-4-a',
-#        color_unregistered_pitches=False,
-#        hide_time_signature=True,
-#        talea_counts=[4],
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-35, -23]],
-#        baca.chord(),
-#        baca.flags(),
-#        figure_name='lhr-4-2-4-b',
-#        color_unregistered_pitches=False,
-#        hide_time_signature=True,
-#        talea_counts=[16],
-#        ),
-#    )
-#
-####
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-33, -21]],
-#        baca.anchor('Piano Music Voice 5', baca.select.rest(12)),
-#        baca.chord(),
-#        baca.flags(),
-#        baca.nest('+1/4'),
-#        baca.skips_before([4]),
-#        color_unregistered_pitches=False,
-#        figure_name='lhr-4-2-7',
-#        talea_counts=[8],
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-33, -21]],
-#        baca.chord(),
-#        baca.flags(),
-#        figure_name='lhr-4-2-8-a',
-#        color_unregistered_pitches=False,
-#        hide_time_signature=True,
-#        talea_counts=[4],
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice LH Resonance',
-#        [[-33, -21]],
-#        baca.chord(),
-#        baca.flags(),
-#        figure_name='lhr-4-2-8-b',
-#        color_unregistered_pitches=False,
-#        hide_time_signature=True,
-#        talea_counts=[16],
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        figure_name='lhr-4-2-4-a',
+        color_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea_counts=[4],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-35, -23]],
+        baca.chord(),
+        baca.flags(),
+        figure_name='lhr-4-2-4-b',
+        color_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea_counts=[16],
+        ),
+    )
+
+###
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.anchor('Piano Music Voice 5', baca.select.rest(32)),
+        baca.chord(),
+        baca.flags(),
+        baca.nest('+1/4'),
+        baca.skips_before([4]),
+        color_unregistered_pitches=False,
+        figure_name='lhr-4-2-7',
+        talea_counts=[8],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        figure_name='lhr-4-2-8-a',
+        color_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea_counts=[4],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice LH Resonance',
+        [[-33, -21]],
+        baca.chord(),
+        baca.flags(),
+        figure_name='lhr-4-2-8-b',
+        color_unregistered_pitches=False,
+        hide_time_signature=True,
+        talea_counts=[16],
+        ),
+    )
 
 ## TODO: express stage 2 cell 2
 #accumulator(
