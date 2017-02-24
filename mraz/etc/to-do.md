@@ -1,6 +1,8 @@
 TO-DO
 =====
 
+0.  Change allow_empty_selectors to allow_empty_selections.
+
 1.  Build 4.1.
 
 2.  Write AnchorSpecifier examples.

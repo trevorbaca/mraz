@@ -40,8 +40,8 @@ accumulator(
         v3_stage_1_segments.next(),
         baca.dynamic_first_note('ff'),
         baca.flags(),
+        baca.proportional_notation_duration((1, 16)),
         baca.register(-12, 12),
-        baca.tenuti(),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-1',
         preferred_denominator=4,
@@ -54,6 +54,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         [abjad.Rest((3, 4))],
+        baca.proportional_notation_duration((1, 4)),
         figure_name='v3-4-1-2',
         preferred_denominator=4,
         ),
@@ -64,6 +65,7 @@ accumulator(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
         baca.flags(),
+        baca.proportional_notation_duration((1, 16)),
         baca.register(12, -12),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-3',
@@ -77,6 +79,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         [abjad.Rest((3, 4))],
+        baca.proportional_notation_duration((1, 10)),
         figure_name='v3-4-1-4',
         preferred_denominator=4,
         ),
@@ -87,6 +90,7 @@ accumulator(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
         baca.flags(),
+        baca.proportional_notation_duration((1, 16)),
         baca.register(-6),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-5',
@@ -101,6 +105,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         [abjad.Rest((3, 4))],
+        baca.proportional_notation_duration((1, 4)),
         figure_name='v3-4-1-6',
         preferred_denominator=4,
         ),
@@ -117,6 +122,7 @@ accumulator(
         baca.flags(),
         baca.register(-6, 6),
         baca.rests_before([12]),
+        baca.tenuti(),
         figure_name='v5-4-1-1',
         hide_time_signature=True,
         talea_counts=[3, -1],
@@ -139,6 +145,7 @@ accumulator(
         baca.flags(),
         baca.register(-6, 6),
         baca.rests_around([4], [4]),
+        baca.tenuti(),
         figure_name='v5-4-1-3',
         hide_time_signature=True,
         talea_counts=[3, -1, 3, -1, -4, 3, -1],
@@ -154,6 +161,7 @@ accumulator(
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.flags(),
+        baca.marcati(),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8]),
         figure_name='v5-4-1-4',
@@ -171,6 +179,7 @@ accumulator(
         baca.flags(),
         baca.register(-6, 6),
         baca.rests_before([4, 4]),
+        baca.tenuti(),
         figure_name='v5-4-1-5',
         hide_time_signature=True,
         talea_counts=[3, -1, -4, 3, -1, 3, -1],
@@ -194,7 +203,6 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
         stage_2_segments.next(),
-        #baca.anchor_after('Piano Music Voice 3', baca.select.rest(-1)),
         baca.bass_to_octave(3),
         baca.chord(),
         baca.chord_spacing_up(bass=7, soprano=9),
@@ -465,8 +473,8 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    allow_empty_selectors=True,
-    allow_figure_names=True,
+    #allow_empty_selectors=True,
+    #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
@@ -492,19 +500,33 @@ accumulator._populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
+    ('Piano Music Voice 3', baca.select.stages(1, Infinity)),
+    baca.tenuti(),
+    )
+
+segment_maker.append_specifiers(
     ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
     baca.clef('bass'),
-    baca.dynamic_up(),
+    baca.dynamic_down(),
+#    baca.dynamic_up(),
+#    baca.marcati(),
+#    baca.wrap.leaves(baca.rest_up()),
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice 5', baca.select.stages(7, Infinity)),
+#    baca.clef('bass'),
+#    baca.dynamic_up(),
     baca.marcati(),
     baca.wrap.leaves(baca.rest_up()),
     )
 
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice LH Resonance', baca.select.stages(3, 4)),
-#    baca.tie(messiaen=True),
-#    )
-#
-#segment_maker.append_specifiers(
-#    ('Piano Music Voice LH Resonance', baca.select.stages(7, 8)),
-#    baca.tie(messiaen=True),
-#    )
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(9, 10)),
+    baca.tie(messiaen=True),
+    )
+
+segment_maker.append_specifiers(
+    ('Piano Music Voice LH Resonance', baca.select.stages(13, 14)),
+    baca.tie(messiaen=True),
+    )
