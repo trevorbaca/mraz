@@ -39,8 +39,8 @@ lh_stage_1_segments = lh_stage_1_segments.remove_duplicates(level=1)
 assert len(rh_stage_1_segments) == 5
 assert len(lh_stage_1_segments) == 4
 
-rh_stage_1_segments = baca.Cursor(rh_stage_1_segments)
-lh_stage_1_segments = baca.Cursor(lh_stage_1_segments)
+rh_stage_1_segments = rh_stage_1_segments.cursor()
+lh_stage_1_segments = lh_stage_1_segments.cursor()
 
 
 ### VOICE 3 ###
