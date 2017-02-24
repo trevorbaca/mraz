@@ -38,15 +38,14 @@ stage_6_segments = stages[5]
 
 ### STAGE 1: VOICE 3 (realizing voice 4) ###
 
-v3_stage_1_segments = stage_1_segments[:1]
-v3_stage_1_segments = v3_stage_1_segments.repeat(n=3)
-v3_stage_1_segments = v3_stage_1_segments.cursor()
-v5_stage_1_segments = stage_1_segments[1:].cursor()
+v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
+v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
 
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
+        baca.register(-12, 12),
         figure_name='v3-1-1',
         ),
     )
@@ -64,6 +63,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
+        baca.register(12, -12),
         figure_name='v3-1-2',
         ),
     )
@@ -81,6 +81,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
+        baca.register(-6),
         figure_name='v3-1-3',
         ),
     )
