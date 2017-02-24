@@ -1125,80 +1125,7 @@
                             }
                         }
                         \once \override Beam.positions = #'(-5.5 . -5.5)
-                        s1 * 11/8
-                        {
-                            {
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                cs''16 \ff [
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef''16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b''16 ]
-                            }
-                        }
-                        \once \override Beam.positions = #'(-4.5 . -4.5)
-                        s1 * 11/8
-                        {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 8/7 {
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                d''16 \ff [
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c''16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e''16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs''16
-                                \once \override Beam.positions = #'(-4.5 . -4.5)
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b''16 ]
-                            }
-                        }
-                        \once \override Beam.positions = #'(-4.5 . -4.5)
-                        s1 * 7/16
+                        s1 * 31/8
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
@@ -1230,416 +1157,51 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 11/8
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            {
-                                \once \override Script.direction = #up
-                                \once \override Stem.direction = #up
-                                cs''16
-                                s16
-                                s16
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
-                        s1 * 11/8
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 8/7 {
-                                \once \override Script.direction = #up
-                                \once \override Stem.direction = #up
-                                d''16
-                                s16
-                                s16
-                                s16
-                                s16
-                                \once \override Script.direction = #up
-                                \once \override Stem.direction = #up
-                                fs''16
-                                s16
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
-                        s1 * 7/16
+                        s1 * 31/8
                         \bar "|"
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         \once \override Beam.positions = #'(-6 . -6)
-                        s1 * 329/272
-                        {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 15/17 {
-                                {
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
-                                    cs'16 \pp [ (
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    a'16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
-                                    cs'16 )
-                                }
-                                {
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
-                                    b'16 (
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    e'16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    ef''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    bf'16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    c''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    f''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
-                                    g''16 )
-                                }
-                                {
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
-                                    fs''16 (
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    b'16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    bf''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    f''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    g''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    c'''16
-                                    \once \override Beam.positions = #'(-6 . -6)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
-                                    d'''16 ] )
-                                }
-                            }
-                        }
+                        s1 * 3/4
                         \once \override Beam.positions = #'(-6 . -6)
-                        s1 * 75/136
-                        {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 15/17 {
-                                {
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
-                                    ef''16 \pp [ (
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    f'16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
-                                    cs''16 )
-                                }
-                                {
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
-                                    a'16 (
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    af'16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    fs''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    g''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    b'16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    cs''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
-                                    fs''16 )
-                                }
-                                {
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
-                                    e''16 (
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    ef''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    cs'''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    d'''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    fs''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    af''16
-                                    \once \override Beam.positions = #'(-4.5 . -4.5)
-                                    \once \override Script.direction = #down
-                                    \once \override Stem.direction = #down
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
-                                    cs'''16 ] )
-                                }
-                            }
-                        }
-                        \once \override Beam.positions = #'(-4.5 . -4.5)
-                        s1 * 303/272
+                        s1 * 1/4
+                        \once \override Beam.positions = #'(-6 . -6)
+                        s1 * 3/8
+                        \once \override Beam.positions = #'(-6 . -6)
+                        s1 * 9/16
+                        \once \override Beam.positions = #'(-6 . -6)
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
                         \once \override Beam.positions = #'(9 . 9)
-                        s1 * 329/272
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 15/17 {
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16 [
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                }
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    b'16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                }
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    fs''16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    c'''16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
-                                    d'''16 -\staccato ]
-                                }
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
+                        s1 * 3/4
                         \once \override Beam.positions = #'(9 . 9)
-                        s1 * 75/136
-                        {
-                            \override TupletBracket.stencil = ##f
-                            \override TupletNumber.stencil = ##f
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 15/17 {
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16 [
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                }
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    a'16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                }
-                                {
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    e''16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    s16
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
-                                    af''16 -\staccato
-                                    \once \override Beam.positions = #'(9 . 9)
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
-                                    cs'''16 -\staccato ]
-                                }
-                            }
-                            \revert TupletBracket.stencil
-                            \revert TupletNumber.stencil
-                        }
+                        s1 * 1/4
                         \once \override Beam.positions = #'(9 . 9)
-                        s1 * 303/272
+                        s1 * 3/8
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 9/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 5/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 9/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 7/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 9/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 3/16
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 5/8
+                        \once \override Beam.positions = #'(9 . 9)
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
