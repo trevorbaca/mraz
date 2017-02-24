@@ -14,7 +14,7 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        Makes one-stage Mráz figures:
+        Makes single-segment Mráz figures:
 
         ::
 
@@ -177,26 +177,26 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        Makes multistage Mráz figures:
+        Makes multimoment Mráz figures:
 
         ::
 
-            >>> stage_tokens = [
+            >>> segments = [
             ...     [4],
             ...     [6, 2, 3, 5, 9, 8, 0],
             ...     [11],
             ...     [10, 7, 9, 8, 0, 5],
             ...     ]
-            >>> stage_tokens = abjad.CyclicTuple(stage_tokens)
+            >>> segments = abjad.CyclicTuple(segments)
             >>> segment_lists = [
-            ...     stage_tokens[:3],
-            ...     stage_tokens[1:4],
-            ...     stage_tokens[2:5],
+            ...     segments[:3],
+            ...     segments[1:4],
+            ...     segments[2:5],
             ...     ]
             >>> segment_lists = [list(_) for _ in segment_lists]
-            ...
             >>> for segment_list in segment_lists:
             ...     segment_list
+            ...
             [[4], [6, 2, 3, 5, 9, 8, 0], [11]]
             [[6, 2, 3, 5, 9, 8, 0], [11], [10, 7, 9, 8, 0, 5]]
             [[11], [10, 7, 9, 8, 0, 5], [4]]
