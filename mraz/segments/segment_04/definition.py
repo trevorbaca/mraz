@@ -45,8 +45,15 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
         v3_stage_1_segments.next(),
+        baca.dynamic_first_note('ff'),
+        baca.flags(),
         baca.register(-12, 12),
+        baca.tenuti(),
+        baca.tuplet_bracket_up(),
         figure_name='v3-1-1',
+        preferred_denominator=4,
+        talea_counts=[2, -4, 2, -4, 4],
+        time_treatments=[2],
         ),
     )
 
