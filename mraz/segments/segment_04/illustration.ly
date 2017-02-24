@@ -21,16 +21,16 @@
                     R1 * 3/4
                 }
                 {
-                    \time 4/16
-                    R1 * 1/4
+                    \time 6/4
+                    R1 * 3/2
                 }
                 {
                     \time 3/4
                     R1 * 3/4
                 }
                 {
-                    \time 4/16
-                    R1 * 1/4
+                    \time 6/4
+                    R1 * 3/2
                 }
                 {
                     \time 3/4
@@ -97,16 +97,16 @@
                     s1 * 3/4
                 }
                 {
-                    \time 4/16
-                    s1 * 1/4
+                    \time 6/4
+                    s1 * 3/2
                 }
                 {
                     \time 3/4
                     s1 * 3/4
                 }
                 {
-                    \time 4/16
-                    s1 * 1/4
+                    \time 6/4
+                    s1 * 3/2
                 }
                 {
                     \time 3/4
@@ -155,9 +155,9 @@
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -173,9 +173,9 @@
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -191,9 +191,9 @@
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -209,9 +209,9 @@
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -236,7 +236,7 @@
                                             \concat
                                                 {
                                                     [
-                                                    v3-1-1
+                                                    v3-4-1-1
                                                     ]
                                                 }
                                         }
@@ -263,77 +263,41 @@
                                             \concat
                                                 {
                                                     [
-                                                    v3-1-r1
+                                                    v3-4-1-2
                                                     ]
                                                 }
                                         }
                             }
                         }
                         {
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                ef''16 [
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                \once \override TupletBracket.direction = #up
+                                r4
                                     ^ \markup {
                                         \fontsize
                                             #3
                                             \concat
                                                 {
                                                     [
-                                                    v3-1-2
+                                                    v3-4-1-3
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs''16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                bf16 ]
-                            }
-                        }
-                        {
-                            {
-                                r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    v3-1-r2
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                ef'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    v3-1-3
-                                                    ]
-                                                }
-                                        }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                bf16 ]
+                                \once \override TupletBracket.direction = #up
+                                ef''8
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                cs''4
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                c'8
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                bf4
                             }
                         }
                         {
@@ -345,7 +309,51 @@
                                             \concat
                                                 {
                                                     [
-                                                    v3-1-r3
+                                                    v3-4-1-4
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 12/11 {
+                                \once \override TupletBracket.direction = #up
+                                ef'8
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v3-4-1-5
+                                                    ]
+                                                }
+                                        }
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                cs'8
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                c'4
+                                \once \override TupletBracket.direction = #up
+                                bf8
+                                \once \override TupletBracket.direction = #up
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v3-4-1-6
                                                     ]
                                                 }
                                         }
@@ -357,9 +365,9 @@
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -375,9 +383,9 @@
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -395,9 +403,9 @@
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -413,9 +421,9 @@
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -431,52 +439,150 @@
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
                         {
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
                                 \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
                                 \clef "bass"
                                 \dynamicUp
-                                af'16 -\marcato [
+                                r2.
                                     ^ \markup {
                                         \fontsize
                                             #3
                                             \concat
                                                 {
                                                     [
-                                                    v5-1-1
+                                                    v5-4-1-1
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
                                 \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16 -\marcato
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
+                                af8. -\marcato \f
                                 \once \override Rest.direction = #up
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                e'16 -\marcato ]
+                                r16
+                                \once \override Rest.direction = #up
+                                d'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                e'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
                             }
                         }
-                        \once \override Rest.direction = #up
-                        s1 * 65/16
+                        {
+                            {
+                                \once \override Rest.direction = #up
+                                r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-4-1-2
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                \once \override Rest.direction = #up
+                                r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-4-1-3
+                                                    ]
+                                                }
+                                        }
+                                \once \override Rest.direction = #up
+                                af8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                d'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                r4
+                                \once \override Rest.direction = #up
+                                e'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                \once \override Rest.direction = #up
+                                r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-4-1-4
+                                                    ]
+                                                }
+                                        }
+                                \once \override Rest.direction = #up
+                                <g b f' fs' a'>8. -\marcato \ff
+                                \once \override Rest.direction = #up
+                                r2
+                            }
+                        }
+                        {
+                            {
+                                \once \override Rest.direction = #up
+                                r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-4-1-5
+                                                    ]
+                                                }
+                                        }
+                                \once \override Rest.direction = #up
+                                r4
+                                \once \override Rest.direction = #up
+                                af8. -\marcato \f
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                r4
+                                \once \override Rest.direction = #up
+                                d'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                                \once \override Rest.direction = #up
+                                e'8. -\marcato
+                                \once \override Rest.direction = #up
+                                r16
+                            }
+                        }
+                        {
+                            {
+                                \once \override Rest.direction = #up
+                                r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-4-1-6
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
                         {
                             {
                                 \once \override Rest.direction = #up
@@ -683,9 +789,9 @@
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -701,9 +807,9 @@
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -719,9 +825,9 @@
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
                         s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 3/4
                         s1 * 5/4
@@ -735,108 +841,22 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 103/16
-                        {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 4/3 {
-                                {
-                                    s4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-3
-                                                        ]
-                                                    }
-                                            }
-                                    <cs,, cs,>2
-                                }
-                            }
-                        }
-                        {
-                            {
-                                <cs,, cs,>4
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lhr-4-2-4-a
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                <cs,, cs,>1
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lhr-4-2-4-b
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
-                        s1 * 2
-                        {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 4/3 {
-                                {
-                                    s4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lhr-4-2-7
-                                                        ]
-                                                    }
-                                            }
-                                    <ef,, ef,>2
-                                }
-                            }
-                        }
-                        {
-                            {
-                                <ef,, ef,>4
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lhr-4-2-8-a
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                <ef,, ef,>1
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lhr-4-2-8-b
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
                         \override Score.BarLine.transparent = ##f
-                        s1 * 13/16
+                        s1 * 1
                         \bar "|"
                     }
                 >>
