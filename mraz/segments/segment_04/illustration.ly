@@ -478,49 +478,22 @@
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 3
-                        {
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                af'16 [
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    v5-1-1
-                                                    ]
-                                                }
-                                        }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                e'16 ]
-                            }
-                        }
-                        s1 * 19/2
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/4
+                        s1 * 3/16
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
@@ -546,7 +519,51 @@
                         \once \override Rest.direction = #up
                         \clef "bass"
                         \dynamicUp
-                        s1 * 51/16
+                        s1 * 3
+                        {
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                af'16 -\marcato [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-1-1
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16 -\marcato
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                e'16 -\marcato ]
+                            }
+                        }
                         {
                             {
                                 \once \override Rest.direction = #up
