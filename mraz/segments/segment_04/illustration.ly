@@ -241,15 +241,9 @@
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         {
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                ef'16 [
+                                ef16 [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -260,30 +254,12 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 bf'16 ]
@@ -306,15 +282,9 @@
                         }
                         {
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                ef'16 [
+                                ef''16 [
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -325,33 +295,15 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                cs'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
+                                cs''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                bf'16 ]
+                                bf16 ]
                             }
                         }
                         {
@@ -371,12 +323,6 @@
                         }
                         {
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 ef'16 [
@@ -390,33 +336,15 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                bf'16 ]
+                                bf16 ]
                             }
                         }
                         {
