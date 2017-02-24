@@ -13,8 +13,8 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 4/16
-                    R1 * 1/4
+                    \time 6/4
+                    R1 * 3/2
                 }
                 {
                     \time 3/4
@@ -79,8 +79,8 @@
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 4/16
-                    s1 * 1/4 ^ \markup {
+                    \time 6/4
+                    s1 * 3/2 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -163,7 +163,7 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context PianoMusicVoiceOne = "Piano Music Voice 1" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -182,7 +182,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -201,7 +201,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -220,7 +220,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -240,10 +240,10 @@
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
                         {
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                ef16 [
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 12/11 {
+                                \once \override TupletBracket.direction = #up
+                                ef8 -\tenuto \ff
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -254,15 +254,18 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                bf'16 ]
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                cs'8 -\tenuto
+                                \once \override TupletBracket.direction = #up
+                                r4
+                                \once \override TupletBracket.direction = #up
+                                c'4 -\tenuto
+                                \once \override TupletBracket.direction = #up
+                                bf'8 -\tenuto
+                                \once \override TupletBracket.direction = #up
+                                r4
                             }
                         }
                         {
@@ -366,7 +369,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -385,7 +388,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -406,7 +409,7 @@
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context PianoMusicVoiceFour = "Piano Music Voice 4" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -425,7 +428,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -447,7 +450,7 @@
                         \once \override Rest.direction = #up
                         \clef "bass"
                         \dynamicUp
-                        s1 * 3
+                        s1 * 17/4
                         {
                             {
                                 \once \override Accidental.color = #magenta
@@ -696,7 +699,7 @@
                         }
                     }
                     \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -715,7 +718,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -734,7 +737,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
-                        s1 * 1/4
+                        s1 * 3/2
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/4
@@ -753,7 +756,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 83/16
+                        s1 * 103/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
