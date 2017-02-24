@@ -14,25 +14,17 @@ design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[23:36]]
+segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 13, repr(len(segments))
+stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
+assert stages.sum() == segments
 
-# 13 = 2 + 2 + 2 + 2 + 2 + 3
-
-stage_1_segments = segments[0:2]
-stage_2_segments = segments[2:4]
-stage_3_segments = segments[4:6]
-stage_4_segments = segments[6:8]
-stage_5_segments = segments[8:10]
-stage_6_segments = segments[10:13]
-stage_segments = [
-    stage_1_segments,
-    stage_2_segments,
-    stage_3_segments,
-    stage_4_segments,
-    stage_5_segments,
-    stage_6_segments,
-    ]
-assert sum(stage_segments, []) == segments
+stage_1_segments = stages[0]
+stage_2_segments = stages[1]
+stage_3_segments = stages[2]
+stage_4_segments = stages[3]
+stage_5_segments = stages[4]
+stage_6_segments = stages[5]
 
 ### STAGE 1 ###
 
@@ -46,8 +38,10 @@ assert sum(stage_segments, []) == segments
 
 ### STAGE 1: VOICE 3 (realizing voice 4) ###
 
-v3_stage_1_segments = baca.Cursor(stage_1_segments[:1])
-v5_stage_1_segments = baca.Cursor(stage_1_segments[1:])
+v3_stage_1_segments = stage_1_segments[:1]
+v3_stage_1_segments = v3_stage_1_segments.repeat(n=3)
+v3_stage_1_segments = v3_stage_1_segments.cursor()
+v5_stage_1_segments = stage_1_segments[1:].cursor()
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -66,7 +60,6 @@ accumulator(
         ),
     )
 
-v3_stage_1_segments.reset()
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
@@ -84,7 +77,6 @@ accumulator(
         ),
     )
 
-v3_stage_1_segments.reset()
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 3',
@@ -92,6 +84,7 @@ accumulator(
         figure_name='v3-1-3',
         ),
     )
+assert v3_stage_1_segments.is_exhausted
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -101,8 +94,6 @@ accumulator(
         preferred_denominator=4,
         ),
     )
-
-assert v3_stage_1_segments.is_exhausted
 
 ### STAGE 1: VOICE 5 ###
 

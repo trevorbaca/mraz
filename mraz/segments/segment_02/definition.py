@@ -21,8 +21,6 @@ assert len(segments) == 6, repr(len(segments))
 
 stage_1_segments = segments[:2]
 stage_2_segments = segments[2:6]
-
-concat = stage_1_segments + stage_2_segments
 assert stage_1_segments + stage_2_segments == segments
 
 counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]

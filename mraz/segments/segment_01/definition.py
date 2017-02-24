@@ -14,12 +14,6 @@ design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 
-
-#assert len(cells) == 34
-#cells = cells[45:59]
-#assert len(cells) == 14
-#cells = baca.tools.Cursor(source=cells)
-
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
 segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 14, repr(len(segments))

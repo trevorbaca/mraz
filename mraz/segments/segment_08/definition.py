@@ -42,8 +42,8 @@ v6_stage_3_segments = v6_stage_3_segments.remove_repeats(level=-1)
 assert not v6_stage_3_segments.has_repeats(level=-1), repr(v6_stage_3_segments)
 assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
 assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
-v5_stage_3_segments = baca.Cursor(v5_stage_3_segments)
-v6_stage_3_segments = baca.Cursor(v6_stage_3_segments)
+v5_stage_3_segments = v5_stage_3_segments.cursor()
+v6_stage_3_segments = v6_stage_3_segments.cursor()
 
 ### STAGE 3 ###
 
