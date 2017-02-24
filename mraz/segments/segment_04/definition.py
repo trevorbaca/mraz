@@ -44,7 +44,7 @@ assert sum(stage_segments, []) == segments
 #        ),
 #    )
 
-### STAGE 1: VOICE 3 (source voice 4) ###
+### STAGE 1: VOICE 3 (realizing voice 4) ###
 
 v3_stage_1_segments = baca.Cursor(stage_1_segments[:1])
 v5_stage_1_segments = baca.Cursor(stage_1_segments[1:])
@@ -108,8 +108,8 @@ assert v3_stage_1_segments.is_exhausted
 
 accumulator(
     accumulator.mraz_figure_maker(
-        #'Piano Music Voice 5',
-        'Piano Music Voice 4',
+        'Piano Music Voice 5',
+        #'Piano Music Voice 4',
         v5_stage_1_segments.next(),
         #baca.anchor('Piano Music Voice 3', baca.select.rest(0)),
         figure_name='v5-1-1',
@@ -402,6 +402,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
+    allow_empty_selectors=True,
     allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
