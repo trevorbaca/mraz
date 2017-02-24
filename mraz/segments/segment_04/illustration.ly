@@ -429,10 +429,54 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
+                        {
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                \clef "bass"
+                                \dynamicUp
+                                af'16 -\marcato [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    v5-1-1
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d'16 -\marcato
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Rest.direction = #up
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                e'16 -\marcato ]
+                            }
+                        }
                         \once \override Rest.direction = #up
-                        \clef "bass"
-                        \dynamicUp
-                        s1 * 17/4
+                        s1 * 65/16
                         {
                             {
                                 \once \override Rest.direction = #up
@@ -691,7 +735,7 @@
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
-                        s1 * 25/4
+                        s1 * 103/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
@@ -792,7 +836,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 1
+                        s1 * 13/16
                         \bar "|"
                     }
                 >>
