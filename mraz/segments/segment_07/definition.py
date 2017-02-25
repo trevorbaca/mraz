@@ -282,100 +282,100 @@ accumulator(
         ),
     )
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 5',
-#        lh_segment_lists[1],
-#        baca.anchor(
-#            'Piano Music Voice 2',
-#            baca.select.note(4),
-#            baca.select.logical_tie(3),
-#            ),
-#        baca.dynamic_first_note('pp'),
-#        baca.nest('-2/16'),
-#        baca.register(0, 0+16),
-#        baca.imbricate(
-#            'Piano Music Voice 5I',
-#            [11, 18, 24, 26],
-#            baca.beam_everything(),
-#            baca.staccati(),
-#            ),
-#        baca.transpose_segments(n=1*7),
-#        slur_specifier,
-#        figure_name='LH5.1',
-#        hide_time_signature=True,
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 4',
-#        lh_segment_lists[2],
-#        baca.anchor(
-#            'Piano Music Voice 2',
-#            baca.select.note(14),
-#            baca.select.logical_tie(0),
-#            ),
-#        baca.dynamic_first_note('ff'),
-#        baca.register(2, 2+16),
-#        baca.imbricate(
-#            'Piano Music Voice 4I',
-#            [13],
-#            baca.flags(),
-#            ),
-#        baca.transpose_segments(n=2*7),
-#        figure_name='LH4.2',
-#        hide_time_signature=True,
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 5',
-#        lh_segment_lists[3],
-#        baca.anchor(
-#            'Piano Music Voice 2',
-#            baca.select.note(26),
-#            baca.select.logical_tie(10),
-#            ),
-#        baca.dynamic_first_note('pp'),
-#        baca.nest('-2/16'),
-#        baca.register(4, 4+16),
-#        baca.imbricate(
-#            'Piano Music Voice 5I',
-#            [9, 16, 20, 25],
-#            baca.beam_everything(),
-#            baca.staccati(),
-#            ),
-#        baca.transpose_segments(n=3*7),
-#        slur_specifier,
-#        figure_name='LH5.2',
-#        hide_time_signature=True,
-#        ),
-#    )
-#
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 4',
-#        lh_segment_lists[4],
-#        baca.anchor(
-#            'Piano Music Voice 2',
-#            baca.select.note(-6),
-#            baca.select.logical_tie(0),
-#            ),
-#        baca.dynamic_first_note('ff'),
-#        baca.register(6, 6+10),
-#        baca.imbricate(
-#            'Piano Music Voice 4I',
-#            [14, 18],
-#            baca.flags(),
-#            ),
-#        baca.transpose_segments(n=4*7),
-#        figure_name='LH4.3',
-#        hide_time_signature=True,
-#        time_treatments=[1],
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        lh_segment_lists[1],
+        baca.anchor(
+            'Piano Music Voice 2',
+            baca.select.note(4),
+            baca.select.logical_tie(3),
+            ),
+        baca.dynamic_first_note('pp'),
+        baca.nest('-2/16'),
+        baca.register(0, 0+16),
+        baca.imbricate(
+            'Piano Music Voice 5I',
+            [11, 18, 24, 26],
+            baca.beam_everything(),
+            baca.staccati(),
+            ),
+        baca.transpose_segments(n=1*7),
+        slur_specifier,
+        figure_name='LH5.1',
+        hide_time_signature=True,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 4',
+        lh_segment_lists[2],
+        baca.anchor(
+            'Piano Music Voice 2',
+            baca.select.note(14),
+            baca.select.logical_tie(0),
+            ),
+        baca.dynamic_first_note('ff'),
+        baca.register(2, 2+16),
+        baca.imbricate(
+            'Piano Music Voice 4I',
+            [13],
+            baca.flags(),
+            ),
+        baca.transpose_segments(n=2*7),
+        figure_name='LH4.2',
+        hide_time_signature=True,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        lh_segment_lists[3],
+        baca.anchor(
+            'Piano Music Voice 2',
+            baca.select.note(26),
+            baca.select.logical_tie(10),
+            ),
+        baca.dynamic_first_note('pp'),
+        baca.nest('-2/16'),
+        baca.register(4, 4+16),
+        baca.imbricate(
+            'Piano Music Voice 5I',
+            [9, 16, 20, 25],
+            baca.beam_everything(),
+            baca.staccati(),
+            ),
+        baca.transpose_segments(n=3*7),
+        slur_specifier,
+        figure_name='LH5.2',
+        hide_time_signature=True,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 4',
+        lh_segment_lists[4],
+        baca.anchor(
+            'Piano Music Voice 2',
+            baca.select.note(-6),
+            baca.select.logical_tie(0),
+            ),
+        baca.dynamic_first_note('ff'),
+        baca.register(6, 6+10),
+        baca.imbricate(
+            'Piano Music Voice 4I',
+            [14, 18],
+            baca.flags(),
+            ),
+        baca.transpose_segments(n=4*7),
+        figure_name='LH4.3',
+        hide_time_signature=True,
+        time_treatments=[1],
+        ),
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -415,7 +415,7 @@ segment_maker = baca.tools.SegmentMaker(
 #segment_maker.validate_stage_count()
 #segment_maker.validate_measure_count()
 segment_maker.validate_measures_per_stage()
-accumulator._populate_segment_maker(segment_maker)
+accumulator.populate_segment_maker(segment_maker)
 
 ###############################################################################
 ############################ CROSS-STAGE SPECIFIERS ###########################
