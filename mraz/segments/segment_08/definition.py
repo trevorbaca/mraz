@@ -45,9 +45,9 @@ assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
 v5_stage_3_segments = v5_stage_3_segments.cursor()
 v6_stage_3_segments = v6_stage_3_segments.cursor()
 
-### STAGE 3 ###
+################################### STAGE 3 ###################################
 
-### STAGE 3: VOICE 5 ###
+# (STAGE 3: VOICE 5)
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -211,7 +211,7 @@ accumulator(
 
 assert v5_stage_3_segments.is_exhausted
 
-### STAGE 3: VOICE 6 ###
+# (STAGE 3: VOICE 6)
 
 accumulator(
     accumulator.mraz_figure_maker(
