@@ -14,19 +14,15 @@ design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
+segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 14, repr(len(segments))
-
-# 14 = (5 + 5) + 4
-
-rh_segments = segments[:5]
-lh_segments = segments[5:10]
-stage_2_segments = segments[-4:]
-assert rh_segments + lh_segments + stage_2_segments == segments
+rh_segments, lh_segments, stage_2_segments = segments.partition(
+    [5, 5, 4],
+    overhang=Exact,
+    )
 
 rh_segments = abjad.CyclicTuple(rh_segments)
-assert len(rh_segments) == 5
 lh_segments = abjad.CyclicTuple(lh_segments)
-assert len(lh_segments) == 5
 
 ###################################### RH #####################################
 
@@ -42,13 +38,6 @@ for i in range(8):
 all_rh_segments = baca.Sequence(all_rh_segments)
 rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
 assert len(rh_segment_lists) == 12
-
-slur_specifier = baca.tools.SpannerSpecifier(
-    selector=abjad.select().
-        by_class(abjad.Tuplet, flatten=True).
-        get_slice(apply_to_each=True),
-    spanner=abjad.Slur(),
-    )
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -83,7 +72,7 @@ accumulator(
             baca.accents(),
             extend_beam=True,
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         extend_beam=True,
         figure_name='RH2.1',
         ),
@@ -118,7 +107,7 @@ accumulator(
             baca.accents(),
             baca.beam_everything(),
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         figure_name='RH2.2',
         ),
     )
@@ -153,7 +142,7 @@ accumulator(
             baca.beam_everything(),
             extend_beam=True,
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         extend_beam=True,
         figure_name='RH2.3',
         time_treatments=[-1],
@@ -188,7 +177,7 @@ accumulator(
             baca.accents(),
             baca.beam_everything(),
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         figure_name='RH2.4',
         ),
     )
@@ -205,7 +194,7 @@ accumulator(
             baca.beam_everything(),
             extend_beam=True,
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         extend_beam=True,
         figure_name='RH2.5',
         ),
@@ -239,7 +228,7 @@ accumulator(
             baca.accents(),
             baca.beam_everything(),
             ),
-        slur_specifier,
+        baca.slur_every_tuplet(),
         figure_name='RH2.6',
         time_treatments=[-1],
         ),
@@ -300,8 +289,8 @@ accumulator(
             baca.beam_everything(),
             baca.staccati(),
             ),
+        baca.slur_every_tuplet(),
         baca.transpose_segments(n=1*7),
-        slur_specifier,
         figure_name='LH5.1',
         hide_time_signature=True,
         ),
@@ -347,8 +336,8 @@ accumulator(
             baca.beam_everything(),
             baca.staccati(),
             ),
+        baca.slur_every_tuplet(),
         baca.transpose_segments(n=3*7),
-        slur_specifier,
         figure_name='LH5.2',
         hide_time_signature=True,
         ),
@@ -395,7 +384,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    allow_empty_selectors=True,
+    #allow_empty_selections=True,
     #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,

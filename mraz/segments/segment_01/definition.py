@@ -17,17 +17,20 @@ assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
 segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 14, repr(len(segments))
+segments = segments.cursor()
 
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 1',
-        segments,
+        segments.next(14),
         baca.beam_positions(6),
         baca.register(-8),
         extend_beam=True,
         figure_name=1,
         ),
     )
+
+assert segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################

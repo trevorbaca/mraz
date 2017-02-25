@@ -473,7 +473,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    #allow_empty_selectors=True,
+    #allow_empty_selections=True,
     #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,

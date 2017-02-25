@@ -16,12 +16,11 @@ assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[14:20]]
 segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 6, repr(len(segments))
+stages = segments.partition([2, 4], overhang=Exact)
+assert stages.sum() == segments
 
-# 6 = 2 + 4
-
-stage_1_segments = segments[:2]
-stage_2_segments = segments[2:6]
-assert stage_1_segments + stage_2_segments == segments
+stage_1_segments = stages[0]
+stage_2_segments = stages[1]
 
 counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
 stage_2_segments = stage_2_segments.join()
@@ -29,21 +28,12 @@ stage_2_segments = stage_2_segments.read(counts)
 stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
 assert measures.sum() == stage_2_segments
-
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 2',
-#        stage_2_segments[:2],
-#        baca.arpeggiate_down(),
-#        #baca.chord_spacing_up(bass=6),
-#        figure_name='2-1',
-#        ),
-#    )
+measures = baca.Cursor(measures)
 
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measures[0],
+        measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(3),
         baca.dynamic_first_note('ppp'),
@@ -56,7 +46,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measures[1],
+        measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
         baca.slur_every_tuplet(),
@@ -68,7 +58,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measures[2],
+        measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
         baca.slur_every_tuplet(),
@@ -80,7 +70,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measures[3],
+        measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
         baca.slur_every_tuplet(),
@@ -92,7 +82,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 2',
-        measures[4],
+        measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
         baca.slur_every_tuplet(),
@@ -100,6 +90,8 @@ accumulator(
         figure_name='2-2-5',
         ),
     )
+
+assert measures.is_exhausted
 
 ### LH RESONANCE ###
 
