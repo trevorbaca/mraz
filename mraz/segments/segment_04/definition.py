@@ -48,7 +48,7 @@ accumulator(
         baca.register(-12, 12),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-1',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[2, -4, 2, -4, 4],
         time_treatments=[2],
         ),
@@ -60,7 +60,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         figure_name='v3-4-1-2',
-        preferred_denominator=4,
+        denominator=4,
         ),
     )
 
@@ -73,7 +73,7 @@ accumulator(
         baca.register(12, -12),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-3',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[-4, 2, -4, 4],
         time_treatments=[-4],
         ),
@@ -85,7 +85,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 10)),
         figure_name='v3-4-1-4',
-        preferred_denominator=4,
+        denominator=4,
         ),
     )
 
@@ -98,7 +98,7 @@ accumulator(
         baca.register(-6),
         baca.tuplet_bracket_up(),
         figure_name='v3-4-1-5',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[2, -4, 2, -4, 4],
         time_treatments=[2],
         ),
@@ -111,7 +111,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         figure_name='v3-4-1-6',
-        preferred_denominator=4,
+        denominator=4,
         ),
     )
 
@@ -217,7 +217,7 @@ accumulator(
         baca.rests_around([1], [8]),
         figure_name='v5-4-2-1',
         hide_time_signature=False,
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[3],
         ),
     )
@@ -233,7 +233,7 @@ accumulator(
         baca.rests_after([3, 16]),
         baca.bass_to_octave(3),
         figure_name='v5-4-2-2',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[1],
         ),
     )
@@ -251,7 +251,7 @@ accumulator(
         baca.bass_to_octave(3),
         baca.tuplet_bracket_up(),
         figure_name='v5-4-2-3',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[3],
         ),
     )
@@ -267,7 +267,7 @@ accumulator(
         baca.rests_after([3, 16]),
         baca.bass_to_octave(3),
         figure_name='v5-4-2-4',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[1],
         ),
     )
@@ -285,7 +285,7 @@ accumulator(
         baca.rests_around([1], [8]),
         baca.bass_to_octave(3),
         figure_name='v5-4-2-5',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[3],
         ),
     )
@@ -301,7 +301,7 @@ accumulator(
         baca.rests_after([3, 16]),
         baca.bass_to_octave(3),
         figure_name='v5-4-2-6',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[1],
         ),
     )
@@ -319,7 +319,7 @@ accumulator(
         baca.bass_to_octave(3),
         baca.tuplet_bracket_up(),
         figure_name='v5-4-2-7',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[3],
         ),
     )
@@ -335,7 +335,7 @@ accumulator(
         baca.rests_after([3, 16]),
         baca.bass_to_octave(3),
         figure_name='v5-4-2-8',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[1],
         ),
     )
@@ -355,7 +355,7 @@ accumulator(
         baca.bass_to_octave(3),
         baca.tuplet_bracket_up(),
         figure_name='v5-4-2-9',
-        preferred_denominator=4,
+        denominator=4,
         talea_counts=[3],
         ),
     )
@@ -365,8 +365,10 @@ accumulator(
         'Piano Music Voice 5',
         stage_2_segments.next(),
         baca.chord(),
-        #baca.register(-7),
+        baca.register(-7),
         figure_name='v5-4-2-10',
+        denominator=4,
+        talea_counts=[8],
         talea_denominator=4,
         ),
     )
@@ -487,7 +489,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
