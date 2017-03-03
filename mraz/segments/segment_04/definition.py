@@ -20,8 +20,12 @@ stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
 
 stage_1_segments = stages[0]
-stage_2_segments = stages[1][:1].repeat(n=9).cursor()
-stage_2_segments_remainder = stages[1][-1:]
+#stage_2_segments = stages[1][:1].repeat(n=9).cursor()
+stage_2_segments = stages[1][:1].repeat(n=9)
+stage_2_segments = stage_2_segments + stages[1].join()
+stage_2_segments = stage_2_segments.cursor()
+#stage_2_segments_remainder = stages[1][-1:].cursor()
+#raise Exception(stages[1])
 stage_3_segments = stages[2]
 stage_4_segments = stages[3].cursor()
 stage_5_segments = stages[4]
@@ -355,22 +359,31 @@ accumulator(
         talea_counts=[3],
         ),
     )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 5',
+        stage_2_segments.next(),
+        baca.chord(),
+        #baca.register(-7),
+        figure_name='v5-4-2-10',
+        talea_denominator=4,
+        ),
+    )
+
 assert stage_2_segments.is_exhausted
 
-# TODO: reintegrate resonance
 # (STAGE 2: LH RESONANCE)
 
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-35, -23]],
-        #baca.anchor('Piano Music Voice 5', baca.select_rest(4)),
         baca.anchor('Piano Music Voice 5', baca.select_rest(24)),
         baca.chord(),
         baca.flags(),
         baca.nest('+1/4'),
-        #baca.skips_before([4]),
-        baca.rests_before([4]),
+        baca.skips_before([4]),
         color_unregistered_pitches=False,
         figure_name='lhr-4-2-3',
         talea_counts=[8],
@@ -446,27 +459,16 @@ accumulator(
         ),
     )
 
-## TODO: express stage 2 cell 2
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 5',
-#        stage_2_segments_remainder.next(),
-#        baca.dynamic_first_note('ff'),
-#        baca.register(-7),
-#        figure_name='v5-4-2-3',
-#        ),
-#    )
-
 ################################### STAGE 4 ###################################
 
 # (STAGE 4: VOICE 1)
 
-accumulator(
-    accumulator.mraz_figure_maker(
-        'Piano Music Voice 1',
-        stage_4_segments,
-        ),
-    )
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'Piano Music Voice 1',
+#        stage_4_segments,
+#        ),
+#    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
