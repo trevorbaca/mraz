@@ -72,8 +72,7 @@
                     R1 * 1
                 }
                 {
-                    \time 8/4
-                    R1 * 2
+                    R1 * 1
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
@@ -152,8 +151,7 @@
                     s1 * 1
                 }
                 {
-                    \time 8/4
-                    s1 * 2
+                    s1 * 1
                 }
             }
         >>
@@ -176,7 +174,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
@@ -195,7 +193,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
@@ -214,7 +212,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
@@ -233,7 +231,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceThree = "Piano Music Voice 3" {
@@ -396,7 +394,7 @@
                                         }
                             }
                         }
-                        s1 * 23/2
+                        s1 * 21/2
                         \bar "|"
                     }
                     \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
@@ -415,7 +413,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
@@ -434,7 +432,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                 >>
@@ -455,7 +453,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
@@ -474,7 +472,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceFive = "Piano Music Voice 5" {
@@ -797,8 +795,7 @@
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
-                                <f fs g g af a b d' e'>\breve -\marcato
+                                <fs, a, g b g' f'' d''' e''' af'''>1
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -829,7 +826,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceSix = "Piano Music Voice 6" {
@@ -848,7 +845,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
@@ -867,7 +864,7 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 2
+                        s1 * 1
                         \bar "|"
                     }
                     \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
@@ -972,7 +969,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 3
+                        s1 * 2
                         \bar "|"
                     }
                 >>
