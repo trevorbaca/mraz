@@ -4,7 +4,7 @@ import baca
 
 
 piano = abjad.instrumenttools.Piano(
-    instrument_name_markup=baca.markup.make_instrument_name_markup(
+    instrument_name_markup=baca.markup.instrument_name(
         'Piano'),
     short_instrument_name_markup=abjad.markuptools.Markup.null(),
     )
