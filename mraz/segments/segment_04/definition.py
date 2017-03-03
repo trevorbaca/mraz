@@ -23,7 +23,7 @@ stage_1_segments = stages[0]
 stage_2_segments = stages[1][:1].repeat(n=9).cursor()
 stage_2_segments_remainder = stages[1][-1:]
 stage_3_segments = stages[2]
-stage_4_segments = stages[3]
+stage_4_segments = stages[3].cursor()
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
@@ -456,6 +456,17 @@ accumulator(
 #        figure_name='v5-4-2-3',
 #        ),
 #    )
+
+################################### STAGE 4 ###################################
+
+# (STAGE 4: VOICE 1)
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 1',
+        stage_4_segments,
+        ),
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
