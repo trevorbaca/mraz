@@ -795,7 +795,7 @@
                         }
                         {
                             {
-                                <fs, a, g b g' f'' d''' e''' af'''>1
+                                <fs, a, g b g' f'' d''' e''' af'''>1 -\Arpeggio(direction=Up)
                                     ^ \markup {
                                         \fontsize
                                             #3
