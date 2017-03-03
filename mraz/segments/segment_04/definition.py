@@ -368,6 +368,7 @@ accumulator(
         baca.bass_to_octave(2),
         baca.chord(),
         #baca.chord_spacing_up(bass=7, soprano=8),
+        baca.up_arpeggios(),
         denominator=4,
         figure_name='v5-4-2-10',
         talea_counts=[4],
