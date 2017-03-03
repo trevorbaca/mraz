@@ -426,7 +426,7 @@ def make_mraz_figure_maker():
                     ),
                 ),
             color_unregistered_pitches=True,
-            preferred_denominator=16,
+            denominator=16,
             voice_names=[
                 'Piano Music Voice 1',
                 'Piano Music Voice 1I',
@@ -466,7 +466,7 @@ def make_mraz_figure_maker():
                 ),
             ),
         color_unregistered_pitches=True,
-        preferred_denominator=16,
+        denominator=16,
         voice_names=voice_names,
         )
     return figure_maker
