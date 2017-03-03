@@ -418,12 +418,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 1I', baca.select_stages(1, 5)),
-    baca.wrap.leaves(baca.beam_positions(-6.5)),
+    baca.wrap_leaves(baca.beam_positions(-6.5)),
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 1I', baca.select_stages(5, 10)),
-    baca.wrap.leaves(baca.beam_positions(-8.5)),
+    baca.wrap_leaves(baca.beam_positions(-8.5)),
     )
 
 segment_maker.append_specifiers(
@@ -460,12 +460,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 4', baca.select_stages(1, 2)),
-    baca.wrap.leaves(baca.beam_positions(-5.5)),
+    baca.wrap_leaves(baca.beam_positions(-5.5)),
     )
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 4', baca.select_stages(6, Infinity)),
-    baca.wrap.leaves(baca.beam_positions(-4.5)),
+    baca.wrap_leaves(baca.beam_positions(-4.5)),
     )
 
 segment_maker.append_specifiers(
@@ -482,12 +482,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('Piano Music Voice 5', baca.select_stages(1, 5)),
-    baca.wrap.leaves(baca.beam_positions(-6)),
+    baca.wrap_leaves(baca.beam_positions(-6)),
     )
 
 #segment_maker.append_specifiers(
 #    ('Piano Music Voice 5', baca.select_stages(6, Infinity)),
-#    baca.wrap.leaves(baca.beam_positions(-4.5)),
+#    baca.wrap_leaves(baca.beam_positions(-4.5)),
 #    )
 
 segment_maker.append_specifiers(
@@ -500,5 +500,5 @@ segment_maker.append_specifiers(
     ('Piano Music Voice 5I', baca.select_stages(1, Infinity)),
     baca.script_up(),
     baca.stem_up(),
-    baca.wrap.leaves(baca.beam_positions(9)),
+    baca.wrap_leaves(baca.beam_positions(9)),
     )
