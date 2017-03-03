@@ -510,7 +510,7 @@ segment_maker.append_specifiers(
     baca.dynamic_down(),
 #    baca.dynamic_up(),
 #    baca.marcati(),
-#    baca.wrap.leaves(baca.rest_up()),
+#    baca.wrap_leaves(baca.rest_up()),
     )
 
 segment_maker.append_specifiers(
@@ -518,7 +518,7 @@ segment_maker.append_specifiers(
 #    baca.clef('bass'),
 #    baca.dynamic_up(),
     baca.marcati(),
-    baca.wrap.leaves(baca.rest_up()),
+    baca.wrap_leaves(baca.rest_up()),
     )
 
 segment_maker.append_specifiers(

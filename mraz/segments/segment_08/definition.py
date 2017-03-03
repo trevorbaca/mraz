@@ -377,5 +377,5 @@ segment_maker.append_specifiers(
     baca.stem_down(),
     baca.tenuti(),
     baca.tuplet_bracket_staff_padding(9),
-    baca.wrap.leaves(baca.rest_position(-16)),
+    baca.wrap_leaves(baca.rest_position(-16)),
     )
