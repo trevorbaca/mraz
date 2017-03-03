@@ -219,8 +219,8 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.note(6),
-            baca.select.note(1),
+            baca.select_note(6),
+            baca.select_note(1),
             ),
         baca.dynamic_first_note('f'),
         baca.flags(),
@@ -238,7 +238,7 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.note(11),
+            baca.select_note(11),
             ),
         baca.flags(),
         baca.register(-39),
@@ -256,8 +256,8 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.note(23),
-            baca.select.note(-1),
+            baca.select_note(23),
+            baca.select_note(-1),
             ),
         baca.flags(),
         baca.register(-39),
@@ -274,8 +274,8 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.note(27),
-            baca.select.note(1),
+            baca.select_note(27),
+            baca.select_note(1),
             ),
         baca.flags(),
         baca.register(-39),
@@ -292,8 +292,8 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.rest(33),
-            baca.select.note(-1),
+            baca.select_rest(33),
+            baca.select_note(-1),
             ),
         baca.flags(),
         baca.register(-39),
@@ -310,8 +310,8 @@ accumulator(
         v6_stage_3_segments.next(),
         baca.anchor(
             'Piano Music Voice 5',
-            baca.select.note(34),
-            baca.select.note(1),
+            baca.select_note(34),
+            baca.select_note(1),
             ),
         baca.flags(),
         baca.register(-39),
@@ -364,14 +364,14 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 5', baca.select_stages(1, Infinity)),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
     baca.clef('bass'),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 6', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 6', baca.select_stages(1, Infinity)),
     #abjad.label().with_pitches(),
     baca.script_down(),
     baca.stem_down(),
