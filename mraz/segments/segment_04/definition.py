@@ -117,7 +117,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
         v5_stage_1_segments.next(),
-        baca.anchor('Piano Music Voice 3', baca.select.note(0)),
+        baca.anchor('Piano Music Voice 3', baca.select_note(0)),
         baca.dynamic_first_note('f'),
         baca.flags(),
         baca.register(-6, 6),
@@ -364,8 +364,8 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-35, -23]],
-        #baca.anchor('Piano Music Voice 5', baca.select.rest(4)),
-        baca.anchor('Piano Music Voice 5', baca.select.rest(24)),
+        #baca.anchor('Piano Music Voice 5', baca.select_rest(4)),
+        baca.anchor('Piano Music Voice 5', baca.select_rest(24)),
         baca.chord(),
         baca.flags(),
         baca.nest('+1/4'),
@@ -409,7 +409,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-33, -21]],
-        baca.anchor('Piano Music Voice 5', baca.select.rest(32)),
+        baca.anchor('Piano Music Voice 5', baca.select_rest(32)),
         baca.chord(),
         baca.flags(),
         baca.nest('+1/4'),
@@ -500,12 +500,12 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 3', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 3', baca.select_stages(1, Infinity)),
     baca.tenuti(),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 5', baca.select_stages(1, Infinity)),
     baca.clef('bass'),
     baca.dynamic_down(),
 #    baca.dynamic_up(),
@@ -514,7 +514,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select.stages(7, Infinity)),
+    ('Piano Music Voice 5', baca.select_stages(7, Infinity)),
 #    baca.clef('bass'),
 #    baca.dynamic_up(),
     baca.marcati(),
@@ -522,11 +522,11 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice LH Resonance', baca.select.stages(9, 10)),
+    ('Piano Music Voice LH Resonance', baca.select_stages(9, 10)),
     baca.tie(messiaen=True),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice LH Resonance', baca.select.stages(13, 14)),
+    ('Piano Music Voice LH Resonance', baca.select_stages(13, 14)),
     baca.tie(messiaen=True),
     )

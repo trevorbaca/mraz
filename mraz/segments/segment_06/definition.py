@@ -121,8 +121,8 @@ accumulator(
         lh_stage_1_segments.next(1),
         baca.anchor(
             'Piano Music Voice 3',
-            baca.select.note(3),
-            baca.select.note(2),
+            baca.select_note(3),
+            baca.select_note(2),
             ),
         baca.dynamic_first_note('mp'),
         baca.flags(),
@@ -140,8 +140,8 @@ accumulator(
         lh_stage_1_segments.next(1),
         baca.anchor(
             'Piano Music Voice 3',
-            baca.select.note(9),
-            baca.select.note(2),
+            baca.select_note(9),
+            baca.select_note(2),
             ),
         baca.flags(),
         baca.register(0, 12),
@@ -158,8 +158,8 @@ accumulator(
         lh_stage_1_segments.next(1),
         baca.anchor(
             'Piano Music Voice 3',
-            baca.select.note(13),
-            baca.select.note(1),
+            baca.select_note(13),
+            baca.select_note(1),
             ),
         baca.flags(),
         baca.register(0, 12),
@@ -229,9 +229,9 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 3', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 3', baca.select_stages(1, Infinity)),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 4', baca.select.stages(1, Infinity)),
+    ('Piano Music Voice 4', baca.select_stages(1, Infinity)),
     )
