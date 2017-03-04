@@ -795,8 +795,7 @@
                         }
                         {
                             {
-                                \arpeggioArrowUp
-                                <fs, a, g b g' f'' d''' e''' af'''>1 \arpeggio
+                                <g, e f af b d' fs' a'>1
                                     ^ \markup {
                                         \fontsize
                                             #3
