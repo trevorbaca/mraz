@@ -20,12 +20,9 @@ stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
 
 stage_1_segments = stages[0]
-#stage_2_segments = stages[1][:1].repeat(n=9).cursor()
 stage_2_segments = stages[1][:1].repeat(n=9)
 stage_2_segments = stage_2_segments + stages[1].join()
 stage_2_segments = stage_2_segments.cursor()
-#stage_2_segments_remainder = stages[1][-1:].cursor()
-#raise Exception(stages[1])
 stage_3_segments = stages[2]
 stage_4_segments = stages[3].cursor()
 stage_5_segments = stages[4]
@@ -364,11 +361,9 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
         stage_2_segments.next(),
-        baca.arpeggiate_up(),
         baca.bass_to_octave(2),
         baca.chord(),
-        #baca.chord_spacing_up(bass=7, soprano=8),
-        baca.up_arpeggios(),
+        baca.chord_spacing_down(bass=7, semitones=3, soprano=9),
         denominator=4,
         figure_name='v5-4-2-10',
         talea_counts=[4],
