@@ -137,6 +137,7 @@
     \context {
         \PianoStaff
         %\remove "Keep_alive_together_engraver" 
+        \consists #Span_stem_engraver
     }
     \context {
         \Staff
