@@ -360,18 +360,35 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice 5',
-        stage_2_segments.next(),
+        #stage_2_segments.next(),
+        [[-17, -8, -7, -4]],
         baca.bass_to_octave(2),
         baca.chord(),
-        baca.chord_spacing_down(bass=7, semitones=3, soprano=9),
+        #baca.chord_spacing_down(bass=7, semitones=3, soprano=9),
         denominator=4,
         figure_name='v5-4-2-10',
-        talea_counts=[4],
+        talea_counts=[3],
         talea_denominator=4,
         ),
     )
 
+stage_2_segments.next(),
 assert stage_2_segments.is_exhausted
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'Piano Music Voice 3',
+        [[-1, 2, 6, 9]],
+        baca.bass_to_octave(3),
+        baca.anchor('Piano Music Voice 5', baca.select_chord(-1)),
+        baca.chord(),
+        baca.cross_staff(),
+        denominator=4,
+        figure_name='v3-4-2-1',
+        talea_counts=[3],
+        talea_denominator=4,
+        ),
+    )
 
 # (STAGE 2: LH RESONANCE)
 
@@ -487,7 +504,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
