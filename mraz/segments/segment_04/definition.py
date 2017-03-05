@@ -37,7 +37,7 @@ v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         v3_stage_1_segments.next(),
         baca.dynamic_first_note('ff'),
         baca.flags(),
@@ -53,7 +53,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         denominator=4,
@@ -63,7 +63,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         v3_stage_1_segments.next(),
         baca.flags(),
         baca.proportional_notation_duration((1, 16)),
@@ -78,7 +78,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 10)),
         denominator=4,
@@ -88,7 +88,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         v3_stage_1_segments.next(),
         baca.flags(),
         baca.proportional_notation_duration((1, 16)),
@@ -104,7 +104,7 @@ assert v3_stage_1_segments.is_exhausted
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         denominator=4,
@@ -116,9 +116,9 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         v5_stage_1_segments.next(),
-        baca.anchor('Piano Music Voice 3', baca.select_note(0)),
+        baca.anchor('RH Voice 3', baca.select_note(0)),
         baca.dynamic_first_note('f'),
         baca.flags(),
         baca.register(-6, 6),
@@ -132,7 +132,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         [abjad.Rest((3, 4))],
         figure_name='v5-4-1-2',
         hide_time_signature=True,
@@ -141,7 +141,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         v5_stage_1_segments.next(),
         baca.flags(),
         baca.register(-6, 6),
@@ -155,7 +155,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -174,7 +174,7 @@ stage_2_segments.reset()
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         v5_stage_1_segments.next(),
         baca.dynamic_first_note('f'),
         baca.flags(),
@@ -189,7 +189,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         [abjad.Rest((3, 4))],
         figure_name='v5-4-1-6',
         hide_time_signature=True,
@@ -202,7 +202,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -221,7 +221,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -237,7 +237,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -255,7 +255,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -273,7 +273,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -289,7 +289,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -305,7 +305,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -323,7 +323,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -341,7 +341,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         stage_2_segments.next(),
         baca.bass_to_octave(3),
         baca.chord(),
@@ -359,7 +359,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 5',
+        'LH Voice 5',
         #stage_2_segments.next(),
         [[-17, -8, -7, -4]],
         baca.bass_to_octave(2),
@@ -377,10 +377,10 @@ assert stage_2_segments.is_exhausted
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 3',
+        'RH Voice 3',
         [[-1, 2, 6, 9]],
         baca.bass_to_octave(3),
-        baca.anchor('Piano Music Voice 5', baca.select_chord(-1)),
+        baca.anchor('LH Voice 5', baca.select_chord(-1)),
         baca.chord(),
         baca.cross_staff(),
         denominator=4,
@@ -396,7 +396,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-35, -23]],
-        baca.anchor('Piano Music Voice 5', baca.select_rest(24)),
+        baca.anchor('LH Voice 5', baca.select_rest(24)),
         baca.chord(),
         baca.flags(),
         baca.nest('+1/4'),
@@ -439,7 +439,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-33, -21]],
-        baca.anchor('Piano Music Voice 5', baca.select_rest(32)),
+        baca.anchor('LH Voice 5', baca.select_rest(32)),
         baca.chord(),
         baca.flags(),
         baca.nest('+1/4'),
@@ -482,7 +482,7 @@ accumulator(
 
 #accumulator(
 #    accumulator.mraz_figure_maker(
-#        'Piano Music Voice 1',
+#        'RH Voice 1',
 #        stage_4_segments,
 #        ),
 #    )
@@ -530,18 +530,18 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 3', baca.select_stages(1, Infinity)),
+    ('RH Voice 3', baca.select_stages(1, Infinity)),
     baca.tenuti(),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select_stages(1, Infinity)),
+    ('LH Voice 5', baca.select_stages(1, Infinity)),
     baca.clef('bass'),
     baca.dynamic_down(),
     )
 
 segment_maker.append_specifiers(
-    ('Piano Music Voice 5', baca.select_stages(7, 15)),
+    ('LH Voice 5', baca.select_stages(7, 15)),
     baca.marcati(),
     baca.wrap_leaves(baca.rest_up()),
     )

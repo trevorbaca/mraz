@@ -18,7 +18,7 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
 
             >>> score_template = mraz.tools.ScoreTemplate()
             >>> accumulator = mraz.tools.FigureAccumulator(score_template)
-            >>> voice_name = 'Piano Music Voice 1'
+            >>> voice_name = 'RH Voice 1'
             >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
             ...     accumulator.mraz_figure_maker(
@@ -41,7 +41,7 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
 
             >>> f(lilypond_file[abjad.Staff])
             \new Staff <<
-                \context Voice = "Piano Music Voice 1" {
+                \context Voice = "RH Voice 1" {
                     {
                         {
                             \set stemLeftBeamCount = #0

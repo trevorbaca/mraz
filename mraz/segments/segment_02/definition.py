@@ -32,7 +32,7 @@ measures = baca.Cursor(measures)
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 2',
+        'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(3),
@@ -45,7 +45,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 2',
+        'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
@@ -57,7 +57,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 2',
+        'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
@@ -69,7 +69,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 2',
+        'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
@@ -81,7 +81,7 @@ accumulator(
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 2',
+        'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
@@ -99,7 +99,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'Piano Music Voice LH Resonance',
         [[-35, -23]],
-        baca.anchor('Piano Music Voice 2', baca.select_note(0)),
+        baca.anchor('RH Voice 2', baca.select_note(0)),
         baca.chord(),
         baca.flags(),
         color_unregistered_pitches=False,

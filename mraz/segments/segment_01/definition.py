@@ -21,7 +21,7 @@ segments = segments.cursor()
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'Piano Music Voice 1',
+        'RH Voice 1',
         segments.next(14),
         baca.beam_positions(6),
         baca.register(-8),
@@ -71,6 +71,6 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 #segment_maker.append_specifiers(
-#    ('Piano Music Voice 1', baca.select_stages(1, 2)),
+#    ('RH Voice 1', baca.select_stages(1, 2)),
 #    baca.register(0, -12),
 #    )
