@@ -130,7 +130,7 @@
         \context MusicContext = "Music Context" {
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
-                    \context PianoMusicVoiceOne = "Piano Music Voice 1" {
+                    \context PianoMusicVoiceOne = "RH Voice 1" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -145,7 +145,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceOneInserts = "Piano Music Voice 1I" {
+                    \context PianoMusicVoiceOneInserts = "RH Voice 1I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -160,7 +160,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceTwo = "Piano Music Voice 2" {
+                    \context PianoMusicVoiceTwo = "RH Voice 2" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -175,7 +175,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceTwoInserts = "Piano Music Voice 2I" {
+                    \context PianoMusicVoiceTwoInserts = "RH Voice 2I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -190,7 +190,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceThree = "Piano Music Voice 3" {
+                    \context PianoMusicVoiceThree = "RH Voice 3" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -205,7 +205,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceThreeInserts = "Piano Music Voice 3I" {
+                    \context PianoMusicVoiceThreeInserts = "RH Voice 3I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -237,7 +237,7 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                    \context PianoMusicVoiceFour = "Piano Music Voice 4" {
+                    \context PianoMusicVoiceFour = "LH Voice 4" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -252,7 +252,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceFourInserts = "Piano Music Voice 4I" {
+                    \context PianoMusicVoiceFourInserts = "LH Voice 4I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -267,7 +267,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceFive = "Piano Music Voice 5" {
+                    \context PianoMusicVoiceFive = "LH Voice 5" {
                         {
                             {
                                 \clef "bass"
@@ -443,7 +443,7 @@
                             }
                         }
                     }
-                    \context PianoMusicVoiceFiveInserts = "Piano Music Voice 5I" {
+                    \context PianoMusicVoiceFiveInserts = "LH Voice 5I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2
@@ -458,7 +458,7 @@
                         s1 * 1/2
                         \bar "|."
                     }
-                    \context PianoMusicVoiceSix = "Piano Music Voice 6" {
+                    \context PianoMusicVoiceSix = "LH Voice 6" {
                         \once \override Rest.staff-position = #-16
                         s1 * 11/16
                         {
@@ -626,7 +626,7 @@
                         s1 * 7/8
                         \bar "|."
                     }
-                    \context PianoMusicVoiceSixInserts = "Piano Music Voice 6I" {
+                    \context PianoMusicVoiceSixInserts = "LH Voice 6I" {
                         s1 * 7/16
                         s1 * 1
                         s1 * 3/2

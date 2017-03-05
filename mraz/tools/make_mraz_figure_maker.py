@@ -27,7 +27,7 @@ def make_mraz_figure_maker():
 
         ::
 
-            >>> voice_name = 'Piano Music Voice 1'
+            >>> voice_name = 'RH Voice 1'
             >>> figure_maker = mraz.tools.make_mraz_figure_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
@@ -203,7 +203,7 @@ def make_mraz_figure_maker():
 
         ::
 
-            >>> voice_name = 'Piano Music Voice 1'
+            >>> voice_name = 'RH Voice 1'
             >>> figure_maker = mraz.tools.make_mraz_figure_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
@@ -428,19 +428,19 @@ def make_mraz_figure_maker():
             color_unregistered_pitches=True,
             denominator=16,
             voice_names=[
-                'Piano Music Voice 1',
-                'Piano Music Voice 1I',
-                'Piano Music Voice 2',
-                'Piano Music Voice 2I',
-                'Piano Music Voice 3',
-                'Piano Music Voice 3I',
+                'RH Voice 1',
+                'RH Voice 1I',
+                'RH Voice 2',
+                'RH Voice 2I',
+                'RH Voice 3',
+                'RH Voice 3I',
                 'Piano Music Voice RH Resonance',
-                'Piano Music Voice 4',
-                'Piano Music Voice 4I',
-                'Piano Music Voice 5',
-                'Piano Music Voice 5I',
-                'Piano Music Voice 6',
-                'Piano Music Voice 6I',
+                'LH Voice 4',
+                'LH Voice 4I',
+                'LH Voice 5',
+                'LH Voice 5I',
+                'LH Voice 6',
+                'LH Voice 6I',
                 'Piano Music Voice LH Resonance',
                 ],
             )
