@@ -84,13 +84,13 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
         'RH Voice 2I': 'black',
         'RH Voice 3': 'darkgreen',
         'RH Voice 3I': 'darkgreen',
-        'RH Voice 4': 'blue',
-        'RH Voice 5': 'darkmagenta',
-        'RH Voice 6': 'darkcyan',
+#        'RH Voice 4': 'blue',
+#        'RH Voice 5': 'darkmagenta',
+#        'RH Voice 6': 'darkcyan',
         'RH Resonance Voice': 'darkred',
-        'LH Voice 1': 'red',
-        'LH Voice 2': 'black',
-        'LH Voice 3': 'darkgreen',
+#        'LH Voice 1': 'red',
+#        'LH Voice 2': 'black',
+#        'LH Voice 3': 'darkgreen',
         'LH Voice 4': 'blue',
         'LH Voice 4I': 'blue',
         'LH Voice 5': 'darkmagenta',
@@ -109,105 +109,105 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
         '''
         import mraz
         time_signature_context = self._make_time_signature_context()
-        piano_music_voice_1 = abjad.Voice(
+        rh_voice_1 = abjad.Voice(
             [], 
             context_name='RHVoiceOne',
             name='RH Voice 1',
             )
-        piano_music_voice_1I = abjad.Voice(
+        rh_voice_1I = abjad.Voice(
             [], 
             context_name='RHVoiceOneInserts',
             name='RH Voice 1I',
             )
-        piano_music_voice_2 = abjad.Voice(
+        rh_voice_2 = abjad.Voice(
             [], 
             context_name='RHVoiceTwo',
             name='RH Voice 2',
             )
-        piano_music_voice_2I = abjad.Voice(
+        rh_voice_2I = abjad.Voice(
             [], 
             context_name='RHVoiceTwoInserts',
             name='RH Voice 2I',
             )
-        piano_music_voice_3 = abjad.Voice(
+        rh_voice_3 = abjad.Voice(
             [], 
             context_name='RHVoiceThree',
             name='RH Voice 3',
             )
-        piano_music_voice_3I = abjad.Voice(
+        rh_voice_3I = abjad.Voice(
             [], 
             context_name='RHVoiceThreeInserts',
             name='RH Voice 3I',
             )
-        piano_music_voice_rh_resonance = abjad.Voice(
+        rh_resonance_voice = abjad.Voice(
             [], 
             context_name='RHResonanceVoice',
             name='RH Resonance Voice',
             )
-        piano_music_voice_4 = abjad.Voice(
+        lh_voice_4 = abjad.Voice(
             [], 
             context_name='LHVoiceFour',
             name='LH Voice 4',
             )
-        piano_music_voice_4I = abjad.Voice(
+        lh_voice_4I = abjad.Voice(
             [], 
             context_name='LHVoiceFourInserts',
             name='LH Voice 4I',
             )
-        piano_music_voice_5 = abjad.Voice(
+        lh_voice_5 = abjad.Voice(
             [], 
             context_name='LHVoiceFive',
             name='LH Voice 5',
             )
-        piano_music_voice_5I = abjad.Voice(
+        lh_voice_5I = abjad.Voice(
             [], 
             context_name='LHVoiceFiveInserts',
             name='LH Voice 5I',
             )
-        piano_music_voice_6 = abjad.Voice(
+        lh_voice_6 = abjad.Voice(
             [], 
             context_name='LHVoiceSix',
             name='LH Voice 6',
             )
-        piano_music_voice_6I = abjad.Voice(
+        lh_voice_6I = abjad.Voice(
             [], 
             context_name='LHVoiceSixInserts',
             name='LH Voice 6I',
             )
-        piano_music_voice_lh_resonance = abjad.Voice(
+        lh_resonance_voice = abjad.Voice(
             [], 
             context_name='LHResonanceVoice',
             name='LH Resonance Voice',
             )
-        piano_music_rh_staff = abjad.scoretools.Staff(
+        piano_music_rh_staff = abjad.Staff(
             [
-                piano_music_voice_1,
-                piano_music_voice_1I,
-                piano_music_voice_2,
-                piano_music_voice_2I,
-                piano_music_voice_3,
-                piano_music_voice_3I,
-                piano_music_voice_rh_resonance,
+                rh_voice_1,
+                rh_voice_1I,
+                rh_voice_2,
+                rh_voice_2I,
+                rh_voice_3,
+                rh_voice_3I,
+                rh_resonance_voice,
                 ], 
             context_name='PianoMusicRHStaff',
             is_simultaneous=True,
             name='Piano Music RH Staff',
             )
-        piano_music_lh_staff = abjad.scoretools.Staff(
+        piano_music_lh_staff = abjad.Staff(
             [
-                piano_music_voice_4,
-                piano_music_voice_4I,
-                piano_music_voice_5,
-                piano_music_voice_5I,
-                piano_music_voice_6,
-                piano_music_voice_6I,
-                piano_music_voice_lh_resonance,
+                lh_voice_4,
+                lh_voice_4I,
+                lh_voice_5,
+                lh_voice_5I,
+                lh_voice_6,
+                lh_voice_6I,
+                lh_resonance_voice,
                 ], 
             context_name='PianoMusicLHStaff',
             is_simultaneous=True,
             name='Piano Music LH Staff',
             )
-        piano_music_staff_group = abjad.scoretools.StaffGroup(
+        piano_music_staff_group = abjad.StaffGroup(
             [
                 piano_music_rh_staff,
                 piano_music_lh_staff,
