@@ -166,7 +166,6 @@
         \override TupletBracket.color = #red
         \override TupletNumber.color = #red
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Stem.direction = #up
     }
     \context {
         \Voice
@@ -191,7 +190,6 @@
         \override TupletBracket.color = #red
         \override TupletNumber.color = #red
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Stem.direction = #down
     }
     \context {
         \Voice
@@ -199,14 +197,12 @@
         \type Engraver_group
         \alias Voice
         \voiceTwo
-        \override Slur.direction = #up
     }
     \context {
         \Voice
         \name RHVoiceTwoInserts
         \type Engraver_group
         \alias Voice
-        \override Stem.direction = #up
     }
     \context {
         \Voice
@@ -231,7 +227,6 @@
         \override TupletBracket.color = #darkgreen
         \override TupletNumber.color = #darkgreen
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Stem.direction = #down
     }
     \context {
         \Voice
@@ -379,7 +374,6 @@
         \override TupletBracket.color = #red
         \override TupletNumber.color = #red
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Stem.direction = #up
     }
     \context {
         \Voice
@@ -387,7 +381,6 @@
         \type Engraver_group
         \alias Voice
         \voiceTwo
-        \override Slur.direction = #up
     }
     \context {
         \Voice
@@ -412,7 +405,6 @@
         \override TupletBracket.color = #darkgreen
         \override TupletNumber.color = #darkgreen
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Stem.direction = #down
     }
     \context {
         \Voice
@@ -596,6 +588,9 @@
         \accepts RHVoiceTwoInserts
         \accepts RHVoiceThree
         \accepts RHVoiceThreeInserts
+        \accepts RHVoiceFour
+        \accepts RHVoiceFive
+        \accepts RHVoiceSix
         \accepts RHResonanceVoice
     }
     \context {
@@ -603,6 +598,9 @@
         \name PianoMusicLHStaff
         \type Engraver_group
         \alias Staff
+        \accepts LHVoiceOne
+        \accepts LHVoiceTwo
+        \accepts LHVoiceThree
         \accepts LHVoiceFour
         \accepts LHVoiceFourInserts
         \accepts LHVoiceFive
