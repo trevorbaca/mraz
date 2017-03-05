@@ -434,14 +434,14 @@ def make_mraz_figure_maker():
                 'RH Voice 2I',
                 'RH Voice 3',
                 'RH Voice 3I',
-                'Piano Music Voice RH Resonance',
+                'RH Resonance Voice',
                 'LH Voice 4',
                 'LH Voice 4I',
                 'LH Voice 5',
                 'LH Voice 5I',
                 'LH Voice 6',
                 'LH Voice 6I',
-                'Piano Music Voice LH Resonance',
+                'LH Resonance Voice',
                 ],
             )
 

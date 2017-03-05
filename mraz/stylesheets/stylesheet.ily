@@ -265,7 +265,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceRHResonance
+        \name RHResonanceVoice
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -436,7 +436,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceLHResonance
+        \name LHResonanceVoice
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -472,7 +472,7 @@
         \accepts RHVoiceTwoInserts
         \accepts RHVoiceThree
         \accepts RHVoiceThreeInserts
-        \accepts PianoMusicVoiceRHResonance
+        \accepts RHResonanceVoice
     }
 
     \context {
@@ -486,7 +486,7 @@
         \accepts LHVoiceFiveInserts
         \accepts LHVoiceSix
         \accepts LHVoiceSixInserts
-        \accepts PianoMusicVoiceLHResonance
+        \accepts LHResonanceVoice
     }
 
     \context {

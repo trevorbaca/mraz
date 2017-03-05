@@ -541,7 +541,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                    \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -599,7 +599,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
+                    \context LHResonanceVoice = "LH Resonance Voice" {
                         {
                             {
                                 \clef "bass"

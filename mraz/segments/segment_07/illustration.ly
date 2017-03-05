@@ -1038,7 +1038,7 @@
                         s1 * 1/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceRHResonance = "Piano Music Voice RH Resonance" {
+                    \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/8
@@ -1652,7 +1652,7 @@
                         s1 * 1/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceLHResonance = "Piano Music Voice LH Resonance" {
+                    \context LHResonanceVoice = "LH Resonance Voice" {
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/8
