@@ -1038,6 +1038,48 @@
                         s1 * 1/8
                         \bar "|"
                     }
+                    \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
+                    \context RHVoiceFive = "RH Voice 5" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
+                    \context RHVoiceSix = "RH Voice 6" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
                     \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 3/4
                         s1 * 1/4
@@ -1054,6 +1096,48 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                    \context LHVoiceOne = "LH Voice 1" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
+                    \context LHVoiceTwo = "LH Voice 2" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
+                    \context LHVoiceThree = "LH Voice 3" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
                     \context LHVoiceFour = "LH Voice 4" {
                         \once \override Beam.positions = #'(-5.5 . -5.5)
                         s1 * 3/8

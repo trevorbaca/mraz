@@ -155,6 +155,27 @@
                         s1 * 5/8
                         \bar "|"
                     }
+                    \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
+                    \context RHVoiceFive = "RH Voice 5" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
+                    \context RHVoiceSix = "RH Voice 6" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
                     \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 9/8
                         s1 * 1/2
@@ -164,6 +185,27 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                    \context LHVoiceOne = "LH Voice 1" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
+                    \context LHVoiceTwo = "LH Voice 2" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
+                    \context LHVoiceThree = "LH Voice 3" {
+                        s1 * 9/8
+                        s1 * 1/2
+                        s1 * 7/8
+                        s1 * 5/8
+                        \bar "|"
+                    }
                     \context LHVoiceFour = "LH Voice 4" {
                         s1 * 7/32
                         {
