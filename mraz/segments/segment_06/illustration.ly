@@ -74,35 +74,35 @@
         \context MusicContext = "Music Context" {
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
-                    \context PianoMusicVoiceOne = "RH Voice 1" {
+                    \context RHVoiceOne = "RH Voice 1" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceOneInserts = "RH Voice 1I" {
+                    \context RHVoiceOneInserts = "RH Voice 1I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceTwo = "RH Voice 2" {
+                    \context RHVoiceTwo = "RH Voice 2" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceTwoInserts = "RH Voice 2I" {
+                    \context RHVoiceTwoInserts = "RH Voice 2I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceThree = "RH Voice 3" {
+                    \context RHVoiceThree = "RH Voice 3" {
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
@@ -148,7 +148,7 @@
                             }
                         }
                     }
-                    \context PianoMusicVoiceThreeInserts = "RH Voice 3I" {
+                    \context RHVoiceThreeInserts = "RH Voice 3I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
@@ -164,7 +164,7 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                    \context PianoMusicVoiceFour = "LH Voice 4" {
+                    \context LHVoiceFour = "LH Voice 4" {
                         s1 * 7/32
                         {
                             \tweak text #tuplet-number::calc-fraction-text
@@ -219,35 +219,35 @@
                         s1 * 7/16
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFourInserts = "LH Voice 4I" {
+                    \context LHVoiceFourInserts = "LH Voice 4I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFive = "LH Voice 5" {
+                    \context LHVoiceFive = "LH Voice 5" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFiveInserts = "LH Voice 5I" {
+                    \context LHVoiceFiveInserts = "LH Voice 5I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceSix = "LH Voice 6" {
+                    \context LHVoiceSix = "LH Voice 6" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context PianoMusicVoiceSixInserts = "LH Voice 6I" {
+                    \context LHVoiceSixInserts = "LH Voice 6I" {
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8

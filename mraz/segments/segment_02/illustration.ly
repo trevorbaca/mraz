@@ -116,7 +116,7 @@
         \context MusicContext = "Music Context" {
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
-                    \context PianoMusicVoiceOne = "RH Voice 1" {
+                    \context RHVoiceOne = "RH Voice 1" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -124,7 +124,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceOneInserts = "RH Voice 1I" {
+                    \context RHVoiceOneInserts = "RH Voice 1I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -132,7 +132,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceTwo = "RH Voice 2" {
+                    \context RHVoiceTwo = "RH Voice 2" {
                         {
                             {
                                 \set stemLeftBeamCount = #0
@@ -517,7 +517,7 @@
                             }
                         }
                     }
-                    \context PianoMusicVoiceTwoInserts = "RH Voice 2I" {
+                    \context RHVoiceTwoInserts = "RH Voice 2I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -525,7 +525,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceThree = "RH Voice 3" {
+                    \context RHVoiceThree = "RH Voice 3" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -533,7 +533,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceThreeInserts = "RH Voice 3I" {
+                    \context RHVoiceThreeInserts = "RH Voice 3I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -551,7 +551,7 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                    \context PianoMusicVoiceFour = "LH Voice 4" {
+                    \context LHVoiceFour = "LH Voice 4" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -559,7 +559,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFourInserts = "LH Voice 4I" {
+                    \context LHVoiceFourInserts = "LH Voice 4I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -567,7 +567,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFive = "LH Voice 5" {
+                    \context LHVoiceFive = "LH Voice 5" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -575,7 +575,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceFiveInserts = "LH Voice 5I" {
+                    \context LHVoiceFiveInserts = "LH Voice 5I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -583,7 +583,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceSix = "LH Voice 6" {
+                    \context LHVoiceSix = "LH Voice 6" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -591,7 +591,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context PianoMusicVoiceSixInserts = "LH Voice 6I" {
+                    \context LHVoiceSixInserts = "LH Voice 6I" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
