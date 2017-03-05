@@ -45,7 +45,7 @@ accumulator(
         baca.register(-12, 12),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v3-4-1-1',
+        figure_name='rh-3-4-1-1',
         talea_counts=[2, -4, 2, -4, 4],
         time_treatments=[2],
         ),
@@ -57,7 +57,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         denominator=4,
-        figure_name='v3-4-1-2',
+        figure_name='rh-3-4-1-2',
         ),
     )
 
@@ -70,7 +70,7 @@ accumulator(
         baca.register(12, -12),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v3-4-1-3',
+        figure_name='rh-3-4-1-3',
         talea_counts=[-4, 2, -4, 4],
         time_treatments=[-4],
         ),
@@ -82,7 +82,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 10)),
         denominator=4,
-        figure_name='v3-4-1-4',
+        figure_name='rh-3-4-1-4',
         ),
     )
 
@@ -95,7 +95,7 @@ accumulator(
         baca.register(-6),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v3-4-1-5',
+        figure_name='rh-3-4-1-5',
         talea_counts=[2, -4, 2, -4, 4],
         time_treatments=[2],
         ),
@@ -108,7 +108,7 @@ accumulator(
         [abjad.Rest((3, 4))],
         baca.proportional_notation_duration((1, 4)),
         denominator=4,
-        figure_name='v3-4-1-6',
+        figure_name='rh-3-4-1-6',
         ),
     )
 
@@ -124,7 +124,7 @@ accumulator(
         baca.register(-6, 6),
         baca.rests_before([12]),
         baca.tenuti(),
-        figure_name='v5-4-1-1',
+        figure_name='lh-5-4-1-1',
         hide_time_signature=True,
         talea_counts=[3, -1],
         ),
@@ -134,7 +134,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         [abjad.Rest((3, 4))],
-        figure_name='v5-4-1-2',
+        figure_name='lh-5-4-1-2',
         hide_time_signature=True,
         ),
     )
@@ -147,7 +147,7 @@ accumulator(
         baca.register(-6, 6),
         baca.rests_around([4], [4]),
         baca.tenuti(),
-        figure_name='v5-4-1-3',
+        figure_name='lh-5-4-1-3',
         hide_time_signature=True,
         talea_counts=[3, -1, 3, -1, -4, 3, -1],
         ),
@@ -165,7 +165,7 @@ accumulator(
         baca.marcati(),
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8]),
-        figure_name='v5-4-1-4',
+        figure_name='lh-5-4-1-4',
         hide_time_signature=True,
         talea_counts=[3],
         ),
@@ -181,7 +181,7 @@ accumulator(
         baca.register(-6, 6),
         baca.rests_before([4, 4]),
         baca.tenuti(),
-        figure_name='v5-4-1-5',
+        figure_name='lh-5-4-1-5',
         hide_time_signature=True,
         talea_counts=[3, -1, -4, 3, -1, 3, -1],
         ),
@@ -191,7 +191,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         [abjad.Rest((3, 4))],
-        figure_name='v5-4-1-6',
+        figure_name='lh-5-4-1-6',
         hide_time_signature=True,
         ),
     )
@@ -213,7 +213,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8]),
         denominator=4,
-        figure_name='v5-4-2-1',
+        figure_name='lh-5-4-2-1',
         hide_time_signature=False,
         talea_counts=[3],
         ),
@@ -230,7 +230,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_after([3, 16]),
         denominator=4,
-        figure_name='v5-4-2-2',
+        figure_name='lh-5-4-2-2',
         talea_counts=[1],
         ),
     )
@@ -248,7 +248,7 @@ accumulator(
         baca.rests_around([1], [8]),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v5-4-2-3',
+        figure_name='lh-5-4-2-3',
         talea_counts=[3],
         ),
     )
@@ -264,7 +264,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_after([3, 16]),
         denominator=4,
-        figure_name='v5-4-2-4',
+        figure_name='lh-5-4-2-4',
         talea_counts=[1],
         ),
     )
@@ -282,7 +282,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_around([1], [8]),
         denominator=4,
-        figure_name='v5-4-2-5',
+        figure_name='lh-5-4-2-5',
         talea_counts=[3],
         ),
     )
@@ -298,7 +298,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_after([3, 16]),
         denominator=4,
-        figure_name='v5-4-2-6',
+        figure_name='lh-5-4-2-6',
         talea_counts=[1],
         ),
     )
@@ -316,7 +316,7 @@ accumulator(
         baca.rests_around([1], [8]),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v5-4-2-7',
+        figure_name='lh-5-4-2-7',
         talea_counts=[3],
         ),
     )
@@ -332,7 +332,7 @@ accumulator(
         baca.remove_duplicate_pitch_classes(),
         baca.rests_after([3, 16]),
         denominator=4,
-        figure_name='v5-4-2-8',
+        figure_name='lh-5-4-2-8',
         talea_counts=[1],
         ),
     )
@@ -352,7 +352,7 @@ accumulator(
         baca.rests_around([1], [8]),
         baca.tuplet_bracket_up(),
         denominator=4,
-        figure_name='v5-4-2-9',
+        figure_name='lh-5-4-2-9',
         talea_counts=[3],
         ),
     )
@@ -366,7 +366,7 @@ accumulator(
         baca.chord(),
         #baca.chord_spacing_down(bass=7, semitones=3, soprano=9),
         denominator=4,
-        figure_name='v5-4-2-10',
+        figure_name='lh-5-4-2-10',
         talea_counts=[3],
         talea_denominator=4,
         ),
@@ -377,14 +377,14 @@ assert stage_2_segments.is_exhausted
 
 accumulator(
     accumulator.mraz_figure_maker(
-        'RH Voice 3',
+        'RH Voice 5',
         [[-1, 2, 6, 9]],
         baca.bass_to_octave(3),
         baca.anchor('LH Voice 5', baca.select_chord(-1)),
         baca.chord(),
         baca.cross_staff(),
         denominator=4,
-        figure_name='v3-4-2-1',
+        figure_name='rh-5-4-2-1',
         talea_counts=[3],
         talea_denominator=4,
         ),
@@ -402,7 +402,7 @@ accumulator(
         baca.nest('+1/4'),
         baca.skips_before([4]),
         color_unregistered_pitches=False,
-        figure_name='lhr-4-2-3',
+        figure_name='lh-r-4-2-3',
         talea_counts=[8],
         ),
     )
@@ -413,7 +413,7 @@ accumulator(
         [[-35, -23]],
         baca.chord(),
         baca.flags(),
-        figure_name='lhr-4-2-4-a',
+        figure_name='lh-r-4-2-4-a',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[4],
@@ -426,7 +426,7 @@ accumulator(
         [[-35, -23]],
         baca.chord(),
         baca.flags(),
-        figure_name='lhr-4-2-4-b',
+        figure_name='lh-r-4-2-4-b',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[16],
@@ -445,7 +445,7 @@ accumulator(
         baca.nest('+1/4'),
         baca.skips_before([4]),
         color_unregistered_pitches=False,
-        figure_name='lhr-4-2-7',
+        figure_name='lh-r-4-2-7',
         talea_counts=[8],
         ),
     )
@@ -456,7 +456,7 @@ accumulator(
         [[-33, -21]],
         baca.chord(),
         baca.flags(),
-        figure_name='lhr-4-2-8-a',
+        figure_name='lh-r-4-2-8-a',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[4],
@@ -469,7 +469,7 @@ accumulator(
         [[-33, -21]],
         baca.chord(),
         baca.flags(),
-        figure_name='lhr-4-2-8-b',
+        figure_name='lh-r-4-2-8-b',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[16],
@@ -504,7 +504,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
