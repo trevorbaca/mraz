@@ -541,6 +541,30 @@
                         s1 * 1
                         \bar "|"
                     }
+                    \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
+                    \context RHVoiceFive = "RH Voice 5" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
+                    \context RHVoiceSix = "RH Voice 6" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
                     \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 29/16
                         s1 * 27/16
@@ -551,6 +575,30 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                    \context LHVoiceOne = "LH Voice 1" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
+                    \context LHVoiceTwo = "LH Voice 2" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
+                    \context LHVoiceThree = "LH Voice 3" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
                     \context LHVoiceFour = "LH Voice 4" {
                         s1 * 29/16
                         s1 * 27/16

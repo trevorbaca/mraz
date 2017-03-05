@@ -50,10 +50,22 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                             }
                             \context RHVoiceThreeInserts = "RH Voice 3I" {
                             }
+                            \context RHVoiceFour = "RH Voice 4" {
+                            }
+                            \context RHVoiceFive = "RH Voice 5" {
+                            }
+                            \context RHVoiceSix = "RH Voice 6" {
+                            }
                             \context RHResonanceVoice = "RH Resonance Voice" {
                             }
                         >>
                         \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                            \context LHVoiceOne = "LH Voice 1" {
+                            }
+                            \context LHVoiceTwo = "LH Voice 2" {
+                            }
+                            \context LHVoiceThree = "LH Voice 3" {
+                            }
                             \context LHVoiceFour = "LH Voice 4" {
                             }
                             \context LHVoiceFourInserts = "LH Voice 4I" {
@@ -84,13 +96,13 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
         'RH Voice 2I': 'black',
         'RH Voice 3': 'darkgreen',
         'RH Voice 3I': 'darkgreen',
-#        'RH Voice 4': 'blue',
-#        'RH Voice 5': 'darkmagenta',
-#        'RH Voice 6': 'darkcyan',
+        'RH Voice 4': 'blue',
+        'RH Voice 5': 'darkmagenta',
+        'RH Voice 6': 'darkcyan',
         'RH Resonance Voice': 'darkred',
-#        'LH Voice 1': 'red',
-#        'LH Voice 2': 'black',
-#        'LH Voice 3': 'darkgreen',
+        'LH Voice 1': 'red',
+        'LH Voice 2': 'black',
+        'LH Voice 3': 'darkgreen',
         'LH Voice 4': 'blue',
         'LH Voice 4I': 'blue',
         'LH Voice 5': 'darkmagenta',
@@ -139,10 +151,40 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             context_name='RHVoiceThreeInserts',
             name='RH Voice 3I',
             )
+        rh_voice_4 = abjad.Voice(
+            [], 
+            context_name='RHVoiceFour',
+            name='RH Voice 4',
+            )
+        rh_voice_5 = abjad.Voice(
+            [], 
+            context_name='RHVoiceFive',
+            name='RH Voice 5',
+            )
+        rh_voice_6 = abjad.Voice(
+            [], 
+            context_name='RHVoiceSix',
+            name='RH Voice 6',
+            )
         rh_resonance_voice = abjad.Voice(
             [], 
             context_name='RHResonanceVoice',
             name='RH Resonance Voice',
+            )
+        lh_voice_1 = abjad.Voice(
+            [], 
+            context_name='LHVoiceOne',
+            name='LH Voice 1',
+            )
+        lh_voice_2 = abjad.Voice(
+            [], 
+            context_name='LHVoiceTwo',
+            name='LH Voice 2',
+            )
+        lh_voice_3 = abjad.Voice(
+            [], 
+            context_name='LHVoiceThree',
+            name='LH Voice 3',
             )
         lh_voice_4 = abjad.Voice(
             [], 
@@ -187,6 +229,9 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                 rh_voice_2I,
                 rh_voice_3,
                 rh_voice_3I,
+                rh_voice_4,
+                rh_voice_5,
+                rh_voice_6,
                 rh_resonance_voice,
                 ], 
             context_name='PianoMusicRHStaff',
@@ -195,6 +240,9 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             )
         piano_music_lh_staff = abjad.Staff(
             [
+                lh_voice_1,
+                lh_voice_2,
+                lh_voice_3,
                 lh_voice_4,
                 lh_voice_4I,
                 lh_voice_5,

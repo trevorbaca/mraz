@@ -331,12 +331,36 @@
                         s1 * 59/16
                         \bar "|"
                     }
+                    \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context RHVoiceFive = "RH Voice 5" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context RHVoiceSix = "RH Voice 6" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
                     \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 59/16
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                    \context LHVoiceOne = "LH Voice 1" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context LHVoiceTwo = "LH Voice 2" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
+                    \context LHVoiceThree = "LH Voice 3" {
+                        s1 * 59/16
+                        \bar "|"
+                    }
                     \context LHVoiceFour = "LH Voice 4" {
                         s1 * 59/16
                         \bar "|"
