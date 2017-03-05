@@ -151,7 +151,7 @@
     % PIANO
     \context {
         \Voice
-        \name PianoMusicVoiceOne
+        \name RHVoiceOne
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -176,7 +176,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceOneInserts
+        \name RHVoiceOneInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -201,7 +201,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceTwo
+        \name RHVoiceTwo
         \type Engraver_group
         \alias Voice
         \voiceTwo
@@ -209,14 +209,14 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceTwoInserts
+        \name RHVoiceTwoInserts
         \type Engraver_group
         \alias Voice
         \override Stem.direction = #up
     }
     \context {
         \Voice
-        \name PianoMusicVoiceThree
+        \name RHVoiceThree
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -241,7 +241,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceThreeInserts
+        \name RHVoiceThreeInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -292,7 +292,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceFour
+        \name LHVoiceFour
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -316,7 +316,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceFourInserts
+        \name LHVoiceFourInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -340,7 +340,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceFive
+        \name LHVoiceFive
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -364,7 +364,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceFiveInserts
+        \name LHVoiceFiveInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -388,7 +388,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceSix
+        \name LHVoiceSix
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -412,7 +412,7 @@
     }
     \context {
         \Voice
-        \name PianoMusicVoiceSixInserts
+        \name LHVoiceSixInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -466,12 +466,12 @@
         \name PianoMusicRHStaff
         \type Engraver_group
         \alias Staff
-        \accepts PianoMusicVoiceOne
-        \accepts PianoMusicVoiceOneInserts
-        \accepts PianoMusicVoiceTwo
-        \accepts PianoMusicVoiceTwoInserts
-        \accepts PianoMusicVoiceThree
-        \accepts PianoMusicVoiceThreeInserts
+        \accepts RHVoiceOne
+        \accepts RHVoiceOneInserts
+        \accepts RHVoiceTwo
+        \accepts RHVoiceTwoInserts
+        \accepts RHVoiceThree
+        \accepts RHVoiceThreeInserts
         \accepts PianoMusicVoiceRHResonance
     }
 
@@ -480,12 +480,12 @@
         \name PianoMusicLHStaff
         \type Engraver_group
         \alias Staff
-        \accepts PianoMusicVoiceFour
-        \accepts PianoMusicVoiceFourInserts
-        \accepts PianoMusicVoiceFive
-        \accepts PianoMusicVoiceFiveInserts
-        \accepts PianoMusicVoiceSix
-        \accepts PianoMusicVoiceSixInserts
+        \accepts LHVoiceFour
+        \accepts LHVoiceFourInserts
+        \accepts LHVoiceFive
+        \accepts LHVoiceFiveInserts
+        \accepts LHVoiceSix
+        \accepts LHVoiceSixInserts
         \accepts PianoMusicVoiceLHResonance
     }
 
