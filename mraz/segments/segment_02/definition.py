@@ -202,6 +202,12 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_specifiers(
+    ('RH Voice 2', baca.select_stages(1, Infinity)),
+    baca.script_up(),
+    baca.slur_up(),
+    )
+
+segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(1, Infinity)),
     baca.clef('bass'),
     )
