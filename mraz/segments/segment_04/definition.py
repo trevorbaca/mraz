@@ -153,12 +153,12 @@ accumulator(
         ),
     )
 
+#raise Exception(stage_2_segments.next()[0].chord())
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.flags(),
@@ -203,9 +203,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
         baca.flags(),
@@ -222,9 +221,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.remove_duplicate_pitch_classes(),
@@ -238,9 +236,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.nest('+1/4'),
@@ -256,9 +253,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.remove_duplicate_pitch_classes(),
@@ -274,9 +270,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.remove_duplicate_pitch_classes(),
@@ -290,9 +285,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.remove_duplicate_pitch_classes(),
@@ -306,9 +300,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.nest('+1/4'),
@@ -324,9 +317,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.remove_duplicate_pitch_classes(),
@@ -342,9 +334,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        stage_2_segments.next(),
+        [stage_2_segments.next()[0].chord()],
         baca.bass_to_octave(3),
-        baca.chords(),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
         baca.nest('+1/4'),
@@ -365,8 +356,7 @@ chord_1_upper, chord_1_lower = segment.split(pitch=-1)
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [chord_1_lower],
-        baca.chords(),
+        [chord_1_lower.chord()],
         baca.cross_staff(),
         baca.flags(),
         baca.rests_after([3, 16]),
@@ -381,9 +371,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 5',
-        [chord_1_upper],
+        [chord_1_upper.chord()],
         baca.anchor('LH Voice 5', baca.select_chord(-1)),
-        baca.chords(),
         baca.flags(),
         baca.rests_after([3, 16]),
         denominator=4,
@@ -397,9 +386,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-35, -23]],
+        [set([-35, -23])],
         baca.anchor('LH Voice 5', baca.select_rest(24)),
-        baca.chords(),
         baca.flags(),
         baca.nest('+1/4'),
         baca.skips_before([4]),
@@ -412,8 +400,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-35, -23]],
-        baca.chords(),
+        [set([-35, -23])],
         baca.flags(),
         figure_name='lh-r-4-2-4-a',
         color_unregistered_pitches=False,
@@ -425,8 +412,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-35, -23]],
-        baca.chords(),
+        [set([-35, -23])],
         baca.flags(),
         figure_name='lh-r-4-2-4-b',
         color_unregistered_pitches=False,
@@ -440,9 +426,8 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
+        [set([-33, -21])],
         baca.anchor('LH Voice 5', baca.select_rest(32)),
-        baca.chords(),
         baca.flags(),
         baca.nest('+1/4'),
         baca.skips_before([4]),
@@ -455,8 +440,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
-        baca.chords(),
+        [set([-33, -21])],
         baca.flags(),
         figure_name='lh-r-4-2-8-a',
         color_unregistered_pitches=False,
@@ -468,8 +452,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
-        baca.chords(),
+        [set([-33, -21])],
         baca.flags(),
         figure_name='lh-r-4-2-8-b',
         color_unregistered_pitches=False,
@@ -506,7 +489,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
