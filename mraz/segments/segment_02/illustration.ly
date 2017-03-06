@@ -135,100 +135,158 @@
                     \context RHVoiceTwo = "RH Voice 2" {
                         {
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs16 -\staccato \ppp [ (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 af'16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 bf16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 f''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 a16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 a'16 -\staccato ] )
@@ -236,92 +294,146 @@
                         }
                         {
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d'16 -\staccato [ (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 f'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c''''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 b''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 g'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 cs''''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 a''16 -\staccato ] )
@@ -329,74 +441,116 @@
                         }
                         {
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato [ (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c''''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 bf'16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 ef'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 f'16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 g''16 -\staccato ] )
@@ -404,54 +558,84 @@
                         }
                         {
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs''16 -\staccato [ (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 f'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a'''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 ef''''16 -\staccato ] )
@@ -459,57 +643,89 @@
                         }
                         {
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f''16 -\staccato [ (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 fs''''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 c''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 af''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 bf''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 g''''16 -\staccato )
                             }
                             {
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b''16 -\staccato (
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'''16 -\staccato
+                                \once \override Script.direction = #up
+                                \once \override Slur.direction = #up
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 d''''16 -\staccato ] )
