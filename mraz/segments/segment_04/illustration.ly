@@ -243,6 +243,16 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef8 -\tenuto \ff
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-1
+                                                    ]
+                                                }
+                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
@@ -267,6 +277,16 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-2
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -275,6 +295,16 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-3
+                                                    ]
+                                                }
+                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef''8 -\tenuto
@@ -302,6 +332,16 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-4
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -310,6 +350,16 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef'8 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-5
+                                                    ]
+                                                }
+                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
@@ -334,6 +384,16 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-3-4-1-6
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         s1 * 43/4
@@ -382,6 +442,16 @@
                         {
                             {
                                 <b d' fs' a'>16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-5-4-2-1
+                                                    ]
+                                                }
+                                        }
                                 r8.
                                 r1
                                 \bar "|"
@@ -529,6 +599,16 @@
                                 \clef "bass"
                                 \dynamicDown
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-1
+                                                    ]
+                                                }
+                                        }
                                 af8. -\tenuto \f
                                 r16
                                 d'8. -\tenuto
@@ -540,11 +620,31 @@
                         {
                             {
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-2
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-3
+                                                    ]
+                                                }
+                                        }
                                 af8. -\tenuto
                                 r16
                                 d'8. -\tenuto
@@ -558,6 +658,16 @@
                         {
                             {
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-4
+                                                    ]
+                                                }
+                                        }
                                 <g b f' fs' a'>8. -\marcato \ff
                                 r2
                             }
@@ -565,6 +675,16 @@
                         {
                             {
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-5
+                                                    ]
+                                                }
+                                        }
                                 r4
                                 af8. -\tenuto \f
                                 r16
@@ -578,6 +698,16 @@
                         {
                             {
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-1-6
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -585,6 +715,16 @@
                                 \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-1
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 <g b f' fs' a'>8. -\marcato \ff
@@ -597,6 +737,16 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-2
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -610,6 +760,16 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-2-3
+                                                        ]
+                                                    }
+                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -623,6 +783,16 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-4
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -633,6 +803,16 @@
                             {
                                 \once \override Rest.direction = #up
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-5
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>8. -\marcato
                                 \once \override Rest.direction = #up
@@ -643,6 +823,16 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-6
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -656,6 +846,16 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-2-7
+                                                        ]
+                                                    }
+                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -669,6 +869,16 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-8
+                                                    ]
+                                                }
+                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -682,6 +892,16 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-2-9
+                                                        ]
+                                                    }
+                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -697,6 +917,16 @@
                                 \once \override Stem.direction = #up
                                 \crossStaff
                                 <g, e f af>16
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-2-10
+                                                    ]
+                                                }
+                                        }
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 r8.
@@ -771,6 +1001,16 @@
                             \times 4/3 {
                                 {
                                     s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-r-4-2-3
+                                                        ]
+                                                    }
+                                            }
                                     <cs,, cs,>2
                                 }
                             }
@@ -778,11 +1018,31 @@
                         {
                             {
                                 <cs,, cs,>4 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-r-4-2-4-a
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 <cs,, cs,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-r-4-2-4-b
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         s1 * 2
@@ -791,6 +1051,16 @@
                             \times 4/3 {
                                 {
                                     s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-r-4-2-7
+                                                        ]
+                                                    }
+                                            }
                                     <ef,, ef,>2
                                 }
                             }
@@ -798,11 +1068,31 @@
                         {
                             {
                                 <ef,, ef,>4 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-r-4-2-8-a
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 <ef,, ef,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-r-4-2-8-b
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         \override Score.BarLine.transparent = ##f

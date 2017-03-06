@@ -98,9 +98,8 @@ assert measures.is_exhausted
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-35, -23]],
+        [set([-35, -23])],
         baca.anchor('RH Voice 2', baca.select_note(0)),
-        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-1',
@@ -111,8 +110,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-35, -23]],
-        baca.chords(),
+        [set([-35, -23])],
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-2-a',
@@ -124,8 +122,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
-        baca.chords(),
+        [set([-33, -21])],
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-3-a',
@@ -137,8 +134,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
-        baca.chords(),
+        [set([-33, -21])],
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-4',
@@ -150,8 +146,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [[-33, -21]],
-        baca.chords(),
+        [set([-33, -21])],
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-5',
