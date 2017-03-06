@@ -367,10 +367,13 @@ accumulator(
         'LH Voice 5',
         [chord_1_lower],
         baca.chord(),
+        baca.cross_staff(),
+        baca.flags(),
+        baca.rests_after([3, 16]),
+        baca.stem_up(),
         denominator=4,
         figure_name='lh-5-4-2-10',
-        talea_counts=[3],
-        talea_denominator=4,
+        talea_counts=[1],
         ),
     )
 
@@ -380,11 +383,11 @@ accumulator(
         [chord_1_upper],
         baca.anchor('LH Voice 5', baca.select_chord(-1)),
         baca.chord(),
-        baca.cross_staff(),
+        baca.flags(),
+        baca.rests_after([3, 16]),
         denominator=4,
         figure_name='rh-5-4-2-1',
-        talea_counts=[3],
-        talea_denominator=4,
+        talea_counts=[1],
         ),
     )
 
@@ -502,7 +505,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
