@@ -693,11 +693,14 @@
                         }
                         {
                             {
+                                \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 \crossStaff
                                 <g, e f af>16
+                                \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 r8.
+                                \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 r1
                                 \bar "|"

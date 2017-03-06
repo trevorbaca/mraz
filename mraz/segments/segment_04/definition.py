@@ -370,6 +370,7 @@ accumulator(
         baca.cross_staff(),
         baca.flags(),
         baca.rests_after([3, 16]),
+        baca.stem_color('darkmagenta', context_name='PianoStaff'),
         baca.stem_up(),
         denominator=4,
         figure_name='lh-5-4-2-10',
