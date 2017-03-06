@@ -15,7 +15,7 @@ design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
-segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
+segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 14, repr(len(segments))
 segments = segments.cursor()
 

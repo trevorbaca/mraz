@@ -14,7 +14,7 @@ design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
 segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[23:36]]
-segments = baca.SegmentList(segments, item_class=abjad.NumberedPitchClass)
+segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
 assert len(segments) == 13, repr(len(segments))
 stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
