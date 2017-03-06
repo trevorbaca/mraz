@@ -441,6 +441,12 @@
                         s1 * 65/4
                         {
                             {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
                                 \crossStaff
                                 <b d' fs' a'>2.
                                     ^ \markup {
@@ -912,6 +918,12 @@
                         }
                         {
                             {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
                                 <g, e f af>2.
                                     ^ \markup {
                                         \fontsize
