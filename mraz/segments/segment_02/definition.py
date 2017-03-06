@@ -100,7 +100,7 @@ accumulator(
         'LH Resonance Voice',
         [[-35, -23]],
         baca.anchor('RH Voice 2', baca.select_note(0)),
-        baca.chord(),
+        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-1',
@@ -112,7 +112,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
         [[-35, -23]],
-        baca.chord(),
+        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-2-a',
@@ -125,7 +125,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
         [[-33, -21]],
-        baca.chord(),
+        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-3-a',
@@ -138,7 +138,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
         [[-33, -21]],
-        baca.chord(),
+        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-4',
@@ -151,7 +151,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
         [[-33, -21]],
-        baca.chord(),
+        baca.chords(),
         baca.flags(),
         color_unregistered_pitches=False,
         figure_name='lhr-2-2-5',
