@@ -357,14 +357,16 @@ accumulator(
         ),
     )
 
+segment = stage_2_segments.next(exhausted=True)[0]
+segment = segment.space_down(bass=7, semitones=3, soprano=9)
+segment = segment.bass_to_octave(2)
+chord_1_upper, chord_1_lower = segment.split(pitch=-1)
+
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        #stage_2_segments.next(),
-        [[-17, -8, -7, -4]],
-        baca.bass_to_octave(2),
+        [chord_1_lower],
         baca.chord(),
-        #baca.chord_spacing_down(bass=7, semitones=3, soprano=9),
         denominator=4,
         figure_name='lh-5-4-2-10',
         talea_counts=[3],
@@ -372,14 +374,10 @@ accumulator(
         ),
     )
 
-stage_2_segments.next(),
-assert stage_2_segments.is_exhausted
-
 accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 5',
-        [[-1, 2, 6, 9]],
-        baca.bass_to_octave(3),
+        [chord_1_upper],
         baca.anchor('LH Voice 5', baca.select_chord(-1)),
         baca.chord(),
         baca.cross_staff(),
