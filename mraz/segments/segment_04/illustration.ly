@@ -72,12 +72,23 @@
                     R1 * 1
                 }
                 {
-                    \time 5/4
-                    R1 * 5/4
+                    \time 1/4
+                    R1 * 1/4
                 }
                 {
-                    \time 10/16
-                    R1 * 5/8
+                    \time 9/16
+                    R1 * 9/16
+                }
+                {
+                    \time 7/16
+                    R1 * 7/16
+                }
+                {
+                    \time 11/16
+                    R1 * 11/16
+                }
+                {
+                    R1 * 11/16
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
@@ -156,12 +167,23 @@
                     s1 * 1
                 }
                 {
-                    \time 5/4
-                    s1 * 5/4
+                    \time 1/4
+                    s1 * 1/4
                 }
                 {
-                    \time 10/16
-                    s1 * 5/8
+                    \time 9/16
+                    s1 * 9/16
+                }
+                {
+                    \time 7/16
+                    s1 * 7/16
+                }
+                {
+                    \time 11/16
+                    s1 * 11/16
+                }
+                {
+                    s1 * 11/16
                 }
             }
         >>
@@ -169,104 +191,27 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
-                        s1 * 35/2
-                        {
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                d'16 [
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                ef'16
-                            }
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                c'16 ]
-                                \bar "|"
-                            }
-                        }
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
+                        \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1I" {
                         s1 * 3/2
@@ -284,8 +229,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
@@ -304,8 +252,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2I" {
@@ -324,8 +275,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
@@ -488,7 +442,7 @@
                                         }
                             }
                         }
-                        s1 * 91/8
+                        s1 * 97/8
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3I" {
@@ -507,8 +461,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
@@ -527,8 +484,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
@@ -547,10 +507,9 @@
                                                 }
                                         }
                                 r8.
-                                r1
                             }
                         }
-                        s1 * 5/8
+                        s1 * 19/8
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -569,8 +528,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
@@ -589,8 +551,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                 >>
@@ -611,8 +576,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
@@ -631,8 +599,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
@@ -651,8 +622,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
@@ -671,8 +645,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4I" {
@@ -691,8 +668,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
@@ -1032,13 +1012,164 @@
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 r8.
-                                \once \override PianoStaff.Stem.color = #darkmagenta
-                                \once \override Stem.direction = #up
-                                r1
                             }
                         }
-                        s1 * 5/8
-                        \bar "|"
+                        {
+                            {
+                                r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-4-1
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <c' bf'>8 [
+                            }
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <d' f'>8 ]
+                                r8.
+                            }
+                        }
+                        {
+                            {
+                                r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-4-2
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <c' e' af'>8 [ ]
+                                r8.
+                            }
+                        }
+                        {
+                            {
+                                r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-4-3
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <bf'>8 [
+                            }
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <d' f'>8
+                            }
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <e' af'>8 ]
+                                r8.
+                            }
+                        }
+                        {
+                            {
+                                r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-4-4
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <c' f' bf'>8 [
+                            }
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <d' e' af'>8
+                            }
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                <c' bf'>8 ]
+                                r8.
+                                \bar "|"
+                            }
+                        }
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5I" {
                         s1 * 3/2
@@ -1056,8 +1187,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
@@ -1076,8 +1210,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6I" {
@@ -1096,8 +1233,11 @@
                         s1 * 1
                         s1 * 5/4
                         s1 * 1
-                        s1 * 5/4
-                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 11/16
+                        s1 * 11/16
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
@@ -1202,7 +1342,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 23/8
+                        s1 * 29/8
                         \bar "|"
                     }
                 >>
