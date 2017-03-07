@@ -22,9 +22,9 @@ assert stages.sum() == segments
 stage_1_segments = stages[0]
 stage_2_segments = stages[1][:1].repeat(n=9)
 stage_2_segments = stage_2_segments + stages[1].join()
-stage_2_segments = stage_2_segments.cursor()
+stage_2_segments = stage_2_segments.cursor(singletons=True)
 stage_3_segments = stages[2]
-stage_4_segments = stages[3].cursor()
+stage_4_segments = stages[3].cursor(singletons=True)
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
@@ -153,11 +153,10 @@ accumulator(
         ),
     )
 
-#raise Exception(stage_2_segments.next()[0].chord())
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
@@ -203,7 +202,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
@@ -221,7 +220,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -236,7 +235,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -253,7 +252,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -270,7 +269,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -285,7 +284,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -300,7 +299,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -317,7 +316,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -334,7 +333,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next()[0].chord()],
+        [stage_2_segments.next().chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.flags(),
@@ -348,7 +347,7 @@ accumulator(
         ),
     )
 
-segment = stage_2_segments.next(exhausted=True)[0]
+segment = stage_2_segments.next(exhausted=True)
 segment = segment.space_down(bass=7, semitones=3, soprano=9)
 segment = segment.bass_to_octave(2)
 chord_1_upper, chord_1_lower = segment.split(pitch=-1)
@@ -358,6 +357,7 @@ accumulator(
         'LH Voice 5',
         [chord_1_lower.chord()],
         baca.cross_staff(),
+        baca.dynamic_first_note('mp'),
         baca.flags(),
         baca.rests_after([3, 16]),
         baca.stem_color('darkmagenta', context_name='PianoStaff'),

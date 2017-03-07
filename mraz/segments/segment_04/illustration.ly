@@ -916,7 +916,7 @@
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 \crossStaff
-                                <g, e f af>16
+                                <g, e f af>16 \mp
                                     ^ \markup {
                                         \fontsize
                                             #3
