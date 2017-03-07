@@ -76,8 +76,8 @@
                     R1 * 1/4
                 }
                 {
-                    \time 9/16
-                    R1 * 9/16
+                    \time 25/16
+                    R1 * 25/16
                 }
                 {
                     \time 7/16
@@ -190,8 +190,8 @@
                     s1 * 1/4
                 }
                 {
-                    \time 9/16
-                    s1 * 9/16
+                    \time 25/16
+                    s1 * 25/16
                 }
                 {
                     \time 7/16
@@ -245,7 +245,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -273,7 +273,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -301,7 +301,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -329,7 +329,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -500,7 +500,7 @@
                                         }
                             }
                         }
-                        s1 * 233/16
+                        s1 * 249/16
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3I" {
@@ -520,7 +520,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -548,7 +548,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -577,7 +577,7 @@
                                 r8.
                             }
                         }
-                        s1 * 77/16
+                        s1 * 93/16
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -597,7 +597,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -625,7 +625,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -655,7 +655,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -683,7 +683,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -711,7 +711,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -739,7 +739,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -767,7 +767,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -1118,39 +1118,30 @@
                             }
                         }
                         {
-                            {
-                                r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-1
-                                                    ]
-                                                }
-                                        }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <c' bf'>8 [
-                            }
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <d' f'>8 ]
-                                r8.
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 25/9 {
+                                {
+                                    r8
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-4-1
+                                                        ]
+                                                    }
+                                            }
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <c' bf'>8 [
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <d' f'>8 ]
+                                    r8.
+                                }
                             }
                         }
                         {
@@ -1166,15 +1157,9 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <c' e' af'>8 [ ]
+                                <c e af>8 [ ]
                                 r8.
                             }
                         }
@@ -1191,37 +1176,19 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 <bf'>8 [
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 <d' f'>8
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <e' af'>8 ]
+                                <e af>8 ]
                                 r8.
                             }
                         }
@@ -1238,37 +1205,19 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <c' f' bf'>8 [
+                                <c f bf>8 [
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <d' e' af'>8
+                                <e af d'>8
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <c' bf'>8 ]
+                                <bf c'>8 ]
                                 r8.
                             }
                         }
@@ -1285,26 +1234,14 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 <d' f'>8 [
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <c' e' af'>8 ]
+                                <af c' e'>8 ]
                                 r8.
                             }
                         }
@@ -1321,15 +1258,9 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <bf'>8 [ ]
+                                <bf>8 [ ]
                                 r8.
                             }
                         }
@@ -1346,26 +1277,14 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 <d' f'>8 [
                             }
                             {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <e' af'>8 ]
+                                <af e'>8 ]
                                 r8.
                             }
                         }
@@ -1382,15 +1301,9 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                <c' f' bf'>8 [ ]
+                                <c f bf>8 [ ]
                                 r8.
                             }
                         }
@@ -1407,12 +1320,6 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 <d' e' af'>8 [ ]
@@ -1438,7 +1345,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -1466,7 +1373,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -1494,7 +1401,7 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 9/16
+                        s1 * 25/16
                         s1 * 7/16
                         s1 * 11/16
                         s1 * 11/16
@@ -1607,7 +1514,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 97/16
+                        s1 * 113/16
                         \bar "|"
                     }
                 >>
