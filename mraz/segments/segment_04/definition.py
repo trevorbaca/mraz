@@ -22,9 +22,9 @@ assert stages.sum() == segments
 stage_1_segments = stages[0]
 stage_2_segments = stages[1][:1].repeat(n=9)
 stage_2_segments = stage_2_segments + stages[1].join()
-stage_2_segments = stage_2_segments.cursor(singletons=True)
+#stage_2_segments = stage_2_segments.cursor(singletons=True)
 stage_3_segments = stages[2]
-stage_4_segments = stages[3].cursor(singletons=True)
+stage_4_segments = stages[3]
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
@@ -156,7 +156,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        [stage_2_segments.next().chord()],
+        [stage_2_segments[0].chord()],
         baca.bass_to_octave(3),
         baca.chord_spacing_up(bass=7, soprano=9),
         baca.dynamic_first_note('ff'),
@@ -169,7 +169,6 @@ accumulator(
         talea_counts=[3],
         ),
     )
-stage_2_segments.reset()
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -198,6 +197,8 @@ accumulator(
 ################################### STAGE 2 ###################################
 
 # (STAGE 2: VOICE 5)
+
+stage_2_segments = stage_2_segments.cursor(singletons=True)
 
 accumulator(
     accumulator.mraz_figure_maker(
@@ -359,7 +360,7 @@ accumulator(
         baca.cross_staff(),
         baca.dynamic_first_note('mp'),
         baca.flags(),
-        baca.rests_after([3, 16]),
+        baca.rests_after([3]),
         baca.stem_color('darkmagenta', context_name='PianoStaff'),
         baca.stem_up(),
         denominator=4,
@@ -374,7 +375,7 @@ accumulator(
         [chord_1_upper.chord()],
         baca.anchor('LH Voice 5', baca.select_chord(-1)),
         baca.flags(),
-        baca.rests_after([3, 16]),
+        baca.rests_after([3]),
         denominator=4,
         figure_name='rh-5-4-2-1',
         talea_counts=[1],
@@ -465,14 +466,68 @@ accumulator(
 
 # (STAGE 4: VOICE 1)
 
+assert len(stage_4_segments) == 2
+rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
+lh = lh.remove_duplicates(level=-1)
+lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
+lh = lh.chords()
+lh = lh.cursor(cyclic=True, singletons=True)
+#raise Exception(lh)
+
+stage_4_rh_segments, stage_4_lh_segments = rh, lh
+#raise Exception(stage_4_lh_segments)
+
 accumulator(
     accumulator.mraz_figure_maker(
-        'RH Voice 1',
-        stage_4_segments,
-        baca.anchor_after('RH Voice 5', baca.select_leaf(-1)),
+        'LH Voice 5',
+        lh.next(2),
+        baca.rests_around([2], [3]),
+        baca.resume_after('LH Voice 5'),
+        figure_name='lh-5-4-4-1',
         hide_time_signature=False,
+        talea_counts=[2],
         ),
     )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-2',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(3),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-3',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(3),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-4',
+        talea_counts=[2],
+        ),
+    )
+
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'RH Voice 1',
+#        stage_4_segments,
+#        baca.anchor_after('RH Voice 5', baca.select_leaf(-1)),
+#        hide_time_signature=False,
+#        ),
+#    )
+
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
