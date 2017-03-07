@@ -465,12 +465,14 @@ accumulator(
 
 # (STAGE 4: VOICE 1)
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'RH Voice 1',
-#        stage_4_segments,
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'RH Voice 1',
+        stage_4_segments,
+        baca.anchor_after('RH Voice 5', baca.select_leaf(-1)),
+        hide_time_signature=False,
+        ),
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
