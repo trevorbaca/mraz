@@ -474,15 +474,15 @@ lh = lh.chords()
 lh = lh.cursor(cyclic=True, singletons=True)
 #raise Exception(lh)
 
-stage_4_rh_segments, stage_4_lh_segments = rh, lh
-#raise Exception(stage_4_lh_segments)
-
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
+        baca.nest('+1'),
+        baca.register(0, -12),
         baca.rests_around([2], [3]),
         baca.resume_after('LH Voice 5'),
+        denominator=4,
         figure_name='lh-5-4-4-1',
         hide_time_signature=False,
         talea_counts=[2],
@@ -493,6 +493,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(),
+        baca.register(-12, 0),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-2',
         talea_counts=[2],
@@ -503,6 +504,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(3),
+        baca.register(0, -12),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-3',
         talea_counts=[2],
@@ -513,6 +515,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(3),
+        baca.register(-12, 0),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-4',
         talea_counts=[2],
@@ -523,6 +526,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
+        baca.register(0, -12),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-5',
         talea_counts=[2],
@@ -533,6 +537,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(1),
+        baca.register(-12, 0),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-6',
         talea_counts=[2],
@@ -543,6 +548,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
+        baca.register(0, -12),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-7',
         talea_counts=[2],
@@ -553,6 +559,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(1),
+        baca.register(-12, 0),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-8',
         talea_counts=[2],
@@ -563,6 +570,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(1),
+        baca.register(0, -12),
         baca.rests_around([2], [3]),
         figure_name='lh-5-4-4-9',
         talea_counts=[2],
