@@ -519,6 +519,56 @@ accumulator(
         ),
     )
 
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(2),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-5',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(1),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-6',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(2),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-7',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(1),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-8',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
+        lh.next(1),
+        baca.rests_around([2], [3]),
+        figure_name='lh-5-4-4-9',
+        talea_counts=[2],
+        ),
+    )
+
 #accumulator(
 #    accumulator.mraz_figure_maker(
 #        'RH Voice 1',
