@@ -1121,7 +1121,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 25/9 {
                                 {
-                                    r8
+                                    r8 (
                                         ^ \markup {
                                             \fontsize
                                                 #3
@@ -1134,13 +1134,13 @@
                                             }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c' bf'>8 [
+                                    <c bf>8 [ )
                                 }
                                 {
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 ]
-                                    r8.
+                                    <d' f'>8 ] (
+                                    r8. )
                                 }
                             }
                         }
