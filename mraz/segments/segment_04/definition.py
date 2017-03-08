@@ -505,6 +505,7 @@ accumulator(
         baca.flags(),
         baca.register(-12, 0),
         baca.rests_before([2]),
+        baca.right_pedal(baca.select_pitched_leaves().with_next_leaf()),
         baca.slur_pitched_runs(),
         denominator=4,
         figure_name='lh-5-4-4-2',
@@ -516,6 +517,13 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(3),
+        baca.imbricate(
+            'LH Voice 5I',
+            [10, 5],
+            baca.beam_everything(),
+            baca.staccati(),
+            extend_beam=True,
+            ),
         baca.nest('+2/16'),
         baca.register(0, -12),
         baca.rests_around([4], [4]),
@@ -539,6 +547,13 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(3),
+        baca.imbricate(
+            'LH Voice 5I',
+            [-2, 2],
+            baca.beam_everything(),
+            baca.staccati(),
+            #extend_beam=True,
+            ),
         baca.nest('+2/16'),
         baca.register(-12, 0),
         baca.rests_around([4], [4]),
@@ -685,6 +700,12 @@ segment_maker.append_specifiers(
     ('LH Voice 5', baca.select_stages(7, 15)),
     baca.marcati(),
     baca.wrap_leaves(baca.rest_up()),
+    )
+
+segment_maker.append_specifiers(
+    ('LH Voice 5I', baca.select_stages(1, Infinity)),
+    baca.script_up(),
+    baca.stem_up(),
     )
 
 segment_maker.append_specifiers(
