@@ -76,38 +76,52 @@
                     R1 * 1/4
                 }
                 {
-                    \time 25/16
-                    R1 * 25/16
+                    \time 7/8
+                    R1 * 7/8
                 }
                 {
-                    \time 7/16
-                    R1 * 7/16
+                    \time 4/4
+                    R1 * 1
                 }
                 {
-                    \time 11/16
-                    R1 * 11/16
+                    \time 2/4
+                    R1 * 1/2
                 }
                 {
-                    R1 * 11/16
+                    \time 4/4
+                    R1 * 1
                 }
                 {
-                    \time 9/16
-                    R1 * 9/16
+                    \time 2/4
+                    R1 * 1/2
                 }
                 {
-                    \time 7/16
-                    R1 * 7/16
+                    \time 4/4
+                    R1 * 1
                 }
                 {
-                    \time 9/16
-                    R1 * 9/16
+                    \time 3/4
+                    R1 * 3/4
                 }
                 {
-                    \time 7/16
-                    R1 * 7/16
+                    \time 5/8
+                    R1 * 5/8
                 }
                 {
-                    R1 * 7/16
+                    \time 2/4
+                    R1 * 1/2
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 2/4
+                    R1 * 1/2
+                }
+                {
+                    \time 5/8
+                    R1 * 5/8
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
@@ -190,38 +204,52 @@
                     s1 * 1/4
                 }
                 {
-                    \time 25/16
-                    s1 * 25/16
+                    \time 7/8
+                    s1 * 7/8
                 }
                 {
-                    \time 7/16
-                    s1 * 7/16
+                    \time 4/4
+                    s1 * 1
                 }
                 {
-                    \time 11/16
-                    s1 * 11/16
+                    \time 2/4
+                    s1 * 1/2
                 }
                 {
-                    s1 * 11/16
+                    \time 4/4
+                    s1 * 1
                 }
                 {
-                    \time 9/16
-                    s1 * 9/16
+                    \time 2/4
+                    s1 * 1/2
                 }
                 {
-                    \time 7/16
-                    s1 * 7/16
+                    \time 4/4
+                    s1 * 1
                 }
                 {
-                    \time 9/16
-                    s1 * 9/16
+                    \time 3/4
+                    s1 * 3/4
                 }
                 {
-                    \time 7/16
-                    s1 * 7/16
+                    \time 5/8
+                    s1 * 5/8
                 }
                 {
-                    s1 * 7/16
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 5/8
+                    s1 * 5/8
                 }
             }
         >>
@@ -245,15 +273,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1I" {
@@ -273,15 +304,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
@@ -301,15 +335,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2I" {
@@ -329,15 +366,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
@@ -500,7 +540,7 @@
                                         }
                             }
                         }
-                        s1 * 249/16
+                        s1 * 147/8
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3I" {
@@ -520,15 +560,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
@@ -548,15 +591,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
@@ -577,7 +623,7 @@
                                 r8.
                             }
                         }
-                        s1 * 93/16
+                        s1 * 69/8
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -597,15 +643,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
@@ -625,15 +674,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                 >>
@@ -655,15 +707,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
@@ -683,15 +738,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
@@ -711,15 +769,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
@@ -739,15 +800,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4I" {
@@ -767,15 +831,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
@@ -1119,9 +1186,9 @@
                         }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 25/9 {
+                            \times 7/6 {
                                 {
-                                    r8 (
+                                    r4
                                         ^ \markup {
                                             \fontsize
                                                 #3
@@ -1134,14 +1201,29 @@
                                             }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c bf>8 [ )
+                                    <c bf>8 [ (
                                 }
                                 {
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 ] (
-                                    r8. )
+                                    <d' f'>8 ] )
+                                    r4
                                 }
+                            }
+                        }
+                        {
+                            {
+                                r1
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    lh-5-4-4-r1
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -1157,92 +1239,113 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <c e af>8 [ ]
-                                r8.
+                                <c e af>4.
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/7 {
+                                {
+                                    r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-4-3
+                                                        ]
+                                                    }
+                                            }
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <bf'>8 [ (
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <d' f'>8
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <e af>8 ] )
+                                    r4
+                                }
                             }
                         }
                         {
                             {
-                                r8
+                                r2
                                     ^ \markup {
                                         \fontsize
                                             #3
                                             \concat
                                                 {
                                                     [
-                                                    lh-5-4-4-3
+                                                    lh-5-4-4-r2
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <bf'>8 [
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <d' f'>8
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <e af>8 ]
-                                r8.
                             }
                         }
                         {
-                            {
-                                r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-4
-                                                    ]
-                                                }
-                                        }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <c f bf>8 [
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <e af d'>8
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <bf c'>8 ]
-                                r8.
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/7 {
+                                {
+                                    r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-4-4
+                                                        ]
+                                                    }
+                                            }
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <c f bf>8 [ (
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <e af d'>8
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <bf c'>8 ] )
+                                    r4
+                                }
                             }
                         }
                         {
-                            {
-                                r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-5
-                                                    ]
-                                                }
-                                        }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <d' f'>8 [
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <af c' e'>8 ]
-                                r8.
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                {
+                                    r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-4-5
+                                                        ]
+                                                    }
+                                            }
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <d' f'>8 [ (
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <af c' e'>8 ] )
+                                    r8
+                                }
                             }
                         }
                         {
@@ -1258,34 +1361,50 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <bf>8 [ ]
-                                r8.
+                                <bf>8
+                                r4.
                             }
                         }
                         {
                             {
-                                r8
+                                r2
                                     ^ \markup {
                                         \fontsize
                                             #3
                                             \concat
                                                 {
                                                     [
-                                                    lh-5-4-4-7
+                                                    lh-5-4-4-r3
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <d' f'>8 [
                             }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <af e'>8 ]
-                                r8.
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                {
+                                    r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #3
+                                                \concat
+                                                    {
+                                                        [
+                                                        lh-5-4-4-7
+                                                        ]
+                                                    }
+                                            }
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <d' f'>8 [ (
+                                }
+                                {
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    <af e'>8 ] )
+                                    r8
+                                }
                             }
                         }
                         {
@@ -1301,10 +1420,7 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <c f bf>8 [ ]
-                                r8.
+                                <c f bf>4.
                             }
                         }
                         {
@@ -1320,10 +1436,8 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                <d' e' af'>8 [ ]
-                                r8.
+                                <d' e' af'>8
+                                r4.
                                 \bar "|"
                             }
                         }
@@ -1345,15 +1459,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
@@ -1373,15 +1490,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6I" {
@@ -1401,15 +1521,18 @@
                         s1 * 5/4
                         s1 * 1
                         s1 * 1/4
-                        s1 * 25/16
-                        s1 * 7/16
-                        s1 * 11/16
-                        s1 * 11/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 9/16
-                        s1 * 7/16
-                        s1 * 7/16
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
@@ -1514,7 +1637,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 113/16
+                        s1 * 79/8
                         \bar "|"
                     }
                 >>
