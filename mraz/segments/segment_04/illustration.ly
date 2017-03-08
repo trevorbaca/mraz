@@ -1443,34 +1443,65 @@
                         }
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5I" {
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 1/4
-                        s1 * 7/8
-                        s1 * 1
+                        s1 * 151/8
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/7 {
+                                {
+                                    s4 [
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #0
+                                    \set stemRightBeamCount = #1
+                                    bf'8 -\staccato
+                                }
+                                {
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    f'8 -\staccato
+                                }
+                                {
+                                    s8
+                                    s4
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
                         s1 * 1/2
-                        s1 * 1
-                        s1 * 1/2
-                        s1 * 1
-                        s1 * 3/4
-                        s1 * 5/8
-                        s1 * 1/2
-                        s1 * 3/4
-                        s1 * 1/2
-                        s1 * 5/8
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/7 {
+                                {
+                                    s4
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #0
+                                    \set stemRightBeamCount = #1
+                                    bf8 -\staccato
+                                }
+                                {
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    d'8 -\staccato
+                                }
+                                {
+                                    s8
+                                    s4 ]
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 15/4
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
