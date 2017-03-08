@@ -472,25 +472,17 @@ lh = lh.remove_duplicates(level=-1)
 lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
 lh = lh.chords()
 lh = lh.cursor(cyclic=True, singletons=True)
-##raise Exception(lh)
-
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'LH Voice 5',
-#        stage_4_segments,
-#        baca.resume_after('LH Voice 5'),
-#        ),
-#    )
 
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
-        baca.nest('+1'),
+        baca.nest(['+2/16']),
         baca.register(-12, 0),
-        baca.rests_around([2], [3]),
+        baca.rests_around([4], [4]),
         baca.resume_after('LH Voice 5'),
-        baca.slur_every_tuplet(),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-1',
         hide_time_signature=False,
         talea_counts=[2],
@@ -500,11 +492,23 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
+        [abjad.Rest((4, 4))],
+        denominator=4,
+        figure_name='lh-5-4-4-r1',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
         lh.next(),
+        baca.flags(),
         baca.register(-12, 0),
-        baca.rests_around([2], [3]),
+        baca.rests_before([2]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-2',
-        talea_counts=[2],
+        talea_counts=[6],
         ),
     )
 
@@ -512,8 +516,11 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(3),
+        baca.nest('+2/16'),
         baca.register(0, -12),
-        baca.rests_around([2], [3]),
+        baca.rests_around([4], [4]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-3',
         talea_counts=[2],
         ),
@@ -522,9 +529,21 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
+        [abjad.Rest((2, 4))],
+        denominator=4,
+        figure_name='lh-5-4-4-r2',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
         lh.next(3),
+        baca.nest('+2/16'),
         baca.register(-12, 0),
-        baca.rests_around([2], [3]),
+        baca.rests_around([4], [4]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-4',
         talea_counts=[2],
         ),
@@ -534,8 +553,11 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
+        baca.nest('+2/16'),
         baca.register(0, -12),
-        baca.rests_around([2], [3]),
+        baca.rests_around([4], [2]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-5',
         talea_counts=[2],
         ),
@@ -544,9 +566,12 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        lh.next(1),
+        lh.next(),
+        baca.flags(),
         baca.register(-12, 0),
-        baca.rests_around([2], [3]),
+        baca.rests_around([2], [6]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-6',
         talea_counts=[2],
         ),
@@ -555,9 +580,21 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
+        [abjad.Rest((2, 4))],
+        denominator=4,
+        figure_name='lh-5-4-4-r3',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'LH Voice 5',
         lh.next(2),
+        baca.nest('+2/16'),
         baca.register(0, -12),
-        baca.rests_around([2], [3]),
+        baca.rests_around([4], [2]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-7',
         talea_counts=[2],
         ),
@@ -566,34 +603,30 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        lh.next(1),
+        lh.next(),
+        baca.flags(),
         baca.register(-12, 0),
-        baca.rests_around([2], [3]),
+        baca.rests_before([2]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-8',
-        talea_counts=[2],
+        talea_counts=[6],
         ),
     )
 
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
-        lh.next(1),
+        lh.next(),
+        baca.flags(),
         baca.register(0, -12),
-        baca.rests_around([2], [3]),
+        baca.rests_around([2], [6]),
+        baca.slur_pitched_runs(),
+        denominator=4,
         figure_name='lh-5-4-4-9',
         talea_counts=[2],
         ),
     )
-
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'RH Voice 1',
-#        stage_4_segments,
-#        baca.anchor_after('RH Voice 5', baca.select_leaf(-1)),
-#        hide_time_signature=False,
-#        ),
-#    )
-
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
