@@ -472,17 +472,25 @@ lh = lh.remove_duplicates(level=-1)
 lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
 lh = lh.chords()
 lh = lh.cursor(cyclic=True, singletons=True)
-#raise Exception(lh)
+##raise Exception(lh)
+
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'LH Voice 5',
+#        stage_4_segments,
+#        baca.resume_after('LH Voice 5'),
+#        ),
+#    )
 
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         lh.next(2),
         baca.nest('+1'),
-        baca.register(0, -12),
+        baca.register(-12, 0),
         baca.rests_around([2], [3]),
         baca.resume_after('LH Voice 5'),
-        denominator=4,
+        baca.slur_every_tuplet(),
         figure_name='lh-5-4-4-1',
         hide_time_signature=False,
         talea_counts=[2],
