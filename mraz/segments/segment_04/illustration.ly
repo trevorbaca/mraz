@@ -257,18 +257,15 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        \once \override Stem.direction = #up
+                        \once \override TupletBracket.direction = #up
                         s1 * 33/2
                         {
-                            {
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                d'16 [
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4 {
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                r8
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -279,27 +276,48 @@
                                                     ]
                                                 }
                                         }
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \once \override Accidental.color = #magenta
-                                \once \override Beam.color = #magenta
-                                \once \override Dots.color = #magenta
-                                \once \override Flag.color = #magenta
-                                \once \override NoteHead.color = #magenta
-                                \once \override Stem.color = #magenta
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                ef'16 ]
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                d''8 \mf [
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                af''8 ]
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                a''8 [ ]
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                b''8 [
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                e''8 ]
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                r4.
                             }
                         }
-                        s1 * 135/16
+                        \once \override Stem.direction = #up
+                        \once \override TupletBracket.direction = #up
+                        s1 * 27/4
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -334,34 +352,33 @@
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 1/4
-                        s1 * 7/8
-                        s1 * 1
-                        s1 * 1/2
-                        s1 * 1
-                        s1 * 1/2
-                        s1 * 1
-                        s1 * 3/4
-                        s1 * 5/8
-                        s1 * 1/2
-                        s1 * 3/4
-                        s1 * 1/2
-                        s1 * 5/8
+                        s1 * 33/2
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4 {
+                                s8 [
+                                s8
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                ef''8 -\staccato
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                d''8 -\staccato
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                f''8 -\staccato
+                                s8
+                                s8
+                                s4. ]
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 27/4
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {

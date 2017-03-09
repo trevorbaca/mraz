@@ -656,12 +656,33 @@ accumulator(
         ),
     )
 
+rh = rh.accumulate([
+    baca.pitch_class_segment().alpha(),
+    baca.pitch_class_segment().transpose(n=2),
+    ])
+rh = rh.join().remove_repeats()
+rh = rh.read([8, 8, 14], check=Exact)
+rh = rh.cursor()
+
 accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 1',
-        rh,
+        rh.next(),
+        baca.dynamic_first_note('mf'),
+        baca.imbricate(
+            'RH Voice 2',
+            [abjad.NumberedPitchClass(_) for _ in [3, 2, 5]],
+            baca.beam_everything(),
+            baca.register(6),
+            baca.staccati(),
+            hocket=True,
+            ),
+        baca.register(12),
+        baca.rests_around([2], [6]),
         baca.resume_after('RH Voice 5'),
         figure_name='rh-1-4-4-1',
+        talea_counts=[2],
+        time_treatments=[6],
         ),
     )
 
@@ -706,6 +727,12 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 ############################ CROSS-STAGE SPECIFIERS ###########################
 ###############################################################################
+
+segment_maker.append_specifiers(
+    ('RH Voice 1', baca.select_stages(1, Infinity)),
+    baca.wrap_leaves(baca.stems_up()),
+    baca.wrap_leaves(baca.tuplet_brackets_up()),
+    )
 
 segment_maker.append_specifiers(
     ('RH Voice 3', baca.select_stages(1, Infinity)),
