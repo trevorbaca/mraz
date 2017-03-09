@@ -124,7 +124,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context RHVoiceOneInserts = "RH Voice 1I" {
+                    \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -733,7 +733,7 @@
                             }
                         }
                     }
-                    \context RHVoiceTwoInserts = "RH Voice 2I" {
+                    \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -749,7 +749,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context RHVoiceThreeInserts = "RH Voice 3I" {
+                    \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -823,7 +823,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context LHVoiceFourInserts = "LH Voice 4I" {
+                    \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -839,7 +839,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context LHVoiceFiveInserts = "LH Voice 5I" {
+                    \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -855,7 +855,7 @@
                         s1 * 1
                         \bar "|"
                     }
-                    \context LHVoiceSixInserts = "LH Voice 6I" {
+                    \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
