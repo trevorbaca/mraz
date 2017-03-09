@@ -47,7 +47,7 @@ accumulator(
         baca.nest('2/16'),
         baca.register(13, 13+10),
         baca.imbricate(
-            'RH Voice 1I',
+            'RH Voice 1 Inserts',
             [17, 23],
             baca.beam_everything(),
             baca.marcati(),
@@ -66,7 +66,7 @@ accumulator(
         baca.dynamic_first_note('fff'),
         baca.register(7, 7+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [12, 14],
             baca.beam_everything(),
             baca.accents(),
@@ -85,7 +85,7 @@ accumulator(
         baca.nest('1/16'),
         baca.register(15, 15+10),
         baca.imbricate(
-            'RH Voice 1I',
+            'RH Voice 1 Inserts',
             [30, 31],
             baca.beam_everything(),
             baca.marcati(),
@@ -102,7 +102,7 @@ accumulator(
         baca.nest('-1/16'),
         baca.register(9, 9+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [13, 17, 17, 27],
             baca.accents(),
             baca.beam_everything(),
@@ -119,7 +119,7 @@ accumulator(
         baca.nest('1/16'),
         baca.register(17, 17+10),
         baca.imbricate(
-            'RH Voice 1I',
+            'RH Voice 1 Inserts',
             [21],
             baca.beam_everything(),
             baca.marcati(),
@@ -136,7 +136,7 @@ accumulator(
         rh_segment_lists[5],
         baca.register(11, 11+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [12, 22, 19, 29],
             baca.accents(),
             baca.beam_everything(),
@@ -156,7 +156,7 @@ accumulator(
         baca.nest('1/16'),
         baca.register(19, 19+10),
         baca.imbricate(
-            'RH Voice 1I',
+            'RH Voice 1 Inserts',
             [20, 29],
             baca.beam_everything(),
             baca.marcati(),
@@ -172,7 +172,7 @@ accumulator(
         baca.nest('-1/16'),
         baca.register(13, 13+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [21, 27, 24],
             baca.accents(),
             baca.beam_everything(),
@@ -188,7 +188,7 @@ accumulator(
         rh_segment_lists[9],
         baca.register(15, 15+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [17],
             baca.accents(),
             baca.beam_everything(),
@@ -207,7 +207,7 @@ accumulator(
         baca.nest('2/16'),
         baca.register(23, 23+10),
         baca.imbricate(
-            'RH Voice 1I',
+            'RH Voice 1 Inserts',
             [30, 34, 37],
             baca.beam_everything(),
             baca.marcati(),
@@ -223,7 +223,7 @@ accumulator(
         rh_segment_lists[11],
         baca.register(17, 17+10),
         baca.imbricate(
-            'RH Voice 2I',
+            'RH Voice 2 Inserts',
             [26, 32],
             baca.accents(),
             baca.beam_everything(),
@@ -261,7 +261,7 @@ accumulator(
         baca.dynamic_first_note('ff'),
         baca.register(-2, -2+16),
         baca.imbricate(
-            'LH Voice 4I',
+            'LH Voice 4 Inserts',
             [0, 19, 23],
             baca.flags(),
             ),
@@ -284,7 +284,7 @@ accumulator(
         baca.nest('-2/16'),
         baca.register(0, 0+16),
         baca.imbricate(
-            'LH Voice 5I',
+            'LH Voice 5 Inserts',
             [11, 18, 24, 26],
             baca.beam_everything(),
             baca.staccati(),
@@ -308,7 +308,7 @@ accumulator(
         baca.dynamic_first_note('ff'),
         baca.register(2, 2+16),
         baca.imbricate(
-            'LH Voice 4I',
+            'LH Voice 4 Inserts',
             [13],
             baca.flags(),
             ),
@@ -331,7 +331,7 @@ accumulator(
         baca.nest('-2/16'),
         baca.register(4, 4+16),
         baca.imbricate(
-            'LH Voice 5I',
+            'LH Voice 5 Inserts',
             [9, 16, 20, 25],
             baca.beam_everything(),
             baca.staccati(),
@@ -355,7 +355,7 @@ accumulator(
         baca.dynamic_first_note('ff'),
         baca.register(6, 6+10),
         baca.imbricate(
-            'LH Voice 4I',
+            'LH Voice 4 Inserts',
             [14, 18],
             baca.flags(),
             ),
@@ -417,17 +417,17 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 1I', baca.select_stages(1, 5)),
+    ('RH Voice 1 Inserts', baca.select_stages(1, 5)),
     baca.wrap_leaves(baca.beam_positions(-6.5)),
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 1I', baca.select_stages(5, 10)),
+    ('RH Voice 1 Inserts', baca.select_stages(5, 10)),
     baca.wrap_leaves(baca.beam_positions(-8.5)),
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 1I', baca.select_stages(1, Infinity)),
+    ('RH Voice 1 Inserts', baca.select_stages(1, Infinity)),
     baca.script_down(),
     )
 
@@ -439,22 +439,22 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 2I', baca.select_stages(1, 4)),
+    ('RH Voice 2 Inserts', baca.select_stages(1, 4)),
     baca.beam_positions(15.5),
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 2I', baca.select_stages(6, 8)),
+    ('RH Voice 2 Inserts', baca.select_stages(6, 8)),
     baca.beam_positions(13.5),
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 2I', baca.select_stages(9, Infinity)),
+    ('RH Voice 2 Inserts', baca.select_stages(9, Infinity)),
     baca.beam_positions(17),
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 2I', baca.select_stages(1, Infinity)),
+    ('RH Voice 2 Inserts', baca.select_stages(1, Infinity)),
     baca.script_up(),
     )
 
@@ -475,7 +475,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('LH Voice 4I', baca.select_stages(1, Infinity)),
+    ('LH Voice 4 Inserts', baca.select_stages(1, Infinity)),
     baca.script_up(),
     baca.stem_up(),
     )
@@ -497,7 +497,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('LH Voice 5I', baca.select_stages(1, Infinity)),
+    ('LH Voice 5 Inserts', baca.select_stages(1, Infinity)),
     baca.script_up(),
     baca.stem_up(),
     baca.wrap_leaves(baca.beam_positions(9)),

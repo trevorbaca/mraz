@@ -518,7 +518,7 @@ accumulator(
         'LH Voice 5',
         lh.next(3),
         baca.imbricate(
-            'LH Voice 5I',
+            'LH Voice 5 Inserts',
             [10, 5],
             baca.beam_everything(),
             baca.staccati(),
@@ -548,7 +548,7 @@ accumulator(
         'LH Voice 5',
         lh.next(3),
         baca.imbricate(
-            'LH Voice 5I',
+            'LH Voice 5 Inserts',
             [-2, 2],
             baca.beam_everything(),
             baca.staccati(),
@@ -703,7 +703,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('LH Voice 5I', baca.select_stages(1, Infinity)),
+    ('LH Voice 5 Inserts', baca.select_stages(1, Infinity)),
     baca.script_up(),
     baca.stem_up(),
     )

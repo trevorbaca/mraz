@@ -287,7 +287,7 @@
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context RHVoiceOneInserts = "RH Voice 1I" {
+                    \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2
@@ -349,7 +349,7 @@
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context RHVoiceTwoInserts = "RH Voice 2I" {
+                    \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2
@@ -543,7 +543,7 @@
                         s1 * 147/8
                         \bar "|"
                     }
-                    \context RHVoiceThreeInserts = "RH Voice 3I" {
+                    \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2
@@ -814,7 +814,7 @@
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context LHVoiceFourInserts = "LH Voice 4I" {
+                    \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2
@@ -1442,7 +1442,7 @@
                             }
                         }
                     }
-                    \context LHVoiceFiveInserts = "LH Voice 5I" {
+                    \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         s1 * 151/8
                         {
                             \override TupletBracket.stencil = ##f
@@ -1535,7 +1535,7 @@
                         s1 * 5/8
                         \bar "|"
                     }
-                    \context LHVoiceSixInserts = "LH Voice 6I" {
+                    \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2
