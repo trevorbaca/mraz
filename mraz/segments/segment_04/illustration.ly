@@ -257,34 +257,49 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/2
-                        s1 * 3/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 3/4
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 5/4
-                        s1 * 1
-                        s1 * 1/4
-                        s1 * 7/8
-                        s1 * 1
-                        s1 * 1/2
-                        s1 * 1
-                        s1 * 1/2
-                        s1 * 1
-                        s1 * 3/4
-                        s1 * 5/8
-                        s1 * 1/2
-                        s1 * 3/4
-                        s1 * 1/2
-                        s1 * 5/8
+                        s1 * 33/2
+                        {
+                            {
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                d'16 [
+                                    ^ \markup {
+                                        \fontsize
+                                            #3
+                                            \concat
+                                                {
+                                                    [
+                                                    rh-1-4-4-1
+                                                    ]
+                                                }
+                                        }
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af'16
+                                \once \override Accidental.color = #magenta
+                                \once \override Beam.color = #magenta
+                                \once \override Dots.color = #magenta
+                                \once \override Flag.color = #magenta
+                                \once \override NoteHead.color = #magenta
+                                \once \override Stem.color = #magenta
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                ef'16 ]
+                            }
+                        }
+                        s1 * 135/16
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -1167,6 +1182,7 @@
                             {
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
+                                \once \override TupletBracket.staff-padding = #2
                                 \crossStaff
                                 <g, e f af>16 \mp
                                     ^ \markup {
@@ -1181,6 +1197,7 @@
                                         }
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
+                                \once \override TupletBracket.staff-padding = #2
                                 r8.
                             }
                         }
@@ -1188,6 +1205,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                         ^ \markup {
                                             \fontsize
@@ -1199,20 +1217,24 @@
                                                         ]
                                                     }
                                             }
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c bf>8 [ (
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 ] )
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r1
                                     ^ \markup {
                                         \fontsize
@@ -1228,6 +1250,7 @@
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r8
                                     ^ \markup {
                                         \fontsize
@@ -1239,6 +1262,7 @@
                                                     ]
                                                 }
                                         }
+                                \once \override TupletBracket.staff-padding = #2
                                 <c e af>4.
                             }
                         }
@@ -1246,6 +1270,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                         ^ \markup {
                                             \fontsize
@@ -1257,25 +1282,30 @@
                                                         ]
                                                     }
                                             }
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <bf'>8 [ (
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <e af>8 ] )
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r2
                                     ^ \markup {
                                         \fontsize
@@ -1293,6 +1323,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                         ^ \markup {
                                             \fontsize
@@ -1304,19 +1335,23 @@
                                                         ]
                                                     }
                                             }
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c f bf>8 [ (
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <e af d'>8
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <bf c'>8 ] )
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
@@ -1325,6 +1360,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                         ^ \markup {
                                             \fontsize
@@ -1336,20 +1372,24 @@
                                                         ]
                                                     }
                                             }
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <af c' e'>8 ] )
+                                    \once \override TupletBracket.staff-padding = #2
                                     r8
                                 }
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r8
                                     ^ \markup {
                                         \fontsize
@@ -1361,12 +1401,15 @@
                                                     ]
                                                 }
                                         }
+                                \once \override TupletBracket.staff-padding = #2
                                 <bf>8
+                                \once \override TupletBracket.staff-padding = #2
                                 r4.
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r2
                                     ^ \markup {
                                         \fontsize
@@ -1384,6 +1427,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                         ^ \markup {
                                             \fontsize
@@ -1395,20 +1439,24 @@
                                                         ]
                                                     }
                                             }
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
                                 }
                                 {
+                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <af e'>8 ] )
+                                    \once \override TupletBracket.staff-padding = #2
                                     r8
                                 }
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r8
                                     ^ \markup {
                                         \fontsize
@@ -1420,11 +1468,13 @@
                                                     ]
                                                 }
                                         }
+                                \once \override TupletBracket.staff-padding = #2
                                 <c f bf>4.
                             }
                         }
                         {
                             {
+                                \once \override TupletBracket.staff-padding = #2
                                 r8
                                     ^ \markup {
                                         \fontsize
@@ -1436,7 +1486,9 @@
                                                     ]
                                                 }
                                         }
+                                \once \override TupletBracket.staff-padding = #2
                                 <d' e' af'>8
+                                \once \override TupletBracket.staff-padding = #2
                                 r4.
                                 \bar "|"
                             }
@@ -1453,16 +1505,12 @@
                                     s4 [
                                     \once \override Script.direction = #up
                                     \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #0
+                                    \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf'8 -\staccato
                                 }
                                 {
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
-                                    f'8 -\staccato
+                                    s8
                                 }
                                 {
                                     s8
@@ -1482,7 +1530,7 @@
                                     s4
                                     \once \override Script.direction = #up
                                     \once \override Stem.direction = #up
-                                    \set stemLeftBeamCount = #0
+                                    \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf8 -\staccato
                                 }
@@ -1501,8 +1549,66 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 15/4
-                        \bar "|"
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                {
+                                    s4 [
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    f'8 -\staccato
+                                }
+                                {
+                                    s8
+                                    s8
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 9/8
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/5 {
+                                {
+                                    s4
+                                    \once \override Script.direction = #up
+                                    \once \override Stem.direction = #up
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    f'8 -\staccato
+                                }
+                                {
+                                    s8
+                                    s8
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 1/2
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            {
+                                s8
+                                \once \override Script.direction = #up
+                                \once \override Stem.direction = #up
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                af'8 -\staccato
+                                s4. ]
+                                \bar "|"
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
                     }
                     \context LHVoiceSix = "LH Voice 6" {
                         s1 * 3/2
