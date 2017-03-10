@@ -266,27 +266,17 @@
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 \dynamicUp
-                                r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-1-4-4-1
-                                                    ]
-                                                }
-                                        }
+                                r8 [
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                d''8 \mf [
+                                d''8 \mf (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                af''8 ]
+                                af''8 )
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 s8
@@ -294,7 +284,7 @@
                                 \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                a''8 [ ]
+                                a''8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 s8
@@ -305,20 +295,156 @@
                                 \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                b''8 [
+                                b''8 (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                e''8 ]
+                                e''8 )
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
                                 r4.
                             }
                         }
+                        {
+                            {
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                r2
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/2 {
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                bf''8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                c''8 (
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                g''8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                cs''8 )
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #0
+                                a''8 ]
+                            }
+                        }
                         \once \override Stem.direction = #up
                         \once \override TupletBracket.direction = #up
-                        s1 * 27/4
+                        s1 * 7/4
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 19/14 {
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #1
+                                ef''8 [ (
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                af''8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                d''8 ] )
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                e''8 [ (
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                b''8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                f''8 ] )
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                g''8 [ ]
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                s8
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                fs''8 [ (
+                                \once \override Stem.direction = #up
+                                \once \override TupletBracket.direction = #up
+                                \once \override TupletBracket.staff-padding = #4
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #0
+                                cs''8 ] )
+                            }
+                        }
+                        \once \override Stem.direction = #up
+                        \once \override TupletBracket.direction = #up
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -364,7 +490,7 @@
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                ef''8 -\staccato
+                                ef''8 -\staccato \mp
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
@@ -379,7 +505,65 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 27/4
+                        s1 * 1/2
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 3/2 {
+                                s8 [
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                f''8 -\staccato
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                fs'8 -\staccato
+                                s8
+                                s8
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                fs'8 -\staccato
+                                s8 ]
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 7/4
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 19/14 {
+                                s8 [
+                                s8
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                a'8 -\staccato
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                bf'8 -\staccato
+                                s8
+                                s8
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                bf'8 -\staccato
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                cs''8 -\staccato
+                                s8
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                c''8 -\staccato
+                                s8
+                                s8 ]
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 5/8
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
@@ -420,16 +604,6 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef8 -\tenuto \ff
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-1
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
@@ -454,16 +628,6 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-2
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
@@ -472,16 +636,6 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-3
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef''8 -\tenuto
@@ -509,16 +663,6 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-4
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
@@ -527,16 +671,6 @@
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef'8 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-5
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
@@ -561,16 +695,6 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-3-4-1-6
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         s1 * 147/8
@@ -643,16 +767,6 @@
                         {
                             {
                                 <b d' fs' a'>16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    rh-5-4-2-1
-                                                    ]
-                                                }
-                                        }
                                 r8.
                             }
                         }
@@ -883,16 +997,6 @@
                             {
                                 \clef "bass"
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-1
-                                                    ]
-                                                }
-                                        }
                                 \dynamicDown
                                 af8. -\tenuto \f
                                 r16
@@ -905,31 +1009,11 @@
                         {
                             {
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-2
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
                             {
                                 r4
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-3
-                                                    ]
-                                                }
-                                        }
                                 af8. -\tenuto
                                 r16
                                 d'8. -\tenuto
@@ -943,16 +1027,6 @@
                         {
                             {
                                 r16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-4
-                                                    ]
-                                                }
-                                        }
                                 <g b f' fs' a'>8. -\marcato \ff
                                 r2
                             }
@@ -960,16 +1034,6 @@
                         {
                             {
                                 r4
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-5
-                                                    ]
-                                                }
-                                        }
                                 r4
                                 af8. -\tenuto \f
                                 r16
@@ -983,16 +1047,6 @@
                         {
                             {
                                 r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-1-6
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
@@ -1000,16 +1054,6 @@
                                 \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-1
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 <g b f' fs' a'>8. -\marcato \ff
@@ -1022,16 +1066,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-2
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -1045,16 +1079,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-2-3
-                                                        ]
-                                                    }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -1068,16 +1092,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-4
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -1088,16 +1102,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 r16
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-5
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>8. -\marcato
                                 \once \override Rest.direction = #up
@@ -1108,16 +1112,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-6
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -1131,16 +1125,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-2-7
-                                                        ]
-                                                    }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -1154,16 +1138,6 @@
                             {
                                 \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-8
-                                                    ]
-                                                }
-                                        }
                                 \once \override Rest.direction = #up
                                 r8.
                                 \once \override Rest.direction = #up
@@ -1177,16 +1151,6 @@
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     r16
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-2-9
-                                                        ]
-                                                    }
-                                            }
                                     \once \override Rest.direction = #up
                                     \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
@@ -1203,16 +1167,6 @@
                                 \once \override TupletBracket.staff-padding = #2
                                 \crossStaff
                                 <g, e f af>16 \mp
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-2-10
-                                                    ]
-                                                }
-                                        }
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.staff-padding = #2
@@ -1225,16 +1179,6 @@
                                 {
                                     \once \override TupletBracket.staff-padding = #2
                                     r4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-4-1
-                                                        ]
-                                                    }
-                                            }
                                     \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1254,32 +1198,12 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r1
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-r1
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-2
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.staff-padding = #2
                                 <c e af>4.
                             }
@@ -1290,16 +1214,6 @@
                                 {
                                     \once \override TupletBracket.staff-padding = #2
                                     r4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-4-3
-                                                        ]
-                                                    }
-                                            }
                                     \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1325,16 +1239,6 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r2
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-r2
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
@@ -1343,16 +1247,6 @@
                                 {
                                     \once \override TupletBracket.staff-padding = #2
                                     r4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-4-4
-                                                        ]
-                                                    }
-                                            }
                                     \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1380,16 +1274,6 @@
                                 {
                                     \once \override TupletBracket.staff-padding = #2
                                     r4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-4-5
-                                                        ]
-                                                    }
-                                            }
                                     \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1409,16 +1293,6 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-6
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.staff-padding = #2
                                 <bf>8
                                 \once \override TupletBracket.staff-padding = #2
@@ -1429,16 +1303,6 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r2
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-r3
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
@@ -1447,16 +1311,6 @@
                                 {
                                     \once \override TupletBracket.staff-padding = #2
                                     r4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-5-4-4-7
-                                                        ]
-                                                    }
-                                            }
                                     \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1476,16 +1330,6 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-8
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.staff-padding = #2
                                 <c f bf>4.
                             }
@@ -1494,16 +1338,6 @@
                             {
                                 \once \override TupletBracket.staff-padding = #2
                                 r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-5-4-4-9
-                                                    ]
-                                                }
-                                        }
                                 \once \override TupletBracket.staff-padding = #2
                                 <d' e' af'>8
                                 \once \override TupletBracket.staff-padding = #2
@@ -1697,16 +1531,6 @@
                             \times 4/3 {
                                 {
                                     s4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-r-4-2-3
-                                                        ]
-                                                    }
-                                            }
                                     <cs,, cs,>2
                                 }
                             }
@@ -1714,31 +1538,11 @@
                         {
                             {
                                 <cs,, cs,>4 \repeatTie
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-r-4-2-4-a
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
                             {
                                 <cs,, cs,>1 \repeatTie
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-r-4-2-4-b
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         s1 * 2
@@ -1747,16 +1551,6 @@
                             \times 4/3 {
                                 {
                                     s4
-                                        ^ \markup {
-                                            \fontsize
-                                                #3
-                                                \concat
-                                                    {
-                                                        [
-                                                        lh-r-4-2-7
-                                                        ]
-                                                    }
-                                            }
                                     <ef,, ef,>2
                                 }
                             }
@@ -1764,31 +1558,11 @@
                         {
                             {
                                 <ef,, ef,>4 \repeatTie
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-r-4-2-8-a
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         {
                             {
                                 <ef,, ef,>1 \repeatTie
-                                    ^ \markup {
-                                        \fontsize
-                                            #3
-                                            \concat
-                                                {
-                                                    [
-                                                    lh-r-4-2-8-b
-                                                    ]
-                                                }
-                                        }
                             }
                         }
                         \override Score.BarLine.transparent = ##f

@@ -672,8 +672,10 @@ accumulator(
         baca.dynamics_up(),
         baca.imbricate(
             'RH Voice 2',
+            # TODO: implement by_pitch_class=False keyword
             [abjad.NumberedPitchClass(_) for _ in [3, 2, 5]],
             baca.beam_everything(),
+            baca.dynamic_first_note('mp'),
             baca.register(6),
             baca.staccati(),
             hocket=True,
@@ -681,34 +683,71 @@ accumulator(
         baca.register(12),
         baca.rests_around([2], [6]),
         baca.resume_after('RH Voice 5'),
-        #baca.slur_pitched_runs(),
-        figure_name='rh-1-4-4-1',
+        baca.slur_pitched_runs(),
+        # TODO: make extend_beam work here
+        extend_beam=True,
+        figure_name='rh-1 4.4.1',
         talea_counts=[2],
         time_treatments=[6],
         ),
     )
 
-#accumulator(
-#    accumulator.mraz_figure_maker(
-#        'RH Voice 1',
-#        rh.next(),
-#        baca.dynamic_first_note('mf'),
-#        baca.imbricate(
-#            'RH Voice 2',
-#            [abjad.NumberedPitchClass(_) for _ in [3, 2, 5]],
-#            baca.beam_everything(),
-#            baca.register(6),
-#            baca.staccati(),
-#            hocket=True,
-#            ),
-#        baca.register(12),
-#        baca.rests_around([2], [6]),
-#        baca.resume_after('RH Voice 5'),
-#        figure_name='rh-1-4-4-1',
-#        talea_counts=[2],
-#        time_treatments=[6],
-#        ),
-#    )
+accumulator(
+    accumulator.mraz_figure_maker(
+        'RH Voice 1',
+        [abjad.Rest((2, 4))],
+        # TODO: make extend_beam work here
+        extend_beam=True,
+        figure_name='rh-1 4.r.1',
+        hide_time_signature=True,
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'RH Voice 1',
+        rh.next(),
+        baca.imbricate(
+            'RH Voice 2',
+            [abjad.NumberedPitchClass(_) for _ in [5, 6, 6]],
+            baca.beam_everything(),
+            baca.register(6),
+            baca.staccati(),
+            hocket=True,
+            ),
+        baca.register(12),
+        baca.slur_pitched_runs(),
+        baca.tuplet_bracket_staff_padding(4),
+        # TODO: add baca.tuplet_unit((1, 8)) to library
+        figure_name='rh-1 4.4.2',
+        hide_time_signature=True,
+        talea_counts=[2],
+        time_treatments=[8],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_figure_maker(
+        'RH Voice 1',
+        rh.next(exhausted=True),
+        baca.anchor('LH Voice 5', baca.select_rest(-8)),
+        baca.imbricate(
+            'RH Voice 2',
+            [abjad.NumberedPitchClass(_) for _ in [9, 10, 10, 1, 0]],
+            baca.beam_everything(),
+            baca.register(6),
+            baca.staccati(),
+            hocket=True,
+            ),
+        baca.register(12),
+        baca.slur_pitched_runs(),
+        baca.tuplet_bracket_staff_padding(4),
+        figure_name='rh-1 4.4.3',
+        hide_time_signature=True,
+        talea_counts=[2],
+        time_treatments=[10],
+        ),
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -727,10 +766,13 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
+    #color_octaves=True,
+    color_out_of_range_pitches=True,
+    #color_repeat_pitch_classes=True,
     final_barline=Exact,
     hide_instrument_names=True,
-    ignore_repeat_pitch_classes=True,
+    #ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
