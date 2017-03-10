@@ -265,6 +265,7 @@
                             \times 5/4 {
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
+                                \dynamicUp
                                 r8
                                     ^ \markup {
                                         \fontsize
@@ -881,7 +882,6 @@
                         {
                             {
                                 \clef "bass"
-                                \dynamicDown
                                 r2.
                                     ^ \markup {
                                         \fontsize
@@ -893,6 +893,7 @@
                                                     ]
                                                 }
                                         }
+                                \dynamicDown
                                 af8. -\tenuto \f
                                 r16
                                 d'8. -\tenuto
