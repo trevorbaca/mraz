@@ -669,6 +669,7 @@ accumulator(
         'RH Voice 1',
         rh.next(),
         baca.dynamic_first_note('mf'),
+        baca.dynamics_up(),
         baca.imbricate(
             'RH Voice 2',
             [abjad.NumberedPitchClass(_) for _ in [3, 2, 5]],
@@ -680,11 +681,34 @@ accumulator(
         baca.register(12),
         baca.rests_around([2], [6]),
         baca.resume_after('RH Voice 5'),
+        #baca.slur_pitched_runs(),
         figure_name='rh-1-4-4-1',
         talea_counts=[2],
         time_treatments=[6],
         ),
     )
+
+#accumulator(
+#    accumulator.mraz_figure_maker(
+#        'RH Voice 1',
+#        rh.next(),
+#        baca.dynamic_first_note('mf'),
+#        baca.imbricate(
+#            'RH Voice 2',
+#            [abjad.NumberedPitchClass(_) for _ in [3, 2, 5]],
+#            baca.beam_everything(),
+#            baca.register(6),
+#            baca.staccati(),
+#            hocket=True,
+#            ),
+#        baca.register(12),
+#        baca.rests_around([2], [6]),
+#        baca.resume_after('RH Voice 5'),
+#        figure_name='rh-1-4-4-1',
+#        talea_counts=[2],
+#        time_treatments=[6],
+#        ),
+#    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -742,7 +766,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ('LH Voice 5', baca.select_stages(1, Infinity)),
     baca.clef('bass'),
-    baca.dynamic_down(),
+    baca.dynamics_down(),
     )
 
 segment_maker.append_specifiers(

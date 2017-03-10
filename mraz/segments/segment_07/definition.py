@@ -434,7 +434,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ('RH Voice 2', baca.select_stages(1, Infinity)),
     baca.beam_positions(-4.5),
-    baca.dynamic_down(),
+    baca.dynamics_down(),
     baca.stems_down(),
     )
 

@@ -572,7 +572,6 @@
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
-                        \dynamicDown
                         s1 * 3/4
                         {
                             {
@@ -580,6 +579,7 @@
                                 \once \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \dynamicDown
                                 c''16 \fff [ (
                                 \once \override Beam.positions = #'(-4.5 . -4.5)
                                 \once \override Stem.direction = #down
