@@ -833,10 +833,10 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(9, 10)),
-    baca.tie(messiaen=True),
+    baca.messiaen_ties(),
     )
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(13, 14)),
-    baca.tie(messiaen=True),
+    baca.messiaen_ties(),
     )
