@@ -387,7 +387,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-35, -23])],
+        [{-35, -23}],
         baca.anchor('LH Voice 5', baca.select_rest(24)),
         baca.flags(),
         baca.nest('+1/4'),
@@ -401,7 +401,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-35, -23])],
+        [{-35, -23}],
         baca.flags(),
         figure_name='lh-r-4-2-4-a',
         color_unregistered_pitches=False,
@@ -413,7 +413,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-35, -23])],
+        [{-35, -23}],
         baca.flags(),
         figure_name='lh-r-4-2-4-b',
         color_unregistered_pitches=False,
@@ -427,7 +427,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-33, -21])],
+        [{-33, -21}],
         baca.anchor('LH Voice 5', baca.select_rest(32)),
         baca.flags(),
         baca.nest('+1/4'),
@@ -441,7 +441,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-33, -21])],
+        [{-33, -21}],
         baca.flags(),
         figure_name='lh-r-4-2-8-a',
         color_unregistered_pitches=False,
@@ -453,7 +453,7 @@ accumulator(
 accumulator(
     accumulator.mraz_figure_maker(
         'LH Resonance Voice',
-        [set([-33, -21])],
+        [{-33, -21}],
         baca.flags(),
         figure_name='lh-r-4-2-8-b',
         color_unregistered_pitches=False,
