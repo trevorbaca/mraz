@@ -176,7 +176,7 @@ segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=True,
+    #color_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
@@ -211,10 +211,10 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(1, 2)),
-    baca.tie(messiaen=True),
+    baca.messiaen_ties(),
     )
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(3, 5)),
-    baca.tie(messiaen=True),
+    baca.messiaen_ties(),
     )
