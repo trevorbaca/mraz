@@ -995,8 +995,8 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
-                                \clef "bass"
                                 r2.
+                                \clef "bass"
                                 \dynamicDown
                                 af8. -\tenuto \f
                                 r16
