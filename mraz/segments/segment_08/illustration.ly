@@ -370,33 +370,23 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
-                                \once \override Rest.direction = #up
+                                \override Rest.direction = #up
                                 g,,8
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 a,,8
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 cs,,8
-                                \once \override Rest.direction = #up
                                 r32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
-                                \once \override Rest.direction = #up
                                 b,,8
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 af,,8
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 a,,8
-                                \once \override Rest.direction = #up
                                 r32
+                                \revert Rest.direction
                             }
                         }
                         {
@@ -411,22 +401,16 @@
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
+                                \override Rest.direction = #up
                                 bf,,8.
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 d,8.
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 c,8.
-                                \once \override Rest.direction = #up
                                 r32
-                                \once \override Rest.direction = #up
                                 b,,8.
-                                \once \override Rest.direction = #up
                                 r32
+                                \revert Rest.direction
                             }
                         }
                         {
@@ -450,22 +434,16 @@
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
+                                \override Rest.direction = #up
                                 ef,,32
-                                \once \override Rest.direction = #up
                                 r4...
-                                \once \override Rest.direction = #up
                                 c,,32
-                                \once \override Rest.direction = #up
                                 r4...
-                                \once \override Rest.direction = #up
                                 cs,,32
-                                \once \override Rest.direction = #up
                                 r4...
-                                \once \override Rest.direction = #up
                                 ef,,32
-                                \once \override Rest.direction = #up
                                 r4...
+                                \revert Rest.direction
                             }
                         }
                         {
@@ -498,14 +476,12 @@
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
+                                \override Rest.direction = #up
                                 a,,,32
-                                \once \override Rest.direction = #up
                                 r4...
-                                \once \override Rest.direction = #up
                                 g,,32
-                                \once \override Rest.direction = #up
                                 r4...
+                                \revert Rest.direction
                             }
                         }
                         {
@@ -549,156 +525,85 @@
                         \bar "|."
                     }
                     \context LHVoiceSix = "LH Voice 6" {
-                        \once \override Rest.staff-position = #-16
+                        \override Rest.staff-position = #-16
                         s1 * 11/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
+                                \override Script.direction = #down
+                                \override Stem.direction = #down
                                 \override TupletBracket.staff-padding = #9
                                 af,,4 -\tenuto \f
-                                \once \override Rest.staff-position = #-16
                                 r4
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 c,,4 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r4
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 bf,,,4 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r4
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 1
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \once \override Rest.direction = #up
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
+                                \override Rest.direction = #up
                                 b,,,8 -\tenuto
-                                \once \override Rest.direction = #up
-                                \once \override Rest.staff-position = #-16
                                 r4
-                                \once \override Rest.direction = #up
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 ef,,8 -\tenuto
-                                \once \override Rest.direction = #up
-                                \once \override Rest.staff-position = #-16
                                 r4
+                                \revert Rest.direction
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 73/48
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 bf,,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 c,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 e,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 7/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 g,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 f,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 cs,,16 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r8.
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 11/48
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 d,,8 -\tenuto
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 e,,8 -\tenuto
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 af,,8 -\tenuto
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 fs,,8 -\tenuto
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 1/16
                         {
                             \times 2/3 {
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 e,,8 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r4
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 f,,8 -\tenuto
-                                \once \override Rest.staff-position = #-16
                                 r4
-                                \once \override Rest.staff-position = #-16
-                                \once \override Script.direction = #down
-                                \once \override Stem.direction = #down
                                 g,,8 -\tenuto
+                                \revert Script.direction
+                                \revert Stem.direction
                                 \revert TupletBracket.staff-padding
-                                \once \override Rest.staff-position = #-16
                                 r4
                             }
                         }
-                        \once \override Rest.staff-position = #-16
                         s1 * 7/8
                         \bar "|."
+                        \revert Rest.staff-position
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
                         s1 * 7/16

@@ -257,177 +257,109 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
-                        \once \override Stem.direction = #up
-                        \once \override TupletBracket.direction = #up
+                        \override Stem.direction = #up
+                        \override TupletBracket.direction = #up
                         s1 * 33/2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \dynamicUp
                                 r8 [
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 d''8 \mf (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af''8 )
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 a''8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 b''8 (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 e''8 )
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 r4.
                             }
                         }
                         {
                             {
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 r2
                             }
                         }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 \override TupletBracket.staff-padding = #4
                                 bf''8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 c''8 (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 g''8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 cs''8 )
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
                                 a''8 ]
                                 \revert TupletBracket.staff-padding
                             }
                         }
-                        \once \override Stem.direction = #up
-                        \once \override TupletBracket.direction = #up
                         s1 * 7/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/14 {
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #1
                                 \override TupletBracket.staff-padding = #4
                                 ef''8 [ (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af''8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 d''8 ] )
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 e''8 [ (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 b''8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 f''8 ] )
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 g''8 [ ]
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 s8
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 fs''8 [ (
-                                \once \override Stem.direction = #up
-                                \once \override TupletBracket.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
                                 cs''8 ] )
                                 \revert TupletBracket.staff-padding
                             }
                         }
-                        \once \override Stem.direction = #up
-                        \once \override TupletBracket.direction = #up
                         s1 * 5/8
                         \bar "|"
+                        \revert Stem.direction
+                        \revert TupletBracket.direction
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 3/2
@@ -583,27 +515,22 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 12/11 {
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TupletBracket.direction = #up
                                 ef8 -\tenuto \ff
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs'8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'4 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf'8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
+                                \revert TupletBracket.direction
                             }
                         }
                         {
@@ -615,30 +542,24 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TupletBracket.direction = #up
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef''8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs''4 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf4 -\tenuto
+                                \revert TupletBracket.direction
                             }
                         }
                         {
@@ -650,27 +571,22 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 12/11 {
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TupletBracket.direction = #up
                                 ef'8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs'8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'4 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf8 -\tenuto
-                                \once \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
+                                \revert TupletBracket.direction
                             }
                         }
                         {
@@ -1033,24 +949,19 @@
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
+                                \override Rest.direction = #up
                                 r16
-                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 <g b f' fs' a'>8. -\marcato \ff
-                                \once \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2
                             }
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                \once \override Rest.direction = #up
                                 r8.
-                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -1058,45 +969,32 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
+                                    \override TupletBracket.direction = #up
                                     r16
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     r2
+                                    \revert TupletBracket.direction
                                 }
                             }
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                \once \override Rest.direction = #up
                                 r8.
-                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 r16
-                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>8. -\marcato
-                                \once \override Rest.direction = #up
                                 r2
                             }
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                \once \override Rest.direction = #up
                                 r8.
-                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -1104,25 +1002,18 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
+                                    \override TupletBracket.direction = #up
                                     r16
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     r2
+                                    \revert TupletBracket.direction
                                 }
                             }
                         }
                         {
                             {
-                                \once \override Rest.direction = #up
                                 <g b f' fs' a'>16 -\marcato
-                                \once \override Rest.direction = #up
                                 r8.
-                                \once \override Rest.direction = #up
                                 r1
                             }
                         }
@@ -1130,28 +1021,25 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 {
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
+                                    \override TupletBracket.direction = #up
                                     r16
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     <g b f' fs' a'>8. -\marcato
-                                    \once \override Rest.direction = #up
-                                    \once \override TupletBracket.direction = #up
                                     r2
+                                    \revert TupletBracket.direction
+                                    \revert Rest.direction
                                 }
                             }
                         }
                         {
                             {
-                                \once \override PianoStaff.Stem.color = #darkmagenta
-                                \once \override Stem.direction = #up
                                 \crossStaff
+                                \override PianoStaff.Stem.color = #''darkmagenta'
+                                \override Stem.direction = #up
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
-                                \once \override PianoStaff.Stem.color = #darkmagenta
-                                \once \override Stem.direction = #up
                                 r8.
+                                \revert PianoStaff.Stem.color
+                                \revert Stem.direction
                             }
                         }
                         {
@@ -1302,10 +1190,10 @@
                             \times 8/7 {
                                 {
                                     s4 [
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
+                                    \override Script.direction = #up
+                                    \override Stem.direction = #up
                                     bf'8 -\staccato
                                 }
                                 {
@@ -1327,15 +1215,11 @@
                             \times 8/7 {
                                 {
                                     s4
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf8 -\staccato
                                 }
                                 {
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     d'8 -\staccato
@@ -1355,8 +1239,6 @@
                             \times 6/5 {
                                 {
                                     s4 [
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8 -\staccato
@@ -1377,8 +1259,6 @@
                             \times 6/5 {
                                 {
                                     s4
-                                    \once \override Script.direction = #up
-                                    \once \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8 -\staccato
@@ -1397,11 +1277,11 @@
                             \override TupletNumber.stencil = ##f
                             {
                                 s8
-                                \once \override Script.direction = #up
-                                \once \override Stem.direction = #up
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af'8 -\staccato
+                                \revert Script.direction
+                                \revert Stem.direction
                                 s4. ]
                                 \bar "|"
                             }
