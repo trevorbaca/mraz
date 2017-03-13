@@ -43,7 +43,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 1',
         rh_segment_lists[0],
-        baca.dynamic_first_note('fff'),
+        baca.dynamic('fff'),
         baca.nest('2/16'),
         baca.register(13, 13+10),
         baca.imbricate(
@@ -63,7 +63,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 2',
         rh_segment_lists[1],
-        baca.dynamic_first_note('fff'),
+        baca.dynamic('fff'),
         baca.register(7, 7+10),
         baca.imbricate(
             'RH Voice 2 Inserts',
@@ -258,7 +258,7 @@ accumulator(
             baca.select_note(0),
             baca.select_logical_tie(7),
             ),
-        baca.dynamic_first_note('ff'),
+        baca.dynamic('ff'),
         baca.register(-2, -2+16),
         baca.imbricate(
             'LH Voice 4 Inserts',
@@ -280,7 +280,7 @@ accumulator(
             baca.select_note(4),
             baca.select_logical_tie(3),
             ),
-        baca.dynamic_first_note('pp'),
+        baca.dynamic('pp'),
         baca.nest('-2/16'),
         baca.register(0, 0+16),
         baca.imbricate(
@@ -305,7 +305,7 @@ accumulator(
             baca.select_note(14),
             baca.select_logical_tie(0),
             ),
-        baca.dynamic_first_note('ff'),
+        baca.dynamic('ff'),
         baca.register(2, 2+16),
         baca.imbricate(
             'LH Voice 4 Inserts',
@@ -327,7 +327,7 @@ accumulator(
             baca.select_note(26),
             baca.select_logical_tie(10),
             ),
-        baca.dynamic_first_note('pp'),
+        baca.dynamic('pp'),
         baca.nest('-2/16'),
         baca.register(4, 4+16),
         baca.imbricate(
@@ -352,7 +352,7 @@ accumulator(
             baca.select_note(-6),
             baca.select_logical_tie(0),
             ),
-        baca.dynamic_first_note('ff'),
+        baca.dynamic('ff'),
         baca.register(6, 6+10),
         baca.imbricate(
             'LH Voice 4 Inserts',

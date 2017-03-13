@@ -49,7 +49,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'RH Voice 3',
         rh_stage_1_segments.next(2),
-        baca.dynamic_first_note('pp'),
+        baca.dynamic('pp'),
         baca.flags(),
         baca.register(24, 12),
         baca.rests_after([1]),
@@ -124,7 +124,7 @@ accumulator(
             baca.select_note(3),
             baca.select_note(2),
             ),
-        baca.dynamic_first_note('mp'),
+        baca.dynamic('mp'),
         baca.flags(),
         baca.register(0, 12),
         baca.tenuti(),
