@@ -18,21 +18,19 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
 
             >>> score_template = mraz.tools.ScoreTemplate()
             >>> accumulator = mraz.tools.FigureAccumulator(score_template)
-            >>> voice_name = 'RH Voice 1'
-            >>> segments = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
             >>> accumulator(
             ...     accumulator.mraz_figure_maker(
-            ...         voice_name,
-            ...         segments,
+            ...         'RH Voice 1',
+            ...         [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
             ...         figure_name='D',
             ...         ),
             ...     )
 
         ::
 
-            >>> selection = accumulator.assemble(voice_name)
+            >>> selection = accumulator.assemble('RH Voice 1')
             >>> lilypond_file = accumulator.show(
-            ...     {voice_name: selection},
+            ...     {'RH Voice 1': selection},
             ...     accumulator.time_signatures,
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP

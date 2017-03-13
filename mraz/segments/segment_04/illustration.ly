@@ -318,46 +318,40 @@
                             \times 3/2 {
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
+                                \override TupletBracket.staff-padding = #4
                                 bf''8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 c''8 (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 g''8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 cs''8 )
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
                                 a''8 ]
+                                \revert TupletBracket.staff-padding
                             }
                         }
                         \once \override Stem.direction = #up
@@ -368,78 +362,66 @@
                             \times 19/14 {
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #1
+                                \override TupletBracket.staff-padding = #4
                                 ef''8 [ (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af''8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 d''8 ] )
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 e''8 [ (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 b''8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 f''8 ] )
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 g''8 [ ]
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 s8
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 fs''8 [ (
                                 \once \override Stem.direction = #up
                                 \once \override TupletBracket.direction = #up
-                                \once \override TupletBracket.staff-padding = #4
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
                                 cs''8 ] )
+                                \revert TupletBracket.staff-padding
                             }
                         }
                         \once \override Stem.direction = #up
@@ -1164,12 +1146,11 @@
                             {
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
-                                \once \override TupletBracket.staff-padding = #2
                                 \crossStaff
+                                \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
-                                \once \override TupletBracket.staff-padding = #2
                                 r8.
                             }
                         }
@@ -1177,34 +1158,27 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c bf>8 [ (
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 ] )
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r1
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r8
-                                \once \override TupletBracket.staff-padding = #2
                                 <c e af>4.
                             }
                         }
@@ -1212,32 +1186,26 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <bf'>8 [ (
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <e af>8 ] )
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r2
                             }
                         }
@@ -1245,25 +1213,20 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c f bf>8 [ (
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <e af d'>8
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <bf c'>8 ] )
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
                                 }
                             }
@@ -1272,36 +1235,28 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <af c' e'>8 ] )
-                                    \once \override TupletBracket.staff-padding = #2
                                     r8
                                 }
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r8
-                                \once \override TupletBracket.staff-padding = #2
                                 <bf>8
-                                \once \override TupletBracket.staff-padding = #2
                                 r4.
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r2
                             }
                         }
@@ -1309,40 +1264,32 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/5 {
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     r4
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
                                 }
                                 {
-                                    \once \override TupletBracket.staff-padding = #2
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <af e'>8 ] )
-                                    \once \override TupletBracket.staff-padding = #2
                                     r8
                                 }
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r8
-                                \once \override TupletBracket.staff-padding = #2
                                 <c f bf>4.
                             }
                         }
                         {
                             {
-                                \once \override TupletBracket.staff-padding = #2
                                 r8
-                                \once \override TupletBracket.staff-padding = #2
                                 <d' e' af'>8
-                                \once \override TupletBracket.staff-padding = #2
                                 r4.
                                 \bar "|"
+                                \revert TupletBracket.staff-padding
                             }
                         }
                     }
