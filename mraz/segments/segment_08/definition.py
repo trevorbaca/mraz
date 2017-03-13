@@ -53,7 +53,7 @@ accumulator(
     accumulator.mraz_figure_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
-        baca.dynamic_first_note('ppp'),
+        baca.dynamic('ppp'),
         baca.flags(),
         baca.register(-27, -39),
         figure_name='v5-8-3-01',
@@ -222,7 +222,7 @@ accumulator(
             baca.select_note(6),
             baca.select_note(1),
             ),
-        baca.dynamic_first_note('f'),
+        baca.dynamic('f'),
         baca.flags(),
         baca.register(-39),
         figure_name='v6-8-3-01',

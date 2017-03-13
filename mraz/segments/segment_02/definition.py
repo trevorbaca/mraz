@@ -36,7 +36,7 @@ accumulator(
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(3),
-        baca.dynamic_first_note('ppp'),
+        baca.dynamic('ppp'),
         baca.slur_every_tuplet(),
         baca.staccati(),
         figure_name='2-2-1',
