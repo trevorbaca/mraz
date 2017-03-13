@@ -257,7 +257,6 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
-                        \override Stem.direction = #up
                         \override TupletBracket.direction = #up
                         s1 * 33/2
                         {
@@ -267,6 +266,7 @@
                                 r8 [
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
+                                \override Stem.direction = #up
                                 d''8 \mf (
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
@@ -354,11 +354,11 @@
                                 \set stemRightBeamCount = #0
                                 cs''8 ] )
                                 \revert TupletBracket.staff-padding
+                                \revert Stem.direction
                             }
                         }
                         s1 * 5/8
                         \bar "|"
-                        \revert Stem.direction
                         \revert TupletBracket.direction
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -518,17 +518,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 ef8 -\tenuto \ff
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs'8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'4 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf'8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
                                 \revert TupletBracket.direction
                             }
@@ -545,19 +539,12 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef''8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs''4 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf4 -\tenuto
                                 \revert TupletBracket.direction
                             }
@@ -574,17 +561,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 ef'8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 cs'8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 c'4 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 bf8 -\tenuto
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
                                 \revert TupletBracket.direction
                             }
@@ -952,9 +933,7 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 \override Rest.direction = #up
                                 r16
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 <g b f' fs' a'>8. -\marcato \ff
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2
                             }
                         }
@@ -1037,9 +1016,9 @@
                                 \override Stem.direction = #up
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
-                                r8.
                                 \revert PianoStaff.Stem.color
                                 \revert Stem.direction
+                                r8.
                             }
                         }
                         {
