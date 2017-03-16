@@ -1012,7 +1012,7 @@
                         {
                             {
                                 \crossStaff
-                                \override PianoStaff.Stem.color = #''darkmagenta'
+                                \override PianoStaff.Stem.color = #darkmagenta
                                 \override Stem.direction = #up
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
