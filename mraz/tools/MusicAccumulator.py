@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class FigureAccumulator(baca.tools.FigureAccumulator):
+class MusicAccumulator(baca.tools.MusicAccumulator):
     r'''Figure-accumulator.
 
     ::
@@ -17,9 +17,9 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
         ::
 
             >>> score_template = mraz.tools.ScoreTemplate()
-            >>> accumulator = mraz.tools.FigureAccumulator(score_template)
+            >>> accumulator = mraz.tools.MusicAccumulator(score_template)
             >>> accumulator(
-            ...     accumulator.mraz_figure_maker(
+            ...     accumulator.mraz_music_maker(
             ...         'RH Voice 1',
             ...         [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
             ...         figure_name='D',
@@ -92,21 +92,21 @@ class FigureAccumulator(baca.tools.FigureAccumulator):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_mraz_figure_maker',
+        '_mraz_music_maker',
         )
 
     ### INITIALIZER ###
 
     def __init__(self, score_template):
         import mraz
-        superclass = super(FigureAccumulator, self)
+        superclass = super(MusicAccumulator, self)
         superclass.__init__(score_template)
-        self._mraz_figure_maker = mraz.tools.make_mraz_figure_maker()
+        self._mraz_music_maker = mraz.tools.make_mraz_music_maker()
 
     ### PUBLIC PROPERTIES ###
 
     @property
-    def mraz_figure_maker(self):
-        r'''Gets Mráz figure-maker.
+    def mraz_music_maker(self):
+        r'''Gets Mráz music-maker.
         '''
-        return self._mraz_figure_maker
+        return self._mraz_music_maker

@@ -8,7 +8,7 @@ import mraz
 ##################################### [8] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
@@ -50,7 +50,7 @@ v6_stage_3_segments = v6_stage_3_segments.cursor()
 # (STAGE 3: VOICE 5)
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.dynamic('ppp'),
@@ -63,7 +63,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(2),
         baca.flags(),
@@ -78,7 +78,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -91,7 +91,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -104,7 +104,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(1),
         baca.flags(),
@@ -116,7 +116,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -130,7 +130,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -144,7 +144,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -156,7 +156,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(2),
         baca.flags(),
@@ -170,7 +170,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -184,7 +184,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -196,7 +196,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         v5_stage_3_segments.next(),
         baca.flags(),
@@ -214,7 +214,7 @@ assert v5_stage_3_segments.is_exhausted
 # (STAGE 3: VOICE 6)
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(
@@ -233,7 +233,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(
@@ -251,7 +251,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(
@@ -269,7 +269,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(
@@ -287,7 +287,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(
@@ -305,7 +305,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 6',
         v6_stage_3_segments.next(),
         baca.anchor(

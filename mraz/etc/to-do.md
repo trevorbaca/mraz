@@ -21,7 +21,7 @@ TO-DO
 
 8.  Extend abjad.label().with_pitches() with American C#2-style pitch names.
 
-9.  Teach FigureMaker to annotate only unregistered pitch-classes.
+9.  Teach MusicMaker to annotate only unregistered pitch-classes.
     This will remove many color_unregistered_pitches=False settings.
 
 10. Refactor FigureRhythmMaker to accept (star)specifiers.
@@ -50,5 +50,5 @@ TO-DO
 18. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
 
 19. Harmonize specifiers.
-    Write FigureMaker example for every specifier.
+    Write MusicMaker example for every specifier.
     Write SegmentMaker example for every specifier.

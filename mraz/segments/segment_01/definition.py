@@ -8,7 +8,7 @@ import mraz
 ##################################### [1] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
@@ -20,7 +20,7 @@ assert len(segments) == 14, repr(len(segments))
 segments = segments.cursor()
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         segments.next(14),
         baca.beam_positions(6),

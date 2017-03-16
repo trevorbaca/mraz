@@ -8,7 +8,7 @@ import mraz
 ##################################### [7] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
@@ -40,7 +40,7 @@ rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
 assert len(rh_segment_lists) == 12
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         rh_segment_lists[0],
         baca.dynamic('fff'),
@@ -60,7 +60,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[1],
         baca.dynamic('fff'),
@@ -79,7 +79,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         rh_segment_lists[2],
         baca.nest('1/16'),
@@ -96,7 +96,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[3],
         baca.nest('-1/16'),
@@ -113,7 +113,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         rh_segment_lists[4],
         baca.nest('1/16'),
@@ -131,7 +131,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[5],
         baca.register(11, 11+10),
@@ -150,7 +150,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         rh_segment_lists[6],
         baca.nest('1/16'),
@@ -166,7 +166,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[7],
         baca.nest('-1/16'),
@@ -183,7 +183,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[9],
         baca.register(15, 15+10),
@@ -201,7 +201,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 1',
         rh_segment_lists[10],
         baca.nest('2/16'),
@@ -218,7 +218,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         rh_segment_lists[11],
         baca.register(17, 17+10),
@@ -250,7 +250,7 @@ lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
 assert len(lh_segment_lists) == 5
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_segment_lists[0],
         baca.anchor(
@@ -272,7 +272,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         lh_segment_lists[1],
         baca.anchor(
@@ -297,7 +297,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_segment_lists[2],
         baca.anchor(
@@ -319,7 +319,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 5',
         lh_segment_lists[3],
         baca.anchor(
@@ -344,7 +344,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_segment_lists[4],
         baca.anchor(

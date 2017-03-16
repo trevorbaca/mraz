@@ -3,8 +3,8 @@ import abjad
 import baca
 
 
-def make_mraz_figure_maker():
-    r'''Makes Mráz figure-maker.
+def make_mraz_music_maker():
+    r'''Makes Mráz music-maker.
 
     ::
 
@@ -28,10 +28,10 @@ def make_mraz_figure_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> figure_maker = mraz.tools.make_mraz_figure_maker()
+            >>> music_maker = mraz.tools.make_mraz_music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
-            ...     contribution = figure_maker(voice_name, segments)
+            ...     contribution = music_maker(voice_name, segments)
             ...     figures.extend(contribution.selections[voice_name])
             ...     time_signatures.append(contribution.time_signature)    
             ...
@@ -204,10 +204,10 @@ def make_mraz_figure_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> figure_maker = mraz.tools.make_mraz_figure_maker()
+            >>> music_maker = mraz.tools.make_mraz_music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
-            ...     contribution = figure_maker(voice_name, segments)
+            ...     contribution = music_maker(voice_name, segments)
             ...     figures.extend(contribution.selections[voice_name])
             ...     time_signatures.append(contribution.time_signature)    
             ...
@@ -409,10 +409,10 @@ def make_mraz_figure_maker():
 
     ..  container:: example
 
-        Formats Mráz figure-maker:
+        Formats Mráz music-maker:
 
-        >>> f(mraz.tools.make_mraz_figure_maker())
-        baca.tools.FigureMaker(
+        >>> f(mraz.tools.make_mraz_music_maker())
+        baca.tools.MusicMaker(
             rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,
                 beam_divisions_together=True,
@@ -451,7 +451,7 @@ def make_mraz_figure_maker():
                 ],
             )
 
-    Returns figure-maker.
+    Returns music-maker.
     '''
     import mraz
     voice_names = []
@@ -459,7 +459,7 @@ def make_mraz_figure_maker():
     for voice in abjad.iterate(dummy_score).by_class(abjad.Voice):
         voice_name = voice.name
         voice_names.append(voice_name)
-    figure_maker = baca.tools.FigureMaker(
+    music_maker = baca.tools.MusicMaker(
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
             ),
@@ -475,4 +475,4 @@ def make_mraz_figure_maker():
         denominator=16,
         voice_names=voice_names,
         )
-    return figure_maker
+    return music_maker
