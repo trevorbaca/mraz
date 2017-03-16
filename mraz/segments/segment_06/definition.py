@@ -8,7 +8,7 @@ import mraz
 ##################################### [6] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
@@ -46,7 +46,7 @@ lh_stage_1_segments = lh_stage_1_segments.cursor()
 ### VOICE 3 ###
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 3',
         rh_stage_1_segments.next(2),
         baca.dynamic('pp'),
@@ -64,7 +64,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 3',
         rh_stage_1_segments.next(1),
         baca.flags(),
@@ -80,7 +80,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 3',
         rh_stage_1_segments.next(1),
         baca.flags(),
@@ -97,7 +97,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 3',
         rh_stage_1_segments.next(1),
         baca.flags(),
@@ -116,7 +116,7 @@ assert rh_stage_1_segments.is_exhausted
 ### VOICE 4 ###
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_stage_1_segments.next(1),
         baca.anchor(
@@ -135,7 +135,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_stage_1_segments.next(1),
         baca.anchor(
@@ -153,7 +153,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_stage_1_segments.next(1),
         baca.anchor(
@@ -172,7 +172,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Voice 4',
         lh_stage_1_segments.next(1),
         baca.flags(),

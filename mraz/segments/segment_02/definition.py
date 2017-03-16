@@ -8,7 +8,7 @@ import mraz
 ##################################### [2] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.FigureAccumulator(mraz.tools.ScoreTemplate())
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 maker = mraz.tools.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
@@ -31,7 +31,7 @@ assert measures.sum() == stage_2_segments
 measures = baca.Cursor(measures)
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
@@ -44,7 +44,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
@@ -56,7 +56,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
@@ -68,7 +68,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
@@ -80,7 +80,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'RH Voice 2',
         measures.next(),
         baca.arpeggiate_up(),
@@ -96,7 +96,7 @@ assert measures.is_exhausted
 ### LH RESONANCE ###
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Resonance Voice',
         [{-35, -23}],
         baca.anchor('RH Voice 2', baca.select_note(0)),
@@ -108,7 +108,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Resonance Voice',
         [{-35, -23}],
         baca.flags(),
@@ -120,7 +120,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Resonance Voice',
         [{-33, -21}],
         baca.flags(),
@@ -132,7 +132,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Resonance Voice',
         [{-33, -21}],
         baca.flags(),
@@ -144,7 +144,7 @@ accumulator(
     )
 
 accumulator(
-    accumulator.mraz_figure_maker(
+    accumulator.mraz_music_maker(
         'LH Resonance Voice',
         [{-33, -21}],
         baca.flags(),
