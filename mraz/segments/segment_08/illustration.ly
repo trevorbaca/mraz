@@ -370,8 +370,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
-                                \override Rest.direction = #up
                                 g,,8
+                                \override Rest.direction = #up
                                 r32
                                 a,,8
                                 r32
@@ -401,8 +401,8 @@
                         }
                         {
                             {
-                                \override Rest.direction = #up
                                 bf,,8.
+                                \override Rest.direction = #up
                                 r32
                                 d,8.
                                 r32
@@ -434,8 +434,8 @@
                         }
                         {
                             {
-                                \override Rest.direction = #up
                                 ef,,32
+                                \override Rest.direction = #up
                                 r4...
                                 c,,32
                                 r4...
@@ -476,8 +476,8 @@
                         }
                         {
                             {
-                                \override Rest.direction = #up
                                 a,,,32
+                                \override Rest.direction = #up
                                 r4...
                                 g,,32
                                 r4...
@@ -545,8 +545,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \override Rest.direction = #up
                                 b,,,8 -\tenuto
+                                \override Rest.direction = #up
                                 r4
                                 ef,,8 -\tenuto
                                 r4
