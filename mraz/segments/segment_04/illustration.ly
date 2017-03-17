@@ -257,6 +257,7 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        \override Stem.direction = #up
                         \override TupletBracket.direction = #up
                         s1 * 33/2
                         {
@@ -266,7 +267,6 @@
                                 r8 [
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                \override Stem.direction = #up
                                 d''8 \mf (
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
@@ -354,11 +354,11 @@
                                 \set stemRightBeamCount = #0
                                 cs''8 ] )
                                 \revert TupletBracket.staff-padding
-                                \revert Stem.direction
                             }
                         }
                         s1 * 5/8
                         \bar "|"
+                        \revert Stem.direction
                         \revert TupletBracket.direction
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -1017,8 +1017,8 @@
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
                                 \revert PianoStaff.Stem.color
-                                \revert Stem.direction
                                 r8.
+                                \revert Stem.direction
                             }
                         }
                         {
