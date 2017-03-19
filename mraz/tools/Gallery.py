@@ -3,7 +3,7 @@ import abjad
 
 
 class Gallery(abjad.abctools.AbjadObject):
-    r'''Gallery
+    r'''Gallery.
 
     ::
 
