@@ -24,8 +24,8 @@ TO-DO
 9.  Teach MusicMaker to annotate only unregistered pitch-classes.
     This will remove many color_unregistered_pitches=False settings.
 
-10. Refactor FigureRhythmMaker to accept (star)specifiers.
-    Refactor FigureRhythmMaker to accept RestAffixSpecifier objects.
+10. Refactor MusicRhythmMaker to accept (star)specifiers.
+    Refactor MusicRhythmMaker to accept RestAffixSpecifier objects.
 
 11. Remove Expression.markup_expression.
     Remove Expression.string_template.
