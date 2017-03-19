@@ -2,8 +2,8 @@
 import abjad
 
 
-class MusicGallery(abjad.abctools.AbjadObject):
-    r'''Music gallery
+class Gallery(abjad.abctools.AbjadObject):
+    r'''Gallery
 
     ::
 
