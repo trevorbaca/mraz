@@ -26,7 +26,7 @@ accumulator(
         baca.beam_positions(6),
         baca.register(-8),
         extend_beam=True,
-        figure_name=1,
+        figure_name='rh-1 1.1.1',
         ),
     )
 
