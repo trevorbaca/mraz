@@ -814,14 +814,12 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ('LH Voice 5', baca.select_stages(7, 15)),
     baca.marcati(),
-    # TODO: remove need for wrap
-    baca.wrap_leaves(baca.rests_up()),
+    baca.rests_up(),
     )
 
 segment_maker.append_specifiers(
     ('LH Voice 5', baca.select_stages(16, Infinity)),
-    # TODO: remove need for wrap
-    baca.wrap_leaves(baca.tuplet_bracket_staff_padding(2)),
+    baca.tuplet_bracket_staff_padding(2),
     )
 
 segment_maker.append_specifiers(
