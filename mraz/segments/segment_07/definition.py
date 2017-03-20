@@ -422,12 +422,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('RH Voice 1 Inserts', baca.select_stages(1, 5)),
-    baca.wrap_leaves(baca.beam_positions(-6.5)),
+    baca.beam_positions(-6.5),
     )
 
 segment_maker.append_specifiers(
     ('RH Voice 1 Inserts', baca.select_stages(5, 10)),
-    baca.wrap_leaves(baca.beam_positions(-8.5)),
+    baca.beam_positions(-8.5),
     )
 
 segment_maker.append_specifiers(
@@ -466,12 +466,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('LH Voice 4', baca.select_stages(1, 2)),
-    baca.wrap_leaves(baca.beam_positions(-5.5)),
+    baca.beam_positions(-5.5),
     )
 
 segment_maker.append_specifiers(
     ('LH Voice 4', baca.select_stages(6, Infinity)),
-    baca.wrap_leaves(baca.beam_positions(-4.5)),
+    baca.beam_positions(-4.5),
     )
 
 segment_maker.append_specifiers(
@@ -488,12 +488,12 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('LH Voice 5', baca.select_stages(1, 5)),
-    baca.wrap_leaves(baca.beam_positions(-6)),
+    baca.beam_positions(-6),
     )
 
 #segment_maker.append_specifiers(
 #    ('LH Voice 5', baca.select_stages(6, Infinity)),
-#    baca.wrap_leaves(baca.beam_positions(-4.5)),
+#    baca.beam_positions(-4.5),
 #    )
 
 segment_maker.append_specifiers(
@@ -506,5 +506,5 @@ segment_maker.append_specifiers(
     ('LH Voice 5 Inserts', baca.select_stages(1, Infinity)),
     baca.scripts_up(),
     baca.stems_up(),
-    baca.wrap_leaves(baca.beam_positions(9)),
+    baca.beam_positions(9),
     )
