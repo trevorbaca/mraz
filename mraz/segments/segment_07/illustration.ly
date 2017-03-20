@@ -164,6 +164,7 @@
                                     \set stemRightBeamCount = #2
                                     \dynamicUp
                                     \override Beam.positions = #'(10 . 10)
+                                    \override Stem.direction = #up
                                     e''16 \fff [
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -332,6 +333,7 @@
                                     \set stemRightBeamCount = #0
                                     bf'''16 ]
                                     \revert Beam.positions
+                                    \revert Stem.direction
                                 }
                             }
                         }
@@ -491,6 +493,7 @@
                                 \set stemRightBeamCount = #2
                                 \override Beam.positions = #'(-4.5 . -4.5)
                                 \dynamicDown
+                                \override Slur.direction = #up
                                 \override Stem.direction = #down
                                 c''16 \fff [ (
                                 \set stemLeftBeamCount = #2
@@ -659,6 +662,7 @@
                                 af'''16 ] )
                                 \bar "|"
                                 \revert Beam.positions
+                                \revert Slur.direction
                                 \revert Stem.direction
                             }
                         }
@@ -673,6 +677,7 @@
                                 \set stemRightBeamCount = #2
                                 \override Beam.positions = #'(15.5 . 15.5)
                                 \override Script.direction = #up
+                                \override Stem.direction = #up
                                 c''16 -\accent [
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -813,6 +818,7 @@
                                 \bar "|"
                                 \revert Beam.positions
                                 \revert Script.direction
+                                \revert Stem.direction
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil

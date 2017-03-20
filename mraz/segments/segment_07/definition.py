@@ -54,7 +54,7 @@ accumulator(
             extend_beam=True,
             ),
         extend_beam=True,
-        figure_name='RH1.1',
+        figure_name='rh-1 7.1.1',
         time_treatments=[-1],
         ),
     )
@@ -74,7 +74,7 @@ accumulator(
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
         extend_beam=True,
-        figure_name='RH2.1',
+        figure_name='rh-2 7.1.1',
         ),
     )
 
@@ -90,7 +90,7 @@ accumulator(
             baca.beam_everything(),
             baca.marcati(),
             ),
-        figure_name='RH1.2',
+        figure_name='rh-1 7.1.2',
         time_treatments=[-1],
         ),
     )
@@ -108,7 +108,7 @@ accumulator(
             baca.beam_everything(),
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
-        figure_name='RH2.2',
+        figure_name='rh-2 7.1.2',
         ),
     )
 
@@ -126,7 +126,7 @@ accumulator(
             extend_beam=True,
             ),
         extend_beam=True,
-        figure_name='RH1.3',
+        figure_name='rh-1 7.1.3',
         ),
     )
 
@@ -144,7 +144,7 @@ accumulator(
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
         extend_beam=True,
-        figure_name='RH2.3',
+        figure_name='rh-2 7.1.3',
         time_treatments=[-1],
         ),
     )
@@ -161,7 +161,7 @@ accumulator(
             baca.beam_everything(),
             baca.marcati(),
             ),
-        figure_name='RH1.4',
+        figure_name='rh-1 7.1.4',
         ),
     )
 
@@ -178,7 +178,7 @@ accumulator(
             baca.beam_everything(),
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
-        figure_name='RH2.4',
+        figure_name='rh-2 7.1.4',
         ),
     )
 
@@ -196,7 +196,7 @@ accumulator(
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
         extend_beam=True,
-        figure_name='RH2.5',
+        figure_name='rh-2 7.1.5',
         ),
     )
 
@@ -212,7 +212,7 @@ accumulator(
             baca.beam_everything(),
             baca.marcati(),
             ),
-        figure_name='RH1.5',
+        figure_name='rh-1 7.1.5',
         time_treatments=[-1],
         ),
     )
@@ -229,7 +229,7 @@ accumulator(
             baca.beam_everything(),
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
-        figure_name='RH2.6',
+        figure_name='rh-2 7.1.6',
         time_treatments=[-1],
         ),
     )
@@ -266,7 +266,7 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=0*7),
-        figure_name='LH4.1',
+        figure_name='lh-4 7.1.1',
         time_treatments=[-1],
         ),
     )
@@ -291,7 +291,7 @@ accumulator(
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
         baca.transpose_segments(n=1*7),
-        figure_name='LH5.1',
+        figure_name='lh-5 7.1.1',
         hide_time_signature=True,
         ),
     )
@@ -313,7 +313,7 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=2*7),
-        figure_name='LH4.2',
+        figure_name='lh-4 7.1.2',
         hide_time_signature=True,
         ),
     )
@@ -338,7 +338,7 @@ accumulator(
             ),
         baca.slur_trimmed_run_in_each_tuplet(),
         baca.transpose_segments(n=3*7),
-        figure_name='LH5.2',
+        figure_name='lh-5 7.1.2',
         hide_time_signature=True,
         ),
     )
@@ -360,7 +360,7 @@ accumulator(
             baca.flags(),
             ),
         baca.transpose_segments(n=4*7),
-        figure_name='LH4.3',
+        figure_name='lh-4 7.1.3',
         hide_time_signature=True,
         time_treatments=[1],
         ),
@@ -417,6 +417,7 @@ segment_maker.append_specifiers(
     ('RH Voice 1', baca.select_stages(1, Infinity)),
     baca.dynamics_up(),
     baca.beam_positions(10),
+    baca.stems_up(),
     )
 
 segment_maker.append_specifiers(
@@ -438,7 +439,13 @@ segment_maker.append_specifiers(
     ('RH Voice 2', baca.select_stages(1, Infinity)),
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
+    baca.slurs_up(),
     baca.stems_down(),
+    )
+
+segment_maker.append_specifiers(
+    ('RH Voice 2 Inserts', baca.select_stages(9, Infinity)),
+    baca.beam_positions(17),
     )
 
 segment_maker.append_specifiers(
@@ -452,13 +459,9 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ('RH Voice 2 Inserts', baca.select_stages(9, Infinity)),
-    baca.beam_positions(17),
-    )
-
-segment_maker.append_specifiers(
     ('RH Voice 2 Inserts', baca.select_stages(1, Infinity)),
     baca.scripts_up(),
+    baca.stems_up(),
     )
 
 segment_maker.append_specifiers(
