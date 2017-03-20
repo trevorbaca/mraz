@@ -796,8 +796,8 @@ accumulator.populate_segment_maker(segment_maker)
 
 segment_maker.append_specifiers(
     ('RH Voice 1', baca.select_stages(1, Infinity)),
-    baca.wrap_leaves(baca.stems_up()),
-    baca.wrap_leaves(baca.tuplet_brackets_up()),
+    baca.stems_up(),
+    baca.tuplet_brackets_up(),
     )
 
 segment_maker.append_specifiers(
