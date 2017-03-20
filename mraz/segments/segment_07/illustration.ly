@@ -162,8 +162,8 @@
                                 \times 5/6 {
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    \dynamicUp
                                     \override Beam.positions = #'(10 . 10)
+                                    \dynamicUp
                                     \override Stem.direction = #up
                                     e''16 \fff [
                                     \set stemLeftBeamCount = #2
