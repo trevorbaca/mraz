@@ -684,8 +684,6 @@ accumulator(
         baca.rests_around([2], [6]),
         baca.resume_after('RH Voice 5'),
         baca.slur_each_plt_run(),
-        # TODO: make extend_beam work here
-        extend_beam=True,
         figure_name='rh-1 4.4.1',
         talea_counts=[2],
         time_treatments=[6],
@@ -696,8 +694,6 @@ accumulator(
     accumulator.mraz_music_maker(
         'RH Voice 1',
         [abjad.Rest((2, 4))],
-        # TODO: make extend_beam work here
-        extend_beam=True,
         figure_name='rh-1 4.r.1',
         hide_time_signature=True,
         ),
@@ -732,6 +728,7 @@ accumulator(
         'RH Voice 1',
         rh.next(exhausted=True),
         baca.anchor('LH Voice 5', baca.select_rest(-8)),
+        baca.beam_positions(6),
         baca.imbricate(
             'RH Voice 2',
             [9, 10, 10, 1, 0],
