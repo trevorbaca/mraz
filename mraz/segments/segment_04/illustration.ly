@@ -874,9 +874,9 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
-                                r2.
                                 \clef "bass"
                                 \dynamicDown
+                                r2.
                                 af8. -\tenuto \f
                                 r16
                                 d'8. -\tenuto
@@ -1161,6 +1161,8 @@
                         }
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                        \override Script.direction = #up
+                        \override Stem.direction = #up
                         s1 * 151/8
                         {
                             \override TupletBracket.stencil = ##f
@@ -1171,8 +1173,6 @@
                                     s4 [
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    \override Script.direction = #up
-                                    \override Stem.direction = #up
                                     bf'8 -\staccato
                                 }
                                 {
@@ -1259,10 +1259,10 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af'8 -\staccato
-                                \revert Script.direction
-                                \revert Stem.direction
                                 s4. ]
                                 \bar "|"
+                                \revert Script.direction
+                                \revert Stem.direction
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
