@@ -37,9 +37,9 @@ accumulator(
         baca.arpeggiate_up(),
         baca.bass_to_octave(3),
         baca.dynamic('ppp'),
-        baca.slur_trimmed_leaves_in_tuplets(),
+        baca.slur_trimmed_run_in_each_tuplet(),
         baca.staccati(),
-        figure_name='2-2-1',
+        figure_name='rh-2 2.2.1',
         ),
     )
 
@@ -49,9 +49,9 @@ accumulator(
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
-        baca.slur_trimmed_leaves_in_tuplets(),
+        baca.slur_trimmed_run_in_each_tuplet(),
         baca.staccati(),
-        figure_name='2-2-2',
+        figure_name='rh-2 2.2.2',
         ),
     )
 
@@ -61,9 +61,9 @@ accumulator(
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(4),
-        baca.slur_trimmed_leaves_in_tuplets(),
+        baca.slur_trimmed_run_in_each_tuplet(),
         baca.staccati(),
-        figure_name='2-2-3',
+        figure_name='rh-2 2.2.3',
         ),
     )
 
@@ -73,9 +73,9 @@ accumulator(
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
-        baca.slur_trimmed_leaves_in_tuplets(),
+        baca.slur_trimmed_run_in_each_tuplet(),
         baca.staccati(),
-        figure_name='2-2-4',
+        figure_name='rh-2 2.2.4',
         ),
     )
 
@@ -85,9 +85,9 @@ accumulator(
         measures.next(),
         baca.arpeggiate_up(),
         baca.bass_to_octave(5),
-        baca.slur_trimmed_leaves_in_tuplets(),
+        baca.slur_trimmed_run_in_each_tuplet(),
         baca.staccati(),
-        figure_name='2-2-5',
+        figure_name='rh-2 2.2.5',
         ),
     )
 
@@ -102,7 +102,7 @@ accumulator(
         baca.anchor('RH Voice 2', baca.select_note(0)),
         baca.flags(),
         color_unregistered_pitches=False,
-        figure_name='lhr-2-2-1',
+        figure_name='lhr 2.2.1',
         talea_counts=[29],
         ),
     )
@@ -113,7 +113,7 @@ accumulator(
         [{-35, -23}],
         baca.flags(),
         color_unregistered_pitches=False,
-        figure_name='lhr-2-2-2-a',
+        figure_name='lhr 2.2.2a',
         hide_time_signature=True,
         talea_counts=[27],
         ),
@@ -125,7 +125,7 @@ accumulator(
         [{-33, -21}],
         baca.flags(),
         color_unregistered_pitches=False,
-        figure_name='lhr-2-2-3-a',
+        figure_name='lhr 2.2.3a',
         hide_time_signature=True,
         talea_counts=[21],
         ),
@@ -137,7 +137,7 @@ accumulator(
         [{-33, -21}],
         baca.flags(),
         color_unregistered_pitches=False,
-        figure_name='lhr-2-2-4',
+        figure_name='lhr 2.2.4',
         hide_time_signature=True,
         talea_counts=[15],
         ),
@@ -149,7 +149,7 @@ accumulator(
         [{-33, -21}],
         baca.flags(),
         color_unregistered_pitches=False,
-        figure_name='lhr-2-2-5',
+        figure_name='lhr 2.2.5',
         hide_time_signature=True,
         talea_counts=[16],
         ),
@@ -211,10 +211,10 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(1, 2)),
-    baca.messiaen_ties(),
+    baca.messiaen_tie_each(),
     )
 
 segment_maker.append_specifiers(
     ('LH Resonance Voice', baca.select_stages(3, 5)),
-    baca.messiaen_ties(),
+    baca.messiaen_tie_each(),
     )
