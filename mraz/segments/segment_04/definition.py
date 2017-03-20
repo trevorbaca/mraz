@@ -719,11 +719,11 @@ accumulator(
         baca.register(12),
         baca.slur_each_plt_run(),
         baca.tuplet_bracket_staff_padding(4),
-        # TODO: add baca.tuplet_unit((1, 8)) to library
         figure_name='rh-1 4.4.2',
         hide_time_signature=True,
         talea_counts=[2],
         time_treatments=[8],
+        tuplet_denominator=(1, 4),
         ),
     )
 
@@ -768,7 +768,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
