@@ -264,7 +264,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 \dynamicUp
-                                r8 [
+                                r8
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -277,22 +277,22 @@
                                         }
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                d''8 \mf (
+                                d''8 \mf [ (
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                af''8 )
+                                af''8 ] )
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                a''8
+                                a''8 [ ]
                                 s8
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                b''8 (
+                                b''8 [ (
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                e''8 )
+                                e''8 ] )
                                 r4.
                             }
                         }
@@ -314,10 +314,10 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/4 {
-                                \set stemLeftBeamCount = #1
+                                \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #1
                                 \override TupletBracket.staff-padding = #4
-                                bf''8
+                                bf''8 [ ]
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -332,17 +332,17 @@
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                c''8 (
+                                c''8 [ (
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 g''8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                cs''8 )
+                                cs''8 ] )
                                 s8
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
-                                a''8 ]
+                                a''8 [ ]
                                 \revert TupletBracket.staff-padding
                             }
                         }
@@ -352,6 +352,7 @@
                             \times 19/14 {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #1
+                                \override Beam.positions = #'(6 . 6)
                                 \override TupletBracket.staff-padding = #4
                                 ef''8 [ (
                                     ^ \markup {
@@ -393,6 +394,7 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
                                 cs''8 ] )
+                                \revert Beam.positions
                                 \revert TupletBracket.staff-padding
                             }
                         }
