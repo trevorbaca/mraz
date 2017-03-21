@@ -661,6 +661,20 @@ accumulator(
     time_treatments=[10],
     )
 
+
+accumulator(
+    'RH Voice 1',
+    [abjad.Rest((1, 4))],
+#    baca.fermata(),
+#    baca.transparent_rests(),
+#    # HERE
+#    baca.transparent_time_signatures(),
+    baca.resume(),
+    denominator=4,
+    figure_name='rh-1 4.4.5',
+    talea_counts=[4],
+    )
+
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
@@ -684,7 +698,7 @@ segment_maker = baca.tools.SegmentMaker(
     #color_repeat_pitch_classes=True,
     final_barline=Exact,
     hide_instrument_names=True,
-    #ignore_repeat_pitch_classes=True,
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
