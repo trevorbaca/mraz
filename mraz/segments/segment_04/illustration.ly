@@ -393,7 +393,7 @@
                         \revert TupletBracket.direction
                         {
                             {
-                                r4
+                                r4 -\fermata
                                     ^ \markup {
                                         \fontsize
                                             #2
