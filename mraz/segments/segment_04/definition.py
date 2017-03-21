@@ -797,49 +797,57 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    ('RH Voice 1', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'RH Voice 1',
+    baca.select_stages(1, Infinity),
     baca.beam_positions(6),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(5),
     baca.tuplet_brackets_up(),
     )
 
-segment_maker.append_specifiers(
-    ('RH Voice 3', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'RH Voice 3',
+    baca.select_stages(1, Infinity),
     baca.tenuti(),
     )
 
-segment_maker.append_specifiers(
-    ('LH Voice 5', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'LH Voice 5',
+    baca.select_stages(1, Infinity),
     baca.clef('bass'),
     baca.dynamics_down(),
     )
 
-segment_maker.append_specifiers(
-    ('LH Voice 5', baca.select_stages(7, 15)),
+segment_maker.append_commands(
+    'LH Voice 5',
+    baca.select_stages(7, 15),
     baca.marcati(),
     baca.rests_up(),
     )
 
-segment_maker.append_specifiers(
-    ('LH Voice 5', baca.select_stages(16, Infinity)),
+segment_maker.append_commands(
+    'LH Voice 5',
+    baca.select_stages(16, Infinity),
     baca.tuplet_bracket_staff_padding(2),
     )
 
-segment_maker.append_specifiers(
-    ('LH Voice 5 Inserts', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'LH Voice 5 Inserts',
+    baca.select_stages(1, Infinity),
     baca.scripts_up(),
     baca.staccati(),
     baca.stems_up(),
     )
 
-segment_maker.append_specifiers(
-    ('LH Resonance Voice', baca.select_stages(9, 10)),
+segment_maker.append_commands(
+    'LH Resonance Voice',
+    baca.select_stages(9, 10),
     baca.messiaen_tie_each(),
     )
 
-segment_maker.append_specifiers(
-    ('LH Resonance Voice', baca.select_stages(13, 14)),
+segment_maker.append_commands(
+    'LH Resonance Voice',
+    baca.select_stages(13, 14),
     baca.messiaen_tie_each(),
     )
