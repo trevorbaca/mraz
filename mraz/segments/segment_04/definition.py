@@ -668,6 +668,7 @@ accumulator(
     accumulator.mraz_music_maker(
         'RH Voice 1',
         rh.next(),
+        baca.beam_plt_runs(hide_nibs=True),
         baca.dynamic('mf'),
         baca.dynamics_up(),
         baca.imbricate(
@@ -703,6 +704,7 @@ accumulator(
     accumulator.mraz_music_maker(
         'RH Voice 1',
         rh.next(),
+        baca.beam_plt_runs(hide_nibs=True),
         baca.imbricate(
             'RH Voice 2',
             [5, 6, 6],
@@ -728,7 +730,8 @@ accumulator(
         'RH Voice 1',
         rh.next(exhausted=True),
         baca.anchor('LH Voice 5', baca.select_rest(-8)),
-        baca.beam_positions(6),
+        baca.beam_plt_runs(hide_nibs=True),
+        #baca.beam_positions(6),
         baca.imbricate(
             'RH Voice 2',
             [9, 10, 10, 1, 0],
@@ -740,7 +743,7 @@ accumulator(
             ),
         baca.register(12),
         baca.slur_each_plt_run(),
-        baca.tuplet_bracket_staff_padding(4),
+        #baca.tuplet_bracket_staff_padding(4),
         figure_name='rh-1 4.4.4',
         hide_time_signature=True,
         talea_counts=[2],
@@ -796,7 +799,9 @@ accumulator.populate_segment_maker(segment_maker)
 
 segment_maker.append_specifiers(
     ('RH Voice 1', baca.select_stages(1, Infinity)),
+    baca.beam_positions(6),
     baca.stems_up(),
+    baca.tuplet_bracket_staff_padding(5),
     baca.tuplet_brackets_up(),
     )
 
