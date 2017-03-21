@@ -19,11 +19,9 @@ class MusicAccumulator(baca.tools.MusicAccumulator):
             >>> score_template = mraz.tools.ScoreTemplate()
             >>> accumulator = mraz.tools.MusicAccumulator(score_template)
             >>> accumulator(
-            ...     accumulator.mraz_music_maker(
-            ...         'RH Voice 1',
-            ...         [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
-            ...         figure_name='D',
-            ...         ),
+            ...     'RH Voice 1',
+            ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
+            ...     figure_name='D',
             ...     )
 
         ::
@@ -102,6 +100,64 @@ class MusicAccumulator(baca.tools.MusicAccumulator):
         superclass = super(MusicAccumulator, self)
         superclass.__init__(score_template)
         self._mraz_music_maker = mraz.tools.make_mraz_music_maker()
+
+    ## SPECIAL METHODS ###
+
+    def __call__(
+        self,
+        voice_name,
+        collections,
+        *specifiers,
+        allow_repeat_pitches=None,
+        color_unregistered_pitches=None,
+        division_masks=None,
+        exhaustive=None,
+        extend_beam=None,
+        figure_name=None,
+        hide_time_signature=None,
+        imbrication_map=None,
+        is_foreshadow=None,
+        is_incomplete=None,
+        is_recollection=None,
+        logical_tie_masks=None,
+        denominator=None,
+        state_manifest=None,
+        talea_counts=None,
+        talea_denominator=None,
+        thread=None,
+        time_treatments=None,
+        tuplet_denominator=None
+        ):
+        superclass = super(MusicAccumulator, self)
+        keywords = {
+            'allow_repeat_pitches': allow_repeat_pitches,
+            'color_unregistered_pitches': color_unregistered_pitches,
+            'division_masks': division_masks,
+            'exhaustive': exhaustive,
+            'extend_beam': extend_beam,
+            'figure_name': figure_name,
+            'hide_time_signature': hide_time_signature,
+            'imbrication_map': imbrication_map,
+            'is_foreshadow': is_foreshadow,
+            'is_incomplete': is_incomplete,
+            'is_recollection': is_recollection,
+            'logical_tie_masks': logical_tie_masks,
+            'denominator': denominator,
+            'state_manifest': state_manifest,
+            'talea_counts': talea_counts,
+            'talea_denominator': talea_denominator,
+            'thread': thread,
+            'time_treatments': time_treatments,
+            'tuplet_denominator': tuplet_denominator,
+            }
+        return superclass.__call__(
+            self.mraz_music_maker(
+                voice_name,
+                collections,
+                *specifiers,
+                **keywords
+                ),
+            )
 
     ### PUBLIC PROPERTIES ###
 

@@ -20,14 +20,12 @@ assert len(segments) == 14, repr(len(segments))
 segments = segments.cursor()
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 1',
-        segments.next(14),
-        baca.beam_positions(6),
-        baca.register(-8),
-        extend_beam=True,
-        figure_name='rh-1 1.1.1',
-        ),
+    'RH Voice 1',
+    segments.next(14),
+    baca.beam_positions(6),
+    baca.register(-8),
+    extend_beam=True,
+    figure_name='rh-1 1.1.1',
     )
 
 assert segments.is_exhausted

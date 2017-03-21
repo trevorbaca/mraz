@@ -31,64 +31,54 @@ assert measures.sum() == stage_2_segments
 measures = baca.Cursor(measures)
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 2',
-        measures.next(),
-        baca.arpeggiate_up(),
-        baca.bass_to_octave(3),
-        baca.dynamic('ppp'),
-        baca.slur_trimmed_run_in_each_tuplet(),
-        baca.staccati(),
-        figure_name='rh-2 2.2.1',
-        ),
+    'RH Voice 2',
+    measures.next(),
+    baca.arpeggiate_up(),
+    baca.bass_to_octave(3),
+    baca.dynamic('ppp'),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='rh-2 2.2.1',
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 2',
-        measures.next(),
-        baca.arpeggiate_up(),
-        baca.bass_to_octave(4),
-        baca.slur_trimmed_run_in_each_tuplet(),
-        baca.staccati(),
-        figure_name='rh-2 2.2.2',
-        ),
+    'RH Voice 2',
+    measures.next(),
+    baca.arpeggiate_up(),
+    baca.bass_to_octave(4),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='rh-2 2.2.2',
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 2',
-        measures.next(),
-        baca.arpeggiate_up(),
-        baca.bass_to_octave(4),
-        baca.slur_trimmed_run_in_each_tuplet(),
-        baca.staccati(),
-        figure_name='rh-2 2.2.3',
-        ),
+    'RH Voice 2',
+    measures.next(),
+    baca.arpeggiate_up(),
+    baca.bass_to_octave(4),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='rh-2 2.2.3',
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 2',
-        measures.next(),
-        baca.arpeggiate_up(),
-        baca.bass_to_octave(5),
-        baca.slur_trimmed_run_in_each_tuplet(),
-        baca.staccati(),
-        figure_name='rh-2 2.2.4',
-        ),
+    'RH Voice 2',
+    measures.next(),
+    baca.arpeggiate_up(),
+    baca.bass_to_octave(5),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='rh-2 2.2.4',
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'RH Voice 2',
-        measures.next(),
-        baca.arpeggiate_up(),
-        baca.bass_to_octave(5),
-        baca.slur_trimmed_run_in_each_tuplet(),
-        baca.staccati(),
-        figure_name='rh-2 2.2.5',
-        ),
+    'RH Voice 2',
+    measures.next(),
+    baca.arpeggiate_up(),
+    baca.bass_to_octave(5),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='rh-2 2.2.5',
     )
 
 assert measures.is_exhausted
@@ -96,63 +86,53 @@ assert measures.is_exhausted
 ### LH RESONANCE ###
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Resonance Voice',
-        [{-35, -23}],
-        baca.anchor('RH Voice 2', baca.select_note(0)),
-        baca.flags(),
-        color_unregistered_pitches=False,
-        figure_name='lhr 2.2.1',
-        talea_counts=[29],
-        ),
+    'LH Resonance Voice',
+    [{-35, -23}],
+    baca.anchor('RH Voice 2', baca.select_note(0)),
+    baca.flags(),
+    color_unregistered_pitches=False,
+    figure_name='lhr 2.2.1',
+    talea_counts=[29],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Resonance Voice',
-        [{-35, -23}],
-        baca.flags(),
-        color_unregistered_pitches=False,
-        figure_name='lhr 2.2.2a',
-        hide_time_signature=True,
-        talea_counts=[27],
-        ),
+    'LH Resonance Voice',
+    [{-35, -23}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    figure_name='lhr 2.2.2a',
+    hide_time_signature=True,
+    talea_counts=[27],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Resonance Voice',
-        [{-33, -21}],
-        baca.flags(),
-        color_unregistered_pitches=False,
-        figure_name='lhr 2.2.3a',
-        hide_time_signature=True,
-        talea_counts=[21],
-        ),
+    'LH Resonance Voice',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    figure_name='lhr 2.2.3a',
+    hide_time_signature=True,
+    talea_counts=[21],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Resonance Voice',
-        [{-33, -21}],
-        baca.flags(),
-        color_unregistered_pitches=False,
-        figure_name='lhr 2.2.4',
-        hide_time_signature=True,
-        talea_counts=[15],
-        ),
+    'LH Resonance Voice',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    figure_name='lhr 2.2.4',
+    hide_time_signature=True,
+    talea_counts=[15],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Resonance Voice',
-        [{-33, -21}],
-        baca.flags(),
-        color_unregistered_pitches=False,
-        figure_name='lhr 2.2.5',
-        hide_time_signature=True,
-        talea_counts=[16],
-        ),
+    'LH Resonance Voice',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    figure_name='lhr 2.2.5',
+    hide_time_signature=True,
+    talea_counts=[16],
     )
 
 ###############################################################################
