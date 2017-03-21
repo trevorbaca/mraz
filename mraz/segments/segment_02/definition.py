@@ -91,8 +91,8 @@ accumulator(
     baca.anchor('RH Voice 2', baca.select_note(0)),
     baca.flags(),
     color_unregistered_pitches=False,
+    counts=[29],
     figure_name='lhr 2.2.1',
-    talea_counts=[29],
     )
 
 accumulator(
@@ -100,9 +100,9 @@ accumulator(
     [{-35, -23}],
     baca.flags(),
     color_unregistered_pitches=False,
+    counts=[27],
     figure_name='lhr 2.2.2a',
     hide_time_signature=True,
-    talea_counts=[27],
     )
 
 accumulator(
@@ -110,9 +110,9 @@ accumulator(
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
+    counts=[21],
     figure_name='lhr 2.2.3a',
     hide_time_signature=True,
-    talea_counts=[21],
     )
 
 accumulator(
@@ -120,9 +120,9 @@ accumulator(
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
+    counts=[15],
     figure_name='lhr 2.2.4',
     hide_time_signature=True,
-    talea_counts=[15],
     )
 
 accumulator(
@@ -130,9 +130,9 @@ accumulator(
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
+    counts=[16],
     figure_name='lhr 2.2.5',
     hide_time_signature=True,
-    talea_counts=[16],
     )
 
 ###############################################################################

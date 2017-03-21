@@ -55,8 +55,8 @@ accumulator(
     baca.dynamic('ppp'),
     baca.flags(),
     baca.register(-27, -39),
+    counts=[6, -1],
     figure_name='lh-5 8.3.1',
-    talea_counts=[6, -1],
     talea_denominator=32,
     )
 
@@ -66,9 +66,9 @@ accumulator(
     baca.flags(),
     baca.register(-39, -27),
     baca.rests_up(),
+    counts=[4, -1],
     denominator=4,
     figure_name='lh-5 8.3.2',
-    talea_counts=[4, -1],
     talea_denominator=32,
     time_treatments=[1],
     )
@@ -78,9 +78,9 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.flags(),
     baca.register(-39),
+    counts=[1, -15],
     denominator=2,
     figure_name='lh-5 8.3.3',
-    talea_counts=[1, -15],
     talea_denominator=32,
     )
 
@@ -90,8 +90,8 @@ accumulator(
     baca.flags(),
     baca.register(-27, -39),
     baca.rests_up(),
+    counts=[6, -1],
     figure_name='lh-5 8.3.4',
-    talea_counts=[6, -1],
     talea_denominator=32,
     )
 
@@ -100,8 +100,8 @@ accumulator(
     v5_stage_3_segments.next(1),
     baca.flags(),
     baca.register(-39, -27),
+    counts=[4, -1],
     figure_name='lh-5 8.3.5',
-    talea_counts=[4, -1],
     talea_denominator=32,
     )
 
@@ -110,9 +110,9 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.flags(),
     baca.register(-39, -27),
+    counts=[4, -1],
     denominator=4,
     figure_name='lh-5 8.3.6',
-    talea_counts=[4, -1],
     talea_denominator=32,
     time_treatments=[1],
     )
@@ -123,9 +123,9 @@ accumulator(
     baca.flags(),
     baca.register(-39),
     baca.rests_up(),
+    counts=[1, -15],
     denominator=2,
     figure_name='lh-5 8.3.7',
-    talea_counts=[1, -15],
     talea_denominator=32,
     )
 
@@ -134,8 +134,8 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.flags(),
     baca.register(-27, -39),
+    counts=[6, -1],
     figure_name='lh-5 8.3.8',
-    talea_counts=[6, -1],
     talea_denominator=32,
     )
 
@@ -144,9 +144,9 @@ accumulator(
     v5_stage_3_segments.next(2),
     baca.flags(),
     baca.register(-39, -27),
+    counts=[4, -1],
     denominator=4,
     figure_name='lh-5 8.3.9',
-    talea_counts=[4, -1],
     talea_denominator=32,
     time_treatments=[1],
     )
@@ -157,9 +157,9 @@ accumulator(
     baca.flags(),
     baca.register(-39),
     baca.rests_up(),
+    counts=[1, -15],
     denominator=2,
     figure_name='lh-5 8.3.10',
-    talea_counts=[1, -15],
     talea_denominator=32,
     )
 
@@ -168,8 +168,8 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.flags(),
     baca.register(-27, -39),
+    counts=[6, -1],
     figure_name='lh-5 8.3.11',
-    talea_counts=[6, -1],
     talea_denominator=32,
     )
 
@@ -178,9 +178,9 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.flags(),
     baca.register(-39, -27),
+    counts=[4, -1],
     denominator=4,
     figure_name='lh-5 8.3.12',
-    talea_counts=[4, -1],
     talea_denominator=32,
     time_treatments=[1],
     )
@@ -200,9 +200,9 @@ accumulator(
     baca.dynamic('f'),
     baca.flags(),
     baca.register(-39),
+    counts=[4, -4],
     figure_name='lh-6 8.3.1',
     hide_time_signature=True,
-    talea_counts=[4, -4],
     time_treatments=[-4],
     )
 
@@ -216,9 +216,9 @@ accumulator(
     baca.flags(),
     baca.register(-39),
     baca.rests_up(),
+    counts=[2, -4],
     figure_name='lh-6 8.3.2',
     hide_time_signature=True,
-    talea_counts=[2, -4],
     time_treatments=[4],
     )
 
@@ -232,9 +232,9 @@ accumulator(
         ),
     baca.flags(),
     baca.register(-39),
+    counts=[1, -3],
     figure_name='lh-6 8.3.3',
     hide_time_signature=True,
-    talea_counts=[1, -3],
     time_treatments=[4],
     )
 
@@ -248,9 +248,9 @@ accumulator(
         ),
     baca.flags(),
     baca.register(-39),
+    counts=[1, -3],
     figure_name='lh-6 8.3.4',
     hide_time_signature=True,
-    talea_counts=[1, -3],
     time_treatments=[4],
     )
 
@@ -264,9 +264,9 @@ accumulator(
         ),
     baca.flags(),
     baca.register(-39),
+    counts=[2],
     figure_name='lh-6 8.3.5',
     hide_time_signature=True,
-    talea_counts=[2],
     time_treatments=[2],
     )
 
@@ -280,9 +280,9 @@ accumulator(
         ),
     baca.flags(),
     baca.register(-39),
+    counts=[2, -4],
     figure_name='lh-6 8.3.6',
     hide_time_signature=True,
-    talea_counts=[2, -4],
     time_treatments=[-6],
     )
 
