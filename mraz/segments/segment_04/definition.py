@@ -28,7 +28,7 @@ stage_4_segments = stages[3]
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
-################################### STAGE 1 ###################################
+############################## SEGMENT 4: STAGE 1 #############################
 
 # (STAGE 1: VOICE 3 [4])
 
@@ -194,7 +194,7 @@ accumulator(
         ),
     )
 
-################################### STAGE 2 ###################################
+############################## SEGMENT 4: STAGE 2 #############################
 
 # (STAGE 2: VOICE 5)
 
@@ -393,7 +393,7 @@ accumulator(
         baca.nest('+1/4'),
         baca.skips_before([4]),
         color_unregistered_pitches=False,
-        figure_name='lh-r 4.2.3',
+        figure_name='lh-r 4.2.1',
         talea_counts=[8],
         ),
     )
@@ -403,7 +403,7 @@ accumulator(
         'LH Resonance Voice',
         [{-35, -23}],
         baca.flags(),
-        figure_name='lh-r 4.2.4a',
+        figure_name='lh-r 4.2.2',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[4],
@@ -415,7 +415,7 @@ accumulator(
         'LH Resonance Voice',
         [{-35, -23}],
         baca.flags(),
-        figure_name='lh-r 4.2.4b',
+        figure_name='lh-r 4.2.3',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[16],
@@ -433,7 +433,7 @@ accumulator(
         baca.nest('+1/4'),
         baca.skips_before([4]),
         color_unregistered_pitches=False,
-        figure_name='lh-r 4.2.7',
+        figure_name='lh-r 4.2.4',
         talea_counts=[8],
         ),
     )
@@ -443,7 +443,7 @@ accumulator(
         'LH Resonance Voice',
         [{-33, -21}],
         baca.flags(),
-        figure_name='lh-r 4.2.8a',
+        figure_name='lh-r 4.2.5',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[4],
@@ -455,14 +455,14 @@ accumulator(
         'LH Resonance Voice',
         [{-33, -21}],
         baca.flags(),
-        figure_name='lh-r 4.2.8b',
+        figure_name='lh-r 4.2.6',
         color_unregistered_pitches=False,
         hide_time_signature=True,
         talea_counts=[16],
         ),
     )
 
-################################### STAGE 4 ###################################
+############################## SEGMENT 4: STAGE 4 #############################
 
 # (STAGE 4: VOICE 1)
 
@@ -494,7 +494,7 @@ accumulator(
         'LH Voice 5',
         [abjad.Rest((4, 4))],
         denominator=4,
-        figure_name='lh-5 4.4.r1',
+        figure_name='lh-5 4.4.2',
         ),
     )
 
@@ -507,7 +507,7 @@ accumulator(
         baca.rests_before([2]),
         baca.slur_each_plt_run(),
         denominator=4,
-        figure_name='lh-5 4.4.2',
+        figure_name='lh-5 4.4.3',
         talea_counts=[6],
         ),
     )
@@ -527,7 +527,7 @@ accumulator(
         baca.rests_around([4], [4]),
         baca.slur_each_plt_run(),
         denominator=4,
-        figure_name='lh-5 4.4.3',
+        figure_name='lh-5 4.4.4',
         talea_counts=[2],
         ),
     )
@@ -537,7 +537,7 @@ accumulator(
         'LH Voice 5',
         [abjad.Rest((2, 4))],
         denominator=4,
-        figure_name='lh-5 4.4.r2',
+        figure_name='lh-5 4.4.5',
         ),
     )
 
@@ -555,51 +555,8 @@ accumulator(
         baca.rests_around([4], [4]),
         baca.slur_each_plt_run(),
         denominator=4,
-        figure_name='lh-5 4.4.4',
-        talea_counts=[2],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        lh.next(2),
-        baca.imbricate(
-            'LH Voice 5 Inserts',
-            [5],
-            baca.beam_everything(),
-            extend_beam=True,
-            ),
-        baca.nest('+2/16'),
-        baca.register(0, -12),
-        baca.rests_around([4], [2]),
-        baca.slur_each_plt_run(),
-        denominator=4,
-        figure_name='lh-5 4.4.5',
-        talea_counts=[2],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        lh.next(),
-        baca.flags(),
-        baca.register(-12, 0),
-        baca.rests_around([2], [6]),
-        baca.slur_each_plt_run(),
-        denominator=4,
         figure_name='lh-5 4.4.6',
         talea_counts=[2],
-        ),
-    )
-
-accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        [abjad.Rest((2, 4))],
-        denominator=4,
-        figure_name='lh-5 4.4.r3',
         ),
     )
 
@@ -629,10 +586,53 @@ accumulator(
         lh.next(),
         baca.flags(),
         baca.register(-12, 0),
-        baca.rests_before([2]),
+        baca.rests_around([2], [6]),
         baca.slur_each_plt_run(),
         denominator=4,
         figure_name='lh-5 4.4.8',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_music_maker(
+        'LH Voice 5',
+        [abjad.Rest((2, 4))],
+        denominator=4,
+        figure_name='lh-5 4.4.9',
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_music_maker(
+        'LH Voice 5',
+        lh.next(2),
+        baca.imbricate(
+            'LH Voice 5 Inserts',
+            [5],
+            baca.beam_everything(),
+            extend_beam=True,
+            ),
+        baca.nest('+2/16'),
+        baca.register(0, -12),
+        baca.rests_around([4], [2]),
+        baca.slur_each_plt_run(),
+        denominator=4,
+        figure_name='lh-5 4.4.10',
+        talea_counts=[2],
+        ),
+    )
+
+accumulator(
+    accumulator.mraz_music_maker(
+        'LH Voice 5',
+        lh.next(),
+        baca.flags(),
+        baca.register(-12, 0),
+        baca.rests_before([2]),
+        baca.slur_each_plt_run(),
+        denominator=4,
+        figure_name='lh-5 4.4.11',
         talea_counts=[6],
         ),
     )
@@ -651,7 +651,7 @@ accumulator(
         baca.rests_around([2], [6]),
         baca.slur_each_plt_run(),
         denominator=4,
-        figure_name='lh-5 4.4.9',
+        figure_name='lh-5 4.4.12',
         talea_counts=[2],
         ),
     )
@@ -694,7 +694,7 @@ accumulator(
     accumulator.mraz_music_maker(
         'RH Voice 1',
         [abjad.Rest((2, 4))],
-        figure_name='rh-1 4.r.1',
+        figure_name='rh-1 4.4.2',
         hide_time_signature=True,
         ),
     )
@@ -715,7 +715,7 @@ accumulator(
         baca.register(12),
         baca.slur_each_plt_run(),
         baca.tuplet_bracket_staff_padding(4),
-        figure_name='rh-1 4.4.2',
+        figure_name='rh-1 4.4.3',
         hide_time_signature=True,
         talea_counts=[2],
         time_treatments=[8],
@@ -741,7 +741,7 @@ accumulator(
         baca.register(12),
         baca.slur_each_plt_run(),
         baca.tuplet_bracket_staff_padding(4),
-        figure_name='rh-1 4.4.3',
+        figure_name='rh-1 4.4.4',
         hide_time_signature=True,
         talea_counts=[2],
         time_treatments=[10],
@@ -789,8 +789,9 @@ segment_maker = baca.tools.SegmentMaker(
 segment_maker.validate_measures_per_stage()
 accumulator.populate_segment_maker(segment_maker)
 
+
 ###############################################################################
-############################ CROSS-STAGE SPECIFIERS ###########################
+############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
 segment_maker.append_specifiers(
