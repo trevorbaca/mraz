@@ -51,8 +51,9 @@ def make_mraz_music_maker():
             ...         ),
             ...     time_signatures=time_signatures,
             ...     )
-            >>> specifiers = segment_maker.append_specifiers(
-            ...     ('vn', baca.select_stages(1)),
+            >>> specifiers = segment_maker.append_commands(
+            ...     'vn',
+            ...     baca.select_stages(1),
             ...     baca.tools.RhythmSpecifier(
             ...         rhythm_maker=figures,
             ...         ),
@@ -227,8 +228,9 @@ def make_mraz_music_maker():
             ...         ),
             ...     time_signatures=time_signatures,
             ...     )
-            >>> specifiers = segment_maker.append_specifiers(
-            ...     ('vn', baca.select_stages(1)),
+            >>> specifiers = segment_maker.append_commands(
+            ...     'vn',
+            ...     baca.select_stages(1),
             ...     baca.tools.RhythmSpecifier(
             ...         rhythm_maker=figures,
             ...         ),

@@ -365,15 +365,17 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    ('LH Voice 5', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'LH Voice 5',
+    baca.select_stages(1, Infinity),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
     baca.clef('bass'),
     )
 
-segment_maker.append_specifiers(
-    ('LH Voice 6', baca.select_stages(1, Infinity)),
+segment_maker.append_commands(
+    'LH Voice 6',
+    baca.select_stages(1, Infinity),
     #abjad.label().with_pitches(),
     baca.scripts_down(),
     baca.stems_down(),
