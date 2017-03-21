@@ -269,11 +269,18 @@
                                 r8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-1 4.4.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (41)
                                                     ]
                                                 }
                                         }
@@ -293,11 +300,18 @@
                                 r2
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-1 4.4.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (42)
                                                     ]
                                                 }
                                         }
@@ -310,11 +324,18 @@
                                 bf''8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-1 4.4.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (43)
                                                     ]
                                                 }
                                         }
@@ -335,11 +356,18 @@
                                 ef''8 [ (
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-1 4.4.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (44)
                                                     ]
                                                 }
                                         }
@@ -359,11 +387,33 @@
                             }
                         }
                         s1 * 5/8
-                        \bar "|"
                         \revert Beam.positions
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
+                        {
+                            {
+                                r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (45)
+                                                    ]
+                                                }
+                                        }
+                                \bar "|"
+                            }
+                        }
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 3/2
@@ -524,11 +574,18 @@
                                 ef8 -\tenuto \ff
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (0)
                                                     ]
                                                 }
                                         }
@@ -547,11 +604,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
                                                     ]
                                                 }
                                         }
@@ -565,11 +629,18 @@
                                 r4
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (2)
                                                     ]
                                                 }
                                         }
@@ -589,11 +660,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (3)
                                                     ]
                                                 }
                                         }
@@ -607,11 +685,18 @@
                                 ef'8 -\tenuto
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (4)
                                                     ]
                                                 }
                                         }
@@ -630,11 +715,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-3 4.1.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (5)
                                                     ]
                                                 }
                                         }
@@ -712,11 +804,18 @@
                                 <b d' fs' a'>16
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "rh-5 4.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (22)
                                                     ]
                                                 }
                                         }
@@ -953,11 +1052,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (6)
                                                     ]
                                                 }
                                         }
@@ -974,11 +1080,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (7)
                                                     ]
                                                 }
                                         }
@@ -989,11 +1102,18 @@
                                 r4
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (8)
                                                     ]
                                                 }
                                         }
@@ -1012,11 +1132,18 @@
                                 r16
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (9)
                                                     ]
                                                 }
                                         }
@@ -1029,11 +1156,18 @@
                                 r4
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (10)
                                                     ]
                                                 }
                                         }
@@ -1052,11 +1186,18 @@
                                 r2.
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.1.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (11)
                                                     ]
                                                 }
                                         }
@@ -1069,11 +1210,18 @@
                                 r16
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (12)
                                                     ]
                                                 }
                                         }
@@ -1086,11 +1234,18 @@
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (13)
                                                     ]
                                                 }
                                         }
@@ -1106,11 +1261,18 @@
                                     r16
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.2.3"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (14)
                                                         ]
                                                     }
                                             }
@@ -1125,11 +1287,18 @@
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (15)
                                                     ]
                                                 }
                                         }
@@ -1142,11 +1311,18 @@
                                 r16
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (16)
                                                     ]
                                                 }
                                         }
@@ -1159,11 +1335,18 @@
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (17)
                                                     ]
                                                 }
                                         }
@@ -1179,11 +1362,18 @@
                                     r16
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.2.7"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (18)
                                                         ]
                                                     }
                                             }
@@ -1198,11 +1388,18 @@
                                 <g b f' fs' a'>16 -\marcato
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.8"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (19)
                                                     ]
                                                 }
                                         }
@@ -1218,11 +1415,18 @@
                                     r16
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.2.9"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (20)
                                                         ]
                                                     }
                                             }
@@ -1242,11 +1446,18 @@
                                 <g, e f af>16 \mp
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.2.10"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (21)
                                                     ]
                                                 }
                                         }
@@ -1262,11 +1473,18 @@
                                     r4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.4.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (29)
                                                         ]
                                                     }
                                             }
@@ -1287,11 +1505,18 @@
                                 r1
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (30)
                                                     ]
                                                 }
                                         }
@@ -1302,11 +1527,18 @@
                                 r8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (31)
                                                     ]
                                                 }
                                         }
@@ -1320,11 +1552,18 @@
                                     r4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.4.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (32)
                                                         ]
                                                     }
                                             }
@@ -1350,11 +1589,18 @@
                                 r2
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (33)
                                                     ]
                                                 }
                                         }
@@ -1367,11 +1613,18 @@
                                     r4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.4.6"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (34)
                                                         ]
                                                     }
                                             }
@@ -1399,11 +1652,18 @@
                                     r4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.4.7"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (35)
                                                         ]
                                                     }
                                             }
@@ -1424,11 +1684,18 @@
                                 r8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.8"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (36)
                                                     ]
                                                 }
                                         }
@@ -1441,11 +1708,18 @@
                                 r2
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.9"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (37)
                                                     ]
                                                 }
                                         }
@@ -1458,11 +1732,18 @@
                                     r4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-5 4.4.10"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (38)
                                                         ]
                                                     }
                                             }
@@ -1483,11 +1764,18 @@
                                 r8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.11"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (39)
                                                     ]
                                                 }
                                         }
@@ -1499,11 +1787,18 @@
                                 r8
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-5 4.4.12"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (40)
                                                     ]
                                                 }
                                         }
@@ -1693,11 +1988,18 @@
                                     s4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-r 4.2.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (23)
                                                         ]
                                                     }
                                             }
@@ -1710,11 +2012,18 @@
                                 <cs,, cs,>4 \repeatTie
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-r 4.2.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (24)
                                                     ]
                                                 }
                                         }
@@ -1725,11 +2034,18 @@
                                 <cs,, cs,>1 \repeatTie
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-r 4.2.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (25)
                                                     ]
                                                 }
                                         }
@@ -1743,11 +2059,18 @@
                                     s4
                                         ^ \markup {
                                             \fontsize
-                                                #3
+                                                #2
                                                 \concat
                                                     {
                                                         [
                                                         "lh-r 4.2.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (26)
                                                         ]
                                                     }
                                             }
@@ -1760,11 +2083,18 @@
                                 <ef,, ef,>4 \repeatTie
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-r 4.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (27)
                                                     ]
                                                 }
                                         }
@@ -1775,11 +2105,18 @@
                                 <ef,, ef,>1 \repeatTie
                                     ^ \markup {
                                         \fontsize
-                                            #3
+                                            #2
                                             \concat
                                                 {
                                                     [
                                                     "lh-r 4.2.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (28)
                                                     ]
                                                 }
                                         }

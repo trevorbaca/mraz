@@ -150,6 +150,7 @@ class MusicAccumulator(baca.tools.MusicAccumulator):
             'time_treatments': time_treatments,
             'tuplet_denominator': tuplet_denominator,
             }
+        keywords['figure_index'] = self._figure_index
         return superclass.__call__(
             self.mraz_music_maker(
                 voice_name,
