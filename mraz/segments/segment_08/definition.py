@@ -50,163 +50,139 @@ v6_stage_3_segments = v6_stage_3_segments.cursor()
 # (STAGE 3: VOICE 5)
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.dynamic('ppp'),
-        baca.flags(),
-        baca.register(-27, -39),
-        figure_name='lh-5 8.3.1',
-        talea_counts=[6, -1],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.dynamic('ppp'),
+    baca.flags(),
+    baca.register(-27, -39),
+    figure_name='lh-5 8.3.1',
+    talea_counts=[6, -1],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(2),
-        baca.flags(),
-        baca.register(-39, -27),
-        baca.rests_up(),
-        denominator=4,
-        figure_name='lh-5 8.3.2',
-        talea_counts=[4, -1],
-        talea_denominator=32,
-        time_treatments=[1],
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(2),
+    baca.flags(),
+    baca.register(-39, -27),
+    baca.rests_up(),
+    denominator=4,
+    figure_name='lh-5 8.3.2',
+    talea_counts=[4, -1],
+    talea_denominator=32,
+    time_treatments=[1],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-39),
-        denominator=2,
-        figure_name='lh-5 8.3.3',
-        talea_counts=[1, -15],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-39),
+    denominator=2,
+    figure_name='lh-5 8.3.3',
+    talea_counts=[1, -15],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-27, -39),
-        baca.rests_up(),
-        figure_name='lh-5 8.3.4',
-        talea_counts=[6, -1],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-27, -39),
+    baca.rests_up(),
+    figure_name='lh-5 8.3.4',
+    talea_counts=[6, -1],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(1),
-        baca.flags(),
-        baca.register(-39, -27),
-        figure_name='lh-5 8.3.5',
-        talea_counts=[4, -1],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(1),
+    baca.flags(),
+    baca.register(-39, -27),
+    figure_name='lh-5 8.3.5',
+    talea_counts=[4, -1],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-39, -27),
-        denominator=4,
-        figure_name='lh-5 8.3.6',
-        talea_counts=[4, -1],
-        talea_denominator=32,
-        time_treatments=[1],
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-39, -27),
+    denominator=4,
+    figure_name='lh-5 8.3.6',
+    talea_counts=[4, -1],
+    talea_denominator=32,
+    time_treatments=[1],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-39),
-        baca.rests_up(),
-        denominator=2,
-        figure_name='lh-5 8.3.7',
-        talea_counts=[1, -15],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-39),
+    baca.rests_up(),
+    denominator=2,
+    figure_name='lh-5 8.3.7',
+    talea_counts=[1, -15],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-27, -39),
-        figure_name='lh-5 8.3.8',
-        talea_counts=[6, -1],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-27, -39),
+    figure_name='lh-5 8.3.8',
+    talea_counts=[6, -1],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(2),
-        baca.flags(),
-        baca.register(-39, -27),
-        denominator=4,
-        figure_name='lh-5 8.3.9',
-        talea_counts=[4, -1],
-        talea_denominator=32,
-        time_treatments=[1],
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(2),
+    baca.flags(),
+    baca.register(-39, -27),
+    denominator=4,
+    figure_name='lh-5 8.3.9',
+    talea_counts=[4, -1],
+    talea_denominator=32,
+    time_treatments=[1],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-39),
-        baca.rests_up(),
-        denominator=2,
-        figure_name='lh-5 8.3.10',
-        talea_counts=[1, -15],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-39),
+    baca.rests_up(),
+    denominator=2,
+    figure_name='lh-5 8.3.10',
+    talea_counts=[1, -15],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-27, -39),
-        figure_name='lh-5 8.3.11',
-        talea_counts=[6, -1],
-        talea_denominator=32,
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-27, -39),
+    figure_name='lh-5 8.3.11',
+    talea_counts=[6, -1],
+    talea_denominator=32,
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 5',
-        v5_stage_3_segments.next(),
-        baca.flags(),
-        baca.register(-39, -27),
-        denominator=4,
-        figure_name='lh-5 8.3.12',
-        talea_counts=[4, -1],
-        talea_denominator=32,
-        time_treatments=[1],
-        ),
+    'LH Voice 5',
+    v5_stage_3_segments.next(),
+    baca.flags(),
+    baca.register(-39, -27),
+    denominator=4,
+    figure_name='lh-5 8.3.12',
+    talea_counts=[4, -1],
+    talea_denominator=32,
+    time_treatments=[1],
     )
 
 assert v5_stage_3_segments.is_exhausted
@@ -214,112 +190,100 @@ assert v5_stage_3_segments.is_exhausted
 # (STAGE 3: VOICE 6)
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_note(6),
-            baca.select_note(1),
-            ),
-        baca.dynamic('f'),
-        baca.flags(),
-        baca.register(-39),
-        figure_name='lh-6 8.3.1',
-        hide_time_signature=True,
-        talea_counts=[4, -4],
-        time_treatments=[-4],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_note(6),
+        baca.select_note(1),
         ),
+    baca.dynamic('f'),
+    baca.flags(),
+    baca.register(-39),
+    figure_name='lh-6 8.3.1',
+    hide_time_signature=True,
+    talea_counts=[4, -4],
+    time_treatments=[-4],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_note(11),
-            ),
-        baca.flags(),
-        baca.register(-39),
-        baca.rests_up(),
-        figure_name='lh-6 8.3.2',
-        hide_time_signature=True,
-        talea_counts=[2, -4],
-        time_treatments=[4],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_note(11),
         ),
+    baca.flags(),
+    baca.register(-39),
+    baca.rests_up(),
+    figure_name='lh-6 8.3.2',
+    hide_time_signature=True,
+    talea_counts=[2, -4],
+    time_treatments=[4],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_note(23),
-            baca.select_note(-1),
-            ),
-        baca.flags(),
-        baca.register(-39),
-        figure_name='lh-6 8.3.3',
-        hide_time_signature=True,
-        talea_counts=[1, -3],
-        time_treatments=[4],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_note(23),
+        baca.select_note(-1),
         ),
+    baca.flags(),
+    baca.register(-39),
+    figure_name='lh-6 8.3.3',
+    hide_time_signature=True,
+    talea_counts=[1, -3],
+    time_treatments=[4],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_note(27),
-            baca.select_note(1),
-            ),
-        baca.flags(),
-        baca.register(-39),
-        figure_name='lh-6 8.3.4',
-        hide_time_signature=True,
-        talea_counts=[1, -3],
-        time_treatments=[4],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_note(27),
+        baca.select_note(1),
         ),
+    baca.flags(),
+    baca.register(-39),
+    figure_name='lh-6 8.3.4',
+    hide_time_signature=True,
+    talea_counts=[1, -3],
+    time_treatments=[4],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_rest(33),
-            baca.select_note(-1),
-            ),
-        baca.flags(),
-        baca.register(-39),
-        figure_name='lh-6 8.3.5',
-        hide_time_signature=True,
-        talea_counts=[2],
-        time_treatments=[2],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_rest(33),
+        baca.select_note(-1),
         ),
+    baca.flags(),
+    baca.register(-39),
+    figure_name='lh-6 8.3.5',
+    hide_time_signature=True,
+    talea_counts=[2],
+    time_treatments=[2],
     )
 
 accumulator(
-    accumulator.mraz_music_maker(
-        'LH Voice 6',
-        v6_stage_3_segments.next(),
-        baca.anchor(
-            'LH Voice 5',
-            baca.select_note(34),
-            baca.select_note(1),
-            ),
-        baca.flags(),
-        baca.register(-39),
-        figure_name='lh-6 8.3.6',
-        hide_time_signature=True,
-        talea_counts=[2, -4],
-        time_treatments=[-6],
+    'LH Voice 6',
+    v6_stage_3_segments.next(),
+    baca.anchor(
+        'LH Voice 5',
+        baca.select_note(34),
+        baca.select_note(1),
         ),
+    baca.flags(),
+    baca.register(-39),
+    figure_name='lh-6 8.3.6',
+    hide_time_signature=True,
+    talea_counts=[2, -4],
+    time_treatments=[-6],
     )
 
 assert v6_stage_3_segments.is_exhausted
