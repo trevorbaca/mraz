@@ -101,7 +101,7 @@ class MusicAccumulator(baca.tools.MusicAccumulator):
         superclass.__init__(score_template)
         self._mraz_music_maker = mraz.tools.make_mraz_music_maker()
 
-    ## SPECIAL METHODS ###
+    ### SPECIAL METHODS ###
 
     def __call__(
         self,
