@@ -1,6 +1,8 @@
 TO-DO
 =====
 
+0.  Add order-or-creation index to figure name markup.
+
 1.  Build 4.4.
 
 2.  Offset note-heads at an interval of the second.

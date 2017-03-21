@@ -257,7 +257,9 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        \override Beam.positions = #'(6 . 6)
                         \override Stem.direction = #up
+                        \override TupletBracket.staff-padding = #5
                         \override TupletBracket.direction = #up
                         s1 * 33/2
                         {
@@ -275,23 +277,13 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 d''8 \mf [ (
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 af''8 ] )
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                a''8 [ ]
+                                a''8
                                 s8
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 b''8 [ (
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 e''8 ] )
                                 r4.
                             }
@@ -314,10 +306,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/4 {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #1
                                 \override TupletBracket.staff-padding = #4
-                                bf''8 [ ]
+                                bf''8
                                     ^ \markup {
                                         \fontsize
                                             #3
@@ -330,19 +320,11 @@
                                         }
                                 s8
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 c''8 [ (
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 g''8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 cs''8 ] )
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #0
-                                a''8 [ ]
+                                a''8
                                 \revert TupletBracket.staff-padding
                             }
                         }
@@ -350,10 +332,6 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/14 {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #1
-                                \override Beam.positions = #'(6 . 6)
-                                \override TupletBracket.staff-padding = #4
                                 ef''8 [ (
                                     ^ \markup {
                                         \fontsize
@@ -365,42 +343,26 @@
                                                     ]
                                                 }
                                         }
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 af''8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 d''8 ] )
                                 s8
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 e''8 [ (
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 b''8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 f''8 ] )
                                 s8
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                g''8 [ ]
+                                g''8
                                 s8
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
                                 fs''8 [ (
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #0
                                 cs''8 ] )
-                                \revert Beam.positions
-                                \revert TupletBracket.staff-padding
                             }
                         }
                         s1 * 5/8
                         \bar "|"
+                        \revert Beam.positions
                         \revert Stem.direction
+                        \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
