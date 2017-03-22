@@ -28,9 +28,9 @@ stage_4_segments = stages[3]
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
-############################## SEGMENT 4: STAGE 1 #############################
+#################################### [4.1] ####################################
 
-# (STAGE 1: VOICE 3 [4])
+# [4.1] (VOICE 3 as 4)
 
 v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
 v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
@@ -94,7 +94,7 @@ accumulator(
     figure_name='rh-3 4.1.6',
     )
 
-# (STAGE 1: VOICE 5)
+# [4.1] (VOICE 5)
 
 accumulator(
     'LH Voice 5',
@@ -162,9 +162,9 @@ accumulator(
     hide_time_signature=True,
     )
 
-############################## SEGMENT 4: STAGE 2 #############################
+#################################### [4.2] ####################################
 
-# (STAGE 2: VOICE 5)
+# [4.2] (VOICE 5)
 
 stage_2_segments = stage_2_segments.cursor(singletons=True)
 
@@ -213,8 +213,6 @@ accumulator(
     figure_name='lh-5 4.2.4',
     )
 
-###
-
 accumulator(
     'LH Voice 5',
     [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
@@ -257,8 +255,6 @@ accumulator(
     figure_name='lh-5 4.2.8',
     )
 
-###
-
 accumulator(
     'LH Voice 5',
     [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
@@ -299,7 +295,7 @@ accumulator(
     figure_name='rh-5 4.2.1',
     )
 
-# (STAGE 2: LH RESONANCE)
+# [4.2] (LH RESONANCE)
 
 accumulator(
     'LH Resonance Voice',
@@ -333,8 +329,6 @@ accumulator(
     hide_time_signature=True,
     )
 
-###
-
 accumulator(
     'LH Resonance Voice',
     [{-33, -21}],
@@ -367,9 +361,9 @@ accumulator(
     hide_time_signature=True,
     )
 
-############################## SEGMENT 4: STAGE 4 #############################
+#################################### [4.4] ####################################
 
-# (STAGE 4: VOICE 1)
+# [4.4] (VOICE 1)
 
 assert len(stage_4_segments) == 2
 rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
@@ -626,6 +620,108 @@ accumulator(
     time_treatments=[10],
     )
 
+#################################### [4.5] ####################################
+
+stage_5_segments = stage_5_segments.remove_duplicate_pitch_classes(level=1)
+rh, lh = stage_5_segments.partition([1, 1], overhang=Exact)
+rh = rh.read(9 * [1], check=Exact)
+rh = rh.cursor(singletons=True)
+lh = lh.accumulate([baca.pitch_class_segment().transpose(n=2)])
+resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    baca.resume(),
+    counts=[4],
+    figure_name='lh-r 4.5.1',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[28],
+    figure_name='lh-r 4.5.2',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[24],
+    figure_name='lh-r 4.5.3',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[16],
+    figure_name='lh-r 4.5.4',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[16],
+    figure_name='lh-r 4.5.5',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[24],
+    figure_name='lh-r 4.5.6',
+    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[8],
+    figure_name='lh-r 4.5.7',
+    hide_time_signature=False,
+    )
+
+#accumulator(
+#    'LH Resonance Voice',
+#    [resonance],
+#    counts=[4],
+#    figure_name='lh-r 4.5.8',
+#    hide_time_signature=False,
+#    )
+#
+#accumulator(
+#    'LH Resonance Voice',
+#    [resonance],
+#    counts=[4],
+#    figure_name='lh-r 4.5.9',
+#    hide_time_signature=False,
+#    )
+#
+#accumulator(
+#    'LH Resonance Voice',
+#    [resonance],
+#    counts=[4],
+#    figure_name='lh-r 4.5.10',
+#    hide_time_signature=False,
+#    )
+
+#accumulator(
+#    'RH Voice 1',
+#    rh.next(),
+#    baca.dynamic('f'),
+#    baca.register(36),
+#    baca.resume(),
+#    baca.tenuti(),
+#    counts=[16],
+#    figure_name='rh-1 4.5.1',
+#    hide_time_signature=False,
+#    )
+
 #################################### [4.6] ####################################
 
 stage_6_segments = stage_6_segments.repeat(n=2)
@@ -678,9 +774,10 @@ accumulator(
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
-    (30, mraz.materials.tempi[112]),
-    (30, abjad.Ritardando()),
-    (32, mraz.materials.tempi[84]),
+    # TODO: uncomment once measure structure is fixed
+#    (30, mraz.materials.tempi[112]),
+#    (30, abjad.Ritardando()),
+#    (32, mraz.materials.tempi[84]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
@@ -692,7 +789,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
@@ -729,13 +826,14 @@ segment_maker.append_commands(
     baca.tuplet_brackets_up(),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2',
-    baca.select_stages(30, 32),
-    baca.marcati(),
-    baca.scripts_up(),
-    baca.up_arpeggios(),
-    )
+# TODO: reveal
+#segment_maker.append_commands(
+#    'RH Voice 2',
+#    baca.select_stages(30, 32),
+#    baca.marcati(),
+#    baca.scripts_up(),
+#    baca.up_arpeggios(),
+#    )
 
 segment_maker.append_commands(
     'RH Voice 3',
@@ -743,11 +841,12 @@ segment_maker.append_commands(
     baca.tenuti(),
     )
 
-segment_maker.append_commands(
-    'LH Voice 2',
-    baca.select_stages(30, 32),
-    baca.transparent_rests(),
-    )
+# TODO: reveal
+#segment_maker.append_commands(
+#    'LH Voice 2',
+#    baca.select_stages(30, 32),
+#    baca.transparent_rests(),
+#    )
 
 segment_maker.append_commands(
     'LH Voice 5',
@@ -786,5 +885,11 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'LH Resonance Voice',
     baca.select_stages(13, 14),
+    baca.messiaen_tie_each(),
+    )
+
+segment_maker.append_commands(
+    'LH Resonance Voice',
+    baca.select_stages(20, Infinity),
     baca.messiaen_tie_each(),
     )
