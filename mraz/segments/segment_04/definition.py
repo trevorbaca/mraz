@@ -676,13 +676,58 @@ accumulator(
     time_treatments=[10],
     )
 
+#################################### [4.6] ####################################
 
+stage_6_segments = stage_6_segments.repeat(n=2)
+stage_6_segments = stage_6_segments.partition([2], cyclic=True, join=True)
+stage_6_segments = stage_6_segments.remove_duplicates(level=1)
+stage_6_segments = stage_6_segments.arpeggiate_up()
+stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
+stage_6_segments = stage_6_segments.chords()
+stage_6_segments = stage_6_segments.cursor(singletons=True)
+
+accumulator(
+    'RH Voice 2',
+    stage_6_segments.next(),
+    baca.dynamic('ff'),
+    baca.ottava(),
+    baca.resume(),
+    counts=[16],
+    figure_name='rh-2 4.6.1',
+    )
+
+accumulator(
+    'RH Voice 2',
+    stage_6_segments.next(),
+    baca.resume(),
+    counts=[16],
+    figure_name='rh-2 4.6.2',
+    )
+
+accumulator(
+    'RH Voice 2',
+    stage_6_segments.next(exhausted=True),
+    baca.resume(),
+    counts=[16],
+    figure_name='rh-2 4.6.3',
+    )
+
+accumulator(
+    'LH Voice 2',
+    [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
+    baca.anchor_to_figure('rh-2 4.6.1'),
+    baca.sustain_pedal(baca.select_each_lt(leak=Right)),
+    baca.sustain_pedal_staff_padding(4),
+    figure_name='lh-2 4.6.1',
+    hide_time_signature=True,
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
 
 tempo_specifier = baca.tools.TempoSpecifier([
+    (1, mraz.materials.tempi[84]),
     (1, mraz.materials.tempi[84]),
     ])
 
@@ -695,7 +740,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
@@ -703,7 +748,7 @@ segment_maker = baca.tools.SegmentMaker(
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
-    #label_stages=True,
+    label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
@@ -719,7 +764,6 @@ segment_maker = baca.tools.SegmentMaker(
 segment_maker.validate_measures_per_stage()
 accumulator.populate_segment_maker(segment_maker)
 
-
 ###############################################################################
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
@@ -731,6 +775,16 @@ segment_maker.append_commands(
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
+    )
+
+segment_maker.append_commands(
+    'RH Voice 2',
+    baca.select_stages(30, 32),
+    baca.marcati(),
+    baca.scripts_up(),
+#    baca.sustain_pedal(baca.select_each_plt(leak=Right)),
+#    baca.sustain_pedal_staff_padding(20),
+    baca.up_arpeggios(),
     )
 
 segment_maker.append_commands(
