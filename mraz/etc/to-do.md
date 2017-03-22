@@ -18,7 +18,7 @@ TO-DO
     This will remove many color_unregistered_pitches=False settings.
 
 7.  Refactor MusicRhythmMaker to accept (star)specifiers.
-    Refactor MusicRhythmMaker to accept RestAffixSpecifier objects.
+    Refactor MusicRhythmMaker to accept RestAffixCommand objects.
 
 8.  Remove Expression.markup_expression.
     Remove Expression.string_template.
