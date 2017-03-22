@@ -83,6 +83,14 @@ accumulator(
     rh.next(5),
     baca.beam_divisions(),
     baca.dynamic('mp'),
+    baca.imbricate(
+        'RH Voice 2', 
+        [8, 6],
+        baca.beam_everything(),
+        baca.beam_positions(4.5),
+        baca.dynamic('fff'),
+        hocket=True,
+        ),
     baca.nest('-1/4'),
     baca.proportional_notation_duration((1, 12)),
     baca.register(24, 0),
@@ -244,11 +252,14 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_commands(
-    'LH Voice 3',
-    baca.select_stages(1, Infinity),
+    'RH Voice 2',
+    baca.select_stages(2, Infinity),
+    baca.accents(),
+    baca.stems_up(),
     )
 
 segment_maker.append_commands(
-    'RH Voice 2',
-    baca.select_stages(1, Infinity),
+    'LH Voice 3',
+    baca.select_stages(2, Infinity),
+    baca.tuplet_bracket_staff_padding(3),
     )
