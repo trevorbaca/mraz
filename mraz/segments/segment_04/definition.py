@@ -943,7 +943,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
@@ -951,7 +951,7 @@ segment_maker = baca.tools.SegmentMaker(
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
-    label_stages=True,
+    #label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
