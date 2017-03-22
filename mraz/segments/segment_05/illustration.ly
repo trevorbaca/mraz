@@ -269,7 +269,7 @@
                             \times 10/11 {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
-                                    \override Beam.positions = #'(4.5 . 4.5)
+                                    \override Beam.positions = #'(8.5 . 8.5)
                                     \override Stem.direction = #up
                                     s8 [
                                     s8
@@ -311,15 +311,75 @@
                                     s8
                                     s8
                                     s8
-                                    s8 ]
-                                    \revert Beam.positions
+                                    s8
                                 }
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 23/2
+                        s1 * 1/4
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 12/13 {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/7 {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                }
+                                {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/7 {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    c''8 -\accent
+                                    s8
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    s8
+                                    s8
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    cs''8 -\accent
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    e''8 -\accent
+                                }
+                                {
+                                    s8
+                                    s8
+                                    s8
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    ef'8 -\accent
+                                    s8
+                                    s8
+                                    s8 ]
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 33/4
                         \bar "|"
+                        \revert Beam.positions
                         \revert Stem.direction
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
@@ -514,23 +574,23 @@
                                     ef''8
                                     f''8
                                     d''8
-                                    a''8
-                                    c''8
-                                    bf'8 ] )
+                                    a''8 ]
+                                    s8
+                                    bf'8 )
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     fs''8 [ (
-                                    b'8
-                                    cs''8
-                                    e''8 ] )
+                                    b'8 ] )
+                                    s8
+                                    s8
                                 }
                                 {
                                     f'8 [ (
                                     d''8
-                                    e'8
-                                    ef'8
-                                    af'8
+                                    e'8 ]
+                                    s8
+                                    af'8 [
                                     cs'8
                                     b'8 ] )
                                     \revert Rest.direction
