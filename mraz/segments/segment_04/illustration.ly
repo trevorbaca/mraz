@@ -88,6 +88,10 @@
                     R1 * 1/2
                 }
                 {
+                    \time 1/8
+                    R1 * 1/8
+                }
+                {
                     \time 4/4
                     R1 * 1
                 }
@@ -216,6 +220,10 @@
                     s1 * 1/2
                 }
                 {
+                    \time 1/8
+                    s1 * 1/8
+                }
+                {
                     \time 4/4
                     s1 * 1
                 }
@@ -280,7 +288,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (41)
+                                                            (42)
                                                     ]
                                                 }
                                         }
@@ -311,17 +319,19 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (42)
+                                                            (43)
                                                     ]
                                                 }
                                         }
                             }
                         }
                         {
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 6/4 {
-                                \override TupletBracket.staff-padding = #4
-                                bf''8
+                            {
+                                \override Script.color = #black
+                                \override Script.extra-offset = #'(0.5 . 0)
+                                \override Rest.transparent = ##t
+                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                r8 -\fermata
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -335,7 +345,35 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (43)
+                                                            (32)
+                                                    ]
+                                                }
+                                        }
+                                \revert Script.color
+                                \revert Script.extra-offset
+                                \revert Rest.transparent
+                                \revert TimeSignatureContext.TimeSignature.transparent
+                            }
+                        }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/4 {
+                                \override TupletBracket.staff-padding = #4
+                                bf''8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (44)
                                                     ]
                                                 }
                                         }
@@ -360,14 +398,14 @@
                                             \concat
                                                 {
                                                     [
-                                                    "rh-1 4.4.4"
+                                                    "rh-1 4.4.5"
                                                     \hspace
                                                         #1
                                                     \raise
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (44)
+                                                            (45)
                                                     ]
                                                 }
                                         }
@@ -387,33 +425,11 @@
                             }
                         }
                         s1 * 5/8
+                        \bar "|"
                         \revert Beam.positions
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
-                        {
-                            {
-                                r4 -\fermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-1 4.4.5"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (45)
-                                                    ]
-                                                }
-                                        }
-                                \bar "|"
-                            }
-                        }
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 3/2
@@ -435,6 +451,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -473,7 +490,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 1/2
+                        s1 * 5/8
                         {
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
@@ -554,6 +571,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -732,7 +750,7 @@
                                         }
                             }
                         }
-                        s1 * 147/8
+                        s1 * 37/2
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
@@ -755,6 +773,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -786,6 +805,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -822,7 +842,7 @@
                                 r8.
                             }
                         }
-                        s1 * 69/8
+                        s1 * 35/4
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -845,6 +865,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -876,6 +897,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -909,6 +931,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -940,6 +963,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -971,6 +995,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -1002,6 +1027,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -1033,6 +1059,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -1545,6 +1572,7 @@
                                 <c e af>4.
                             }
                         }
+                        s1 * 1/8
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
@@ -1563,7 +1591,7 @@
                                                             #0.25
                                                             \fontsize
                                                                 #-2
-                                                                (32)
+                                                                (33)
                                                         ]
                                                     }
                                             }
@@ -1600,7 +1628,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (33)
+                                                            (34)
                                                     ]
                                                 }
                                         }
@@ -1624,7 +1652,7 @@
                                                             #0.25
                                                             \fontsize
                                                                 #-2
-                                                                (34)
+                                                                (35)
                                                         ]
                                                     }
                                             }
@@ -1663,7 +1691,7 @@
                                                             #0.25
                                                             \fontsize
                                                                 #-2
-                                                                (35)
+                                                                (36)
                                                         ]
                                                     }
                                             }
@@ -1695,7 +1723,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (36)
+                                                            (37)
                                                     ]
                                                 }
                                         }
@@ -1719,7 +1747,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (37)
+                                                            (38)
                                                     ]
                                                 }
                                         }
@@ -1743,7 +1771,7 @@
                                                             #0.25
                                                             \fontsize
                                                                 #-2
-                                                                (38)
+                                                                (39)
                                                         ]
                                                     }
                                             }
@@ -1775,7 +1803,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (39)
+                                                            (40)
                                                     ]
                                                 }
                                         }
@@ -1798,7 +1826,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (40)
+                                                            (41)
                                                     ]
                                                 }
                                         }
@@ -1812,7 +1840,7 @@
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         \override Script.direction = #up
                         \override Stem.direction = #up
-                        s1 * 151/8
+                        s1 * 19
                         {
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
@@ -1937,6 +1965,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -1968,6 +1997,7 @@
                         s1 * 7/8
                         s1 * 1
                         s1 * 1/2
+                        s1 * 1/8
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -2123,7 +2153,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 79/8
+                        s1 * 10
                         \bar "|"
                     }
                 >>
