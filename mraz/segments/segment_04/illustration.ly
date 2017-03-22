@@ -128,6 +128,33 @@
                     R1 * 5/8
                 }
                 {
+                    \time 1/4
+                    R1 * 1/4
+                }
+                {
+                    \time 7/4
+                    R1 * 7/4
+                }
+                {
+                    \time 6/4
+                    R1 * 3/2
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    R1 * 1
+                }
+                {
+                    \time 6/4
+                    R1 * 3/2
+                }
+                {
+                    \time 2/4
+                    R1 * 1/2
+                }
+                {
                     \time 4/4
                     R1 * 1
                 }
@@ -270,61 +297,41 @@
                     s1 * 5/8
                 }
                 {
+                    \time 1/4
+                    s1 * 1/4
+                }
+                {
+                    \time 7/4
+                    s1 * 7/4
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                }
+                {
                     \time 4/4
-                    \once \override TextSpanner.arrow-width = 0.25
-                    \once \override TextSpanner.bound-details.left-broken.padding = 0
-                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
-                        \null
-                        }
-                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
-                    \once \override TextSpanner.bound-details.left.text = \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                112
-                            }
-                        \hspace
-                            #1.25
-                        }
-                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                    \once \override TextSpanner.bound-details.right-broken.padding = 0
-                    \once \override TextSpanner.bound-details.right-broken.text = ##f
-                    \once \override TextSpanner.bound-details.right.arrow = ##t
-                    \once \override TextSpanner.bound-details.right.padding = 2
-                    \once \override TextSpanner.bound-details.right.text = ##f
-                    \once \override TextSpanner.dash-fraction = 0.25
-                    \once \override TextSpanner.dash-period = 1.5
-                    s1 * 1 \startTextSpan
+                    s1 * 1
                 }
                 {
                     s1 * 1
                 }
                 {
-                    s1 * 1 \stopTextSpan ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                84
-                            }
-                        }
+                    \time 6/4
+                    s1 * 3/2
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                }
+                {
+                    s1 * 1
+                }
+                {
+                    s1 * 1
                 }
             }
         >>
@@ -342,6 +349,23 @@
                                 \dynamicDown
                                 \override TextScript.direction = #up
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (42)
+                                                    ]
+                                                }
+                                        }
                                 \ottava #1
                                 \override DynamicText.extra-offset = #'(0 . 1)
                                 \override TextScript.color = #black
@@ -362,6 +386,23 @@
                         {
                             {
                                 r2
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (43)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -371,6 +412,23 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (32)
+                                                    ]
+                                                }
+                                        }
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
@@ -381,6 +439,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/4 {
                                 bf''''8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (44)
+                                                    ]
+                                                }
+                                        }
                                 s8
                                 s8
                                 c''''8 [ (
@@ -395,6 +470,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/14 {
                                 ef''''8 [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.4.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (45)
+                                                    ]
+                                                }
+                                        }
                                 af''''8
                                 d''''8 ] )
                                 s8
@@ -411,7 +503,7 @@
                                 \ottava #0
                             }
                         }
-                        s1 * 29/8
+                        s1 * 89/8
                         \bar "|"
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
@@ -447,6 +539,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -537,26 +636,72 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 5/8
+                        s1 * 65/8
                         {
                             {
-                                \arpeggioArrowUp
-                                \override Script.direction = #up
-                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 -\marcato \arpeggio \ff
+                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 \ff
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.6.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (53)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
-                                \arpeggioArrowUp
-                                <a g' af' b' cs'' f'' ef''' c''''>1 -\marcato \arpeggio
+                                <a g' af' b' cs'' f'' ef''' c''''>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.6.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (54)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
-                                \arpeggioArrowUp
-                                <e' fs' bf' a'' g''' af''' b''' cs''''>1 -\marcato \arpeggio
+                                <e' fs' bf' a'' g''' af''' b''' cs''''>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.6.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (55)
+                                                    ]
+                                                }
+                                        }
                                 \bar "|"
-                                \revert Script.direction
                             }
                         }
                     }
@@ -590,6 +735,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -602,6 +754,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 ef8 -\tenuto \ff
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (0)
+                                                    ]
+                                                }
+                                        }
                                 r4
                                 cs'8 -\tenuto
                                 r4
@@ -615,6 +784,23 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -623,6 +809,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (2)
+                                                    ]
+                                                }
+                                        }
                                 ef''8 -\tenuto
                                 r4
                                 cs''4 -\tenuto
@@ -637,6 +840,23 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (3)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -645,6 +865,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 ef'8 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (4)
+                                                    ]
+                                                }
+                                        }
                                 r4
                                 cs'8 -\tenuto
                                 r4
@@ -658,9 +895,26 @@
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.1.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (5)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
-                        s1 * 43/2
+                        s1 * 29
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
@@ -693,6 +947,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -728,6 +989,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -738,10 +1006,27 @@
                         {
                             {
                                 <b d' fs' a'>16
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-5 4.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (22)
+                                                    ]
+                                                }
+                                        }
                                 r8.
                             }
                         }
-                        s1 * 47/4
+                        s1 * 77/4
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -774,6 +1059,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -809,6 +1101,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -846,25 +1145,47 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
-                        s1 * 101/4
+                        s1 * 131/4
                         {
                             {
                                 \set Staff.pedalSustainStyle = #'bracket
                                 \override Staff.SustainPedalLineSpanner.staff-padding = #4
-                                \override Rest.transparent = ##t
                                 r1 \sustainOn
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-2 4.6.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (56)
+                                                    ]
+                                                }
+                                        }
                                 \set Staff.pedalSustainStyle = #'bracket
                                 r1 \sustainOff \sustainOn
                                 r1 \sustainOff
                                 \bar "|"
                                 \revert Staff.SustainPedalLineSpanner.staff-padding
-                                \revert Rest.transparent
                             }
                         }
                     }
@@ -898,6 +1219,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -933,6 +1261,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -968,6 +1303,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -979,6 +1321,23 @@
                                 \clef "bass"
                                 \dynamicDown
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (6)
+                                                    ]
+                                                }
+                                        }
                                 af8. -\tenuto \f
                                 r16
                                 d'8. -\tenuto
@@ -990,11 +1349,45 @@
                         {
                             {
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (7)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (8)
+                                                    ]
+                                                }
+                                        }
                                 af8. -\tenuto
                                 r16
                                 d'8. -\tenuto
@@ -1008,6 +1401,23 @@
                         {
                             {
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (9)
+                                                    ]
+                                                }
+                                        }
                                 <g b f' fs' a'>8. -\marcato \ff
                                 r2
                             }
@@ -1015,6 +1425,23 @@
                         {
                             {
                                 r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (10)
+                                                    ]
+                                                }
+                                        }
                                 r4
                                 af8. -\tenuto \f
                                 r16
@@ -1028,6 +1455,23 @@
                         {
                             {
                                 r2.
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.1.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (11)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -1035,6 +1479,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 \override Rest.direction = #up
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (12)
+                                                    ]
+                                                }
+                                        }
                                 <g b f' fs' a'>8. -\marcato \ff
                                 r2
                             }
@@ -1042,6 +1503,23 @@
                         {
                             {
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (13)
+                                                    ]
+                                                }
+                                        }
                                 r8.
                                 r1
                             }
@@ -1052,6 +1530,23 @@
                                 {
                                     \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.2.3"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (14)
+                                                        ]
+                                                    }
+                                            }
                                     <g b f' fs' a'>8. -\marcato
                                     r2
                                     \revert TupletBracket.direction
@@ -1061,6 +1556,23 @@
                         {
                             {
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (15)
+                                                    ]
+                                                }
+                                        }
                                 r8.
                                 r1
                             }
@@ -1068,6 +1580,23 @@
                         {
                             {
                                 r16
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (16)
+                                                    ]
+                                                }
+                                        }
                                 <g b f' fs' a'>8. -\marcato
                                 r2
                             }
@@ -1075,6 +1604,23 @@
                         {
                             {
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (17)
+                                                    ]
+                                                }
+                                        }
                                 r8.
                                 r1
                             }
@@ -1085,6 +1631,23 @@
                                 {
                                     \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.2.7"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (18)
+                                                        ]
+                                                    }
+                                            }
                                     <g b f' fs' a'>8. -\marcato
                                     r2
                                     \revert TupletBracket.direction
@@ -1094,6 +1657,23 @@
                         {
                             {
                                 <g b f' fs' a'>16 -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.8"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (19)
+                                                    ]
+                                                }
+                                        }
                                 r8.
                                 r1
                             }
@@ -1104,6 +1684,23 @@
                                 {
                                     \override TupletBracket.direction = #up
                                     r16
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.2.9"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (20)
+                                                        ]
+                                                    }
+                                            }
                                     <g b f' fs' a'>8. -\marcato
                                     r2
                                     \revert TupletBracket.direction
@@ -1118,6 +1715,23 @@
                                 \override Stem.direction = #up
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.2.10"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (21)
+                                                    ]
+                                                }
+                                        }
                                 \revert PianoStaff.Stem.color
                                 r8.
                                 \revert Stem.direction
@@ -1128,6 +1742,23 @@
                             \times 7/6 {
                                 {
                                     r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.4.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (29)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c bf>8 [ (
@@ -1143,11 +1774,45 @@
                         {
                             {
                                 r1
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (30)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (31)
+                                                    ]
+                                                }
+                                        }
                                 <c e af>4.
                             }
                         }
@@ -1157,6 +1822,23 @@
                             \times 8/7 {
                                 {
                                     r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.4.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (33)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <bf'>8 [ (
@@ -1177,6 +1859,23 @@
                         {
                             {
                                 r2
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (34)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -1184,6 +1883,23 @@
                             \times 8/7 {
                                 {
                                     r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.4.6"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (35)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <c f bf>8 [ (
@@ -1206,6 +1922,23 @@
                             \times 6/5 {
                                 {
                                     r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.4.7"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (36)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
@@ -1221,6 +1954,23 @@
                         {
                             {
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.8"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (37)
+                                                    ]
+                                                }
+                                        }
                                 <bf>8
                                 r4.
                             }
@@ -1228,6 +1978,23 @@
                         {
                             {
                                 r2
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.9"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (38)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
@@ -1235,6 +2002,23 @@
                             \times 6/5 {
                                 {
                                     r4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 4.4.10"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (39)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     <d' f'>8 [ (
@@ -1250,17 +2034,51 @@
                         {
                             {
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.11"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (40)
+                                                    ]
+                                                }
+                                        }
                                 <c f bf>4.
                             }
                         }
                         {
                             {
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.4.12"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (41)
+                                                    ]
+                                                }
+                                        }
                                 <d' e' af'>8
                                 r4.
                             }
                         }
-                        s1 * 3
+                        s1 * 21/2
                         \bar "|"
                         \revert TupletBracket.staff-padding
                     }
@@ -1368,7 +2186,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 3
+                        s1 * 21/2
                         \bar "|"
                         \revert Script.direction
                         \revert Stem.direction
@@ -1403,6 +2221,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -1438,6 +2263,13 @@
                         s1 * 3/4
                         s1 * 1/2
                         s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1/2
                         s1 * 1
                         s1 * 1
                         s1 * 1
@@ -1450,6 +2282,23 @@
                             \times 4/3 {
                                 {
                                     s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-r 4.2.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (23)
+                                                        ]
+                                                    }
+                                            }
                                     <cs,, cs,>2
                                 }
                             }
@@ -1457,11 +2306,45 @@
                         {
                             {
                                 <cs,, cs,>4 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.2.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (24)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 <cs,, cs,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.2.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (25)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         s1 * 2
@@ -1470,6 +2353,23 @@
                             \times 4/3 {
                                 {
                                     s4
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-r 4.2.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (26)
+                                                        ]
+                                                    }
+                                            }
                                     <ef,, ef,>2
                                 }
                             }
@@ -1477,15 +2377,204 @@
                         {
                             {
                                 <ef,, ef,>4 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (27)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 <ef,, ef,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.2.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (28)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        s1 * 10
+                        {
+                            {
+                                <e, fs, gs, as, b,>4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (46)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>1.. \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (47)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>1. \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (48)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (49)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (50)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>1. \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (51)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>2 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.7"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (52)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 13
+                        s1 * 3
                         \bar "|"
                     }
                 >>
