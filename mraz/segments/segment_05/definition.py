@@ -24,7 +24,6 @@ stage_2_segments = stages[1]
 
 #################################### [5.1] ####################################
 
-# [5.1] (VOICE 3)
 stage_1_segments = stage_1_segments.remove_duplicate_pitch_classes(level=1)
 rh, lh = stage_1_segments.partition([1, 1], overhang=Exact)
 rh = rh.cursor(singletons=True)
@@ -37,7 +36,7 @@ accumulator(
     baca.dynamic('fff'),
     baca.dynamics_up(),
     baca.flags(),
-    baca.markup('(black voice louder but green voice longer note-values)'),
+    baca.markup('(black voice louder; green voice longer)'),
     baca.proportional_notation_duration((1, 8)),
     baca.register(20, 36),
     baca.rests_up(),
@@ -53,6 +52,7 @@ accumulator(
     baca.anchor('RH Voice 2'),
     baca.dynamic('mf'),
     baca.flags(),
+    baca.markup('(first note A5)'),
     baca.ottava(),
     baca.register(10, 26),
     baca.rests_down(),
@@ -65,6 +65,136 @@ accumulator(
     )
 
 #################################### [5.2] ####################################
+
+stage_2_segments = stage_2_segments.remove_duplicate_pitch_classes(level=1)
+rh, lh = stage_2_segments.partition([2, 2], overhang=Exact)
+rh = rh.accumulate([
+    baca.pitch_class_segment().transpose(n=3),
+    baca.pitch_class_segment().alpha(),
+    ])
+rh = rh.cursor(singletons=True)
+lh = lh.accumulate([
+    baca.pitch_class_segment().transpose(n=2),
+    ])
+lh = lh.cursor(singletons=True)
+
+accumulator(
+    'RH Voice 3',
+    rh.next(5),
+    baca.beam_divisions(),
+    baca.dynamic('mp'),
+    baca.nest('-1/4'),
+    baca.proportional_notation_duration((1, 12)),
+    baca.register(24, 0),
+    baca.rests_down(),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.tuplet_brackets_down(),
+    counts=[2],
+    figure_name='rh-3 5.2.1',
+    thread=True,
+    time_treatments=[-2, -2, 0],
+    )
+
+accumulator(
+    'RH Voice 3',
+    [abjad.Rest((1, 4))],
+    baca.script_color('black'),
+    baca.short_fermata(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='rh-3 5.2.2',
+    )
+
+accumulator(
+    'RH Voice 3',
+    rh.next(5),
+    baca.beam_divisions(),
+    baca.nest('-3/8'),
+    baca.register(24, 0),
+    baca.rests_down(),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.tuplet_brackets_down(),
+    counts=[2],
+    figure_name='rh-3 5.2.3',
+    thread=True,
+    time_treatments=[-2, 0, -2],
+    )
+
+accumulator(
+    'RH Voice 3',
+    [abjad.Rest((1, 4))],
+    baca.script_color('black'),
+    baca.short_fermata(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='rh-3 5.2.4',
+    )
+
+accumulator(
+    'RH Voice 3',
+    rh.next(5),
+    baca.beam_divisions(),
+    baca.nest('-1/4'),
+    baca.register(24, 0),
+    baca.rests_down(),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.tuplet_brackets_down(),
+    counts=[2],
+    figure_name='rh-3 5.2.5',
+    thread=True,
+    time_treatments=[0, -2, -2],
+    )
+
+accumulator(
+    'RH Voice 3',
+    [abjad.Rest((1, 4))],
+    baca.script_color('black'),
+    baca.short_fermata(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='rh-3 5.2.6',
+    )
+
+accumulator(
+    'RH Voice 3',
+    rh.next(6),
+    baca.beam_divisions(),
+    baca.nest('-3/8'),
+    baca.register(24, 0),
+    baca.rests_down(),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.tuplet_brackets_down(),
+    counts=[2],
+    figure_name='rh-3 5.2.7',
+    thread=True,
+    time_treatments=[-2, -2, 0],
+    )
+
+accumulator(
+    'RH Voice 3',
+    [abjad.Rest((1, 4))],
+    baca.script_color('black'),
+    baca.short_fermata(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='rh-3 5.2.8',
+    )
+
+accumulator(
+    'RH Voice 3',
+    rh.next(3, exhausted=True),
+    baca.beam_divisions(),
+    baca.nest('-1/4'),
+    baca.register(24, 0),
+    baca.rests_down(),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_staff_padding(3),
+    counts=[2],
+    figure_name='rh-3 5.2.9',
+    thread=True,
+    time_treatments=[-2, 0, -2],
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
