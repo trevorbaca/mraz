@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #54
+        currentBarNumber = #63
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -64,7 +64,13 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 7/16
-                    s1 * 7/16 ^ \markup {
+                    s1 * 7/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -84,46 +90,101 @@
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
                 }
                 {
                     \time 3/2
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'03''
+                            }
                 }
                 {
                     \time 7/8
                     s1 * 7/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'06''
+                            }
                 }
                 {
                     \time 5/16
                     s1 * 5/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'08''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'08''
+                            }
                 }
                 {
                     \time 4/2
                     s1 * 2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'09''
+                            }
                 }
                 {
                     \time 7/16
                     s1 * 7/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'14''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'15''
+                            }
                 }
                 {
                     \time 2/2
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'17''
+                            }
                 }
                 {
                     \time 7/8
                     s1 * 7/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'19''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'21''
+                            }
                 }
             }
         >>

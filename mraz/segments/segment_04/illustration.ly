@@ -175,7 +175,13 @@
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    s1 * 3/2 ^ \markup {
+                    s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -195,158 +201,358 @@
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'04''
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'06''
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'10''
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'12''
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'17''
+                            }
                 }
                 {
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'19''
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'21''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'25''
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'27''
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'31''
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'33''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'37''
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'40''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'43''
+                            }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'46''
+                            }
                 }
                 {
                     \time 7/8
                     s1 * 7/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'47''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'49''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'52''
+                            }
                 }
                 {
                     \time 1/8
                     s1 * 1/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'53''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'54''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'57''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'58''
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'01''
+                            }
                 }
                 {
                     \time 5/8
                     s1 * 5/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'03''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'05''
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'06''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'08''
+                            }
                 }
                 {
                     \time 5/8
                     s1 * 5/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'10''
+                            }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'12''
+                            }
                 }
                 {
                     \time 7/4
                     s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'12''
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'17''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'22''
+                            }
                 }
                 {
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'25''
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'27''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'32''
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'35''
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'36''
+                            }
                 }
                 {
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'39''
+                            }
                 }
                 {
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'42''
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'45''
+                            }
                 }
             }
         >>

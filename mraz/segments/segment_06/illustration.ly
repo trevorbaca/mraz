@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #39
+        currentBarNumber = #48
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -34,7 +34,13 @@
                     \time 9/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 9/8 ^ \markup {
+                    s1 * 9/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -56,18 +62,33 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'03''
+                            }
                 }
                 {
                     \time 7/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
                     s1 * 7/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'04''
+                            }
                 }
                 {
                     \time 5/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
                     s1 * 5/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'07''
+                            }
                 }
             }
         >>

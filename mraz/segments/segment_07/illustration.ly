@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #43
+        currentBarNumber = #52
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -93,38 +93,84 @@
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     s1 * 3/4 \startTextSpan
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'02''
+                            }
                 }
                 {
                     \time 3/8
                     s1 * 3/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'02''
+                            }
                 }
                 {
                     \time 9/16
                     s1 * 9/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'03''
+                            }
                 }
                 {
                     \time 5/16
                     s1 * 5/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'05''
+                            }
                 }
                 {
                     \time 9/16
                     s1 * 9/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'06''
+                            }
                 }
                 {
                     \time 7/16
                     s1 * 7/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'08''
+                            }
                 }
                 {
                     \time 9/16
                     s1 * 9/16
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'09''
+                            }
                 }
                 {
                     \time 3/16
-                    s1 * 3/16 \stopTextSpan ^ \markup {
+                    s1 * 3/16 \stopTextSpan
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'10''
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -144,10 +190,20 @@
                 {
                     \time 5/8
                     s1 * 5/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'11''
+                            }
                 }
                 {
                     \time 1/8
                     s1 * 1/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'12''
+                            }
                 }
             }
         >>
