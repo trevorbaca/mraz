@@ -25,16 +25,16 @@
                     R1 * 1/4
                 }
                 {
-                    \time 23/8
-                    R1 * 23/8
+                    \time 12/4
+                    R1 * 3
                 }
                 {
                     \time 1/4
                     R1 * 1/4
                 }
                 {
-                    \time 21/8
-                    R1 * 21/8
+                    \time 10/4
+                    R1 * 5/2
                 }
                 {
                     \time 1/4
@@ -56,13 +56,13 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 16/4
-                    s1 * 4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        ^ \markup {
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -77,7 +77,75 @@
                                 =
                                 84
                             }
+                        \hspace
+                            #1.25
                         }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 4 \startTextSpan
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
+                }
+                {
+                    \time 10/4
+                    s1 * 5/2 \stopTextSpan
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'11''
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        }
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'16''
+                            }
+                }
+                {
+                    \time 12/4
+                    s1 * 3
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'17''
+                            }
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'23''
+                            }
                 }
                 {
                     \time 10/4
@@ -85,7 +153,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'11''
+                                0'24''
                             }
                 }
                 {
@@ -94,43 +162,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'18''
-                            }
-                }
-                {
-                    \time 23/8
-                    s1 * 23/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'19''
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'27''
-                            }
-                }
-                {
-                    \time 21/8
-                    s1 * 21/8
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'28''
-                            }
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'35''
+                                0'29''
                             }
                 }
                 {
@@ -139,7 +171,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'36''
+                                0'30''
                             }
                 }
                 {
@@ -148,7 +180,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'45''
+                                0'37''
                             }
                 }
                 {
@@ -157,7 +189,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'46''
+                                0'37''
                             }
                 }
             }
@@ -169,9 +201,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -182,9 +214,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -237,9 +269,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -383,7 +415,7 @@
                         }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 23/26 {
+                            \times 12/13 {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     \override Rest.direction = #down
@@ -479,7 +511,7 @@
                         }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
-                            \times 21/23 {
+                            \times 20/23 {
                                 {
                                     \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
@@ -733,9 +765,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -746,9 +778,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -759,9 +791,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -772,9 +804,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -785,9 +817,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -800,9 +832,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -813,9 +845,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -826,9 +858,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -839,9 +871,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -852,9 +884,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -865,9 +897,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -878,9 +910,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -891,9 +923,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -904,9 +936,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
@@ -917,9 +949,9 @@
                         s1 * 4
                         s1 * 5/2
                         s1 * 1/4
-                        s1 * 23/8
+                        s1 * 3
                         s1 * 1/4
-                        s1 * 21/8
+                        s1 * 5/2
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4

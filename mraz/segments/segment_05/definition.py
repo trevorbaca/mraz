@@ -109,7 +109,7 @@ accumulator(
     'RH Voice 3',
     rh.next(5),
     baca.beam_divisions(),
-    baca.nest('-3/8'),
+    baca.nest('-1/4'),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -134,7 +134,7 @@ accumulator(
     'RH Voice 3',
     rh.next(5),
     baca.beam_divisions(),
-    baca.nest('-1/4'),
+    baca.nest('-3/8'),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -202,9 +202,8 @@ accumulator(
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
-    # TODO:
-    #(1, abjad.Accelerando()),
-    #('?', mraz.materials.tempi[112]),
+    (1, abjad.Accelerando()),
+    (2, mraz.materials.tempi[112]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
