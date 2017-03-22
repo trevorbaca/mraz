@@ -29,7 +29,7 @@
                     R1 * 15/16
                 }
                 {
-                    \time 16/16
+                    \time 4/4
                     R1 * 1
                 }
             }
@@ -106,7 +106,7 @@
                     s1 * 15/16
                 }
                 {
-                    \time 16/16
+                    \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1
