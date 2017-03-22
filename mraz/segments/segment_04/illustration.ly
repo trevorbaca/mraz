@@ -168,10 +168,13 @@
                 {
                     R1 * 1
                 }
+                {
+                    \time 6/4
+                    R1 * 3/2
+                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 6/4
                     s1 * 3/2
                         - \markup {
                             \fontsize
@@ -622,6 +625,17 @@
                                     [B.40]
                             }
                 }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.41]
+                            }
+                }
             }
         >>
         \context MusicContext = "Music Context" {
@@ -658,7 +672,7 @@
                                 \ottava #1
                                 \override DynamicText.extra-offset = #'(0 . 1)
                                 \override TextScript.color = #black
-                                d''''8 \mf [ ( - \markup { "(ottava bracket governs both voices)" }
+                                d''''8 \mf [ ( - \markup { "(ottava brackets always govern all voices on staff)" }
                                 \revert DynamicText.extra-offset
                                 \revert TextScript.color
                                 af''''8 ] )
@@ -928,7 +942,7 @@
                                 \ottava #0
                             }
                         }
-                        s1 * 3
+                        s1 * 9/2
                         \bar "|"
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
@@ -975,10 +989,38 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
-                        s1 * 33/2
+                        s1 * 3/2
+                        {
+                            {
+                                \arpeggioArrowUp
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \override Script.direction = #up
+                                <a g' af' b' cs'' f'' ef''' c''''>2. -\marcato \arpeggio \ff
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
+                                                    ]
+                                                }
+                                        }
+                                \revert Script.direction
+                            }
+                        }
+                        s1 * 57/4
                         {
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
@@ -1068,6 +1110,7 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 b'16 [ \< \f (
                                     ^ \markup {
@@ -1147,6 +1190,7 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 cs''''16 ] \ff )
+                                \revert DynamicLineSpanner.staff-padding
                                 \break
                                 \revert Slur.direction
                             }
@@ -1156,6 +1200,7 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
                                 ef''16 [ \< \f (
@@ -1176,7 +1221,7 @@
                                                     ]
                                                 }
                                         }
-                                    - \markup { "(temporary line-break to avoid collision with next chord)" }
+                                    - \markup { "(temporary line-break)" }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
@@ -1234,6 +1279,7 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 bf'''16 ] \ff )
+                                \revert DynamicLineSpanner.staff-padding
                                 \break
                                 \revert Slur.direction
                                 \revert TextScript.direction
@@ -1241,9 +1287,10 @@
                         }
                         {
                             {
+                                \arpeggioArrowUp
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.direction = #up
-                                <a g' af' b' cs'' f'' ef''' c''''>1. -\arpeggio -\marcato
+                                <a g' af' b' cs'' f'' ef''' c''''>1. -\marcato \arpeggio
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -1269,6 +1316,7 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
                                 cs''16 [ \< \f (
@@ -1355,6 +1403,7 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 f''''16 ] \ff )
+                                \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
@@ -1363,6 +1412,7 @@
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
                                 a''16 [ \< \f (
@@ -1383,6 +1433,7 @@
                                                     ]
                                                 }
                                         }
+                                    - \markup { "(temporary line-break)" }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs''16
@@ -1406,13 +1457,17 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 fs''''16 ] \ff )
+                                \revert DynamicLineSpanner.staff-padding
+                                \break
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
                         }
                         {
                             {
-                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 \ff
+                                \arpeggioArrowUp
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 -\marcato \arpeggio \ff
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -1434,7 +1489,8 @@
                         }
                         {
                             {
-                                <a g' af' b' cs'' f'' ef''' c''''>1
+                                \arpeggioArrowUp
+                                <a g' af' b' cs'' f'' ef''' c''''>1 -\marcato \arpeggio
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -1456,7 +1512,8 @@
                         }
                         {
                             {
-                                <e' fs' bf' a'' g''' af''' b''' cs''''>1
+                                \arpeggioArrowUp
+                                <e' fs' bf' a'' g''' af''' b''' cs''''>1 -\marcato \arpeggio
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -1474,9 +1531,10 @@
                                                     ]
                                                 }
                                         }
-                                \bar "|"
                             }
                         }
+                        s1 * 3/2
+                        \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 3/2
@@ -1519,6 +1577,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
@@ -1526,6 +1585,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 12/11 {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TextScript.direction = #up
                                 \override TupletBracket.direction = #up
                                 ef8 -\tenuto \ff
                                     ^ \markup {
@@ -1545,38 +1605,19 @@
                                                     ]
                                                 }
                                         }
+                                    - \markup { "(temporary line-break to avoid collision with next chord)" }
                                 r4
                                 cs'8 -\tenuto
                                 r4
                                 c'4 -\tenuto
                                 bf'8 -\tenuto
                                 r4
+                                \break
+                                \revert TextScript.direction
                                 \revert TupletBracket.direction
                             }
                         }
-                        {
-                            {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r2.
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 4.1.2"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (1)
-                                                    ]
-                                                }
-                                        }
-                            }
-                        }
+                        s1 * 3/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
@@ -1689,7 +1730,40 @@
                             }
                         }
                         s1 * 30
-                        \bar "|"
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TupletBracket.direction = #up
+                                r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 4.6.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (69)
+                                                    ]
+                                                }
+                                        }
+                                ef''8 -\tenuto \ff
+                                r4
+                                cs''4 -\tenuto
+                                r4
+                                c'8 -\tenuto
+                                r4
+                                bf4 -\tenuto
+                                \bar "|"
+                                \revert TupletBracket.direction
+                            }
+                        }
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 3/2
@@ -1732,6 +1806,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
@@ -1775,6 +1850,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
@@ -1802,7 +1878,7 @@
                                 r8.
                             }
                         }
-                        s1 * 81/4
+                        s1 * 87/4
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -1846,6 +1922,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
@@ -1889,6 +1966,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                 >>
@@ -1934,6 +2012,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
@@ -1942,6 +2021,7 @@
                             {
                                 \set Staff.pedalSustainStyle = #'bracket
                                 \override Staff.SustainPedalLineSpanner.staff-padding = #4
+                                \override Rest.transparent = ##t
                                 r1 \sustainOn
                                     ^ \markup {
                                         \fontsize
@@ -1963,10 +2043,12 @@
                                 \set Staff.pedalSustainStyle = #'bracket
                                 r1 \sustainOff \sustainOn
                                 r1 \sustainOff
-                                \bar "|"
                                 \revert Staff.SustainPedalLineSpanner.staff-padding
+                                \revert Rest.transparent
                             }
                         }
+                        s1 * 3/2
+                        \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
                         s1 * 3/2
@@ -2009,6 +2091,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
@@ -2052,6 +2135,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
@@ -2095,6 +2179,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
@@ -2861,8 +2946,38 @@
                             }
                         }
                         s1 * 23/2
-                        \bar "|"
-                        \revert TupletBracket.staff-padding
+                        {
+                            {
+                                r4
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-5 4.6.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (70)
+                                                    ]
+                                                }
+                                        }
+                                af8. -\tenuto \f
+                                r16
+                                d'8. -\tenuto
+                                r16
+                                r4
+                                e'8. -\tenuto
+                                r16
+                                r4
+                                \bar "|"
+                                \revert TupletBracket.staff-padding
+                            }
+                        }
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         \override Script.direction = #up
@@ -2968,7 +3083,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 23/2
+                        s1 * 13
                         \bar "|"
                         \revert Script.direction
                         \revert Stem.direction
@@ -3014,6 +3129,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
@@ -3057,6 +3173,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 1
+                        s1 * 3/2
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
@@ -3382,7 +3499,7 @@
                             }
                         }
                         \override Score.BarLine.transparent = ##f
-                        s1 * 3
+                        s1 * 9/2
                         \bar "|"
                     }
                 >>

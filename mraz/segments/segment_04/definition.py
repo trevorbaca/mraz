@@ -48,8 +48,11 @@ accumulator(
     v3_stage_1_segments.next(),
     baca.dynamic('ff'),
     baca.flags(),
+    baca.line_break(),
+    baca.markup('(temporary line-break to avoid collision with next chord)'),
     baca.proportional_notation_duration((1, 16)),
     baca.register(-12, 12),
+    baca.text_scripts_up(),
     baca.tuplet_brackets_up(),
     counts=[2, -4, 2, -4, 4],
     figure_name='rh-3 4.1.1',
@@ -57,10 +60,16 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 3',
-    [abjad.Rest((3, 4))],
+    'RH Voice 2',
+    stage_6_segments[1],
+    baca.dynamic('ff'),
+    baca.marcati(),
     baca.proportional_notation_duration((1, 4)),
-    figure_name='rh-3 4.1.2',
+    baca.scripts_up(),
+    baca.up_arpeggios(),
+    counts=[12],
+    figure_name='rh-2 4.1.1',
+    #hide_time_signature=True,
     )
 
 accumulator(
@@ -564,7 +573,7 @@ accumulator(
         hocket=True,
         by_pitch_class=True,
         ),
-    baca.markup('(ottava bracket governs both voices)'),
+    baca.markup('(ottava brackets always govern all voices on staff)'),
     baca.register(36, 22),
     baca.rests_around([2], [6]),
     baca.resume_after('RH Voice 5'),
@@ -768,6 +777,7 @@ accumulator(
     'RH Voice 2',
     lh.next(4),
     baca.anchor_to_figure('rh-1 4.5.3'),
+    baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
     baca.line_break(baca.select_leaf(-1)),
     baca.proportional_notation_duration((1, 32)),
@@ -782,9 +792,10 @@ accumulator(
 accumulator(
     'RH Voice 2',
     lh.next(4),
+    baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
     baca.line_break(baca.select_leaf(-1)),
-    baca.markup('(temporary line-break to avoid collision with next chord)'),
+    baca.markup('(temporary line-break)'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.slur(),
@@ -798,7 +809,7 @@ accumulator(
 accumulator(
     'RH Voice 2',
     stage_6_segments[1],
-    baca.arpeggios(),
+    baca.up_arpeggios(),
     baca.marcati(),
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -810,9 +821,8 @@ accumulator(
 accumulator(
     'RH Voice 2',
     lh.next(4),
+    baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
-    #baca.line_break(baca.select_leaf(-1)),
-    #baca.markup('(temporary line-break to avoid collision with next chord)'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.slur(),
@@ -826,9 +836,10 @@ accumulator(
 accumulator(
     'RH Voice 2',
     lh.next(2),
+    baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
-    #baca.line_break(baca.select_leaf(-1)),
-    #baca.markup('(temporary line-break to avoid collision with next chord)'),
+    baca.line_break(baca.select_leaf(-1)),
+    baca.markup('(temporary line-break)'),
     baca.register(10, 36),
     baca.slur(),
     baca.slurs_up(),
@@ -843,7 +854,10 @@ accumulator(
 accumulator(
     'RH Voice 2',
     stage_6_segments.next(),
+    baca.up_arpeggios(),
     baca.dynamic('ff'),
+    baca.marcati(),
+    baca.proportional_notation_duration((1, 4)),
     baca.resume(),
     counts=[16],
     figure_name='rh-2 4.6.1',
@@ -852,7 +866,8 @@ accumulator(
 accumulator(
     'RH Voice 2',
     stage_6_segments.next(),
-    baca.resume(),
+    baca.up_arpeggios(),
+    baca.marcati(),
     counts=[16],
     figure_name='rh-2 4.6.2',
     )
@@ -860,7 +875,8 @@ accumulator(
 accumulator(
     'RH Voice 2',
     stage_6_segments.next(exhausted=True),
-    baca.resume(),
+    baca.up_arpeggios(),
+    baca.marcati(),
     counts=[16],
     figure_name='rh-2 4.6.3',
     )
@@ -871,7 +887,38 @@ accumulator(
     baca.anchor_to_figure('rh-2 4.6.1'),
     baca.sustain_pedal(baca.select_each_lt(leak=Right)),
     baca.sustain_pedal_staff_padding(4),
+    baca.transparent_rests(),
     figure_name='lh-2 4.6.1',
+    hide_time_signature=True,
+    )
+
+### 
+
+accumulator(
+    'RH Voice 3',
+    v3_stage_1_segments[1],
+    baca.dynamic('ff'),
+    baca.flags(),
+    baca.proportional_notation_duration((1, 16)),
+    baca.register(12, -12),
+    baca.resume(),
+    baca.tuplet_brackets_up(),
+    counts=[-4, 2, -4, 4],
+    figure_name='rh-3 4.6.1',
+    time_treatments=[-4],
+    )
+
+accumulator(
+    'LH Voice 5',
+    v5_stage_1_segments[1],
+    baca.anchor_to_figure('rh-3 4.6.1'),
+    baca.dynamic('f'),
+    baca.flags(),
+    baca.register(-6, 6),
+    baca.rests_around([4], [4]),
+    baca.tenuti(),
+    counts=[3, -1, 3, -1, -4, 3, -1],
+    figure_name='lh-5 4.6.1',
     hide_time_signature=True,
     )
 
