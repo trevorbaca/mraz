@@ -28,12 +28,11 @@ stage_2_segments = stage_2_segments.read(counts)
 stage_2_segments = stage_2_segments.remove_duplicates(level=1)
 measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
 assert measures.sum() == stage_2_segments
-measures = baca.Cursor(measures)
+measures = baca.Cursor(measures, singletons=True)
 
 accumulator(
     'RH Voice 2',
-    measures.next(),
-    baca.arpeggiate_up(),
+    measures.next().arpeggiate_up(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -43,8 +42,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next(),
-    baca.arpeggiate_up(),
+    measures.next().arpeggiate_up(),
     baca.bass_to_octave(4),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -53,8 +51,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next(),
-    baca.arpeggiate_up(),
+    measures.next().arpeggiate_up(),
     baca.bass_to_octave(4),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -63,8 +60,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next(),
-    baca.arpeggiate_up(),
+    measures.next().arpeggiate_up(),
     baca.bass_to_octave(5),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -73,8 +69,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next(),
-    baca.arpeggiate_up(),
+    measures.next().arpeggiate_up(),
     baca.bass_to_octave(5),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
