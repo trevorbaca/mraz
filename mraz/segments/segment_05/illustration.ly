@@ -262,8 +262,65 @@
                                 \revert TextScript.direction
                             }
                         }
-                        s1 * 14
+                        {
+                            \override TupletBracket.stencil = ##f
+                            \override TupletNumber.stencil = ##f
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 10/11 {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    \override Beam.positions = #'(4.5 . 4.5)
+                                    \override Stem.direction = #up
+                                    s8 [
+                                    s8
+                                    s8
+                                    s8
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/7 {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                }
+                                {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/7 {
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    s8
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    af'8 -\accent \fff
+                                    \set stemLeftBeamCount = #1
+                                    \set stemRightBeamCount = #1
+                                    fs'8 -\accent
+                                }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    s8
+                                    s8
+                                    s8
+                                    s8 ]
+                                    \revert Beam.positions
+                                }
+                            }
+                            \revert TupletBracket.stencil
+                            \revert TupletNumber.stencil
+                        }
+                        s1 * 23/2
                         \bar "|"
+                        \revert Stem.direction
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 4
@@ -370,9 +427,9 @@
                                     cs''8
                                     ef''8
                                     bf'8
-                                    g'8
-                                    af'8
-                                    fs'8 ] )
+                                    g'8 ] )
+                                    s8
+                                    s8
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
@@ -856,6 +913,7 @@
                     }
                     \context LHVoiceThree = "LH Voice 3" {
                         s1 * 4
+                        \override TupletBracket.staff-padding = #3
                         s1 * 5/2
                         s1 * 1/4
                         s1 * 3
@@ -866,6 +924,7 @@
                         s1 * 1/4
                         s1 * 7/4
                         \bar "|"
+                        \revert TupletBracket.staff-padding
                     }
                     \context LHVoiceFour = "LH Voice 4" {
                         s1 * 4
