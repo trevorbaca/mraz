@@ -28,6 +28,14 @@ stage_4_segments = stages[3]
 stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
+stage_6_segments = stage_6_segments.repeat(n=2)
+stage_6_segments = stage_6_segments.partition([2], cyclic=True, join=True)
+stage_6_segments = stage_6_segments.remove_duplicates(level=1)
+stage_6_segments = stage_6_segments.arpeggiate_up()
+stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
+stage_6_segments = stage_6_segments.chords()
+stage_6_segments = stage_6_segments.cursor(singletons=True)
+
 #################################### [4.1] ####################################
 
 # [4.1] (VOICE 3 as 4)
@@ -624,14 +632,19 @@ accumulator(
 
 stage_5_segments = stage_5_segments.remove_duplicate_pitch_classes(level=1)
 rh, lh = stage_5_segments.partition([1, 1], overhang=Exact)
-rh = rh.read(9 * [1], check=Exact)
+rh = rh.read(6 * [1], check=Exact)
 rh = rh.cursor(singletons=True)
 lh = lh.accumulate([baca.pitch_class_segment().transpose(n=2)])
+lh = lh.join()
+lh = lh.read(5 * [5, 5, 6])
+lh = lh.remove_duplicates(level=1)
+lh = lh.cursor(singletons=True)
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 accumulator(
     'LH Resonance Voice',
     [resonance],
+    baca.proportional_notation_duration((1, 32)),
     baca.resume(),
     counts=[4],
     figure_name='lh-r 4.5.1',
@@ -641,9 +654,9 @@ accumulator(
 accumulator(
     'LH Resonance Voice',
     [resonance],
+    baca.proportional_notation_duration((1, 4)),
     counts=[28],
     figure_name='lh-r 4.5.2',
-    hide_time_signature=False,
     )
 
 accumulator(
@@ -651,7 +664,6 @@ accumulator(
     [resonance],
     counts=[24],
     figure_name='lh-r 4.5.3',
-    hide_time_signature=False,
     )
 
 accumulator(
@@ -659,7 +671,6 @@ accumulator(
     [resonance],
     counts=[16],
     figure_name='lh-r 4.5.4',
-    hide_time_signature=False,
     )
 
 accumulator(
@@ -667,7 +678,6 @@ accumulator(
     [resonance],
     counts=[16],
     figure_name='lh-r 4.5.5',
-    hide_time_signature=False,
     )
 
 accumulator(
@@ -675,68 +685,165 @@ accumulator(
     [resonance],
     counts=[24],
     figure_name='lh-r 4.5.6',
-    hide_time_signature=False,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[16],
+    figure_name='lh-r 4.5.7',
     )
 
 accumulator(
     'LH Resonance Voice',
     [resonance],
     counts=[8],
-    figure_name='lh-r 4.5.7',
-    hide_time_signature=False,
+    figure_name='lh-r 4.5.8',
     )
 
-#accumulator(
-#    'LH Resonance Voice',
-#    [resonance],
-#    counts=[4],
-#    figure_name='lh-r 4.5.8',
-#    hide_time_signature=False,
-#    )
-#
-#accumulator(
-#    'LH Resonance Voice',
-#    [resonance],
-#    counts=[4],
-#    figure_name='lh-r 4.5.9',
-#    hide_time_signature=False,
-#    )
-#
-#accumulator(
-#    'LH Resonance Voice',
-#    [resonance],
-#    counts=[4],
-#    figure_name='lh-r 4.5.10',
-#    hide_time_signature=False,
-#    )
+accumulator(
+    'RH Voice 1',
+    rh.next(),
+    baca.anchor_to_figure('lh-r 4.5.2'),
+    baca.dynamic('f'),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[28],
+    figure_name='rh-1 4.5.1',
+    hide_time_signature=True,
+    )
 
-#accumulator(
-#    'RH Voice 1',
-#    rh.next(),
-#    baca.dynamic('f'),
-#    baca.register(36),
-#    baca.resume(),
-#    baca.tenuti(),
-#    counts=[16],
-#    figure_name='rh-1 4.5.1',
-#    hide_time_signature=False,
-#    )
+accumulator(
+    'RH Voice 1',
+    rh.next(),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[24],
+    figure_name='rh-1 4.5.2',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 1',
+    rh.next(),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[16],
+    figure_name='rh-1 4.5.3',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 1',
+    rh.next(),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[16],
+    figure_name='rh-1 4.5.4',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 1',
+    rh.next(),
+    baca.anchor_to_figure('lh-r 4.5.7'),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[16],
+    figure_name='rh-1 4.5.5',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 1',
+    rh.next(exhausted=True),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[8],
+    figure_name='rh-1 4.5.6',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 2',
+    lh.next(4),
+    baca.anchor_to_figure('rh-1 4.5.3'),
+    baca.hairpins(['f < ff']),
+    baca.line_break(baca.select_leaf(-1)),
+    baca.proportional_notation_duration((1, 32)),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    figure_name='rh-2 4.5.1',
+    hide_time_signature=True,
+    time_treatments=[abjad.Duration(1, 4)],
+    )
+
+accumulator(
+    'RH Voice 2',
+    lh.next(4),
+    baca.hairpins(['f < ff']),
+    baca.line_break(baca.select_leaf(-1)),
+    baca.markup('(temporary line-break to avoid collision with next chord)'),
+    baca.proportional_notation_duration((1, 32)),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    baca.text_scripts_up(),
+    figure_name='rh-2 4.5.2',
+    hide_time_signature=True,
+    time_treatments=[abjad.Duration(1, 4)],
+    )
+
+accumulator(
+    'RH Voice 2',
+    stage_6_segments[1],
+    baca.arpeggios(),
+    baca.marcati(),
+    baca.proportional_notation_duration((1, 4)),
+    baca.scripts_up(),
+    counts=[24],
+    figure_name='rh-2 4.5.3',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 2',
+    lh.next(4),
+    baca.hairpins(['f < ff']),
+    #baca.line_break(baca.select_leaf(-1)),
+    #baca.markup('(temporary line-break to avoid collision with next chord)'),
+    baca.proportional_notation_duration((1, 32)),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    baca.text_scripts_up(),
+    figure_name='rh-2 4.5.4',
+    hide_time_signature=True,
+    time_treatments=[abjad.Duration(1, 4)],
+    )
+
+accumulator(
+    'RH Voice 2',
+    lh.next(2),
+    baca.hairpins(['f < ff']),
+    #baca.line_break(baca.select_leaf(-1)),
+    #baca.markup('(temporary line-break to avoid collision with next chord)'),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    baca.text_scripts_up(),
+    figure_name='rh-2 4.5.5',
+    hide_time_signature=True,
+    time_treatments=[abjad.Duration(1, 4)],
+    )
 
 #################################### [4.6] ####################################
-
-stage_6_segments = stage_6_segments.repeat(n=2)
-stage_6_segments = stage_6_segments.partition([2], cyclic=True, join=True)
-stage_6_segments = stage_6_segments.remove_duplicates(level=1)
-stage_6_segments = stage_6_segments.arpeggiate_up()
-stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
-stage_6_segments = stage_6_segments.chords()
-stage_6_segments = stage_6_segments.cursor(singletons=True)
 
 accumulator(
     'RH Voice 2',
     stage_6_segments.next(),
     baca.dynamic('ff'),
-    baca.ottava(),
     baca.resume(),
     counts=[16],
     figure_name='rh-2 4.6.1',
@@ -797,7 +904,7 @@ segment_maker = baca.tools.SegmentMaker(
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
-    #label_stages=True,
+    label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
@@ -820,10 +927,21 @@ accumulator.populate_segment_maker(segment_maker)
 segment_maker.append_commands(
     'RH Voice 1',
     baca.select_stages(1, Infinity),
-    baca.ottava(),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
+    )
+
+segment_maker.append_commands(
+    'RH Voice 1',
+    baca.select_stages(1, 34),
+    baca.ottava(),
+    )
+
+segment_maker.append_commands(
+    'RH Voice 1',
+    baca.select_stages(36, Infinity),
+    baca.ottava(),
     )
 
 # TODO: reveal

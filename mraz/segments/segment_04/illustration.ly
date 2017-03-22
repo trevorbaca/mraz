@@ -151,6 +151,10 @@
                     R1 * 3/2
                 }
                 {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
                     \time 2/4
                     R1 * 1/2
                 }
@@ -168,7 +172,15 @@
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 6/4
-                    s1 * 3/2 ^ \markup {
+                    s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.1]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -188,150 +200,427 @@
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.2]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.3]
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.4]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.5]
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.6]
+                            }
                 }
                 {
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.7]
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.8]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.9]
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.10]
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.11]
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.12]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.13]
+                            }
                 }
                 {
                     \time 5/4
                     s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.14]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.15]
+                            }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.16]
+                            }
                 }
                 {
                     \time 7/8
                     s1 * 7/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.17]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.18]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.19]
+                            }
                 }
                 {
                     \time 1/8
                     s1 * 1/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.20]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.21]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.22]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.23]
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.24]
+                            }
                 }
                 {
                     \time 5/8
                     s1 * 5/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.25]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.26]
+                            }
                 }
                 {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.27]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.28]
+                            }
                 }
                 {
                     \time 5/8
                     s1 * 5/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.29]
+                            }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.30]
+                            }
                 }
                 {
                     \time 7/4
                     s1 * 7/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.31]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.32]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.33]
+                            }
                 }
                 {
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.34]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.35]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.36]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.37]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.38]
+                            }
                 }
                 {
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.39]
+                            }
                 }
                 {
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B.40]
+                            }
                 }
             }
         >>
@@ -500,10 +789,146 @@
                                 s8
                                 fs'''8 [ (
                                 cs'''8 ] )
+                            }
+                        }
+                        s1 * 7/8
+                        {
+                            {
+                                ef''''1.. -\tenuto \f
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (54)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                f''''1. -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (55)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                bf''''1 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (56)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                ef''''1 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (57)
+                                                    ]
+                                                }
+                                        }
                                 \ottava #0
                             }
                         }
-                        s1 * 89/8
+                        s1 * 3/2
+                        {
+                            {
+                                \ottava #1
+                                f''''1 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (58)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                bf''''2 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-1 4.5.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (59)
+                                                    ]
+                                                }
+                                        }
+                                \ottava #0
+                            }
+                        }
+                        s1 * 3
                         \bar "|"
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
@@ -545,6 +970,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -636,7 +1062,354 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 65/8
+                        s1 * 33/8
+                        {
+                            \times 4/5 {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                \override Slur.direction = #up
+                                b'16 [ \< \f (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.5.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (60)
+                                                    ]
+                                                }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                cs'''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                bf''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                cs''''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                f''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                cs''''16 ] \ff )
+                                \break
+                                \revert Slur.direction
+                            }
+                        }
+                        {
+                            {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                \override Slur.direction = #up
+                                \override TextScript.direction = #up
+                                ef''16 [ \< \f (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.5.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (61)
+                                                    ]
+                                                }
+                                        }
+                                    - \markup { "(temporary line-break to avoid collision with next chord)" }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                d''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                ef''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                e'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                f'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                af'''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                fs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                g'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                bf'''16 ] \ff )
+                                \break
+                                \revert Slur.direction
+                                \revert TextScript.direction
+                            }
+                        }
+                        {
+                            {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \override Script.direction = #up
+                                <a g' af' b' cs'' f'' ef''' c''''>1. -\arpeggio -\marcato
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.5.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (62)
+                                                    ]
+                                                }
+                                        }
+                                \revert Script.direction
+                            }
+                        }
+                        {
+                            \times 2/3 {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                \override Slur.direction = #up
+                                \override TextScript.direction = #up
+                                cs''16 [ \< \f (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.5.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (63)
+                                                    ]
+                                                }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                c'''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                f'''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                d'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                f'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                ef''''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                g'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                d''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                ef''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                f''''16 ] \ff )
+                                \revert Slur.direction
+                                \revert TextScript.direction
+                            }
+                        }
+                        {
+                            {
+                                \set stemLeftBeamCount = #0
+                                \set stemRightBeamCount = #2
+                                \override Slur.direction = #up
+                                \override TextScript.direction = #up
+                                a''16 [ \< \f (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 4.5.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (64)
+                                                    ]
+                                                }
+                                        }
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                fs''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                e''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                f'''16
+                            }
+                            {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                g'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #0
+                                fs''''16 ] \ff )
+                                \revert Slur.direction
+                                \revert TextScript.direction
+                            }
+                        }
                         {
                             {
                                 <f'' ef''' c'''' e'''' fs'''' bf''''>1 \ff
@@ -653,7 +1426,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (53)
+                                                            (65)
                                                     ]
                                                 }
                                         }
@@ -675,7 +1448,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (54)
+                                                            (66)
                                                     ]
                                                 }
                                         }
@@ -697,7 +1470,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (55)
+                                                            (67)
                                                     ]
                                                 }
                                         }
@@ -741,6 +1514,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -914,7 +1688,7 @@
                                         }
                             }
                         }
-                        s1 * 29
+                        s1 * 30
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
@@ -953,6 +1727,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -995,6 +1770,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1026,7 +1802,7 @@
                                 r8.
                             }
                         }
-                        s1 * 77/4
+                        s1 * 81/4
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -1065,6 +1841,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1107,6 +1884,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1151,6 +1929,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1158,7 +1937,7 @@
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
-                        s1 * 131/4
+                        s1 * 135/4
                         {
                             {
                                 \set Staff.pedalSustainStyle = #'bracket
@@ -1177,7 +1956,7 @@
                                                         #0.25
                                                         \fontsize
                                                             #-2
-                                                            (56)
+                                                            (68)
                                                     ]
                                                 }
                                         }
@@ -1225,6 +2004,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1267,6 +2047,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -1309,6 +2090,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -2078,7 +2860,7 @@
                                 r4.
                             }
                         }
-                        s1 * 21/2
+                        s1 * 23/2
                         \bar "|"
                         \revert TupletBracket.staff-padding
                     }
@@ -2186,7 +2968,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 21/2
+                        s1 * 23/2
                         \bar "|"
                         \revert Script.direction
                         \revert Stem.direction
@@ -2227,6 +3009,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -2269,6 +3052,7 @@
                         s1 * 1
                         s1 * 1
                         s1 * 3/2
+                        s1 * 1
                         s1 * 1/2
                         s1 * 1
                         s1 * 1
@@ -2421,6 +3205,7 @@
                         s1 * 10
                         {
                             {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 <e, fs, gs, as, b,>4
                                     ^ \markup {
                                         \fontsize
@@ -2443,6 +3228,7 @@
                         }
                         {
                             {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <e, fs, gs, as, b,>1.. \repeatTie
                                     ^ \markup {
                                         \fontsize
@@ -2553,7 +3339,7 @@
                         }
                         {
                             {
-                                <e, fs, gs, as, b,>2 \repeatTie
+                                <e, fs, gs, as, b,>1 \repeatTie
                                     ^ \markup {
                                         \fontsize
                                             #2
@@ -2568,6 +3354,28 @@
                                                         \fontsize
                                                             #-2
                                                             (52)
+                                                    ]
+                                                }
+                                        }
+                            }
+                        }
+                        {
+                            {
+                                <e, fs, gs, as, b,>2 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-r 4.5.8"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (53)
                                                     ]
                                                 }
                                         }
