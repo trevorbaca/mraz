@@ -131,9 +131,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments[0].chord()],
+    [stage_2_segments[0].chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.dynamic('ff'),
     baca.flags(),
     baca.marcati(),
@@ -172,9 +171,8 @@ stage_2_segments = stage_2_segments.cursor(singletons=True)
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.dynamic('ff'),
     baca.flags(),
     baca.proportional_notation_duration((1, 10)),
@@ -187,9 +185,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
@@ -199,9 +196,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.nest('+1/4'),
     baca.remove_duplicate_pitch_classes(),
@@ -213,9 +209,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
@@ -227,9 +222,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.remove_duplicate_pitch_classes(),
     baca.rests_around([1], [8]),
@@ -239,9 +233,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
@@ -251,9 +244,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.nest('+1/4'),
     baca.remove_duplicate_pitch_classes(),
@@ -265,9 +257,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
@@ -279,9 +270,8 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord()],
+    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
     baca.bass_to_octave(3),
-    baca.chord_spacing_up(bass=7, soprano=9),
     baca.flags(),
     baca.nest('+1/4'),
     baca.remove_duplicate_pitch_classes(),
