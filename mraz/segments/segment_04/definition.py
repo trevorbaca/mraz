@@ -449,6 +449,19 @@ accumulator(
     )
 
 accumulator(
+    'RH Voice 1',
+    [abjad.Rest((1, 8))],
+    baca.fermata(),
+    baca.script_color('black'),
+    baca.script_extra_offset((0.5, 0)),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    counts=[4],
+    denominator=4,
+    figure_name='rh-1 4.4.3',
+    )
+
+accumulator(
     'LH Voice 5',
     lh.next(3),
     baca.imbricate(
@@ -617,6 +630,7 @@ accumulator(
 accumulator(
     'RH Voice 1',
     rh.next(),
+    baca.anchor_to_figure('lh-5 4.4.4'),
     baca.beam_plt_runs(hide_nibs=True),
     baca.imbricate(
         'RH Voice 2',
@@ -630,7 +644,7 @@ accumulator(
     baca.register(12),
     baca.slur_each_plt_run(),
     baca.tuplet_bracket_staff_padding(4),
-    figure_name='rh-1 4.4.3',
+    figure_name='rh-1 4.4.4',
     counts=[2],
     hide_time_signature=True,
     time_treatments=[8],
@@ -642,7 +656,6 @@ accumulator(
     rh.next(exhausted=True),
     baca.anchor('LH Voice 5', baca.select_rest(-8)),
     baca.beam_plt_runs(hide_nibs=True),
-    #baca.beam_positions(6),
     baca.imbricate(
         'RH Voice 2',
         [9, 10, 10, 1, 0],
@@ -654,25 +667,13 @@ accumulator(
         ),
     baca.register(12),
     baca.slur_each_plt_run(),
-    #baca.tuplet_bracket_staff_padding(4),
     counts=[2],
-    figure_name='rh-1 4.4.4',
+    figure_name='rh-1 4.4.5',
     hide_time_signature=True,
     time_treatments=[10],
     )
 
 
-accumulator(
-    'RH Voice 1',
-    [abjad.Rest((1, 4))],
-    baca.fermata(),
-    baca.resume(),
-#    baca.transparent_rests(),
-#    baca.transparent_time_signatures(),
-    counts=[4],
-    denominator=4,
-    figure_name='rh-1 4.4.5',
-    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
