@@ -728,7 +728,9 @@ accumulator(
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
-    (1, mraz.materials.tempi[84]),
+    (30, mraz.materials.tempi[112]),
+    (30, abjad.Ritardando()),
+    (32, mraz.materials.tempi[84]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
@@ -740,7 +742,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
@@ -748,7 +750,7 @@ segment_maker = baca.tools.SegmentMaker(
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
-    label_stages=True,
+    #label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
@@ -782,8 +784,6 @@ segment_maker.append_commands(
     baca.select_stages(30, 32),
     baca.marcati(),
     baca.scripts_up(),
-#    baca.sustain_pedal(baca.select_each_plt(leak=Right)),
-#    baca.sustain_pedal_staff_padding(20),
     baca.up_arpeggios(),
     )
 
@@ -791,6 +791,12 @@ segment_maker.append_commands(
     'RH Voice 3',
     baca.select_stages(1, Infinity),
     baca.tenuti(),
+    )
+
+segment_maker.append_commands(
+    'LH Voice 2',
+    baca.select_stages(30, 32),
+    baca.transparent_rests(),
     )
 
 segment_maker.append_commands(
