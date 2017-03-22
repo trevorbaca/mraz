@@ -87,8 +87,8 @@ accumulator(
         'RH Voice 2', 
         [8, 6],
         baca.beam_everything(),
-        baca.beam_positions(4.5),
         baca.dynamic('fff'),
+        extend_beam=True,
         hocket=True,
         ),
     baca.nest('-1/4'),
@@ -117,6 +117,12 @@ accumulator(
     'RH Voice 3',
     rh.next(5),
     baca.beam_divisions(),
+    baca.imbricate(
+        'RH Voice 2', 
+        [12, 13, 16, 3],
+        baca.beam_everything(),
+        hocket=True,
+        ),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.rests_down(),
@@ -255,6 +261,7 @@ segment_maker.append_commands(
     'RH Voice 2',
     baca.select_stages(2, Infinity),
     baca.accents(),
+    baca.beam_positions(8.5),
     baca.stems_up(),
     )
 
