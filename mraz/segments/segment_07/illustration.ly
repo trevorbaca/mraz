@@ -8,20 +8,20 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #40
+        currentBarNumber = #43
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 12/16
+                    \time 3/4
                     R1 * 3/4
                 }
                 {
-                    \time 4/16
+                    \time 1/4
                     R1 * 1/4
                 }
                 {
-                    \time 6/16
+                    \time 3/8
                     R1 * 3/8
                 }
                 {
@@ -49,17 +49,17 @@
                     R1 * 3/16
                 }
                 {
-                    \time 10/16
+                    \time 5/8
                     R1 * 5/8
                 }
                 {
-                    \time 2/16
+                    \time 1/8
                     R1 * 1/8
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 12/16
+                    \time 3/4
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = 0
                     \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -95,11 +95,11 @@
                     s1 * 3/4 \startTextSpan
                 }
                 {
-                    \time 4/16
+                    \time 1/4
                     s1 * 1/4
                 }
                 {
-                    \time 6/16
+                    \time 3/8
                     s1 * 3/8
                 }
                 {
@@ -142,11 +142,11 @@
                         }
                 }
                 {
-                    \time 10/16
+                    \time 5/8
                     s1 * 5/8
                 }
                 {
-                    \time 2/16
+                    \time 1/8
                     s1 * 1/8
                 }
             }

@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #51
+        currentBarNumber = #54
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -25,7 +25,7 @@
                     R1 * 3/2
                 }
                 {
-                    \time 14/16
+                    \time 7/8
                     R1 * 7/8
                 }
                 {
@@ -53,7 +53,7 @@
                     R1 * 1
                 }
                 {
-                    \time 14/16
+                    \time 7/8
                     R1 * 7/8
                 }
                 {
@@ -90,7 +90,7 @@
                     s1 * 3/2
                 }
                 {
-                    \time 14/16
+                    \time 7/8
                     s1 * 7/8
                 }
                 {
@@ -118,7 +118,7 @@
                     s1 * 1
                 }
                 {
-                    \time 14/16
+                    \time 7/8
                     s1 * 7/8
                 }
                 {

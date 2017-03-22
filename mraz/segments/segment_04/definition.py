@@ -44,7 +44,6 @@ accumulator(
     baca.register(-12, 12),
     baca.tuplet_brackets_up(),
     counts=[2, -4, 2, -4, 4],
-    denominator=4,
     figure_name='rh-3 4.1.1',
     time_treatments=[2],
     )
@@ -53,7 +52,6 @@ accumulator(
     'RH Voice 3',
     [abjad.Rest((3, 4))],
     baca.proportional_notation_duration((1, 4)),
-    denominator=4,
     figure_name='rh-3 4.1.2',
     )
 
@@ -65,7 +63,6 @@ accumulator(
     baca.register(12, -12),
     baca.tuplet_brackets_up(),
     counts=[-4, 2, -4, 4],
-    denominator=4,
     figure_name='rh-3 4.1.3',
     time_treatments=[-4],
     )
@@ -74,7 +71,6 @@ accumulator(
     'RH Voice 3',
     [abjad.Rest((3, 4))],
     baca.proportional_notation_duration((1, 10)),
-    denominator=4,
     figure_name='rh-3 4.1.4',
     )
 
@@ -86,7 +82,6 @@ accumulator(
     baca.register(-6),
     baca.tuplet_brackets_up(),
     counts=[2, -4, 2, -4, 4],
-    denominator=4,
     figure_name='rh-3 4.1.5',
     time_treatments=[2],
     )
@@ -96,7 +91,6 @@ accumulator(
     'RH Voice 3',
     [abjad.Rest((3, 4))],
     baca.proportional_notation_duration((1, 4)),
-    denominator=4,
     figure_name='rh-3 4.1.6',
     )
 
@@ -187,7 +181,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_around([1], [8]),
     counts=[3],
-    denominator=4,
     figure_name='lh-5 4.2.1',
     hide_time_signature=False,
     )
@@ -201,7 +194,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
     counts=[1],
-    denominator=4,
     figure_name='lh-5 4.2.2',
     )
 
@@ -216,7 +208,6 @@ accumulator(
     baca.rests_around([1], [8]),
     baca.tuplet_brackets_up(),
     counts=[3],
-    denominator=4,
     figure_name='lh-5 4.2.3',
     )
 
@@ -229,7 +220,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
     counts=[1],
-    denominator=4,
     figure_name='lh-5 4.2.4',
     )
 
@@ -244,7 +234,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_around([1], [8]),
     counts=[3],
-    denominator=4,
     figure_name='lh-5 4.2.5',
     )
 
@@ -257,7 +246,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
     counts=[1],
-    denominator=4,
     figure_name='lh-5 4.2.6',
     )
 
@@ -272,7 +260,6 @@ accumulator(
     baca.rests_around([1], [8]),
     baca.tuplet_brackets_up(),
     counts=[3],
-    denominator=4,
     figure_name='lh-5 4.2.7',
     )
 
@@ -285,7 +272,6 @@ accumulator(
     baca.remove_duplicate_pitch_classes(),
     baca.rests_after([3, 16]),
     counts=[1],
-    denominator=4,
     figure_name='lh-5 4.2.8',
     )
 
@@ -302,7 +288,6 @@ accumulator(
     baca.rests_around([1], [8]),
     baca.tuplet_brackets_up(),
     counts=[3],
-    denominator=4,
     figure_name='lh-5 4.2.9',
     )
 
@@ -321,7 +306,6 @@ accumulator(
     baca.stem_color('darkmagenta', context_name='PianoStaff'),
     baca.stems_up(),
     counts=[1],
-    denominator=4,
     figure_name='lh-5 4.2.10',
     )
 
@@ -332,7 +316,6 @@ accumulator(
     baca.flags(),
     baca.rests_after([3]),
     counts=[1],
-    denominator=4,
     figure_name='rh-5 4.2.1',
     )
 
@@ -424,7 +407,6 @@ accumulator(
     baca.resume_after('LH Voice 5'),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.1',
     hide_time_signature=False,
     )
@@ -432,7 +414,6 @@ accumulator(
 accumulator(
     'LH Voice 5',
     [abjad.Rest((4, 4))],
-    denominator=4,
     figure_name='lh-5 4.4.2',
     )
 
@@ -444,7 +425,6 @@ accumulator(
     baca.rests_before([2]),
     baca.slur_each_plt_run(),
     counts=[6],
-    denominator=4,
     figure_name='lh-5 4.4.3',
     )
 
@@ -457,7 +437,6 @@ accumulator(
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     counts=[4],
-    denominator=4,
     figure_name='rh-1 4.4.3',
     )
 
@@ -475,14 +454,12 @@ accumulator(
     baca.rests_around([4], [4]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.4',
     )
 
 accumulator(
     'LH Voice 5',
     [abjad.Rest((2, 4))],
-    denominator=4,
     figure_name='lh-5 4.4.5',
     )
 
@@ -499,7 +476,6 @@ accumulator(
     baca.rests_around([4], [4]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.6',
     )
 
@@ -517,7 +493,6 @@ accumulator(
     baca.rests_around([4], [2]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.7',
     )
 
@@ -529,14 +504,12 @@ accumulator(
     baca.rests_around([2], [6]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.8',
     )
 
 accumulator(
     'LH Voice 5',
     [abjad.Rest((2, 4))],
-    denominator=4,
     figure_name='lh-5 4.4.9',
     )
 
@@ -554,7 +527,6 @@ accumulator(
     baca.rests_around([4], [2]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.10',
     )
 
@@ -566,7 +538,6 @@ accumulator(
     baca.rests_before([2]),
     baca.slur_each_plt_run(),
     counts=[6],
-    denominator=4,
     figure_name='lh-5 4.4.11',
     )
 
@@ -583,7 +554,6 @@ accumulator(
     baca.rests_around([2], [6]),
     baca.slur_each_plt_run(),
     counts=[2],
-    denominator=4,
     figure_name='lh-5 4.4.12',
     )
 
