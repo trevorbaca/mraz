@@ -21,6 +21,7 @@ List of preparations:
 
 Order: [8], [4], [6], [5], [2], [7]
 
+    Berkeley [1]
     * (P4.4) LOUD first black up-swell in [4] as intro to piece
     * (P7.1) LOUD Last ff blue (7:8) gesture of [7]
     * (P8.1) QUIET First four ppp purple notes of 7/8 (Bb1 D2 C2 B1) of [8]
@@ -29,15 +30,19 @@ Order: [8], [4], [6], [5], [2], [7]
     * (P6.2) QUIET Next two pp green Bb6 C#6 at beginning of [6]
     * (P5.1) LOUD First fff / mf black / green measure (16/4) of [5]
     * entirety of [8] as first complete chunk, attacca ...
-    * (P7.1) LOUD Last ff blue (7:8) gesture of [7]
-    * (P2.1) QUIET First five-note figure of [2]
-    * short fermata
-    * (P7.1) LOUD Last ff blue (7:8) gesture of [7]
-    * (P2.2) QUIET First two five-note figures of [2]
-    * (P4.1) Quiet (mp / p) version of first green / purple measure of [4]
-    * (P2.3) QUIET First four five-note figures of [2]
+
+    Berkeley [2]
+    * (P7.1) LOUD Last ff blue (7:8) gesture of [7] with resonance
+    * (P2.1) QUIET First five-note figure of [2] with resonance
+    * short fermata with resonance
+    * (P7.1) LOUD Last ff blue (7:8) gesture of [7] with resonance
+    * (P2.2) QUIET First two five-note figures of [2] with resonance
+    * (P4.1) Quiet (mp / p) version of first green / purple measure of [4] no r
+    * (P2.3) QUIET First four five-note figures of [2] with res
     * (P4.2) First red mf imbricated voice (4:5) of [4]
     * (P4.3) High red forte Eb7 F7 whole-notes of [4] attacca to ...
+
+    Berkeley [3]
     * (P4.4) first black up-swell in [4] as intro to [4]
     * entirety of [4] as second complete chunk
     * internal to [4] ...
@@ -45,9 +50,13 @@ Order: [8], [4], [6], [5], [2], [7]
         * (P5.3) First four mp green third eighth-note figure (A6 D6 E6 G6) [5]
         * (P6.1) First two pp green F#6 A6 at beginning of [6]
         * (P6.2) Next two pp green Bb6 C#6 at beginning of [6]
-        * (P6.3) Lst seven-note mp blue gesture from end of [6]
+        * (P6.3) Last seven-note mp blue gesture from end of [6]
+
+    Berkeley [4]
     * first measure (16/4) of [5] as intro attacca to ...
     * entirety of [6], attacca to ...
+
+    Berkeley [5]
     * entiretey of [5], attacca to ...
     * internal to [5] ...
         * (P8.1) QUIET First four ppp purple notes of 7/8 (Bb1 D2 C2 B1) of [8]
@@ -56,7 +65,9 @@ Order: [8], [4], [6], [5], [2], [7]
         * (P6.2) QUIET Next two pp green Bb6 C#6 at beginning of [6]
         * entirety of [2] fits into gap before last chunk of [5], then
     * last chunk of [5] attacca into
-    * recap (P4.4) of first measure (16/4) of [5] as intro, attacca into
+
+    Berkeley [6]
+    * recap (P4.4) of SHORTENED first measure (16/4) of [5] as intro into
     * entirety of [7];
     * double bar.
 
