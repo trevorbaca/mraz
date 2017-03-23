@@ -210,6 +210,23 @@ accumulator(
     time_treatments=[-2, 0, -2],
     )
 
+accumulator(
+    'LH Voice 4',
+    lh.next(1),
+    baca.anchor_to_figure('rh-3 5.2.3'),
+    baca.beam_divisions(),
+    #baca.nest('-1/4'),
+    baca.register(0, -12),
+    #baca.rests_down(),
+    #baca.slur_trimmed_run_in_each_tuplet(),
+    #baca.tuplet_brackets_down(),
+    #baca.tuplet_bracket_staff_padding(3),
+    counts=[2],
+    figure_name='lh-4 5.2.1',
+    #thread=True,
+    #time_treatments=[-2, 0, -2],
+    )
+
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
