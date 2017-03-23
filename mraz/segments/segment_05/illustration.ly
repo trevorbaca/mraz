@@ -52,6 +52,10 @@
                     \time 7/4
                     R1 * 7/4
                 }
+                {
+                    \time 3/8
+                    R1 * 3/8
+                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
@@ -192,6 +196,15 @@
                                 0'37''
                             }
                 }
+                {
+                    \time 3/8
+                    s1 * 3/8
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'41''
+                            }
+                }
             }
         >>
         \context MusicContext = "Music Context" {
@@ -208,6 +221,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -221,6 +235,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
@@ -377,7 +392,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 33/4
+                        s1 * 69/8
                         \bar "|"
                         \revert Beam.positions
                         \revert Stem.direction
@@ -393,6 +408,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
@@ -870,13 +886,14 @@
                                     f'8
                                     e'8
                                     d'8 ] )
-                                    \bar "|"
                                     \revert Rest.direction
                                     \revert TupletBracket.direction
                                     \revert TupletBracket.staff-padding
                                 }
                             }
                         }
+                        s1 * 3/8
+                        \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 4
@@ -889,6 +906,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
@@ -902,6 +920,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
@@ -915,6 +934,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -928,6 +948,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
@@ -941,6 +962,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                 >>
@@ -956,6 +978,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
@@ -969,6 +992,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
@@ -983,20 +1007,37 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                         \revert TupletBracket.staff-padding
                     }
                     \context LHVoiceFour = "LH Voice 4" {
-                        s1 * 4
-                        s1 * 5/2
-                        s1 * 1/4
-                        s1 * 3
-                        s1 * 1/4
-                        s1 * 5/2
-                        s1 * 1/4
-                        s1 * 13/4
-                        s1 * 1/4
-                        s1 * 7/4
+                        s1 * 27/4
+                        {
+                            {
+                                b'8 [
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 5.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (11)
+                                                    ]
+                                                }
+                                        }
+                                ef'8
+                                cs'8 ]
+                            }
+                        }
+                        s1 * 45/4
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
@@ -1010,6 +1051,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
@@ -1023,6 +1065,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
@@ -1036,6 +1079,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
@@ -1049,6 +1093,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
@@ -1062,6 +1107,7 @@
                         s1 * 13/4
                         s1 * 1/4
                         s1 * 7/4
+                        s1 * 3/8
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
@@ -1074,8 +1120,9 @@
                         s1 * 1/4
                         s1 * 13/4
                         s1 * 1/4
-                        \override Score.BarLine.transparent = ##f
                         s1 * 7/4
+                        \override Score.BarLine.transparent = ##f
+                        s1 * 3/8
                         \bar "|"
                     }
                 >>
