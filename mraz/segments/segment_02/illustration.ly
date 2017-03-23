@@ -71,34 +71,18 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 29/16 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
                 }
                 {
                     \time 27/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 27/16
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'05''
-                            }
                 }
                 {
                     \time 21/16
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 21/16 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
-                        ^ \markup {
+                    s1 * 21/16 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -120,22 +104,12 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 15/16
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'12''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'14''
-                            }
                 }
             }
         >>
