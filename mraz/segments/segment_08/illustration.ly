@@ -360,7 +360,10 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \ottava #-1
                                 \clef "bass"
+                                \override TupletBracket.direction = #up
                                 g,8. \ppp
                                 r32
                                 fs,,8.
@@ -504,8 +507,10 @@
                                 bf,,8
                                 r32
                                 af,,8
+                                \ottava #0
                                 r32
                                 \bar "|."
+                                \revert TupletBracket.direction
                             }
                         }
                     }
@@ -527,13 +532,13 @@
                     \context LHVoiceSix = "LH Voice 6" {
                         \override Script.direction = #down
                         \override Stem.direction = #down
-                        \override TupletBracket.staff-padding = #9
+                        \override TupletBracket.staff-padding = #6
                         s1 * 11/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 af,,4 -\tenuto \f
-                                \override Rest.staff-position = #-16
+                                \override Rest.staff-position = #-10
                                 r4
                                 c,,4 -\tenuto
                                 r4

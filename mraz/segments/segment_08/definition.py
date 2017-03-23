@@ -54,6 +54,7 @@ accumulator(
     v5_stage_3_segments.next(),
     baca.dynamic('ppp'),
     baca.flags(),
+    baca.proportional_notation_duration((1, 16)),
     baca.register(-27, -39),
     counts=[6, -1],
     figure_name='lh-5 8.3.1',
@@ -331,6 +332,8 @@ segment_maker.append_commands(
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
     baca.clef('bass'),
+    baca.ottava_bassa(),
+    baca.tuplet_brackets_up(),
     )
 
 segment_maker.append_commands(
@@ -340,6 +343,6 @@ segment_maker.append_commands(
     baca.scripts_down(),
     baca.stems_down(),
     baca.tenuti(),
-    baca.tuplet_bracket_staff_padding(9),
-    baca.rest_position(-16),
+    baca.tuplet_bracket_staff_padding(6),
+    baca.rest_position(-10),
     )
