@@ -37,7 +37,7 @@ accumulator(
     baca.dynamics_up(),
     baca.flags(),
     baca.markup('(black voice louder; green voice longer)'),
-    baca.proportional_notation_duration((1, 8)),
+    baca.proportional_notation_duration((1, 6)),
     baca.register(20, 36),
     baca.rests_up(),
     baca.scripts_up(),
@@ -73,9 +73,8 @@ rh = rh.accumulate([
     baca.pitch_class_segment().alpha(),
     ])
 rh = rh.cursor(singletons=True)
-lh = lh.accumulate([
-    baca.pitch_class_segment().transpose(n=2),
-    ])
+lh = lh.repeat(n=3)
+lh = lh.read([3, 4, 2, 4, 2, 3, 2, 3, 4], check=Exact)
 lh = lh.cursor(singletons=True)
 
 accumulator(
@@ -92,7 +91,7 @@ accumulator(
         hocket=True,
         ),
     baca.nest('-1/4'),
-    baca.proportional_notation_duration((1, 12)),
+    baca.proportional_notation_duration((1, 16)),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -106,7 +105,10 @@ accumulator(
 accumulator(
     'RH Voice 3',
     [abjad.Rest((1, 4))],
+    baca.line_break(),
+    baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
+    baca.script_extra_offset((1, 0)),
     baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
@@ -124,6 +126,7 @@ accumulator(
         hocket=True,
         ),
     baca.nest('-1/4'),
+    baca.proportional_notation_duration((1, 16)),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -137,6 +140,7 @@ accumulator(
 accumulator(
     'RH Voice 3',
     [abjad.Rest((1, 4))],
+    baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
     baca.short_fermata(),
     baca.transparent_rests(),
@@ -148,7 +152,15 @@ accumulator(
     'RH Voice 3',
     rh.next(5),
     baca.beam_divisions(),
+    baca.imbricate(
+        'RH Voice 2', 
+        [18, 15, 17, 16, 5, 8],
+        baca.beam_everything(),
+        extend_beam=True,
+        hocket=True,
+        ),
     baca.nest('-3/8'),
+    baca.proportional_notation_duration((1, 16)),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -162,6 +174,7 @@ accumulator(
 accumulator(
     'RH Voice 3',
     [abjad.Rest((1, 4))],
+    baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
     baca.short_fermata(),
     baca.transparent_rests(),
@@ -173,7 +186,14 @@ accumulator(
     'RH Voice 3',
     rh.next(6),
     baca.beam_divisions(),
+    baca.imbricate(
+        'RH Voice 2', 
+        [22, 20, 19, 18, 21, 12, 11, 15],
+        baca.beam_everything(),
+        hocket=True,
+        ),
     baca.nest('-3/8'),
+    baca.proportional_notation_duration((1, 16)),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -187,7 +207,9 @@ accumulator(
 accumulator(
     'RH Voice 3',
     [abjad.Rest((1, 4))],
+    baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
+    baca.script_extra_offset((1, 0)),
     baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
@@ -198,7 +220,14 @@ accumulator(
     'RH Voice 3',
     rh.next(3, exhausted=True),
     baca.beam_divisions(),
+    baca.imbricate(
+        'RH Voice 2', 
+        [15, 11, 6, 5],
+        baca.beam_everything(),
+        hocket=True,
+        ),
     baca.nest('-1/4'),
+    baca.proportional_notation_duration((1, 24)),
     baca.register(24, 0),
     baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -211,20 +240,127 @@ accumulator(
     )
 
 accumulator(
+    'RH Voice 3',
+    [abjad.Rest((1, 4))],
+    baca.proportional_notation_duration((1, 4)),
+    baca.script_color('black'),
+    baca.script_extra_offset((1, 0)),
+    baca.short_fermata(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='rh-3 5.2.10',
+    )
+
+accumulator(
     'LH Voice 4',
     lh.next(1),
     baca.anchor_to_figure('rh-3 5.2.3'),
-    baca.beam_divisions(),
-    #baca.nest('-1/4'),
-    baca.register(0, -12),
-    #baca.rests_down(),
-    #baca.slur_trimmed_run_in_each_tuplet(),
-    #baca.tuplet_brackets_down(),
-    #baca.tuplet_bracket_staff_padding(3),
-    counts=[2],
+    baca.clef('bass'),
+    baca.dynamic('p'),
+    baca.flags(),
+    baca.register(6, -24),
+    baca.rests_around([8, 8, 8], [6]),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs_down(),
+    counts=[3, -3],
     figure_name='lh-4 5.2.1',
-    #thread=True,
-    #time_treatments=[-2, 0, -2],
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.anchor_to_figure('rh-3 5.2.5'),
+    baca.flags(),
+    baca.register(6, -24),
+    baca.rests_before([8, 8]),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs_down(),
+    counts=[3, -1],
+    figure_name='lh-4 5.2.2',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.flags(),
+    baca.register(6, -24),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[3, -1],
+    figure_name='lh-4 5.2.3',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.anchor_to_figure('rh-3 5.2.7'),
+    baca.flags(),
+    baca.register(0, -24),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs_down(),
+    counts=[3, -1],
+    figure_name='lh-4 5.2.4',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.beam_divisions(),
+    baca.register(0, -24),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[3],
+    figure_name='lh-4 5.2.5',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.beam_divisions(),
+    baca.register(0, -24),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[3],
+    figure_name='lh-4 5.2.6',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.beam_divisions(),
+    baca.register(-6, -48),
+    baca.rests_around([3], [4, 4, 4]),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[3],
+    figure_name='lh-4 5.2.7',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(),
+    baca.anchor_to_figure('rh-3 5.2.9'),
+    baca.beam_divisions(),
+    baca.register(-6, -36),
+    baca.rests_before([14]),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[2],
+    figure_name='lh-4 5.2.8',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 4',
+    lh.next(exhausted=True),
+    baca.beam_divisions(),
+    baca.register(-6, -36),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    counts=[2],
+    figure_name='lh-4 5.2.9',
+    hide_time_signature=True,
     )
 
 ###############################################################################
@@ -235,6 +371,16 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
     (1, abjad.Accelerando()),
     (2, mraz.materials.tempi[112]),
+    (2, abjad.Ritardando()),
+    (3, mraz.materials.tempi[84]),
+    (3, abjad.Accelerando()),
+    (5, mraz.materials.tempi[112]),
+    (5, abjad.Ritardando()),
+    (7, mraz.materials.tempi[84]),
+    (7, abjad.Accelerando()),
+    (9, mraz.materials.tempi[112]),
+    (9, abjad.Ritardando()),
+    (11, mraz.materials.tempi[84]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
@@ -246,14 +392,14 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    allow_figure_names=True,
+    #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
-    label_clock_time=True,
+    #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
@@ -278,12 +424,14 @@ segment_maker.append_commands(
     'RH Voice 2',
     baca.select_stages(2, Infinity),
     baca.accents(),
-    baca.beam_positions(8.5),
+    baca.beam_positions(10.5),
+    baca.scripts_up(),
     baca.stems_up(),
     )
 
 segment_maker.append_commands(
-    'LH Voice 3',
+    'LH Voice 4',
     baca.select_stages(2, Infinity),
-    baca.tuplet_bracket_staff_padding(3),
+    baca.staccati(),
+    baca.tenuti(),
     )
