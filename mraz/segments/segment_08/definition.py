@@ -9,49 +9,14 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[59:65]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 6, repr(len(segments))
-stages = segments.partition([1, 1, 1, 3], overhang=Exact)
-assert stages.sum() == segments
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_segment_8_collections()
 
-stage_3_segments = stages[2].remove_duplicates()
-stage_3_segments = stage_3_segments.accumulate([
-    baca.pitch_class_segment().alpha(),
-    baca.pitch_class_segment().transpose(n=2),
-    ])
-stage_3_segments = stage_3_segments.join()
-stage_3_segments = stage_3_segments.read(
-    5 * [2, 3, 4, 3],
-    check=Exact,
-    )
-assert len(stage_3_segments) == 20
-assert len(stage_3_segments.flatten()) == 60
-assert not stage_3_segments.has_repeats(level=-1), repr(stage_3_segments)
-
-v5_indices = [0, 2, 3, 5, 6, 8, 9]
-v5_stage_3_segments = stage_3_segments.retain(v5_indices, period=10)
-v5_stage_3_segments = v5_stage_3_segments.remove_repeats(level=-1)
-assert not v5_stage_3_segments.has_repeats(level=-1), repr(v5_stage_3_segments)
-v6_stage_3_segments = stage_3_segments.remove(v5_indices, period=10)
-v6_stage_3_segments = v6_stage_3_segments.remove_repeats(level=-1)
-assert not v6_stage_3_segments.has_repeats(level=-1), repr(v6_stage_3_segments)
-assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
-assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
-v5_stage_3_segments = v5_stage_3_segments.cursor()
-v6_stage_3_segments = v6_stage_3_segments.cursor()
-
-################################### STAGE 3 ###################################
-
-# (STAGE 3: VOICE 5)
+#################################### [8.3] ####################################
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.dynamic('ppp'),
     baca.flags(),
     baca.proportional_notation_duration((1, 16)),
@@ -63,7 +28,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(2),
+    collections['stage 3']['rh'].next(2),
     baca.flags(),
     baca.register(-39, -27),
     baca.rests_up(),
@@ -75,7 +40,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
     counts=[1, -15],
@@ -86,7 +51,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
     baca.rests_up(),
@@ -97,7 +62,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(1),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39, -27),
     counts=[4, -1],
@@ -107,7 +72,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39, -27),
     counts=[4, -1],
@@ -118,7 +83,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
     baca.rests_up(),
@@ -130,7 +95,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
     counts=[6, -1],
@@ -140,7 +105,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(2),
+    collections['stage 3']['rh'].next(2),
     baca.flags(),
     baca.register(-39, -27),
     counts=[4, -1],
@@ -151,7 +116,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
     baca.rests_up(),
@@ -163,7 +128,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
     counts=[6, -1],
@@ -173,7 +138,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_3_segments.next(),
+    collections['stage 3']['rh'].next(exhausted=True),
     baca.flags(),
     baca.register(-39, -27),
     counts=[4, -1],
@@ -182,13 +147,9 @@ accumulator(
     time_treatments=[1],
     )
 
-assert v5_stage_3_segments.is_exhausted
-
-# (STAGE 3: VOICE 6)
-
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
         baca.select_note(6),
@@ -205,7 +166,7 @@ accumulator(
 
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
         baca.select_note(11),
@@ -221,7 +182,7 @@ accumulator(
 
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
         baca.select_note(23),
@@ -237,7 +198,7 @@ accumulator(
 
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
         baca.select_note(27),
@@ -253,7 +214,7 @@ accumulator(
 
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
         baca.select_rest(33),
@@ -269,7 +230,7 @@ accumulator(
 
 accumulator(
     'LH Voice 6',
-    v6_stage_3_segments.next(),
+    collections['stage 3']['lh'].next(exhausted=True),
     baca.anchor(
         'LH Voice 5',
         baca.select_note(34),
@@ -282,8 +243,6 @@ accumulator(
     hide_time_signature=True,
     time_treatments=[-6],
     )
-
-assert v6_stage_3_segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################

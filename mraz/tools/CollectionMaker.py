@@ -25,8 +25,8 @@ class CollectionMaker(object):
 
     ### PUBLIC METHODS ###
 
-    def make_stage_4_collections(self):
-        r'''Makes stage 4 collections.
+    def make_segment_4_collections(self):
+        r'''Makes segment 4 collections.
         '''
         collections = {
             'stage 1': {},
@@ -108,8 +108,8 @@ class CollectionMaker(object):
         collections['stage 6']['rh'] = stage_6_segments
         return collections
 
-    def make_stage_5_collections(self):
-        r'''Makes stage 5 collections.
+    def make_segment_5_collections(self):
+        r'''Makes segment 5 collections.
         '''
         collections = {
             'stage 1': {},
@@ -150,7 +150,9 @@ class CollectionMaker(object):
         collections['stage 2']['lh'] = lh
         return collections
 
-    def make_stage_6_collections(self):
+    def make_segment_6_collections(self):
+        r'''Makes segment 6 collections.
+        '''
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -193,6 +195,8 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_7_collections(self):
+        r'''Make segment 7 collections.
+        '''
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -252,4 +256,54 @@ class CollectionMaker(object):
             singletons=True,
             )
         collections['stage 1']['lh'] = lh_segment_lists
+        return collections
+
+    def make_segment_8_collections(self):
+        r'''Makes segment 8 collections.
+        '''
+        collections = {
+            'stage 1': {},
+            'stage 2': {},
+            'stage 3': {},
+            'stage 4': {},
+            }
+        segments = [
+            baca.PitchClassSegment(_.get_payload())
+            for _ in self._design[59:65]
+            ]
+        segments = baca.CollectionList(
+            segments,
+            item_class=abjad.NumberedPitchClass,
+            )
+        assert len(segments) == 6, repr(len(segments))
+        stages = segments.partition([1, 1, 1, 3], overhang=Exact)
+        assert stages.sum() == segments
+
+        stage_3_segments = stages[2].remove_duplicates()
+        stage_3_segments = stage_3_segments.accumulate([
+            baca.pitch_class_segment().alpha(),
+            baca.pitch_class_segment().transpose(n=2),
+            ])
+        stage_3_segments = stage_3_segments.join()
+        stage_3_segments = stage_3_segments.read(
+            5 * [2, 3, 4, 3],
+            check=Exact,
+            )
+        assert len(stage_3_segments) == 20
+        assert len(stage_3_segments.flatten()) == 60
+        assert not stage_3_segments.has_repeats(level=-1), repr(stage_3_segments)
+
+        v5_indices = [0, 2, 3, 5, 6, 8, 9]
+        v5_stage_3_segments = stage_3_segments.retain(v5_indices, period=10)
+        v5_stage_3_segments = v5_stage_3_segments.remove_repeats(level=-1)
+        assert not v5_stage_3_segments.has_repeats(level=-1), repr(v5_stage_3_segments)
+        v6_stage_3_segments = stage_3_segments.remove(v5_indices, period=10)
+        v6_stage_3_segments = v6_stage_3_segments.remove_repeats(level=-1)
+        assert not v6_stage_3_segments.has_repeats(level=-1), repr(v6_stage_3_segments)
+        assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
+        assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
+        v5_stage_3_segments = v5_stage_3_segments.cursor()
+        v6_stage_3_segments = v6_stage_3_segments.cursor()
+        collections['stage 3']['rh'] = v5_stage_3_segments
+        collections['stage 3']['lh'] = v6_stage_3_segments
         return collections
