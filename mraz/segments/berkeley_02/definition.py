@@ -15,33 +15,9 @@ collections_5 = collection_maker.make_segment_5_collections()
 collections_6 = collection_maker.make_segment_6_collections()
 collections_7 = collection_maker.make_segment_7_collections()
 collections_8 = collection_maker.make_segment_8_collections()
+resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 ##################################### [B2] ####################################
-
-#accumulator(
-#    'RH Voice 1',
-#    collections_4['stage 5']['rh'][2],
-#    baca.register(36),
-#    baca.tenuti(),
-#    counts=[16],
-#    figure_name='b.1.1',
-#    hide_time_signature=True,
-#    )
-#
-#accumulator(
-#    'RH Voice 2',
-#    collections_4['stage 5']['lh'][:4],
-#    baca.anchor_to_figure('b.1.1'),
-#    baca.dynamic_line_spanner_staff_padding(8),
-#    baca.hairpins(['f < ff']),
-#    baca.ottava(),
-#    baca.proportional_notation_duration((1, 32)),
-#    baca.register(10, 36),
-#    baca.slur(),
-#    baca.slurs_up(),
-#    figure_name='b.1.2',
-#    time_treatments=[abjad.Duration(1, 4)],
-#    )
 
 accumulator(
     'RH Voice 4',
@@ -57,18 +33,6 @@ accumulator(
     figure_name='b.2.1',
     time_treatments=[1],
     )
-
-resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
-
-#accumulator(
-#    'LH Resonance Voice',
-#    [resonance],
-#    baca.anchor_to_figure('b.2.1'),
-#    baca.clef('bass'),
-#    counts=[8],
-#    figure_name='b.2.2',
-#    hide_time_signature=False,
-#    )
 
 accumulator(
     'RH Voice 2',
@@ -165,143 +129,143 @@ accumulator(
     hide_time_signature=True,
     )
 
+accumulator(
+    'RH Voice 2',
+    collections_2['stage 2']['rh'][0][:4],
+    baca.bass_to_octave(3),
+    baca.dynamic('ppp'),
+    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.staccati(),
+    figure_name='b.2.10',
+    )
 
-#accumulator(
-#    'LH Voice 6',
-#    collections_8['stage 3']['lh'][1],
-#    baca.clef('bass'),
-#    baca.dynamic('f'),
-#    baca.flags(),
-#    baca.ottava_bassa(),
-#    baca.register(-39),
-#    baca.rests_down(),
-#    baca.stems_down(),
-#    baca.tuplet_brackets_down(),
-#    baca.tuplet_bracket_staff_padding(6),
-#    counts=[2, -4],
-#    figure_name='b.1.4',
-#    time_treatments=[4],
-#    )
-#
-#accumulator(
-#    'LH Voice 5',
-#    collections_8['stage 3']['rh'][4],
-#    baca.anchor_to_figure('b.1.4'),
-#    baca.dynamic('ppp'),
-#    baca.dynamics_up(),
-#    baca.flags(),
-#    baca.proportional_notation_duration((1, 16)),
-#    baca.register(-27, -39),
-#    baca.rests_after([4]),
-#    baca.rests_up(),
-#    counts=[6, -1],
-#    figure_name='b.1.5',
-#    hide_time_signature=True,
-#    talea_denominator=32,
-#    )
-#
-#accumulator(
-#    'RH Voice 2',
-#    [abjad.Rest((1, 8))],
-#    baca.line_break(),
-#    baca.proportional_notation_duration((1, 4)),
-#    baca.scripts_up(),
-#    baca.short_fermata(),
-#    baca.transparent_rests(),
-#    baca.transparent_time_signatures(),
-#    figure_name='b.1.6',
-#    )
-#
-#accumulator(
-#    'RH Voice 3',
-#    collections_6['stage 1']['rh'][2],
-#    baca.dynamic('pp'),
-#    baca.flags(),
-#    baca.register(24, 12),
-#    baca.staccati(),
-#    baca.tenuti(),
-#    denominator=8,
-#    figure_name='b.1.7',
-#    talea_denominator=8,
-#    thread=True,
-#    time_treatments=[1, 0],
-#    )
-#
-#accumulator(
-#    'RH Voice 2',
-#    [abjad.Rest((1, 8))],
-#    baca.proportional_notation_duration((1, 4)),
-#    baca.scripts_up(),
-#    baca.fermata(),
-#    baca.transparent_rests(),
-#    baca.transparent_time_signatures(),
-#    figure_name='b.1.8',
-#    )
-#
-#accumulator(
-#    'RH Voice 3',
-#    collections_6['stage 1']['rh'][3],
-#    baca.flags(),
-#    baca.register(24, 12),
-#    baca.rests_around([1], [1]),
-#    baca.staccati(),
-#    baca.tenuti(),
-#    denominator=8,
-#    figure_name='b.1.9',
-#    talea_denominator=8,
-#    )
-#
-#accumulator(
-#    'RH Voice 2',
-#    collections_5['stage 1']['rh'].next(exhausted=True),
-#    baca.accents(),
-#    baca.dynamic('fff'),
-#    baca.dynamics_up(),
-#    baca.flags(),
-#    baca.markup('(black voice louder; green voice longer)'),
-#    baca.proportional_notation_duration((1, 6)),
-#    baca.register(20, 36),
-#    baca.rests_up(),
-#    baca.scripts_up(),
-#    baca.text_scripts_up(),
-#    counts=[2, -14],
-#    figure_name='b.1.10',
-#    )
-#
-#accumulator(
-#    'RH Voice 3',
-#    collections_5['stage 1']['lh'].next(exhausted=True),
-#    baca.anchor_to_figure('b.1.10'),
-#    baca.dynamic('mf'),
-#    baca.flags(),
-#    baca.markup('(first note A5)'),
-#    baca.ottava(),
-#    baca.register(10, 26),
-#    baca.rests_down(),
-#    baca.tenuti(),
-#    baca.tuplet_brackets_down(),
-#    counts=[4, -4],
-#    figure_name='b.1.11',
-#    hide_time_signature=True,
-#    time_treatments=[abjad.Duration(16, 4)],
-#    tuplet_denominator=abjad.Duration(1, 1),
-#    )
-#
-#accumulator(
-#    'RH Voice 2',
-#    [abjad.Rest((1, 8))],
-#    baca.markup(
-#        '(extremely short)',
-#        selector=baca.select_rest(),
-#        ),
-#    baca.proportional_notation_duration((1, 4)),
-#    baca.scripts_up(),
-#    baca.short_fermata(),
-#    baca.text_scripts_up(),
-#    baca.transparent_rests(),
-#    baca.transparent_time_signatures(),
-#    figure_name='b.1.12',
-#    )
+accumulator(
+    'RH Voice 1',
+    collections_4['stage 5']['rh'][0],
+    baca.dynamic('f'),
+    baca.proportional_notation_duration((1, 4)),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[28],
+    figure_name='b.2.11',
+    )
+
+accumulator(
+    'RH Voice 1',
+    collections_4['stage 5']['rh'][1],
+    baca.proportional_notation_duration((1, 4)),
+    baca.register(36),
+    baca.tenuti(),
+    counts=[24],
+    figure_name='b.2.12',
+    )
+
+accumulator(
+    'RH Voice 1',
+    collections_4['stage 5']['rh'][2],
+    baca.register(36),
+    baca.tenuti(),
+    counts=[16],
+    figure_name='b.2.13',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 2',
+    collections_4['stage 5']['lh'][:4],
+    baca.anchor_to_figure('b.2.13'),
+    baca.dynamic_line_spanner_staff_padding(8),
+    baca.hairpins(['f < ff']),
+    baca.ottava(),
+    baca.proportional_notation_duration((1, 32)),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    figure_name='b.2.14',
+    time_treatments=[abjad.Duration(1, 4)],
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    baca.anchor_to_figure('b.2.1'),
+    baca.clef('bass'),
+    counts=[8],
+    figure_name='b.2.r.1',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[4],
+    figure_name='b.2.r.2',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[5],
+    figure_name='b.2.r.3',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[8],
+    figure_name='b.2.r.4',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[10],
+    figure_name='b.2.r.5',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[2],
+    figure_name='b.2.r.6',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    baca.anchor_to_figure('b.2.10'),
+    counts=[21],
+    figure_name='b.2.r.7',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[28],
+    figure_name='b.2.r.8',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Resonance Voice',
+    [resonance],
+    counts=[24],
+    figure_name='b.2.r.9',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'LH Voice 2',
+    [abjad.Rest((4, 4))],
+    figure_name='b.2.r.10',
+    hide_time_signature=True,
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -312,6 +276,9 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (3, mraz.materials.tempi[84]),
     (5, mraz.materials.tempi[112]),
     (6, mraz.materials.tempi[84]),
+    (10, mraz.materials.tempi[112]),
+    (10, abjad.Ritardando()),
+    (12, mraz.materials.tempi[84]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
@@ -325,10 +292,12 @@ segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=True,
+    #color_repeat_pitch_classes=True,
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     label_stages=True,
     measures_per_stage=measures_per_stage,
+    range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
@@ -347,7 +316,25 @@ accumulator.populate_segment_maker(segment_maker)
 ###############################################################################
 
 segment_maker.append_commands(
+    'RH Voice 1',
+    baca.select_stages(1, Infinity),
+    baca.ottava(),
+    )
+
+segment_maker.append_commands(
+    'RH Voice 2',
+    baca.select_stages(1, Infinity),
+    baca.slurs_up(),
+    )
+
+segment_maker.append_commands(
     'RH Voice 4 Inserts',
     baca.select_stages(1, Infinity),
     baca.stems_up(),
+    )
+
+segment_maker.append_commands(
+    'LH Resonance Voice',
+    baca.select_stages(1, Infinity),
+    baca.messiaen_tie_each(),
     )

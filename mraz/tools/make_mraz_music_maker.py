@@ -437,6 +437,7 @@ def make_mraz_music_maker():
                 'RH Voice 3',
                 'RH Voice 3 Inserts',
                 'RH Voice 4',
+                'RH Voice 4 Inserts',
                 'RH Voice 5',
                 'RH Voice 6',
                 'RH Resonance Voice',
