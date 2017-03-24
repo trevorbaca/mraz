@@ -41,9 +41,9 @@ Order: [8], [4], [6], [5], [2], [7]
     * (P4.1) LOUD first green / purple measure of [4] no resonance
     * (P2.3) QUIET First four five-note figures of [2] with res, attacca to
     * (P4.3) High red forte Eb7 F7 whole-notes of [4] attacca to
+    * (P4.4) first black up-swell in [4] as intro to [4]
 
     Berkeley [3]
-    * (P4.4) first black up-swell in [4] as intro to [4]
     * entirety of [4] as second complete chunk
     * internal to [4] ...
         * (P5.2) First three-note p blue gesture (B4 Eb4 C#3) of [5]

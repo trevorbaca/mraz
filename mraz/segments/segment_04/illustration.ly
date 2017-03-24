@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #16
+        currentBarNumber = #28
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -213,7 +213,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.1]
+                                    [D.1]
                             }
                 }
                 {
@@ -224,7 +224,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.2]
+                                    [D.2]
                             }
                 }
                 {
@@ -235,7 +235,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.3]
+                                    [D.3]
                             }
                 }
                 {
@@ -246,7 +246,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.4]
+                                    [D.4]
                             }
                 }
                 {
@@ -257,7 +257,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.5]
+                                    [D.5]
                             }
                 }
                 {
@@ -268,7 +268,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.6]
+                                    [D.6]
                             }
                         ^ \markup {
                         \fontsize
@@ -326,7 +326,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.7]
+                                    [D.7]
                             }
                 }
                 {
@@ -337,7 +337,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.8]
+                                    [D.8]
                             }
                 }
                 {
@@ -348,7 +348,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.9]
+                                    [D.9]
                             }
                 }
                 {
@@ -359,7 +359,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.10]
+                                    [D.10]
                             }
                 }
                 {
@@ -370,7 +370,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.11]
+                                    [D.11]
                             }
                 }
                 {
@@ -381,7 +381,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.12]
+                                    [D.12]
                             }
                 }
                 {
@@ -392,7 +392,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.13]
+                                    [D.13]
                             }
                 }
                 {
@@ -403,7 +403,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.14]
+                                    [D.14]
                             }
                 }
                 {
@@ -414,7 +414,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.15]
+                                    [D.15]
                             }
                 }
                 {
@@ -425,7 +425,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.16]
+                                    [D.16]
                             }
                         ^ \markup {
                         \fontsize
@@ -452,7 +452,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.17]
+                                    [D.17]
                             }
                 }
                 {
@@ -463,7 +463,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.18]
+                                    [D.18]
                             }
                 }
                 {
@@ -474,7 +474,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.19]
+                                    [D.19]
                             }
                 }
                 {
@@ -485,7 +485,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.20]
+                                    [D.20]
                             }
                 }
                 {
@@ -517,7 +517,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.21]
+                                    [D.21]
                             }
                 }
                 {
@@ -528,7 +528,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.22]
+                                    [D.22]
                             }
                 }
                 {
@@ -539,7 +539,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.23]
+                                    [D.23]
                             }
                 }
                 {
@@ -550,7 +550,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.24]
+                                    [D.24]
                             }
                         ^ \markup {
                         \fontsize
@@ -609,7 +609,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.25]
+                                    [D.25]
                             }
                 }
                 {
@@ -620,7 +620,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.26]
+                                    [D.26]
                             }
                 }
                 {
@@ -631,7 +631,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.27]
+                                    [D.27]
                             }
                 }
                 {
@@ -642,7 +642,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.28]
+                                    [D.28]
                             }
                 }
                 {
@@ -653,7 +653,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.29]
+                                    [D.29]
                             }
                         ^ \markup {
                         \fontsize
@@ -680,7 +680,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.30]
+                                    [D.30]
                             }
                 }
                 {
@@ -723,7 +723,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.31]
+                                    [D.31]
                             }
                 }
                 {
@@ -734,7 +734,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.32]
+                                    [D.32]
                             }
                 }
                 {
@@ -745,7 +745,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.33]
+                                    [D.33]
                             }
                         ^ \markup {
                         \fontsize
@@ -803,7 +803,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.34]
+                                    [D.34]
                             }
                 }
                 {
@@ -814,7 +814,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.35]
+                                    [D.35]
                             }
                 }
                 {
@@ -825,7 +825,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.36]
+                                    [D.36]
                             }
                 }
                 {
@@ -836,7 +836,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.37]
+                                    [D.37]
                             }
                 }
                 {
@@ -847,7 +847,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.38]
+                                    [D.38]
                             }
                         ^ \markup {
                         \fontsize
@@ -873,7 +873,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.39]
+                                    [D.39]
                             }
                 }
                 {
@@ -883,7 +883,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.40]
+                                    [D.40]
                             }
                 }
                 {
@@ -894,7 +894,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [C.41]
+                                    [D.41]
                             }
                 }
             }
@@ -2073,6 +2073,50 @@
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/2
+                        s1 * 3/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 3/4
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 5/4
+                        s1 * 1
+                        s1 * 1/4
+                        s1 * 7/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1/8
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 3/4
+                        s1 * 5/8
+                        s1 * 1/2
+                        s1 * 3/4
+                        s1 * 1/2
+                        s1 * 5/8
+                        s1 * 1/4
+                        s1 * 7/4
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1
+                        s1 * 1
+                        s1 * 3/2
+                        \bar "|"
+                    }
+                    \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
                         s1 * 3/2
                         s1 * 3/4
                         s1 * 3/2

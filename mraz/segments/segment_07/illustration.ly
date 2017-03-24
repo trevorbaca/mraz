@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #72
+        currentBarNumber = #84
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -1040,6 +1040,20 @@
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 3/4
+                        s1 * 1/4
+                        s1 * 3/8
+                        s1 * 9/16
+                        s1 * 5/16
+                        s1 * 9/16
+                        s1 * 7/16
+                        s1 * 9/16
+                        s1 * 3/16
+                        s1 * 5/8
+                        s1 * 1/8
+                        \bar "|"
+                    }
+                    \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
                         s1 * 3/4
                         s1 * 1/4
                         s1 * 3/8

@@ -431,6 +431,18 @@
                         s1 * 1/8
                         \bar "|"
                     }
+                    \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                        s1 * 1
+                        s1 * 1/2
+                        s1 * 1
+                        s1 * 1/8
+                        s1 * 1/2
+                        s1 * 1/8
+                        s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
+                        \bar "|"
+                    }
                     \context RHVoiceFive = "RH Voice 5" {
                         s1 * 1
                         s1 * 1/2
