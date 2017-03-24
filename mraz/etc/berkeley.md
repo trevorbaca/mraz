@@ -48,12 +48,9 @@ Order: [8], [4], [6], [5], [2], [7]
     * internal to [4] ...
         * (P5.2) First three-note p blue gesture (B4 Eb4 C#3) of [5]
         * (P5.3) First four mp green third eighth-note figure (A6 D6 E6 G6) [5]
-        * (P6.1) First two pp green F#6 A6 at beginning of [6]
-        * (P6.2) Next two pp green Bb6 C#6 at beginning of [6]
-        * (P6.3) Last seven-note mp blue gesture from end of [6]
+    * first measure (16/4) of [5] as intro attacca to ...
 
     Berkeley [4]
-    * first measure (16/4) of [5] as intro attacca to ...
     * entirety of [6], attacca to ...
 
     Berkeley [5]
