@@ -39,21 +39,21 @@
                     \time 7/8
                     R1 * 7/8
                 }
+                {
+                    \time 16/4
+                    R1 * 4
+                }
+                {
+                    \time 1/8
+                    R1 * 1/8
+                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 1
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [1]
-                            }
-                        ^ \markup {
+                    s1 * 1 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -74,15 +74,7 @@
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 1/2
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [2]
-                            }
-                        ^ \markup {
+                    s1 * 1/2 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -104,40 +96,18 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                     \newSpacingSection
                     s1 * 1
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [3]
-                            }
                 }
                 {
                     \time 1/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [4]
-                            }
                 }
                 {
                     \time 4/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 1/2
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [5]
-                            }
-                        ^ \markup {
+                    s1 * 1/2 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -159,26 +129,60 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [6]
-                            }
                 }
                 {
                     \time 7/8
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 7/8
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [7]
+                }
+                {
+                    \time 16/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                accel.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 4 \startTextSpan
+                }
+                {
+                    \time 1/8
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                    \newSpacingSection
+                    s1 * 1/8 \stopTextSpan ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
                             }
+                        }
                 }
             }
         >>
@@ -189,26 +193,9 @@
                         {
                             {
                                 bf''''1 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.1
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (0)
-                                                    ]
-                                                }
-                                        }
                             }
                         }
-                        s1 * 25/8
+                        s1 * 29/4
                         \bar "|"
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
@@ -219,6 +206,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
@@ -231,23 +220,6 @@
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 b'16 [ \< \f (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.2
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (1)
-                                                    ]
-                                                }
-                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs''16
@@ -321,23 +293,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r8 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.6
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (5)
-                                                    ]
-                                                }
-                                        }
                                 \break
                                 \revert Script.direction
                                 \revert Rest.transparent
@@ -352,30 +307,47 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.8
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (7)
-                                                    ]
-                                                }
-                                        }
                                 \revert Script.direction
                                 \revert Rest.transparent
                                 \revert TimeSignatureContext.TimeSignature.transparent
                             }
                         }
                         s1 * 7/8
-                        \bar "|"
+                        {
+                            {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
+                                \dynamicUp
+                                \override Script.direction = #up
+                                \override TextScript.direction = #up
+                                c'''8 -\accent \fff - \markup { "(black voice louder; green voice longer)" }
+                                \override Rest.direction = #up
+                                r2..
+                                d'''8 -\accent
+                                r2..
+                                ef''''8 -\accent
+                                r2..
+                                f''''8 -\accent
+                                r2..
+                                \revert Rest.direction
+                                \revert Script.direction
+                                \revert TextScript.direction
+                            }
+                        }
+                        {
+                            {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \override Script.direction = #up
+                                \override TextScript.direction = #up
+                                \override Rest.transparent = ##t
+                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                r8 -\shortfermata - \markup { "(extremely short)" }
+                                \bar "|"
+                                \revert Script.direction
+                                \revert TextScript.direction
+                                \revert Rest.transparent
+                                \revert TimeSignatureContext.TimeSignature.transparent
+                            }
+                        }
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 1
@@ -385,6 +357,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
@@ -393,23 +367,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 bf'''8 -\staccato -\tenuto \pp
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.7
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (6)
-                                                    ]
-                                                }
-                                        }
                                 cs'''8 -\staccato -\tenuto
                                 ef'''8 -\staccato -\tenuto
                             }
@@ -418,32 +375,37 @@
                         {
                             {
                                 r8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.9
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (8)
-                                                    ]
-                                                }
-                                        }
                                 d'''8 -\staccato -\tenuto
                                 e'''8 -\staccato -\tenuto
                                 c'''8 -\staccato -\tenuto
                                 ef'''8 -\staccato -\tenuto
                                 f''8 -\staccato -\tenuto
                                 r8
-                                \bar "|"
                             }
                         }
+                        {
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 8/5 {
+                                \ottava #1
+                                \override Rest.direction = #down
+                                \override TupletBracket.direction = #down
+                                a''4 -\tenuto \mf - \markup { "(first note A5)" }
+                                r4
+                                cs''4 -\tenuto
+                                r4
+                                b''4 -\tenuto
+                                r4
+                                af''4 -\tenuto
+                                r4
+                                g'''4 -\tenuto
+                                \ottava #0
+                                r4
+                                \revert Rest.direction
+                                \revert TupletBracket.direction
+                            }
+                        }
+                        s1 * 1/8
+                        \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 1
@@ -453,6 +415,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
@@ -463,6 +427,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
@@ -473,6 +439,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
@@ -483,6 +451,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
@@ -493,6 +463,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                 >>
@@ -505,6 +477,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
@@ -515,6 +489,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
@@ -525,6 +501,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
@@ -535,23 +513,6 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16 \ff [
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.3
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (2)
-                                                    ]
-                                                }
-                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
@@ -572,7 +533,7 @@
                                 b''16 ]
                             }
                         }
-                        s1 * 21/8
+                        s1 * 27/4
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
@@ -594,7 +555,7 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
-                        s1 * 21/8
+                        s1 * 27/4
                         \bar "|"
                         \revert Stem.direction
                     }
@@ -605,23 +566,6 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \dynamicUp
                                 bf,,8. \ppp
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.5
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (4)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r32
                                 d,8.
@@ -634,7 +578,7 @@
                                 \revert Rest.direction
                             }
                         }
-                        s1 * 13/8
+                        s1 * 23/4
                         \bar "|"
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
@@ -645,6 +589,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
@@ -659,23 +605,6 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 b,,,8 \f
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    b.1.4
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (3)
-                                                    ]
-                                                }
-                                        }
                                 r4
                                 ef,,8
                                 \ottava #0
@@ -686,7 +615,7 @@
                                 \revert TupletBracket.staff-padding
                             }
                         }
-                        s1 * 13/8
+                        s1 * 23/4
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
@@ -697,6 +626,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
@@ -707,6 +638,8 @@
                         s1 * 1/2
                         s1 * 1/8
                         s1 * 7/8
+                        s1 * 4
+                        s1 * 1/8
                         \bar "|"
                     }
                 >>

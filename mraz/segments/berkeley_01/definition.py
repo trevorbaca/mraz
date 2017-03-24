@@ -143,6 +143,58 @@ accumulator(
     talea_denominator=8,
     )
 
+accumulator(
+    'RH Voice 2',
+    collections_5['stage 1']['rh'].next(exhausted=True),
+    baca.accents(),
+    baca.dynamic('fff'),
+    baca.dynamics_up(),
+    baca.flags(),
+    baca.markup('(black voice louder; green voice longer)'),
+    baca.proportional_notation_duration((1, 6)),
+    baca.register(20, 36),
+    baca.rests_up(),
+    baca.scripts_up(),
+    baca.text_scripts_up(),
+    counts=[2, -14],
+    figure_name='b.1.10',
+    )
+
+accumulator(
+    'RH Voice 3',
+    collections_5['stage 1']['lh'].next(exhausted=True),
+    baca.anchor_to_figure('b.1.10'),
+    baca.dynamic('mf'),
+    baca.flags(),
+    baca.markup('(first note A5)'),
+    baca.ottava(),
+    baca.register(10, 26),
+    baca.rests_down(),
+    baca.tenuti(),
+    baca.tuplet_brackets_down(),
+    counts=[4, -4],
+    figure_name='b.1.11',
+    hide_time_signature=True,
+    time_treatments=[abjad.Duration(16, 4)],
+    tuplet_denominator=abjad.Duration(1, 1),
+    )
+
+accumulator(
+    'RH Voice 2',
+    [abjad.Rest((1, 8))],
+    baca.markup(
+        '(extremely short)',
+        selector=baca.select_rest(),
+        ),
+    baca.proportional_notation_duration((1, 4)),
+    baca.scripts_up(),
+    baca.short_fermata(),
+    baca.text_scripts_up(),
+    baca.transparent_rests(),
+    baca.transparent_time_signatures(),
+    figure_name='b.1.12',
+    )
+
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
@@ -151,6 +203,8 @@ tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
     (2, mraz.materials.tempi[112]),
     (5, mraz.materials.tempi[84]),
+    (8, abjad.Accelerando()),
+    (9, mraz.materials.tempi[112]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
@@ -161,12 +215,12 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
-    allow_figure_names=True,
+    #allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
     #label_clock_time=True,
-    label_stages=True,
+    #label_stages=True,
     measures_per_stage=measures_per_stage,
     rehearsal_letter='',
     score_template=mraz.tools.ScoreTemplate(),

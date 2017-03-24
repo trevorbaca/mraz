@@ -52,6 +52,8 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                             }
                             \context RHVoiceFour = "RH Voice 4" {
                             }
+                            \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                            }
                             \context RHVoiceFive = "RH Voice 5" {
                             }
                             \context RHVoiceSix = "RH Voice 6" {
@@ -156,6 +158,11 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
             context_name='RHVoiceFour',
             name='RH Voice 4',
             )
+        rh_voice_4I = abjad.Voice(
+            [], 
+            context_name='RHVoiceFourInserts',
+            name='RH Voice 4 Inserts',
+            )
         rh_voice_5 = abjad.Voice(
             [], 
             context_name='RHVoiceFive',
@@ -230,6 +237,7 @@ class ScoreTemplate(baca.tools.ScoreTemplate):
                 rh_voice_3,
                 rh_voice_3I,
                 rh_voice_4,
+                rh_voice_4I,
                 rh_voice_5,
                 rh_voice_6,
                 rh_resonance_voice,

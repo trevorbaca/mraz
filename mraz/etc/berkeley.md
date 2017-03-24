@@ -35,12 +35,12 @@ Order: [8], [4], [6], [5], [2], [7]
     * (P7.1) LOUD Last ff blue (7:8) gesture of [7] with resonance
     * (P2.1) QUIET First five-note figure of [2] with resonance
     * short fermata with resonance
-    * (P7.1) LOUD Last ff blue (7:8) gesture of [7] with resonance
+    * (P7.1) QUIET version of last ff blue (7:8) gesture of [7] with resonance
     * (P2.2) QUIET First two five-note figures of [2] with resonance
-    * (P4.1) Quiet (mp / p) version of first green / purple measure of [4] no r
-    * (P2.3) QUIET First four five-note figures of [2] with res
-    * (P4.2) First red mf imbricated voice (4:5) of [4]
-    * (P4.3) High red forte Eb7 F7 whole-notes of [4] attacca to ...
+    * short fermata with resonance
+    * (P4.1) LOUD first green / purple measure of [4] no resonance
+    * (P2.3) QUIET First four five-note figures of [2] with res, attacca to
+    * (P4.3) High red forte Eb7 F7 whole-notes of [4] attacca to
 
     Berkeley [3]
     * (P4.4) first black up-swell in [4] as intro to [4]
