@@ -349,25 +349,7 @@
                                 \dynamicUp
                                 \override Script.direction = #up
                                 \override TextScript.direction = #up
-                                c'''8 -\accent \fff
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-2 5.1.1"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (0)
-                                                    ]
-                                                }
-                                        }
-                                    - \markup { "(black voice louder; green voice longer)" }
+                                c'''8 -\accent \fff - \markup { "(black voice louder; green voice longer)" }
                                 \override Rest.direction = #up
                                 r2..
                                 d'''8 -\accent
@@ -704,25 +686,7 @@
                                 \ottava #1
                                 \override Rest.direction = #down
                                 \override TupletBracket.direction = #down
-                                a''4 -\tenuto \mf
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.1.1"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (1)
-                                                    ]
-                                                }
-                                        }
-                                    - \markup { "(first note A5)" }
+                                a''4 -\tenuto \mf - \markup { "(first note A5)" }
                                 r4
                                 cs''4 -\tenuto
                                 r4
@@ -746,23 +710,6 @@
                                     \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     d'''8 \mp [ (
-                                        ^ \markup {
-                                            \fontsize
-                                                #2
-                                                \concat
-                                                    {
-                                                        [
-                                                        "rh-3 5.2.1"
-                                                        \hspace
-                                                            #1
-                                                        \raise
-                                                            #0.25
-                                                            \fontsize
-                                                                #-2
-                                                                (2)
-                                                        ]
-                                                    }
-                                            }
                                     ef'''8
                                     f'''8
                                     c'''8 ] )
@@ -812,23 +759,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.2.2"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (3)
-                                                    ]
-                                                }
-                                        }
                                 \break
                                 \revert Script.color
                                 \revert Script.extra-offset
@@ -845,23 +775,6 @@
                                     \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     cs'''8 [ (
-                                        ^ \markup {
-                                            \fontsize
-                                                #2
-                                                \concat
-                                                    {
-                                                        [
-                                                        "rh-3 5.2.3"
-                                                        \hspace
-                                                            #1
-                                                        \raise
-                                                            #0.25
-                                                            \fontsize
-                                                                #-2
-                                                                (4)
-                                                        ]
-                                                    }
-                                            }
                                     c'''8
                                     d'''8
                                     b''8
@@ -912,23 +825,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.2.4"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (5)
-                                                    ]
-                                                }
-                                        }
                                 \revert Script.color
                                 \revert Rest.transparent
                                 \revert TimeSignatureContext.TimeSignature.transparent
@@ -942,23 +838,6 @@
                                     \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     a'''8 [ (
-                                        ^ \markup {
-                                            \fontsize
-                                                #2
-                                                \concat
-                                                    {
-                                                        [
-                                                        "rh-3 5.2.5"
-                                                        \hspace
-                                                            #1
-                                                        \raise
-                                                            #0.25
-                                                            \fontsize
-                                                                #-2
-                                                                (6)
-                                                        ]
-                                                    }
-                                            }
                                     d'''8
                                     e'''8
                                     g'''8 ] )
@@ -1007,23 +886,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.2.6"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (7)
-                                                    ]
-                                                }
-                                        }
                                 \revert Script.color
                                 \revert Rest.transparent
                                 \revert TimeSignatureContext.TimeSignature.transparent
@@ -1038,23 +900,6 @@
                                     \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     c'''8 [ (
-                                        ^ \markup {
-                                            \fontsize
-                                                #2
-                                                \concat
-                                                    {
-                                                        [
-                                                        "rh-3 5.2.7"
-                                                        \hspace
-                                                            #1
-                                                        \raise
-                                                            #0.25
-                                                            \fontsize
-                                                                #-2
-                                                                (8)
-                                                        ]
-                                                    }
-                                            }
                                     g'''8
                                     a'''8 ]
                                     s8
@@ -1113,23 +958,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.2.8"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (9)
-                                                    ]
-                                                }
-                                        }
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
@@ -1146,23 +974,6 @@
                                     \override TupletBracket.direction = #down
                                     \override TupletBracket.staff-padding = #3
                                     f'''8 [ (
-                                        ^ \markup {
-                                            \fontsize
-                                                #2
-                                                \concat
-                                                    {
-                                                        [
-                                                        "rh-3 5.2.9"
-                                                        \hspace
-                                                            #1
-                                                        \raise
-                                                            #0.25
-                                                            \fontsize
-                                                                #-2
-                                                                (10)
-                                                        ]
-                                                    }
-                                            }
                                     af'''8
                                     bf''8
                                     ef'''8
@@ -1199,23 +1010,6 @@
                                 \override Rest.transparent = ##t
                                 \override TimeSignatureContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "rh-3 5.2.10"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (11)
-                                                    ]
-                                                }
-                                        }
                                 \bar "|"
                                 \revert Script.color
                                 \revert Script.extra-offset
@@ -1359,23 +1153,6 @@
                                 \clef "bass"
                                 \override Slur.direction = #down
                                 r2
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.1"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (12)
-                                                    ]
-                                                }
-                                        }
                                 r2
                                 r2
                                 b'8. -\staccato -\tenuto \p (
@@ -1393,23 +1170,6 @@
                             {
                                 \override Slur.direction = #down
                                 r2
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.2"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (13)
-                                                    ]
-                                                }
-                                        }
                                 r2
                                 af'8. -\staccato -\tenuto (
                                 r16
@@ -1425,23 +1185,6 @@
                         {
                             {
                                 b'8. -\staccato -\tenuto (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.3"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (14)
-                                                    ]
-                                                }
-                                        }
                                 r16
                                 g8. -\staccato -\tenuto )
                                 r16
@@ -1452,23 +1195,6 @@
                             {
                                 \override Slur.direction = #down
                                 b'8. -\staccato -\tenuto (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.4"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (15)
-                                                    ]
-                                                }
-                                        }
                                 r16
                                 ef'8. -\staccato -\tenuto
                                 r16
@@ -1482,46 +1208,12 @@
                         {
                             {
                                 e'8. -\staccato -\tenuto [ (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.5"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (16)
-                                                    ]
-                                                }
-                                        }
                                 bf8. -\staccato -\tenuto ] )
                             }
                         }
                         {
                             {
                                 cs'8. -\staccato -\tenuto [ (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.6"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (17)
-                                                    ]
-                                                }
-                                        }
                                 b8. -\staccato -\tenuto
                                 g8. -\staccato -\tenuto ] )
                             }
@@ -1529,23 +1221,6 @@
                         {
                             {
                                 r8.
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.7"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (18)
-                                                    ]
-                                                }
-                                        }
                                 b8. -\staccato -\tenuto [ (
                                 ef,8. -\staccato -\tenuto ] )
                                 r4
@@ -1557,23 +1232,6 @@
                         {
                             {
                                 r2..
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.8"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (19)
-                                                    ]
-                                                }
-                                        }
                                 cs'8 -\staccato -\tenuto [ (
                                 af,8 -\staccato -\tenuto
                                 e,8 -\staccato -\tenuto ] )
@@ -1582,23 +1240,6 @@
                         {
                             {
                                 bf8 -\staccato -\tenuto [ (
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-4 5.2.9"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (20)
-                                                    ]
-                                                }
-                                        }
                                 cs8 -\staccato -\tenuto
                                 b,8 -\staccato -\tenuto
                                 g,8 -\staccato -\tenuto ] )
