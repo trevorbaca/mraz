@@ -191,3 +191,65 @@ class CollectionMaker(object):
         collections['stage 1']['rh'] = rh_stage_1_segments 
         collections['stage 1']['lh'] = lh_stage_1_segments 
         return collections
+
+    def make_segment_7_collections(self):
+        collections = {
+            'stage 1': {},
+            'stage 2': {},
+            }
+        segments = [
+            baca.PitchClassSegment(_.get_payload())
+            for _ in self._design[45:59]
+            ]
+        segments = baca.CollectionList(
+            segments,
+            item_class=abjad.NumberedPitchClass,
+            )
+        assert len(segments) == 14, repr(len(segments))
+        rh_segments, lh_segments, stage_2_segments = segments.partition(
+            [5, 5, 4],
+            overhang=Exact,
+            )
+        rh_segments = abjad.CyclicTuple(rh_segments)
+        lh_segments = abjad.CyclicTuple(lh_segments)
+        all_rh_segments = []
+        for i in range(8):
+            start = i
+            stop = i + 3
+            rh_segments_ = rh_segments[start:stop]
+            operator = baca.pitch_class_segment().transpose(n=i*7)
+            expression = baca.sequence().map(operator)
+            rh_segments_ = expression(rh_segments_)
+            all_rh_segments.extend(rh_segments_)
+        all_rh_segments = baca.Sequence(all_rh_segments)
+        rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
+        assert len(rh_segment_lists) == 12
+        rh_segment_lists = [
+            baca.CollectionList(_) for _ in rh_segment_lists
+            ]
+        rh_segment_lists = baca.Cursor(
+            source=rh_segment_lists,
+            singletons=True,
+            )
+        collections['stage 1']['rh'] = rh_segment_lists
+        all_lh_segments = []
+        for i in range(5):
+            start = i
+            stop = i + 2
+            lh_segments_ = lh_segments[start:stop]
+            operator = baca.pitch_class_segment().transpose(n=i*7)
+            expression = baca.sequence().map(operator)
+            lh_segments_ = expression(lh_segments_)
+            all_lh_segments.extend(lh_segments_)
+        all_lh_segments = baca.Sequence(all_lh_segments)
+        lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
+        assert len(lh_segment_lists) == 5
+        lh_segment_lists = [
+            baca.CollectionList(_) for _ in lh_segment_lists
+            ]
+        lh_segment_lists = baca.Cursor(
+            source=lh_segment_lists,
+            singletons=True,
+            )
+        collections['stage 1']['lh'] = lh_segment_lists
+        return collections

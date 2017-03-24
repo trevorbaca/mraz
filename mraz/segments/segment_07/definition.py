@@ -9,39 +9,14 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 14, repr(len(segments))
-rh_segments, lh_segments, stage_2_segments = segments.partition(
-    [5, 5, 4],
-    overhang=Exact,
-    )
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_segment_7_collections()
 
-rh_segments = abjad.CyclicTuple(rh_segments)
-lh_segments = abjad.CyclicTuple(lh_segments)
-
-###################################### RH #####################################
-
-all_rh_segments = []
-for i in range(8):
-    start = i
-    stop = i + 3
-    rh_segments_ = rh_segments[start:stop]
-    operator = baca.pitch_class_segment().transpose(n=i*7)
-    expression = baca.sequence().map(operator)
-    rh_segments_ = expression(rh_segments_)
-    all_rh_segments.extend(rh_segments_)
-all_rh_segments = baca.Sequence(all_rh_segments)
-rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
-assert len(rh_segment_lists) == 12
+#################################### [7.1] ####################################
 
 accumulator(
     'RH Voice 1',
-    rh_segment_lists[0],
+    collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.nest('2/16'),
     baca.register(13, 13+10),
@@ -59,7 +34,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[1],
+    collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.register(7, 7+10),
     baca.imbricate(
@@ -76,7 +51,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh_segment_lists[2],
+    collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(15, 15+10),
     baca.imbricate(
@@ -91,7 +66,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[3],
+    collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(9, 9+10),
     baca.imbricate(
@@ -106,7 +81,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh_segment_lists[4],
+    collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(17, 17+10),
     baca.imbricate(
@@ -122,7 +97,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[5],
+    collections['stage 1']['rh'].next(),
     baca.register(11, 11+10),
     baca.imbricate(
         'RH Voice 2 Inserts',
@@ -139,7 +114,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh_segment_lists[6],
+    collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(19, 19+10),
     baca.imbricate(
@@ -153,7 +128,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[7],
+    collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(13, 13+10),
     baca.imbricate(
@@ -166,9 +141,12 @@ accumulator(
     figure_name='rh-2 7.1.4',
     )
 
+# sacrifice
+collections['stage 1']['rh'].next()
+
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[9],
+    collections['stage 1']['rh'].next(),
     baca.register(15, 15+10),
     baca.imbricate(
         'RH Voice 2 Inserts',
@@ -184,7 +162,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh_segment_lists[10],
+    collections['stage 1']['rh'].next(),
     baca.nest('2/16'),
     baca.register(23, 23+10),
     baca.imbricate(
@@ -199,7 +177,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    rh_segment_lists[11],
+    collections['stage 1']['rh'].next(exhausted=True),
     baca.register(17, 17+10),
     baca.imbricate(
         'RH Voice 2 Inserts',
@@ -214,22 +192,9 @@ accumulator(
 
 ###################################### LH #####################################
 
-all_lh_segments = []
-for i in range(5):
-    start = i
-    stop = i + 2
-    lh_segments_ = lh_segments[start:stop]
-    operator = baca.pitch_class_segment().transpose(n=i*7)
-    expression = baca.sequence().map(operator)
-    lh_segments_ = expression(lh_segments_)
-    all_lh_segments.extend(lh_segments_)
-all_lh_segments = baca.Sequence(all_lh_segments)
-lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
-assert len(lh_segment_lists) == 5
-
 accumulator(
     'LH Voice 4',
-    lh_segment_lists[0],
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
         baca.select_note(0),
@@ -249,7 +214,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh_segment_lists[1],
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
         baca.select_note(4),
@@ -272,7 +237,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh_segment_lists[2],
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
         baca.select_note(14),
@@ -292,7 +257,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh_segment_lists[3],
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
         baca.select_note(26),
@@ -315,7 +280,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh_segment_lists[4],
+    collections['stage 1']['lh'].next(exhausted=True),
     baca.anchor(
         'RH Voice 2',
         baca.select_note(-6),
