@@ -12,15 +12,15 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 59/16
-                    R1 * 59/16
+                    \time 4/4
+                    R1 * 1
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
-                    s1 * 59/16 ^ \markup {
+                    s1 * 1 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -44,292 +44,156 @@
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
                         {
-                            {
+                            \times 4/5 {
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \override Beam.positions = #'(6 . 6)
-                                e16 [
+                                \override DynamicLineSpanner.staff-padding = #'8
+                                \override Slur.direction = #up
+                                b'16 [ \< \f (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                cs'16
+                                fs''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                c'16
+                                g''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                fs16
+                                a''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                d'16
+                                cs'''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                bf''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                cs'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                af''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                a''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                b''16
+                            }
+                            \times 4/5 {
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #2
+                                ef'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                c''''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                bf'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #2
+                                b'''16
+                                \set stemLeftBeamCount = #2
+                                \set stemRightBeamCount = #1
+                                cs''''16
                             }
                             {
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                f16
+                                f''''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                g16
+                                d''''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                af16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                bf16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                a16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                a16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                g16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                fs16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                e16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                ef'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                b16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                a16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                bf16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                a16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                b16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                g16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                c'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                d'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                af16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                cs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                bf16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                af16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
+                                c''''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                e16 ]
+                                cs''''16 ] \ff )
                                 \bar "|"
-                                \revert Beam.positions
+                                \revert DynamicLineSpanner.staff-padding
+                                \break
+                                \revert Slur.direction
                             }
                         }
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
-                        s1 * 59/16
+                        s1 * 1
                         \bar "|"
                     }
                 >>
