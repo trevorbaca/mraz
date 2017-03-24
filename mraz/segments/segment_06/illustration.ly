@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #60
+        currentBarNumber = #63
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -107,6 +107,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 fs'''8 -\staccato -\tenuto \pp
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 6.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (0)
+                                                    ]
+                                                }
+                                        }
                                 a'''8 -\staccato -\tenuto
                                 b''8 -\staccato -\tenuto
                             }
@@ -122,6 +139,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 bf'''8 -\staccato -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 6.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
+                                                    ]
+                                                }
+                                        }
                                 cs'''8 -\staccato -\tenuto
                                 ef'''8 -\staccato -\tenuto
                             }
@@ -129,6 +163,23 @@
                         {
                             {
                                 r8
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 6.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (2)
+                                                    ]
+                                                }
+                                        }
                                 d'''8 -\staccato -\tenuto
                                 e'''8 -\staccato -\tenuto
                                 c'''8 -\staccato -\tenuto
@@ -141,6 +192,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 af''8 -\staccato -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-3 6.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (3)
+                                                    ]
+                                                }
+                                        }
                                 e''8 -\staccato -\tenuto
                                 g''8 -\staccato -\tenuto
                                 a''8 -\staccato -\tenuto
@@ -212,6 +280,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 9/8 {
                                 g'16 -\tenuto \mp
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 6.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (4)
+                                                    ]
+                                                }
+                                        }
                                 r16
                                 af'16 -\tenuto
                                 r16
@@ -226,6 +311,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
                                 b'16 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 6.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (5)
+                                                    ]
+                                                }
+                                        }
                                 r8
                                 c''16 -\tenuto
                                 r8
@@ -239,6 +341,23 @@
                         {
                             {
                                 d'16 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 6.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (6)
+                                                    ]
+                                                }
+                                        }
                                 r32
                                 f'16 -\tenuto
                                 r32
@@ -253,6 +372,23 @@
                         {
                             {
                                 fs''16 -\tenuto
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 6.1.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (7)
+                                                    ]
+                                                }
+                                        }
                                 r32
                                 f''16 -\tenuto
                                 r32
