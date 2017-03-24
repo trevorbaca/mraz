@@ -9,30 +9,14 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[14:20]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 6, repr(len(segments))
-stages = segments.partition([2, 4], overhang=Exact)
-assert stages.sum() == segments
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_segment_2_collections()
 
-stage_1_segments = stages[0]
-stage_2_segments = stages[1]
-
-counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
-stage_2_segments = stage_2_segments.join()
-stage_2_segments = stage_2_segments.read(counts)
-stage_2_segments = stage_2_segments.remove_duplicates(level=1)
-measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
-assert measures.sum() == stage_2_segments
-measures = baca.Cursor(measures, singletons=True)
+#################################### [2.2] ####################################
 
 accumulator(
     'RH Voice 2',
-    measures.next().arpeggiate_up(),
+    collections['stage 2']['rh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -42,7 +26,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next().arpeggiate_up(),
+    collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -51,7 +35,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next().arpeggiate_up(),
+    collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -60,7 +44,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next().arpeggiate_up(),
+    collections['stage 2']['rh'].next(),
     baca.bass_to_octave(5),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
@@ -69,14 +53,12 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    measures.next().arpeggiate_up(),
+    collections['stage 2']['rh'].next(exhausted=True),
     baca.bass_to_octave(5),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.staccati(),
     figure_name='rh-2 2.2.5',
     )
-
-assert measures.is_exhausted
 
 ### LH RESONANCE ###
 

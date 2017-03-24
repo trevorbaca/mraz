@@ -25,6 +25,37 @@ class CollectionMaker(object):
 
     ### PUBLIC METHODS ###
 
+    def make_segment_2_collections(self):
+        r'''Makes segment 2 collections.
+        '''
+        collections = {
+            'stage 1': {},
+            'stage 2': {},
+        }
+        segments = [
+            baca.PitchClassSegment(_.get_payload())
+            for _ in self._design[14:20]
+            ]
+        segments = baca.CollectionList(
+            segments,
+            item_class=abjad.NumberedPitchClass,
+            )
+        assert len(segments) == 6, repr(len(segments))
+        stages = segments.partition([2, 4], overhang=Exact)
+        assert stages.sum() == segments
+        stage_1_segments = stages[0]
+        stage_2_segments = stages[1]
+        counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
+        stage_2_segments = stage_2_segments.join()
+        stage_2_segments = stage_2_segments.read(counts)
+        stage_2_segments = stage_2_segments.remove_duplicates(level=1)
+        measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
+        assert measures.sum() == stage_2_segments
+        measures = [_.arpeggiate_up() for _ in measures]
+        measures = baca.Cursor(measures, singletons=True)
+        collections['stage 2']['rh'] = measures
+        return collections
+
     def make_segment_4_collections(self):
         r'''Makes segment 4 collections.
         '''
