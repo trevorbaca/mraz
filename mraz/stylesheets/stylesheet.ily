@@ -58,7 +58,7 @@
             \null
             \override #'(font-name . "Palatino Italic")
             \fontsize #3 {
-               " for Jared Redmond "
+               " for Jared Redmond (Berkeley Premiere)"
             }
         }
     }

@@ -58,14 +58,11 @@ Order: [8], [4], [6], [5], [2], [7]
     * internal to [5] ...
         * (P8.1) QUIET First four ppp purple notes of 7/8 (Bb1 D2 C2 B1) of [8]
         * (P8.2) LOUD Two-note forte turqise B0 Eb1 of same 7/8 of [8]
-        * (P6.1) QUIET First two pp green F#6 A6 at beginning of [6]
-        * (P6.2) QUIET Next two pp green Bb6 C#6 at beginning of [6]
         * entirety of [2] fits into gap before last chunk of [5], then
     * last chunk of [5] attacca into
 
     Berkeley [6]
-    * recap (P4.4) of SHORTENED first measure (16/4) of [5] as intro into
-    * entirety of [7];
+    * entirety of [7]
     * double bar.
 
 Intrication:
