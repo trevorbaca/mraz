@@ -29,6 +29,8 @@ Order: [8], [4], [6], [5], [2], [7]
     * (P6.1) QUIET First two pp green F#6 A6 at beginning of [6]
     * (P6.2) QUIET Next two pp green Bb6 C#6 at beginning of [6]
     * (P5.1) LOUD First fff / mf black / green measure (16/4) of [5]
+
+    Berkeley [1-2]
     * entirety of [8] as first complete chunk, attacca ...
 
     Berkeley [2]

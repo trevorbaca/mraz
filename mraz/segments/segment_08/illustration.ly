@@ -380,23 +380,6 @@
                                 \clef "bass"
                                 \override TupletBracket.direction = #up
                                 g,8. \ppp
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.1"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (0)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 fs,,8.
                                 r32
@@ -406,23 +389,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
                                 g,,8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.2"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (1)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r32
                                 a,,8
@@ -444,23 +410,6 @@
                         {
                             {
                                 cs,,32
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.3"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (2)
-                                                    ]
-                                                }
-                                        }
                                 r4...
                                 a,,,32
                                 r4...
@@ -471,23 +420,6 @@
                         {
                             {
                                 bf,,8.
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.4"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (3)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r32
                                 d,8.
@@ -502,23 +434,6 @@
                         {
                             {
                                 d,,8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.5"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (4)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 bf,,8
                                 r32
@@ -528,23 +443,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
                                 b,,,8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.6"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (5)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 cs,,8
                                 r32
@@ -555,23 +453,6 @@
                         {
                             {
                                 ef,,32
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.7"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (6)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r4...
                                 c,,32
@@ -586,23 +467,6 @@
                         {
                             {
                                 c,8.
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.8"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (7)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 d,8.
                                 r32
@@ -612,23 +476,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
                                 fs,,8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.9"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (8)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 e,,8
                                 r32
@@ -648,23 +495,6 @@
                         {
                             {
                                 a,,,32
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.10"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (9)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r4...
                                 g,,32
@@ -675,23 +505,6 @@
                         {
                             {
                                 b,,8.
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.11"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (10)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 a,,8.
                                 r32
@@ -705,23 +518,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
                                 fs,,8
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-5 8.3.12"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (11)
-                                                    ]
-                                                }
-                                        }
                                 r32
                                 bf,,8
                                 r32
@@ -757,23 +553,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 af,,4 -\tenuto \f
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.1"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (12)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.staff-position = #-10
                                 r4
                                 c,,4 -\tenuto
@@ -787,23 +566,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 b,,,8 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.2"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (13)
-                                                    ]
-                                                }
-                                        }
                                 \override Rest.direction = #up
                                 r4
                                 ef,,8 -\tenuto
@@ -816,23 +578,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 bf,,,16 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.3"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (14)
-                                                    ]
-                                                }
-                                        }
                                 r8.
                                 c,,16 -\tenuto
                                 r8.
@@ -845,23 +590,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 g,,16 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.4"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (15)
-                                                    ]
-                                                }
-                                        }
                                 r8.
                                 f,,16 -\tenuto
                                 r8.
@@ -874,23 +602,6 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 d,,8 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.5"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (16)
-                                                    ]
-                                                }
-                                        }
                                 e,,8 -\tenuto
                                 af,,8 -\tenuto
                                 fs,,8 -\tenuto
@@ -900,23 +611,6 @@
                         {
                             \times 2/3 {
                                 e,,8 -\tenuto
-                                    ^ \markup {
-                                        \fontsize
-                                            #2
-                                            \concat
-                                                {
-                                                    [
-                                                    "lh-6 8.3.6"
-                                                    \hspace
-                                                        #1
-                                                    \raise
-                                                        #0.25
-                                                        \fontsize
-                                                            #-2
-                                                            (17)
-                                                    ]
-                                                }
-                                        }
                                 r4
                                 f,,8 -\tenuto
                                 r4
