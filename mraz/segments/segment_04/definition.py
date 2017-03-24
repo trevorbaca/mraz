@@ -36,12 +36,17 @@ stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
 stage_6_segments = stage_6_segments.chords()
 stage_6_segments = stage_6_segments.cursor(singletons=True)
 
+collections = mraz.tools.CollectionMaker.make_stage_4_collections()
+
 #################################### [4.1] ####################################
 
 # [4.1] (VOICE 3 as 4)
 
-v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
-v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
+#v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
+#v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
+
+v3_stage_1_segments = collections['stage 1']['rh']
+v5_stage_1_segments = collections['stage 1']['lh']
 
 accumulator(
     'RH Voice 3',
@@ -943,7 +948,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=True,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
