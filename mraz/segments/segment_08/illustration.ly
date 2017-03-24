@@ -143,7 +143,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         s1 * 7/16
@@ -158,7 +157,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
                         s1 * 7/16
@@ -173,7 +171,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 7/16
@@ -188,7 +185,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceThree = "RH Voice 3" {
                         s1 * 7/16
@@ -203,7 +199,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
                         s1 * 7/16
@@ -218,7 +213,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceFour = "RH Voice 4" {
                         s1 * 7/16
@@ -233,7 +227,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
                         s1 * 7/16
@@ -248,7 +241,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceFive = "RH Voice 5" {
                         s1 * 7/16
@@ -263,7 +255,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHVoiceSix = "RH Voice 6" {
                         s1 * 7/16
@@ -278,7 +269,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
                         s1 * 7/16
@@ -293,7 +283,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
@@ -310,7 +299,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
                         s1 * 7/16
@@ -325,7 +313,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceThree = "LH Voice 3" {
                         s1 * 7/16
@@ -340,7 +327,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceFour = "LH Voice 4" {
                         s1 * 7/16
@@ -355,7 +341,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
                         s1 * 7/16
@@ -370,7 +355,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceFive = "LH Voice 5" {
                         {
@@ -524,7 +508,6 @@
                                 af,,8
                                 \ottava #0
                                 r32
-                                \bar "|."
                                 \revert TupletBracket.direction
                             }
                         }
@@ -542,7 +525,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHVoiceSix = "LH Voice 6" {
                         \override Script.direction = #down
@@ -620,7 +602,6 @@
                             }
                         }
                         s1 * 7/8
-                        \bar "|."
                         \revert Script.direction
                         \revert Stem.direction
                         \revert TupletBracket.staff-padding
@@ -638,7 +619,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
                         s1 * 7/16
@@ -653,7 +633,6 @@
                         s1 * 1
                         s1 * 7/8
                         s1 * 1/2
-                        \bar "|."
                     }
                 >>
             >>
