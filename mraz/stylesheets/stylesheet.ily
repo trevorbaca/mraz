@@ -278,6 +278,30 @@
     }
     \context {
         \Voice
+        \name RHVoiceFourInserts
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #blue
+        \override Beam.color = #blue
+        \override Dots.color = #blue
+        \override DynamicText.color = #blue
+        \override Glissando.color = #blue
+        \override Hairpin.color = #blue
+        \override NoteHead.color = #blue
+        \override RepeatTie.color = #blue
+        \override Rest.color = #blue
+        \override Script.color = #blue
+        \override Slur.color = #blue
+        \override Stem.color = #blue
+        \override StemTremolo.color = #blue
+        \override TextScript.color = #blue
+        \override TupletBracket.color = #blue
+        \override TupletNumber.color = #blue
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
+    \context {
+        \Voice
         \name RHVoiceFive
         \type Engraver_group
         \alias Voice
@@ -589,6 +613,7 @@
         \accepts RHVoiceThree
         \accepts RHVoiceThreeInserts
         \accepts RHVoiceFour
+        \accepts RHVoiceFourInserts
         \accepts RHVoiceFive
         \accepts RHVoiceSix
         \accepts RHResonanceVoice
