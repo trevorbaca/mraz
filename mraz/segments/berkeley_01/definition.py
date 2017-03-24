@@ -7,20 +7,27 @@ import mraz
 ################################# [BERKELEY 1] ################################
 ###############################################################################
 
-
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
+maker = mraz.tools.SilverDesignMaker()
+design = maker()
+design = abjad.CyclicTuple(design)
+assert len(design) == 34, repr(len(design))
 
-#accumulator(
-#    'LH Voice 5',
-#    v5_stage_3_segments.next(),
-#    baca.dynamic('ppp'),
-#    baca.flags(),
-#    baca.proportional_notation_duration((1, 16)),
-#    baca.register(-27, -39),
-#    counts=[6, -1],
-#    figure_name='lh-5 8.3.1',
-#    talea_denominator=32,
-#    )
+segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
+segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
+assert len(segments) == 14, repr(len(segments))
+segments = segments.cursor()
+
+accumulator(
+    'RH Voice 1',
+    segments.next(14),
+    baca.beam_positions(6),
+    baca.register(-8),
+    extend_beam=True,
+    figure_name='rh-1 1.1.1',
+    )
+
+assert segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -45,11 +52,10 @@ segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
-    #spacing_specifier=spacing_specifier,
+    spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=accumulator.time_signatures,
     )
@@ -63,12 +69,8 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.append_commands(
-    'LH Voice 5',
-    baca.select_stages(1, Infinity),
-    )
-
-segment_maker.append_commands(
-    'LH Voice 6',
-    baca.select_stages(1, Infinity),
-    )
+#segment_maker.append_commands(
+#    'RH Voice 1',
+#    baca.select_stages(1, 2),
+#    baca.register(0, -12),
+#    )

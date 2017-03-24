@@ -4,11 +4,10 @@
 #(ly:set-option 'relative-includes #t)
 
 \include "../../stylesheets/stylesheet.ily"
-\include "../../stylesheets/nonfirst-segment.ily"
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #2
+        currentBarNumber = #1
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {

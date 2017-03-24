@@ -49,8 +49,7 @@ class CollectionMaker(object):
         assert stages.sum() == segments
 
         stage_1_segments = stages[0]
-        stage_2_segments = stages[1][:1].repeat(n=9)
-        stage_2_segments = stage_2_segments + stages[1].join()
+        stage_2_segments = stages[1]
         stage_3_segments = stages[2]
         stage_4_segments = stages[3]
         stage_5_segments = stages[4]
@@ -58,6 +57,15 @@ class CollectionMaker(object):
 
         stage_1_rh_segments = stage_1_segments[:1].repeat(n=3).cursor()
         stage_1_lh_segments = stage_1_segments[1:].repeat(n=3).cursor()
+
+        chord = stage_2_segments[0].chord().to_pitches().space_up(
+            bass=7,
+            soprano=9,
+            )
+        chords = 10 * [chord]
+        last = stages[1].join()[0]
+        chords.append(last)
+        stage_2_segments = baca.Cursor(chords, cyclic=False, singletons=True)
 
         assert len(stage_4_segments) == 2
         rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
@@ -92,7 +100,7 @@ class CollectionMaker(object):
 
         collections['stage 1']['rh'] = stage_1_rh_segments
         collections['stage 1']['lh'] = stage_1_lh_segments
-        collections['stage 2']['all'] = stage_2_segments
+        collections['stage 2']['lh'] = stage_2_segments
         collections['stage 4']['rh'] = stage_4_rh_segments
         collections['stage 4']['lh'] = stage_4_lh_segments
         collections['stage 5']['rh'] = stage_5_rh_segments
