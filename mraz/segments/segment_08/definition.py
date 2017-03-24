@@ -264,6 +264,7 @@ segment_maker = baca.tools.SegmentMaker(
     color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
+    final_barline=False,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
