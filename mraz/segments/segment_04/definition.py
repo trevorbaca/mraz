@@ -14,8 +14,6 @@ collections = collection_maker.make_segment_4_collections()
 
 #################################### [4.1] ####################################
 
-# [4.1] (VOICE 3 as 4)
-
 accumulator(
     'RH Voice 3',
     collections['stage 1']['rh'].next(),
@@ -82,8 +80,6 @@ accumulator(
     figure_name='rh-3 4.1.6',
     )
 
-# [4.1] (VOICE 5)
-
 accumulator(
     'LH Voice 5',
     collections['stage 1']['lh'].next(),
@@ -101,6 +97,7 @@ accumulator(
 accumulator(
     'LH Voice 5',
     [abjad.Rest((3, 4))],
+    baca.sustain_pedal(baca.select_leaves(leak=Right)),
     figure_name='lh-5 4.1.2',
     hide_time_signature=True,
     )
@@ -151,8 +148,6 @@ accumulator(
     )
 
 #################################### [4.2] ####################################
-
-# [4.2] (VOICE 5)
 
 accumulator(
     'LH Voice 5',
@@ -281,8 +276,6 @@ accumulator(
     figure_name='rh-5 4.2.1',
     )
 
-# [4.2] (LH RESONANCE)
-
 accumulator(
     'LH Resonance Voice',
     [{-35, -23}],
@@ -348,11 +341,6 @@ accumulator(
     )
 
 #################################### [4.4] ####################################
-
-# [4.4] (VOICE 1)
-
-rh = collections['stage 4']['rh']
-lh = collections['stage 4']['lh']
 
 accumulator(
     'LH Voice 5',
@@ -596,8 +584,6 @@ accumulator(
 
 #################################### [4.5] ####################################
 
-rh = collections['stage 5']['rh']
-lh = collections['stage 5']['lh']
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 accumulator(
@@ -845,11 +831,13 @@ accumulator(
 accumulator(
     'RH Voice 3',
     collections['stage 1']['rh'][1],
-    baca.dynamic('ff'),
+    baca.dynamic('mp'),
     baca.flags(),
+    baca.markup('(memory of before)'),
     baca.proportional_notation_duration((1, 16)),
     baca.register(12, -12),
     baca.resume(),
+    baca.text_scripts_up(),
     baca.tuplet_brackets_up(),
     counts=[-4, 2, -4, 4],
     figure_name='rh-3 4.6.1',
@@ -860,7 +848,7 @@ accumulator(
     'LH Voice 5',
     collections['stage 1']['lh'][1],
     baca.anchor_to_figure('rh-3 4.6.1'),
-    baca.dynamic('f'),
+    baca.dynamic('p'),
     baca.flags(),
     baca.register(-6, 6),
     baca.rests_around([4], [4]),
@@ -876,10 +864,22 @@ accumulator(
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
-    # TODO: uncomment once measure structure is fixed
-#    (30, mraz.materials.tempi[112]),
-#    (30, abjad.Ritardando()),
-#    (32, mraz.materials.tempi[84]),
+    (1, abjad.Accelerando()),
+    (6, mraz.materials.tempi[112]),
+    (7, mraz.materials.tempi[84]),
+    (7, abjad.Accelerando()),
+    (16, mraz.materials.tempi[112]),
+    (21, abjad.Ritardando()),
+    (24, mraz.materials.tempi[84]),
+    (25, mraz.materials.tempi[112]),
+    (25, abjad.Ritardando()),
+    (29, mraz.materials.tempi[84]),
+    (31, mraz.materials.tempi[112]),
+    (31, abjad.Ritardando()),
+    (33, mraz.materials.tempi[84]),
+    (34, mraz.materials.tempi[112]),
+    (34, abjad.Ritardando()),
+    (38, mraz.materials.tempi[84]),
     ])
 
 spacing_specifier = baca.tools.HorizontalSpacingCommand(
@@ -899,7 +899,7 @@ segment_maker = baca.tools.SegmentMaker(
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
-    #label_stages=True,
+    label_stages=True,
     measures_per_stage=measures_per_stage,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',

@@ -20,17 +20,45 @@ collections_8 = collection_maker.make_segment_8_collections()
 
 accumulator(
     'RH Voice 1',
-    collections_4['stage 5']['lh'].next(4),
+    collections_4['stage 5']['rh'][2],
+    baca.register(36),
+    baca.tenuti(),
+    counts=[16],
+    figure_name='rh-1 b.1.1',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'RH Voice 2',
+    collections_4['stage 5']['lh'][:4],
+    baca.anchor_to_figure('rh-1 b.1.1'),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
-    baca.line_break(baca.select_leaf(-1)),
+    #baca.line_break(baca.select_leaf(-1)),
+    baca.ottava(),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.slur(),
     baca.slurs_up(),
-    figure_name='rh-1 b1.1',
+    figure_name='rh-2 b.1.1',
     time_treatments=[abjad.Duration(1, 4)],
     )
+
+accumulator(
+    'LH Voice 4',
+    collections_7['stage 1']['lh'][-1],
+    baca.dynamic('ff'),
+    baca.register(6, 6+10),
+    baca.imbricate(
+        'LH Voice 4 Inserts',
+        [14, 18],
+        baca.flags(),
+        ),
+    baca.transpose_segments(n=4*7),
+    figure_name='lh-4 b.1.1',
+    time_treatments=[1],
+    )
+
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
@@ -49,7 +77,7 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.tools.SegmentMaker(
     #allow_figure_names=True,
-    color_octaves=True,
+    #color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
     #label_clock_time=True,
@@ -72,8 +100,8 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-#segment_maker.append_commands(
-#    'RH Voice 1',
-#    baca.select_stages(1, 2),
-#    baca.register(0, -12),
-#    )
+segment_maker.append_commands(
+    'LH Voice 4 Inserts',
+    baca.select_stages(1, Infinity),
+    baca.stems_up(),
+    )

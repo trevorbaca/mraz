@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #8
+        currentBarNumber = #9
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -175,7 +175,384 @@
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    s1 * 3/2 ^ \markup {
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                84
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 3/2 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.1]
+                            }
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.2]
+                            }
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.3]
+                            }
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.4]
+                            }
+                }
+                {
+                    \time 6/4
+                    s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.5]
+                            }
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.6]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        }
+                }
+                {
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                84
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 3/4 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.7]
+                            }
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.8]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.9]
+                            }
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.10]
+                            }
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.11]
+                            }
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.12]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.13]
+                            }
+                }
+                {
+                    \time 5/4
+                    s1 * 5/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.14]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.15]
+                            }
+                }
+                {
+                    \time 1/4
+                    s1 * 1/4 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.16]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        }
+                }
+                {
+                    \time 7/8
+                    s1 * 7/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.17]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.18]
+                            }
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.19]
+                            }
+                }
+                {
+                    \time 1/8
+                    s1 * 1/8
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.20]
+                            }
+                }
+                {
+                    \time 4/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \large
+                            \upright
+                                rit.
+                        \hspace
+                            #0.75
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 1 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.21]
+                            }
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.22]
+                            }
+                }
+                {
+                    \time 4/4
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.23]
+                            }
+                }
+                {
+                    \time 3/4
+                    s1 * 3/4 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.24]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -193,160 +570,332 @@
                         }
                 }
                 {
+                    \time 5/8
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 5/8 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.25]
+                            }
+                }
+                {
+                    \time 2/4
+                    s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.26]
+                            }
+                }
+                {
                     \time 3/4
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.27]
+                            }
                 }
                 {
-                    \time 6/4
-                    s1 * 3/2
+                    \time 2/4
+                    s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.28]
+                            }
                 }
                 {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 6/4
-                    s1 * 3/2
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    s1 * 3/4
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 5/4
-                    s1 * 5/4
-                }
-                {
-                    \time 4/4
-                    s1 * 1
+                    \time 5/8
+                    s1 * 5/8 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.29]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                84
+                            }
+                        }
                 }
                 {
                     \time 1/4
                     s1 * 1/4
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 1/8
-                    s1 * 1/8
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 3/4
-                    s1 * 3/4
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 5/8
-                    s1 * 5/8
-                }
-                {
-                    \time 1/4
-                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.30]
+                            }
                 }
                 {
                     \time 7/4
-                    s1 * 7/4
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 7/4 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.31]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.32]
+                            }
                 }
                 {
                     \time 4/4
-                    s1 * 1
+                    s1 * 1 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.33]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                84
+                            }
+                        }
                 }
                 {
-                    s1 * 1
+                    \once \override TextSpanner.arrow-width = 0.25
+                    \once \override TextSpanner.bound-details.left-broken.padding = 0
+                    \once \override TextSpanner.bound-details.left-broken.text = \markup {
+                        \null
+                        }
+                    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    \once \override TextSpanner.bound-details.left.text = \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                112
+                            }
+                        \hspace
+                            #1.25
+                        }
+                    \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                    \once \override TextSpanner.bound-details.right-broken.padding = 0
+                    \once \override TextSpanner.bound-details.right-broken.text = ##f
+                    \once \override TextSpanner.bound-details.right.arrow = ##t
+                    \once \override TextSpanner.bound-details.right.padding = 2
+                    \once \override TextSpanner.bound-details.right.text = ##f
+                    \once \override TextSpanner.dash-fraction = 0.25
+                    \once \override TextSpanner.dash-period = 1.5
+                    s1 * 1 \startTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.34]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.35]
+                            }
                 }
                 {
                     \time 4/4
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.36]
+                            }
                 }
                 {
                     \time 2/4
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.37]
+                            }
                 }
                 {
                     \time 4/4
-                    s1 * 1
+                    s1 * 1 \stopTextSpan
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.38]
+                            }
+                        ^ \markup {
+                        \fontsize
+                            #-6
+                            \general-align
+                                #Y
+                                #DOWN
+                                \note-by-number
+                                    #2
+                                    #0
+                                    #1
+                        \upright
+                            {
+                                =
+                                84
+                            }
+                        }
                 }
                 {
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.39]
+                            }
                 }
                 {
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.40]
+                            }
                 }
                 {
                     \time 6/4
                     s1 * 3/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [C.41]
+                            }
                 }
             }
         >>
@@ -1446,6 +1995,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override TextScript.direction = #up
                                 \override TupletBracket.direction = #up
                                 r4
                                     ^ \markup {
@@ -1465,7 +2015,7 @@
                                                     ]
                                                 }
                                         }
-                                ef''8 -\tenuto \ff
+                                ef''8 -\tenuto \mp - \markup { "(memory of before)" }
                                 r4
                                 cs''4 -\tenuto
                                 r4
@@ -1473,6 +2023,7 @@
                                 r4
                                 bf4 -\tenuto
                                 \bar "|"
+                                \revert TextScript.direction
                                 \revert TupletBracket.direction
                             }
                         }
@@ -2678,7 +3229,7 @@
                                                     ]
                                                 }
                                         }
-                                af8. -\tenuto \f
+                                af8. -\tenuto \p
                                 r16
                                 d'8. -\tenuto
                                 r16
