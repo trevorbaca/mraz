@@ -8,17 +8,19 @@ import mraz
 ###############################################################################
 
 
-accumulator(
-    'LH Voice 5',
-    v5_stage_3_segments.next(),
-    baca.dynamic('ppp'),
-    baca.flags(),
-    baca.proportional_notation_duration((1, 16)),
-    baca.register(-27, -39),
-    counts=[6, -1],
-    figure_name='lh-5 8.3.1',
-    talea_denominator=32,
-    )
+accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
+
+#accumulator(
+#    'LH Voice 5',
+#    v5_stage_3_segments.next(),
+#    baca.dynamic('ppp'),
+#    baca.flags(),
+#    baca.proportional_notation_duration((1, 16)),
+#    baca.register(-27, -39),
+#    counts=[6, -1],
+#    figure_name='lh-5 8.3.1',
+#    talea_denominator=32,
+#    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################

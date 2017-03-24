@@ -8,13 +8,24 @@ class CollectionMaker(object):
     r'''Collection maker.
     '''
 
-    maker = mraz.tools.SilverDesignMaker()
-    design = maker()
-    design = abjad.CyclicTuple(design)
-    assert len(design) == 34, repr(len(design))
+    ### CLASS VARIABLES ###
 
-    @staticmethod
-    def make_stage_4_collections():
+    __slots__ = (
+        '_design',
+        )
+
+    ### INITIALIZER ###
+
+    def __init__(self):
+        maker = mraz.tools.SilverDesignMaker()
+        design = maker()
+        design = abjad.CyclicTuple(design)
+        assert len(design) == 34, repr(len(design))
+        self._design = design
+
+    ### PUBLIC METHODS ###
+
+    def make_stage_4_collections(self):
         r'''Makes stage 4 collections.
         '''
         collections = {
@@ -25,10 +36,9 @@ class CollectionMaker(object):
             'stage 5': {},
             'stage 6': {},
             }
-
         segments = [
             baca.PitchClassSegment(_.get_payload())
-            for _ in design[23:36]
+            for _ in self._design[23:36]
             ]
         segments = baca.CollectionList(
             segments,
@@ -46,10 +56,8 @@ class CollectionMaker(object):
         stage_5_segments = stages[4]
         stage_6_segments = stages[5]
 
-        #v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
-        #v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
         stage_1_rh_segments = stage_1_segments[:1].repeat(n=3).cursor()
-        stage_1_lh_segments = stage_1_segments[:1].repeat(n=3).cursor()
+        stage_1_lh_segments = stage_1_segments[1:].repeat(n=3).cursor()
 
         assert len(stage_4_segments) == 2
         rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
@@ -90,3 +98,5 @@ class CollectionMaker(object):
         collections['stage 5']['rh'] = stage_5_rh_segments
         collections['stage 5']['lh'] = stage_5_lh_segments
         collections['stage 6']['all'] = stage_6_segments
+
+        return collections
