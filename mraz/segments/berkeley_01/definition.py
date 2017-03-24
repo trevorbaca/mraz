@@ -8,26 +8,29 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
+collection_maker = mraz.tools.CollectionMaker()
+collections_2 = collection_maker.make_segment_2_collections()
+collections_4 = collection_maker.make_segment_4_collections()
+collections_5 = collection_maker.make_segment_5_collections()
+collections_6 = collection_maker.make_segment_6_collections()
+collections_7 = collection_maker.make_segment_7_collections()
+collections_8 = collection_maker.make_segment_8_collections()
 
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 14, repr(len(segments))
-segments = segments.cursor()
+##################################### [B1] ####################################
 
 accumulator(
     'RH Voice 1',
-    segments.next(14),
-    baca.beam_positions(6),
-    baca.register(-8),
-    extend_beam=True,
-    figure_name='rh-1 1.1.1',
+    collections_4['stage 5']['lh'].next(4),
+    baca.dynamic_line_spanner_staff_padding(8),
+    baca.hairpins(['f < ff']),
+    baca.line_break(baca.select_leaf(-1)),
+    baca.proportional_notation_duration((1, 32)),
+    baca.register(10, 36),
+    baca.slur(),
+    baca.slurs_up(),
+    figure_name='rh-1 b1.1',
+    time_treatments=[abjad.Duration(1, 4)],
     )
-
-assert segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
