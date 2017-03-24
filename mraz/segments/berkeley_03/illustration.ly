@@ -1421,7 +1421,7 @@
                                 \ottava #1
                                 \override Rest.direction = #down
                                 \override TupletBracket.direction = #down
-                                a''4 -\tenuto \mf - \markup { "(first note A5)" }
+                                a''4 -\tenuto \mf
                                 r4
                                 cs''4 -\tenuto
                                 r4
