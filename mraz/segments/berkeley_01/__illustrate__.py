@@ -20,7 +20,7 @@ if __name__ == '__main__':
             traceback.print_exc()
             sys.exit(1)
         try:
-            from mraz.segments.segment_07.__metadata__ import metadata as previous_segment_metadata
+            previous_segment_metadata = None
         except ImportError:
             traceback.print_exc()
             sys.exit(1)

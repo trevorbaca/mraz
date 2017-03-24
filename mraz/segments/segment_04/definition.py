@@ -22,7 +22,6 @@ assert stages.sum() == segments
 stage_1_segments = stages[0]
 stage_2_segments = stages[1][:1].repeat(n=9)
 stage_2_segments = stage_2_segments + stages[1].join()
-#stage_2_segments = stage_2_segments.cursor(singletons=True)
 stage_3_segments = stages[2]
 stage_4_segments = stages[3]
 stage_5_segments = stages[4]
@@ -36,21 +35,16 @@ stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
 stage_6_segments = stage_6_segments.chords()
 stage_6_segments = stage_6_segments.cursor(singletons=True)
 
-collections = mraz.tools.CollectionMaker.make_stage_4_collections()
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_stage_4_collections()
 
 #################################### [4.1] ####################################
 
 # [4.1] (VOICE 3 as 4)
 
-#v3_stage_1_segments = stage_1_segments[:1].repeat(n=3).cursor()
-#v5_stage_1_segments = stage_1_segments[1:].repeat(n=3).cursor()
-
-v3_stage_1_segments = collections['stage 1']['rh']
-v5_stage_1_segments = collections['stage 1']['lh']
-
 accumulator(
     'RH Voice 3',
-    v3_stage_1_segments.next(),
+    collections['stage 1']['rh'].next(),
     baca.dynamic('ff'),
     baca.flags(),
     baca.line_break(),
@@ -79,7 +73,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    v3_stage_1_segments.next(),
+    collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.proportional_notation_duration((1, 16)),
     baca.register(12, -12),
@@ -98,7 +92,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    v3_stage_1_segments.next(),
+    collections['stage 1']['rh'].next(exhausted=True),
     baca.flags(),
     baca.proportional_notation_duration((1, 16)),
     baca.register(-6),
@@ -107,7 +101,6 @@ accumulator(
     figure_name='rh-3 4.1.5',
     time_treatments=[2],
     )
-assert v3_stage_1_segments.is_exhausted
 
 accumulator(
     'RH Voice 3',
@@ -120,7 +113,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_1_segments.next(),
+    collections['stage 1']['lh'].next(),
     baca.anchor('RH Voice 3', baca.select_note(0)),
     baca.dynamic('f'),
     baca.flags(),
@@ -141,7 +134,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_1_segments.next(),
+    collections['stage 1']['lh'].next(),
     baca.flags(),
     baca.register(-6, 6),
     baca.rests_around([4], [4]),
@@ -166,7 +159,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_1_segments.next(),
+    collections['stage 1']['lh'].next(),
     baca.dynamic('f'),
     baca.flags(),
     baca.register(-6, 6),
@@ -901,7 +894,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    v3_stage_1_segments[1],
+    collections['stage 1']['rh'][1],
     baca.dynamic('ff'),
     baca.flags(),
     baca.proportional_notation_duration((1, 16)),
@@ -915,7 +908,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    v5_stage_1_segments[1],
+    collections['stage 1']['lh'][1],
     baca.anchor_to_figure('rh-3 4.6.1'),
     baca.dynamic('f'),
     baca.flags(),
