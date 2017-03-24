@@ -166,6 +166,23 @@
                                     \dynamicUp
                                     \override Stem.direction = #up
                                     e''16 \fff [
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-1 7.1.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (0)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     cs''16
@@ -218,6 +235,23 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     fs''16
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-1 7.1.2"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (2)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     bf''16
@@ -250,6 +284,23 @@
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     af''16 [
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-1 7.1.3"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (4)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     a''16
@@ -270,6 +321,23 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     af''16
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-1 7.1.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (6)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f'''16
@@ -297,6 +365,23 @@
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     f'''16 [
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-1 7.1.5"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (9)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     fs'''16
@@ -496,6 +581,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16 \fff [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 7.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d''16
@@ -515,6 +617,23 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     cs''16 (
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-2 7.1.2"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (3)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f''16
@@ -555,6 +674,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16 [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 7.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (5)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
@@ -603,6 +739,23 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     a''16 (
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "rh-2 7.1.4"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (7)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     b''16
@@ -640,6 +793,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f''16 [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 7.1.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (8)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16
@@ -654,6 +824,23 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'''16 (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 7.1.6"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (10)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16
@@ -963,6 +1150,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs'16 \ff [
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 7.1.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (11)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16
@@ -1002,6 +1206,23 @@
                                 \set stemRightBeamCount = #2
                                 \override Beam.positions = #'(-4.5 . -4.5)
                                 cs''16 \ff [
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 7.1.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (13)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16
@@ -1017,6 +1238,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16 \ff [
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lh-4 7.1.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (15)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
@@ -1114,6 +1352,23 @@
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     cs'16 \pp [ (
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 7.1.1"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (12)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     a'16
@@ -1178,6 +1433,23 @@
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     ef''16 \pp [ (
+                                        ^ \markup {
+                                            \fontsize
+                                                #2
+                                                \concat
+                                                    {
+                                                        [
+                                                        "lh-5 7.1.2"
+                                                        \hspace
+                                                            #1
+                                                        \raise
+                                                            #0.25
+                                                            \fontsize
+                                                                #-2
+                                                                (14)
+                                                        ]
+                                                    }
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f'16
