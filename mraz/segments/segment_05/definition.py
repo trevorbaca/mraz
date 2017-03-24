@@ -9,29 +9,14 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[36:42]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 6, repr(len(segments))
-stages = segments.partition([2, 4], overhang=Exact)
-assert stages.sum() == segments
-
-stage_1_segments = stages[0]
-stage_2_segments = stages[1]
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_stage_5_collections()
 
 #################################### [5.1] ####################################
 
-stage_1_segments = stage_1_segments.remove_duplicate_pitch_classes(level=1)
-rh, lh = stage_1_segments.partition([1, 1], overhang=Exact)
-rh = rh.cursor(singletons=True)
-lh = lh.cursor(singletons=True)
-
 accumulator(
     'RH Voice 2',
-    rh.next(exhausted=True),
+    collections['stage 1']['rh'].next(exhausted=True),
     baca.accents(),
     baca.dynamic('fff'),
     baca.dynamics_up(),
@@ -48,7 +33,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    lh.next(exhausted=True),
+    collections['stage 1']['lh'].next(exhausted=True),
     baca.anchor('RH Voice 2'),
     baca.dynamic('mf'),
     baca.flags(),
@@ -66,20 +51,9 @@ accumulator(
 
 #################################### [5.2] ####################################
 
-stage_2_segments = stage_2_segments.remove_duplicate_pitch_classes(level=1)
-rh, lh = stage_2_segments.partition([2, 2], overhang=Exact)
-rh = rh.accumulate([
-    baca.pitch_class_segment().transpose(n=3),
-    baca.pitch_class_segment().alpha(),
-    ])
-rh = rh.cursor(singletons=True)
-lh = lh.repeat(n=3)
-lh = lh.read([3, 4, 2, 4, 2, 3, 2, 3, 4], check=Exact)
-lh = lh.cursor(singletons=True)
-
 accumulator(
     'RH Voice 3',
-    rh.next(5),
+    collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
     baca.dynamic('mp'),
     baca.imbricate(
@@ -117,7 +91,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh.next(5),
+    collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
     baca.imbricate(
         'RH Voice 2', 
@@ -150,7 +124,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh.next(5),
+    collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
     baca.imbricate(
         'RH Voice 2', 
@@ -184,7 +158,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh.next(6),
+    collections['stage 2']['rh'].next(6),
     baca.beam_divisions(),
     baca.imbricate(
         'RH Voice 2', 
@@ -218,7 +192,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh.next(3, exhausted=True),
+    collections['stage 2']['rh'].next(3, exhausted=True),
     baca.beam_divisions(),
     baca.imbricate(
         'RH Voice 2', 
@@ -253,7 +227,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(1),
+    collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.3'),
     baca.clef('bass'),
     baca.dynamic('p'),
@@ -269,7 +243,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.5'),
     baca.flags(),
     baca.register(6, -24),
@@ -283,7 +257,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.flags(),
     baca.register(6, -24),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -294,7 +268,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.7'),
     baca.flags(),
     baca.register(0, -24),
@@ -307,7 +281,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(0, -24),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -318,7 +292,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(0, -24),
     baca.slur_trimmed_run_in_each_tuplet(),
@@ -329,7 +303,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(-6, -48),
     baca.rests_around([3], [4, 4, 4]),
@@ -341,7 +315,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(),
+    collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.9'),
     baca.beam_divisions(),
     baca.register(-6, -36),
@@ -354,7 +328,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh.next(exhausted=True),
+    collections['stage 2']['lh'].next(exhausted=True),
     baca.beam_divisions(),
     baca.register(-6, -36),
     baca.slur_trimmed_run_in_each_tuplet(),

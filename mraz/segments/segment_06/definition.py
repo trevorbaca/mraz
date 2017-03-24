@@ -9,45 +9,14 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[42:45]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 3, repr(len(segments))
-stages = segments.partition([1, 1, 1], overhang=Exact)
-assert stages.sum() == segments
+collection_maker = mraz.tools.CollectionMaker()
+collections = collection_maker.make_stage_6_collections()
 
-stage_1_segments = stages[0]
-stage_1_segments = stage_1_segments.accumulate([
-    baca.pitch_class_segment().alpha(),
-    baca.pitch_class_segment().transpose(n=2),
-    ])
-stage_1_segments = stage_1_segments.join()
-stage_1_segments = stage_1_segments.read(
-    [3, 5, 4, 3, 4, 5, 5, 3, 4],
-    check=Exact,
-    )
-assert len(stage_1_segments.flatten()) == 36
-
-rh_indices = [0, 2, 3, 5, 8]
-rh_stage_1_segments = stage_1_segments.retain(rh_indices)
-rh_stage_1_segments = rh_stage_1_segments.remove_duplicates(level=1)
-lh_stage_1_segments = stage_1_segments.remove(rh_indices)
-lh_stage_1_segments = lh_stage_1_segments.remove_duplicates(level=1)
-assert len(rh_stage_1_segments) == 5
-assert len(lh_stage_1_segments) == 4
-
-rh_stage_1_segments = rh_stage_1_segments.cursor()
-lh_stage_1_segments = lh_stage_1_segments.cursor()
-
-
-### VOICE 3 ###
+#################################### [6.1] ####################################
 
 accumulator(
     'RH Voice 3',
-    rh_stage_1_segments.next(2),
+    collections['stage 1']['rh'].next(2),
     baca.dynamic('pp'),
     baca.flags(),
     baca.register(24, 12),
@@ -63,7 +32,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh_stage_1_segments.next(1),
+    collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
     baca.staccati(),
@@ -77,7 +46,7 @@ accumulator(
 
 accumulator(
     'RH Voice 3',
-    rh_stage_1_segments.next(1),
+    collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
@@ -86,13 +55,11 @@ accumulator(
     denominator=8,
     figure_name='rh-3 6.1.3',
     talea_denominator=8,
-    #thread=True,
-    #time_treatments=[1, 0],
     )
 
 accumulator(
     'RH Voice 3',
-    rh_stage_1_segments.next(1),
+    collections['stage 1']['rh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 24),
     baca.staccati(),
@@ -103,13 +70,9 @@ accumulator(
     time_treatments=[1],
     )
 
-assert rh_stage_1_segments.is_exhausted
-
-### VOICE 4 ###
-
 accumulator(
     'LH Voice 4',
-    lh_stage_1_segments.next(1),
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
         baca.select_note(3),
@@ -126,7 +89,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh_stage_1_segments.next(1),
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
         baca.select_note(9),
@@ -142,7 +105,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh_stage_1_segments.next(1),
+    collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
         baca.select_note(13),
@@ -159,7 +122,7 @@ accumulator(
 
 accumulator(
     'LH Voice 4',
-    lh_stage_1_segments.next(1),
+    collections['stage 1']['lh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 0),
     baca.tenuti(),
@@ -168,8 +131,6 @@ accumulator(
     hide_time_signature=True,
     talea_denominator=32,
     )
-
-assert lh_stage_1_segments.is_exhausted
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
