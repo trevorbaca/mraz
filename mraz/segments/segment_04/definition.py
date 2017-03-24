@@ -9,26 +9,6 @@ import mraz
 ###############################################################################
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[23:36]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 13, repr(len(segments))
-stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
-assert stages.sum() == segments
-
-stage_6_segments = stages[5]
-
-stage_6_segments = stage_6_segments.repeat(n=2)
-stage_6_segments = stage_6_segments.partition([2], cyclic=True, join=True)
-stage_6_segments = stage_6_segments.remove_duplicates(level=1)
-stage_6_segments = stage_6_segments.arpeggiate_up()
-stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
-stage_6_segments = stage_6_segments.chords()
-stage_6_segments = stage_6_segments.cursor(singletons=True)
-
 collection_maker = mraz.tools.CollectionMaker()
 collections = collection_maker.make_stage_4_collections()
 
@@ -54,7 +34,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    stage_6_segments[1],
+    collections['stage 6']['rh'][1],
     baca.dynamic('ff'),
     baca.marcati(),
     baca.proportional_notation_duration((1, 4)),
@@ -778,7 +758,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    stage_6_segments[1],
+    collections['stage 6']['rh'][1],
     baca.up_arpeggios(),
     baca.marcati(),
     baca.proportional_notation_duration((1, 4)),
@@ -823,7 +803,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    stage_6_segments.next(),
+    collections['stage 6']['rh'].next(),
     baca.up_arpeggios(),
     baca.dynamic('ff'),
     baca.marcati(),
@@ -835,7 +815,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    stage_6_segments.next(),
+    collections['stage 6']['rh'].next(),
     baca.up_arpeggios(),
     baca.marcati(),
     counts=[16],
@@ -844,7 +824,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    stage_6_segments.next(exhausted=True),
+    collections['stage 6']['rh'].next(exhausted=True),
     baca.up_arpeggios(),
     baca.marcati(),
     counts=[16],

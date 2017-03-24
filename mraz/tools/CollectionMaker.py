@@ -112,6 +112,6 @@ class CollectionMaker(object):
         collections['stage 4']['lh'] = stage_4_lh_segments
         collections['stage 5']['rh'] = stage_5_rh_segments
         collections['stage 5']['lh'] = stage_5_lh_segments
-        collections['stage 6']['all'] = stage_6_segments
+        collections['stage 6']['rh'] = stage_6_segments
 
         return collections
