@@ -10,7 +10,7 @@ import mraz
 
 accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
 collection_maker = mraz.tools.CollectionMaker()
-collections = collection_maker.make_stage_4_collections()
+collections = collection_maker.make_segment_4_collections()
 
 #################################### [4.1] ####################################
 
