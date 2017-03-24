@@ -73,6 +73,13 @@ class CollectionMaker(object):
         lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
         lh = lh.chords()
         lh = lh.cursor(cyclic=True, singletons=True)
+        rh = rh.accumulate([
+            baca.pitch_class_segment().alpha(),
+            baca.pitch_class_segment().transpose(n=2),
+            ])
+        rh = rh.join().remove_repeats()
+        rh = rh.read([8, 8, 14], check=Exact)
+        rh = rh.cursor()
         stage_4_rh_segments = rh
         stage_4_lh_segments = lh
 

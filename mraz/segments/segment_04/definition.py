@@ -19,9 +19,6 @@ assert len(segments) == 13, repr(len(segments))
 stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
 
-stage_3_segments = stages[2]
-stage_4_segments = stages[3]
-stage_5_segments = stages[4]
 stage_6_segments = stages[5]
 
 stage_6_segments = stage_6_segments.repeat(n=2)
@@ -374,16 +371,12 @@ accumulator(
 
 # [4.4] (VOICE 1)
 
-assert len(stage_4_segments) == 2
-rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
-lh = lh.remove_duplicates(level=-1)
-lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
-lh = lh.chords()
-lh = lh.cursor(cyclic=True, singletons=True)
+rh = collections['stage 4']['rh']
+lh = collections['stage 4']['lh']
 
 accumulator(
     'LH Voice 5',
-    lh.next(2),
+    collections['stage 4']['lh'].next(2),
     baca.nest(['+2/16']),
     baca.register(-12, 0),
     baca.rests_around([4], [4]),
@@ -402,7 +395,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(),
+    collections['stage 4']['lh'].next(),
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_before([2]),
@@ -425,7 +418,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(3),
+    collections['stage 4']['lh'].next(3),
     baca.imbricate(
         'LH Voice 5 Inserts',
         [10],
@@ -448,7 +441,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(3),
+    collections['stage 4']['lh'].next(3),
     baca.imbricate(
         'LH Voice 5 Inserts',
         [-2, 2],
@@ -464,7 +457,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(2),
+    collections['stage 4']['lh'].next(2),
     baca.imbricate(
         'LH Voice 5 Inserts',
         [5],
@@ -481,7 +474,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(),
+    collections['stage 4']['lh'].next(),
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_around([2], [6]),
@@ -498,7 +491,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(2),
+    collections['stage 4']['lh'].next(2),
     baca.imbricate(
         'LH Voice 5 Inserts',
         [5],
@@ -515,7 +508,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(),
+    collections['stage 4']['lh'].next(),
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_before([2]),
@@ -526,7 +519,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    lh.next(),
+    collections['stage 4']['lh'].next(),
     baca.flags(),
     baca.imbricate(
         'LH Voice 5 Inserts',
@@ -540,17 +533,9 @@ accumulator(
     figure_name='lh-5 4.4.12',
     )
 
-rh = rh.accumulate([
-    baca.pitch_class_segment().alpha(),
-    baca.pitch_class_segment().transpose(n=2),
-    ])
-rh = rh.join().remove_repeats()
-rh = rh.read([8, 8, 14], check=Exact)
-rh = rh.cursor()
-
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 4']['rh'].next(),
     baca.beam_plt_runs(hide_nibs=True),
     baca.dynamic('mf'),
     baca.dynamic_text_extra_offset((0, 1)),
@@ -586,7 +571,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 4']['rh'].next(),
     baca.anchor_to_figure('lh-5 4.4.4'),
     baca.beam_plt_runs(hide_nibs=True),
     baca.imbricate(
@@ -609,7 +594,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(exhausted=True),
+    collections['stage 4']['rh'].next(exhausted=True),
     baca.anchor('LH Voice 5', baca.select_rest(-8)),
     baca.beam_plt_runs(hide_nibs=True),
     baca.imbricate(
@@ -631,15 +616,8 @@ accumulator(
 
 #################################### [4.5] ####################################
 
-stage_5_segments = stage_5_segments.remove_duplicate_pitch_classes(level=1)
-rh, lh = stage_5_segments.partition([1, 1], overhang=Exact)
-rh = rh.read(6 * [1], check=Exact)
-rh = rh.cursor(singletons=True)
-lh = lh.accumulate([baca.pitch_class_segment().transpose(n=2)])
-lh = lh.join()
-lh = lh.read(5 * [5, 5, 6])
-lh = lh.remove_duplicates(level=1)
-lh = lh.cursor(singletons=True)
+rh = collections['stage 5']['rh']
+lh = collections['stage 5']['lh']
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 accumulator(
@@ -704,7 +682,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 5']['rh'].next(),
     baca.anchor_to_figure('lh-r 4.5.2'),
     baca.dynamic('f'),
     baca.register(36),
@@ -716,7 +694,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
     counts=[24],
@@ -726,7 +704,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
     counts=[16],
@@ -736,7 +714,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
     counts=[16],
@@ -746,7 +724,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(),
+    collections['stage 5']['rh'].next(),
     baca.anchor_to_figure('lh-r 4.5.7'),
     baca.register(36),
     baca.tenuti(),
@@ -757,7 +735,7 @@ accumulator(
 
 accumulator(
     'RH Voice 1',
-    rh.next(exhausted=True),
+    collections['stage 5']['rh'].next(exhausted=True),
     baca.register(36),
     baca.tenuti(),
     counts=[8],
@@ -767,7 +745,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    lh.next(4),
+    collections['stage 5']['lh'].next(4),
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
@@ -783,7 +761,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    lh.next(4),
+    collections['stage 5']['lh'].next(4),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
     baca.line_break(baca.select_leaf(-1)),
@@ -812,7 +790,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    lh.next(4),
+    collections['stage 5']['lh'].next(4),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
     baca.proportional_notation_duration((1, 32)),
@@ -827,7 +805,7 @@ accumulator(
 
 accumulator(
     'RH Voice 2',
-    lh.next(2),
+    collections['stage 5']['lh'].next(2),
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpins(['f < ff']),
     baca.line_break(baca.select_leaf(-1)),
