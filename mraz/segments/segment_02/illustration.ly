@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #11
+        currentBarNumber = #13
     } <<
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -140,6 +140,23 @@
                                 \override Script.direction = #up
                                 \override Slur.direction = #up
                                 fs16 -\staccato \ppp [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 2.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (0)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16 -\staccato
@@ -241,6 +258,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d'16 -\staccato [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 2.2.2"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (1)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16 -\staccato
@@ -334,6 +368,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 2.2.3"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (2)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16 -\staccato
@@ -409,6 +460,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs''16 -\staccato [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 2.2.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (3)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'''16 -\staccato
@@ -464,6 +532,23 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f''16 -\staccato [ (
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "rh-2 2.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (4)
+                                                    ]
+                                                }
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16 -\staccato
@@ -546,6 +631,14 @@
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
+                        s1 * 29/16
+                        s1 * 27/16
+                        s1 * 21/16
+                        s1 * 15/16
+                        s1 * 1
+                        \bar "|"
+                    }
+                    \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
                         s1 * 29/16
                         s1 * 27/16
                         s1 * 21/16
@@ -656,6 +749,23 @@
                             {
                                 \clef "bass"
                                 <cs,, cs,>1..
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lhr 2.2.1"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (5)
+                                                    ]
+                                                }
+                                        }
                                 <cs,, cs,>16 \repeatTie
                             }
                         }
@@ -663,12 +773,46 @@
                             {
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <cs,, cs,>1. \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lhr 2.2.2a"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (6)
+                                                    ]
+                                                }
+                                        }
                                 <cs,, cs,>8. \repeatTie
                             }
                         }
                         {
                             {
                                 <ef,, ef,>1
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lhr 2.2.3a"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (7)
+                                                    ]
+                                                }
+                                        }
                                 <ef,, ef,>4 \repeatTie
                                 <ef,, ef,>16 \repeatTie
                             }
@@ -677,11 +821,45 @@
                             {
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <ef,, ef,>2... \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lhr 2.2.4"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (8)
+                                                    ]
+                                                }
+                                        }
                             }
                         }
                         {
                             {
                                 <ef,, ef,>1 \repeatTie
+                                    ^ \markup {
+                                        \fontsize
+                                            #2
+                                            \concat
+                                                {
+                                                    [
+                                                    "lhr 2.2.5"
+                                                    \hspace
+                                                        #1
+                                                    \raise
+                                                        #0.25
+                                                        \fontsize
+                                                            #-2
+                                                            (9)
+                                                    ]
+                                                }
+                                        }
                                 \bar "|"
                             }
                         }
