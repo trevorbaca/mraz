@@ -19,9 +19,6 @@ assert len(segments) == 13, repr(len(segments))
 stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
 assert stages.sum() == segments
 
-stage_1_segments = stages[0]
-stage_2_segments = stages[1][:1].repeat(n=9)
-stage_2_segments = stage_2_segments + stages[1].join()
 stage_3_segments = stages[2]
 stage_4_segments = stages[3]
 stage_5_segments = stages[4]
@@ -68,7 +65,6 @@ accumulator(
     baca.up_arpeggios(),
     counts=[12],
     figure_name='rh-2 4.1.1',
-    #hide_time_signature=True,
     )
 
 accumulator(
@@ -146,7 +142,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments[0].chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     baca.flags(),
@@ -181,11 +177,9 @@ accumulator(
 
 # [4.2] (VOICE 5)
 
-stage_2_segments = stage_2_segments.cursor(singletons=True)
-
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     baca.flags(),
@@ -198,7 +192,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.rests_after([3, 16]),
@@ -208,7 +202,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.nest('+1/4'),
@@ -220,7 +214,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.rests_after([3, 16]),
@@ -230,7 +224,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.rests_around([1], [8]),
@@ -240,7 +234,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.rests_after([3, 16]),
@@ -250,7 +244,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.nest('+1/4'),
@@ -262,7 +256,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.rests_after([3, 16]),
@@ -272,7 +266,7 @@ accumulator(
 
 accumulator(
     'LH Voice 5',
-    [stage_2_segments.next().chord().to_pitches().space_up(bass=7, soprano=9)],
+    collections['stage 2']['lh'].next(),
     baca.bass_to_octave(3),
     baca.flags(),
     baca.nest('+1/4'),
@@ -282,7 +276,7 @@ accumulator(
     figure_name='lh-5 4.2.9',
     )
 
-segment = stage_2_segments.next(exhausted=True)
+segment = collections['stage 2']['lh'].next(exhausted=True)
 segment = segment.space_down(bass=7, semitones=3, soprano=9)
 segment = segment.bass_to_octave(2)
 chord_1_upper, chord_1_lower = segment.split(pitch=-1)
@@ -889,8 +883,6 @@ accumulator(
     figure_name='lh-2 4.6.1',
     hide_time_signature=True,
     )
-
-### 
 
 accumulator(
     'RH Voice 3',
