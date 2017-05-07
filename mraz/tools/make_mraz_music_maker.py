@@ -43,10 +43,10 @@ def make_mraz_music_maker():
 
         ::
 
-            >>> segment_maker = baca.tools.SegmentMaker(
+            >>> segment_maker = baca.SegmentMaker(
             ...     ignore_unregistered_pitches=True,
-            ...     score_template=baca.tools.ViolinSoloScoreTemplate(),
-            ...     spacing_specifier=baca.tools.HorizontalSpacingCommand(
+            ...     score_template=baca.ViolinSoloScoreTemplate(),
+            ...     spacing_specifier=baca.HorizontalSpacingCommand(
             ...         minimum_width=abjad.Duration(1, 24),
             ...         ),
             ...     time_signatures=time_signatures,
@@ -54,7 +54,7 @@ def make_mraz_music_maker():
             >>> specifiers = segment_maker.append_commands(
             ...     'vn',
             ...     baca.select_stages(1),
-            ...     baca.tools.RhythmSpecifier(
+            ...     baca.RhythmSpecifier(
             ...         rhythm_maker=figures,
             ...         ),
             ...     )
@@ -220,10 +220,10 @@ def make_mraz_music_maker():
 
         ::
 
-            >>> segment_maker = baca.tools.SegmentMaker(
+            >>> segment_maker = baca.SegmentMaker(
             ...     ignore_unregistered_pitches=True,
-            ...     score_template=baca.tools.ViolinSoloScoreTemplate(),
-            ...     spacing_specifier=baca.tools.HorizontalSpacingCommand(
+            ...     score_template=baca.ViolinSoloScoreTemplate(),
+            ...     spacing_specifier=baca.HorizontalSpacingCommand(
             ...         minimum_width=abjad.Duration(1, 24),
             ...         ),
             ...     time_signatures=time_signatures,
@@ -231,7 +231,7 @@ def make_mraz_music_maker():
             >>> specifiers = segment_maker.append_commands(
             ...     'vn',
             ...     baca.select_stages(1),
-            ...     baca.tools.RhythmSpecifier(
+            ...     baca.RhythmSpecifier(
             ...         rhythm_maker=figures,
             ...         ),
             ...     )
@@ -414,13 +414,13 @@ def make_mraz_music_maker():
         Formats Mráz music-maker:
 
         >>> f(mraz.tools.make_mraz_music_maker())
-        baca.tools.MusicMaker(
+        baca.MusicMaker(
             rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,
                 beam_divisions_together=True,
                 ),
-            baca.tools.MusicRhythmSpecifier(
-                rhythm_maker=baca.tools.MusicRhythmMaker(
+            baca.MusicRhythmSpecifier(
+                rhythm_maker=baca.MusicRhythmMaker(
                     talea=rhythmmakertools.Talea(
                         counts=[1],
                         denominator=16,
@@ -462,12 +462,12 @@ def make_mraz_music_maker():
     for voice in abjad.iterate(dummy_score).by_class(abjad.Voice):
         voice_name = voice.name
         voice_names.append(voice_name)
-    music_maker = baca.tools.MusicMaker(
+    music_maker = baca.MusicMaker(
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
             ),
-        baca.tools.MusicRhythmSpecifier(
-            rhythm_maker=baca.tools.MusicRhythmMaker(
+        baca.MusicRhythmSpecifier(
+            rhythm_maker=baca.MusicRhythmMaker(
                 talea=abjad.rhythmmakertools.Talea(
                     counts=[1],
                     denominator=16,
