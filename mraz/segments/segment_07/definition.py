@@ -303,20 +303,20 @@ accumulator(
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, mraz.materials.tempi[84]),
     (1, abjad.Accelerando()),
     (9, mraz.materials.tempi[112]),
     ])
 
-spacing_specifier = baca.tools.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.durationtools.Duration(1, 4),
     minimum_width=abjad.durationtools.Duration(1, 24),
     )
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     #allow_empty_selections=True,
     #allow_figure_names=True,
     #color_octaves=True,
