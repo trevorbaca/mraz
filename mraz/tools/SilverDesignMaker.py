@@ -23,7 +23,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
-        ..  doctest::
+        ..  docs::
 
             >>> f(lilypond_file[abjad.Voice])
             \new Voice \with {
@@ -563,7 +563,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -638,7 +638,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -1196,7 +1196,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -1594,7 +1594,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -1975,7 +1975,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -2369,7 +2369,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -2691,7 +2691,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
@@ -3243,7 +3243,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                 ...     )
                 >>> show(lilypond_file) # doctest: +SKIP
 
-            ..  doctest::
+            ..  docs::
 
                 >>> f(lilypond_file[abjad.Voice])
                 \new Voice \with {
