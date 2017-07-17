@@ -272,7 +272,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Piano Music Staff Group',
             )
         piano = mraz.materials.instruments['piano']
-        abjad.attach(piano, piano_music_staff_group)
+        #abjad.attach(piano, piano_music_staff_group)
         music_context = abjad.Context(
             [
                 piano_music_staff_group,
