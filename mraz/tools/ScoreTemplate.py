@@ -29,14 +29,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                 >>
                 \context MusicContext = "Music Context" {
                     \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
-                        \set PianoMusicStaffGroup.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            Piano
-                        }
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                        \null
-                        }
                         \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                             \context RHVoiceOne = "RH Voice 1" {
                             }
