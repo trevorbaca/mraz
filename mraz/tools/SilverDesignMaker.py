@@ -1559,7 +1559,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
             cyclic=True,
             overhang=True,
             )
-        Expression = abjad.expressiontools.Expression
+        Expression = abjad.Expression
         fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
         segments = []
         for i, part in enumerate(parts):
@@ -2341,8 +2341,7 @@ class SilverDesignMaker(abjad.abctools.AbjadObject):
                     segment = segment.invert().alpha()
                 elif j % 3 == 2:
                     segment = segment.invert().alpha().invert()
-                #Expression = abjad.expressiontools.Expression
-                #segment = Expression.establish_equivalence(
+                #segment = abjad.Expression.establish_equivalence(
                 #    segment,
                 #    segment._name,
                 #    )
