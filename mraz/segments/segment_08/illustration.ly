@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -359,9 +359,9 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \ottava #-1
                                 \clef "bass"
+                                \ottava #-1
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 g,8. \ppp
                                 r32

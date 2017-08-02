@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -736,9 +736,9 @@
                         s1 * 1/4
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 fs16 -\staccato \ppp [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -838,9 +838,9 @@
                         }
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 d'16 -\staccato [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -932,9 +932,9 @@
                         }
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 b'16 -\staccato [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1009,9 +1009,9 @@
                         }
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 fs''16 -\staccato [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1068,9 +1068,9 @@
                         }
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 f''16 -\staccato [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1859,8 +1859,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \ottava #-1
                                 \clef "bass"
+                                \ottava #-1
                                 \override Rest.direction = #down
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down
