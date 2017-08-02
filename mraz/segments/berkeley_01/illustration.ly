@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -213,10 +213,10 @@
                     \context RHVoiceTwo = "RH Voice 2" {
                         {
                             \times 4/5 {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \ottava #1
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 b'16 [ \< \f (
@@ -280,9 +280,9 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 cs''''16 ] \ff )
-                                \ottava #0
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
+                                \ottava #0
                             }
                         }
                         s1 * 3/2
@@ -610,8 +610,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \ottava #-1
                                 \clef "bass"
+                                \ottava #-1
                                 \override Rest.direction = #down
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down

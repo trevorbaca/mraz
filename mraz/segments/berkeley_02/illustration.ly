@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -250,8 +250,8 @@
                         s1 * 41/8
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \ottava #1
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 ef''''1.. -\tenuto \f
                             }
                         }
@@ -456,10 +456,10 @@
                         s1 * 13/4
                         {
                             \times 4/5 {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \ottava #1
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 b'16 [ \< \f (
@@ -524,9 +524,9 @@
                                 \set stemRightBeamCount = #0
                                 cs''''16 ] \ff )
                                 \bar "|"
-                                \ottava #0
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
+                                \ottava #0
                             }
                         }
                     }
@@ -870,7 +870,7 @@
                                 <e, fs, gs, as, b,>4 \repeatTie
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>16 [ ] \repeatTie
+                                <e, fs, gs, as, b,>16 \repeatTie [ ]
                             }
                         }
                         {
@@ -884,7 +884,7 @@
                                 <e, fs, gs, as, b,>2 \repeatTie
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>8 [ ] \repeatTie
+                                <e, fs, gs, as, b,>8 \repeatTie [ ]
                             }
                         }
                         {
@@ -899,7 +899,7 @@
                                 <e, fs, gs, as, b,>4 \repeatTie
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>16 [ ] \repeatTie
+                                <e, fs, gs, as, b,>16 \repeatTie [ ]
                             }
                         }
                         {

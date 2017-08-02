@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -1164,9 +1164,9 @@
                         s1 * 33/8
                         {
                             \times 4/5 {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 b'16 [ \< \f (
@@ -1237,9 +1237,9 @@
                         }
                         {
                             {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
@@ -1318,9 +1318,9 @@
                         }
                         {
                             \times 2/3 {
-                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
