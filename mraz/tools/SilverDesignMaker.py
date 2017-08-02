@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class SilverDesignMaker(abjad.abctools.AbjadObject):
+class SilverDesignMaker(abjad.AbjadObject):
     r'''Silver design-maker.
 
     ::
