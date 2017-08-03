@@ -25,8 +25,8 @@ install:
     - PACKAGE=mraz
 
 script:
-    - ajv doctest -x ./$PACKAGE
-    - py.test -xrf ./$PACKAGE
+    - ajv doctest ./$PACKAGE
+    - py.test -rf ./$PACKAGE
 
 notifications:
     email: false
