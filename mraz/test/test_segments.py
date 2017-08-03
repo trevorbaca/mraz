@@ -20,6 +20,11 @@ if __name__ == '__main__':
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
 
+    # TODO: remove after debugging
+    segment_directories = segment_directories[:1]
+    #sys.exit(1)
+    raise Exception('FOO')
+
     # not parameterized to print keep-alive message to Travis log
     for segment_directory in segment_directories:
         message = 'Checking {} definition file ...'
