@@ -8,6 +8,7 @@ if not (
     raise ImportError('Requires Python 3.5.')
 del distutils
 del platform
+
 from mraz import tools
 from mraz import materials
 from mraz import segments
