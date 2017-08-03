@@ -17,8 +17,6 @@ if __name__ == '__main__':
         composer_scores_directory
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
-
-    segment_directories = segment_directories[:1]
     exit_code = 0
 
     # not parameterized to print keep-alive message to Travis log
