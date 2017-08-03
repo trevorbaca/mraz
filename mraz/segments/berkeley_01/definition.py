@@ -3,7 +3,6 @@ import abjad
 import baca
 import mraz
 
-raise Exception('REMOVE ME AFTER CONFIGURING TRAVIS')
 
 ###############################################################################
 ################################# [BERKELEY 1] ################################
