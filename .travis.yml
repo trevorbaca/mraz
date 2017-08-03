@@ -22,11 +22,12 @@ install:
     - pip install -e git://github.com/trevorbaca/baca.git#egg=baca
     - pip install -r requirements.txt
     - pip install -e .
+    - PACKAGE=mraz
 
 script:
-    - PACKAGE=mraz
     - ajv doctest -x ./$PACKAGE
-    - py.test -xrf ./$PACKAGE
+    - ls ./$PACKAGE/test
+    - py.test -xrf ./$PACKAGE/test/test_materials.py
     - python ./$PACKAGE/test/test_segments.py
 
 notifications:
