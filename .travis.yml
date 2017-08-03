@@ -26,9 +26,7 @@ install:
 
 script:
     - ajv doctest -x ./$PACKAGE
-    - ls ./$PACKAGE/test
-    - py.test -xrf ./$PACKAGE/test/test_materials.py
-    - python ./$PACKAGE/test/test_segments.py
+    - py.test -xrf ./$PACKAGE
 
 notifications:
     email: false
