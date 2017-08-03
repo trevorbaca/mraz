@@ -2,8 +2,6 @@
 import abjad
 
 
-raise Exception('FOO')
-
 tempi = abjad.TypedOrderedDict([
     (
         84,
