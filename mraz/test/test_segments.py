@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
-import os
-import pytest
-import sys
-import traceback
 import ide
-abjad_ide = ide.tools.idetools.AbjadIDE()
+import os
+import sys
 
 
 if __name__ == '__main__':
+    abjad_ide = ide.tools.idetools.AbjadIDE()
     this_file = os.path.abspath(__file__)
     test_directory = os.path.dirname(this_file)
     inner_score_directory = os.path.dirname(test_directory)
@@ -20,29 +18,25 @@ if __name__ == '__main__':
     segments_directory = abjad_ide._to_score_directory(this_file, 'segments')
     segment_directories = abjad_ide._list_visible_paths(segments_directory)
 
-    # TODO: remove after debugging
     segment_directories = segment_directories[:1]
-    #sys.exit(1)
-    raise Exception('FOO')
+    exit_code = 0
 
     # not parameterized to print keep-alive message to Travis log
     for segment_directory in segment_directories:
         message = 'Checking {} definition file ...'
         message = message.format(abjad_ide._trim_path(segment_directory))
         print(message)
-        try:
-            abjad_ide.check_definition_file(segment_directory)
-        except:
-            traceback.print_exc()
-            sys.exit(1)
+        exit_code_ = abjad_ide.check_definition_file(segment_directory)
+        if exit_code_ != 0:
+            exit_code = 1
 
     # not parameterized to print keep-alive message to Travis log
     for segment_directory in segment_directories:
         message = 'Making {} PDF ...'
         message = message.format(abjad_ide._trim_path(segment_directory))
         print(message)
-        try:
-            abjad_ide.make_pdf(segment_directory)
-        except:
-            traceback.print_exc()
-            sys.exit(1)
+        exit_code_ = abjad_ide.make_pdf(segment_directory)
+        if exit_code_ != 0:
+            exit_code = 1
+
+    sys.exit(exit_code)
