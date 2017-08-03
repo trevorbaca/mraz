@@ -256,7 +256,7 @@ class CollectionMaker(object):
             expression = baca.sequence().map(operator)
             rh_segments_ = expression(rh_segments_)
             all_rh_segments.extend(rh_segments_)
-        all_rh_segments = baca.Sequence(all_rh_segments)
+        all_rh_segments = baca.sequence(all_rh_segments)
         rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
         assert len(rh_segment_lists) == 12
         rh_segment_lists = [
@@ -276,7 +276,7 @@ class CollectionMaker(object):
             expression = baca.sequence().map(operator)
             lh_segments_ = expression(lh_segments_)
             all_lh_segments.extend(lh_segments_)
-        all_lh_segments = baca.Sequence(all_lh_segments)
+        all_lh_segments = baca.sequence(all_lh_segments)
         lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
         assert len(lh_segment_lists) == 5
         lh_segment_lists = [
