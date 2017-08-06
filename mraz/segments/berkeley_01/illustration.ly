@@ -192,6 +192,15 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         {
                             {
+                                \set PianoMusicStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Piano
+                                    }
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                                    \null
+                                    }
+                                \clef "treble"
                                 bf''''1 -\tenuto
                             }
                         }
@@ -482,6 +491,7 @@
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
+                        \clef "bass"
                         s1 * 1
                         s1 * 1/2
                         s1 * 1
@@ -610,8 +620,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \clef "bass"
                                 \ottava #-1
+                                \clef "bass"
                                 \override Rest.direction = #down
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down
