@@ -15,11 +15,19 @@ class ScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = mraz.tools.ScoreTemplate()
-            >>> score = template()
+            >>> lilypond_file = template.__illustrate__()
+            >>> path = '/Users/trevorbaca/Scores/mraz/mraz'
+            >>> path += '/stylesheets/context-definitions.ily'
+            >>> lilypond_file = abjad.new(
+            ...     lilypond_file,
+            ...     global_staff_size=14,
+            ...     includes=[path],
+            ...     )
+            >>> show(lilypond_file) # doctest: +SKIP
 
         ::
 
-            >>> f(score)
+            >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \context TimeSignatureContext = "Time Signature Context" <<
                     \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
@@ -31,48 +39,79 @@ class ScoreTemplate(baca.ScoreTemplate):
                     \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                         \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                             \context RHVoiceOne = "RH Voice 1" {
+                                \set PianoMusicStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Piano
+                                    }
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                                    \null
+                                    }
+                                \clef "treble"
+                                s1
                             }
                             \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                                s1
                             }
                             \context RHVoiceTwo = "RH Voice 2" {
+                                s1
                             }
                             \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                                s1
                             }
                             \context RHVoiceThree = "RH Voice 3" {
+                                s1
                             }
                             \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                                s1
                             }
                             \context RHVoiceFour = "RH Voice 4" {
+                                s1
                             }
                             \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                                s1
                             }
                             \context RHVoiceFive = "RH Voice 5" {
+                                s1
                             }
                             \context RHVoiceSix = "RH Voice 6" {
+                                s1
                             }
                             \context RHResonanceVoice = "RH Resonance Voice" {
+                                s1
                             }
                         >>
                         \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                             \context LHVoiceOne = "LH Voice 1" {
+                                \clef "bass"
+                                s1
                             }
                             \context LHVoiceTwo = "LH Voice 2" {
+                                s1
                             }
                             \context LHVoiceThree = "LH Voice 3" {
+                                s1
                             }
                             \context LHVoiceFour = "LH Voice 4" {
+                                s1
                             }
                             \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                                s1
                             }
                             \context LHVoiceFive = "LH Voice 5" {
+                                s1
                             }
                             \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                                s1
                             }
                             \context LHVoiceSix = "LH Voice 6" {
+                                s1
                             }
                             \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                                s1
                             }
                             \context LHResonanceVoice = "LH Resonance Voice" {
+                                s1
                             }
                         >>
                     >>
@@ -238,6 +277,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             is_simultaneous=True,
             name='Piano Music RH Staff',
             )
+        abjad.annotate(
+            piano_music_rh_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
         piano_music_lh_staff = abjad.Staff(
             [
                 lh_voice_1,
@@ -255,6 +299,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             is_simultaneous=True,
             name='Piano Music LH Staff',
             )
+        abjad.annotate(
+            piano_music_lh_staff,
+            'default_clef',
+            abjad.Clef('bass'),
+            )
         piano_music_staff_group = abjad.StaffGroup(
             [
                 piano_music_rh_staff,
@@ -264,7 +313,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Piano Music Staff Group',
             )
         piano = mraz.materials.instruments['piano']
-        #abjad.attach(piano, piano_music_staff_group)
+        abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
         music_context = abjad.Context(
             [
                 piano_music_staff_group,
