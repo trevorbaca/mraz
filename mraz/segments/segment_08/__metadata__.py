@@ -21,7 +21,7 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_tempo', None),
+        ('end_tempo', 112),
         ('end_time_signature', '2/4'),
         ('first_bar_number', 158),
         ('measure_count', 12),
