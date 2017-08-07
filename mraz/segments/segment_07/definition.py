@@ -329,6 +329,7 @@ segment_maker = baca.SegmentMaker(
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
+    metronome_marks=mraz.materials.tempi,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
     score_template=mraz.tools.ScoreTemplate(),
