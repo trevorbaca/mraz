@@ -54,6 +54,7 @@ segment_maker = baca.SegmentMaker(
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
+    metronome_marks=mraz.materials.tempi,
     rehearsal_letter='',
     score_template=mraz.tools.ScoreTemplate(),
     skips_instead_of_rests=True,
