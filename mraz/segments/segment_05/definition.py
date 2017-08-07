@@ -373,6 +373,7 @@ segment_maker = baca.SegmentMaker(
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
+    instruments=mraz.materials.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,

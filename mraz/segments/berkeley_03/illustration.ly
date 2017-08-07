@@ -1890,8 +1890,8 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
-                                \clef "bass"
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \clef "bass"
                                 \dynamicDown
                                 r2.
                                 af8. -\tenuto \f
