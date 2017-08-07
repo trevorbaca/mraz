@@ -153,6 +153,7 @@ segment_maker = baca.SegmentMaker(
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
     #ignore_repeat_pitch_classes=True,
+    instruments=mraz.materials.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,

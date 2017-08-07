@@ -9,14 +9,16 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('Piano Music LH Staff', 'bass'),
-                    ('Piano Music RH Staff', None),
+                    ('Piano Music RH Staff', 'treble'),
                     ]
                 ),
             ),
         (
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
-                []
+                [
+                    ('Piano Music Staff Group', 'piano'),
+                    ]
                 ),
             ),
         ('end_tempo', None),

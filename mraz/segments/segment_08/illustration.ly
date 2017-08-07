@@ -359,9 +359,9 @@
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
-                                \clef "bass"
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \clef "bass"
                                 \override TupletBracket.direction = #up
                                 g,8. \ppp
                                 r32

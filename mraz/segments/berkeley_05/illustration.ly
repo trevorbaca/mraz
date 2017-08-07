@@ -1859,8 +1859,8 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
-                                \clef "bass"
                                 \ottava #-1
+                                \clef "bass"
                                 \override Rest.direction = #down
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down
