@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #10
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 2/4
                     R1 * 1/2
@@ -61,7 +61,7 @@
                     R1 * 1
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -292,11 +292,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.direction = #up
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\shortfermata
                                 \revert Script.direction
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -323,11 +323,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.direction = #up
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
                                 \revert Script.direction
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 1/2
@@ -372,11 +372,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.direction = #up
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\shortfermata
                                 \revert Script.direction
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 3/2

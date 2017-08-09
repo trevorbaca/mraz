@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #69
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 16/4
                     R1 * 4
@@ -77,7 +77,7 @@
                     R1 * 1/4
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 16/4
                     \once \override TextSpanner.arrow-width = 0.25
@@ -1268,13 +1268,13 @@
                                 \override Script.color = #black
                                 \override Script.extra-offset = #'(1 . 0)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
                                 \break
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1384,11 +1384,11 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.color = #black
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
                                 \revert Script.color
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1456,12 +1456,12 @@
                                 \override Script.color = #black
                                 \override Script.extra-offset = #'(1 . 0)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 27/4
@@ -1509,13 +1509,13 @@
                                 \override Script.color = #black
                                 \override Script.extra-offset = #'(1 . 0)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\fermata
                                 \bar "|"
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                     }
