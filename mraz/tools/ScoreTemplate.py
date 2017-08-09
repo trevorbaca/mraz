@@ -14,7 +14,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ::
 
-            >>> template = mraz.tools.ScoreTemplate()
+            >>> template = mraz.ScoreTemplate()
             >>> lilypond_file = template.__illustrate__()
             >>> path = '/Users/trevorbaca/Scores/mraz/mraz'
             >>> path += '/stylesheets/context-definitions.ily'
@@ -312,7 +312,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='PianoMusicStaffGroup',
             name='Piano Music Staff Group',
             )
-        piano = mraz.materials.instruments['piano']
+        piano = mraz.instruments['piano']
         abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
         music_context = abjad.Context(
             [

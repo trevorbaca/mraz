@@ -7,8 +7,8 @@ import mraz
 ################################# [BERKELEY 3] ################################
 ###############################################################################
 
-accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-collection_maker = mraz.tools.CollectionMaker()
+accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
+collection_maker = mraz.CollectionMaker()
 collections = collection_maker.make_segment_4_collections()
 collections_2 = collection_maker.make_segment_2_collections()
 collections_4 = collection_maker.make_segment_4_collections()
@@ -962,23 +962,23 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, mraz.materials.tempi[84]),
+    (1, mraz.tempi[84]),
     (1, abjad.Accelerando()),
-    (6, mraz.materials.tempi[112]),
-    (7, mraz.materials.tempi[84]),
+    (6, mraz.tempi[112]),
+    (7, mraz.tempi[84]),
     (7, abjad.Accelerando()),
-    (16, mraz.materials.tempi[112]),
+    (16, mraz.tempi[112]),
     (21, abjad.Ritardando()),
-    (24, mraz.materials.tempi[84]),
-    (25, mraz.materials.tempi[112]),
+    (24, mraz.tempi[84]),
+    (25, mraz.tempi[112]),
     (25, abjad.Ritardando()),
-    (29, mraz.materials.tempi[84]),
-    (31, mraz.materials.tempi[112]),
+    (29, mraz.tempi[84]),
+    (31, mraz.tempi[112]),
     (31, abjad.Ritardando()),
-    (33, mraz.materials.tempi[84]),
-    (34, mraz.materials.tempi[112]),
+    (33, mraz.tempi[84]),
+    (34, mraz.tempi[112]),
     (34, abjad.Ritardando()),
-    (38, mraz.materials.tempi[84]),
+    (38, mraz.tempi[84]),
     ])
 
 spacing_specifier = baca.HorizontalSpacingCommand(
@@ -997,14 +997,14 @@ segment_maker = baca.SegmentMaker(
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
-    instruments=mraz.materials.instruments,
+    instruments=mraz.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.materials.tempi,
+    metronome_marks=mraz.tempi,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
-    score_template=mraz.tools.ScoreTemplate(),
+    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,

@@ -15,7 +15,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
         ::
 
-            >>> design_maker = mraz.tools.SilverDesignMaker()
+            >>> design_maker = mraz.SilverDesignMaker()
             >>> design = design_maker()
             >>> lilypond_file = design.__illustrate__(
             ...     cell_indices=Down,
@@ -555,7 +555,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_00 = design_maker.make_stage_00()
                 >>> lilypond_file = stage_00.__illustrate__(
                 ...     cell_indices=False,
@@ -630,7 +630,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_01 = design_maker.make_stage_01()
                 >>> lilypond_file = stage_01.__illustrate__(
                 ...     cell_indices=Down,
@@ -1188,7 +1188,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_02 = design_maker.make_stage_02()
                 >>> lilypond_file = stage_02.__illustrate__(
                 ...     cell_indices=Down,
@@ -1586,7 +1586,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_03 = design_maker.make_stage_03()
                 >>> lilypond_file = stage_03.__illustrate__(
                 ...     cell_indices=Down,
@@ -1967,7 +1967,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_04 = design_maker.make_stage_04()
                 >>> lilypond_file = stage_04.__illustrate__(
                 ...     cell_indices=Down,
@@ -2360,7 +2360,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_05 = design_maker.make_stage_05()
                 >>> lilypond_file = stage_05.__illustrate__(
                 ...     cell_indices=Down,
@@ -2682,7 +2682,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_06 = design_maker.make_stage_06()
                 >>> lilypond_file = stage_06.__illustrate__(
                 ...     cell_indices=Down,
@@ -3234,7 +3234,7 @@ class SilverDesignMaker(abjad.AbjadObject):
 
             ::
 
-                >>> design_maker = mraz.tools.SilverDesignMaker()
+                >>> design_maker = mraz.SilverDesignMaker()
                 >>> stage_07 = design_maker.make_stage_07()
                 >>> lilypond_file = stage_07.__illustrate__(
                 ...     cell_indices=Down,
