@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #22
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 6/4
                     R1 * 3/2
@@ -197,7 +197,7 @@
                     R1 * 4
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \time 6/4
                     \once \override TextSpanner.arrow-width = 0.25
@@ -696,12 +696,12 @@
                                 \override Script.color = #black
                                 \override Script.extra-offset = #'(0.5 . 0)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 1/2
@@ -836,10 +836,10 @@
                                 \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1084,10 +1084,10 @@
                                 \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1221,10 +1221,10 @@
                                 \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {

@@ -70,8 +70,8 @@ def make_mraz_music_maker():
             >>> f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \tag violin
-                \context TimeSignatureContext = "Time Signature Context" <<
-                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                \context GlobalContext = "Global Context" <<
+                    \context GlobalRests = "Global Rests" {
                         {
                             \time 1/16
                             R1 * 1/16
@@ -89,7 +89,7 @@ def make_mraz_music_maker():
                             R1 * 3/8
                         }
                     }
-                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    \context GlobalSkips = "Global Skips" {
                         {
                             \time 1/16
                             \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -250,8 +250,8 @@ def make_mraz_music_maker():
                 \override Beam.positions = #'(5 . 5)
             } <<
                 \tag violin
-                \context TimeSignatureContext = "Time Signature Context" <<
-                    \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+                \context GlobalContext = "Global Context" <<
+                    \context GlobalRests = "Global Rests" {
                         {
                             \time 9/16
                             R1 * 9/16
@@ -265,7 +265,7 @@ def make_mraz_music_maker():
                             R1 * 1/2
                         }
                     }
-                    \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+                    \context GlobalSkips = "Global Skips" {
                         {
                             \time 9/16
                             \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)

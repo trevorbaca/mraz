@@ -10,8 +10,8 @@
     \context Score = "Score" \with {
         currentBarNumber = #91
     } <<
-        \context TimeSignatureContext = "Time Signature Context" <<
-            \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
+        \context GlobalContext = "Global Context" <<
+            \context GlobalRests = "Global Rests" {
                 {
                     \time 6/4
                     R1 * 3/2
@@ -173,7 +173,7 @@
                     R1 * 3/2
                 }
             }
-            \context TimeSignatureContextSkips = "Time Signature Context Skips" {
+            \context GlobalSkips = "Global Skips" {
                 {
                     \once \override TextSpanner.arrow-width = 0.25
                     \once \override TextSpanner.bound-details.left-broken.padding = 0
@@ -940,12 +940,12 @@
                                 \override Script.color = #black
                                 \override Script.extra-offset = #'(0.5 . 0)
                                 \override Rest.transparent = ##t
-                                \override TimeSignatureContext.TimeSignature.transparent = ##t
+                                \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
                                 \revert Script.color
                                 \revert Script.extra-offset
                                 \revert Rest.transparent
-                                \revert TimeSignatureContext.TimeSignature.transparent
+                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
