@@ -8,8 +8,8 @@ import mraz
 ##################################### [1] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-maker = mraz.tools.SilverDesignMaker()
+accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
+maker = mraz.SilverDesignMaker()
 design = maker()
 design = abjad.CyclicTuple(design)
 assert len(design) == 34, repr(len(design))
@@ -35,7 +35,7 @@ assert segments.is_exhausted
 ###############################################################################
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, mraz.materials.tempi[112]),
+    (1, mraz.tempi[112]),
     ])
 
 spacing_specifier = baca.HorizontalSpacingCommand(
@@ -50,13 +50,13 @@ segment_maker = baca.SegmentMaker(
     color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
-    instruments=mraz.materials.instruments,
+    instruments=mraz.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.materials.tempi,
+    metronome_marks=mraz.tempi,
     rehearsal_letter='',
-    score_template=mraz.tools.ScoreTemplate(),
+    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,

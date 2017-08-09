@@ -9,6 +9,6 @@ if not (
 del distutils
 del platform
 
-from mraz import tools
-from mraz import materials
+from mraz.tools import *
+from mraz.materials import *
 from mraz import segments

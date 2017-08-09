@@ -8,8 +8,8 @@ import mraz
 ##################################### [8] #####################################
 ###############################################################################
 
-accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-collection_maker = mraz.tools.CollectionMaker()
+accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
+collection_maker = mraz.CollectionMaker()
 collections = collection_maker.make_segment_8_collections()
 
 #################################### [8.3] ####################################
@@ -249,7 +249,7 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, mraz.materials.tempi[112]),
+    (1, mraz.tempi[112]),
     ])
 
 spacing_specifier = baca.HorizontalSpacingCommand(
@@ -265,14 +265,14 @@ segment_maker = baca.SegmentMaker(
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
     final_barline=False,
-    instruments=mraz.materials.instruments,
+    instruments=mraz.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.materials.tempi,
+    metronome_marks=mraz.tempi,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
-    score_template=mraz.tools.ScoreTemplate(),
+    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,

@@ -28,7 +28,7 @@ def make_mraz_music_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> music_maker = mraz.tools.make_mraz_music_maker()
+            >>> music_maker = mraz.make_mraz_music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
             ...     contribution = music_maker(voice_name, segments)
@@ -204,7 +204,7 @@ def make_mraz_music_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> music_maker = mraz.tools.make_mraz_music_maker()
+            >>> music_maker = mraz.make_mraz_music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
             ...     contribution = music_maker(voice_name, segments)
@@ -411,7 +411,7 @@ def make_mraz_music_maker():
 
         Formats Mráz music-maker:
 
-        >>> f(mraz.tools.make_mraz_music_maker())
+        >>> f(mraz.make_mraz_music_maker())
         baca.tools.MusicMaker(
             rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,
@@ -456,7 +456,7 @@ def make_mraz_music_maker():
     '''
     import mraz
     voice_names = []
-    dummy_score = mraz.tools.ScoreTemplate()()
+    dummy_score = mraz.ScoreTemplate()()
     for voice in abjad.iterate(dummy_score).by_class(abjad.Voice):
         voice_name = voice.name
         voice_names.append(voice_name)

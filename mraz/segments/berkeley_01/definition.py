@@ -8,8 +8,8 @@ import mraz
 ################################# [BERKELEY 1] ################################
 ###############################################################################
 
-accumulator = mraz.tools.MusicAccumulator(mraz.tools.ScoreTemplate())
-collection_maker = mraz.tools.CollectionMaker()
+accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
+collection_maker = mraz.CollectionMaker()
 collections_2 = collection_maker.make_segment_2_collections()
 collections_4 = collection_maker.make_segment_4_collections()
 collections_5 = collection_maker.make_segment_5_collections()
@@ -201,11 +201,11 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, mraz.materials.tempi[84]),
-    (2, mraz.materials.tempi[112]),
-    (5, mraz.materials.tempi[84]),
+    (1, mraz.tempi[84]),
+    (2, mraz.tempi[112]),
+    (5, mraz.tempi[84]),
     (8, abjad.Accelerando()),
-    (9, mraz.materials.tempi[112]),
+    (9, mraz.tempi[112]),
     ])
 
 spacing_specifier = baca.HorizontalSpacingCommand(
@@ -220,13 +220,13 @@ segment_maker = baca.SegmentMaker(
     #color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
-    instruments=mraz.materials.instruments,
+    instruments=mraz.instruments,
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.materials.tempi,
+    metronome_marks=mraz.tempi,
     rehearsal_letter='',
-    score_template=mraz.tools.ScoreTemplate(),
+    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,

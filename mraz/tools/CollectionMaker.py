@@ -17,7 +17,7 @@ class CollectionMaker(object):
     ### INITIALIZER ###
 
     def __init__(self):
-        maker = mraz.tools.SilverDesignMaker()
+        maker = mraz.SilverDesignMaker()
         design = maker()
         design = abjad.CyclicTuple(design)
         assert len(design) == 34, repr(len(design))
