@@ -4,15 +4,15 @@ import baca
 
 
 piano = abjad.instrumenttools.Piano(
-    instrument_name_markup=baca.markup.instrument_name(
+    name_markup=baca.markup.instrument(
         'Piano'),
-    short_instrument_name_markup=abjad.Markup.null(),
+    short_name_markup=abjad.Markup.null(),
     )
 piano._default_scope = 'PianoMusicStaffGroup'
 
 instruments = abjad.TypedOrderedDict([
     (
-        'piano', 
+        'piano',
         piano,
         ),
     ])
