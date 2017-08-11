@@ -4,8 +4,7 @@ import baca
 
 
 piano = abjad.instrumenttools.Piano(
-    name_markup=baca.markup.instrument(
-        'Piano'),
+    name_markup=baca.markup.instrument('Piano'),
     short_name_markup=abjad.Markup.null(),
     )
 piano._default_scope = 'PianoMusicStaffGroup'
