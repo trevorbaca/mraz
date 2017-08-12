@@ -57,7 +57,7 @@ accumulator(
     baca.beam_divisions(),
     baca.dynamic('mp'),
     baca.imbricate(
-        'RH Voice 2', 
+        'RH Voice 2',
         [8, 6],
         baca.beam_everything(),
         baca.dynamic('fff'),
@@ -94,7 +94,7 @@ accumulator(
     collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
     baca.imbricate(
-        'RH Voice 2', 
+        'RH Voice 2',
         [12, 13, 16, 3],
         baca.beam_everything(),
         hocket=True,
@@ -161,7 +161,7 @@ accumulator(
     collections['stage 2']['rh'].next(6),
     baca.beam_divisions(),
     baca.imbricate(
-        'RH Voice 2', 
+        'RH Voice 2',
         [22, 20, 19, 18, 21, 12, 11, 15],
         baca.beam_everything(),
         hocket=True,
@@ -195,7 +195,7 @@ accumulator(
     collections['stage 2']['rh'].next(3, exhausted=True),
     baca.beam_divisions(),
     baca.imbricate(
-        'RH Voice 2', 
+        'RH Voice 2',
         [15, 11, 6, 5],
         baca.beam_everything(),
         hocket=True,
