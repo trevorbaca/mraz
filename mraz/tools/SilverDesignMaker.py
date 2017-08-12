@@ -35,7 +35,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-8){0, 2, 5}"
+                                    "SC(3-9){0, 2, 6}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -64,7 +64,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(4-18){0, 2, 3, 4}"
+                                    "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -94,7 +94,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(4-18){0, 2, 3, 4}"
+                                    "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -108,7 +108,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                    "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -125,7 +125,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-6){0, 2, 3}"
+                                    "SC(3-7){0, 2, 4}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -138,7 +138,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                    "SC(6-32){0, 1, 3, 4, 6, 9}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -155,7 +155,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-7){0, 2, 4}"
+                                    "SC(3-12){0, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -213,7 +213,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(4-18){0, 2, 3, 4}"
+                                    "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -227,7 +227,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-8){0, 2, 5}"
+                                    "SC(3-9){0, 2, 6}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -240,7 +240,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(4-18){0, 2, 3, 4}"
+                                    "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -254,7 +254,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-8){0, 2, 5}"
+                                    "SC(3-9){0, 2, 6}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -297,7 +297,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                    "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -314,7 +314,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-6){0, 2, 3}"
+                                    "SC(3-7){0, 2, 4}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -344,7 +344,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-4){0, 1, 5}"
+                                    "SC(3-15){0, 4, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -369,7 +369,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(4-18){0, 2, 3, 4}"
+                                    "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -383,7 +383,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-8){0, 2, 5}"
+                                    "SC(3-9){0, 2, 6}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -412,7 +412,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-8){0, 2, 5}"
+                                    "SC(3-9){0, 2, 6}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -441,7 +441,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                    "SC(6-63){0, 2, 3, 5, 7, 9}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -471,7 +471,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                    "SC(6-74){0, 2, 4, 6, 8, 9}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -488,7 +488,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-9){0, 2, 6}"
+                                    "SC(3-10){0, 2, 7}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -501,7 +501,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                    "SC(6-28){0, 1, 3, 4, 5, 7}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -518,7 +518,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         \small
                             \line
                                 {
-                                    "SC(3-7){0, 2, 4}"
+                                    "SC(3-12){0, 3, 5}"
                                 }
                         }
                     - \tweak staff-padding #7
@@ -575,7 +575,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                     fs'8
@@ -600,7 +600,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                     d'8
@@ -650,7 +650,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -679,7 +679,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -709,7 +709,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -723,7 +723,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -736,7 +736,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -750,7 +750,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -779,7 +779,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -808,7 +808,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -838,7 +838,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -852,7 +852,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -865,7 +865,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -879,7 +879,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -908,7 +908,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -937,7 +937,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -967,7 +967,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -981,7 +981,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -994,7 +994,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1008,7 +1008,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1037,7 +1037,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1066,7 +1066,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1096,7 +1096,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1110,7 +1110,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1123,7 +1123,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1137,7 +1137,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1208,7 +1208,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1237,7 +1237,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1267,7 +1267,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1336,7 +1336,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1350,7 +1350,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1363,7 +1363,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1377,7 +1377,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1432,7 +1432,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1446,7 +1446,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1475,7 +1475,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1606,7 +1606,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1635,7 +1635,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1665,7 +1665,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1734,7 +1734,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1748,7 +1748,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1761,7 +1761,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1775,7 +1775,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1830,7 +1830,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1844,7 +1844,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1873,7 +1873,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -1987,7 +1987,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2016,7 +2016,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2046,7 +2046,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2115,7 +2115,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2129,7 +2129,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2142,7 +2142,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2156,7 +2156,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2211,7 +2211,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2225,7 +2225,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2254,7 +2254,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2702,7 +2702,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2731,7 +2731,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2761,7 +2761,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2775,7 +2775,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                        "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2792,7 +2792,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-6){0, 2, 3}"
+                                        "SC(3-7){0, 2, 4}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2805,7 +2805,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                        "SC(6-32){0, 1, 3, 4, 6, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2822,7 +2822,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-7){0, 2, 4}"
+                                        "SC(3-12){0, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2880,7 +2880,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2894,7 +2894,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2907,7 +2907,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2921,7 +2921,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2964,7 +2964,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                        "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -2981,7 +2981,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-6){0, 2, 3}"
+                                        "SC(3-7){0, 2, 4}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3011,7 +3011,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-4){0, 1, 5}"
+                                        "SC(3-15){0, 4, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3036,7 +3036,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3050,7 +3050,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3079,7 +3079,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3108,7 +3108,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                        "SC(6-63){0, 2, 3, 5, 7, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3138,7 +3138,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                        "SC(6-74){0, 2, 4, 6, 8, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3155,7 +3155,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-9){0, 2, 6}"
+                                        "SC(3-10){0, 2, 7}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3168,7 +3168,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                        "SC(6-28){0, 1, 3, 4, 5, 7}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3185,7 +3185,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-7){0, 2, 4}"
+                                        "SC(3-12){0, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3254,7 +3254,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3283,7 +3283,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3313,7 +3313,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3327,7 +3327,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(7-23){0, 1, 2, 4, 5, 8, 9}"
+                                        "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3344,7 +3344,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-6){0, 2, 3}"
+                                        "SC(3-7){0, 2, 4}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3357,7 +3357,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-30){0, 1, 3, 4, 6, 7}"
+                                        "SC(6-32){0, 1, 3, 4, 6, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3374,7 +3374,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-7){0, 2, 4}"
+                                        "SC(3-12){0, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3432,7 +3432,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3446,7 +3446,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3459,7 +3459,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3473,7 +3473,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3516,7 +3516,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(7-26){0, 1, 2, 4, 6, 8, 10}"
+                                        "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3533,7 +3533,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-6){0, 2, 3}"
+                                        "SC(3-7){0, 2, 4}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3563,7 +3563,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-4){0, 1, 5}"
+                                        "SC(3-15){0, 4, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3588,7 +3588,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(4-18){0, 2, 3, 4}"
+                                        "SC(4-19){0, 2, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3602,7 +3602,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3631,7 +3631,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-8){0, 2, 5}"
+                                        "SC(3-9){0, 2, 6}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3660,7 +3660,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-48){0, 1, 4, 6, 7, 8}"
+                                        "SC(6-63){0, 2, 3, 5, 7, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3690,7 +3690,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-36){0, 1, 3, 5, 6, 8}"
+                                        "SC(6-74){0, 2, 4, 6, 8, 9}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3707,7 +3707,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-9){0, 2, 6}"
+                                        "SC(3-10){0, 2, 7}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3720,7 +3720,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(6-26){0, 1, 2, 6, 7, 8}"
+                                        "SC(6-28){0, 1, 3, 4, 5, 7}"
                                     }
                             }
                         - \tweak staff-padding #7
@@ -3737,7 +3737,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                             \small
                                 \line
                                     {
-                                        "SC(3-7){0, 2, 4}"
+                                        "SC(3-12){0, 3, 5}"
                                     }
                             }
                         - \tweak staff-padding #7
