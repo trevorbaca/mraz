@@ -42,7 +42,7 @@ class CollectionMaker(object):
         assert len(segments) == 6, repr(len(segments))
         stages = segments.partition([2, 4], overhang=Exact)
         assert stages.sum() == segments
-        stage_1_segments = stages[0]
+        #stage_1_segments = stages[0]
         stage_2_segments = stages[1]
         counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
         stage_2_segments = stage_2_segments.join()
@@ -79,7 +79,7 @@ class CollectionMaker(object):
         assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_2_segments = stages[1]
-        stage_3_segments = stages[2]
+        #stage_3_segments = stages[2]
         stage_4_segments = stages[3]
         stage_5_segments = stages[4]
         stage_6_segments = stages[5]
@@ -220,8 +220,8 @@ class CollectionMaker(object):
         assert len(lh_stage_1_segments) == 4
         rh_stage_1_segments = rh_stage_1_segments.cursor()
         lh_stage_1_segments = lh_stage_1_segments.cursor()
-        collections['stage 1']['rh'] = rh_stage_1_segments 
-        collections['stage 1']['lh'] = lh_stage_1_segments 
+        collections['stage 1']['rh'] = rh_stage_1_segments
+        collections['stage 1']['lh'] = lh_stage_1_segments
         return collections
 
     def make_segment_7_collections(self):

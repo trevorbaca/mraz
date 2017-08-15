@@ -1558,8 +1558,7 @@ class SilverDesignMaker(abjad.AbjadObject):
             cyclic=True,
             overhang=True,
             )
-        Expression = abjad.Expression
-        fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
+        #fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
         segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
@@ -1569,8 +1568,8 @@ class SilverDesignMaker(abjad.AbjadObject):
                 segment = part[0]
                 for segment_ in part[1:]:
                     segment += segment_
-                name = fused_segment_names.next()[0]
-                #segment = Expression.establish_equivalence(segment, name)
+                #name = fused_segment_names.next()[0]
+                #segment = abjad.Expression.establish_equivalence(segment, name)
                 segments.append(segment)
         tree = baca.PitchTree(
             item_class=abjad.NumberedPitchClass,
@@ -2659,7 +2658,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     )
                 part_segments = []
                 for i, part in enumerate(parts):
-                    name = '{}_{}'.format(source, i)
+                    #name = '{}_{}'.format(source, i)
                     name_markup = [abjad.Markup(source)]
                     name_markup.append(abjad.Markup(i).sub())
                     name_markup = abjad.Markup.concat(name_markup)

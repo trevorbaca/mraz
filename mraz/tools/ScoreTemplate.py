@@ -8,15 +8,16 @@ class ScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import mraz
-        
+        >>> import pathlib
+
     ..  container:: example
 
         ::
 
             >>> template = mraz.ScoreTemplate()
             >>> lilypond_file = template.__illustrate__()
-            >>> path = '/Users/trevorbaca/Scores/mraz/mraz'
-            >>> path += '/stylesheets/context-definitions.ily'
+            >>> path = pathlib.Path(mraz.__path__[0], 'stylesheets')
+            >>> path = path.joinpath('context-definitions.ily')
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
             ...     global_staff_size=14,
@@ -154,107 +155,107 @@ class ScoreTemplate(baca.ScoreTemplate):
         import mraz
         time_signature_context = self._make_time_signature_context()
         rh_voice_1 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceOne',
             name='RH Voice 1',
             )
         rh_voice_1I = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceOneInserts',
             name='RH Voice 1 Inserts',
             )
         rh_voice_2 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceTwo',
             name='RH Voice 2',
             )
         rh_voice_2I = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceTwoInserts',
             name='RH Voice 2 Inserts',
             )
         rh_voice_3 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceThree',
             name='RH Voice 3',
             )
         rh_voice_3I = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceThreeInserts',
             name='RH Voice 3 Inserts',
             )
         rh_voice_4 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceFour',
             name='RH Voice 4',
             )
         rh_voice_4I = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceFourInserts',
             name='RH Voice 4 Inserts',
             )
         rh_voice_5 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceFive',
             name='RH Voice 5',
             )
         rh_voice_6 = abjad.Voice(
-            [], 
+            [],
             context_name='RHVoiceSix',
             name='RH Voice 6',
             )
         rh_resonance_voice = abjad.Voice(
-            [], 
+            [],
             context_name='RHResonanceVoice',
             name='RH Resonance Voice',
             )
         lh_voice_1 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceOne',
             name='LH Voice 1',
             )
         lh_voice_2 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceTwo',
             name='LH Voice 2',
             )
         lh_voice_3 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceThree',
             name='LH Voice 3',
             )
         lh_voice_4 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceFour',
             name='LH Voice 4',
             )
         lh_voice_4I = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceFourInserts',
             name='LH Voice 4 Inserts',
             )
         lh_voice_5 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceFive',
             name='LH Voice 5',
             )
         lh_voice_5I = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceFiveInserts',
             name='LH Voice 5 Inserts',
             )
         lh_voice_6 = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceSix',
             name='LH Voice 6',
             )
         lh_voice_6I = abjad.Voice(
-            [], 
+            [],
             context_name='LHVoiceSixInserts',
             name='LH Voice 6 Inserts',
             )
         lh_resonance_voice = abjad.Voice(
-            [], 
+            [],
             context_name='LHResonanceVoice',
             name='LH Resonance Voice',
             )
@@ -271,7 +272,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 rh_voice_5,
                 rh_voice_6,
                 rh_resonance_voice,
-                ], 
+                ],
             context_name='PianoMusicRHStaff',
             is_simultaneous=True,
             name='Piano Music RH Staff',
@@ -293,7 +294,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 lh_voice_6,
                 lh_voice_6I,
                 lh_resonance_voice,
-                ], 
+                ],
             context_name='PianoMusicLHStaff',
             is_simultaneous=True,
             name='Piano Music LH Staff',
@@ -316,15 +317,15 @@ class ScoreTemplate(baca.ScoreTemplate):
         music_context = abjad.Context(
             [
                 piano_music_staff_group,
-            ],
+                ],
             context_name='MusicContext',
             name='Music Context',
             )
         score = abjad.Score(
             [
-            time_signature_context,
-            music_context,
-            ],
+                time_signature_context,
+                music_context,
+                ],
             name='Score',
             )
         self._validate_voice_names(score)
