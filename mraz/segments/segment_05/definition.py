@@ -126,7 +126,7 @@ accumulator(
     collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
     baca.imbricate(
-        'RH Voice 2', 
+        'RH Voice 2',
         [18, 15, 17, 16, 5, 8],
         baca.beam_everything(),
         extend_beam=True,
