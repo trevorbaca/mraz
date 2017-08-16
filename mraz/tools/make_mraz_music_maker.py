@@ -411,14 +411,14 @@ def make_mraz_music_maker():
         Formats Mráz music-maker:
 
         >>> f(mraz.make_mraz_music_maker())
-        baca.tools.MusicMaker(
-            rhythmmakertools.BeamSpecifier(
+        baca.MusicMaker(
+            abjad.rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,
                 beam_divisions_together=True,
                 ),
-            baca.tools.MusicRhythmSpecifier(
-                rhythm_maker=baca.tools.MusicRhythmMaker(
-                    talea=rhythmmakertools.Talea(
+            baca.MusicRhythmSpecifier(
+                rhythm_maker=baca.MusicRhythmMaker(
+                    talea=abjad.rhythmmakertools.Talea(
                         counts=[1],
                         denominator=16,
                         ),
