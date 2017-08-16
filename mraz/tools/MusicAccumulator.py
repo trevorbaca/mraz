@@ -131,8 +131,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         talea_denominator=None,
         thread=None,
         time_treatments=None,
-        tuplet_denominator=None
-        ):
+        tuplet_denominator=None):
         superclass = super(MusicAccumulator, self)
         keywords = {
             'allow_repeat_pitches': allow_repeat_pitches,

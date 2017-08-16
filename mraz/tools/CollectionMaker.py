@@ -251,7 +251,8 @@ class CollectionMaker(object):
             start = i
             stop = i + 3
             rh_segments_ = rh_segments[start:stop]
-            operator = baca.pitch_class_segment().transpose(n=i*7)
+            index = i * 7
+            operator = baca.pitch_class_segment().transpose(n=index)
             expression = baca.sequence().map(operator)
             rh_segments_ = expression(rh_segments_)
             all_rh_segments.extend(rh_segments_)
@@ -271,7 +272,8 @@ class CollectionMaker(object):
             start = i
             stop = i + 2
             lh_segments_ = lh_segments[start:stop]
-            operator = baca.pitch_class_segment().transpose(n=i*7)
+            index = i * 7
+            operator = baca.pitch_class_segment().transpose(n=index)
             expression = baca.sequence().map(operator)
             lh_segments_ = expression(lh_segments_)
             all_lh_segments.extend(lh_segments_)
