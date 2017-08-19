@@ -3214,10 +3214,10 @@ class SilverDesignMaker(abjad.AbjadObject):
         parts = segments.partition_by_ratio_of_lengths(5 * [1])
         indices = baca.Cursor([0, 5, 9, 10, 11])
         for i, part in enumerate(parts):
-            n = indices.next()[0] % 12
+            index = indices.next()[0] % 12
             for segment in part:
-                if n != 0:
-                    segment = segment.transpose(n=n)
+                if index != 0:
+                    segment = segment.transpose(n=index)
                 new_segments.append(segment)
         tree = baca.PitchTree(
             item_class=abjad.NumberedPitchClass,
