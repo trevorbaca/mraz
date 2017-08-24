@@ -15,13 +15,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = mraz.ScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
-            >>> path = pathlib.Path(mraz.__path__[0], 'stylesheets')
-            >>> path = path.joinpath('context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
+            >>> path = pathlib.Path(mraz.__path__[0])
+            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=14,
-            ...     includes=[str(path)],
+            ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
@@ -276,11 +274,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='PianoMusicRHStaff',
             is_simultaneous=True,
             name='Piano Music RH Staff',
-            )
-        abjad.annotate(
-            piano_music_rh_staff,
-            'default_clef',
-            abjad.Clef('treble'),
             )
         piano_music_lh_staff = abjad.Staff(
             [
