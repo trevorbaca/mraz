@@ -60,8 +60,8 @@ DURATION-COLORED LEGATO
 3.  Constant span / changing sound. Consider a series of consecutive notes
     carrying the span duration of a quarter each. Small rests begin gradually
     to consume the end (or begin) parts of each span. Then larger rests consume
-    the end (or begin) parts of each span. At quick or moderate tempi the
-    effect modulates legato. At slower tempi the effect re-colors one-note
+    the end (or begin) parts of each span. At quick or moderate metronome_marks the
+    effect modulates legato. At slower metronome_marks the effect re-colors one-note
     events. Process need not interpolate: discrete changes in durations of
     end-part rests cause correspondingly discreet changes in legato. Second
     version changes span durations additively. Third version repartitions
