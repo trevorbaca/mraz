@@ -271,13 +271,13 @@ accumulator(
 ###############################################################################
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, mraz.tempi[112]),
-    (3, mraz.tempi[84]),
-    (5, mraz.tempi[112]),
-    (6, mraz.tempi[84]),
-    (10, mraz.tempi[112]),
+    (1, mraz.metronome_marks[112]),
+    (3, mraz.metronome_marks[84]),
+    (5, mraz.metronome_marks[112]),
+    (6, mraz.metronome_marks[84]),
+    (10, mraz.metronome_marks[112]),
     (10, abjad.Ritardando()),
-    (12, mraz.tempi[84]),
+    (12, mraz.metronome_marks[84]),
     ])
 
 spacing_specifier = baca.HorizontalSpacingCommand(
@@ -297,7 +297,7 @@ segment_maker = baca.SegmentMaker(
     #label_clock_time=True,
     #label_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.tempi,
+    metronome_marks=mraz.metronome_marks,
     range_checker=abjad.instrumenttools.Piano().pitch_range,
     rehearsal_letter='',
     score_template=mraz.ScoreTemplate(),
