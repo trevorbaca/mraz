@@ -8,15 +8,13 @@ class ScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import mraz
-        >>> import pathlib
 
     ..  container:: example
 
         ::
 
             >>> template = mraz.ScoreTemplate()
-            >>> path = pathlib.Path(mraz.__path__[0])
-            >>> path = path / 'stylesheets' / 'contexts.ily'
+            >>> path = abjad.Path('mraz', 'stylesheets', 'contexts.ily')
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=14,
             ...     includes=[path],
