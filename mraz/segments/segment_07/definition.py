@@ -322,6 +322,11 @@ segment_maker = baca.SegmentMaker(
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
     final_barline='|.',
+    final_markup=(
+        ['Madison, WI', 'Los Angeles, CA.'],
+        ['December 2016', 'March 2017.'],
+        ),
+    final_markup_extra_offset=(-24, -8),
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
