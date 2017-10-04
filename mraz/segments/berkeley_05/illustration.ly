@@ -1933,6 +1933,38 @@
                         }
                         \override Score.BarLine.transparent = ##f
                         s1 * 2
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        \right-column
+                                            {
+                                                \line
+                                                    {
+                                                        Madison,
+                                                        WI
+                                                        \hspace
+                                                            #0.75
+                                                        –
+                                                        \hspace
+                                                            #0.75
+                                                        Los
+                                                        Angeles,
+                                                        CA.
+                                                    }
+                                                \line
+                                                    {
+                                                        December
+                                                        2016
+                                                        \hspace
+                                                            #0.75
+                                                        –
+                                                        \hspace
+                                                            #0.75
+                                                        March
+                                                        2017.
+                                                    }
+                                            }
+                                }
                         \bar "|"
                     }
                 >>
