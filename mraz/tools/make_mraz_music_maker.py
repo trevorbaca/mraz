@@ -422,7 +422,7 @@ def make_mraz_music_maker():
                 beam_each_division=True,
                 beam_divisions_together=True,
                 ),
-            baca.MusicRhythmCommand(
+            baca.MusicRhythmSpecifier(
                 rhythm_maker=baca.MusicRhythmMaker(
                     talea=abjad.rhythmmakertools.Talea(
                         counts=[1],
@@ -469,7 +469,7 @@ def make_mraz_music_maker():
         abjad.rhythmmakertools.BeamSpecifier(
             beam_divisions_together=True,
             ),
-        baca.MusicRhythmCommand(
+        baca.MusicRhythmSpecifier(
             rhythm_maker=baca.MusicRhythmMaker(
                 talea=abjad.rhythmmakertools.Talea(
                     counts=[1],
