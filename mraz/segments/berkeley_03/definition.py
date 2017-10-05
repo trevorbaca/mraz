@@ -960,7 +960,7 @@ accumulator(
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
 
-tempo_specifier = baca.TempoSpecifier([
+metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks[84]),
     (1, abjad.Accelerando()),
     (6, mraz.metronome_marks[112]),
@@ -1006,7 +1006,7 @@ segment_maker = baca.SegmentMaker(
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing_specifier=spacing_specifier,
-    tempo_specifier=tempo_specifier,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=accumulator.time_signatures,
     )
 
