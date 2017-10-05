@@ -121,7 +121,7 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (3, mraz.metronome_marks[112]),
     ])
 
-spacing_specifier = baca.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 24),
     )
