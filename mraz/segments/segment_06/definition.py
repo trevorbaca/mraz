@@ -136,7 +136,7 @@ accumulator(
 ###############################################################################
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks[84]),
+    (1, mraz.metronome_marks['84']),
     ])
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(

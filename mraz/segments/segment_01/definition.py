@@ -34,7 +34,7 @@ assert segments.is_exhausted
 ###############################################################################
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks[112]),
+    (1, mraz.metronome_marks['112']),
     ])
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(

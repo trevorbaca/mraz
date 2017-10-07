@@ -341,19 +341,19 @@ accumulator(
 ###############################################################################
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks[84]),
+    (1, mraz.metronome_marks['84']),
     (1, abjad.Accelerando()),
-    (2, mraz.metronome_marks[112]),
+    (2, mraz.metronome_marks['112']),
     (2, abjad.Ritardando()),
-    (3, mraz.metronome_marks[84]),
+    (3, mraz.metronome_marks['84']),
     (3, abjad.Accelerando()),
-    (5, mraz.metronome_marks[112]),
+    (5, mraz.metronome_marks['112']),
     (5, abjad.Ritardando()),
-    (7, mraz.metronome_marks[84]),
+    (7, mraz.metronome_marks['84']),
     (7, abjad.Accelerando()),
-    (9, mraz.metronome_marks[112]),
+    (9, mraz.metronome_marks['112']),
     (9, abjad.Ritardando()),
-    (11, mraz.metronome_marks[84]),
+    (11, mraz.metronome_marks['84']),
     ])
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
