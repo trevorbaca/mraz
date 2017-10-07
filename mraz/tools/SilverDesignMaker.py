@@ -2658,7 +2658,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     )
                 part_segments = []
                 for i, part in enumerate(parts):
-                    #name = '{}_{}'.format(source, i)
+                    #name = f'{source}_{}'
                     name_markup = [abjad.Markup(source)]
                     name_markup.append(abjad.Markup(i).sub())
                     name_markup = abjad.Markup.concat(name_markup)
