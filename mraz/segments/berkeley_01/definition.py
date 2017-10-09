@@ -241,8 +241,7 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.append_commands(
-    'LH Voice 4 Inserts',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 4 Inserts', 1, abjad.Infinity),
     baca.stems_up(),
     )

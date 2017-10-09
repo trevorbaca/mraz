@@ -352,114 +352,97 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.append_commands(
-    'RH Voice 1',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('RH Voice 1', 1, Infinity),
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),
     )
 
-segment_maker.append_commands(
-    'RH Voice 1 Inserts',
-    baca.select_stages(1, 5),
+segment_maker.scope(
+    baca.scope('RH Voice 1 Inserts', 1, 5),
     baca.beam_positions(-6.5),
     )
 
-segment_maker.append_commands(
-    'RH Voice 1 Inserts',
-    baca.select_stages(5, 10),
+segment_maker.scope(
+    baca.scope('RH Voice 1 Inserts', 5, 10),
     baca.beam_positions(-8.5),
     )
 
-segment_maker.append_commands(
-    'RH Voice 1 Inserts',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('RH Voice 1 Inserts', 1, Infinity),
     baca.scripts_down(),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('RH Voice 2', 1, Infinity),
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
     baca.slurs_up(),
     baca.stems_down(),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2 Inserts',
-    baca.select_stages(9, Infinity),
+segment_maker.scope(
+    baca.scope('RH Voice 2 Inserts', 9, Infinity),
     baca.beam_positions(17),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2 Inserts',
-    baca.select_stages(1, 4),
+segment_maker.scope(
+    baca.scope('RH Voice 2 Inserts', 1, 4),
     baca.beam_positions(15.5),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2 Inserts',
-    baca.select_stages(6, 8),
+segment_maker.scope(
+    baca.scope('RH Voice 2 Inserts', 6, 8),
     baca.beam_positions(13.5),
     )
 
-segment_maker.append_commands(
-    'RH Voice 2 Inserts',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('RH Voice 2 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
-segment_maker.append_commands(
-    'LH Voice 4',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('LH Voice 4', 1, 2),
     baca.beam_positions(-5.5),
     )
 
-segment_maker.append_commands(
-    'LH Voice 4',
-    baca.select_stages(6, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 4', 6, Infinity),
     baca.beam_positions(-4.5),
     )
 
-segment_maker.append_commands(
-    'LH Voice 4',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 4', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
-segment_maker.append_commands(
-    'LH Voice 4 Inserts',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 4 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
-segment_maker.append_commands(
-    'LH Voice 5',
-    baca.select_stages(1, 5),
+segment_maker.scope(
+    baca.scope('LH Voice 5', 1, 5),
     baca.beam_positions(-6),
     )
 
-#segment_maker.append_commands(
-#    'LH Voice 5',
-#    baca.select_stages(6, Infinity),
+#segment_maker.scope(
+#    baca.scope('LH Voice 5', 6, Infinity),
 #    baca.beam_positions(-4.5),
 #    )
 
-segment_maker.append_commands(
-    'LH Voice 5',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 5', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
-segment_maker.append_commands(
-    'LH Voice 5 Inserts',
-    baca.select_stages(1, Infinity),
+segment_maker.scope(
+    baca.scope('LH Voice 5 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     baca.beam_positions(9),
