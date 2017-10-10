@@ -920,77 +920,77 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('RH Voice 1', 1, Infinity),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('RH Voice 1', 1, 34),
     baca.ottava(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('RH Voice 1', 36, Infinity),
     baca.ottava(),
     )
 
 # TODO: reveal
-#segment_maker.scope(
+#segment_maker(
 #    baca.scope('RH Voice 2', 30, 32),
 #    baca.marcati(),
 #    baca.scripts_up(),
 #    baca.up_arpeggios(),
 #    )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('RH Voice 3', 1, Infinity),
     baca.tenuti(),
     )
 
 # TODO: reveal
-#segment_maker.scope(
+#segment_maker(
 #    baca.scope('LH Voice 2', 30, 32),
 #    baca.transparent_rests(),
 #    )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 5', 1, Infinity),
     baca.clef('bass'),
     baca.dynamics_down(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 5', 7, 15),
     baca.marcati(),
     baca.rests_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 5', 16, Infinity),
     baca.tuplet_bracket_staff_padding(2),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 5 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.staccati(),
     baca.stems_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 9, 10),
     baca.messiaen_tie_each(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 13, 14),
     baca.messiaen_tie_each(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 20, Infinity),
     baca.messiaen_tie_each(),
     )
