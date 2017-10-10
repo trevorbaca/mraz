@@ -156,23 +156,23 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('RH Voice 2', 1, Infinity),
     baca.scripts_up(),
     baca.slurs_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 1, Infinity),
     baca.clef('bass'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 1, 2),
     baca.messiaen_tie_each(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Resonance Voice', 3, 5),
     baca.messiaen_tie_each(),
     )

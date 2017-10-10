@@ -71,7 +71,7 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-#segment_maker.scope(
+#segment_maker(
 #    baca.scope('RH Voice 1', 1, 2),
 #    baca.register(0, -12),
 #    )

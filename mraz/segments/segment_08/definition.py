@@ -287,7 +287,7 @@ accumulator.populate_segment_maker(segment_maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 5', 1, Infinity),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
@@ -296,7 +296,7 @@ segment_maker.scope(
     baca.tuplet_brackets_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('LH Voice 6', 1, Infinity),
     #abjad.label().with_pitches(),
     baca.scripts_down(),
