@@ -52,7 +52,7 @@ def make_mraz_music_maker():
             ...     )
             >>> segment_maker(
             ...     baca.scope('Violin Music Voice', 1),
-            ...     baca.RhythmCommand(
+            ...     baca.RhythmBuilder(
             ...         rhythm_maker=figures,
             ...         ),
             ...     )
@@ -230,7 +230,7 @@ def make_mraz_music_maker():
             ...     )
             >>> segment_maker(
             ...     baca.scope('Violin Music Voice', 1),
-            ...     baca.RhythmCommand(
+            ...     baca.RhythmBuilder(
             ...         rhythm_maker=figures,
             ...         ),
             ...     )
