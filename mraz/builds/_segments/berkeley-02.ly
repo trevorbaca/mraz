@@ -250,13 +250,13 @@
                         {
                             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                             f''''1. -\tenuto
-                            \ottava #0
                         }
                     }
                     {
                         {
                             bf''''1 -\tenuto
                             \bar "|"
+                            \ottava #0
                         }
                     }
                 }
@@ -445,7 +445,6 @@
                         }
                     }
                     s1 * 13/4
-                    \revert Slur.direction
                     {
                         \times 4/5 {
                             \set stemLeftBeamCount = #0
