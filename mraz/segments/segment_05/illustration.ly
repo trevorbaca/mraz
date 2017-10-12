@@ -654,6 +654,9 @@
                                     f'8 -\accent
                                     s8
                                     s8 ]
+                                    \revert Beam.positions
+                                    \revert Script.direction
+                                    \revert Stem.direction
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -661,9 +664,6 @@
                         }
                         s1 * 1/4
                         \bar "|"
-                        \revert Beam.positions
-                        \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 4

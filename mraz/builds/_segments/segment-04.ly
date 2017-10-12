@@ -1561,13 +1561,13 @@
                             \override TextScript.direction = #up
                             \override TupletBracket.direction = #up
                             r4
-                            ef''8 -\tenuto \mp - \markup { "(memory of before)" }
+                            ef''8 \mp - \markup { "(memory of before)" }
                             r4
-                            cs''4 -\tenuto
+                            cs''4
                             r4
-                            c'8 -\tenuto
+                            c'8
                             r4
-                            bf4 -\tenuto
+                            bf4
                             \bar "|"
                             \revert TextScript.direction
                             \revert TupletBracket.direction
@@ -2289,6 +2289,7 @@
                         }
                     }
                     s1 * 23/2
+                    \revert TupletBracket.staff-padding
                     {
                         {
                             r4
@@ -2301,7 +2302,6 @@
                             r16
                             r4
                             \bar "|"
-                            \revert TupletBracket.staff-padding
                         }
                     }
                 }

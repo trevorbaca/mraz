@@ -486,7 +486,9 @@
                             f,,8.
                             r32
                             e,,8.
+                            \ottava #0
                             r32
+                            \revert TupletBracket.direction
                         }
                     }
                     {
@@ -497,9 +499,7 @@
                             bf,,8
                             r32
                             af,,8
-                            \ottava #0
                             r32
-                            \revert TupletBracket.direction
                         }
                     }
                 }
