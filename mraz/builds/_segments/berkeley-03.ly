@@ -2186,11 +2186,11 @@
                             e'8. -\tenuto
                             r16
                             r4
-                            \revert TupletBracket.staff-padding
                         }
                     }
                     s1 * 4
                     \bar "|"
+                    \revert TupletBracket.staff-padding
                 }
                 \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                     \override Script.direction = #up

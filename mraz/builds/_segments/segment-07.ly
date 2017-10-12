@@ -323,13 +323,13 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 bf'''16 ]
-                                \revert Beam.positions
-                                \revert Stem.direction
                             }
                         }
                     }
                     s1 * 1/8
                     \bar "|."
+                    \revert Beam.positions
+                    \revert Stem.direction
                 }
                 \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                     {
@@ -467,7 +467,6 @@
                                 s16
                                 s16 ]
                                 \revert Beam.positions
-                                \revert Script.direction
                             }
                         }
                         \revert TupletBracket.stencil
@@ -475,6 +474,7 @@
                     }
                     s1 * 1/8
                     \bar "|."
+                    \revert Script.direction
                 }
                 \context RHVoiceTwo = "RH Voice 2" {
                     \override Beam.positions = #'(-4.5 . -4.5)
@@ -640,9 +640,6 @@
                         }
                     }
                     s1 * 5/8
-                    \revert Beam.positions
-                    \revert Slur.direction
-                    \revert Stem.direction
                     {
                         \times 2/3 {
                             \set stemLeftBeamCount = #1
@@ -655,6 +652,9 @@
                             \set stemRightBeamCount = #0
                             af'''16 ] )
                             \bar "|."
+                            \revert Beam.positions
+                            \revert Slur.direction
+                            \revert Stem.direction
                         }
                     }
                 }
@@ -795,9 +795,6 @@
                         \revert TupletNumber.stencil
                     }
                     s1 * 5/8
-                    \revert Beam.positions
-                    \revert Script.direction
-                    \revert Stem.direction
                     {
                         \override TupletBracket.stencil = ##f
                         \override TupletNumber.stencil = ##f
@@ -810,6 +807,9 @@
                             \set stemRightBeamCount = #0
                             af'''16 -\accent ]
                             \bar "|."
+                            \revert Beam.positions
+                            \revert Script.direction
+                            \revert Stem.direction
                         }
                         \revert TupletBracket.stencil
                         \revert TupletNumber.stencil

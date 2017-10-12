@@ -457,8 +457,6 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 ef''''16 -\staccato ] )
-                                \revert Script.direction
-                                \revert Slur.direction
                             }
                         }
                         {
@@ -518,6 +516,8 @@
                                 \set stemRightBeamCount = #0
                                 d''''16 -\staccato ] )
                                 \bar "|"
+                                \revert Script.direction
+                                \revert Slur.direction
                             }
                         }
                     }
