@@ -1377,13 +1377,11 @@
                     {
                         {
                             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                            \override Rest.direction = #down
                             \override TupletBracket.direction = #down
                             af'''8 -\tenuto [ (
                             ef'''8 -\tenuto
                             f'''8 -\tenuto
                             fs'''8 -\tenuto ] )
-                            \revert Rest.direction
                             \revert TupletBracket.direction
                         }
                     }
@@ -1410,9 +1408,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             \ottava #1
-                            \override Rest.direction = #down
                             \override TupletBracket.direction = #down
                             a''4 -\tenuto \mf
+                            \override Rest.direction = #down
                             r4
                             cs''4 -\tenuto
                             r4

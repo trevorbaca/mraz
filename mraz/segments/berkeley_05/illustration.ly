@@ -1195,9 +1195,9 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 \ottava #1
-                                \override Rest.direction = #down
                                 \override TupletBracket.direction = #down
                                 a''4 -\tenuto \mf
+                                \override Rest.direction = #down
                                 r4
                                 cs''4 -\tenuto
                                 r4
@@ -1218,7 +1218,6 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                    \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     d'''8 \mp [ (
                                     ef'''8
@@ -1257,7 +1256,6 @@
                                     g'8
                                     a'8
                                     d'8 ] )
-                                    \revert Rest.direction
                                     \revert TupletBracket.direction
                                 }
                             }
@@ -1283,7 +1281,6 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                    \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     cs'''8 [ (
                                     c'''8
@@ -1324,7 +1321,6 @@
                                     af'8 [
                                     cs'8
                                     b'8 ] )
-                                    \revert Rest.direction
                                     \revert TupletBracket.direction
                                 }
                             }
@@ -1335,7 +1331,6 @@
                             \times 20/23 {
                                 {
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                    \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     a'''8 [ (
                                     d'''8
@@ -1374,7 +1369,6 @@
                                     fs'8 ]
                                     s8
                                     a'8 )
-                                    \revert Rest.direction
                                     \revert TupletBracket.direction
                                 }
                             }
@@ -1397,7 +1391,6 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                    \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     c'''8 [ (
                                     g'''8
@@ -1445,7 +1438,6 @@
                                     b'8
                                     cs'8
                                     bf'8 ] )
-                                    \revert Rest.direction
                                     \revert TupletBracket.direction
                                 }
                             }
@@ -1471,7 +1463,6 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
-                                    \override Rest.direction = #down
                                     \override TupletBracket.direction = #down
                                     \override TupletBracket.staff-padding = #3
                                     f'''8 [ (
@@ -1497,7 +1488,6 @@
                                     s8
                                     e'8 [
                                     d'8 ] )
-                                    \revert Rest.direction
                                     \revert TupletBracket.direction
                                     \revert TupletBracket.staff-padding
                                 }
@@ -1861,11 +1851,11 @@
                             \times 4/3 {
                                 \ottava #-1
                                 \clef "bass"
-                                \override Rest.direction = #down
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 b,,,8 \f
+                                \override Rest.direction = #down
                                 r4
                                 ef,,8
                                 \ottava #0

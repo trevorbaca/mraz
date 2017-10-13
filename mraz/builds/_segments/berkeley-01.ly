@@ -388,9 +388,9 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/5 {
                             \ottava #1
-                            \override Rest.direction = #down
                             \override TupletBracket.direction = #down
                             a''4 -\tenuto \mf - \markup { "(first note A5)" }
+                            \override Rest.direction = #down
                             r4
                             cs''4 -\tenuto
                             r4
@@ -614,11 +614,11 @@
                         \times 4/3 {
                             \ottava #-1
                             \clef "bass"
-                            \override Rest.direction = #down
                             \override Stem.direction = #down
                             \override TupletBracket.direction = #down
                             \override TupletBracket.staff-padding = #6
                             b,,,8 \f
+                            \override Rest.direction = #down
                             r4
                             ef,,8
                             \ottava #0
