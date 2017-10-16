@@ -424,7 +424,6 @@ accumulator(
     baca.beam_divisions(),
     baca.proportional_notation_duration((1, 16)),
     baca.register(24),
-    baca.rests_down(),
     baca.slur_trimmed_run_in_each_tuplet(),
     baca.tuplet_brackets_down(),
     counts=[2],
