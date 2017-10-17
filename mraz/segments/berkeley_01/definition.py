@@ -184,7 +184,7 @@ accumulator(
     [abjad.Rest((1, 8))],
     baca.markup(
         '(extremely short)',
-        target=baca.select_rest(),
+        target=baca.select().rest(),
         ),
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
