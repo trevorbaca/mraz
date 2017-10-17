@@ -64,7 +64,7 @@ accumulator(
 accumulator(
     'LH Resonance Voice',
     [{-35, -23}],
-    baca.anchor('RH Voice 2', baca.select_note(0)),
+    baca.anchor('RH Voice 2', baca.select().note(0)),
     baca.flags(),
     color_unregistered_pitches=False,
     counts=[29],

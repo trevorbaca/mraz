@@ -125,7 +125,7 @@ accumulator(
     [abjad.Rest((3, 4))],
     baca.anchor_to_figure('rh-2 4.1.1'),
     baca.proportional_notation_duration((1, 4)),
-    baca.sustain_pedal(baca.select_leaves(leak=Right)),
+    baca.sustain_pedal(baca.select().leaves(leak=Right)),
     figure_name='lh-5 4.1.2',
     hide_time_signature=True,
     )
@@ -303,7 +303,7 @@ accumulator(
 accumulator(
     'RH Voice 5',
     [chord_1_upper.chord()],
-    baca.anchor('LH Voice 5', baca.select_chord(-1)),
+    baca.anchor('LH Voice 5', baca.select().chord(-1)),
     baca.flags(),
     baca.rests_after([3]),
     counts=[1],
@@ -313,7 +313,7 @@ accumulator(
 accumulator(
     'LH Resonance Voice',
     [{-35, -23}],
-    baca.anchor('LH Voice 5', baca.select_rest(24)),
+    baca.anchor('LH Voice 5', baca.select().rest(24)),
     baca.flags(),
     baca.nest('+1/4'),
     baca.skips_before([4]),
@@ -345,7 +345,7 @@ accumulator(
 accumulator(
     'LH Resonance Voice',
     [{-33, -21}],
-    baca.anchor('LH Voice 5', baca.select_rest(32)),
+    baca.anchor('LH Voice 5', baca.select().rest(32)),
     baca.flags(),
     baca.nest('+1/4'),
     baca.skips_before([4]),
@@ -569,7 +569,7 @@ accumulator(
     baca.rests_around([2], [6]),
     baca.resume_after('RH Voice 5'),
     baca.slur_each_plt_run(),
-    baca.text_script_color('black', baca.select_pl(0)),
+    baca.text_script_color('black', baca.select().pl(0)),
     baca.text_scripts_up(),
     counts=[2],
     figure_name='rh-1 4.4.1',
@@ -609,7 +609,7 @@ accumulator(
 accumulator(
     'RH Voice 1',
     collections['stage 4']['rh'].next(exhausted=True),
-    baca.anchor('LH Voice 5', baca.select_rest(-8)),
+    baca.anchor('LH Voice 5', baca.select().rest(-8)),
     baca.beam_plt_runs(hide_nibs=True),
     baca.imbricate(
         'RH Voice 2',
@@ -884,7 +884,7 @@ accumulator(
     'LH Voice 2',
     [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
     baca.anchor_to_figure('rh-2 4.6.1'),
-    baca.sustain_pedal(baca.select_leaves_in_each_lt(leak=Right)),
+    baca.sustain_pedal(baca.select().leaves_in_each_lt(leak=Right)),
     baca.sustain_pedal_staff_padding(4),
     baca.transparent_rests(),
     figure_name='lh-2 4.6.1',
