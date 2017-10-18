@@ -528,12 +528,12 @@
                     }
                     \context LHVoiceSix = "LH Voice 6" {
                         \override Script.direction = #down
-                        \override Stem.direction = #down
                         \override TupletBracket.staff-padding = #6
                         s1 * 11/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
+                                \override Stem.direction = #down
                                 af,,4 -\tenuto \f
                                 \override Rest.staff-position = #-10
                                 r4
@@ -597,13 +597,13 @@
                                 f,,8 -\tenuto
                                 r4
                                 g,,8 -\tenuto
+                                \revert Stem.direction
                                 r4
                                 \revert Rest.staff-position
                             }
                         }
                         s1 * 7/8
                         \revert Script.direction
-                        \revert Stem.direction
                         \revert TupletBracket.staff-padding
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {

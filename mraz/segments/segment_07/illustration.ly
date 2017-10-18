@@ -332,13 +332,13 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     bf'''16 ]
+                                    \revert Stem.direction
                                 }
                             }
                         }
                         s1 * 1/8
                         \bar "|."
                         \revert Beam.positions
-                        \revert Stem.direction
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
                         {
@@ -489,12 +489,12 @@
                         \override Beam.positions = #'(-4.5 . -4.5)
                         \dynamicDown
                         \override Slur.direction = #up
-                        \override Stem.direction = #down
                         s1 * 3/4
                         {
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override Stem.direction = #down
                                 c''16 \fff [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -670,7 +670,6 @@
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         \override Beam.positions = #'(15.5 . 15.5)
                         \override Script.direction = #up
-                        \override Stem.direction = #up
                         s1 * 3/4
                         {
                             \override TupletBracket.stencil = ##f
@@ -678,6 +677,7 @@
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override Stem.direction = #up
                                 c''16 -\accent [
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -969,13 +969,13 @@
                     \context LHVoiceFour = "LH Voice 4" {
                         \override Beam.positions = #'(-5.5 . -5.5)
                         \override Script.direction = #down
-                        \override Stem.direction = #down
                         s1 * 3/8
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \override Stem.direction = #down
                                 fs'16 \ff [
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1049,17 +1049,16 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 b''16 ]
+                                \revert Stem.direction
                             }
                         }
                         s1 * 7/16
                         \bar "|."
                         \revert Beam.positions
                         \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
                         \override Script.direction = #up
-                        \override Stem.direction = #up
                         s1 * 3/8
                         {
                             \override TupletBracket.stencil = ##f
@@ -1067,6 +1066,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 s16
+                                \override Stem.direction = #up
                                 c'16
                                 s16
                                 s16
@@ -1106,6 +1106,7 @@
                                 s16
                                 s16
                                 fs''16
+                                \revert Stem.direction
                                 s16
                             }
                             \revert TupletBracket.stencil
@@ -1114,12 +1115,10 @@
                         s1 * 7/16
                         \bar "|."
                         \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context LHVoiceFive = "LH Voice 5" {
                         \override Beam.positions = #'(-6 . -6)
                         \override Script.direction = #down
-                        \override Stem.direction = #down
                         s1 * 329/272
                         {
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1127,6 +1126,7 @@
                                 {
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \override Stem.direction = #down
                                     cs'16 \pp [ (
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1244,17 +1244,16 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     cs'''16 ] )
+                                    \revert Stem.direction
                                 }
                             }
                         }
                         s1 * 303/272
                         \bar "|."
                         \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         \override Script.direction = #up
-                        \override Stem.direction = #up
                         \override Beam.positions = #'(9 . 9)
                         s1 * 329/272
                         {
@@ -1270,6 +1269,7 @@
                                 {
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
+                                    \override Stem.direction = #up
                                     b'16 -\staccato
                                     s16
                                     s16
@@ -1333,6 +1333,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     cs'''16 -\staccato ]
+                                    \revert Stem.direction
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1341,7 +1342,6 @@
                         s1 * 303/272
                         \bar "|."
                         \revert Script.direction
-                        \revert Stem.direction
                         \revert Beam.positions
                     }
                     \context LHVoiceSix = "LH Voice 6" {

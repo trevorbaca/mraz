@@ -484,7 +484,6 @@
                                 \times 3/4 {
                                     \override Beam.positions = #'(10.5 . 10.5)
                                     \override Script.direction = #up
-                                    \override Stem.direction = #up
                                     s8 [
                                     s8
                                     s8
@@ -515,6 +514,7 @@
                                     s8
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
+                                    \override Stem.direction = #up
                                     af'8 -\accent \fff
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -714,6 +714,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     ef''8 -\accent
+                                    \revert Stem.direction
                                     s8
                                     s8
                                 }
@@ -724,7 +725,6 @@
                                     s8 ]
                                     \revert Beam.positions
                                     \revert Script.direction
-                                    \revert Stem.direction
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -732,13 +732,13 @@
                         }
                         \override Script.direction = #up
                         \override Slur.direction = #up
-                        \override Stem.direction = #down
                         s1 * 1/4
                         {
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
+                                \override Stem.direction = #down
                                 fs16 -\staccato \ppp [ (
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1858,10 +1858,10 @@
                                 \override Rest.direction = #down
                                 r4
                                 ef,,8
+                                \revert Stem.direction
                                 \ottava #0
                                 r4
                                 \revert Rest.direction
-                                \revert Stem.direction
                                 \revert TupletBracket.direction
                                 \revert TupletBracket.staff-padding
                             }
