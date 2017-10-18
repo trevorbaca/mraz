@@ -372,7 +372,6 @@
                                 \times 3/4 {
                                     \override Beam.positions = #'(10.5 . 10.5)
                                     \override Script.direction = #up
-                                    \override Stem.direction = #up
                                     s8 [
                                     s8
                                     s8
@@ -403,6 +402,7 @@
                                     s8
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
+                                    \override Stem.direction = #up
                                     af'8 -\accent \fff
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -652,6 +652,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8 -\accent
+                                    \revert Stem.direction
                                     s8
                                     s8 ]
                                 }
@@ -663,7 +664,6 @@
                         \bar "|"
                         \revert Beam.positions
                         \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
                         s1 * 4

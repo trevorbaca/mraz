@@ -903,7 +903,6 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
-                        \override Stem.direction = #up
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
                         s1 * 33/2
@@ -916,6 +915,7 @@
                                 \ottava #1
                                 \override DynamicText.extra-offset = #'(0 . 1)
                                 \override TextScript.color = #black
+                                \override Stem.direction = #up
                                 d''''8 \mf [ ( - \markup { "(ottava brackets always govern all voices on staff)" }
                                 \revert DynamicText.extra-offset
                                 \revert TextScript.color
@@ -1013,12 +1013,12 @@
                         {
                             {
                                 bf''''2 -\tenuto
+                                \revert Stem.direction
                                 \ottava #0
                             }
                         }
                         s1 * 9/2
                         \bar "|"
-                        \revert Stem.direction
                         \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
                     }
@@ -2156,8 +2156,8 @@
                                 \override TupletBracket.staff-padding = #2
                                 <g, e f af>16 \mp
                                 \revert PianoStaff.Stem.color
-                                r8.
                                 \revert Stem.direction
+                                r8.
                             }
                         }
                         {
@@ -2316,7 +2316,6 @@
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
                         \override Script.direction = #up
-                        \override Stem.direction = #up
                         s1 * 19
                         {
                             \override TupletBracket.stencil = ##f
@@ -2327,6 +2326,7 @@
                                     s4 [
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
+                                    \override Stem.direction = #up
                                     bf'8 -\staccato
                                 }
                                 {
@@ -2413,6 +2413,7 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af'8 -\staccato
+                                \revert Stem.direction
                                 s4. ]
                             }
                             \revert TupletBracket.stencil
@@ -2421,7 +2422,6 @@
                         s1 * 13
                         \bar "|"
                         \revert Script.direction
-                        \revert Stem.direction
                     }
                     \context LHVoiceSix = "LH Voice 6" {
                         s1 * 3/2

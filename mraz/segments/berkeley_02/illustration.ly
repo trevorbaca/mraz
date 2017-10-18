@@ -667,6 +667,7 @@
                                 s16
                                 s16
                                 fs''16
+                                \revert Stem.direction
                                 s16
                             }
                             \revert TupletBracket.stencil
@@ -674,7 +675,6 @@
                         }
                         s1 * 125/16
                         \bar "|"
-                        \revert Stem.direction
                     }
                     \context RHVoiceFive = "RH Voice 5" {
                         s1 * 1/2

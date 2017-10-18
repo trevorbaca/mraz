@@ -559,19 +559,20 @@
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
-                        \override Stem.direction = #up
                         s1 * 1
                         {
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
+                                \override Stem.direction = #up
                                 d''16
                                 s16
                                 s16
                                 s16
                                 s16
                                 fs''16
+                                \revert Stem.direction
                                 s16
                             }
                             \revert TupletBracket.stencil
@@ -579,7 +580,6 @@
                         }
                         s1 * 27/4
                         \bar "|"
-                        \revert Stem.direction
                     }
                     \context LHVoiceFive = "LH Voice 5" {
                         s1 * 3/2
@@ -629,10 +629,10 @@
                                 \override Rest.direction = #down
                                 r4
                                 ef,,8
+                                \revert Stem.direction
                                 \ottava #0
                                 r4
                                 \revert Rest.direction
-                                \revert Stem.direction
                                 \revert TupletBracket.direction
                                 \revert TupletBracket.staff-padding
                             }
