@@ -884,7 +884,7 @@ accumulator(
     'LH Voice 2',
     [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
     baca.anchor_to_figure('rh-2 4.6.1'),
-    baca.sustain_pedal(baca.select().leaves_in_each_lt(leak=Right)),
+    baca.sustain_pedal(baca.select().lts().map(baca.select().rleaves())),
     baca.sustain_pedal_staff_padding(4),
     baca.transparent_rests(),
     figure_name='lh-2 4.6.1',
