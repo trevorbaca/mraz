@@ -18,7 +18,7 @@ accumulator(
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs(baca.select().tuplets().map(baca.select().tls())),
     baca.staccati(),
     figure_name='rh-2 2.2.1',
     )
@@ -27,7 +27,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs(baca.select().tuplets().map(baca.select().tls())),
     baca.staccati(),
     figure_name='rh-2 2.2.2',
     )
@@ -36,7 +36,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs(baca.select().tuplets().map(baca.select().tls())),
     baca.staccati(),
     figure_name='rh-2 2.2.3',
     )
@@ -45,7 +45,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(5),
-    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs(baca.select().tuplets().map(baca.select().tls())),
     baca.staccati(),
     figure_name='rh-2 2.2.4',
     )
@@ -54,7 +54,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(exhausted=True),
     baca.bass_to_octave(5),
-    baca.slur_trimmed_run_in_each_tuplet(),
+    baca.slurs(baca.select().tuplets().map(baca.select().tls())),
     baca.staccati(),
     figure_name='rh-2 2.2.5',
     )
