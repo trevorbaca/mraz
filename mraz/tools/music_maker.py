@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def make_mraz_music_maker():
+def music_maker():
     r'''Makes Mráz music-maker.
 
     ::
@@ -27,7 +27,7 @@ def make_mraz_music_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> music_maker = mraz.make_mraz_music_maker()
+            >>> music_maker = mraz.music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
             ...     contribution = music_maker(voice_name, segments)
@@ -205,7 +205,7 @@ def make_mraz_music_maker():
         ::
 
             >>> voice_name = 'RH Voice 1'
-            >>> music_maker = mraz.make_mraz_music_maker()
+            >>> music_maker = mraz.music_maker()
             >>> figures, time_signatures = [], []
             >>> for segments in segment_lists:
             ...     contribution = music_maker(voice_name, segments)
@@ -414,7 +414,7 @@ def make_mraz_music_maker():
 
         Formats Mráz music-maker:
 
-        >>> f(mraz.make_mraz_music_maker())
+        >>> f(mraz.music_maker())
         baca.MusicMaker(
             abjad.rhythmmakertools.BeamSpecifier(
                 beam_each_division=True,
