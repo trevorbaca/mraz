@@ -95,7 +95,7 @@ class MusicAccumulator(baca.MusicAccumulator):
     ### CLASS VARIABLES ###
 
     __slots__ = (
-        '_mraz_music_maker',
+        '_music_maker',
         )
 
     ### INITIALIZER ###
@@ -104,7 +104,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         import mraz
         superclass = super(MusicAccumulator, self)
         superclass.__init__(score_template)
-        self._mraz_music_maker = mraz.make_mraz_music_maker()
+        self._music_maker = mraz.music_maker()
 
     ### SPECIAL METHODS ###
 
@@ -156,7 +156,7 @@ class MusicAccumulator(baca.MusicAccumulator):
             }
         keywords['figure_index'] = self._figure_index
         return superclass.__call__(
-            self.mraz_music_maker(
+            self.music_maker(
                 voice_name,
                 collections,
                 *specifiers,
@@ -167,7 +167,7 @@ class MusicAccumulator(baca.MusicAccumulator):
     ### PUBLIC PROPERTIES ###
 
     @property
-    def mraz_music_maker(self):
+    def music_maker(self):
         r'''Gets Mráz music-maker.
         '''
-        return self._mraz_music_maker
+        return self._music_maker
