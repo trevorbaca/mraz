@@ -178,7 +178,7 @@ accumulator(
     baca.ottava(),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.slur(),
+    baca.slurs(),
     baca.slurs_up(),
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
