@@ -96,7 +96,7 @@ accumulator(
 accumulator(
     'LH Voice 5',
     [abjad.Rest((3, 4))],
-    baca.sustain_pedal(baca.select().leaves(leak=Right)),
+    baca.sustain_pedal(baca.select().rleaves()),
     figure_name='lh-5 4.1.2',
     hide_time_signature=True,
     )

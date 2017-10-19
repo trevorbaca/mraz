@@ -125,7 +125,7 @@ accumulator(
     [abjad.Rest((3, 4))],
     baca.anchor_to_figure('rh-2 4.1.1'),
     baca.proportional_notation_duration((1, 4)),
-    baca.sustain_pedal(baca.select().leaves(leak=Right)),
+    baca.sustain_pedal(baca.select().rleaves()),
     figure_name='lh-5 4.1.2',
     hide_time_signature=True,
     )
