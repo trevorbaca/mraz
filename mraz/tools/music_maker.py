@@ -460,7 +460,7 @@ def music_maker():
     import mraz
     voice_names = []
     dummy_score = mraz.ScoreTemplate()()
-    for voice in abjad.iterate(dummy_score).by_class(abjad.Voice):
+    for voice in abjad.iterate(dummy_score).components(abjad.Voice):
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
