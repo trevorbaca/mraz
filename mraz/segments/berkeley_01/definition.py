@@ -182,7 +182,7 @@ accumulator(
 accumulator(
     'RH Voice 2',
     [abjad.Rest((1, 8))],
-    baca.markup('(extremely short)', baca.select().rest()),
+    baca.markup('(extremely short)', baca.select().rest(0)),
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
     baca.short_fermata(),
