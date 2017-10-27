@@ -522,7 +522,7 @@ accumulator(
     baca.rests_around([2], [6]),
     baca.resume_after('RH Voice 5'),
     baca.slurs(baca.select().plt_runs()),
-    baca.text_script_color('black', baca.select().pl(0)),
+    baca.text_script_color('black', baca.select().pleaf(0)),
     baca.text_scripts_up(),
     counts=[2],
     figure_name='rh-1 4.4.1',
