@@ -985,15 +985,15 @@ segment_maker(
 
 segment_maker(
     baca.scope('LH Resonance Voice', 9, 10),
-    baca.messiaen_ties(),
+    baca.map(baca.messiaen_tie(), baca.select().qruns()),
     )
 
 segment_maker(
     baca.scope('LH Resonance Voice', 13, 14),
-    baca.messiaen_ties(),
+    baca.map(baca.messiaen_tie(), baca.select().qruns()),
     )
 
 segment_maker(
     baca.scope('LH Resonance Voice', 20, Infinity),
-    baca.messiaen_ties(),
+    baca.map(baca.messiaen_tie(), baca.select().qruns()),
     )
