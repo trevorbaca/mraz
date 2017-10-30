@@ -49,7 +49,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:1],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     baca.staccati(),
     figure_name='b.2.3',
     )
@@ -85,7 +85,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:2],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     baca.staccati(),
     figure_name='b.2.6',
     )
@@ -133,7 +133,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:4],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     baca.staccati(),
     figure_name='b.2.10',
     )
@@ -178,7 +178,7 @@ accumulator(
     baca.ottava(),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.slurs(),
+    baca.map(baca.slur(), baca.select().runs()),
     baca.slurs_up(),
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
