@@ -4,20 +4,16 @@ import abjad
 def final_markup():
     r'''Makes final markup.
 
-    ::
-
-        >>> import mraz
+    >>> import mraz
 
     ..  container:: example
 
-        ::
-
-            >>> markup = mraz.final_markup()
-            >>> show(markup) # doctest: +SKIP
+        >>> markup = mraz.final_markup()
+        >>> abjad.show(markup) # doctest: +SKIP
 
         ..  docs::
 
-            >>> f(markup)
+            >>> abjad.f(markup)
             _ \markup {
                 \italic
                     \right-column
