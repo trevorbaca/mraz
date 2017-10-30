@@ -33,7 +33,7 @@ accumulator(
     collections_4['stage 5']['lh'][:4],
     baca.anchor_to_figure('b.1.1'),
     baca.dynamic_line_spanner_staff_padding(8),
-    baca.hairpins(['f < ff']),
+    baca.hairpin('f < ff'),
     baca.ottava(),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
