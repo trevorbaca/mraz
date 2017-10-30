@@ -43,7 +43,7 @@ accumulator(
         baca.accents(),
         extend_beam=True,
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.1',
     )
@@ -74,7 +74,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     figure_name='rh-2 7.1.2',
     )
 
@@ -105,7 +105,7 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.3',
     time_treatments=[-1],
@@ -136,7 +136,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     figure_name='rh-2 7.1.4',
     )
 
@@ -154,7 +154,7 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.5',
     )
@@ -184,7 +184,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     figure_name='rh-2 7.1.6',
     time_treatments=[-1],
     )
@@ -228,7 +228,7 @@ accumulator(
         baca.beam_everything(),
         baca.staccati(),
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     baca.transpose_segments(n=1*7),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
@@ -271,7 +271,7 @@ accumulator(
         baca.beam_everything(),
         baca.staccati(),
         ),
-    baca.slurs(baca.select().tuplets().map(baca.select().tleaves())),
+    baca.map(baca.slur(), baca.select().tuplets()),
     baca.transpose_segments(n=3*7),
     figure_name='lh-5 7.1.2',
     hide_time_signature=True,
