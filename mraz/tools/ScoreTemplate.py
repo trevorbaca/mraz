@@ -5,114 +5,108 @@ import baca
 class ScoreTemplate(baca.ScoreTemplate):
     r'''Score template.
 
-    ::
-
-        >>> import mraz
+    >>> import mraz
 
     ..  container:: example
 
-        ::
+        >>> template = mraz.ScoreTemplate()
+        >>> path = abjad.Path('mraz', 'stylesheets', 'contexts.ily')
+        >>> lilypond_file = template.__illustrate__(
+        ...     global_staff_size=14,
+        ...     includes=[path],
+        ...     )
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
-            >>> template = mraz.ScoreTemplate()
-            >>> path = abjad.Path('mraz', 'stylesheets', 'contexts.ily')
-            >>> lilypond_file = template.__illustrate__(
-            ...     global_staff_size=14,
-            ...     includes=[path],
-            ...     )
-            >>> show(lilypond_file) # doctest: +SKIP
-
-        ::
-
-            >>> f(lilypond_file[abjad.Score])
-            \context Score = "Score" <<
-                \context GlobalContext = "Global Context" <<
-                    \context GlobalRests = "Global Rests" {
-                    }
-                    \context GlobalSkips = "Global Skips" {
-                    }
-                >>
-                \context MusicContext = "Music Context" {
-                    \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
-                        \context PianoMusicRHStaff = "Piano Music RH Staff" <<
-                            \context RHVoiceOne = "RH Voice 1" {
-                                \set PianoMusicStaffGroup.instrumentName = \markup {
-                                    \hcenter-in
-                                        #16
-                                        Piano
-                                    }
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                                    \null
-                                    }
-                                \clef "treble"
-                                s1
-                            }
-                            \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
-                                s1
-                            }
-                            \context RHVoiceTwo = "RH Voice 2" {
-                                s1
-                            }
-                            \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
-                                s1
-                            }
-                            \context RHVoiceThree = "RH Voice 3" {
-                                s1
-                            }
-                            \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
-                                s1
-                            }
-                            \context RHVoiceFour = "RH Voice 4" {
-                                s1
-                            }
-                            \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
-                                s1
-                            }
-                            \context RHVoiceFive = "RH Voice 5" {
-                                s1
-                            }
-                            \context RHVoiceSix = "RH Voice 6" {
-                                s1
-                            }
-                            \context RHResonanceVoice = "RH Resonance Voice" {
-                                s1
-                            }
-                        >>
-                        \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                            \context LHVoiceOne = "LH Voice 1" {
-                                \clef "bass"
-                                s1
-                            }
-                            \context LHVoiceTwo = "LH Voice 2" {
-                                s1
-                            }
-                            \context LHVoiceThree = "LH Voice 3" {
-                                s1
-                            }
-                            \context LHVoiceFour = "LH Voice 4" {
-                                s1
-                            }
-                            \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
-                                s1
-                            }
-                            \context LHVoiceFive = "LH Voice 5" {
-                                s1
-                            }
-                            \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
-                                s1
-                            }
-                            \context LHVoiceSix = "LH Voice 6" {
-                                s1
-                            }
-                            \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
-                                s1
-                            }
-                            \context LHResonanceVoice = "LH Resonance Voice" {
-                                s1
-                            }
-                        >>
-                    >>
+        >>> abjad.f(lilypond_file[abjad.Score])
+        \context Score = "Score" <<
+            \context GlobalContext = "Global Context" <<
+                \context GlobalRests = "Global Rests" {
+                }
+                \context GlobalSkips = "Global Skips" {
                 }
             >>
+            \context MusicContext = "Music Context" {
+                \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+                    \context PianoMusicRHStaff = "Piano Music RH Staff" <<
+                        \context RHVoiceOne = "RH Voice 1" {
+                            \set PianoMusicStaffGroup.instrumentName = \markup {
+                                \hcenter-in
+                                    #16
+                                    Piano
+                                }
+                            \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                                \null
+                                }
+                            \clef "treble"
+                            s1
+                        }
+                        \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                            s1
+                        }
+                        \context RHVoiceTwo = "RH Voice 2" {
+                            s1
+                        }
+                        \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                            s1
+                        }
+                        \context RHVoiceThree = "RH Voice 3" {
+                            s1
+                        }
+                        \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                            s1
+                        }
+                        \context RHVoiceFour = "RH Voice 4" {
+                            s1
+                        }
+                        \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                            s1
+                        }
+                        \context RHVoiceFive = "RH Voice 5" {
+                            s1
+                        }
+                        \context RHVoiceSix = "RH Voice 6" {
+                            s1
+                        }
+                        \context RHResonanceVoice = "RH Resonance Voice" {
+                            s1
+                        }
+                    >>
+                    \context PianoMusicLHStaff = "Piano Music LH Staff" <<
+                        \context LHVoiceOne = "LH Voice 1" {
+                            \clef "bass"
+                            s1
+                        }
+                        \context LHVoiceTwo = "LH Voice 2" {
+                            s1
+                        }
+                        \context LHVoiceThree = "LH Voice 3" {
+                            s1
+                        }
+                        \context LHVoiceFour = "LH Voice 4" {
+                            s1
+                        }
+                        \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                            s1
+                        }
+                        \context LHVoiceFive = "LH Voice 5" {
+                            s1
+                        }
+                        \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                            s1
+                        }
+                        \context LHVoiceSix = "LH Voice 6" {
+                            s1
+                        }
+                        \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                            s1
+                        }
+                        \context LHResonanceVoice = "LH Resonance Voice" {
+                            s1
+                        }
+                    >>
+                >>
+            }
+        >>
 
     '''
 

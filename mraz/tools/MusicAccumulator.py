@@ -4,36 +4,28 @@ import baca
 class MusicAccumulator(baca.MusicAccumulator):
     r'''Music-accumulator.
 
-    ::
-
-        >>> import abjad
-        >>> import baca
-        >>> import mraz
+    >>> import mraz
 
     ..  container:: example
 
-        ::
+        >>> score_template = mraz.ScoreTemplate()
+        >>> accumulator = mraz.MusicAccumulator(score_template)
+        >>> accumulator(
+        ...     'RH Voice 1',
+        ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
+        ...     figure_name='D',
+        ...     )
 
-            >>> score_template = mraz.ScoreTemplate()
-            >>> accumulator = mraz.MusicAccumulator(score_template)
-            >>> accumulator(
-            ...     'RH Voice 1',
-            ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
-            ...     figure_name='D',
-            ...     )
-
-        ::
-
-            >>> selection = accumulator.assemble('RH Voice 1')
-            >>> lilypond_file = accumulator.show(
-            ...     {'RH Voice 1': selection},
-            ...     accumulator.time_signatures,
-            ...     )
-            >>> show(lilypond_file) # doctest: +SKIP
+        >>> selection = accumulator.assemble('RH Voice 1')
+        >>> lilypond_file = accumulator.show(
+        ...     {'RH Voice 1': selection},
+        ...     accumulator.time_signatures,
+        ...     )
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         ..  docs::
 
-            >>> f(lilypond_file[abjad.Staff])
+            >>> abjad.f(lilypond_file[abjad.Staff])
             \new Staff <<
                 \context Voice = "RH Voice 1" {
                     {
