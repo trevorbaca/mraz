@@ -48,6 +48,7 @@
                             {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \clef "treble"
                                 \override Beam.positions = #'(6 . 6)
                                 e16 [
                                 \set stemLeftBeamCount = #2

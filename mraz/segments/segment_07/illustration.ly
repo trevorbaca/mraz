@@ -162,6 +162,7 @@
                                 \times 5/6 {
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \clef "treble"
                                     \override Beam.positions = #'(10 . 10)
                                     \dynamicUp
                                     \override Stem.direction = #up

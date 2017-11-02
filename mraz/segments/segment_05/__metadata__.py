@@ -8,7 +8,7 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('Piano Music LH Staff', 'bass'),
-                    ('Piano Music RH Staff', None),
+                    ('Piano Music RH Staff', 'treble'),
                     ]
                 ),
             ),
