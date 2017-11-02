@@ -903,6 +903,7 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        \clef "treble"
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
                         s1 * 33/2

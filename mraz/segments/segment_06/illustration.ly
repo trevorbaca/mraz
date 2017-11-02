@@ -75,6 +75,7 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        \clef "treble"
                         s1 * 9/8
                         s1 * 1/2
                         s1 * 7/8
