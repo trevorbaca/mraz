@@ -73,7 +73,7 @@ accumulator(
     baca.flags(),
     baca.proportional_notation_duration((1, 12)),
     baca.register(6, -24),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.select().tuplet_tleaves().nontrivial()),
     baca.slurs_down(),
     counts=[3, -3],
     figure_name='insert 5.1',
@@ -125,7 +125,8 @@ accumulator(
     [abjad.Rest((3, 4))],
     baca.anchor_to_figure('rh-2 4.1.1'),
     baca.proportional_notation_duration((1, 4)),
-    baca.sustain_pedal(baca.select().rleaves()),
+    # TODO: teach PianoPedalBracket to attach for a single leaf
+#    baca.sustain_pedal()
     figure_name='lh-5 4.1.2',
     hide_time_signature=True,
     )
@@ -383,7 +384,7 @@ accumulator(
     baca.register(-12, 0),
     baca.rests_around([4], [4]),
     baca.resume_after('LH Voice 5'),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.1',
     hide_time_signature=False,
@@ -401,7 +402,7 @@ accumulator(
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_before([2]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[6],
     figure_name='lh-5 4.4.3',
     )
@@ -424,7 +425,7 @@ accumulator(
     baca.beam_divisions(),
     baca.proportional_notation_duration((1, 16)),
     baca.register(24),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.select().tuplet_tleaves().nontrivial()),
     baca.tuplet_brackets_down(),
     counts=[2],
     figure_name='insert 5.2',
@@ -442,7 +443,7 @@ accumulator(
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [4]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.4',
     )
@@ -464,7 +465,7 @@ accumulator(
     baca.nest('+2/16'),
     baca.register(-12, 0),
     baca.rests_around([4], [4]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.6',
     )
@@ -481,7 +482,7 @@ accumulator(
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [2]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.7',
     )
@@ -492,7 +493,7 @@ accumulator(
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_around([2], [6]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.8',
     )
@@ -515,7 +516,7 @@ accumulator(
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [2]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.10',
     )
@@ -526,7 +527,7 @@ accumulator(
     baca.flags(),
     baca.register(-12, 0),
     baca.rests_before([2]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[6],
     figure_name='lh-5 4.4.11',
     )
@@ -542,7 +543,7 @@ accumulator(
         ),
     baca.register(0, -12),
     baca.rests_around([2], [6]),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.12',
     )
@@ -568,7 +569,7 @@ accumulator(
     baca.register(36, 22),
     baca.rests_around([2], [6]),
     baca.resume_after('RH Voice 5'),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     baca.text_script_color('black', baca.select().pleaf(0)),
     baca.text_scripts_up(),
     counts=[2],
@@ -598,7 +599,7 @@ accumulator(
         hocket=True,
         ),
     baca.register(36, 22),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     figure_name='rh-1 4.4.4',
     counts=[2],
     hide_time_signature=True,
@@ -621,7 +622,7 @@ accumulator(
         hocket=True,
         ),
     baca.register(36, 22),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     counts=[2],
     figure_name='rh-1 4.4.5',
     hide_time_signature=True,
@@ -773,7 +774,7 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     baca.slurs_up(),
     figure_name='rh-2 4.5.1',
     hide_time_signature=True,
@@ -787,7 +788,7 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.2',
@@ -815,7 +816,7 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.4',
@@ -829,7 +830,7 @@ accumulator(
     baca.dynamic_line_spanner_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.select().ntruns()),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.5',
@@ -884,9 +885,10 @@ accumulator(
     'LH Voice 2',
     [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
     baca.anchor_to_figure('rh-2 4.6.1'),
+    # TODO: debug and figure out why bracket extends indefinitely to right
     baca.map(
         baca.sustain_pedal(baca.select().rleaves()),
-        baca.select().lts(),
+        baca.select().lts()[:-1],
         ),
     baca.sustain_pedal_staff_padding(4),
     baca.transparent_rests(),
@@ -983,15 +985,15 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     ])
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=abjad.Duration(1, 4),
-    minimum_width=abjad.Duration(1, 24),
+    fermata_measure_width=(1, 4),
+    minimum_width=(1, 24),
     )
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
+    allow_figure_names=False,
     #color_octaves=True,
     color_out_of_range_pitches=True,
     #color_repeat_pitch_classes=True,
