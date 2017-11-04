@@ -49,7 +49,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:1],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.3',
     )
@@ -85,7 +85,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:2],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.6',
     )
@@ -133,7 +133,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:4],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.10',
     )
@@ -178,7 +178,7 @@ accumulator(
     baca.ottava(),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.select().runs()),
+    baca.map(baca.slur(), baca.runs()),
     baca.slurs_up(),
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
@@ -333,5 +333,5 @@ segment_maker(
 
 segment_maker(
     baca.scope('LH Resonance Voice', 1, Infinity),
-    baca.map(baca.tie(repeat=True), baca.select().qruns()),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
     )

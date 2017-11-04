@@ -43,7 +43,7 @@ accumulator(
         baca.accents(),
         extend_beam=True,
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.1',
     )
@@ -74,7 +74,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     figure_name='rh-2 7.1.2',
     )
 
@@ -105,7 +105,7 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.3',
     time_treatments=[-1],
@@ -136,7 +136,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     figure_name='rh-2 7.1.4',
     )
 
@@ -154,7 +154,7 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     extend_beam=True,
     figure_name='rh-2 7.1.5',
     )
@@ -184,7 +184,7 @@ accumulator(
         baca.accents(),
         baca.beam_everything(),
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     figure_name='rh-2 7.1.6',
     time_treatments=[-1],
     )
@@ -196,8 +196,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
-        baca.select().note(0),
-        baca.select().lt(7),
+        baca.note(0),
+        baca.lt(7),
         ),
     baca.dynamic('ff'),
     baca.register(-2, -2+16),
@@ -216,8 +216,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
-        baca.select().note(4),
-        baca.select().lt(3),
+        baca.note(4),
+        baca.lt(3),
         ),
     baca.dynamic('pp'),
     baca.nest('-2/16'),
@@ -228,7 +228,7 @@ accumulator(
         baca.beam_everything(),
         baca.staccati(),
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.transpose_segments(n=1*7),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
@@ -239,8 +239,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
-        baca.select().note(14),
-        baca.select().lt(0),
+        baca.note(14),
+        baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(2, 2+16),
@@ -259,8 +259,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 2',
-        baca.select().note(26),
-        baca.select().lt(10),
+        baca.note(26),
+        baca.lt(10),
         ),
     baca.dynamic('pp'),
     baca.nest('-2/16'),
@@ -271,7 +271,7 @@ accumulator(
         baca.beam_everything(),
         baca.staccati(),
         ),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.transpose_segments(n=3*7),
     figure_name='lh-5 7.1.2',
     hide_time_signature=True,
@@ -282,8 +282,8 @@ accumulator(
     collections['stage 1']['lh'].next(exhausted=True),
     baca.anchor(
         'RH Voice 2',
-        baca.select().note(-6),
-        baca.select().lt(0),
+        baca.note(-6),
+        baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
