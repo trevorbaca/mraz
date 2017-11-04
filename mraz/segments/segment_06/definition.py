@@ -74,8 +74,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
-        baca.select().note(3),
-        baca.select().note(2),
+        baca.note(3),
+        baca.note(2),
         ),
     baca.dynamic('mp'),
     baca.flags(),
@@ -91,8 +91,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
-        baca.select().note(9),
-        baca.select().note(2),
+        baca.note(9),
+        baca.note(2),
         ),
     baca.flags(),
     baca.register(0, 12),
@@ -107,8 +107,8 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
-        baca.select().note(13),
-        baca.select().note(1),
+        baca.note(13),
+        baca.note(1),
         ),
     baca.flags(),
     baca.register(0, 12),

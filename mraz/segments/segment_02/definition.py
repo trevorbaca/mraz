@@ -18,7 +18,7 @@ accumulator(
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.1',
     )
@@ -27,7 +27,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.2',
     )
@@ -36,7 +36,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.3',
     )
@@ -45,7 +45,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(5),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.4',
     )
@@ -54,7 +54,7 @@ accumulator(
     'RH Voice 2',
     collections['stage 2']['rh'].next(exhausted=True),
     baca.bass_to_octave(5),
-    baca.map(baca.slur(), baca.select().tuplets()),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.5',
     )
@@ -64,7 +64,7 @@ accumulator(
 accumulator(
     'LH Resonance Voice',
     [{-35, -23}],
-    baca.anchor('RH Voice 2', baca.select().note(0)),
+    baca.anchor('RH Voice 2', baca.note(0)),
     baca.flags(),
     color_unregistered_pitches=False,
     counts=[29],
@@ -169,10 +169,10 @@ segment_maker(
 
 segment_maker(
     baca.scope('LH Resonance Voice', 1, 2),
-    baca.map(baca.tie(repeat=True), baca.select().qruns()),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
 segment_maker(
     baca.scope('LH Resonance Voice', 3, 5),
-    baca.map(baca.tie(repeat=True), baca.select().qruns()),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
     )

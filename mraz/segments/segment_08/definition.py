@@ -151,8 +151,8 @@ accumulator(
     collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
-        baca.select().note(6),
-        baca.select().note(1),
+        baca.note(6),
+        baca.note(1),
         ),
     baca.dynamic('f'),
     baca.flags(),
@@ -168,7 +168,7 @@ accumulator(
     collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
-        baca.select().note(11),
+        baca.note(11),
         ),
     baca.flags(),
     baca.register(-39),
@@ -184,8 +184,8 @@ accumulator(
     collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
-        baca.select().note(23),
-        baca.select().note(-1),
+        baca.note(23),
+        baca.note(-1),
         ),
     baca.flags(),
     baca.register(-39),
@@ -200,8 +200,8 @@ accumulator(
     collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
-        baca.select().note(27),
-        baca.select().note(1),
+        baca.note(27),
+        baca.note(1),
         ),
     baca.flags(),
     baca.register(-39),
@@ -216,8 +216,8 @@ accumulator(
     collections['stage 3']['lh'].next(),
     baca.anchor(
         'LH Voice 5',
-        baca.select().rest(33),
-        baca.select().note(-1),
+        baca.rest(33),
+        baca.note(-1),
         ),
     baca.flags(),
     baca.register(-39),
@@ -232,8 +232,8 @@ accumulator(
     collections['stage 3']['lh'].next(exhausted=True),
     baca.anchor(
         'LH Voice 5',
-        baca.select().note(34),
-        baca.select().note(1),
+        baca.note(34),
+        baca.note(1),
         ),
     baca.flags(),
     baca.register(-39),
