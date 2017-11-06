@@ -1,5 +1,6 @@
 import abjad
 import baca
+from abjad import rhythmmakertools as rhythmos
 
 
 def music_maker():
@@ -390,51 +391,6 @@ def music_maker():
                 >>
             >>
 
-    ..  container:: example
-
-        Formats Mráz music-maker:
-
-        >>> abjad.f(mraz.music_maker())
-        baca.MusicMaker(
-            abjad.rhythmmakertools.BeamSpecifier(
-                beam_each_division=True,
-                beam_divisions_together=True,
-                ),
-            baca.MusicRhythmSpecifier(
-                rhythm_maker=baca.MusicRhythmMaker(
-                    talea=abjad.rhythmmakertools.Talea(
-                        counts=[1],
-                        denominator=16,
-                        ),
-                    ),
-                ),
-            color_unregistered_pitches=True,
-            denominator=16,
-            voice_names=[
-                'RH Voice 1',
-                'RH Voice 1 Inserts',
-                'RH Voice 2',
-                'RH Voice 2 Inserts',
-                'RH Voice 3',
-                'RH Voice 3 Inserts',
-                'RH Voice 4',
-                'RH Voice 4 Inserts',
-                'RH Voice 5',
-                'RH Voice 6',
-                'RH Resonance Voice',
-                'LH Voice 1',
-                'LH Voice 2',
-                'LH Voice 3',
-                'LH Voice 4',
-                'LH Voice 4 Inserts',
-                'LH Voice 5',
-                'LH Voice 5 Inserts',
-                'LH Voice 6',
-                'LH Voice 6 Inserts',
-                'LH Resonance Voice',
-                ],
-            )
-
     Returns music-maker.
     '''
     import mraz
@@ -444,12 +400,12 @@ def music_maker():
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
-        abjad.rhythmmakertools.BeamSpecifier(
+        rhythmos.BeamSpecifier(
             beam_divisions_together=True,
             ),
         baca.MusicRhythmSpecifier(
             rhythm_maker=baca.MusicRhythmMaker(
-                talea=abjad.rhythmmakertools.Talea(
+                talea=rhythmos.Talea(
                     counts=[1],
                     denominator=16,
                     ),
