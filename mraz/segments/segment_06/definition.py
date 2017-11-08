@@ -147,11 +147,11 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.SegmentMaker(
-    #allow_figure_names=True,
+    allow_figure_names=False,
     color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
-    #ignore_repeat_pitch_classes=True,
+    ignore_repeat_pitch_classes=False,
     instruments=mraz.instruments,
     label_clock_time=False,
     label_stages=False,

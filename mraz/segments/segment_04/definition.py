@@ -894,10 +894,10 @@ measures_per_stage = len(accumulator.time_signatures) * [1]
 
 segment_maker = baca.SegmentMaker(
     #allow_empty_selections=True,
-    #allow_figure_names=True,
-    #color_octaves=True,
+    allow_figure_names=False,
+    color_octaves=False,
     color_out_of_range_pitches=True,
-    #color_repeat_pitch_classes=True,
+    color_repeat_pitch_classes=False,
     final_barline=Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
