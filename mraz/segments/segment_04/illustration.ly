@@ -1231,8 +1231,8 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 cs''''16 ] \ff )
-                                \revert DynamicLineSpanner.staff-padding
                                 \break
+                                \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                             }
                         }
@@ -1302,8 +1302,8 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 bf'''16 ] \ff )
-                                \revert DynamicLineSpanner.staff-padding
                                 \break
+                                \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
@@ -1311,9 +1311,16 @@
                         {
                             {
                                 \arpeggioArrowUp
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \override Script.direction = #up
                                 <a g' af' b' cs'' f'' ef''' c''''>1. -\marcato \arpeggio
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                                 \revert Script.direction
                             }
                         }
@@ -1321,11 +1328,18 @@
                             \times 2/3 {
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 \override DynamicLineSpanner.staff-padding = #'8
                                 \override Slur.direction = #up
                                 \override TextScript.direction = #up
                                 cs''16 [ \< \f (
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16
@@ -1427,9 +1441,16 @@
                                 af'''16
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 fs''''16 ] \ff )
-                                \revert DynamicLineSpanner.staff-padding
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                                 \break
+                                \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
@@ -1437,20 +1458,41 @@
                         {
                             {
                                 \arpeggioArrowUp
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <f'' ef''' c'''' e'''' fs'''' bf''''>1 -\marcato \arpeggio \ff
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                             }
                         }
                         {
                             {
                                 \arpeggioArrowUp
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 <a g' af' b' cs'' f'' ef''' c''''>1 -\marcato \arpeggio
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                             }
                         }
                         {
                             {
                                 \arpeggioArrowUp
+                                \once \override Accidental.color = #red
+                                \once \override Beam.color = #red
+                                \once \override Dots.color = #red
+                                \once \override NoteHead.color = #red
+                                \once \override Stem.color = #red
                                 <e' fs' bf' a'' g''' af''' b''' cs''''>1 -\marcato \arpeggio
+                                    - \tweak color #red
+                                    ^ \markup { @ }
                             }
                         }
                         s1 * 3/2
