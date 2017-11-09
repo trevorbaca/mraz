@@ -778,10 +778,24 @@
                                     b''8
                                     fs'''8
                                     a''8
+                                    \once \override Accidental.color = #red
+                                    \once \override Beam.color = #red
+                                    \once \override Dots.color = #red
+                                    \once \override NoteHead.color = #red
+                                    \once \override Stem.color = #red
                                     g''8 ] )
+                                        - \tweak color #red
+                                        ^ \markup { @ }
                                 }
                                 {
+                                    \once \override Accidental.color = #red
+                                    \once \override Beam.color = #red
+                                    \once \override Dots.color = #red
+                                    \once \override NoteHead.color = #red
+                                    \once \override Stem.color = #red
                                     g''8 [ (
+                                        - \tweak color #red
+                                        ^ \markup { @ }
                                     bf''8
                                     c'''8
                                     f''8 ] )
