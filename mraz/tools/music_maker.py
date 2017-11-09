@@ -403,7 +403,7 @@ def music_maker():
         rhythmos.BeamSpecifier(
             beam_divisions_together=True,
             ),
-        baca.MusicRhythmSpecifier(
+        baca.RhythmSpecifier(
             rhythm_maker=baca.MusicRhythmMaker(
                 talea=rhythmos.Talea(
                     counts=[1],
