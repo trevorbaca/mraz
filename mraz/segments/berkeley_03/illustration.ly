@@ -673,7 +673,12 @@
                                 \override DynamicText.extra-offset = #'(0 . 1)
                                 \override TextScript.color = #black
                                 \override Stem.direction = #up
-                                d''''8 \mf [ ( - \markup { "(ottava brackets always govern all voices on staff)" }
+                                d''''8 \mf [ (
+                                    ^ \markup {
+                                        \whiteout
+                                            \upright
+                                                "(ottava brackets always govern all voices on staff)"
+                                        }
                                 \revert DynamicText.extra-offset
                                 \revert TextScript.color
                                 af''''8 ] )
@@ -1438,7 +1443,12 @@
                                 \override TextScript.direction = #up
                                 \override TupletBracket.direction = #up
                                 r4
-                                ef''8 -\tenuto \mp - \markup { "(memory of before)" }
+                                ef''8 -\tenuto \mp
+                                    ^ \markup {
+                                        \whiteout
+                                            \upright
+                                                "(memory of before)"
+                                        }
                                 r4
                                 cs''4 -\tenuto
                                 r4

@@ -328,7 +328,12 @@
                                 \dynamicUp
                                 \override Script.direction = #up
                                 \override TextScript.direction = #up
-                                c'''8 -\accent \fff - \markup { "(black voice louder; green voice longer)" }
+                                c'''8 -\accent \fff
+                                    ^ \markup {
+                                        \whiteout
+                                            \upright
+                                                "(black voice louder; green voice longer)"
+                                        }
                                 \override Rest.direction = #up
                                 r2..
                                 d'''8 -\accent
@@ -349,7 +354,12 @@
                                 \override TextScript.direction = #up
                                 \override Rest.transparent = ##t
                                 \override GlobalContext.TimeSignature.transparent = ##t
-                                r8 -\shortfermata - \markup { "(extremely short)" }
+                                r8 -\shortfermata
+                                    ^ \markup {
+                                        \whiteout
+                                            \upright
+                                                "(extremely short)"
+                                        }
                                 \bar "|"
                                 \revert Script.direction
                                 \revert TextScript.direction
@@ -397,7 +407,12 @@
                             \times 8/5 {
                                 \ottava #1
                                 \override TupletBracket.direction = #down
-                                a''4 -\tenuto \mf - \markup { "(first note A5)" }
+                                a''4 -\tenuto \mf
+                                    ^ \markup {
+                                        \whiteout
+                                            \upright
+                                                "(first note A5)"
+                                        }
                                 \override Rest.direction = #down
                                 r4
                                 cs''4 -\tenuto
