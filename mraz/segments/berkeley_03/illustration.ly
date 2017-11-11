@@ -670,8 +670,8 @@
                                 \override TextScript.direction = #up
                                 r8
                                 \ottava #1
-                                \override DynamicText.extra-offset = #'(0 . 1)
-                                \override TextScript.color = #black
+                                \once \override DynamicText.extra-offset = #'(0 . 1)
+                                \once \override TextScript.color = #black
                                 \override Stem.direction = #up
                                 d''''8 \mf [ (
                                     ^ \markup {
@@ -679,8 +679,6 @@
                                             \upright
                                                 "(ottava brackets always govern all voices on staff)"
                                         }
-                                \revert DynamicText.extra-offset
-                                \revert TextScript.color
                                 af''''8 ] )
                                 s8
                                 a'''8
@@ -699,15 +697,11 @@
                         }
                         {
                             {
-                                \override Script.color = #black
-                                \override Script.extra-offset = #'(0.5 . 0)
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black
+                                \once \override Script.extra-offset = #'(0.5 . 0)
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
-                                \revert Script.color
-                                \revert Script.extra-offset
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 1/2
@@ -840,22 +834,18 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \override Rest.transparent = ##t
-                                \override Score.SpanBar.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Rest.transparent = ##t
+                                \once \override Score.SpanBar.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
-                                \revert Rest.transparent
-                                \revert Score.SpanBar.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
                             {
                                 \arpeggioArrowUp
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.direction = #up
+                                \once \override Script.direction = #up
                                 <a g' af' b' cs'' f'' ef''' c''''>2. -\marcato \arpeggio \ff
-                                \revert Script.direction
                             }
                         }
                         s1 * 123/8
@@ -1089,13 +1079,10 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \override Rest.transparent = ##t
-                                \override Score.SpanBar.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Rest.transparent = ##t
+                                \once \override Score.SpanBar.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
-                                \revert Rest.transparent
-                                \revert Score.SpanBar.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1107,11 +1094,10 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.direction = #up
+                                \once \override Script.direction = #up
                                 <a g' af' b' cs'' f'' ef''' c''''>1. -\marcato \arpeggio
                                     - \tweak color #red
                                     ^ \markup { @ }
-                                \revert Script.direction
                             }
                         }
                         {
@@ -1240,15 +1226,11 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \override Score.BarLine.transparent = ##t
-                                \override Rest.transparent = ##t
-                                \override Score.SpanBar.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Score.BarLine.transparent = ##t
+                                \once \override Rest.transparent = ##t
+                                \once \override Score.SpanBar.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
-                                \revert Score.BarLine.transparent
-                                \revert Rest.transparent
-                                \revert Score.SpanBar.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -2086,11 +2068,9 @@
                         {
                             {
                                 \crossStaff
-                                \override PianoStaff.Stem.color = #darkmagenta
-                                \override Stem.direction = #up
+                                \once \override PianoStaff.Stem.color = #darkmagenta
+                                \once \override Stem.direction = #up
                                 <g, e f af>16 \mp
-                                \revert PianoStaff.Stem.color
-                                \revert Stem.direction
                                 r8.
                             }
                         }
