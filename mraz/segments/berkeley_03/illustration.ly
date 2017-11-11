@@ -839,12 +839,13 @@
                         s1 * 3/2
                         {
                             {
-                                \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override Rest.transparent = ##t
+                                \override Score.SpanBar.transparent = ##t
                                 \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
                                 \revert Rest.transparent
+                                \revert Score.SpanBar.transparent
                                 \revert GlobalContext.TimeSignature.transparent
                             }
                         }
@@ -1087,12 +1088,13 @@
                         }
                         {
                             {
-                                \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override Rest.transparent = ##t
+                                \override Score.SpanBar.transparent = ##t
                                 \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
                                 \revert Rest.transparent
+                                \revert Score.SpanBar.transparent
                                 \revert GlobalContext.TimeSignature.transparent
                             }
                         }
@@ -1237,13 +1239,15 @@
                         }
                         {
                             {
-                                \once \override Score.BarLine.transparent = ##t
-                                \once \override Score.SpanBar.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \override Score.BarLine.transparent = ##t
                                 \override Rest.transparent = ##t
+                                \override Score.SpanBar.transparent = ##t
                                 \override GlobalContext.TimeSignature.transparent = ##t
                                 r4
+                                \revert Score.BarLine.transparent
                                 \revert Rest.transparent
+                                \revert Score.SpanBar.transparent
                                 \revert GlobalContext.TimeSignature.transparent
                             }
                         }
