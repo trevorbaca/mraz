@@ -1264,16 +1264,12 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.color = #black
-                                \override Script.extra-offset = #'(1 . 0)
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black
+                                \once \override Script.extra-offset = #'(1 . 0)
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
                                 \break
-                                \revert Script.color
-                                \revert Script.extra-offset
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1391,13 +1387,10 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.color = #black
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                \revert Script.color
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -1460,15 +1453,11 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.color = #black
-                                \override Script.extra-offset = #'(1 . 0)
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black
+                                \once \override Script.extra-offset = #'(1 . 0)
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\shortfermata
-                                \revert Script.color
-                                \revert Script.extra-offset
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 27/4
@@ -1511,16 +1500,12 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.color = #black
-                                \override Script.extra-offset = #'(1 . 0)
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black
+                                \once \override Script.extra-offset = #'(1 . 0)
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r4 -\fermata
                                 \bar "|"
-                                \revert Script.color
-                                \revert Script.extra-offset
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                     }

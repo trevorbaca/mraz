@@ -291,13 +291,10 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.direction = #up
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\shortfermata
-                                \revert Script.direction
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         {
@@ -322,13 +319,10 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.direction = #up
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\fermata
-                                \revert Script.direction
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 1/2
@@ -371,13 +365,10 @@
                         {
                             {
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \override Script.direction = #up
-                                \override Rest.transparent = ##t
-                                \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up
+                                \once \override Rest.transparent = ##t
+                                \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8 -\shortfermata
-                                \revert Script.direction
-                                \revert Rest.transparent
-                                \revert GlobalContext.TimeSignature.transparent
                             }
                         }
                         s1 * 3/2
