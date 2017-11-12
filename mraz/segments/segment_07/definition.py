@@ -315,7 +315,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     #allow_empty_selections=True,
     allow_figure_names=False,
     color_octaves=False,
@@ -343,38 +343,38 @@ segment_maker = baca.SegmentMaker(
     time_signatures=accumulator.time_signatures,
     )
 
-#segment_maker.validate_stage_count()
-#segment_maker.validate_measure_count()
-segment_maker.validate_measures_per_stage()
-accumulator.populate_segment_maker(segment_maker)
+#maker.validate_stage_count()
+#maker.validate_measure_count()
+maker.validate_measures_per_stage()
+accumulator.populate_segment_maker(maker)
 
 ###############################################################################
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1', 1, Infinity),
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1 Inserts', 1, 5),
     baca.beam_positions(-6.5),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1 Inserts', 5, 10),
     baca.beam_positions(-8.5),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1 Inserts', 1, Infinity),
     baca.scripts_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2', 1, Infinity),
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
@@ -382,66 +382,66 @@ segment_maker(
     baca.stems_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2 Inserts', 9, Infinity),
     baca.beam_positions(17),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2 Inserts', 1, 4),
     baca.beam_positions(15.5),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2 Inserts', 6, 8),
     baca.beam_positions(13.5),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 4', 1, 2),
     baca.beam_positions(-5.5),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 4', 6, Infinity),
     baca.beam_positions(-4.5),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 4', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 4 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5', 1, 5),
     baca.beam_positions(-6),
     )
 
-#segment_maker(
+#maker(
 #    baca.scope('LH Voice 5', 6, Infinity),
 #    baca.beam_positions(-4.5),
 #    )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
