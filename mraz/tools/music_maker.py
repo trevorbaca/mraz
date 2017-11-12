@@ -35,7 +35,7 @@ def music_maker():
 
         >>> maker = baca.tools.SegmentMaker(
         ...     ignore_unregistered_pitches=True,
-        ...     score_template=baca.tools.ViolinSoloScoreTemplate(),
+        ...     score_template=baca.tools.SingleStaffScoreTemplate(),
         ...     spacing_specifier=baca.tools.HorizontalSpacingSpecifier(
         ...         minimum_width=(1, 24),
         ...         ),
@@ -55,7 +55,6 @@ def music_maker():
 
             >>> abjad.f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
-                \tag violin
                 \context GlobalContext = "Global Context" <<
                     \context GlobalRests = "Global Rests" {
                         {
@@ -103,62 +102,14 @@ def music_maker():
                     }
                 >>
                 \context MusicContext = "Music Context" <<
-                    \tag violin
-                    \context ViolinMusicStaff = "Violin Music Staff" {
-                        \context ViolinMusicVoice = "Violin Music Voice" {
-                            {
-                                \set ViolinMusicStaff.instrumentName = \markup { Violin }
-                                \set ViolinMusicStaff.shortInstrumentName = \markup { Vn. }
-                                \clef "treble"
-                                e'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs'16 [
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                c'16 ]
-                            }
-                            {
-                                b'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                bf'16 [
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                f'16 ]
-                                \bar "|"
-                            }
+                    \context Staff = "Music Staff" {
+                        \context Voice = "Music Voice" {
+                            \clef "treble"
+                            R1 * 1/16
+                            R1 * 7/16
+                            R1 * 1/16
+                            R1 * 3/8
+                            \bar "|"
                         }
                     }
                 >>
@@ -204,7 +155,7 @@ def music_maker():
 
         >>> maker = baca.SegmentMaker(
         ...     ignore_unregistered_pitches=True,
-        ...     score_template=baca.ViolinSoloScoreTemplate(),
+        ...     score_template=baca.SingleStaffScoreTemplate(),
         ...     spacing_specifier=baca.HorizontalSpacingSpecifier(
         ...         minimum_width=(1, 24),
         ...         ),
@@ -228,7 +179,6 @@ def music_maker():
             \context Score = "Score" \with {
                 \override Beam.positions = #'(5 . 5)
             } <<
-                \tag violin
                 \context GlobalContext = "Global Context" <<
                     \context GlobalRests = "Global Rests" {
                         {
@@ -266,124 +216,13 @@ def music_maker():
                     }
                 >>
                 \context MusicContext = "Music Context" <<
-                    \tag violin
-                    \context ViolinMusicStaff = "Violin Music Staff" {
-                        \context ViolinMusicVoice = "Violin Music Voice" {
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                \set ViolinMusicStaff.instrumentName = \markup { Violin }
-                                \set ViolinMusicStaff.shortInstrumentName = \markup { Vn. }
-                                \clef "treble"
-                                e'16 [
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                fs'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                c'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                b'16 ]
-                            }
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                fs'16 [
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                d'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                ef'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                f'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                c'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                b'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                f'16 ]
-                            }
-                            {
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
-                                b'16 [
-                            }
-                            {
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
-                                bf'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                g'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                a'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                af'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
-                                c'16
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
-                                f'16
-                            }
-                            {
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
-                                e'16 ]
-                                \bar "|"
-                            }
+                    \context Staff = "Music Staff" {
+                        \context Voice = "Music Voice" {
+                            \clef "treble"
+                            R1 * 9/16
+                            R1 * 7/8
+                            R1 * 1/2
+                            \bar "|"
                         }
                     }
                 >>
