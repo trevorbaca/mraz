@@ -44,7 +44,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     allow_figure_names=False,
     color_octaves=True,
     color_out_of_range_pitches=True,
@@ -62,16 +62,16 @@ segment_maker = baca.SegmentMaker(
     time_signatures=accumulator.time_signatures,
     )
 
-#segment_maker.validate_stage_count()
-#segment_maker.validate_measure_count()
-segment_maker.validate_measures_per_stage()
-accumulator.populate_segment_maker(segment_maker)
+#maker.validate_stage_count()
+#maker.validate_measure_count()
+maker.validate_measures_per_stage()
+accumulator.populate_segment_maker(maker)
 
 ###############################################################################
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-#segment_maker(
+#maker(
 #    baca.scope('RH Voice 1', 1, 2),
 #    baca.register(0, -12),
 #    )

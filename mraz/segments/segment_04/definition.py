@@ -892,7 +892,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     #allow_empty_selections=True,
     allow_figure_names=False,
     color_octaves=False,
@@ -915,86 +915,86 @@ segment_maker = baca.SegmentMaker(
     time_signatures=accumulator.time_signatures,
     )
 
-#segment_maker.validate_stage_count()
-#segment_maker.validate_measure_count()
-segment_maker.validate_measures_per_stage()
-accumulator.populate_segment_maker(segment_maker)
+#maker.validate_stage_count()
+#maker.validate_measure_count()
+maker.validate_measures_per_stage()
+accumulator.populate_segment_maker(maker)
 
 ###############################################################################
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1', 1, Infinity),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1', 1, 34),
     baca.ottava(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 1', 36, Infinity),
     baca.ottava(),
     )
 
 # TODO: reveal
-#segment_maker(
+#maker(
 #    baca.scope('RH Voice 2', 30, 32),
 #    baca.marcati(),
 #    baca.scripts_up(),
 #    baca.up_arpeggios(),
 #    )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 3', 1, Infinity),
     baca.tenuti(),
     )
 
 # TODO: reveal
-#segment_maker(
+#maker(
 #    baca.scope('LH Voice 2', 30, 32),
 #    baca.transparent_rests(),
 #    )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5', 1, Infinity),
     baca.clef('bass'),
     baca.dynamics_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5', 7, 15),
     baca.marcati(),
     baca.rests_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5', 16, Infinity),
     baca.tuplet_bracket_staff_padding(2),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 5 Inserts', 1, Infinity),
     baca.scripts_up(),
     baca.staccati(),
     baca.stems_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Resonance Voice', 9, 10),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Resonance Voice', 13, 14),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Resonance Voice', 20, Infinity),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

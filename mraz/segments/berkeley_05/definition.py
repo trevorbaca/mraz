@@ -493,7 +493,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     #allow_empty_selections=True,
     allow_figure_names=False,
     color_octaves=False,
@@ -516,16 +516,16 @@ segment_maker = baca.SegmentMaker(
     time_signatures=accumulator.time_signatures,
     )
 
-#segment_maker.validate_stage_count()
-#segment_maker.validate_measure_count()
-segment_maker.validate_measures_per_stage()
-accumulator.populate_segment_maker(segment_maker)
+#maker.validate_stage_count()
+#maker.validate_measure_count()
+maker.validate_measures_per_stage()
+accumulator.populate_segment_maker(maker)
 
 ###############################################################################
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2', 2, 8),
     baca.accents(),
     baca.beam_positions(10.5),
@@ -533,20 +533,20 @@ segment_maker(
     baca.stems_up(),
     )
 
-segment_maker(
+maker(
     baca.scope('RH Voice 2', 9, 13),
     baca.scripts_up(),
     baca.slurs_up(),
     baca.stems_down(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Voice 4', 2, Infinity),
     baca.staccati(),
     baca.tenuti(),
     )
 
-segment_maker(
+maker(
     baca.scope('LH Resonance Voice', 1, Infinity),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
