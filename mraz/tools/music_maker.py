@@ -56,24 +56,6 @@ def music_maker():
             >>> abjad.f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
                 \context GlobalContext = "Global Context" <<
-                    \context GlobalRests = "Global Rests" {
-                        {
-                            \time 1/16
-                            R1 * 1/16
-                        }
-                        {
-                            \time 7/16
-                            R1 * 7/16
-                        }
-                        {
-                            \time 1/16
-                            R1 * 1/16
-                        }
-                        {
-                            \time 6/16
-                            R1 * 3/8
-                        }
-                    }
                     \context GlobalSkips = "Global Skips" {
                         {
                             \time 1/16
@@ -180,20 +162,6 @@ def music_maker():
                 \override Beam.positions = #'(5 . 5)
             } <<
                 \context GlobalContext = "Global Context" <<
-                    \context GlobalRests = "Global Rests" {
-                        {
-                            \time 9/16
-                            R1 * 9/16
-                        }
-                        {
-                            \time 14/16
-                            R1 * 7/8
-                        }
-                        {
-                            \time 8/16
-                            R1 * 1/2
-                        }
-                    }
                     \context GlobalSkips = "Global Skips" {
                         {
                             \time 9/16
