@@ -260,7 +260,7 @@ accumulator(
     baca.dynamic('mp'),
     baca.flags(),
     baca.rests_after([3]),
-    baca.stem_color('darkmagenta', context_name='PianoStaff'),
+    baca.stem_color('darkmagenta', context='PianoStaff'),
     baca.stems_up(),
     counts=[1],
     figure_name='lh-5 4.2.10',
