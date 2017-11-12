@@ -11,56 +11,6 @@
         currentBarNumber = #10
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
-                {
-                    \time 2/4
-                    R1 * 1/2
-                }
-                {
-                    \time 1/8
-                    R1 * 1/8
-                }
-                {
-                    \time 5/16
-                    R1 * 5/16
-                }
-                {
-                    \time 1/8
-                    R1 * 1/8
-                }
-                {
-                    \time 2/4
-                    R1 * 1/2
-                }
-                {
-                    \time 5/8
-                    R1 * 5/8
-                }
-                {
-                    \time 1/8
-                    R1 * 1/8
-                }
-                {
-                    \time 6/4
-                    R1 * 3/2
-                }
-                {
-                    \time 21/16
-                    R1 * 21/16
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 6/4
-                    R1 * 3/2
-                }
-                {
-                    \time 4/4
-                    R1 * 1
-                }
-            }
             \context GlobalSkips = "Global Skips" {
                 {
                     \time 2/4

@@ -11,28 +11,6 @@
         currentBarNumber = #86
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
-                {
-                    \time 29/16
-                    R1 * 29/16
-                }
-                {
-                    \time 27/16
-                    R1 * 27/16
-                }
-                {
-                    \time 21/16
-                    R1 * 21/16
-                }
-                {
-                    \time 15/16
-                    R1 * 15/16
-                }
-                {
-                    \time 4/4
-                    R1 * 1
-                }
-            }
             \context GlobalSkips = "Global Skips" {
                 {
                     \time 29/16
