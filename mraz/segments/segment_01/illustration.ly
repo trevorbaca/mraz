@@ -12,6 +12,7 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 85
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 59/16
                 \newSpacingSection
@@ -39,6 +40,7 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         {
                             {
+                                % measure 85
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \clef "treble"
@@ -250,84 +252,104 @@
                         }
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceFour = "RH Voice 4" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceThree = "LH Voice 3" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
+                        % measure 85
                         s1 * 59/16
                         \bar "|"
                     }

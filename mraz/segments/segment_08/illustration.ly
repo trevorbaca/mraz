@@ -12,6 +12,7 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 158
                 \time 7/16
                 s1 * 7/16 ^ \markup {
                     \fontsize
@@ -29,26 +30,37 @@
                             112
                         }
                     }
+                % measure 159
                 \time 4/4
                 s1 * 1
+                % measure 160
                 \time 3/2
                 s1 * 3/2
+                % measure 161
                 \time 7/8
                 s1 * 7/8
+                % measure 162
                 \time 5/16
                 s1 * 5/16
+                % measure 163
                 \time 2/4
                 s1 * 1/2
+                % measure 164
                 \time 4/2
                 s1 * 2
+                % measure 165
                 \time 7/16
                 s1 * 7/16
+                % measure 166
                 \time 4/4
                 s1 * 1
+                % measure 167
                 \time 2/2
                 s1 * 1
+                % measure 168
                 \time 7/8
                 s1 * 7/8
+                % measure 169
                 \time 2/4
                 s1 * 1/2
             }
@@ -57,235 +69,428 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        % measure 158
                         \clef "treble"
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceThree = "RH Voice 3" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceFour = "RH Voice 4" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceFive = "RH Voice 5" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHVoiceSix = "RH Voice 6" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceThree = "LH Voice 3" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceFour = "LH Voice 4" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceFive = "LH Voice 5" {
                         {
                             {
+                                % measure 158
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \clef "bass"
@@ -299,6 +504,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
+                                % measure 159
                                 g,,8
                                 \override Rest.direction = #up
                                 r32
@@ -320,6 +526,7 @@
                         }
                         {
                             {
+                                % measure 160
                                 cs,,32
                                 r4...
                                 a,,,32
@@ -330,6 +537,7 @@
                         }
                         {
                             {
+                                % measure 161
                                 bf,,8.
                                 \override Rest.direction = #up
                                 r32
@@ -344,6 +552,7 @@
                         }
                         {
                             {
+                                % measure 162
                                 d,,8
                                 r32
                                 bf,,8
@@ -353,6 +562,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
+                                % measure 163
                                 b,,,8
                                 r32
                                 cs,,8
@@ -363,6 +573,7 @@
                         }
                         {
                             {
+                                % measure 164
                                 ef,,32
                                 \override Rest.direction = #up
                                 r4...
@@ -377,6 +588,7 @@
                         }
                         {
                             {
+                                % measure 165
                                 c,8.
                                 r32
                                 d,8.
@@ -386,6 +598,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
+                                % measure 166
                                 fs,,8
                                 r32
                                 e,,8
@@ -405,6 +618,7 @@
                         }
                         {
                             {
+                                % measure 167
                                 a,,,32
                                 \override Rest.direction = #up
                                 r4...
@@ -415,6 +629,7 @@
                         }
                         {
                             {
+                                % measure 168
                                 b,,8.
                                 r32
                                 a,,8.
@@ -428,6 +643,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 16/15 {
+                                % measure 169
                                 fs,,8
                                 r32
                                 bf,,8
@@ -440,20 +656,33 @@
                         }
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHVoiceSix = "LH Voice 6" {
+                        % measure 158
                         \override Script.direction = #down
                         \override TupletBracket.staff-padding = #6
                         s1 * 11/16
@@ -474,6 +703,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
+                                % measure 161
                                 b,,,8 -\tenuto
                                 \override Rest.direction = #up
                                 r4
@@ -521,6 +751,7 @@
                             \times 2/3 {
                                 e,,8 -\tenuto
                                 r4
+                                % measure 168
                                 f,,8 -\tenuto
                                 r4
                                 g,,8 -\tenuto
@@ -534,31 +765,55 @@
                         \revert TupletBracket.staff-padding
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
+                        % measure 158
                         s1 * 7/16
+                        % measure 159
                         s1 * 1
+                        % measure 160
                         s1 * 3/2
+                        % measure 161
                         s1 * 7/8
+                        % measure 162
                         s1 * 5/16
+                        % measure 163
                         s1 * 1/2
+                        % measure 164
                         s1 * 2
+                        % measure 165
                         s1 * 7/16
+                        % measure 166
                         s1 * 1
+                        % measure 167
                         s1 * 1
+                        % measure 168
                         s1 * 7/8
+                        % measure 169
                         s1 * 1/2
                     }
                 >>
