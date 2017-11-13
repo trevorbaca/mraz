@@ -43,7 +43,7 @@ def music_maker():
         ...     )
         >>> maker(
         ...     baca.scope('Violin Music Voice', 1),
-        ...     baca.RhythmBuilder(
+        ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
         ...     )
@@ -145,7 +145,7 @@ def music_maker():
         ...     )
         >>> maker(
         ...     baca.scope('Violin Music Voice', 1),
-        ...     baca.RhythmBuilder(
+        ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
         ...     )
