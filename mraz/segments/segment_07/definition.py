@@ -321,7 +321,7 @@ maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=False,
-    final_barline='|.',
+    final_bar_line='|.',
     final_markup=(
         ['Madison, WI', 'Los Angeles, CA.'],
         ['December 2016', 'March 2017.'],
