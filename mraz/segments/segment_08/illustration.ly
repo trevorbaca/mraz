@@ -12,69 +12,45 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                {
-                    \time 7/16
-                    s1 * 7/16 ^ \markup {
-                        \fontsize
-                            #-6
-                            \general-align
-                                #Y
-                                #DOWN
-                                \note-by-number
-                                    #2
-                                    #0
-                                    #1
-                        \upright
-                            {
-                                =
-                                112
-                            }
+                \time 7/16
+                s1 * 7/16 ^ \markup {
+                    \fontsize
+                        #-6
+                        \general-align
+                            #Y
+                            #DOWN
+                            \note-by-number
+                                #2
+                                #0
+                                #1
+                    \upright
+                        {
+                            =
+                            112
                         }
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 3/2
-                    s1 * 3/2
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 5/16
-                    s1 * 5/16
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
-                {
-                    \time 4/2
-                    s1 * 2
-                }
-                {
-                    \time 7/16
-                    s1 * 7/16
-                }
-                {
-                    \time 4/4
-                    s1 * 1
-                }
-                {
-                    \time 2/2
-                    s1 * 1
-                }
-                {
-                    \time 7/8
-                    s1 * 7/8
-                }
-                {
-                    \time 2/4
-                    s1 * 1/2
-                }
+                    }
+                \time 4/4
+                s1 * 1
+                \time 3/2
+                s1 * 3/2
+                \time 7/8
+                s1 * 7/8
+                \time 5/16
+                s1 * 5/16
+                \time 2/4
+                s1 * 1/2
+                \time 4/2
+                s1 * 2
+                \time 7/16
+                s1 * 7/16
+                \time 4/4
+                s1 * 1
+                \time 2/2
+                s1 * 1
+                \time 7/8
+                s1 * 7/8
+                \time 2/4
+                s1 * 1/2
             }
         >>
         \context MusicContext = "Music Context" {
