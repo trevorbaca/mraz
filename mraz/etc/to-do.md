@@ -17,8 +17,8 @@ TO-DO
 6.  Teach MusicMaker to annotate only unregistered pitch-classes.
     This will remove many color_unregistered_pitches=False settings.
 
-7.  Refactor CollectionRhythmMaker to accept (star)specifiers.
-    Refactor CollectionRhythmMaker to accept RestAffixCommand objects.
+7.  Refactor PitchFirstRhythmMaker to accept (star)specifiers.
+    Refactor PitchFirstRhythmMaker to accept RestAffixCommand objects.
 
 8.  Remove Expression.markup_expression.
     Remove Expression.string_template.
