@@ -12,6 +12,7 @@
     } <<
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
+                % measure 10
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
@@ -31,10 +32,12 @@
                             112
                         }
                     }
+                % measure 11
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
                 s1 * 1/8
+                % measure 12
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 5/16
                 \newSpacingSection
@@ -54,10 +57,12 @@
                             84
                         }
                     }
+                % measure 13
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
                 s1 * 1/8
+                % measure 14
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
@@ -77,6 +82,7 @@
                             112
                         }
                     }
+                % measure 15
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 5/8
                 \newSpacingSection
@@ -96,18 +102,22 @@
                             84
                         }
                     }
+                % measure 16
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
                 s1 * 1/8
+                % measure 17
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 6/4
                 \newSpacingSection
                 s1 * 3/2
+                % measure 18
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 21/16
                 \newSpacingSection
                 s1 * 21/16
+                % measure 19
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -144,10 +154,12 @@
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4 \startTextSpan
+                % measure 20
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 6/4
                 \newSpacingSection
                 s1 * 3/2
+                % measure 21
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/4
                 \newSpacingSection
@@ -173,10 +185,12 @@
             \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
+                        % measure 10
                         \clef "treble"
                         s1 * 41/8
                         {
                             {
+                                % measure 19
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 ef''''1.. -\tenuto \f
@@ -184,12 +198,14 @@
                         }
                         {
                             {
+                                % measure 20
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 f''''1. -\tenuto
                             }
                         }
                         {
                             {
+                                % measure 21
                                 bf''''1 -\tenuto
                                 \bar "|"
                                 \ottava #0
@@ -197,25 +213,39 @@
                         }
                     }
                     \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceTwo = "RH Voice 2" {
+                        % measure 10
                         \override Slur.direction = #up
                         s1 * 1/2
                         {
                             {
+                                % measure 11
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \once \override Script.direction = #up
                                 \once \override Rest.transparent = ##t
@@ -225,6 +255,7 @@
                         }
                         {
                             {
+                                % measure 12
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs16 -\staccato \ppp [ (
@@ -244,6 +275,7 @@
                         }
                         {
                             {
+                                % measure 13
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \once \override Script.direction = #up
                                 \once \override Rest.transparent = ##t
@@ -251,9 +283,11 @@
                                 r8 -\fermata
                             }
                         }
+                        % measure 14
                         s1 * 1/2
                         {
                             {
+                                % measure 15
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs16 -\staccato \ppp [ (
@@ -290,6 +324,7 @@
                         }
                         {
                             {
+                                % measure 16
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 \once \override Script.direction = #up
                                 \once \override Rest.transparent = ##t
@@ -297,9 +332,11 @@
                                 r8 -\shortfermata
                             }
                         }
+                        % measure 17
                         s1 * 3/2
                         {
                             {
+                                % measure 18
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs16 -\staccato \ppp [ (
@@ -371,9 +408,11 @@
                                 c'''16 -\staccato ] )
                             }
                         }
+                        % measure 19
                         s1 * 13/4
                         {
                             \times 4/5 {
+                                % measure 21
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \ottava #1
@@ -449,25 +488,39 @@
                         }
                     }
                     \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceThree = "RH Voice 3" {
+                        % measure 10
                         s1 * 37/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 12/11 {
+                                % measure 17
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \override TupletBracket.direction = #up
                                 ef8 \ff
@@ -480,21 +533,34 @@
                                 \revert TupletBracket.direction
                             }
                         }
+                        % measure 18
                         s1 * 89/16
                         \bar "|"
                     }
                     \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
@@ -502,6 +568,7 @@
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
+                                % measure 10
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16 \ff [
@@ -525,10 +592,12 @@
                                 b''16 ]
                             }
                         }
+                        % measure 11
                         s1 * 9/16
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
+                                % measure 14
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16 \p [
@@ -552,6 +621,7 @@
                                 b''16 ]
                             }
                         }
+                        % measure 15
                         s1 * 125/16
                         \bar "|"
                     }
@@ -561,6 +631,7 @@
                             \override TupletNumber.stencil = ##f
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
+                                % measure 10
                                 \override Stem.direction = #up
                                 d''16
                                 s16
@@ -573,12 +644,14 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
+                        % measure 11
                         s1 * 9/16
                         {
                             \override TupletBracket.stencil = ##f
                             \override TupletNumber.stencil = ##f
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
+                                % measure 14
                                 d''16
                                 s16
                                 s16
@@ -591,129 +664,218 @@
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
                         }
+                        % measure 15
                         s1 * 125/16
                         \bar "|"
                     }
                     \context RHVoiceFive = "RH Voice 5" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context RHVoiceSix = "RH Voice 6" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context RHResonanceVoice = "RH Resonance Voice" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                 >>
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceTwo = "LH Voice 2" {
+                        % measure 10
                         s1 * 67/8
                         {
                             {
+                                % measure 21
                                 r1
                                 \bar "|"
                             }
                         }
                     }
                     \context LHVoiceThree = "LH Voice 3" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFour = "LH Voice 4" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceFive = "LH Voice 5" {
+                        % measure 10
                         s1 * 37/16
                         {
                             {
+                                % measure 17
                                 r2.
                                 af8. -\tenuto \f
                                 r16
@@ -723,63 +885,102 @@
                                 r16
                             }
                         }
+                        % measure 18
                         s1 * 89/16
                         \bar "|"
                     }
                     \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceSix = "LH Voice 6" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                        % measure 10
                         s1 * 1/2
+                        % measure 11
                         s1 * 1/8
+                        % measure 12
                         s1 * 5/16
+                        % measure 13
                         s1 * 1/8
+                        % measure 14
                         s1 * 1/2
+                        % measure 15
                         s1 * 5/8
+                        % measure 16
                         s1 * 1/8
+                        % measure 17
                         s1 * 3/2
+                        % measure 18
                         s1 * 21/16
+                        % measure 19
                         s1 * 7/4
+                        % measure 20
                         s1 * 3/2
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
                     \context LHResonanceVoice = "LH Resonance Voice" {
                         {
                             {
+                                % measure 10
                                 \clef "bass"
                                 <e, fs, gs, as, b,>2
                             }
                         }
                         {
                             {
+                                % measure 11
                                 <e, fs, gs, as, b,>4 \repeatTie
                             }
                         }
@@ -793,12 +994,14 @@
                         }
                         {
                             {
+                                % measure 14
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <e, fs, gs, as, b,>2 \repeatTie
                             }
                         }
                         {
                             {
+                                % measure 15
                                 <e, fs, gs, as, b,>2 \repeatTie
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
@@ -807,12 +1010,15 @@
                         }
                         {
                             {
+                                % measure 16
                                 <e, fs, gs, as, b,>8 \repeatTie
                             }
                         }
+                        % measure 17
                         s1 * 3/2
                         {
                             {
+                                % measure 18
                                 <e, fs, gs, as, b,>1
                                 <e, fs, gs, as, b,>4 \repeatTie
                                 \set stemLeftBeamCount = #2
@@ -822,15 +1028,18 @@
                         }
                         {
                             {
+                                % measure 19
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <e, fs, gs, as, b,>1.. \repeatTie
                             }
                         }
                         {
                             {
+                                % measure 20
                                 <e, fs, gs, as, b,>1. \repeatTie
                             }
                         }
+                        % measure 21
                         s1 * 1
                         \bar "|"
                     }
