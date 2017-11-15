@@ -143,7 +143,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         Returns score.
         '''
         import mraz
-        time_signature_context = self._make_time_signature_context()
+        global_context = self._make_global_context()
         rh_voice_1 = abjad.Voice(
             [],
             context_name='RHVoiceOne',
@@ -308,7 +308,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         score = abjad.Score(
             [
-                time_signature_context,
+                global_context,
                 music_context,
                 ],
             name='Score',
