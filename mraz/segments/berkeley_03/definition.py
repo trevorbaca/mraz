@@ -73,7 +73,10 @@ accumulator(
     baca.flags(),
     baca.proportional_notation_duration((1, 12)),
     baca.register(6, -24),
-    baca.map(baca.slur(), baca.tuplet_tleaves().nontrivial()),
+    baca.map(
+        baca.slur(),
+        baca.tuplets().map(baca.tleaves()).nontrivial(),
+        ),
     baca.slurs_down(),
     counts=[3, -3],
     figure_name='insert 5.1',
@@ -425,7 +428,10 @@ accumulator(
     baca.beam_divisions(),
     baca.proportional_notation_duration((1, 16)),
     baca.register(24),
-    baca.map(baca.slur(), baca.tuplet_tleaves().nontrivial()),
+    baca.map(
+        baca.slur(),
+        baca.tuplets().map(baca.tleaves()).nontrivial(),
+        ),
     baca.tuplet_brackets_down(),
     counts=[2],
     figure_name='insert 5.2',
