@@ -706,10 +706,25 @@
                 \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                     \context RHVoiceOne = "RH Voice 1" {
                         % measure 91
+                        \set PianoMusicStaffGroup.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                Piano
+                            }
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                            \null
+                            }
                         \clef "treble"
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 33/2
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to piano"
+                                }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {

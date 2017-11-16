@@ -43,9 +43,24 @@
                                 % measure 85
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \set PianoMusicStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Piano
+                                    }
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                                    \null
+                                    }
                                 \clef "treble"
                                 \override Beam.positions = #'(6 . 6)
+                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 e16 [
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.75)
+                                            \box
+                                                "to piano"
+                                        }
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'16

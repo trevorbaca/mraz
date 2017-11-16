@@ -106,11 +106,26 @@
                                     % measure 147
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \set PianoMusicStaffGroup.instrumentName = \markup {
+                                        \hcenter-in
+                                            #16
+                                            Piano
+                                        }
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup {
+                                        \null
+                                        }
                                     \clef "treble"
                                     \override Beam.positions = #'(10 . 10)
                                     \dynamicUp
                                     \override Stem.direction = #up
+                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                     e''16 \fff [
+                                        ^ \markup {
+                                            \override
+                                                #'(box-padding . 0.75)
+                                                \box
+                                                    "to piano"
+                                            }
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     cs''16
