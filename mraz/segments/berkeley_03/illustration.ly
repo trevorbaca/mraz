@@ -443,6 +443,7 @@
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 143/8
                             ^ \markup {
                                 \override
@@ -1902,6 +1903,8 @@
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
                         % measure 22
+                        \clef "bass"
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 3/2
                         % measure 23
                         s1 * 1/4

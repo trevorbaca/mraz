@@ -346,6 +346,7 @@
                             }
                         \clef "treble"
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 4
                             ^ \markup {
                                 \override
@@ -1732,6 +1733,8 @@
                 \context PianoMusicLHStaff = "Piano Music LH Staff" <<
                     \context LHVoiceOne = "LH Voice 1" {
                         % measure 69
+                        \clef "bass"
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 4
                         % measure 70
                         s1 * 5/2
