@@ -47,6 +47,7 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 16/4
+                \once \override GlobalContext.TimeSignature.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 s1 * 4 \startTextSpan
                 
                 %%% GlobalSkips [measure 70] %%%
