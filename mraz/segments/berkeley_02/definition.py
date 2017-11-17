@@ -115,7 +115,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 5',
+    'LHVoice 5',
     collections_4['stage 1']['lh'].next(),
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
@@ -260,7 +260,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 2',
+    'LHVoice 2',
     [abjad.Rest((4, 4))],
     figure_name='b.2.r.10',
     hide_time_signature=True,

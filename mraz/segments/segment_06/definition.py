@@ -70,7 +70,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
@@ -87,7 +87,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
@@ -103,7 +103,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
         'RH Voice 3',
@@ -120,7 +120,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 1']['lh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 0),
@@ -180,5 +180,5 @@ maker(
     )
 
 maker(
-    baca.scope('LH Voice 4', 1, Infinity),
+    baca.scope('LHVoice 4', 1, Infinity),
     )

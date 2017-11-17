@@ -220,7 +220,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.3'),
     baca.clef('bass'),
@@ -236,7 +236,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.5'),
     baca.flags(),
@@ -250,7 +250,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.flags(),
     baca.register(6, -24),
@@ -261,7 +261,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.7'),
     baca.flags(),
@@ -274,7 +274,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(0, -24),
@@ -285,7 +285,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(0, -24),
@@ -296,7 +296,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
     baca.register(-6, -48),
@@ -308,7 +308,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.9'),
     baca.beam_divisions(),
@@ -321,7 +321,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections['stage 2']['lh'].next(exhausted=True),
     baca.beam_divisions(),
     baca.register(-6, -36),
@@ -399,7 +399,7 @@ maker(
     )
 
 maker(
-    baca.scope('LH Voice 4', 2, Infinity),
+    baca.scope('LHVoice 4', 2, Infinity),
     baca.staccati(),
     baca.tenuti(),
     )

@@ -178,8 +178,8 @@
             }
         }
     >>
-    \context MusicContext = "Music Context" {
-        \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+    \context MusicContext = "MusicContext" {
+        \context PianoMusicStaffGroup = "PianoMusicStaff Group" <<
             \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                 \context RHVoiceOne = "RH Voice 1" {
                     {
@@ -481,8 +481,8 @@
                     \bar "|"
                 }
             >>
-            \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                \context LHVoiceOne = "LH Voice 1" {
+            \context PianoMusicLHStaff = "Piano Music LHStaff" <<
+                \context LHVoiceOne = "LHVoice 1" {
                     \clef "bass"
                     s1 * 1
                     s1 * 1/2
@@ -495,7 +495,7 @@
                     s1 * 1/8
                     \bar "|"
                 }
-                \context LHVoiceTwo = "LH Voice 2" {
+                \context LHVoiceTwo = "LHVoice 2" {
                     s1 * 1
                     s1 * 1/2
                     s1 * 1
@@ -507,7 +507,7 @@
                     s1 * 1/8
                     \bar "|"
                 }
-                \context LHVoiceThree = "LH Voice 3" {
+                \context LHVoiceThree = "LHVoice 3" {
                     s1 * 1
                     s1 * 1/2
                     s1 * 1
@@ -519,7 +519,7 @@
                     s1 * 1/8
                     \bar "|"
                 }
-                \context LHVoiceFour = "LH Voice 4" {
+                \context LHVoiceFour = "LHVoice 4" {
                     s1 * 1
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -550,7 +550,7 @@
                     s1 * 27/4
                     \bar "|"
                 }
-                \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                \context LHVoiceFourInserts = "LHVoice 4 Inserts" {
                     \override Stem.direction = #up
                     s1 * 1
                     {
@@ -573,7 +573,7 @@
                     \bar "|"
                     \revert Stem.direction
                 }
-                \context LHVoiceFive = "LH Voice 5" {
+                \context LHVoiceFive = "LHVoice 5" {
                     s1 * 3/2
                     {
                         {
@@ -595,7 +595,7 @@
                     s1 * 23/4
                     \bar "|"
                 }
-                \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                \context LHVoiceFiveInserts = "LHVoice 5 Inserts" {
                     s1 * 1
                     s1 * 1/2
                     s1 * 1
@@ -607,7 +607,7 @@
                     s1 * 1/8
                     \bar "|"
                 }
-                \context LHVoiceSix = "LH Voice 6" {
+                \context LHVoiceSix = "LHVoice 6" {
                     s1 * 3/2
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -632,7 +632,7 @@
                     s1 * 23/4
                     \bar "|"
                 }
-                \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                \context LHVoiceSixInserts = "LHVoice 6 Inserts" {
                     s1 * 1
                     s1 * 1/2
                     s1 * 1

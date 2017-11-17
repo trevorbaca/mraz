@@ -42,7 +42,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     baca.scope('Violin Music Voice', 1),
+        ...     baca.scope('ViolinMusicVoice', 1),
         ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
@@ -84,7 +84,7 @@ def music_maker():
             <BLANKLINE>
                     }
                 >>
-                \context MusicContext = "Music Context" <<
+                \context MusicContext = "MusicContext" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
             <BLANKLINE>
@@ -154,7 +154,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     baca.scope('Violin Music Voice', 1),
+        ...     baca.scope('ViolinMusicVoice', 1),
         ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
@@ -194,7 +194,7 @@ def music_maker():
             <BLANKLINE>
                     }
                 >>
-                \context MusicContext = "Music Context" <<
+                \context MusicContext = "MusicContext" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
             <BLANKLINE>
