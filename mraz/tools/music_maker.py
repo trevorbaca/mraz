@@ -57,41 +57,51 @@ def music_maker():
             \context Score = "Score" <<
                 \context GlobalContext = "Global Context" <<
                     \context GlobalSkips = "Global Skips" {
-                        % measure 1
+            <BLANKLINE>
+                        %%% Global Skips [measure 1] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 1/16
                         \newSpacingSection
                         s1 * 1/16
-                        % measure 2
+            <BLANKLINE>
+                        %%% Global Skips [measure 2] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 7/16
                         \newSpacingSection
                         s1 * 7/16
-                        % measure 3
+            <BLANKLINE>
+                        %%% Global Skips [measure 3] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 1/16
                         \newSpacingSection
                         s1 * 1/16
-                        % measure 4
+            <BLANKLINE>
+                        %%% Global Skips [measure 4] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 6/16
                         \newSpacingSection
                         s1 * 3/8
+            <BLANKLINE>
                     }
                 >>
                 \context MusicContext = "Music Context" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
-                            % measure 1
+            <BLANKLINE>
+                            %%% Music Voice [measure 1] %%%
                             \clef "treble"
                             R1 * 1/16
-                            % measure 2
+            <BLANKLINE>
+                            %%% Music Voice [measure 2] %%%
                             R1 * 7/16
-                            % measure 3
+            <BLANKLINE>
+                            %%% Music Voice [measure 3] %%%
                             R1 * 1/16
-                            % measure 4
+            <BLANKLINE>
+                            %%% Music Voice [measure 4] %%%
                             R1 * 3/8
                             \bar "|"
+            <BLANKLINE>
                         }
                     }
                 >>
@@ -163,34 +173,42 @@ def music_maker():
             } <<
                 \context GlobalContext = "Global Context" <<
                     \context GlobalSkips = "Global Skips" {
-                        % measure 1
+            <BLANKLINE>
+                        %%% Global Skips [measure 1] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 9/16
                         \newSpacingSection
                         s1 * 9/16
-                        % measure 2
+            <BLANKLINE>
+                        %%% Global Skips [measure 2] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 14/16
                         \newSpacingSection
                         s1 * 7/8
-                        % measure 3
+            <BLANKLINE>
+                        %%% Global Skips [measure 3] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 8/16
                         \newSpacingSection
                         s1 * 1/2
+            <BLANKLINE>
                     }
                 >>
                 \context MusicContext = "Music Context" <<
                     \context Staff = "Music Staff" {
                         \context Voice = "Music Voice" {
-                            % measure 1
+            <BLANKLINE>
+                            %%% Music Voice [measure 1] %%%
                             \clef "treble"
                             R1 * 9/16
-                            % measure 2
+            <BLANKLINE>
+                            %%% Music Voice [measure 2] %%%
                             R1 * 7/8
-                            % measure 3
+            <BLANKLINE>
+                            %%% Music Voice [measure 3] %%%
                             R1 * 1/2
                             \bar "|"
+            <BLANKLINE>
                         }
                     }
                 >>
