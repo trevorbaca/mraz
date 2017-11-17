@@ -314,7 +314,8 @@
                         %%% LHVoiceOne [measure 143] %%%
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 9/8
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        s1 * 9/8 \p
                         
                         %%% LHVoiceOne [measure 144] %%%
                         s1 * 1/2
