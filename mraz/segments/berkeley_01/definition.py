@@ -44,12 +44,12 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 4',
+    'LHVoice 4',
     collections_7['stage 1']['lh'][-1],
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'LH Voice 4 Inserts',
+        'LHVoice 4 Inserts',
         [14, 18],
         baca.flags(),
         ),
@@ -59,7 +59,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 6',
+    'LHVoice 6',
     collections_8['stage 3']['lh'][1],
     baca.clef('bass'),
     baca.dynamic('f'),
@@ -76,7 +76,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Voice 5',
+    'LHVoice 5',
     collections_8['stage 3']['rh'][4],
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
@@ -239,6 +239,6 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('LH Voice 4 Inserts', 1, abjad.Infinity),
+    baca.scope('LHVoice 4 Inserts', 1, abjad.Infinity),
     baca.stems_up(),
     )

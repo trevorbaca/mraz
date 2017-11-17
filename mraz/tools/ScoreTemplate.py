@@ -25,8 +25,8 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context GlobalSkips = "Global Skips" {
                 }
             >>
-            \context MusicContext = "Music Context" {
-                \context PianoMusicStaffGroup = "Piano Music Staff Group" <<
+            \context MusicContext = "MusicContext" {
+                \context PianoMusicStaffGroup = "PianoMusicStaff Group" <<
                     \context PianoMusicRHStaff = "Piano Music RH Staff" <<
                         \context RHVoiceOne = "RH Voice 1" {
                             \set PianoMusicStaffGroup.instrumentName = \markup {
@@ -71,33 +71,33 @@ class ScoreTemplate(baca.ScoreTemplate):
                             s1
                         }
                     >>
-                    \context PianoMusicLHStaff = "Piano Music LH Staff" <<
-                        \context LHVoiceOne = "LH Voice 1" {
+                    \context PianoMusicLHStaff = "Piano Music LHStaff" <<
+                        \context LHVoiceOne = "LHVoice 1" {
                             \clef "bass"
                             s1
                         }
-                        \context LHVoiceTwo = "LH Voice 2" {
+                        \context LHVoiceTwo = "LHVoice 2" {
                             s1
                         }
-                        \context LHVoiceThree = "LH Voice 3" {
+                        \context LHVoiceThree = "LHVoice 3" {
                             s1
                         }
-                        \context LHVoiceFour = "LH Voice 4" {
+                        \context LHVoiceFour = "LHVoice 4" {
                             s1
                         }
-                        \context LHVoiceFourInserts = "LH Voice 4 Inserts" {
+                        \context LHVoiceFourInserts = "LHVoice 4 Inserts" {
                             s1
                         }
-                        \context LHVoiceFive = "LH Voice 5" {
+                        \context LHVoiceFive = "LHVoice 5" {
                             s1
                         }
-                        \context LHVoiceFiveInserts = "LH Voice 5 Inserts" {
+                        \context LHVoiceFiveInserts = "LHVoice 5 Inserts" {
                             s1
                         }
-                        \context LHVoiceSix = "LH Voice 6" {
+                        \context LHVoiceSix = "LHVoice 6" {
                             s1
                         }
-                        \context LHVoiceSixInserts = "LH Voice 6 Inserts" {
+                        \context LHVoiceSixInserts = "LHVoice 6 Inserts" {
                             s1
                         }
                         \context LHResonanceVoice = "LH Resonance Voice" {
@@ -123,15 +123,15 @@ class ScoreTemplate(baca.ScoreTemplate):
         'RH Voice 5': 'darkmagenta',
         'RH Voice 6': 'darkcyan',
         'RH Resonance Voice': 'darkred',
-        'LH Voice 1': 'red',
-        'LH Voice 2': 'black',
-        'LH Voice 3': 'darkgreen',
-        'LH Voice 4': 'blue',
-        'LH Voice 4 Inserts': 'blue',
-        'LH Voice 5': 'darkmagenta',
-        'LH Voice 5 Inserts': 'darkmagenta',
-        'LH Voice 6': 'darkcyan',
-        'LH Voice 6 Inserts': 'darkcyan',
+        'LHVoice 1': 'red',
+        'LHVoice 2': 'black',
+        'LHVoice 3': 'darkgreen',
+        'LHVoice 4': 'blue',
+        'LHVoice 4 Inserts': 'blue',
+        'LHVoice 5': 'darkmagenta',
+        'LHVoice 5 Inserts': 'darkmagenta',
+        'LHVoice 6': 'darkcyan',
+        'LHVoice 6 Inserts': 'darkcyan',
         'LH Resonance Voice': 'darkred',
         }
 
@@ -202,47 +202,47 @@ class ScoreTemplate(baca.ScoreTemplate):
         lh_voice_1 = abjad.Voice(
             [],
             context_name='LHVoiceOne',
-            name='LH Voice 1',
+            name='LHVoice 1',
             )
         lh_voice_2 = abjad.Voice(
             [],
             context_name='LHVoiceTwo',
-            name='LH Voice 2',
+            name='LHVoice 2',
             )
         lh_voice_3 = abjad.Voice(
             [],
             context_name='LHVoiceThree',
-            name='LH Voice 3',
+            name='LHVoice 3',
             )
         lh_voice_4 = abjad.Voice(
             [],
             context_name='LHVoiceFour',
-            name='LH Voice 4',
+            name='LHVoice 4',
             )
         lh_voice_4I = abjad.Voice(
             [],
             context_name='LHVoiceFourInserts',
-            name='LH Voice 4 Inserts',
+            name='LHVoice 4 Inserts',
             )
         lh_voice_5 = abjad.Voice(
             [],
             context_name='LHVoiceFive',
-            name='LH Voice 5',
+            name='LHVoice 5',
             )
         lh_voice_5I = abjad.Voice(
             [],
             context_name='LHVoiceFiveInserts',
-            name='LH Voice 5 Inserts',
+            name='LHVoice 5 Inserts',
             )
         lh_voice_6 = abjad.Voice(
             [],
             context_name='LHVoiceSix',
-            name='LH Voice 6',
+            name='LHVoice 6',
             )
         lh_voice_6I = abjad.Voice(
             [],
             context_name='LHVoiceSixInserts',
-            name='LH Voice 6 Inserts',
+            name='LHVoice 6 Inserts',
             )
         lh_resonance_voice = abjad.Voice(
             [],
@@ -282,7 +282,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 ],
             context_name='PianoMusicLHStaff',
             is_simultaneous=True,
-            name='Piano Music LH Staff',
+            name='Piano Music LHStaff',
             )
         abjad.annotate(
             piano_music_lh_staff,
@@ -295,7 +295,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 piano_music_lh_staff,
                 ],
             context_name='PianoMusicStaffGroup',
-            name='Piano Music Staff Group',
+            name='PianoMusicStaff Group',
             )
         piano = mraz.instruments['piano']
         abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
@@ -304,7 +304,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 piano_music_staff_group,
                 ],
             context_name='MusicContext',
-            name='Music Context',
+            name='MusicContext',
             )
         score = abjad.Score(
             [
