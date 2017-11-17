@@ -2,7 +2,7 @@
     currentBarNumber = #86
 } <<
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 29/16
                 R1 * 29/16
@@ -24,7 +24,7 @@
                 R1 * 1
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 29/16
                 \once \override TextSpanner.arrow-width = 0.25

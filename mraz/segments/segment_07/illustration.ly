@@ -11,9 +11,9 @@
         currentBarNumber = #147
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 147] %%%
+                %%% GlobalSkips [measure 147] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -49,35 +49,35 @@
                 \time 3/4
                 s1 * 3/4 \startTextSpan
                 
-                %%% Global Skips [measure 148] %%%
+                %%% GlobalSkips [measure 148] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 149] %%%
+                %%% GlobalSkips [measure 149] %%%
                 \time 3/8
                 s1 * 3/8
                 
-                %%% Global Skips [measure 150] %%%
+                %%% GlobalSkips [measure 150] %%%
                 \time 9/16
                 s1 * 9/16
                 
-                %%% Global Skips [measure 151] %%%
+                %%% GlobalSkips [measure 151] %%%
                 \time 5/16
                 s1 * 5/16
                 
-                %%% Global Skips [measure 152] %%%
+                %%% GlobalSkips [measure 152] %%%
                 \time 9/16
                 s1 * 9/16
                 
-                %%% Global Skips [measure 153] %%%
+                %%% GlobalSkips [measure 153] %%%
                 \time 7/16
                 s1 * 7/16
                 
-                %%% Global Skips [measure 154] %%%
+                %%% GlobalSkips [measure 154] %%%
                 \time 9/16
                 s1 * 9/16
                 
-                %%% Global Skips [measure 155] %%%
+                %%% GlobalSkips [measure 155] %%%
                 \time 3/16
                 s1 * 3/16 \stopTextSpan ^ \markup {
                     \fontsize
@@ -96,11 +96,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 156] %%%
+                %%% GlobalSkips [measure 156] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 157] %%%
+                %%% GlobalSkips [measure 157] %%%
                 \time 1/8
                 s1 * 1/8
                 

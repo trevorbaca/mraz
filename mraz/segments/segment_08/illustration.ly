@@ -11,9 +11,9 @@
         currentBarNumber = #158
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 158] %%%
+                %%% GlobalSkips [measure 158] %%%
                 \time 7/16
                 s1 * 7/16 ^ \markup {
                     \fontsize
@@ -32,47 +32,47 @@
                         }
                     }
                 
-                %%% Global Skips [measure 159] %%%
+                %%% GlobalSkips [measure 159] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 160] %%%
+                %%% GlobalSkips [measure 160] %%%
                 \time 3/2
                 s1 * 3/2
                 
-                %%% Global Skips [measure 161] %%%
+                %%% GlobalSkips [measure 161] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 162] %%%
+                %%% GlobalSkips [measure 162] %%%
                 \time 5/16
                 s1 * 5/16
                 
-                %%% Global Skips [measure 163] %%%
+                %%% GlobalSkips [measure 163] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 164] %%%
+                %%% GlobalSkips [measure 164] %%%
                 \time 4/2
                 s1 * 2
                 
-                %%% Global Skips [measure 165] %%%
+                %%% GlobalSkips [measure 165] %%%
                 \time 7/16
                 s1 * 7/16
                 
-                %%% Global Skips [measure 166] %%%
+                %%% GlobalSkips [measure 166] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 167] %%%
+                %%% GlobalSkips [measure 167] %%%
                 \time 2/2
                 s1 * 1
                 
-                %%% Global Skips [measure 168] %%%
+                %%% GlobalSkips [measure 168] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 169] %%%
+                %%% GlobalSkips [measure 169] %%%
                 \time 2/4
                 s1 * 1/2
                 

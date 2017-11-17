@@ -10,9 +10,9 @@
         currentBarNumber = #1
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 1] %%%
+                %%% GlobalSkips [measure 1] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/4
                 \newSpacingSection
@@ -33,7 +33,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 2] %%%
+                %%% GlobalSkips [measure 2] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
@@ -54,19 +54,19 @@
                         }
                     }
                 
-                %%% Global Skips [measure 3] %%%
+                %%% GlobalSkips [measure 3] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 4] %%%
+                %%% GlobalSkips [measure 4] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
                 s1 * 1/8
                 
-                %%% Global Skips [measure 5] %%%
+                %%% GlobalSkips [measure 5] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/8
                 \newSpacingSection
@@ -87,19 +87,19 @@
                         }
                     }
                 
-                %%% Global Skips [measure 6] %%%
+                %%% GlobalSkips [measure 6] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
                 s1 * 1/8
                 
-                %%% Global Skips [measure 7] %%%
+                %%% GlobalSkips [measure 7] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 7/8
                 \newSpacingSection
                 s1 * 7/8
                 
-                %%% Global Skips [measure 8] %%%
+                %%% GlobalSkips [measure 8] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -126,7 +126,7 @@
                 \newSpacingSection
                 s1 * 4 \startTextSpan
                 
-                %%% Global Skips [measure 9] %%%
+                %%% GlobalSkips [measure 9] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection

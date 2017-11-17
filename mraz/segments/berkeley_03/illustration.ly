@@ -11,9 +11,9 @@
         currentBarNumber = #22
     } <<
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 22] %%%
+                %%% GlobalSkips [measure 22] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -49,23 +49,23 @@
                 \time 6/4
                 s1 * 3/2 \startTextSpan
                 
-                %%% Global Skips [measure 23] %%%
+                %%% GlobalSkips [measure 23] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 24] %%%
+                %%% GlobalSkips [measure 24] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 25] %%%
+                %%% GlobalSkips [measure 25] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 26] %%%
+                %%% GlobalSkips [measure 26] %%%
                 \time 9/8
                 s1 * 9/8
                 
-                %%% Global Skips [measure 27] %%%
+                %%% GlobalSkips [measure 27] %%%
                 \time 3/4
                 s1 * 3/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -84,7 +84,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 28] %%%
+                %%% GlobalSkips [measure 28] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -120,39 +120,39 @@
                 \time 6/4
                 s1 * 3/2 \startTextSpan
                 
-                %%% Global Skips [measure 29] %%%
+                %%% GlobalSkips [measure 29] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 30] %%%
+                %%% GlobalSkips [measure 30] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 31] %%%
+                %%% GlobalSkips [measure 31] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 32] %%%
+                %%% GlobalSkips [measure 32] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 33] %%%
+                %%% GlobalSkips [measure 33] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 34] %%%
+                %%% GlobalSkips [measure 34] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 35] %%%
+                %%% GlobalSkips [measure 35] %%%
                 \time 5/4
                 s1 * 5/4
                 
-                %%% Global Skips [measure 36] %%%
+                %%% GlobalSkips [measure 36] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 37] %%%
+                %%% GlobalSkips [measure 37] %%%
                 \time 5/4
                 s1 * 5/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -171,23 +171,23 @@
                         }
                     }
                 
-                %%% Global Skips [measure 38] %%%
+                %%% GlobalSkips [measure 38] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 39] %%%
+                %%% GlobalSkips [measure 39] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 40] %%%
+                %%% GlobalSkips [measure 40] %%%
                 \time 7/8
                 s1 * 7/8
                 
-                %%% Global Skips [measure 41] %%%
+                %%% GlobalSkips [measure 41] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 42] %%%
+                %%% GlobalSkips [measure 42] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -212,15 +212,15 @@
                 \time 2/4
                 s1 * 1/2 \startTextSpan
                 
-                %%% Global Skips [measure 43] %%%
+                %%% GlobalSkips [measure 43] %%%
                 \time 1/8
                 s1 * 1/8
                 
-                %%% Global Skips [measure 44] %%%
+                %%% GlobalSkips [measure 44] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 45] %%%
+                %%% GlobalSkips [measure 45] %%%
                 \time 4/4
                 s1 * 1 \stopTextSpan ^ \markup {
                     \fontsize
@@ -239,7 +239,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 46] %%%
+                %%% GlobalSkips [measure 46] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -275,19 +275,19 @@
                 \time 2/4
                 s1 * 1/2 \startTextSpan
                 
-                %%% Global Skips [measure 47] %%%
+                %%% GlobalSkips [measure 47] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 48] %%%
+                %%% GlobalSkips [measure 48] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 49] %%%
+                %%% GlobalSkips [measure 49] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 50] %%%
+                %%% GlobalSkips [measure 50] %%%
                 \time 2/4
                 s1 * 1/2 \stopTextSpan ^ \markup {
                     \fontsize
@@ -306,11 +306,11 @@
                         }
                     }
                 
-                %%% Global Skips [measure 51] %%%
+                %%% GlobalSkips [measure 51] %%%
                 \time 3/4
                 s1 * 3/4
                 
-                %%% Global Skips [measure 52] %%%
+                %%% GlobalSkips [measure 52] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -346,11 +346,11 @@
                 \time 2/4
                 s1 * 1/2 \startTextSpan
                 
-                %%% Global Skips [measure 53] %%%
+                %%% GlobalSkips [measure 53] %%%
                 \time 5/8
                 s1 * 5/8
                 
-                %%% Global Skips [measure 54] %%%
+                %%% GlobalSkips [measure 54] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -369,7 +369,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 55] %%%
+                %%% GlobalSkips [measure 55] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -405,19 +405,19 @@
                 \time 7/4
                 s1 * 7/4 \startTextSpan
                 
-                %%% Global Skips [measure 56] %%%
+                %%% GlobalSkips [measure 56] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 57] %%%
+                %%% GlobalSkips [measure 57] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 58] %%%
+                %%% GlobalSkips [measure 58] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 59] %%%
+                %%% GlobalSkips [measure 59] %%%
                 \time 1/4
                 s1 * 1/4 \stopTextSpan ^ \markup {
                     \fontsize
@@ -436,39 +436,39 @@
                         }
                     }
                 
-                %%% Global Skips [measure 60] %%%
+                %%% GlobalSkips [measure 60] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 61] %%%
+                %%% GlobalSkips [measure 61] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 62] %%%
+                %%% GlobalSkips [measure 62] %%%
                 \time 2/4
                 s1 * 1/2
                 
-                %%% Global Skips [measure 63] %%%
+                %%% GlobalSkips [measure 63] %%%
                 \time 1/4
                 s1 * 1/4
                 
-                %%% Global Skips [measure 64] %%%
+                %%% GlobalSkips [measure 64] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 65] %%%
+                %%% GlobalSkips [measure 65] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 66] %%%
+                %%% GlobalSkips [measure 66] %%%
                 \time 4/4
                 s1 * 1
                 
-                %%% Global Skips [measure 67] %%%
+                %%% GlobalSkips [measure 67] %%%
                 \time 6/4
                 s1 * 3/2
                 
-                %%% Global Skips [measure 68] %%%
+                %%% GlobalSkips [measure 68] %%%
                 \time 16/4
                 s1 * 4
                 
