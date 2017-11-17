@@ -58,7 +58,8 @@
                                 \clef "treble"
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                e16 [
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                e16 \ppp [
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.75)
@@ -406,7 +407,8 @@
                         %%% LHVoiceOne [measure 85] %%%
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 59/16
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        s1 * 59/16 \ppp
                         \bar "|"
                         
                     }

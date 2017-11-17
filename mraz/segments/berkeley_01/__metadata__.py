@@ -13,6 +13,33 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
+            'end_dynamics_by_context',
+            abjad.TypedOrderedDict(
+                [
+                    ('LHResonanceVoice', 'ppp'),
+                    ('LHVoiceFive', 'ppp'),
+                    ('LHVoiceFiveInserts', 'ppp'),
+                    ('LHVoiceFour', 'ppp'),
+                    ('LHVoiceFourInserts', 'ppp'),
+                    ('LHVoiceOne', 'ppp'),
+                    ('LHVoiceSix', 'ppp'),
+                    ('LHVoiceSixInserts', 'ppp'),
+                    ('LHVoiceThree', 'ppp'),
+                    ('LHVoiceTwo', 'ppp'),
+                    ('RHResonanceVoice', 'fff'),
+                    ('RHVoiceFive', 'fff'),
+                    ('RHVoiceFour', 'fff'),
+                    ('RHVoiceFourInserts', 'fff'),
+                    ('RHVoiceOneInserts', 'fff'),
+                    ('RHVoiceSix', 'fff'),
+                    ('RHVoiceThree', 'fff'),
+                    ('RHVoiceThreeInserts', 'fff'),
+                    ('RHVoiceTwo', 'fff'),
+                    ('RHVoiceTwoInserts', 'fff'),
+                    ]
+                ),
+            ),
+        (
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
                 [

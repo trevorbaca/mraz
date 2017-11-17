@@ -95,7 +95,8 @@
                         \clef "treble"
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 7/16
+                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        s1 * 7/16 \fff
                             ^ \markup {
                                 \override
                                     #'(box-padding . 0.75)
