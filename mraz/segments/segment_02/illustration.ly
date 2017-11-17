@@ -93,8 +93,8 @@
             }
         >>
         \context MusicContext = "MusicContext" {
-            \context PianoMusicStaffGroup = "PianoMusicStaff Group" <<
-                \context PianoMusicRHStaff = "Piano Music RH Staff" <<
+            \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
+                \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                     \context RHVoiceOne = "RH Voice 1" {
                         
                         %%% RH Voice 1 [measure 86] %%%
@@ -131,30 +131,30 @@
                         \bar "|"
                         
                     }
-                    \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                    \context RHVoiceOneInserts = "RHVoiceOneInserts" {
                         
-                        %%% RH Voice 1 Inserts [measure 86] %%%
+                        %%% RHVoiceOneInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 1 Inserts [measure 87] %%%
+                        %%% RHVoiceOneInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 1 Inserts [measure 88] %%%
+                        %%% RHVoiceOneInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 1 Inserts [measure 89] %%%
+                        %%% RHVoiceOneInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 1 Inserts [measure 90] %%%
+                        %%% RHVoiceOneInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceTwo = "RH Voice 2" {
+                    \context RHVoiceTwo = "RHVoiceTwo" {
                         {
                             {
                                 
-                                %%% RH Voice 2 [measure 86] %%%
+                                %%% RHVoiceTwo [measure 86] %%%
                                 \override Script.direction = #up
                                 \override Slur.direction = #up
                                 \set stemLeftBeamCount = #0
@@ -287,7 +287,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 2 [measure 87] %%%
+                                %%% RHVoiceTwo [measure 87] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d'16 -\staccato [ (
@@ -408,7 +408,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 2 [measure 88] %%%
+                                %%% RHVoiceTwo [measure 88] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 b'16 -\staccato [ (
@@ -505,7 +505,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 2 [measure 89] %%%
+                                %%% RHVoiceTwo [measure 89] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs''16 -\staccato [ (
@@ -576,7 +576,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 2 [measure 90] %%%
+                                %%% RHVoiceTwo [measure 90] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f''16 -\staccato [ (
@@ -653,338 +653,338 @@
                             }
                         }
                     }
-                    \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                    \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
                         
-                        %%% RH Voice 2 Inserts [measure 86] %%%
+                        %%% RHVoiceTwoInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 2 Inserts [measure 87] %%%
+                        %%% RHVoiceTwoInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 2 Inserts [measure 88] %%%
+                        %%% RHVoiceTwoInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 2 Inserts [measure 89] %%%
+                        %%% RHVoiceTwoInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 2 Inserts [measure 90] %%%
+                        %%% RHVoiceTwoInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceThree = "RH Voice 3" {
+                    \context RHVoiceThree = "RHVoiceThree" {
                         
-                        %%% RH Voice 3 [measure 86] %%%
+                        %%% RHVoiceThree [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 3 [measure 87] %%%
+                        %%% RHVoiceThree [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 3 [measure 88] %%%
+                        %%% RHVoiceThree [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 3 [measure 89] %%%
+                        %%% RHVoiceThree [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 3 [measure 90] %%%
+                        %%% RHVoiceThree [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                    \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
                         
-                        %%% RH Voice 3 Inserts [measure 86] %%%
+                        %%% RHVoiceThreeInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 3 Inserts [measure 87] %%%
+                        %%% RHVoiceThreeInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 3 Inserts [measure 88] %%%
+                        %%% RHVoiceThreeInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 3 Inserts [measure 89] %%%
+                        %%% RHVoiceThreeInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 3 Inserts [measure 90] %%%
+                        %%% RHVoiceThreeInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceFour = "RH Voice 4" {
+                    \context RHVoiceFour = "RHVoiceFour" {
                         
-                        %%% RH Voice 4 [measure 86] %%%
+                        %%% RHVoiceFour [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 4 [measure 87] %%%
+                        %%% RHVoiceFour [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 4 [measure 88] %%%
+                        %%% RHVoiceFour [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 4 [measure 89] %%%
+                        %%% RHVoiceFour [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 4 [measure 90] %%%
+                        %%% RHVoiceFour [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                    \context RHVoiceFourInserts = "RHVoiceFourInserts" {
                         
-                        %%% RH Voice 4 Inserts [measure 86] %%%
+                        %%% RHVoiceFourInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 4 Inserts [measure 87] %%%
+                        %%% RHVoiceFourInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 4 Inserts [measure 88] %%%
+                        %%% RHVoiceFourInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 4 Inserts [measure 89] %%%
+                        %%% RHVoiceFourInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 4 Inserts [measure 90] %%%
+                        %%% RHVoiceFourInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceFive = "RH Voice 5" {
+                    \context RHVoiceFive = "RHVoiceFive" {
                         
-                        %%% RH Voice 5 [measure 86] %%%
+                        %%% RHVoiceFive [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 5 [measure 87] %%%
+                        %%% RHVoiceFive [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 5 [measure 88] %%%
+                        %%% RHVoiceFive [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 5 [measure 89] %%%
+                        %%% RHVoiceFive [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 5 [measure 90] %%%
+                        %%% RHVoiceFive [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHVoiceSix = "RH Voice 6" {
+                    \context RHVoiceSix = "RHVoiceSix" {
                         
-                        %%% RH Voice 6 [measure 86] %%%
+                        %%% RHVoiceSix [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Voice 6 [measure 87] %%%
+                        %%% RHVoiceSix [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 6 [measure 88] %%%
+                        %%% RHVoiceSix [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 6 [measure 89] %%%
+                        %%% RHVoiceSix [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 6 [measure 90] %%%
+                        %%% RHVoiceSix [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context RHResonanceVoice = "RH Resonance Voice" {
+                    \context RHResonanceVoice = "RHResonanceVoice" {
                         
-                        %%% RH Resonance Voice [measure 86] %%%
+                        %%% RHResonanceVoice [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% RH Resonance Voice [measure 87] %%%
+                        %%% RHResonanceVoice [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Resonance Voice [measure 88] %%%
+                        %%% RHResonanceVoice [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Resonance Voice [measure 89] %%%
+                        %%% RHResonanceVoice [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Resonance Voice [measure 90] %%%
+                        %%% RHResonanceVoice [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
                 >>
-                \context PianoMusicLHStaff = "Piano Music LHStaff" <<
-                    \context LHVoiceOne = "LHVoice 1" {
+                \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
+                    \context LHVoiceOne = "LHVoiceOne" {
                         
-                        %%% LHVoice 1 [measure 86] %%%
+                        %%% LHVoiceOne [measure 86] %%%
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 29/16
                         
-                        %%% LHVoice 1 [measure 87] %%%
+                        %%% LHVoiceOne [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 1 [measure 88] %%%
+                        %%% LHVoiceOne [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 1 [measure 89] %%%
+                        %%% LHVoiceOne [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 1 [measure 90] %%%
+                        %%% LHVoiceOne [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceTwo = "LHVoice 2" {
+                    \context LHVoiceTwo = "LHVoiceTwo" {
                         
-                        %%% LHVoice 2 [measure 86] %%%
+                        %%% LHVoiceTwo [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 2 [measure 87] %%%
+                        %%% LHVoiceTwo [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 2 [measure 88] %%%
+                        %%% LHVoiceTwo [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 2 [measure 89] %%%
+                        %%% LHVoiceTwo [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 2 [measure 90] %%%
+                        %%% LHVoiceTwo [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceThree = "LHVoice 3" {
+                    \context LHVoiceThree = "LHVoiceThree" {
                         
-                        %%% LHVoice 3 [measure 86] %%%
+                        %%% LHVoiceThree [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 3 [measure 87] %%%
+                        %%% LHVoiceThree [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 3 [measure 88] %%%
+                        %%% LHVoiceThree [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 3 [measure 89] %%%
+                        %%% LHVoiceThree [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 3 [measure 90] %%%
+                        %%% LHVoiceThree [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceFour = "LHVoice 4" {
+                    \context LHVoiceFour = "LHVoiceFour" {
                         
-                        %%% LHVoice 4 [measure 86] %%%
+                        %%% LHVoiceFour [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 4 [measure 87] %%%
+                        %%% LHVoiceFour [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 4 [measure 88] %%%
+                        %%% LHVoiceFour [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 4 [measure 89] %%%
+                        %%% LHVoiceFour [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 4 [measure 90] %%%
+                        %%% LHVoiceFour [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceFourInserts = "LHVoice 4 Inserts" {
+                    \context LHVoiceFourInserts = "LHVoiceFourInserts" {
                         
-                        %%% LHVoice 4 Inserts [measure 86] %%%
+                        %%% LHVoiceFourInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 4 Inserts [measure 87] %%%
+                        %%% LHVoiceFourInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 4 Inserts [measure 88] %%%
+                        %%% LHVoiceFourInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 4 Inserts [measure 89] %%%
+                        %%% LHVoiceFourInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 4 Inserts [measure 90] %%%
+                        %%% LHVoiceFourInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceFive = "LHVoice 5" {
+                    \context LHVoiceFive = "LHVoiceFive" {
                         
-                        %%% LHVoice 5 [measure 86] %%%
+                        %%% LHVoiceFive [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 5 [measure 87] %%%
+                        %%% LHVoiceFive [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 5 [measure 88] %%%
+                        %%% LHVoiceFive [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 5 [measure 89] %%%
+                        %%% LHVoiceFive [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 5 [measure 90] %%%
+                        %%% LHVoiceFive [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceFiveInserts = "LHVoice 5 Inserts" {
+                    \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
                         
-                        %%% LHVoice 5 Inserts [measure 86] %%%
+                        %%% LHVoiceFiveInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 5 Inserts [measure 87] %%%
+                        %%% LHVoiceFiveInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 5 Inserts [measure 88] %%%
+                        %%% LHVoiceFiveInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 5 Inserts [measure 89] %%%
+                        %%% LHVoiceFiveInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 5 Inserts [measure 90] %%%
+                        %%% LHVoiceFiveInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceSix = "LHVoice 6" {
+                    \context LHVoiceSix = "LHVoiceSix" {
                         
-                        %%% LHVoice 6 [measure 86] %%%
+                        %%% LHVoiceSix [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 6 [measure 87] %%%
+                        %%% LHVoiceSix [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 6 [measure 88] %%%
+                        %%% LHVoiceSix [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 6 [measure 89] %%%
+                        %%% LHVoiceSix [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 6 [measure 90] %%%
+                        %%% LHVoiceSix [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHVoiceSixInserts = "LHVoice 6 Inserts" {
+                    \context LHVoiceSixInserts = "LHVoiceSixInserts" {
                         
-                        %%% LHVoice 6 Inserts [measure 86] %%%
+                        %%% LHVoiceSixInserts [measure 86] %%%
                         s1 * 29/16
                         
-                        %%% LHVoice 6 Inserts [measure 87] %%%
+                        %%% LHVoiceSixInserts [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% LHVoice 6 Inserts [measure 88] %%%
+                        %%% LHVoiceSixInserts [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% LHVoice 6 Inserts [measure 89] %%%
+                        %%% LHVoiceSixInserts [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% LHVoice 6 Inserts [measure 90] %%%
+                        %%% LHVoiceSixInserts [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         
                     }
-                    \context LHResonanceVoice = "LH Resonance Voice" {
+                    \context LHResonanceVoice = "LHResonanceVoice" {
                         {
                             {
                                 
-                                %%% LH Resonance Voice [measure 86] %%%
+                                %%% LHResonanceVoice [measure 86] %%%
                                 \clef "bass"
                                 <cs,, cs,>1..
                                 
@@ -994,7 +994,7 @@
                         {
                             {
                                 
-                                %%% LH Resonance Voice [measure 87] %%%
+                                %%% LHResonanceVoice [measure 87] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <cs,, cs,>1. \repeatTie
                                 
@@ -1004,7 +1004,7 @@
                         {
                             {
                                 
-                                %%% LH Resonance Voice [measure 88] %%%
+                                %%% LHResonanceVoice [measure 88] %%%
                                 <ef,, ef,>1
                                 
                                 <ef,, ef,>4 \repeatTie
@@ -1015,7 +1015,7 @@
                         {
                             {
                                 
-                                %%% LH Resonance Voice [measure 89] %%%
+                                %%% LHResonanceVoice [measure 89] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <ef,, ef,>2... \repeatTie
                             }
@@ -1023,7 +1023,7 @@
                         {
                             {
                                 
-                                %%% LH Resonance Voice [measure 90] %%%
+                                %%% LHResonanceVoice [measure 90] %%%
                                 <ef,, ef,>1 \repeatTie
                                 \bar "|"
                                 

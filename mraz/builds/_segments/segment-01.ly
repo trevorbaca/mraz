@@ -32,8 +32,8 @@
         }
     >>
     \context MusicContext = "MusicContext" {
-        \context PianoMusicStaffGroup = "PianoMusicStaff Group" <<
-            \context PianoMusicRHStaff = "Piano Music RH Staff" <<
+        \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
+            \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                 \context RHVoiceOne = "RH Voice 1" {
                     {
                         {
@@ -246,85 +246,85 @@
                         }
                     }
                 }
-                \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                \context RHVoiceOneInserts = "RHVoiceOneInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceTwo = "RH Voice 2" {
+                \context RHVoiceTwo = "RHVoiceTwo" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceThree = "RH Voice 3" {
+                \context RHVoiceThree = "RHVoiceThree" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceFour = "RH Voice 4" {
+                \context RHVoiceFour = "RHVoiceFour" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                \context RHVoiceFourInserts = "RHVoiceFourInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceFive = "RH Voice 5" {
+                \context RHVoiceFive = "RHVoiceFive" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHVoiceSix = "RH Voice 6" {
+                \context RHVoiceSix = "RHVoiceSix" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context RHResonanceVoice = "RH Resonance Voice" {
+                \context RHResonanceVoice = "RHResonanceVoice" {
                     s1 * 59/16
                     \bar "|"
                 }
             >>
-            \context PianoMusicLHStaff = "Piano Music LHStaff" <<
-                \context LHVoiceOne = "LHVoice 1" {
+            \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
+                \context LHVoiceOne = "LHVoiceOne" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceTwo = "LHVoice 2" {
+                \context LHVoiceTwo = "LHVoiceTwo" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceThree = "LHVoice 3" {
+                \context LHVoiceThree = "LHVoiceThree" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceFour = "LHVoice 4" {
+                \context LHVoiceFour = "LHVoiceFour" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceFourInserts = "LHVoice 4 Inserts" {
+                \context LHVoiceFourInserts = "LHVoiceFourInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceFive = "LHVoice 5" {
+                \context LHVoiceFive = "LHVoiceFive" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceFiveInserts = "LHVoice 5 Inserts" {
+                \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceSix = "LHVoice 6" {
+                \context LHVoiceSix = "LHVoiceSix" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHVoiceSixInserts = "LHVoice 6 Inserts" {
+                \context LHVoiceSixInserts = "LHVoiceSixInserts" {
                     s1 * 59/16
                     \bar "|"
                 }
-                \context LHResonanceVoice = "LH Resonance Voice" {
+                \context LHResonanceVoice = "LHResonanceVoice" {
                     s1 * 59/16
                     \bar "|"
                 }
