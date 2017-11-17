@@ -55,7 +55,7 @@ def music_maker():
 
             >>> abjad.f(lilypond_file[abjad.Score])
             \context Score = "Score" <<
-                \context GlobalContext = "Global Context" <<
+                \context GlobalContext = "GlobalContext" <<
                     \context GlobalSkips = "GlobalSkips" {
             <BLANKLINE>
                         %%% GlobalSkips [measure 1] %%%
@@ -171,7 +171,7 @@ def music_maker():
             \context Score = "Score" \with {
                 \override Beam.positions = #'(5 . 5)
             } <<
-                \context GlobalContext = "Global Context" <<
+                \context GlobalContext = "GlobalContext" <<
                     \context GlobalSkips = "GlobalSkips" {
             <BLANKLINE>
                         %%% GlobalSkips [measure 1] %%%
