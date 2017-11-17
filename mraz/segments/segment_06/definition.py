@@ -14,7 +14,7 @@ collections = collection_maker.make_segment_6_collections()
 #################################### [6.1] ####################################
 
 accumulator(
-    'RH Voice 3',
+    'RHVoiceThree',
     collections['stage 1']['rh'].next(2),
     baca.dynamic('pp'),
     baca.flags(),
@@ -30,7 +30,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 3',
+    'RHVoiceThree',
     collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
@@ -44,7 +44,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 3',
+    'RHVoiceThree',
     collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
@@ -57,7 +57,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 3',
+    'RHVoiceThree',
     collections['stage 1']['rh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 24),
@@ -70,10 +70,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 4',
+    'LHVoiceFour',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RH Voice 3',
+        'RHVoiceThree',
         baca.note(3),
         baca.note(2),
         ),
@@ -87,10 +87,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 4',
+    'LHVoiceFour',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RH Voice 3',
+        'RHVoiceThree',
         baca.note(9),
         baca.note(2),
         ),
@@ -103,10 +103,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 4',
+    'LHVoiceFour',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RH Voice 3',
+        'RHVoiceThree',
         baca.note(13),
         baca.note(1),
         ),
@@ -120,7 +120,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 4',
+    'LHVoiceFour',
     collections['stage 1']['lh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 0),
@@ -176,9 +176,9 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RH Voice 3', 1, Infinity),
+    baca.scope('RHVoiceThree', 1, Infinity),
     )
 
 maker(
-    baca.scope('LHVoice 4', 1, Infinity),
+    baca.scope('LHVoiceFour', 1, Infinity),
     )

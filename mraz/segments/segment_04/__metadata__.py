@@ -7,8 +7,8 @@ metadata = abjad.TypedOrderedDict(
             'end_clefs_by_staff',
             abjad.TypedOrderedDict(
                 [
-                    ('Piano Music LHStaff', 'bass'),
-                    ('Piano Music RH Staff', 'treble'),
+                    ('PianoMusicLHStaff', 'bass'),
+                    ('PianoMusicRHStaff', 'treble'),
                     ]
                 ),
             ),
@@ -16,7 +16,7 @@ metadata = abjad.TypedOrderedDict(
             'end_instruments_by_context',
             abjad.TypedOrderedDict(
                 [
-                    ('PianoMusicStaff Group', 'piano'),
+                    ('PianoMusicStaffGroup', 'piano'),
                     ]
                 ),
             ),

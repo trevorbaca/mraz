@@ -14,7 +14,7 @@ collections = collection_maker.make_segment_8_collections()
 #################################### [8.3] ####################################
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.dynamic('ppp'),
     baca.flags(),
@@ -26,7 +26,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(2),
     baca.flags(),
     baca.register(-39, -27),
@@ -38,7 +38,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
@@ -49,7 +49,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
@@ -60,7 +60,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39, -27),
@@ -70,7 +70,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39, -27),
@@ -81,7 +81,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
@@ -93,7 +93,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
@@ -103,7 +103,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(2),
     baca.flags(),
     baca.register(-39, -27),
@@ -114,7 +114,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-39),
@@ -126,7 +126,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(),
     baca.flags(),
     baca.register(-27, -39),
@@ -136,7 +136,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 5',
+    'LHVoiceFive',
     collections['stage 3']['rh'].next(exhausted=True),
     baca.flags(),
     baca.register(-39, -27),
@@ -147,10 +147,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.note(6),
         baca.note(1),
         ),
@@ -164,10 +164,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.note(11),
         ),
     baca.flags(),
@@ -180,10 +180,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.note(23),
         baca.note(-1),
         ),
@@ -196,10 +196,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.note(27),
         baca.note(1),
         ),
@@ -212,10 +212,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.rest(33),
         baca.note(-1),
         ),
@@ -228,10 +228,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoice 6',
+    'LHVoiceSix',
     collections['stage 3']['lh'].next(exhausted=True),
     baca.anchor(
-        'LHVoice 5',
+        'LHVoiceFive',
         baca.note(34),
         baca.note(1),
         ),
@@ -288,7 +288,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('LHVoice 5', 1, Infinity),
+    baca.scope('LHVoiceFive', 1, Infinity),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
     baca.clef('bass'),
@@ -297,7 +297,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoice 6', 1, Infinity),
+    baca.scope('LHVoiceSix', 1, Infinity),
     #abjad.label().with_pitches(),
     baca.scripts_down(),
     baca.stems_down(),

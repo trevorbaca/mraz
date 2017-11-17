@@ -14,7 +14,7 @@ collections = collection_maker.make_segment_2_collections()
 #################################### [2.2] ####################################
 
 accumulator(
-    'RH Voice 2',
+    'RHVoiceTwo',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -24,7 +24,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 2',
+    'RHVoiceTwo',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.map(baca.slur(), baca.tuplets()),
@@ -33,7 +33,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 2',
+    'RHVoiceTwo',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.map(baca.slur(), baca.tuplets()),
@@ -42,7 +42,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 2',
+    'RHVoiceTwo',
     collections['stage 2']['rh'].next(),
     baca.bass_to_octave(5),
     baca.map(baca.slur(), baca.tuplets()),
@@ -51,7 +51,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 2',
+    'RHVoiceTwo',
     collections['stage 2']['rh'].next(exhausted=True),
     baca.bass_to_octave(5),
     baca.map(baca.slur(), baca.tuplets()),
@@ -62,9 +62,9 @@ accumulator(
 ### LH RESONANCE ###
 
 accumulator(
-    'LH Resonance Voice',
+    'LHResonanceVoice',
     [{-35, -23}],
-    baca.anchor('RH Voice 2', baca.note(0)),
+    baca.anchor('RHVoiceTwo', baca.note(0)),
     baca.flags(),
     color_unregistered_pitches=False,
     counts=[29],
@@ -72,7 +72,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Resonance Voice',
+    'LHResonanceVoice',
     [{-35, -23}],
     baca.flags(),
     color_unregistered_pitches=False,
@@ -82,7 +82,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Resonance Voice',
+    'LHResonanceVoice',
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
@@ -92,7 +92,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Resonance Voice',
+    'LHResonanceVoice',
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
@@ -102,7 +102,7 @@ accumulator(
     )
 
 accumulator(
-    'LH Resonance Voice',
+    'LHResonanceVoice',
     [{-33, -21}],
     baca.flags(),
     color_unregistered_pitches=False,
@@ -157,22 +157,22 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RH Voice 2', 1, Infinity),
+    baca.scope('RHVoiceTwo', 1, Infinity),
     baca.scripts_up(),
     baca.slurs_up(),
     )
 
 maker(
-    baca.scope('LH Resonance Voice', 1, Infinity),
+    baca.scope('LHResonanceVoice', 1, Infinity),
     baca.clef('bass'),
     )
 
 maker(
-    baca.scope('LH Resonance Voice', 1, 2),
+    baca.scope('LHResonanceVoice', 1, 2),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
 maker(
-    baca.scope('LH Resonance Voice', 3, 5),
+    baca.scope('LHResonanceVoice', 3, 5),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

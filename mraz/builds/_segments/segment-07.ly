@@ -143,8 +143,8 @@
         }
     >>
     \context MusicContext = "MusicContext" {
-        \context PianoMusicStaffGroup = "PianoMusicStaff Group" <<
-            \context PianoMusicRHStaff = "Piano Music RH Staff" <<
+        \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
+            \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                 \context RHVoiceOne = "RH Voice 1" {
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -331,7 +331,7 @@
                     \revert Beam.positions
                     \revert Stem.direction
                 }
-                \context RHVoiceOneInserts = "RH Voice 1 Inserts" {
+                \context RHVoiceOneInserts = "RHVoiceOneInserts" {
                     {
                         \override TupletBracket.stencil = ##f
                         \override TupletNumber.stencil = ##f
@@ -476,7 +476,7 @@
                     \bar "|."
                     \revert Script.direction
                 }
-                \context RHVoiceTwo = "RH Voice 2" {
+                \context RHVoiceTwo = "RHVoiceTwo" {
                     \override Beam.positions = #'(-4.5 . -4.5)
                     \dynamicDown
                     \override Slur.direction = #up
@@ -658,7 +658,7 @@
                         }
                     }
                 }
-                \context RHVoiceTwoInserts = "RH Voice 2 Inserts" {
+                \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
                     \override Beam.positions = #'(15.5 . 15.5)
                     \override Script.direction = #up
                     \override Stem.direction = #up
@@ -815,7 +815,7 @@
                         \revert TupletNumber.stencil
                     }
                 }
-                \context RHVoiceThree = "RH Voice 3" {
+                \context RHVoiceThree = "RHVoiceThree" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -829,7 +829,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHVoiceThreeInserts = "RH Voice 3 Inserts" {
+                \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -843,7 +843,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHVoiceFour = "RH Voice 4" {
+                \context RHVoiceFour = "RHVoiceFour" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -857,7 +857,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHVoiceFourInserts = "RH Voice 4 Inserts" {
+                \context RHVoiceFourInserts = "RHVoiceFourInserts" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -871,7 +871,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHVoiceFive = "RH Voice 5" {
+                \context RHVoiceFive = "RHVoiceFive" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -885,7 +885,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHVoiceSix = "RH Voice 6" {
+                \context RHVoiceSix = "RHVoiceSix" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -899,7 +899,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context RHResonanceVoice = "RH Resonance Voice" {
+                \context RHResonanceVoice = "RHResonanceVoice" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -914,8 +914,8 @@
                     \bar "|."
                 }
             >>
-            \context PianoMusicLHStaff = "Piano Music LHStaff" <<
-                \context LHVoiceOne = "LHVoice 1" {
+            \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
+                \context LHVoiceOne = "LHVoiceOne" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -929,7 +929,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context LHVoiceTwo = "LHVoice 2" {
+                \context LHVoiceTwo = "LHVoiceTwo" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -943,7 +943,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context LHVoiceThree = "LHVoice 3" {
+                \context LHVoiceThree = "LHVoiceThree" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -957,7 +957,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context LHVoiceFour = "LHVoice 4" {
+                \context LHVoiceFour = "LHVoiceFour" {
                     \override Beam.positions = #'(-5.5 . -5.5)
                     \override Script.direction = #down
                     \override Stem.direction = #down
@@ -1048,7 +1048,7 @@
                     \revert Script.direction
                     \revert Stem.direction
                 }
-                \context LHVoiceFourInserts = "LHVoice 4 Inserts" {
+                \context LHVoiceFourInserts = "LHVoiceFourInserts" {
                     \override Script.direction = #up
                     \override Stem.direction = #up
                     s1 * 3/8
@@ -1107,7 +1107,7 @@
                     \revert Script.direction
                     \revert Stem.direction
                 }
-                \context LHVoiceFive = "LHVoice 5" {
+                \context LHVoiceFive = "LHVoiceFive" {
                     \override Beam.positions = #'(-6 . -6)
                     \override Script.direction = #down
                     \override Stem.direction = #down
@@ -1243,7 +1243,7 @@
                     \revert Script.direction
                     \revert Stem.direction
                 }
-                \context LHVoiceFiveInserts = "LHVoice 5 Inserts" {
+                \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
                     \override Script.direction = #up
                     \override Stem.direction = #up
                     \override Beam.positions = #'(9 . 9)
@@ -1335,7 +1335,7 @@
                     \revert Stem.direction
                     \revert Beam.positions
                 }
-                \context LHVoiceSix = "LHVoice 6" {
+                \context LHVoiceSix = "LHVoiceSix" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -1349,7 +1349,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context LHVoiceSixInserts = "LHVoice 6 Inserts" {
+                \context LHVoiceSixInserts = "LHVoiceSixInserts" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
@@ -1363,7 +1363,7 @@
                     s1 * 1/8
                     \bar "|."
                 }
-                \context LHResonanceVoice = "LH Resonance Voice" {
+                \context LHResonanceVoice = "LHResonanceVoice" {
                     s1 * 3/4
                     s1 * 1/4
                     s1 * 3/8
