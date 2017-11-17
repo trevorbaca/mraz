@@ -2,7 +2,7 @@
     currentBarNumber = #1
 } <<
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 4/4
                 R1 * 1
@@ -40,7 +40,7 @@
                 R1 * 1/8
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 4/4
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
