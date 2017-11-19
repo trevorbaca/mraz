@@ -17,7 +17,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
-                s1 * 1/2 ^ \markup {
+                s1 * 1/2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -44,7 +45,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 5/16
                 \newSpacingSection
-                s1 * 5/16 ^ \markup {
+                s1 * 5/16
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -71,7 +73,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
-                s1 * 1/2 ^ \markup {
+                s1 * 1/2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -92,7 +95,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 5/8
                 \newSpacingSection
-                s1 * 5/8 ^ \markup {
+                s1 * 5/8
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -163,7 +167,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 7/4
                 \newSpacingSection
-                s1 * 7/4 \startTextSpan
+                s1 * 7/4
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 20] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -175,7 +180,9 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/4
                 \newSpacingSection
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -212,19 +219,21 @@
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 41/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to piano"
+                            }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 19] %%%
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                ef''''1.. -\tenuto \f
+                                ef''''1..
+                                -\tenuto
+                                \f
                             }
                         }
                         {
@@ -232,14 +241,16 @@
                                 
                                 %%% RH Voice 1 [measure 20] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                f''''1. -\tenuto
+                                f''''1.
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 21] %%%
-                                bf''''1 -\tenuto
+                                bf''''1
+                                -\tenuto
                                 \bar "|"
                                 \ottava #0
                                 
@@ -299,7 +310,8 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\shortfermata
+                                r8
+                                -\shortfermata
                             }
                         }
                         {
@@ -308,23 +320,33 @@
                                 %%% RHVoiceTwo [measure 12] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs16 -\staccato \ppp [ (
+                                fs16
+                                -\staccato
+                                \ppp
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                c'16 -\staccato
+                                c'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                e'16 -\staccato
+                                e'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                f'16 -\staccato
+                                f'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                af'16 -\staccato ] )
+                                af'16
+                                -\staccato
+                                ]
+                                )
                             }
                         }
                         {
@@ -335,7 +357,8 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\fermata
+                                r8
+                                -\fermata
                             }
                         }
                         
@@ -347,45 +370,62 @@
                                 %%% RHVoiceTwo [measure 15] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs16 -\staccato \ppp [ (
+                                fs16
+                                -\staccato
+                                \ppp
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                c'16 -\staccato
+                                c'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                e'16 -\staccato
+                                e'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                f'16 -\staccato
+                                f'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                af'16 -\staccato )
+                                af'16
+                                -\staccato
+                                )
                             }
                             {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                bf16 -\staccato (
+                                bf16
+                                -\staccato
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                ef'16 -\staccato
+                                ef'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                b'16 -\staccato
+                                b'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                g''16 -\staccato
+                                g''16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                a''16 -\staccato ] )
+                                a''16
+                                -\staccato
+                                ]
+                                )
                             }
                         }
                         {
@@ -396,7 +436,8 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\shortfermata
+                                r8
+                                -\shortfermata
                             }
                         }
                         
@@ -408,93 +449,125 @@
                                 %%% RHVoiceTwo [measure 18] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs16 -\staccato \ppp [ (
+                                fs16
+                                -\staccato
+                                \ppp
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                c'16 -\staccato
+                                c'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                e'16 -\staccato
+                                e'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                f'16 -\staccato
+                                f'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                af'16 -\staccato )
+                                af'16
+                                -\staccato
+                                )
                             }
                             {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                bf16 -\staccato (
+                                bf16
+                                -\staccato
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                ef'16 -\staccato
+                                ef'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                b'16 -\staccato
+                                b'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                g''16 -\staccato
+                                g''16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                a''16 -\staccato )
+                                a''16
+                                -\staccato
+                                )
                             }
                             {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                d16 -\staccato (
+                                d16
+                                -\staccato
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                cs'16 -\staccato
+                                cs'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                af'16 -\staccato
+                                af'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                bf'16 -\staccato
+                                bf'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                ef''16 -\staccato
+                                ef''16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                f''16 -\staccato )
+                                f''16
+                                -\staccato
+                                )
                             }
                             {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                a16 -\staccato (
+                                a16
+                                -\staccato
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                b16 -\staccato
+                                b16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                g'16 -\staccato
+                                g'16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                fs''16 -\staccato
+                                fs''16
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                c'''16 -\staccato ] )
+                                c'''16
+                                -\staccato
+                                ]
+                                )
                             }
                         }
                         
@@ -510,7 +583,11 @@
                                 \set stemRightBeamCount = #2
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                b'16 [ \< \f (
+                                b'16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -588,7 +665,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                cs''''16 ] \ff )
+                                cs''''16
+                                ]
+                                \ff
+                                )
                                 \bar "|"
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
@@ -648,7 +728,8 @@
                                 %%% RHVoiceThree [measure 17] %%%
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                ef8 \ff
+                                ef8
+                                \ff
                                 
                                 r4
                                 
@@ -718,7 +799,9 @@
                                 %%% RHVoiceFour [measure 10] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                d''16 \ff [
+                                d''16
+                                \ff
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -742,7 +825,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                             }
                         }
                         
@@ -755,7 +839,9 @@
                                 %%% RHVoiceFour [measure 14] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                d''16 \p [
+                                d''16
+                                \p
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -779,7 +865,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                             }
                         }
                         
@@ -976,7 +1063,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 1/2 \ppp
+                        s1 * 1/2
+                        \ppp
                         
                         %%% LHVoiceOne [measure 11] %%%
                         s1 * 1/8
@@ -1157,15 +1245,19 @@
                                 %%% LHVoiceFive [measure 17] %%%
                                 r2.
                                 
-                                af8. -\tenuto \f
+                                af8.
+                                -\tenuto
+                                \f
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                             }
@@ -1309,17 +1401,22 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 11] %%%
-                                <e, fs, gs, as, b,>4 \repeatTie
+                                <e, fs, gs, as, b,>4
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
-                                <e, fs, gs, as, b,>4 \repeatTie
+                                <e, fs, gs, as, b,>4
+                                \repeatTie
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>16 \repeatTie [ ]
+                                <e, fs, gs, as, b,>16
+                                \repeatTie
+                                [
+                                ]
                             }
                         }
                         {
@@ -1327,25 +1424,31 @@
                                 
                                 %%% LHResonanceVoice [measure 14] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                <e, fs, gs, as, b,>2 \repeatTie
+                                <e, fs, gs, as, b,>2
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 15] %%%
-                                <e, fs, gs, as, b,>2 \repeatTie
+                                <e, fs, gs, as, b,>2
+                                \repeatTie
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>8 \repeatTie [ ]
+                                <e, fs, gs, as, b,>8
+                                \repeatTie
+                                [
+                                ]
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 16] %%%
-                                <e, fs, gs, as, b,>8 \repeatTie
+                                <e, fs, gs, as, b,>8
+                                \repeatTie
                             }
                         }
                         
@@ -1357,11 +1460,15 @@
                                 %%% LHResonanceVoice [measure 18] %%%
                                 <e, fs, gs, as, b,>1
                                 
-                                <e, fs, gs, as, b,>4 \repeatTie
+                                <e, fs, gs, as, b,>4
+                                \repeatTie
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                <e, fs, gs, as, b,>16 \repeatTie [ ]
+                                <e, fs, gs, as, b,>16
+                                \repeatTie
+                                [
+                                ]
                             }
                         }
                         {
@@ -1369,14 +1476,16 @@
                                 
                                 %%% LHResonanceVoice [measure 19] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                <e, fs, gs, as, b,>1.. \repeatTie
+                                <e, fs, gs, as, b,>1..
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 20] %%%
-                                <e, fs, gs, as, b,>1. \repeatTie
+                                <e, fs, gs, as, b,>1.
+                                \repeatTie
                             }
                         }
                         

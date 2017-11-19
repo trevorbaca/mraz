@@ -47,7 +47,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 6/4
-                s1 * 3/2 \startTextSpan
+                s1 * 3/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 23] %%%
                 \time 1/4
@@ -67,7 +68,9 @@
                 
                 %%% GlobalSkips [measure 27] %%%
                 \time 3/4
-                s1 * 3/4 \stopTextSpan ^ \markup {
+                s1 * 3/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -118,7 +121,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 6/4
-                s1 * 3/2 \startTextSpan
+                s1 * 3/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 29] %%%
                 \time 3/4
@@ -154,7 +158,9 @@
                 
                 %%% GlobalSkips [measure 37] %%%
                 \time 5/4
-                s1 * 5/4 \stopTextSpan ^ \markup {
+                s1 * 5/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -210,7 +216,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/4
-                s1 * 1/2 \startTextSpan
+                s1 * 1/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 43] %%%
                 \time 1/8
@@ -222,7 +229,9 @@
                 
                 %%% GlobalSkips [measure 45] %%%
                 \time 4/4
-                s1 * 1 \stopTextSpan ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -273,7 +282,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/4
-                s1 * 1/2 \startTextSpan
+                s1 * 1/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 47] %%%
                 \time 4/4
@@ -289,7 +299,9 @@
                 
                 %%% GlobalSkips [measure 50] %%%
                 \time 2/4
-                s1 * 1/2 \stopTextSpan ^ \markup {
+                s1 * 1/2
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -344,7 +356,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 2/4
-                s1 * 1/2 \startTextSpan
+                s1 * 1/2
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 53] %%%
                 \time 5/8
@@ -352,7 +365,9 @@
                 
                 %%% GlobalSkips [measure 54] %%%
                 \time 1/4
-                s1 * 1/4 \stopTextSpan ^ \markup {
+                s1 * 1/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -403,7 +418,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/4
-                s1 * 7/4 \startTextSpan
+                s1 * 7/4
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 56] %%%
                 \time 6/4
@@ -419,7 +435,9 @@
                 
                 %%% GlobalSkips [measure 59] %%%
                 \time 1/4
-                s1 * 1/4 \stopTextSpan ^ \markup {
+                s1 * 1/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -494,12 +512,12 @@
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 143/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to piano"
+                            }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
@@ -513,14 +531,19 @@
                                 \once \override TextScript.color = #black
                                 \override Stem.direction = #up
                                 \ottava #1
-                                d''''8 \mf [ (
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(ottava brackets always govern all voices on staff)"
-                                        }
+                                d''''8
+                                \mf
+                                [
+                                (
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(ottava brackets always govern all voices on staff)"
+                                    }
                                 
-                                af''''8 ] )
+                                af''''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -530,9 +553,13 @@
                                 
                                 s8
                                 
-                                b'''8 [ (
+                                b'''8
+                                [
+                                (
                                 
-                                e'''8 ] )
+                                e'''8
+                                ]
+                                )
                                 
                                 r4.
                                 \revert TextScript.direction
@@ -553,7 +580,8 @@
                                 \once \override Script.extra-offset = #'(0.5 . 0)
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
-                                r8 -\fermata
+                                r8
+                                -\fermata
                             }
                         }
                         
@@ -570,11 +598,15 @@
                                 
                                 s8
                                 
-                                c''''8 [ (
+                                c''''8
+                                [
+                                (
                                 
                                 g'''8
                                 
-                                cs''''8 ] )
+                                cs''''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -589,21 +621,29 @@
                             \times 19/14 {
                                 
                                 %%% RH Voice 1 [measure 49] %%%
-                                ef''''8 [ (
+                                ef''''8
+                                [
+                                (
                                 
                                 af''''8
                                 
-                                d''''8 ] )
+                                d''''8
+                                ]
+                                )
                                 
                                 s8
                                 
                                 s8
                                 
-                                e''''8 [ (
+                                e''''8
+                                [
+                                (
                                 
                                 b'''8
                                 
-                                f'''8 ] )
+                                f'''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -613,9 +653,13 @@
                                 
                                 s8
                                 
-                                fs'''8 [ (
+                                fs'''8
+                                [
+                                (
                                 
-                                cs'''8 ] )
+                                cs'''8
+                                ]
+                                )
                             }
                         }
                         
@@ -625,7 +669,9 @@
                             {
                                 
                                 %%% RH Voice 1 [measure 55] %%%
-                                ef''''1.. -\tenuto \f
+                                ef''''1..
+                                -\tenuto
+                                \f
                                 \ottava #0
                             }
                         }
@@ -633,7 +679,8 @@
                             {
                                 
                                 %%% RH Voice 1 [measure 56] %%%
-                                f''''1. -\tenuto
+                                f''''1.
+                                -\tenuto
                             }
                         }
                         {
@@ -641,14 +688,16 @@
                                 
                                 %%% RH Voice 1 [measure 57] %%%
                                 \ottava #1
-                                bf''''1 -\tenuto
+                                bf''''1
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 58] %%%
-                                ef''''1 -\tenuto
+                                ef''''1
+                                -\tenuto
                             }
                         }
                         
@@ -658,14 +707,16 @@
                             {
                                 
                                 %%% RH Voice 1 [measure 61] %%%
-                                f''''1 -\tenuto
+                                f''''1
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 62] %%%
-                                bf''''2 -\tenuto
+                                bf''''2
+                                -\tenuto
                                 \revert Stem.direction
                                 \ottava #0
                             }
@@ -845,7 +896,10 @@
                                 \once \override Script.direction = #up
                                 \arpeggioArrowUp
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <a g' af' b' cs'' f'' ef''' c''''>2. -\marcato \arpeggio \ff
+                                <a g' af' b' cs'' f'' ef''' c''''>2.
+                                -\marcato
+                                \arpeggio
+                                \ff
                             }
                         }
                         
@@ -858,7 +912,8 @@
                             \times 5/4 {
                                 
                                 %%% RHVoiceTwo [measure 40] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 s8
                                 
@@ -866,23 +921,28 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                ef'''8 -\staccato \mp
+                                ef'''8
+                                -\staccato
+                                \mp
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                d'''8 -\staccato
+                                d'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                f''''8 -\staccato
+                                f''''8
+                                -\staccato
                                 
                                 s8
                                 
                                 s8
                                 
-                                s4. ]
+                                s4.
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -897,15 +957,18 @@
                             \times 6/4 {
                                 
                                 %%% RHVoiceTwo [measure 45] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                f'''8 -\staccato
+                                f'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                fs'''8 -\staccato
+                                fs'''8
+                                -\staccato
                                 
                                 s8
                                 
@@ -915,9 +978,11 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                fs''''8 -\staccato
+                                fs''''8
+                                -\staccato
                                 
-                                s8 ]
+                                s8
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -932,7 +997,8 @@
                             \times 19/14 {
                                 
                                 %%% RHVoiceTwo [measure 49] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 s8
                                 
@@ -940,35 +1006,41 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                a'''8 -\staccato
+                                a'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                bf'''8 -\staccato
+                                bf'''8
+                                -\staccato
                                 
                                 s8
                                 
                                 s8
-                                
-                                s8
-                                
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                bf'''8 -\staccato
-                                
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                cs''''8 -\staccato
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                c''''8 -\staccato
+                                bf'''8
+                                -\staccato
+                                
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                cs''''8
+                                -\staccato
                                 
                                 s8
                                 
-                                s8 ]
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                c''''8
+                                -\staccato
+                                
+                                s8
+                                
+                                s8
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -985,7 +1057,11 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                b'16 [ \< \f (
+                                b'16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1063,7 +1139,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                cs''''16 ] \ff )
+                                cs''''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                             }
@@ -1078,7 +1157,11 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                ef''16 [ \< \f (
+                                ef''16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1152,7 +1235,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                bf'''16 ] \ff )
+                                bf'''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
@@ -1181,9 +1267,11 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <a g' af' b' cs'' f'' ef''' c''''>1. -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <a g' af' b' cs'' f'' ef''' c''''>1.
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1201,9 +1289,13 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                cs''16 [ \< \f (
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                cs''16
+                                [
+                                \<
+                                \f
+                                (
+                                - \tweak color #red
+                                ^ \markup { @ }
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1289,7 +1381,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                f''''16 ] \ff )
+                                f''''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
@@ -1304,7 +1399,11 @@
                                 \override TextScript.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                a''16 [ \< \f (
+                                a''16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1334,7 +1433,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                fs''''16 ] \ff )
+                                fs''''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
@@ -1363,9 +1465,12 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 -\marcato \arpeggio \ff
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <f'' ef''' c'''' e'''' fs'''' bf''''>1
+                                -\marcato
+                                \arpeggio
+                                \ff
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1378,9 +1483,11 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                <a g' af' b' cs'' f'' ef''' c''''>1 -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <a g' af' b' cs'' f'' ef''' c''''>1
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1393,9 +1500,11 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                <e' fs' bf' a'' g''' af''' b''' cs''''>1 -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <e' fs' bf' a'' g''' af''' b''' cs''''>1
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         
@@ -1409,20 +1518,25 @@
                                 \override TextScript.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                                 \dynamicUp
-                                c'''8 -\accent \fff
+                                c'''8
+                                -\accent
+                                \fff
                                 
                                 \override Rest.direction = #up
                                 r2..
                                 
-                                d'''8 -\accent
+                                d'''8
+                                -\accent
                                 
                                 r2..
                                 
-                                ef''''8 -\accent
+                                ef''''8
+                                -\accent
                                 
                                 r2..
                                 
-                                f''''8 -\accent
+                                f''''8
+                                -\accent
                                 
                                 r2..
                                 \bar "|"
@@ -1587,17 +1701,22 @@
                                 \override TextScript.direction = #up
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                ef8 -\tenuto \ff
+                                ef8
+                                -\tenuto
+                                \ff
                                 
                                 r4
                                 
-                                cs'8 -\tenuto
+                                cs'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'4 -\tenuto
+                                c'4
+                                -\tenuto
                                 
-                                bf'8 -\tenuto
+                                bf'8
+                                -\tenuto
                                 
                                 r4
                                 \revert TextScript.direction
@@ -1616,19 +1735,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 r4
                                 
-                                ef''8 -\tenuto
+                                ef''8
+                                -\tenuto
                                 
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'8 -\tenuto
+                                c'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                bf4 -\tenuto
+                                bf4
+                                -\tenuto
                                 \revert TupletBracket.direction
                             }
                         }
@@ -1650,17 +1773,21 @@
                                 %%% RHVoiceThree [measure 28] %%%
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                ef'8 -\tenuto
+                                ef'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                cs'8 -\tenuto
+                                cs'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'4 -\tenuto
+                                c'4
+                                -\tenuto
                                 
-                                bf8 -\tenuto
+                                bf8
+                                -\tenuto
                                 
                                 r4
                                 \revert TupletBracket.direction
@@ -1683,13 +1810,21 @@
                                 %%% RHVoiceThree [measure 44] %%%
                                 \override TupletBracket.direction = #down
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                af'''8 -\tenuto [ (
+                                af'''8
+                                -\tenuto
+                                [
+                                (
                                 
-                                ef'''8 -\tenuto
+                                ef'''8
+                                -\tenuto
                                 
-                                f'''8 -\tenuto
+                                f'''8
+                                -\tenuto
                                 
-                                fs'''8 -\tenuto ] )
+                                fs'''8
+                                -\tenuto
+                                ]
+                                )
                                 \revert TupletBracket.direction
                             }
                         }
@@ -1706,24 +1841,29 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
                                 
-                                ef''8 -\tenuto \mp
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(memory of before)"
-                                        }
+                                ef''8
+                                -\tenuto
+                                \mp
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(memory of before)"
+                                    }
                                 
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'8 -\tenuto
+                                c'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                bf4 -\tenuto
+                                bf4
+                                -\tenuto
                                 \revert TextScript.direction
                                 \revert TupletBracket.direction
                             }
@@ -1735,24 +1875,30 @@
                                 %%% RHVoiceThree [measure 68] %%%
                                 \override TupletBracket.direction = #down
                                 \ottava #1
-                                a''4 -\tenuto \mf
+                                a''4
+                                -\tenuto
+                                \mf
                                 
                                 \override Rest.direction = #down
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                b''4 -\tenuto
+                                b''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                af''4 -\tenuto
+                                af''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                g'''4 -\tenuto
+                                g'''4
+                                -\tenuto
                                 \ottava #0
                                 
                                 r4
@@ -2515,7 +2661,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 3/2 \f
+                        s1 * 3/2
+                        \f
                         
                         %%% LHVoiceOne [measure 23] %%%
                         s1 * 1/4
@@ -2668,14 +2815,18 @@
                                 \override Staff.SustainPedalLineSpanner.staff-padding = #4
                                 \override Rest.transparent = ##t
                                 \set Staff.pedalSustainStyle = #'bracket
-                                r1 \sustainOn
+                                r1
+                                \sustainOn
                                 
                                 %%% LHVoiceTwo [measure 65] %%%
                                 \set Staff.pedalSustainStyle = #'bracket
-                                r1 \sustainOff \sustainOn
+                                r1
+                                \sustainOff
+                                \sustainOn
                                 
                                 %%% LHVoiceTwo [measure 66] %%%
-                                r1 \sustainOff
+                                r1
+                                \sustainOff
                                 \revert Staff.SustainPedalLineSpanner.staff-padding
                                 \revert Rest.transparent
                             }
@@ -2841,7 +2992,9 @@
                                 %%% LHVoiceFour [measure 26] %%%
                                 \override Slur.direction = #down
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                b'8. \p (
+                                b'8.
+                                \p
+                                (
                                 
                                 r8.
                                 
@@ -2849,7 +3002,8 @@
                                 
                                 r8.
                                 
-                                cs8. )
+                                cs8.
+                                )
                                 
                                 r8.
                                 \revert Slur.direction
@@ -3016,15 +3170,19 @@
                                 \dynamicDown
                                 r2.
                                 
-                                af8. -\tenuto \f
+                                af8.
+                                -\tenuto
+                                \f
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                             }
@@ -3047,17 +3205,20 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 r4
                                 
-                                af8. -\tenuto
+                                af8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
                                 r4
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                                 
@@ -3074,7 +3235,9 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato \ff
+                                <g b f' fs' a'>8.
+                                -\marcato
+                                \ff
                                 
                                 r2
                                 \break
@@ -3090,17 +3253,24 @@
                                 
                                 r4
                                 
-                                af8. -\marcato -\tenuto \f
+                                af8.
+                                -\marcato
+                                -\tenuto
+                                \f
                                 
                                 r16
                                 
                                 r4
                                 
-                                d'8. -\marcato -\tenuto
+                                d'8.
+                                -\marcato
+                                -\tenuto
                                 
                                 r16
                                 
-                                e'8. -\marcato -\tenuto
+                                e'8.
+                                -\marcato
+                                -\tenuto
                                 
                                 r16
                             }
@@ -3120,7 +3290,9 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato \ff
+                                <g b f' fs' a'>8.
+                                -\marcato
+                                \ff
                                 
                                 r2
                             }
@@ -3129,7 +3301,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 31] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3145,7 +3318,8 @@
                                     \override TupletBracket.direction = #up
                                     r16
                                     
-                                    <g b f' fs' a'>8. -\marcato
+                                    <g b f' fs' a'>8.
+                                    -\marcato
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -3156,7 +3330,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 33] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3169,7 +3344,8 @@
                                 %%% LHVoiceFive [measure 34] %%%
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato
+                                <g b f' fs' a'>8.
+                                -\marcato
                                 
                                 r2
                             }
@@ -3178,7 +3354,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 35] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3194,7 +3371,8 @@
                                     \override TupletBracket.direction = #up
                                     r16
                                     
-                                    <g b f' fs' a'>8. -\marcato
+                                    <g b f' fs' a'>8.
+                                    -\marcato
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -3237,7 +3415,8 @@
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
                                 \crossStaff
-                                <g, e f af>16 \mp
+                                <g, e f af>16
+                                \mp
                                 
                                 r8.
                             }
@@ -3252,13 +3431,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c bf>8 [ (
+                                    <c bf>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 ] )
+                                    <d' f'>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3293,7 +3476,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <bf'>8 [ (
+                                    <bf'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
@@ -3305,7 +3490,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <e af>8 ] )
+                                    <e af>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3328,7 +3515,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c f bf>8 [ (
+                                    <c f bf>8
+                                    [
+                                    (
                                 }
                                 {
                                     
@@ -3340,7 +3529,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <bf c'>8 ] )
+                                    <bf c'>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3356,13 +3547,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 [ (
+                                    <d' f'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <af c' e'>8 ] )
+                                    <af c' e'>8
+                                    ]
+                                    )
                                     
                                     r8
                                 }
@@ -3396,13 +3591,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 [ (
+                                    <d' f'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <af e'>8 ] )
+                                    <af e'>8
+                                    ]
+                                    )
                                     
                                     r8
                                 }
@@ -3437,17 +3636,21 @@
                                 %%% LHVoiceFive [measure 67] %%%
                                 r4
                                 
-                                af8. -\tenuto \p
+                                af8.
+                                -\tenuto
+                                \p
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
                                 r4
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                                 
@@ -3474,12 +3677,14 @@
                                 {
                                     
                                     %%% LHVoiceFiveInserts [measure 45] %%%
-                                    s4 [
+                                    s4
+                                    [
                                     
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    bf'8 -\staccato
+                                    bf'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3510,19 +3715,22 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    bf8 -\staccato
+                                    bf8
+                                    -\staccato
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    d'8 -\staccato
+                                    d'8
+                                    -\staccato
                                 }
                                 {
                                     
                                     s8
                                     
-                                    s4 ]
+                                    s4
+                                    ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -3536,11 +3744,13 @@
                                 {
                                     
                                     %%% LHVoiceFiveInserts [measure 48] %%%
-                                    s4 [
+                                    s4
+                                    [
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    f'8 -\staccato
+                                    f'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3567,7 +3777,8 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    f'8 -\staccato
+                                    f'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3592,10 +3803,12 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                af'8 -\staccato
+                                af'8
+                                -\staccato
                                 \revert Stem.direction
                                 
-                                s4. ]
+                                s4.
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -3917,13 +4130,15 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 33] %%%
-                                <cs,, cs,>4 \repeatTie
+                                <cs,, cs,>4
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
-                                <cs,, cs,>1 \repeatTie
+                                <cs,, cs,>1
+                                \repeatTie
                             }
                         }
                         
@@ -3945,13 +4160,15 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 37] %%%
-                                <ef,, ef,>4 \repeatTie
+                                <ef,, ef,>4
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
-                                <ef,, ef,>1 \repeatTie
+                                <ef,, ef,>1
+                                \repeatTie
                             }
                         }
                         
@@ -3970,28 +4187,32 @@
                                 
                                 %%% LHResonanceVoice [measure 55] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <e, fs, gs, as, b,>1.. \repeatTie
+                                <e, fs, gs, as, b,>1..
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 56] %%%
-                                <e, fs, gs, as, b,>1. \repeatTie
+                                <e, fs, gs, as, b,>1.
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 57] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 58] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         
@@ -4008,14 +4229,16 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 61] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 62] %%%
-                                <e, fs, gs, as, b,>2 \repeatTie
+                                <e, fs, gs, as, b,>2
+                                \repeatTie
                             }
                         }
                         

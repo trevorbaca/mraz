@@ -17,7 +17,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 59/16
                 \newSpacingSection
-                s1 * 59/16 ^ \markup {
+                s1 * 59/16
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -59,13 +60,15 @@
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                e16 \ppp [
-                                    ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.75)
-                                            \box
-                                                "to piano"
-                                        }
+                                e16
+                                \ppp
+                                [
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to piano"
+                                    }
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -323,7 +326,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                e16 ]
+                                e16
+                                ]
                                 \bar "|"
                                 \revert Beam.positions
                                 
@@ -408,7 +412,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 59/16 \ppp
+                        s1 * 59/16
+                        \ppp
                         \bar "|"
                         
                     }

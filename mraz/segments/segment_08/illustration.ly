@@ -15,7 +15,8 @@
                 
                 %%% GlobalSkips [measure 158] %%%
                 \time 7/16
-                s1 * 7/16 ^ \markup {
+                s1 * 7/16
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -96,13 +97,14 @@
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 7/16 \fff
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
+                        s1 * 7/16
+                        \fff
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to piano"
+                            }
                         
                         %%% RH Voice 1 [measure 159] %%%
                         s1 * 1
@@ -736,7 +738,8 @@
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \clef "bass"
-                                g,8. \ppp
+                                g,8.
+                                \ppp
                                 
                                 r32
                                 
@@ -1028,16 +1031,20 @@
                             \times 5/6 {
                                 
                                 \override Stem.direction = #down
-                                af,,4 -\tenuto \f
+                                af,,4
+                                -\tenuto
+                                \f
                                 
                                 \override Rest.staff-position = #-10
                                 r4
                                 
-                                c,,4 -\tenuto
+                                c,,4
+                                -\tenuto
                                 
                                 r4
                                 
-                                bf,,,4 -\tenuto
+                                bf,,,4
+                                -\tenuto
                                 
                                 r4
                             }
@@ -1049,12 +1056,14 @@
                             \times 4/3 {
                                 
                                 %%% LHVoiceSix [measure 161] %%%
-                                b,,,8 -\tenuto
+                                b,,,8
+                                -\tenuto
                                 
                                 \override Rest.direction = #up
                                 r4
                                 
-                                ef,,8 -\tenuto
+                                ef,,8
+                                -\tenuto
                                 
                                 r4
                                 \revert Rest.direction
@@ -1066,15 +1075,18 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
-                                bf,,,16 -\tenuto
+                                bf,,,16
+                                -\tenuto
                                 
                                 r8.
                                 
-                                c,,16 -\tenuto
+                                c,,16
+                                -\tenuto
                                 
                                 r8.
                                 
-                                e,,16 -\tenuto
+                                e,,16
+                                -\tenuto
                                 
                                 r8.
                             }
@@ -1085,15 +1097,18 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
-                                g,,16 -\tenuto
+                                g,,16
+                                -\tenuto
                                 
                                 r8.
                                 
-                                f,,16 -\tenuto
+                                f,,16
+                                -\tenuto
                                 
                                 r8.
                                 
-                                cs,,16 -\tenuto
+                                cs,,16
+                                -\tenuto
                                 
                                 r8.
                             }
@@ -1104,13 +1119,17 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 
-                                d,,8 -\tenuto
+                                d,,8
+                                -\tenuto
                                 
-                                e,,8 -\tenuto
+                                e,,8
+                                -\tenuto
                                 
-                                af,,8 -\tenuto
+                                af,,8
+                                -\tenuto
                                 
-                                fs,,8 -\tenuto
+                                fs,,8
+                                -\tenuto
                             }
                         }
                         
@@ -1118,16 +1137,19 @@
                         {
                             \times 2/3 {
                                 
-                                e,,8 -\tenuto
+                                e,,8
+                                -\tenuto
                                 
                                 r4
                                 
                                 %%% LHVoiceSix [measure 168] %%%
-                                f,,8 -\tenuto
+                                f,,8
+                                -\tenuto
                                 
                                 r4
                                 
-                                g,,8 -\tenuto
+                                g,,8
+                                -\tenuto
                                 \revert Stem.direction
                                 
                                 r4

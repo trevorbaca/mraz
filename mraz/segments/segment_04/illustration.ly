@@ -47,70 +47,72 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 6/4
-                s1 * 3/2 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.1]
-                        }
+                s1 * 3/2
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.1]
+                    }
                 
                 %%% GlobalSkips [measure 92] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.2]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.2]
+                    }
                 
                 %%% GlobalSkips [measure 93] %%%
                 \time 6/4
                 s1 * 3/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.3]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.3]
+                    }
                 
                 %%% GlobalSkips [measure 94] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.4]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.4]
+                    }
                 
                 %%% GlobalSkips [measure 95] %%%
                 \time 6/4
                 s1 * 3/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.5]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.5]
+                    }
                 
                 %%% GlobalSkips [measure 96] %%%
                 \time 3/4
-                s1 * 3/4 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.6]
-                        }
-                    ^ \markup {
+                s1 * 3/4
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.6]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -161,114 +163,116 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
-                s1 * 3/4 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.7]
-                        }
+                s1 * 3/4
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.7]
+                    }
                 
                 %%% GlobalSkips [measure 98] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.8]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.8]
+                    }
                 
                 %%% GlobalSkips [measure 99] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.9]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.9]
+                    }
                 
                 %%% GlobalSkips [measure 100] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.10]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.10]
+                    }
                 
                 %%% GlobalSkips [measure 101] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.11]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.11]
+                    }
                 
                 %%% GlobalSkips [measure 102] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.12]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.12]
+                    }
                 
                 %%% GlobalSkips [measure 103] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.13]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.13]
+                    }
                 
                 %%% GlobalSkips [measure 104] %%%
                 \time 5/4
                 s1 * 5/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.14]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.14]
+                    }
                 
                 %%% GlobalSkips [measure 105] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.15]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.15]
+                    }
                 
                 %%% GlobalSkips [measure 106] %%%
                 \time 1/4
-                s1 * 1/4 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.16]
-                        }
-                    ^ \markup {
+                s1 * 1/4
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.16]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -288,46 +292,46 @@
                 %%% GlobalSkips [measure 107] %%%
                 \time 7/8
                 s1 * 7/8
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.17]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.17]
+                    }
                 
                 %%% GlobalSkips [measure 108] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.18]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.18]
+                    }
                 
                 %%% GlobalSkips [measure 109] %%%
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.19]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.19]
+                    }
                 
                 %%% GlobalSkips [measure 110] %%%
                 \time 1/8
                 s1 * 1/8
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.20]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.20]
+                    }
                 
                 %%% GlobalSkips [measure 111] %%%
                 \once \override TextSpanner.arrow-width = 0.25
@@ -352,48 +356,50 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
-                s1 * 1 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.21]
-                        }
+                s1 * 1
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.21]
+                    }
                 
                 %%% GlobalSkips [measure 112] %%%
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.22]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.22]
+                    }
                 
                 %%% GlobalSkips [measure 113] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.23]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.23]
+                    }
                 
                 %%% GlobalSkips [measure 114] %%%
                 \time 3/4
-                s1 * 3/4 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.24]
-                        }
-                    ^ \markup {
+                s1 * 3/4
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.24]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -444,59 +450,61 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 5/8
-                s1 * 5/8 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.25]
-                        }
+                s1 * 5/8
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.25]
+                    }
                 
                 %%% GlobalSkips [measure 116] %%%
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.26]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.26]
+                    }
                 
                 %%% GlobalSkips [measure 117] %%%
                 \time 3/4
                 s1 * 3/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.27]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.27]
+                    }
                 
                 %%% GlobalSkips [measure 118] %%%
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.28]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.28]
+                    }
                 
                 %%% GlobalSkips [measure 119] %%%
                 \time 5/8
-                s1 * 5/8 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.29]
-                        }
-                    ^ \markup {
+                s1 * 5/8
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.29]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -516,13 +524,13 @@
                 %%% GlobalSkips [measure 120] %%%
                 \time 1/4
                 s1 * 1/4
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.30]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.30]
+                    }
                 
                 %%% GlobalSkips [measure 121] %%%
                 \once \override TextSpanner.arrow-width = 0.25
@@ -558,37 +566,39 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/4
-                s1 * 7/4 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.31]
-                        }
+                s1 * 7/4
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.31]
+                    }
                 
                 %%% GlobalSkips [measure 122] %%%
                 \time 6/4
                 s1 * 3/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.32]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.32]
+                    }
                 
                 %%% GlobalSkips [measure 123] %%%
                 \time 4/4
-                s1 * 1 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.33]
-                        }
-                    ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.33]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -639,59 +649,61 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
-                s1 * 1 \startTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.34]
-                        }
+                s1 * 1
+                \startTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.34]
+                    }
                 
                 %%% GlobalSkips [measure 125] %%%
                 \time 6/4
                 s1 * 3/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.35]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.35]
+                    }
                 
                 %%% GlobalSkips [measure 126] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.36]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.36]
+                    }
                 
                 %%% GlobalSkips [measure 127] %%%
                 \time 2/4
                 s1 * 1/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.37]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.37]
+                    }
                 
                 %%% GlobalSkips [measure 128] %%%
                 \time 4/4
-                s1 * 1 \stopTextSpan
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.38]
-                        }
-                    ^ \markup {
+                s1 * 1
+                \stopTextSpan
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.38]
+                    }
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -711,35 +723,35 @@
                 %%% GlobalSkips [measure 129] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.39]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.39]
+                    }
                 
                 %%% GlobalSkips [measure 130] %%%
                 \time 4/4
                 s1 * 1
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.40]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.40]
+                    }
                 
                 %%% GlobalSkips [measure 131] %%%
                 \time 6/4
                 s1 * 3/2
-                    - \markup {
-                        \fontsize
-                            #-3
-                            \with-color
-                                #blue
-                                [F.41]
-                        }
+                - \markup {
+                    \fontsize
+                        #-3
+                        \with-color
+                            #blue
+                            [F.41]
+                    }
                 
             }
         >>
@@ -763,12 +775,12 @@
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 33/2
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to piano"
+                            }
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
@@ -782,14 +794,19 @@
                                 \once \override TextScript.color = #black
                                 \override Stem.direction = #up
                                 \ottava #1
-                                d''''8 \mf [ (
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(ottava brackets always govern all voices on staff)"
-                                        }
+                                d''''8
+                                \mf
+                                [
+                                (
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(ottava brackets always govern all voices on staff)"
+                                    }
                                 
-                                af''''8 ] )
+                                af''''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -799,9 +816,13 @@
                                 
                                 s8
                                 
-                                b'''8 [ (
+                                b'''8
+                                [
+                                (
                                 
-                                e'''8 ] )
+                                e'''8
+                                ]
+                                )
                                 
                                 r4.
                                 \revert TextScript.direction
@@ -822,7 +843,8 @@
                                 \once \override Script.extra-offset = #'(0.5 . 0)
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
-                                r8 -\fermata
+                                r8
+                                -\fermata
                             }
                         }
                         {
@@ -836,11 +858,15 @@
                                 
                                 s8
                                 
-                                c''''8 [ (
+                                c''''8
+                                [
+                                (
                                 
                                 g'''8
                                 
-                                cs''''8 ] )
+                                cs''''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -855,21 +881,29 @@
                             \times 19/14 {
                                 
                                 %%% RH Voice 1 [measure 115] %%%
-                                ef''''8 [ (
+                                ef''''8
+                                [
+                                (
                                 
                                 af''''8
                                 
-                                d''''8 ] )
+                                d''''8
+                                ]
+                                )
                                 
                                 s8
                                 
                                 s8
                                 
-                                e''''8 [ (
+                                e''''8
+                                [
+                                (
                                 
                                 b'''8
                                 
-                                f'''8 ] )
+                                f'''8
+                                ]
+                                )
                                 
                                 s8
                                 
@@ -879,9 +913,13 @@
                                 
                                 s8
                                 
-                                fs'''8 [ (
+                                fs'''8
+                                [
+                                (
                                 
-                                cs'''8 ] )
+                                cs'''8
+                                ]
+                                )
                             }
                         }
                         
@@ -891,28 +929,33 @@
                             {
                                 
                                 %%% RH Voice 1 [measure 121] %%%
-                                ef''''1.. -\tenuto \f
+                                ef''''1..
+                                -\tenuto
+                                \f
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 122] %%%
-                                f''''1. -\tenuto
+                                f''''1.
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 123] %%%
-                                bf''''1 -\tenuto
+                                bf''''1
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 124] %%%
-                                ef''''1 -\tenuto
+                                ef''''1
+                                -\tenuto
                                 \ottava #0
                             }
                         }
@@ -924,14 +967,16 @@
                                 
                                 %%% RH Voice 1 [measure 126] %%%
                                 \ottava #1
-                                f''''1 -\tenuto
+                                f''''1
+                                -\tenuto
                             }
                         }
                         {
                             {
                                 
                                 %%% RH Voice 1 [measure 127] %%%
-                                bf''''2 -\tenuto
+                                bf''''2
+                                -\tenuto
                                 \revert Stem.direction
                                 \ottava #0
                             }
@@ -1082,7 +1127,10 @@
                                 \once \override Script.direction = #up
                                 \arpeggioArrowUp
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <a g' af' b' cs'' f'' ef''' c''''>2. -\marcato \arpeggio \ff
+                                <a g' af' b' cs'' f'' ef''' c''''>2.
+                                -\marcato
+                                \arpeggio
+                                \ff
                             }
                         }
                         
@@ -1095,7 +1143,8 @@
                             \times 5/4 {
                                 
                                 %%% RHVoiceTwo [measure 107] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 s8
                                 
@@ -1103,23 +1152,28 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                ef'''8 -\staccato \mp
+                                ef'''8
+                                -\staccato
+                                \mp
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                d'''8 -\staccato
+                                d'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                f''''8 -\staccato
+                                f''''8
+                                -\staccato
                                 
                                 s8
                                 
                                 s8
                                 
-                                s4. ]
+                                s4.
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -1134,15 +1188,18 @@
                             \times 6/4 {
                                 
                                 %%% RHVoiceTwo [measure 111] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                f'''8 -\staccato
+                                f'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                fs'''8 -\staccato
+                                fs'''8
+                                -\staccato
                                 
                                 s8
                                 
@@ -1152,9 +1209,11 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                fs''''8 -\staccato
+                                fs''''8
+                                -\staccato
                                 
-                                s8 ]
+                                s8
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -1169,7 +1228,8 @@
                             \times 19/14 {
                                 
                                 %%% RHVoiceTwo [measure 115] %%%
-                                s8 [
+                                s8
+                                [
                                 
                                 s8
                                 
@@ -1177,35 +1237,41 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                a'''8 -\staccato
+                                a'''8
+                                -\staccato
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                bf'''8 -\staccato
+                                bf'''8
+                                -\staccato
                                 
                                 s8
                                 
                                 s8
-                                
-                                s8
-                                
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                bf'''8 -\staccato
-                                
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
-                                cs''''8 -\staccato
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                c''''8 -\staccato
+                                bf'''8
+                                -\staccato
+                                
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                cs''''8
+                                -\staccato
                                 
                                 s8
                                 
-                                s8 ]
+                                \set stemLeftBeamCount = #1
+                                \set stemRightBeamCount = #1
+                                c''''8
+                                -\staccato
+                                
+                                s8
+                                
+                                s8
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -1222,7 +1288,11 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                b'16 [ \< \f (
+                                b'16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1300,7 +1370,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                cs''''16 ] \ff )
+                                cs''''16
+                                ]
+                                \ff
+                                )
                                 \break
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
@@ -1316,12 +1389,16 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                ef''16 [ \< \f (
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(temporary line-break)"
-                                        }
+                                ef''16
+                                [
+                                \<
+                                \f
+                                (
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(temporary line-break)"
+                                    }
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1395,7 +1472,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                bf'''16 ] \ff )
+                                bf'''16
+                                ]
+                                \ff
+                                )
                                 \break
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
@@ -1414,9 +1494,11 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <a g' af' b' cs'' f'' ef''' c''''>1. -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <a g' af' b' cs'' f'' ef''' c''''>1.
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1434,9 +1516,13 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                cs''16 [ \< \f (
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                cs''16
+                                [
+                                \<
+                                \f
+                                (
+                                - \tweak color #red
+                                ^ \markup { @ }
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1522,7 +1608,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                f''''16 ] \ff )
+                                f''''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \revert TextScript.direction
@@ -1537,12 +1626,16 @@
                                 \override TextScript.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                a''16 [ \< \f (
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(temporary line-break)"
-                                        }
+                                a''16
+                                [
+                                \<
+                                \f
+                                (
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(temporary line-break)"
+                                    }
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1577,9 +1670,12 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                fs''''16 ] \ff )
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                fs''''16
+                                ]
+                                \ff
+                                )
+                                - \tweak color #red
+                                ^ \markup { @ }
                                 \break
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
@@ -1597,9 +1693,12 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <f'' ef''' c'''' e'''' fs'''' bf''''>1 -\marcato \arpeggio \ff
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <f'' ef''' c'''' e'''' fs'''' bf''''>1
+                                -\marcato
+                                \arpeggio
+                                \ff
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1612,9 +1711,11 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                <a g' af' b' cs'' f'' ef''' c''''>1 -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <a g' af' b' cs'' f'' ef''' c''''>1
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         {
@@ -1627,9 +1728,11 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
-                                <e' fs' bf' a'' g''' af''' b''' cs''''>1 -\marcato \arpeggio
-                                    - \tweak color #red
-                                    ^ \markup { @ }
+                                <e' fs' bf' a'' g''' af''' b''' cs''''>1
+                                -\marcato
+                                \arpeggio
+                                - \tweak color #red
+                                ^ \markup { @ }
                             }
                         }
                         
@@ -1774,22 +1877,27 @@
                                 \override TextScript.direction = #up
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                ef8 -\tenuto \ff
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(temporary line-break to avoid collision with next chord)"
-                                        }
+                                ef8
+                                -\tenuto
+                                \ff
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(temporary line-break to avoid collision with next chord)"
+                                    }
                                 
                                 r4
                                 
-                                cs'8 -\tenuto
+                                cs'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'4 -\tenuto
+                                c'4
+                                -\tenuto
                                 
-                                bf'8 -\tenuto
+                                bf'8
+                                -\tenuto
                                 
                                 r4
                                 \break
@@ -1809,19 +1917,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
                                 
-                                ef''8 -\tenuto
+                                ef''8
+                                -\tenuto
                                 
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'8 -\tenuto
+                                c'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                bf4 -\tenuto
+                                bf4
+                                -\tenuto
                                 \revert TupletBracket.direction
                             }
                         }
@@ -1840,17 +1952,21 @@
                                 %%% RHVoiceThree [measure 95] %%%
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                ef'8 -\tenuto
+                                ef'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                cs'8 -\tenuto
+                                cs'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'4 -\tenuto
+                                c'4
+                                -\tenuto
                                 
-                                bf8 -\tenuto
+                                bf8
+                                -\tenuto
                                 
                                 r4
                                 \revert TupletBracket.direction
@@ -1877,24 +1993,29 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
                                 
-                                ef''8 -\tenuto \mp
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(memory of before)"
-                                        }
+                                ef''8
+                                -\tenuto
+                                \mp
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(memory of before)"
+                                    }
                                 
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                c'8 -\tenuto
+                                c'8
+                                -\tenuto
                                 
                                 r4
                                 
-                                bf4 -\tenuto
+                                bf4
+                                -\tenuto
                                 \bar "|"
                                 \revert TextScript.direction
                                 \revert TupletBracket.direction
@@ -2564,7 +2685,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 3/2 \ppp
+                        s1 * 3/2
+                        \ppp
                         
                         %%% LHVoiceOne [measure 92] %%%
                         s1 * 3/4
@@ -2699,14 +2821,18 @@
                                 \override Staff.SustainPedalLineSpanner.staff-padding = #4
                                 \override Rest.transparent = ##t
                                 \set Staff.pedalSustainStyle = #'bracket
-                                r1 \sustainOn
+                                r1
+                                \sustainOn
                                 
                                 %%% LHVoiceTwo [measure 129] %%%
                                 \set Staff.pedalSustainStyle = #'bracket
-                                r1 \sustainOff \sustainOn
+                                r1
+                                \sustainOff
+                                \sustainOn
                                 
                                 %%% LHVoiceTwo [measure 130] %%%
-                                r1 \sustainOff
+                                r1
+                                \sustainOff
                                 \revert Staff.SustainPedalLineSpanner.staff-padding
                                 \revert Rest.transparent
                             }
@@ -3107,15 +3233,19 @@
                                 \dynamicDown
                                 r2.
                                 
-                                af8. -\tenuto \f
+                                af8.
+                                -\tenuto
+                                \f
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                             }
@@ -3133,17 +3263,20 @@
                                 %%% LHVoiceFive [measure 93] %%%
                                 r4
                                 
-                                af8. -\tenuto
+                                af8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
                                 r4
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                                 
@@ -3156,7 +3289,9 @@
                                 %%% LHVoiceFive [measure 94] %%%
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato \ff
+                                <g b f' fs' a'>8.
+                                -\marcato
+                                \ff
                                 
                                 r2
                             }
@@ -3169,17 +3304,21 @@
                                 
                                 r4
                                 
-                                af8. -\tenuto \f
+                                af8.
+                                -\tenuto
+                                \f
                                 
                                 r16
                                 
                                 r4
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                             }
@@ -3199,7 +3338,9 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato \ff
+                                <g b f' fs' a'>8.
+                                -\marcato
+                                \ff
                                 
                                 r2
                             }
@@ -3208,7 +3349,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 98] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3224,7 +3366,8 @@
                                     \override TupletBracket.direction = #up
                                     r16
                                     
-                                    <g b f' fs' a'>8. -\marcato
+                                    <g b f' fs' a'>8.
+                                    -\marcato
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -3235,7 +3378,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 100] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3248,7 +3392,8 @@
                                 %%% LHVoiceFive [measure 101] %%%
                                 r16
                                 
-                                <g b f' fs' a'>8. -\marcato
+                                <g b f' fs' a'>8.
+                                -\marcato
                                 
                                 r2
                             }
@@ -3257,7 +3402,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 102] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3273,7 +3419,8 @@
                                     \override TupletBracket.direction = #up
                                     r16
                                     
-                                    <g b f' fs' a'>8. -\marcato
+                                    <g b f' fs' a'>8.
+                                    -\marcato
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -3284,7 +3431,8 @@
                             {
                                 
                                 %%% LHVoiceFive [measure 104] %%%
-                                <g b f' fs' a'>16 -\marcato
+                                <g b f' fs' a'>16
+                                -\marcato
                                 
                                 r8.
                                 
@@ -3300,7 +3448,8 @@
                                     \override TupletBracket.direction = #up
                                     r16
                                     
-                                    <g b f' fs' a'>8. -\marcato
+                                    <g b f' fs' a'>8.
+                                    -\marcato
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -3316,7 +3465,8 @@
                                 \once \override Stem.direction = #up
                                 \override TupletBracket.staff-padding = #2
                                 \crossStaff
-                                <g, e f af>16 \mp
+                                <g, e f af>16
+                                \mp
                                 
                                 r8.
                             }
@@ -3331,13 +3481,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c bf>8 [ (
+                                    <c bf>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 ] )
+                                    <d' f'>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3372,7 +3526,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <bf'>8 [ (
+                                    <bf'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
@@ -3384,7 +3540,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <e af>8 ] )
+                                    <e af>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3407,7 +3565,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <c f bf>8 [ (
+                                    <c f bf>8
+                                    [
+                                    (
                                 }
                                 {
                                     
@@ -3419,7 +3579,9 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <bf c'>8 ] )
+                                    <bf c'>8
+                                    ]
+                                    )
                                     
                                     r4
                                 }
@@ -3435,13 +3597,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 [ (
+                                    <d' f'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <af c' e'>8 ] )
+                                    <af c' e'>8
+                                    ]
+                                    )
                                     
                                     r8
                                 }
@@ -3475,13 +3641,17 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <d' f'>8 [ (
+                                    <d' f'>8
+                                    [
+                                    (
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    <af e'>8 ] )
+                                    <af e'>8
+                                    ]
+                                    )
                                     
                                     r8
                                 }
@@ -3516,17 +3686,21 @@
                                 %%% LHVoiceFive [measure 131] %%%
                                 r4
                                 
-                                af8. -\tenuto \p
+                                af8.
+                                -\tenuto
+                                \p
                                 
                                 r16
                                 
-                                d'8. -\tenuto
+                                d'8.
+                                -\tenuto
                                 
                                 r16
                                 
                                 r4
                                 
-                                e'8. -\tenuto
+                                e'8.
+                                -\tenuto
                                 
                                 r16
                                 
@@ -3550,12 +3724,14 @@
                                 {
                                     
                                     %%% LHVoiceFiveInserts [measure 111] %%%
-                                    s4 [
+                                    s4
+                                    [
                                     
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    bf'8 -\staccato
+                                    bf'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3586,19 +3762,22 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    bf8 -\staccato
+                                    bf8
+                                    -\staccato
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    d'8 -\staccato
+                                    d'8
+                                    -\staccato
                                 }
                                 {
                                     
                                     s8
                                     
-                                    s4 ]
+                                    s4
+                                    ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -3612,11 +3791,13 @@
                                 {
                                     
                                     %%% LHVoiceFiveInserts [measure 114] %%%
-                                    s4 [
+                                    s4
+                                    [
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    f'8 -\staccato
+                                    f'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3643,7 +3824,8 @@
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
-                                    f'8 -\staccato
+                                    f'8
+                                    -\staccato
                                 }
                                 {
                                     
@@ -3668,10 +3850,12 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
-                                af'8 -\staccato
+                                af'8
+                                -\staccato
                                 \revert Stem.direction
                                 
-                                s4. ]
+                                s4.
+                                ]
                             }
                             \revert TupletBracket.stencil
                             \revert TupletNumber.stencil
@@ -3957,13 +4141,15 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 100] %%%
-                                <cs,, cs,>4 \repeatTie
+                                <cs,, cs,>4
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
-                                <cs,, cs,>1 \repeatTie
+                                <cs,, cs,>1
+                                \repeatTie
                             }
                         }
                         
@@ -3985,13 +4171,15 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 104] %%%
-                                <ef,, ef,>4 \repeatTie
+                                <ef,, ef,>4
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
-                                <ef,, ef,>1 \repeatTie
+                                <ef,, ef,>1
+                                \repeatTie
                             }
                         }
                         
@@ -4010,49 +4198,56 @@
                                 
                                 %%% LHResonanceVoice [measure 121] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                <e, fs, gs, as, b,>1.. \repeatTie
+                                <e, fs, gs, as, b,>1..
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 122] %%%
-                                <e, fs, gs, as, b,>1. \repeatTie
+                                <e, fs, gs, as, b,>1.
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 123] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 124] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 125] %%%
-                                <e, fs, gs, as, b,>1. \repeatTie
+                                <e, fs, gs, as, b,>1.
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 126] %%%
-                                <e, fs, gs, as, b,>1 \repeatTie
+                                <e, fs, gs, as, b,>1
+                                \repeatTie
                             }
                         }
                         {
                             {
                                 
                                 %%% LHResonanceVoice [measure 127] %%%
-                                <e, fs, gs, as, b,>2 \repeatTie
+                                <e, fs, gs, as, b,>2
+                                \repeatTie
                             }
                         }
                         
