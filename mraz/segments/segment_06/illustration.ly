@@ -17,7 +17,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 9/8
                 \newSpacingSection
-                s1 * 9/8 ^ \markup {
+                s1 * 9/8
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -72,12 +73,12 @@
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         s1 * 9/8
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to piano"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to piano"
+                            }
                         
                         %%% RH Voice 1 [measure 144] %%%
                         s1 * 1/2
@@ -144,21 +145,36 @@
                             \times 4/3 {
                                 
                                 %%% RHVoiceThree [measure 143] %%%
-                                fs'''8 -\staccato -\tenuto \pp
+                                fs'''8
+                                -\staccato
+                                -\tenuto
+                                \pp
                                 
-                                a'''8 -\staccato -\tenuto
+                                a'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                b''8 -\staccato -\tenuto
+                                b''8
+                                -\staccato
+                                -\tenuto
                             }
                             {
                                 
-                                c'''8 -\staccato -\tenuto
+                                c'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                af''8 -\staccato -\tenuto
+                                af''8
+                                -\staccato
+                                -\tenuto
                                 
-                                b''8 -\staccato -\tenuto
+                                b''8
+                                -\staccato
+                                -\tenuto
                                 
-                                cs''8 -\staccato -\tenuto
+                                cs''8
+                                -\staccato
+                                -\tenuto
                                 
                                 r8
                             }
@@ -168,11 +184,17 @@
                             \times 4/3 {
                                 
                                 %%% RHVoiceThree [measure 144] %%%
-                                bf'''8 -\staccato -\tenuto
+                                bf'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                cs'''8 -\staccato -\tenuto
+                                cs'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                ef'''8 -\staccato -\tenuto
+                                ef'''8
+                                -\staccato
+                                -\tenuto
                             }
                         }
                         {
@@ -181,15 +203,25 @@
                                 %%% RHVoiceThree [measure 145] %%%
                                 r8
                                 
-                                d'''8 -\staccato -\tenuto
+                                d'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                e'''8 -\staccato -\tenuto
+                                e'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                c'''8 -\staccato -\tenuto
+                                c'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                ef'''8 -\staccato -\tenuto
+                                ef'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                f''8 -\staccato -\tenuto
+                                f''8
+                                -\staccato
+                                -\tenuto
                                 
                                 r8
                             }
@@ -199,13 +231,21 @@
                             \times 5/4 {
                                 
                                 %%% RHVoiceThree [measure 146] %%%
-                                af''8 -\staccato -\tenuto
+                                af''8
+                                -\staccato
+                                -\tenuto
                                 
-                                e''8 -\staccato -\tenuto
+                                e''8
+                                -\staccato
+                                -\tenuto
                                 
-                                g''8 -\staccato -\tenuto
+                                g''8
+                                -\staccato
+                                -\tenuto
                                 
-                                a''8 -\staccato -\tenuto
+                                a''8
+                                -\staccato
+                                -\tenuto
                                 \bar "|"
                                 
                             }
@@ -315,7 +355,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 9/8 \p
+                        s1 * 9/8
+                        \p
                         
                         %%% LHVoiceOne [measure 144] %%%
                         s1 * 1/2
@@ -368,19 +409,24 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 9/8 {
                                 
-                                g'16 -\tenuto \mp
+                                g'16
+                                -\tenuto
+                                \mp
                                 
                                 r16
                                 
-                                af'16 -\tenuto
+                                af'16
+                                -\tenuto
                                 
                                 r16
                                 
-                                bf'16 -\tenuto
+                                bf'16
+                                -\tenuto
                                 
                                 r16
                                 
-                                a'16 -\tenuto
+                                a'16
+                                -\tenuto
                                 
                                 r16
                             }
@@ -391,19 +437,23 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
                                 
-                                b'16 -\tenuto
+                                b'16
+                                -\tenuto
                                 
                                 r8
                                 
-                                c''16 -\tenuto
+                                c''16
+                                -\tenuto
                                 
                                 r8
                                 
-                                d''16 -\tenuto
+                                d''16
+                                -\tenuto
                                 
                                 r8
                                 
-                                cs''16 -\tenuto
+                                cs''16
+                                -\tenuto
                                 
                                 r8
                             }
@@ -413,23 +463,28 @@
                         {
                             {
                                 
-                                d'16 -\tenuto
+                                d'16
+                                -\tenuto
                                 
                                 r32
                                 
-                                f'16 -\tenuto
+                                f'16
+                                -\tenuto
                                 
                                 r32
                                 
-                                g'16 -\tenuto
+                                g'16
+                                -\tenuto
                                 
                                 r32
                                 
-                                ef''16 -\tenuto
+                                ef''16
+                                -\tenuto
                                 
                                 r32
                                 
-                                e''16 -\tenuto
+                                e''16
+                                -\tenuto
                                 
                                 r32
                             }
@@ -438,11 +493,13 @@
                             {
                                 
                                 %%% LHVoiceFour [measure 146] %%%
-                                fs''16 -\tenuto
+                                fs''16
+                                -\tenuto
                                 
                                 r32
                                 
-                                f''16 -\tenuto
+                                f''16
+                                -\tenuto
                                 
                                 r32
                             }

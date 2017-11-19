@@ -47,7 +47,8 @@
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
-                s1 * 3/4 \startTextSpan
+                s1 * 3/4
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 148] %%%
                 \time 1/4
@@ -79,7 +80,9 @@
                 
                 %%% GlobalSkips [measure 155] %%%
                 \time 3/16
-                s1 * 3/16 \stopTextSpan ^ \markup {
+                s1 * 3/16
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -133,13 +136,15 @@
                                     \dynamicUp
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                    e''16 \fff [
-                                        ^ \markup {
-                                            \override
-                                                #'(box-padding . 0.75)
-                                                \box
-                                                    "to piano"
-                                            }
+                                    e''16
+                                    \fff
+                                    [
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.75)
+                                            \box
+                                                "to piano"
+                                        }
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -234,7 +239,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    e'''16 ]
+                                    e'''16
+                                    ]
                                 }
                             }
                         }
@@ -249,7 +255,8 @@
                                     %%% RH Voice 1 [measure 151] %%%
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    af''16 [
+                                    af''16
+                                    [
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -296,7 +303,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    fs'''16 ]
+                                    fs'''16
+                                    ]
                                 }
                             }
                         }
@@ -312,7 +320,8 @@
                                     %%% RH Voice 1 [measure 156] %%%
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    f'''16 [
+                                    f'''16
+                                    [
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -357,7 +366,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    bf'''16 ]
+                                    bf'''16
+                                    ]
                                     \revert Stem.direction
                                 }
                             }
@@ -381,7 +391,8 @@
                                     %%% RHVoiceOneInserts [measure 147] %%%
                                     \override Beam.positions = #'(-6.5 . -6.5)
                                     \override Script.direction = #down
-                                    s16 [
+                                    s16
+                                    [
                                     
                                     s16
                                     
@@ -398,7 +409,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f''16 -\marcato
+                                    f''16
+                                    -\marcato
                                     
                                     s16
                                     
@@ -410,7 +422,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    b''16 -\marcato
+                                    b''16
+                                    -\marcato
                                     
                                     s16
                                     
@@ -442,15 +455,18 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    fs'''16 -\marcato
+                                    fs'''16
+                                    -\marcato
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    g'''16 -\marcato
+                                    g'''16
+                                    -\marcato
                                     
                                     s16
                                     
-                                    s16 ]
+                                    s16
+                                    ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -468,11 +484,13 @@
                                     
                                     %%% RHVoiceOneInserts [measure 151] %%%
                                     \override Beam.positions = #'(-8.5 . -8.5)
-                                    s16 [
+                                    s16
+                                    [
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    a''16 -\marcato
+                                    a''16
+                                    -\marcato
                                     
                                     s16
                                     
@@ -496,11 +514,13 @@
                                     %%% RHVoiceOneInserts [measure 153] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    af''16 -\marcato
+                                    af''16
+                                    -\marcato
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f'''16 -\marcato
+                                    f'''16
+                                    -\marcato
                                     
                                     s16
                                     
@@ -508,7 +528,8 @@
                                     
                                     s16
                                     
-                                    s16 ]
+                                    s16
+                                    ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -526,11 +547,13 @@
                                 \times 3/4 {
                                     
                                     %%% RHVoiceOneInserts [measure 156] %%%
-                                    s16 [
+                                    s16
+                                    [
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    fs'''16 -\marcato
+                                    fs'''16
+                                    -\marcato
                                     
                                     s16
                                     
@@ -544,7 +567,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    bf'''16 -\marcato
+                                    bf'''16
+                                    -\marcato
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
@@ -553,11 +577,13 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    cs''''16 -\marcato
+                                    cs''''16
+                                    -\marcato
                                     
                                     s16
                                     
-                                    s16 ]
+                                    s16
+                                    ]
                                     \revert Beam.positions
                                 }
                             }
@@ -585,7 +611,10 @@
                                 \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                c''16 \fff [ (
+                                c''16
+                                \fff
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -597,7 +626,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                f''16 )
+                                f''16
+                                )
                             }
                         }
                         
@@ -611,7 +641,8 @@
                                     %%% RHVoiceTwo [measure 150] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    cs''16 (
+                                    cs''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -619,13 +650,15 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    b'16 )
+                                    b'16
+                                    )
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    cs''16 (
+                                    cs''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -637,13 +670,15 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    b''16 )
+                                    b''16
+                                    )
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    f''16 (
+                                    f''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -651,7 +686,9 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    a''16 ] )
+                                    a''16
+                                    ]
+                                    )
                                 }
                             }
                         }
@@ -664,7 +701,9 @@
                                 %%% RHVoiceTwo [measure 152] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                c''16 [ (
+                                c''16
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -672,14 +711,16 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                e''16 )
+                                e''16
+                                )
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                cs''16 (
+                                cs''16
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -699,13 +740,15 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                b''16 )
+                                b''16
+                                )
                             }
                             \times 2/3 {
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                g''16 (
+                                g''16
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -713,7 +756,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                b''16 )
+                                b''16
+                                )
                             }
                         }
                         
@@ -727,7 +771,8 @@
                                     %%% RHVoiceTwo [measure 154] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    a''16 (
+                                    a''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -739,13 +784,15 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    d'''16 )
+                                    d'''16
+                                    )
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    ef'''16 (
+                                    ef'''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -765,7 +812,9 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    cs'''16 ] )
+                                    cs'''16
+                                    ]
+                                    )
                                 }
                             }
                         }
@@ -775,7 +824,9 @@
                                 %%% RHVoiceTwo [measure 155] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                f''16 [ (
+                                f''16
+                                [
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -783,7 +834,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
-                                ef'''16 )
+                                ef'''16
+                                )
                             }
                         }
                         
@@ -795,7 +847,8 @@
                                 %%% RHVoiceTwo [measure 157] %%%
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                e'''16 (
+                                e'''16
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -803,7 +856,9 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                af'''16 ] )
+                                af'''16
+                                ]
+                                )
                                 \bar "|."
                                 \revert Beam.positions
                                 \revert Slur.direction
@@ -827,11 +882,14 @@
                                 \override Stem.direction = #up
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                c''16 -\accent [
+                                c''16
+                                -\accent
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                d''16 -\accent
+                                d''16
+                                -\accent
                                 
                                 s16
                                 
@@ -853,11 +911,13 @@
                                     %%% RHVoiceTwoInserts [measure 150] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    cs''16 -\accent
+                                    cs''16
+                                    -\accent
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f''16 -\accent
+                                    f''16
+                                    -\accent
                                     
                                     s16
                                 }
@@ -875,13 +935,16 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    f''16 -\accent
+                                    f''16
+                                    -\accent
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    ef'''16 -\accent
+                                    ef'''16
+                                    -\accent
                                     
-                                    s16 ]
+                                    s16
+                                    ]
                                     \revert Beam.positions
                                 }
                             }
@@ -900,11 +963,14 @@
                                 \override Beam.positions = #'(13.5 . 13.5)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                c''16 -\accent [
+                                c''16
+                                -\accent
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                bf''16 -\accent
+                                bf''16
+                                -\accent
                                 
                                 s16
                             }
@@ -927,11 +993,13 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
-                                g''16 -\accent
+                                g''16
+                                -\accent
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                f'''16 -\accent
+                                f'''16
+                                -\accent
                                 
                                 s16
                             }
@@ -951,7 +1019,8 @@
                                     %%% RHVoiceTwoInserts [measure 154] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    a''16 -\accent
+                                    a''16
+                                    -\accent
                                     
                                     s16
                                     
@@ -963,11 +1032,13 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    ef'''16 -\accent
+                                    ef'''16
+                                    -\accent
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    c'''16 -\accent
+                                    c'''16
+                                    -\accent
                                     
                                     s16
                                     
@@ -975,7 +1046,8 @@
                                     
                                     s16
                                     
-                                    s16 ]
+                                    s16
+                                    ]
                                     \revert Beam.positions
                                 }
                             }
@@ -991,7 +1063,9 @@
                                 \override Beam.positions = #'(17 . 17)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                f''16 -\accent [
+                                f''16
+                                -\accent
+                                [
                                 
                                 s16
                                 
@@ -1013,11 +1087,14 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
-                                d'''16 -\accent
+                                d'''16
+                                -\accent
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                af'''16 -\accent ]
+                                af'''16
+                                -\accent
+                                ]
                                 \bar "|."
                                 \revert Beam.positions
                                 \revert Script.direction
@@ -1295,7 +1372,8 @@
                         \clef "bass"
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        s1 * 3/4 \mp
+                        s1 * 3/4
+                        \mp
                         
                         %%% LHVoiceOne [measure 148] %%%
                         s1 * 1/4
@@ -1416,7 +1494,9 @@
                                 \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                fs'16 \ff [
+                                fs'16
+                                \ff
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1455,7 +1535,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                             }
                         }
                         
@@ -1468,7 +1549,9 @@
                                 \override Beam.positions = #'(-4.5 . -4.5)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                cs''16 \ff [
+                                cs''16
+                                \ff
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1476,7 +1559,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                             }
                         }
                         
@@ -1488,7 +1572,9 @@
                                 %%% LHVoiceFour [measure 155] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                d''16 \ff [
+                                d''16
+                                \ff
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1512,7 +1598,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                                 \revert Stem.direction
                             }
                         }
@@ -1625,7 +1712,10 @@
                                     \override Stem.direction = #down
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    cs'16 \pp [ (
+                                    cs'16
+                                    \pp
+                                    [
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1633,14 +1723,16 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    cs'16 )
+                                    cs'16
+                                    )
                                 }
                                 {
                                     
                                     %%% LHVoiceFive [measure 150] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    b'16 (
+                                    b'16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1664,13 +1756,15 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    g''16 )
+                                    g''16
+                                    )
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    fs''16 (
+                                    fs''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1694,7 +1788,9 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    d'''16 ] )
+                                    d'''16
+                                    ]
+                                    )
                                 }
                             }
                         }
@@ -1708,7 +1804,10 @@
                                     
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    ef''16 \pp [ (
+                                    ef''16
+                                    \pp
+                                    [
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1716,13 +1815,15 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    cs''16 )
+                                    cs''16
+                                    )
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    a'16 (
+                                    a'16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1746,14 +1847,16 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #1
-                                    fs''16 )
+                                    fs''16
+                                    )
                                 }
                                 {
                                     
                                     %%% LHVoiceFive [measure 154] %%%
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
-                                    e''16 (
+                                    e''16
+                                    (
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1777,7 +1880,9 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    cs'''16 ] )
+                                    cs'''16
+                                    ]
+                                    )
                                     \revert Stem.direction
                                 }
                             }
@@ -1801,7 +1906,8 @@
                             \times 15/17 {
                                 {
                                     
-                                    s16 [
+                                    s16
+                                    [
                                     
                                     s16
                                     
@@ -1813,7 +1919,8 @@
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    b'16 -\staccato
+                                    b'16
+                                    -\staccato
                                     
                                     s16
                                     
@@ -1831,7 +1938,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    fs''16 -\staccato
+                                    fs''16
+                                    -\staccato
                                     
                                     s16
                                     
@@ -1843,11 +1951,14 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    c'''16 -\staccato
+                                    c'''16
+                                    -\staccato
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    d'''16 -\staccato ]
+                                    d'''16
+                                    -\staccato
+                                    ]
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1862,7 +1973,8 @@
                             \times 15/17 {
                                 {
                                     
-                                    s16 [
+                                    s16
+                                    [
                                     
                                     s16
                                     
@@ -1872,7 +1984,8 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    a'16 -\staccato
+                                    a'16
+                                    -\staccato
                                     
                                     s16
                                     
@@ -1891,7 +2004,8 @@
                                     %%% LHVoiceFiveInserts [measure 154] %%%
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    e''16 -\staccato
+                                    e''16
+                                    -\staccato
                                     
                                     s16
                                     
@@ -1903,11 +2017,14 @@
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
-                                    af''16 -\staccato
+                                    af''16
+                                    -\staccato
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
-                                    cs'''16 -\staccato ]
+                                    cs'''16
+                                    -\staccato
+                                    ]
                                     \revert Stem.direction
                                 }
                             }
@@ -2030,40 +2147,40 @@
                         %%% LHResonanceVoice [measure 157] %%%
                         \once \override TextScript.extra-offset = #'(-24 . -8)
                         s1 * 1/8
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        \with-color
-                                            #black
-                                            \right-column
-                                                {
-                                                    \line
-                                                        {
-                                                            Madison,
-                                                            WI
-                                                            \hspace
-                                                                #0.75
-                                                            –
-                                                            \hspace
-                                                                #0.75
-                                                            Los
-                                                            Angeles,
-                                                            CA.
-                                                        }
-                                                    \line
-                                                        {
-                                                            December
-                                                            2016
-                                                            \hspace
-                                                                #0.75
-                                                            –
-                                                            \hspace
-                                                                #0.75
-                                                            March
-                                                            2017.
-                                                        }
-                                                }
-                                }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    \with-color
+                                        #black
+                                        \right-column
+                                            {
+                                                \line
+                                                    {
+                                                        Madison,
+                                                        WI
+                                                        \hspace
+                                                            #0.75
+                                                        –
+                                                        \hspace
+                                                            #0.75
+                                                        Los
+                                                        Angeles,
+                                                        CA.
+                                                    }
+                                                \line
+                                                    {
+                                                        December
+                                                        2016
+                                                        \hspace
+                                                            #0.75
+                                                        –
+                                                        \hspace
+                                                            #0.75
+                                                        March
+                                                        2017.
+                                                    }
+                                            }
+                            }
                         \bar "|."
                         
                     }

@@ -16,7 +16,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/4
                 \newSpacingSection
-                s1 * 1 ^ \markup {
+                s1 * 1
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -37,7 +38,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 2/4
                 \newSpacingSection
-                s1 * 1/2 ^ \markup {
+                s1 * 1/2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -70,7 +72,8 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/8
                 \newSpacingSection
-                s1 * 1/2 ^ \markup {
+                s1 * 1/2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -124,13 +127,16 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 16/4
                 \newSpacingSection
-                s1 * 4 \startTextSpan
+                s1 * 4
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 9] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 1/8
                 \newSpacingSection
-                s1 * 1/8 \stopTextSpan ^ \markup {
+                s1 * 1/8
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -166,7 +172,8 @@
                                     \null
                                     }
                                 \clef "treble"
-                                bf''''1 -\tenuto
+                                bf''''1
+                                -\tenuto
                             }
                         }
                         
@@ -217,7 +224,11 @@
                                 \set stemRightBeamCount = #2
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-                                b'16 [ \< \f (
+                                b'16
+                                [
+                                \<
+                                \f
+                                (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -295,7 +306,10 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                cs''''16 ] \ff )
+                                cs''''16
+                                ]
+                                \ff
+                                )
                                 \revert DynamicLineSpanner.staff-padding
                                 \revert Slur.direction
                                 \ottava #0
@@ -312,7 +326,8 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\shortfermata
+                                r8
+                                -\shortfermata
                                 \break
                             }
                         }
@@ -327,7 +342,8 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\fermata
+                                r8
+                                -\fermata
                             }
                         }
                         
@@ -341,25 +357,30 @@
                                 \override TextScript.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                                 \dynamicUp
-                                c'''8 -\accent \fff
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(black voice louder; green voice longer)"
-                                        }
+                                c'''8
+                                -\accent
+                                \fff
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(black voice louder; green voice longer)"
+                                    }
                                 
                                 \override Rest.direction = #up
                                 r2..
                                 
-                                d'''8 -\accent
+                                d'''8
+                                -\accent
                                 
                                 r2..
                                 
-                                ef''''8 -\accent
+                                ef''''8
+                                -\accent
                                 
                                 r2..
                                 
-                                f''''8 -\accent
+                                f''''8
+                                -\accent
                                 
                                 r2..
                                 \revert Rest.direction
@@ -376,12 +397,13 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                r8 -\shortfermata
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(extremely short)"
-                                        }
+                                r8
+                                -\shortfermata
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(extremely short)"
+                                    }
                                 \bar "|"
                                 
                             }
@@ -427,11 +449,18 @@
                             \times 4/3 {
                                 
                                 %%% RHVoiceThree [measure 5] %%%
-                                bf'''8 -\staccato -\tenuto \pp
+                                bf'''8
+                                -\staccato
+                                -\tenuto
+                                \pp
                                 
-                                cs'''8 -\staccato -\tenuto
+                                cs'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                ef'''8 -\staccato -\tenuto
+                                ef'''8
+                                -\staccato
+                                -\tenuto
                             }
                         }
                         
@@ -443,15 +472,25 @@
                                 %%% RHVoiceThree [measure 7] %%%
                                 r8
                                 
-                                d'''8 -\staccato -\tenuto
+                                d'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                e'''8 -\staccato -\tenuto
+                                e'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                c'''8 -\staccato -\tenuto
+                                c'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                ef'''8 -\staccato -\tenuto
+                                ef'''8
+                                -\staccato
+                                -\tenuto
                                 
-                                f''8 -\staccato -\tenuto
+                                f''8
+                                -\staccato
+                                -\tenuto
                                 
                                 r8
                             }
@@ -463,29 +502,35 @@
                                 %%% RHVoiceThree [measure 8] %%%
                                 \override TupletBracket.direction = #down
                                 \ottava #1
-                                a''4 -\tenuto \mf
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                "(first note A5)"
-                                        }
+                                a''4
+                                -\tenuto
+                                \mf
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
+                                            "(first note A5)"
+                                    }
                                 
                                 \override Rest.direction = #down
                                 r4
                                 
-                                cs''4 -\tenuto
+                                cs''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                b''4 -\tenuto
+                                b''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                af''4 -\tenuto
+                                af''4
+                                -\tenuto
                                 
                                 r4
                                 
-                                g'''4 -\tenuto
+                                g'''4
+                                -\tenuto
                                 \ottava #0
                                 
                                 r4
@@ -792,7 +837,9 @@
                                 %%% LHVoiceFour [measure 2] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                d''16 \ff [
+                                d''16
+                                \ff
+                                [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -816,7 +863,8 @@
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
-                                b''16 ]
+                                b''16
+                                ]
                             }
                         }
                         
@@ -871,7 +919,8 @@
                                 %%% LHVoiceFive [measure 3] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \dynamicUp
-                                bf,,8. \ppp
+                                bf,,8.
+                                \ppp
                                 
                                 \override Rest.direction = #up
                                 r32
@@ -943,7 +992,8 @@
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
                                 \clef "bass"
-                                b,,,8 \f
+                                b,,,8
+                                \f
                                 
                                 \override Rest.direction = #down
                                 r4
