@@ -85,20 +85,20 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         
                         %%% RH Voice 1 [measure 158] %%%
-                        \set PianoMusicStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Piano
-                            }
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                            \null
-                            }
-                        \clef "treble"
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #16 % SEGMENT-ONLY
+                                Piano % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+                            \null % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \clef "treble" % SEGMENT-ONLY
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         s1 * 7/16
-                        \fff
+                        \fff % SEGMENT-ONLY
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
@@ -535,8 +535,8 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 158] %%%
-                        \clef "bass"
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \clef "bass" % SEGMENT-ONLY
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         s1 * 7/16
                         
                         %%% LHVoiceOne [measure 159] %%%
