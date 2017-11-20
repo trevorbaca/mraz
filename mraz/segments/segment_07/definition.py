@@ -193,7 +193,7 @@ accumulator(
 
 accumulator(
     'LHVoiceFour',
-    collections['stage 1']['lh'].next(),
+    collections['stage 1']['lh'].next().transpose(0*7),
     baca.anchor(
         'RHVoiceTwo',
         baca.note(0),
@@ -206,14 +206,13 @@ accumulator(
         [0, 19, 23],
         baca.flags(),
         ),
-    baca.transpose_segments(n=0*7),
     figure_name='lh-4 7.1.1',
     time_treatments=[-1],
     )
 
 accumulator(
     'LHVoiceFive',
-    collections['stage 1']['lh'].next(),
+    collections['stage 1']['lh'].next().transpose(1*7),
     baca.anchor(
         'RHVoiceTwo',
         baca.note(4),
@@ -229,14 +228,13 @@ accumulator(
         baca.staccati(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.transpose_segments(n=1*7),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
     )
 
 accumulator(
     'LHVoiceFour',
-    collections['stage 1']['lh'].next(),
+    collections['stage 1']['lh'].next().transpose(2*7),
     baca.anchor(
         'RHVoiceTwo',
         baca.note(14),
@@ -249,14 +247,13 @@ accumulator(
         [13],
         baca.flags(),
         ),
-    baca.transpose_segments(n=2*7),
     figure_name='lh-4 7.1.2',
     hide_time_signature=True,
     )
 
 accumulator(
     'LHVoiceFive',
-    collections['stage 1']['lh'].next(),
+    collections['stage 1']['lh'].next().transpose(3*7),
     baca.anchor(
         'RHVoiceTwo',
         baca.note(26),
@@ -272,14 +269,13 @@ accumulator(
         baca.staccati(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.transpose_segments(n=3*7),
     figure_name='lh-5 7.1.2',
     hide_time_signature=True,
     )
 
 accumulator(
     'LHVoiceFour',
-    collections['stage 1']['lh'].next(exhausted=True),
+    collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
     baca.anchor(
         'RHVoiceTwo',
         baca.note(-6),
@@ -292,7 +288,6 @@ accumulator(
         [14, 18],
         baca.flags(),
         ),
-    baca.transpose_segments(n=4*7),
     figure_name='lh-4 7.1.3',
     hide_time_signature=True,
     time_treatments=[1],

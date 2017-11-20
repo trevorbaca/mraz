@@ -45,7 +45,7 @@ accumulator(
 
 accumulator(
     'LHVoiceFour',
-    collections_7['stage 1']['lh'][-1],
+    collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -53,7 +53,6 @@ accumulator(
         [14, 18],
         baca.flags(),
         ),
-    baca.transpose_segments(n=4*7),
     figure_name='b.1.3',
     time_treatments=[1],
     )
