@@ -154,7 +154,7 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     baca.flags(),
-    baca.line_break(),
+    baca.system_break(),
     baca.marcati(),
     baca.proportional_notation_duration((1, 4)),
     baca.rests_around([1], [8]),
