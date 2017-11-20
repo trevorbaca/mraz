@@ -94,7 +94,7 @@ accumulator(
 accumulator(
     'RHVoiceTwo',
     [abjad.Rest((1, 8))],
-    baca.system_break(),
+    baca.line_break(),
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
     baca.short_fermata(),
