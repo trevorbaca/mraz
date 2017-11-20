@@ -80,7 +80,7 @@ accumulator(
 accumulator(
     'RHVoiceThree',
     [abjad.Rest((1, 4))],
-    baca.line_break(),
+    baca.system_break(),
     baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
     baca.script_extra_offset((1, 0)),
@@ -236,7 +236,7 @@ accumulator(
     'RHVoiceTwo',
     collections_2['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.line_break(),
+    baca.system_break(),
     baca.proportional_notation_duration((1, 24)),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
