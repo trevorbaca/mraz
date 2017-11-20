@@ -77,7 +77,7 @@ accumulator(
 accumulator(
     'RHVoiceThree',
     [abjad.Rest((1, 4))],
-    baca.system_break(),
+    baca.line_break(),
     baca.proportional_notation_duration((1, 4)),
     baca.script_color('black'),
     baca.script_extra_offset((1, 0)),
