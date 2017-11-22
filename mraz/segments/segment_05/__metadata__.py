@@ -60,5 +60,21 @@ metadata = abjad.TypedOrderedDict(
         ('measure_count', 11),
         ('segment_count', 11),
         ('segment_number', 8),
+        (
+            'time_signatures',
+            [
+                '16/4',
+                '10/4',
+                '1/4',
+                '12/4',
+                '1/4',
+                '10/4',
+                '1/4',
+                '13/4',
+                '1/4',
+                '7/4',
+                '1/4',
+                ],
+            ),
         ]
     )
