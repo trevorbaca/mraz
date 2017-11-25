@@ -1605,7 +1605,10 @@
                             }
                         }
                         
-                        s1 * 7/16
+                        s1 * 5/16
+                        
+                        %%% LHVoiceFour [measure 157] %%%
+                        s1 * 1/8
                         \bar "|."
                         \revert Beam.positions
                         \revert Script.direction
@@ -1694,7 +1697,10 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        s1 * 7/16
+                        s1 * 5/16
+                        
+                        %%% LHVoiceFourInserts [measure 157] %%%
+                        s1 * 1/8
                         \bar "|."
                         \revert Script.direction
                         
@@ -1889,7 +1895,16 @@
                             }
                         }
                         
-                        s1 * 303/272
+                        s1 * 3/17
+                        
+                        %%% LHVoiceFive [measure 155] %%%
+                        s1 * 3/16
+                        
+                        %%% LHVoiceFive [measure 156] %%%
+                        s1 * 5/8
+                        
+                        %%% LHVoiceFive [measure 157] %%%
+                        s1 * 1/8
                         \bar "|."
                         \revert Script.direction
                         
@@ -2033,7 +2048,16 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        s1 * 303/272
+                        s1 * 3/17
+                        
+                        %%% LHVoiceFiveInserts [measure 155] %%%
+                        s1 * 3/16
+                        
+                        %%% LHVoiceFiveInserts [measure 156] %%%
+                        s1 * 5/8
+                        
+                        %%% LHVoiceFiveInserts [measure 157] %%%
+                        s1 * 1/8
                         \bar "|."
                         \revert Script.direction
                         \revert Beam.positions

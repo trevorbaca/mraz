@@ -1158,7 +1158,10 @@
                             }
                         }
                         
-                        s1 * 7/8
+                        s1 * 3/8
+                        
+                        %%% LHVoiceSix [measure 169] %%%
+                        s1 * 1/2
                         \revert Script.direction
                         \revert TupletBracket.staff-padding
                         
