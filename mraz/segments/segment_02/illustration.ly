@@ -48,6 +48,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 29/16
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 29/16
                 \startTextSpan
