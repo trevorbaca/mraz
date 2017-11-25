@@ -3130,7 +3130,37 @@
                         }
                         
                         %%% LHVoiceFive [measure 74] %%%
-                        s1 * 15
+                        s1 * 5/2
+                        
+                        %%% LHVoiceFive [measure 75] %%%
+                        s1 * 1/4
+                        
+                        %%% LHVoiceFive [measure 76] %%%
+                        s1 * 13/4
+                        
+                        %%% LHVoiceFive [measure 77] %%%
+                        s1 * 1/4
+                        
+                        %%% LHVoiceFive [measure 78] %%%
+                        s1 * 29/16
+                        
+                        %%% LHVoiceFive [measure 79] %%%
+                        s1 * 27/16
+                        
+                        %%% LHVoiceFive [measure 80] %%%
+                        s1 * 21/16
+                        
+                        %%% LHVoiceFive [measure 81] %%%
+                        s1 * 15/16
+                        
+                        %%% LHVoiceFive [measure 82] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFive [measure 83] %%%
+                        s1 * 7/4
+                        
+                        %%% LHVoiceFive [measure 84] %%%
+                        s1 * 1/4
                         \bar "|"
                         
                     }
@@ -3218,7 +3248,37 @@
                         }
                         
                         %%% LHVoiceSix [measure 74] %%%
-                        s1 * 15
+                        s1 * 5/2
+                        
+                        %%% LHVoiceSix [measure 75] %%%
+                        s1 * 1/4
+                        
+                        %%% LHVoiceSix [measure 76] %%%
+                        s1 * 13/4
+                        
+                        %%% LHVoiceSix [measure 77] %%%
+                        s1 * 1/4
+                        
+                        %%% LHVoiceSix [measure 78] %%%
+                        s1 * 29/16
+                        
+                        %%% LHVoiceSix [measure 79] %%%
+                        s1 * 27/16
+                        
+                        %%% LHVoiceSix [measure 80] %%%
+                        s1 * 21/16
+                        
+                        %%% LHVoiceSix [measure 81] %%%
+                        s1 * 15/16
+                        
+                        %%% LHVoiceSix [measure 82] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceSix [measure 83] %%%
+                        s1 * 7/4
+                        
+                        %%% LHVoiceSix [measure 84] %%%
+                        s1 * 1/4
                         \bar "|"
                         
                     }
@@ -3332,8 +3392,11 @@
                         }
                         
                         %%% LHResonanceVoice [measure 83] %%%
+                        s1 * 7/4
+                        
+                        %%% LHResonanceVoice [measure 84] %%%
                         \override Score.BarLine.transparent = ##f
-                        s1 * 2
+                        s1 * 1/4
                         \bar "|"
                         
                     }

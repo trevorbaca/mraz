@@ -17,8 +17,8 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('LHResonanceVoice', 'ff'),
-                    ('LHVoiceFive', 'pp'),
-                    ('LHVoiceFiveInserts', 'pp'),
+                    ('LHVoiceFive', 'ff'),
+                    ('LHVoiceFiveInserts', 'ff'),
                     ('LHVoiceFour', 'ff'),
                     ('LHVoiceFourInserts', 'ff'),
                     ('LHVoiceOne', 'ff'),

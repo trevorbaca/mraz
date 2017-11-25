@@ -748,7 +748,16 @@
                         }
                         
                         %%% RHVoiceThree [measure 18] %%%
-                        s1 * 89/16
+                        s1 * 21/16
+                        
+                        %%% RHVoiceThree [measure 19] %%%
+                        s1 * 7/4
+                        
+                        %%% RHVoiceThree [measure 20] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceThree [measure 21] %%%
+                        s1 * 1
                         \bar "|"
                         
                     }
@@ -872,7 +881,25 @@
                         }
                         
                         %%% RHVoiceFour [measure 15] %%%
-                        s1 * 125/16
+                        s1 * 5/8
+                        
+                        %%% RHVoiceFour [measure 16] %%%
+                        s1 * 1/8
+                        
+                        %%% RHVoiceFour [measure 17] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFour [measure 18] %%%
+                        s1 * 21/16
+                        
+                        %%% RHVoiceFour [measure 19] %%%
+                        s1 * 7/4
+                        
+                        %%% RHVoiceFour [measure 20] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFour [measure 21] %%%
+                        s1 * 1
                         \bar "|"
                         
                     }
@@ -932,7 +959,25 @@
                         }
                         
                         %%% RHVoiceFourInserts [measure 15] %%%
-                        s1 * 125/16
+                        s1 * 5/8
+                        
+                        %%% RHVoiceFourInserts [measure 16] %%%
+                        s1 * 1/8
+                        
+                        %%% RHVoiceFourInserts [measure 17] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFourInserts [measure 18] %%%
+                        s1 * 21/16
+                        
+                        %%% RHVoiceFourInserts [measure 19] %%%
+                        s1 * 7/4
+                        
+                        %%% RHVoiceFourInserts [measure 20] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFourInserts [measure 21] %%%
+                        s1 * 1
                         \bar "|"
                         
                     }
@@ -1265,7 +1310,16 @@
                         }
                         
                         %%% LHVoiceFive [measure 18] %%%
-                        s1 * 89/16
+                        s1 * 21/16
+                        
+                        %%% LHVoiceFive [measure 19] %%%
+                        s1 * 7/4
+                        
+                        %%% LHVoiceFive [measure 20] %%%
+                        s1 * 3/2
+                        
+                        %%% LHVoiceFive [measure 21] %%%
+                        s1 * 1
                         \bar "|"
                         
                     }

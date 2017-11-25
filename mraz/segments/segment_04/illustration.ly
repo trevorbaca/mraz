@@ -984,7 +984,16 @@
                         }
                         
                         %%% RH Voice 1 [measure 128] %%%
-                        s1 * 9/2
+                        s1 * 1
+                        
+                        %%% RH Voice 1 [measure 129] %%%
+                        s1 * 1
+                        
+                        %%% RH Voice 1 [measure 130] %%%
+                        s1 * 1
+                        
+                        %%% RH Voice 1 [measure 131] %%%
+                        s1 * 3/2
                         \bar "|"
                         \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
@@ -2420,7 +2429,79 @@
                         }
                         
                         %%% RHVoiceFive [measure 107] %%%
-                        s1 * 87/4
+                        s1 * 7/8
+                        
+                        %%% RHVoiceFive [measure 108] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 109] %%%
+                        s1 * 1/2
+                        
+                        %%% RHVoiceFive [measure 110] %%%
+                        s1 * 1/8
+                        
+                        %%% RHVoiceFive [measure 111] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 112] %%%
+                        s1 * 1/2
+                        
+                        %%% RHVoiceFive [measure 113] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 114] %%%
+                        s1 * 3/4
+                        
+                        %%% RHVoiceFive [measure 115] %%%
+                        s1 * 5/8
+                        
+                        %%% RHVoiceFive [measure 116] %%%
+                        s1 * 1/2
+                        
+                        %%% RHVoiceFive [measure 117] %%%
+                        s1 * 3/4
+                        
+                        %%% RHVoiceFive [measure 118] %%%
+                        s1 * 1/2
+                        
+                        %%% RHVoiceFive [measure 119] %%%
+                        s1 * 5/8
+                        
+                        %%% RHVoiceFive [measure 120] %%%
+                        s1 * 1/4
+                        
+                        %%% RHVoiceFive [measure 121] %%%
+                        s1 * 7/4
+                        
+                        %%% RHVoiceFive [measure 122] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFive [measure 123] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 124] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 125] %%%
+                        s1 * 3/2
+                        
+                        %%% RHVoiceFive [measure 126] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 127] %%%
+                        s1 * 1/2
+                        
+                        %%% RHVoiceFive [measure 128] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 129] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 130] %%%
+                        s1 * 1
+                        
+                        %%% RHVoiceFive [measure 131] %%%
+                        s1 * 3/2
                         \bar "|"
                         
                     }
@@ -3863,7 +3944,40 @@
                         }
                         
                         %%% LHVoiceFiveInserts [measure 120] %%%
-                        s1 * 13
+                        s1 * 1/4
+                        
+                        %%% LHVoiceFiveInserts [measure 121] %%%
+                        s1 * 7/4
+                        
+                        %%% LHVoiceFiveInserts [measure 122] %%%
+                        s1 * 3/2
+                        
+                        %%% LHVoiceFiveInserts [measure 123] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 124] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 125] %%%
+                        s1 * 3/2
+                        
+                        %%% LHVoiceFiveInserts [measure 126] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 127] %%%
+                        s1 * 1/2
+                        
+                        %%% LHVoiceFiveInserts [measure 128] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 129] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 130] %%%
+                        s1 * 1
+                        
+                        %%% LHVoiceFiveInserts [measure 131] %%%
+                        s1 * 3/2
                         \bar "|"
                         \revert Script.direction
                         
@@ -4253,8 +4367,17 @@
                         }
                         
                         %%% LHResonanceVoice [measure 128] %%%
+                        s1 * 1
+                        
+                        %%% LHResonanceVoice [measure 129] %%%
+                        s1 * 1
+                        
+                        %%% LHResonanceVoice [measure 130] %%%
+                        s1 * 1
+                        
+                        %%% LHResonanceVoice [measure 131] %%%
                         \override Score.BarLine.transparent = ##f
-                        s1 * 9/2
+                        s1 * 3/2
                         \bar "|"
                         
                     }
