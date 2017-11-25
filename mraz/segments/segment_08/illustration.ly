@@ -15,6 +15,7 @@
                 
                 %%% GlobalSkips [measure 158] %%%
                 \time 7/16
+                \bar "" % SEGMENT
                 s1 * 7/16
                 ^ \markup {
                     \fontsize
