@@ -49,20 +49,20 @@
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
-                                    \hcenter-in % SEGMENT-ONLY
-                                        #16 % SEGMENT-ONLY
-                                        Piano % SEGMENT-ONLY
-                                    } % SEGMENT-ONLY
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
-                                    \null % SEGMENT-ONLY
-                                    } % SEGMENT-ONLY
-                                \clef "treble" % SEGMENT-ONLY
-                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                    \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                        #16 % SEGMENT:REMINDER-INSTRUMENT
+                                        Piano % SEGMENT:REMINDER-INSTRUMENT
+                                    } % SEGMENT:REMINDER-INSTRUMENT
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                                    \null % SEGMENT:REMINDER-INSTRUMENT
+                                    } % SEGMENT:REMINDER-INSTRUMENT
+                                \clef "treble" % SEGMENT:REMINDER-CLEF
+                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
                                 e16
-                                \ppp % SEGMENT-ONLY
+                                \ppp % SEGMENT:REMINDER-DYNAMIC
                                 [
                                 ^ \markup {
                                     \override
@@ -410,11 +410,11 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 85] %%%
-                        \clef "bass" % SEGMENT-ONLY
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \clef "bass" % SEGMENT:REMINDER-CLEF
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
                         s1 * 59/16
-                        \ppp % SEGMENT-ONLY
+                        \ppp % SEGMENT:REMINDER-DYNAMIC
                         \bar "|"
                         
                     }
