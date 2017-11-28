@@ -61,7 +61,7 @@ def music_maker():
                         %%% GlobalSkips [measure 1] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 1/16
-                        \bar "" % SEGMENT:EMPTY-BAR
+                        \bar "" % SEGMENT:EMPTY-BAR:1
                         \newSpacingSection
                         s1 * 1/16
             <BLANKLINE>
@@ -90,8 +90,8 @@ def music_maker():
                         \context Voice = "MusicVoice" {
             <BLANKLINE>
                             %%% MusicVoice [measure 1] %%%
-                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             R1 * 1/16
             <BLANKLINE>
                             %%% MusicVoice [measure 2] %%%
@@ -179,7 +179,7 @@ def music_maker():
                         %%% GlobalSkips [measure 1] %%%
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                         \time 9/16
-                        \bar "" % SEGMENT:EMPTY-BAR
+                        \bar "" % SEGMENT:EMPTY-BAR:1
                         \newSpacingSection
                         s1 * 9/16
             <BLANKLINE>
@@ -202,8 +202,8 @@ def music_maker():
                         \context Voice = "MusicVoice" {
             <BLANKLINE>
                             %%% MusicVoice [measure 1] %%%
-                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                             R1 * 9/16
             <BLANKLINE>
                             %%% MusicVoice [measure 2] %%%

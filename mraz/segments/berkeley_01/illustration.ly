@@ -15,7 +15,7 @@
                 %%% GlobalSkips [measure 1] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 4/4
-                \bar "" % SEGMENT:EMPTY-BAR
+                \bar "" % SEGMENT:EMPTY-BAR:1
                 \newSpacingSection
                 s1 * 1
                 ^ \markup {
@@ -172,8 +172,8 @@
                                 \set PianoMusicStaffGroup.shortInstrumentName = \markup {
                                     \null
                                     }
-                                \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                                \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                                 bf''''1
                                 -\tenuto
                             }
@@ -758,8 +758,8 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 1] %%%
-                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                         s1 * 1
                         
                         %%% LHVoiceOne [measure 2] %%%
@@ -1066,8 +1066,8 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
-                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
                                 b,,,8
                                 \f
                                 
