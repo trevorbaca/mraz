@@ -16,7 +16,7 @@
                 %%% GlobalSkips [measure 85] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 \time 59/16
-                \bar "" % SEGMENT:EMPTY-BAR
+                \bar "" % SEGMENT:EMPTY-BAR:1
                 \newSpacingSection
                 s1 * 59/16
                 ^ \markup {
@@ -49,21 +49,21 @@
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                    \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
-                                        #16 % SEGMENT:RESTATED-INSTRUMENT
-                                        Piano % SEGMENT:RESTATED-INSTRUMENT
-                                    } % SEGMENT:RESTATED-INSTRUMENT
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
-                                    \null % SEGMENT:RESTATED-INSTRUMENT
-                                    } % SEGMENT:RESTATED-INSTRUMENT
-                                \clef "treble" % SEGMENT:RESTATED-CLEF
-                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                                \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                    \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
+                                        #16 % SEGMENT:RESTATED-INSTRUMENT:2
+                                        Piano % SEGMENT:RESTATED-INSTRUMENT:2
+                                    } % SEGMENT:RESTATED-INSTRUMENT:2
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
+                                    \null % SEGMENT:RESTATED-INSTRUMENT:2
+                                    } % SEGMENT:RESTATED-INSTRUMENT:2
+                                \clef "treble" % SEGMENT:RESTATED-CLEF:4
+                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
+                                \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:6
                                 e16
-                                \ppp % SEGMENT:REMINDER-DYNAMIC
+                                \ppp % SEGMENT:REMINDER-DYNAMIC:7
                                 [
                                 ^ \markup {
                                     \override
@@ -411,12 +411,12 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 85] %%%
-                        \clef "bass" % SEGMENT:RESTATED-CLEF
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
-                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                        \clef "bass" % SEGMENT:RESTATED-CLEF:2
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:1
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:3
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:4
                         s1 * 59/16
-                        \ppp % SEGMENT:REMINDER-DYNAMIC
+                        \ppp % SEGMENT:REMINDER-DYNAMIC:5
                         \bar "|"
                         
                     }
