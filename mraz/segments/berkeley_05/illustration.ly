@@ -48,7 +48,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 16/4 % SEGMENT:DUPLICATE-TIME-SIGNATURE
                 \bar "" % SEGMENT:EMPTY-BAR
-                \once \override Score.TimeSignature.color = #(x11-color 'DarkCyan) % SEGMENT:DUPLICATE-TIME-SIGNATURE
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) % SEGMENT:DUPLICATE-TIME-SIGNATURE
                 s1 * 4
                 \startTextSpan
                 
@@ -373,17 +373,18 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         
                         %%% RH Voice 1 [measure 69] %%%
-                        \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-                                #16 % SEGMENT:REMINDER-INSTRUMENT
-                                Piano % SEGMENT:REMINDER-INSTRUMENT
-                            } % SEGMENT:REMINDER-INSTRUMENT
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-                            \null % SEGMENT:REMINDER-INSTRUMENT
-                            } % SEGMENT:REMINDER-INSTRUMENT
-                        \clef "treble" % SEGMENT:REMINDER-CLEF
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
-                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
+                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT
+                                #16 % SEGMENT:RESTATED-INSTRUMENT
+                                Piano % SEGMENT:RESTATED-INSTRUMENT
+                            } % SEGMENT:RESTATED-INSTRUMENT
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT
+                            \null % SEGMENT:RESTATED-INSTRUMENT
+                            } % SEGMENT:RESTATED-INSTRUMENT
+                        \clef "treble" % SEGMENT:RESTATED-CLEF
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         s1 * 4
                         ^ \markup {
                             \override
@@ -2636,9 +2637,10 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 69] %%%
-                        \clef "bass" % SEGMENT:REMINDER-CLEF
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
+                        \clef "bass" % SEGMENT:RESTATED-CLEF
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         s1 * 4
                         \p % SEGMENT:REMINDER-DYNAMIC
                         
@@ -2802,7 +2804,8 @@
                                 
                                 %%% LHVoiceFour [measure 72] %%%
                                 \override Slur.direction = #down
-                                \clef "bass"
+                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                                 r2
                                 
                                 r2
@@ -3229,7 +3232,8 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
-                                \clef "bass"
+                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                                 b,,,8
                                 \f
                                 
