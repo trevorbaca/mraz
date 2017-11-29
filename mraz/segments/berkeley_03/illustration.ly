@@ -3394,9 +3394,9 @@
                                 
                                 %%% LHVoiceFive [measure 22] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
+                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
                                 \dynamicDown
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
                                 r2.
                                 
                                 af8.
