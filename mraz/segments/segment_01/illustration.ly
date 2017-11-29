@@ -56,27 +56,51 @@
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                                    \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
-                                        #16 % SEGMENT:RESTATED-INSTRUMENT:2
-                                        Piano % SEGMENT:RESTATED-INSTRUMENT:2
-                                    } % SEGMENT:RESTATED-INSTRUMENT:2
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                                    \null % SEGMENT:RESTATED-INSTRUMENT:2
-                                    } % SEGMENT:RESTATED-INSTRUMENT:2
-                                \clef "treble" % SEGMENT:RESTATED-CLEF:4
-                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
-                                \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:6
+                                \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:3
+                                    \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:3
+                                        #16 % SEGMENT:RESTATED-INSTRUMENT:3
+                                        Piano % SEGMENT:RESTATED-INSTRUMENT:3
+                                    } % SEGMENT:RESTATED-INSTRUMENT:3
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:3
+                                    \null % SEGMENT:RESTATED-INSTRUMENT:3
+                                    } % SEGMENT:RESTATED-INSTRUMENT:3
+                                \clef "treble" % SEGMENT:RESTATED-CLEF:5
+                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:2
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:4
+                                \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:6
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:7
                                 e16
-                                \ppp % SEGMENT:REMINDER-DYNAMIC:7
+                                \ppp % SEGMENT:REMINDER-DYNAMIC:8
                                 [
                                 ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to piano"
+                                    \column
+                                        {
+                                            %%% \line % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #2 % FIGURE-NAME:1
+                                                        %%% \concat % FIGURE-NAME:1
+                                                            %%% { % FIGURE-NAME:1
+                                                                %%% [ % FIGURE-NAME:1
+                                                                %%% "rh-1 1.1.1" % FIGURE-NAME:1
+                                                                %%% \hspace % FIGURE-NAME:1
+                                                                    %%% #1 % FIGURE-NAME:1
+                                                                %%% \raise % FIGURE-NAME:1
+                                                                    %%% #0.25 % FIGURE-NAME:1
+                                                                    %%% \fontsize % FIGURE-NAME:1
+                                                                        %%% #-2 % FIGURE-NAME:1
+                                                                        %%% (0) % FIGURE-NAME:1
+                                                                %%% ] % FIGURE-NAME:1
+                                                            %%% } % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                            \line
+                                                {
+                                                    \override
+                                                        #'(box-padding . 0.75)
+                                                        \box
+                                                            "to piano"
+                                                }
+                                        }
                                     }
                                 
                                 \set stemLeftBeamCount = #2

@@ -204,6 +204,23 @@
                                 \ppp
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-2 2.2.1" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (0) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -378,6 +395,23 @@
                                 -\staccato
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-2 2.2.2" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (1) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -538,6 +572,23 @@
                                 -\staccato
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-2 2.2.3" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (2) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -668,6 +719,23 @@
                                 -\staccato
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-2 2.2.4" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (3) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -764,6 +832,23 @@
                                 -\staccato
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-2 2.2.5" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (4) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -1195,9 +1280,26 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 86] %%%
-                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
+                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
                                 <cs,, cs,>1..
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lhr 2.2.1" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (5) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 <cs,, cs,>16
                                 \repeatTie
@@ -1210,6 +1312,23 @@
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <cs,, cs,>1.
                                 \repeatTie
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lhr 2.2.2a" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (6) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 <cs,, cs,>8.
                                 \repeatTie
@@ -1220,6 +1339,23 @@
                                 
                                 %%% LHResonanceVoice [measure 88] %%%
                                 <ef,, ef,>1
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lhr 2.2.3a" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (7) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 <ef,, ef,>4
                                 \repeatTie
@@ -1235,6 +1371,23 @@
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 <ef,, ef,>2...
                                 \repeatTie
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lhr 2.2.4" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (8) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                             }
                         }
                         {
@@ -1243,6 +1396,23 @@
                                 %%% LHResonanceVoice [measure 90] %%%
                                 <ef,, ef,>1
                                 \repeatTie
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lhr 2.2.5" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (9) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 \bar "|"
                                 
                             }
