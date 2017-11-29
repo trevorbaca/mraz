@@ -1160,8 +1160,8 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 86] %%%
-                                \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:2
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:1
+                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
                                 <cs,, cs,>1..
                                 
                                 <cs,, cs,>16
