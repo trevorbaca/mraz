@@ -51,7 +51,6 @@ maker = baca.SegmentMaker(
     color_repeat_pitch_classes=True,
     instruments=mraz.instruments,
     label_clock_time=False,
-    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=mraz.metronome_marks,
     rehearsal_letter='',
