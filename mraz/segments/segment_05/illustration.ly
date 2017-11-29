@@ -465,9 +465,33 @@
                                 -\accent
                                 \fff
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "(black voice louder; green voice longer)"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "(black voice louder; green voice longer)"
+                                                }
+                                            %%% \line % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #2 % FIGURE-NAME:1
+                                                        %%% \concat % FIGURE-NAME:1
+                                                            %%% { % FIGURE-NAME:1
+                                                                %%% [ % FIGURE-NAME:1
+                                                                %%% "rh-2 5.1.1" % FIGURE-NAME:1
+                                                                %%% \hspace % FIGURE-NAME:1
+                                                                    %%% #1 % FIGURE-NAME:1
+                                                                %%% \raise % FIGURE-NAME:1
+                                                                    %%% #0.25 % FIGURE-NAME:1
+                                                                    %%% \fontsize % FIGURE-NAME:1
+                                                                        %%% #-2 % FIGURE-NAME:1
+                                                                        %%% (0) % FIGURE-NAME:1
+                                                                %%% ] % FIGURE-NAME:1
+                                                            %%% } % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        }
                                     }
                                 
                                 \override Rest.direction = #up
@@ -1022,9 +1046,33 @@
                                 -\tenuto
                                 \mf
                                 ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "(first note A5)"
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            "(first note A5)"
+                                                }
+                                            %%% \line % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #2 % FIGURE-NAME:1
+                                                        %%% \concat % FIGURE-NAME:1
+                                                            %%% { % FIGURE-NAME:1
+                                                                %%% [ % FIGURE-NAME:1
+                                                                %%% "rh-3 5.1.1" % FIGURE-NAME:1
+                                                                %%% \hspace % FIGURE-NAME:1
+                                                                    %%% #1 % FIGURE-NAME:1
+                                                                %%% \raise % FIGURE-NAME:1
+                                                                    %%% #0.25 % FIGURE-NAME:1
+                                                                    %%% \fontsize % FIGURE-NAME:1
+                                                                        %%% #-2 % FIGURE-NAME:1
+                                                                        %%% (1) % FIGURE-NAME:1
+                                                                %%% ] % FIGURE-NAME:1
+                                                            %%% } % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        }
                                     }
                                 
                                 \override Rest.direction = #down
@@ -1067,6 +1115,23 @@
                                     \mp
                                     [
                                     (
+                                    %%% ^ \markup { % FIGURE-NAME:1
+                                        %%% \fontsize % FIGURE-NAME:1
+                                            %%% #2 % FIGURE-NAME:1
+                                            %%% \concat % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% [ % FIGURE-NAME:1
+                                                    %%% "rh-3 5.2.1" % FIGURE-NAME:1
+                                                    %%% \hspace % FIGURE-NAME:1
+                                                        %%% #1 % FIGURE-NAME:1
+                                                    %%% \raise % FIGURE-NAME:1
+                                                        %%% #0.25 % FIGURE-NAME:1
+                                                        %%% \fontsize % FIGURE-NAME:1
+                                                            %%% #-2 % FIGURE-NAME:1
+                                                            %%% (2) % FIGURE-NAME:1
+                                                    %%% ] % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        %%% } % FIGURE-NAME:1
                                     
                                     ef'''8
                                     
@@ -1161,6 +1226,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
                                 -\shortfermata
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-3 5.2.2" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (3) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 \break
                             }
                         }
@@ -1176,6 +1258,23 @@
                                     cs'''8
                                     [
                                     (
+                                    %%% ^ \markup { % FIGURE-NAME:1
+                                        %%% \fontsize % FIGURE-NAME:1
+                                            %%% #2 % FIGURE-NAME:1
+                                            %%% \concat % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% [ % FIGURE-NAME:1
+                                                    %%% "rh-3 5.2.3" % FIGURE-NAME:1
+                                                    %%% \hspace % FIGURE-NAME:1
+                                                        %%% #1 % FIGURE-NAME:1
+                                                    %%% \raise % FIGURE-NAME:1
+                                                        %%% #0.25 % FIGURE-NAME:1
+                                                        %%% \fontsize % FIGURE-NAME:1
+                                                            %%% #-2 % FIGURE-NAME:1
+                                                            %%% (4) % FIGURE-NAME:1
+                                                    %%% ] % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        %%% } % FIGURE-NAME:1
                                     
                                     c'''8
                                     
@@ -1290,6 +1389,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
                                 -\shortfermata
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-3 5.2.4" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (5) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                             }
                         }
                         {
@@ -1303,6 +1419,23 @@
                                     a'''8
                                     [
                                     (
+                                    %%% ^ \markup { % FIGURE-NAME:1
+                                        %%% \fontsize % FIGURE-NAME:1
+                                            %%% #2 % FIGURE-NAME:1
+                                            %%% \concat % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% [ % FIGURE-NAME:1
+                                                    %%% "rh-3 5.2.5" % FIGURE-NAME:1
+                                                    %%% \hspace % FIGURE-NAME:1
+                                                        %%% #1 % FIGURE-NAME:1
+                                                    %%% \raise % FIGURE-NAME:1
+                                                        %%% #0.25 % FIGURE-NAME:1
+                                                        %%% \fontsize % FIGURE-NAME:1
+                                                            %%% #-2 % FIGURE-NAME:1
+                                                            %%% (6) % FIGURE-NAME:1
+                                                    %%% ] % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        %%% } % FIGURE-NAME:1
                                     
                                     d'''8
                                     
@@ -1396,6 +1529,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
                                 -\shortfermata
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-3 5.2.6" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (7) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                             }
                         }
                         {
@@ -1410,6 +1560,23 @@
                                     c'''8
                                     [
                                     (
+                                    %%% ^ \markup { % FIGURE-NAME:1
+                                        %%% \fontsize % FIGURE-NAME:1
+                                            %%% #2 % FIGURE-NAME:1
+                                            %%% \concat % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% [ % FIGURE-NAME:1
+                                                    %%% "rh-3 5.2.7" % FIGURE-NAME:1
+                                                    %%% \hspace % FIGURE-NAME:1
+                                                        %%% #1 % FIGURE-NAME:1
+                                                    %%% \raise % FIGURE-NAME:1
+                                                        %%% #0.25 % FIGURE-NAME:1
+                                                        %%% \fontsize % FIGURE-NAME:1
+                                                            %%% #-2 % FIGURE-NAME:1
+                                                            %%% (8) % FIGURE-NAME:1
+                                                    %%% ] % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        %%% } % FIGURE-NAME:1
                                     
                                     g'''8
                                     
@@ -1526,6 +1693,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
                                 -\shortfermata
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-3 5.2.8" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (9) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                             }
                         }
                         {
@@ -1541,6 +1725,23 @@
                                     f'''8
                                     [
                                     (
+                                    %%% ^ \markup { % FIGURE-NAME:1
+                                        %%% \fontsize % FIGURE-NAME:1
+                                            %%% #2 % FIGURE-NAME:1
+                                            %%% \concat % FIGURE-NAME:1
+                                                %%% { % FIGURE-NAME:1
+                                                    %%% [ % FIGURE-NAME:1
+                                                    %%% "rh-3 5.2.9" % FIGURE-NAME:1
+                                                    %%% \hspace % FIGURE-NAME:1
+                                                        %%% #1 % FIGURE-NAME:1
+                                                    %%% \raise % FIGURE-NAME:1
+                                                        %%% #0.25 % FIGURE-NAME:1
+                                                        %%% \fontsize % FIGURE-NAME:1
+                                                            %%% #-2 % FIGURE-NAME:1
+                                                            %%% (10) % FIGURE-NAME:1
+                                                    %%% ] % FIGURE-NAME:1
+                                                %%% } % FIGURE-NAME:1
+                                        %%% } % FIGURE-NAME:1
                                     
                                     af'''8
                                     
@@ -1606,6 +1807,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
                                 -\shortfermata
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "rh-3 5.2.10" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (11) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 \bar "|"
                                 
                             }
@@ -1960,9 +2178,26 @@
                                 
                                 %%% LHVoiceFour [measure 135] %%%
                                 \override Slur.direction = #down
-                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
+                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
                                 r2
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.1" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (12) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 r2
                                 
@@ -2002,6 +2237,23 @@
                                 %%% LHVoiceFour [measure 137] %%%
                                 \override Slur.direction = #down
                                 r2
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.2" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (13) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 r2
                                 
@@ -2040,6 +2292,23 @@
                                 -\staccato
                                 -\tenuto
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.3" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (14) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 r16
                                 
@@ -2063,6 +2332,23 @@
                                 -\staccato
                                 -\tenuto
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.4" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (15) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 r16
                                 
@@ -2095,6 +2381,23 @@
                                 -\tenuto
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.5" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (16) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 bf8.
                                 -\staccato
@@ -2111,6 +2414,23 @@
                                 -\tenuto
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.6" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (17) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 b8.
                                 -\staccato
@@ -2127,6 +2447,23 @@
                             {
                                 
                                 r8.
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.7" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (18) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 b8.
                                 -\staccato
@@ -2155,6 +2492,23 @@
                                 
                                 %%% LHVoiceFour [measure 141] %%%
                                 r2..
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.8" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (19) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 cs'8
                                 -\staccato
@@ -2181,6 +2535,23 @@
                                 -\tenuto
                                 [
                                 (
+                                %%% ^ \markup { % FIGURE-NAME:1
+                                    %%% \fontsize % FIGURE-NAME:1
+                                        %%% #2 % FIGURE-NAME:1
+                                        %%% \concat % FIGURE-NAME:1
+                                            %%% { % FIGURE-NAME:1
+                                                %%% [ % FIGURE-NAME:1
+                                                %%% "lh-4 5.2.9" % FIGURE-NAME:1
+                                                %%% \hspace % FIGURE-NAME:1
+                                                    %%% #1 % FIGURE-NAME:1
+                                                %%% \raise % FIGURE-NAME:1
+                                                    %%% #0.25 % FIGURE-NAME:1
+                                                    %%% \fontsize % FIGURE-NAME:1
+                                                        %%% #-2 % FIGURE-NAME:1
+                                                        %%% (20) % FIGURE-NAME:1
+                                                %%% ] % FIGURE-NAME:1
+                                            %%% } % FIGURE-NAME:1
+                                    %%% } % FIGURE-NAME:1
                                 
                                 cs8
                                 -\staccato
