@@ -257,19 +257,19 @@
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:3
-                                        \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:3
-                                            #16 % SEGMENT:RESTATED-INSTRUMENT:3
-                                            Piano % SEGMENT:RESTATED-INSTRUMENT:3
-                                        } % SEGMENT:RESTATED-INSTRUMENT:3
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:3
-                                        \null % SEGMENT:RESTATED-INSTRUMENT:3
-                                        } % SEGMENT:RESTATED-INSTRUMENT:3
-                                    \clef "treble" % SEGMENT:RESTATED-CLEF:5
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:3
+                                        \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:3
+                                            #16 % SEGMENT:RESTATED_INSTRUMENT:3
+                                            Piano % SEGMENT:RESTATED_INSTRUMENT:3
+                                        } % SEGMENT:RESTATED_INSTRUMENT:3
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:3
+                                        \null % SEGMENT:RESTATED_INSTRUMENT:3
+                                        } % SEGMENT:RESTATED_INSTRUMENT:3
+                                    \clef "treble" % SEGMENT:RESTATED_CLEF:5
                                     \dynamicUp
-                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:2
-                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:4
-                                    \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:6
+                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_INSTRUMENT:2
+                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:4
+                                    \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:6
                                     e''16
                                     \fff
                                     [
@@ -1697,12 +1697,12 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 147] %%%
-                        \clef "bass" % SEGMENT:RESTATED-CLEF:2
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:1
-                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:4
+                        \clef "bass" % SEGMENT:RESTATED_CLEF:2
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:1
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:3
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:4
                         s1 * 3/4
-                        \mp % SEGMENT:REMINDER-DYNAMIC:5
+                        \mp % SEGMENT:REMINDER_DYNAMIC:5
                         
                         %%% LHVoiceOne [measure 148] %%%
                         s1 * 1/4

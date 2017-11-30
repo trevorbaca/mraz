@@ -46,9 +46,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 16/4 % SEGMENT:DUPLICATE-TIME-SIGNATURE:4
+                \time 16/4 % SEGMENT:DUPLICATE_TIME_SIGNATURE:4
                 \bar "" % SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) % SEGMENT:DUPLICATE-TIME-SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) % SEGMENT:DUPLICATE_TIME_SIGNATURE:3
                 s1 * 4
                 \startTextSpan
                 %%% ^ \markup { % CLOCK_TIME:5
@@ -565,18 +565,18 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         
                         %%% RH Voice 1 [measure 69] %%%
-                        \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                            \hcenter-in % SEGMENT:RESTATED-INSTRUMENT:2
-                                #16 % SEGMENT:RESTATED-INSTRUMENT:2
-                                Piano % SEGMENT:RESTATED-INSTRUMENT:2
-                            } % SEGMENT:RESTATED-INSTRUMENT:2
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED-INSTRUMENT:2
-                            \null % SEGMENT:RESTATED-INSTRUMENT:2
-                            } % SEGMENT:RESTATED-INSTRUMENT:2
-                        \clef "treble" % SEGMENT:RESTATED-CLEF:4
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT:1
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:3
-                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:5
+                        \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
+                            \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
+                                #16 % SEGMENT:RESTATED_INSTRUMENT:2
+                                Piano % SEGMENT:RESTATED_INSTRUMENT:2
+                            } % SEGMENT:RESTATED_INSTRUMENT:2
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
+                            \null % SEGMENT:RESTATED_INSTRUMENT:2
+                            } % SEGMENT:RESTATED_INSTRUMENT:2
+                        \clef "treble" % SEGMENT:RESTATED_CLEF:4
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_INSTRUMENT:1
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:3
+                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:5
                         s1 * 4
                         ^ \markup {
                             \override
@@ -3101,12 +3101,12 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 69] %%%
-                        \clef "bass" % SEGMENT:RESTATED-CLEF:2
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF:1
-                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:4
+                        \clef "bass" % SEGMENT:RESTATED_CLEF:2
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:1
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:3
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:4
                         s1 * 4
-                        \p % SEGMENT:REMINDER-DYNAMIC:5
+                        \p % SEGMENT:REMINDER_DYNAMIC:5
                         
                         %%% LHVoiceOne [measure 70] %%%
                         s1 * 5/2
@@ -3268,8 +3268,8 @@
                                 
                                 %%% LHVoiceFour [measure 72] %%%
                                 \override Slur.direction = #down
-                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
+                                \clef "bass" % SEGMENT:EXPLICIT_CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
                                 r2
                                 %%% ^ \markup { % FIGURE_NAME:1
                                     %%% \fontsize % FIGURE_NAME:1
@@ -3866,8 +3866,8 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
-                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
+                                \clef "bass" % SEGMENT:EXPLICIT_CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
                                 b,,,8
                                 \f
                                 %%% ^ \markup { % FIGURE_NAME:1

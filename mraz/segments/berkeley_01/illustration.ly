@@ -406,8 +406,8 @@
                                 \set PianoMusicStaffGroup.shortInstrumentName = \markup {
                                     \null
                                     }
-                                \clef "treble" % SEGMENT:EXPLICIT-CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
+                                \clef "treble" % SEGMENT:EXPLICIT_CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
                                 bf''''1
                                 -\tenuto
                                 %%% ^ \markup { % FIGURE_NAME:1
@@ -1166,8 +1166,8 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 1] %%%
-                        \clef "bass" % SEGMENT:EXPLICIT-CLEF:2
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:1
+                        \clef "bass" % SEGMENT:EXPLICIT_CLEF:2
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
                         s1 * 1
                         
                         %%% LHVoiceOne [measure 2] %%%
@@ -1508,8 +1508,8 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
-                                \clef "bass" % SEGMENT:EXPLICIT-CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
+                                \clef "bass" % SEGMENT:EXPLICIT_CLEF:3
+                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
                                 b,,,8
                                 \f
                                 %%% ^ \markup { % FIGURE_NAME:1
