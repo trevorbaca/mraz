@@ -15,20 +15,20 @@
                 
                 %%% GlobalSkips [measure 158] %%%
                 \time 7/16
-                \bar "" % SEGMENT:EMPTY-BAR:1
+                \bar "" % SEGMENT:EMPTY_BAR:1
                 s1 * 7/16
-                %%% ^ \markup { % CLOCK-TIME:3
-                    %%% \fontsize % CLOCK-TIME:3
-                        %%% #-2 % CLOCK-TIME:3
-                        %%% 6'53'' % CLOCK-TIME:3
-                    %%% } % CLOCK-TIME:3
-                %%% - \markup { % STAGE-NUMBER:2
-                    %%% \fontsize % STAGE-NUMBER:2
-                        %%% #-3 % STAGE-NUMBER:2
-                        %%% \with-color % STAGE-NUMBER:2
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:2
-                            %%% [J.1] % STAGE-NUMBER:2
-                    %%% } % STAGE-NUMBER:2
+                %%% ^ \markup { % CLOCK_TIME:3
+                    %%% \fontsize % CLOCK_TIME:3
+                        %%% #-2 % CLOCK_TIME:3
+                        %%% 6'53'' % CLOCK_TIME:3
+                    %%% } % CLOCK_TIME:3
+                %%% - \markup { % STAGE_NUMBER:2
+                    %%% \fontsize % STAGE_NUMBER:2
+                        %%% #-3 % STAGE_NUMBER:2
+                        %%% \with-color % STAGE_NUMBER:2
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
+                            %%% [J.1] % STAGE_NUMBER:2
+                    %%% } % STAGE_NUMBER:2
                 ^ \markup {
                     \fontsize
                         #-6
@@ -49,178 +49,178 @@
                 %%% GlobalSkips [measure 159] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 6'53'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.2] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 6'53'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.2] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 160] %%%
                 \time 3/2
                 s1 * 3/2
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 6'56'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.3] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 6'56'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.3] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 161] %%%
                 \time 7/8
                 s1 * 7/8
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 6'59'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.4] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 6'59'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.4] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 162] %%%
                 \time 5/16
                 s1 * 5/16
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'01'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.5] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'01'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.5] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 163] %%%
                 \time 2/4
                 s1 * 1/2
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'01'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.6] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'01'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.6] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 164] %%%
                 \time 4/2
                 s1 * 2
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'02'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.7] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'02'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.7] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 165] %%%
                 \time 7/16
                 s1 * 7/16
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'07'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.8] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'07'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.8] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 166] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'08'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.9] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'08'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.9] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 167] %%%
                 \time 2/2
                 s1 * 1
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'10'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.10] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'10'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.10] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 168] %%%
                 \time 7/8
                 s1 * 7/8
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'12'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.11] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'12'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.11] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
                 %%% GlobalSkips [measure 169] %%%
                 \time 2/4
                 s1 * 1/2
-                %%% ^ \markup { % CLOCK-TIME:2
-                    %%% \fontsize % CLOCK-TIME:2
-                        %%% #-2 % CLOCK-TIME:2
-                        %%% 7'14'' % CLOCK-TIME:2
-                    %%% } % CLOCK-TIME:2
-                %%% - \markup { % STAGE-NUMBER:1
-                    %%% \fontsize % STAGE-NUMBER:1
-                        %%% #-3 % STAGE-NUMBER:1
-                        %%% \with-color % STAGE-NUMBER:1
-                            %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
-                            %%% [J.12] % STAGE-NUMBER:1
-                    %%% } % STAGE-NUMBER:1
+                %%% ^ \markup { % CLOCK_TIME:2
+                    %%% \fontsize % CLOCK_TIME:2
+                        %%% #-2 % CLOCK_TIME:2
+                        %%% 7'14'' % CLOCK_TIME:2
+                    %%% } % CLOCK_TIME:2
+                %%% - \markup { % STAGE_NUMBER:1
+                    %%% \fontsize % STAGE_NUMBER:1
+                        %%% #-3 % STAGE_NUMBER:1
+                        %%% \with-color % STAGE_NUMBER:1
+                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
+                            %%% [J.12] % STAGE_NUMBER:1
+                    %%% } % STAGE_NUMBER:1
                 
             }
         >>
@@ -888,23 +888,23 @@
                                 \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:2
                                 g,8.
                                 \ppp
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.1" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (0) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.1" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (0) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -919,23 +919,23 @@
                                 
                                 %%% LHVoiceFive [measure 159] %%%
                                 g,,8
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.2" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (1) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.2" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (1) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.direction = #up
                                 r32
@@ -970,23 +970,23 @@
                                 
                                 %%% LHVoiceFive [measure 160] %%%
                                 cs,,32
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.3" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (2) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.3" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (2) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r4...
                                 
@@ -1004,23 +1004,23 @@
                                 
                                 %%% LHVoiceFive [measure 161] %%%
                                 bf,,8.
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.4" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (3) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.4" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (3) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.direction = #up
                                 r32
@@ -1044,23 +1044,23 @@
                                 
                                 %%% LHVoiceFive [measure 162] %%%
                                 d,,8
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.5" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (4) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.5" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (4) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1075,23 +1075,23 @@
                                 
                                 %%% LHVoiceFive [measure 163] %%%
                                 b,,,8
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.6" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (5) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.6" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (5) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1109,23 +1109,23 @@
                                 
                                 %%% LHVoiceFive [measure 164] %%%
                                 ef,,32
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.7" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (6) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.7" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (6) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.direction = #up
                                 r4...
@@ -1149,23 +1149,23 @@
                                 
                                 %%% LHVoiceFive [measure 165] %%%
                                 c,8.
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.8" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (7) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.8" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (7) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1180,23 +1180,23 @@
                                 
                                 %%% LHVoiceFive [measure 166] %%%
                                 fs,,8
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.9" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (8) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.9" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (8) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1229,23 +1229,23 @@
                                 
                                 %%% LHVoiceFive [measure 167] %%%
                                 a,,,32
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.10" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (9) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.10" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (9) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.direction = #up
                                 r4...
@@ -1261,23 +1261,23 @@
                                 
                                 %%% LHVoiceFive [measure 168] %%%
                                 b,,8.
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.11" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (10) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.11" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (10) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1300,23 +1300,23 @@
                                 
                                 %%% LHVoiceFive [measure 169] %%%
                                 fs,,8
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-5 8.3.12" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (11) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-5 8.3.12" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (11) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r32
                                 
@@ -1386,23 +1386,23 @@
                                 af,,4
                                 -\tenuto
                                 \f
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.1" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (12) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.1" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (12) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.staff-position = #-10
                                 r4
@@ -1427,23 +1427,23 @@
                                 %%% LHVoiceSix [measure 161] %%%
                                 b,,,8
                                 -\tenuto
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.2" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (13) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.2" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (13) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 \override Rest.direction = #up
                                 r4
@@ -1463,23 +1463,23 @@
                                 
                                 bf,,,16
                                 -\tenuto
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.3" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (14) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.3" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (14) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r8.
                                 
@@ -1502,23 +1502,23 @@
                                 
                                 g,,16
                                 -\tenuto
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.4" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (15) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.4" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (15) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r8.
                                 
@@ -1541,23 +1541,23 @@
                                 
                                 d,,8
                                 -\tenuto
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.5" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (16) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.5" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (16) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 e,,8
                                 -\tenuto
@@ -1576,23 +1576,23 @@
                                 
                                 e,,8
                                 -\tenuto
-                                %%% ^ \markup { % FIGURE-NAME:1
-                                    %%% \fontsize % FIGURE-NAME:1
-                                        %%% #2 % FIGURE-NAME:1
-                                        %%% \concat % FIGURE-NAME:1
-                                            %%% { % FIGURE-NAME:1
-                                                %%% [ % FIGURE-NAME:1
-                                                %%% "lh-6 8.3.6" % FIGURE-NAME:1
-                                                %%% \hspace % FIGURE-NAME:1
-                                                    %%% #1 % FIGURE-NAME:1
-                                                %%% \raise % FIGURE-NAME:1
-                                                    %%% #0.25 % FIGURE-NAME:1
-                                                    %%% \fontsize % FIGURE-NAME:1
-                                                        %%% #-2 % FIGURE-NAME:1
-                                                        %%% (17) % FIGURE-NAME:1
-                                                %%% ] % FIGURE-NAME:1
-                                            %%% } % FIGURE-NAME:1
-                                    %%% } % FIGURE-NAME:1
+                                %%% ^ \markup { % FIGURE_NAME:1
+                                    %%% \fontsize % FIGURE_NAME:1
+                                        %%% #2 % FIGURE_NAME:1
+                                        %%% \concat % FIGURE_NAME:1
+                                            %%% { % FIGURE_NAME:1
+                                                %%% [ % FIGURE_NAME:1
+                                                %%% "lh-6 8.3.6" % FIGURE_NAME:1
+                                                %%% \hspace % FIGURE_NAME:1
+                                                    %%% #1 % FIGURE_NAME:1
+                                                %%% \raise % FIGURE_NAME:1
+                                                    %%% #0.25 % FIGURE_NAME:1
+                                                    %%% \fontsize % FIGURE_NAME:1
+                                                        %%% #-2 % FIGURE_NAME:1
+                                                        %%% (17) % FIGURE_NAME:1
+                                                %%% ] % FIGURE_NAME:1
+                                            %%% } % FIGURE_NAME:1
+                                    %%% } % FIGURE_NAME:1
                                 
                                 r4
                                 
