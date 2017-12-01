@@ -19,22 +19,22 @@
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
                 s1 * 59/16
-                %%% ^ \markup { %! CLOCK_TIME:5
-                    %%% \fontsize %! CLOCK_TIME:5
-                        %%% #-2 %! CLOCK_TIME:5
-                        %%% 3'46'' %! CLOCK_TIME:5
-                    %%% } %! CLOCK_TIME:5
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
+                        %%% #-2 %! CLOCK_TIME_MARKUP:5
+                        %%% 3'46'' %! CLOCK_TIME_MARKUP:5
+                    %%% } %! CLOCK_TIME_MARKUP:5
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:2
-                                %%% { % STAGE_NUMBER:2
-                                    %%% \fontsize % STAGE_NUMBER:2
-                                        %%% #-3 % STAGE_NUMBER:2
-                                        %%% \with-color % STAGE_NUMBER:2
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
-                                            %%% [D.1] % STAGE_NUMBER:2
-                                %%% } % STAGE_NUMBER:2
+                            %%% \line % STAGE_NUMBER_MARKUP:2
+                                %%% { % STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
+                                            %%% [D.1] % STAGE_NUMBER_MARKUP:2
+                                %%% } % STAGE_NUMBER_MARKUP:2
                             %%% \line % SEGMENT:SPACING_MARKUP:4
                                 %%% { % SEGMENT:SPACING_MARKUP:4
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:4
@@ -94,24 +94,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME:1
-                                                %%% { % FIGURE_NAME:1
-                                                    %%% \fontsize % FIGURE_NAME:1
-                                                        %%% #2 % FIGURE_NAME:1
-                                                        %%% \concat % FIGURE_NAME:1
-                                                            %%% { % FIGURE_NAME:1
-                                                                %%% [ % FIGURE_NAME:1
-                                                                %%% "rh-1 1.1.1" % FIGURE_NAME:1
-                                                                %%% \hspace % FIGURE_NAME:1
-                                                                    %%% #1 % FIGURE_NAME:1
-                                                                %%% \raise % FIGURE_NAME:1
-                                                                    %%% #0.25 % FIGURE_NAME:1
-                                                                    %%% \fontsize % FIGURE_NAME:1
-                                                                        %%% #-2 % FIGURE_NAME:1
-                                                                        %%% (0) % FIGURE_NAME:1
-                                                                %%% ] % FIGURE_NAME:1
-                                                            %%% } % FIGURE_NAME:1
-                                                %%% } % FIGURE_NAME:1
+                                            %%% \line % FIGURE_NAME_MARKUP:1
+                                                %%% { % FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
+                                                        %%% #2 % FIGURE_NAME_MARKUP:1
+                                                        %%% \concat % FIGURE_NAME_MARKUP:1
+                                                            %%% { % FIGURE_NAME_MARKUP:1
+                                                                %%% [ % FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-1 1.1.1" % FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
+                                                                %%% \raise % FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
+                                                                        %%% (0) % FIGURE_NAME_MARKUP:1
+                                                                %%% ] % FIGURE_NAME_MARKUP:1
+                                                            %%% } % FIGURE_NAME_MARKUP:1
+                                                %%% } % FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     \override
