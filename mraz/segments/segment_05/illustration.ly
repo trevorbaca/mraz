@@ -426,10 +426,10 @@
                         \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
                             \null % SEGMENT:RESTATED_INSTRUMENT:2
                             } % SEGMENT:RESTATED_INSTRUMENT:2
-                        \clef "treble" % SEGMENT:RESTATED_CLEF:4
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_INSTRUMENT:1
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:3
-                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:5
+                        \clef "treble" % SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:3
+                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:5
                         s1 * 4
                         ^ \markup {
                             \override
@@ -437,6 +437,7 @@
                                 \box
                                     "to piano"
                             }
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:6
                         
                         %%% RH Voice 1 [measure 133] %%%
                         s1 * 5/2
@@ -2111,12 +2112,13 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 132] %%%
-                        \clef "bass" % SEGMENT:RESTATED_CLEF:2
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:1
-                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:4
+                        \clef "bass" % SEGMENT:RESTATED_CLEF_COMMAND:2
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:1
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:3
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:5
                         s1 * 4
-                        \mp % SEGMENT:REMINDER_DYNAMIC:5
+                        \mp % SEGMENT:REMINDER_DYNAMIC:6
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:4
                         
                         %%% LHVoiceOne [measure 133] %%%
                         s1 * 5/2
@@ -2233,8 +2235,8 @@
                                 
                                 %%% LHVoiceFour [measure 135] %%%
                                 \override Slur.direction = #down
-                                \clef "bass" % SEGMENT:EXPLICIT_CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
+                                \clef "bass" % EXPLICIT_CLEF_COMMAND:3
+                                \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:2
                                 r2
                                 %%% ^ \markup { % FIGURE_NAME:1
                                     %%% \fontsize % FIGURE_NAME:1
@@ -2253,6 +2255,7 @@
                                                 %%% ] % FIGURE_NAME:1
                                             %%% } % FIGURE_NAME:1
                                     %%% } % FIGURE_NAME:1
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:4
                                 
                                 r2
                                 
