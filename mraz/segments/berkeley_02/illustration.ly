@@ -520,19 +520,19 @@
                     \context RHVoiceOne = "RH Voice 1" {
                         
                         %%% RH Voice 1 [measure 10] %%%
-                        \set PianoMusicStaffGroup.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
-                            \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
-                                #16 %! SEGMENT:RESTATED_INSTRUMENT:2
-                                Piano %! SEGMENT:RESTATED_INSTRUMENT:2
-                            } %! SEGMENT:RESTATED_INSTRUMENT:2
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
-                            \null %! SEGMENT:RESTATED_INSTRUMENT:2
-                            } %! SEGMENT:RESTATED_INSTRUMENT:2
-                        \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:5
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
-                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:3
-                        \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:4
-                        \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:6
+                        \set PianoMusicStaffGroup.instrumentName = \markup { %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                            \hcenter-in %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                                #16 %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                                Piano %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                            } %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                            \null %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                            } %! SEGMENT:REAPPLIED_INSTRUMENT:2
+                        \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:5
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:3
+                        \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
+                        \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
                         s1 * 41/8
                         ^ \markup {
                             \override
@@ -540,7 +540,7 @@
                                 \box
                                     "to piano"
                             }
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:7
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:REAPPLIED_CLEF_SHADOW:7
                         {
                             {
                                 
@@ -1642,14 +1642,14 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 10] %%%
-                        \clef "bass" %! SEGMENT:RESTATED_CLEF_COMMAND:3
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:1
-                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \clef "bass" %! SEGMENT:REAPPLIED_CLEF_COMMAND:3
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:1
+                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:4
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
                         s1 * 1/2
                         \ppp %! SEGMENT:REMINDER_DYNAMIC:7
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:REAPPLIED_CLEF_SHADOW:5
                         
                         %%% LHVoiceOne [measure 11] %%%
                         s1 * 1/8
