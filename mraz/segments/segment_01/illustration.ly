@@ -83,13 +83,14 @@
                                 \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:3
                                     \null %! SEGMENT:RESTATED_INSTRUMENT:3
                                     } %! SEGMENT:RESTATED_INSTRUMENT:3
-                                \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:5
+                                \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:6
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:2
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:4
-                                \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:6
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                                \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:5
+                                \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:7
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:9
                                 e16
-                                \ppp %! SEGMENT:REMINDER_DYNAMIC:9
+                                \ppp %! SEGMENT:REMINDER_DYNAMIC:10
                                 [
                                 ^ \markup {
                                     \column
@@ -121,7 +122,7 @@
                                                 }
                                         }
                                     }
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:7
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:8
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -462,14 +463,15 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 85] %%%
-                        \clef "bass" %! SEGMENT:RESTATED_CLEF_COMMAND:2
+                        \clef "bass" %! SEGMENT:RESTATED_CLEF_COMMAND:3
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:1
-                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:5
+                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
                         s1 * 59/16
-                        \ppp %! SEGMENT:REMINDER_DYNAMIC:6
+                        \ppp %! SEGMENT:REMINDER_DYNAMIC:7
                         \bar "|"
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:4
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:5
                         
                     }
                     \context LHVoiceTwo = "LHVoiceTwo" {
