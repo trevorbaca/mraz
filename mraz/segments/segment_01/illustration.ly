@@ -86,7 +86,7 @@
                                 \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:4
-                                \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:5
+                                %%% \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:5
                                 \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:7
                                 \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:9
                                 e16
@@ -465,7 +465,7 @@
                         %%% LHVoiceOne [measure 85] %%%
                         \clef "bass" %! SEGMENT:REAPPLIED_CLEF_COMMAND:3
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:1
-                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:2
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:4
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
                         s1 * 59/16
