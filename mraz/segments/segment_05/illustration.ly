@@ -426,10 +426,11 @@
                         \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
                             \null %! SEGMENT:RESTATED_INSTRUMENT:2
                             } %! SEGMENT:RESTATED_INSTRUMENT:2
-                        \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:5
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:3
-                        \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:5
+                        \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:4
+                        \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:6
                         s1 * 4
                         ^ \markup {
                             \override
@@ -437,7 +438,7 @@
                                 \box
                                     "to piano"
                             }
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:6
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:7
                         
                         %%% RH Voice 1 [measure 133] %%%
                         s1 * 5/2
@@ -2112,13 +2113,14 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 132] %%%
-                        \clef "bass" %! SEGMENT:RESTATED_CLEF_COMMAND:2
+                        \clef "bass" %! SEGMENT:RESTATED_CLEF_COMMAND:3
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:1
-                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:5
+                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
                         s1 * 4
-                        \mp %! SEGMENT:REMINDER_DYNAMIC:6
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:4
+                        \mp %! SEGMENT:REMINDER_DYNAMIC:7
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:5
                         
                         %%% LHVoiceOne [measure 133] %%%
                         s1 * 5/2
@@ -2235,8 +2237,9 @@
                                 
                                 %%% LHVoiceFour [measure 135] %%%
                                 \override Slur.direction = #down
-                                \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                                \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                                 \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:2
+                                \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -2255,7 +2258,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                                 
                                 r2
                                 

@@ -132,10 +132,11 @@ def music_maker():
                         \context Voice = "MusicVoice" {
             <BLANKLINE>
                             %%% MusicVoice [measure 1] %%%
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:2
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 1/16
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:3
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
             <BLANKLINE>
                             %%% MusicVoice [measure 2] %%%
                             R1 * 7/16
@@ -280,10 +281,11 @@ def music_maker():
                         \context Voice = "MusicVoice" {
             <BLANKLINE>
                             %%% MusicVoice [measure 1] %%%
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:2
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 9/16
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:3
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
             <BLANKLINE>
                             %%% MusicVoice [measure 2] %%%
                             R1 * 7/8
