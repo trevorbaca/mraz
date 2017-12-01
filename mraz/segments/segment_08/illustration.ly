@@ -238,19 +238,20 @@
                         \set PianoMusicStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
                             \null % SEGMENT:RESTATED_INSTRUMENT:2
                             } % SEGMENT:RESTATED_INSTRUMENT:2
-                        \clef "treble" % SEGMENT:RESTATED_CLEF:4
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_INSTRUMENT:1
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:3
-                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:5
-                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:6
+                        \clef "treble" % SEGMENT:RESTATED_CLEF_COMMAND:4
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
+                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:3
+                        \set PianoMusicRHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:5
+                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:7
                         s1 * 7/16
-                        \fff % SEGMENT:REMINDER_DYNAMIC:7
+                        \fff % SEGMENT:REMINDER_DYNAMIC:8
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
                                 \box
                                     "to piano"
                             }
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:6
                         
                         %%% RH Voice 1 [measure 159] %%%
                         s1 * 1
@@ -681,10 +682,11 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 158] %%%
-                        \clef "bass" % SEGMENT:RESTATED_CLEF:2
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED_CLEF:1
-                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF:3
+                        \clef "bass" % SEGMENT:RESTATED_CLEF_COMMAND:2
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:1
+                        \set PianoMusicLHStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:3
                         s1 * 7/16
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:4
                         
                         %%% LHVoiceOne [measure 159] %%%
                         s1 * 1
@@ -884,8 +886,8 @@
                                 \override TupletBracket.direction = #up
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \clef "bass" % SEGMENT:EXPLICIT_CLEF:3
-                                \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:2
+                                \clef "bass" % EXPLICIT_CLEF_COMMAND:3
+                                \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:2
                                 g,8.
                                 \ppp
                                 %%% ^ \markup { % FIGURE_NAME:1
@@ -905,6 +907,7 @@
                                                 %%% ] % FIGURE_NAME:1
                                             %%% } % FIGURE_NAME:1
                                     %%% } % FIGURE_NAME:1
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:4
                                 
                                 r32
                                 
