@@ -429,7 +429,7 @@
                         \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:5
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:3
-                        \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
+                        %%% \override PianoMusicRHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
                         \set PianoMusicRHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
                         s1 * 4
                         ^ \markup {
@@ -2115,7 +2115,7 @@
                         %%% LHVoiceOne [measure 132] %%%
                         \clef "bass" %! SEGMENT:REAPPLIED_CLEF_COMMAND:3
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:1
-                        \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:2
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:4
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
                         s1 * 4
@@ -2239,7 +2239,7 @@
                                 \override Slur.direction = #down
                                 \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                                 \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:2
-                                \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
+                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
