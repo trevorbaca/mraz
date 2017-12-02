@@ -1842,24 +1842,24 @@
                                                         \upright
                                                             "(temporary line-break)"
                                                 }
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.5.2" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (61) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.5.2" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (61) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                         }
                                     }
                                 
@@ -1963,24 +1963,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.5.3" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (62) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.5.3" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (62) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     @
@@ -2012,24 +2012,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.5.4" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (63) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.5.4" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (63) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     @
@@ -2153,24 +2153,24 @@
                                                         \upright
                                                             "(temporary line-break)"
                                                 }
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.5.5" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (64) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.5.5" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (64) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                         }
                                     }
                                 
@@ -2237,24 +2237,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.6.1" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (65) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.6.1" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (65) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     @
@@ -2279,24 +2279,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.6.2" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (66) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.6.2" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (66) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     @
@@ -2321,24 +2321,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 4.6.3" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (67) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 4.6.3" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (67) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     @
@@ -2501,24 +2501,24 @@
                                                         \upright
                                                             "(temporary line-break to avoid collision with next chord)"
                                                 }
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-3 4.1.1" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (0) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-3 4.1.1" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (0) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                         }
                                     }
                                 

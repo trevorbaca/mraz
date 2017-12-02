@@ -27,22 +27,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:2
-                                %%% { % STAGE_NUMBER_MARKUP:2
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:2
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:2
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:2
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
-                                            %%% [D.1] % STAGE_NUMBER_MARKUP:2
-                                %%% } % STAGE_NUMBER_MARKUP:2
-                            %%% \line % SEGMENT:SPACING_MARKUP:4
-                                %%% { % SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/24) % SEGMENT:SPACING_MARKUP:4
-                                %%% } % SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! STAGE_NUMBER_MARKUP:2
+                                %%% { %! STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                                            %%% [D.1] %! STAGE_NUMBER_MARKUP:2
+                                %%% } %! STAGE_NUMBER_MARKUP:2
+                            %%% \line %! SEGMENT:SPACING_MARKUP:4
+                                %%% { %! SEGMENT:SPACING_MARKUP:4
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
+                                            %%% (1/24) %! SEGMENT:SPACING_MARKUP:4
+                                %%% } %! SEGMENT:SPACING_MARKUP:4
                         }
                     }
                 ^ \markup {
@@ -95,24 +95,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-1 1.1.1" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (0) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-1 1.1.1" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (0) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                             \line
                                                 {
                                                     \override

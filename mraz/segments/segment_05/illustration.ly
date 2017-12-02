@@ -530,24 +530,24 @@
                                                         \upright
                                                             "(black voice louder; green voice longer)"
                                                 }
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-2 5.1.1" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (0) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-2 5.1.1" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (0) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                         }
                                     }
                                 
@@ -1111,24 +1111,24 @@
                                                         \upright
                                                             "(first note A5)"
                                                 }
-                                            %%% \line % FIGURE_NAME_MARKUP:1
-                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                        %%% #2 % FIGURE_NAME_MARKUP:1
-                                                        %%% \concat % FIGURE_NAME_MARKUP:1
-                                                            %%% { % FIGURE_NAME_MARKUP:1
-                                                                %%% [ % FIGURE_NAME_MARKUP:1
-                                                                %%% "rh-3 5.1.1" % FIGURE_NAME_MARKUP:1
-                                                                %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                    %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                    %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                        %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                        %%% (1) % FIGURE_NAME_MARKUP:1
-                                                                %%% ] % FIGURE_NAME_MARKUP:1
-                                                            %%% } % FIGURE_NAME_MARKUP:1
-                                                %%% } % FIGURE_NAME_MARKUP:1
+                                            %%% \line %! FIGURE_NAME_MARKUP:1
+                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                        %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                        %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                            %%% { %! FIGURE_NAME_MARKUP:1
+                                                                %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                %%% "rh-3 5.1.1" %! FIGURE_NAME_MARKUP:1
+                                                                %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                    %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% (1) %! FIGURE_NAME_MARKUP:1
+                                                                %%% ] %! FIGURE_NAME_MARKUP:1
+                                                            %%% } %! FIGURE_NAME_MARKUP:1
+                                                %%% } %! FIGURE_NAME_MARKUP:1
                                         }
                                     }
                                 
@@ -2237,9 +2237,10 @@
                                 
                                 %%% LHVoiceFour [measure 135] %%%
                                 \override Slur.direction = #down
-                                \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
-                                \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:2
-                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
+                                \clef "bass" %! REDUNDANT_CLEF_COMMAND:5
+                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
+                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
+                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -2258,7 +2259,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:6
                                 
                                 r2
                                 
