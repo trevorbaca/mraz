@@ -46,9 +46,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 16/4 %! SEGMENT:DUPLICATE_TIME_SIGNATURE:4
+                \time 16/4 %! SEGMENT:REDUNDANT_TIME_SIGNATURE:4
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:DUPLICATE_TIME_SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_TIME_SIGNATURE:3
                 s1 * 4
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
