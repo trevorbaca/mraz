@@ -277,24 +277,24 @@
                                     ^ \markup {
                                         \column
                                             {
-                                                %%% \line % FIGURE_NAME_MARKUP:1
-                                                    %%% { % FIGURE_NAME_MARKUP:1
-                                                        %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                            %%% #2 % FIGURE_NAME_MARKUP:1
-                                                            %%% \concat % FIGURE_NAME_MARKUP:1
-                                                                %%% { % FIGURE_NAME_MARKUP:1
-                                                                    %%% [ % FIGURE_NAME_MARKUP:1
-                                                                    %%% "rh-1 7.1.1" % FIGURE_NAME_MARKUP:1
-                                                                    %%% \hspace % FIGURE_NAME_MARKUP:1
-                                                                        %%% #1 % FIGURE_NAME_MARKUP:1
-                                                                    %%% \raise % FIGURE_NAME_MARKUP:1
-                                                                        %%% #0.25 % FIGURE_NAME_MARKUP:1
-                                                                        %%% \fontsize % FIGURE_NAME_MARKUP:1
-                                                                            %%% #-2 % FIGURE_NAME_MARKUP:1
-                                                                            %%% (0) % FIGURE_NAME_MARKUP:1
-                                                                    %%% ] % FIGURE_NAME_MARKUP:1
-                                                                %%% } % FIGURE_NAME_MARKUP:1
-                                                    %%% } % FIGURE_NAME_MARKUP:1
+                                                %%% \line %! FIGURE_NAME_MARKUP:1
+                                                    %%% { %! FIGURE_NAME_MARKUP:1
+                                                        %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                            %%% #2 %! FIGURE_NAME_MARKUP:1
+                                                            %%% \concat %! FIGURE_NAME_MARKUP:1
+                                                                %%% { %! FIGURE_NAME_MARKUP:1
+                                                                    %%% [ %! FIGURE_NAME_MARKUP:1
+                                                                    %%% "rh-1 7.1.1" %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \hspace %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #1 %! FIGURE_NAME_MARKUP:1
+                                                                    %%% \raise %! FIGURE_NAME_MARKUP:1
+                                                                        %%% #0.25 %! FIGURE_NAME_MARKUP:1
+                                                                        %%% \fontsize %! FIGURE_NAME_MARKUP:1
+                                                                            %%% #-2 %! FIGURE_NAME_MARKUP:1
+                                                                            %%% (0) %! FIGURE_NAME_MARKUP:1
+                                                                    %%% ] %! FIGURE_NAME_MARKUP:1
+                                                                %%% } %! FIGURE_NAME_MARKUP:1
+                                                    %%% } %! FIGURE_NAME_MARKUP:1
                                                 \line
                                                     {
                                                         \override
