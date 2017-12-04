@@ -265,12 +265,12 @@
                                     \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:3
                                         \null %! REAPPLIED_INSTRUMENT_COMMAND:3
                                         } %! REAPPLIED_INSTRUMENT_COMMAND:3
-                                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:6
+                                    \clef "treble" %! REAPPLIED_CLEF_COMMAND:7
                                     \dynamicUp
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:2
                                     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:4
                                     %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:5
-                                    \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
+                                    \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
                                     e''16
                                     \fff
                                     [
@@ -1699,10 +1699,10 @@
                     \context LHVoiceOne = "LHVoiceOne" {
                         
                         %%% LHVoiceOne [measure 147] %%%
-                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:3
+                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
                         \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 3/4
                         \mp %! REMINDER_DYNAMIC_COMMAND:7
