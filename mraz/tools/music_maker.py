@@ -60,7 +60,7 @@ def music_maker():
             <BLANKLINE>
                         %%% GlobalSkips [measure 1] %%%
                         \time 1/16
-                        \bar "" %! SEGMENT:EMPTY_START_BAR:1
+                        \bar "" %! EMPTY_START_BAR:1
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
                         s1 * 1/16
@@ -222,7 +222,7 @@ def music_maker():
             <BLANKLINE>
                         %%% GlobalSkips [measure 1] %%%
                         \time 9/16
-                        \bar "" %! SEGMENT:EMPTY_START_BAR:1
+                        \bar "" %! EMPTY_START_BAR:1
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
                         s1 * 9/16
