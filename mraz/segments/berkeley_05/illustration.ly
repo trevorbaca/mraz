@@ -46,9 +46,9 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 16/4 %! SEGMENT:REDUNDANT_TIME_SIGNATURE:4
+                \time 16/4 %! REDUNDANT_TIME_SIGNATURE:4
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_TIME_SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! REDUNDANT_TIME_SIGNATURE:3
                 s1 * 4
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
@@ -3107,9 +3107,9 @@
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:6
                         s1 * 4
-                        \p %! SEGMENT:REMINDER_DYNAMIC:7
+                        \p %! REMINDER_DYNAMIC:7
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
                         
                         %%% LHVoiceOne [measure 70] %%%
