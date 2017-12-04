@@ -88,9 +88,9 @@
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:4
                                 %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:5
                                 \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:9
+                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:9
                                 e16
-                                \ppp %! SEGMENT:REMINDER_DYNAMIC:10
+                                \ppp %! REMINDER_DYNAMIC:10
                                 [
                                 ^ \markup {
                                     \column
@@ -467,9 +467,9 @@
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:6
+                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:6
                         s1 * 59/16
-                        \ppp %! SEGMENT:REMINDER_DYNAMIC:7
+                        \ppp %! REMINDER_DYNAMIC:7
                         \bar "|"
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
                         

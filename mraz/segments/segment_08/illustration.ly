@@ -243,9 +243,9 @@
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                         %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                         \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                        \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                         s1 * 7/16
-                        \fff %! SEGMENT:REMINDER_DYNAMIC:9
+                        \fff %! REMINDER_DYNAMIC:9
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
