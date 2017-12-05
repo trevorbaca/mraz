@@ -406,11 +406,11 @@
                                 \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:3
                                     \null %! EXPLICIT_INSTRUMENT_COMMAND:3
                                     } %! EXPLICIT_INSTRUMENT_COMMAND:3
-                                \clef "treble" %! EXPLICIT_CLEF_COMMAND:7
+                                \clef "treble" %! EXPLICIT_CLEF_COMMAND:9
                                 \once \override StaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:2
-                                \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:4
-                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:5
-                                \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:6
+                                \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:6
+                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:7
+                                \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:8
                                 bf''''1
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -430,7 +430,16 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:8
+                                \set StaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                    \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                        #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                        Piano %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                    } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                \set StaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                    \null %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                    } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
+                                \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:4
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:10
                             }
                         }
                         
