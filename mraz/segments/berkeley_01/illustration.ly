@@ -438,8 +438,8 @@
                                 \set StaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
                                     \null %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
                                     } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
-                                \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:4
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:10
+                                \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:4
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:10
                             }
                         }
                         
@@ -1184,7 +1184,7 @@
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         s1 * 1
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceOne [measure 2] %%%
                         s1 * 1/2
@@ -1547,7 +1547,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:6
+                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
                                 
                                 \override Rest.direction = #down
                                 r4
