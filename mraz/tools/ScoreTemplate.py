@@ -1,5 +1,6 @@
 import abjad
 import baca
+import mraz
 
 
 class ScoreTemplate(baca.ScoreTemplate):
@@ -112,6 +113,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ### CLASS VARIABLES ###
 
+    __documentation_section__ = None
+
+    ### CLASS VARIABLES ###
+
     voice_colors = {
         'RH Voice 1': 'red',
         'RHVoiceOneInserts': 'red',
@@ -142,113 +147,99 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        import mraz
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
+
+        # RH VOICES
         rh_voice_1 = abjad.Voice(
-            [],
             context_name='RHVoiceOne',
             name='RH Voice 1',
             )
         rh_voice_1I = abjad.Voice(
-            [],
             context_name='RHVoiceOneInserts',
             name='RHVoiceOneInserts',
             )
         rh_voice_2 = abjad.Voice(
-            [],
             context_name='RHVoiceTwo',
             name='RHVoiceTwo',
             )
         rh_voice_2I = abjad.Voice(
-            [],
             context_name='RHVoiceTwoInserts',
             name='RHVoiceTwoInserts',
             )
         rh_voice_3 = abjad.Voice(
-            [],
             context_name='RHVoiceThree',
             name='RHVoiceThree',
             )
         rh_voice_3I = abjad.Voice(
-            [],
             context_name='RHVoiceThreeInserts',
             name='RHVoiceThreeInserts',
             )
         rh_voice_4 = abjad.Voice(
-            [],
             context_name='RHVoiceFour',
             name='RHVoiceFour',
             )
         rh_voice_4I = abjad.Voice(
-            [],
             context_name='RHVoiceFourInserts',
             name='RHVoiceFourInserts',
             )
         rh_voice_5 = abjad.Voice(
-            [],
             context_name='RHVoiceFive',
             name='RHVoiceFive',
             )
         rh_voice_6 = abjad.Voice(
-            [],
             context_name='RHVoiceSix',
             name='RHVoiceSix',
             )
         rh_resonance_voice = abjad.Voice(
-            [],
             context_name='RHResonanceVoice',
             name='RHResonanceVoice',
             )
+
+        # LH VOICES
         lh_voice_1 = abjad.Voice(
-            [],
             context_name='LHVoiceOne',
             name='LHVoiceOne',
             )
         lh_voice_2 = abjad.Voice(
-            [],
             context_name='LHVoiceTwo',
             name='LHVoiceTwo',
             )
         lh_voice_3 = abjad.Voice(
-            [],
             context_name='LHVoiceThree',
             name='LHVoiceThree',
             )
         lh_voice_4 = abjad.Voice(
-            [],
             context_name='LHVoiceFour',
             name='LHVoiceFour',
             )
         lh_voice_4I = abjad.Voice(
-            [],
             context_name='LHVoiceFourInserts',
             name='LHVoiceFourInserts',
             )
         lh_voice_5 = abjad.Voice(
-            [],
             context_name='LHVoiceFive',
             name='LHVoiceFive',
             )
         lh_voice_5I = abjad.Voice(
-            [],
             context_name='LHVoiceFiveInserts',
             name='LHVoiceFiveInserts',
             )
         lh_voice_6 = abjad.Voice(
-            [],
             context_name='LHVoiceSix',
             name='LHVoiceSix',
             )
         lh_voice_6I = abjad.Voice(
-            [],
             context_name='LHVoiceSixInserts',
             name='LHVoiceSixInserts',
             )
         lh_resonance_voice = abjad.Voice(
-            [],
             context_name='LHResonanceVoice',
             name='LHResonanceVoice',
             )
+
+        # RH STAFF
         piano_music_rh_staff = abjad.Staff(
             [
                 rh_voice_1,
@@ -267,6 +258,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             is_simultaneous=True,
             name='PianoMusicRHStaff',
             )
+
+        # LH STAFF
         piano_music_lh_staff = abjad.Staff(
             [
                 lh_voice_1,
@@ -289,29 +282,28 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_clef',
             abjad.Clef('bass'),
             )
+
+        # STAFF GROUP
         piano_music_staff_group = abjad.StaffGroup(
-            [
-                piano_music_rh_staff,
-                piano_music_lh_staff,
-                ],
+            [piano_music_rh_staff, piano_music_lh_staff],
             context_name='PianoMusicStaffGroup',
             name='PianoMusicStaffGroup',
             )
         piano = mraz.instruments['piano']
         abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
+
+        # MUSIC CONTEXT
         music_context = abjad.Context(
-            [
-                piano_music_staff_group,
-                ],
+            [piano_music_staff_group],
             context_name='MusicContext',
             name='MusicContext',
             )
+
+        # SCORE
         score = abjad.Score(
-            [
-                global_context,
-                music_context,
-                ],
+            [global_context, music_context],
             name='Score',
             )
         self._validate_voice_names(score)
+
         return score
