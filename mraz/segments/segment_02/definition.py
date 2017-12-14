@@ -161,7 +161,6 @@ maker(
 
 maker(
     baca.scope('LHResonanceVoice', 1, Infinity),
-    baca.clef('bass'),
     )
 
 maker(

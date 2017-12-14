@@ -1403,10 +1403,6 @@
                             {
                                 
                                 %%% LHResonanceVoice [measure 86] %%%
-                                \clef "bass" %! EXPLICIT_CLEF_COMMAND:5
-                                \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:2
-                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
-                                \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:4
                                 <cs,, cs,>1..
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -1425,7 +1421,6 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:6
                                 
                                 <cs,, cs,>16
                                 \repeatTie
