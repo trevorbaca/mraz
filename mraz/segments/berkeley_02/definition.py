@@ -186,7 +186,6 @@ accumulator(
     'LHResonanceVoice',
     [resonance],
     baca.anchor_to_figure('b.2.1'),
-    baca.clef('bass'),
     counts=[8],
     figure_name='b.2.r.1',
     hide_time_signature=True,

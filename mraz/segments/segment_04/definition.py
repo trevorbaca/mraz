@@ -959,7 +959,6 @@ maker(
 
 maker(
     baca.scope('LHVoiceFive', 1, Infinity),
-    baca.clef('bass'),
     baca.dynamics_down(),
     )
 

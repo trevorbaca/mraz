@@ -288,7 +288,6 @@ maker(
     baca.scope('LHVoiceFive', 1, Infinity),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
-    baca.clef('bass'),
     baca.ottava_bassa(),
     baca.tuplet_brackets_up(),
     )
