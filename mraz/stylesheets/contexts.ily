@@ -74,7 +74,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceOne
+        \name RHVoiceI
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -535,7 +535,7 @@
         \name PianoMusicRHStaff
         \type Engraver_group
         \alias Staff
-        \accepts RHVoiceOne
+        \accepts RHVoiceI
         \accepts RHVoiceOneInserts
         \accepts RHVoiceTwo
         \accepts RHVoiceTwoInserts

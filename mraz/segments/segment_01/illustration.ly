@@ -67,11 +67,11 @@
         \context MusicContext = "MusicContext" {
             \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                 \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                    \context RHVoiceOne = "RH Voice 1" {
+                    \context RHVoiceI = "RHVoiceI" {
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 85] %%%
+                                %%% RHVoiceI [measure 85] %%%
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
@@ -88,7 +88,7 @@
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:8
                                 %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:9
                                 \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:10
-                                \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:13
+                                \once \override RHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:13
                                 e16
                                 \ppp %! REMINDER_DYNAMIC_COMMAND:14
                                 [

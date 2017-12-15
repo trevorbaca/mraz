@@ -13,7 +13,7 @@ metadata = abjad.TypedOrderedDict(
                         ),
                     (
                         'PianoMusicRHStaff',
-                        ('treble', 'RH Voice 1'),
+                        ('treble', 'RHVoiceI'),
                         ),
                     ]
                 ),
@@ -33,11 +33,11 @@ metadata = abjad.TypedOrderedDict(
                     ('LHVoiceSixInserts', 'ppp'),
                     ('LHVoiceThree', 'ppp'),
                     ('LHVoiceTwo', 'ppp'),
-                    ('RH Voice 1', 'ppp'),
                     ('RHResonanceVoice', 'ppp'),
                     ('RHVoiceFive', 'ppp'),
                     ('RHVoiceFour', 'ppp'),
                     ('RHVoiceFourInserts', 'ppp'),
+                    ('RHVoiceI', 'ppp'),
                     ('RHVoiceOneInserts', 'ppp'),
                     ('RHVoiceSix', 'ppp'),
                     ('RHVoiceThree', 'ppp'),

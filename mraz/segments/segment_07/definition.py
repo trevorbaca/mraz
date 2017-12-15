@@ -14,7 +14,7 @@ collections = collection_maker.make_segment_7_collections()
 #################################### [7.1] ####################################
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.nest('2/16'),
@@ -49,7 +49,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(15, 15+10),
@@ -79,7 +79,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(17, 17+10),
@@ -112,7 +112,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(19, 19+10),
@@ -160,7 +160,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 1']['rh'].next(),
     baca.nest('2/16'),
     baca.register(23, 23+10),
@@ -345,7 +345,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RH Voice 1', 1, Infinity),
+    baca.scope('RHVoiceI', 1, Infinity),
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),

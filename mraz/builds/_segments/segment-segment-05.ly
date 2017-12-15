@@ -273,9 +273,9 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     
-                    %%% RH Voice 1 [measure 132] %%%
+                    %%% RHVoiceI [measure 132] %%%
                     \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
                         \hcenter-in % SEGMENT-ONLY
                             #16 % SEGMENT-ONLY
@@ -295,34 +295,34 @@
                                 "to piano"
                         }
                     
-                    %%% RH Voice 1 [measure 133] %%%
+                    %%% RHVoiceI [measure 133] %%%
                     s1 * 5/2
                     
-                    %%% RH Voice 1 [measure 134] %%%
+                    %%% RHVoiceI [measure 134] %%%
                     s1 * 1/4
                     
-                    %%% RH Voice 1 [measure 135] %%%
+                    %%% RHVoiceI [measure 135] %%%
                     s1 * 3
                     
-                    %%% RH Voice 1 [measure 136] %%%
+                    %%% RHVoiceI [measure 136] %%%
                     s1 * 1/4
                     
-                    %%% RH Voice 1 [measure 137] %%%
+                    %%% RHVoiceI [measure 137] %%%
                     s1 * 5/2
                     
-                    %%% RH Voice 1 [measure 138] %%%
+                    %%% RHVoiceI [measure 138] %%%
                     s1 * 1/4
                     
-                    %%% RH Voice 1 [measure 139] %%%
+                    %%% RHVoiceI [measure 139] %%%
                     s1 * 13/4
                     
-                    %%% RH Voice 1 [measure 140] %%%
+                    %%% RHVoiceI [measure 140] %%%
                     s1 * 1/4
                     
-                    %%% RH Voice 1 [measure 141] %%%
+                    %%% RHVoiceI [measure 141] %%%
                     s1 * 7/4
                     
-                    %%% RH Voice 1 [measure 142] %%%
+                    %%% RHVoiceI [measure 142] %%%
                     s1 * 1/4
                     \bar "|"
                     

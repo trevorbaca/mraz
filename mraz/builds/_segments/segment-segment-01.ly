@@ -31,11 +31,11 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 85] %%%
+                            %%% RHVoiceI [measure 85] %%%
                             \override Beam.positions = #'(6 . 6)
                             \set stemLeftBeamCount = #0
                             \set stemRightBeamCount = #2
@@ -50,7 +50,7 @@
                             \clef "treble" % SEGMENT-ONLY
                             \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                            \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \once \override RHVoiceI.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             e16
                             \ppp % SEGMENT-ONLY
                             [

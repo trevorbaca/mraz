@@ -150,11 +150,11 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 1] %%%
+                            %%% RHVoiceI [measure 1] %%%
                             \set PianoMusicStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -169,7 +169,7 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 2] %%%
+                    %%% RHVoiceI [measure 2] %%%
                     s1 * 29/4
                     \bar "|"
                     

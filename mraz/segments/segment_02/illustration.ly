@@ -229,9 +229,9 @@
         \context MusicContext = "MusicContext" {
             \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                 \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                    \context RHVoiceOne = "RH Voice 1" {
+                    \context RHVoiceI = "RHVoiceI" {
                         
-                        %%% RH Voice 1 [measure 86] %%%
+                        %%% RHVoiceI [measure 86] %%%
                         \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
                             \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
@@ -278,16 +278,16 @@
                         \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
                         \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
-                        %%% RH Voice 1 [measure 87] %%%
+                        %%% RHVoiceI [measure 87] %%%
                         s1 * 27/16
                         
-                        %%% RH Voice 1 [measure 88] %%%
+                        %%% RHVoiceI [measure 88] %%%
                         s1 * 21/16
                         
-                        %%% RH Voice 1 [measure 89] %%%
+                        %%% RHVoiceI [measure 89] %%%
                         s1 * 15/16
                         
-                        %%% RH Voice 1 [measure 90] %%%
+                        %%% RHVoiceI [measure 90] %%%
                         s1 * 1
                         \bar "|"
                         

@@ -49,9 +49,9 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     
-                    %%% RH Voice 1 [measure 143] %%%
+                    %%% RHVoiceI [measure 143] %%%
                     \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
                         \hcenter-in % SEGMENT-ONLY
                             #16 % SEGMENT-ONLY
@@ -71,13 +71,13 @@
                                 "to piano"
                         }
                     
-                    %%% RH Voice 1 [measure 144] %%%
+                    %%% RHVoiceI [measure 144] %%%
                     s1 * 1/2
                     
-                    %%% RH Voice 1 [measure 145] %%%
+                    %%% RHVoiceI [measure 145] %%%
                     s1 * 7/8
                     
-                    %%% RH Voice 1 [measure 146] %%%
+                    %%% RHVoiceI [measure 146] %%%
                     s1 * 5/8
                     \bar "|"
                     

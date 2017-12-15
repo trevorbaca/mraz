@@ -486,9 +486,9 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     
-                    %%% RH Voice 1 [measure 22] %%%
+                    %%% RHVoiceI [measure 22] %%%
                     \override TupletBracket.staff-padding = #8
                     \override TupletBracket.direction = #up
                     \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
@@ -513,7 +513,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
                             
-                            %%% RH Voice 1 [measure 40] %%%
+                            %%% RHVoiceI [measure 40] %%%
                             \override TextScript.direction = #up
                             \dynamicDown
                             r8
@@ -559,14 +559,14 @@
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 42] %%%
+                            %%% RHVoiceI [measure 42] %%%
                             r2
                         }
                     }
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 43] %%%
+                            %%% RHVoiceI [measure 43] %%%
                             \once \override Script.color = #black
                             \once \override Script.extra-offset = #'(0.5 . 0)
                             \once \override Rest.transparent = ##t
@@ -576,13 +576,13 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 44] %%%
+                    %%% RHVoiceI [measure 44] %%%
                     s1 * 1/2
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/4 {
                             
-                            %%% RH Voice 1 [measure 45] %%%
+                            %%% RHVoiceI [measure 45] %%%
                             bf''''8
                             
                             s8
@@ -605,13 +605,13 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 47] %%%
+                    %%% RHVoiceI [measure 47] %%%
                     s1 * 7/4
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 19/14 {
                             
-                            %%% RH Voice 1 [measure 49] %%%
+                            %%% RHVoiceI [measure 49] %%%
                             ef''''8
                             [
                             (
@@ -654,12 +654,12 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 53] %%%
+                    %%% RHVoiceI [measure 53] %%%
                     s1 * 7/8
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 55] %%%
+                            %%% RHVoiceI [measure 55] %%%
                             ef''''1..
                             -\tenuto
                             \f
@@ -669,7 +669,7 @@
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 56] %%%
+                            %%% RHVoiceI [measure 56] %%%
                             f''''1.
                             -\tenuto
                         }
@@ -677,7 +677,7 @@
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 57] %%%
+                            %%% RHVoiceI [measure 57] %%%
                             \ottava #1
                             bf''''1
                             -\tenuto
@@ -686,18 +686,18 @@
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 58] %%%
+                            %%% RHVoiceI [measure 58] %%%
                             ef''''1
                             -\tenuto
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 59] %%%
+                    %%% RHVoiceI [measure 59] %%%
                     s1 * 7/4
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 61] %%%
+                            %%% RHVoiceI [measure 61] %%%
                             f''''1
                             -\tenuto
                         }
@@ -705,7 +705,7 @@
                     {
                         {
                             
-                            %%% RH Voice 1 [measure 62] %%%
+                            %%% RHVoiceI [measure 62] %%%
                             bf''''2
                             -\tenuto
                             \revert Stem.direction
@@ -713,7 +713,7 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 63] %%%
+                    %%% RHVoiceI [measure 63] %%%
                     s1 * 35/4
                     \bar "|"
                     \revert TupletBracket.staff-padding

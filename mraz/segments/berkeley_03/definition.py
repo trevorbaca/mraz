@@ -411,7 +411,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     [abjad.Rest((1, 8))],
     baca.fermata(),
     baca.script_color('black'),
@@ -555,7 +555,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 4']['rh'].next(),
     baca.beam_runs(hide_nibs=True),
     baca.dynamic('mf'),
@@ -584,14 +584,14 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     [abjad.Rest((2, 4))],
     figure_name='rh-1 4.4.2',
     hide_time_signature=True,
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 4']['rh'].next(),
     baca.anchor_to_figure('lh-5 4.4.4'),
     baca.beam_runs(hide_nibs=True),
@@ -614,7 +614,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 4']['rh'].next(exhausted=True),
     baca.anchor('LHVoiceFive', baca.rest(-8)),
     baca.beam_runs(hide_nibs=True),
@@ -710,7 +710,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(),
     baca.anchor_to_figure('lh-r 4.5.2'),
     baca.dynamic('f'),
@@ -722,7 +722,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
@@ -732,7 +732,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
@@ -742,7 +742,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(),
     baca.register(36),
     baca.tenuti(),
@@ -752,7 +752,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(),
     baca.anchor_to_figure('lh-r 4.5.7'),
     baca.register(36),
@@ -763,7 +763,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections['stage 5']['rh'].next(exhausted=True),
     baca.register(36),
     baca.tenuti(),
@@ -1027,19 +1027,19 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RH Voice 1', 1, Infinity),
+    baca.scope('RHVoiceI', 1, Infinity),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
     )
 
 maker(
-    baca.scope('RH Voice 1', 1, 34),
+    baca.scope('RHVoiceI', 1, 34),
     baca.ottava(),
     )
 
 maker(
-    baca.scope('RH Voice 1', 36, Infinity),
+    baca.scope('RHVoiceI', 36, Infinity),
     baca.ottava(),
     )
 
