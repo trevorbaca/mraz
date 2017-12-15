@@ -41,31 +41,31 @@ class ScoreTemplate(baca.ScoreTemplate):
                             \clef "treble"
                             s1
                         }
-                        \context RHVoiceOneInserts = "RHVoiceOneInserts" {
+                        \context RHVoiceIInserts = "RHVoiceIInserts" {
                             s1
                         }
-                        \context RHVoiceTwo = "RHVoiceTwo" {
+                        \context RHVoiceII = "RHVoiceII" {
                             s1
                         }
-                        \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
+                        \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                             s1
                         }
-                        \context RHVoiceThree = "RHVoiceThree" {
+                        \context RHVoiceIII = "RHVoiceIII" {
                             s1
                         }
-                        \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
+                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                             s1
                         }
-                        \context RHVoiceFour = "RHVoiceFour" {
+                        \context RHVoiceIV = "RHVoiceIV" {
                             s1
                         }
-                        \context RHVoiceFourInserts = "RHVoiceFourInserts" {
+                        \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                             s1
                         }
-                        \context RHVoiceFive = "RHVoiceFive" {
+                        \context RHVoiceV = "RHVoiceV" {
                             s1
                         }
-                        \context RHVoiceSix = "RHVoiceSix" {
+                        \context RHVoiceVI = "RHVoiceVI" {
                             s1
                         }
                         \context RHResonanceVoice = "RHResonanceVoice" {
@@ -73,32 +73,32 @@ class ScoreTemplate(baca.ScoreTemplate):
                         }
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
-                        \context LHVoiceOne = "LHVoiceOne" {
+                        \context LHVoiceI = "LHVoiceI" {
                             \clef "bass"
                             s1
                         }
-                        \context LHVoiceTwo = "LHVoiceTwo" {
+                        \context LHVoiceII = "LHVoiceII" {
                             s1
                         }
-                        \context LHVoiceThree = "LHVoiceThree" {
+                        \context LHVoiceIII = "LHVoiceIII" {
                             s1
                         }
-                        \context LHVoiceFour = "LHVoiceFour" {
+                        \context LHVoiceIV = "LHVoiceIV" {
                             s1
                         }
-                        \context LHVoiceFourInserts = "LHVoiceFourInserts" {
+                        \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                             s1
                         }
-                        \context LHVoiceFive = "LHVoiceFive" {
+                        \context LHVoiceV = "LHVoiceV" {
                             s1
                         }
-                        \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
+                        \context LHVoiceVInserts = "LHVoiceVInserts" {
                             s1
                         }
-                        \context LHVoiceSix = "LHVoiceSix" {
+                        \context LHVoiceVI = "LHVoiceVI" {
                             s1
                         }
-                        \context LHVoiceSixInserts = "LHVoiceSixInserts" {
+                        \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                             s1
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
@@ -119,24 +119,24 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     voice_colors = {
         'RHVoiceI': 'red',
-        'RHVoiceOneInserts': 'red',
-        'RHVoiceTwo': 'black',
-        'RHVoiceTwoInserts': 'black',
-        'RHVoiceThree': 'darkgreen',
-        'RHVoiceThreeInserts': 'darkgreen',
-        'RHVoiceFour': 'blue',
-        'RHVoiceFive': 'darkmagenta',
-        'RHVoiceSix': 'darkcyan',
+        'RHVoiceIInserts': 'red',
+        'RHVoiceII': 'black',
+        'RHVoiceIIInserts': 'black',
+        'RHVoiceIII': 'darkgreen',
+        'RHVoiceIIIInserts': 'darkgreen',
+        'RHVoiceIV': 'blue',
+        'RHVoiceV': 'darkmagenta',
+        'RHVoiceVI': 'darkcyan',
         'RHResonanceVoice': 'darkred',
-        'LHVoiceOne': 'red',
-        'LHVoiceTwo': 'black',
-        'LHVoiceThree': 'darkgreen',
-        'LHVoiceFour': 'blue',
-        'LHVoiceFourInserts': 'blue',
-        'LHVoiceFive': 'darkmagenta',
-        'LHVoiceFiveInserts': 'darkmagenta',
-        'LHVoiceSix': 'darkcyan',
-        'LHVoiceSixInserts': 'darkcyan',
+        'LHVoiceI': 'red',
+        'LHVoiceII': 'black',
+        'LHVoiceIII': 'darkgreen',
+        'LHVoiceIV': 'blue',
+        'LHVoiceIVInserts': 'blue',
+        'LHVoiceV': 'darkmagenta',
+        'LHVoiceVInserts': 'darkmagenta',
+        'LHVoiceVI': 'darkcyan',
+        'LHVoiceVIInserts': 'darkcyan',
         'LHResonanceVoice': 'darkred',
         }
 
@@ -157,40 +157,40 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='RHVoiceI',
             )
         rh_voice_1I = abjad.Voice(
-            context_name='RHVoiceOneInserts',
-            name='RHVoiceOneInserts',
+            context_name='RHVoiceIInserts',
+            name='RHVoiceIInserts',
             )
         rh_voice_2 = abjad.Voice(
-            context_name='RHVoiceTwo',
-            name='RHVoiceTwo',
+            context_name='RHVoiceII',
+            name='RHVoiceII',
             )
         rh_voice_2I = abjad.Voice(
-            context_name='RHVoiceTwoInserts',
-            name='RHVoiceTwoInserts',
+            context_name='RHVoiceIIInserts',
+            name='RHVoiceIIInserts',
             )
         rh_voice_3 = abjad.Voice(
-            context_name='RHVoiceThree',
-            name='RHVoiceThree',
+            context_name='RHVoiceIII',
+            name='RHVoiceIII',
             )
         rh_voice_3I = abjad.Voice(
-            context_name='RHVoiceThreeInserts',
-            name='RHVoiceThreeInserts',
+            context_name='RHVoiceIIIInserts',
+            name='RHVoiceIIIInserts',
             )
         rh_voice_4 = abjad.Voice(
-            context_name='RHVoiceFour',
-            name='RHVoiceFour',
+            context_name='RHVoiceIV',
+            name='RHVoiceIV',
             )
         rh_voice_4I = abjad.Voice(
-            context_name='RHVoiceFourInserts',
-            name='RHVoiceFourInserts',
+            context_name='RHVoiceIVInserts',
+            name='RHVoiceIVInserts',
             )
         rh_voice_5 = abjad.Voice(
-            context_name='RHVoiceFive',
-            name='RHVoiceFive',
+            context_name='RHVoiceV',
+            name='RHVoiceV',
             )
         rh_voice_6 = abjad.Voice(
-            context_name='RHVoiceSix',
-            name='RHVoiceSix',
+            context_name='RHVoiceVI',
+            name='RHVoiceVI',
             )
         rh_resonance_voice = abjad.Voice(
             context_name='RHResonanceVoice',
@@ -199,40 +199,40 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # LH VOICES
         lh_voice_1 = abjad.Voice(
-            context_name='LHVoiceOne',
-            name='LHVoiceOne',
+            context_name='LHVoiceI',
+            name='LHVoiceI',
             )
         lh_voice_2 = abjad.Voice(
-            context_name='LHVoiceTwo',
-            name='LHVoiceTwo',
+            context_name='LHVoiceII',
+            name='LHVoiceII',
             )
         lh_voice_3 = abjad.Voice(
-            context_name='LHVoiceThree',
-            name='LHVoiceThree',
+            context_name='LHVoiceIII',
+            name='LHVoiceIII',
             )
         lh_voice_4 = abjad.Voice(
-            context_name='LHVoiceFour',
-            name='LHVoiceFour',
+            context_name='LHVoiceIV',
+            name='LHVoiceIV',
             )
         lh_voice_4I = abjad.Voice(
-            context_name='LHVoiceFourInserts',
-            name='LHVoiceFourInserts',
+            context_name='LHVoiceIVInserts',
+            name='LHVoiceIVInserts',
             )
         lh_voice_5 = abjad.Voice(
-            context_name='LHVoiceFive',
-            name='LHVoiceFive',
+            context_name='LHVoiceV',
+            name='LHVoiceV',
             )
         lh_voice_5I = abjad.Voice(
-            context_name='LHVoiceFiveInserts',
-            name='LHVoiceFiveInserts',
+            context_name='LHVoiceVInserts',
+            name='LHVoiceVInserts',
             )
         lh_voice_6 = abjad.Voice(
-            context_name='LHVoiceSix',
-            name='LHVoiceSix',
+            context_name='LHVoiceVI',
+            name='LHVoiceVI',
             )
         lh_voice_6I = abjad.Voice(
-            context_name='LHVoiceSixInserts',
-            name='LHVoiceSixInserts',
+            context_name='LHVoiceVIInserts',
+            name='LHVoiceVIInserts',
             )
         lh_resonance_voice = abjad.Voice(
             context_name='LHResonanceVoice',

@@ -658,63 +658,63 @@
                         \bar "|"
                         
                     }
-                    \context RHVoiceOneInserts = "RHVoiceOneInserts" {
+                    \context RHVoiceIInserts = "RHVoiceIInserts" {
                         
-                        %%% RHVoiceOneInserts [measure 69] %%%
+                        %%% RHVoiceIInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceOneInserts [measure 70] %%%
+                        %%% RHVoiceIInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceOneInserts [measure 71] %%%
+                        %%% RHVoiceIInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceOneInserts [measure 72] %%%
+                        %%% RHVoiceIInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceOneInserts [measure 73] %%%
+                        %%% RHVoiceIInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceOneInserts [measure 74] %%%
+                        %%% RHVoiceIInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceOneInserts [measure 75] %%%
+                        %%% RHVoiceIInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceOneInserts [measure 76] %%%
+                        %%% RHVoiceIInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceOneInserts [measure 77] %%%
+                        %%% RHVoiceIInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceOneInserts [measure 78] %%%
+                        %%% RHVoiceIInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceOneInserts [measure 79] %%%
+                        %%% RHVoiceIInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceOneInserts [measure 80] %%%
+                        %%% RHVoiceIInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceOneInserts [measure 81] %%%
+                        %%% RHVoiceIInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceOneInserts [measure 82] %%%
+                        %%% RHVoiceIInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceOneInserts [measure 83] %%%
+                        %%% RHVoiceIInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceOneInserts [measure 84] %%%
+                        %%% RHVoiceIInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceTwo = "RHVoiceTwo" {
+                    \context RHVoiceII = "RHVoiceII" {
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 69] %%%
+                                %%% RHVoiceII [measure 69] %%%
                                 \override Script.direction = #up
                                 \override TextScript.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
@@ -770,7 +770,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    %%% RHVoiceTwo [measure 70] %%%
+                                    %%% RHVoiceII [measure 70] %%%
                                     \override Beam.positions = #'(10.5 . 10.5)
                                     \override Script.direction = #up
                                     s8
@@ -850,7 +850,7 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        %%% RHVoiceTwo [measure 71] %%%
+                        %%% RHVoiceII [measure 71] %%%
                         s1 * 1/4
                         {
                             \override TupletBracket.stencil = ##f
@@ -860,7 +860,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceTwo [measure 72] %%%
+                                    %%% RHVoiceII [measure 72] %%%
                                     s8
                                     
                                     s8
@@ -947,7 +947,7 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        %%% RHVoiceTwo [measure 73] %%%
+                        %%% RHVoiceII [measure 73] %%%
                         s1 * 1
                         {
                             \override TupletBracket.stencil = ##f
@@ -956,7 +956,7 @@
                             \times 20/23 {
                                 {
                                     
-                                    %%% RHVoiceTwo [measure 74] %%%
+                                    %%% RHVoiceII [measure 74] %%%
                                     s8
                                     [
                                     
@@ -1044,7 +1044,7 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        %%% RHVoiceTwo [measure 75] %%%
+                        %%% RHVoiceII [measure 75] %%%
                         s1 * 1/4
                         {
                             \override TupletBracket.stencil = ##f
@@ -1054,7 +1054,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceTwo [measure 76] %%%
+                                    %%% RHVoiceII [measure 76] %%%
                                     s8
                                     
                                     s8
@@ -1167,14 +1167,14 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        %%% RHVoiceTwo [measure 77] %%%
+                        %%% RHVoiceII [measure 77] %%%
                         \override Script.direction = #up
                         \override Slur.direction = #up
                         s1 * 1/4
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 78] %%%
+                                %%% RHVoiceII [measure 78] %%%
                                 \override Stem.direction = #down
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
@@ -1368,7 +1368,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 79] %%%
+                                %%% RHVoiceII [measure 79] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -1546,7 +1546,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 80] %%%
+                                %%% RHVoiceII [measure 80] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -1695,7 +1695,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 81] %%%
+                                %%% RHVoiceII [measure 81] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -1812,7 +1812,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceTwo [measure 82] %%%
+                                %%% RHVoiceII [measure 82] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -1936,7 +1936,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceTwo [measure 83] %%%
+                                    %%% RHVoiceII [measure 83] %%%
                                     s8
                                     [
                                     
@@ -1993,69 +1993,69 @@
                             \revert TupletNumber.stencil
                         }
                         
-                        %%% RHVoiceTwo [measure 84] %%%
+                        %%% RHVoiceII [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
+                    \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                         
-                        %%% RHVoiceTwoInserts [measure 69] %%%
+                        %%% RHVoiceIIInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceTwoInserts [measure 70] %%%
+                        %%% RHVoiceIIInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceTwoInserts [measure 71] %%%
+                        %%% RHVoiceIIInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceTwoInserts [measure 72] %%%
+                        %%% RHVoiceIIInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceTwoInserts [measure 73] %%%
+                        %%% RHVoiceIIInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceTwoInserts [measure 74] %%%
+                        %%% RHVoiceIIInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceTwoInserts [measure 75] %%%
+                        %%% RHVoiceIIInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceTwoInserts [measure 76] %%%
+                        %%% RHVoiceIIInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceTwoInserts [measure 77] %%%
+                        %%% RHVoiceIIInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceTwoInserts [measure 78] %%%
+                        %%% RHVoiceIIInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceTwoInserts [measure 79] %%%
+                        %%% RHVoiceIIInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceTwoInserts [measure 80] %%%
+                        %%% RHVoiceIIInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceTwoInserts [measure 81] %%%
+                        %%% RHVoiceIIInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceTwoInserts [measure 82] %%%
+                        %%% RHVoiceIIInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceTwoInserts [measure 83] %%%
+                        %%% RHVoiceIIInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceTwoInserts [measure 84] %%%
+                        %%% RHVoiceIIInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceThree = "RHVoiceThree" {
+                    \context RHVoiceIII = "RHVoiceIII" {
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/5 {
                                 
-                                %%% RHVoiceThree [measure 69] %%%
+                                %%% RHVoiceIII [measure 69] %%%
                                 \override TupletBracket.direction = #down
                                 \ottava #1
                                 a''4
@@ -2112,7 +2112,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    %%% RHVoiceThree [measure 70] %%%
+                                    %%% RHVoiceIII [measure 70] %%%
                                     \override TupletBracket.direction = #down
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     d'''8
@@ -2222,7 +2222,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceThree [measure 71] %%%
+                                %%% RHVoiceIII [measure 71] %%%
                                 \once \override Script.color = #black
                                 \once \override Script.extra-offset = #'(1 . 0)
                                 \once \override Rest.transparent = ##t
@@ -2256,7 +2256,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceThree [measure 72] %%%
+                                    %%% RHVoiceIII [measure 72] %%%
                                     \override TupletBracket.direction = #down
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     cs'''8
@@ -2384,14 +2384,14 @@
                             }
                         }
                         
-                        %%% RHVoiceThree [measure 73] %%%
+                        %%% RHVoiceIII [measure 73] %%%
                         s1 * 1
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 20/23 {
                                 {
                                     
-                                    %%% RHVoiceThree [measure 74] %%%
+                                    %%% RHVoiceIII [measure 74] %%%
                                     \override TupletBracket.direction = #down
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     a'''8
@@ -2500,7 +2500,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceThree [measure 75] %%%
+                                %%% RHVoiceIII [measure 75] %%%
                                 \once \override Script.color = #black
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
@@ -2532,7 +2532,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceThree [measure 76] %%%
+                                    %%% RHVoiceIII [measure 76] %%%
                                     \override TupletBracket.direction = #down
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     c'''8
@@ -2663,7 +2663,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceThree [measure 77] %%%
+                                %%% RHVoiceIII [measure 77] %%%
                                 \once \override Script.color = #black
                                 \once \override Script.extra-offset = #'(1 . 0)
                                 \once \override Rest.transparent = ##t
@@ -2691,7 +2691,7 @@
                             }
                         }
                         
-                        %%% RHVoiceThree [measure 78] %%%
+                        %%% RHVoiceIII [measure 78] %%%
                         s1 * 27/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2699,7 +2699,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    %%% RHVoiceThree [measure 83] %%%
+                                    %%% RHVoiceIII [measure 83] %%%
                                     \override TupletBracket.direction = #down
                                     \override TupletBracket.staff-padding = #3
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -2780,7 +2780,7 @@
                         {
                             {
                                 
-                                %%% RHVoiceThree [measure 84] %%%
+                                %%% RHVoiceIII [measure 84] %%%
                                 \once \override Script.color = #black
                                 \once \override Script.extra-offset = #'(1 . 0)
                                 \once \override Rest.transparent = ##t
@@ -2810,262 +2810,262 @@
                             }
                         }
                     }
-                    \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
+                    \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                         
-                        %%% RHVoiceThreeInserts [measure 69] %%%
+                        %%% RHVoiceIIIInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceThreeInserts [measure 70] %%%
+                        %%% RHVoiceIIIInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceThreeInserts [measure 71] %%%
+                        %%% RHVoiceIIIInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceThreeInserts [measure 72] %%%
+                        %%% RHVoiceIIIInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceThreeInserts [measure 73] %%%
+                        %%% RHVoiceIIIInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceThreeInserts [measure 74] %%%
+                        %%% RHVoiceIIIInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceThreeInserts [measure 75] %%%
+                        %%% RHVoiceIIIInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceThreeInserts [measure 76] %%%
+                        %%% RHVoiceIIIInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceThreeInserts [measure 77] %%%
+                        %%% RHVoiceIIIInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceThreeInserts [measure 78] %%%
+                        %%% RHVoiceIIIInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceThreeInserts [measure 79] %%%
+                        %%% RHVoiceIIIInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceThreeInserts [measure 80] %%%
+                        %%% RHVoiceIIIInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceThreeInserts [measure 81] %%%
+                        %%% RHVoiceIIIInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceThreeInserts [measure 82] %%%
+                        %%% RHVoiceIIIInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceThreeInserts [measure 83] %%%
+                        %%% RHVoiceIIIInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceThreeInserts [measure 84] %%%
+                        %%% RHVoiceIIIInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceFour = "RHVoiceFour" {
+                    \context RHVoiceIV = "RHVoiceIV" {
                         
-                        %%% RHVoiceFour [measure 69] %%%
+                        %%% RHVoiceIV [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceFour [measure 70] %%%
+                        %%% RHVoiceIV [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFour [measure 71] %%%
+                        %%% RHVoiceIV [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFour [measure 72] %%%
+                        %%% RHVoiceIV [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceFour [measure 73] %%%
+                        %%% RHVoiceIV [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFour [measure 74] %%%
+                        %%% RHVoiceIV [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFour [measure 75] %%%
+                        %%% RHVoiceIV [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFour [measure 76] %%%
+                        %%% RHVoiceIV [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceFour [measure 77] %%%
+                        %%% RHVoiceIV [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFour [measure 78] %%%
+                        %%% RHVoiceIV [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceFour [measure 79] %%%
+                        %%% RHVoiceIV [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceFour [measure 80] %%%
+                        %%% RHVoiceIV [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceFour [measure 81] %%%
+                        %%% RHVoiceIV [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceFour [measure 82] %%%
+                        %%% RHVoiceIV [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFour [measure 83] %%%
+                        %%% RHVoiceIV [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceFour [measure 84] %%%
+                        %%% RHVoiceIV [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceFourInserts = "RHVoiceFourInserts" {
+                    \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                         
-                        %%% RHVoiceFourInserts [measure 69] %%%
+                        %%% RHVoiceIVInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceFourInserts [measure 70] %%%
+                        %%% RHVoiceIVInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFourInserts [measure 71] %%%
+                        %%% RHVoiceIVInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFourInserts [measure 72] %%%
+                        %%% RHVoiceIVInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceFourInserts [measure 73] %%%
+                        %%% RHVoiceIVInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFourInserts [measure 74] %%%
+                        %%% RHVoiceIVInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFourInserts [measure 75] %%%
+                        %%% RHVoiceIVInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFourInserts [measure 76] %%%
+                        %%% RHVoiceIVInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceFourInserts [measure 77] %%%
+                        %%% RHVoiceIVInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFourInserts [measure 78] %%%
+                        %%% RHVoiceIVInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceFourInserts [measure 79] %%%
+                        %%% RHVoiceIVInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceFourInserts [measure 80] %%%
+                        %%% RHVoiceIVInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceFourInserts [measure 81] %%%
+                        %%% RHVoiceIVInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceFourInserts [measure 82] %%%
+                        %%% RHVoiceIVInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFourInserts [measure 83] %%%
+                        %%% RHVoiceIVInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceFourInserts [measure 84] %%%
+                        %%% RHVoiceIVInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceFive = "RHVoiceFive" {
+                    \context RHVoiceV = "RHVoiceV" {
                         
-                        %%% RHVoiceFive [measure 69] %%%
+                        %%% RHVoiceV [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceFive [measure 70] %%%
+                        %%% RHVoiceV [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFive [measure 71] %%%
+                        %%% RHVoiceV [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFive [measure 72] %%%
+                        %%% RHVoiceV [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceFive [measure 73] %%%
+                        %%% RHVoiceV [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFive [measure 74] %%%
+                        %%% RHVoiceV [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceFive [measure 75] %%%
+                        %%% RHVoiceV [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFive [measure 76] %%%
+                        %%% RHVoiceV [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceFive [measure 77] %%%
+                        %%% RHVoiceV [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceFive [measure 78] %%%
+                        %%% RHVoiceV [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceFive [measure 79] %%%
+                        %%% RHVoiceV [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceFive [measure 80] %%%
+                        %%% RHVoiceV [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceFive [measure 81] %%%
+                        %%% RHVoiceV [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceFive [measure 82] %%%
+                        %%% RHVoiceV [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceFive [measure 83] %%%
+                        %%% RHVoiceV [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceFive [measure 84] %%%
+                        %%% RHVoiceV [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context RHVoiceSix = "RHVoiceSix" {
+                    \context RHVoiceVI = "RHVoiceVI" {
                         
-                        %%% RHVoiceSix [measure 69] %%%
+                        %%% RHVoiceVI [measure 69] %%%
                         s1 * 4
                         
-                        %%% RHVoiceSix [measure 70] %%%
+                        %%% RHVoiceVI [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceSix [measure 71] %%%
+                        %%% RHVoiceVI [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceSix [measure 72] %%%
+                        %%% RHVoiceVI [measure 72] %%%
                         s1 * 3
                         
-                        %%% RHVoiceSix [measure 73] %%%
+                        %%% RHVoiceVI [measure 73] %%%
                         s1 * 1
                         
-                        %%% RHVoiceSix [measure 74] %%%
+                        %%% RHVoiceVI [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% RHVoiceSix [measure 75] %%%
+                        %%% RHVoiceVI [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceSix [measure 76] %%%
+                        %%% RHVoiceVI [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% RHVoiceSix [measure 77] %%%
+                        %%% RHVoiceVI [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% RHVoiceSix [measure 78] %%%
+                        %%% RHVoiceVI [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% RHVoiceSix [measure 79] %%%
+                        %%% RHVoiceVI [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% RHVoiceSix [measure 80] %%%
+                        %%% RHVoiceVI [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% RHVoiceSix [measure 81] %%%
+                        %%% RHVoiceVI [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% RHVoiceSix [measure 82] %%%
+                        %%% RHVoiceVI [measure 82] %%%
                         s1 * 1
                         
-                        %%% RHVoiceSix [measure 83] %%%
+                        %%% RHVoiceVI [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% RHVoiceSix [measure 84] %%%
+                        %%% RHVoiceVI [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
@@ -3124,177 +3124,177 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
-                    \context LHVoiceOne = "LHVoiceOne" {
+                    \context LHVoiceI = "LHVoiceI" {
                         
-                        %%% LHVoiceOne [measure 69] %%%
+                        %%% LHVoiceI [measure 69] %%%
                         \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                        \once \override LHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 4
                         \p %! REMINDER_DYNAMIC_COMMAND:7
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
-                        %%% LHVoiceOne [measure 70] %%%
+                        %%% LHVoiceI [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceOne [measure 71] %%%
+                        %%% LHVoiceI [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceOne [measure 72] %%%
+                        %%% LHVoiceI [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceOne [measure 73] %%%
+                        %%% LHVoiceI [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceOne [measure 74] %%%
+                        %%% LHVoiceI [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceOne [measure 75] %%%
+                        %%% LHVoiceI [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceOne [measure 76] %%%
+                        %%% LHVoiceI [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceOne [measure 77] %%%
+                        %%% LHVoiceI [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceOne [measure 78] %%%
+                        %%% LHVoiceI [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceOne [measure 79] %%%
+                        %%% LHVoiceI [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceOne [measure 80] %%%
+                        %%% LHVoiceI [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceOne [measure 81] %%%
+                        %%% LHVoiceI [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceOne [measure 82] %%%
+                        %%% LHVoiceI [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceOne [measure 83] %%%
+                        %%% LHVoiceI [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceOne [measure 84] %%%
+                        %%% LHVoiceI [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceTwo = "LHVoiceTwo" {
+                    \context LHVoiceII = "LHVoiceII" {
                         
-                        %%% LHVoiceTwo [measure 69] %%%
+                        %%% LHVoiceII [measure 69] %%%
                         s1 * 4
                         
-                        %%% LHVoiceTwo [measure 70] %%%
+                        %%% LHVoiceII [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceTwo [measure 71] %%%
+                        %%% LHVoiceII [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceTwo [measure 72] %%%
+                        %%% LHVoiceII [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceTwo [measure 73] %%%
+                        %%% LHVoiceII [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceTwo [measure 74] %%%
+                        %%% LHVoiceII [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceTwo [measure 75] %%%
+                        %%% LHVoiceII [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceTwo [measure 76] %%%
+                        %%% LHVoiceII [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceTwo [measure 77] %%%
+                        %%% LHVoiceII [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceTwo [measure 78] %%%
+                        %%% LHVoiceII [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceTwo [measure 79] %%%
+                        %%% LHVoiceII [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceTwo [measure 80] %%%
+                        %%% LHVoiceII [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceTwo [measure 81] %%%
+                        %%% LHVoiceII [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceTwo [measure 82] %%%
+                        %%% LHVoiceII [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceTwo [measure 83] %%%
+                        %%% LHVoiceII [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceTwo [measure 84] %%%
+                        %%% LHVoiceII [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceThree = "LHVoiceThree" {
+                    \context LHVoiceIII = "LHVoiceIII" {
                         
-                        %%% LHVoiceThree [measure 69] %%%
+                        %%% LHVoiceIII [measure 69] %%%
                         s1 * 4
                         
-                        %%% LHVoiceThree [measure 70] %%%
+                        %%% LHVoiceIII [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceThree [measure 71] %%%
+                        %%% LHVoiceIII [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceThree [measure 72] %%%
+                        %%% LHVoiceIII [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceThree [measure 73] %%%
+                        %%% LHVoiceIII [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceThree [measure 74] %%%
+                        %%% LHVoiceIII [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceThree [measure 75] %%%
+                        %%% LHVoiceIII [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceThree [measure 76] %%%
+                        %%% LHVoiceIII [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceThree [measure 77] %%%
+                        %%% LHVoiceIII [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceThree [measure 78] %%%
+                        %%% LHVoiceIII [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceThree [measure 79] %%%
+                        %%% LHVoiceIII [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceThree [measure 80] %%%
+                        %%% LHVoiceIII [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceThree [measure 81] %%%
+                        %%% LHVoiceIII [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceThree [measure 82] %%%
+                        %%% LHVoiceIII [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceThree [measure 83] %%%
+                        %%% LHVoiceIII [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceThree [measure 84] %%%
+                        %%% LHVoiceIII [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceFour = "LHVoiceFour" {
+                    \context LHVoiceIV = "LHVoiceIV" {
                         
-                        %%% LHVoiceFour [measure 69] %%%
+                        %%% LHVoiceIV [measure 69] %%%
                         s1 * 27/4
                         {
                             {
                                 
-                                %%% LHVoiceFour [measure 72] %%%
+                                %%% LHVoiceIV [measure 72] %%%
                                 \override Slur.direction = #down
                                 \clef "bass" %! REDUNDANT_CLEF_COMMAND:5
                                 \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
@@ -3350,12 +3350,12 @@
                             }
                         }
                         
-                        %%% LHVoiceFour [measure 73] %%%
+                        %%% LHVoiceIV [measure 73] %%%
                         s1 * 1
                         {
                             {
                                 
-                                %%% LHVoiceFour [measure 74] %%%
+                                %%% LHVoiceIV [measure 74] %%%
                                 \override Slur.direction = #down
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -3442,12 +3442,12 @@
                             }
                         }
                         
-                        %%% LHVoiceFour [measure 75] %%%
+                        %%% LHVoiceIV [measure 75] %%%
                         s1 * 1/4
                         {
                             {
                                 
-                                %%% LHVoiceFour [measure 76] %%%
+                                %%% LHVoiceIV [measure 76] %%%
                                 \override Slur.direction = #down
                                 b'8.
                                 -\staccato
@@ -3606,12 +3606,12 @@
                             }
                         }
                         
-                        %%% LHVoiceFour [measure 77] %%%
+                        %%% LHVoiceIV [measure 77] %%%
                         s1 * 7
                         {
                             {
                                 
-                                %%% LHVoiceFour [measure 83] %%%
+                                %%% LHVoiceIV [measure 83] %%%
                                 r2..
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -3690,71 +3690,71 @@
                             }
                         }
                         
-                        %%% LHVoiceFour [measure 84] %%%
+                        %%% LHVoiceIV [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceFourInserts = "LHVoiceFourInserts" {
+                    \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                         
-                        %%% LHVoiceFourInserts [measure 69] %%%
+                        %%% LHVoiceIVInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% LHVoiceFourInserts [measure 70] %%%
+                        %%% LHVoiceIVInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceFourInserts [measure 71] %%%
+                        %%% LHVoiceIVInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFourInserts [measure 72] %%%
+                        %%% LHVoiceIVInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceFourInserts [measure 73] %%%
+                        %%% LHVoiceIVInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceFourInserts [measure 74] %%%
+                        %%% LHVoiceIVInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceFourInserts [measure 75] %%%
+                        %%% LHVoiceIVInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFourInserts [measure 76] %%%
+                        %%% LHVoiceIVInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceFourInserts [measure 77] %%%
+                        %%% LHVoiceIVInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFourInserts [measure 78] %%%
+                        %%% LHVoiceIVInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceFourInserts [measure 79] %%%
+                        %%% LHVoiceIVInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceFourInserts [measure 80] %%%
+                        %%% LHVoiceIVInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceFourInserts [measure 81] %%%
+                        %%% LHVoiceIVInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceFourInserts [measure 82] %%%
+                        %%% LHVoiceIVInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceFourInserts [measure 83] %%%
+                        %%% LHVoiceIVInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceFourInserts [measure 84] %%%
+                        %%% LHVoiceIVInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceFive = "LHVoiceFive" {
+                    \context LHVoiceV = "LHVoiceV" {
                         
-                        %%% LHVoiceFive [measure 69] %%%
+                        %%% LHVoiceV [measure 69] %%%
                         s1 * 39/4
                         {
                             {
                                 
-                                %%% LHVoiceFive [measure 73] %%%
+                                %%% LHVoiceV [measure 73] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 \dynamicUp
                                 bf,,8.
@@ -3797,102 +3797,102 @@
                             }
                         }
                         
-                        %%% LHVoiceFive [measure 74] %%%
+                        %%% LHVoiceV [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceFive [measure 75] %%%
+                        %%% LHVoiceV [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFive [measure 76] %%%
+                        %%% LHVoiceV [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceFive [measure 77] %%%
+                        %%% LHVoiceV [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFive [measure 78] %%%
+                        %%% LHVoiceV [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceFive [measure 79] %%%
+                        %%% LHVoiceV [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceFive [measure 80] %%%
+                        %%% LHVoiceV [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceFive [measure 81] %%%
+                        %%% LHVoiceV [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceFive [measure 82] %%%
+                        %%% LHVoiceV [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceFive [measure 83] %%%
+                        %%% LHVoiceV [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceFive [measure 84] %%%
+                        %%% LHVoiceV [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
+                    \context LHVoiceVInserts = "LHVoiceVInserts" {
                         
-                        %%% LHVoiceFiveInserts [measure 69] %%%
+                        %%% LHVoiceVInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% LHVoiceFiveInserts [measure 70] %%%
+                        %%% LHVoiceVInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceFiveInserts [measure 71] %%%
+                        %%% LHVoiceVInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFiveInserts [measure 72] %%%
+                        %%% LHVoiceVInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceFiveInserts [measure 73] %%%
+                        %%% LHVoiceVInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceFiveInserts [measure 74] %%%
+                        %%% LHVoiceVInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceFiveInserts [measure 75] %%%
+                        %%% LHVoiceVInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFiveInserts [measure 76] %%%
+                        %%% LHVoiceVInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceFiveInserts [measure 77] %%%
+                        %%% LHVoiceVInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceFiveInserts [measure 78] %%%
+                        %%% LHVoiceVInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceFiveInserts [measure 79] %%%
+                        %%% LHVoiceVInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceFiveInserts [measure 80] %%%
+                        %%% LHVoiceVInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceFiveInserts [measure 81] %%%
+                        %%% LHVoiceVInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceFiveInserts [measure 82] %%%
+                        %%% LHVoiceVInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceFiveInserts [measure 83] %%%
+                        %%% LHVoiceVInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceFiveInserts [measure 84] %%%
+                        %%% LHVoiceVInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceSix = "LHVoiceSix" {
+                    \context LHVoiceVI = "LHVoiceVI" {
                         
-                        %%% LHVoiceSix [measure 69] %%%
+                        %%% LHVoiceVI [measure 69] %%%
                         s1 * 39/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
-                                %%% LHVoiceSix [measure 73] %%%
+                                %%% LHVoiceVI [measure 73] %%%
                                 \override Stem.direction = #down
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
@@ -3936,89 +3936,89 @@
                             }
                         }
                         
-                        %%% LHVoiceSix [measure 74] %%%
+                        %%% LHVoiceVI [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceSix [measure 75] %%%
+                        %%% LHVoiceVI [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceSix [measure 76] %%%
+                        %%% LHVoiceVI [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceSix [measure 77] %%%
+                        %%% LHVoiceVI [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceSix [measure 78] %%%
+                        %%% LHVoiceVI [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceSix [measure 79] %%%
+                        %%% LHVoiceVI [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceSix [measure 80] %%%
+                        %%% LHVoiceVI [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceSix [measure 81] %%%
+                        %%% LHVoiceVI [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceSix [measure 82] %%%
+                        %%% LHVoiceVI [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceSix [measure 83] %%%
+                        %%% LHVoiceVI [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceSix [measure 84] %%%
+                        %%% LHVoiceVI [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         
                     }
-                    \context LHVoiceSixInserts = "LHVoiceSixInserts" {
+                    \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                         
-                        %%% LHVoiceSixInserts [measure 69] %%%
+                        %%% LHVoiceVIInserts [measure 69] %%%
                         s1 * 4
                         
-                        %%% LHVoiceSixInserts [measure 70] %%%
+                        %%% LHVoiceVIInserts [measure 70] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceSixInserts [measure 71] %%%
+                        %%% LHVoiceVIInserts [measure 71] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceSixInserts [measure 72] %%%
+                        %%% LHVoiceVIInserts [measure 72] %%%
                         s1 * 3
                         
-                        %%% LHVoiceSixInserts [measure 73] %%%
+                        %%% LHVoiceVIInserts [measure 73] %%%
                         s1 * 1
                         
-                        %%% LHVoiceSixInserts [measure 74] %%%
+                        %%% LHVoiceVIInserts [measure 74] %%%
                         s1 * 5/2
                         
-                        %%% LHVoiceSixInserts [measure 75] %%%
+                        %%% LHVoiceVIInserts [measure 75] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceSixInserts [measure 76] %%%
+                        %%% LHVoiceVIInserts [measure 76] %%%
                         s1 * 13/4
                         
-                        %%% LHVoiceSixInserts [measure 77] %%%
+                        %%% LHVoiceVIInserts [measure 77] %%%
                         s1 * 1/4
                         
-                        %%% LHVoiceSixInserts [measure 78] %%%
+                        %%% LHVoiceVIInserts [measure 78] %%%
                         s1 * 29/16
                         
-                        %%% LHVoiceSixInserts [measure 79] %%%
+                        %%% LHVoiceVIInserts [measure 79] %%%
                         s1 * 27/16
                         
-                        %%% LHVoiceSixInserts [measure 80] %%%
+                        %%% LHVoiceVIInserts [measure 80] %%%
                         s1 * 21/16
                         
-                        %%% LHVoiceSixInserts [measure 81] %%%
+                        %%% LHVoiceVIInserts [measure 81] %%%
                         s1 * 15/16
                         
-                        %%% LHVoiceSixInserts [measure 82] %%%
+                        %%% LHVoiceVIInserts [measure 82] %%%
                         s1 * 1
                         
-                        %%% LHVoiceSixInserts [measure 83] %%%
+                        %%% LHVoiceVIInserts [measure 83] %%%
                         s1 * 7/4
                         
-                        %%% LHVoiceSixInserts [measure 84] %%%
+                        %%% LHVoiceVIInserts [measure 84] %%%
                         s1 * 1/4
                         \bar "|"
                         

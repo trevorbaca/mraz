@@ -20,7 +20,7 @@ accumulator(
     baca.nest('2/16'),
     baca.register(13, 13+10),
     baca.imbricate(
-        'RHVoiceOneInserts',
+        'RHVoiceIInserts',
         [17, 23],
         baca.beam_everything(),
         baca.marcati(),
@@ -32,12 +32,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.register(7, 7+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [12, 14],
         baca.beam_everything(),
         baca.accents(),
@@ -54,7 +54,7 @@ accumulator(
     baca.nest('1/16'),
     baca.register(15, 15+10),
     baca.imbricate(
-        'RHVoiceOneInserts',
+        'RHVoiceIInserts',
         [30, 31],
         baca.beam_everything(),
         baca.marcati(),
@@ -64,12 +64,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(9, 9+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [13, 17, 17, 27],
         baca.accents(),
         baca.beam_everything(),
@@ -84,7 +84,7 @@ accumulator(
     baca.nest('1/16'),
     baca.register(17, 17+10),
     baca.imbricate(
-        'RHVoiceOneInserts',
+        'RHVoiceIInserts',
         [21],
         baca.beam_everything(),
         baca.marcati(),
@@ -95,11 +95,11 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(),
     baca.register(11, 11+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [12, 22, 19, 29],
         baca.accents(),
         baca.beam_everything(),
@@ -117,7 +117,7 @@ accumulator(
     baca.nest('1/16'),
     baca.register(19, 19+10),
     baca.imbricate(
-        'RHVoiceOneInserts',
+        'RHVoiceIInserts',
         [20, 29],
         baca.beam_everything(),
         baca.marcati(),
@@ -126,12 +126,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(13, 13+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [21, 27, 24],
         baca.accents(),
         baca.beam_everything(),
@@ -144,11 +144,11 @@ accumulator(
 collections['stage 1']['rh'].next()
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(),
     baca.register(15, 15+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [17],
         baca.accents(),
         baca.beam_everything(),
@@ -165,7 +165,7 @@ accumulator(
     baca.nest('2/16'),
     baca.register(23, 23+10),
     baca.imbricate(
-        'RHVoiceOneInserts',
+        'RHVoiceIInserts',
         [30, 34, 37],
         baca.beam_everything(),
         baca.marcati(),
@@ -175,11 +175,11 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections['stage 1']['rh'].next(exhausted=True),
     baca.register(17, 17+10),
     baca.imbricate(
-        'RHVoiceTwoInserts',
+        'RHVoiceIIInserts',
         [26, 32],
         baca.accents(),
         baca.beam_everything(),
@@ -192,17 +192,17 @@ accumulator(
 ###################################### LH #####################################
 
 accumulator(
-    'LHVoiceFour',
+    'LHVoiceIV',
     collections['stage 1']['lh'].next().transpose(0*7),
     baca.anchor(
-        'RHVoiceTwo',
+        'RHVoiceII',
         baca.note(0),
         baca.lt(7),
         ),
     baca.dynamic('ff'),
     baca.register(-2, -2+16),
     baca.imbricate(
-        'LHVoiceFourInserts',
+        'LHVoiceIVInserts',
         [0, 19, 23],
         baca.flags(),
         ),
@@ -211,10 +211,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceFive',
+    'LHVoiceV',
     collections['stage 1']['lh'].next().transpose(1*7),
     baca.anchor(
-        'RHVoiceTwo',
+        'RHVoiceII',
         baca.note(4),
         baca.lt(3),
         ),
@@ -222,7 +222,7 @@ accumulator(
     baca.nest('-2/16'),
     baca.register(0, 0+16),
     baca.imbricate(
-        'LHVoiceFiveInserts',
+        'LHVoiceVInserts',
         [11, 18, 24, 26],
         baca.beam_everything(),
         baca.staccati(),
@@ -233,17 +233,17 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceFour',
+    'LHVoiceIV',
     collections['stage 1']['lh'].next().transpose(2*7),
     baca.anchor(
-        'RHVoiceTwo',
+        'RHVoiceII',
         baca.note(14),
         baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(2, 2+16),
     baca.imbricate(
-        'LHVoiceFourInserts',
+        'LHVoiceIVInserts',
         [13],
         baca.flags(),
         ),
@@ -252,10 +252,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceFive',
+    'LHVoiceV',
     collections['stage 1']['lh'].next().transpose(3*7),
     baca.anchor(
-        'RHVoiceTwo',
+        'RHVoiceII',
         baca.note(26),
         baca.lt(10),
         ),
@@ -263,7 +263,7 @@ accumulator(
     baca.nest('-2/16'),
     baca.register(4, 4+16),
     baca.imbricate(
-        'LHVoiceFiveInserts',
+        'LHVoiceVInserts',
         [9, 16, 20, 25],
         baca.beam_everything(),
         baca.staccati(),
@@ -274,17 +274,17 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceFour',
+    'LHVoiceIV',
     collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
     baca.anchor(
-        'RHVoiceTwo',
+        'RHVoiceII',
         baca.note(-6),
         baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'LHVoiceFourInserts',
+        'LHVoiceIVInserts',
         [14, 18],
         baca.flags(),
         ),
@@ -352,22 +352,22 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceOneInserts', 1, 5),
+    baca.scope('RHVoiceIInserts', 1, 5),
     baca.beam_positions(-6.5),
     )
 
 maker(
-    baca.scope('RHVoiceOneInserts', 5, 10),
+    baca.scope('RHVoiceIInserts', 5, 10),
     baca.beam_positions(-8.5),
     )
 
 maker(
-    baca.scope('RHVoiceOneInserts', 1, Infinity),
+    baca.scope('RHVoiceIInserts', 1, Infinity),
     baca.scripts_down(),
     )
 
 maker(
-    baca.scope('RHVoiceTwo', 1, Infinity),
+    baca.scope('RHVoiceII', 1, Infinity),
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
     baca.slurs_up(),
@@ -375,66 +375,66 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceTwoInserts', 9, Infinity),
+    baca.scope('RHVoiceIIInserts', 9, Infinity),
     baca.beam_positions(17),
     )
 
 maker(
-    baca.scope('RHVoiceTwoInserts', 1, 4),
+    baca.scope('RHVoiceIIInserts', 1, 4),
     baca.beam_positions(15.5),
     )
 
 maker(
-    baca.scope('RHVoiceTwoInserts', 6, 8),
+    baca.scope('RHVoiceIIInserts', 6, 8),
     baca.beam_positions(13.5),
     )
 
 maker(
-    baca.scope('RHVoiceTwoInserts', 1, Infinity),
+    baca.scope('RHVoiceIIInserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHVoiceFour', 1, 2),
+    baca.scope('LHVoiceIV', 1, 2),
     baca.beam_positions(-5.5),
     )
 
 maker(
-    baca.scope('LHVoiceFour', 6, Infinity),
+    baca.scope('LHVoiceIV', 6, Infinity),
     baca.beam_positions(-4.5),
     )
 
 maker(
-    baca.scope('LHVoiceFour', 1, Infinity),
+    baca.scope('LHVoiceIV', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceFourInserts', 1, Infinity),
+    baca.scope('LHVoiceIVInserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHVoiceFive', 1, 5),
+    baca.scope('LHVoiceV', 1, 5),
     baca.beam_positions(-6),
     )
 
 #maker(
-#    baca.scope('LHVoiceFive', 6, Infinity),
+#    baca.scope('LHVoiceV', 6, Infinity),
 #    baca.beam_positions(-4.5),
 #    )
 
 maker(
-    baca.scope('LHVoiceFive', 1, Infinity),
+    baca.scope('LHVoiceV', 1, Infinity),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceFiveInserts', 1, Infinity),
+    baca.scope('LHVoiceVInserts', 1, Infinity),
     baca.scripts_up(),
     baca.stems_up(),
     baca.beam_positions(9),
