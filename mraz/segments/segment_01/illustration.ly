@@ -406,65 +406,65 @@
                             }
                         }
                     }
-                    \context RHVoiceOneInserts = "RHVoiceOneInserts" {
+                    \context RHVoiceIInserts = "RHVoiceIInserts" {
                         
-                        %%% RHVoiceOneInserts [measure 85] %%%
+                        %%% RHVoiceIInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceTwo = "RHVoiceTwo" {
+                    \context RHVoiceII = "RHVoiceII" {
                         
-                        %%% RHVoiceTwo [measure 85] %%%
+                        %%% RHVoiceII [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceTwoInserts = "RHVoiceTwoInserts" {
+                    \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                         
-                        %%% RHVoiceTwoInserts [measure 85] %%%
+                        %%% RHVoiceIIInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceThree = "RHVoiceThree" {
+                    \context RHVoiceIII = "RHVoiceIII" {
                         
-                        %%% RHVoiceThree [measure 85] %%%
+                        %%% RHVoiceIII [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceThreeInserts = "RHVoiceThreeInserts" {
+                    \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                         
-                        %%% RHVoiceThreeInserts [measure 85] %%%
+                        %%% RHVoiceIIIInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceFour = "RHVoiceFour" {
+                    \context RHVoiceIV = "RHVoiceIV" {
                         
-                        %%% RHVoiceFour [measure 85] %%%
+                        %%% RHVoiceIV [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceFourInserts = "RHVoiceFourInserts" {
+                    \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                         
-                        %%% RHVoiceFourInserts [measure 85] %%%
+                        %%% RHVoiceIVInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceFive = "RHVoiceFive" {
+                    \context RHVoiceV = "RHVoiceV" {
                         
-                        %%% RHVoiceFive [measure 85] %%%
+                        %%% RHVoiceV [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context RHVoiceSix = "RHVoiceSix" {
+                    \context RHVoiceVI = "RHVoiceVI" {
                         
-                        %%% RHVoiceSix [measure 85] %%%
+                        %%% RHVoiceVI [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
@@ -478,72 +478,72 @@
                     }
                 >>
                 \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
-                    \context LHVoiceOne = "LHVoiceOne" {
+                    \context LHVoiceI = "LHVoiceI" {
                         
-                        %%% LHVoiceOne [measure 85] %%%
+                        %%% LHVoiceI [measure 85] %%%
                         \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override LHVoiceOne.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
+                        \once \override LHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 59/16
                         \ppp %! REMINDER_DYNAMIC_COMMAND:7
                         \bar "|"
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                     }
-                    \context LHVoiceTwo = "LHVoiceTwo" {
+                    \context LHVoiceII = "LHVoiceII" {
                         
-                        %%% LHVoiceTwo [measure 85] %%%
+                        %%% LHVoiceII [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceThree = "LHVoiceThree" {
+                    \context LHVoiceIII = "LHVoiceIII" {
                         
-                        %%% LHVoiceThree [measure 85] %%%
+                        %%% LHVoiceIII [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceFour = "LHVoiceFour" {
+                    \context LHVoiceIV = "LHVoiceIV" {
                         
-                        %%% LHVoiceFour [measure 85] %%%
+                        %%% LHVoiceIV [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceFourInserts = "LHVoiceFourInserts" {
+                    \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                         
-                        %%% LHVoiceFourInserts [measure 85] %%%
+                        %%% LHVoiceIVInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceFive = "LHVoiceFive" {
+                    \context LHVoiceV = "LHVoiceV" {
                         
-                        %%% LHVoiceFive [measure 85] %%%
+                        %%% LHVoiceV [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceFiveInserts = "LHVoiceFiveInserts" {
+                    \context LHVoiceVInserts = "LHVoiceVInserts" {
                         
-                        %%% LHVoiceFiveInserts [measure 85] %%%
+                        %%% LHVoiceVInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceSix = "LHVoiceSix" {
+                    \context LHVoiceVI = "LHVoiceVI" {
                         
-                        %%% LHVoiceSix [measure 85] %%%
+                        %%% LHVoiceVI [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         
                     }
-                    \context LHVoiceSixInserts = "LHVoiceSixInserts" {
+                    \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                         
-                        %%% LHVoiceSixInserts [measure 85] %%%
+                        %%% LHVoiceVIInserts [measure 85] %%%
                         s1 * 59/16
                         \bar "|"
                         

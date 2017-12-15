@@ -98,7 +98,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceOneInserts
+        \name RHVoiceIInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,44 +122,20 @@
     }
     \context {
         \Voice
-        \name RHVoiceTwo
+        \name RHVoiceII
         \type Engraver_group
         \alias Voice
         \voiceTwo
     }
     \context {
         \Voice
-        \name RHVoiceTwoInserts
+        \name RHVoiceIIInserts
         \type Engraver_group
         \alias Voice
     }
     \context {
         \Voice
-        \name RHVoiceThree
-        \type Engraver_group
-        \alias Voice
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \override Accidental.color = #darkgreen
-        \override Beam.color = #darkgreen
-        \override Dots.color = #darkgreen
-        \override DynamicText.color = #darkgreen
-        \override Glissando.color = #darkgreen
-        \override Hairpin.color = #darkgreen
-        \override NoteHead.color = #darkgreen
-        \override RepeatTie.color = #darkgreen
-        \override Rest.color = #darkgreen
-        \override Script.color = #darkgreen
-        \override Slur.color = #darkgreen
-        \override Stem.color = #darkgreen
-        \override StemTremolo.color = #darkgreen
-        \override TextScript.color = #darkgreen
-        \override TupletBracket.color = #darkgreen
-        \override TupletNumber.color = #darkgreen
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    }
-    \context {
-        \Voice
-        \name RHVoiceThreeInserts
+        \name RHVoiceIII
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,7 +159,31 @@
     }
     \context {
         \Voice
-        \name RHVoiceFour
+        \name RHVoiceIIIInserts
+        \type Engraver_group
+        \alias Voice
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \override Accidental.color = #darkgreen
+        \override Beam.color = #darkgreen
+        \override Dots.color = #darkgreen
+        \override DynamicText.color = #darkgreen
+        \override Glissando.color = #darkgreen
+        \override Hairpin.color = #darkgreen
+        \override NoteHead.color = #darkgreen
+        \override RepeatTie.color = #darkgreen
+        \override Rest.color = #darkgreen
+        \override Script.color = #darkgreen
+        \override Slur.color = #darkgreen
+        \override Stem.color = #darkgreen
+        \override StemTremolo.color = #darkgreen
+        \override TextScript.color = #darkgreen
+        \override TupletBracket.color = #darkgreen
+        \override TupletNumber.color = #darkgreen
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    }
+    \context {
+        \Voice
+        \name RHVoiceIV
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,7 +207,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceFourInserts
+        \name RHVoiceIVInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,7 +231,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceFive
+        \name RHVoiceV
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -255,7 +255,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceSix
+        \name RHVoiceVI
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -306,7 +306,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceOne
+        \name LHVoiceI
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -330,14 +330,14 @@
     }
     \context {
         \Voice
-        \name LHVoiceTwo
+        \name LHVoiceII
         \type Engraver_group
         \alias Voice
         \voiceTwo
     }
     \context {
         \Voice
-        \name LHVoiceThree
+        \name LHVoiceIII
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -361,7 +361,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceFour
+        \name LHVoiceIV
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -385,7 +385,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceFourInserts
+        \name LHVoiceIVInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -409,7 +409,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceFive
+        \name LHVoiceV
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -433,7 +433,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceFiveInserts
+        \name LHVoiceVInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -457,7 +457,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceSix
+        \name LHVoiceVI
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -481,7 +481,7 @@
     }
     \context {
         \Voice
-        \name LHVoiceSixInserts
+        \name LHVoiceVIInserts
         \type Engraver_group
         \alias Voice
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -536,15 +536,15 @@
         \type Engraver_group
         \alias Staff
         \accepts RHVoiceI
-        \accepts RHVoiceOneInserts
-        \accepts RHVoiceTwo
-        \accepts RHVoiceTwoInserts
-        \accepts RHVoiceThree
-        \accepts RHVoiceThreeInserts
-        \accepts RHVoiceFour
-        \accepts RHVoiceFourInserts
-        \accepts RHVoiceFive
-        \accepts RHVoiceSix
+        \accepts RHVoiceIInserts
+        \accepts RHVoiceII
+        \accepts RHVoiceIIInserts
+        \accepts RHVoiceIII
+        \accepts RHVoiceIIIInserts
+        \accepts RHVoiceIV
+        \accepts RHVoiceIVInserts
+        \accepts RHVoiceV
+        \accepts RHVoiceVI
         \accepts RHResonanceVoice
     }
     \context {
@@ -552,15 +552,15 @@
         \name PianoMusicLHStaff
         \type Engraver_group
         \alias Staff
-        \accepts LHVoiceOne
-        \accepts LHVoiceTwo
-        \accepts LHVoiceThree
-        \accepts LHVoiceFour
-        \accepts LHVoiceFourInserts
-        \accepts LHVoiceFive
-        \accepts LHVoiceFiveInserts
-        \accepts LHVoiceSix
-        \accepts LHVoiceSixInserts
+        \accepts LHVoiceI
+        \accepts LHVoiceII
+        \accepts LHVoiceIII
+        \accepts LHVoiceIV
+        \accepts LHVoiceIVInserts
+        \accepts LHVoiceV
+        \accepts LHVoiceVInserts
+        \accepts LHVoiceVI
+        \accepts LHVoiceVIInserts
         \accepts LHResonanceVoice
     }
     \context {

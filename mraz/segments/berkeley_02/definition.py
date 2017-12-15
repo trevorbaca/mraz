@@ -19,12 +19,12 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 ##################################### [B2] ####################################
 
 accumulator(
-    'RHVoiceFour',
+    'RHVoiceIV',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'RHVoiceFourInserts',
+        'RHVoiceIVInserts',
         [14, 18],
         baca.flags(),
         ),
@@ -33,7 +33,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -44,7 +44,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections_2['stage 2']['rh'][0][:1],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -54,7 +54,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -65,12 +65,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceFour',
+    'RHVoiceIV',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('p'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'RHVoiceFourInserts',
+        'RHVoiceIVInserts',
         [14, 18],
         baca.flags(),
         ),
@@ -79,7 +79,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections_2['stage 2']['rh'][0][:2],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -89,7 +89,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -100,7 +100,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceThree',
+    'RHVoiceIII',
     collections_4['stage 1']['rh'][0],
     baca.dynamic('ff'),
     baca.flags(),
@@ -113,7 +113,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceFive',
+    'LHVoiceV',
     collections_4['stage 1']['lh'].next(),
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
@@ -127,7 +127,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections_2['stage 2']['rh'][0][:4],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -168,7 +168,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceTwo',
+    'RHVoiceII',
     collections_4['stage 5']['lh'][:4],
     baca.anchor_to_figure('b.2.13'),
     baca.dynamic_line_spanner_staff_padding(8),
@@ -257,7 +257,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceTwo',
+    'LHVoiceII',
     [abjad.Rest((4, 4))],
     figure_name='b.2.r.10',
     hide_time_signature=True,
@@ -316,12 +316,12 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceTwo', 1, Infinity),
+    baca.scope('RHVoiceII', 1, Infinity),
     baca.slurs_up(),
     )
 
 maker(
-    baca.scope('RHVoiceFourInserts', 1, Infinity),
+    baca.scope('RHVoiceIVInserts', 1, Infinity),
     baca.stems_up(),
     )
 
