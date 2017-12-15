@@ -964,9 +964,9 @@
         \context MusicContext = "MusicContext" {
             \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                 \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                    \context RHVoiceOne = "RH Voice 1" {
+                    \context RHVoiceI = "RHVoiceI" {
                         
-                        %%% RH Voice 1 [measure 91] %%%
+                        %%% RHVoiceI [measure 91] %%%
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
                         \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
@@ -1018,7 +1018,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
                                 
-                                %%% RH Voice 1 [measure 107] %%%
+                                %%% RHVoiceI [measure 107] %%%
                                 \override TextScript.direction = #up
                                 \dynamicDown
                                 r8
@@ -1081,7 +1081,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 109] %%%
+                                %%% RHVoiceI [measure 109] %%%
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -1105,7 +1105,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 110] %%%
+                                %%% RHVoiceI [measure 110] %%%
                                 \once \override Script.color = #black
                                 \once \override Script.extra-offset = #'(0.5 . 0)
                                 \once \override Rest.transparent = ##t
@@ -1135,7 +1135,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/4 {
                                 
-                                %%% RH Voice 1 [measure 111] %%%
+                                %%% RHVoiceI [measure 111] %%%
                                 bf''''8
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -1175,13 +1175,13 @@
                             }
                         }
                         
-                        %%% RH Voice 1 [measure 113] %%%
+                        %%% RHVoiceI [measure 113] %%%
                         s1 * 7/4
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 19/14 {
                                 
-                                %%% RH Voice 1 [measure 115] %%%
+                                %%% RHVoiceI [measure 115] %%%
                                 ef''''8
                                 [
                                 (
@@ -1241,12 +1241,12 @@
                             }
                         }
                         
-                        %%% RH Voice 1 [measure 119] %%%
+                        %%% RHVoiceI [measure 119] %%%
                         s1 * 7/8
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 121] %%%
+                                %%% RHVoiceI [measure 121] %%%
                                 ef''''1..
                                 -\tenuto
                                 \f
@@ -1272,7 +1272,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 122] %%%
+                                %%% RHVoiceI [measure 122] %%%
                                 f''''1.
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1297,7 +1297,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 123] %%%
+                                %%% RHVoiceI [measure 123] %%%
                                 bf''''1
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1322,7 +1322,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 124] %%%
+                                %%% RHVoiceI [measure 124] %%%
                                 ef''''1
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1346,12 +1346,12 @@
                             }
                         }
                         
-                        %%% RH Voice 1 [measure 125] %%%
+                        %%% RHVoiceI [measure 125] %%%
                         s1 * 3/2
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 126] %%%
+                                %%% RHVoiceI [measure 126] %%%
                                 \ottava #1
                                 f''''1
                                 -\tenuto
@@ -1377,7 +1377,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 127] %%%
+                                %%% RHVoiceI [measure 127] %%%
                                 bf''''2
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1402,16 +1402,16 @@
                             }
                         }
                         
-                        %%% RH Voice 1 [measure 128] %%%
+                        %%% RHVoiceI [measure 128] %%%
                         s1 * 1
                         
-                        %%% RH Voice 1 [measure 129] %%%
+                        %%% RHVoiceI [measure 129] %%%
                         s1 * 1
                         
-                        %%% RH Voice 1 [measure 130] %%%
+                        %%% RHVoiceI [measure 130] %%%
                         s1 * 1
                         
-                        %%% RH Voice 1 [measure 131] %%%
+                        %%% RHVoiceI [measure 131] %%%
                         s1 * 3/2
                         \bar "|"
                         \revert TupletBracket.staff-padding

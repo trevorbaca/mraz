@@ -137,7 +137,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections_4['stage 5']['rh'][0],
     baca.dynamic('f'),
     baca.proportional_notation_duration((1, 4)),
@@ -148,7 +148,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections_4['stage 5']['rh'][1],
     baca.proportional_notation_duration((1, 4)),
     baca.register(36),
@@ -158,7 +158,7 @@ accumulator(
     )
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections_4['stage 5']['rh'][2],
     baca.register(36),
     baca.tenuti(),
@@ -311,7 +311,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RH Voice 1', 1, Infinity),
+    baca.scope('RHVoiceI', 1, Infinity),
     baca.ottava(),
     )
 

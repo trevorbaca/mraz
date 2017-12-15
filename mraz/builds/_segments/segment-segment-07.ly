@@ -103,14 +103,14 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 
-                                %%% RH Voice 1 [measure 147] %%%
+                                %%% RHVoiceI [measure 147] %%%
                                 \override Beam.positions = #'(10 . 10)
                                 \override Stem.direction = #up
                                 \set stemLeftBeamCount = #0
@@ -193,14 +193,14 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 148] %%%
+                    %%% RHVoiceI [measure 148] %%%
                     s1 * 1/4
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
                             \times 2/3 {
                                 
-                                %%% RH Voice 1 [measure 149] %%%
+                                %%% RHVoiceI [measure 149] %%%
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 fs''16
@@ -236,14 +236,14 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 150] %%%
+                    %%% RHVoiceI [measure 150] %%%
                     s1 * 9/16
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 5/4 {
                             {
                                 
-                                %%% RH Voice 1 [measure 151] %%%
+                                %%% RHVoiceI [measure 151] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 af''16
@@ -264,14 +264,14 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 152] %%%
+                    %%% RHVoiceI [measure 152] %%%
                     s1 * 9/16
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/6 {
                             {
                                 
-                                %%% RH Voice 1 [measure 153] %%%
+                                %%% RHVoiceI [measure 153] %%%
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af''16
@@ -300,7 +300,7 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 154] %%%
+                    %%% RHVoiceI [measure 154] %%%
                     s1 * 3/4
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -308,7 +308,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
-                                %%% RH Voice 1 [measure 156] %%%
+                                %%% RHVoiceI [measure 156] %%%
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f'''16
@@ -364,7 +364,7 @@
                         }
                     }
                     
-                    %%% RH Voice 1 [measure 157] %%%
+                    %%% RHVoiceI [measure 157] %%%
                     s1 * 1/8
                     \bar "|."
                     \revert Beam.positions

@@ -19,7 +19,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 ##################################### [B1] ####################################
 
 accumulator(
-    'RH Voice 1',
+    'RHVoiceI',
     collections_4['stage 5']['rh'][2],
     baca.register(36),
     baca.tenuti(),

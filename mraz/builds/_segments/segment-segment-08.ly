@@ -73,9 +73,9 @@
     \context MusicContext = "MusicContext" {
         \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
             \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                \context RHVoiceOne = "RH Voice 1" {
+                \context RHVoiceI = "RHVoiceI" {
                     
-                    %%% RH Voice 1 [measure 158] %%%
+                    %%% RHVoiceI [measure 158] %%%
                     \set PianoMusicStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
                         \hcenter-in % SEGMENT-ONLY
                             #16 % SEGMENT-ONLY
@@ -87,7 +87,7 @@
                     \clef "treble" % SEGMENT-ONLY
                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-                    \once \override RHVoiceOne.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override RHVoiceI.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     s1 * 7/16
                     \fff % SEGMENT-ONLY
                     ^ \markup {
@@ -97,37 +97,37 @@
                                 "to piano"
                         }
                     
-                    %%% RH Voice 1 [measure 159] %%%
+                    %%% RHVoiceI [measure 159] %%%
                     s1 * 1
                     
-                    %%% RH Voice 1 [measure 160] %%%
+                    %%% RHVoiceI [measure 160] %%%
                     s1 * 3/2
                     
-                    %%% RH Voice 1 [measure 161] %%%
+                    %%% RHVoiceI [measure 161] %%%
                     s1 * 7/8
                     
-                    %%% RH Voice 1 [measure 162] %%%
+                    %%% RHVoiceI [measure 162] %%%
                     s1 * 5/16
                     
-                    %%% RH Voice 1 [measure 163] %%%
+                    %%% RHVoiceI [measure 163] %%%
                     s1 * 1/2
                     
-                    %%% RH Voice 1 [measure 164] %%%
+                    %%% RHVoiceI [measure 164] %%%
                     s1 * 2
                     
-                    %%% RH Voice 1 [measure 165] %%%
+                    %%% RHVoiceI [measure 165] %%%
                     s1 * 7/16
                     
-                    %%% RH Voice 1 [measure 166] %%%
+                    %%% RHVoiceI [measure 166] %%%
                     s1 * 1
                     
-                    %%% RH Voice 1 [measure 167] %%%
+                    %%% RHVoiceI [measure 167] %%%
                     s1 * 1
                     
-                    %%% RH Voice 1 [measure 168] %%%
+                    %%% RHVoiceI [measure 168] %%%
                     s1 * 7/8
                     
-                    %%% RH Voice 1 [measure 169] %%%
+                    %%% RHVoiceI [measure 169] %%%
                     s1 * 1/2
                     
                 }

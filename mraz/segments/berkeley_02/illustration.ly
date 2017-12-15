@@ -517,9 +517,9 @@
         \context MusicContext = "MusicContext" {
             \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                 \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                    \context RHVoiceOne = "RH Voice 1" {
+                    \context RHVoiceI = "RHVoiceI" {
                         
-                        %%% RH Voice 1 [measure 10] %%%
+                        %%% RHVoiceI [measure 10] %%%
                         \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
                             \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
                                 #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
@@ -568,7 +568,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 19] %%%
+                                %%% RHVoiceI [measure 19] %%%
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 ef''''1..
@@ -596,7 +596,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 20] %%%
+                                %%% RHVoiceI [measure 20] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 f''''1.
                                 -\tenuto
@@ -622,7 +622,7 @@
                         {
                             {
                                 
-                                %%% RH Voice 1 [measure 21] %%%
+                                %%% RHVoiceI [measure 21] %%%
                                 bf''''1
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1

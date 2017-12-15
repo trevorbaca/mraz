@@ -29,7 +29,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             \context MusicContext = "MusicContext" {
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                        \context RHVoiceOne = "RH Voice 1" {
+                        \context RHVoiceI = "RHVoiceI" {
                             \set PianoMusicStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -118,7 +118,7 @@ class ScoreTemplate(baca.ScoreTemplate):
     ### CLASS VARIABLES ###
 
     voice_colors = {
-        'RH Voice 1': 'red',
+        'RHVoiceI': 'red',
         'RHVoiceOneInserts': 'red',
         'RHVoiceTwo': 'black',
         'RHVoiceTwoInserts': 'black',
@@ -153,8 +153,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # RH VOICES
         rh_voice_1 = abjad.Voice(
-            context_name='RHVoiceOne',
-            name='RH Voice 1',
+            context_name='RHVoiceI',
+            name='RHVoiceI',
             )
         rh_voice_1I = abjad.Voice(
             context_name='RHVoiceOneInserts',
@@ -304,6 +304,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             [global_context, music_context],
             name='Score',
             )
+        self._assert_lilypond_identifiers(score)
+        self._assert_unique_context_names(score)
+        self._assert_matching_custom_context_names(score)
         self._validate_voice_names(score)
-
         return score
