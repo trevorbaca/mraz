@@ -51,12 +51,25 @@ metadata = abjad.TypedOrderedDict(
             'end_instruments',
             abjad.TypedOrderedDict(
                 [
-                    ('PianoMusicStaffGroup', 'piano'),
+                    (
+                        'PianoMusicStaffGroup',
+                        ('piano', 'RHVoiceI'),
+                        ),
                     ]
                 ),
             ),
         ('end_margin_markup', None),
-        ('end_metronome_mark', '112'),
+        (
+            'end_metronome_marks',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        'Score',
+                        ('112', 'GlobalSkips'),
+                        ),
+                    ]
+                ),
+            ),
         ('end_staff_lines', None),
         ('first_measure_number', 158),
         ('segment_number', 11),
