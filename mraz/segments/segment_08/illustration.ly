@@ -354,7 +354,9 @@
                     \context RHVoiceII = "RHVoiceII" {
                         
                         %%% RHVoiceII [measure 158] %%%
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 7/16
+                        \fff %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceII [measure 159] %%%
                         s1 * 1
@@ -432,7 +434,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         %%% RHVoiceIII [measure 158] %%%
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 7/16
+                        \pp %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIII [measure 159] %%%
                         s1 * 1
@@ -510,7 +514,9 @@
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         %%% RHVoiceIV [measure 158] %%%
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 7/16
+                        \p %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIV [measure 159] %%%
                         s1 * 1
@@ -829,7 +835,9 @@
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         %%% LHVoiceIV [measure 158] %%%
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 7/16
+                        \ff %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceIV [measure 159] %%%
                         s1 * 1
@@ -1403,7 +1411,9 @@
                         %%% LHVoiceVI [measure 158] %%%
                         \override Script.direction = #down
                         \override TupletBracket.staff-padding = #6
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 11/16
+                        \f %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {

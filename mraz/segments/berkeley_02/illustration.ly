@@ -692,7 +692,9 @@
                         
                         %%% RHVoiceII [measure 10] %%%
                         \override Slur.direction = #up
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 1/2
+                        \fff %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             {
                                 
@@ -1230,7 +1232,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         %%% RHVoiceIII [measure 10] %%%
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 37/16
+                        \mf %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 12/11 {
@@ -1670,9 +1674,7 @@
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override LHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 1/2
-                        \ppp %! REMINDER_DYNAMIC_COMMAND:7
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 11] %%%
@@ -1784,7 +1786,9 @@
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         %%% LHVoiceIV [measure 10] %%%
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 1/2
+                        \ff %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceIV [measure 11] %%%
                         s1 * 1/8
@@ -1864,7 +1868,9 @@
                     \context LHVoiceV = "LHVoiceV" {
                         
                         %%% LHVoiceV [measure 10] %%%
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 37/16
+                        \ppp %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             {
                                 
@@ -1963,7 +1969,9 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 10] %%%
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 1/2
+                        \f %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceVI [measure 11] %%%
                         s1 * 1/8

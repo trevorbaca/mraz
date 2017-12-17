@@ -23,27 +23,26 @@ metadata = abjad.TypedOrderedDict(
             'end_dynamics',
             abjad.TypedOrderedDict(
                 [
-                    ('LHResonanceVoice', 'ppp'),
-                    ('LHVoiceI', 'ppp'),
-                    ('LHVoiceII', 'ppp'),
-                    ('LHVoiceIII', 'ppp'),
-                    ('LHVoiceIV', 'ppp'),
-                    ('LHVoiceIVInserts', 'ppp'),
-                    ('LHVoiceV', 'ppp'),
-                    ('LHVoiceVI', 'ppp'),
-                    ('LHVoiceVIInserts', 'ppp'),
-                    ('LHVoiceVInserts', 'ppp'),
-                    ('RHResonanceVoice', 'fff'),
-                    ('RHVoiceI', 'fff'),
-                    ('RHVoiceII', 'fff'),
-                    ('RHVoiceIII', 'fff'),
-                    ('RHVoiceIIIInserts', 'fff'),
-                    ('RHVoiceIIInserts', 'fff'),
-                    ('RHVoiceIInserts', 'fff'),
-                    ('RHVoiceIV', 'fff'),
-                    ('RHVoiceIVInserts', 'fff'),
-                    ('RHVoiceV', 'fff'),
-                    ('RHVoiceVI', 'fff'),
+                    (
+                        'LHVoiceIV',
+                        ('ff', 'LHVoiceIV'),
+                        ),
+                    (
+                        'LHVoiceV',
+                        ('ppp', 'LHVoiceV'),
+                        ),
+                    (
+                        'LHVoiceVI',
+                        ('f', 'LHVoiceVI'),
+                        ),
+                    (
+                        'RHVoiceII',
+                        ('fff', 'RHVoiceII'),
+                        ),
+                    (
+                        'RHVoiceIII',
+                        ('mf', 'RHVoiceIII'),
+                        ),
                     ]
                 ),
             ),
