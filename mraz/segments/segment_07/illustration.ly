@@ -849,7 +849,9 @@
                         \override Beam.positions = #'(-4.5 . -4.5)
                         \override Slur.direction = #up
                         \dynamicDown
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 3/4
+                        \fff %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             {
                                 
@@ -1456,7 +1458,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         %%% RHVoiceIII [measure 147] %%%
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 3/4
+                        \pp %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIII [measure 148] %%%
                         s1 * 1/4
@@ -1530,7 +1534,9 @@
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         %%% RHVoiceIV [measure 147] %%%
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 3/4
+                        \p %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIV [measure 148] %%%
                         s1 * 1/4
@@ -1721,9 +1727,7 @@
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override LHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 3/4
-                        \mp %! REMINDER_DYNAMIC_COMMAND:7
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 148] %%%
@@ -1837,7 +1841,9 @@
                         %%% LHVoiceIV [measure 147] %%%
                         \override Beam.positions = #'(-5.5 . -5.5)
                         \override Script.direction = #down
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 3/8
+                        \mp %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
@@ -2111,7 +2117,9 @@
                         %%% LHVoiceV [measure 147] %%%
                         \override Beam.positions = #'(-6 . -6)
                         \override Script.direction = #down
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 329/272
+                        \p %! REMINDER_DYNAMIC_COMMAND:2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 15/17 {
@@ -2501,7 +2509,9 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 147] %%%
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 3/4
+                        \f %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceVI [measure 148] %%%
                         s1 * 1/4

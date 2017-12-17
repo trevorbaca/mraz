@@ -23,27 +23,34 @@ metadata = abjad.TypedOrderedDict(
             'end_dynamics',
             abjad.TypedOrderedDict(
                 [
-                    ('LHResonanceVoice', 'mp'),
-                    ('LHVoiceI', 'mp'),
-                    ('LHVoiceII', 'mp'),
-                    ('LHVoiceIII', 'mp'),
-                    ('LHVoiceIV', 'mp'),
-                    ('LHVoiceIVInserts', 'mp'),
-                    ('LHVoiceV', 'mp'),
-                    ('LHVoiceVI', 'mp'),
-                    ('LHVoiceVIInserts', 'mp'),
-                    ('LHVoiceVInserts', 'mp'),
-                    ('RHResonanceVoice', 'pp'),
-                    ('RHVoiceI', 'pp'),
-                    ('RHVoiceII', 'pp'),
-                    ('RHVoiceIII', 'pp'),
-                    ('RHVoiceIIIInserts', 'pp'),
-                    ('RHVoiceIIInserts', 'pp'),
-                    ('RHVoiceIInserts', 'pp'),
-                    ('RHVoiceIV', 'pp'),
-                    ('RHVoiceIVInserts', 'pp'),
-                    ('RHVoiceV', 'pp'),
-                    ('RHVoiceVI', 'pp'),
+                    (
+                        'LHVoiceIV',
+                        ('mp', 'LHVoiceIV'),
+                        ),
+                    (
+                        'LHVoiceV',
+                        ('p', 'LHVoiceV'),
+                        ),
+                    (
+                        'LHVoiceVI',
+                        ('f', 'LHVoiceVI'),
+                        ),
+                    (
+                        'RHVoiceI',
+                        ('f', 'RHVoiceI'),
+                        ),
+                    (
+                        'RHVoiceII',
+                        ('fff', 'RHVoiceII'),
+                        ),
+                    (
+                        'RHVoiceIII',
+                        ('pp', 'RHVoiceIII'),
+                        ),
+                    (
+                        'RHVoiceIV',
+                        ('p', 'RHVoiceIV'),
+                        ),
                     ]
                 ),
             ),

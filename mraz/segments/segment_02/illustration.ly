@@ -245,7 +245,9 @@
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
                         %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
                         \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:12
                         s1 * 29/16
+                        \f %! REMINDER_DYNAMIC_COMMAND:13
                         ^ \markup {
                             \column
                                 {
@@ -1088,7 +1090,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         %%% RHVoiceIII [measure 86] %%%
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 29/16
+                        \mp %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIII [measure 87] %%%
                         s1 * 27/16
@@ -1126,7 +1130,9 @@
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         %%% RHVoiceIV [measure 86] %%%
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 29/16
+                        \p %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIV [measure 87] %%%
                         s1 * 27/16
@@ -1227,9 +1233,7 @@
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
-                        \once \override LHVoiceI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 29/16
-                        \ppp %! REMINDER_DYNAMIC_COMMAND:7
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 87] %%%
@@ -1287,7 +1291,9 @@
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         %%% LHVoiceIV [measure 86] %%%
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 29/16
+                        \p %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceIV [measure 87] %%%
                         s1 * 27/16
@@ -1325,7 +1331,9 @@
                     \context LHVoiceV = "LHVoiceV" {
                         
                         %%% LHVoiceV [measure 86] %%%
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 29/16
+                        \ppp %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceV [measure 87] %%%
                         s1 * 27/16
@@ -1363,7 +1371,9 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 86] %%%
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                         s1 * 29/16
+                        \f %! REMINDER_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceVI [measure 87] %%%
                         s1 * 27/16
