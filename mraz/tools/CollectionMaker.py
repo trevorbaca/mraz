@@ -40,7 +40,7 @@ class CollectionMaker(object):
             item_class=abjad.NumberedPitchClass,
             )
         assert len(segments) == 6, repr(len(segments))
-        stages = segments.partition([2, 4], overhang=Exact)
+        stages = segments.partition([2, 4], overhang=abjad.Exact)
         assert stages.sum() == segments
         #stage_1_segments = stages[0]
         stage_2_segments = stages[1]
@@ -48,7 +48,8 @@ class CollectionMaker(object):
         stage_2_segments = stage_2_segments.join()
         stage_2_segments = stage_2_segments.read(counts)
         stage_2_segments = stage_2_segments.remove_duplicates(level=1)
-        measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=Exact)
+        measures = stage_2_segments.partition(
+            [6, 5, 5, 4, 4], overhang=abjad.Exact)
         assert measures.sum() == stage_2_segments
         measures = [_.arpeggiate_up() for _ in measures]
         measures = baca.Cursor(measures, singletons=True)
@@ -75,7 +76,7 @@ class CollectionMaker(object):
             item_class=abjad.NumberedPitchClass,
             )
         assert len(segments) == 13, repr(len(segments))
-        stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=Exact)
+        stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=abjad.Exact)
         assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_2_segments = stages[1]
@@ -94,9 +95,9 @@ class CollectionMaker(object):
         chords.append(last)
         stage_2_segments = baca.Cursor(chords, cyclic=False, singletons=True)
         assert len(stage_4_segments) == 2
-        rh, lh = stage_4_segments.partition([1, 1], overhang=Exact)
+        rh, lh = stage_4_segments.partition([1, 1], overhang=abjad.Exact)
         lh = lh.remove_duplicates(level=-1)
-        lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=Exact)
+        lh = lh.read([2, 2, 3, 1, 2, 2, 3, 3], check=abjad.Exact)
         lh = lh.chords()
         lh = lh.cursor(cyclic=True, singletons=True)
         rh = rh.accumulate([
@@ -104,14 +105,14 @@ class CollectionMaker(object):
             baca.pitch_class_segment().transpose(n=2),
             ])
         rh = rh.join().remove_repeats()
-        rh = rh.read([8, 8, 14], check=Exact)
+        rh = rh.read([8, 8, 14], check=abjad.Exact)
         rh = rh.cursor()
         stage_4_rh_segments = rh
         stage_4_lh_segments = lh
         stage_5_segments = stage_5_segments.remove_duplicate_pitch_classes(
             level=1)
-        rh, lh = stage_5_segments.partition([1, 1], overhang=Exact)
-        rh = rh.read(6 * [1], check=Exact)
+        rh, lh = stage_5_segments.partition([1, 1], overhang=abjad.Exact)
+        rh = rh.read(6 * [1], check=abjad.Exact)
         rh = rh.cursor(singletons=True)
         lh = lh.accumulate([baca.pitch_class_segment().transpose(n=2)])
         lh = lh.join()
@@ -154,27 +155,27 @@ class CollectionMaker(object):
             item_class=abjad.NumberedPitchClass,
             )
         assert len(segments) == 6, repr(len(segments))
-        stages = segments.partition([2, 4], overhang=Exact)
+        stages = segments.partition([2, 4], overhang=abjad.Exact)
         assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_2_segments = stages[1]
         stage_1_segments = stage_1_segments.remove_duplicate_pitch_classes(
             level=1)
-        rh, lh = stage_1_segments.partition([1, 1], overhang=Exact)
+        rh, lh = stage_1_segments.partition([1, 1], overhang=abjad.Exact)
         rh = rh.cursor(singletons=True)
         lh = lh.cursor(singletons=True)
         collections['stage 1']['rh'] = rh
         collections['stage 1']['lh'] = lh
         stage_2_segments = stage_2_segments.remove_duplicate_pitch_classes(
             level=1)
-        rh, lh = stage_2_segments.partition([2, 2], overhang=Exact)
+        rh, lh = stage_2_segments.partition([2, 2], overhang=abjad.Exact)
         rh = rh.accumulate([
             baca.pitch_class_segment().transpose(n=3),
             baca.pitch_class_segment().alpha(),
             ])
         rh = rh.cursor(singletons=True)
         lh = lh.repeat(n=3)
-        lh = lh.read([3, 4, 2, 4, 2, 3, 2, 3, 4], check=Exact)
+        lh = lh.read([3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.Exact)
         lh = lh.cursor(singletons=True)
         collections['stage 2']['rh'] = rh
         collections['stage 2']['lh'] = lh
@@ -198,7 +199,7 @@ class CollectionMaker(object):
             item_class=abjad.NumberedPitchClass,
             )
         assert len(segments) == 3, repr(len(segments))
-        stages = segments.partition([1, 1, 1], overhang=Exact)
+        stages = segments.partition([1, 1, 1], overhang=abjad.Exact)
         assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_1_segments = stage_1_segments.accumulate([
@@ -208,7 +209,7 @@ class CollectionMaker(object):
         stage_1_segments = stage_1_segments.join()
         stage_1_segments = stage_1_segments.read(
             [3, 5, 4, 3, 4, 5, 5, 3, 4],
-            check=Exact,
+            check=abjad.Exact,
             )
         assert len(stage_1_segments.flatten()) == 36
         rh_indices = [0, 2, 3, 5, 8]
@@ -242,7 +243,7 @@ class CollectionMaker(object):
         assert len(segments) == 14, repr(len(segments))
         rh_segments, lh_segments, stage_2_segments = segments.partition(
             [5, 5, 4],
-            overhang=Exact,
+            overhang=abjad.Exact,
             )
         rh_segments = abjad.CyclicTuple(rh_segments)
         lh_segments = abjad.CyclicTuple(lh_segments)
@@ -308,7 +309,7 @@ class CollectionMaker(object):
             item_class=abjad.NumberedPitchClass,
             )
         assert len(segments) == 6, repr(len(segments))
-        stages = segments.partition([1, 1, 1, 3], overhang=Exact)
+        stages = segments.partition([1, 1, 1, 3], overhang=abjad.Exact)
         assert stages.sum() == segments
 
         stage_3_segments = stages[2].remove_duplicates()
@@ -319,7 +320,7 @@ class CollectionMaker(object):
         stage_3_segments = stage_3_segments.join()
         stage_3_segments = stage_3_segments.read(
             5 * [2, 3, 4, 3],
-            check=Exact,
+            check=abjad.Exact,
             )
         assert len(stage_3_segments) == 20
         assert len(stage_3_segments.flatten()) == 60

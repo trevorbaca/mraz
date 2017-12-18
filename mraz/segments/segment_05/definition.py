@@ -363,7 +363,7 @@ maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=False,
-    final_bar_line=Exact,
+    final_bar_line=abjad.Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
@@ -388,7 +388,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceII', 2, Infinity),
+    baca.scope('RHVoiceII', 2, abjad.Infinity),
     baca.accents(),
     baca.beam_positions(10.5),
     baca.scripts_up(),
@@ -396,7 +396,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceIV', 2, Infinity),
+    baca.scope('LHVoiceIV', 2, abjad.Infinity),
     baca.staccati(),
     baca.tenuti(),
     )
