@@ -406,9 +406,9 @@
                                     } %! EXPLICIT_INSTRUMENT_COMMAND:3
                                 \clef "treble" %! EXPLICIT_CLEF_COMMAND:9
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:2
-                                \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:6
-                                %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:7
-                                \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:8
+                                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:6
+                                %%% \override PianoMusicRHStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:7
+                                \set PianoMusicRHStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:8
                                 bf''''1
                                 -\tenuto
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -437,7 +437,7 @@
                                     \null %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
                                     } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:5
                                 \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:4
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:10
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:10
                             }
                         }
                         
@@ -1178,11 +1178,11 @@
                         
                         %%% LHVoiceI [measure 1] %%%
                         \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         s1 * 1
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 2] %%%
                         s1 * 1/2
@@ -1523,9 +1523,9 @@
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
                                 \clef "bass" %! REDUNDANT_CLEF_COMMAND:5
-                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
-                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
-                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
+                                \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
+                                %%% \override PianoMusicLHStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
+                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
                                 b,,,8
                                 \f
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1545,7 +1545,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
                                 
                                 \override Rest.direction = #down
                                 r4
