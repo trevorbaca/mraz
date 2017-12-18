@@ -2266,9 +2266,9 @@
                                 %%% LHVoiceIV [measure 135] %%%
                                 \override Slur.direction = #down
                                 \clef "bass" %! REDUNDANT_CLEF_COMMAND:5
-                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
-                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
-                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
+                                \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
+                                %%% \override PianoMusicLHStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
+                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
                                 r2
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
                                     %%% \fontsize %! FIGURE_NAME_MARKUP:1
@@ -2287,7 +2287,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
                                 
                                 r2
                                 
