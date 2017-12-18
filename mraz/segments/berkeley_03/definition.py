@@ -1002,7 +1002,7 @@ maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=False,
-    final_bar_line=Exact,
+    final_bar_line=abjad.Exact,
     hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
@@ -1027,7 +1027,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceI', 1, Infinity),
+    baca.scope('RHVoiceI', 1, abjad.Infinity),
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
@@ -1039,17 +1039,17 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceI', 36, Infinity),
+    baca.scope('RHVoiceI', 36, abjad.Infinity),
     baca.ottava(),
     )
 
 maker(
-    baca.scope('RHVoiceIII', 1, Infinity),
+    baca.scope('RHVoiceIII', 1, abjad.Infinity),
     baca.tenuti(),
     )
 
 maker(
-    baca.scope('LHVoiceV', 1, Infinity),
+    baca.scope('LHVoiceV', 1, abjad.Infinity),
     baca.dynamics_down(),
     )
 
@@ -1060,18 +1060,18 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceV', 16, Infinity),
+    baca.scope('LHVoiceV', 16, abjad.Infinity),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
-    baca.scope('LHVoiceVInserts', 1, Infinity),
+    baca.scope('LHVoiceVInserts', 1, abjad.Infinity),
     baca.scripts_up(),
     baca.staccati(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 1, Infinity),
+    baca.scope('LHResonanceVoice', 1, abjad.Infinity),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
