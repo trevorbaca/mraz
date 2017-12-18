@@ -3,9 +3,8 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        ('duration', "0'22''"),
         (
-            'end_clefs',
+            'abjad.Clef',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -20,7 +19,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_dynamics',
+            'abjad.Dynamic',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -47,7 +46,7 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         (
-            'end_instruments',
+            'abjad.Instrument',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -57,9 +56,8 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_margin_markup', None),
         (
-            'end_metronome_marks',
+            'abjad.MetronomeMark',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -69,9 +67,8 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_staff_lines', None),
         (
-            'end_time_signatures',
+            'abjad.TimeSignature',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -81,6 +78,9 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
+        ('baca.MarginMarkup', None),
+        ('duration', "0'22''"),
+        ('end_staff_lines', None),
         ('first_measure_number', 1),
         ('segment_number', 1),
         ('start_clock_time', "0'00''"),
