@@ -3131,12 +3131,7 @@
                     \context LHVoiceI = "LHVoiceI" {
                         
                         %%% LHVoiceI [measure 69] %%%
-                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
                         s1 * 4
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 70] %%%
                         s1 * 5/2
@@ -3893,9 +3888,14 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 69] %%%
-                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
+                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 39/4
-                        \f %! REMINDER_DYNAMIC_COMMAND:2
+                        \f %! REMINDER_DYNAMIC_COMMAND:7
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {

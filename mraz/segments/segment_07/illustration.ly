@@ -1723,12 +1723,7 @@
                     \context LHVoiceI = "LHVoiceI" {
                         
                         %%% LHVoiceI [measure 147] %%%
-                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
                         s1 * 3/4
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         
                         %%% LHVoiceI [measure 148] %%%
                         s1 * 1/4
@@ -1841,9 +1836,14 @@
                         %%% LHVoiceIV [measure 147] %%%
                         \override Beam.positions = #'(-5.5 . -5.5)
                         \override Script.direction = #down
-                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
+                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                         s1 * 3/8
-                        \mp %! REMINDER_DYNAMIC_COMMAND:2
+                        \mp %! REMINDER_DYNAMIC_COMMAND:7
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
