@@ -44,7 +44,7 @@ metadata = abjad.TypedOrderedDict(
                         'PianoMusicLHStaff',
                         [
                             abjad.Momento(
-                                context='LHVoiceI',
+                                context='LHVoiceVI',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),
