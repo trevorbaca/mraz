@@ -258,20 +258,20 @@
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REMINDER_INSTRUMENT_COMMAND:3
-                                        \hcenter-in %! REMINDER_INSTRUMENT_COMMAND:3
-                                            #16 %! REMINDER_INSTRUMENT_COMMAND:3
-                                            Piano %! REMINDER_INSTRUMENT_COMMAND:3
-                                        } %! REMINDER_INSTRUMENT_COMMAND:3
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REMINDER_INSTRUMENT_COMMAND:3
-                                        \null %! REMINDER_INSTRUMENT_COMMAND:3
-                                        } %! REMINDER_INSTRUMENT_COMMAND:3
-                                    \clef "treble" %! REMINDER_CLEF_COMMAND:11
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                        \hcenter-in %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                            #16 %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                            Piano %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                        } %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                        \null %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                        } %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                    \clef "treble" %! PERSISTENT_CLEF_COMMAND:11
                                     \dynamicUp
-                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! REMINDER_INSTRUMENT_COLOR:2
-                                    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REMINDER_CLEF_COLOR:8
-                                    %%% \override PianoMusicRHStaff.Clef.color = ##f %! REMINDER_CLEF_UNCOLOR:9
-                                    \set PianoMusicRHStaff.forceClef = ##t %! REMINDER_CLEF_COMMAND:10
+                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! PERSISTENT_INSTRUMENT_COLOR:2
+                                    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! PERSISTENT_CLEF_COLOR:8
+                                    %%% \override PianoMusicRHStaff.Clef.color = ##f %! PERSISTENT_CLEF_UNCOLOR:9
+                                    \set PianoMusicRHStaff.forceClef = ##t %! PERSISTENT_CLEF_COMMAND:10
                                     e''16
                                     \fff
                                     [
@@ -296,34 +296,34 @@
                                                                     %%% ] %! FIGURE_NAME_MARKUP:1
                                                                 %%% } %! FIGURE_NAME_MARKUP:1
                                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                                %%% \line %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%     { %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%         \override %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%             #'(box-padding . 0.75) %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%             \box %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%                 piano %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                %%%     } %! REMINDER_INSTRUMENT_CHANGE_MARKUP:6
-                                                \line %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                    { %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                        \with-color %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                            #(x11-color 'green) %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                            \override %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                                #'(box-padding . 0.75) %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                                \box %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                                    piano %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                    } %! REMINDER_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                %%% \line %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%     { %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%         \override %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%             #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%             \box %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%                 piano %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                %%%     } %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
+                                                \line %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                    { %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                        \with-color %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                            #(x11-color 'green) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                            \override %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                                #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                                \box %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                                    piano %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                                    } %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
                                             }
                                         }
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                        \hcenter-in %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                            #16 %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                            Piano %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                        } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                        \null %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                        } %! REMINDER_INSTRUMENT_SHADOW_COMMAND:5
-                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REMINDER_INSTRUMENT_SHADOW_COLOR:4
-                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REMINDER_CLEF_SHADOW_COLOR:12
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                        \hcenter-in %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                            #16 %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                            Piano %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                        } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                        \null %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                        } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
+                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! PERSISTENT_INSTRUMENT_SHADOW_COLOR:4
+                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! PERSISTENT_CLEF_SHADOW_COLOR:12
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -850,9 +850,9 @@
                         \override Beam.positions = #'(-4.5 . -4.5)
                         \override Slur.direction = #up
                         \dynamicDown
-                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:1
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:1
                         s1 * 3/4
-                        \fff %! REMINDER_DYNAMIC_COMMAND:2
+                        \fff %! PERSISTENT_DYNAMIC_COMMAND:2
                         {
                             {
                                 
@@ -1459,9 +1459,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         %%% RHVoiceIII [measure 147] %%%
-                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:1
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:1
                         s1 * 3/4
-                        \pp %! REMINDER_DYNAMIC_COMMAND:2
+                        \pp %! PERSISTENT_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIII [measure 148] %%%
                         s1 * 1/4
@@ -1535,9 +1535,9 @@
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         %%% RHVoiceIV [measure 147] %%%
-                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:1
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:1
                         s1 * 3/4
-                        \p %! REMINDER_DYNAMIC_COMMAND:2
+                        \p %! PERSISTENT_DYNAMIC_COMMAND:2
                         
                         %%% RHVoiceIV [measure 148] %%%
                         s1 * 1/4
@@ -1837,14 +1837,14 @@
                         %%% LHVoiceIV [measure 147] %%%
                         \override Beam.positions = #'(-5.5 . -5.5)
                         \override Script.direction = #down
-                        \clef "bass" %! REMINDER_CLEF_COMMAND:4
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REMINDER_CLEF_COLOR:1
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! REMINDER_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REMINDER_CLEF_COMMAND:3
-                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:6
+                        \clef "bass" %! PERSISTENT_CLEF_COMMAND:4
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! PERSISTENT_CLEF_COLOR:1
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f %! PERSISTENT_CLEF_UNCOLOR:2
+                        \set PianoMusicLHStaff.forceClef = ##t %! PERSISTENT_CLEF_COMMAND:3
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:6
                         s1 * 3/8
-                        \mp %! REMINDER_DYNAMIC_COMMAND:7
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REMINDER_CLEF_SHADOW_COLOR:5
+                        \mp %! PERSISTENT_DYNAMIC_COMMAND:7
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! PERSISTENT_CLEF_SHADOW_COLOR:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
@@ -2118,9 +2118,9 @@
                         %%% LHVoiceV [measure 147] %%%
                         \override Beam.positions = #'(-6 . -6)
                         \override Script.direction = #down
-                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:1
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:1
                         s1 * 329/272
-                        \p %! REMINDER_DYNAMIC_COMMAND:2
+                        \p %! PERSISTENT_DYNAMIC_COMMAND:2
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 15/17 {
@@ -2510,9 +2510,9 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 147] %%%
-                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green) %! REMINDER_DYNAMIC_COLOR:1
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green) %! PERSISTENT_DYNAMIC_COLOR:1
                         s1 * 3/4
-                        \f %! REMINDER_DYNAMIC_COMMAND:2
+                        \f %! PERSISTENT_DYNAMIC_COMMAND:2
                         
                         %%% LHVoiceVI [measure 148] %%%
                         s1 * 1/4
