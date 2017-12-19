@@ -46,10 +46,10 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 16/4 %! REDUNDANT_TIME_SIGNATURE_COMMAND:6
+                \time 16/4 %! REMINDER_TIME_SIGNATURE_COMMAND:6
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! REDUNDANT_TIME_SIGNATURE_COLOR:5
+                \once \override Score.TimeSignature.color = #(x11-color 'green) %! REMINDER_TIME_SIGNATURE_COLOR:5
                 s1 * 4
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:7
