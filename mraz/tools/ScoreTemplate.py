@@ -289,7 +289,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='PianoMusicStaffGroup',
             name='PianoMusicStaffGroup',
             )
-        piano = mraz.instruments['piano']
+        piano = mraz.instruments['Piano']
         abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
 
         # MUSIC CONTEXT
