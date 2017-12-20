@@ -46,18 +46,17 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 16/4 %! REAPPLIED_TIME_SIGNATURE:7
+                \time 16/4 %! REAPPLIED_TIME_SIGNATURE:6
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 \once \override Score.TimeSignature.color = #(x11-color 'green) %! REAPPLIED_TIME_SIGNATURE_COLOR:5
-                %%% \override Score.TimeSignature.color = ##f %! REAPPLIED_TIME_SIGNATURE_UNCOLOR:6
                 s1 * 4
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:9
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:9
-                        %%% #-2 %! CLOCK_TIME_MARKUP:9
-                        %%% 2'41'' %! CLOCK_TIME_MARKUP:9
-                    %%% } %! CLOCK_TIME_MARKUP:9
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:7
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:7
+                        %%% #-2 %! CLOCK_TIME_MARKUP:7
+                        %%% 2'41'' %! CLOCK_TIME_MARKUP:7
+                    %%% } %! CLOCK_TIME_MARKUP:7
                 %%% - \markup { %! STAGE_NUMBER_MARKUP:2
                     %%% \fontsize %! STAGE_NUMBER_MARKUP:2
                         %%% #-3 %! STAGE_NUMBER_MARKUP:2
@@ -65,7 +64,6 @@
                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                             %%% [C.1] %! STAGE_NUMBER_MARKUP:2
                     %%% } %! STAGE_NUMBER_MARKUP:2
-                \override Score.TimeSignature.color = #(x11-color 'DarkGreen) %! REAPPLIED_TIME_SIGNATURE_COLOR_REDRAW:8
                 
                 %%% GlobalSkips [measure 70] %%%
                 \once \override TextSpanner.arrow-width = 0.25
