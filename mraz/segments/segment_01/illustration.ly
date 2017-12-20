@@ -75,14 +75,14 @@
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                    \hcenter-in %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                        #16 %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                        Piano %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                    } %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                    \null %! PERSISTENT_INSTRUMENT_COMMAND:3
-                                    } %! PERSISTENT_INSTRUMENT_COMMAND:3
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                    \hcenter-in %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                        #16 %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                        Piano %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                    } %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                    \null %! PERSISTENT_INSTRUMENT_COMMAND:5
+                                    } %! PERSISTENT_INSTRUMENT_COMMAND:5
                                 \clef "treble" %! PERSISTENT_CLEF_COMMAND:11
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! PERSISTENT_INSTRUMENT_COLOR:2
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! PERSISTENT_CLEF_COLOR:8
@@ -113,33 +113,33 @@
                                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                                             %%% } %! FIGURE_NAME_MARKUP:1
                                                 %%% } %! FIGURE_NAME_MARKUP:1
-                                            %%% \line %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%     { %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%         \override %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%             #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%             \box %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%                 piano %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            %%%     } %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:6
-                                            \line %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                { %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                    \with-color %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                        #(x11-color 'green) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                        \override %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                            #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                            \box %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                                piano %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
-                                                } %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:7
+                                            %%% \line %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%     { %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%         \override %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%             #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%             \box %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%                 piano %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            %%%     } %! PERSISTENT_INSTRUMENT_CHANGE_MARKUP:3
+                                            \line %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                { %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                    \with-color %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                        #(x11-color 'green) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                        \override %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                            #'(box-padding . 0.75) %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                            \box %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                                piano %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                                } %! PERSISTENT_INSTRUMENT_CHANGE_COLORED_MARKUP:4
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                    \hcenter-in %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                        #16 %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                        Piano %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                    } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                    \null %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                    } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:5
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! PERSISTENT_INSTRUMENT_SHADOW_COLOR:4
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                    \hcenter-in %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                        #16 %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                        Piano %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                    } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                    \null %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                    } %! PERSISTENT_INSTRUMENT_SHADOW_COMMAND:7
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! PERSISTENT_INSTRUMENT_SHADOW_COLOR:6
                                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! PERSISTENT_CLEF_SHADOW_COLOR:12
                                 
                                 \set stemLeftBeamCount = #2
