@@ -17,13 +17,13 @@
                 \time 59/16
                 \bar "" %! EMPTY_START_BAR:1
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:4
                 s1 * 59/16
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
-                        %%% #-2 %! CLOCK_TIME_MARKUP:5
-                        %%% 3'46'' %! CLOCK_TIME_MARKUP:5
-                    %%% } %! CLOCK_TIME_MARKUP:5
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:3
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:3
+                        %%% #-2 %! CLOCK_TIME_MARKUP:3
+                        %%% 3'46'' %! CLOCK_TIME_MARKUP:3
+                    %%% } %! CLOCK_TIME_MARKUP:3
                 - \markup {
                     \column
                         {
@@ -35,14 +35,14 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                                             %%% [D.1] %! STAGE_NUMBER_MARKUP:2
                                 %%% } %! STAGE_NUMBER_MARKUP:2
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/24) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:5
+                                %%% { %! SEGMENT:SPACING_MARKUP:5
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:5
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:5
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:5
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:5
+                                            %%% (1/24) %! SEGMENT:SPACING_MARKUP:5
+                                %%% } %! SEGMENT:SPACING_MARKUP:5
                         }
                     }
                 ^ \markup {
