@@ -113,22 +113,22 @@
                                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                                             %%% } %! FIGURE_NAME_MARKUP:1
                                                 %%% } %! FIGURE_NAME_MARKUP:1
-                                            %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%     { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%         \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%             \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%                 piano %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            %%%     } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:3
-                                            \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                    \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                        #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                        \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                            #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                            \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                                piano %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
-                                                } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
+                                            %%% \line %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%     { %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%         \override %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             \box %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                 piano %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%     } %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                    \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                        #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                        \override %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                            #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                            \box %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                piano %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                         }
                                     }
                                 \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:7
