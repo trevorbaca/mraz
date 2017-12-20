@@ -17,7 +17,7 @@
                 \time 59/16
                 \bar "" %! EMPTY_START_BAR:1
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:4
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:4
                 s1 * 59/16
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:3
                     %%% \fontsize %! CLOCK_TIME_MARKUP:3
@@ -75,22 +75,22 @@
                                 \override Beam.positions = #'(6 . 6)
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                    \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                        #16 %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                        Piano %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                    } %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                    \null %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                    } %! REAPPLIED_INSTRUMENT_COMMAND:5
-                                \clef "treble" %! REAPPLIED_CLEF_COMMAND:11
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:5
+                                    \hcenter-in %! REAPPLIED_INSTRUMENT:5
+                                        #16 %! REAPPLIED_INSTRUMENT:5
+                                        Piano %! REAPPLIED_INSTRUMENT:5
+                                    } %! REAPPLIED_INSTRUMENT:5
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:5
+                                    \null %! REAPPLIED_INSTRUMENT:5
+                                    } %! REAPPLIED_INSTRUMENT:5
+                                \clef "treble" %! REAPPLIED_CLEF:11
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:2
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:8
                                 %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:9
-                                \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:10
+                                \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF:10
                                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:13
                                 e16
-                                \f %! REAPPLIED_DYNAMIC_COMMAND:14
+                                \f %! REAPPLIED_DYNAMIC:14
                                 [
                                 ^ \markup {
                                     \column
@@ -131,16 +131,16 @@
                                                 } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                    \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                        #16 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                        Piano %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                    } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                    \null %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                    } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_REDRAW_COLOR:6
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:12
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                    \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                        #16 %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                        Piano %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                    } %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                    \null %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                    } %! REAPPLIED_INSTRUMENT_REDRAW:7
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:6
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:12
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -418,7 +418,7 @@
                         %%% RHVoiceII [measure 85] %%%
                         \once \override RHVoiceII.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 59/16
-                        \ppp %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \ppp %! REAPPLIED_DYNAMIC:2
                         \bar "|"
                         
                     }
@@ -434,7 +434,7 @@
                         %%% RHVoiceIII [measure 85] %%%
                         \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 59/16
-                        \mp %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \mp %! REAPPLIED_DYNAMIC:2
                         \bar "|"
                         
                     }
@@ -450,7 +450,7 @@
                         %%% RHVoiceIV [measure 85] %%%
                         \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 59/16
-                        \p %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \p %! REAPPLIED_DYNAMIC:2
                         \bar "|"
                         
                     }
@@ -510,7 +510,7 @@
                         %%% LHVoiceIV [measure 85] %%%
                         \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 59/16
-                        \p %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \p %! REAPPLIED_DYNAMIC:2
                         \bar "|"
                         
                     }
@@ -526,7 +526,7 @@
                         %%% LHVoiceV [measure 85] %%%
                         \once \override LHVoiceV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 59/16
-                        \ppp %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \ppp %! REAPPLIED_DYNAMIC:2
                         \bar "|"
                         
                     }
@@ -540,15 +540,15 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 85] %%%
-                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
+                        \clef "bass" %! REAPPLIED_CLEF:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:6
                         s1 * 59/16
-                        \f %! REAPPLIED_DYNAMIC_COMMAND:7
+                        \f %! REAPPLIED_DYNAMIC:7
                         \bar "|"
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:5
                         
                     }
                     \context LHVoiceVIInserts = "LHVoiceVIInserts" {

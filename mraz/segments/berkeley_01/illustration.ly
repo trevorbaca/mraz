@@ -14,7 +14,7 @@
                 \time 4/4
                 \bar "" %! EMPTY_START_BAR:1
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:4
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:4
                 s1 * 1
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:3
                     %%% \fontsize %! CLOCK_TIME_MARKUP:3
@@ -62,7 +62,7 @@
                 %%% GlobalSkips [measure 2] %%%
                 \time 2/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/2
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -110,7 +110,7 @@
                 %%% GlobalSkips [measure 3] %%%
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING:3
                 s1 * 1
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -142,7 +142,7 @@
                 %%% GlobalSkips [measure 4] %%%
                 \time 1/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -174,7 +174,7 @@
                 %%% GlobalSkips [measure 5] %%%
                 \time 4/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/2
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -222,7 +222,7 @@
                 %%% GlobalSkips [measure 6] %%%
                 \time 1/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -254,7 +254,7 @@
                 %%% GlobalSkips [measure 7] %%%
                 \time 7/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 7/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -307,7 +307,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 16/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 4
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
@@ -340,7 +340,7 @@
                 %%% GlobalSkips [measure 9] %%%
                 \time 1/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/8
                 \stopTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
@@ -396,18 +396,18 @@
                             {
                                 
                                 %%% RHVoiceI [measure 1] %%%
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                    \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                        #16 %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                        Piano %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                    } %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                    \null %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                    } %! EXPLICIT_INSTRUMENT_COMMAND:10
-                                \clef "treble" %! EXPLICIT_CLEF_COMMAND:5
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT:10
+                                    \hcenter-in %! EXPLICIT_INSTRUMENT:10
+                                        #16 %! EXPLICIT_INSTRUMENT:10
+                                        Piano %! EXPLICIT_INSTRUMENT:10
+                                    } %! EXPLICIT_INSTRUMENT:10
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT:10
+                                    \null %! EXPLICIT_INSTRUMENT:10
+                                    } %! EXPLICIT_INSTRUMENT:10
+                                \clef "treble" %! EXPLICIT_CLEF:5
                                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:2
                                 %%% \override PianoMusicRHStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:3
-                                \set PianoMusicRHStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:4
+                                \set PianoMusicRHStaff.forceClef = ##t %! EXPLICIT_CLEF:4
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:7
                                 bf''''1
                                 -\tenuto
@@ -450,16 +450,16 @@
                                                 } %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:9
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                    \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                        #16 %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                        Piano %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                    \null %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_REDRAW_COLOR:6
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_REDRAW_COLOR:11
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                    \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                        #16 %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                        Piano %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                    } %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                    \null %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                    } %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:6
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:11
                             }
                         }
                         
@@ -1199,12 +1199,12 @@
                     \context LHVoiceI = "LHVoiceI" {
                         
                         %%% LHVoiceI [measure 1] %%%
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
+                        \clef "bass" %! EXPLICIT_CLEF:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                        \set PianoMusicLHStaff.forceClef = ##t %! EXPLICIT_CLEF:3
                         s1 * 1
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_REDRAW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:5
                         
                         %%% LHVoiceI [measure 2] %%%
                         s1 * 1/2
@@ -1544,10 +1544,10 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
-                                \clef "bass" %! REDUNDANT_CLEF_COMMAND:5
+                                \clef "bass" %! REDUNDANT_CLEF:5
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
                                 %%% \override PianoMusicLHStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
-                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:4
+                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF:4
                                 b,,,8
                                 \f
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
@@ -1567,7 +1567,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:6
                                 
                                 \override Rest.direction = #down
                                 r4

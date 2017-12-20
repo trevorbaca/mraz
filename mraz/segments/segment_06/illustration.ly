@@ -18,7 +18,7 @@
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:6
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:6
                 s1 * 9/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
                     %%% \fontsize %! CLOCK_TIME_MARKUP:5
@@ -46,27 +46,27 @@
                                 %%% } %! SEGMENT:SPACING_MARKUP:7
                         }
                     }
-                ^ \markup { % REDUNDANT_METRONOME_MARK_COMMAND:4
-                    \fontsize % REDUNDANT_METRONOME_MARK_COMMAND:4
-                        #-6 % REDUNDANT_METRONOME_MARK_COMMAND:4
-                        \general-align % REDUNDANT_METRONOME_MARK_COMMAND:4
-                            #Y % REDUNDANT_METRONOME_MARK_COMMAND:4
-                            #DOWN % REDUNDANT_METRONOME_MARK_COMMAND:4
-                            \note-by-number % REDUNDANT_METRONOME_MARK_COMMAND:4
-                                #2 % REDUNDANT_METRONOME_MARK_COMMAND:4
-                                #0 % REDUNDANT_METRONOME_MARK_COMMAND:4
-                                #1 % REDUNDANT_METRONOME_MARK_COMMAND:4
-                    \upright % REDUNDANT_METRONOME_MARK_COMMAND:4
-                        { % REDUNDANT_METRONOME_MARK_COMMAND:4
-                            = % REDUNDANT_METRONOME_MARK_COMMAND:4
-                            84 % REDUNDANT_METRONOME_MARK_COMMAND:4
-                        } % REDUNDANT_METRONOME_MARK_COMMAND:4
-                    } % REDUNDANT_METRONOME_MARK_COMMAND:4
+                ^ \markup { % REDUNDANT_METRONOME_MARK:4
+                    \fontsize % REDUNDANT_METRONOME_MARK:4
+                        #-6 % REDUNDANT_METRONOME_MARK:4
+                        \general-align % REDUNDANT_METRONOME_MARK:4
+                            #Y % REDUNDANT_METRONOME_MARK:4
+                            #DOWN % REDUNDANT_METRONOME_MARK:4
+                            \note-by-number % REDUNDANT_METRONOME_MARK:4
+                                #2 % REDUNDANT_METRONOME_MARK:4
+                                #0 % REDUNDANT_METRONOME_MARK:4
+                                #1 % REDUNDANT_METRONOME_MARK:4
+                    \upright % REDUNDANT_METRONOME_MARK:4
+                        { % REDUNDANT_METRONOME_MARK:4
+                            = % REDUNDANT_METRONOME_MARK:4
+                            84 % REDUNDANT_METRONOME_MARK:4
+                        } % REDUNDANT_METRONOME_MARK:4
+                    } % REDUNDANT_METRONOME_MARK:4
                 
                 %%% GlobalSkips [measure 144] %%%
                 \time 4/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:3
                 s1 * 1/2
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -98,7 +98,7 @@
                 %%% GlobalSkips [measure 145] %%%
                 \time 7/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING:3
                 s1 * 7/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -130,7 +130,7 @@
                 %%% GlobalSkips [measure 146] %%%
                 \time 5/8
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 32) %! SEGMENT:SPACING:3
                 s1 * 5/8
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
                     %%% \fontsize %! CLOCK_TIME_MARKUP:2
@@ -167,22 +167,22 @@
                     \context RHVoiceI = "RHVoiceI" {
                         
                         %%% RHVoiceI [measure 143] %%%
-                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:4
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:4
-                                #16 %! REAPPLIED_INSTRUMENT_COMMAND:4
-                                Piano %! REAPPLIED_INSTRUMENT_COMMAND:4
-                            } %! REAPPLIED_INSTRUMENT_COMMAND:4
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:4
-                            \null %! REAPPLIED_INSTRUMENT_COMMAND:4
-                            } %! REAPPLIED_INSTRUMENT_COMMAND:4
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:10
+                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:4
+                            \hcenter-in %! REAPPLIED_INSTRUMENT:4
+                                #16 %! REAPPLIED_INSTRUMENT:4
+                                Piano %! REAPPLIED_INSTRUMENT:4
+                            } %! REAPPLIED_INSTRUMENT:4
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:4
+                            \null %! REAPPLIED_INSTRUMENT:4
+                            } %! REAPPLIED_INSTRUMENT:4
+                        \clef "treble" %! REAPPLIED_CLEF:10
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                         \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
                         %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                        \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
+                        \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                         \once \override RHVoiceI.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:12
                         s1 * 9/8
-                        \f %! REAPPLIED_DYNAMIC_COMMAND:13
+                        \f %! REAPPLIED_DYNAMIC:13
                         ^ \markup {
                             \column
                                 {
@@ -204,16 +204,16 @@
                                         } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:3
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                                #16 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                                Piano %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                            } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                            \null %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                            } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_REDRAW_COLOR:5
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:11
+                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
+                                #16 %! REAPPLIED_INSTRUMENT_REDRAW:6
+                                Piano %! REAPPLIED_INSTRUMENT_REDRAW:6
+                            } %! REAPPLIED_INSTRUMENT_REDRAW:6
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
+                            \null %! REAPPLIED_INSTRUMENT_REDRAW:6
+                            } %! REAPPLIED_INSTRUMENT_REDRAW:6
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:5
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                         
                         %%% RHVoiceI [measure 144] %%%
                         s1 * 1/2
@@ -247,7 +247,7 @@
                         %%% RHVoiceII [measure 143] %%%
                         \once \override RHVoiceII.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 9/8
-                        \fff %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \fff %! REAPPLIED_DYNAMIC:2
                         
                         %%% RHVoiceII [measure 144] %%%
                         s1 * 1/2
@@ -477,7 +477,7 @@
                         %%% RHVoiceIV [measure 143] %%%
                         \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 9/8
-                        \p %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \p %! REAPPLIED_DYNAMIC:2
                         
                         %%% RHVoiceIV [measure 144] %%%
                         s1 * 1/2
@@ -607,14 +607,14 @@
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         %%% LHVoiceIV [measure 143] %%%
-                        \clef "bass" %! REAPPLIED_CLEF_COMMAND:4
+                        \clef "bass" %! REAPPLIED_CLEF:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:3
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:6
                         s1 * 7/32
-                        \p %! REAPPLIED_DYNAMIC_COMMAND:7
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:5
+                        \p %! REAPPLIED_DYNAMIC:7
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 9/8 {
@@ -808,7 +808,7 @@
                         %%% LHVoiceV [measure 143] %%%
                         \once \override LHVoiceV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 9/8
-                        \p %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \p %! REAPPLIED_DYNAMIC:2
                         
                         %%% LHVoiceV [measure 144] %%%
                         s1 * 1/2
@@ -842,7 +842,7 @@
                         %%% LHVoiceVI [measure 143] %%%
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:1
                         s1 * 9/8
-                        \f %! REAPPLIED_DYNAMIC_COMMAND:2
+                        \f %! REAPPLIED_DYNAMIC:2
                         
                         %%% LHVoiceVI [measure 144] %%%
                         s1 * 1/2
