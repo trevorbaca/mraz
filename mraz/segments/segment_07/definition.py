@@ -321,7 +321,6 @@ maker = baca.SegmentMaker(
         ['December 2016', 'March 2017.'],
         ),
     final_markup_extra_offset=(-24, -8),
-    hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
     last_segment=True,

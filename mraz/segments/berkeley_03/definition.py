@@ -1003,7 +1003,6 @@ maker = baca.SegmentMaker(
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=False,
     final_bar_line=abjad.Exact,
-    hide_instrument_names=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
     measures_per_stage=measures_per_stage,
