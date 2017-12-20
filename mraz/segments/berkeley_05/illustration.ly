@@ -65,7 +65,7 @@
                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                             %%% [C.1] %! STAGE_NUMBER_MARKUP:2
                     %%% } %! STAGE_NUMBER_MARKUP:2
-                \override Score.TimeSignature.color = #(x11-color 'DarkGreen) %! REAPPLIED_TIME_SIGNATURE_SHADOW_COLOR:8
+                \override Score.TimeSignature.color = #(x11-color 'DarkGreen) %! REAPPLIED_TIME_SIGNATURE_REDRAW_COLOR:8
                 
                 %%% GlobalSkips [measure 70] %%%
                 \once \override TextSpanner.arrow-width = 0.25
@@ -605,16 +605,16 @@
                                         } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:3
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                                #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                                Piano %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                            \null %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                            } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:6
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:5
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
+                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                                #16 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                                Piano %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                            } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                            \null %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                            } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:6
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_REDRAW_COLOR:5
+                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:11
                         
                         %%% RHVoiceI [measure 70] %%%
                         s1 * 5/2
@@ -3320,7 +3320,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:6
                                 
                                 r2
                                 
@@ -3898,7 +3898,7 @@
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:6
                         s1 * 39/4
                         \f %! REAPPLIED_DYNAMIC_COMMAND:7
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
@@ -3931,7 +3931,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:6
                                 
                                 \override Rest.direction = #down
                                 r4

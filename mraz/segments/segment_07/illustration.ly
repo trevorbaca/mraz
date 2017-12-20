@@ -314,16 +314,16 @@
                                                     } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:4
                                             }
                                         }
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                        \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                            #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                            Piano %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                        \null %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                        } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:7
-                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:6
-                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:12
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                        \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                            #16 %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                            Piano %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                        } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                        \null %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                        } %! REAPPLIED_INSTRUMENT_REDRAW_COMMAND:7
+                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_REDRAW_COLOR:6
+                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:12
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -1844,7 +1844,7 @@
                         \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green) %! REAPPLIED_DYNAMIC_COLOR:6
                         s1 * 3/8
                         \mp %! REAPPLIED_DYNAMIC_COMMAND:7
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_REDRAW_COLOR:5
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
