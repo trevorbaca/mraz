@@ -314,15 +314,15 @@
                                                     } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                             }
                                         }
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                        \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                            #16 %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                            Piano %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                        } %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                        \null %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                        } %! REAPPLIED_INSTRUMENT_REDRAW:7
-                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:6
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                        \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                            #16 %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                            Piano %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                        } %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                        \null %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                        } %! REAPPLIED_REDRAW_INSTRUMENT:7
+                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:6
                                     \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:12
                                     
                                     \set stemLeftBeamCount = #2

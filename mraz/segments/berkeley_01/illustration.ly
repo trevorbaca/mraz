@@ -450,16 +450,16 @@
                                                 } %! EXPLICIT_INSTRUMENT_ALERT_WITH_COLOR:9
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                    \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                        #16 %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                        Piano %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                    \null %! EXPLICIT_INSTRUMENT_REDRAW:12
-                                    } %! EXPLICIT_INSTRUMENT_REDRAW:12
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                    \hcenter-in %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                        #16 %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                        Piano %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                    \null %! EXPLICIT_REDRAW_INSTRUMENT:12
+                                    } %! EXPLICIT_REDRAW_INSTRUMENT:12
                                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_COLOR_REDRAW:6
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_COLOR_REDRAW:11
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_REDRAW_INSTRUMENT_COLOR:11
                             }
                         }
                         
