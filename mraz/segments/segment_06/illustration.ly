@@ -204,15 +204,15 @@
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                #16 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                Piano %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \null %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:5
+                        \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                #16 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                Piano %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \null %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                         \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                         
                         %%% RHVoiceI [measure 144] %%%
