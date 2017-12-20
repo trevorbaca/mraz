@@ -49,7 +49,7 @@ PALETTE
     foreign chord attacked sforzando immediately above; h-set released subito
     middecay.
 
-STEP-SHADOW COMBINATIONS
+STEP-REDRAW COMBINATIONS
 ------------------------
 
 1.  Through-composed up-shadow: music with shadow 1; music with shadow 2 (up by

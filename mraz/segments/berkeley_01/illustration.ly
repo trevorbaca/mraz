@@ -450,16 +450,16 @@
                                                 } %! EXPLICIT_INSTRUMENT_CHANGE_COLORED_MARKUP:9
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                    \hcenter-in %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                        #16 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                        Piano %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                    } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                    \null %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                    } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:12
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:6
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:11
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                    \hcenter-in %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                        #16 %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                        Piano %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                    } %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                    \null %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                    } %! EXPLICIT_INSTRUMENT_REDRAW_COMMAND:12
+                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_REDRAW_COLOR:6
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_REDRAW_COLOR:11
                             }
                         }
                         
@@ -1204,7 +1204,7 @@
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         \set PianoMusicLHStaff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         s1 * 1
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_REDRAW_COLOR:5
                         
                         %%% LHVoiceI [measure 2] %%%
                         s1 * 1/2
@@ -1567,7 +1567,7 @@
                                                 %%% ] %! FIGURE_NAME_MARKUP:1
                                             %%% } %! FIGURE_NAME_MARKUP:1
                                     %%% } %! FIGURE_NAME_MARKUP:1
-                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:6
+                                \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:6
                                 
                                 \override Rest.direction = #down
                                 r4
