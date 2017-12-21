@@ -115,13 +115,39 @@
                                                 %%% } %! FIGURE_NAME_MARKUP:1
                                             %%% \line %! REAPPLIED_INSTRUMENT_ALERT:3
                                             %%%     { %! REAPPLIED_INSTRUMENT_ALERT:3
-                                            %%%         [Piano] %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             (“Piano” %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                 #16 %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                 Piano %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%         \concat %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             { %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                     \null %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%                     ) %! REAPPLIED_INSTRUMENT_ALERT:3
+                                            %%%             } %! REAPPLIED_INSTRUMENT_ALERT:3
                                             %%%     } %! REAPPLIED_INSTRUMENT_ALERT:3
                                             \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                                 { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                                     \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                                         #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
-                                                        [Piano] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                        { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                            \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                (“Piano” %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                            \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                    #16 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                    Piano %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                            \concat %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                    \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                        \null %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                    \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                        ) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                                } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
+                                                        } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                                 } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:4
                                         }
                                     }
