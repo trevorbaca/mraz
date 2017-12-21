@@ -2642,9 +2642,9 @@ class SilverDesignMaker(abjad.AbjadObject):
                 part_segments = []
                 for i, part in enumerate(parts):
                     #name = f'{source}_{}'
-                    name_markup = [abjad.Markup(source)]
-                    name_markup.append(abjad.Markup(i).sub())
-                    name_markup = abjad.Markup.concat(name_markup)
+                    markup = [abjad.Markup(source)]
+                    markup.append(abjad.Markup(i).sub())
+                    markup = abjad.Markup.concat(markup)
                     part_segment = baca.PitchClassSegment(part)
                     part_segments.append(part_segment)
                 new_segments.append(part_segments)
@@ -3186,7 +3186,7 @@ class SilverDesignMaker(abjad.AbjadObject):
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 #name=tree._name,
-                #name_markup=tree._name_markup
+                #markup=tree._name_markup
                 )
             #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
@@ -3735,7 +3735,7 @@ class SilverDesignMaker(abjad.AbjadObject):
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
                 #name=tree._name,
-                #name_markup=tree._name_markup
+                #markup=tree._name_markup
                 )
             #segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
