@@ -986,13 +986,39 @@
                                 {
                                     %%% \line %! REAPPLIED_INSTRUMENT_ALERT:2
                                     %%%     { %! REAPPLIED_INSTRUMENT_ALERT:2
-                                    %%%         [Piano] %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%             (“Piano” %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%         \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%             \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                 #16 %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                 Piano %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%         \concat %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%             { %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                     \null %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                 \vcenter %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%                     ) %! REAPPLIED_INSTRUMENT_ALERT:2
+                                    %%%             } %! REAPPLIED_INSTRUMENT_ALERT:2
                                     %%%     } %! REAPPLIED_INSTRUMENT_ALERT:2
                                     \line %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                         { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                             \with-color %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                                 #(x11-color 'green) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
-                                                [Piano] %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        (“Piano” %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        \hcenter-in %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            #16 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            Piano %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                    \concat %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        { %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                \null %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                            \vcenter %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                                ) %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                        } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
+                                                } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                 }
                             }
