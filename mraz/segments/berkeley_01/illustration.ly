@@ -404,11 +404,7 @@
                                 \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! TEMPLATE_INSTRUMENT:5
                                     \null %! TEMPLATE_INSTRUMENT:5
                                     } %! TEMPLATE_INSTRUMENT:5
-                                \clef "treble" %! TEMPLATE_CLEF:11
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:2
-                                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:8
-                                %%% \override PianoMusicRHStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:9
-                                \set PianoMusicRHStaff.forceClef = ##t %! TEMPLATE_CLEF:10
                                 bf''''1
                                 -\tenuto
                                 ^ \markup {
@@ -479,7 +475,6 @@
                                     \null %! TEMPLATE_REDRAW_INSTRUMENT:7
                                     } %! TEMPLATE_REDRAW_INSTRUMENT:7
                                 \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:6
-                                \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:12
                             }
                         }
                         

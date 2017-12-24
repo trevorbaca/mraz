@@ -266,12 +266,8 @@
                                     \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:5
                                         \null %! REAPPLIED_INSTRUMENT:5
                                         } %! REAPPLIED_INSTRUMENT:5
-                                    \clef "treble" %! REAPPLIED_CLEF:11
                                     \dynamicUp
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:2
-                                    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:8
-                                    %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:9
-                                    \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF:10
                                     e''16
                                     \fff
                                     [
@@ -343,7 +339,6 @@
                                         \null %! REAPPLIED_REDRAW_INSTRUMENT:7
                                         } %! REAPPLIED_REDRAW_INSTRUMENT:7
                                     \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:6
-                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:12
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
