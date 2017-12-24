@@ -38,7 +38,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                             \set PianoMusicStaffGroup.shortInstrumentName = \markup {
                                 \null
                                 }
-                            \clef "treble"
                             s1
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {

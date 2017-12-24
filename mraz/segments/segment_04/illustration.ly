@@ -973,14 +973,10 @@
                         \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:4
                             \null %! REAPPLIED_INSTRUMENT:4
                             } %! REAPPLIED_INSTRUMENT:4
-                        \clef "treble" %! REAPPLIED_CLEF:10
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
-                        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
-                        %%% \override PianoMusicRHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                        \set PianoMusicRHStaff.forceClef = ##t %! REAPPLIED_CLEF:9
-                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:12
+                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:7
                         s1 * 33/2
-                        \f %! REAPPLIED_DYNAMIC:13
+                        \f %! REAPPLIED_DYNAMIC:8
                         ^ \markup {
                             \column
                                 {
@@ -1031,7 +1027,6 @@
                             \null %! REAPPLIED_REDRAW_INSTRUMENT:6
                             } %! REAPPLIED_REDRAW_INSTRUMENT:6
                         \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
-                        \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
