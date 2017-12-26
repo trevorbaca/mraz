@@ -1214,10 +1214,10 @@
                     \context LHVoiceI = "LHVoiceI" {
                         
                         %%% LHVoiceI [measure 1] %%%
+                        \set PianoMusicLHStaff.forceClef = ##t %! TEMPLATE_CLEF:3
                         \clef "bass" %! TEMPLATE_CLEF:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! TEMPLATE_CLEF:3
                         s1 * 1
                         \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:5
                         
@@ -1559,10 +1559,10 @@
                                 \override TupletBracket.direction = #down
                                 \override TupletBracket.staff-padding = #6
                                 \ottava #-1
+                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF:4
                                 \clef "bass" %! REDUNDANT_CLEF:5
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:2
                                 %%% \override PianoMusicLHStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:3
-                                \set PianoMusicLHStaff.forceClef = ##t %! REDUNDANT_CLEF:4
                                 b,,,8
                                 \f
                                 %%% ^ \markup { %! FIGURE_NAME_MARKUP:1
