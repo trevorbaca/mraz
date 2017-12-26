@@ -555,10 +555,10 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         %%% LHVoiceVI [measure 85] %%%
+                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \clef "bass" %! REAPPLIED_CLEF:4
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override PianoMusicLHStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set PianoMusicLHStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:6
                         s1 * 59/16
                         \f %! REAPPLIED_DYNAMIC:7
