@@ -504,15 +504,15 @@
                             {
                                 
                                 %%% RHVoiceI [measure 1] %%%
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %%! TEMPLATE_INSTRUMENT
-                                    \hcenter-in                                %%! TEMPLATE_INSTRUMENT
-                                        #16                                    %%! TEMPLATE_INSTRUMENT
-                                        Piano                                  %%! TEMPLATE_INSTRUMENT
-                                    }                                          %%! TEMPLATE_INSTRUMENT
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %%! TEMPLATE_INSTRUMENT
-                                    \null                                      %%! TEMPLATE_INSTRUMENT
-                                    }                                          %%! TEMPLATE_INSTRUMENT
-                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %%! TEMPLATE_INSTRUMENT_COLOR
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %%! DEFAULT_INSTRUMENT
+                                    \hcenter-in                                %%! DEFAULT_INSTRUMENT
+                                        #16                                    %%! DEFAULT_INSTRUMENT
+                                        Piano                                  %%! DEFAULT_INSTRUMENT
+                                    }                                          %%! DEFAULT_INSTRUMENT
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %%! DEFAULT_INSTRUMENT
+                                    \null                                      %%! DEFAULT_INSTRUMENT
+                                    }                                          %%! DEFAULT_INSTRUMENT
+                                \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %%! DEFAULT_INSTRUMENT_COLOR
                                 bf''''1
                                 -\tenuto
                                 ^ \markup {
@@ -536,53 +536,53 @@
                                                                 %%% ]              %%! FIGURE_NAME_MARKUP
                                                             %%% }                  %%! FIGURE_NAME_MARKUP
                                                 %%% }                              %%! FIGURE_NAME_MARKUP
-                                            %%% \line                          %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%     {                          %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%         \vcenter               %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%             (“Piano”           %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%         \vcenter               %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%             \hcenter-in        %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                 #16            %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                 Piano          %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%         \concat                %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%             {                  %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                 \vcenter       %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                     \null      %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                 \vcenter       %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%                     )          %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%             }                  %%! TEMPLATE_INSTRUMENT_ALERT
-                                            %%%     }                          %%! TEMPLATE_INSTRUMENT_ALERT
-                                            \line                              %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                {                              %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                    \with-color                %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                        #(x11-color 'DarkViolet) %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                        {                      %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                            \vcenter           %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                (“Piano”       %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                            \vcenter           %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                \hcenter-in    %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                    #16        %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                    Piano      %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                            \concat            %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                {              %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                    \vcenter   %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                        \null  %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                    \vcenter   %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                        )      %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                                }              %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                        }                      %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
-                                                }                              %%! TEMPLATE_INSTRUMENT_ALERT_WITH_COLOR
+                                            %%% \line                          %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%     {                          %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%         \vcenter               %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%             (“Piano”           %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%         \vcenter               %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%             \hcenter-in        %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                 #16            %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                 Piano          %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%         \concat                %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%             {                  %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                 \vcenter       %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                     \null      %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                 \vcenter       %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%                     )          %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%             }                  %%! DEFAULT_INSTRUMENT_ALERT
+                                            %%%     }                          %%! DEFAULT_INSTRUMENT_ALERT
+                                            \line                              %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                {                              %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                    \with-color                %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                        #(x11-color 'DarkViolet) %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                        {                      %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                            \vcenter           %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                (“Piano”       %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                            \vcenter           %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                \hcenter-in    %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                    #16        %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                    Piano      %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                            \concat            %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                {              %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                    \vcenter   %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                        \null  %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                    \vcenter   %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                        )      %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                                }              %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                        }                      %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
+                                                }                              %%! DEFAULT_INSTRUMENT_ALERT_WITH_COLOR
                                         }
                                     }
-                                \set PianoMusicStaffGroup.instrumentName = \markup { %%! TEMPLATE_REDRAW_INSTRUMENT
-                                    \hcenter-in                                %%! TEMPLATE_REDRAW_INSTRUMENT
-                                        #16                                    %%! TEMPLATE_REDRAW_INSTRUMENT
-                                        Piano                                  %%! TEMPLATE_REDRAW_INSTRUMENT
-                                    }                                          %%! TEMPLATE_REDRAW_INSTRUMENT
-                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %%! TEMPLATE_REDRAW_INSTRUMENT
-                                    \null                                      %%! TEMPLATE_REDRAW_INSTRUMENT
-                                    }                                          %%! TEMPLATE_REDRAW_INSTRUMENT
-                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %%! TEMPLATE_REDRAW_INSTRUMENT_COLOR
+                                \set PianoMusicStaffGroup.instrumentName = \markup { %%! DEFAULT_REDRAW_INSTRUMENT
+                                    \hcenter-in                                %%! DEFAULT_REDRAW_INSTRUMENT
+                                        #16                                    %%! DEFAULT_REDRAW_INSTRUMENT
+                                        Piano                                  %%! DEFAULT_REDRAW_INSTRUMENT
+                                    }                                          %%! DEFAULT_REDRAW_INSTRUMENT
+                                \set PianoMusicStaffGroup.shortInstrumentName = \markup { %%! DEFAULT_REDRAW_INSTRUMENT
+                                    \null                                      %%! DEFAULT_REDRAW_INSTRUMENT
+                                    }                                          %%! DEFAULT_REDRAW_INSTRUMENT
+                                \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %%! DEFAULT_REDRAW_INSTRUMENT_COLOR
                             }
                         }
                         
@@ -1322,12 +1322,12 @@
                     \context LHVoiceI = "LHVoiceI" {
                         
                         %%% LHVoiceI [measure 1] %%%
-                        \set PianoMusicLHStaff.forceClef = ##t                 %%! TEMPLATE_CLEF
-                        \clef "bass"                                           %%! TEMPLATE_CLEF
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %%! TEMPLATE_CLEF_COLOR
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %%! TEMPLATE_CLEF_UNCOLOR
+                        \set PianoMusicLHStaff.forceClef = ##t                 %%! DEFAULT_CLEF
+                        \clef "bass"                                           %%! DEFAULT_CLEF
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %%! DEFAULT_CLEF_COLOR
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %%! DEFAULT_CLEF_UNCOLOR
                         s1 * 1
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %%! TEMPLATE_CLEF_COLOR_REDRAW
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %%! DEFAULT_CLEF_COLOR_REDRAW
                         
                         %%% LHVoiceI [measure 2] %%%
                         s1 * 1/2

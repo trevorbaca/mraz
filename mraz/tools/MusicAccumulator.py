@@ -34,23 +34,23 @@ class MusicAccumulator(baca.MusicAccumulator):
                             \set stemRightBeamCount = #2
                             c'16
                             [
-                            ^ \markup {                                                    %%! FIGURE_NAME_MARKUP:1
-                                \fontsize                                                  %%! FIGURE_NAME_MARKUP:1
-                                    #2                                                     %%! FIGURE_NAME_MARKUP:1
-                                    \concat                                                %%! FIGURE_NAME_MARKUP:1
-                                        {                                                  %%! FIGURE_NAME_MARKUP:1
-                                            [                                              %%! FIGURE_NAME_MARKUP:1
-                                            D                                              %%! FIGURE_NAME_MARKUP:1
-                                            \hspace                                        %%! FIGURE_NAME_MARKUP:1
-                                                #1                                         %%! FIGURE_NAME_MARKUP:1
-                                            \raise                                         %%! FIGURE_NAME_MARKUP:1
-                                                #0.25                                      %%! FIGURE_NAME_MARKUP:1
-                                                \fontsize                                  %%! FIGURE_NAME_MARKUP:1
-                                                    #-2                                    %%! FIGURE_NAME_MARKUP:1
-                                                    (0)                                    %%! FIGURE_NAME_MARKUP:1
-                                            ]                                              %%! FIGURE_NAME_MARKUP:1
-                                        }                                                  %%! FIGURE_NAME_MARKUP:1
-                                }                                                          %%! FIGURE_NAME_MARKUP:1
+                            ^ \markup {                                                    %%! FIGURE_NAME_MARKUP
+                                \fontsize                                                  %%! FIGURE_NAME_MARKUP
+                                    #2                                                     %%! FIGURE_NAME_MARKUP
+                                    \concat                                                %%! FIGURE_NAME_MARKUP
+                                        {                                                  %%! FIGURE_NAME_MARKUP
+                                            [                                              %%! FIGURE_NAME_MARKUP
+                                            D                                              %%! FIGURE_NAME_MARKUP
+                                            \hspace                                        %%! FIGURE_NAME_MARKUP
+                                                #1                                         %%! FIGURE_NAME_MARKUP
+                                            \raise                                         %%! FIGURE_NAME_MARKUP
+                                                #0.25                                      %%! FIGURE_NAME_MARKUP
+                                                \fontsize                                  %%! FIGURE_NAME_MARKUP
+                                                    #-2                                    %%! FIGURE_NAME_MARKUP
+                                                    (0)                                    %%! FIGURE_NAME_MARKUP
+                                            ]                                              %%! FIGURE_NAME_MARKUP
+                                        }                                                  %%! FIGURE_NAME_MARKUP
+                                }                                                          %%! FIGURE_NAME_MARKUP
                             \set stemLeftBeamCount = #2
                             \set stemRightBeamCount = #2
                             cs'16
