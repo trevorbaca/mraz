@@ -48,7 +48,6 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 6/4
                 \bar "" %! EMPTY_START_BAR:1
-                \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 s1 * 3/2
                 \startTextSpan
                 %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
@@ -56,13 +55,40 @@
                         %%% #-2 %! CLOCK_TIME_MARKUP:5
                         %%% 0'45'' %! CLOCK_TIME_MARKUP:5
                     %%% } %! CLOCK_TIME_MARKUP:5
-                %%% - \markup { %! STAGE_NUMBER_MARKUP:2
-                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
-                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
-                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
-                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
-                            %%% [B.1] %! STAGE_NUMBER_MARKUP:2
-                    %%% } %! STAGE_NUMBER_MARKUP:2
+                - \markup {
+                    \column
+                        {
+                            %%% \line %! STAGE_NUMBER_MARKUP:2
+                                %%% { %! STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                                            %%% [B.1] %! STAGE_NUMBER_MARKUP:2
+                                %%% } %! STAGE_NUMBER_MARKUP:2
+                            \line %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                    \with-color %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                            \fontsize %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                #-6 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                \general-align %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    #Y %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    #DOWN %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    \note-by-number %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #2 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #0 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                        #1 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                            \upright %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    = %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                    84 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                        } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:3
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 23] %%%
                 \time 1/4
