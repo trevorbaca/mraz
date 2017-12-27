@@ -15,11 +15,11 @@ class SilverDesignMaker(abjad.AbjadObject):
         ...     cell_indices=Down,
         ...     set_classes=True,
         ...     )
-        >>> abjad.show(lilypond_file) # doctest: +SKIP
+        >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
         ..  docs::
 
-            >>> abjad.f(lilypond_file[abjad.Voice])
+            >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
             \new Voice \with {
                 \consists Horizontal_bracket_engraver
             } {
@@ -553,11 +553,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=False,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -626,11 +626,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -1182,11 +1182,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -1577,11 +1577,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -1956,11 +1956,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -2347,11 +2347,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=False,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -2667,11 +2667,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {
@@ -3217,11 +3217,11 @@ class SilverDesignMaker(abjad.AbjadObject):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file) # doctest: +SKIP
+            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
                 \new Voice \with {
                     \consists Horizontal_bracket_engraver
                 } {

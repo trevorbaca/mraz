@@ -21,35 +21,36 @@ class MusicAccumulator(baca.MusicAccumulator):
         ...     {'RHVoiceI': selection},
         ...     accumulator.time_signatures,
         ...     )
-        >>> abjad.show(lilypond_file) # doctest: +SKIP
+        >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
         ..  docs::
 
-            >>> abjad.f(lilypond_file[abjad.Staff])
+            >>> abjad.f(lilypond_file[abjad.Staff], strict=79)
             \new Staff <<
                 \context Voice = "RHVoiceI" {
                     {
                         {
                             \set stemLeftBeamCount = #0
                             \set stemRightBeamCount = #2
-                            c'16 [
-                                ^ \markup { %! FIGURE_NAME_MARKUP:1
-                                    \fontsize %! FIGURE_NAME_MARKUP:1
-                                        #2 %! FIGURE_NAME_MARKUP:1
-                                        \concat %! FIGURE_NAME_MARKUP:1
-                                            { %! FIGURE_NAME_MARKUP:1
-                                                [ %! FIGURE_NAME_MARKUP:1
-                                                D %! FIGURE_NAME_MARKUP:1
-                                                \hspace %! FIGURE_NAME_MARKUP:1
-                                                    #1 %! FIGURE_NAME_MARKUP:1
-                                                \raise %! FIGURE_NAME_MARKUP:1
-                                                    #0.25 %! FIGURE_NAME_MARKUP:1
-                                                    \fontsize %! FIGURE_NAME_MARKUP:1
-                                                        #-2 %! FIGURE_NAME_MARKUP:1
-                                                        (0) %! FIGURE_NAME_MARKUP:1
-                                                ] %! FIGURE_NAME_MARKUP:1
-                                            } %! FIGURE_NAME_MARKUP:1
-                                    } %! FIGURE_NAME_MARKUP:1
+                            c'16
+                            [
+                            ^ \markup {                                                    %%! FIGURE_NAME_MARKUP:1
+                                \fontsize                                                  %%! FIGURE_NAME_MARKUP:1
+                                    #2                                                     %%! FIGURE_NAME_MARKUP:1
+                                    \concat                                                %%! FIGURE_NAME_MARKUP:1
+                                        {                                                  %%! FIGURE_NAME_MARKUP:1
+                                            [                                              %%! FIGURE_NAME_MARKUP:1
+                                            D                                              %%! FIGURE_NAME_MARKUP:1
+                                            \hspace                                        %%! FIGURE_NAME_MARKUP:1
+                                                #1                                         %%! FIGURE_NAME_MARKUP:1
+                                            \raise                                         %%! FIGURE_NAME_MARKUP:1
+                                                #0.25                                      %%! FIGURE_NAME_MARKUP:1
+                                                \fontsize                                  %%! FIGURE_NAME_MARKUP:1
+                                                    #-2                                    %%! FIGURE_NAME_MARKUP:1
+                                                    (0)                                    %%! FIGURE_NAME_MARKUP:1
+                                            ]                                              %%! FIGURE_NAME_MARKUP:1
+                                        }                                                  %%! FIGURE_NAME_MARKUP:1
+                                }                                                          %%! FIGURE_NAME_MARKUP:1
                             \set stemLeftBeamCount = #2
                             \set stemRightBeamCount = #2
                             cs'16
@@ -76,7 +77,8 @@ class MusicAccumulator(baca.MusicAccumulator):
                             af'16
                             \set stemLeftBeamCount = #2
                             \set stemRightBeamCount = #0
-                            a'16 ]
+                            a'16
+                            ]
                         }
                     }
                 }
