@@ -9,11 +9,11 @@ def final_markup():
     ..  container:: example
 
         >>> markup = mraz.final_markup()
-        >>> abjad.show(markup) # doctest: +SKIP
+        >>> abjad.show(markup, strict=79) # doctest: +SKIP
 
         ..  docs::
 
-            >>> abjad.f(markup)
+            >>> abjad.f(markup, strict=79)
             _ \markup {
                 \italic
                     \right-column
