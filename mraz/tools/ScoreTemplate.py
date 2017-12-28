@@ -30,14 +30,14 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
-                            \set PianoMusicStaffGroup.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Piano
-                                }
-                            \set PianoMusicStaffGroup.shortInstrumentName = \markup {
-                                \null
-                                }
+                            \set PianoMusicStaffGroup.instrumentName = \markup {       %! ST1
+                                \hcenter-in                                            %! ST1
+                                    #16                                                %! ST1
+                                    Piano                                              %! ST1
+                                }                                                      %! ST1
+                            \set PianoMusicStaffGroup.shortInstrumentName = \markup {  %! ST1
+                                \null                                                  %! ST1
+                                }                                                      %! ST1
                             s1
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {
@@ -73,7 +73,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
                         \context LHVoiceI = "LHVoiceI" {
-                            \clef "bass"
+                            \clef "bass"                                               %! ST3
                             s1
                         }
                         \context LHVoiceII = "LHVoiceII" {

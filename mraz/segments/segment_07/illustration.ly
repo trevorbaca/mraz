@@ -358,6 +358,8 @@
                             %%%     }                                          %! CLOCK_TIME_MARKUP
                         }
                     }
+                \override Score.BarLine.transparent = ##f                      %! SM5
+                \bar "|."                                                      %! SM5
                 
             }
         >>
@@ -376,16 +378,16 @@
                                     \override Stem.direction = #up
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT
-                                        \hcenter-in                            %! REAPPLIED_INSTRUMENT
-                                            #16                                %! REAPPLIED_INSTRUMENT
-                                            Piano                              %! REAPPLIED_INSTRUMENT
-                                        }                                      %! REAPPLIED_INSTRUMENT
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT
-                                        \null                                  %! REAPPLIED_INSTRUMENT
-                                        }                                      %! REAPPLIED_INSTRUMENT
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
+                                        \hcenter-in                            %! REAPPLIED_INSTRUMENT:SM8
+                                            #16                                %! REAPPLIED_INSTRUMENT:SM8
+                                            Piano                              %! REAPPLIED_INSTRUMENT:SM8
+                                        }                                      %! REAPPLIED_INSTRUMENT:SM8
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
+                                        \null                                  %! REAPPLIED_INSTRUMENT:SM8
+                                        }                                      %! REAPPLIED_INSTRUMENT:SM8
                                     \dynamicUp
-                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR
+                                    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                                     e''16
                                     \fff
                                     [
@@ -448,15 +450,15 @@
                                                     }                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
                                             }
                                         }
-                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT
-                                        \hcenter-in                            %! REAPPLIED_REDRAW_INSTRUMENT
-                                            #16                                %! REAPPLIED_REDRAW_INSTRUMENT
-                                            Piano                              %! REAPPLIED_REDRAW_INSTRUMENT
-                                        }                                      %! REAPPLIED_REDRAW_INSTRUMENT
-                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT
-                                        \null                                  %! REAPPLIED_REDRAW_INSTRUMENT
-                                        }                                      %! REAPPLIED_REDRAW_INSTRUMENT
-                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR
+                                    \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                        \hcenter-in                            %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                            #16                                %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                            Piano                              %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                        }                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                    \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                        \null                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                        }                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
@@ -755,7 +757,6 @@
                         
                         % RHVoiceI [measure 157]                               %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Beam.positions
                         
                     }
@@ -973,7 +974,6 @@
                         
                         % RHVoiceIInserts [measure 157]                        %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Script.direction
                         
                     }
@@ -983,9 +983,9 @@
                         \override Beam.positions = #'(-4.5 . -4.5)
                         \override Slur.direction = #up
                         \dynamicDown
-                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/4
-                        \fff                                                   %! REAPPLIED_DYNAMIC
+                        \fff                                                   %! REAPPLIED_DYNAMIC:SM8
                         {
                             {
                                 
@@ -1343,7 +1343,6 @@
                                 af'''16
                                 ]
                                 )
-                                \bar "|."
                                 \revert Beam.positions
                                 \revert Slur.direction
                                 \revert Stem.direction
@@ -1579,7 +1578,6 @@
                                 af'''16
                                 -\accent
                                 ]
-                                \bar "|."
                                 \revert Beam.positions
                                 \revert Script.direction
                                 \revert Stem.direction
@@ -1592,9 +1590,9 @@
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         % RHVoiceIII [measure 147]                             %! SM4
-                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/4
-                        \pp                                                    %! REAPPLIED_DYNAMIC
+                        \pp                                                    %! REAPPLIED_DYNAMIC:SM8
                         
                         % RHVoiceIII [measure 148]                             %! SM4
                         s1 * 1/4
@@ -1625,7 +1623,6 @@
                         
                         % RHVoiceIII [measure 157]                             %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
@@ -1662,15 +1659,14 @@
                         
                         % RHVoiceIIIInserts [measure 157]                      %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         % RHVoiceIV [measure 147]                              %! SM4
-                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/4
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % RHVoiceIV [measure 148]                              %! SM4
                         s1 * 1/4
@@ -1701,7 +1697,6 @@
                         
                         % RHVoiceIV [measure 157]                              %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHVoiceIVInserts = "RHVoiceIVInserts" {
@@ -1738,7 +1733,6 @@
                         
                         % RHVoiceIVInserts [measure 157]                       %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHVoiceV = "RHVoiceV" {
@@ -1775,7 +1769,6 @@
                         
                         % RHVoiceV [measure 157]                               %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHVoiceVI = "RHVoiceVI" {
@@ -1812,7 +1805,6 @@
                         
                         % RHVoiceVI [measure 157]                              %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context RHResonanceVoice = "RHResonanceVoice" {
@@ -1849,7 +1841,6 @@
                         
                         % RHResonanceVoice [measure 157]                       %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                 >>
@@ -1888,7 +1879,6 @@
                         
                         % LHVoiceI [measure 157]                               %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context LHVoiceII = "LHVoiceII" {
@@ -1925,7 +1915,6 @@
                         
                         % LHVoiceII [measure 157]                              %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context LHVoiceIII = "LHVoiceIII" {
@@ -1962,7 +1951,6 @@
                         
                         % LHVoiceIII [measure 157]                             %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context LHVoiceIV = "LHVoiceIV" {
@@ -1970,14 +1958,14 @@
                         % LHVoiceIV [measure 147]                              %! SM4
                         \override Beam.positions = #'(-5.5 . -5.5)
                         \override Script.direction = #down
-                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF
-                        \clef "bass"                                           %! REAPPLIED_CLEF
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR
-                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF:SM8
+                        \clef "bass"                                           %! REAPPLIED_CLEF:SM8
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR:SM7
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/8
-                        \mp                                                    %! REAPPLIED_DYNAMIC
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW
+                        \mp                                                    %! REAPPLIED_DYNAMIC:SM8
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
@@ -2150,7 +2138,6 @@
                         
                         % LHVoiceIV [measure 157]                              %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Beam.positions
                         \revert Script.direction
                         
@@ -2242,7 +2229,6 @@
                         
                         % LHVoiceIVInserts [measure 157]                       %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Script.direction
                         
                     }
@@ -2251,9 +2237,9 @@
                         % LHVoiceV [measure 147]                               %! SM4
                         \override Beam.positions = #'(-6 . -6)
                         \override Script.direction = #down
-                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 329/272
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 15/17 {
@@ -2482,7 +2468,6 @@
                         
                         % LHVoiceV [measure 157]                               %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Script.direction
                         
                     }
@@ -2635,7 +2620,6 @@
                         
                         % LHVoiceVInserts [measure 157]                        %! SM4
                         s1 * 1/8
-                        \bar "|."
                         \revert Script.direction
                         \revert Beam.positions
                         
@@ -2643,9 +2627,9 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         % LHVoiceVI [measure 147]                              %! SM4
-                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/4
-                        \f                                                     %! REAPPLIED_DYNAMIC
+                        \f                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % LHVoiceVI [measure 148]                              %! SM4
                         s1 * 1/4
@@ -2676,7 +2660,6 @@
                         
                         % LHVoiceVI [measure 157]                              %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context LHVoiceVIInserts = "LHVoiceVIInserts" {
@@ -2713,7 +2696,6 @@
                         
                         % LHVoiceVIInserts [measure 157]                       %! SM4
                         s1 * 1/8
-                        \bar "|."
                         
                     }
                     \context LHResonanceVoice = "LHResonanceVoice" {
@@ -2785,7 +2767,6 @@
                                                     }
                                             }
                             }
-                        \bar "|."
                         
                     }
                 >>

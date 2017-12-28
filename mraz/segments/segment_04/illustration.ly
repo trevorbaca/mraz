@@ -1472,6 +1472,8 @@
                             %%%     }                                          %! CLOCK_TIME_MARKUP
                         }
                     }
+                \override Score.BarLine.transparent = ##f                      %! SM5
+                \bar "|"                                                       %! SM5
                 
             }
         >>
@@ -1483,18 +1485,18 @@
                         % RHVoiceI [measure 91]                                %! SM4
                         \override TupletBracket.staff-padding = #8
                         \override TupletBracket.direction = #up
-                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_INSTRUMENT
-                            \hcenter-in                                        %! REAPPLIED_INSTRUMENT
-                                #16                                            %! REAPPLIED_INSTRUMENT
-                                Piano                                          %! REAPPLIED_INSTRUMENT
-                            }                                                  %! REAPPLIED_INSTRUMENT
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT
-                            \null                                              %! REAPPLIED_INSTRUMENT
-                            }                                                  %! REAPPLIED_INSTRUMENT
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR
-                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                        %! REAPPLIED_INSTRUMENT:SM8
+                                #16                                            %! REAPPLIED_INSTRUMENT:SM8
+                                Piano                                          %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_INSTRUMENT:SM8
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
+                            \null                                              %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_INSTRUMENT:SM8
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 33/2
-                        \f                                                     %! REAPPLIED_DYNAMIC
+                        \f                                                     %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1536,15 +1538,15 @@
                                         }                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_REDRAW_INSTRUMENT
-                            \hcenter-in                                        %! REAPPLIED_REDRAW_INSTRUMENT
-                                #16                                            %! REAPPLIED_REDRAW_INSTRUMENT
-                                Piano                                          %! REAPPLIED_REDRAW_INSTRUMENT
-                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT
-                            \null                                              %! REAPPLIED_REDRAW_INSTRUMENT
-                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR
+                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            \hcenter-in                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                #16                                            %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                Piano                                          %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            \null                                              %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/4 {
@@ -1944,7 +1946,6 @@
                         
                         % RHVoiceI [measure 131]                               %! SM4
                         s1 * 3/2
-                        \bar "|"
                         \revert TupletBracket.staff-padding
                         \revert TupletBracket.direction
                         
@@ -2073,15 +2074,14 @@
                         
                         % RHVoiceIInserts [measure 131]                        %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceII = "RHVoiceII" {
                         
                         % RHVoiceII [measure 91]                               %! SM4
-                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/2
-                        \ppp                                                   %! REAPPLIED_DYNAMIC
+                        \ppp                                                   %! REAPPLIED_DYNAMIC:SM8
                         {
                             {
                                 
@@ -2370,8 +2370,8 @@
                                 ]
                                 \ff
                                 )
-                                \break
                                 \revert DynamicLineSpanner.staff-padding
+                                \break
                                 \revert Slur.direction
                             }
                         }
@@ -2496,8 +2496,8 @@
                                 ]
                                 \ff
                                 )
-                                \break
                                 \revert DynamicLineSpanner.staff-padding
+                                \break
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
@@ -2770,8 +2770,8 @@
                                 )
                                 - \tweak color #red
                                 ^ \markup { @ }
-                                \break
                                 \revert DynamicLineSpanner.staff-padding
+                                \break
                                 \revert Slur.direction
                                 \revert TextScript.direction
                             }
@@ -2907,7 +2907,6 @@
                         
                         % RHVoiceII [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceIIInserts = "RHVoiceIIInserts" {
@@ -3034,7 +3033,6 @@
                         
                         % RHVoiceIIInserts [measure 131]                       %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceIII = "RHVoiceIII" {
@@ -3294,7 +3292,6 @@
                                 
                                 bf4
                                 -\tenuto
-                                \bar "|"
                                 \revert TextScript.direction
                                 \revert TupletBracket.direction
                                 
@@ -3425,15 +3422,14 @@
                         
                         % RHVoiceIIIInserts [measure 131]                      %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         % RHVoiceIV [measure 91]                               %! SM4
-                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/2
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % RHVoiceIV [measure 92]                               %! SM4
                         s1 * 3/4
@@ -3554,7 +3550,6 @@
                         
                         % RHVoiceIV [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceIVInserts = "RHVoiceIVInserts" {
@@ -3681,7 +3676,6 @@
                         
                         % RHVoiceIVInserts [measure 131]                       %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceV = "RHVoiceV" {
@@ -3789,7 +3783,6 @@
                         
                         % RHVoiceV [measure 131]                               %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHVoiceVI = "RHVoiceVI" {
@@ -3916,7 +3909,6 @@
                         
                         % RHVoiceVI [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context RHResonanceVoice = "RHResonanceVoice" {
@@ -4043,7 +4035,6 @@
                         
                         % RHResonanceVoice [measure 131]                       %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                 >>
@@ -4172,7 +4163,6 @@
                         
                         % LHVoiceI [measure 131]                               %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceII = "LHVoiceII" {
@@ -4222,7 +4212,6 @@
                         
                         % LHVoiceII [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceIII = "LHVoiceIII" {
@@ -4349,15 +4338,14 @@
                         
                         % LHVoiceIII [measure 131]                             %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         % LHVoiceIV [measure 91]                               %! SM4
-                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/2
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % LHVoiceIV [measure 92]                               %! SM4
                         s1 * 3/4
@@ -4478,7 +4466,6 @@
                         
                         % LHVoiceIV [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceIVInserts = "LHVoiceIVInserts" {
@@ -4605,7 +4592,6 @@
                         
                         % LHVoiceIVInserts [measure 131]                       %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceV = "LHVoiceV" {
@@ -4614,9 +4600,9 @@
                                 
                                 % LHVoiceV [measure 91]                        %! SM4
                                 \dynamicDown
-                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 r2.
-                                \ppp                                           %! REAPPLIED_DYNAMIC
+                                \ppp                                           %! REAPPLIED_DYNAMIC:SM8
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -5583,7 +5569,6 @@
                                 r16
                                 
                                 r4
-                                \bar "|"
                                 \revert TupletBracket.staff-padding
                                 
                             }
@@ -5774,21 +5759,20 @@
                         
                         % LHVoiceVInserts [measure 131]                        %! SM4
                         s1 * 3/2
-                        \bar "|"
                         \revert Script.direction
                         
                     }
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         % LHVoiceVI [measure 91]                               %! SM4
-                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF
-                        \clef "bass"                                           %! REAPPLIED_CLEF
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR
-                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF:SM8
+                        \clef "bass"                                           %! REAPPLIED_CLEF:SM8
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR:SM7
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/2
-                        \f                                                     %! REAPPLIED_DYNAMIC
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW
+                        \f                                                     %! REAPPLIED_DYNAMIC:SM8
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                         
                         % LHVoiceVI [measure 92]                               %! SM4
                         s1 * 3/4
@@ -5909,7 +5893,6 @@
                         
                         % LHVoiceVI [measure 131]                              %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHVoiceVIInserts = "LHVoiceVIInserts" {
@@ -6036,7 +6019,6 @@
                         
                         % LHVoiceVIInserts [measure 131]                       %! SM4
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                     \context LHResonanceVoice = "LHResonanceVoice" {
@@ -6417,9 +6399,7 @@
                         s1 * 1
                         
                         % LHResonanceVoice [measure 131]                       %! SM4
-                        \override Score.BarLine.transparent = ##f
                         s1 * 3/2
-                        \bar "|"
                         
                     }
                 >>
