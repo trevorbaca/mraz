@@ -48,8 +48,8 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 29/16                                                    %! SM1
                 \bar ""                                                        %! EMPTY_START_BAR:SM2
-                \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING
+                \newSpacingSection                                             %! SEGMENT:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:HSS1
                 s1 * 29/16
                 \startTextSpan
                 ^ \markup {
@@ -90,21 +90,21 @@
                             %%%             #-2                                %! CLOCK_TIME_MARKUP
                             %%%             3'53''                             %! CLOCK_TIME_MARKUP
                             %%%     }                                          %! CLOCK_TIME_MARKUP
-                            %%% \line                                          %! SEGMENT:SPACING_MARKUP
-                            %%%     {                                          %! SEGMENT:SPACING_MARKUP
-                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP
-                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP
-                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP
-                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP
-                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP
-                            %%%     }                                          %! SEGMENT:SPACING_MARKUP
+                            %%% \line                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     {                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     }                                          %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
                 
                 % GlobalSkips [measure 87]                                     %! SM4
                 \time 27/16                                                    %! SM1
-                \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING
+                \newSpacingSection                                             %! SEGMENT:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:HSS1
                 s1 * 27/16
                 ^ \markup {
                     \column
@@ -123,21 +123,21 @@
                             %%%             #-2                                %! CLOCK_TIME_MARKUP
                             %%%             3'58''                             %! CLOCK_TIME_MARKUP
                             %%%     }                                          %! CLOCK_TIME_MARKUP
-                            %%% \line                                          %! SEGMENT:SPACING_MARKUP
-                            %%%     {                                          %! SEGMENT:SPACING_MARKUP
-                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP
-                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP
-                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP
-                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP
-                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP
-                            %%%     }                                          %! SEGMENT:SPACING_MARKUP
+                            %%% \line                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     {                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     }                                          %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
                 
                 % GlobalSkips [measure 88]                                     %! SM4
                 \time 21/16                                                    %! SM1
-                \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING
+                \newSpacingSection                                             %! SEGMENT:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:HSS1
                 s1 * 21/16
                 \stopTextSpan
                 ^ \markup {
@@ -178,14 +178,14 @@
                             %%%             #-2                                %! CLOCK_TIME_MARKUP
                             %%%             4'03''                             %! CLOCK_TIME_MARKUP
                             %%%     }                                          %! CLOCK_TIME_MARKUP
-                            %%% \line                                          %! SEGMENT:SPACING_MARKUP
-                            %%%     {                                          %! SEGMENT:SPACING_MARKUP
-                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP
-                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP
-                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP
-                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP
-                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP
-                            %%%     }                                          %! SEGMENT:SPACING_MARKUP
+                            %%% \line                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     {                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     }                                          %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
                 %%% ^ \markup {                                                %! EXPLICIT_METRONOME_MARK
@@ -207,8 +207,8 @@
                 
                 % GlobalSkips [measure 89]                                     %! SM4
                 \time 15/16                                                    %! SM1
-                \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING
+                \newSpacingSection                                             %! SEGMENT:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:HSS1
                 s1 * 15/16
                 ^ \markup {
                     \column
@@ -227,21 +227,21 @@
                             %%%             #-2                                %! CLOCK_TIME_MARKUP
                             %%%             4'05''                             %! CLOCK_TIME_MARKUP
                             %%%     }                                          %! CLOCK_TIME_MARKUP
-                            %%% \line                                          %! SEGMENT:SPACING_MARKUP
-                            %%%     {                                          %! SEGMENT:SPACING_MARKUP
-                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP
-                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP
-                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP
-                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP
-                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP
-                            %%%     }                                          %! SEGMENT:SPACING_MARKUP
+                            %%% \line                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     {                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     }                                          %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
                 
                 % GlobalSkips [measure 90]                                     %! SM4
                 \time 4/4                                                      %! SM1
-                \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING
+                \newSpacingSection                                             %! SEGMENT:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24) %! SEGMENT:SPACING:HSS1
                 s1 * 1
                 ^ \markup {
                     \column
@@ -260,16 +260,18 @@
                             %%%             #-2                                %! CLOCK_TIME_MARKUP
                             %%%             4'07''                             %! CLOCK_TIME_MARKUP
                             %%%     }                                          %! CLOCK_TIME_MARKUP
-                            %%% \line                                          %! SEGMENT:SPACING_MARKUP
-                            %%%     {                                          %! SEGMENT:SPACING_MARKUP
-                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP
-                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP
-                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP
-                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP
-                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP
-                            %%%     }                                          %! SEGMENT:SPACING_MARKUP
+                            %%% \line                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     {                                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%         \with-color                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             #(x11-color 'DarkCyan)             %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%             \fontsize                          %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 #-3                            %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%                 (1/24)                         %! SEGMENT:SPACING_MARKUP:HSS2
+                            %%%     }                                          %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
+                \override Score.BarLine.transparent = ##f                      %! SM5
+                \bar "|"                                                       %! SM5
                 
             }
         >>
@@ -279,18 +281,18 @@
                     \context RHVoiceI = "RHVoiceI" {
                         
                         % RHVoiceI [measure 86]                                %! SM4
-                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_INSTRUMENT
-                            \hcenter-in                                        %! REAPPLIED_INSTRUMENT
-                                #16                                            %! REAPPLIED_INSTRUMENT
-                                Piano                                          %! REAPPLIED_INSTRUMENT
-                            }                                                  %! REAPPLIED_INSTRUMENT
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT
-                            \null                                              %! REAPPLIED_INSTRUMENT
-                            }                                                  %! REAPPLIED_INSTRUMENT
-                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR
-                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                        %! REAPPLIED_INSTRUMENT:SM8
+                                #16                                            %! REAPPLIED_INSTRUMENT:SM8
+                                Piano                                          %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_INSTRUMENT:SM8
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
+                            \null                                              %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_INSTRUMENT:SM8
+                        \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \f                                                     %! REAPPLIED_DYNAMIC
+                        \f                                                     %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -332,15 +334,15 @@
                                         }                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_REDRAW_INSTRUMENT
-                            \hcenter-in                                        %! REAPPLIED_REDRAW_INSTRUMENT
-                                #16                                            %! REAPPLIED_REDRAW_INSTRUMENT
-                                Piano                                          %! REAPPLIED_REDRAW_INSTRUMENT
-                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT
-                            \null                                              %! REAPPLIED_REDRAW_INSTRUMENT
-                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR
+                        \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            \hcenter-in                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                #16                                            %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                                Piano                                          %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            \null                                              %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                            }                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                         
                         % RHVoiceI [measure 87]                                %! SM4
                         s1 * 27/16
@@ -353,7 +355,6 @@
                         
                         % RHVoiceI [measure 90]                                %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceIInserts = "RHVoiceIInserts" {
@@ -372,7 +373,6 @@
                         
                         % RHVoiceIInserts [measure 90]                         %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceII = "RHVoiceII" {
@@ -1123,7 +1123,6 @@
                                 -\staccato
                                 ]
                                 )
-                                \bar "|"
                                 \revert Script.direction
                                 \revert Slur.direction
                                 
@@ -1146,15 +1145,14 @@
                         
                         % RHVoiceIIInserts [measure 90]                        %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceIII = "RHVoiceIII" {
                         
                         % RHVoiceIII [measure 86]                              %! SM4
-                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \mp                                                    %! REAPPLIED_DYNAMIC
+                        \mp                                                    %! REAPPLIED_DYNAMIC:SM8
                         
                         % RHVoiceIII [measure 87]                              %! SM4
                         s1 * 27/16
@@ -1167,7 +1165,6 @@
                         
                         % RHVoiceIII [measure 90]                              %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
@@ -1186,15 +1183,14 @@
                         
                         % RHVoiceIIIInserts [measure 90]                       %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceIV = "RHVoiceIV" {
                         
                         % RHVoiceIV [measure 86]                               %! SM4
-                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % RHVoiceIV [measure 87]                               %! SM4
                         s1 * 27/16
@@ -1207,7 +1203,6 @@
                         
                         % RHVoiceIV [measure 90]                               %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceIVInserts = "RHVoiceIVInserts" {
@@ -1226,7 +1221,6 @@
                         
                         % RHVoiceIVInserts [measure 90]                        %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceV = "RHVoiceV" {
@@ -1245,7 +1239,6 @@
                         
                         % RHVoiceV [measure 90]                                %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHVoiceVI = "RHVoiceVI" {
@@ -1264,7 +1257,6 @@
                         
                         % RHVoiceVI [measure 90]                               %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context RHResonanceVoice = "RHResonanceVoice" {
@@ -1283,7 +1275,6 @@
                         
                         % RHResonanceVoice [measure 90]                        %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                 >>
@@ -1304,7 +1295,6 @@
                         
                         % LHVoiceI [measure 90]                                %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceII = "LHVoiceII" {
@@ -1323,7 +1313,6 @@
                         
                         % LHVoiceII [measure 90]                               %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceIII = "LHVoiceIII" {
@@ -1342,15 +1331,14 @@
                         
                         % LHVoiceIII [measure 90]                              %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         % LHVoiceIV [measure 86]                               %! SM4
-                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \p                                                     %! REAPPLIED_DYNAMIC
+                        \p                                                     %! REAPPLIED_DYNAMIC:SM8
                         
                         % LHVoiceIV [measure 87]                               %! SM4
                         s1 * 27/16
@@ -1363,7 +1351,6 @@
                         
                         % LHVoiceIV [measure 90]                               %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceIVInserts = "LHVoiceIVInserts" {
@@ -1382,15 +1369,14 @@
                         
                         % LHVoiceIVInserts [measure 90]                        %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceV = "LHVoiceV" {
                         
                         % LHVoiceV [measure 86]                                %! SM4
-                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \ppp                                                   %! REAPPLIED_DYNAMIC
+                        \ppp                                                   %! REAPPLIED_DYNAMIC:SM8
                         
                         % LHVoiceV [measure 87]                                %! SM4
                         s1 * 27/16
@@ -1403,7 +1389,6 @@
                         
                         % LHVoiceV [measure 90]                                %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceVInserts = "LHVoiceVInserts" {
@@ -1422,20 +1407,19 @@
                         
                         % LHVoiceVInserts [measure 90]                         %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         % LHVoiceVI [measure 86]                               %! SM4
-                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF
-                        \clef "bass"                                           %! REAPPLIED_CLEF
-                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR
-                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR
+                        \set PianoMusicLHStaff.forceClef = ##t                 %! REAPPLIED_CLEF:SM8
+                        \clef "bass"                                           %! REAPPLIED_CLEF:SM8
+                        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f       %! REAPPLIED_CLEF_UNCOLOR:SM7
+                        \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 29/16
-                        \f                                                     %! REAPPLIED_DYNAMIC
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW
+                        \f                                                     %! REAPPLIED_DYNAMIC:SM8
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                         
                         % LHVoiceVI [measure 87]                               %! SM4
                         s1 * 27/16
@@ -1448,7 +1432,6 @@
                         
                         % LHVoiceVI [measure 90]                               %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHVoiceVIInserts = "LHVoiceVIInserts" {
@@ -1467,7 +1450,6 @@
                         
                         % LHVoiceVIInserts [measure 90]                        %! SM4
                         s1 * 1
-                        \bar "|"
                         
                     }
                     \context LHResonanceVoice = "LHResonanceVoice" {
@@ -1606,7 +1588,6 @@
                                 %%%                 ]                          %! FIGURE_NAME_MARKUP
                                 %%%             }                              %! FIGURE_NAME_MARKUP
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
-                                \bar "|"
                                 
                             }
                         }
