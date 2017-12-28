@@ -24,503 +24,571 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \consists Horizontal_bracket_engraver
             } {
                 \time 1/8
-                e'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-9){0, 2, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 0 }
+                e'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-9){0, 2, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 0 }
                 fs'8
-                bf'8 \stopGroup
+                bf'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(5-6){0, 1, 2, 4, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 1 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(5-6){0, 1, 2, 4, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 1 }
                 g'8
                 af'8
                 b'8
                 a'8
-                cs'8 \stopGroup
+                cs'8
+                \stopGroup
                 s8
-                c'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(4-19){0, 2, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 2 }
+                c'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(4-19){0, 2, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 2 }
                 d'8
                 ef'8
-                f'8 \stopGroup
+                f'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(5-6){0, 1, 2, 4, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 3 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(5-6){0, 1, 2, 4, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 3 }
                 cs'8
                 a'8
                 b'8
                 af'8
-                g'8 \stopGroup
+                g'8
+                \stopGroup
                 s8
-                d'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(4-19){0, 2, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 4 }
+                d'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(4-19){0, 2, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 4 }
                 ef'8
                 f'8
-                c'8 \stopGroup
+                c'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 5 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 5 }
                 bf'8
                 c'8
                 g'8
                 e'8
                 f'8
-                ef'8 \stopGroup
-                s8
-                b'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-7){0, 2, 4}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 6 }
                 ef'8
-                cs'8 \stopGroup
+                \stopGroup
                 s8
-                af'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-32){0, 1, 3, 4, 6, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 7 }
+                b'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-7){0, 2, 4}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 6 }
+                ef'8
+                cs'8
+                \stopGroup
+                s8
+                af'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-32){0, 1, 3, 4, 6, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 7 }
                 e'8
                 af'8
                 bf'8
                 cs'8
                 b'8
-                g'8 \stopGroup
+                g'8
+                \stopGroup
                 s8
-                fs'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-12){0, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 8 }
+                fs'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-12){0, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 8 }
                 a'8
-                b'8 \stopGroup
+                b'8
+                \stopGroup
                 s8
-                cs'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 9 }
+                cs'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 9 }
                 g'8
                 ef'8
                 f'8
                 c'8
                 d'8
-                cs'8 \stopGroup
+                cs'8
+                \stopGroup
                 s8
-                g'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(2-4){0, 4}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 10 }
-                b'8 \stopGroup
+                g'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(2-4){0, 4}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 10 }
+                b'8
+                \stopGroup
                 s8
-                e'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(5-6){0, 1, 2, 4, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 11 }
+                e'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(5-6){0, 1, 2, 4, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 11 }
                 cs'8
                 c'8
                 d'8
                 fs'8
-                d'8 \stopGroup
+                d'8
+                \stopGroup
                 s8
-                f'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(4-19){0, 2, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 12 }
+                f'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(4-19){0, 2, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 12 }
                 g'8
                 af'8
-                bf'8 \stopGroup
+                bf'8
+                \stopGroup
                 s8
-                b'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-9){0, 2, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 13 }
+                b'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-9){0, 2, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 13 }
                 ef'8
-                a'8 \stopGroup
+                a'8
+                \stopGroup
                 s8
-                b'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(4-19){0, 2, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 14 }
+                b'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(4-19){0, 2, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 14 }
                 c'8
                 d'8
-                a'8 \stopGroup
+                a'8
+                \stopGroup
                 s8
-                ef'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-9){0, 2, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 15 }
+                ef'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-9){0, 2, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 15 }
                 cs'8
-                g'8 \stopGroup
+                g'8
+                \stopGroup
                 s8
-                fs'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 16 }
+                fs'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 16 }
                 c'8
                 e'8
                 f'8
                 af'8
                 bf'8
-                ef'8 \stopGroup
+                ef'8
+                \stopGroup
                 s8
-                b'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(2-4){0, 4}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 17 }
+                b'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(2-4){0, 4}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 17 }
                 g'8
-                b'8 \stopGroup
+                b'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 18 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 18 }
                 d'8
                 cs'8
                 af'8
                 bf'8
                 ef'8
-                f'8 \stopGroup
+                f'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-7){0, 2, 4}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 19 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-7){0, 2, 4}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 19 }
                 b'8
-                g'8 \stopGroup
+                g'8
+                \stopGroup
                 s8
-                ef'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 20 }
+                ef'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-6){0, 1, 2, 3, 5, 7}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 20 }
                 d'8
                 c'8
                 cs'8
                 f'8
                 g'8
-                c'8 \stopGroup
+                c'8
+                \stopGroup
                 s8
-                bf'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-15){0, 4, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 21 }
+                bf'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-15){0, 4, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 21 }
                 ef'8
-                d'8 \stopGroup
-                s8
-                c'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(2-4){0, 4}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 22 }
-                af'8 \stopGroup
-                s8
-                ef'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(4-19){0, 2, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 23 }
-                cs'8
-                c'8
-                bf'8 \stopGroup
-                s8
-                af'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-9){0, 2, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 24 }
                 d'8
-                e'8 \stopGroup
+                \stopGroup
                 s8
-                fs'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(5-6){0, 1, 2, 4, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 25 }
+                c'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(2-4){0, 4}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 22 }
+                af'8
+                \stopGroup
+                s8
+                ef'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(4-19){0, 2, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 23 }
+                cs'8
+                c'8
+                bf'8
+                \stopGroup
+                s8
+                af'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-9){0, 2, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 24 }
+                d'8
+                e'8
+                \stopGroup
+                s8
+                fs'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(5-6){0, 1, 2, 4, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 25 }
                 a'8
                 g'8
                 b'8
                 g'8
-                f'8 \stopGroup
+                f'8
+                \stopGroup
                 s8
-                d'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-9){0, 2, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 26 }
+                d'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-9){0, 2, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 26 }
                 e'8
-                af'8 \stopGroup
+                af'8
+                \stopGroup
                 s8
-                g'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(5-6){0, 1, 2, 4, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 27 }
+                g'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(5-6){0, 1, 2, 4, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 27 }
                 fs'8
                 af'8
                 c'8
                 af'8
-                bf'8 \stopGroup
+                bf'8
+                \stopGroup
                 s8
-                a'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-63){0, 2, 3, 5, 7, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 28 }
+                a'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-63){0, 2, 3, 5, 7, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 28 }
                 b'8
                 fs'8
                 g'8
                 a'8
                 cs'8
-                e'8 \stopGroup
+                e'8
+                \stopGroup
                 s8
-                d'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-5){0, 1, 6}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 29 }
+                d'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-5){0, 1, 6}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 29 }
                 af'8
-                ef'8 \stopGroup
+                ef'8
+                \stopGroup
                 s8
-                c'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-74){0, 2, 4, 6, 8, 9}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 30 }
+                c'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-74){0, 2, 4, 6, 8, 9}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 30 }
                 bf'8
                 f'8
                 d'8
                 af'8
                 e'8
-                c'8 \stopGroup
+                c'8
+                \stopGroup
                 s8
-                ef'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-10){0, 2, 7}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 31 }
+                ef'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-10){0, 2, 7}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 31 }
                 f'8
-                bf'8 \stopGroup
+                bf'8
+                \stopGroup
                 s8
-                b'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(6-28){0, 1, 3, 4, 5, 7}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 32 }
+                b'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(6-28){0, 1, 3, 4, 5, 7}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 32 }
                 fs'8
                 g'8
                 a'8
                 cs'8
                 a'8
-                bf'8 \stopGroup
+                bf'8
+                \stopGroup
                 s8
-                f'8 \startGroup
-                    ^ \markup {
-                        \small
-                            \line
-                                {
-                                    "SC(3-12){0, 3, 5}"
-                                }
-                        }
-                    - \tweak staff-padding #7
-                    _ \markup { 33 }
+                f'8
+                \startGroup
+                ^ \markup {
+                    \small
+                        \line
+                            {
+                                "SC(3-12){0, 3, 5}"
+                            }
+                    }
+                - \tweak staff-padding #7
+                _ \markup { 33 }
                 ef'8
-                c'8 \stopGroup
+                c'8
+                \stopGroup
                 s8
-                \bar "|."
+                \bar "|."                                                                  %! SCORE1
                 \override Score.BarLine.transparent = ##f
             }
 
@@ -562,44 +630,50 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -635,523 +709,595 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
-                    fs'8
-                    bf'8 \stopGroup
-                    s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
-                    g'8
-                    af'8
-                    b'8
-                    a'8
-                    cs'8 \stopGroup
-                    s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
-                    d'8
-                    ef'8
-                    f'8 \stopGroup
-                    s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
-                    af'8
-                    b'8
-                    a'8
-                    cs'8
-                    a'8 \stopGroup
-                    s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
-                    ef'8
-                    f'8
-                    c'8 \stopGroup
-                    s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
-                    bf'8
-                    e'8 \stopGroup
-                    s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
-                    f'8
-                    c'8
-                    d'8 \stopGroup
-                    s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
                     e'8
-                    fs'8 \stopGroup
-                    s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
-                    b'8
-                    a'8
-                    cs'8
-                    a'8
-                    g'8 \stopGroup
-                    s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
-                    s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
-                    a'8
-                    cs'8
-                    a'8
-                    g'8
-                    af'8 \stopGroup
-                    s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
-                    c'8
-                    d'8
-                    ef'8 \stopGroup
-                    s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
-                    cs'8
-                    a'8
-                    g'8
-                    af'8
-                    b'8 \stopGroup
-                    s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
-                    d'8
-                    ef'8
-                    f'8 \stopGroup
-                    s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
                     bf'8
-                    e'8 \stopGroup
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
-                    ef'8
-                    f'8
-                    c'8 \stopGroup
-                    s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
-                    e'8
-                    fs'8 \stopGroup
-                    s8
-                    cs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
                     a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
-                    a'8 \stopGroup
+                    a'8
+                    cs'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 18 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
+                    d'8
+                    ef'8
+                    f'8
+                    \stopGroup
+                    s8
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
+                    af'8
+                    b'8
+                    a'8
+                    cs'8
+                    a'8
+                    \stopGroup
+                    s8
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
+                    ef'8
+                    f'8
+                    c'8
+                    \stopGroup
+                    s8
                     fs'8
-                    bf'8 \stopGroup
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
+                    bf'8
+                    e'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 19 }
-                    g'8
-                    af'8
-                    b'8
-                    a'8
-                    cs'8 \stopGroup
-                    s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 20 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
                     f'8
                     c'8
-                    d'8 \stopGroup
-                    s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 21 }
-                    af'8
-                    b'8
-                    a'8
-                    cs'8
-                    a'8 \stopGroup
-                    s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 22 }
-                    c'8
                     d'8
-                    ef'8 \stopGroup
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 23 }
                     bf'8
-                    e'8 \stopGroup
-                    s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 24 }
-                    d'8
-                    ef'8
-                    f'8 \stopGroup
-                    s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 25 }
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     e'8
-                    fs'8 \stopGroup
-                    s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 26 }
-                    b'8
-                    a'8
-                    cs'8
-                    a'8
-                    g'8 \stopGroup
-                    s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 27 }
                     fs'8
-                    bf'8 \stopGroup
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 28 }
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
+                    b'8
                     a'8
                     cs'8
                     a'8
                     g'8
-                    af'8 \stopGroup
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 29 }
-                    ef'8
-                    f'8
-                    c'8 \stopGroup
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
+                    fs'8
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 30 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
+                    a'8
                     cs'8
                     a'8
                     g'8
                     af'8
-                    b'8 \stopGroup
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 31 }
                     f'8
-                    c'8
-                    d'8 \stopGroup
-                    s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 32 }
-                    bf'8
-                    e'8 \stopGroup
-                    s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 33 }
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     c'8
                     d'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 34 }
-                    e'8
-                    fs'8 \stopGroup
-                    s8
-                    cs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 35 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
+                    cs'8
                     a'8
                     g'8
                     af'8
                     b'8
-                    a'8 \stopGroup
+                    \stopGroup
                     s8
-                    \bar "|."
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
+                    d'8
+                    ef'8
+                    f'8
+                    \stopGroup
+                    s8
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
+                    bf'8
+                    e'8
+                    \stopGroup
+                    s8
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
+                    ef'8
+                    f'8
+                    c'8
+                    \stopGroup
+                    s8
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
+                    e'8
+                    fs'8
+                    \stopGroup
+                    s8
+                    cs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
+                    a'8
+                    g'8
+                    af'8
+                    b'8
+                    a'8
+                    \stopGroup
+                    s8
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 18 }
+                    fs'8
+                    bf'8
+                    \stopGroup
+                    s8
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 19 }
+                    g'8
+                    af'8
+                    b'8
+                    a'8
+                    cs'8
+                    \stopGroup
+                    s8
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 20 }
+                    f'8
+                    c'8
+                    d'8
+                    \stopGroup
+                    s8
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 21 }
+                    af'8
+                    b'8
+                    a'8
+                    cs'8
+                    a'8
+                    \stopGroup
+                    s8
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 22 }
+                    c'8
+                    d'8
+                    ef'8
+                    \stopGroup
+                    s8
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 23 }
+                    bf'8
+                    e'8
+                    \stopGroup
+                    s8
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 24 }
+                    d'8
+                    ef'8
+                    f'8
+                    \stopGroup
+                    s8
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 25 }
+                    e'8
+                    fs'8
+                    \stopGroup
+                    s8
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 26 }
+                    b'8
+                    a'8
+                    cs'8
+                    a'8
+                    g'8
+                    \stopGroup
+                    s8
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 27 }
+                    fs'8
+                    bf'8
+                    \stopGroup
+                    s8
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 28 }
+                    a'8
+                    cs'8
+                    a'8
+                    g'8
+                    af'8
+                    \stopGroup
+                    s8
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 29 }
+                    ef'8
+                    f'8
+                    c'8
+                    \stopGroup
+                    s8
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 30 }
+                    cs'8
+                    a'8
+                    g'8
+                    af'8
+                    b'8
+                    \stopGroup
+                    s8
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 31 }
+                    f'8
+                    c'8
+                    d'8
+                    \stopGroup
+                    s8
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 32 }
+                    bf'8
+                    e'8
+                    \stopGroup
+                    s8
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 33 }
+                    c'8
+                    d'8
+                    ef'8
+                    \stopGroup
+                    s8
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 34 }
+                    e'8
+                    fs'8
+                    \stopGroup
+                    s8
+                    cs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 35 }
+                    a'8
+                    g'8
+                    af'8
+                    b'8
+                    a'8
+                    \stopGroup
+                    s8
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1191,89 +1337,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     af'8
                     b'8
                     a'8
                     cs'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     bf'8
                     e'8
                     ef'8
@@ -1301,88 +1458,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     f'8
                     c'8
                     d'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
                     cs'8
                     a'8
                     g'8
                     af'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     bf'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    cs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    cs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     a'8
                     g'8
                     af'8
@@ -1413,90 +1582,102 @@ class SilverDesignMaker(abjad.AbjadObject):
                     ef'8
                     fs'8
                     bf'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     b'8
                     a'8
                     cs'8
                     a'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     a'8
                     cs'8
                     a'8
                     g'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     ef'8
                     f'8
                     c'8
@@ -1525,9 +1706,10 @@ class SilverDesignMaker(abjad.AbjadObject):
                     g'8
                     af'8
                     b'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1586,89 +1768,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     af'8
                     b'8
                     a'8
                     cs'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     d'8
                     c'8
                     f'8
@@ -1696,88 +1889,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     ef'8
                     e'8
                     bf'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
                     cs'8
                     a'8
                     g'8
                     af'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     bf'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     bf'8
                     fs'8
                     ef'8
@@ -1808,90 +2013,102 @@ class SilverDesignMaker(abjad.AbjadObject):
                     af'8
                     g'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     b'8
                     a'8
                     cs'8
                     a'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     a'8
                     cs'8
                     a'8
                     g'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     b'8
                     af'8
                     g'8
@@ -1920,9 +2137,10 @@ class SilverDesignMaker(abjad.AbjadObject):
                     c'8
                     f'8
                     ef'8
-                    d'8 \stopGroup
+                    d'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1965,89 +2183,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     af'8
                     b'8
                     a'8
                     cs'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     bf'8
                     c'8
                     g'8
@@ -2075,88 +2304,100 @@ class SilverDesignMaker(abjad.AbjadObject):
                     a'8
                     af'8
                     d'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
                     cs'8
                     a'8
                     g'8
                     af'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     bf'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     ef'8
                     g'8
                     af'8
@@ -2187,90 +2428,102 @@ class SilverDesignMaker(abjad.AbjadObject):
                     f'8
                     e'8
                     d'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     b'8
                     a'8
                     cs'8
                     a'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     a'8
                     cs'8
                     a'8
                     g'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(12-1){0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     c'8
                     g'8
                     af'8
@@ -2299,9 +2552,10 @@ class SilverDesignMaker(abjad.AbjadObject):
                     b'8
                     fs'8
                     e'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2356,265 +2610,339 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    g'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     af'8
                     b'8
                     a'8
                     cs'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    a'8
+                    \startGroup
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     bf'8
                     c'8
                     g'8
                     e'8
                     f'8
-                    ef'8 \stopGroup
-                    s8
-                    b'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
                     ef'8
-                    cs'8 \stopGroup
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    b'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
+                    ef'8
+                    cs'8
+                    \stopGroup
+                    s8
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     fs'8
                     af'8
                     f'8
                     ef'8
                     b'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    cs'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    cs'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    af'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     d'8
                     bf'8
                     c'8
                     g'8
                     a'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
-                    fs'8 \stopGroup \stopGroup
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
+                    fs'8
+                    \stopGroup
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    a'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     cs'8
                     a'8
                     g'8
                     af'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    fs'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     bf'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    bf'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    a'8
+                    \startGroup
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     ef'8
                     g'8
                     af'8
                     b'8
                     cs'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     bf'8
-                    d'8 \stopGroup
+                    d'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 18 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 18 }
                     f'8
                     e'8
                     b'8
                     cs'8
                     fs'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 19 }
+                    bf'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 19 }
                     d'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    f'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 20 }
+                    f'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 20 }
                     e'8
                     d'8
                     ef'8
                     g'8
                     a'8
-                    d'8 \stopGroup
+                    d'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 21 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 21 }
                     f'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 22 }
-                    bf'8 \stopGroup \stopGroup
+                    d'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 22 }
+                    bf'8
+                    \stopGroup
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 23 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 23 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 24 }
+                    bf'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 24 }
                     e'8
-                    fs'8 \stopGroup
+                    fs'8
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 25 }
+                    af'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 25 }
                     b'8
                     a'8
                     cs'8
                     a'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 26 }
+                    e'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 26 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 27 }
+                    b'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 27 }
                     a'8
                     cs'8
                     a'8
                     g'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 28 }
+                    bf'8
+                    \startGroup
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 28 }
                     c'8
                     g'8
                     af'8
                     bf'8
                     d'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 29 }
+                    ef'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 29 }
                     a'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    cs'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 30 }
+                    cs'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 30 }
                     b'8
                     fs'8
                     ef'8
                     a'8
                     f'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 31 }
+                    b'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 31 }
                     fs'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 32 }
+                    c'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 32 }
                     g'8
                     af'8
                     bf'8
                     d'8
                     bf'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        - \tweak staff-padding #7
-                        _ \markup { 33 }
+                    fs'8
+                    \startGroup
+                    - \tweak staff-padding #7
+                    _ \markup { 33 }
                     e'8
-                    cs'8 \stopGroup \stopGroup
+                    cs'8
+                    \stopGroup
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2676,503 +3004,571 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     af'8
                     b'8
                     a'8
                     cs'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     bf'8
                     c'8
                     g'8
                     e'8
                     f'8
-                    ef'8 \stopGroup
-                    s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-7){0, 2, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
                     ef'8
-                    cs'8 \stopGroup
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-32){0, 1, 3, 4, 6, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-7){0, 2, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
+                    ef'8
+                    cs'8
+                    \stopGroup
+                    s8
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-32){0, 1, 3, 4, 6, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     b'8
                     cs'8
                     bf'8
                     af'8
                     e'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-12){0, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-12){0, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     a'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    cs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    cs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     g'8
                     ef'8
                     f'8
                     c'8
                     d'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
-                    b'8 \stopGroup
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
+                    b'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     fs'8
                     d'8
                     c'8
                     cs'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     g'8
                     af'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     ef'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     c'8
                     d'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     cs'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     c'8
                     e'8
                     f'8
                     af'8
                     bf'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     g'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 18 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 18 }
                     d'8
                     cs'8
                     af'8
                     bf'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-7){0, 2, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 19 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-7){0, 2, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 19 }
                     b'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 20 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 20 }
                     d'8
                     c'8
                     cs'8
                     f'8
                     g'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-15){0, 4, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 21 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-15){0, 4, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 21 }
                     ef'8
-                    d'8 \stopGroup
-                    s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 22 }
-                    af'8 \stopGroup
-                    s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 23 }
-                    c'8
-                    cs'8
-                    ef'8 \stopGroup
-                    s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 24 }
                     d'8
-                    e'8 \stopGroup
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 25 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 22 }
+                    af'8
+                    \stopGroup
+                    s8
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 23 }
+                    c'8
+                    cs'8
+                    ef'8
+                    \stopGroup
+                    s8
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 24 }
+                    d'8
+                    e'8
+                    \stopGroup
+                    s8
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 25 }
                     a'8
                     g'8
                     b'8
                     g'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 26 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 26 }
                     e'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 27 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 27 }
                     af'8
                     c'8
                     af'8
                     fs'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-63){0, 2, 3, 5, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 28 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-63){0, 2, 3, 5, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 28 }
                     b'8
                     fs'8
                     g'8
                     a'8
                     cs'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-5){0, 1, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 29 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-5){0, 1, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 29 }
                     af'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-74){0, 2, 4, 6, 8, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 30 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-74){0, 2, 4, 6, 8, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 30 }
                     bf'8
                     f'8
                     d'8
                     af'8
                     e'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-10){0, 2, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 31 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-10){0, 2, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 31 }
                     f'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-28){0, 1, 3, 4, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 32 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-28){0, 1, 3, 4, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 32 }
                     fs'8
                     g'8
                     a'8
                     cs'8
                     a'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-12){0, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 33 }
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-12){0, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 33 }
                     ef'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -3226,503 +3622,571 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \consists Horizontal_bracket_engraver
                 } {
                     \time 1/8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 0 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 0 }
                     fs'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 1 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 1 }
                     g'8
                     af'8
                     b'8
                     a'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 2 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 2 }
                     d'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 3 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 3 }
                     cs'8
                     a'8
                     b'8
                     af'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 4 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 4 }
                     ef'8
                     f'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 5 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-25){0, 1, 2, 4, 6, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 5 }
                     bf'8
                     c'8
                     g'8
                     e'8
                     f'8
-                    ef'8 \stopGroup
-                    s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-7){0, 2, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 6 }
                     ef'8
-                    cs'8 \stopGroup
+                    \stopGroup
                     s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-32){0, 1, 3, 4, 6, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 7 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-7){0, 2, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 6 }
+                    ef'8
+                    cs'8
+                    \stopGroup
+                    s8
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-32){0, 1, 3, 4, 6, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 7 }
                     e'8
                     af'8
                     bf'8
                     cs'8
                     b'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-12){0, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 8 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-12){0, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 8 }
                     a'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    cs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 9 }
+                    cs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 9 }
                     g'8
                     ef'8
                     f'8
                     c'8
                     d'8
-                    cs'8 \stopGroup
+                    cs'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 10 }
-                    b'8 \stopGroup
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 10 }
+                    b'8
+                    \stopGroup
                     s8
-                    e'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 11 }
+                    e'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 11 }
                     cs'8
                     c'8
                     d'8
                     fs'8
-                    d'8 \stopGroup
+                    d'8
+                    \stopGroup
                     s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 12 }
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 12 }
                     g'8
                     af'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 13 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 13 }
                     ef'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 14 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 14 }
                     c'8
                     d'8
-                    a'8 \stopGroup
+                    a'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 15 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 15 }
                     cs'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 16 }
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-13){0, 1, 2, 3, 5, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 16 }
                     c'8
                     e'8
                     f'8
                     af'8
                     bf'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 17 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 17 }
                     g'8
-                    b'8 \stopGroup
+                    b'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 18 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(7-28){0, 1, 2, 4, 7, 8, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 18 }
                     d'8
                     cs'8
                     af'8
                     bf'8
                     ef'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-7){0, 2, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 19 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-7){0, 2, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 19 }
                     b'8
-                    g'8 \stopGroup
+                    g'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-6){0, 1, 2, 3, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 20 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-6){0, 1, 2, 3, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 20 }
                     d'8
                     c'8
                     cs'8
                     f'8
                     g'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    bf'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-15){0, 4, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 21 }
+                    bf'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-15){0, 4, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 21 }
                     ef'8
-                    d'8 \stopGroup
-                    s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(2-4){0, 4}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 22 }
-                    af'8 \stopGroup
-                    s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(4-19){0, 2, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 23 }
-                    cs'8
-                    c'8
-                    bf'8 \stopGroup
-                    s8
-                    af'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 24 }
                     d'8
-                    e'8 \stopGroup
+                    \stopGroup
                     s8
-                    fs'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 25 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(2-4){0, 4}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 22 }
+                    af'8
+                    \stopGroup
+                    s8
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(4-19){0, 2, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 23 }
+                    cs'8
+                    c'8
+                    bf'8
+                    \stopGroup
+                    s8
+                    af'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 24 }
+                    d'8
+                    e'8
+                    \stopGroup
+                    s8
+                    fs'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 25 }
                     a'8
                     g'8
                     b'8
                     g'8
-                    f'8 \stopGroup
+                    f'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-9){0, 2, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 26 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-9){0, 2, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 26 }
                     e'8
-                    af'8 \stopGroup
+                    af'8
+                    \stopGroup
                     s8
-                    g'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(5-6){0, 1, 2, 4, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 27 }
+                    g'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(5-6){0, 1, 2, 4, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 27 }
                     fs'8
                     af'8
                     c'8
                     af'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    a'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-63){0, 2, 3, 5, 7, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 28 }
+                    a'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-63){0, 2, 3, 5, 7, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 28 }
                     b'8
                     fs'8
                     g'8
                     a'8
                     cs'8
-                    e'8 \stopGroup
+                    e'8
+                    \stopGroup
                     s8
-                    d'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-5){0, 1, 6}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 29 }
+                    d'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-5){0, 1, 6}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 29 }
                     af'8
-                    ef'8 \stopGroup
+                    ef'8
+                    \stopGroup
                     s8
-                    c'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-74){0, 2, 4, 6, 8, 9}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 30 }
+                    c'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-74){0, 2, 4, 6, 8, 9}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 30 }
                     bf'8
                     f'8
                     d'8
                     af'8
                     e'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    ef'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-10){0, 2, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 31 }
+                    ef'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-10){0, 2, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 31 }
                     f'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    b'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(6-28){0, 1, 3, 4, 5, 7}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 32 }
+                    b'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(6-28){0, 1, 3, 4, 5, 7}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 32 }
                     fs'8
                     g'8
                     a'8
                     cs'8
                     a'8
-                    bf'8 \stopGroup
+                    bf'8
+                    \stopGroup
                     s8
-                    f'8 \startGroup
-                        ^ \markup {
-                            \small
-                                \line
-                                    {
-                                        "SC(3-12){0, 3, 5}"
-                                    }
-                            }
-                        - \tweak staff-padding #7
-                        _ \markup { 33 }
+                    f'8
+                    \startGroup
+                    ^ \markup {
+                        \small
+                            \line
+                                {
+                                    "SC(3-12){0, 3, 5}"
+                                }
+                        }
+                    - \tweak staff-padding #7
+                    _ \markup { 33 }
                     ef'8
-                    c'8 \stopGroup
+                    c'8
+                    \stopGroup
                     s8
-                    \bar "|."
+                    \bar "|."                                                                  %! SCORE1
                     \override Score.BarLine.transparent = ##f
                 }
 
