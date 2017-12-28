@@ -64,7 +64,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 1/16
-                        - \markup {
+                        ^ \markup {
                             \column
                                 {
                                     \line                                                  %%! STAGE_NUMBER_MARKUP
@@ -91,7 +91,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 7/16
-                        - \markup {                                                        %%! SEGMENT:SPACING_MARKUP
+                        ^ \markup {                                                        %%! SEGMENT:SPACING_MARKUP
                             \with-color                                                    %%! SEGMENT:SPACING_MARKUP
                                 #(x11-color 'DarkCyan)                                     %%! SEGMENT:SPACING_MARKUP
                                 \fontsize                                                  %%! SEGMENT:SPACING_MARKUP
@@ -104,7 +104,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 1/16
-                        - \markup {                                                        %%! SEGMENT:SPACING_MARKUP
+                        ^ \markup {                                                        %%! SEGMENT:SPACING_MARKUP
                             \with-color                                                    %%! SEGMENT:SPACING_MARKUP
                                 #(x11-color 'DarkCyan)                                     %%! SEGMENT:SPACING_MARKUP
                                 \fontsize                                                  %%! SEGMENT:SPACING_MARKUP
@@ -117,7 +117,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 3/8
-                        - \markup {                                                        %%! SEGMENT:SPACING_MARKUP
+                        ^ \markup {                                                        %%! SEGMENT:SPACING_MARKUP
                             \with-color                                                    %%! SEGMENT:SPACING_MARKUP
                                 #(x11-color 'DarkCyan)                                     %%! SEGMENT:SPACING_MARKUP
                                 \fontsize                                                  %%! SEGMENT:SPACING_MARKUP
@@ -222,7 +222,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 9/16
-                        - \markup {
+                        ^ \markup {
                             \column
                                 {
                                     \line                                                  %%! STAGE_NUMBER_MARKUP
@@ -249,7 +249,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 7/8
-                        - \markup {                                                        %%! SEGMENT:SPACING_MARKUP
+                        ^ \markup {                                                        %%! SEGMENT:SPACING_MARKUP
                             \with-color                                                    %%! SEGMENT:SPACING_MARKUP
                                 #(x11-color 'DarkCyan)                                     %%! SEGMENT:SPACING_MARKUP
                                 \fontsize                                                  %%! SEGMENT:SPACING_MARKUP
@@ -262,7 +262,7 @@ def music_maker():
                         \newSpacingSection
                         \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %%! SEGMENT:SPACING
                         s1 * 1/2
-                        - \markup {                                                        %%! SEGMENT:SPACING_MARKUP
+                        ^ \markup {                                                        %%! SEGMENT:SPACING_MARKUP
                             \with-color                                                    %%! SEGMENT:SPACING_MARKUP
                                 #(x11-color 'DarkCyan)                                     %%! SEGMENT:SPACING_MARKUP
                                 \fontsize                                                  %%! SEGMENT:SPACING_MARKUP

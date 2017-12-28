@@ -53,6 +53,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.1]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
@@ -74,85 +82,106 @@
                                                 }                              %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 0'45''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'45''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.1]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 
                 %%% GlobalSkips [measure 23] %%%
                 \time 1/4
                 s1 * 1/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 0'49''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.2]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.2]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'49''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 24] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 0'50''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.3]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.3]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'50''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 25] %%%
                 \time 6/4
                 s1 * 3/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 0'52''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.4]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.4]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'52''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 26] %%%
                 \time 9/8
                 s1 * 9/8
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 0'56''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.5]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.5]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'56''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 27] %%%
                 \time 3/4
@@ -161,6 +190,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.6]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -182,21 +219,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 0'59''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             0'59''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.6]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -253,6 +283,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.7]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -274,148 +312,197 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'01''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'01''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.7]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 
                 %%% GlobalSkips [measure 29] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'05''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.8]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.8]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'05''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 30] %%%
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'07''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.9]                                              %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.9]                          %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'07''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 31] %%%
                 \time 5/4
                 s1 * 5/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'09''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.10]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.10]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'09''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 32] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'13''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.11]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.11]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'13''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 33] %%%
                 \time 5/4
                 s1 * 5/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'16''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.12]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.12]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'16''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 34] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'19''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.13]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.13]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'19''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 35] %%%
                 \time 5/4
                 s1 * 5/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'21''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.14]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.14]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'21''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 36] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'25''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.15]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.15]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'25''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 37] %%%
                 \time 5/4
@@ -424,6 +511,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.16]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -445,21 +540,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'28''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'28''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.16]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -480,66 +568,94 @@
                 %%% GlobalSkips [measure 38] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'31''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.17]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.17]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'31''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 39] %%%
                 \time 1/4
                 s1 * 1/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'33''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.18]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.18]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'33''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 40] %%%
                 \time 7/8
                 s1 * 7/8
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'33''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.19]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.19]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'33''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 41] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'35''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.20]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.20]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'35''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 42] %%%
                 \once \override TextSpanner.arrow-width = 0.25
@@ -566,50 +682,71 @@
                 \time 2/4
                 s1 * 1/2
                 \startTextSpan
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'37''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.21]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.21]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'37''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 43] %%%
                 \time 1/8
                 s1 * 1/8
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'38''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.22]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.22]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'38''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 44] %%%
                 \time 2/4
                 s1 * 1/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'39''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.23]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.23]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'39''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 45] %%%
                 \time 4/4
@@ -618,6 +755,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.24]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -639,21 +784,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'40''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'40''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.24]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -710,6 +848,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.25]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -731,69 +877,83 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'43''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'43''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.25]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 
                 %%% GlobalSkips [measure 47] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'44''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.26]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.26]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'44''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 48] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'46''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.27]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.27]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'46''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 49] %%%
                 \time 5/8
                 s1 * 5/8
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'47''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.28]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.28]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'47''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 50] %%%
                 \time 2/4
@@ -802,6 +962,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.29]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -823,21 +991,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'49''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'49''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.29]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -858,18 +1019,25 @@
                 %%% GlobalSkips [measure 51] %%%
                 \time 3/4
                 s1 * 3/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'50''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.30]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.30]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'50''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 52] %%%
                 \once \override TextSpanner.arrow-width = 0.25
@@ -910,6 +1078,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.31]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -931,37 +1107,37 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'52''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'52''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.31]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 
                 %%% GlobalSkips [measure 53] %%%
                 \time 5/8
                 s1 * 5/8
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'53''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.32]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.32]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'53''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 54] %%%
                 \time 1/4
@@ -970,6 +1146,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.33]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -991,21 +1175,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'55''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'55''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.33]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -1062,6 +1239,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.34]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -1083,68 +1268,82 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 1'55''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'55''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.34]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 
                 %%% GlobalSkips [measure 56] %%%
                 \time 6/4
                 s1 * 3/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 1'59''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.35]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.35]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             1'59''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 57] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'02''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.36]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.36]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'02''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 58] %%%
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'05''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.37]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.37]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'05''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 59] %%%
                 \time 1/4
@@ -1153,6 +1352,14 @@
                 ^ \markup {
                     \column
                         {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.38]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
                             \line                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 {                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                     \with-color                                %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -1174,21 +1381,14 @@
                                                 }                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                         }                                      %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
                                 }                                              %%! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                            %%% \line                                              %%! CLOCK_TIME_MARKUP
-                                %%% {                                              %%! CLOCK_TIME_MARKUP
-                                    %%% \fontsize                                  %%! CLOCK_TIME_MARKUP
-                                        %%% #-2                                    %%! CLOCK_TIME_MARKUP
-                                        %%% 2'07''                                 %%! CLOCK_TIME_MARKUP
-                                %%% }                                              %%! CLOCK_TIME_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'07''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
                         }
                     }
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.38]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
                 %%% ^ \markup {                                                %%! EXPLICIT_METRONOME_MARK
                 %%%     \fontsize                                              %%! EXPLICIT_METRONOME_MARK
                 %%%         #-6                                                %%! EXPLICIT_METRONOME_MARK
@@ -1209,144 +1409,207 @@
                 %%% GlobalSkips [measure 60] %%%
                 \time 6/4
                 s1 * 3/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'07''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.39]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.39]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'07''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 61] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'12''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.40]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.40]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'12''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 62] %%%
                 \time 2/4
                 s1 * 1/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'15''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.41]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.41]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'15''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 63] %%%
                 \time 1/4
                 s1 * 1/4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'16''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.42]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.42]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'16''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 64] %%%
                 \time 4/4
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'17''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.43]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.43]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'17''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 65] %%%
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'20''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.44]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.44]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'20''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 66] %%%
                 s1 * 1
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'22''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.45]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.45]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'22''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 67] %%%
                 \time 6/4
                 s1 * 3/2
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'25''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.46]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.46]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'25''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
                 %%% GlobalSkips [measure 68] %%%
                 \time 16/4
                 s1 * 4
-                %%% ^ \markup {                                                    %%! CLOCK_TIME_MARKUP
-                    %%% \fontsize                                                  %%! CLOCK_TIME_MARKUP
-                        %%% #-2                                                    %%! CLOCK_TIME_MARKUP
-                        %%% 2'30''                                                 %%! CLOCK_TIME_MARKUP
-                    %%% }                                                          %%! CLOCK_TIME_MARKUP
-                %%% - \markup {                                                    %%! STAGE_NUMBER_MARKUP
-                    %%% \fontsize                                                  %%! STAGE_NUMBER_MARKUP
-                        %%% #-3                                                    %%! STAGE_NUMBER_MARKUP
-                        %%% \with-color                                            %%! STAGE_NUMBER_MARKUP
-                            %%% #(x11-color 'DarkCyan)                             %%! STAGE_NUMBER_MARKUP
-                            %%% [B.47]                                             %%! STAGE_NUMBER_MARKUP
-                    %%% }                                                          %%! STAGE_NUMBER_MARKUP
+                ^ \markup {
+                    \column
+                        {
+                            %%% \line                                          %%! STAGE_NUMBER_MARKUP
+                            %%%     {                                          %%! STAGE_NUMBER_MARKUP
+                            %%%         \fontsize                              %%! STAGE_NUMBER_MARKUP
+                            %%%             #-3                                %%! STAGE_NUMBER_MARKUP
+                            %%%             \with-color                        %%! STAGE_NUMBER_MARKUP
+                            %%%                 #(x11-color 'DarkCyan)         %%! STAGE_NUMBER_MARKUP
+                            %%%                 [B.47]                         %%! STAGE_NUMBER_MARKUP
+                            %%%     }                                          %%! STAGE_NUMBER_MARKUP
+                            %%% \line                                          %%! CLOCK_TIME_MARKUP
+                            %%%     {                                          %%! CLOCK_TIME_MARKUP
+                            %%%         \fontsize                              %%! CLOCK_TIME_MARKUP
+                            %%%             #-2                                %%! CLOCK_TIME_MARKUP
+                            %%%             2'30''                             %%! CLOCK_TIME_MARKUP
+                            %%%     }                                          %%! CLOCK_TIME_MARKUP
+                        }
+                    }
                 
             }
         >>
@@ -1428,23 +1691,23 @@
                                 \override TextScript.direction = #up
                                 \dynamicDown
                                 r8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.4.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (45)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.4.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (45)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \once \override DynamicText.extra-offset = #'(0 . 1)
                                 \once \override TextScript.color = #black
@@ -1489,23 +1752,23 @@
                                 
                                 %%% RHVoiceI [measure 42] %%%
                                 r2
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.4.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (46)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.4.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (46)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -1518,23 +1781,23 @@
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8
                                 -\fermata
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.4.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (34)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.4.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (34)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -1546,23 +1809,23 @@
                                 
                                 %%% RHVoiceI [measure 45] %%%
                                 bf''''8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.4.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (47)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.4.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (47)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 s8
                                 
@@ -1594,23 +1857,23 @@
                                 ef''''8
                                 [
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.4.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (48)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.4.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (48)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 af''''8
                                 
@@ -1659,23 +1922,23 @@
                                 ef''''1..
                                 -\tenuto
                                 \f
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (58)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (58)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 \ottava #0
                             }
                         }
@@ -1685,23 +1948,23 @@
                                 %%% RHVoiceI [measure 56] %%%
                                 f''''1.
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (59)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (59)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -1711,23 +1974,23 @@
                                 \ottava #1
                                 bf''''1
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (60)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (60)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -1736,23 +1999,23 @@
                                 %%% RHVoiceI [measure 58] %%%
                                 ef''''1
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (61)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (61)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -1764,23 +2027,23 @@
                                 %%% RHVoiceI [measure 61] %%%
                                 f''''1
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (62)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (62)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -1789,23 +2052,23 @@
                                 %%% RHVoiceI [measure 62] %%%
                                 bf''''2
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-1 4.5.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (63)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-1 4.5.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (63)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 \revert Stem.direction
                                 \ottava #0
                             }
@@ -1993,23 +2256,23 @@
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 skip"                    %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (1)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 skip"                %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (1)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -2023,23 +2286,23 @@
                                 -\marcato
                                 \arpeggio
                                 \ff
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 4.1.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (2)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 4.1.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (2)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -2202,23 +2465,23 @@
                                 \<
                                 \f
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 4.5.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (64)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 4.5.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (64)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -2319,23 +2582,23 @@
                                 \<
                                 \f
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 4.5.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (65)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 4.5.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (65)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -2427,23 +2690,23 @@
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 skip-2"                  %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (54)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 skip-2"              %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (54)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -2464,24 +2727,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line                              %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #2                     %%! FIGURE_NAME_MARKUP
-                                                        %%% \concat                %%! FIGURE_NAME_MARKUP
-                                                            %%% {                  %%! FIGURE_NAME_MARKUP
-                                                                %%% [              %%! FIGURE_NAME_MARKUP
-                                                                %%% "rh-2 4.5.3"   %%! FIGURE_NAME_MARKUP
-                                                                %%% \hspace        %%! FIGURE_NAME_MARKUP
-                                                                    %%% #1         %%! FIGURE_NAME_MARKUP
-                                                                %%% \raise         %%! FIGURE_NAME_MARKUP
-                                                                    %%% #0.25      %%! FIGURE_NAME_MARKUP
-                                                                    %%% \fontsize  %%! FIGURE_NAME_MARKUP
-                                                                        %%% #-2    %%! FIGURE_NAME_MARKUP
-                                                                        %%% (66)   %%! FIGURE_NAME_MARKUP
-                                                                %%% ]              %%! FIGURE_NAME_MARKUP
-                                                            %%% }                  %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
+                                            %%% \line                          %%! FIGURE_NAME_MARKUP
+                                            %%%     {                          %%! FIGURE_NAME_MARKUP
+                                            %%%         \fontsize              %%! FIGURE_NAME_MARKUP
+                                            %%%             #2                 %%! FIGURE_NAME_MARKUP
+                                            %%%             \concat            %%! FIGURE_NAME_MARKUP
+                                            %%%                 {              %%! FIGURE_NAME_MARKUP
+                                            %%%                     [          %%! FIGURE_NAME_MARKUP
+                                            %%%                     "rh-2 4.5.3"   %%! FIGURE_NAME_MARKUP
+                                            %%%                     \hspace    %%! FIGURE_NAME_MARKUP
+                                            %%%                         #1     %%! FIGURE_NAME_MARKUP
+                                            %%%                     \raise     %%! FIGURE_NAME_MARKUP
+                                            %%%                         #0.25  %%! FIGURE_NAME_MARKUP
+                                            %%%                         \fontsize  %%! FIGURE_NAME_MARKUP
+                                            %%%                             #-2%%! FIGURE_NAME_MARKUP
+                                            %%%                             (66)   %%! FIGURE_NAME_MARKUP
+                                            %%%                     ]          %%! FIGURE_NAME_MARKUP
+                                            %%%                 }              %%! FIGURE_NAME_MARKUP
+                                            %%%     }                          %%! FIGURE_NAME_MARKUP
                                             \line
                                                 {
                                                     @
@@ -2513,24 +2776,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line                              %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #2                     %%! FIGURE_NAME_MARKUP
-                                                        %%% \concat                %%! FIGURE_NAME_MARKUP
-                                                            %%% {                  %%! FIGURE_NAME_MARKUP
-                                                                %%% [              %%! FIGURE_NAME_MARKUP
-                                                                %%% "rh-2 4.5.4"   %%! FIGURE_NAME_MARKUP
-                                                                %%% \hspace        %%! FIGURE_NAME_MARKUP
-                                                                    %%% #1         %%! FIGURE_NAME_MARKUP
-                                                                %%% \raise         %%! FIGURE_NAME_MARKUP
-                                                                    %%% #0.25      %%! FIGURE_NAME_MARKUP
-                                                                    %%% \fontsize  %%! FIGURE_NAME_MARKUP
-                                                                        %%% #-2    %%! FIGURE_NAME_MARKUP
-                                                                        %%% (67)   %%! FIGURE_NAME_MARKUP
-                                                                %%% ]              %%! FIGURE_NAME_MARKUP
-                                                            %%% }                  %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
+                                            %%% \line                          %%! FIGURE_NAME_MARKUP
+                                            %%%     {                          %%! FIGURE_NAME_MARKUP
+                                            %%%         \fontsize              %%! FIGURE_NAME_MARKUP
+                                            %%%             #2                 %%! FIGURE_NAME_MARKUP
+                                            %%%             \concat            %%! FIGURE_NAME_MARKUP
+                                            %%%                 {              %%! FIGURE_NAME_MARKUP
+                                            %%%                     [          %%! FIGURE_NAME_MARKUP
+                                            %%%                     "rh-2 4.5.4"   %%! FIGURE_NAME_MARKUP
+                                            %%%                     \hspace    %%! FIGURE_NAME_MARKUP
+                                            %%%                         #1     %%! FIGURE_NAME_MARKUP
+                                            %%%                     \raise     %%! FIGURE_NAME_MARKUP
+                                            %%%                         #0.25  %%! FIGURE_NAME_MARKUP
+                                            %%%                         \fontsize  %%! FIGURE_NAME_MARKUP
+                                            %%%                             #-2%%! FIGURE_NAME_MARKUP
+                                            %%%                             (67)   %%! FIGURE_NAME_MARKUP
+                                            %%%                     ]          %%! FIGURE_NAME_MARKUP
+                                            %%%                 }              %%! FIGURE_NAME_MARKUP
+                                            %%%     }                          %%! FIGURE_NAME_MARKUP
                                             \line
                                                 {
                                                     @
@@ -2645,23 +2908,23 @@
                                 \<
                                 \f
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 4.5.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (68)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 4.5.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (68)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
@@ -2710,23 +2973,23 @@
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-2 skip-3"                  %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (69)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-2 skip-3"              %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (69)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -2747,24 +3010,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line                              %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #2                     %%! FIGURE_NAME_MARKUP
-                                                        %%% \concat                %%! FIGURE_NAME_MARKUP
-                                                            %%% {                  %%! FIGURE_NAME_MARKUP
-                                                                %%% [              %%! FIGURE_NAME_MARKUP
-                                                                %%% "rh-2 4.6.1"   %%! FIGURE_NAME_MARKUP
-                                                                %%% \hspace        %%! FIGURE_NAME_MARKUP
-                                                                    %%% #1         %%! FIGURE_NAME_MARKUP
-                                                                %%% \raise         %%! FIGURE_NAME_MARKUP
-                                                                    %%% #0.25      %%! FIGURE_NAME_MARKUP
-                                                                    %%% \fontsize  %%! FIGURE_NAME_MARKUP
-                                                                        %%% #-2    %%! FIGURE_NAME_MARKUP
-                                                                        %%% (70)   %%! FIGURE_NAME_MARKUP
-                                                                %%% ]              %%! FIGURE_NAME_MARKUP
-                                                            %%% }                  %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
+                                            %%% \line                          %%! FIGURE_NAME_MARKUP
+                                            %%%     {                          %%! FIGURE_NAME_MARKUP
+                                            %%%         \fontsize              %%! FIGURE_NAME_MARKUP
+                                            %%%             #2                 %%! FIGURE_NAME_MARKUP
+                                            %%%             \concat            %%! FIGURE_NAME_MARKUP
+                                            %%%                 {              %%! FIGURE_NAME_MARKUP
+                                            %%%                     [          %%! FIGURE_NAME_MARKUP
+                                            %%%                     "rh-2 4.6.1"   %%! FIGURE_NAME_MARKUP
+                                            %%%                     \hspace    %%! FIGURE_NAME_MARKUP
+                                            %%%                         #1     %%! FIGURE_NAME_MARKUP
+                                            %%%                     \raise     %%! FIGURE_NAME_MARKUP
+                                            %%%                         #0.25  %%! FIGURE_NAME_MARKUP
+                                            %%%                         \fontsize  %%! FIGURE_NAME_MARKUP
+                                            %%%                             #-2%%! FIGURE_NAME_MARKUP
+                                            %%%                             (70)   %%! FIGURE_NAME_MARKUP
+                                            %%%                     ]          %%! FIGURE_NAME_MARKUP
+                                            %%%                 }              %%! FIGURE_NAME_MARKUP
+                                            %%%     }                          %%! FIGURE_NAME_MARKUP
                                             \line
                                                 {
                                                     @
@@ -2789,24 +3052,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line                              %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #2                     %%! FIGURE_NAME_MARKUP
-                                                        %%% \concat                %%! FIGURE_NAME_MARKUP
-                                                            %%% {                  %%! FIGURE_NAME_MARKUP
-                                                                %%% [              %%! FIGURE_NAME_MARKUP
-                                                                %%% "rh-2 4.6.2"   %%! FIGURE_NAME_MARKUP
-                                                                %%% \hspace        %%! FIGURE_NAME_MARKUP
-                                                                    %%% #1         %%! FIGURE_NAME_MARKUP
-                                                                %%% \raise         %%! FIGURE_NAME_MARKUP
-                                                                    %%% #0.25      %%! FIGURE_NAME_MARKUP
-                                                                    %%% \fontsize  %%! FIGURE_NAME_MARKUP
-                                                                        %%% #-2    %%! FIGURE_NAME_MARKUP
-                                                                        %%% (71)   %%! FIGURE_NAME_MARKUP
-                                                                %%% ]              %%! FIGURE_NAME_MARKUP
-                                                            %%% }                  %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
+                                            %%% \line                          %%! FIGURE_NAME_MARKUP
+                                            %%%     {                          %%! FIGURE_NAME_MARKUP
+                                            %%%         \fontsize              %%! FIGURE_NAME_MARKUP
+                                            %%%             #2                 %%! FIGURE_NAME_MARKUP
+                                            %%%             \concat            %%! FIGURE_NAME_MARKUP
+                                            %%%                 {              %%! FIGURE_NAME_MARKUP
+                                            %%%                     [          %%! FIGURE_NAME_MARKUP
+                                            %%%                     "rh-2 4.6.2"   %%! FIGURE_NAME_MARKUP
+                                            %%%                     \hspace    %%! FIGURE_NAME_MARKUP
+                                            %%%                         #1     %%! FIGURE_NAME_MARKUP
+                                            %%%                     \raise     %%! FIGURE_NAME_MARKUP
+                                            %%%                         #0.25  %%! FIGURE_NAME_MARKUP
+                                            %%%                         \fontsize  %%! FIGURE_NAME_MARKUP
+                                            %%%                             #-2%%! FIGURE_NAME_MARKUP
+                                            %%%                             (71)   %%! FIGURE_NAME_MARKUP
+                                            %%%                     ]          %%! FIGURE_NAME_MARKUP
+                                            %%%                 }              %%! FIGURE_NAME_MARKUP
+                                            %%%     }                          %%! FIGURE_NAME_MARKUP
                                             \line
                                                 {
                                                     @
@@ -2831,24 +3094,24 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            %%% \line                              %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #2                     %%! FIGURE_NAME_MARKUP
-                                                        %%% \concat                %%! FIGURE_NAME_MARKUP
-                                                            %%% {                  %%! FIGURE_NAME_MARKUP
-                                                                %%% [              %%! FIGURE_NAME_MARKUP
-                                                                %%% "rh-2 4.6.3"   %%! FIGURE_NAME_MARKUP
-                                                                %%% \hspace        %%! FIGURE_NAME_MARKUP
-                                                                    %%% #1         %%! FIGURE_NAME_MARKUP
-                                                                %%% \raise         %%! FIGURE_NAME_MARKUP
-                                                                    %%% #0.25      %%! FIGURE_NAME_MARKUP
-                                                                    %%% \fontsize  %%! FIGURE_NAME_MARKUP
-                                                                        %%% #-2    %%! FIGURE_NAME_MARKUP
-                                                                        %%% (72)   %%! FIGURE_NAME_MARKUP
-                                                                %%% ]              %%! FIGURE_NAME_MARKUP
-                                                            %%% }                  %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
+                                            %%% \line                          %%! FIGURE_NAME_MARKUP
+                                            %%%     {                          %%! FIGURE_NAME_MARKUP
+                                            %%%         \fontsize              %%! FIGURE_NAME_MARKUP
+                                            %%%             #2                 %%! FIGURE_NAME_MARKUP
+                                            %%%             \concat            %%! FIGURE_NAME_MARKUP
+                                            %%%                 {              %%! FIGURE_NAME_MARKUP
+                                            %%%                     [          %%! FIGURE_NAME_MARKUP
+                                            %%%                     "rh-2 4.6.3"   %%! FIGURE_NAME_MARKUP
+                                            %%%                     \hspace    %%! FIGURE_NAME_MARKUP
+                                            %%%                         #1     %%! FIGURE_NAME_MARKUP
+                                            %%%                     \raise     %%! FIGURE_NAME_MARKUP
+                                            %%%                         #0.25  %%! FIGURE_NAME_MARKUP
+                                            %%%                         \fontsize  %%! FIGURE_NAME_MARKUP
+                                            %%%                             #-2%%! FIGURE_NAME_MARKUP
+                                            %%%                             (72)   %%! FIGURE_NAME_MARKUP
+                                            %%%                     ]          %%! FIGURE_NAME_MARKUP
+                                            %%%                 }              %%! FIGURE_NAME_MARKUP
+                                            %%%     }                          %%! FIGURE_NAME_MARKUP
                                             \line
                                                 {
                                                     @
@@ -2871,23 +3134,23 @@
                                 c'''8
                                 -\accent
                                 \fff
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% b.1.10                         %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (76)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 b.1.10                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (76)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \override Rest.direction = #up
                                 r2..
@@ -3071,23 +3334,23 @@
                                 ef8
                                 -\tenuto
                                 \ff
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.1.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (0)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.1.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (0)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r4
                                 
@@ -3118,23 +3381,23 @@
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.1.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (3)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.1.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (3)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 ef''8
                                 -\tenuto
@@ -3165,23 +3428,23 @@
                                 %%% RHVoiceIII [measure 27] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.1.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (5)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.1.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (5)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -3193,23 +3456,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 ef'8
                                 -\tenuto
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.1.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (6)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.1.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (6)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r4
                                 
@@ -3234,23 +3497,23 @@
                                 %%% RHVoiceIII [measure 29] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.1.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (7)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.1.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (7)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -3266,23 +3529,23 @@
                                 -\tenuto
                                 [
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "insert 5.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (35)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "insert 5.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (35)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 ef'''8
                                 -\tenuto
@@ -3309,23 +3572,23 @@
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-3 4.6.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (74)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-3 4.6.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (74)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 ef''8
                                 -\tenuto
@@ -3364,23 +3627,23 @@
                                 a''4
                                 -\tenuto
                                 \mf
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% b.1.11                         %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (77)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 b.1.11                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (77)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 \override Rest.direction = #down
                                 r4
@@ -3858,23 +4121,23 @@
                                 
                                 %%% RHVoiceV [measure 39] %%%
                                 <b d' fs' a'>16
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "rh-5 4.2.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (24)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "rh-5 4.2.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (24)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                             }
@@ -4419,23 +4682,23 @@
                                 \set Staff.pedalSustainStyle = #'bracket
                                 r1
                                 \sustainOn
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-2 4.6.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (73)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-2 4.6.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (73)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 %%% LHVoiceII [measure 65] %%%
                                 \set Staff.pedalSustainStyle = #'bracket
@@ -4619,23 +4882,23 @@
                                 b'8.
                                 \p
                                 (
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "insert 5.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (4)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "insert 5.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (4)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                                 
@@ -4934,23 +5197,23 @@
                                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %%! REAPPLIED_DYNAMIC_COLOR
                                 r2.
                                 \f                                             %%! REAPPLIED_DYNAMIC
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (8)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (8)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 af8.
                                 -\tenuto
@@ -4978,23 +5241,23 @@
                                 %%% LHVoiceV [measure 24] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (9)                    %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (9)                %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -5003,23 +5266,23 @@
                                 %%% LHVoiceV [measure 25] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (10)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (10)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 af8.
                                 -\tenuto
@@ -5050,23 +5313,23 @@
                                 %%% LHVoiceV [measure 27] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r16
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (11)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (11)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
                                 -\marcato
@@ -5083,23 +5346,23 @@
                                 \override Rest.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (12)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (12)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r4
                                 
@@ -5131,23 +5394,23 @@
                                 %%% LHVoiceV [measure 29] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r2.
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.1.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (13)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.1.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (13)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -5156,23 +5419,23 @@
                                 %%% LHVoiceV [measure 30] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                 r16
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (14)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (14)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
                                 -\marcato
@@ -5187,23 +5450,23 @@
                                 %%% LHVoiceV [measure 31] %%%
                                 <g b f' fs' a'>16
                                 -\marcato
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (15)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (15)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                                 
@@ -5218,23 +5481,23 @@
                                     %%% LHVoiceV [measure 32] %%%
                                     \override TupletBracket.direction = #up
                                     r16
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.2.3"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (16)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.2.3"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (16)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     <g b f' fs' a'>8.
                                     -\marcato
@@ -5250,23 +5513,23 @@
                                 %%% LHVoiceV [measure 33] %%%
                                 <g b f' fs' a'>16
                                 -\marcato
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (17)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (17)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                                 
@@ -5278,23 +5541,23 @@
                                 
                                 %%% LHVoiceV [measure 34] %%%
                                 r16
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (18)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (18)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
                                 -\marcato
@@ -5308,23 +5571,23 @@
                                 %%% LHVoiceV [measure 35] %%%
                                 <g b f' fs' a'>16
                                 -\marcato
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (19)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (19)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                                 
@@ -5339,23 +5602,23 @@
                                     %%% LHVoiceV [measure 36] %%%
                                     \override TupletBracket.direction = #up
                                     r16
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.2.7"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (20)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.2.7"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (20)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     <g b f' fs' a'>8.
                                     -\marcato
@@ -5372,23 +5635,23 @@
                                 %%% LHVoiceV [measure 37] %%%
                                 \override TupletBracket.staff-padding = #2
                                 <g b f' fs' a'>16
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.8"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (21)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.8"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (21)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                                 
@@ -5403,23 +5666,23 @@
                                     %%% LHVoiceV [measure 38] %%%
                                     \override TupletBracket.direction = #up
                                     r16
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.2.9"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (22)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.2.9"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (22)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     <g b f' fs' a'>8.
                                     
@@ -5437,23 +5700,23 @@
                                 \crossStaff
                                 <g, e f af>16
                                 \mp
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.2.10"                  %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (23)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.2.10"              %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (23)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 r8.
                             }
@@ -5465,23 +5728,23 @@
                                     
                                     %%% LHVoiceV [measure 40] %%%
                                     r4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.4.1"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (31)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.4.1"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (31)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -5506,23 +5769,23 @@
                                 
                                 %%% LHVoiceV [measure 41] %%%
                                 r1
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (32)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (32)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -5530,23 +5793,23 @@
                                 
                                 %%% LHVoiceV [measure 42] %%%
                                 r8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (33)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (33)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <c e af>4.
                             }
@@ -5561,23 +5824,23 @@
                                     
                                     %%% LHVoiceV [measure 45] %%%
                                     r4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.4.4"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (36)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.4.4"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (36)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -5608,23 +5871,23 @@
                                 
                                 %%% LHVoiceV [measure 46] %%%
                                 r2
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (37)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (37)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -5634,23 +5897,23 @@
                                     
                                     %%% LHVoiceV [measure 47] %%%
                                     r4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.4.6"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (38)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.4.6"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (38)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -5683,23 +5946,23 @@
                                     
                                     %%% LHVoiceV [measure 48] %%%
                                     r4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.4.7"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (39)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.4.7"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (39)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -5724,23 +5987,23 @@
                                 
                                 %%% LHVoiceV [measure 49] %%%
                                 r8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.8"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (40)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.8"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (40)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <bf>8
                                 
@@ -5752,23 +6015,23 @@
                                 
                                 %%% LHVoiceV [measure 50] %%%
                                 r2
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.9"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (41)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.9"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (41)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -5778,23 +6041,23 @@
                                     
                                     %%% LHVoiceV [measure 51] %%%
                                     r4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-5 4.4.10"              %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (42)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-5 4.4.10"          %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (42)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -5819,23 +6082,23 @@
                                 
                                 %%% LHVoiceV [measure 52] %%%
                                 r8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.11"                  %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (43)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.11"              %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (43)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <c f bf>4.
                             }
@@ -5845,23 +6108,23 @@
                                 
                                 %%% LHVoiceV [measure 53] %%%
                                 r8
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.4.12"                  %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (44)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.4.12"              %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (44)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 <d' e' af'>8
                                 
@@ -5876,23 +6139,23 @@
                                 
                                 %%% LHVoiceV [measure 67] %%%
                                 r4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-5 4.6.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (75)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-5 4.6.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (75)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                                 
                                 af8.
                                 -\tenuto
@@ -6428,23 +6691,23 @@
                                     
                                     %%% LHResonanceVoice [measure 32] %%%
                                     s4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-r 4.2.1"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (25)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-r 4.2.1"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (25)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     <cs,, cs,>2
                                 }
@@ -6456,23 +6719,23 @@
                                 %%% LHResonanceVoice [measure 33] %%%
                                 <cs,, cs,>4
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.2.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (26)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.2.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (26)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6480,23 +6743,23 @@
                                 
                                 <cs,, cs,>1
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.2.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (27)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.2.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (27)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -6509,23 +6772,23 @@
                                     
                                     %%% LHResonanceVoice [measure 36] %%%
                                     s4
-                                    %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
-                                        %%% \fontsize                              %%! FIGURE_NAME_MARKUP
-                                            %%% #2                                 %%! FIGURE_NAME_MARKUP
-                                            %%% \concat                            %%! FIGURE_NAME_MARKUP
-                                                %%% {                              %%! FIGURE_NAME_MARKUP
-                                                    %%% [                          %%! FIGURE_NAME_MARKUP
-                                                    %%% "lh-r 4.2.4"               %%! FIGURE_NAME_MARKUP
-                                                    %%% \hspace                    %%! FIGURE_NAME_MARKUP
-                                                        %%% #1                     %%! FIGURE_NAME_MARKUP
-                                                    %%% \raise                     %%! FIGURE_NAME_MARKUP
-                                                        %%% #0.25                  %%! FIGURE_NAME_MARKUP
-                                                        %%% \fontsize              %%! FIGURE_NAME_MARKUP
-                                                            %%% #-2                %%! FIGURE_NAME_MARKUP
-                                                            %%% (28)               %%! FIGURE_NAME_MARKUP
-                                                    %%% ]                          %%! FIGURE_NAME_MARKUP
-                                                %%% }                              %%! FIGURE_NAME_MARKUP
-                                        %%% }                                      %%! FIGURE_NAME_MARKUP
+                                    %%% ^ \markup {                            %%! FIGURE_NAME_MARKUP
+                                    %%%     \fontsize                          %%! FIGURE_NAME_MARKUP
+                                    %%%         #2                             %%! FIGURE_NAME_MARKUP
+                                    %%%         \concat                        %%! FIGURE_NAME_MARKUP
+                                    %%%             {                          %%! FIGURE_NAME_MARKUP
+                                    %%%                 [                      %%! FIGURE_NAME_MARKUP
+                                    %%%                 "lh-r 4.2.4"           %%! FIGURE_NAME_MARKUP
+                                    %%%                 \hspace                %%! FIGURE_NAME_MARKUP
+                                    %%%                     #1                 %%! FIGURE_NAME_MARKUP
+                                    %%%                 \raise                 %%! FIGURE_NAME_MARKUP
+                                    %%%                     #0.25              %%! FIGURE_NAME_MARKUP
+                                    %%%                     \fontsize          %%! FIGURE_NAME_MARKUP
+                                    %%%                         #-2            %%! FIGURE_NAME_MARKUP
+                                    %%%                         (28)           %%! FIGURE_NAME_MARKUP
+                                    %%%                 ]                      %%! FIGURE_NAME_MARKUP
+                                    %%%             }                          %%! FIGURE_NAME_MARKUP
+                                    %%%     }                                  %%! FIGURE_NAME_MARKUP
                                     
                                     <ef,, ef,>2
                                 }
@@ -6537,23 +6800,23 @@
                                 %%% LHResonanceVoice [measure 37] %%%
                                 <ef,, ef,>4
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.2.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (29)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.2.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (29)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6561,23 +6824,23 @@
                                 
                                 <ef,, ef,>1
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.2.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (30)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.2.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (30)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -6589,23 +6852,23 @@
                                 %%% LHResonanceVoice [measure 54] %%%
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 <e, fs, gs, as, b,>4
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.1"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (49)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.1"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (49)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6615,23 +6878,23 @@
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <e, fs, gs, as, b,>1..
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.2"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (50)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.2"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (50)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6640,23 +6903,23 @@
                                 %%% LHResonanceVoice [measure 56] %%%
                                 <e, fs, gs, as, b,>1.
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.3"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (51)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.3"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (51)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6665,23 +6928,23 @@
                                 %%% LHResonanceVoice [measure 57] %%%
                                 <e, fs, gs, as, b,>1
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.4"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (52)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.4"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (52)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6690,23 +6953,23 @@
                                 %%% LHResonanceVoice [measure 58] %%%
                                 <e, fs, gs, as, b,>1
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.5"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (53)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.5"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (53)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
@@ -6717,23 +6980,23 @@
                                 
                                 %%% LHResonanceVoice [measure 60] %%%
                                 <e, fs, gs, as, b,>1.
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.6"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (55)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.6"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (55)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6742,23 +7005,23 @@
                                 %%% LHResonanceVoice [measure 61] %%%
                                 <e, fs, gs, as, b,>1
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.7"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (56)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.7"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (56)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -6767,23 +7030,23 @@
                                 %%% LHResonanceVoice [measure 62] %%%
                                 <e, fs, gs, as, b,>2
                                 \repeatTie
-                                %%% ^ \markup {                                    %%! FIGURE_NAME_MARKUP
-                                    %%% \fontsize                                  %%! FIGURE_NAME_MARKUP
-                                        %%% #2                                     %%! FIGURE_NAME_MARKUP
-                                        %%% \concat                                %%! FIGURE_NAME_MARKUP
-                                            %%% {                                  %%! FIGURE_NAME_MARKUP
-                                                %%% [                              %%! FIGURE_NAME_MARKUP
-                                                %%% "lh-r 4.5.8"                   %%! FIGURE_NAME_MARKUP
-                                                %%% \hspace                        %%! FIGURE_NAME_MARKUP
-                                                    %%% #1                         %%! FIGURE_NAME_MARKUP
-                                                %%% \raise                         %%! FIGURE_NAME_MARKUP
-                                                    %%% #0.25                      %%! FIGURE_NAME_MARKUP
-                                                    %%% \fontsize                  %%! FIGURE_NAME_MARKUP
-                                                        %%% #-2                    %%! FIGURE_NAME_MARKUP
-                                                        %%% (57)                   %%! FIGURE_NAME_MARKUP
-                                                %%% ]                              %%! FIGURE_NAME_MARKUP
-                                            %%% }                                  %%! FIGURE_NAME_MARKUP
-                                    %%% }                                          %%! FIGURE_NAME_MARKUP
+                                %%% ^ \markup {                                %%! FIGURE_NAME_MARKUP
+                                %%%     \fontsize                              %%! FIGURE_NAME_MARKUP
+                                %%%         #2                                 %%! FIGURE_NAME_MARKUP
+                                %%%         \concat                            %%! FIGURE_NAME_MARKUP
+                                %%%             {                              %%! FIGURE_NAME_MARKUP
+                                %%%                 [                          %%! FIGURE_NAME_MARKUP
+                                %%%                 "lh-r 4.5.8"               %%! FIGURE_NAME_MARKUP
+                                %%%                 \hspace                    %%! FIGURE_NAME_MARKUP
+                                %%%                     #1                     %%! FIGURE_NAME_MARKUP
+                                %%%                 \raise                     %%! FIGURE_NAME_MARKUP
+                                %%%                     #0.25                  %%! FIGURE_NAME_MARKUP
+                                %%%                     \fontsize              %%! FIGURE_NAME_MARKUP
+                                %%%                         #-2                %%! FIGURE_NAME_MARKUP
+                                %%%                         (57)               %%! FIGURE_NAME_MARKUP
+                                %%%                 ]                          %%! FIGURE_NAME_MARKUP
+                                %%%             }                              %%! FIGURE_NAME_MARKUP
+                                %%%     }                                      %%! FIGURE_NAME_MARKUP
                             }
                         }
                         
