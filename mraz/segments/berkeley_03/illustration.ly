@@ -61,27 +61,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.1]                          %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'DeepPink1)                %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -198,27 +198,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.6]                          %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -291,27 +291,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.7]                          %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -519,27 +519,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.16]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -763,27 +763,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.24]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -856,27 +856,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.25]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -970,27 +970,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.29]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -1086,27 +1086,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.31]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -1154,27 +1154,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.33]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -1247,27 +1247,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.34]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    112                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -1360,27 +1360,27 @@
                             %%%                 #(x11-color 'DarkCyan)         %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [B.38]                         %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                          %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR
+                            \line                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        {                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \fontsize                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                #-6                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                \general-align                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #Y                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    #DOWN                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    \note-by-number            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #2                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #0                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                        #1                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                {                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    =                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                    84                         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                }                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        }                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                          %! CLOCK_TIME_MARKUP
                             %%%     {                                          %! CLOCK_TIME_MARKUP
                             %%%         \fontsize                              %! CLOCK_TIME_MARKUP
@@ -1638,42 +1638,42 @@
                         ^ \markup {
                             \column
                                 {
-                                    %%% \line                                  %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%     {                                  %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%         \vcenter                       %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%             (“Piano”                   %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%         \vcenter                       %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%             \hcenter-in                %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                 #16                    %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                 Piano                  %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%         \concat                        %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%             {                          %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                 \vcenter               %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                     \null              %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                 \vcenter               %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%                     )                  %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%             }                          %! REAPPLIED_INSTRUMENT_ALERT
-                                    %%%     }                                  %! REAPPLIED_INSTRUMENT_ALERT
-                                    \line                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                        {                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                            \with-color                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                #(x11-color 'green4)           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                {                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                    \vcenter                   %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                        (“Piano”               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                    \vcenter                   %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                        \hcenter-in            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                            #16                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                            Piano              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                    \concat                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                        {                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                            \vcenter           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                                \null          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                            \vcenter           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                                )              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                        }                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                                }                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
-                                        }                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR
+                                    %%% \line                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     {                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                       %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             (“Piano”                   %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                       %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             \hcenter-in                %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 #16                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 Piano                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \concat                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             {                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter               %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     \null              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter               %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     )                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             }                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     }                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    \line                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        {                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            \with-color                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                #(x11-color 'green4)           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                {                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                   %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        (“Piano”               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                   %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \hcenter-in            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            #16                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            Piano              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \concat                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        {                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \null          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                )              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        }                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                }                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        }                                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
                         \set PianoMusicStaffGroup.instrumentName = \markup {   %! REAPPLIED_REDRAW_INSTRUMENT:SM8
@@ -1691,7 +1691,7 @@
                                 
                                 % RHVoiceI [measure 40]                        %! SM4
                                 \override TextScript.direction = #up
-                                \dynamicDown
+                                \dynamicDown                                   %! IC1
                                 r8
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
@@ -1716,14 +1716,14 @@
                                 \override Stem.direction = #up
                                 \ottava #1
                                 d''''8
-                                \mf
+                                \mf                                            %! IC1
                                 [
                                 (
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "(ottava brackets always govern all voices on staff)"
-                                    }
+                                ^ \markup {                                    %! IC1
+                                    \whiteout                                  %! IC1
+                                        \upright                               %! IC1
+                                            "(ottava brackets always govern all voices on staff)" %! IC1
+                                    }                                          %! IC1
                                 
                                 af''''8
                                 ]
@@ -1782,7 +1782,7 @@
                                 \once \override Rest.transparent = ##t
                                 \once \override GlobalContext.TimeSignature.transparent = ##t
                                 r8
-                                -\fermata
+                                -\fermata                                      %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -1922,8 +1922,8 @@
                                 
                                 % RHVoiceI [measure 55]                        %! SM4
                                 ef''''1..
-                                -\tenuto
-                                \f
+                                -\tenuto                                       %! IC1
+                                \f                                             %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -1949,7 +1949,7 @@
                                 
                                 % RHVoiceI [measure 56]                        %! SM4
                                 f''''1.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -1975,7 +1975,7 @@
                                 % RHVoiceI [measure 57]                        %! SM4
                                 \ottava #1
                                 bf''''1
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -2000,7 +2000,7 @@
                                 
                                 % RHVoiceI [measure 58]                        %! SM4
                                 ef''''1
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -2028,7 +2028,7 @@
                                 
                                 % RHVoiceI [measure 61]                        %! SM4
                                 f''''1
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -2053,7 +2053,7 @@
                                 
                                 % RHVoiceI [measure 62]                        %! SM4
                                 bf''''2
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -2280,12 +2280,12 @@
                                 
                                 % RHVoiceII [measure 24]                       %! SM4
                                 \once \override Script.direction = #up
-                                \arpeggioArrowUp
+                                \arpeggioArrowUp                               %! IC1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <a g' af' b' cs'' f'' ef''' c''''>2.
-                                -\marcato
-                                \arpeggio
-                                \ff
+                                -\marcato                                      %! IC1
+                                \arpeggio                                      %! IC1
+                                \ff                                            %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -2325,20 +2325,20 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 ef'''8
-                                -\staccato
-                                \mp
+                                -\staccato                                     %! IC1
+                                \mp                                            %! IC1
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 d'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 f''''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 
@@ -2366,12 +2366,12 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 f'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 fs'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 
@@ -2382,7 +2382,7 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 fs''''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 ]
@@ -2410,12 +2410,12 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 a'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 bf'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 
@@ -2426,19 +2426,19 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 bf'''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 cs''''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 c''''8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 
                                 s8
                                 
@@ -2714,7 +2714,7 @@
                                 
                                 % RHVoiceII [measure 60]                       %! SM4
                                 \once \override Script.direction = #up
-                                \arpeggioArrowUp
+                                \arpeggioArrowUp                               %! IC1
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -2722,8 +2722,8 @@
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <a g' af' b' cs'' f'' ef''' c''''>1.
-                                -\marcato
-                                \arpeggio
+                                -\marcato                                      %! IC1
+                                \arpeggio                                      %! IC1
                                 ^ \markup {
                                     \column
                                         {
@@ -2745,10 +2745,10 @@
                                             %%%                     ]          %! FIGURE_NAME_MARKUP
                                             %%%                 }              %! FIGURE_NAME_MARKUP
                                             %%%     }                          %! FIGURE_NAME_MARKUP
-                                            \line
-                                                {
-                                                    @
-                                                }
+                                            \line                              %! SM14
+                                                {                              %! SM14
+                                                    @                          %! SM14
+                                                }                              %! SM14
                                         }
                                     }
                             }
@@ -2794,10 +2794,10 @@
                                             %%%                     ]          %! FIGURE_NAME_MARKUP
                                             %%%                 }              %! FIGURE_NAME_MARKUP
                                             %%%     }                          %! FIGURE_NAME_MARKUP
-                                            \line
-                                                {
-                                                    @
-                                                }
+                                            \line                              %! SM14
+                                                {                              %! SM14
+                                                    @                          %! SM14
+                                                }                              %! SM14
                                         }
                                     }
                                 
@@ -2996,7 +2996,7 @@
                             {
                                 
                                 % RHVoiceII [measure 64]                       %! SM4
-                                \arpeggioArrowUp
+                                \arpeggioArrowUp                               %! IC1
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -3004,9 +3004,9 @@
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <f'' ef''' c'''' e'''' fs'''' bf''''>1
-                                -\marcato
-                                \arpeggio
-                                \ff
+                                -\marcato                                      %! IC1
+                                \arpeggio                                      %! IC1
+                                \ff                                            %! IC1
                                 ^ \markup {
                                     \column
                                         {
@@ -3028,10 +3028,10 @@
                                             %%%                     ]          %! FIGURE_NAME_MARKUP
                                             %%%                 }              %! FIGURE_NAME_MARKUP
                                             %%%     }                          %! FIGURE_NAME_MARKUP
-                                            \line
-                                                {
-                                                    @
-                                                }
+                                            \line                              %! SM14
+                                                {                              %! SM14
+                                                    @                          %! SM14
+                                                }                              %! SM14
                                         }
                                     }
                             }
@@ -3040,15 +3040,15 @@
                             {
                                 
                                 % RHVoiceII [measure 65]                       %! SM4
-                                \arpeggioArrowUp
+                                \arpeggioArrowUp                               %! IC1
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 <a g' af' b' cs'' f'' ef''' c''''>1
-                                -\marcato
-                                \arpeggio
+                                -\marcato                                      %! IC1
+                                \arpeggio                                      %! IC1
                                 ^ \markup {
                                     \column
                                         {
@@ -3070,10 +3070,10 @@
                                             %%%                     ]          %! FIGURE_NAME_MARKUP
                                             %%%                 }              %! FIGURE_NAME_MARKUP
                                             %%%     }                          %! FIGURE_NAME_MARKUP
-                                            \line
-                                                {
-                                                    @
-                                                }
+                                            \line                              %! SM14
+                                                {                              %! SM14
+                                                    @                          %! SM14
+                                                }                              %! SM14
                                         }
                                     }
                             }
@@ -3082,15 +3082,15 @@
                             {
                                 
                                 % RHVoiceII [measure 66]                       %! SM4
-                                \arpeggioArrowUp
+                                \arpeggioArrowUp                               %! IC1
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 <e' fs' bf' a'' g''' af''' b''' cs''''>1
-                                -\marcato
-                                \arpeggio
+                                -\marcato                                      %! IC1
+                                \arpeggio                                      %! IC1
                                 ^ \markup {
                                     \column
                                         {
@@ -3112,10 +3112,10 @@
                                             %%%                     ]          %! FIGURE_NAME_MARKUP
                                             %%%                 }              %! FIGURE_NAME_MARKUP
                                             %%%     }                          %! FIGURE_NAME_MARKUP
-                                            \line
-                                                {
-                                                    @
-                                                }
+                                            \line                              %! SM14
+                                                {                              %! SM14
+                                                    @                          %! SM14
+                                                }                              %! SM14
                                         }
                                     }
                             }
@@ -3130,10 +3130,10 @@
                                 \override Script.direction = #up
                                 \override TextScript.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
-                                \dynamicUp
+                                \dynamicUp                                     %! IC1
                                 c'''8
-                                -\accent
-                                \fff
+                                -\accent                                       %! IC1
+                                \fff                                           %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -3156,17 +3156,17 @@
                                 r2..
                                 
                                 d'''8
-                                -\accent
+                                -\accent                                       %! IC1
                                 
                                 r2..
                                 
                                 ef''''8
-                                -\accent
+                                -\accent                                       %! IC1
                                 
                                 r2..
                                 
                                 f''''8
-                                -\accent
+                                -\accent                                       %! IC1
                                 
                                 r2..
                                 \revert Rest.direction
@@ -3330,8 +3330,8 @@
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 ef8
-                                -\tenuto
-                                \ff
+                                -\tenuto                                       %! IC1
+                                \ff                                            %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -3353,15 +3353,15 @@
                                 r4
                                 
                                 cs'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 c'4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 bf'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 \revert TextScript.direction
@@ -3398,22 +3398,22 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 ef''8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 cs''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 c'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 bf4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 \revert TupletBracket.direction
                             }
                         }
@@ -3453,7 +3453,7 @@
                                 \override TupletBracket.direction = #up
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 ef'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -3475,15 +3475,15 @@
                                 r4
                                 
                                 cs'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 c'4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 bf8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 \revert TupletBracket.direction
@@ -3524,7 +3524,7 @@
                                 \override TupletBracket.direction = #down
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 af'''8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 [
                                 (
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
@@ -3546,13 +3546,13 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 ef'''8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 f'''8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 fs'''8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 ]
                                 )
                                 \revert TupletBracket.direction
@@ -3589,28 +3589,28 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 ef''8
-                                -\tenuto
-                                \mp
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "(memory of before)"
-                                    }
+                                -\tenuto                                       %! IC1
+                                \mp                                            %! IC1
+                                ^ \markup {                                    %! IC1
+                                    \whiteout                                  %! IC1
+                                        \upright                               %! IC1
+                                            "(memory of before)"               %! IC1
+                                    }                                          %! IC1
                                 
                                 r4
                                 
                                 cs''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 c'8
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 bf4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 \revert TextScript.direction
                                 \revert TupletBracket.direction
                             }
@@ -3623,8 +3623,8 @@
                                 \override TupletBracket.direction = #down
                                 \ottava #1
                                 a''4
-                                -\tenuto
-                                \mf
+                                -\tenuto                                       %! IC1
+                                \mf                                            %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -3647,22 +3647,22 @@
                                 r4
                                 
                                 cs''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 b''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 af''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r4
                                 
                                 g'''4
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 \ottava #0
                                 
                                 r4
@@ -4868,7 +4868,7 @@
                                 \override Slur.direction = #down
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                 b'8.
-                                \p
+                                \p                                             %! IC1
                                 (
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
@@ -5179,7 +5179,7 @@
                                 
                                 % LHVoiceV [measure 22]                        %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \dynamicDown
+                                \dynamicDown                                   %! IC1
                                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 r2.
                                 \f                                             %! REAPPLIED_DYNAMIC:SM8
@@ -5202,18 +5202,18 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 af8.
-                                -\tenuto
-                                \f
+                                -\tenuto                                       %! IC1
+                                \f                                             %! IC1
                                 
                                 r16
                                 
                                 d'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
                                 e'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                             }
@@ -5271,19 +5271,19 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 af8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
                                 d'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
                                 r4
                                 
                                 e'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
@@ -5318,11 +5318,11 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
-                                -\marcato
-                                \ff
+                                -\marcato                                      %! IC1
+                                \ff                                            %! IC1
                                 
                                 r2
-                                \break
+                                \break                                         %! IC1
                             }
                         }
                         {
@@ -5353,23 +5353,23 @@
                                 r4
                                 
                                 af8.
-                                -\marcato
-                                -\tenuto
-                                \f
+                                -\marcato                                      %! IC1
+                                -\tenuto                                       %! IC1
+                                \f                                             %! IC1
                                 
                                 r16
                                 
                                 r4
                                 
                                 d'8.
-                                -\marcato
-                                -\tenuto
+                                -\marcato                                      %! IC1
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
                                 e'8.
-                                -\marcato
-                                -\tenuto
+                                -\marcato                                      %! IC1
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                             }
@@ -5424,8 +5424,8 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
-                                -\marcato
-                                \ff
+                                -\marcato                                      %! IC1
+                                \ff                                            %! IC1
                                 
                                 r2
                             }
@@ -5435,7 +5435,7 @@
                                 
                                 % LHVoiceV [measure 31]                        %! SM4
                                 <g b f' fs' a'>16
-                                -\marcato
+                                -\marcato                                      %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -5486,7 +5486,7 @@
                                     %%%     }                                  %! FIGURE_NAME_MARKUP
                                     
                                     <g b f' fs' a'>8.
-                                    -\marcato
+                                    -\marcato                                  %! IC1
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -5498,7 +5498,7 @@
                                 
                                 % LHVoiceV [measure 33]                        %! SM4
                                 <g b f' fs' a'>16
-                                -\marcato
+                                -\marcato                                      %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -5546,7 +5546,7 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 <g b f' fs' a'>8.
-                                -\marcato
+                                -\marcato                                      %! IC1
                                 
                                 r2
                             }
@@ -5556,7 +5556,7 @@
                                 
                                 % LHVoiceV [measure 35]                        %! SM4
                                 <g b f' fs' a'>16
-                                -\marcato
+                                -\marcato                                      %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -5607,7 +5607,7 @@
                                     %%%     }                                  %! FIGURE_NAME_MARKUP
                                     
                                     <g b f' fs' a'>8.
-                                    -\marcato
+                                    -\marcato                                  %! IC1
                                     
                                     r2
                                     \revert TupletBracket.direction
@@ -5683,9 +5683,9 @@
                                 % LHVoiceV [measure 39]                        %! SM4
                                 \once \override PianoStaff.Stem.color = #darkmagenta
                                 \once \override Stem.direction = #up
-                                \crossStaff
+                                \crossStaff                                    %! IC1
                                 <g, e f af>16
-                                \mp
+                                \mp                                            %! IC1
                                 %%% ^ \markup {                                %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                              %! FIGURE_NAME_MARKUP
                                 %%%         #2                                 %! FIGURE_NAME_MARKUP
@@ -6144,20 +6144,20 @@
                                 %%%     }                                      %! FIGURE_NAME_MARKUP
                                 
                                 af8.
-                                -\tenuto
-                                \p
+                                -\tenuto                                       %! IC1
+                                \p                                             %! IC1
                                 
                                 r16
                                 
                                 d'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
                                 r4
                                 
                                 e'8.
-                                -\tenuto
+                                -\tenuto                                       %! IC1
                                 
                                 r16
                                 
@@ -6190,7 +6190,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf'8
-                                    -\staccato
+                                    -\staccato                                 %! IC1
                                 }
                                 {
                                     
@@ -6222,14 +6222,14 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf8
-                                    -\staccato
+                                    -\staccato                                 %! IC1
                                 }
                                 {
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     d'8
-                                    -\staccato
+                                    -\staccato                                 %! IC1
                                 }
                                 {
                                     
@@ -6256,7 +6256,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8
-                                    -\staccato
+                                    -\staccato                                 %! IC1
                                 }
                                 {
                                     
@@ -6284,7 +6284,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8
-                                    -\staccato
+                                    -\staccato                                 %! IC1
                                 }
                                 {
                                     
@@ -6310,7 +6310,7 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
                                 af'8
-                                -\staccato
+                                -\staccato                                     %! IC1
                                 \revert Stem.direction
                                 
                                 s4.
