@@ -711,15 +711,15 @@
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
-                        \set PianoMusicStaffGroup.instrumentName = \markup {             %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                #16                                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                                Piano                                                    %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            }                                                            %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            \null                                                        %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                            }                                                            %! REAPPLIED_REDRAW_INSTRUMENT:SM8
-                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
+                        \set PianoMusicStaffGroup.instrumentName = \markup {             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                Piano                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \set PianoMusicStaffGroup.shortInstrumentName = \markup {        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \null                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         {
                             {
                                 
@@ -2104,11 +2104,11 @@
                         \set PianoMusicLHStaff.forceClef = ##t                           %! REAPPLIED_CLEF:SM8
                         \clef "bass"                                                     %! REAPPLIED_CLEF:SM8
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_UNCOLOR:SM7
+                        %%% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 1/2
                         \f                                                               %! REAPPLIED_DYNAMIC:SM8
-                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
+                        \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         
                         % LHVoiceVI [measure 11]                                         %! SM4
                         s1 * 1/8
