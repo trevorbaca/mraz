@@ -501,7 +501,7 @@
                                     }                                                    %! DEFAULT_INSTRUMENT:SM8
                                 \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
                                 bf''''1
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 ^ \markup {
                                     \column
                                         {
@@ -633,8 +633,8 @@
                             \times 4/5 {
                                 
                                 % RHVoiceII [measure 1]                                  %! SM4
-                                \override DynamicLineSpanner.staff-padding = #'8
-                                \override Slur.direction = #up
+                                \override DynamicLineSpanner.staff-padding = #'8         %! OC
+                                \override Slur.direction = #up                           %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \ottava #1
@@ -742,8 +742,8 @@
                                 ]
                                 \ff
                                 )
-                                \revert DynamicLineSpanner.staff-padding
-                                \revert Slur.direction
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
+                                \revert Slur.direction                                   %! OC
                                 \ottava #0
                             }
                         }
@@ -754,12 +754,12 @@
                             {
                                 
                                 % RHVoiceII [measure 4]                                  %! SM4
-                                \once \override Script.direction = #up
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up                   %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r8
-                                -\shortfermata                                           %! IC1
+                                -\shortfermata                                           %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -777,7 +777,7 @@
                                 %%%                 ]                                    %! FIGURE_NAME_MARKUP
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
-                                \break                                                   %! IC1
+                                \break                                                   %! IC
                             }
                         }
                         
@@ -787,12 +787,12 @@
                             {
                                 
                                 % RHVoiceII [measure 6]                                  %! SM4
-                                \once \override Script.direction = #up
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up                   %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r8
-                                -\fermata                                                %! IC1
+                                -\fermata                                                %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -819,22 +819,22 @@
                             {
                                 
                                 % RHVoiceII [measure 8]                                  %! SM4
-                                \override Script.direction = #up
-                                \override TextScript.direction = #up
+                                \override Script.direction = #up                         %! OC
+                                \override TextScript.direction = #up                     %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
-                                \dynamicUp                                               %! IC1
+                                \dynamicUp                                               %! IC
                                 c'''8
-                                -\accent                                                 %! IC1
-                                \fff                                                     %! IC1
+                                -\accent                                                 %! IC
+                                \fff                                                     %! IC
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            "(black voice louder; green voice longer)" %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            "(black voice louder; green voice longer)" %! IC
+                                                }                                        %! IC
                                             %%% \line                                    %! FIGURE_NAME_MARKUP
                                             %%%     {                                    %! FIGURE_NAME_MARKUP
                                             %%%         \fontsize                        %! FIGURE_NAME_MARKUP
@@ -856,48 +856,48 @@
                                         }
                                     }
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r2..
                                 
                                 d'''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
                                 
                                 ef''''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
                                 
                                 f''''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
-                                \revert Rest.direction
-                                \revert Script.direction
-                                \revert TextScript.direction
+                                \revert Rest.direction                                   %! OC
+                                \revert Script.direction                                 %! OC
+                                \revert TextScript.direction                             %! OC
                             }
                         }
                         {
                             {
                                 
                                 % RHVoiceII [measure 9]                                  %! SM4
-                                \once \override Script.direction = #up
-                                \once \override TextScript.direction = #up
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.direction = #up                   %! OC
+                                \once \override TextScript.direction = #up               %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r8
-                                -\shortfermata                                           %! IC1
+                                -\shortfermata                                           %! IC
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            "(extremely short)"          %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            "(extremely short)"          %! IC
+                                                }                                        %! IC
                                             %%% \line                                    %! FIGURE_NAME_MARKUP
                                             %%%     {                                    %! FIGURE_NAME_MARKUP
                                             %%%         \fontsize                        %! FIGURE_NAME_MARKUP
@@ -962,9 +962,9 @@
                                 
                                 % RHVoiceIII [measure 5]                                 %! SM4
                                 bf'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
-                                \pp                                                      %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
+                                \pp                                                      %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -984,12 +984,12 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 cs'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 ef'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                             }
                         }
                         
@@ -1019,24 +1019,24 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 d'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 e'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 c'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 ef'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 f''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                             }
@@ -1046,20 +1046,20 @@
                             \times 8/5 {
                                 
                                 % RHVoiceIII [measure 8]                                 %! SM4
-                                \override TupletBracket.direction = #down
+                                \override TupletBracket.direction = #down                %! OC
                                 \ottava #1
                                 a''4
-                                -\tenuto                                                 %! IC1
-                                \mf                                                      %! IC1
+                                -\tenuto                                                 %! IC
+                                \mf                                                      %! IC
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            "(first note A5)"            %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            "(first note A5)"            %! IC
+                                                }                                        %! IC
                                             %%% \line                                    %! FIGURE_NAME_MARKUP
                                             %%%     {                                    %! FIGURE_NAME_MARKUP
                                             %%%         \fontsize                        %! FIGURE_NAME_MARKUP
@@ -1081,31 +1081,31 @@
                                         }
                                     }
                                 
-                                \override Rest.direction = #down
+                                \override Rest.direction = #down                         %! OC
                                 r4
                                 
                                 cs''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 b''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 af''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 g'''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 \ottava #0
                                 
                                 r4
-                                \revert Rest.direction
-                                \revert TupletBracket.direction
+                                \revert Rest.direction                                   %! OC
+                                \revert TupletBracket.direction                          %! OC
                             }
                         }
                         
@@ -1402,7 +1402,7 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16
-                                \ff                                                      %! IC1
+                                \ff                                                      %! IC
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1482,7 +1482,7 @@
                             \times 8/7 {
                                 
                                 % LHVoiceIVInserts [measure 2]                           %! SM4
-                                \override Stem.direction = #up
+                                \override Stem.direction = #up                           %! OC
                                 d''16
                                 
                                 s16
@@ -1494,7 +1494,7 @@
                                 s16
                                 
                                 fs''16
-                                \revert Stem.direction
+                                \revert Stem.direction                                   %! OC
                                 
                                 s16
                             }
@@ -1533,9 +1533,9 @@
                                 
                                 % LHVoiceV [measure 3]                                   %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-                                \dynamicUp                                               %! IC1
+                                \dynamicUp                                               %! IC
                                 bf,,8.
-                                \ppp                                                     %! IC1
+                                \ppp                                                     %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1554,7 +1554,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r32
                                 
                                 d,8.
@@ -1570,7 +1570,7 @@
                                 r32
                                 
                                 r8
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         
@@ -1632,16 +1632,16 @@
                             \times 4/3 {
                                 
                                 % LHVoiceVI [measure 3]                                  %! SM4
-                                \override Stem.direction = #down
-                                \override TupletBracket.direction = #down
-                                \override TupletBracket.staff-padding = #6
+                                \override Stem.direction = #down                         %! OC
+                                \override TupletBracket.direction = #down                %! OC
+                                \override TupletBracket.staff-padding = #6               %! OC
                                 \ottava #-1
                                 \set PianoMusicLHStaff.forceClef = ##t                   %! REDUNDANT_CLEF:SM8
                                 \clef "bass"                                             %! REDUNDANT_CLEF:SM8
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                                 %%% \override PianoMusicLHStaff.Clef.color = ##f         %! REDUNDANT_CLEF_UNCOLOR:SM7
                                 b,,,8
-                                \f                                                       %! IC1
+                                \f                                                       %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1661,17 +1661,17 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
                                 
-                                \override Rest.direction = #down
+                                \override Rest.direction = #down                         %! OC
                                 r4
                                 
                                 ef,,8
-                                \revert Stem.direction
+                                \revert Stem.direction                                   %! OC
                                 \ottava #0
                                 
                                 r4
-                                \revert Rest.direction
-                                \revert TupletBracket.direction
-                                \revert TupletBracket.staff-padding
+                                \revert Rest.direction                                   %! OC
+                                \revert TupletBracket.direction                          %! OC
+                                \revert TupletBracket.staff-padding                      %! OC
                             }
                         }
                         

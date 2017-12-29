@@ -96,7 +96,7 @@
                             {
                                 
                                 % RHVoiceI [measure 85]                                  %! SM4
-                                \override Beam.positions = #'(6 . 6)
+                                \override Beam.positions = #'(6 . 6)                     %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set PianoMusicStaffGroup.instrumentName = \markup {     %! REAPPLIED_INSTRUMENT:SM8
@@ -439,7 +439,7 @@
                                 \set stemRightBeamCount = #0
                                 e16
                                 ]
-                                \revert Beam.positions
+                                \revert Beam.positions                                   %! OC
                                 
                             }
                         }

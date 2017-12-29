@@ -1054,13 +1054,13 @@
                             {
                                 
                                 % RHVoiceII [measure 69]                                 %! SM4
-                                \override Script.direction = #up
-                                \override TextScript.direction = #up
+                                \override Script.direction = #up                         %! OC
+                                \override TextScript.direction = #up                     %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \dynamicUp                                               %! IC1
+                                \dynamicUp                                               %! IC
                                 c'''8
-                                -\accent                                                 %! IC1
-                                \fff                                                     %! IC1
+                                -\accent                                                 %! IC
+                                \fff                                                     %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1079,26 +1079,26 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r2..
                                 
                                 d'''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
                                 
                                 ef''''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
                                 
                                 f''''8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 r2..
-                                \revert Rest.direction
-                                \revert Script.direction
-                                \revert TextScript.direction
+                                \revert Rest.direction                                   %! OC
+                                \revert Script.direction                                 %! OC
+                                \revert TextScript.direction                             %! OC
                             }
                         }
                         {
@@ -1110,8 +1110,8 @@
                                 \times 3/4 {
                                     
                                     % RHVoiceII [measure 70]                             %! SM4
-                                    \override Beam.positions = #'(10.5 . 10.5)
-                                    \override Script.direction = #up
+                                    \override Beam.positions = #'(10.5 . 10.5)           %! OC
+                                    \override Script.direction = #up                     %! OC
                                     s8
                                     [
                                     
@@ -1161,17 +1161,17 @@
                                     
                                     s8
                                     
-                                    \override Stem.direction = #up
+                                    \override Stem.direction = #up                       %! OC
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     af'8
-                                    -\accent                                             %! IC1
-                                    \fff                                                 %! IC1
+                                    -\accent                                             %! IC
+                                    \fff                                                 %! IC
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     fs'8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
@@ -1240,7 +1240,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     c''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1254,12 +1254,12 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     cs''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     e''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                 }
                                 {
                                     
@@ -1272,7 +1272,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     ef'8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
@@ -1317,7 +1317,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     fs''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
@@ -1333,12 +1333,12 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     ef''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1349,7 +1349,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     e''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
@@ -1360,7 +1360,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     f'8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1374,7 +1374,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     af'8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1403,14 +1403,14 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     bf''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     af''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1422,7 +1422,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     g''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
@@ -1435,7 +1435,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     fs''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                     
@@ -1446,7 +1446,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     a''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s8
                                 }
@@ -1460,12 +1460,12 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     c''8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     b'8
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
@@ -1481,8 +1481,8 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
                                     ef''8
-                                    -\accent                                             %! IC1
-                                    \revert Stem.direction
+                                    -\accent                                             %! IC
+                                    \revert Stem.direction                               %! OC
                                     
                                     s8
                                     
@@ -1498,8 +1498,8 @@
                                     
                                     s8
                                     ]
-                                    \revert Beam.positions
-                                    \revert Script.direction
+                                    \revert Beam.positions                               %! OC
+                                    \revert Script.direction                             %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1507,20 +1507,20 @@
                         }
                         
                         % RHVoiceII [measure 77]                                         %! SM4
-                        \override Script.direction = #up
-                        \override Slur.direction = #up
+                        \override Script.direction = #up                                 %! OC
+                        \override Slur.direction = #up                                   %! OC
                         s1 * 1/4
                         {
                             {
                                 
                                 % RHVoiceII [measure 78]                                 %! SM4
-                                \override Stem.direction = #down
+                                \override Stem.direction = #down                         %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 fs16
-                                -\staccato                                               %! IC1
-                                \ppp                                                     %! IC1
+                                -\staccato                                               %! IC
+                                \ppp                                                     %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1544,22 +1544,22 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 af'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1567,28 +1567,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 bf16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1596,33 +1596,33 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 f''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1630,28 +1630,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 a16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1659,28 +1659,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1688,18 +1688,18 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 a'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                                 )
                             }
@@ -1712,7 +1712,7 @@
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 d'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1736,22 +1736,22 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1759,33 +1759,33 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 f'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1793,33 +1793,33 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 b''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1827,28 +1827,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 g'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 cs''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1856,28 +1856,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 a''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                                 )
                             }
@@ -1890,7 +1890,7 @@
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1914,17 +1914,17 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 fs'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 c''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1932,23 +1932,23 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 e'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 bf'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1956,23 +1956,23 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 ef'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -1980,28 +1980,28 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2009,26 +2009,26 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 f'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 g''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                                 )
-                                \break                                                   %! IC1
+                                \break                                                   %! IC
                             }
                         }
                         {
@@ -2039,7 +2039,7 @@
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 fs''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2063,17 +2063,17 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 c'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 f'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2081,18 +2081,18 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 af''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 ef'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2100,18 +2100,18 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 a'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2119,33 +2119,33 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 d''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 cs'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 af'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 ef''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                                 )
-                                \revert Script.direction
-                                \revert Slur.direction
-                                \revert Stem.direction
+                                \revert Script.direction                                 %! OC
+                                \revert Slur.direction                                   %! OC
+                                \revert Stem.direction                                   %! OC
                             }
                         }
                         {
@@ -2156,7 +2156,7 @@
                                 \set stemRightBeamCount = #2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                 f''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2180,22 +2180,22 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 g'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 fs''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2203,23 +2203,23 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 c''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 e''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 af''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2227,23 +2227,23 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 ef'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 b'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #1
                                 g''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 )
                             }
                             {
@@ -2251,18 +2251,18 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 b''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 (
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 a'''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 d''''16
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                                 )
                             }
@@ -2393,11 +2393,11 @@
                             \times 8/5 {
                                 
                                 % RHVoiceIII [measure 69]                                %! SM4
-                                \override TupletBracket.direction = #down
+                                \override TupletBracket.direction = #down                %! OC
                                 \ottava #1
                                 a''4
-                                -\tenuto                                                 %! IC1
-                                \mf                                                      %! IC1
+                                -\tenuto                                                 %! IC
+                                \mf                                                      %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2416,31 +2416,31 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #down
+                                \override Rest.direction = #down                         %! OC
                                 r4
                                 
                                 cs''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 b''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 af''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 g'''4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 \ottava #0
                                 
                                 r4
-                                \revert Rest.direction
-                                \revert TupletBracket.direction
+                                \revert Rest.direction                                   %! OC
+                                \revert TupletBracket.direction                          %! OC
                             }
                         }
                         {
@@ -2450,10 +2450,10 @@
                                 \times 3/4 {
                                     
                                     % RHVoiceIII [measure 70]                            %! SM4
-                                    \override TupletBracket.direction = #down
+                                    \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     d'''8
-                                    \mp                                                  %! IC1
+                                    \mp                                                  %! IC
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2552,7 +2552,7 @@
                                     d'8
                                     ]
                                     )
-                                    \revert TupletBracket.direction
+                                    \revert TupletBracket.direction                      %! OC
                                 }
                             }
                         }
@@ -2560,13 +2560,13 @@
                             {
                                 
                                 % RHVoiceIII [measure 71]                                %! SM4
-                                \once \override Script.color = #black
-                                \once \override Script.extra-offset = #'(1 . 0)
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black                    %! OC
+                                \once \override Script.extra-offset = #'(1 . 0)          %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
-                                -\shortfermata                                           %! IC1
+                                -\shortfermata                                           %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2584,7 +2584,7 @@
                                 %%%                 ]                                    %! FIGURE_NAME_MARKUP
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
-                                \break                                                   %! IC1
+                                \break                                                   %! IC
                             }
                         }
                         {
@@ -2594,7 +2594,7 @@
                                 \times 6/7 {
                                     
                                     % RHVoiceIII [measure 72]                            %! SM4
-                                    \override TupletBracket.direction = #down
+                                    \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     cs'''8
                                     [
@@ -2716,7 +2716,7 @@
                                     b'8
                                     ]
                                     )
-                                    \revert TupletBracket.direction
+                                    \revert TupletBracket.direction                      %! OC
                                 }
                             }
                         }
@@ -2729,7 +2729,7 @@
                                 {
                                     
                                     % RHVoiceIII [measure 74]                            %! SM4
-                                    \override TupletBracket.direction = #down
+                                    \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     a'''8
                                     [
@@ -2830,7 +2830,7 @@
                                     
                                     a'8
                                     )
-                                    \revert TupletBracket.direction
+                                    \revert TupletBracket.direction                      %! OC
                                 }
                             }
                         }
@@ -2838,12 +2838,12 @@
                             {
                                 
                                 % RHVoiceIII [measure 75]                                %! SM4
-                                \once \override Script.color = #black
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black                    %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
-                                -\shortfermata                                           %! IC1
+                                -\shortfermata                                           %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2870,7 +2870,7 @@
                                 \times 6/7 {
                                     
                                     % RHVoiceIII [measure 76]                            %! SM4
-                                    \override TupletBracket.direction = #down
+                                    \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     c'''8
                                     [
@@ -2993,7 +2993,7 @@
                                     bf'8
                                     ]
                                     )
-                                    \revert TupletBracket.direction
+                                    \revert TupletBracket.direction                      %! OC
                                 }
                             }
                         }
@@ -3001,13 +3001,13 @@
                             {
                                 
                                 % RHVoiceIII [measure 77]                                %! SM4
-                                \once \override Script.color = #black
-                                \once \override Script.extra-offset = #'(1 . 0)
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black                    %! OC
+                                \once \override Script.extra-offset = #'(1 . 0)          %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
-                                -\shortfermata                                           %! IC1
+                                -\shortfermata                                           %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3037,8 +3037,8 @@
                                 \times 6/7 {
                                     
                                     % RHVoiceIII [measure 83]                            %! SM4
-                                    \override TupletBracket.direction = #down
-                                    \override TupletBracket.staff-padding = #3
+                                    \override TupletBracket.direction = #down            %! OC
+                                    \override TupletBracket.staff-padding = #3           %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                     f'''8
                                     [
@@ -3109,8 +3109,8 @@
                                     d'8
                                     ]
                                     )
-                                    \revert TupletBracket.direction
-                                    \revert TupletBracket.staff-padding
+                                    \revert TupletBracket.direction                      %! OC
+                                    \revert TupletBracket.staff-padding                  %! OC
                                 }
                             }
                         }
@@ -3118,13 +3118,13 @@
                             {
                                 
                                 % RHVoiceIII [measure 84]                                %! SM4
-                                \once \override Script.color = #black
-                                \once \override Script.extra-offset = #'(1 . 0)
-                                \once \override Rest.transparent = ##t
-                                \once \override GlobalContext.TimeSignature.transparent = ##t
+                                \once \override Script.color = #black                    %! OC
+                                \once \override Script.extra-offset = #'(1 . 0)          %! OC
+                                \once \override Rest.transparent = ##t                   %! OC
+                                \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 r4
-                                -\fermata                                                %! IC1
+                                -\fermata                                                %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3619,7 +3619,7 @@
                             {
                                 
                                 % LHVoiceIV [measure 72]                                 %! SM4
-                                \override Slur.direction = #down
+                                \override Slur.direction = #down                         %! OC
                                 \set PianoMusicLHStaff.forceClef = ##t                   %! REDUNDANT_CLEF:SM8
                                 \clef "bass"                                             %! REDUNDANT_CLEF:SM8
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
@@ -3649,28 +3649,28 @@
                                 r2
                                 
                                 b'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
-                                \p                                                       %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
+                                \p                                                       %! IC
                                 (
                                 
                                 r8.
                                 
                                 ef'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r8.
                                 
                                 cs8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 )
                                 
                                 r8.
                                 
                                 r4.
-                                \revert Slur.direction
+                                \revert Slur.direction                                   %! OC
                             }
                         }
                         
@@ -3680,7 +3680,7 @@
                             {
                                 
                                 % LHVoiceIV [measure 74]                                 %! SM4
-                                \override Slur.direction = #down
+                                \override Slur.direction = #down                         %! OC
                                 r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3703,39 +3703,39 @@
                                 r2
                                 
                                 af'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 (
                                 
                                 r16
                                 
                                 e'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 bf8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 cs8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 )
                                 
                                 r16
-                                \revert Slur.direction
+                                \revert Slur.direction                                   %! OC
                             }
                         }
                         {
                             {
                                 
                                 b'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3758,8 +3758,8 @@
                                 r16
                                 
                                 g8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 )
                                 
                                 r16
@@ -3772,10 +3772,10 @@
                             {
                                 
                                 % LHVoiceIV [measure 76]                                 %! SM4
-                                \override Slur.direction = #down
+                                \override Slur.direction = #down                         %! OC
                                 b'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3798,32 +3798,32 @@
                                 r16
                                 
                                 ef'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 cs8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 af,8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 )
                                 
                                 r16
-                                \revert Slur.direction
+                                \revert Slur.direction                                   %! OC
                             }
                         }
                         {
                             {
                                 
                                 e'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3845,8 +3845,8 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 bf8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 ]
                                 )
                             }
@@ -3855,8 +3855,8 @@
                             {
                                 
                                 cs'8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3878,12 +3878,12 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 b8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 g8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 ]
                                 )
                             }
@@ -3911,14 +3911,14 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 b8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 [
                                 (
                                 
                                 ef,8.
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 ]
                                 )
                                 
@@ -3956,18 +3956,18 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 cs'8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 [
                                 (
                                 
                                 af,8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 e,8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 ]
                                 )
                             }
@@ -3976,8 +3976,8 @@
                             {
                                 
                                 bf8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3999,16 +3999,16 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 cs8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 b,8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 g,8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 ]
                                 )
                             }
@@ -4080,9 +4080,9 @@
                                 
                                 % LHVoiceV [measure 73]                                  %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                                \dynamicUp                                               %! IC1
+                                \dynamicUp                                               %! IC
                                 bf,,8.
-                                \ppp                                                     %! IC1
+                                \ppp                                                     %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4101,7 +4101,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r32
                                 
                                 d,8.
@@ -4117,7 +4117,7 @@
                                 r32
                                 
                                 r8
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         
@@ -4222,16 +4222,16 @@
                             \times 4/3 {
                                 
                                 % LHVoiceVI [measure 73]                                 %! SM4
-                                \override Stem.direction = #down
-                                \override TupletBracket.direction = #down
-                                \override TupletBracket.staff-padding = #6
+                                \override Stem.direction = #down                         %! OC
+                                \override TupletBracket.direction = #down                %! OC
+                                \override TupletBracket.staff-padding = #6               %! OC
                                 \ottava #-1
                                 \set PianoMusicLHStaff.forceClef = ##t                   %! REDUNDANT_CLEF:SM8
                                 \clef "bass"                                             %! REDUNDANT_CLEF:SM8
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                                 %%% \override PianoMusicLHStaff.Clef.color = ##f         %! REDUNDANT_CLEF_UNCOLOR:SM7
                                 b,,,8
-                                \f                                                       %! IC1
+                                \f                                                       %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4251,17 +4251,17 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
                                 
-                                \override Rest.direction = #down
+                                \override Rest.direction = #down                         %! OC
                                 r4
                                 
                                 ef,,8
-                                \revert Stem.direction
+                                \revert Stem.direction                                   %! OC
                                 \ottava #0
                                 
                                 r4
-                                \revert Rest.direction
-                                \revert TupletBracket.direction
-                                \revert TupletBracket.staff-padding
+                                \revert Rest.direction                                   %! OC
+                                \revert TupletBracket.direction                          %! OC
+                                \revert TupletBracket.staff-padding                      %! OC
                             }
                         }
                         
