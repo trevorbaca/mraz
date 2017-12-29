@@ -395,8 +395,8 @@
                                     % RHVoiceI [measure 147]                             %! SM4
                                     \override Beam.positions = #'(10 . 10)               %! OC
                                     \override Stem.direction = #up                       %! OC
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 0
+                                    \set stemRightBeamCount = 2
                                     \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
                                         \hcenter-in                                      %! REAPPLIED_INSTRUMENT:SM8
                                             #16                                          %! REAPPLIED_INSTRUMENT:SM8
@@ -480,57 +480,57 @@
                                         }                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     d'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     d'''16
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     g''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     bf''16
                                 }
                                 \times 2/3 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     b''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     a'''16
                                 }
                             }
@@ -544,8 +544,8 @@
                                 \times 2/3 {
                                     
                                     % RHVoiceI [measure 149]                             %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -565,31 +565,31 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     bf''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     e'''16
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     fs'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     g'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     a'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     e'''16
                                     ]
                                 }
@@ -604,8 +604,8 @@
                                 {
                                     
                                     % RHVoiceI [measure 151]                             %! SM4
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 0
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     [
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -626,16 +626,16 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     a''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     fs'''16
                                 }
                             }
@@ -649,8 +649,8 @@
                                 {
                                     
                                     % RHVoiceI [measure 153]                             %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -670,24 +670,24 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     e'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     bf'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     fs'''16
                                     ]
                                 }
@@ -703,8 +703,8 @@
                                 \times 3/4 {
                                     
                                     % RHVoiceI [measure 156]                             %! SM4
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 0
+                                    \set stemRightBeamCount = 2
                                     f'''16
                                     [
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -725,49 +725,49 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     af'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     ef'''16
                                 }
                                 \times 2/3 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     c''''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     e'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     bf'''16
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     c''''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs''''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef''''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     bf'''16
                                     ]
                                     \revert Stem.direction                               %! OC
@@ -808,8 +808,8 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     -\marcato                                            %! IC
                                     
@@ -821,8 +821,8 @@
                                 }
                                 \times 2/3 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b''16
                                     -\marcato                                            %! IC
                                     
@@ -854,13 +854,13 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs'''16
                                     -\marcato                                            %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     g'''16
                                     -\marcato                                            %! IC
                                     
@@ -888,8 +888,8 @@
                                     s16
                                     [
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     a''16
                                     -\marcato                                            %! IC
                                     
@@ -913,13 +913,13 @@
                                 {
                                     
                                     % RHVoiceIInserts [measure 153]                      %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     -\marcato                                            %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f'''16
                                     -\marcato                                            %! IC
                                     
@@ -951,8 +951,8 @@
                                     s16
                                     [
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs'''16
                                     -\marcato                                            %! IC
                                     
@@ -966,8 +966,8 @@
                                     
                                     s16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     bf'''16
                                     -\marcato                                            %! IC
                                 }
@@ -976,8 +976,8 @@
                                     
                                     s16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs''''16
                                     -\marcato                                            %! IC
                                     
@@ -1011,8 +1011,8 @@
                                 
                                 % RHVoiceII [measure 148]                                %! SM4
                                 \override Stem.direction = #down                         %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c''16
                                 \fff                                                     %! REDUNDANT_DYNAMIC:SM8
@@ -1036,16 +1036,16 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 ef''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 f''16
                                 )
                             }
@@ -1059,8 +1059,8 @@
                                 {
                                     
                                     % RHVoiceII [measure 150]                            %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     cs''16
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -1081,48 +1081,48 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     b'16
                                     )
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     cs''16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     d''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     e''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     b''16
                                     )
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     a''16
                                     ]
                                     )
@@ -1136,8 +1136,8 @@
                             \times 2/3 {
                                 
                                 % RHVoiceII [measure 152]                                %! SM4
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 c''16
                                 [
                                 (
@@ -1159,57 +1159,57 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 e''16
                                 )
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 cs''16
                                 (
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 ef'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 b''16
                                 )
                             }
                             \times 2/3 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 g''16
                                 (
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 f'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 b''16
                                 )
                             }
@@ -1223,8 +1223,8 @@
                                 {
                                     
                                     % RHVoiceII [measure 154]                            %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     a''16
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -1245,44 +1245,44 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     d'''16
                                     )
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     ef'''16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     cs'''16
                                     ]
                                     )
@@ -1293,8 +1293,8 @@
                             {
                                 
                                 % RHVoiceII [measure 155]                                %! SM4
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 f''16
                                 [
                                 (
@@ -1316,12 +1316,12 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 ef'''16
                                 )
                             }
@@ -1333,8 +1333,8 @@
                             \times 2/3 {
                                 
                                 % RHVoiceII [measure 157]                                %! SM4
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 e'''16
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1355,12 +1355,12 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 af'''16
                                 ]
                                 )
@@ -1384,14 +1384,14 @@
                                 
                                 % RHVoiceIIInserts [measure 148]                         %! SM4
                                 \override Stem.direction = #up                           %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 c''16
                                 -\accent                                                 %! IC
                                 [
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d''16
                                 -\accent                                                 %! IC
                                 
@@ -1413,13 +1413,13 @@
                                 {
                                     
                                     % RHVoiceIIInserts [measure 150]                     %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     cs''16
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     -\accent                                             %! IC
                                     
@@ -1437,13 +1437,13 @@
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef'''16
                                     -\accent                                             %! IC
                                     
@@ -1465,14 +1465,14 @@
                                 
                                 % RHVoiceIIInserts [measure 152]                         %! SM4
                                 \override Beam.positions = #'(13.5 . 13.5)               %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 c''16
                                 -\accent                                                 %! IC
                                 [
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf''16
                                 -\accent                                                 %! IC
                                 
@@ -1495,13 +1495,13 @@
                             }
                             \times 2/3 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 g''16
                                 -\accent                                                 %! IC
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 f'''16
                                 -\accent                                                 %! IC
                                 
@@ -1521,8 +1521,8 @@
                                 {
                                     
                                     % RHVoiceIIInserts [measure 154]                     %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     a''16
                                     -\accent                                             %! IC
                                     
@@ -1534,13 +1534,13 @@
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef'''16
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     -\accent                                             %! IC
                                     
@@ -1565,8 +1565,8 @@
                                 
                                 % RHVoiceIIInserts [measure 155]                         %! SM4
                                 \override Beam.positions = #'(17 . 17)                   %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 f''16
                                 -\accent                                                 %! IC
                                 [
@@ -1589,13 +1589,13 @@
                                 % RHVoiceIIInserts [measure 157]                         %! SM4
                                 s16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d'''16
                                 -\accent                                                 %! IC
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 af'''16
                                 -\accent                                                 %! IC
                                 ]
@@ -1992,8 +1992,8 @@
                             \times 6/7 {
                                 
                                 \override Stem.direction = #down                         %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs'16
                                 \ff                                                      %! EXPLICIT_DYNAMIC:SM8
@@ -2016,43 +2016,43 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 c'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 e'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 f'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 af'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 ef''16
                             }
                             \times 2/3 {
                                 
                                 % LHVoiceIV [measure 148]                                %! SM4
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 b'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 g''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 b''16
                                 ]
                             }
@@ -2065,8 +2065,8 @@
                                 
                                 % LHVoiceIV [measure 152]                                %! SM4
                                 \override Beam.positions = #'(-4.5 . -4.5)               %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 cs''16
                                 \ff                                                      %! REDUNDANT_DYNAMIC:SM8
@@ -2089,12 +2089,12 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 ef''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 b''16
                                 ]
                             }
@@ -2106,8 +2106,8 @@
                             \times 8/7 {
                                 
                                 % LHVoiceIV [measure 155]                                %! SM4
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 d''16
                                 \ff                                                      %! REDUNDANT_DYNAMIC:SM8
@@ -2130,28 +2130,28 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 af'16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 c''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 cs''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 e''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 fs''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 b''16
                                 ]
                                 \revert Stem.direction                                   %! OC
@@ -2270,8 +2270,8 @@
                                 {
                                     
                                     \override Stem.direction = #down                     %! OC
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 0
+                                    \set stemRightBeamCount = 2
                                     \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     cs'16
                                     \pp                                                  %! EXPLICIT_DYNAMIC:SM8
@@ -2295,77 +2295,77 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     a'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     cs'16
                                     )
                                 }
                                 {
                                     
                                     % LHVoiceV [measure 150]                             %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     b'16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     e'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     bf'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     g''16
                                     )
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     bf''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     g''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     d'''16
                                     ]
                                     )
@@ -2380,8 +2380,8 @@
                             \times 15/17 {
                                 {
                                     
-                                    \set stemLeftBeamCount = #0
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 0
+                                    \set stemRightBeamCount = 2
                                     \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                     ef''16
                                     \pp                                                  %! REDUNDANT_DYNAMIC:SM8
@@ -2405,77 +2405,77 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     f'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     cs''16
                                     )
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     a'16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     af'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     g''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b'16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
                                     fs''16
                                     )
                                 }
                                 {
                                     
                                     % LHVoiceV [measure 154]                             %! SM4
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
                                     e''16
                                     (
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     ef''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     cs'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     d'''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     cs'''16
                                     ]
                                     )
@@ -2521,8 +2521,8 @@
                                     
                                     % LHVoiceVInserts [measure 150]                      %! SM4
                                     \override Stem.direction = #up                       %! OC
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     b'16
                                     -\staccato                                           %! IC
                                     
@@ -2540,8 +2540,8 @@
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     fs''16
                                     -\staccato                                           %! IC
                                     
@@ -2553,13 +2553,13 @@
                                     
                                     s16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     c'''16
                                     -\staccato                                           %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     d'''16
                                     -\staccato                                           %! IC
                                     ]
@@ -2586,8 +2586,8 @@
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     a'16
                                     -\staccato                                           %! IC
                                     
@@ -2606,8 +2606,8 @@
                                 {
                                     
                                     % LHVoiceVInserts [measure 154]                      %! SM4
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     e''16
                                     -\staccato                                           %! IC
                                     
@@ -2619,13 +2619,13 @@
                                     
                                     s16
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #2
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     af''16
                                     -\staccato                                           %! IC
                                     
-                                    \set stemLeftBeamCount = #2
-                                    \set stemRightBeamCount = #0
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 0
                                     cs'''16
                                     -\staccato                                           %! IC
                                     ]

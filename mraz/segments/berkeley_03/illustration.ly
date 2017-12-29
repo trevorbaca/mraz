@@ -2420,8 +2420,8 @@
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef'''8
                                 -\staccato                                               %! IC
@@ -2429,13 +2429,13 @@
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 d'''8
                                 -\staccato                                               %! IC
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 f''''8
                                 -\staccato                                               %! IC
                                 
@@ -2462,13 +2462,13 @@
                                 s8
                                 [
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 f'''8
                                 -\staccato                                               %! IC
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 fs'''8
                                 -\staccato                                               %! IC
                                 
@@ -2478,8 +2478,8 @@
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 fs''''8
                                 -\staccato                                               %! IC
                                 
@@ -2506,13 +2506,13 @@
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 a'''8
                                 -\staccato                                               %! IC
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 bf'''8
                                 -\staccato                                               %! IC
                                 
@@ -2522,20 +2522,20 @@
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 bf'''8
                                 -\staccato                                               %! IC
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 cs''''8
                                 -\staccato                                               %! IC
                                 
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 c''''8
                                 -\staccato                                               %! IC
                                 
@@ -2556,8 +2556,8 @@
                                 % RHVoiceII [measure 57]                                 %! SM4
                                 \override DynamicLineSpanner.staff-padding = #'8         %! OC
                                 \override Slur.direction = #up                           %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 b'16
                                 [
@@ -2582,82 +2582,82 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 fs''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 g''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 cs'''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 bf''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 cs'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 af''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 b''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 ef'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 c''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 cs''''16
                             }
                             {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 f''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 c''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 cs''''16
                                 ]
                                 \ff
@@ -2673,8 +2673,8 @@
                                 \override DynamicLineSpanner.staff-padding = #'8         %! OC
                                 \override Slur.direction = #up                           %! OC
                                 \override TextScript.direction = #up                     %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                 ef''16
                                 [
@@ -2699,78 +2699,78 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 g''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 e''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 d''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 ef''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 f''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 fs'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 e'''16
                             }
                             {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 f'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 g'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 af'''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 fs'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 g'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 cs''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 bf'''16
                                 ]
                                 \ff
@@ -2859,8 +2859,8 @@
                                 \override DynamicLineSpanner.staff-padding = #'8         %! OC
                                 \override Slur.direction = #up                           %! OC
                                 \override TextScript.direction = #up                     %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 \once \override Accidental.color = #red
                                 \once \override Beam.color = #red
                                 \once \override Dots.color = #red
@@ -2900,90 +2900,90 @@
                                         }
                                     }
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 af''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 a''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 ef''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 c'''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 ef'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 bf''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 cs'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 f'''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 d'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 f'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 c''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 cs''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 ef''''16
                             }
                             \times 4/5 {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 g'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 e''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 d''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 ef''''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 f''''16
                                 ]
                                 \ff
@@ -3000,8 +3000,8 @@
                                 \override DynamicLineSpanner.staff-padding = #'8         %! OC
                                 \override Slur.direction = #up                           %! OC
                                 \override TextScript.direction = #up                     %! OC
-                                \set stemLeftBeamCount = #0
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 a''16
                                 [
                                 \<
@@ -3025,34 +3025,34 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 fs''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 e''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
                                 f'''16
                             }
                             {
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 g'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 b'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
                                 af'''16
                                 
-                                \set stemLeftBeamCount = #2
-                                \set stemRightBeamCount = #0
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
                                 fs''''16
                                 ]
                                 \ff
@@ -5842,16 +5842,16 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <c bf>8
                                     [
                                     (
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <d' f'>8
                                     ]
                                     )
@@ -5938,22 +5938,22 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <bf'>8
                                     [
                                     (
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <d' f'>8
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <e af>8
                                     ]
                                     )
@@ -6011,22 +6011,22 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <c f bf>8
                                     [
                                     (
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <e af d'>8
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <bf c'>8
                                     ]
                                     )
@@ -6060,16 +6060,16 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <d' f'>8
                                     [
                                     (
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <af c' e'>8
                                     ]
                                     )
@@ -6155,16 +6155,16 @@
                                     %%%             }                                    %! FIGURE_NAME_MARKUP
                                     %%%     }                                            %! FIGURE_NAME_MARKUP
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <d' f'>8
                                     [
                                     (
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     <af e'>8
                                     ]
                                     )
@@ -6298,8 +6298,8 @@
                                     [
                                     
                                     \override Stem.direction = #up                       %! OC
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     bf'8
                                     -\staccato                                           %! IC
                                 }
@@ -6330,15 +6330,15 @@
                                     % LHVoiceVInserts [measure 47]                       %! SM4
                                     s4
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     bf8
                                     -\staccato                                           %! IC
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     d'8
                                     -\staccato                                           %! IC
                                 }
@@ -6364,8 +6364,8 @@
                                     s4
                                     [
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     f'8
                                     -\staccato                                           %! IC
                                 }
@@ -6392,8 +6392,8 @@
                                     % LHVoiceVInserts [measure 51]                       %! SM4
                                     s4
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     f'8
                                     -\staccato                                           %! IC
                                 }
@@ -6418,8 +6418,8 @@
                                 % LHVoiceVInserts [measure 53]                           %! SM4
                                 s8
                                 
-                                \set stemLeftBeamCount = #1
-                                \set stemRightBeamCount = #1
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
                                 af'8
                                 -\staccato                                               %! IC
                                 \revert Stem.direction                                   %! OC
