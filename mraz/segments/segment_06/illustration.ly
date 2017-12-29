@@ -323,10 +323,11 @@
                             \times 4/3 {
                                 
                                 % RHVoiceIII [measure 143]                               %! SM4
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs'''8
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                \pp                                                      %! IC
+                                \pp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -650,9 +651,10 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 9/8 {
                                 
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 g'16
                                 -\tenuto                                                 %! IC
-                                \mp                                                      %! IC
+                                \mp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP

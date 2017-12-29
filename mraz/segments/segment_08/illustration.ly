@@ -1052,8 +1052,9 @@
                                 \override TupletBracket.direction = #up                  %! OC
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 g,8.
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1551,9 +1552,10 @@
                             \times 5/6 {
                                 
                                 \override Stem.direction = #down                         %! OC
+                                \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 af,,4
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! REDUNDANT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP

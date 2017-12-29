@@ -539,6 +539,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -738,9 +746,10 @@
                                 % RHVoiceI [measure 19]                                  %! SM4
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''''1..
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -895,9 +904,10 @@
                                 % RHVoiceII [measure 12]                                 %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs16
                                 -\staccato                                               %! IC
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -979,9 +989,10 @@
                                 % RHVoiceII [measure 15]                                 %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 fs16
                                 -\staccato                                               %! IC
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1092,9 +1103,10 @@
                                 % RHVoiceII [measure 18]                                 %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 fs16
                                 -\staccato                                               %! IC
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1405,8 +1417,9 @@
                                 % RHVoiceIII [measure 17]                                %! SM4
                                 \override TupletBracket.direction = #up                  %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef8
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1500,8 +1513,9 @@
                                 % RHVoiceIV [measure 10]                                 %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d''16
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1557,8 +1571,9 @@
                                 % RHVoiceIV [measure 14]                                 %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d''16
-                                \p                                                       %! IC
+                                \p                                                       %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2040,9 +2055,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 af8.
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r16
                                 
