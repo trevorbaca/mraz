@@ -374,8 +374,8 @@
                                 \times 5/6 {
                                     
                                     % RHVoiceI [measure 147]                             %! SM4
-                                    \override Beam.positions = #'(10 . 10)
-                                    \override Stem.direction = #up
+                                    \override Beam.positions = #'(10 . 10)               %! OC
+                                    \override Stem.direction = #up                       %! OC
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     \set PianoMusicStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
@@ -386,10 +386,10 @@
                                     \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
                                         \null                                            %! REAPPLIED_INSTRUMENT:SM8
                                         }                                                %! REAPPLIED_INSTRUMENT:SM8
-                                    \dynamicUp                                           %! IC1
+                                    \dynamicUp                                           %! IC
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                                     e''16
-                                    \fff                                                 %! IC1
+                                    \fff                                                 %! IC
                                     [
                                     ^ \markup {
                                         \column
@@ -750,14 +750,14 @@
                                     \set stemRightBeamCount = #0
                                     bf'''16
                                     ]
-                                    \revert Stem.direction
+                                    \revert Stem.direction                               %! OC
                                 }
                             }
                         }
                         
                         % RHVoiceI [measure 157]                                         %! SM4
                         s1 * 1/8
-                        \revert Beam.positions
+                        \revert Beam.positions                                           %! OC
                         
                     }
                     \context RHVoiceIInserts = "RHVoiceIInserts" {
@@ -770,8 +770,8 @@
                                 \times 5/6 {
                                     
                                     % RHVoiceIInserts [measure 147]                      %! SM4
-                                    \override Beam.positions = #'(-6.5 . -6.5)
-                                    \override Script.direction = #down
+                                    \override Beam.positions = #'(-6.5 . -6.5)           %! OC
+                                    \override Script.direction = #down                   %! OC
                                     s16
                                     [
                                     
@@ -791,7 +791,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
@@ -804,7 +804,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     b''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
@@ -837,12 +837,12 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     fs'''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     g'''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
@@ -864,19 +864,19 @@
                                 {
                                     
                                     % RHVoiceIInserts [measure 151]                      %! SM4
-                                    \override Beam.positions = #'(-8.5 . -8.5)
+                                    \override Beam.positions = #'(-8.5 . -8.5)           %! OC
                                     s16
                                     [
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     a''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
                                     s16
-                                    \revert Beam.positions
+                                    \revert Beam.positions                               %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -896,12 +896,12 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     af''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f'''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
@@ -934,7 +934,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     fs'''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
@@ -949,7 +949,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     bf'''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
@@ -959,13 +959,13 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     cs''''16
-                                    -\marcato                                            %! IC1
+                                    -\marcato                                            %! IC
                                     
                                     s16
                                     
                                     s16
                                     ]
-                                    \revert Beam.positions
+                                    \revert Beam.positions                               %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -974,15 +974,15 @@
                         
                         % RHVoiceIInserts [measure 157]                                  %! SM4
                         s1 * 1/8
-                        \revert Script.direction
+                        \revert Script.direction                                         %! OC
                         
                     }
                     \context RHVoiceII = "RHVoiceII" {
                         
                         % RHVoiceII [measure 147]                                        %! SM4
-                        \override Beam.positions = #'(-4.5 . -4.5)
-                        \override Slur.direction = #up
-                        \dynamicDown                                                     %! IC1
+                        \override Beam.positions = #'(-4.5 . -4.5)                       %! OC
+                        \override Slur.direction = #up                                   %! OC
+                        \dynamicDown                                                     %! IC
                         \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/4
                         \fff                                                             %! REAPPLIED_DYNAMIC:SM8
@@ -990,11 +990,11 @@
                             {
                                 
                                 % RHVoiceII [measure 148]                                %! SM4
-                                \override Stem.direction = #down
+                                \override Stem.direction = #down                         %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16
-                                \fff                                                     %! IC1
+                                \fff                                                     %! IC
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1343,9 +1343,9 @@
                                 af'''16
                                 ]
                                 )
-                                \revert Beam.positions
-                                \revert Slur.direction
-                                \revert Stem.direction
+                                \revert Beam.positions                                   %! OC
+                                \revert Slur.direction                                   %! OC
+                                \revert Stem.direction                                   %! OC
                                 
                             }
                         }
@@ -1353,8 +1353,8 @@
                     \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                         
                         % RHVoiceIIInserts [measure 147]                                 %! SM4
-                        \override Beam.positions = #'(15.5 . 15.5)
-                        \override Script.direction = #up
+                        \override Beam.positions = #'(15.5 . 15.5)                       %! OC
+                        \override Script.direction = #up                                 %! OC
                         s1 * 3/4
                         {
                             \override TupletBracket.stencil = ##f
@@ -1362,17 +1362,17 @@
                             {
                                 
                                 % RHVoiceIIInserts [measure 148]                         %! SM4
-                                \override Stem.direction = #up
+                                \override Stem.direction = #up                           %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 s16
                                 
@@ -1395,12 +1395,12 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     cs''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s16
                                 }
@@ -1419,16 +1419,16 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     f''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     ef'''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s16
                                     ]
-                                    \revert Beam.positions
+                                    \revert Beam.positions                               %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1443,17 +1443,17 @@
                             \times 2/3 {
                                 
                                 % RHVoiceIIInserts [measure 152]                         %! SM4
-                                \override Beam.positions = #'(13.5 . 13.5)
+                                \override Beam.positions = #'(13.5 . 13.5)               %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 c''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 [
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 bf''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 s16
                             }
@@ -1477,12 +1477,12 @@
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #2
                                 g''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 f'''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 s16
                             }
@@ -1503,7 +1503,7 @@
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #2
                                     a''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s16
                                     
@@ -1516,12 +1516,12 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     ef'''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     c'''16
-                                    -\accent                                             %! IC1
+                                    -\accent                                             %! IC
                                     
                                     s16
                                     
@@ -1531,7 +1531,7 @@
                                     
                                     s16
                                     ]
-                                    \revert Beam.positions
+                                    \revert Beam.positions                               %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -1543,11 +1543,11 @@
                             {
                                 
                                 % RHVoiceIIInserts [measure 155]                         %! SM4
-                                \override Beam.positions = #'(17 . 17)
+                                \override Beam.positions = #'(17 . 17)                   %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 f''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 [
                                 
                                 s16
@@ -1571,16 +1571,16 @@
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #2
                                 d'''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 \set stemLeftBeamCount = #2
                                 \set stemRightBeamCount = #0
                                 af'''16
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 ]
-                                \revert Beam.positions
-                                \revert Script.direction
-                                \revert Stem.direction
+                                \revert Beam.positions                                   %! OC
+                                \revert Script.direction                                 %! OC
+                                \revert Stem.direction                                   %! OC
                                 
                             }
                             \revert TupletBracket.stencil
@@ -1956,8 +1956,8 @@
                     \context LHVoiceIV = "LHVoiceIV" {
                         
                         % LHVoiceIV [measure 147]                                        %! SM4
-                        \override Beam.positions = #'(-5.5 . -5.5)
-                        \override Script.direction = #down
+                        \override Beam.positions = #'(-5.5 . -5.5)                       %! OC
+                        \override Script.direction = #down                               %! OC
                         \set PianoMusicLHStaff.forceClef = ##t                           %! REAPPLIED_CLEF:SM8
                         \clef "bass"                                                     %! REAPPLIED_CLEF:SM8
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1970,11 +1970,11 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
-                                \override Stem.direction = #down
+                                \override Stem.direction = #down                         %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 fs'16
-                                \ff                                                      %! IC1
+                                \ff                                                      %! IC
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2037,16 +2037,16 @@
                         }
                         
                         s1 * 11/8
-                        \revert Beam.positions
+                        \revert Beam.positions                                           %! OC
                         {
                             {
                                 
                                 % LHVoiceIV [measure 152]                                %! SM4
-                                \override Beam.positions = #'(-4.5 . -4.5)
+                                \override Beam.positions = #'(-4.5 . -4.5)               %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 cs''16
-                                \ff                                                      %! IC1
+                                \ff                                                      %! IC
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2086,7 +2086,7 @@
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
                                 d''16
-                                \ff                                                      %! IC1
+                                \ff                                                      %! IC
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2130,7 +2130,7 @@
                                 \set stemRightBeamCount = #0
                                 b''16
                                 ]
-                                \revert Stem.direction
+                                \revert Stem.direction                                   %! OC
                             }
                         }
                         
@@ -2138,14 +2138,14 @@
                         
                         % LHVoiceIV [measure 157]                                        %! SM4
                         s1 * 1/8
-                        \revert Beam.positions
-                        \revert Script.direction
+                        \revert Beam.positions                                           %! OC
+                        \revert Script.direction                                         %! OC
                         
                     }
                     \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                         
                         % LHVoiceIVInserts [measure 147]                                 %! SM4
-                        \override Script.direction = #up
+                        \override Script.direction = #up                                 %! OC
                         s1 * 3/8
                         {
                             \override TupletBracket.stencil = ##f
@@ -2155,7 +2155,7 @@
                                 
                                 s16
                                 
-                                \override Stem.direction = #up
+                                \override Stem.direction = #up                           %! OC
                                 c'16
                                 
                                 s16
@@ -2217,7 +2217,7 @@
                                 s16
                                 
                                 fs''16
-                                \revert Stem.direction
+                                \revert Stem.direction                                   %! OC
                                 
                                 s16
                             }
@@ -2229,14 +2229,14 @@
                         
                         % LHVoiceIVInserts [measure 157]                                 %! SM4
                         s1 * 1/8
-                        \revert Script.direction
+                        \revert Script.direction                                         %! OC
                         
                     }
                     \context LHVoiceV = "LHVoiceV" {
                         
                         % LHVoiceV [measure 147]                                         %! SM4
-                        \override Beam.positions = #'(-6 . -6)
-                        \override Script.direction = #down
+                        \override Beam.positions = #'(-6 . -6)                           %! OC
+                        \override Script.direction = #down                               %! OC
                         \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 329/272
                         \p                                                               %! REAPPLIED_DYNAMIC:SM8
@@ -2245,11 +2245,11 @@
                             \times 15/17 {
                                 {
                                     
-                                    \override Stem.direction = #down
+                                    \override Stem.direction = #down                     %! OC
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     cs'16
-                                    \pp                                                  %! IC1
+                                    \pp                                                  %! IC
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2349,7 +2349,7 @@
                         }
                         
                         s1 * 75/136
-                        \revert Beam.positions
+                        \revert Beam.positions                                           %! OC
                         {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 15/17 {
@@ -2358,7 +2358,7 @@
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
                                     ef''16
-                                    \pp                                                  %! IC1
+                                    \pp                                                  %! IC
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2453,7 +2453,7 @@
                                     cs'''16
                                     ]
                                     )
-                                    \revert Stem.direction
+                                    \revert Stem.direction                               %! OC
                                 }
                             }
                         }
@@ -2468,14 +2468,14 @@
                         
                         % LHVoiceV [measure 157]                                         %! SM4
                         s1 * 1/8
-                        \revert Script.direction
+                        \revert Script.direction                                         %! OC
                         
                     }
                     \context LHVoiceVInserts = "LHVoiceVInserts" {
                         
                         % LHVoiceVInserts [measure 147]                                  %! SM4
-                        \override Script.direction = #up
-                        \override Beam.positions = #'(9 . 9)
+                        \override Script.direction = #up                                 %! OC
+                        \override Beam.positions = #'(9 . 9)                             %! OC
                         s1 * 329/272
                         {
                             \override TupletBracket.stencil = ##f
@@ -2494,11 +2494,11 @@
                                 {
                                     
                                     % LHVoiceVInserts [measure 150]                      %! SM4
-                                    \override Stem.direction = #up
+                                    \override Stem.direction = #up                       %! OC
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     b'16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     s16
                                     
@@ -2517,7 +2517,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     fs''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     s16
                                     
@@ -2530,12 +2530,12 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     c'''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     d'''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     ]
                                 }
                             }
@@ -2563,7 +2563,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     a'16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     s16
                                     
@@ -2583,7 +2583,7 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     e''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     s16
                                     
@@ -2596,14 +2596,14 @@
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #2
                                     af''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     
                                     \set stemLeftBeamCount = #2
                                     \set stemRightBeamCount = #0
                                     cs'''16
-                                    -\staccato                                           %! IC1
+                                    -\staccato                                           %! IC
                                     ]
-                                    \revert Stem.direction
+                                    \revert Stem.direction                               %! OC
                                 }
                             }
                             \revert TupletBracket.stencil
@@ -2620,8 +2620,8 @@
                         
                         % LHVoiceVInserts [measure 157]                                  %! SM4
                         s1 * 1/8
-                        \revert Script.direction
-                        \revert Beam.positions
+                        \revert Script.direction                                         %! OC
+                        \revert Beam.positions                                           %! OC
                         
                     }
                     \context LHVoiceVI = "LHVoiceVI" {

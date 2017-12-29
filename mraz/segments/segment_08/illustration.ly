@@ -1037,11 +1037,11 @@
                             {
                                 
                                 % LHVoiceV [measure 158]                                 %! SM4
-                                \override TupletBracket.direction = #up
+                                \override TupletBracket.direction = #up                  %! OC
                                 \ottava #-1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 g,8.
-                                \ppp                                                     %! IC1
+                                \ppp                                                     %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1091,7 +1091,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r32
                                 
                                 a,,8
@@ -1116,7 +1116,7 @@
                                 a,,8
                                 
                                 r32
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         {
@@ -1176,7 +1176,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r32
                                 
                                 d,8.
@@ -1190,7 +1190,7 @@
                                 b,,8.
                                 
                                 r32
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         {
@@ -1281,7 +1281,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r4...
                                 
                                 c,,32
@@ -1295,7 +1295,7 @@
                                 ef,,32
                                 
                                 r4...
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         {
@@ -1401,13 +1401,13 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r4...
                                 
                                 g,,32
                                 
                                 r4...
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         {
@@ -1482,7 +1482,7 @@
                                 \ottava #0
                                 
                                 r32
-                                \revert TupletBracket.direction
+                                \revert TupletBracket.direction                          %! OC
                                 
                             }
                         }
@@ -1529,8 +1529,8 @@
                     \context LHVoiceVI = "LHVoiceVI" {
                         
                         % LHVoiceVI [measure 158]                                        %! SM4
-                        \override Script.direction = #down
-                        \override TupletBracket.staff-padding = #6
+                        \override Script.direction = #down                               %! OC
+                        \override TupletBracket.staff-padding = #6                       %! OC
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 11/16
                         \f                                                               %! REAPPLIED_DYNAMIC:SM8
@@ -1538,10 +1538,10 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6 {
                                 
-                                \override Stem.direction = #down
+                                \override Stem.direction = #down                         %! OC
                                 af,,4
-                                -\tenuto                                                 %! IC1
-                                \f                                                       %! IC1
+                                -\tenuto                                                 %! IC
+                                \f                                                       %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1560,16 +1560,16 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.staff-position = #-10
+                                \override Rest.staff-position = #-10                     %! OC
                                 r4
                                 
                                 c,,4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 bf,,,4
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                             }
@@ -1582,7 +1582,7 @@
                                 
                                 % LHVoiceVI [measure 161]                                %! SM4
                                 b,,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1601,14 +1601,14 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
-                                \override Rest.direction = #up
+                                \override Rest.direction = #up                           %! OC
                                 r4
                                 
                                 ef,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
-                                \revert Rest.direction
+                                \revert Rest.direction                                   %! OC
                             }
                         }
                         
@@ -1618,7 +1618,7 @@
                             \times 4/3 {
                                 
                                 bf,,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1640,12 +1640,12 @@
                                 r8.
                                 
                                 c,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8.
                                 
                                 e,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8.
                             }
@@ -1657,7 +1657,7 @@
                             \times 4/3 {
                                 
                                 g,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1679,12 +1679,12 @@
                                 r8.
                                 
                                 f,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8.
                                 
                                 cs,,16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8.
                             }
@@ -1696,7 +1696,7 @@
                             \times 5/4 {
                                 
                                 d,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1716,13 +1716,13 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 e,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 af,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 fs,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                             }
                         }
                         
@@ -1731,7 +1731,7 @@
                             \times 2/3 {
                                 
                                 e,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1754,16 +1754,16 @@
                                 
                                 % LHVoiceVI [measure 168]                                %! SM4
                                 f,,8
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r4
                                 
                                 g,,8
-                                -\tenuto                                                 %! IC1
-                                \revert Stem.direction
+                                -\tenuto                                                 %! IC
+                                \revert Stem.direction                                   %! OC
                                 
                                 r4
-                                \revert Rest.staff-position
+                                \revert Rest.staff-position                              %! OC
                             }
                         }
                         
@@ -1771,8 +1771,8 @@
                         
                         % LHVoiceVI [measure 169]                                        %! SM4
                         s1 * 1/2
-                        \revert Script.direction
-                        \revert TupletBracket.staff-padding
+                        \revert Script.direction                                         %! OC
+                        \revert TupletBracket.staff-padding                              %! OC
                         
                     }
                     \context LHVoiceVIInserts = "LHVoiceVIInserts" {

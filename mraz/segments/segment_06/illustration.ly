@@ -320,9 +320,9 @@
                                 
                                 % RHVoiceIII [measure 143]                               %! SM4
                                 fs'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
-                                \pp                                                      %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
+                                \pp                                                      %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -342,30 +342,30 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 a'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 b''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                             }
                             {
                                 
                                 c'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 af''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 b''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 cs''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                             }
@@ -376,8 +376,8 @@
                                 
                                 % RHVoiceIII [measure 144]                               %! SM4
                                 bf'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -397,12 +397,12 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 cs'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 ef'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                             }
                         }
                         {
@@ -429,24 +429,24 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 d'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 e'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 c'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 ef'''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 f''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                             }
@@ -457,8 +457,8 @@
                                 
                                 % RHVoiceIII [measure 146]                               %! SM4
                                 af''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -478,16 +478,16 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 e''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 g''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                                 a''8
-                                -\staccato                                               %! IC1
-                                -\tenuto                                                 %! IC1
+                                -\staccato                                               %! IC
+                                -\tenuto                                                 %! IC
                                 
                             }
                         }
@@ -647,8 +647,8 @@
                             \times 9/8 {
                                 
                                 g'16
-                                -\tenuto                                                 %! IC1
-                                \mp                                                      %! IC1
+                                -\tenuto                                                 %! IC
+                                \mp                                                      %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -670,17 +670,17 @@
                                 r16
                                 
                                 af'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 bf'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                                 
                                 a'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r16
                             }
@@ -692,7 +692,7 @@
                             \times 7/6 {
                                 
                                 b'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -714,17 +714,17 @@
                                 r8
                                 
                                 c''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                                 
                                 d''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                                 
                                 cs''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r8
                             }
@@ -735,7 +735,7 @@
                             {
                                 
                                 d'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -757,22 +757,22 @@
                                 r32
                                 
                                 f'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r32
                                 
                                 g'16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r32
                                 
                                 ef''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r32
                                 
                                 e''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r32
                             }
@@ -782,7 +782,7 @@
                                 
                                 % LHVoiceIV [measure 146]                                %! SM4
                                 fs''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -804,7 +804,7 @@
                                 r32
                                 
                                 f''16
-                                -\tenuto                                                 %! IC1
+                                -\tenuto                                                 %! IC
                                 
                                 r32
                             }
