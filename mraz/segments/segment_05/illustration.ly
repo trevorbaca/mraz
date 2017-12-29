@@ -959,15 +959,15 @@
                                     s8
                                     
                                     \override Stem.direction = #up                       %! OC
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                     af'8
                                     -\accent                                             %! IC
                                     \fff                                                 %! REDUNDANT_DYNAMIC:SM8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     fs'8
                                     -\accent                                             %! IC
                                 }
@@ -1035,8 +1035,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     c''8
                                     -\accent                                             %! IC
                                     
@@ -1049,13 +1049,13 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     cs''8
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     e''8
                                     -\accent                                             %! IC
                                 }
@@ -1067,8 +1067,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     ef'8
                                     -\accent                                             %! IC
                                     
@@ -1112,8 +1112,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     fs''8
                                     -\accent                                             %! IC
                                     
@@ -1128,13 +1128,13 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     ef''8
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     f''8
                                     -\accent                                             %! IC
                                     
@@ -1144,8 +1144,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     e''8
                                     -\accent                                             %! IC
                                     
@@ -1155,8 +1155,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     f'8
                                     -\accent                                             %! IC
                                     
@@ -1169,8 +1169,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     af'8
                                     -\accent                                             %! IC
                                     
@@ -1198,15 +1198,15 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     bf''8
                                     -\accent                                             %! IC
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     af''8
                                     -\accent                                             %! IC
                                     
@@ -1217,8 +1217,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     g''8
                                     -\accent                                             %! IC
                                     
@@ -1230,8 +1230,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     fs''8
                                     -\accent                                             %! IC
                                     
@@ -1241,8 +1241,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     a''8
                                     -\accent                                             %! IC
                                     
@@ -1255,13 +1255,13 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     c''8
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     b'8
                                     -\accent                                             %! IC
                                 }
@@ -1276,8 +1276,8 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     ef''8
                                     -\accent                                             %! IC
                                     
@@ -1329,8 +1329,8 @@
                                 }
                                 {
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     ef''8
                                     -\accent                                             %! IC
                                     
@@ -1345,20 +1345,20 @@
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     b'8
                                     -\accent                                             %! IC
                                     
                                     s8
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     fs'8
                                     -\accent                                             %! IC
                                     
-                                    \set stemLeftBeamCount = #1
-                                    \set stemRightBeamCount = #1
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
                                     f'8
                                     -\accent                                             %! IC
                                     \revert Stem.direction                               %! OC
