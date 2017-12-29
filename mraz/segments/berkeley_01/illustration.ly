@@ -399,6 +399,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [8]                                      %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -832,9 +840,10 @@
                                 \override TextScript.direction = #up                     %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                                 \dynamicUp                                               %! IC
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'''8
                                 -\accent                                                 %! IC
-                                \fff                                                     %! IC
+                                \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -970,10 +979,11 @@
                             \times 4/3 {
                                 
                                 % RHVoiceIII [measure 5]                                 %! SM4
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 bf'''8
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                \pp                                                      %! IC
+                                \pp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1057,9 +1067,10 @@
                                 % RHVoiceIII [measure 8]                                 %! SM4
                                 \override TupletBracket.direction = #down                %! OC
                                 \ottava #1
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4
                                 -\tenuto                                                 %! IC
-                                \mf                                                      %! IC
+                                \mf                                                      %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -1410,8 +1421,9 @@
                                 % LHVoiceIV [measure 2]                                  %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d''16
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1543,8 +1555,9 @@
                                 % LHVoiceV [measure 3]                                   %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \dynamicUp                                               %! IC
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 bf,,8.
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1649,8 +1662,9 @@
                                 \clef "bass"                                             %! REDUNDANT_CLEF:SM8
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                                 %%% \override PianoMusicLHStaff.Clef.color = ##f         %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                                \once \override LHVoiceVI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b,,,8
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP

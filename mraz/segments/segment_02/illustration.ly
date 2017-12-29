@@ -85,6 +85,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -389,9 +397,10 @@
                                 \override Slur.direction = #up                           %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs16
                                 -\staccato                                               %! IC
-                                \ppp                                                     %! IC
+                                \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP

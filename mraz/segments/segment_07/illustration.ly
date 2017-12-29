@@ -83,6 +83,14 @@
                                                 }                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -399,8 +407,9 @@
                                         }                                                %! REAPPLIED_INSTRUMENT:SM8
                                     \dynamicUp                                           %! IC
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                                    \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     e''16
-                                    \fff                                                 %! IC
+                                    \fff                                                 %! EXPLICIT_DYNAMIC:SM8
                                     [
                                     ^ \markup {
                                         \column
@@ -1004,8 +1013,9 @@
                                 \override Stem.direction = #down                         %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c''16
-                                \fff                                                     %! IC
+                                \fff                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 (
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1984,8 +1994,9 @@
                                 \override Stem.direction = #down                         %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs'16
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2056,8 +2067,9 @@
                                 \override Beam.positions = #'(-4.5 . -4.5)               %! OC
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 cs''16
-                                \ff                                                      %! IC
+                                \ff                                                      %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2096,8 +2108,9 @@
                                 % LHVoiceIV [measure 155]                                %! SM4
                                 \set stemLeftBeamCount = #0
                                 \set stemRightBeamCount = #2
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 d''16
-                                \ff                                                      %! IC
+                                \ff                                                      %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2259,8 +2272,9 @@
                                     \override Stem.direction = #down                     %! OC
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     cs'16
-                                    \pp                                                  %! IC
+                                    \pp                                                  %! EXPLICIT_DYNAMIC:SM8
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2368,8 +2382,9 @@
                                     
                                     \set stemLeftBeamCount = #0
                                     \set stemRightBeamCount = #2
+                                    \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                     ef''16
-                                    \pp                                                  %! IC
+                                    \pp                                                  %! REDUNDANT_DYNAMIC:SM8
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP

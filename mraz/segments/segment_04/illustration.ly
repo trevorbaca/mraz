@@ -83,6 +83,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -318,6 +326,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -714,6 +730,14 @@
                             %%%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%                 [F.21]                                   %! STAGE_NUMBER_MARKUP:SM3
                             %%%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -902,6 +926,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1138,6 +1170,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1301,6 +1341,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1618,8 +1666,9 @@
                                 \once \override TextScript.color = #black                %! OC
                                 \override Stem.direction = #up                           %! OC
                                 \ottava #1
+                                \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d''''8
-                                \mf                                                      %! IC
+                                \mf                                                      %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 (
                                 ^ \markup {                                              %! IC
@@ -1821,9 +1870,10 @@
                             {
                                 
                                 % RHVoiceI [measure 121]                                 %! SM4
+                                \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''''1..
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2130,10 +2180,11 @@
                                 \once \override Script.direction = #up                   %! OC
                                 \arpeggioArrowUp                                         %! IC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 <a g' af' b' cs'' f'' ef''' c''''>2.
                                 -\marcato                                                %! IC
                                 \arpeggio                                                %! IC
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2172,9 +2223,10 @@
                                 
                                 \set stemLeftBeamCount = #1
                                 \set stemRightBeamCount = #1
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef'''8
                                 -\staccato                                               %! IC
-                                \mp                                                      %! IC
+                                \mp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 
                                 s8
                                 
@@ -2828,10 +2880,11 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 <f'' ef''' c'''' e'''' fs'''' bf''''>1
                                 -\marcato                                                %! IC
                                 \arpeggio                                                %! IC
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -3085,9 +3138,10 @@
                                 \override TextScript.direction = #up                     %! OC
                                 \override TupletBracket.direction = #up                  %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef8
                                 -\tenuto                                                 %! IC
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -3310,9 +3364,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''8
                                 -\tenuto                                                 %! IC
-                                \mp                                                      %! IC
+                                \mp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
                                         \upright                                         %! IC
@@ -4662,9 +4717,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 af8.
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r16
                                 
@@ -4769,9 +4825,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 <g b f' fs' a'>8.
                                 -\marcato                                                %! IC
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r2
                             }
@@ -4801,9 +4858,10 @@
                                 
                                 r4
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 af8.
                                 -\tenuto                                                 %! IC
-                                \f                                                       %! IC
+                                \f                                                       %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r16
                                 
@@ -4869,9 +4927,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 <g b f' fs' a'>8.
                                 -\marcato                                                %! IC
-                                \ff                                                      %! IC
+                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r2
                             }
@@ -5132,8 +5191,9 @@
                                 \once \override Stem.direction = #up                     %! OC
                                 \override TupletBracket.staff-padding = #2               %! OC
                                 \crossStaff                                              %! IC
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 <g, e f af>16
-                                \mp                                                      %! IC
+                                \mp                                                      %! EXPLICIT_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -5591,9 +5651,10 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
+                                \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 af8.
                                 -\tenuto                                                 %! IC
-                                \p                                                       %! IC
+                                \p                                                       %! EXPLICIT_DYNAMIC:SM8
                                 
                                 r16
                                 

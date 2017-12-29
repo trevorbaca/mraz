@@ -83,6 +83,14 @@
                                                 }                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -161,6 +169,14 @@
                                                     112                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
@@ -241,6 +257,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -344,6 +368,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -447,6 +479,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -550,6 +590,14 @@
                                                 }                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'DeepPink1)                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                                rit.                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -794,9 +842,10 @@
                                 \override TextScript.direction = #up                     %! OC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
                                 \dynamicUp                                               %! IC
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'''8
                                 -\accent                                                 %! IC
-                                \fff                                                     %! IC
+                                \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -912,9 +961,10 @@
                                     \override Stem.direction = #up                       %! OC
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
+                                    \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                     af'8
                                     -\accent                                             %! IC
-                                    \fff                                                 %! IC
+                                    \fff                                                 %! REDUNDANT_DYNAMIC:SM8
                                     
                                     \set stemLeftBeamCount = #1
                                     \set stemRightBeamCount = #1
@@ -1373,9 +1423,10 @@
                                 % RHVoiceIII [measure 132]                               %! SM4
                                 \override TupletBracket.direction = #down                %! OC
                                 \ottava #1
+                                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4
                                 -\tenuto                                                 %! IC
-                                \mf                                                      %! IC
+                                \mf                                                      %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {
@@ -1442,8 +1493,9 @@
                                     % RHVoiceIII [measure 133]                           %! SM4
                                     \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
+                                    \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     d'''8
-                                    \mp                                                  %! IC
+                                    \mp                                                  %! EXPLICIT_DYNAMIC:SM8
                                     [
                                     (
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2526,10 +2578,11 @@
                                 
                                 r2
                                 
+                                \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 b'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                \p                                                       %! IC
+                                \p                                                       %! REDUNDANT_DYNAMIC:SM8
                                 (
                                 
                                 r8.
