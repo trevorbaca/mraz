@@ -4695,8 +4695,8 @@
                             {
                                 
                                 % LHVoiceV [measure 91]                                  %! SM4
-                                \dynamicDown                                             %! IC
                                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                                \dynamicDown                                             %! IC
                                 r2.
                                 \ppp                                                     %! REAPPLIED_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP

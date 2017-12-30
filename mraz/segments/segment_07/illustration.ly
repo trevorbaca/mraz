@@ -405,8 +405,8 @@
                                     \set PianoMusicStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:SM8
                                         \null                                            %! REAPPLIED_INSTRUMENT:SM8
                                         }                                                %! REAPPLIED_INSTRUMENT:SM8
-                                    \dynamicUp                                           %! IC
                                     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                                    \dynamicUp                                           %! IC
                                     \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     e''16
                                     \fff                                                 %! EXPLICIT_DYNAMIC:SM8
@@ -1002,8 +1002,8 @@
                         % RHVoiceII [measure 147]                                        %! SM4
                         \override Beam.positions = #'(-4.5 . -4.5)                       %! OC
                         \override Slur.direction = #up                                   %! OC
-                        \dynamicDown                                                     %! IC
                         \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \dynamicDown                                                     %! IC
                         s1 * 3/4
                         \fff                                                             %! REAPPLIED_DYNAMIC:SM8
                         {
