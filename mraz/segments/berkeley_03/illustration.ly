@@ -5284,8 +5284,8 @@
                                 
                                 % LHVoiceV [measure 22]                                  %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \dynamicDown                                             %! IC
                                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                                \dynamicDown                                             %! IC
                                 r2.
                                 \f                                                       %! REAPPLIED_DYNAMIC:SM8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
