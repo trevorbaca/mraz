@@ -2301,6 +2301,7 @@
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'16
                                 [
                                 \<
@@ -2400,6 +2401,7 @@
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 cs''''16
                                 ]
                                 \ff
@@ -2419,6 +2421,7 @@
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 ef''16
                                 [
                                 \<
@@ -2526,6 +2529,7 @@
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 bf'''16
                                 ]
                                 \ff
@@ -2595,6 +2599,7 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 cs''16
                                 [
                                 \<
@@ -2712,6 +2717,7 @@
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 f''''16
                                 ]
                                 \ff
@@ -2730,6 +2736,7 @@
                                 \override TextScript.direction = #up                     %! OC
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''16
                                 [
                                 \<
@@ -2798,6 +2805,7 @@
                                 \once \override Dots.color = #red
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fs''''16
                                 ]
                                 \ff
@@ -2821,11 +2829,11 @@
                                 \once \override NoteHead.color = #red
                                 \once \override Stem.color = #red
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 <f'' ef''' c'''' e'''' fs'''' bf''''>1
                                 -\marcato                                                %! IC
                                 \arpeggio                                                %! IC
-                                \ff                                                      %! EXPLICIT_DYNAMIC:SM8
+                                \ff                                                      %! REDUNDANT_DYNAMIC:SM8
                                 ^ \markup {
                                     \column
                                         {

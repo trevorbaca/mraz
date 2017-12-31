@@ -596,6 +596,7 @@
                                 \set stemRightBeamCount = 2
                                 \ottava #1
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'16
                                 [
                                 \<
@@ -695,6 +696,7 @@
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 cs''''16
                                 ]
                                 \ff

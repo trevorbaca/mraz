@@ -75,7 +75,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='RHVoiceII',
                                 prototype='abjad.Dynamic',
-                                value='ppp',
+                                value='ff',
                                 ),
                             ],
                         ),
