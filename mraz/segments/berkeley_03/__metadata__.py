@@ -53,7 +53,7 @@ metadata = abjad.TypedOrderedDict(
                         'PianoMusicStaffGroup',
                         [
                             abjad.Momento(
-                                context='RHVoiceI',
+                                context='LHVoiceVI',
                                 prototype='abjad.Instrument',
                                 value='Piano',
                                 ),
