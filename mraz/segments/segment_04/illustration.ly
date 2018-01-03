@@ -15,24 +15,24 @@
                 
                 % GlobalSkips [measure 91]                                               %! SM4
                 %%% \once \override TextSpanner.bound-details.left.text =
-                %%% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #1.25                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
+            %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #1.25                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
                 \once \override TextSpanner.arrow-width = 0.25                           %! SM29
                 \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -215,22 +215,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             112                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -254,24 +254,24 @@
                 
                 % GlobalSkips [measure 97]                                               %! SM4
                 %%% \once \override TextSpanner.bound-details.left.text =
-                %%% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #1.25                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
+            %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #1.25                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
                 \once \override TextSpanner.arrow-width = 0.25                           %! SM29
                 \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -548,22 +548,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             112                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -799,22 +799,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -838,24 +838,24 @@
                 
                 % GlobalSkips [measure 115]                                              %! SM4
                 %%% \once \override TextSpanner.bound-details.left.text =
-                %%% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #1.25                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
+            %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             112                                                          %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #1.25                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
                 \once \override TextSpanner.arrow-width = 0.25                           %! SM29
                 \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -1013,22 +1013,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -1076,24 +1076,24 @@
                 
                 % GlobalSkips [measure 121]                                              %! SM4
                 %%% \once \override TextSpanner.bound-details.left.text =
-                %%% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #1.25                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
+            %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             112                                                          %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #1.25                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
                 \once \override TextSpanner.arrow-width = 0.25                           %! SM29
                 \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -1203,22 +1203,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -1242,24 +1242,24 @@
                 
                 % GlobalSkips [measure 124]                                              %! SM4
                 %%% \once \override TextSpanner.bound-details.left.text =
-                %%% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \hspace                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #1.25                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
+            %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%             112                                                          %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! EXPLICIT_METRONOME_MARK:SM27
+            %F%         #1.25                                                            %! EXPLICIT_METRONOME_MARK:SM27
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       %! SM29
                 \once \override TextSpanner.arrow-width = 0.25                           %! SM29
                 \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -1416,22 +1416,22 @@
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         #-6                                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         \general-align                                                   %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #Y                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             #DOWN                                                        %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%             84                                                           %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%         }                                                                %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
+            %F%     }                                                                    %! EXPLICIT_METRONOME_MARK:SM27                %! SM29
                 ^ \markup {                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'blue)                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
@@ -5789,29 +5789,29 @@
                         \clef "bass"                                                     %! REAPPLIED_CLEF:SM8
                         \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                        %%% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                    %F% \override PianoMusicLHStaff.Clef.color = ##f                     %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         s1 * 3/2
                         \f                                                               %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
-                                    %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             (“Piano”                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 #16                              %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 Piano                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \concat                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     \null                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     )                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%     }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F% \line                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%     {                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%         \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%             (“Piano”                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%         \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%             \hcenter-in                              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                 #16                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                 Piano                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%         \concat                                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%             {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                 \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                     \null                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                 \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%                     )                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%             }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                %F%     }                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
