@@ -14,12 +14,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 69]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -37,20 +37,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 16/4                                                               %! REAPPLIED_TIME_SIGNATURE:SM8
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'green4)         %! REAPPLIED_TIME_SIGNATURE_COLOR:SM6
                 s1 * 4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -101,12 +101,12 @@
                     }
                 
                 % GlobalSkips [measure 70]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -124,20 +124,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 10/4                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/2
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -188,12 +188,12 @@
                     }
                 
                 % GlobalSkips [measure 71]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -211,20 +211,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -299,12 +299,12 @@
                     }
                 
                 % GlobalSkips [measure 73]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -322,20 +322,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -410,12 +410,12 @@
                     }
                 
                 % GlobalSkips [measure 75]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -433,20 +433,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -524,7 +524,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -580,15 +580,15 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 78]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -606,19 +606,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 29/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 29/16
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -696,7 +696,7 @@
                 \time 21/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 21/16
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -752,7 +752,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 81]                                               %! SM4
                 \time 15/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -803,12 +803,12 @@
                     }
                 
                 % GlobalSkips [measure 83]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -826,19 +826,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -892,7 +892,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -948,7 +948,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 \override Score.BarLine.transparent = ##f                                %! SM5
                 \bar "|"                                                                 %! SM5
                 
@@ -1537,7 +1537,7 @@
                                 -\staccato                                               %! IC
                                 \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1575,7 +1575,7 @@
                                 \set stemRightBeamCount = 1
                                 af'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1583,7 +1583,7 @@
                                 \set stemRightBeamCount = 2
                                 bf16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1604,7 +1604,7 @@
                                 \set stemRightBeamCount = 1
                                 a''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1612,7 +1612,7 @@
                                 \set stemRightBeamCount = 2
                                 d16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1638,7 +1638,7 @@
                                 \set stemRightBeamCount = 1
                                 f''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1646,7 +1646,7 @@
                                 \set stemRightBeamCount = 2
                                 a16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1667,7 +1667,7 @@
                                 \set stemRightBeamCount = 1
                                 c'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1675,7 +1675,7 @@
                                 \set stemRightBeamCount = 2
                                 e16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1696,7 +1696,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1704,7 +1704,7 @@
                                 \set stemRightBeamCount = 2
                                 b16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1716,7 +1716,7 @@
                                 a'16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -1729,7 +1729,7 @@
                                 d'16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1767,7 +1767,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1775,7 +1775,7 @@
                                 \set stemRightBeamCount = 2
                                 f'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1801,7 +1801,7 @@
                                 \set stemRightBeamCount = 1
                                 c''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1809,7 +1809,7 @@
                                 \set stemRightBeamCount = 2
                                 e'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1835,7 +1835,7 @@
                                 \set stemRightBeamCount = 1
                                 b''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1843,7 +1843,7 @@
                                 \set stemRightBeamCount = 2
                                 g'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1864,7 +1864,7 @@
                                 \set stemRightBeamCount = 1
                                 cs''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1872,7 +1872,7 @@
                                 \set stemRightBeamCount = 2
                                 af'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1894,7 +1894,7 @@
                                 a''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -1907,7 +1907,7 @@
                                 b'16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1940,7 +1940,7 @@
                                 \set stemRightBeamCount = 1
                                 c''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1948,7 +1948,7 @@
                                 \set stemRightBeamCount = 2
                                 e'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1964,7 +1964,7 @@
                                 \set stemRightBeamCount = 1
                                 bf'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1972,7 +1972,7 @@
                                 \set stemRightBeamCount = 2
                                 ef'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1988,7 +1988,7 @@
                                 \set stemRightBeamCount = 1
                                 a''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1996,7 +1996,7 @@
                                 \set stemRightBeamCount = 2
                                 d'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2017,7 +2017,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2025,7 +2025,7 @@
                                 \set stemRightBeamCount = 2
                                 f'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2042,7 +2042,7 @@
                                 g''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 \break                                                   %! IC
                             }
                         }
@@ -2056,7 +2056,7 @@
                                 fs''16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2089,7 +2089,7 @@
                                 \set stemRightBeamCount = 1
                                 f'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2097,7 +2097,7 @@
                                 \set stemRightBeamCount = 2
                                 af''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2108,7 +2108,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2116,7 +2116,7 @@
                                 \set stemRightBeamCount = 2
                                 b''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2127,7 +2127,7 @@
                                 \set stemRightBeamCount = 1
                                 a'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2135,7 +2135,7 @@
                                 \set stemRightBeamCount = 2
                                 d''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2157,7 +2157,7 @@
                                 ef''''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 \revert Script.direction                                 %! OC
                                 \revert Slur.direction                                   %! OC
                                 \revert Stem.direction                                   %! OC
@@ -2173,7 +2173,7 @@
                                 f''16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2211,7 +2211,7 @@
                                 \set stemRightBeamCount = 1
                                 fs''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2219,7 +2219,7 @@
                                 \set stemRightBeamCount = 2
                                 c''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2235,7 +2235,7 @@
                                 \set stemRightBeamCount = 1
                                 af''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2243,7 +2243,7 @@
                                 \set stemRightBeamCount = 2
                                 bf''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2259,7 +2259,7 @@
                                 \set stemRightBeamCount = 1
                                 g''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -2267,7 +2267,7 @@
                                 \set stemRightBeamCount = 2
                                 b''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -2279,7 +2279,7 @@
                                 d''''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -2409,7 +2409,7 @@
                                 
                                 % RHVoiceIII [measure 69]                                %! SM4
                                 \override TupletBracket.direction = #down                %! OC
-                                \ottava #1
+                                \ottava #1                                               %! SC
                                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4
                                 -\tenuto                                                 %! IC
@@ -2452,7 +2452,7 @@
                                 
                                 g'''4
                                 -\tenuto                                                 %! IC
-                                \ottava #0
+                                \ottava #0                                               %! SC
                                 
                                 r4
                                 \revert Rest.direction                                   %! OC
@@ -2472,7 +2472,7 @@
                                     d'''8
                                     \mp                                                  %! EXPLICIT_DYNAMIC:SM8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2497,14 +2497,14 @@
                                     
                                     c'''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     a''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     bf''8
                                     
@@ -2518,13 +2518,13 @@
                                     
                                     ef''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     f''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     fs''8
                                     
@@ -2532,14 +2532,14 @@
                                     
                                     ef''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     c''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     cs''8
                                     
@@ -2549,7 +2549,7 @@
                                     
                                     g'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -2560,7 +2560,7 @@
                                     
                                     e'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     g'8
                                     
@@ -2568,7 +2568,7 @@
                                     
                                     d'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -2615,7 +2615,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     cs'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2651,7 +2651,7 @@
                                     \once \override Stem.color = #red
                                     g''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     - \tweak color #red                                  %! SM14
                                     ^ \markup { @ }                                      %! SM14
                                 }
@@ -2664,7 +2664,7 @@
                                     \once \override Stem.color = #red
                                     g''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     - \tweak color #red                                  %! SM14
                                     ^ \markup { @ }                                      %! SM14
                                     
@@ -2674,14 +2674,14 @@
                                     
                                     f''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     e''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     ef''8
                                     
@@ -2695,18 +2695,18 @@
                                     s8
                                     
                                     bf'8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     fs''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     b'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -2716,7 +2716,7 @@
                                     
                                     f'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     d''8
                                     
@@ -2732,7 +2732,7 @@
                                     
                                     b'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -2750,7 +2750,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     a'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2775,14 +2775,14 @@
                                     
                                     g'''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     af''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     f'''8
                                     
@@ -2798,25 +2798,25 @@
                                     
                                     d''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     af''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
                                     s8
                                     
                                     fs''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     a''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -2831,14 +2831,14 @@
                                     s8
                                     
                                     ef''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     b'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     fs'8
                                     ]
@@ -2846,7 +2846,7 @@
                                     s8
                                     
                                     a'8
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -2891,7 +2891,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     c'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2922,13 +2922,13 @@
                                     s8
                                     
                                     fs'''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     bf''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -2937,12 +2937,12 @@
                                     
                                     af''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     cs'''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -2957,18 +2957,18 @@
                                     s8
                                     
                                     g''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     cs''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -2979,7 +2979,7 @@
                                     
                                     e''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     a'8
                                     
@@ -2995,13 +2995,13 @@
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     c''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     b'8
                                     
@@ -3009,7 +3009,7 @@
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -3059,7 +3059,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                     f'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -3090,7 +3090,7 @@
                                     
                                     b''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
@@ -3098,19 +3098,19 @@
                                     
                                     d''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     e''8
                                     
                                     cs''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     af''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -3125,7 +3125,7 @@
                                     
                                     d'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                     \revert TupletBracket.staff-padding                  %! OC
                                 }
@@ -3670,7 +3670,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 \p                                                       %! REDUNDANT_DYNAMIC:SM8
-                                (
+                                (                                                        %! SC
                                 
                                 r8.
                                 
@@ -3683,7 +3683,7 @@
                                 cs8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r8.
                                 
@@ -3723,7 +3723,7 @@
                                 af'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 r16
                                 
@@ -3742,7 +3742,7 @@
                                 cs8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                                 \revert Slur.direction                                   %! OC
@@ -3754,7 +3754,7 @@
                                 b'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3778,7 +3778,7 @@
                                 g8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                             }
@@ -3794,7 +3794,7 @@
                                 b'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3830,7 +3830,7 @@
                                 af,8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                                 \revert Slur.direction                                   %! OC
@@ -3843,7 +3843,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3866,7 +3866,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -3876,7 +3876,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3903,7 +3903,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -3932,13 +3932,13 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 ef,8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 r4
                                 
@@ -3977,7 +3977,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 af,8
                                 -\staccato                                               %! IC
@@ -3987,7 +3987,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -3997,7 +3997,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4028,7 +4028,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         
@@ -4303,7 +4303,7 @@
                                 \override Stem.direction = #down                         %! OC
                                 \override TupletBracket.direction = #down                %! OC
                                 \override TupletBracket.staff-padding = #6               %! OC
-                                \ottava #-1
+                                \ottava #-1                                              %! SC
                                 \set PianoMusicLHStaff.forceClef = ##t                   %! REDUNDANT_CLEF:SM8
                                 \clef "bass"                                             %! REDUNDANT_CLEF:SM8
                                 \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
@@ -4335,7 +4335,7 @@
                                 
                                 ef,,8
                                 \revert Stem.direction                                   %! OC
-                                \ottava #0
+                                \ottava #0                                               %! SC
                                 
                                 r4
                                 \revert Rest.direction                                   %! OC
@@ -4457,7 +4457,7 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>16
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -4466,7 +4466,7 @@
                                 % LHResonanceVoice [measure 79]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <cs,, cs,>1.
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4486,7 +4486,7 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>8.
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -4513,10 +4513,10 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <ef,, ef,>4
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 
                                 <ef,, ef,>16
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -4525,7 +4525,7 @@
                                 % LHResonanceVoice [measure 81]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <ef,, ef,>2...
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4550,7 +4550,7 @@
                                 
                                 % LHResonanceVoice [measure 82]                          %! SM4
                                 <ef,, ef,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP

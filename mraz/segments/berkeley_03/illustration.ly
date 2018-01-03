@@ -14,12 +14,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 22]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -37,20 +37,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 6/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -200,7 +200,7 @@
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -256,15 +256,15 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 28]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -282,19 +282,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 6/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -539,7 +539,7 @@
                 \time 5/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -595,7 +595,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 38]                                               %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -694,31 +694,31 @@
                     }
                 
                 % GlobalSkips [measure 42]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \large
                         \upright
                             rit.
                     \hspace
                         #0.75
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -799,7 +799,7 @@
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -855,15 +855,15 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 46]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -881,19 +881,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1019,7 +1019,7 @@
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1075,7 +1075,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 51]                                               %! SM4
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1102,12 +1102,12 @@
                     }
                 
                 % GlobalSkips [measure 52]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -1125,19 +1125,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1215,7 +1215,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1271,15 +1271,15 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 55]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -1297,19 +1297,19 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1434,7 +1434,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -1490,7 +1490,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 60]                                               %! SM4
                 \time 6/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1750,12 +1750,12 @@
                                 \once \override DynamicText.extra-offset = #'(0 . 1)     %! OC
                                 \once \override TextScript.color = #black                %! OC
                                 \override Stem.direction = #up                           %! OC
-                                \ottava #1
+                                \ottava #1                                               %! SC
                                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d''''8
                                 \mf                                                      %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                (
+                                (                                                        %! SC
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
                                         \upright                                         %! IC
@@ -1764,7 +1764,7 @@
                                 
                                 af''''8
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 s8
                                 
@@ -1776,11 +1776,11 @@
                                 
                                 b'''8
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 e'''8
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 r4.
                                 \revert TextScript.direction                             %! OC
@@ -1872,13 +1872,13 @@
                                 
                                 c''''8
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 g'''8
                                 
                                 cs''''8
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 s8
                                 
@@ -1895,7 +1895,7 @@
                                 % RHVoiceI [measure 49]                                  %! SM4
                                 ef''''8
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1918,7 +1918,7 @@
                                 
                                 d''''8
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 s8
                                 
@@ -1926,13 +1926,13 @@
                                 
                                 e''''8
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 b'''8
                                 
                                 f'''8
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 s8
                                 
@@ -1944,11 +1944,11 @@
                                 
                                 fs'''8
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 cs'''8
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         
@@ -1979,7 +1979,7 @@
                                 %%%                 ]                                    %! FIGURE_NAME_MARKUP
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
-                                \ottava #0
+                                \ottava #0                                               %! SC
                             }
                         }
                         {
@@ -2011,7 +2011,7 @@
                             {
                                 
                                 % RHVoiceI [measure 57]                                  %! SM4
-                                \ottava #1
+                                \ottava #1                                               %! SC
                                 bf''''1
                                 -\tenuto                                                 %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2110,7 +2110,7 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 \revert Stem.direction                                   %! OC
-                                \ottava #0
+                                \ottava #0                                               %! SC
                             }
                         }
                         
@@ -2505,7 +2505,7 @@
                                 [
                                 \<
                                 \f
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2604,7 +2604,7 @@
                                 cs''''16
                                 ]
                                 \ff
-                                )
+                                )                                                        %! SC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert Slur.direction                                   %! OC
                             }
@@ -2624,7 +2624,7 @@
                                 [
                                 \<
                                 \f
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2719,7 +2719,7 @@
                                 bf'''16
                                 ]
                                 \ff
-                                )
+                                )                                                        %! SC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert Slur.direction                                   %! OC
                                 \revert TextScript.direction                             %! OC
@@ -2817,7 +2817,7 @@
                                 [
                                 \<
                                 \f
-                                (
+                                (                                                        %! SC
                                 ^ \markup {
                                     \column
                                         {
@@ -2934,7 +2934,7 @@
                                 f''''16
                                 ]
                                 \ff
-                                )
+                                )                                                        %! SC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert Slur.direction                                   %! OC
                                 \revert TextScript.direction                             %! OC
@@ -2954,7 +2954,7 @@
                                 [
                                 \<
                                 \f
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3005,7 +3005,7 @@
                                 fs''''16
                                 ]
                                 \ff
-                                )
+                                )                                                        %! SC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert Slur.direction                                   %! OC
                                 \revert TextScript.direction                             %! OC
@@ -3577,7 +3577,7 @@
                                 af'''8
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3605,7 +3605,7 @@
                                 fs'''8
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 \revert TupletBracket.direction                          %! OC
                             }
                         }
@@ -3673,7 +3673,7 @@
                                 
                                 % RHVoiceIII [measure 68]                                %! SM4
                                 \override TupletBracket.direction = #down                %! OC
-                                \ottava #1
+                                \ottava #1                                               %! SC
                                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4
                                 -\tenuto                                                 %! IC
@@ -3716,7 +3716,7 @@
                                 
                                 g'''4
                                 -\tenuto                                                 %! IC
-                                \ottava #0
+                                \ottava #0                                               %! SC
                                 
                                 r4
                                 \revert Rest.direction                                   %! OC
@@ -4722,9 +4722,9 @@
                                 % LHVoiceII [measure 64]                                 %! SM4
                                 \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC
                                 \override Rest.transparent = ##t                         %! OC
-                                \set Staff.pedalSustainStyle = #'bracket
+                                \set Staff.pedalSustainStyle = #'bracket                 %! SC
                                 r1
-                                \sustainOn
+                                \sustainOn                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4744,14 +4744,14 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 % LHVoiceII [measure 65]                                 %! SM4
-                                \set Staff.pedalSustainStyle = #'bracket
+                                \set Staff.pedalSustainStyle = #'bracket                 %! SC
                                 r1
-                                \sustainOff
-                                \sustainOn
+                                \sustainOff                                              %! SC
+                                \sustainOn                                               %! SC
                                 
                                 % LHVoiceII [measure 66]                                 %! SM4
                                 r1
-                                \sustainOff
+                                \sustainOff                                              %! SC
                                 \revert Staff.SustainPedalLineSpanner.staff-padding      %! OC
                                 \revert Rest.transparent                                 %! OC
                             }
@@ -4923,7 +4923,7 @@
                                 \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'8.
                                 \p                                                       %! EXPLICIT_DYNAMIC:SM8
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4949,7 +4949,7 @@
                                 r8.
                                 
                                 cs8.
-                                )
+                                )                                                        %! SC
                                 
                                 r8.
                                 \revert Slur.direction                                   %! OC
@@ -5795,7 +5795,7 @@
                                     \set stemRightBeamCount = 1
                                     <c bf>8
                                     [
-                                    (
+                                    (                                                    %! SC
                                 }
                                 {
                                     
@@ -5803,7 +5803,7 @@
                                     \set stemRightBeamCount = 1
                                     <d' f'>8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     r4
                                 }
@@ -5891,7 +5891,7 @@
                                     \set stemRightBeamCount = 1
                                     <bf'>8
                                     [
-                                    (
+                                    (                                                    %! SC
                                 }
                                 {
                                     
@@ -5905,7 +5905,7 @@
                                     \set stemRightBeamCount = 1
                                     <e af>8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     r4
                                 }
@@ -5964,7 +5964,7 @@
                                     \set stemRightBeamCount = 1
                                     <c f bf>8
                                     [
-                                    (
+                                    (                                                    %! SC
                                 }
                                 {
                                     
@@ -5978,7 +5978,7 @@
                                     \set stemRightBeamCount = 1
                                     <bf c'>8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     r4
                                 }
@@ -6013,7 +6013,7 @@
                                     \set stemRightBeamCount = 1
                                     <d' f'>8
                                     [
-                                    (
+                                    (                                                    %! SC
                                 }
                                 {
                                     
@@ -6021,7 +6021,7 @@
                                     \set stemRightBeamCount = 1
                                     <af c' e'>8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     r8
                                 }
@@ -6108,7 +6108,7 @@
                                     \set stemRightBeamCount = 1
                                     <d' f'>8
                                     [
-                                    (
+                                    (                                                    %! SC
                                 }
                                 {
                                     
@@ -6116,7 +6116,7 @@
                                     \set stemRightBeamCount = 1
                                     <af e'>8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     r8
                                 }
@@ -6819,7 +6819,7 @@
                                 
                                 % LHResonanceVoice [measure 33]                          %! SM4
                                 <cs,, cs,>4
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -6843,7 +6843,7 @@
                             {
                                 
                                 <cs,, cs,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -6900,7 +6900,7 @@
                                 
                                 % LHResonanceVoice [measure 37]                          %! SM4
                                 <ef,, ef,>4
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -6924,7 +6924,7 @@
                             {
                                 
                                 <ef,, ef,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -6978,7 +6978,7 @@
                                 % LHResonanceVoice [measure 55]                          %! SM4
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                 <e, fs, gs, as, b,>1..
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7003,7 +7003,7 @@
                                 
                                 % LHResonanceVoice [measure 56]                          %! SM4
                                 <e, fs, gs, as, b,>1.
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7028,7 +7028,7 @@
                                 
                                 % LHResonanceVoice [measure 57]                          %! SM4
                                 <e, fs, gs, as, b,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7053,7 +7053,7 @@
                                 
                                 % LHResonanceVoice [measure 58]                          %! SM4
                                 <e, fs, gs, as, b,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7105,7 +7105,7 @@
                                 
                                 % LHResonanceVoice [measure 61]                          %! SM4
                                 <e, fs, gs, as, b,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7130,7 +7130,7 @@
                                 
                                 % LHResonanceVoice [measure 62]                          %! SM4
                                 <e, fs, gs, as, b,>2
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
