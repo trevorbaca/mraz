@@ -14,12 +14,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 86]                                               %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -37,22 +37,22 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 29/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 \newSpacingSection                                                       %! SEGMENT:SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT:SPACING:HSS1
                 s1 * 29/16
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -150,7 +150,7 @@
                 \newSpacingSection                                                       %! SEGMENT:SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT:SPACING:HSS1
                 s1 * 21/16
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -214,7 +214,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             112                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 89]                                               %! SM4
                 \time 15/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -343,7 +343,7 @@
                                 -\staccato                                               %! IC
                                 \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -381,7 +381,7 @@
                                 \set stemRightBeamCount = 1
                                 af'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -389,7 +389,7 @@
                                 \set stemRightBeamCount = 2
                                 bf16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -410,7 +410,7 @@
                                 \set stemRightBeamCount = 1
                                 a''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -418,7 +418,7 @@
                                 \set stemRightBeamCount = 2
                                 d16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -444,7 +444,7 @@
                                 \set stemRightBeamCount = 1
                                 f''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -452,7 +452,7 @@
                                 \set stemRightBeamCount = 2
                                 a16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -473,7 +473,7 @@
                                 \set stemRightBeamCount = 1
                                 c'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -481,7 +481,7 @@
                                 \set stemRightBeamCount = 2
                                 e16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -502,7 +502,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -510,7 +510,7 @@
                                 \set stemRightBeamCount = 2
                                 b16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -522,7 +522,7 @@
                                 a'16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -534,7 +534,7 @@
                                 d'16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -572,7 +572,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -580,7 +580,7 @@
                                 \set stemRightBeamCount = 2
                                 f'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -606,7 +606,7 @@
                                 \set stemRightBeamCount = 1
                                 c''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -614,7 +614,7 @@
                                 \set stemRightBeamCount = 2
                                 e'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -640,7 +640,7 @@
                                 \set stemRightBeamCount = 1
                                 b''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -648,7 +648,7 @@
                                 \set stemRightBeamCount = 2
                                 g'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -669,7 +669,7 @@
                                 \set stemRightBeamCount = 1
                                 cs''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -677,7 +677,7 @@
                                 \set stemRightBeamCount = 2
                                 af'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -699,7 +699,7 @@
                                 a''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -711,7 +711,7 @@
                                 b'16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -744,7 +744,7 @@
                                 \set stemRightBeamCount = 1
                                 c''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -752,7 +752,7 @@
                                 \set stemRightBeamCount = 2
                                 e'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -768,7 +768,7 @@
                                 \set stemRightBeamCount = 1
                                 bf'16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -776,7 +776,7 @@
                                 \set stemRightBeamCount = 2
                                 ef'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -792,7 +792,7 @@
                                 \set stemRightBeamCount = 1
                                 a''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -800,7 +800,7 @@
                                 \set stemRightBeamCount = 2
                                 d'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -821,7 +821,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -829,7 +829,7 @@
                                 \set stemRightBeamCount = 2
                                 f'16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -846,7 +846,7 @@
                                 g''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -858,7 +858,7 @@
                                 fs''16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -891,7 +891,7 @@
                                 \set stemRightBeamCount = 1
                                 f'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -899,7 +899,7 @@
                                 \set stemRightBeamCount = 2
                                 af''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -910,7 +910,7 @@
                                 \set stemRightBeamCount = 1
                                 ef'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -918,7 +918,7 @@
                                 \set stemRightBeamCount = 2
                                 b''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -929,7 +929,7 @@
                                 \set stemRightBeamCount = 1
                                 a'''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -937,7 +937,7 @@
                                 \set stemRightBeamCount = 2
                                 d''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -959,7 +959,7 @@
                                 ef''''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -971,7 +971,7 @@
                                 f''16
                                 -\staccato                                               %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1009,7 +1009,7 @@
                                 \set stemRightBeamCount = 1
                                 fs''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1017,7 +1017,7 @@
                                 \set stemRightBeamCount = 2
                                 c''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1033,7 +1033,7 @@
                                 \set stemRightBeamCount = 1
                                 af''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1041,7 +1041,7 @@
                                 \set stemRightBeamCount = 2
                                 bf''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1057,7 +1057,7 @@
                                 \set stemRightBeamCount = 1
                                 g''''16
                                 -\staccato                                               %! IC
-                                )
+                                )                                                        %! SC
                             }
                             {
                                 
@@ -1065,7 +1065,7 @@
                                 \set stemRightBeamCount = 2
                                 b''16
                                 -\staccato                                               %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1077,7 +1077,7 @@
                                 d''''16
                                 -\staccato                                               %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 \revert Script.direction                                 %! OC
                                 \revert Slur.direction                                   %! OC
                                 
@@ -1491,7 +1491,7 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>16
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -1500,7 +1500,7 @@
                                 % LHResonanceVoice [measure 87]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <cs,, cs,>1.
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1520,7 +1520,7 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>8.
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -1547,10 +1547,10 @@
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                 
                                 <ef,, ef,>4
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 
                                 <ef,, ef,>16
-                                \repeatTie
+                                \repeatTie                                               %! SC
                             }
                         }
                         {
@@ -1559,7 +1559,7 @@
                                 % LHResonanceVoice [measure 89]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <ef,, ef,>2...
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1584,7 +1584,7 @@
                                 
                                 % LHResonanceVoice [measure 90]                          %! SM4
                                 <ef,, ef,>1
-                                \repeatTie
+                                \repeatTie                                               %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP

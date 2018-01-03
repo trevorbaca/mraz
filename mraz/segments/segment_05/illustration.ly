@@ -14,12 +14,12 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 132]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -37,20 +37,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 16/4                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -101,12 +101,12 @@
                     }
                 
                 % GlobalSkips [measure 133]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -124,20 +124,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 10/4                                                               %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 5/2
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -188,12 +188,12 @@
                     }
                 
                 % GlobalSkips [measure 134]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -211,20 +211,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -299,12 +299,12 @@
                     }
                 
                 % GlobalSkips [measure 136]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -322,20 +322,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -410,12 +410,12 @@
                     }
                 
                 % GlobalSkips [measure 138]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -433,20 +433,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -521,12 +521,12 @@
                     }
                 
                 % GlobalSkips [measure 140]                                              %! SM4
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -544,20 +544,20 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
-                \startTextSpan
+                \stopTextSpan                                                            %! SM29
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -635,7 +635,7 @@
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -691,7 +691,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             84                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 \override Score.BarLine.transparent = ##f                                %! SM5
                 \bar "|"                                                                 %! SM5
                 
@@ -1363,7 +1363,7 @@
                                 
                                 % RHVoiceIII [measure 132]                               %! SM4
                                 \override TupletBracket.direction = #down                %! OC
-                                \ottava #1
+                                \ottava #1                                               %! SC
                                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a''4
                                 -\tenuto                                                 %! IC
@@ -1418,7 +1418,7 @@
                                 
                                 g'''4
                                 -\tenuto                                                 %! IC
-                                \ottava #0
+                                \ottava #0                                               %! SC
                                 
                                 r4
                                 \revert Rest.direction                                   %! OC
@@ -1438,7 +1438,7 @@
                                     d'''8
                                     \mp                                                  %! EXPLICIT_DYNAMIC:SM8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1463,14 +1463,14 @@
                                     
                                     c'''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     a''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     bf''8
                                     
@@ -1484,13 +1484,13 @@
                                     
                                     ef''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     f''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     fs''8
                                     
@@ -1498,14 +1498,14 @@
                                     
                                     ef''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     c''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     cs''8
                                     
@@ -1515,7 +1515,7 @@
                                     
                                     g'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -1526,7 +1526,7 @@
                                     
                                     e'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     g'8
                                     
@@ -1534,7 +1534,7 @@
                                     
                                     d'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -1581,7 +1581,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     cs'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1617,7 +1617,7 @@
                                     \once \override Stem.color = #red
                                     g''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     - \tweak color #red                                  %! SM14
                                     ^ \markup { @ }                                      %! SM14
                                 }
@@ -1630,7 +1630,7 @@
                                     \once \override Stem.color = #red
                                     g''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     - \tweak color #red                                  %! SM14
                                     ^ \markup { @ }                                      %! SM14
                                     
@@ -1640,14 +1640,14 @@
                                     
                                     f''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     e''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     ef''8
                                     
@@ -1661,18 +1661,18 @@
                                     s8
                                     
                                     bf'8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     fs''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     b'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -1682,7 +1682,7 @@
                                     
                                     f'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     d''8
                                     
@@ -1698,7 +1698,7 @@
                                     
                                     b'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -1742,7 +1742,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     a'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1767,14 +1767,14 @@
                                     
                                     g'''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     af''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     f'''8
                                     
@@ -1790,25 +1790,25 @@
                                     
                                     d''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     af''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
                                     s8
                                     
                                     fs''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     a''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -1823,14 +1823,14 @@
                                     s8
                                     
                                     ef''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     b'8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     fs'8
                                     ]
@@ -1838,7 +1838,7 @@
                                     s8
                                     
                                     a'8
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -1883,7 +1883,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     c'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1914,13 +1914,13 @@
                                     s8
                                     
                                     fs'''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     bf''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -1929,12 +1929,12 @@
                                     
                                     af''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     cs'''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -1949,18 +1949,18 @@
                                     s8
                                     
                                     g''8
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
                                     cs''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     
                                     s8
                                     
@@ -1971,7 +1971,7 @@
                                     
                                     e''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     a'8
                                     
@@ -1987,13 +1987,13 @@
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
                                     c''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     b'8
                                     
@@ -2001,7 +2001,7 @@
                                     
                                     bf'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                 }
                             }
@@ -2048,7 +2048,7 @@
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                                     f'''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
                                     %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2079,7 +2079,7 @@
                                     
                                     b''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 {
                                     
@@ -2087,19 +2087,19 @@
                                     
                                     d''8
                                     [
-                                    (
+                                    (                                                    %! SC
                                     
                                     e''8
                                     
                                     cs''8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                 }
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
                                     af''8
-                                    (
+                                    (                                                    %! SC
                                     
                                     s8
                                     
@@ -2114,7 +2114,7 @@
                                     
                                     d'8
                                     ]
-                                    )
+                                    )                                                    %! SC
                                     \revert TupletBracket.direction                      %! OC
                                     \revert TupletBracket.staff-padding                  %! OC
                                 }
@@ -2524,7 +2524,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 \p                                                       %! REDUNDANT_DYNAMIC:SM8
-                                (
+                                (                                                        %! SC
                                 
                                 r8.
                                 
@@ -2537,7 +2537,7 @@
                                 cs8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r8.
                                 
@@ -2577,7 +2577,7 @@
                                 af'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 
                                 r16
                                 
@@ -2596,7 +2596,7 @@
                                 cs8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                                 \revert Slur.direction                                   %! OC
@@ -2608,7 +2608,7 @@
                                 b'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2632,7 +2632,7 @@
                                 g8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                             }
@@ -2648,7 +2648,7 @@
                                 b'8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2684,7 +2684,7 @@
                                 af,8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
-                                )
+                                )                                                        %! SC
                                 
                                 r16
                                 \revert Slur.direction                                   %! OC
@@ -2697,7 +2697,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2720,7 +2720,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -2730,7 +2730,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2757,7 +2757,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -2786,13 +2786,13 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 ef,8.
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                                 
                                 r4
                                 
@@ -2831,7 +2831,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 
                                 af,8
                                 -\staccato                                               %! IC
@@ -2841,7 +2841,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         {
@@ -2851,7 +2851,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 [
-                                (
+                                (                                                        %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
                                 %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2882,7 +2882,7 @@
                                 -\staccato                                               %! IC
                                 -\tenuto                                                 %! IC
                                 ]
-                                )
+                                )                                                        %! SC
                             }
                         }
                         

@@ -73,7 +73,7 @@
                 %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
                 %%%             112                                                      %! REDUNDANT_METRONOME_MARK:SM27
                 %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27
+                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 159]                                              %! SM4
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -991,7 +991,7 @@
                                 
                                 % LHVoiceV [measure 158]                                 %! SM4
                                 \override TupletBracket.direction = #up                  %! OC
-                                \ottava #-1
+                                \ottava #-1                                              %! SC
                                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 g,8.
@@ -1433,7 +1433,7 @@
                                 r32
                                 
                                 af,,8
-                                \ottava #0
+                                \ottava #0                                               %! SC
                                 
                                 r32
                                 \revert TupletBracket.direction                          %! OC
