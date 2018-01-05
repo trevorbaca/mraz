@@ -24,7 +24,7 @@
             %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
             %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
             %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
-            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1.5                                                     %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
             %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -53,7 +53,7 @@
                                     \note-by-number                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         #2                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         #0                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #1.5                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             \upright                                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     =                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -67,7 +67,7 @@
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
                 \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
                 \once \override TextSpanner.dash-period = 1.5                            %! SM29
@@ -151,7 +151,7 @@
             %F%             \note-by-number                                              %! EXPLICIT_METRONOME_MARK:SM27
             %F%                 #2                                                       %! EXPLICIT_METRONOME_MARK:SM27
             %F%                 #0                                                       %! EXPLICIT_METRONOME_MARK:SM27
-            %F%                 #1                                                       %! EXPLICIT_METRONOME_MARK:SM27
+            %F%                 #1.5                                                     %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \upright                                                             %! EXPLICIT_METRONOME_MARK:SM27
             %F%         {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%             =                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -179,7 +179,7 @@
                                     \note-by-number                                      %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         #2                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                         #0                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1                                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #1.5                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             \upright                                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                 {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                                     =                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
@@ -191,7 +191,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 21/16                                                              %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -352,10 +352,10 @@
                                 \override Slur.direction = #up                           %! OC
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
-                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 fs16
                                 -\staccato                                               %! IC
-                                \ppp                                                     %! EXPLICIT_DYNAMIC:SM8
+                                \ppp                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 (                                                        %! SC
                             %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
