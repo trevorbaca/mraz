@@ -1,4 +1,6 @@
 \layout {
+
+    % GLOBAL SKIPS
     \context {
         \name GlobalSkips
         \type Engraver_group
@@ -14,6 +16,8 @@
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 4
         }
+
+    % GLOBAL RESTS
     \context {
         \name GlobalRests
         \type Engraver_group
@@ -23,6 +27,8 @@
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
         }
+
+    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -59,19 +65,26 @@
         \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 12
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
+
+    % PIANO STAFF
     \context {
         \PianoStaff
         %\remove "Keep_alive_together_engraver" 
         \consists #Span_stem_engraver
     }
+
+    % STAFF
     \context {
         \Staff
         \remove Time_signature_engraver
     }
+
+    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
     }
+
     \context {
         \Voice
         \name RHVoiceI
@@ -563,6 +576,8 @@
         \accepts LHVoiceVIInserts
         \accepts LHResonanceVoice
     }
+
+    % PIANO MUSIC STAFF GROUP
     \context {
         \PianoStaff
         \name PianoMusicStaffGroup
@@ -571,13 +586,18 @@
         \accepts PianoMusicRHStaff
         \accepts PianoMusicLHStaff
     }
+
+    % MUSIC CONTEXT
     \context {
+        \ChoirStaff
         \name MusicContext
         \type Engraver_group
-        \consists System_start_delimiter_engraver
+        \alias ChoirStaff
         \accepts PianoMusicStaffGroup
         systemStartDelimiter = #'SystemStartBar
     }
+
+    % SCORE
     \context {
         \Score
         \accepts GlobalContext
