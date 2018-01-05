@@ -1,73 +1,57 @@
 \documentclass[11pt]{report}
-
 \usepackage[T1]{fontenc}
-\usepackage[papersize={9in, 12in}]{geometry}
+\usepackage[papersize={9in, 12in}, margin=0.5in]{geometry}
+\usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{xltxtra,fontspec,xunicode}
 \usetikzlibrary{calc}
-
 \defaultfontfeatures{Scale=MatchLowercase}
-\setromanfont[Numbers=Uppercase]{Didot}
 \newlength{\drop}
+\pagenumbering{gobble}
 \parindent=0pt
+\setmainfont{Adobe Garamond Pro Bold}
 
 \begin{document}
     \begin{titlepage}
 
         \begin{tikzpicture}[remember picture, overlay]
-            \draw[line width = 1.6pt]
-                ($(current page.north west) + (1in,-1in)$)
+            \draw[line width = 6pt]
+                ($(current page.north west) + (0.5in,-0.5in)$)
                 rectangle
-                ($(current page.south east) + (-1in,1in)$);
-            \draw[line width = 0.4pt]
-                ($(current page.north west) + (1in,-1in) + (2.8pt,-2.8pt)$)
-                rectangle
-                ($(current page.south east) + (-1in,1in) + (-2.8pt,2.8pt)$);
+                ($(current page.south east) + (-0.5in,0.5in)$);
         \end{tikzpicture}
 
         \drop=0.1\textheight
         \centering
 
-        \vspace*{0\baselineskip}
+        \vspace*{1\baselineskip}
         {
-            \fontsize{3.25cm}{1em}\selectfont
-            MR\'{A}Z
+            \scalebox{1}[2]
+            {\fontsize{2.15cm}{1em}\selectfont MRÁZ}
         }
 
-        \vspace*{12\baselineskip}
+        \vspace*{10\baselineskip}
 
         {
-            \itshape
-            for
-        }
-        \\
-        {
-            \large
-            Piano
-            \par
+            \scalebox{1}[2]
+            {\fontsize{0.5cm}{1em}\selectfont \itshape for piano}
         }
 
-        \vspace*{2\baselineskip}
+        \vspace*{1\baselineskip}
 
         {
-            \itshape
-            Composed by
-        }
-        \\
-        {
-            \Large
-            TREVOR BA\v{C}A
-            \par
-        }
-
-        \vspace*{2\baselineskip}
-
-        {
-            \Large
-            2017
+            \scalebox{1}[2]
+            {\fontsize{0.5cm}{1em}\selectfont \itshape (2017)}
         }
 
         \vfill
+
+        {
+            \scalebox{1}[2]
+            {\fontsize{2.15cm}{1em}\selectfont TREVOR \hspace{1pt} BA\v{C}A}
+        }
+
+        \vspace*{2\baselineskip}
 
     \end{titlepage}
 \end{document}end{document}
