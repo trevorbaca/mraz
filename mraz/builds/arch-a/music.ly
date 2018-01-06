@@ -8,7 +8,7 @@
 
 \score {
     {
-    \include "../_segments/segment-04.ly"
-    %\include "../_segments/segment-07.ly"
+    \include "_segments/segment-04.ly"
+    %\include "_segments/segment-07.ly"
     }
 }
