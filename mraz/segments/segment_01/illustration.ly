@@ -77,23 +77,23 @@
                                 e16
                                 \f                                                       %! REAPPLIED_DYNAMIC:SM8
                                 [
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-1 1.1.1"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (0)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-1 1.1.1"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (0)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
