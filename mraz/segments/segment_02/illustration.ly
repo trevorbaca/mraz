@@ -408,23 +408,23 @@
                                 \ppp                                                     %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 (                                                        %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-2 2.2.1"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (0)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-2 2.2.1"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (0)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -599,23 +599,23 @@
                                 -\staccato                                               %! IC
                                 [
                                 (                                                        %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-2 2.2.2"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (1)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-2 2.2.2"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (1)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -776,23 +776,23 @@
                                 -\staccato                                               %! IC
                                 [
                                 (                                                        %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-2 2.2.3"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (2)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-2 2.2.3"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (2)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -923,23 +923,23 @@
                                 -\staccato                                               %! IC
                                 [
                                 (                                                        %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-2 2.2.4"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (3)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-2 2.2.4"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (3)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1036,23 +1036,23 @@
                                 -\staccato                                               %! IC
                                 [
                                 (                                                        %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "rh-2 2.2.5"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (4)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "rh-2 2.2.5"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (4)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -1536,23 +1536,23 @@
                                 
                                 % LHResonanceVoice [measure 86]                          %! SM4
                                 <cs,, cs,>1..
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "lhr 2.2.1"                              %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (5)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "lhr 2.2.1"                              %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (5)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>16
                                 \repeatTie                                               %! SC
@@ -1565,23 +1565,23 @@
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <cs,, cs,>1.
                                 \repeatTie                                               %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "lhr 2.2.2a"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (6)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "lhr 2.2.2a"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (6)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 <cs,, cs,>8.
                                 \repeatTie                                               %! SC
@@ -1592,23 +1592,23 @@
                                 
                                 % LHResonanceVoice [measure 88]                          %! SM4
                                 <ef,, ef,>1
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "lhr 2.2.3a"                             %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (7)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "lhr 2.2.3a"                             %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (7)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                                 <ef,, ef,>4
                                 \repeatTie                                               %! SC
@@ -1624,23 +1624,23 @@
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
                                 <ef,, ef,>2...
                                 \repeatTie                                               %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "lhr 2.2.4"                              %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (8)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "lhr 2.2.4"                              %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (8)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                             }
                         }
                         {
@@ -1649,23 +1649,23 @@
                                 % LHResonanceVoice [measure 90]                          %! SM4
                                 <ef,, ef,>1
                                 \repeatTie                                               %! SC
-                                ^ \markup {                                              %! FIGURE_NAME_MARKUP
-                                    \fontsize                                            %! FIGURE_NAME_MARKUP
-                                        #2                                               %! FIGURE_NAME_MARKUP
-                                        \concat                                          %! FIGURE_NAME_MARKUP
-                                            {                                            %! FIGURE_NAME_MARKUP
-                                                [                                        %! FIGURE_NAME_MARKUP
-                                                "lhr 2.2.5"                              %! FIGURE_NAME_MARKUP
-                                                \hspace                                  %! FIGURE_NAME_MARKUP
-                                                    #1                                   %! FIGURE_NAME_MARKUP
-                                                \raise                                   %! FIGURE_NAME_MARKUP
-                                                    #0.25                                %! FIGURE_NAME_MARKUP
-                                                    \fontsize                            %! FIGURE_NAME_MARKUP
-                                                        #-2                              %! FIGURE_NAME_MARKUP
-                                                        (9)                              %! FIGURE_NAME_MARKUP
-                                                ]                                        %! FIGURE_NAME_MARKUP
-                                            }                                            %! FIGURE_NAME_MARKUP
-                                    }                                                    %! FIGURE_NAME_MARKUP
+                            %%% ^ \markup {                                              %! FIGURE_NAME_MARKUP
+                            %%%     \fontsize                                            %! FIGURE_NAME_MARKUP
+                            %%%         #2                                               %! FIGURE_NAME_MARKUP
+                            %%%         \concat                                          %! FIGURE_NAME_MARKUP
+                            %%%             {                                            %! FIGURE_NAME_MARKUP
+                            %%%                 [                                        %! FIGURE_NAME_MARKUP
+                            %%%                 "lhr 2.2.5"                              %! FIGURE_NAME_MARKUP
+                            %%%                 \hspace                                  %! FIGURE_NAME_MARKUP
+                            %%%                     #1                                   %! FIGURE_NAME_MARKUP
+                            %%%                 \raise                                   %! FIGURE_NAME_MARKUP
+                            %%%                     #0.25                                %! FIGURE_NAME_MARKUP
+                            %%%                     \fontsize                            %! FIGURE_NAME_MARKUP
+                            %%%                         #-2                              %! FIGURE_NAME_MARKUP
+                            %%%                         (9)                              %! FIGURE_NAME_MARKUP
+                            %%%                 ]                                        %! FIGURE_NAME_MARKUP
+                            %%%             }                                            %! FIGURE_NAME_MARKUP
+                            %%%     }                                                    %! FIGURE_NAME_MARKUP
                                 
                             }
                         }
