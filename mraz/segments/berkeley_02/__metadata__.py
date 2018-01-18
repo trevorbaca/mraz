@@ -5,6 +5,7 @@ metadata = abjad.TypedOrderedDict(
     [
         ('duration', "0'23''"),
         ('first_measure_number', 10),
+        ('last_measure_number', 21),
         (
             'persistent_indicators',
             abjad.TypedOrderedDict(
