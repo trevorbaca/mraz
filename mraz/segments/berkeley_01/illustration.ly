@@ -6,6 +6,8 @@
 \include "../../stylesheets/stylesheet.ily"
 
 \score {
+    <<
+    { \include "layout.ly" }
     \context Score = "Score" <<
         \context GlobalContext = "GlobalContext" <<
             \context GlobalSkips = "GlobalSkips" {
@@ -1935,5 +1937,6 @@
                 >>
             >>
         }
+    >>
     >>
 }
