@@ -152,89 +152,89 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # RH VOICES
         rh_voice_1 = abjad.Voice(
-            context_name='RHVoiceI',
+            lilypond_type='RHVoiceI',
             name='RHVoiceI',
             )
         rh_voice_1I = abjad.Voice(
-            context_name='RHVoiceIInserts',
+            lilypond_type='RHVoiceIInserts',
             name='RHVoiceIInserts',
             )
         rh_voice_2 = abjad.Voice(
-            context_name='RHVoiceII',
+            lilypond_type='RHVoiceII',
             name='RHVoiceII',
             )
         rh_voice_2I = abjad.Voice(
-            context_name='RHVoiceIIInserts',
+            lilypond_type='RHVoiceIIInserts',
             name='RHVoiceIIInserts',
             )
         rh_voice_3 = abjad.Voice(
-            context_name='RHVoiceIII',
+            lilypond_type='RHVoiceIII',
             name='RHVoiceIII',
             )
         rh_voice_3I = abjad.Voice(
-            context_name='RHVoiceIIIInserts',
+            lilypond_type='RHVoiceIIIInserts',
             name='RHVoiceIIIInserts',
             )
         rh_voice_4 = abjad.Voice(
-            context_name='RHVoiceIV',
+            lilypond_type='RHVoiceIV',
             name='RHVoiceIV',
             )
         rh_voice_4I = abjad.Voice(
-            context_name='RHVoiceIVInserts',
+            lilypond_type='RHVoiceIVInserts',
             name='RHVoiceIVInserts',
             )
         rh_voice_5 = abjad.Voice(
-            context_name='RHVoiceV',
+            lilypond_type='RHVoiceV',
             name='RHVoiceV',
             )
         rh_voice_6 = abjad.Voice(
-            context_name='RHVoiceVI',
+            lilypond_type='RHVoiceVI',
             name='RHVoiceVI',
             )
         rh_resonance_voice = abjad.Voice(
-            context_name='RHResonanceVoice',
+            lilypond_type='RHResonanceVoice',
             name='RHResonanceVoice',
             )
 
         # LH VOICES
         lh_voice_1 = abjad.Voice(
-            context_name='LHVoiceI',
+            lilypond_type='LHVoiceI',
             name='LHVoiceI',
             )
         lh_voice_2 = abjad.Voice(
-            context_name='LHVoiceII',
+            lilypond_type='LHVoiceII',
             name='LHVoiceII',
             )
         lh_voice_3 = abjad.Voice(
-            context_name='LHVoiceIII',
+            lilypond_type='LHVoiceIII',
             name='LHVoiceIII',
             )
         lh_voice_4 = abjad.Voice(
-            context_name='LHVoiceIV',
+            lilypond_type='LHVoiceIV',
             name='LHVoiceIV',
             )
         lh_voice_4I = abjad.Voice(
-            context_name='LHVoiceIVInserts',
+            lilypond_type='LHVoiceIVInserts',
             name='LHVoiceIVInserts',
             )
         lh_voice_5 = abjad.Voice(
-            context_name='LHVoiceV',
+            lilypond_type='LHVoiceV',
             name='LHVoiceV',
             )
         lh_voice_5I = abjad.Voice(
-            context_name='LHVoiceVInserts',
+            lilypond_type='LHVoiceVInserts',
             name='LHVoiceVInserts',
             )
         lh_voice_6 = abjad.Voice(
-            context_name='LHVoiceVI',
+            lilypond_type='LHVoiceVI',
             name='LHVoiceVI',
             )
         lh_voice_6I = abjad.Voice(
-            context_name='LHVoiceVIInserts',
+            lilypond_type='LHVoiceVIInserts',
             name='LHVoiceVIInserts',
             )
         lh_resonance_voice = abjad.Voice(
-            context_name='LHResonanceVoice',
+            lilypond_type='LHResonanceVoice',
             name='LHResonanceVoice',
             )
 
@@ -253,7 +253,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 rh_voice_6,
                 rh_resonance_voice,
                 ],
-            context_name='PianoMusicRHStaff',
+            lilypond_type='PianoMusicRHStaff',
             is_simultaneous=True,
             name='PianoMusicRHStaff',
             )
@@ -272,7 +272,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 lh_voice_6I,
                 lh_resonance_voice,
                 ],
-            context_name='PianoMusicLHStaff',
+            lilypond_type='PianoMusicLHStaff',
             is_simultaneous=True,
             name='PianoMusicLHStaff',
             )
@@ -285,7 +285,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         # STAFF GROUP
         piano_music_staff_group = abjad.StaffGroup(
             [piano_music_rh_staff, piano_music_lh_staff],
-            context_name='PianoMusicStaffGroup',
+            lilypond_type='PianoMusicStaffGroup',
             name='PianoMusicStaffGroup',
             )
         piano = mraz.instruments['Piano']
@@ -294,7 +294,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         # MUSIC CONTEXT
         music_context = abjad.Context(
             [piano_music_staff_group],
-            context_name='MusicContext',
+            lilypond_type='MusicContext',
             name='MusicContext',
             )
 
