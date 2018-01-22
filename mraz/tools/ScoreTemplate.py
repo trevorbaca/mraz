@@ -38,6 +38,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             \set PianoMusicStaffGroup.shortInstrumentName = \markup {  %! ST1
                                 \null                                                  %! ST1
                                 }                                                      %! ST1
+                            \clef "treble"                                             %! ST3
                             s1
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {
@@ -256,6 +257,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='PianoMusicRHStaff',
             is_simultaneous=True,
             name='PianoMusicRHStaff',
+            )
+        abjad.annotate(
+            piano_music_rh_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
 
         # LH STAFF

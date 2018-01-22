@@ -51,6 +51,16 @@ metadata = abjad.TypedOrderedDict(
                             ],
                         ),
                     (
+                        'PianoMusicRHStaff',
+                        [
+                            abjad.Momento(
+                                context='RHVoiceI',
+                                prototype='abjad.Clef',
+                                value='treble',
+                                ),
+                            ],
+                        ),
+                    (
                         'PianoMusicStaffGroup',
                         [
                             abjad.Momento(

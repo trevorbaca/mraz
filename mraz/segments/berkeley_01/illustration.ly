@@ -666,6 +666,10 @@
                                 {
                                     
                                     % RHVoiceI [measure 1]                               %! SM4
+                                    \set PianoMusicRHStaff.forceClef = ##t               %! DEFAULT_CLEF:SM8
+                                    \clef "treble"                                       %! DEFAULT_CLEF:SM8
+                                    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
+                                %@% \override PianoMusicRHStaff.Clef.color = ##f         %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                                     bf''''1
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -685,6 +689,7 @@
                                 %%%                 ]                                    %! FIGURE_NAME_MARKUP
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
+                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                                 }
                             }
                             
