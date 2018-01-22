@@ -77,6 +77,10 @@
                                     \override Beam.positions = #'(6 . 6)                 %! OC
                                     \set stemLeftBeamCount = 0
                                     \set stemRightBeamCount = 2
+                                    \set PianoMusicRHStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
+                                    \clef "treble"                                       %! REAPPLIED_CLEF:SM8
+                                    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                                %@% \override PianoMusicRHStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                     \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                     e16
                                     \f                                                   %! REAPPLIED_DYNAMIC:SM8
@@ -98,6 +102,7 @@
                                 %%%                 ]                                    %! FIGURE_NAME_MARKUP
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
+                                    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                     
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2

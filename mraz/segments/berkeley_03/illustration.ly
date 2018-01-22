@@ -2273,9 +2273,14 @@
                             % RHVoiceI [measure 22]                                      %! SM4
                             \override TupletBracket.staff-padding = #8                   %! OC
                             \override TupletBracket.direction = #up                      %! OC
+                            \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 143/8
                             \f                                                           %! REAPPLIED_DYNAMIC:SM8
+                            \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {

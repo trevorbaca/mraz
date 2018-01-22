@@ -890,7 +890,12 @@
                         \context RHVoiceI = "RHVoiceI" {
                             
                             % RHVoiceI [measure 10]                                      %! SM4
+                            \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             s1 * 41/8
+                            \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             {
                                 {
                                     
