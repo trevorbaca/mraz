@@ -71,7 +71,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceI [measure 85]                              %! SM4
                                     \override Beam.positions = #'(6 . 6)                 %! OC
@@ -124,7 +124,7 @@
                                     \set stemRightBeamCount = 1
                                     d'16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -142,7 +142,7 @@
                                     \set stemRightBeamCount = 1
                                     bf16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -156,7 +156,7 @@
                                     \set stemRightBeamCount = 1
                                     a16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -174,7 +174,7 @@
                                     \set stemRightBeamCount = 1
                                     a16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -188,7 +188,7 @@
                                     \set stemRightBeamCount = 1
                                     g16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -218,7 +218,7 @@
                                     \set stemRightBeamCount = 1
                                     ef'16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -232,7 +232,7 @@
                                     \set stemRightBeamCount = 1
                                     b16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -262,7 +262,7 @@
                                     \set stemRightBeamCount = 1
                                     f16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -276,7 +276,7 @@
                                     \set stemRightBeamCount = 1
                                     g16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -306,7 +306,7 @@
                                     \set stemRightBeamCount = 1
                                     c'16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -320,7 +320,7 @@
                                     \set stemRightBeamCount = 1
                                     d'16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -330,7 +330,7 @@
                                     \set stemRightBeamCount = 1
                                     af16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -348,7 +348,7 @@
                                     \set stemRightBeamCount = 1
                                     bf16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2

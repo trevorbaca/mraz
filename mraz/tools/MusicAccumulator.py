@@ -29,7 +29,7 @@ class MusicAccumulator(baca.MusicAccumulator):
             \new Staff <<
                 \context Voice = "RHVoiceI" {
                     {
-                        {
+                        \scaleDurations #'(1 . 1) {
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 2
                             c'16

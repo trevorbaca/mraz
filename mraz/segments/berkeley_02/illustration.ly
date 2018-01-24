@@ -897,7 +897,7 @@
                             s1 * 41/8
                             \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceI [measure 19]                              %! SM4
                                     \ottava #1                                           %! SC
@@ -926,7 +926,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceI [measure 20]                              %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
@@ -952,7 +952,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceI [measure 21]                              %! SM4
                                     bf''''1
@@ -1026,7 +1026,8 @@
                             s1 * 1/2
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 11]                             %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -1055,7 +1056,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 12]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -1108,7 +1109,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 13]                             %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -1140,7 +1142,7 @@
                             % RHVoiceII [measure 14]                                     %! SM4
                             s1 * 1/2
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 15]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -1190,7 +1192,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1222,7 +1224,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 16]                             %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -1254,7 +1257,7 @@
                             % RHVoiceII [measure 17]                                     %! SM4
                             s1 * 3/2
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 18]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -1304,7 +1307,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1333,7 +1336,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1367,7 +1370,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1495,7 +1498,7 @@
                                     \set stemRightBeamCount = 1
                                     cs''''16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -2040,7 +2043,8 @@
                             % LHVoiceII [measure 10]                                     %! SM4
                             s1 * 67/8
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % LHVoiceII [measure 21]                             %! SM4
                                     r1
@@ -2191,7 +2195,7 @@
                             s1 * 37/16
                             \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 17]                              %! SM4
                                     r2.
@@ -2430,7 +2434,7 @@
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 10]                      %! SM4
                                     <e, fs, gs, as, b,>2
@@ -2454,7 +2458,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 11]                      %! SM4
                                     <e, fs, gs, as, b,>4
@@ -2479,7 +2483,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     <e, fs, gs, as, b,>4
                                     \repeatTie                                           %! SC
@@ -2510,7 +2514,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 14]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -2536,7 +2540,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 15]                      %! SM4
                                     <e, fs, gs, as, b,>2
@@ -2568,7 +2572,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 16]                      %! SM4
                                     <e, fs, gs, as, b,>8
@@ -2596,7 +2600,7 @@
                             % LHResonanceVoice [measure 17]                              %! SM4
                             s1 * 3/2
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 18]                      %! SM4
                                     <e, fs, gs, as, b,>1
@@ -2630,7 +2634,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 19]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -2656,7 +2660,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 20]                      %! SM4
                                     <e, fs, gs, as, b,>1.
