@@ -674,7 +674,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceI [measure 151]                         %! SM4
                                         \set stemLeftBeamCount = 0
@@ -719,7 +719,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/6 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceI [measure 153]                         %! SM4
                                         \set stemLeftBeamCount = 1
@@ -954,7 +954,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceIInserts [measure 151]                  %! SM4
                                         \override Beam.positions = #'(-8.5 . -8.5)       %! OC
@@ -983,7 +983,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/6 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceIInserts [measure 153]                  %! SM4
                                         \set stemLeftBeamCount = 1
@@ -1080,7 +1080,7 @@
                             s1 * 3/4
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 148]                            %! SM4
                                     \override Stem.direction = #down                     %! OC
@@ -1129,7 +1129,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 9/10 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceII [measure 150]                        %! SM4
                                         \set stemLeftBeamCount = 1
@@ -1163,7 +1163,7 @@
                                         b'16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 2
@@ -1183,7 +1183,7 @@
                                         b''16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 2
@@ -1293,7 +1293,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 9/10 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceII [measure 154]                        %! SM4
                                         \set stemLeftBeamCount = 1
@@ -1331,7 +1331,7 @@
                                         d'''16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 2
@@ -1363,7 +1363,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 155]                            %! SM4
                                     \set stemLeftBeamCount = 0
@@ -1453,7 +1453,7 @@
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceIIInserts [measure 148]                     %! SM4
                                     \override Stem.direction = #up                       %! OC
@@ -1483,7 +1483,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 9/10 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceIIInserts [measure 150]                 %! SM4
                                         \set stemLeftBeamCount = 1
@@ -1498,7 +1498,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s16
                                         
@@ -1508,7 +1508,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 2
                                         \set stemRightBeamCount = 2
@@ -1591,7 +1591,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 9/10 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceIIInserts [measure 154]                 %! SM4
                                         \set stemLeftBeamCount = 1
@@ -1605,7 +1605,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 2
                                         \set stemRightBeamCount = 2
@@ -1634,7 +1634,7 @@
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceIIInserts [measure 155]                     %! SM4
                                     \override Beam.positions = #'(17 . 17)               %! OC
@@ -2134,7 +2134,7 @@
                             s1 * 11/8
                             \revert Beam.positions                                       %! OC
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 152]                            %! SM4
                                     \override Beam.positions = #'(-4.5 . -4.5)           %! OC
@@ -2282,7 +2282,7 @@
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIVInserts [measure 152]                     %! SM4
                                     cs''16
@@ -2340,7 +2340,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 15/17 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \override Stem.direction = #down                 %! OC
                                         \set stemLeftBeamCount = 0
@@ -2377,7 +2377,7 @@
                                         cs'16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % LHVoiceV [measure 150]                         %! SM4
                                         \set stemLeftBeamCount = 1
@@ -2410,7 +2410,7 @@
                                         g''16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 2
@@ -2451,7 +2451,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 15/17 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 0
                                         \set stemRightBeamCount = 2
@@ -2487,7 +2487,7 @@
                                         cs''16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 2
@@ -2519,7 +2519,7 @@
                                         fs''16
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % LHVoiceV [measure 154]                         %! SM4
                                         \set stemLeftBeamCount = 1
@@ -2581,7 +2581,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 15/17 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s16
                                         [
@@ -2590,7 +2590,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % LHVoiceVInserts [measure 150]                  %! SM4
                                         \override Stem.direction = #up                   %! OC
@@ -2611,7 +2611,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 2
                                         \set stemRightBeamCount = 2
@@ -2648,7 +2648,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 15/17 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s16
                                         [
@@ -2657,7 +2657,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 2
                                         \set stemRightBeamCount = 2
@@ -2676,7 +2676,7 @@
                                         
                                         s16
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % LHVoiceVInserts [measure 154]                  %! SM4
                                         \set stemLeftBeamCount = 2

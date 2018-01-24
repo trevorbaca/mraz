@@ -889,7 +889,7 @@
                         }
                         \context RHVoiceII = "RHVoiceII" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 132]                            %! SM4
                                     \override Script.direction = #up                     %! OC
@@ -989,7 +989,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1066,7 +1066,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1113,7 +1113,7 @@
                                         e''8
                                         -\accent                                         %! IC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1145,7 +1145,7 @@
                                 \override TupletNumber.stencil = ##f
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 20/23 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceII [measure 137]                        %! SM4
                                         s8
@@ -1194,7 +1194,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1280,7 +1280,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1339,7 +1339,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -1381,7 +1381,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \set stemLeftBeamCount = 1
                                         \set stemRightBeamCount = 1
@@ -1599,7 +1599,7 @@
                                         ]
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         f''8
                                         [
@@ -1653,7 +1653,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceIII [measure 134]                           %! SM4
                                     \once \override Script.color = #black                %! OC
@@ -1734,7 +1735,7 @@
                                         - \tweak color #red                              %! SM14
                                         ^ \markup { @ }                                  %! SM14
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         \once \override Accidental.color = #red
                                         \once \override Beam.color = #red
@@ -1791,7 +1792,7 @@
                                         
                                         s8
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         f'8
                                         [
@@ -1817,7 +1818,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceIII [measure 136]                           %! SM4
                                     \once \override Script.color = #black                %! OC
@@ -1848,7 +1850,7 @@
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 20/23 {
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         % RHVoiceIII [measure 137]                       %! SM4
                                         \override TupletBracket.direction = #down        %! OC
@@ -1918,7 +1920,7 @@
                                         fs''8
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         a''8
                                         (                                                %! SC
@@ -1957,7 +1959,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceIII [measure 138]                           %! SM4
                                     \once \override Script.color = #black                %! OC
@@ -2044,7 +2047,7 @@
                                         ]
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         cs'''8
                                         (                                                %! SC
@@ -2102,7 +2105,7 @@
                                         ]
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         c''8
                                         [
@@ -2120,7 +2123,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceIII [measure 140]                           %! SM4
                                     \once \override Script.color = #black                %! OC
@@ -2194,7 +2198,7 @@
                                         ]
                                         )                                                %! SC
                                     }
-                                    {
+                                    \scaleDurations #'(1 . 1) {
                                         
                                         s8
                                         
@@ -2234,7 +2238,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceIII [measure 142]                           %! SM4
                                     \once \override Script.color = #black                %! OC
@@ -2600,7 +2605,7 @@
                             s1 * 27/4
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 135]                            %! SM4
                                     \override Slur.direction = #down                     %! OC
@@ -2662,7 +2667,7 @@
                             % LHVoiceIV [measure 136]                                    %! SM4
                             s1 * 1/4
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 137]                            %! SM4
                                     \override Slur.direction = #down                     %! OC
@@ -2716,7 +2721,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     b'8.
                                     -\staccato                                           %! IC
@@ -2754,7 +2759,7 @@
                             % LHVoiceIV [measure 138]                                    %! SM4
                             s1 * 1/4
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 139]                            %! SM4
                                     \override Slur.direction = #down                     %! OC
@@ -2804,7 +2809,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     e'8.
                                     -\staccato                                           %! IC
@@ -2837,7 +2842,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     cs'8.
                                     -\staccato                                           %! IC
@@ -2874,7 +2879,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     r8.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2918,7 +2923,7 @@
                             % LHVoiceIV [measure 140]                                    %! SM4
                             s1 * 1/4
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 141]                            %! SM4
                                     r2..
@@ -2958,7 +2963,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     bf8
                                     -\staccato                                           %! IC

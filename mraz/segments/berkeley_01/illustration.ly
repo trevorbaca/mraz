@@ -663,7 +663,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceI [measure 1]                               %! SM4
                                     \set PianoMusicRHStaff.forceClef = ##t               %! DEFAULT_CLEF:SM8
@@ -843,7 +843,7 @@
                                     \set stemRightBeamCount = 1
                                     cs''''16
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -873,7 +873,8 @@
                             % RHVoiceII [measure 2]                                      %! SM4
                             s1 * 3/2
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 4]                              %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -906,7 +907,8 @@
                             % RHVoiceII [measure 5]                                      %! SM4
                             s1 * 1/2
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 6]                              %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -938,7 +940,7 @@
                             % RHVoiceII [measure 7]                                      %! SM4
                             s1 * 7/8
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 8]                              %! SM4
                                     \override Script.direction = #up                     %! OC
@@ -1002,7 +1004,8 @@
                                 }
                             }
                             {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % RHVoiceII [measure 9]                              %! SM4
                                     \once \override Script.direction = #up               %! OC
@@ -1120,7 +1123,7 @@
                             % RHVoiceIII [measure 6]                                     %! SM4
                             s1 * 1/8
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceIII [measure 7]                             %! SM4
                                     r8
@@ -1655,7 +1658,7 @@
                             % LHVoiceV [measure 1]                                       %! SM4
                             s1 * 3/2
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 3]                               %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)

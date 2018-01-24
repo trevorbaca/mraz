@@ -1134,7 +1134,7 @@
                         }
                         \context LHVoiceV = "LHVoiceV" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 158]                             %! SM4
                                     \override TupletBracket.direction = #up              %! OC
@@ -1221,7 +1221,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 160]                             %! SM4
                                     cs,,32
@@ -1255,7 +1255,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 161]                             %! SM4
                                     bf,,8.
@@ -1295,7 +1295,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 162]                             %! SM4
                                     d,,8
@@ -1360,7 +1360,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 164]                             %! SM4
                                     ef,,32
@@ -1400,7 +1400,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 165]                             %! SM4
                                     c,8.
@@ -1480,7 +1480,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 167]                             %! SM4
                                     a,,,32
@@ -1512,7 +1512,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceV [measure 168]                             %! SM4
                                     b,,8.

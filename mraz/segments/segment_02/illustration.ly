@@ -404,7 +404,7 @@
                         }
                         \context RHVoiceII = "RHVoiceII" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 86]                             %! SM4
                                     \override Script.direction = #up                     %! OC
@@ -456,7 +456,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -485,7 +485,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -519,7 +519,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -548,7 +548,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -577,7 +577,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -599,7 +599,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 87]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -647,7 +647,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -681,7 +681,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -715,7 +715,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -744,7 +744,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -776,7 +776,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 88]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -819,7 +819,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -843,7 +843,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -867,7 +867,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -896,7 +896,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -923,7 +923,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 89]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -966,7 +966,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -985,7 +985,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1004,7 +1004,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1036,7 +1036,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceII [measure 90]                             %! SM4
                                     \set stemLeftBeamCount = 0
@@ -1084,7 +1084,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1108,7 +1108,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1132,7 +1132,7 @@
                                     -\staccato                                           %! IC
                                     )                                                    %! SC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
@@ -1541,7 +1541,7 @@
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 86]                      %! SM4
                                     <cs,, cs,>1..
@@ -1568,7 +1568,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 87]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -1597,7 +1597,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 88]                      %! SM4
                                     <ef,, ef,>1
@@ -1627,7 +1627,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 89]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -1653,7 +1653,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHResonanceVoice [measure 90]                      %! SM4
                                     <ef,, ef,>1

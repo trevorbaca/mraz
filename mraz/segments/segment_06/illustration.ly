@@ -362,7 +362,7 @@
                                     -\staccato                                           %! IC
                                     -\tenuto                                             %! IC
                                 }
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     c'''8
                                     -\staccato                                           %! IC
@@ -419,7 +419,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % RHVoiceIII [measure 145]                           %! SM4
                                     r8
@@ -746,7 +746,7 @@
                             
                             s1 * 13/96
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     d'16
                                     -\tenuto                                             %! IC
@@ -792,7 +792,7 @@
                                 }
                             }
                             {
-                                {
+                                \scaleDurations #'(1 . 1) {
                                     
                                     % LHVoiceIV [measure 146]                            %! SM4
                                     fs''16
