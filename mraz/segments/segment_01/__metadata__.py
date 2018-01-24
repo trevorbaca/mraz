@@ -1,14 +1,14 @@
 import abjad
 
 
-metadata = abjad.TypedOrderedDict(
+metadata = abjad.OrderedDict(
     [
         ('duration', "0'07''"),
         ('first_measure_number', 85),
         ('last_measure_number', 85),
         (
             'persistent_indicators',
-            abjad.TypedOrderedDict(
+            abjad.OrderedDict(
                 [
                     (
                         'LHVoiceIV',
