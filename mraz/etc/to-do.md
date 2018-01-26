@@ -40,6 +40,6 @@ TO-DO
 14. Write AnchorSpecifier examples.
     Make clean doc paradigm for contributions from multiple voices.
 
-15. Debug uneven octave Messiaen ties. Possibly mail LilyPond list.
+15. Debug uneven octave repeat ties. Possibly mail LilyPond list.
 
 16. Make counts=[-4] not cause an infinite loop.
