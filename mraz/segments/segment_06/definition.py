@@ -163,7 +163,6 @@ maker = baca.SegmentMaker(
     time_signatures=accumulator.time_signatures,
     )
 
-maker.validate_measures_per_stage()
 accumulator.populate_segment_maker(maker)
 
 ###############################################################################
