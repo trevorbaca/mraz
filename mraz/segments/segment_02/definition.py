@@ -136,7 +136,6 @@ maker = baca.SegmentMaker(
     measures_per_stage=measures_per_stage,
     metronome_marks=mraz.metronome_marks,
     range_checker=abjad.Piano().pitch_range,
-    rehearsal_letter='',
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing=spacing,
