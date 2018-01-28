@@ -217,7 +217,6 @@ maker = baca.SegmentMaker(
     instruments=mraz.instruments,
     measures_per_stage=measures_per_stage,
     metronome_marks=mraz.metronome_marks,
-    rehearsal_letter='',
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     spacing=spacing,
