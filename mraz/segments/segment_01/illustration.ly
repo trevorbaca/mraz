@@ -49,7 +49,7 @@
                             %@%             #3                                           %! STAGE_NUMBER_MARKUP:SM3
                             %@%             \with-color                                  %! STAGE_NUMBER_MARKUP:SM3
                             %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
-                            %@%                 [D.1]                                    %! STAGE_NUMBER_MARKUP:SM3
+                            %@%                 [segment_01.1]                           %! STAGE_NUMBER_MARKUP:SM3
                             %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
                             %@% \line                                                    %! SPACING_MARKUP:HSS2
                             %@%     {                                                    %! SPACING_MARKUP:HSS2
