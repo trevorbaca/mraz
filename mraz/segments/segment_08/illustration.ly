@@ -17,7 +17,7 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % GlobalSkips [measure 158]                                          %! SM4
+                    % [GlobalSkips measure 158]                                          %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! REDUNDANT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! REDUNDANT_METRONOME_MARK:SM27
@@ -114,7 +114,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 159]                                          %! SM4
+                    % [GlobalSkips measure 159]                                          %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -156,7 +156,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 160]                                          %! SM4
+                    % [GlobalSkips measure 160]                                          %! SM4
                     \time 3/2                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -198,7 +198,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 161]                                          %! SM4
+                    % [GlobalSkips measure 161]                                          %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -240,7 +240,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 162]                                          %! SM4
+                    % [GlobalSkips measure 162]                                          %! SM4
                     \time 5/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/16
@@ -282,7 +282,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 163]                                          %! SM4
+                    % [GlobalSkips measure 163]                                          %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -324,7 +324,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 164]                                          %! SM4
+                    % [GlobalSkips measure 164]                                          %! SM4
                     \time 4/2                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 2
@@ -366,7 +366,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 165]                                          %! SM4
+                    % [GlobalSkips measure 165]                                          %! SM4
                     \time 7/16                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/16
@@ -408,7 +408,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 166]                                          %! SM4
+                    % [GlobalSkips measure 166]                                          %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -450,7 +450,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 167]                                          %! SM4
+                    % [GlobalSkips measure 167]                                          %! SM4
                     \time 2/2                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -492,7 +492,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 168]                                          %! SM4
+                    % [GlobalSkips measure 168]                                          %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -534,7 +534,7 @@
                             }
                         }
                     
-                    % GlobalSkips [measure 169]                                          %! SM4
+                    % [GlobalSkips measure 169]                                          %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -584,7 +584,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
                             
-                            % RHVoiceI [measure 158]                                     %! SM4
+                            % [RHVoiceI measure 158]                                     %! SM4
                             \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -594,433 +594,433 @@
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            % RHVoiceI [measure 159]                                     %! SM4
+                            % [RHVoiceI measure 159]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceI [measure 160]                                     %! SM4
+                            % [RHVoiceI measure 160]                                     %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceI [measure 161]                                     %! SM4
+                            % [RHVoiceI measure 161]                                     %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceI [measure 162]                                     %! SM4
+                            % [RHVoiceI measure 162]                                     %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceI [measure 163]                                     %! SM4
+                            % [RHVoiceI measure 163]                                     %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceI [measure 164]                                     %! SM4
+                            % [RHVoiceI measure 164]                                     %! SM4
                             s1 * 2
                             
-                            % RHVoiceI [measure 165]                                     %! SM4
+                            % [RHVoiceI measure 165]                                     %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceI [measure 166]                                     %! SM4
+                            % [RHVoiceI measure 166]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceI [measure 167]                                     %! SM4
+                            % [RHVoiceI measure 167]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceI [measure 168]                                     %! SM4
+                            % [RHVoiceI measure 168]                                     %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceI [measure 169]                                     %! SM4
+                            % [RHVoiceI measure 169]                                     %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {
                             
-                            % RHVoiceIInserts [measure 158]                              %! SM4
+                            % [RHVoiceIInserts measure 158]                              %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIInserts [measure 159]                              %! SM4
+                            % [RHVoiceIInserts measure 159]                              %! SM4
                             s1 * 1
                             
-                            % RHVoiceIInserts [measure 160]                              %! SM4
+                            % [RHVoiceIInserts measure 160]                              %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIInserts [measure 161]                              %! SM4
+                            % [RHVoiceIInserts measure 161]                              %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIInserts [measure 162]                              %! SM4
+                            % [RHVoiceIInserts measure 162]                              %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIInserts [measure 163]                              %! SM4
+                            % [RHVoiceIInserts measure 163]                              %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIInserts [measure 164]                              %! SM4
+                            % [RHVoiceIInserts measure 164]                              %! SM4
                             s1 * 2
                             
-                            % RHVoiceIInserts [measure 165]                              %! SM4
+                            % [RHVoiceIInserts measure 165]                              %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIInserts [measure 166]                              %! SM4
+                            % [RHVoiceIInserts measure 166]                              %! SM4
                             s1 * 1
                             
-                            % RHVoiceIInserts [measure 167]                              %! SM4
+                            % [RHVoiceIInserts measure 167]                              %! SM4
                             s1 * 1
                             
-                            % RHVoiceIInserts [measure 168]                              %! SM4
+                            % [RHVoiceIInserts measure 168]                              %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIInserts [measure 169]                              %! SM4
+                            % [RHVoiceIInserts measure 169]                              %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceII = "RHVoiceII" {
                             
-                            % RHVoiceII [measure 158]                                    %! SM4
+                            % [RHVoiceII measure 158]                                    %! SM4
                             \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 7/16
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             
-                            % RHVoiceII [measure 159]                                    %! SM4
+                            % [RHVoiceII measure 159]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceII [measure 160]                                    %! SM4
+                            % [RHVoiceII measure 160]                                    %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceII [measure 161]                                    %! SM4
+                            % [RHVoiceII measure 161]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceII [measure 162]                                    %! SM4
+                            % [RHVoiceII measure 162]                                    %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceII [measure 163]                                    %! SM4
+                            % [RHVoiceII measure 163]                                    %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceII [measure 164]                                    %! SM4
+                            % [RHVoiceII measure 164]                                    %! SM4
                             s1 * 2
                             
-                            % RHVoiceII [measure 165]                                    %! SM4
+                            % [RHVoiceII measure 165]                                    %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceII [measure 166]                                    %! SM4
+                            % [RHVoiceII measure 166]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceII [measure 167]                                    %! SM4
+                            % [RHVoiceII measure 167]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceII [measure 168]                                    %! SM4
+                            % [RHVoiceII measure 168]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceII [measure 169]                                    %! SM4
+                            % [RHVoiceII measure 169]                                    %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                             
-                            % RHVoiceIIInserts [measure 158]                             %! SM4
+                            % [RHVoiceIIInserts measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIIInserts [measure 159]                             %! SM4
+                            % [RHVoiceIIInserts measure 159]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIInserts [measure 160]                             %! SM4
+                            % [RHVoiceIIInserts measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIIInserts [measure 161]                             %! SM4
+                            % [RHVoiceIIInserts measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIIInserts [measure 162]                             %! SM4
+                            % [RHVoiceIIInserts measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIIInserts [measure 163]                             %! SM4
+                            % [RHVoiceIIInserts measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIIInserts [measure 164]                             %! SM4
+                            % [RHVoiceIIInserts measure 164]                             %! SM4
                             s1 * 2
                             
-                            % RHVoiceIIInserts [measure 165]                             %! SM4
+                            % [RHVoiceIIInserts measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIIInserts [measure 166]                             %! SM4
+                            % [RHVoiceIIInserts measure 166]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIInserts [measure 167]                             %! SM4
+                            % [RHVoiceIIInserts measure 167]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIInserts [measure 168]                             %! SM4
+                            % [RHVoiceIIInserts measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIIInserts [measure 169]                             %! SM4
+                            % [RHVoiceIIInserts measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIII = "RHVoiceIII" {
                             
-                            % RHVoiceIII [measure 158]                                   %! SM4
+                            % [RHVoiceIII measure 158]                                   %! SM4
                             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 7/16
                             \pp                                                          %! REAPPLIED_DYNAMIC:SM8
                             
-                            % RHVoiceIII [measure 159]                                   %! SM4
+                            % [RHVoiceIII measure 159]                                   %! SM4
                             s1 * 1
                             
-                            % RHVoiceIII [measure 160]                                   %! SM4
+                            % [RHVoiceIII measure 160]                                   %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIII [measure 161]                                   %! SM4
+                            % [RHVoiceIII measure 161]                                   %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIII [measure 162]                                   %! SM4
+                            % [RHVoiceIII measure 162]                                   %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIII [measure 163]                                   %! SM4
+                            % [RHVoiceIII measure 163]                                   %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIII [measure 164]                                   %! SM4
+                            % [RHVoiceIII measure 164]                                   %! SM4
                             s1 * 2
                             
-                            % RHVoiceIII [measure 165]                                   %! SM4
+                            % [RHVoiceIII measure 165]                                   %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIII [measure 166]                                   %! SM4
+                            % [RHVoiceIII measure 166]                                   %! SM4
                             s1 * 1
                             
-                            % RHVoiceIII [measure 167]                                   %! SM4
+                            % [RHVoiceIII measure 167]                                   %! SM4
                             s1 * 1
                             
-                            % RHVoiceIII [measure 168]                                   %! SM4
+                            % [RHVoiceIII measure 168]                                   %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIII [measure 169]                                   %! SM4
+                            % [RHVoiceIII measure 169]                                   %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                             
-                            % RHVoiceIIIInserts [measure 158]                            %! SM4
+                            % [RHVoiceIIIInserts measure 158]                            %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIIIInserts [measure 159]                            %! SM4
+                            % [RHVoiceIIIInserts measure 159]                            %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIIInserts [measure 160]                            %! SM4
+                            % [RHVoiceIIIInserts measure 160]                            %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIIIInserts [measure 161]                            %! SM4
+                            % [RHVoiceIIIInserts measure 161]                            %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIIIInserts [measure 162]                            %! SM4
+                            % [RHVoiceIIIInserts measure 162]                            %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIIIInserts [measure 163]                            %! SM4
+                            % [RHVoiceIIIInserts measure 163]                            %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIIIInserts [measure 164]                            %! SM4
+                            % [RHVoiceIIIInserts measure 164]                            %! SM4
                             s1 * 2
                             
-                            % RHVoiceIIIInserts [measure 165]                            %! SM4
+                            % [RHVoiceIIIInserts measure 165]                            %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIIIInserts [measure 166]                            %! SM4
+                            % [RHVoiceIIIInserts measure 166]                            %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIIInserts [measure 167]                            %! SM4
+                            % [RHVoiceIIIInserts measure 167]                            %! SM4
                             s1 * 1
                             
-                            % RHVoiceIIIInserts [measure 168]                            %! SM4
+                            % [RHVoiceIIIInserts measure 168]                            %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIIIInserts [measure 169]                            %! SM4
+                            % [RHVoiceIIIInserts measure 169]                            %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIV = "RHVoiceIV" {
                             
-                            % RHVoiceIV [measure 158]                                    %! SM4
+                            % [RHVoiceIV measure 158]                                    %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 7/16
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             
-                            % RHVoiceIV [measure 159]                                    %! SM4
+                            % [RHVoiceIV measure 159]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceIV [measure 160]                                    %! SM4
+                            % [RHVoiceIV measure 160]                                    %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIV [measure 161]                                    %! SM4
+                            % [RHVoiceIV measure 161]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIV [measure 162]                                    %! SM4
+                            % [RHVoiceIV measure 162]                                    %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIV [measure 163]                                    %! SM4
+                            % [RHVoiceIV measure 163]                                    %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIV [measure 164]                                    %! SM4
+                            % [RHVoiceIV measure 164]                                    %! SM4
                             s1 * 2
                             
-                            % RHVoiceIV [measure 165]                                    %! SM4
+                            % [RHVoiceIV measure 165]                                    %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIV [measure 166]                                    %! SM4
+                            % [RHVoiceIV measure 166]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceIV [measure 167]                                    %! SM4
+                            % [RHVoiceIV measure 167]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceIV [measure 168]                                    %! SM4
+                            % [RHVoiceIV measure 168]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIV [measure 169]                                    %! SM4
+                            % [RHVoiceIV measure 169]                                    %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                             
-                            % RHVoiceIVInserts [measure 158]                             %! SM4
+                            % [RHVoiceIVInserts measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIVInserts [measure 159]                             %! SM4
+                            % [RHVoiceIVInserts measure 159]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIVInserts [measure 160]                             %! SM4
+                            % [RHVoiceIVInserts measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceIVInserts [measure 161]                             %! SM4
+                            % [RHVoiceIVInserts measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIVInserts [measure 162]                             %! SM4
+                            % [RHVoiceIVInserts measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceIVInserts [measure 163]                             %! SM4
+                            % [RHVoiceIVInserts measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceIVInserts [measure 164]                             %! SM4
+                            % [RHVoiceIVInserts measure 164]                             %! SM4
                             s1 * 2
                             
-                            % RHVoiceIVInserts [measure 165]                             %! SM4
+                            % [RHVoiceIVInserts measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceIVInserts [measure 166]                             %! SM4
+                            % [RHVoiceIVInserts measure 166]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIVInserts [measure 167]                             %! SM4
+                            % [RHVoiceIVInserts measure 167]                             %! SM4
                             s1 * 1
                             
-                            % RHVoiceIVInserts [measure 168]                             %! SM4
+                            % [RHVoiceIVInserts measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceIVInserts [measure 169]                             %! SM4
+                            % [RHVoiceIVInserts measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceV = "RHVoiceV" {
                             
-                            % RHVoiceV [measure 158]                                     %! SM4
+                            % [RHVoiceV measure 158]                                     %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceV [measure 159]                                     %! SM4
+                            % [RHVoiceV measure 159]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceV [measure 160]                                     %! SM4
+                            % [RHVoiceV measure 160]                                     %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceV [measure 161]                                     %! SM4
+                            % [RHVoiceV measure 161]                                     %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceV [measure 162]                                     %! SM4
+                            % [RHVoiceV measure 162]                                     %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceV [measure 163]                                     %! SM4
+                            % [RHVoiceV measure 163]                                     %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceV [measure 164]                                     %! SM4
+                            % [RHVoiceV measure 164]                                     %! SM4
                             s1 * 2
                             
-                            % RHVoiceV [measure 165]                                     %! SM4
+                            % [RHVoiceV measure 165]                                     %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceV [measure 166]                                     %! SM4
+                            % [RHVoiceV measure 166]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceV [measure 167]                                     %! SM4
+                            % [RHVoiceV measure 167]                                     %! SM4
                             s1 * 1
                             
-                            % RHVoiceV [measure 168]                                     %! SM4
+                            % [RHVoiceV measure 168]                                     %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceV [measure 169]                                     %! SM4
+                            % [RHVoiceV measure 169]                                     %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHVoiceVI = "RHVoiceVI" {
                             
-                            % RHVoiceVI [measure 158]                                    %! SM4
+                            % [RHVoiceVI measure 158]                                    %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceVI [measure 159]                                    %! SM4
+                            % [RHVoiceVI measure 159]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceVI [measure 160]                                    %! SM4
+                            % [RHVoiceVI measure 160]                                    %! SM4
                             s1 * 3/2
                             
-                            % RHVoiceVI [measure 161]                                    %! SM4
+                            % [RHVoiceVI measure 161]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceVI [measure 162]                                    %! SM4
+                            % [RHVoiceVI measure 162]                                    %! SM4
                             s1 * 5/16
                             
-                            % RHVoiceVI [measure 163]                                    %! SM4
+                            % [RHVoiceVI measure 163]                                    %! SM4
                             s1 * 1/2
                             
-                            % RHVoiceVI [measure 164]                                    %! SM4
+                            % [RHVoiceVI measure 164]                                    %! SM4
                             s1 * 2
                             
-                            % RHVoiceVI [measure 165]                                    %! SM4
+                            % [RHVoiceVI measure 165]                                    %! SM4
                             s1 * 7/16
                             
-                            % RHVoiceVI [measure 166]                                    %! SM4
+                            % [RHVoiceVI measure 166]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceVI [measure 167]                                    %! SM4
+                            % [RHVoiceVI measure 167]                                    %! SM4
                             s1 * 1
                             
-                            % RHVoiceVI [measure 168]                                    %! SM4
+                            % [RHVoiceVI measure 168]                                    %! SM4
                             s1 * 7/8
                             
-                            % RHVoiceVI [measure 169]                                    %! SM4
+                            % [RHVoiceVI measure 169]                                    %! SM4
                             s1 * 1/2
                             
                         }
                         \context RHResonanceVoice = "RHResonanceVoice" {
                             
-                            % RHResonanceVoice [measure 158]                             %! SM4
+                            % [RHResonanceVoice measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % RHResonanceVoice [measure 159]                             %! SM4
+                            % [RHResonanceVoice measure 159]                             %! SM4
                             s1 * 1
                             
-                            % RHResonanceVoice [measure 160]                             %! SM4
+                            % [RHResonanceVoice measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % RHResonanceVoice [measure 161]                             %! SM4
+                            % [RHResonanceVoice measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % RHResonanceVoice [measure 162]                             %! SM4
+                            % [RHResonanceVoice measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % RHResonanceVoice [measure 163]                             %! SM4
+                            % [RHResonanceVoice measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % RHResonanceVoice [measure 164]                             %! SM4
+                            % [RHResonanceVoice measure 164]                             %! SM4
                             s1 * 2
                             
-                            % RHResonanceVoice [measure 165]                             %! SM4
+                            % [RHResonanceVoice measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % RHResonanceVoice [measure 166]                             %! SM4
+                            % [RHResonanceVoice measure 166]                             %! SM4
                             s1 * 1
                             
-                            % RHResonanceVoice [measure 167]                             %! SM4
+                            % [RHResonanceVoice measure 167]                             %! SM4
                             s1 * 1
                             
-                            % RHResonanceVoice [measure 168]                             %! SM4
+                            % [RHResonanceVoice measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % RHResonanceVoice [measure 169]                             %! SM4
+                            % [RHResonanceVoice measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
@@ -1028,124 +1028,124 @@
                     \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
                         \context LHVoiceI = "LHVoiceI" {
                             
-                            % LHVoiceI [measure 158]                                     %! SM4
+                            % [LHVoiceI measure 158]                                     %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceI [measure 159]                                     %! SM4
+                            % [LHVoiceI measure 159]                                     %! SM4
                             s1 * 1
                             
-                            % LHVoiceI [measure 160]                                     %! SM4
+                            % [LHVoiceI measure 160]                                     %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceI [measure 161]                                     %! SM4
+                            % [LHVoiceI measure 161]                                     %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceI [measure 162]                                     %! SM4
+                            % [LHVoiceI measure 162]                                     %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceI [measure 163]                                     %! SM4
+                            % [LHVoiceI measure 163]                                     %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceI [measure 164]                                     %! SM4
+                            % [LHVoiceI measure 164]                                     %! SM4
                             s1 * 2
                             
-                            % LHVoiceI [measure 165]                                     %! SM4
+                            % [LHVoiceI measure 165]                                     %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceI [measure 166]                                     %! SM4
+                            % [LHVoiceI measure 166]                                     %! SM4
                             s1 * 1
                             
-                            % LHVoiceI [measure 167]                                     %! SM4
+                            % [LHVoiceI measure 167]                                     %! SM4
                             s1 * 1
                             
-                            % LHVoiceI [measure 168]                                     %! SM4
+                            % [LHVoiceI measure 168]                                     %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceI [measure 169]                                     %! SM4
+                            % [LHVoiceI measure 169]                                     %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHVoiceII = "LHVoiceII" {
                             
-                            % LHVoiceII [measure 158]                                    %! SM4
+                            % [LHVoiceII measure 158]                                    %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceII [measure 159]                                    %! SM4
+                            % [LHVoiceII measure 159]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceII [measure 160]                                    %! SM4
+                            % [LHVoiceII measure 160]                                    %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceII [measure 161]                                    %! SM4
+                            % [LHVoiceII measure 161]                                    %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceII [measure 162]                                    %! SM4
+                            % [LHVoiceII measure 162]                                    %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceII [measure 163]                                    %! SM4
+                            % [LHVoiceII measure 163]                                    %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceII [measure 164]                                    %! SM4
+                            % [LHVoiceII measure 164]                                    %! SM4
                             s1 * 2
                             
-                            % LHVoiceII [measure 165]                                    %! SM4
+                            % [LHVoiceII measure 165]                                    %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceII [measure 166]                                    %! SM4
+                            % [LHVoiceII measure 166]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceII [measure 167]                                    %! SM4
+                            % [LHVoiceII measure 167]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceII [measure 168]                                    %! SM4
+                            % [LHVoiceII measure 168]                                    %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceII [measure 169]                                    %! SM4
+                            % [LHVoiceII measure 169]                                    %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHVoiceIII = "LHVoiceIII" {
                             
-                            % LHVoiceIII [measure 158]                                   %! SM4
+                            % [LHVoiceIII measure 158]                                   %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceIII [measure 159]                                   %! SM4
+                            % [LHVoiceIII measure 159]                                   %! SM4
                             s1 * 1
                             
-                            % LHVoiceIII [measure 160]                                   %! SM4
+                            % [LHVoiceIII measure 160]                                   %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceIII [measure 161]                                   %! SM4
+                            % [LHVoiceIII measure 161]                                   %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIII [measure 162]                                   %! SM4
+                            % [LHVoiceIII measure 162]                                   %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceIII [measure 163]                                   %! SM4
+                            % [LHVoiceIII measure 163]                                   %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceIII [measure 164]                                   %! SM4
+                            % [LHVoiceIII measure 164]                                   %! SM4
                             s1 * 2
                             
-                            % LHVoiceIII [measure 165]                                   %! SM4
+                            % [LHVoiceIII measure 165]                                   %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceIII [measure 166]                                   %! SM4
+                            % [LHVoiceIII measure 166]                                   %! SM4
                             s1 * 1
                             
-                            % LHVoiceIII [measure 167]                                   %! SM4
+                            % [LHVoiceIII measure 167]                                   %! SM4
                             s1 * 1
                             
-                            % LHVoiceIII [measure 168]                                   %! SM4
+                            % [LHVoiceIII measure 168]                                   %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIII [measure 169]                                   %! SM4
+                            % [LHVoiceIII measure 169]                                   %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHVoiceIV = "LHVoiceIV" {
                             
-                            % LHVoiceIV [measure 158]                                    %! SM4
+                            % [LHVoiceIV measure 158]                                    %! SM4
                             \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
                             \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
                             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1155,76 +1155,76 @@
                             \ff                                                          %! REAPPLIED_DYNAMIC:SM8
                             \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            % LHVoiceIV [measure 159]                                    %! SM4
+                            % [LHVoiceIV measure 159]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceIV [measure 160]                                    %! SM4
+                            % [LHVoiceIV measure 160]                                    %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceIV [measure 161]                                    %! SM4
+                            % [LHVoiceIV measure 161]                                    %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIV [measure 162]                                    %! SM4
+                            % [LHVoiceIV measure 162]                                    %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceIV [measure 163]                                    %! SM4
+                            % [LHVoiceIV measure 163]                                    %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceIV [measure 164]                                    %! SM4
+                            % [LHVoiceIV measure 164]                                    %! SM4
                             s1 * 2
                             
-                            % LHVoiceIV [measure 165]                                    %! SM4
+                            % [LHVoiceIV measure 165]                                    %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceIV [measure 166]                                    %! SM4
+                            % [LHVoiceIV measure 166]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceIV [measure 167]                                    %! SM4
+                            % [LHVoiceIV measure 167]                                    %! SM4
                             s1 * 1
                             
-                            % LHVoiceIV [measure 168]                                    %! SM4
+                            % [LHVoiceIV measure 168]                                    %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIV [measure 169]                                    %! SM4
+                            % [LHVoiceIV measure 169]                                    %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                             
-                            % LHVoiceIVInserts [measure 158]                             %! SM4
+                            % [LHVoiceIVInserts measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceIVInserts [measure 159]                             %! SM4
+                            % [LHVoiceIVInserts measure 159]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceIVInserts [measure 160]                             %! SM4
+                            % [LHVoiceIVInserts measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceIVInserts [measure 161]                             %! SM4
+                            % [LHVoiceIVInserts measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIVInserts [measure 162]                             %! SM4
+                            % [LHVoiceIVInserts measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceIVInserts [measure 163]                             %! SM4
+                            % [LHVoiceIVInserts measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceIVInserts [measure 164]                             %! SM4
+                            % [LHVoiceIVInserts measure 164]                             %! SM4
                             s1 * 2
                             
-                            % LHVoiceIVInserts [measure 165]                             %! SM4
+                            % [LHVoiceIVInserts measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceIVInserts [measure 166]                             %! SM4
+                            % [LHVoiceIVInserts measure 166]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceIVInserts [measure 167]                             %! SM4
+                            % [LHVoiceIVInserts measure 167]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceIVInserts [measure 168]                             %! SM4
+                            % [LHVoiceIVInserts measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceIVInserts [measure 169]                             %! SM4
+                            % [LHVoiceIVInserts measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
@@ -1232,7 +1232,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 158]                             %! SM4
+                                    % [LHVoiceV measure 158]                             %! SM4
                                     \override TupletBracket.direction = #up              %! OC
                                     \ottava #-1                                          %! SC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
@@ -1268,7 +1268,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 16/15 {
                                     
-                                    % LHVoiceV [measure 159]                             %! SM4
+                                    % [LHVoiceV measure 159]                             %! SM4
                                     g,,8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1319,7 +1319,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 160]                             %! SM4
+                                    % [LHVoiceV measure 160]                             %! SM4
                                     cs,,32
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1353,7 +1353,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 161]                             %! SM4
+                                    % [LHVoiceV measure 161]                             %! SM4
                                     bf,,8.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1393,7 +1393,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 162]                             %! SM4
+                                    % [LHVoiceV measure 162]                             %! SM4
                                     d,,8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1424,7 +1424,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 16/15 {
                                     
-                                    % LHVoiceV [measure 163]                             %! SM4
+                                    % [LHVoiceV measure 163]                             %! SM4
                                     b,,,8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1458,7 +1458,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 164]                             %! SM4
+                                    % [LHVoiceV measure 164]                             %! SM4
                                     ef,,32
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1498,7 +1498,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 165]                             %! SM4
+                                    % [LHVoiceV measure 165]                             %! SM4
                                     c,8.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1529,7 +1529,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 16/15 {
                                     
-                                    % LHVoiceV [measure 166]                             %! SM4
+                                    % [LHVoiceV measure 166]                             %! SM4
                                     fs,,8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1578,7 +1578,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 167]                             %! SM4
+                                    % [LHVoiceV measure 167]                             %! SM4
                                     a,,,32
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1610,7 +1610,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % LHVoiceV [measure 168]                             %! SM4
+                                    % [LHVoiceV measure 168]                             %! SM4
                                     b,,8.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1649,7 +1649,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 16/15 {
                                     
-                                    % LHVoiceV [measure 169]                             %! SM4
+                                    % [LHVoiceV measure 169]                             %! SM4
                                     fs,,8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1686,46 +1686,46 @@
                         }
                         \context LHVoiceVInserts = "LHVoiceVInserts" {
                             
-                            % LHVoiceVInserts [measure 158]                              %! SM4
+                            % [LHVoiceVInserts measure 158]                              %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceVInserts [measure 159]                              %! SM4
+                            % [LHVoiceVInserts measure 159]                              %! SM4
                             s1 * 1
                             
-                            % LHVoiceVInserts [measure 160]                              %! SM4
+                            % [LHVoiceVInserts measure 160]                              %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceVInserts [measure 161]                              %! SM4
+                            % [LHVoiceVInserts measure 161]                              %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceVInserts [measure 162]                              %! SM4
+                            % [LHVoiceVInserts measure 162]                              %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceVInserts [measure 163]                              %! SM4
+                            % [LHVoiceVInserts measure 163]                              %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceVInserts [measure 164]                              %! SM4
+                            % [LHVoiceVInserts measure 164]                              %! SM4
                             s1 * 2
                             
-                            % LHVoiceVInserts [measure 165]                              %! SM4
+                            % [LHVoiceVInserts measure 165]                              %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceVInserts [measure 166]                              %! SM4
+                            % [LHVoiceVInserts measure 166]                              %! SM4
                             s1 * 1
                             
-                            % LHVoiceVInserts [measure 167]                              %! SM4
+                            % [LHVoiceVInserts measure 167]                              %! SM4
                             s1 * 1
                             
-                            % LHVoiceVInserts [measure 168]                              %! SM4
+                            % [LHVoiceVInserts measure 168]                              %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceVInserts [measure 169]                              %! SM4
+                            % [LHVoiceVInserts measure 169]                              %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHVoiceVI = "LHVoiceVI" {
                             
-                            % LHVoiceVI [measure 158]                                    %! SM4
+                            % [LHVoiceVI measure 158]                                    %! SM4
                             \override Script.direction = #down                           %! OC
                             \override TupletBracket.staff-padding = #6                   %! OC
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -1815,7 +1815,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     
-                                    % LHVoiceVI [measure 161]                            %! SM4
+                                    % [LHVoiceVI measure 161]                            %! SM4
                                     b,,,8
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1987,7 +1987,7 @@
                                     
                                     r4
                                     
-                                    % LHVoiceVI [measure 168]                            %! SM4
+                                    % [LHVoiceVI measure 168]                            %! SM4
                                     f,,8
                                     -\tenuto                                             %! IC
                                     
@@ -2004,7 +2004,7 @@
                             
                             s1 * 3/8
                             
-                            % LHVoiceVI [measure 169]                                    %! SM4
+                            % [LHVoiceVI measure 169]                                    %! SM4
                             s1 * 1/2
                             \revert Script.direction                                     %! OC
                             \revert TupletBracket.staff-padding                          %! OC
@@ -2012,79 +2012,79 @@
                         }
                         \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                             
-                            % LHVoiceVIInserts [measure 158]                             %! SM4
+                            % [LHVoiceVIInserts measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceVIInserts [measure 159]                             %! SM4
+                            % [LHVoiceVIInserts measure 159]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceVIInserts [measure 160]                             %! SM4
+                            % [LHVoiceVIInserts measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % LHVoiceVIInserts [measure 161]                             %! SM4
+                            % [LHVoiceVIInserts measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceVIInserts [measure 162]                             %! SM4
+                            % [LHVoiceVIInserts measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % LHVoiceVIInserts [measure 163]                             %! SM4
+                            % [LHVoiceVIInserts measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % LHVoiceVIInserts [measure 164]                             %! SM4
+                            % [LHVoiceVIInserts measure 164]                             %! SM4
                             s1 * 2
                             
-                            % LHVoiceVIInserts [measure 165]                             %! SM4
+                            % [LHVoiceVIInserts measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % LHVoiceVIInserts [measure 166]                             %! SM4
+                            % [LHVoiceVIInserts measure 166]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceVIInserts [measure 167]                             %! SM4
+                            % [LHVoiceVIInserts measure 167]                             %! SM4
                             s1 * 1
                             
-                            % LHVoiceVIInserts [measure 168]                             %! SM4
+                            % [LHVoiceVIInserts measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % LHVoiceVIInserts [measure 169]                             %! SM4
+                            % [LHVoiceVIInserts measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
                             
-                            % LHResonanceVoice [measure 158]                             %! SM4
+                            % [LHResonanceVoice measure 158]                             %! SM4
                             s1 * 7/16
                             
-                            % LHResonanceVoice [measure 159]                             %! SM4
+                            % [LHResonanceVoice measure 159]                             %! SM4
                             s1 * 1
                             
-                            % LHResonanceVoice [measure 160]                             %! SM4
+                            % [LHResonanceVoice measure 160]                             %! SM4
                             s1 * 3/2
                             
-                            % LHResonanceVoice [measure 161]                             %! SM4
+                            % [LHResonanceVoice measure 161]                             %! SM4
                             s1 * 7/8
                             
-                            % LHResonanceVoice [measure 162]                             %! SM4
+                            % [LHResonanceVoice measure 162]                             %! SM4
                             s1 * 5/16
                             
-                            % LHResonanceVoice [measure 163]                             %! SM4
+                            % [LHResonanceVoice measure 163]                             %! SM4
                             s1 * 1/2
                             
-                            % LHResonanceVoice [measure 164]                             %! SM4
+                            % [LHResonanceVoice measure 164]                             %! SM4
                             s1 * 2
                             
-                            % LHResonanceVoice [measure 165]                             %! SM4
+                            % [LHResonanceVoice measure 165]                             %! SM4
                             s1 * 7/16
                             
-                            % LHResonanceVoice [measure 166]                             %! SM4
+                            % [LHResonanceVoice measure 166]                             %! SM4
                             s1 * 1
                             
-                            % LHResonanceVoice [measure 167]                             %! SM4
+                            % [LHResonanceVoice measure 167]                             %! SM4
                             s1 * 1
                             
-                            % LHResonanceVoice [measure 168]                             %! SM4
+                            % [LHResonanceVoice measure 168]                             %! SM4
                             s1 * 7/8
                             
-                            % LHResonanceVoice [measure 169]                             %! SM4
+                            % [LHResonanceVoice measure 169]                             %! SM4
                             s1 * 1/2
                             
                         }
