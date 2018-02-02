@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #132
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [segment_05 GlobalSkips measure 132]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -893,10 +898,14 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" {
-                \context PianoMusicStaffGroup = "PianoMusicStaffGroup" <<
-                    \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
-                        \context RHVoiceI = "RHVoiceI" {
+            \context MusicContext = "MusicContext"
+            {
+                \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
+                <<
+                    \context PianoMusicRHStaff = "PianoMusicRHStaff"
+                    <<
+                        \context RHVoiceI = "RHVoiceI"
+                        {
                             
                             % [segment_05 RHVoiceI measure 132]                          %! SM4
                             \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -939,7 +948,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceIInserts = "RHVoiceIInserts" {
+                        \context RHVoiceIInserts = "RHVoiceIInserts"
+                        {
                             
                             % [segment_05 RHVoiceIInserts measure 132]                   %! SM4
                             s1 * 4
@@ -975,7 +985,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceII = "RHVoiceII" {
+                        \context RHVoiceII = "RHVoiceII"
+                        {
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
@@ -1521,7 +1532,8 @@
                             \revert Script.direction                                     %! OC
                             
                         }
-                        \context RHVoiceIIInserts = "RHVoiceIIInserts" {
+                        \context RHVoiceIIInserts = "RHVoiceIIInserts"
+                        {
                             
                             % [segment_05 RHVoiceIIInserts measure 132]                  %! SM4
                             s1 * 4
@@ -1557,7 +1569,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceIII = "RHVoiceIII" {
+                        \context RHVoiceIII = "RHVoiceIII"
+                        {
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/5 {
@@ -2358,7 +2371,8 @@
                                 }
                             }
                         }
-                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
+                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
+                        {
                             
                             % [segment_05 RHVoiceIIIInserts measure 132]                 %! SM4
                             s1 * 4
@@ -2394,7 +2408,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceIV = "RHVoiceIV" {
+                        \context RHVoiceIV = "RHVoiceIV"
+                        {
                             
                             % [segment_05 RHVoiceIV measure 132]                         %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2432,7 +2447,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceIVInserts = "RHVoiceIVInserts" {
+                        \context RHVoiceIVInserts = "RHVoiceIVInserts"
+                        {
                             
                             % [segment_05 RHVoiceIVInserts measure 132]                  %! SM4
                             s1 * 4
@@ -2468,7 +2484,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceV = "RHVoiceV" {
+                        \context RHVoiceV = "RHVoiceV"
+                        {
                             
                             % [segment_05 RHVoiceV measure 132]                          %! SM4
                             s1 * 4
@@ -2504,7 +2521,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHVoiceVI = "RHVoiceVI" {
+                        \context RHVoiceVI = "RHVoiceVI"
+                        {
                             
                             % [segment_05 RHVoiceVI measure 132]                         %! SM4
                             s1 * 4
@@ -2540,7 +2558,8 @@
                             s1 * 1/4
                             
                         }
-                        \context RHResonanceVoice = "RHResonanceVoice" {
+                        \context RHResonanceVoice = "RHResonanceVoice"
+                        {
                             
                             % [segment_05 RHResonanceVoice measure 132]                  %! SM4
                             s1 * 4
@@ -2577,8 +2596,10 @@
                             
                         }
                     >>
-                    \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
-                        \context LHVoiceI = "LHVoiceI" {
+                    \context PianoMusicLHStaff = "PianoMusicLHStaff"
+                    <<
+                        \context LHVoiceI = "LHVoiceI"
+                        {
                             
                             % [segment_05 LHVoiceI measure 132]                          %! SM4
                             s1 * 4
@@ -2614,7 +2635,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceII = "LHVoiceII" {
+                        \context LHVoiceII = "LHVoiceII"
+                        {
                             
                             % [segment_05 LHVoiceII measure 132]                         %! SM4
                             s1 * 4
@@ -2650,7 +2672,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceIII = "LHVoiceIII" {
+                        \context LHVoiceIII = "LHVoiceIII"
+                        {
                             
                             % [segment_05 LHVoiceIII measure 132]                        %! SM4
                             s1 * 4
@@ -2686,7 +2709,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceIV = "LHVoiceIV" {
+                        \context LHVoiceIV = "LHVoiceIV"
+                        {
                             
                             % [segment_05 LHVoiceIV measure 132]                         %! SM4
                             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3096,7 +3120,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceIVInserts = "LHVoiceIVInserts" {
+                        \context LHVoiceIVInserts = "LHVoiceIVInserts"
+                        {
                             
                             % [segment_05 LHVoiceIVInserts measure 132]                  %! SM4
                             s1 * 4
@@ -3132,7 +3157,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceV = "LHVoiceV" {
+                        \context LHVoiceV = "LHVoiceV"
+                        {
                             
                             % [segment_05 LHVoiceV measure 132]                          %! SM4
                             \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3170,7 +3196,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceVInserts = "LHVoiceVInserts" {
+                        \context LHVoiceVInserts = "LHVoiceVInserts"
+                        {
                             
                             % [segment_05 LHVoiceVInserts measure 132]                   %! SM4
                             s1 * 4
@@ -3206,7 +3233,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceVI = "LHVoiceVI" {
+                        \context LHVoiceVI = "LHVoiceVI"
+                        {
                             
                             % [segment_05 LHVoiceVI measure 132]                         %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -3286,7 +3314,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHVoiceVIInserts = "LHVoiceVIInserts" {
+                        \context LHVoiceVIInserts = "LHVoiceVIInserts"
+                        {
                             
                             % [segment_05 LHVoiceVIInserts measure 132]                  %! SM4
                             s1 * 4
@@ -3322,7 +3351,8 @@
                             s1 * 1/4
                             
                         }
-                        \context LHResonanceVoice = "LHResonanceVoice" {
+                        \context LHResonanceVoice = "LHResonanceVoice"
+                        {
                             
                             % [segment_05 LHResonanceVoice measure 132]                  %! SM4
                             s1 * 4
