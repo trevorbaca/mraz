@@ -17,7 +17,7 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 91]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 91]                                %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -118,7 +118,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 92]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 92]                                %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -160,7 +160,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 93]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 93]                                %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -202,7 +202,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 94]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 94]                                %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -244,7 +244,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 95]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 95]                                %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -286,7 +286,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 96]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 96]                                %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -383,7 +383,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 97]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 97]                                %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -483,7 +483,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 98]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 98]                                %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -525,7 +525,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 99]                                           %! SM4
+                    % [segment_04 GlobalSkips measure 99]                                %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -567,7 +567,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 100]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 100]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -609,7 +609,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 101]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 101]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -651,7 +651,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 102]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 102]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -693,7 +693,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 103]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 103]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -735,7 +735,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 104]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 104]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -777,7 +777,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 105]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 105]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -819,7 +819,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 106]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 106]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -916,7 +916,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 107]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 107]                               %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -958,7 +958,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 108]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 108]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -1000,7 +1000,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 109]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 109]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -1042,7 +1042,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 110]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 110]                               %! SM4
                     \time 1/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/8
@@ -1084,7 +1084,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 111]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 111]                               %! SM4
                     \once \override TextSpanner.Y-extent = ##f                           %! SM29
                     \once \override TextSpanner.arrow-width = 0.25                       %! SM29
                     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29
@@ -1150,7 +1150,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 112]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 112]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -1192,7 +1192,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 113]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 113]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -1234,7 +1234,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 114]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 114]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1331,7 +1331,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 115]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 115]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1432,7 +1432,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 116]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 116]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -1474,7 +1474,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 117]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 117]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -1516,7 +1516,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 118]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 118]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -1558,7 +1558,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 119]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 119]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1655,7 +1655,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 120]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 120]                               %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -1697,7 +1697,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 121]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 121]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1798,7 +1798,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 122]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 122]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -1840,7 +1840,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 123]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 123]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1937,7 +1937,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 124]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 124]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -2037,7 +2037,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 125]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 125]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -2079,7 +2079,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 126]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 126]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -2121,7 +2121,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 127]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 127]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -2163,7 +2163,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 128]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 128]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -2260,7 +2260,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 129]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 129]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
                     ^ \markup {
@@ -2301,7 +2301,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 130]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 130]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
                     ^ \markup {
@@ -2342,7 +2342,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 131]                                          %! SM4
+                    % [segment_04 GlobalSkips measure 131]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -2394,7 +2394,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
                             
-                            % [RHVoiceI measure 91]                                      %! SM4
+                            % [segment_04 RHVoiceI measure 91]                           %! SM4
                             \override TupletBracket.staff-padding = #8                   %! OC
                             \override TupletBracket.direction = #up                      %! OC
                             \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -2409,7 +2409,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
                                     
-                                    % [RHVoiceI measure 107]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 107]                  %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \dynamicDown                                         %! IC
                                     r8
@@ -2474,7 +2474,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceI measure 109]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 109]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2499,7 +2499,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceI measure 110]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 110]                  %! SM4
                                     \once \override Script.color = #black                %! OC
                                     \once \override Script.extra-offset = #'(0.5 . 0)    %! OC
                                     \once \override Rest.transparent = ##t               %! OC
@@ -2529,7 +2529,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/4 {
                                     
-                                    % [RHVoiceI measure 111]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 111]                  %! SM4
                                     bf''''8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2569,13 +2569,13 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 113]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 113]                          %! SM4
                             s1 * 7/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 19/14 {
                                     
-                                    % [RHVoiceI measure 115]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 115]                  %! SM4
                                     ef''''8
                                     [
                                     (                                                    %! SC
@@ -2635,12 +2635,12 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 119]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 119]                          %! SM4
                             s1 * 7/8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 121]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 121]                  %! SM4
                                     \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     ef''''1..
                                     -\tenuto                                             %! IC
@@ -2667,7 +2667,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 122]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 122]                  %! SM4
                                     f''''1.
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2692,7 +2692,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 123]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 123]                  %! SM4
                                     bf''''1
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2717,7 +2717,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 124]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 124]                  %! SM4
                                     ef''''1
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2741,12 +2741,12 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 125]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 125]                          %! SM4
                             s1 * 3/2
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 126]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 126]                  %! SM4
                                     \ottava #1                                           %! SC
                                     f''''1
                                     -\tenuto                                             %! IC
@@ -2772,7 +2772,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 127]                             %! SM4
+                                    % [segment_04 RHVoiceI measure 127]                  %! SM4
                                     bf''''2
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2797,16 +2797,16 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 128]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 128]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 129]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 129]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 130]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 130]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 131]                                     %! SM4
+                            % [segment_04 RHVoiceI measure 131]                          %! SM4
                             s1 * 3/2
                             \revert TupletBracket.staff-padding                          %! OC
                             \revert TupletBracket.direction                              %! OC
@@ -2814,140 +2814,140 @@
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {
                             
-                            % [RHVoiceIInserts measure 91]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 91]                    %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 92]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 92]                    %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 93]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 93]                    %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 94]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 94]                    %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 95]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 95]                    %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 96]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 96]                    %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 97]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 97]                    %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 98]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 98]                    %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 99]                               %! SM4
+                            % [segment_04 RHVoiceIInserts measure 99]                    %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 100]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 100]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 101]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 101]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 102]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 102]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 103]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 103]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 104]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 104]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 105]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 105]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 106]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 106]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 107]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 107]                   %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIInserts measure 108]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 108]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 109]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 109]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 110]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 110]                   %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIInserts measure 111]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 111]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 112]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 112]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 113]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 113]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 114]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 114]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 115]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 115]                   %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIInserts measure 116]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 116]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 117]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 117]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 118]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 118]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 119]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 119]                   %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIInserts measure 120]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 120]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 121]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 121]                   %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIInserts measure 122]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 122]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 123]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 123]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 124]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 124]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 125]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 125]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 126]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 126]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 127]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 127]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 128]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 128]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 129]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 129]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 130]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 130]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 131]                              %! SM4
+                            % [segment_04 RHVoiceIInserts measure 131]                   %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceII = "RHVoiceII" {
                             
-                            % [RHVoiceII measure 91]                                     %! SM4
+                            % [segment_04 RHVoiceII measure 91]                          %! SM4
                             \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 3/2
                             \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 92]                             %! SM4
+                                    % [segment_04 RHVoiceII measure 92]                  %! SM4
                                     \once \override Script.direction = #up               %! OC
                                     \arpeggioArrowUp                                     %! IC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
@@ -2976,7 +2976,7 @@
                                 }
                             }
                             
-                            % [RHVoiceII measure 93]                                     %! SM4
+                            % [segment_04 RHVoiceII measure 93]                          %! SM4
                             s1 * 57/4
                             {
                                 \override TupletBracket.stencil = ##f
@@ -2984,7 +2984,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
                                     
-                                    % [RHVoiceII measure 107]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 107]                 %! SM4
                                     s8
                                     [
                                     
@@ -3022,7 +3022,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 109]                                    %! SM4
+                            % [segment_04 RHVoiceII measure 109]                         %! SM4
                             s1 * 5/8
                             {
                                 \override TupletBracket.stencil = ##f
@@ -3030,7 +3030,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/4 {
                                     
-                                    % [RHVoiceII measure 111]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 111]                 %! SM4
                                     s8
                                     [
                                     
@@ -3062,7 +3062,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 113]                                    %! SM4
+                            % [segment_04 RHVoiceII measure 113]                         %! SM4
                             s1 * 7/4
                             {
                                 \override TupletBracket.stencil = ##f
@@ -3070,7 +3070,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 19/14 {
                                     
-                                    % [RHVoiceII measure 115]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 115]                 %! SM4
                                     s8
                                     [
                                     
@@ -3120,12 +3120,12 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 119]                                    %! SM4
+                            % [segment_04 RHVoiceII measure 119]                         %! SM4
                             s1 * 33/8
                             {
                                 \times 4/5 {
                                     
-                                    % [RHVoiceII measure 123]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 123]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \set stemLeftBeamCount = 0
@@ -3244,7 +3244,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 124]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 124]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3373,7 +3373,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 125]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 125]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Script.direction = #up               %! OC
                                     \once \override Accidental.color = #red
@@ -3417,7 +3417,7 @@
                             {
                                 \times 2/3 {
                                     
-                                    % [RHVoiceII measure 126]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 126]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3560,7 +3560,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 127]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 127]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3651,7 +3651,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 128]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 128]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -3696,7 +3696,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 129]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 129]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -3738,7 +3738,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 130]                            %! SM4
+                                    % [segment_04 RHVoiceII measure 130]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -3778,133 +3778,133 @@
                                 }
                             }
                             
-                            % [RHVoiceII measure 131]                                    %! SM4
+                            % [segment_04 RHVoiceII measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                             
-                            % [RHVoiceIIInserts measure 91]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 91]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 92]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 92]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 93]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 93]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 94]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 94]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 95]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 95]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 96]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 96]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 97]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 97]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 98]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 98]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 99]                              %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 99]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 100]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 100]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 101]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 101]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 102]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 102]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 103]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 103]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 104]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 104]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 105]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 105]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 106]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 106]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 107]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 107]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIIInserts measure 108]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 108]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 109]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 109]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 110]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 110]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIIInserts measure 111]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 111]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 112]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 112]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 113]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 113]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 114]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 114]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 115]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 115]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIInserts measure 116]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 116]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 117]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 117]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 118]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 118]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 119]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 119]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIInserts measure 120]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 120]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 121]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 121]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIIInserts measure 122]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 122]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 123]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 123]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 124]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 124]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 125]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 125]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 126]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 126]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 127]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 127]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 128]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 129]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 130]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 131]                             %! SM4
+                            % [segment_04 RHVoiceIIInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }
@@ -3913,7 +3913,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 12/11 {
                                     
-                                    % [RHVoiceIII measure 91]                            %! SM4
+                                    % [segment_04 RHVoiceIII measure 91]                 %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
@@ -3971,13 +3971,13 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 92]                                    %! SM4
+                            % [segment_04 RHVoiceIII measure 92]                         %! SM4
                             s1 * 3/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    % [RHVoiceIII measure 93]                            %! SM4
+                                    % [segment_04 RHVoiceIII measure 93]                 %! SM4
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     r4
@@ -4023,7 +4023,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceIII measure 94]                            %! SM4
+                                    % [segment_04 RHVoiceIII measure 94]                 %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4049,7 +4049,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 12/11 {
                                     
-                                    % [RHVoiceIII measure 95]                            %! SM4
+                                    % [segment_04 RHVoiceIII measure 95]                 %! SM4
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     ef'8
@@ -4093,7 +4093,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceIII measure 96]                            %! SM4
+                                    % [segment_04 RHVoiceIII measure 96]                 %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4116,13 +4116,13 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 97]                                    %! SM4
+                            % [segment_04 RHVoiceIII measure 97]                         %! SM4
                             s1 * 30
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    % [RHVoiceIII measure 131]                           %! SM4
+                                    % [segment_04 RHVoiceIII measure 131]                %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
@@ -4177,392 +4177,392 @@
                         }
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                             
-                            % [RHVoiceIIIInserts measure 91]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 91]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 92]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 92]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 93]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 93]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 94]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 94]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 95]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 95]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 96]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 96]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 97]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 97]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 98]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 98]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 99]                             %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 99]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 100]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 100]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 101]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 101]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 102]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 102]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 103]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 103]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 104]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 104]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 105]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 105]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 106]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 106]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 107]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 107]                 %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIIIInserts measure 108]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 108]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 109]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 109]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 110]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 110]                 %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIIIInserts measure 111]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 111]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 112]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 112]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 113]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 113]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 114]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 114]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 115]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 115]                 %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIIInserts measure 116]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 116]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 117]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 117]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 118]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 118]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 119]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 119]                 %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIIInserts measure 120]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 120]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 121]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 121]                 %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIIIInserts measure 122]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 122]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 123]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 123]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 124]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 124]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 125]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 125]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 126]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 126]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 127]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 127]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 128]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 128]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 129]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 129]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 130]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 130]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 131]                            %! SM4
+                            % [segment_04 RHVoiceIIIInserts measure 131]                 %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceIV = "RHVoiceIV" {
                             
-                            % [RHVoiceIV measure 91]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 91]                          %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 3/2
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             
-                            % [RHVoiceIV measure 92]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 92]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 93]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 93]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 94]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 94]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 95]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 95]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 96]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 96]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 97]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 97]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 98]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 98]                          %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 99]                                     %! SM4
+                            % [segment_04 RHVoiceIV measure 99]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 100]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 100]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 101]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 101]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 102]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 102]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 103]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 103]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 104]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 104]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 105]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 105]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 106]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 106]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 107]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 107]                         %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIV measure 108]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 108]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 109]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 109]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 110]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 110]                         %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIV measure 111]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 111]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 112]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 112]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 113]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 113]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 114]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 114]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 115]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 115]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIV measure 116]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 116]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 117]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 117]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 118]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 118]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 119]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 119]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIV measure 120]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 120]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 121]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 121]                         %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIV measure 122]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 122]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 123]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 123]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 124]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 124]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 125]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 125]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 126]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 126]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 127]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 127]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 128]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 128]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 129]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 129]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 130]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 130]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 131]                                    %! SM4
+                            % [segment_04 RHVoiceIV measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                             
-                            % [RHVoiceIVInserts measure 91]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 91]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 92]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 92]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 93]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 93]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 94]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 94]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 95]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 95]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 96]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 96]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 97]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 97]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 98]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 98]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 99]                              %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 99]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 100]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 100]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 101]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 101]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 102]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 102]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 103]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 103]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 104]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 104]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 105]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 105]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 106]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 106]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 107]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 107]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIVInserts measure 108]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 108]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 109]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 109]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 110]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 110]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIVInserts measure 111]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 111]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 112]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 112]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 113]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 113]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 114]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 114]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 115]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 115]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIVInserts measure 116]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 116]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 117]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 117]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 118]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 118]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 119]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 119]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIVInserts measure 120]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 120]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 121]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 121]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIVInserts measure 122]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 122]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 123]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 123]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 124]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 124]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 125]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 125]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 126]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 126]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 127]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 127]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 128]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 129]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 130]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 131]                             %! SM4
+                            % [segment_04 RHVoiceIVInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceV = "RHVoiceV" {
                             
-                            % [RHVoiceV measure 91]                                      %! SM4
+                            % [segment_04 RHVoiceV measure 91]                           %! SM4
                             s1 * 65/4
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceV measure 106]                             %! SM4
+                                    % [segment_04 RHVoiceV measure 106]                  %! SM4
                                     <b d' fs' a'>16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4586,331 +4586,331 @@
                                 }
                             }
                             
-                            % [RHVoiceV measure 107]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 107]                          %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceV measure 108]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 108]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 109]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 109]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 110]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 110]                          %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceV measure 111]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 111]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 112]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 112]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 113]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 113]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 114]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 114]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceV measure 115]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 115]                          %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceV measure 116]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 116]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 117]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 117]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceV measure 118]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 118]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 119]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 119]                          %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceV measure 120]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 120]                          %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceV measure 121]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 121]                          %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceV measure 122]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 122]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceV measure 123]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 123]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 124]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 124]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 125]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 125]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceV measure 126]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 126]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 127]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 127]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 128]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 128]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 129]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 129]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 130]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 130]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 131]                                     %! SM4
+                            % [segment_04 RHVoiceV measure 131]                          %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHVoiceVI = "RHVoiceVI" {
                             
-                            % [RHVoiceVI measure 91]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 91]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 92]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 92]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 93]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 93]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 94]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 94]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 95]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 95]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 96]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 96]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 97]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 97]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 98]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 98]                          %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 99]                                     %! SM4
+                            % [segment_04 RHVoiceVI measure 99]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 100]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 100]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 101]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 101]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 102]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 102]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 103]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 103]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 104]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 104]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 105]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 105]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 106]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 106]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 107]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 107]                         %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceVI measure 108]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 108]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 109]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 109]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 110]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 110]                         %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceVI measure 111]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 111]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 112]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 112]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 113]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 113]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 114]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 114]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 115]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 115]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceVI measure 116]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 116]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 117]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 117]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 118]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 118]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 119]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 119]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceVI measure 120]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 120]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 121]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 121]                         %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceVI measure 122]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 122]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 123]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 123]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 124]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 124]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 125]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 125]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 126]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 126]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 127]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 127]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 128]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 128]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 129]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 129]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 130]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 130]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 131]                                    %! SM4
+                            % [segment_04 RHVoiceVI measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context RHResonanceVoice = "RHResonanceVoice" {
                             
-                            % [RHResonanceVoice measure 91]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 91]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 92]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 92]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 93]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 93]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 94]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 94]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 95]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 95]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 96]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 96]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 97]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 97]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 98]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 98]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 99]                              %! SM4
+                            % [segment_04 RHResonanceVoice measure 99]                   %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 100]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 100]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 101]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 101]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 102]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 102]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 103]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 103]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 104]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 104]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 105]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 105]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 106]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 106]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 107]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 107]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHResonanceVoice measure 108]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 108]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 109]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 109]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 110]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 110]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHResonanceVoice measure 111]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 111]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 112]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 112]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 113]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 113]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 114]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 114]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 115]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 115]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHResonanceVoice measure 116]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 116]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 117]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 117]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 118]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 118]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 119]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 119]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHResonanceVoice measure 120]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 120]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 121]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 121]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHResonanceVoice measure 122]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 122]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 123]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 123]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 124]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 124]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 125]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 125]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 126]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 126]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 127]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 127]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 128]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 129]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 130]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 131]                             %! SM4
+                            % [segment_04 RHResonanceVoice measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }
@@ -4918,139 +4918,139 @@
                     \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
                         \context LHVoiceI = "LHVoiceI" {
                             
-                            % [LHVoiceI measure 91]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 91]                           %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 92]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 92]                           %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 93]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 93]                           %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 94]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 94]                           %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 95]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 95]                           %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 96]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 96]                           %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 97]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 97]                           %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 98]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 98]                           %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 99]                                      %! SM4
+                            % [segment_04 LHVoiceI measure 99]                           %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 100]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 100]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 101]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 101]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 102]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 102]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 103]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 103]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 104]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 104]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 105]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 105]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 106]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 106]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 107]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 107]                          %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceI measure 108]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 108]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 109]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 109]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 110]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 110]                          %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceI measure 111]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 111]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 112]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 112]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 113]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 113]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 114]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 114]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 115]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 115]                          %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceI measure 116]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 116]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 117]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 117]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 118]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 118]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 119]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 119]                          %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceI measure 120]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 120]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 121]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 121]                          %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceI measure 122]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 122]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 123]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 123]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 124]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 124]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 125]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 125]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 126]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 126]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 127]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 127]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 128]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 128]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 129]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 129]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 130]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 130]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 131]                                     %! SM4
+                            % [segment_04 LHVoiceI measure 131]                          %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHVoiceII = "LHVoiceII" {
                             
-                            % [LHVoiceII measure 91]                                     %! SM4
+                            % [segment_04 LHVoiceII measure 91]                          %! SM4
                             s1 * 135/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceII measure 128]                            %! SM4
+                                    % [segment_04 LHVoiceII measure 128]                 %! SM4
                                     \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC
                                     \override Rest.transparent = ##t                     %! OC
                                     \set Staff.pedalSustainStyle = #'bracket             %! SC
@@ -5074,13 +5074,13 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                     
-                                    % [LHVoiceII measure 129]                            %! SM4
+                                    % [segment_04 LHVoiceII measure 129]                 %! SM4
                                     \set Staff.pedalSustainStyle = #'bracket             %! SC
                                     r1
                                     \sustainOff                                          %! SC
                                     \sustainOn                                           %! SC
                                     
-                                    % [LHVoiceII measure 130]                            %! SM4
+                                    % [segment_04 LHVoiceII measure 130]                 %! SM4
                                     r1
                                     \sustainOff                                          %! SC
                                     \revert Staff.SustainPedalLineSpanner.staff-padding  %! OC
@@ -5088,387 +5088,387 @@
                                 }
                             }
                             
-                            % [LHVoiceII measure 131]                                    %! SM4
+                            % [segment_04 LHVoiceII measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHVoiceIII = "LHVoiceIII" {
                             
-                            % [LHVoiceIII measure 91]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 91]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 92]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 92]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 93]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 93]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 94]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 94]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 95]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 95]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 96]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 96]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 97]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 97]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 98]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 98]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 99]                                    %! SM4
+                            % [segment_04 LHVoiceIII measure 99]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 100]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 100]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 101]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 101]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 102]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 102]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 103]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 103]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 104]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 104]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 105]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 105]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 106]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 106]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 107]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 107]                        %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIII measure 108]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 108]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 109]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 109]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 110]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 110]                        %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIII measure 111]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 111]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 112]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 112]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 113]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 113]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 114]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 114]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 115]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 115]                        %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIII measure 116]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 116]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 117]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 117]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 118]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 118]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 119]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 119]                        %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIII measure 120]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 120]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 121]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 121]                        %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIII measure 122]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 122]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 123]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 123]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 124]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 124]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 125]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 125]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 126]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 126]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 127]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 127]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 128]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 128]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 129]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 129]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 130]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 130]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 131]                                   %! SM4
+                            % [segment_04 LHVoiceIII measure 131]                        %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHVoiceIV = "LHVoiceIV" {
                             
-                            % [LHVoiceIV measure 91]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 91]                          %! SM4
                             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 3/2
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             
-                            % [LHVoiceIV measure 92]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 92]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 93]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 93]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 94]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 94]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 95]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 95]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 96]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 96]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 97]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 97]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 98]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 98]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 99]                                     %! SM4
+                            % [segment_04 LHVoiceIV measure 99]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 100]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 100]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 101]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 101]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 102]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 102]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 103]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 103]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 104]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 104]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 105]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 105]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 106]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 106]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 107]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 107]                         %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIV measure 108]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 108]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 109]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 109]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 110]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 110]                         %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIV measure 111]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 111]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 112]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 112]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 113]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 113]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 114]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 114]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 115]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 115]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIV measure 116]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 116]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 117]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 117]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 118]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 118]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 119]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 119]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIV measure 120]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 120]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 121]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 121]                         %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIV measure 122]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 122]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 123]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 123]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 124]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 124]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 125]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 125]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 126]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 126]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 127]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 127]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 128]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 128]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 129]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 129]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 130]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 130]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 131]                                    %! SM4
+                            % [segment_04 LHVoiceIV measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                             
-                            % [LHVoiceIVInserts measure 91]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 91]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 92]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 92]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 93]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 93]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 94]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 94]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 95]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 95]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 96]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 96]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 97]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 97]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 98]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 98]                   %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 99]                              %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 99]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 100]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 100]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 101]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 101]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 102]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 102]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 103]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 103]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 104]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 104]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 105]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 105]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 106]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 106]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 107]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 107]                  %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIVInserts measure 108]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 108]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 109]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 109]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 110]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 110]                  %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIVInserts measure 111]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 111]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 112]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 112]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 113]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 113]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 114]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 114]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 115]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 115]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIVInserts measure 116]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 116]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 117]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 117]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 118]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 118]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 119]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 119]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIVInserts measure 120]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 120]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 121]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 121]                  %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIVInserts measure 122]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 122]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 123]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 123]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 124]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 124]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 125]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 125]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 126]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 126]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 127]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 127]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 128]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 129]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 130]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 131]                             %! SM4
+                            % [segment_04 LHVoiceIVInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }
@@ -5476,7 +5476,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 91]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 91]                   %! SM4
                                     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                     \dynamicDown                                         %! IC
                                     r2.
@@ -5521,7 +5521,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 92]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 92]                   %! SM4
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5545,7 +5545,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 93]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 93]                   %! SM4
                                     r4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5588,7 +5588,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 94]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 94]                   %! SM4
                                     r16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5619,7 +5619,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 95]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 95]                   %! SM4
                                     r4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5665,7 +5665,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 96]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 96]                   %! SM4
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5689,7 +5689,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 97]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 97]                   %! SM4
                                     \override Rest.direction = #up                       %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                     r16
@@ -5722,7 +5722,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 98]                              %! SM4
+                                    % [segment_04 LHVoiceV measure 98]                   %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5753,7 +5753,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 99]                          %! SM4
+                                        % [segment_04 LHVoiceV measure 99]               %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -5785,7 +5785,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 100]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 100]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5814,7 +5814,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 101]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 101]                  %! SM4
                                     r16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5843,7 +5843,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 102]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 102]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5874,7 +5874,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 103]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 103]              %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -5906,7 +5906,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 104]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 104]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5937,7 +5937,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 105]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 105]              %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -5970,7 +5970,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 106]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 106]                  %! SM4
                                     \once \override PianoStaff.Stem.color = #darkmagenta %! OC
                                     \once \override Stem.direction = #up                 %! OC
                                     \override TupletBracket.staff-padding = #2           %! OC
@@ -6004,7 +6004,7 @@
                                 \times 7/6 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 107]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 107]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6046,7 +6046,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 108]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 108]                  %! SM4
                                     r1
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6070,7 +6070,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 109]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 109]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6094,14 +6094,14 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 110]                                     %! SM4
+                            % [segment_04 LHVoiceV measure 110]                          %! SM4
                             s1 * 1/8
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 111]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 111]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6149,7 +6149,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 112]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 112]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6175,7 +6175,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 113]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 113]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6224,7 +6224,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 114]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 114]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6265,7 +6265,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 115]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 115]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6294,7 +6294,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 116]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 116]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6320,7 +6320,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 117]                         %! SM4
+                                        % [segment_04 LHVoiceV measure 117]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6361,7 +6361,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 118]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 118]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6387,7 +6387,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 119]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 119]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6413,12 +6413,12 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 120]                                     %! SM4
+                            % [segment_04 LHVoiceV measure 120]                          %! SM4
                             s1 * 23/2
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 131]                             %! SM4
+                                    % [segment_04 LHVoiceV measure 131]                  %! SM4
                                     r4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6465,7 +6465,7 @@
                         }
                         \context LHVoiceVInserts = "LHVoiceVInserts" {
                             
-                            % [LHVoiceVInserts measure 91]                               %! SM4
+                            % [segment_04 LHVoiceVInserts measure 91]                    %! SM4
                             \override Script.direction = #up                             %! OC
                             s1 * 19
                             {
@@ -6475,7 +6475,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 111]                  %! SM4
+                                        % [segment_04 LHVoiceVInserts measure 111]       %! SM4
                                         s4
                                         [
                                         
@@ -6500,7 +6500,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 112]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 112]                   %! SM4
                             s1 * 1/2
                             {
                                 \override TupletBracket.stencil = ##f
@@ -6509,7 +6509,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 113]                  %! SM4
+                                        % [segment_04 LHVoiceVInserts measure 113]       %! SM4
                                         s4
                                         
                                         \set stemLeftBeamCount = 1
@@ -6542,7 +6542,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 114]                  %! SM4
+                                        % [segment_04 LHVoiceVInserts measure 114]       %! SM4
                                         s4
                                         [
                                         
@@ -6562,7 +6562,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 115]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 115]                   %! SM4
                             s1 * 9/8
                             {
                                 \override TupletBracket.stencil = ##f
@@ -6571,7 +6571,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 117]                  %! SM4
+                                        % [segment_04 LHVoiceVInserts measure 117]       %! SM4
                                         s4
                                         
                                         \set stemLeftBeamCount = 1
@@ -6590,14 +6590,14 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 118]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 118]                   %! SM4
                             s1 * 1/2
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceVInserts measure 119]                      %! SM4
+                                    % [segment_04 LHVoiceVInserts measure 119]           %! SM4
                                     s8
                                     
                                     \set stemLeftBeamCount = 1
@@ -6613,47 +6613,47 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 120]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 120]                   %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVInserts measure 121]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 121]                   %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVInserts measure 122]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 122]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVInserts measure 123]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 123]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 124]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 124]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 125]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 125]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVInserts measure 126]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 126]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 127]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 127]                   %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVInserts measure 128]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 128]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 129]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 129]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 130]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 130]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 131]                              %! SM4
+                            % [segment_04 LHVoiceVInserts measure 131]                   %! SM4
                             s1 * 3/2
                             \revert Script.direction                                     %! OC
                             
                         }
                         \context LHVoiceVI = "LHVoiceVI" {
                             
-                            % [LHVoiceVI measure 91]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 91]                          %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -6700,263 +6700,263 @@
                             \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            % [LHVoiceVI measure 92]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 92]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 93]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 93]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 94]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 94]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 95]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 95]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 96]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 96]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 97]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 97]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 98]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 98]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 99]                                     %! SM4
+                            % [segment_04 LHVoiceVI measure 99]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 100]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 100]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 101]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 101]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 102]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 102]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 103]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 103]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 104]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 104]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 105]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 105]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 106]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 106]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 107]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 107]                         %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceVI measure 108]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 108]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 109]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 109]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 110]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 110]                         %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceVI measure 111]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 111]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 112]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 112]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 113]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 113]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 114]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 114]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 115]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 115]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVI measure 116]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 116]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 117]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 117]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 118]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 118]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 119]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 119]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVI measure 120]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 120]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 121]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 121]                         %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVI measure 122]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 122]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 123]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 123]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 124]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 124]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 125]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 125]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 126]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 126]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 127]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 127]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 128]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 128]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 129]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 129]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 130]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 130]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 131]                                    %! SM4
+                            % [segment_04 LHVoiceVI measure 131]                         %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                             
-                            % [LHVoiceVIInserts measure 91]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 91]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 92]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 92]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 93]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 93]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 94]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 94]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 95]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 95]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 96]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 96]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 97]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 97]                   %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 98]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 98]                   %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 99]                              %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 99]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 100]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 100]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 101]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 101]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 102]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 102]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 103]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 103]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 104]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 104]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 105]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 105]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 106]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 106]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 107]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 107]                  %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceVIInserts measure 108]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 108]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 109]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 109]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 110]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 110]                  %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceVIInserts measure 111]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 111]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 112]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 112]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 113]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 113]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 114]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 114]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 115]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 115]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVIInserts measure 116]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 116]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 117]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 117]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 118]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 118]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 119]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 119]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVIInserts measure 120]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 120]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 121]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 121]                  %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVIInserts measure 122]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 122]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 123]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 123]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 124]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 124]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 125]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 125]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 126]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 126]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 127]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 127]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 128]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 129]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 130]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 131]                             %! SM4
+                            % [segment_04 LHVoiceVIInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
                             
-                            % [LHResonanceVoice measure 91]                              %! SM4
+                            % [segment_04 LHResonanceVoice measure 91]                   %! SM4
                             s1 * 35/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHResonanceVoice measure 99]                  %! SM4
+                                        % [segment_04 LHResonanceVoice measure 99]       %! SM4
                                         s4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6983,7 +6983,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 100]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 100]          %! SM4
                                     <cs,, cs,>4
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7030,14 +7030,14 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 101]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 101]                  %! SM4
                             s1 * 2
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHResonanceVoice measure 103]                 %! SM4
+                                        % [segment_04 LHResonanceVoice measure 103]      %! SM4
                                         s4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -7064,7 +7064,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 104]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 104]          %! SM4
                                     <ef,, ef,>4
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7111,12 +7111,12 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 105]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 105]                  %! SM4
                             s1 * 10
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 120]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 120]          %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                     <e, fs, gs, as, b,>4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7141,7 +7141,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 121]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 121]          %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     <e, fs, gs, as, b,>1..
                                     \repeatTie                                           %! SC
@@ -7167,7 +7167,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 122]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 122]          %! SM4
                                     <e, fs, gs, as, b,>1.
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7192,7 +7192,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 123]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 123]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7217,7 +7217,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 124]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 124]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7242,7 +7242,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 125]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 125]          %! SM4
                                     <e, fs, gs, as, b,>1.
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7267,7 +7267,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 126]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 126]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7292,7 +7292,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 127]                     %! SM4
+                                    % [segment_04 LHResonanceVoice measure 127]          %! SM4
                                     <e, fs, gs, as, b,>2
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7315,16 +7315,16 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 128]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 128]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 129]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 129]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 130]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 130]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 131]                             %! SM4
+                            % [segment_04 LHResonanceVoice measure 131]                  %! SM4
                             s1 * 3/2
                             
                         }

@@ -17,7 +17,7 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 22]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 22]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -118,7 +118,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 23]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 23]                               %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -160,7 +160,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 24]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 24]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -202,7 +202,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 25]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 25]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -244,7 +244,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 26]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 26]                               %! SM4
                     \time 9/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 9/8
@@ -286,7 +286,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 27]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 27]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -383,7 +383,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 28]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 28]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -484,7 +484,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 29]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 29]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -526,7 +526,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 30]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 30]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
                     ^ \markup {
@@ -567,7 +567,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 31]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 31]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -609,7 +609,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 32]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 32]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -651,7 +651,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 33]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 33]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -693,7 +693,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 34]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 34]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -735,7 +735,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 35]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 35]                               %! SM4
                     \time 5/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/4
@@ -777,7 +777,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 36]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 36]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -819,7 +819,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 37]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 37]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -916,7 +916,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 38]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 38]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -958,7 +958,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 39]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 39]                               %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -1000,7 +1000,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 40]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 40]                               %! SM4
                     \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/8
@@ -1042,7 +1042,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 41]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 41]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -1084,7 +1084,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 42]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 42]                               %! SM4
                     \once \override TextSpanner.Y-extent = ##f                           %! SM29
                     \once \override TextSpanner.arrow-width = 0.25                       %! SM29
                     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29
@@ -1150,7 +1150,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 43]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 43]                               %! SM4
                     \time 1/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/8
@@ -1192,7 +1192,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 44]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 44]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -1234,7 +1234,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 45]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 45]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1331,7 +1331,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 46]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 46]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1432,7 +1432,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 47]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 47]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -1474,7 +1474,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 48]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 48]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -1516,7 +1516,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 49]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 49]                               %! SM4
                     \time 5/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/8
@@ -1558,7 +1558,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 50]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 50]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1655,7 +1655,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 51]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 51]                               %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -1697,7 +1697,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 52]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 52]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1798,7 +1798,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 53]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 53]                               %! SM4
                     \time 5/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 5/8
@@ -1840,7 +1840,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 54]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 54]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -1937,7 +1937,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 55]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 55]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -2038,7 +2038,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 56]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 56]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -2080,7 +2080,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 57]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 57]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -2122,7 +2122,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 58]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 58]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
                     ^ \markup {
@@ -2163,7 +2163,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 59]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 59]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! EXPLICIT_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
@@ -2260,7 +2260,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 60]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 60]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -2302,7 +2302,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 61]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 61]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -2344,7 +2344,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 62]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 62]                               %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -2386,7 +2386,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 63]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 63]                               %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -2428,7 +2428,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 64]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 64]                               %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -2470,7 +2470,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 65]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 65]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
                     ^ \markup {
@@ -2511,7 +2511,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 66]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 66]                               %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
                     ^ \markup {
@@ -2552,7 +2552,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 67]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 67]                               %! SM4
                     \time 6/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/2
@@ -2594,7 +2594,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 68]                                           %! SM4
+                    % [berkeley_03 GlobalSkips measure 68]                               %! SM4
                     \time 16/4                                                           %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 4
@@ -2646,7 +2646,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff" <<
                         \context RHVoiceI = "RHVoiceI" {
                             
-                            % [RHVoiceI measure 22]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 22]                          %! SM4
                             \override TupletBracket.staff-padding = #8                   %! OC
                             \override TupletBracket.direction = #up                      %! OC
                             \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -2661,7 +2661,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
                                     
-                                    % [RHVoiceI measure 40]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 40]                  %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \dynamicDown                                         %! IC
                                     r8
@@ -2726,7 +2726,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceI measure 42]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 42]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2751,7 +2751,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceI measure 43]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 43]                  %! SM4
                                     \once \override Script.color = #black                %! OC
                                     \once \override Script.extra-offset = #'(0.5 . 0)    %! OC
                                     \once \override Rest.transparent = ##t               %! OC
@@ -2778,13 +2778,13 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 44]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 44]                          %! SM4
                             s1 * 1/2
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/4 {
                                     
-                                    % [RHVoiceI measure 45]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 45]                  %! SM4
                                     bf''''8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2824,13 +2824,13 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 47]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 47]                          %! SM4
                             s1 * 7/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 19/14 {
                                     
-                                    % [RHVoiceI measure 49]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 49]                  %! SM4
                                     ef''''8
                                     [
                                     (                                                    %! SC
@@ -2890,12 +2890,12 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 53]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 53]                          %! SM4
                             s1 * 7/8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 55]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 55]                  %! SM4
                                     \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                     ef''''1..
                                     -\tenuto                                             %! IC
@@ -2923,7 +2923,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 56]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 56]                  %! SM4
                                     f''''1.
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2948,7 +2948,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 57]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 57]                  %! SM4
                                     \ottava #1                                           %! SC
                                     bf''''1
                                     -\tenuto                                             %! IC
@@ -2974,7 +2974,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 58]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 58]                  %! SM4
                                     ef''''1
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2997,12 +2997,12 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 59]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 59]                          %! SM4
                             s1 * 7/4
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 61]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 61]                  %! SM4
                                     f''''1
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3027,7 +3027,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceI measure 62]                              %! SM4
+                                    % [berkeley_03 RHVoiceI measure 62]                  %! SM4
                                     bf''''2
                                     -\tenuto                                             %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3052,22 +3052,22 @@
                                 }
                             }
                             
-                            % [RHVoiceI measure 63]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 63]                          %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceI measure 64]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 64]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 65]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 65]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 66]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 66]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceI measure 67]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 67]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceI measure 68]                                      %! SM4
+                            % [berkeley_03 RHVoiceI measure 68]                          %! SM4
                             s1 * 4
                             \revert TupletBracket.staff-padding                          %! OC
                             \revert TupletBracket.direction                              %! OC
@@ -3075,151 +3075,151 @@
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts" {
                             
-                            % [RHVoiceIInserts measure 22]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 22]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 23]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 23]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 24]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 24]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 25]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 25]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 26]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 26]                   %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceIInserts measure 27]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 27]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 28]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 28]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 29]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 29]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 30]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 30]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 31]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 31]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 32]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 32]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 33]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 33]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 34]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 34]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 35]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 35]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 36]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 36]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 37]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 37]                   %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIInserts measure 38]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 38]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 39]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 39]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 40]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 40]                   %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIInserts measure 41]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 41]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 42]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 42]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 43]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 43]                   %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIInserts measure 44]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 44]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 45]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 45]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 46]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 46]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 47]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 47]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 48]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 48]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 49]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 49]                   %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIInserts measure 50]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 50]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 51]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 51]                   %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIInserts measure 52]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 52]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 53]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 53]                   %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIInserts measure 54]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 54]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 55]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 55]                   %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIInserts measure 56]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 56]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 57]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 57]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 58]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 58]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 59]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 59]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 60]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 60]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 61]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 61]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 62]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 62]                   %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIInserts measure 63]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 63]                   %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIInserts measure 64]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 64]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 65]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 65]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 66]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 66]                   %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIInserts measure 67]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 67]                   %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIInserts measure 68]                               %! SM4
+                            % [berkeley_03 RHVoiceIInserts measure 68]                   %! SM4
                             s1 * 4
                             
                         }
                         \context RHVoiceII = "RHVoiceII" {
                             
-                            % [RHVoiceII measure 22]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 22]                         %! SM4
                             \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 3/2
                             \ff                                                          %! REAPPLIED_DYNAMIC:SM8
@@ -3227,7 +3227,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceII measure 23]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 23]                 %! SM4
                                     \once \override Rest.transparent = ##t               %! OC
                                     \once \override Score.SpanBar.transparent = ##t      %! OC
                                     \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
@@ -3255,7 +3255,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 24]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 24]                 %! SM4
                                     \once \override Script.direction = #up               %! OC
                                     \arpeggioArrowUp                                     %! IC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
@@ -3284,7 +3284,7 @@
                                 }
                             }
                             
-                            % [RHVoiceII measure 25]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 25]                         %! SM4
                             s1 * 123/8
                             {
                                 \override TupletBracket.stencil = ##f
@@ -3292,7 +3292,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/4 {
                                     
-                                    % [RHVoiceII measure 40]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 40]                 %! SM4
                                     s8
                                     [
                                     
@@ -3330,7 +3330,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 42]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 42]                         %! SM4
                             s1 * 9/8
                             {
                                 \override TupletBracket.stencil = ##f
@@ -3338,7 +3338,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/4 {
                                     
-                                    % [RHVoiceII measure 45]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 45]                 %! SM4
                                     s8
                                     [
                                     
@@ -3370,7 +3370,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 47]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 47]                         %! SM4
                             s1 * 7/4
                             {
                                 \override TupletBracket.stencil = ##f
@@ -3378,7 +3378,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 19/14 {
                                     
-                                    % [RHVoiceII measure 49]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 49]                 %! SM4
                                     s8
                                     [
                                     
@@ -3428,12 +3428,12 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [RHVoiceII measure 53]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 53]                         %! SM4
                             s1 * 33/8
                             {
                                 \times 4/5 {
                                     
-                                    % [RHVoiceII measure 57]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 57]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \set stemLeftBeamCount = 0
@@ -3551,7 +3551,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 58]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 58]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3668,7 +3668,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceII measure 59]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 59]                 %! SM4
                                     \once \override Rest.transparent = ##t               %! OC
                                     \once \override Score.SpanBar.transparent = ##t      %! OC
                                     \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
@@ -3696,7 +3696,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 60]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 60]                 %! SM4
                                     \once \override Script.direction = #up               %! OC
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
@@ -3740,7 +3740,7 @@
                             {
                                 \times 2/3 {
                                     
-                                    % [RHVoiceII measure 61]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 61]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3883,7 +3883,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 62]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 62]                 %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
                                     \override Slur.direction = #up                       %! OC
                                     \override TextScript.direction = #up                 %! OC
@@ -3955,7 +3955,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceII measure 63]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 63]                 %! SM4
                                     \once \override Score.BarLine.transparent = ##t      %! OC
                                     \once \override Rest.transparent = ##t               %! OC
                                     \once \override Score.SpanBar.transparent = ##t      %! OC
@@ -3984,7 +3984,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 64]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 64]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -4029,7 +4029,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 65]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 65]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -4071,7 +4071,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 66]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 66]                 %! SM4
                                     \arpeggioArrowUp                                     %! IC
                                     \once \override Accidental.color = #red
                                     \once \override Beam.color = #red
@@ -4111,12 +4111,12 @@
                                 }
                             }
                             
-                            % [RHVoiceII measure 67]                                     %! SM4
+                            % [berkeley_03 RHVoiceII measure 67]                         %! SM4
                             s1 * 3/2
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceII measure 68]                             %! SM4
+                                    % [berkeley_03 RHVoiceII measure 68]                 %! SM4
                                     \override Script.direction = #up                     %! OC
                                     \override TextScript.direction = #up                 %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
@@ -4169,145 +4169,145 @@
                         }
                         \context RHVoiceIIInserts = "RHVoiceIIInserts" {
                             
-                            % [RHVoiceIIInserts measure 22]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 22]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 23]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 23]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 24]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 24]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 25]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 25]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 26]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 26]                  %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceIIInserts measure 27]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 27]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 28]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 28]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 29]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 29]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 30]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 30]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 31]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 31]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 32]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 32]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 33]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 33]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 34]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 34]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 35]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 35]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 36]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 36]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 37]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 37]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIInserts measure 38]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 38]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 39]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 39]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 40]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 40]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIIInserts measure 41]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 41]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 42]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 42]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 43]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 43]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIIInserts measure 44]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 44]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 45]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 45]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 46]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 46]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 47]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 47]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 48]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 48]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 49]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 49]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIInserts measure 50]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 50]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 51]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 51]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIInserts measure 52]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 52]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 53]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 53]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIInserts measure 54]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 54]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 55]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 55]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIIInserts measure 56]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 56]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 57]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 57]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 58]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 58]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 59]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 59]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 60]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 60]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 61]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 61]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 62]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 62]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIInserts measure 63]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIInserts measure 64]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 65]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 66]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIInserts measure 67]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIInserts measure 68]                              %! SM4
+                            % [berkeley_03 RHVoiceIIInserts measure 68]                  %! SM4
                             s1 * 4
                             
                         }
@@ -4316,7 +4316,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 12/11 {
                                     
-                                    % [RHVoiceIII measure 22]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 22]                %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
@@ -4361,13 +4361,13 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 23]                                    %! SM4
+                            % [berkeley_03 RHVoiceIII measure 23]                        %! SM4
                             s1 * 1
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    % [RHVoiceIII measure 25]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 25]                %! SM4
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     r4
@@ -4410,13 +4410,13 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 26]                                    %! SM4
+                            % [berkeley_03 RHVoiceIII measure 26]                        %! SM4
                             s1 * 9/8
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceIII measure 27]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 27]                %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4442,7 +4442,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 12/11 {
                                     
-                                    % [RHVoiceIII measure 28]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 28]                %! SM4
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     ef'8
@@ -4486,7 +4486,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [RHVoiceIII measure 29]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 29]                %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4509,12 +4509,12 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 30]                                    %! SM4
+                            % [berkeley_03 RHVoiceIII measure 30]                        %! SM4
                             s1 * 49/4
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceIII measure 44]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 44]                %! SM4
                                     \override TupletBracket.direction = #down            %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                                     af'''8
@@ -4553,13 +4553,13 @@
                                 }
                             }
                             
-                            % [RHVoiceIII measure 45]                                    %! SM4
+                            % [berkeley_03 RHVoiceIII measure 45]                        %! SM4
                             s1 * 73/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    % [RHVoiceIII measure 67]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 67]                %! SM4
                                     \override TextScript.direction = #up                 %! OC
                                     \override TupletBracket.direction = #up              %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
@@ -4614,7 +4614,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/5 {
                                     
-                                    % [RHVoiceIII measure 68]                            %! SM4
+                                    % [berkeley_03 RHVoiceIII measure 68]                %! SM4
                                     \override TupletBracket.direction = #down            %! OC
                                     \ottava #1                                           %! SC
                                     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -4670,446 +4670,446 @@
                         }
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts" {
                             
-                            % [RHVoiceIIIInserts measure 22]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 22]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 23]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 23]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 24]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 24]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 25]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 25]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 26]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 26]                 %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceIIIInserts measure 27]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 27]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 28]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 28]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 29]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 29]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 30]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 30]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 31]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 31]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 32]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 32]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 33]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 33]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 34]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 34]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 35]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 35]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 36]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 36]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 37]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 37]                 %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIIIInserts measure 38]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 38]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 39]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 39]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 40]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 40]                 %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIIIInserts measure 41]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 41]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 42]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 42]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 43]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 43]                 %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIIIInserts measure 44]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 44]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 45]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 45]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 46]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 46]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 47]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 47]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 48]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 48]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 49]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 49]                 %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIIInserts measure 50]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 50]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 51]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 51]                 %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIIIInserts measure 52]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 52]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 53]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 53]                 %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIIIInserts measure 54]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 54]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 55]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 55]                 %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIIIInserts measure 56]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 56]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 57]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 57]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 58]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 58]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 59]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 59]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 60]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 60]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 61]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 61]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 62]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 62]                 %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIIIInserts measure 63]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 63]                 %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIIIInserts measure 64]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 64]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 65]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 65]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 66]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 66]                 %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIIIInserts measure 67]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 67]                 %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIIIInserts measure 68]                             %! SM4
+                            % [berkeley_03 RHVoiceIIIInserts measure 68]                 %! SM4
                             s1 * 4
                             
                         }
                         \context RHVoiceIV = "RHVoiceIV" {
                             
-                            % [RHVoiceIV measure 22]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 22]                         %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 3/2
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
                             
-                            % [RHVoiceIV measure 23]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 23]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 24]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 24]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 25]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 25]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 26]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 26]                         %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceIV measure 27]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 27]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 28]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 28]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 29]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 29]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 30]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 30]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 31]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 31]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 32]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 32]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 33]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 33]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 34]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 34]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 35]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 35]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 36]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 36]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 37]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 37]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIV measure 38]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 38]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 39]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 39]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 40]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 40]                         %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIV measure 41]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 41]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 42]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 42]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 43]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 43]                         %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIV measure 44]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 44]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 45]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 45]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 46]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 46]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 47]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 47]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 48]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 48]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 49]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 49]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIV measure 50]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 50]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 51]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 51]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIV measure 52]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 52]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 53]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 53]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIV measure 54]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 54]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 55]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 55]                         %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIV measure 56]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 56]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 57]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 57]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 58]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 58]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 59]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 59]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 60]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 60]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 61]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 61]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 62]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 62]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIV measure 63]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 63]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIV measure 64]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 64]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 65]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 65]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 66]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 66]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIV measure 67]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 67]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIV measure 68]                                     %! SM4
+                            % [berkeley_03 RHVoiceIV measure 68]                         %! SM4
                             s1 * 4
                             
                         }
                         \context RHVoiceIVInserts = "RHVoiceIVInserts" {
                             
-                            % [RHVoiceIVInserts measure 22]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 22]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 23]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 23]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 24]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 24]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 25]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 25]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 26]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 26]                  %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceIVInserts measure 27]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 27]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 28]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 28]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 29]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 29]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 30]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 30]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 31]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 31]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 32]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 32]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 33]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 33]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 34]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 34]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 35]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 35]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 36]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 36]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 37]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 37]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceIVInserts measure 38]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 38]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 39]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 39]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 40]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 40]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceIVInserts measure 41]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 41]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 42]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 42]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 43]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 43]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceIVInserts measure 44]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 44]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 45]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 45]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 46]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 46]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 47]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 47]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 48]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 48]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 49]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 49]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIVInserts measure 50]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 50]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 51]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 51]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceIVInserts measure 52]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 52]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 53]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 53]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceIVInserts measure 54]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 54]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 55]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 55]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceIVInserts measure 56]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 56]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 57]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 57]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 58]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 58]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 59]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 59]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 60]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 60]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 61]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 61]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 62]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 62]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceIVInserts measure 63]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceIVInserts measure 64]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 65]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 66]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [RHVoiceIVInserts measure 67]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceIVInserts measure 68]                              %! SM4
+                            % [berkeley_03 RHVoiceIVInserts measure 68]                  %! SM4
                             s1 * 4
                             
                         }
                         \context RHVoiceV = "RHVoiceV" {
                             
-                            % [RHVoiceV measure 22]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 22]                          %! SM4
                             s1 * 141/8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [RHVoiceV measure 39]                              %! SM4
+                                    % [berkeley_03 RHVoiceV measure 39]                  %! SM4
                                     <b d' fs' a'>16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5133,379 +5133,379 @@
                                 }
                             }
                             
-                            % [RHVoiceV measure 40]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 40]                          %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceV measure 41]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 41]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 42]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 42]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 43]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 43]                          %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceV measure 44]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 44]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 45]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 45]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 46]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 46]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 47]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 47]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 48]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 48]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceV measure 49]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 49]                          %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceV measure 50]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 50]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 51]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 51]                          %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceV measure 52]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 52]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 53]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 53]                          %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceV measure 54]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 54]                          %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceV measure 55]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 55]                          %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceV measure 56]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 56]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceV measure 57]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 57]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 58]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 58]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 59]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 59]                          %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceV measure 60]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 60]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceV measure 61]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 61]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 62]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 62]                          %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceV measure 63]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 63]                          %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceV measure 64]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 64]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 65]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 65]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 66]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 66]                          %! SM4
                             s1 * 1
                             
-                            % [RHVoiceV measure 67]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 67]                          %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceV measure 68]                                      %! SM4
+                            % [berkeley_03 RHVoiceV measure 68]                          %! SM4
                             s1 * 4
                             
                         }
                         \context RHVoiceVI = "RHVoiceVI" {
                             
-                            % [RHVoiceVI measure 22]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 22]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 23]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 23]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 24]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 24]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 25]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 25]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 26]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 26]                         %! SM4
                             s1 * 9/8
                             
-                            % [RHVoiceVI measure 27]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 27]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 28]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 28]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 29]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 29]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 30]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 30]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 31]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 31]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 32]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 32]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 33]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 33]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 34]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 34]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 35]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 35]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 36]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 36]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 37]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 37]                         %! SM4
                             s1 * 5/4
                             
-                            % [RHVoiceVI measure 38]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 38]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 39]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 39]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 40]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 40]                         %! SM4
                             s1 * 7/8
                             
-                            % [RHVoiceVI measure 41]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 41]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 42]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 42]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 43]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 43]                         %! SM4
                             s1 * 1/8
                             
-                            % [RHVoiceVI measure 44]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 44]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 45]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 45]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 46]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 46]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 47]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 47]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 48]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 48]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 49]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 49]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceVI measure 50]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 50]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 51]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 51]                         %! SM4
                             s1 * 3/4
                             
-                            % [RHVoiceVI measure 52]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 52]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 53]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 53]                         %! SM4
                             s1 * 5/8
                             
-                            % [RHVoiceVI measure 54]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 54]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 55]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 55]                         %! SM4
                             s1 * 7/4
                             
-                            % [RHVoiceVI measure 56]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 56]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 57]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 57]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 58]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 58]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 59]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 59]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 60]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 60]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 61]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 61]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 62]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 62]                         %! SM4
                             s1 * 1/2
                             
-                            % [RHVoiceVI measure 63]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 63]                         %! SM4
                             s1 * 1/4
                             
-                            % [RHVoiceVI measure 64]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 64]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 65]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 65]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 66]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 66]                         %! SM4
                             s1 * 1
                             
-                            % [RHVoiceVI measure 67]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 67]                         %! SM4
                             s1 * 3/2
                             
-                            % [RHVoiceVI measure 68]                                     %! SM4
+                            % [berkeley_03 RHVoiceVI measure 68]                         %! SM4
                             s1 * 4
                             
                         }
                         \context RHResonanceVoice = "RHResonanceVoice" {
                             
-                            % [RHResonanceVoice measure 22]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 22]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 23]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 23]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 24]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 24]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 25]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 25]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 26]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 26]                  %! SM4
                             s1 * 9/8
                             
-                            % [RHResonanceVoice measure 27]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 27]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 28]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 28]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 29]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 29]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 30]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 30]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 31]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 31]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 32]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 32]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 33]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 33]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 34]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 34]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 35]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 35]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 36]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 36]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 37]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 37]                  %! SM4
                             s1 * 5/4
                             
-                            % [RHResonanceVoice measure 38]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 38]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 39]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 39]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 40]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 40]                  %! SM4
                             s1 * 7/8
                             
-                            % [RHResonanceVoice measure 41]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 41]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 42]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 42]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 43]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 43]                  %! SM4
                             s1 * 1/8
                             
-                            % [RHResonanceVoice measure 44]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 44]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 45]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 45]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 46]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 46]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 47]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 47]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 48]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 48]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 49]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 49]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHResonanceVoice measure 50]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 50]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 51]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 51]                  %! SM4
                             s1 * 3/4
                             
-                            % [RHResonanceVoice measure 52]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 52]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 53]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 53]                  %! SM4
                             s1 * 5/8
                             
-                            % [RHResonanceVoice measure 54]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 54]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 55]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 55]                  %! SM4
                             s1 * 7/4
                             
-                            % [RHResonanceVoice measure 56]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 56]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 57]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 57]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 58]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 58]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 59]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 59]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 60]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 60]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 61]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 61]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 62]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 62]                  %! SM4
                             s1 * 1/2
                             
-                            % [RHResonanceVoice measure 63]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [RHResonanceVoice measure 64]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 65]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 66]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [RHResonanceVoice measure 67]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [RHResonanceVoice measure 68]                              %! SM4
+                            % [berkeley_03 RHResonanceVoice measure 68]                  %! SM4
                             s1 * 4
                             
                         }
@@ -5513,157 +5513,157 @@
                     \context PianoMusicLHStaff = "PianoMusicLHStaff" <<
                         \context LHVoiceI = "LHVoiceI" {
                             
-                            % [LHVoiceI measure 22]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 22]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 23]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 23]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 24]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 24]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 25]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 25]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 26]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 26]                          %! SM4
                             s1 * 9/8
                             
-                            % [LHVoiceI measure 27]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 27]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 28]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 28]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 29]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 29]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 30]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 30]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 31]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 31]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 32]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 32]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 33]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 33]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 34]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 34]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 35]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 35]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 36]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 36]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 37]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 37]                          %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceI measure 38]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 38]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 39]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 39]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 40]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 40]                          %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceI measure 41]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 41]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 42]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 42]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 43]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 43]                          %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceI measure 44]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 44]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 45]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 45]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 46]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 46]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 47]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 47]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 48]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 48]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 49]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 49]                          %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceI measure 50]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 50]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 51]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 51]                          %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceI measure 52]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 52]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 53]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 53]                          %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceI measure 54]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 54]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 55]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 55]                          %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceI measure 56]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 56]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 57]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 57]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 58]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 58]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 59]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 59]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 60]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 60]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 61]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 61]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 62]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 62]                          %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceI measure 63]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 63]                          %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceI measure 64]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 64]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 65]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 65]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 66]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 66]                          %! SM4
                             s1 * 1
                             
-                            % [LHVoiceI measure 67]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 67]                          %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceI measure 68]                                      %! SM4
+                            % [berkeley_03 LHVoiceI measure 68]                          %! SM4
                             s1 * 4
                             
                         }
                         \context LHVoiceII = "LHVoiceII" {
                             
-                            % [LHVoiceII measure 22]                                     %! SM4
+                            % [berkeley_03 LHVoiceII measure 22]                         %! SM4
                             s1 * 289/8
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceII measure 64]                             %! SM4
+                                    % [berkeley_03 LHVoiceII measure 64]                 %! SM4
                                     \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC
                                     \override Rest.transparent = ##t                     %! OC
                                     \set Staff.pedalSustainStyle = #'bracket             %! SC
@@ -5687,13 +5687,13 @@
                                 %%%             }                                        %! FIGURE_NAME_MARKUP
                                 %%%     }                                                %! FIGURE_NAME_MARKUP
                                     
-                                    % [LHVoiceII measure 65]                             %! SM4
+                                    % [berkeley_03 LHVoiceII measure 65]                 %! SM4
                                     \set Staff.pedalSustainStyle = #'bracket             %! SC
                                     r1
                                     \sustainOff                                          %! SC
                                     \sustainOn                                           %! SC
                                     
-                                    % [LHVoiceII measure 66]                             %! SM4
+                                    % [berkeley_03 LHVoiceII measure 66]                 %! SM4
                                     r1
                                     \sustainOff                                          %! SC
                                     \revert Staff.SustainPedalLineSpanner.staff-padding  %! OC
@@ -5701,167 +5701,167 @@
                                 }
                             }
                             
-                            % [LHVoiceII measure 67]                                     %! SM4
+                            % [berkeley_03 LHVoiceII measure 67]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceII measure 68]                                     %! SM4
+                            % [berkeley_03 LHVoiceII measure 68]                         %! SM4
                             s1 * 4
                             
                         }
                         \context LHVoiceIII = "LHVoiceIII" {
                             
-                            % [LHVoiceIII measure 22]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 22]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 23]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 23]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 24]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 24]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 25]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 25]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 26]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 26]                        %! SM4
                             s1 * 9/8
                             
-                            % [LHVoiceIII measure 27]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 27]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 28]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 28]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 29]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 29]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 30]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 30]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 31]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 31]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 32]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 32]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 33]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 33]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 34]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 34]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 35]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 35]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 36]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 36]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 37]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 37]                        %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIII measure 38]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 38]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 39]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 39]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 40]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 40]                        %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIII measure 41]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 41]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 42]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 42]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 43]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 43]                        %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIII measure 44]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 44]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 45]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 45]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 46]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 46]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 47]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 47]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 48]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 48]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 49]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 49]                        %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIII measure 50]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 50]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 51]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 51]                        %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIII measure 52]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 52]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 53]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 53]                        %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIII measure 54]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 54]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 55]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 55]                        %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIII measure 56]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 56]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 57]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 57]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 58]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 58]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 59]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 59]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 60]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 60]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 61]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 61]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 62]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 62]                        %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIII measure 63]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 63]                        %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIII measure 64]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 64]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 65]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 65]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 66]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 66]                        %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIII measure 67]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 67]                        %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIII measure 68]                                    %! SM4
+                            % [berkeley_03 LHVoiceIII measure 68]                        %! SM4
                             s1 * 4
                             
                         }
                         \context LHVoiceIV = "LHVoiceIV" {
                             
-                            % [LHVoiceIV measure 22]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 22]                         %! SM4
                             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             s1 * 4
                             \ff                                                          %! REAPPLIED_DYNAMIC:SM8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceIV measure 26]                             %! SM4
+                                    % [berkeley_03 LHVoiceIV measure 26]                 %! SM4
                                     \override Slur.direction = #down                     %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -5900,274 +5900,274 @@
                                 }
                             }
                             
-                            % [LHVoiceIV measure 27]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 27]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 28]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 28]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 29]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 29]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 30]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 30]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 31]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 31]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 32]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 32]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 33]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 33]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 34]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 34]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 35]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 35]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 36]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 36]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 37]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 37]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIV measure 38]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 38]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 39]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 39]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 40]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 40]                         %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIV measure 41]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 41]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 42]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 42]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 43]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 43]                         %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIV measure 44]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 44]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 45]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 45]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 46]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 46]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 47]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 47]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 48]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 48]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 49]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 49]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIV measure 50]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 50]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 51]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 51]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIV measure 52]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 52]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 53]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 53]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIV measure 54]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 54]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 55]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 55]                         %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIV measure 56]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 56]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 57]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 57]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 58]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 58]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 59]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 59]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 60]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 60]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 61]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 61]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 62]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 62]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIV measure 63]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 63]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIV measure 64]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 64]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 65]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 65]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 66]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 66]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIV measure 67]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 67]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIV measure 68]                                     %! SM4
+                            % [berkeley_03 LHVoiceIV measure 68]                         %! SM4
                             s1 * 4
                             
                         }
                         \context LHVoiceIVInserts = "LHVoiceIVInserts" {
                             
-                            % [LHVoiceIVInserts measure 22]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 22]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 23]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 23]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 24]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 24]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 25]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 25]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 26]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 26]                  %! SM4
                             s1 * 9/8
                             
-                            % [LHVoiceIVInserts measure 27]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 27]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 28]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 28]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 29]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 29]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 30]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 30]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 31]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 31]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 32]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 32]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 33]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 33]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 34]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 34]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 35]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 35]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 36]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 36]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 37]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 37]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceIVInserts measure 38]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 38]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 39]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 39]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 40]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 40]                  %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceIVInserts measure 41]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 41]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 42]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 42]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 43]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 43]                  %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceIVInserts measure 44]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 44]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 45]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 45]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 46]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 46]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 47]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 47]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 48]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 48]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 49]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 49]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIVInserts measure 50]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 50]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 51]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 51]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceIVInserts measure 52]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 52]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 53]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 53]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceIVInserts measure 54]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 54]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 55]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 55]                  %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceIVInserts measure 56]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 56]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 57]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 57]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 58]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 58]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 59]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 59]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 60]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 60]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 61]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 61]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 62]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 62]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceIVInserts measure 63]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceIVInserts measure 64]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 65]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 66]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceIVInserts measure 67]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceIVInserts measure 68]                              %! SM4
+                            % [berkeley_03 LHVoiceIVInserts measure 68]                  %! SM4
                             s1 * 4
                             
                         }
@@ -6175,7 +6175,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 22]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 22]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                     \dynamicDown                                         %! IC
@@ -6218,13 +6218,13 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 23]                                      %! SM4
+                            % [berkeley_03 LHVoiceV measure 23]                          %! SM4
                             s1 * 1/4
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 24]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 24]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6249,7 +6249,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 25]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 25]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     r4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6291,12 +6291,12 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 26]                                      %! SM4
+                            % [berkeley_03 LHVoiceV measure 26]                          %! SM4
                             s1 * 9/8
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 27]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 27]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6329,7 +6329,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 28]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 28]                  %! SM4
                                     \override Rest.direction = #up                       %! OC
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                                     r4
@@ -6380,7 +6380,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 29]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 29]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     r2.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6405,7 +6405,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 30]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 30]                  %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
                                     r16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6437,7 +6437,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 31]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 31]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6468,7 +6468,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 32]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 32]              %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -6500,7 +6500,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 33]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 33]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6529,7 +6529,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 34]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 34]                  %! SM4
                                     r16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6558,7 +6558,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 35]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 35]                  %! SM4
                                     <g b f' fs' a'>16
                                     -\marcato                                            %! IC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6589,7 +6589,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 36]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 36]              %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -6622,7 +6622,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 37]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 37]                  %! SM4
                                     \override TupletBracket.staff-padding = #2           %! OC
                                     <g b f' fs' a'>16
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -6653,7 +6653,7 @@
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 38]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 38]              %! SM4
                                         \override TupletBracket.direction = #up          %! OC
                                         r16
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -6684,7 +6684,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 39]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 39]                  %! SM4
                                     \once \override PianoStaff.Stem.color = #darkmagenta %! OC
                                     \once \override Stem.direction = #up                 %! OC
                                     \crossStaff                                          %! IC
@@ -6717,7 +6717,7 @@
                                 \times 7/6 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 40]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 40]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6759,7 +6759,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 41]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 41]                  %! SM4
                                     r1
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6783,7 +6783,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 42]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 42]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6807,14 +6807,14 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 43]                                      %! SM4
+                            % [berkeley_03 LHVoiceV measure 43]                          %! SM4
                             s1 * 5/8
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 45]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 45]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6862,7 +6862,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 46]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 46]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6888,7 +6888,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 47]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 47]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6937,7 +6937,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 48]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 48]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6978,7 +6978,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 49]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 49]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7007,7 +7007,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [LHVoiceV measure 50]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 50]                  %! SM4
                                     r2
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7033,7 +7033,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceV measure 51]                          %! SM4
+                                        % [berkeley_03 LHVoiceV measure 51]              %! SM4
                                         r4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -7074,7 +7074,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 52]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 52]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7100,7 +7100,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 53]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 53]                  %! SM4
                                     r8
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7126,12 +7126,12 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 54]                                      %! SM4
+                            % [berkeley_03 LHVoiceV measure 54]                          %! SM4
                             s1 * 12
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceV measure 67]                              %! SM4
+                                    % [berkeley_03 LHVoiceV measure 67]                  %! SM4
                                     r4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7174,14 +7174,14 @@
                                 }
                             }
                             
-                            % [LHVoiceV measure 68]                                      %! SM4
+                            % [berkeley_03 LHVoiceV measure 68]                          %! SM4
                             s1 * 4
                             \revert TupletBracket.staff-padding                          %! OC
                             
                         }
                         \context LHVoiceVInserts = "LHVoiceVInserts" {
                             
-                            % [LHVoiceVInserts measure 22]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 22]                   %! SM4
                             \override Script.direction = #up                             %! OC
                             s1 * 167/8
                             {
@@ -7191,7 +7191,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 45]                   %! SM4
+                                        % [berkeley_03 LHVoiceVInserts measure 45]       %! SM4
                                         s4
                                         [
                                         
@@ -7216,7 +7216,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 46]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 46]                   %! SM4
                             s1 * 1/2
                             {
                                 \override TupletBracket.stencil = ##f
@@ -7225,7 +7225,7 @@
                                 \times 8/7 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 47]                   %! SM4
+                                        % [berkeley_03 LHVoiceVInserts measure 47]       %! SM4
                                         s4
                                         
                                         \set stemLeftBeamCount = 1
@@ -7258,7 +7258,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 48]                   %! SM4
+                                        % [berkeley_03 LHVoiceVInserts measure 48]       %! SM4
                                         s4
                                         [
                                         
@@ -7278,7 +7278,7 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 49]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 49]                   %! SM4
                             s1 * 9/8
                             {
                                 \override TupletBracket.stencil = ##f
@@ -7287,7 +7287,7 @@
                                 \times 6/5 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHVoiceVInserts measure 51]                   %! SM4
+                                        % [berkeley_03 LHVoiceVInserts measure 51]       %! SM4
                                         s4
                                         
                                         \set stemLeftBeamCount = 1
@@ -7306,14 +7306,14 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 52]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 52]                   %! SM4
                             s1 * 1/2
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHVoiceVInserts measure 53]                       %! SM4
+                                    % [berkeley_03 LHVoiceVInserts measure 53]           %! SM4
                                     s8
                                     
                                     \set stemLeftBeamCount = 1
@@ -7329,56 +7329,56 @@
                                 \revert TupletNumber.stencil
                             }
                             
-                            % [LHVoiceVInserts measure 54]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 54]                   %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVInserts measure 55]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 55]                   %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVInserts measure 56]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 56]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVInserts measure 57]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 57]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 58]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 58]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 59]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 59]                   %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVInserts measure 60]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 60]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVInserts measure 61]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 61]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 62]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 62]                   %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVInserts measure 63]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 63]                   %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVInserts measure 64]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 64]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 65]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 65]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 66]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 66]                   %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVInserts measure 67]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 67]                   %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVInserts measure 68]                               %! SM4
+                            % [berkeley_03 LHVoiceVInserts measure 68]                   %! SM4
                             s1 * 4
                             \revert Script.direction                                     %! OC
                             
                         }
                         \context LHVoiceVI = "LHVoiceVI" {
                             
-                            % [LHVoiceVI measure 22]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 22]                         %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -7425,299 +7425,299 @@
                             \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            % [LHVoiceVI measure 23]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 23]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 24]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 24]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 25]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 25]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 26]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 26]                         %! SM4
                             s1 * 9/8
                             
-                            % [LHVoiceVI measure 27]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 27]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 28]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 28]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 29]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 29]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 30]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 30]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 31]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 31]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 32]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 32]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 33]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 33]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 34]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 34]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 35]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 35]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 36]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 36]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 37]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 37]                         %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVI measure 38]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 38]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 39]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 39]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 40]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 40]                         %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceVI measure 41]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 41]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 42]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 42]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 43]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 43]                         %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceVI measure 44]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 44]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 45]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 45]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 46]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 46]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 47]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 47]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 48]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 48]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 49]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 49]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVI measure 50]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 50]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 51]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 51]                         %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVI measure 52]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 52]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 53]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 53]                         %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVI measure 54]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 54]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 55]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 55]                         %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVI measure 56]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 56]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 57]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 57]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 58]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 58]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 59]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 59]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 60]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 60]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 61]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 61]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 62]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 62]                         %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVI measure 63]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 63]                         %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVI measure 64]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 64]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 65]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 65]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 66]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 66]                         %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVI measure 67]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 67]                         %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVI measure 68]                                     %! SM4
+                            % [berkeley_03 LHVoiceVI measure 68]                         %! SM4
                             s1 * 4
                             
                         }
                         \context LHVoiceVIInserts = "LHVoiceVIInserts" {
                             
-                            % [LHVoiceVIInserts measure 22]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 22]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 23]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 23]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 24]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 24]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 25]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 25]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 26]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 26]                  %! SM4
                             s1 * 9/8
                             
-                            % [LHVoiceVIInserts measure 27]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 27]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 28]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 28]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 29]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 29]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 30]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 30]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 31]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 31]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 32]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 32]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 33]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 33]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 34]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 34]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 35]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 35]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 36]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 36]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 37]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 37]                  %! SM4
                             s1 * 5/4
                             
-                            % [LHVoiceVIInserts measure 38]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 38]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 39]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 39]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 40]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 40]                  %! SM4
                             s1 * 7/8
                             
-                            % [LHVoiceVIInserts measure 41]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 41]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 42]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 42]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 43]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 43]                  %! SM4
                             s1 * 1/8
                             
-                            % [LHVoiceVIInserts measure 44]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 44]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 45]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 45]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 46]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 46]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 47]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 47]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 48]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 48]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 49]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 49]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVIInserts measure 50]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 50]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 51]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 51]                  %! SM4
                             s1 * 3/4
                             
-                            % [LHVoiceVIInserts measure 52]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 52]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 53]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 53]                  %! SM4
                             s1 * 5/8
                             
-                            % [LHVoiceVIInserts measure 54]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 54]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 55]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 55]                  %! SM4
                             s1 * 7/4
                             
-                            % [LHVoiceVIInserts measure 56]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 56]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 57]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 57]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 58]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 58]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 59]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 59]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 60]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 60]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 61]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 61]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 62]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 62]                  %! SM4
                             s1 * 1/2
                             
-                            % [LHVoiceVIInserts measure 63]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHVoiceVIInserts measure 64]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 65]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 66]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [LHVoiceVIInserts measure 67]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHVoiceVIInserts measure 68]                              %! SM4
+                            % [berkeley_03 LHVoiceVIInserts measure 68]                  %! SM4
                             s1 * 4
                             
                         }
                         \context LHResonanceVoice = "LHResonanceVoice" {
                             
-                            % [LHResonanceVoice measure 22]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 22]                  %! SM4
                             s1 * 81/8
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHResonanceVoice measure 32]                  %! SM4
+                                        % [berkeley_03 LHResonanceVoice measure 32]      %! SM4
                                         s4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -7744,7 +7744,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 33]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 33]          %! SM4
                                     <cs,, cs,>4
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7791,14 +7791,14 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 34]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 34]                  %! SM4
                             s1 * 2
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     \scaleDurations #'(1 . 1) {
                                         
-                                        % [LHResonanceVoice measure 36]                  %! SM4
+                                        % [berkeley_03 LHResonanceVoice measure 36]      %! SM4
                                         s4
                                     %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
                                     %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -7825,7 +7825,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 37]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 37]          %! SM4
                                     <ef,, ef,>4
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7872,12 +7872,12 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 38]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 38]                  %! SM4
                             s1 * 21/2
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 54]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 54]          %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
                                     <e, fs, gs, as, b,>4
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7902,7 +7902,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 55]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 55]          %! SM4
                                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                                     <e, fs, gs, as, b,>1..
                                     \repeatTie                                           %! SC
@@ -7928,7 +7928,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 56]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 56]          %! SM4
                                     <e, fs, gs, as, b,>1.
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7953,7 +7953,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 57]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 57]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7978,7 +7978,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 58]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 58]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -8001,12 +8001,12 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 59]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 59]                  %! SM4
                             s1 * 1/4
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 60]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 60]          %! SM4
                                     <e, fs, gs, as, b,>1.
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
                                 %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -8030,7 +8030,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 61]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 61]          %! SM4
                                     <e, fs, gs, as, b,>1
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -8055,7 +8055,7 @@
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
-                                    % [LHResonanceVoice measure 62]                      %! SM4
+                                    % [berkeley_03 LHResonanceVoice measure 62]          %! SM4
                                     <e, fs, gs, as, b,>2
                                     \repeatTie                                           %! SC
                                 %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -8078,22 +8078,22 @@
                                 }
                             }
                             
-                            % [LHResonanceVoice measure 63]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 63]                  %! SM4
                             s1 * 1/4
                             
-                            % [LHResonanceVoice measure 64]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 64]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 65]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 65]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 66]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 66]                  %! SM4
                             s1 * 1
                             
-                            % [LHResonanceVoice measure 67]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 67]                  %! SM4
                             s1 * 3/2
                             
-                            % [LHResonanceVoice measure 68]                              %! SM4
+                            % [berkeley_03 LHResonanceVoice measure 68]                  %! SM4
                             s1 * 4
                             
                         }
