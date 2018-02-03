@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% segmenti07GlobalSkips
                     
                     % [segment_07 GlobalSkips measure 147]                               %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -601,7 +601,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|."                                                            %! SM5
                     
-                }
+                }   %*% segmenti07GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -610,7 +610,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
                     <<
                         \context RHVoiceI = "RHVoiceI"
-                        {
+                        {   %*% segmenti07RHVoiceI
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/5 {
@@ -949,9 +949,9 @@
                             s1 * 1/8
                             \revert Beam.positions                                       %! OC
                             
-                        }
+                        }   %*% segmenti07RHVoiceI
                         \context RHVoiceIInserts = "RHVoiceIInserts"
-                        {
+                        {   %*% segmenti07RHVoiceIInserts
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
@@ -1167,9 +1167,9 @@
                             s1 * 1/8
                             \revert Script.direction                                     %! OC
                             
-                        }
+                        }   %*% segmenti07RHVoiceIInserts
                         \context RHVoiceII = "RHVoiceII"
-                        {
+                        {   %*% segmenti07RHVoiceII
                             
                             % [segment_07 RHVoiceII measure 147]                         %! SM4
                             \override Beam.positions = #'(-4.5 . -4.5)                   %! OC
@@ -1542,9 +1542,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% segmenti07RHVoiceII
                         \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        {
+                        {   %*% segmenti07RHVoiceIIInserts
                             
                             % [segment_07 RHVoiceIIInserts measure 147]                  %! SM4
                             \override Beam.positions = #'(15.5 . 15.5)                   %! OC
@@ -1780,9 +1780,9 @@
                                 \revert TupletBracket.stencil
                                 \revert TupletNumber.stencil
                             }
-                        }
+                        }   %*% segmenti07RHVoiceIIInserts
                         \context RHVoiceIII = "RHVoiceIII"
-                        {
+                        {   %*% segmenti07RHVoiceIII
                             
                             % [segment_07 RHVoiceIII measure 147]                        %! SM4
                             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1819,9 +1819,9 @@
                             % [segment_07 RHVoiceIII measure 157]                        %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceIII
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        {
+                        {   %*% segmenti07RHVoiceIIIInserts
                             
                             % [segment_07 RHVoiceIIIInserts measure 147]                 %! SM4
                             s1 * 3/4
@@ -1856,9 +1856,9 @@
                             % [segment_07 RHVoiceIIIInserts measure 157]                 %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceIIIInserts
                         \context RHVoiceIV = "RHVoiceIV"
-                        {
+                        {   %*% segmenti07RHVoiceIV
                             
                             % [segment_07 RHVoiceIV measure 147]                         %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1895,9 +1895,9 @@
                             % [segment_07 RHVoiceIV measure 157]                         %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceIV
                         \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        {
+                        {   %*% segmenti07RHVoiceIVInserts
                             
                             % [segment_07 RHVoiceIVInserts measure 147]                  %! SM4
                             s1 * 3/4
@@ -1932,9 +1932,9 @@
                             % [segment_07 RHVoiceIVInserts measure 157]                  %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceIVInserts
                         \context RHVoiceV = "RHVoiceV"
-                        {
+                        {   %*% segmenti07RHVoiceV
                             
                             % [segment_07 RHVoiceV measure 147]                          %! SM4
                             s1 * 3/4
@@ -1969,9 +1969,9 @@
                             % [segment_07 RHVoiceV measure 157]                          %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceV
                         \context RHVoiceVI = "RHVoiceVI"
-                        {
+                        {   %*% segmenti07RHVoiceVI
                             
                             % [segment_07 RHVoiceVI measure 147]                         %! SM4
                             s1 * 3/4
@@ -2006,9 +2006,9 @@
                             % [segment_07 RHVoiceVI measure 157]                         %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHVoiceVI
                         \context RHResonanceVoice = "RHResonanceVoice"
-                        {
+                        {   %*% segmenti07RHResonanceVoice
                             
                             % [segment_07 RHResonanceVoice measure 147]                  %! SM4
                             s1 * 3/4
@@ -2043,12 +2043,12 @@
                             % [segment_07 RHResonanceVoice measure 157]                  %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07RHResonanceVoice
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
                     <<
                         \context LHVoiceI = "LHVoiceI"
-                        {
+                        {   %*% segmenti07LHVoiceI
                             
                             % [segment_07 LHVoiceI measure 147]                          %! SM4
                             s1 * 3/4
@@ -2083,9 +2083,9 @@
                             % [segment_07 LHVoiceI measure 157]                          %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07LHVoiceI
                         \context LHVoiceII = "LHVoiceII"
-                        {
+                        {   %*% segmenti07LHVoiceII
                             
                             % [segment_07 LHVoiceII measure 147]                         %! SM4
                             s1 * 3/4
@@ -2120,9 +2120,9 @@
                             % [segment_07 LHVoiceII measure 157]                         %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07LHVoiceII
                         \context LHVoiceIII = "LHVoiceIII"
-                        {
+                        {   %*% segmenti07LHVoiceIII
                             
                             % [segment_07 LHVoiceIII measure 147]                        %! SM4
                             s1 * 3/4
@@ -2157,9 +2157,9 @@
                             % [segment_07 LHVoiceIII measure 157]                        %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07LHVoiceIII
                         \context LHVoiceIV = "LHVoiceIV"
-                        {
+                        {   %*% segmenti07LHVoiceIV
                             
                             % [segment_07 LHVoiceIV measure 147]                         %! SM4
                             \override Beam.positions = #'(-5.5 . -5.5)                   %! OC
@@ -2350,9 +2350,9 @@
                             \revert Beam.positions                                       %! OC
                             \revert Script.direction                                     %! OC
                             
-                        }
+                        }   %*% segmenti07LHVoiceIV
                         \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        {
+                        {   %*% segmenti07LHVoiceIVInserts
                             
                             % [segment_07 LHVoiceIVInserts measure 147]                  %! SM4
                             \override Script.direction = #up                             %! OC
@@ -2441,9 +2441,9 @@
                             s1 * 1/8
                             \revert Script.direction                                     %! OC
                             
-                        }
+                        }   %*% segmenti07LHVoiceIVInserts
                         \context LHVoiceV = "LHVoiceV"
-                        {
+                        {   %*% segmenti07LHVoiceV
                             
                             % [segment_07 LHVoiceV measure 147]                          %! SM4
                             \override Beam.positions = #'(-6 . -6)                       %! OC
@@ -2683,9 +2683,9 @@
                             s1 * 1/8
                             \revert Script.direction                                     %! OC
                             
-                        }
+                        }   %*% segmenti07LHVoiceV
                         \context LHVoiceVInserts = "LHVoiceVInserts"
-                        {
+                        {   %*% segmenti07LHVoiceVInserts
                             
                             % [segment_07 LHVoiceVInserts measure 147]                   %! SM4
                             \override Script.direction = #up                             %! OC
@@ -2837,9 +2837,9 @@
                             \revert Script.direction                                     %! OC
                             \revert Beam.positions                                       %! OC
                             
-                        }
+                        }   %*% segmenti07LHVoiceVInserts
                         \context LHVoiceVI = "LHVoiceVI"
-                        {
+                        {   %*% segmenti07LHVoiceVI
                             
                             % [segment_07 LHVoiceVI measure 147]                         %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -2913,9 +2913,9 @@
                             % [segment_07 LHVoiceVI measure 157]                         %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07LHVoiceVI
                         \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        {
+                        {   %*% segmenti07LHVoiceVIInserts
                             
                             % [segment_07 LHVoiceVIInserts measure 147]                  %! SM4
                             s1 * 3/4
@@ -2950,9 +2950,9 @@
                             % [segment_07 LHVoiceVIInserts measure 157]                  %! SM4
                             s1 * 1/8
                             
-                        }
+                        }   %*% segmenti07LHVoiceVIInserts
                         \context LHResonanceVoice = "LHResonanceVoice"
-                        {
+                        {   %*% segmenti07LHResonanceVoice
                             
                             % [segment_07 LHResonanceVoice measure 147]                  %! SM4
                             s1 * 3/4
@@ -3022,7 +3022,7 @@
                                                 }                                        %! SCORE2
                                 }                                                        %! SCORE2
                             
-                        }
+                        }   %*% segmenti07LHResonanceVoice
                     >>
                 >>
             }

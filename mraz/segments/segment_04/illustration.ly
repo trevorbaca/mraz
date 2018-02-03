@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% segmenti04GlobalSkips
                     
                     % [segment_04 GlobalSkips measure 91]                                %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -2392,7 +2392,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% segmenti04GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -2401,7 +2401,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
                     <<
                         \context RHVoiceI = "RHVoiceI"
-                        {
+                        {   %*% segmenti04RHVoiceI
                             
                             % [segment_04 RHVoiceI measure 91]                           %! SM4
                             \override TupletBracket.staff-padding = #8                   %! OC
@@ -2820,9 +2820,9 @@
                             \revert TupletBracket.staff-padding                          %! OC
                             \revert TupletBracket.direction                              %! OC
                             
-                        }
+                        }   %*% segmenti04RHVoiceI
                         \context RHVoiceIInserts = "RHVoiceIInserts"
-                        {
+                        {   %*% segmenti04RHVoiceIInserts
                             
                             % [segment_04 RHVoiceIInserts measure 91]                    %! SM4
                             s1 * 3/2
@@ -2947,9 +2947,9 @@
                             % [segment_04 RHVoiceIInserts measure 131]                   %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceIInserts
                         \context RHVoiceII = "RHVoiceII"
-                        {
+                        {   %*% segmenti04RHVoiceII
                             
                             % [segment_04 RHVoiceII measure 91]                          %! SM4
                             \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3792,9 +3792,9 @@
                             % [segment_04 RHVoiceII measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceII
                         \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        {
+                        {   %*% segmenti04RHVoiceIIInserts
                             
                             % [segment_04 RHVoiceIIInserts measure 91]                   %! SM4
                             s1 * 3/2
@@ -3919,9 +3919,9 @@
                             % [segment_04 RHVoiceIIInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceIIInserts
                         \context RHVoiceIII = "RHVoiceIII"
-                        {
+                        {   %*% segmenti04RHVoiceIII
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 12/11 {
@@ -4187,9 +4187,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% segmenti04RHVoiceIII
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        {
+                        {   %*% segmenti04RHVoiceIIIInserts
                             
                             % [segment_04 RHVoiceIIIInserts measure 91]                  %! SM4
                             s1 * 3/2
@@ -4314,9 +4314,9 @@
                             % [segment_04 RHVoiceIIIInserts measure 131]                 %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceIIIInserts
                         \context RHVoiceIV = "RHVoiceIV"
-                        {
+                        {   %*% segmenti04RHVoiceIV
                             
                             % [segment_04 RHVoiceIV measure 91]                          %! SM4
                             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4443,9 +4443,9 @@
                             % [segment_04 RHVoiceIV measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceIV
                         \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        {
+                        {   %*% segmenti04RHVoiceIVInserts
                             
                             % [segment_04 RHVoiceIVInserts measure 91]                   %! SM4
                             s1 * 3/2
@@ -4570,9 +4570,9 @@
                             % [segment_04 RHVoiceIVInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceIVInserts
                         \context RHVoiceV = "RHVoiceV"
-                        {
+                        {   %*% segmenti04RHVoiceV
                             
                             % [segment_04 RHVoiceV measure 91]                           %! SM4
                             s1 * 65/4
@@ -4678,9 +4678,9 @@
                             % [segment_04 RHVoiceV measure 131]                          %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceV
                         \context RHVoiceVI = "RHVoiceVI"
-                        {
+                        {   %*% segmenti04RHVoiceVI
                             
                             % [segment_04 RHVoiceVI measure 91]                          %! SM4
                             s1 * 3/2
@@ -4805,9 +4805,9 @@
                             % [segment_04 RHVoiceVI measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHVoiceVI
                         \context RHResonanceVoice = "RHResonanceVoice"
-                        {
+                        {   %*% segmenti04RHResonanceVoice
                             
                             % [segment_04 RHResonanceVoice measure 91]                   %! SM4
                             s1 * 3/2
@@ -4932,12 +4932,12 @@
                             % [segment_04 RHResonanceVoice measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04RHResonanceVoice
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
                     <<
                         \context LHVoiceI = "LHVoiceI"
-                        {
+                        {   %*% segmenti04LHVoiceI
                             
                             % [segment_04 LHVoiceI measure 91]                           %! SM4
                             s1 * 3/2
@@ -5062,9 +5062,9 @@
                             % [segment_04 LHVoiceI measure 131]                          %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceI
                         \context LHVoiceII = "LHVoiceII"
-                        {
+                        {   %*% segmenti04LHVoiceII
                             
                             % [segment_04 LHVoiceII measure 91]                          %! SM4
                             s1 * 135/4
@@ -5113,9 +5113,9 @@
                             % [segment_04 LHVoiceII measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceII
                         \context LHVoiceIII = "LHVoiceIII"
-                        {
+                        {   %*% segmenti04LHVoiceIII
                             
                             % [segment_04 LHVoiceIII measure 91]                         %! SM4
                             s1 * 3/2
@@ -5240,9 +5240,9 @@
                             % [segment_04 LHVoiceIII measure 131]                        %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceIII
                         \context LHVoiceIV = "LHVoiceIV"
-                        {
+                        {   %*% segmenti04LHVoiceIV
                             
                             % [segment_04 LHVoiceIV measure 91]                          %! SM4
                             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -5369,9 +5369,9 @@
                             % [segment_04 LHVoiceIV measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceIV
                         \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        {
+                        {   %*% segmenti04LHVoiceIVInserts
                             
                             % [segment_04 LHVoiceIVInserts measure 91]                   %! SM4
                             s1 * 3/2
@@ -5496,9 +5496,9 @@
                             % [segment_04 LHVoiceIVInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceIVInserts
                         \context LHVoiceV = "LHVoiceV"
-                        {
+                        {   %*% segmenti04LHVoiceV
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
@@ -6488,9 +6488,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% segmenti04LHVoiceV
                         \context LHVoiceVInserts = "LHVoiceVInserts"
-                        {
+                        {   %*% segmenti04LHVoiceVInserts
                             
                             % [segment_04 LHVoiceVInserts measure 91]                    %! SM4
                             \override Script.direction = #up                             %! OC
@@ -6677,9 +6677,9 @@
                             s1 * 3/2
                             \revert Script.direction                                     %! OC
                             
-                        }
+                        }   %*% segmenti04LHVoiceVInserts
                         \context LHVoiceVI = "LHVoiceVI"
-                        {
+                        {   %*% segmenti04LHVoiceVI
                             
                             % [segment_04 LHVoiceVI measure 91]                          %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -6848,9 +6848,9 @@
                             % [segment_04 LHVoiceVI measure 131]                         %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceVI
                         \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        {
+                        {   %*% segmenti04LHVoiceVIInserts
                             
                             % [segment_04 LHVoiceVIInserts measure 91]                   %! SM4
                             s1 * 3/2
@@ -6975,9 +6975,9 @@
                             % [segment_04 LHVoiceVIInserts measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHVoiceVIInserts
                         \context LHResonanceVoice = "LHResonanceVoice"
-                        {
+                        {   %*% segmenti04LHResonanceVoice
                             
                             % [segment_04 LHResonanceVoice measure 91]                   %! SM4
                             s1 * 35/4
@@ -7357,7 +7357,7 @@
                             % [segment_04 LHResonanceVoice measure 131]                  %! SM4
                             s1 * 3/2
                             
-                        }
+                        }   %*% segmenti04LHResonanceVoice
                     >>
                 >>
             }
