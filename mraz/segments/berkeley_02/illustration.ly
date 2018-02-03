@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% berkeleyi02GlobalSkips
                     
                     % [berkeley_02 GlobalSkips measure 10]                               %! SM4
                     \newSpacingSection                                                   %! SPACING:HSS1
@@ -983,7 +983,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% berkeleyi02GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -992,7 +992,7 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
                     <<
                         \context RHVoiceI = "RHVoiceI"
-                        {
+                        {   %*% berkeleyi02RHVoiceI
                             
                             % [berkeley_02 RHVoiceI measure 10]                          %! SM4
                             \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -1083,9 +1083,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% berkeleyi02RHVoiceI
                         \context RHVoiceIInserts = "RHVoiceIInserts"
-                        {
+                        {   %*% berkeleyi02RHVoiceIInserts
                             
                             % [berkeley_02 RHVoiceIInserts measure 10]                   %! SM4
                             s1 * 1/2
@@ -1123,9 +1123,9 @@
                             % [berkeley_02 RHVoiceIInserts measure 21]                   %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIInserts
                         \context RHVoiceII = "RHVoiceII"
-                        {
+                        {   %*% berkeleyi02RHVoiceII
                             
                             % [berkeley_02 RHVoiceII measure 10]                         %! SM4
                             \override Slur.direction = #up                               %! OC
@@ -1632,9 +1632,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% berkeleyi02RHVoiceII
                         \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        {
+                        {   %*% berkeleyi02RHVoiceIIInserts
                             
                             % [berkeley_02 RHVoiceIIInserts measure 10]                  %! SM4
                             s1 * 1/2
@@ -1672,9 +1672,9 @@
                             % [berkeley_02 RHVoiceIIInserts measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIIInserts
                         \context RHVoiceIII = "RHVoiceIII"
-                        {
+                        {   %*% berkeleyi02RHVoiceIII
                             
                             % [berkeley_02 RHVoiceIII measure 10]                        %! SM4
                             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1735,9 +1735,9 @@
                             % [berkeley_02 RHVoiceIII measure 21]                        %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIII
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        {
+                        {   %*% berkeleyi02RHVoiceIIIInserts
                             
                             % [berkeley_02 RHVoiceIIIInserts measure 10]                 %! SM4
                             s1 * 1/2
@@ -1775,9 +1775,9 @@
                             % [berkeley_02 RHVoiceIIIInserts measure 21]                 %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIIIInserts
                         \context RHVoiceIV = "RHVoiceIV"
-                        {
+                        {   %*% berkeleyi02RHVoiceIV
                             {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7 {
@@ -1913,9 +1913,9 @@
                             % [berkeley_02 RHVoiceIV measure 21]                         %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIV
                         \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        {
+                        {   %*% berkeleyi02RHVoiceIVInserts
                             {
                                 \override TupletBracket.stencil = ##f
                                 \override TupletNumber.stencil = ##f
@@ -1991,9 +1991,9 @@
                             % [berkeley_02 RHVoiceIVInserts measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceIVInserts
                         \context RHVoiceV = "RHVoiceV"
-                        {
+                        {   %*% berkeleyi02RHVoiceV
                             
                             % [berkeley_02 RHVoiceV measure 10]                          %! SM4
                             s1 * 1/2
@@ -2031,9 +2031,9 @@
                             % [berkeley_02 RHVoiceV measure 21]                          %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceV
                         \context RHVoiceVI = "RHVoiceVI"
-                        {
+                        {   %*% berkeleyi02RHVoiceVI
                             
                             % [berkeley_02 RHVoiceVI measure 10]                         %! SM4
                             s1 * 1/2
@@ -2071,9 +2071,9 @@
                             % [berkeley_02 RHVoiceVI measure 21]                         %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHVoiceVI
                         \context RHResonanceVoice = "RHResonanceVoice"
-                        {
+                        {   %*% berkeleyi02RHResonanceVoice
                             
                             % [berkeley_02 RHResonanceVoice measure 10]                  %! SM4
                             s1 * 1/2
@@ -2111,12 +2111,12 @@
                             % [berkeley_02 RHResonanceVoice measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02RHResonanceVoice
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
                     <<
                         \context LHVoiceI = "LHVoiceI"
-                        {
+                        {   %*% berkeleyi02LHVoiceI
                             
                             % [berkeley_02 LHVoiceI measure 10]                          %! SM4
                             s1 * 1/2
@@ -2154,9 +2154,9 @@
                             % [berkeley_02 LHVoiceI measure 21]                          %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceI
                         \context LHVoiceII = "LHVoiceII"
-                        {
+                        {   %*% berkeleyi02LHVoiceII
                             
                             % [berkeley_02 LHVoiceII measure 10]                         %! SM4
                             s1 * 67/8
@@ -2186,9 +2186,9 @@
                                     
                                 }
                             }
-                        }
+                        }   %*% berkeleyi02LHVoiceII
                         \context LHVoiceIII = "LHVoiceIII"
-                        {
+                        {   %*% berkeleyi02LHVoiceIII
                             
                             % [berkeley_02 LHVoiceIII measure 10]                        %! SM4
                             s1 * 1/2
@@ -2226,9 +2226,9 @@
                             % [berkeley_02 LHVoiceIII measure 21]                        %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceIII
                         \context LHVoiceIV = "LHVoiceIV"
-                        {
+                        {   %*% berkeleyi02LHVoiceIV
                             
                             % [berkeley_02 LHVoiceIV measure 10]                         %! SM4
                             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2268,9 +2268,9 @@
                             % [berkeley_02 LHVoiceIV measure 21]                         %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceIV
                         \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        {
+                        {   %*% berkeleyi02LHVoiceIVInserts
                             
                             % [berkeley_02 LHVoiceIVInserts measure 10]                  %! SM4
                             s1 * 1/2
@@ -2308,9 +2308,9 @@
                             % [berkeley_02 LHVoiceIVInserts measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceIVInserts
                         \context LHVoiceV = "LHVoiceV"
-                        {
+                        {   %*% berkeleyi02LHVoiceV
                             
                             % [berkeley_02 LHVoiceV measure 10]                          %! SM4
                             \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2370,9 +2370,9 @@
                             % [berkeley_02 LHVoiceV measure 21]                          %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceV
                         \context LHVoiceVInserts = "LHVoiceVInserts"
-                        {
+                        {   %*% berkeleyi02LHVoiceVInserts
                             
                             % [berkeley_02 LHVoiceVInserts measure 10]                   %! SM4
                             s1 * 1/2
@@ -2410,9 +2410,9 @@
                             % [berkeley_02 LHVoiceVInserts measure 21]                   %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceVInserts
                         \context LHVoiceVI = "LHVoiceVI"
-                        {
+                        {   %*% berkeleyi02LHVoiceVI
                             
                             % [berkeley_02 LHVoiceVI measure 10]                         %! SM4
                             \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -2494,9 +2494,9 @@
                             % [berkeley_02 LHVoiceVI measure 21]                         %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceVI
                         \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        {
+                        {   %*% berkeleyi02LHVoiceVIInserts
                             
                             % [berkeley_02 LHVoiceVIInserts measure 10]                  %! SM4
                             s1 * 1/2
@@ -2534,9 +2534,9 @@
                             % [berkeley_02 LHVoiceVIInserts measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHVoiceVIInserts
                         \context LHResonanceVoice = "LHResonanceVoice"
-                        {
+                        {   %*% berkeleyi02LHResonanceVoice
                             {
                                 \scaleDurations #'(1 . 1) {
                                     
@@ -2792,7 +2792,7 @@
                             % [berkeley_02 LHResonanceVoice measure 21]                  %! SM4
                             s1 * 1
                             
-                        }
+                        }   %*% berkeleyi02LHResonanceVoice
                     >>
                 >>
             }
