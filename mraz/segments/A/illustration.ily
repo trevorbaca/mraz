@@ -1,4 +1,4 @@
-AGlobalSkips = {
+A_GlobalSkips = {
     
     % [A GlobalSkips measure 1]                                          %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
@@ -717,7 +717,7 @@ AGlobalSkips = {
 }
 
 
-ARHVoiceI = {
+A_RHVoiceI = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -776,7 +776,7 @@ ARHVoiceI = {
 }
 
 
-ARHVoiceIInserts = {
+A_RHVoiceIInserts = {
     
     % [A RHVoiceIInserts measure 1]                              %! SM4
     s1 * 1
@@ -808,7 +808,7 @@ ARHVoiceIInserts = {
 }
 
 
-ARHVoiceII = {
+A_RHVoiceII = {
     {
         \times 4/5 {
             
@@ -1110,7 +1110,7 @@ ARHVoiceII = {
 }
 
 
-ARHVoiceIIInserts = {
+A_RHVoiceIIInserts = {
     
     % [A RHVoiceIIInserts measure 1]                             %! SM4
     s1 * 1
@@ -1142,7 +1142,7 @@ ARHVoiceIIInserts = {
 }
 
 
-ARHVoiceIII = {
+A_RHVoiceIII = {
     
     % [A RHVoiceIII measure 1]                                   %! SM4
     s1 * 21/8
@@ -1307,7 +1307,7 @@ ARHVoiceIII = {
 }
 
 
-ARHVoiceIIIInserts = {
+A_RHVoiceIIIInserts = {
     
     % [A RHVoiceIIIInserts measure 1]                            %! SM4
     s1 * 1
@@ -1339,7 +1339,7 @@ ARHVoiceIIIInserts = {
 }
 
 
-ARHVoiceIV = {
+A_RHVoiceIV = {
     
     % [A RHVoiceIV measure 1]                                    %! SM4
     s1 * 1
@@ -1371,7 +1371,7 @@ ARHVoiceIV = {
 }
 
 
-ARHVoiceIVInserts = {
+A_RHVoiceIVInserts = {
     
     % [A RHVoiceIVInserts measure 1]                             %! SM4
     s1 * 1
@@ -1403,7 +1403,7 @@ ARHVoiceIVInserts = {
 }
 
 
-ARHVoiceV = {
+A_RHVoiceV = {
     
     % [A RHVoiceV measure 1]                                     %! SM4
     s1 * 1
@@ -1435,7 +1435,7 @@ ARHVoiceV = {
 }
 
 
-ARHVoiceVI = {
+A_RHVoiceVI = {
     
     % [A RHVoiceVI measure 1]                                    %! SM4
     s1 * 1
@@ -1467,7 +1467,7 @@ ARHVoiceVI = {
 }
 
 
-ARHResonanceVoice = {
+A_RHResonanceVoice = {
     
     % [A RHResonanceVoice measure 1]                             %! SM4
     s1 * 1
@@ -1499,7 +1499,7 @@ ARHResonanceVoice = {
 }
 
 
-ALHVoiceI = {
+A_LHVoiceI = {
     
     % [A LHVoiceI measure 1]                                     %! SM4
     \set PianoMusicLHStaff.forceClef = ##t                       %! DEFAULT_CLEF:SM8
@@ -1536,7 +1536,7 @@ ALHVoiceI = {
 }
 
 
-ALHVoiceII = {
+A_LHVoiceII = {
     
     % [A LHVoiceII measure 1]                                    %! SM4
     s1 * 1
@@ -1568,7 +1568,7 @@ ALHVoiceII = {
 }
 
 
-ALHVoiceIII = {
+A_LHVoiceIII = {
     
     % [A LHVoiceIII measure 1]                                   %! SM4
     s1 * 1
@@ -1600,7 +1600,7 @@ ALHVoiceIII = {
 }
 
 
-ALHVoiceIV = {
+A_LHVoiceIV = {
     
     % [A LHVoiceIV measure 1]                                    %! SM4
     s1 * 1
@@ -1684,7 +1684,7 @@ ALHVoiceIV = {
 }
 
 
-ALHVoiceIVInserts = {
+A_LHVoiceIVInserts = {
     
     % [A LHVoiceIVInserts measure 1]                             %! SM4
     s1 * 1
@@ -1739,7 +1739,7 @@ ALHVoiceIVInserts = {
 }
 
 
-ALHVoiceV = {
+A_LHVoiceV = {
     
     % [A LHVoiceV measure 1]                                     %! SM4
     s1 * 3/2
@@ -1811,7 +1811,7 @@ ALHVoiceV = {
 }
 
 
-ALHVoiceVInserts = {
+A_LHVoiceVInserts = {
     
     % [A LHVoiceVInserts measure 1]                              %! SM4
     s1 * 1
@@ -1843,7 +1843,7 @@ ALHVoiceVInserts = {
 }
 
 
-ALHVoiceVI = {
+A_LHVoiceVI = {
     
     % [A LHVoiceVI measure 1]                                    %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! DEFAULT_INSTRUMENT:SM8
@@ -1954,7 +1954,7 @@ ALHVoiceVI = {
 }
 
 
-ALHVoiceVIInserts = {
+A_LHVoiceVIInserts = {
     
     % [A LHVoiceVIInserts measure 1]                             %! SM4
     s1 * 1
@@ -1986,7 +1986,7 @@ ALHVoiceVIInserts = {
 }
 
 
-ALHResonanceVoice = {
+A_LHResonanceVoice = {
     
     % [A LHResonanceVoice measure 1]                             %! SM4
     s1 * 1

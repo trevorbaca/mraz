@@ -1,4 +1,4 @@
-KGlobalSkips = {
+K_GlobalSkips = {
     
     % [K GlobalSkips measure 158]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REDUNDANT_METRONOME_MARK:SM27
@@ -563,7 +563,7 @@ KGlobalSkips = {
 }
 
 
-KRHVoiceI = {
+K_RHVoiceI = {
     
     % [K RHVoiceI measure 158]                                   %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -611,7 +611,7 @@ KRHVoiceI = {
 }
 
 
-KRHVoiceIInserts = {
+K_RHVoiceIInserts = {
     
     % [K RHVoiceIInserts measure 158]                            %! SM4
     s1 * 7/16
@@ -652,7 +652,7 @@ KRHVoiceIInserts = {
 }
 
 
-KRHVoiceII = {
+K_RHVoiceII = {
     
     % [K RHVoiceII measure 158]                                  %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -695,7 +695,7 @@ KRHVoiceII = {
 }
 
 
-KRHVoiceIIInserts = {
+K_RHVoiceIIInserts = {
     
     % [K RHVoiceIIInserts measure 158]                           %! SM4
     s1 * 7/16
@@ -736,7 +736,7 @@ KRHVoiceIIInserts = {
 }
 
 
-KRHVoiceIII = {
+K_RHVoiceIII = {
     
     % [K RHVoiceIII measure 158]                                 %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -779,7 +779,7 @@ KRHVoiceIII = {
 }
 
 
-KRHVoiceIIIInserts = {
+K_RHVoiceIIIInserts = {
     
     % [K RHVoiceIIIInserts measure 158]                          %! SM4
     s1 * 7/16
@@ -820,7 +820,7 @@ KRHVoiceIIIInserts = {
 }
 
 
-KRHVoiceIV = {
+K_RHVoiceIV = {
     
     % [K RHVoiceIV measure 158]                                  %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -863,7 +863,7 @@ KRHVoiceIV = {
 }
 
 
-KRHVoiceIVInserts = {
+K_RHVoiceIVInserts = {
     
     % [K RHVoiceIVInserts measure 158]                           %! SM4
     s1 * 7/16
@@ -904,7 +904,7 @@ KRHVoiceIVInserts = {
 }
 
 
-KRHVoiceV = {
+K_RHVoiceV = {
     
     % [K RHVoiceV measure 158]                                   %! SM4
     s1 * 7/16
@@ -945,7 +945,7 @@ KRHVoiceV = {
 }
 
 
-KRHVoiceVI = {
+K_RHVoiceVI = {
     
     % [K RHVoiceVI measure 158]                                  %! SM4
     s1 * 7/16
@@ -986,7 +986,7 @@ KRHVoiceVI = {
 }
 
 
-KRHResonanceVoice = {
+K_RHResonanceVoice = {
     
     % [K RHResonanceVoice measure 158]                           %! SM4
     s1 * 7/16
@@ -1027,7 +1027,7 @@ KRHResonanceVoice = {
 }
 
 
-KLHVoiceI = {
+K_LHVoiceI = {
     
     % [K LHVoiceI measure 158]                                   %! SM4
     s1 * 7/16
@@ -1068,7 +1068,7 @@ KLHVoiceI = {
 }
 
 
-KLHVoiceII = {
+K_LHVoiceII = {
     
     % [K LHVoiceII measure 158]                                  %! SM4
     s1 * 7/16
@@ -1109,7 +1109,7 @@ KLHVoiceII = {
 }
 
 
-KLHVoiceIII = {
+K_LHVoiceIII = {
     
     % [K LHVoiceIII measure 158]                                 %! SM4
     s1 * 7/16
@@ -1150,7 +1150,7 @@ KLHVoiceIII = {
 }
 
 
-KLHVoiceIV = {
+K_LHVoiceIV = {
     
     % [K LHVoiceIV measure 158]                                  %! SM4
     \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -1198,7 +1198,7 @@ KLHVoiceIV = {
 }
 
 
-KLHVoiceIVInserts = {
+K_LHVoiceIVInserts = {
     
     % [K LHVoiceIVInserts measure 158]                           %! SM4
     s1 * 7/16
@@ -1239,7 +1239,7 @@ KLHVoiceIVInserts = {
 }
 
 
-KLHVoiceV = {
+K_LHVoiceV = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -1697,7 +1697,7 @@ KLHVoiceV = {
 }
 
 
-KLHVoiceVInserts = {
+K_LHVoiceVInserts = {
     
     % [K LHVoiceVInserts measure 158]                            %! SM4
     s1 * 7/16
@@ -1738,7 +1738,7 @@ KLHVoiceVInserts = {
 }
 
 
-KLHVoiceVI = {
+K_LHVoiceVI = {
     
     % [K LHVoiceVI measure 158]                                  %! SM4
     \override Script.direction = #down                           %! OC
@@ -2027,7 +2027,7 @@ KLHVoiceVI = {
 }
 
 
-KLHVoiceVIInserts = {
+K_LHVoiceVIInserts = {
     
     % [K LHVoiceVIInserts measure 158]                           %! SM4
     s1 * 7/16
@@ -2068,7 +2068,7 @@ KLHVoiceVIInserts = {
 }
 
 
-KLHResonanceVoice = {
+K_LHResonanceVoice = {
     
     % [K LHResonanceVoice measure 158]                           %! SM4
     s1 * 7/16

@@ -22,7 +22,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \GGlobalSkips
+                \G_GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -31,50 +31,50 @@
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
                     <<
                         \context RHVoiceI = "RHVoiceI"
-                        \GRHVoiceI
+                        \G_RHVoiceI
                         \context RHVoiceIInserts = "RHVoiceIInserts"
-                        \GRHVoiceIInserts
+                        \G_RHVoiceIInserts
                         \context RHVoiceII = "RHVoiceII"
-                        \GRHVoiceII
+                        \G_RHVoiceII
                         \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        \GRHVoiceIIInserts
+                        \G_RHVoiceIIInserts
                         \context RHVoiceIII = "RHVoiceIII"
-                        \GRHVoiceIII
+                        \G_RHVoiceIII
                         \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        \GRHVoiceIIIInserts
+                        \G_RHVoiceIIIInserts
                         \context RHVoiceIV = "RHVoiceIV"
-                        \GRHVoiceIV
+                        \G_RHVoiceIV
                         \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        \GRHVoiceIVInserts
+                        \G_RHVoiceIVInserts
                         \context RHVoiceV = "RHVoiceV"
-                        \GRHVoiceV
+                        \G_RHVoiceV
                         \context RHVoiceVI = "RHVoiceVI"
-                        \GRHVoiceVI
+                        \G_RHVoiceVI
                         \context RHResonanceVoice = "RHResonanceVoice"
-                        \GRHResonanceVoice
+                        \G_RHResonanceVoice
                     >>
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
                     <<
                         \context LHVoiceI = "LHVoiceI"
-                        \GLHVoiceI
+                        \G_LHVoiceI
                         \context LHVoiceII = "LHVoiceII"
-                        \GLHVoiceII
+                        \G_LHVoiceII
                         \context LHVoiceIII = "LHVoiceIII"
-                        \GLHVoiceIII
+                        \G_LHVoiceIII
                         \context LHVoiceIV = "LHVoiceIV"
-                        \GLHVoiceIV
+                        \G_LHVoiceIV
                         \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        \GLHVoiceIVInserts
+                        \G_LHVoiceIVInserts
                         \context LHVoiceV = "LHVoiceV"
-                        \GLHVoiceV
+                        \G_LHVoiceV
                         \context LHVoiceVInserts = "LHVoiceVInserts"
-                        \GLHVoiceVInserts
+                        \G_LHVoiceVInserts
                         \context LHVoiceVI = "LHVoiceVI"
-                        \GLHVoiceVI
+                        \G_LHVoiceVI
                         \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        \GLHVoiceVIInserts
+                        \G_LHVoiceVIInserts
                         \context LHResonanceVoice = "LHResonanceVoice"
-                        \GLHResonanceVoice
+                        \G_LHResonanceVoice
                     >>
                 >>
             }

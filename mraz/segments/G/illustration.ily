@@ -1,4 +1,4 @@
-GGlobalSkips = {
+G_GlobalSkips = {
     
     % [G GlobalSkips measure 91]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -2373,7 +2373,7 @@ GGlobalSkips = {
 }
 
 
-GRHVoiceI = {
+G_RHVoiceI = {
     
     % [G RHVoiceI measure 91]                                    %! SM4
     \override TupletBracket.staff-padding = #8                   %! OC
@@ -2795,7 +2795,7 @@ GRHVoiceI = {
 }
 
 
-GRHVoiceIInserts = {
+G_RHVoiceIInserts = {
     
     % [G RHVoiceIInserts measure 91]                             %! SM4
     s1 * 3/2
@@ -2923,7 +2923,7 @@ GRHVoiceIInserts = {
 }
 
 
-GRHVoiceII = {
+G_RHVoiceII = {
     
     % [G RHVoiceII measure 91]                                   %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3769,7 +3769,7 @@ GRHVoiceII = {
 }
 
 
-GRHVoiceIIInserts = {
+G_RHVoiceIIInserts = {
     
     % [G RHVoiceIIInserts measure 91]                            %! SM4
     s1 * 3/2
@@ -3897,7 +3897,7 @@ GRHVoiceIIInserts = {
 }
 
 
-GRHVoiceIII = {
+G_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
@@ -4166,7 +4166,7 @@ GRHVoiceIII = {
 }
 
 
-GRHVoiceIIIInserts = {
+G_RHVoiceIIIInserts = {
     
     % [G RHVoiceIIIInserts measure 91]                           %! SM4
     s1 * 3/2
@@ -4294,7 +4294,7 @@ GRHVoiceIIIInserts = {
 }
 
 
-GRHVoiceIV = {
+G_RHVoiceIV = {
     
     % [G RHVoiceIV measure 91]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4424,7 +4424,7 @@ GRHVoiceIV = {
 }
 
 
-GRHVoiceIVInserts = {
+G_RHVoiceIVInserts = {
     
     % [G RHVoiceIVInserts measure 91]                            %! SM4
     s1 * 3/2
@@ -4552,7 +4552,7 @@ GRHVoiceIVInserts = {
 }
 
 
-GRHVoiceV = {
+G_RHVoiceV = {
     
     % [G RHVoiceV measure 91]                                    %! SM4
     s1 * 65/4
@@ -4661,7 +4661,7 @@ GRHVoiceV = {
 }
 
 
-GRHVoiceVI = {
+G_RHVoiceVI = {
     
     % [G RHVoiceVI measure 91]                                   %! SM4
     s1 * 3/2
@@ -4789,7 +4789,7 @@ GRHVoiceVI = {
 }
 
 
-GRHResonanceVoice = {
+G_RHResonanceVoice = {
     
     % [G RHResonanceVoice measure 91]                            %! SM4
     s1 * 3/2
@@ -4917,7 +4917,7 @@ GRHResonanceVoice = {
 }
 
 
-GLHVoiceI = {
+G_LHVoiceI = {
     
     % [G LHVoiceI measure 91]                                    %! SM4
     s1 * 3/2
@@ -5045,7 +5045,7 @@ GLHVoiceI = {
 }
 
 
-GLHVoiceII = {
+G_LHVoiceII = {
     
     % [G LHVoiceII measure 91]                                   %! SM4
     s1 * 135/4
@@ -5097,7 +5097,7 @@ GLHVoiceII = {
 }
 
 
-GLHVoiceIII = {
+G_LHVoiceIII = {
     
     % [G LHVoiceIII measure 91]                                  %! SM4
     s1 * 3/2
@@ -5225,7 +5225,7 @@ GLHVoiceIII = {
 }
 
 
-GLHVoiceIV = {
+G_LHVoiceIV = {
     
     % [G LHVoiceIV measure 91]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -5355,7 +5355,7 @@ GLHVoiceIV = {
 }
 
 
-GLHVoiceIVInserts = {
+G_LHVoiceIVInserts = {
     
     % [G LHVoiceIVInserts measure 91]                            %! SM4
     s1 * 3/2
@@ -5483,7 +5483,7 @@ GLHVoiceIVInserts = {
 }
 
 
-GLHVoiceV = {
+G_LHVoiceV = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -6476,7 +6476,7 @@ GLHVoiceV = {
 }
 
 
-GLHVoiceVInserts = {
+G_LHVoiceVInserts = {
     
     % [G LHVoiceVInserts measure 91]                             %! SM4
     \override Script.direction = #up                             %! OC
@@ -6666,7 +6666,7 @@ GLHVoiceVInserts = {
 }
 
 
-GLHVoiceVI = {
+G_LHVoiceVI = {
     
     % [G LHVoiceVI measure 91]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -6838,7 +6838,7 @@ GLHVoiceVI = {
 }
 
 
-GLHVoiceVIInserts = {
+G_LHVoiceVIInserts = {
     
     % [G LHVoiceVIInserts measure 91]                            %! SM4
     s1 * 3/2
@@ -6966,7 +6966,7 @@ GLHVoiceVIInserts = {
 }
 
 
-GLHResonanceVoice = {
+G_LHResonanceVoice = {
     
     % [G LHResonanceVoice measure 91]                            %! SM4
     s1 * 35/4

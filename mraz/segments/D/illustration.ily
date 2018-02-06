@@ -1,4 +1,4 @@
-DGlobalSkips = {
+D_GlobalSkips = {
     
     % [D GlobalSkips measure 69]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1256,7 +1256,7 @@ DGlobalSkips = {
 }
 
 
-DRHVoiceI = {
+D_RHVoiceI = {
     
     % [D RHVoiceI measure 69]                                    %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -1316,7 +1316,7 @@ DRHVoiceI = {
 }
 
 
-DRHVoiceIInserts = {
+D_RHVoiceIInserts = {
     
     % [D RHVoiceIInserts measure 69]                             %! SM4
     s1 * 4
@@ -1369,7 +1369,7 @@ DRHVoiceIInserts = {
 }
 
 
-DRHVoiceII = {
+D_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -2661,7 +2661,7 @@ DRHVoiceII = {
 }
 
 
-DRHVoiceIIInserts = {
+D_RHVoiceIIInserts = {
     
     % [D RHVoiceIIInserts measure 69]                            %! SM4
     s1 * 4
@@ -2714,7 +2714,7 @@ DRHVoiceIIInserts = {
 }
 
 
-DRHVoiceIII = {
+D_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
@@ -3481,7 +3481,7 @@ DRHVoiceIII = {
 }
 
 
-DRHVoiceIIIInserts = {
+D_RHVoiceIIIInserts = {
     
     % [D RHVoiceIIIInserts measure 69]                           %! SM4
     s1 * 4
@@ -3534,7 +3534,7 @@ DRHVoiceIIIInserts = {
 }
 
 
-DRHVoiceIV = {
+D_RHVoiceIV = {
     
     % [D RHVoiceIV measure 69]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3589,7 +3589,7 @@ DRHVoiceIV = {
 }
 
 
-DRHVoiceIVInserts = {
+D_RHVoiceIVInserts = {
     
     % [D RHVoiceIVInserts measure 69]                            %! SM4
     s1 * 4
@@ -3642,7 +3642,7 @@ DRHVoiceIVInserts = {
 }
 
 
-DRHVoiceV = {
+D_RHVoiceV = {
     
     % [D RHVoiceV measure 69]                                    %! SM4
     s1 * 4
@@ -3695,7 +3695,7 @@ DRHVoiceV = {
 }
 
 
-DRHVoiceVI = {
+D_RHVoiceVI = {
     
     % [D RHVoiceVI measure 69]                                   %! SM4
     s1 * 4
@@ -3748,7 +3748,7 @@ DRHVoiceVI = {
 }
 
 
-DRHResonanceVoice = {
+D_RHResonanceVoice = {
     
     % [D RHResonanceVoice measure 69]                            %! SM4
     s1 * 4
@@ -3801,7 +3801,7 @@ DRHResonanceVoice = {
 }
 
 
-DLHVoiceI = {
+D_LHVoiceI = {
     
     % [D LHVoiceI measure 69]                                    %! SM4
     s1 * 4
@@ -3854,7 +3854,7 @@ DLHVoiceI = {
 }
 
 
-DLHVoiceII = {
+D_LHVoiceII = {
     
     % [D LHVoiceII measure 69]                                   %! SM4
     s1 * 4
@@ -3907,7 +3907,7 @@ DLHVoiceII = {
 }
 
 
-DLHVoiceIII = {
+D_LHVoiceIII = {
     
     % [D LHVoiceIII measure 69]                                  %! SM4
     s1 * 4
@@ -3960,7 +3960,7 @@ DLHVoiceIII = {
 }
 
 
-DLHVoiceIV = {
+D_LHVoiceIV = {
     
     % [D LHVoiceIV measure 69]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4372,7 +4372,7 @@ DLHVoiceIV = {
 }
 
 
-DLHVoiceIVInserts = {
+D_LHVoiceIVInserts = {
     
     % [D LHVoiceIVInserts measure 69]                            %! SM4
     s1 * 4
@@ -4425,7 +4425,7 @@ DLHVoiceIVInserts = {
 }
 
 
-DLHVoiceV = {
+D_LHVoiceV = {
     
     % [D LHVoiceV measure 69]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4514,7 +4514,7 @@ DLHVoiceV = {
 }
 
 
-DLHVoiceVInserts = {
+D_LHVoiceVInserts = {
     
     % [D LHVoiceVInserts measure 69]                             %! SM4
     s1 * 4
@@ -4567,7 +4567,7 @@ DLHVoiceVInserts = {
 }
 
 
-DLHVoiceVI = {
+D_LHVoiceVI = {
     
     % [D LHVoiceVI measure 69]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -4700,7 +4700,7 @@ DLHVoiceVI = {
 }
 
 
-DLHVoiceVIInserts = {
+D_LHVoiceVIInserts = {
     
     % [D LHVoiceVIInserts measure 69]                            %! SM4
     s1 * 4
@@ -4753,7 +4753,7 @@ DLHVoiceVIInserts = {
 }
 
 
-DLHResonanceVoice = {
+D_LHResonanceVoice = {
     
     % [D LHResonanceVoice measure 69]                            %! SM4
     s1 * 17

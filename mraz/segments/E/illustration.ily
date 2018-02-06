@@ -1,4 +1,4 @@
-EGlobalSkips = {
+E_GlobalSkips = {
     
     % [E GlobalSkips measure 85]                                         %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
@@ -58,7 +58,7 @@ EGlobalSkips = {
 }
 
 
-ERHVoiceI = {
+E_RHVoiceI = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -358,7 +358,7 @@ ERHVoiceI = {
 }
 
 
-ERHVoiceIInserts = {
+E_RHVoiceIInserts = {
     
     % [E RHVoiceIInserts measure 85]                             %! SM4
     s1 * 59/16
@@ -366,7 +366,7 @@ ERHVoiceIInserts = {
 }
 
 
-ERHVoiceII = {
+E_RHVoiceII = {
     
     % [E RHVoiceII measure 85]                                   %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -376,7 +376,7 @@ ERHVoiceII = {
 }
 
 
-ERHVoiceIIInserts = {
+E_RHVoiceIIInserts = {
     
     % [E RHVoiceIIInserts measure 85]                            %! SM4
     s1 * 59/16
@@ -384,7 +384,7 @@ ERHVoiceIIInserts = {
 }
 
 
-ERHVoiceIII = {
+E_RHVoiceIII = {
     
     % [E RHVoiceIII measure 85]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -394,7 +394,7 @@ ERHVoiceIII = {
 }
 
 
-ERHVoiceIIIInserts = {
+E_RHVoiceIIIInserts = {
     
     % [E RHVoiceIIIInserts measure 85]                           %! SM4
     s1 * 59/16
@@ -402,7 +402,7 @@ ERHVoiceIIIInserts = {
 }
 
 
-ERHVoiceIV = {
+E_RHVoiceIV = {
     
     % [E RHVoiceIV measure 85]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -412,7 +412,7 @@ ERHVoiceIV = {
 }
 
 
-ERHVoiceIVInserts = {
+E_RHVoiceIVInserts = {
     
     % [E RHVoiceIVInserts measure 85]                            %! SM4
     s1 * 59/16
@@ -420,7 +420,7 @@ ERHVoiceIVInserts = {
 }
 
 
-ERHVoiceV = {
+E_RHVoiceV = {
     
     % [E RHVoiceV measure 85]                                    %! SM4
     s1 * 59/16
@@ -428,7 +428,7 @@ ERHVoiceV = {
 }
 
 
-ERHVoiceVI = {
+E_RHVoiceVI = {
     
     % [E RHVoiceVI measure 85]                                   %! SM4
     s1 * 59/16
@@ -436,7 +436,7 @@ ERHVoiceVI = {
 }
 
 
-ERHResonanceVoice = {
+E_RHResonanceVoice = {
     
     % [E RHResonanceVoice measure 85]                            %! SM4
     s1 * 59/16
@@ -444,7 +444,7 @@ ERHResonanceVoice = {
 }
 
 
-ELHVoiceI = {
+E_LHVoiceI = {
     
     % [E LHVoiceI measure 85]                                    %! SM4
     s1 * 59/16
@@ -452,7 +452,7 @@ ELHVoiceI = {
 }
 
 
-ELHVoiceII = {
+E_LHVoiceII = {
     
     % [E LHVoiceII measure 85]                                   %! SM4
     s1 * 59/16
@@ -460,7 +460,7 @@ ELHVoiceII = {
 }
 
 
-ELHVoiceIII = {
+E_LHVoiceIII = {
     
     % [E LHVoiceIII measure 85]                                  %! SM4
     s1 * 59/16
@@ -468,7 +468,7 @@ ELHVoiceIII = {
 }
 
 
-ELHVoiceIV = {
+E_LHVoiceIV = {
     
     % [E LHVoiceIV measure 85]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -478,7 +478,7 @@ ELHVoiceIV = {
 }
 
 
-ELHVoiceIVInserts = {
+E_LHVoiceIVInserts = {
     
     % [E LHVoiceIVInserts measure 85]                            %! SM4
     s1 * 59/16
@@ -486,7 +486,7 @@ ELHVoiceIVInserts = {
 }
 
 
-ELHVoiceV = {
+E_LHVoiceV = {
     
     % [E LHVoiceV measure 85]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -496,7 +496,7 @@ ELHVoiceV = {
 }
 
 
-ELHVoiceVInserts = {
+E_LHVoiceVInserts = {
     
     % [E LHVoiceVInserts measure 85]                             %! SM4
     s1 * 59/16
@@ -504,7 +504,7 @@ ELHVoiceVInserts = {
 }
 
 
-ELHVoiceVI = {
+E_LHVoiceVI = {
     
     % [E LHVoiceVI measure 85]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -556,7 +556,7 @@ ELHVoiceVI = {
 }
 
 
-ELHVoiceVIInserts = {
+E_LHVoiceVIInserts = {
     
     % [E LHVoiceVIInserts measure 85]                            %! SM4
     s1 * 59/16
@@ -564,7 +564,7 @@ ELHVoiceVIInserts = {
 }
 
 
-ELHResonanceVoice = {
+E_LHResonanceVoice = {
     
     % [E LHResonanceVoice measure 85]                            %! SM4
     s1 * 59/16

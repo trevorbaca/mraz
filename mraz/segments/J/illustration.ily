@@ -1,4 +1,4 @@
-JGlobalSkips = {
+J_GlobalSkips = {
     
     % [J GlobalSkips measure 147]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -582,7 +582,7 @@ JGlobalSkips = {
 }
 
 
-JRHVoiceI = {
+J_RHVoiceI = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
@@ -924,7 +924,7 @@ JRHVoiceI = {
 }
 
 
-JRHVoiceIInserts = {
+J_RHVoiceIInserts = {
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
@@ -1143,7 +1143,7 @@ JRHVoiceIInserts = {
 }
 
 
-JRHVoiceII = {
+J_RHVoiceII = {
     
     % [J RHVoiceII measure 147]                                  %! SM4
     \override Beam.positions = #'(-4.5 . -4.5)                   %! OC
@@ -1519,7 +1519,7 @@ JRHVoiceII = {
 }
 
 
-JRHVoiceIIInserts = {
+J_RHVoiceIIInserts = {
     
     % [J RHVoiceIIInserts measure 147]                           %! SM4
     \override Beam.positions = #'(15.5 . 15.5)                   %! OC
@@ -1758,7 +1758,7 @@ JRHVoiceIIInserts = {
 }
 
 
-JRHVoiceIII = {
+J_RHVoiceIII = {
     
     % [J RHVoiceIII measure 147]                                 %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1798,7 +1798,7 @@ JRHVoiceIII = {
 }
 
 
-JRHVoiceIIIInserts = {
+J_RHVoiceIIIInserts = {
     
     % [J RHVoiceIIIInserts measure 147]                          %! SM4
     s1 * 3/4
@@ -1836,7 +1836,7 @@ JRHVoiceIIIInserts = {
 }
 
 
-JRHVoiceIV = {
+J_RHVoiceIV = {
     
     % [J RHVoiceIV measure 147]                                  %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1876,7 +1876,7 @@ JRHVoiceIV = {
 }
 
 
-JRHVoiceIVInserts = {
+J_RHVoiceIVInserts = {
     
     % [J RHVoiceIVInserts measure 147]                           %! SM4
     s1 * 3/4
@@ -1914,7 +1914,7 @@ JRHVoiceIVInserts = {
 }
 
 
-JRHVoiceV = {
+J_RHVoiceV = {
     
     % [J RHVoiceV measure 147]                                   %! SM4
     s1 * 3/4
@@ -1952,7 +1952,7 @@ JRHVoiceV = {
 }
 
 
-JRHVoiceVI = {
+J_RHVoiceVI = {
     
     % [J RHVoiceVI measure 147]                                  %! SM4
     s1 * 3/4
@@ -1990,7 +1990,7 @@ JRHVoiceVI = {
 }
 
 
-JRHResonanceVoice = {
+J_RHResonanceVoice = {
     
     % [J RHResonanceVoice measure 147]                           %! SM4
     s1 * 3/4
@@ -2028,7 +2028,7 @@ JRHResonanceVoice = {
 }
 
 
-JLHVoiceI = {
+J_LHVoiceI = {
     
     % [J LHVoiceI measure 147]                                   %! SM4
     s1 * 3/4
@@ -2066,7 +2066,7 @@ JLHVoiceI = {
 }
 
 
-JLHVoiceII = {
+J_LHVoiceII = {
     
     % [J LHVoiceII measure 147]                                  %! SM4
     s1 * 3/4
@@ -2104,7 +2104,7 @@ JLHVoiceII = {
 }
 
 
-JLHVoiceIII = {
+J_LHVoiceIII = {
     
     % [J LHVoiceIII measure 147]                                 %! SM4
     s1 * 3/4
@@ -2142,7 +2142,7 @@ JLHVoiceIII = {
 }
 
 
-JLHVoiceIV = {
+J_LHVoiceIV = {
     
     % [J LHVoiceIV measure 147]                                  %! SM4
     \override Beam.positions = #'(-5.5 . -5.5)                   %! OC
@@ -2336,7 +2336,7 @@ JLHVoiceIV = {
 }
 
 
-JLHVoiceIVInserts = {
+J_LHVoiceIVInserts = {
     
     % [J LHVoiceIVInserts measure 147]                           %! SM4
     \override Script.direction = #up                             %! OC
@@ -2428,7 +2428,7 @@ JLHVoiceIVInserts = {
 }
 
 
-JLHVoiceV = {
+J_LHVoiceV = {
     
     % [J LHVoiceV measure 147]                                   %! SM4
     \override Beam.positions = #'(-6 . -6)                       %! OC
@@ -2671,7 +2671,7 @@ JLHVoiceV = {
 }
 
 
-JLHVoiceVInserts = {
+J_LHVoiceVInserts = {
     
     % [J LHVoiceVInserts measure 147]                            %! SM4
     \override Script.direction = #up                             %! OC
@@ -2826,7 +2826,7 @@ JLHVoiceVInserts = {
 }
 
 
-JLHVoiceVI = {
+J_LHVoiceVI = {
     
     % [J LHVoiceVI measure 147]                                  %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -2903,7 +2903,7 @@ JLHVoiceVI = {
 }
 
 
-JLHVoiceVIInserts = {
+J_LHVoiceVIInserts = {
     
     % [J LHVoiceVIInserts measure 147]                           %! SM4
     s1 * 3/4
@@ -2941,7 +2941,7 @@ JLHVoiceVIInserts = {
 }
 
 
-JLHResonanceVoice = {
+J_LHResonanceVoice = {
     
     % [J LHResonanceVoice measure 147]                           %! SM4
     s1 * 3/4

@@ -1,4 +1,4 @@
-CGlobalSkips = {
+C_GlobalSkips = {
     
     % [C GlobalSkips measure 22]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -2625,7 +2625,7 @@ CGlobalSkips = {
 }
 
 
-CRHVoiceI = {
+C_RHVoiceI = {
     
     % [C RHVoiceI measure 22]                                    %! SM4
     \override TupletBracket.staff-padding = #8                   %! OC
@@ -3056,7 +3056,7 @@ CRHVoiceI = {
 }
 
 
-CRHVoiceIInserts = {
+C_RHVoiceIInserts = {
     
     % [C RHVoiceIInserts measure 22]                             %! SM4
     s1 * 3/2
@@ -3202,7 +3202,7 @@ CRHVoiceIInserts = {
 }
 
 
-CRHVoiceII = {
+C_RHVoiceII = {
     
     % [C RHVoiceII measure 22]                                   %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4154,7 +4154,7 @@ CRHVoiceII = {
 }
 
 
-CRHVoiceIIInserts = {
+C_RHVoiceIIInserts = {
     
     % [C RHVoiceIIInserts measure 22]                            %! SM4
     s1 * 3/2
@@ -4300,7 +4300,7 @@ CRHVoiceIIInserts = {
 }
 
 
-CRHVoiceIII = {
+C_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
@@ -4659,7 +4659,7 @@ CRHVoiceIII = {
 }
 
 
-CRHVoiceIIIInserts = {
+C_RHVoiceIIIInserts = {
     
     % [C RHVoiceIIIInserts measure 22]                           %! SM4
     s1 * 3/2
@@ -4805,7 +4805,7 @@ CRHVoiceIIIInserts = {
 }
 
 
-CRHVoiceIV = {
+C_RHVoiceIV = {
     
     % [C RHVoiceIV measure 22]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -4953,7 +4953,7 @@ CRHVoiceIV = {
 }
 
 
-CRHVoiceIVInserts = {
+C_RHVoiceIVInserts = {
     
     % [C RHVoiceIVInserts measure 22]                            %! SM4
     s1 * 3/2
@@ -5099,7 +5099,7 @@ CRHVoiceIVInserts = {
 }
 
 
-CRHVoiceV = {
+C_RHVoiceV = {
     
     % [C RHVoiceV measure 22]                                    %! SM4
     s1 * 141/8
@@ -5220,7 +5220,7 @@ CRHVoiceV = {
 }
 
 
-CRHVoiceVI = {
+C_RHVoiceVI = {
     
     % [C RHVoiceVI measure 22]                                   %! SM4
     s1 * 3/2
@@ -5366,7 +5366,7 @@ CRHVoiceVI = {
 }
 
 
-CRHResonanceVoice = {
+C_RHResonanceVoice = {
     
     % [C RHResonanceVoice measure 22]                            %! SM4
     s1 * 3/2
@@ -5512,7 +5512,7 @@ CRHResonanceVoice = {
 }
 
 
-CLHVoiceI = {
+C_LHVoiceI = {
     
     % [C LHVoiceI measure 22]                                    %! SM4
     s1 * 3/2
@@ -5658,7 +5658,7 @@ CLHVoiceI = {
 }
 
 
-CLHVoiceII = {
+C_LHVoiceII = {
     
     % [C LHVoiceII measure 22]                                   %! SM4
     s1 * 289/8
@@ -5713,7 +5713,7 @@ CLHVoiceII = {
 }
 
 
-CLHVoiceIII = {
+C_LHVoiceIII = {
     
     % [C LHVoiceIII measure 22]                                  %! SM4
     s1 * 3/2
@@ -5859,7 +5859,7 @@ CLHVoiceIII = {
 }
 
 
-CLHVoiceIV = {
+C_LHVoiceIV = {
     
     % [C LHVoiceIV measure 22]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -6036,7 +6036,7 @@ CLHVoiceIV = {
 }
 
 
-CLHVoiceIVInserts = {
+C_LHVoiceIVInserts = {
     
     % [C LHVoiceIVInserts measure 22]                            %! SM4
     s1 * 3/2
@@ -6182,7 +6182,7 @@ CLHVoiceIVInserts = {
 }
 
 
-CLHVoiceV = {
+C_LHVoiceV = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -7192,7 +7192,7 @@ CLHVoiceV = {
 }
 
 
-CLHVoiceVInserts = {
+C_LHVoiceVInserts = {
     
     % [C LHVoiceVInserts measure 22]                             %! SM4
     \override Script.direction = #up                             %! OC
@@ -7391,7 +7391,7 @@ CLHVoiceVInserts = {
 }
 
 
-CLHVoiceVI = {
+C_LHVoiceVI = {
     
     % [C LHVoiceVI measure 22]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -7581,7 +7581,7 @@ CLHVoiceVI = {
 }
 
 
-CLHVoiceVIInserts = {
+C_LHVoiceVIInserts = {
     
     % [C LHVoiceVIInserts measure 22]                            %! SM4
     s1 * 3/2
@@ -7727,7 +7727,7 @@ CLHVoiceVIInserts = {
 }
 
 
-CLHResonanceVoice = {
+C_LHResonanceVoice = {
     
     % [C LHResonanceVoice measure 22]                            %! SM4
     s1 * 81/8
