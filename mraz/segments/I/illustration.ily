@@ -1,4 +1,4 @@
-IGlobalSkips = {
+I_GlobalSkips = {
     
     % [I GlobalSkips measure 143]                                        %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
@@ -269,7 +269,7 @@ IGlobalSkips = {
 }
 
 
-IRHVoiceI = {
+I_RHVoiceI = {
     
     % [I RHVoiceI measure 143]                                   %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -293,7 +293,7 @@ IRHVoiceI = {
 }
 
 
-IRHVoiceIInserts = {
+I_RHVoiceIInserts = {
     
     % [I RHVoiceIInserts measure 143]                            %! SM4
     s1 * 9/8
@@ -310,7 +310,7 @@ IRHVoiceIInserts = {
 }
 
 
-IRHVoiceII = {
+I_RHVoiceII = {
     
     % [I RHVoiceII measure 143]                                  %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -329,7 +329,7 @@ IRHVoiceII = {
 }
 
 
-IRHVoiceIIInserts = {
+I_RHVoiceIIInserts = {
     
     % [I RHVoiceIIInserts measure 143]                           %! SM4
     s1 * 9/8
@@ -346,7 +346,7 @@ IRHVoiceIIInserts = {
 }
 
 
-IRHVoiceIII = {
+I_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
@@ -528,7 +528,7 @@ IRHVoiceIII = {
 }
 
 
-IRHVoiceIIIInserts = {
+I_RHVoiceIIIInserts = {
     
     % [I RHVoiceIIIInserts measure 143]                          %! SM4
     s1 * 9/8
@@ -545,7 +545,7 @@ IRHVoiceIIIInserts = {
 }
 
 
-IRHVoiceIV = {
+I_RHVoiceIV = {
     
     % [I RHVoiceIV measure 143]                                  %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -564,7 +564,7 @@ IRHVoiceIV = {
 }
 
 
-IRHVoiceIVInserts = {
+I_RHVoiceIVInserts = {
     
     % [I RHVoiceIVInserts measure 143]                           %! SM4
     s1 * 9/8
@@ -581,7 +581,7 @@ IRHVoiceIVInserts = {
 }
 
 
-IRHVoiceV = {
+I_RHVoiceV = {
     
     % [I RHVoiceV measure 143]                                   %! SM4
     s1 * 9/8
@@ -598,7 +598,7 @@ IRHVoiceV = {
 }
 
 
-IRHVoiceVI = {
+I_RHVoiceVI = {
     
     % [I RHVoiceVI measure 143]                                  %! SM4
     s1 * 9/8
@@ -615,7 +615,7 @@ IRHVoiceVI = {
 }
 
 
-IRHResonanceVoice = {
+I_RHResonanceVoice = {
     
     % [I RHResonanceVoice measure 143]                           %! SM4
     s1 * 9/8
@@ -632,7 +632,7 @@ IRHResonanceVoice = {
 }
 
 
-ILHVoiceI = {
+I_LHVoiceI = {
     
     % [I LHVoiceI measure 143]                                   %! SM4
     s1 * 9/8
@@ -649,7 +649,7 @@ ILHVoiceI = {
 }
 
 
-ILHVoiceII = {
+I_LHVoiceII = {
     
     % [I LHVoiceII measure 143]                                  %! SM4
     s1 * 9/8
@@ -666,7 +666,7 @@ ILHVoiceII = {
 }
 
 
-ILHVoiceIII = {
+I_LHVoiceIII = {
     
     % [I LHVoiceIII measure 143]                                 %! SM4
     s1 * 9/8
@@ -683,7 +683,7 @@ ILHVoiceIII = {
 }
 
 
-ILHVoiceIV = {
+I_LHVoiceIV = {
     
     % [I LHVoiceIV measure 143]                                  %! SM4
     \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -868,7 +868,7 @@ ILHVoiceIV = {
 }
 
 
-ILHVoiceIVInserts = {
+I_LHVoiceIVInserts = {
     
     % [I LHVoiceIVInserts measure 143]                           %! SM4
     s1 * 9/8
@@ -885,7 +885,7 @@ ILHVoiceIVInserts = {
 }
 
 
-ILHVoiceV = {
+I_LHVoiceV = {
     
     % [I LHVoiceV measure 143]                                   %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -904,7 +904,7 @@ ILHVoiceV = {
 }
 
 
-ILHVoiceVInserts = {
+I_LHVoiceVInserts = {
     
     % [I LHVoiceVInserts measure 143]                            %! SM4
     s1 * 9/8
@@ -921,7 +921,7 @@ ILHVoiceVInserts = {
 }
 
 
-ILHVoiceVI = {
+I_LHVoiceVI = {
     
     % [I LHVoiceVI measure 143]                                  %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -977,7 +977,7 @@ ILHVoiceVI = {
 }
 
 
-ILHVoiceVIInserts = {
+I_LHVoiceVIInserts = {
     
     % [I LHVoiceVIInserts measure 143]                           %! SM4
     s1 * 9/8
@@ -994,7 +994,7 @@ ILHVoiceVIInserts = {
 }
 
 
-ILHResonanceVoice = {
+I_LHResonanceVoice = {
     
     % [I LHResonanceVoice measure 143]                           %! SM4
     s1 * 9/8

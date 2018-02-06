@@ -1,4 +1,4 @@
-HGlobalSkips = {
+H_GlobalSkips = {
     
     % [H GlobalSkips measure 132]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -877,7 +877,7 @@ HGlobalSkips = {
 }
 
 
-HRHVoiceI = {
+H_RHVoiceI = {
     
     % [H RHVoiceI measure 132]                                   %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -922,7 +922,7 @@ HRHVoiceI = {
 }
 
 
-HRHVoiceIInserts = {
+H_RHVoiceIInserts = {
     
     % [H RHVoiceIInserts measure 132]                            %! SM4
     s1 * 4
@@ -960,7 +960,7 @@ HRHVoiceIInserts = {
 }
 
 
-HRHVoiceII = {
+H_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -1508,7 +1508,7 @@ HRHVoiceII = {
 }
 
 
-HRHVoiceIIInserts = {
+H_RHVoiceIIInserts = {
     
     % [H RHVoiceIIInserts measure 132]                           %! SM4
     s1 * 4
@@ -1546,7 +1546,7 @@ HRHVoiceIIInserts = {
 }
 
 
-HRHVoiceIII = {
+H_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
@@ -2349,7 +2349,7 @@ HRHVoiceIII = {
 }
 
 
-HRHVoiceIIIInserts = {
+H_RHVoiceIIIInserts = {
     
     % [H RHVoiceIIIInserts measure 132]                          %! SM4
     s1 * 4
@@ -2387,7 +2387,7 @@ HRHVoiceIIIInserts = {
 }
 
 
-HRHVoiceIV = {
+H_RHVoiceIV = {
     
     % [H RHVoiceIV measure 132]                                  %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2427,7 +2427,7 @@ HRHVoiceIV = {
 }
 
 
-HRHVoiceIVInserts = {
+H_RHVoiceIVInserts = {
     
     % [H RHVoiceIVInserts measure 132]                           %! SM4
     s1 * 4
@@ -2465,7 +2465,7 @@ HRHVoiceIVInserts = {
 }
 
 
-HRHVoiceV = {
+H_RHVoiceV = {
     
     % [H RHVoiceV measure 132]                                   %! SM4
     s1 * 4
@@ -2503,7 +2503,7 @@ HRHVoiceV = {
 }
 
 
-HRHVoiceVI = {
+H_RHVoiceVI = {
     
     % [H RHVoiceVI measure 132]                                  %! SM4
     s1 * 4
@@ -2541,7 +2541,7 @@ HRHVoiceVI = {
 }
 
 
-HRHResonanceVoice = {
+H_RHResonanceVoice = {
     
     % [H RHResonanceVoice measure 132]                           %! SM4
     s1 * 4
@@ -2579,7 +2579,7 @@ HRHResonanceVoice = {
 }
 
 
-HLHVoiceI = {
+H_LHVoiceI = {
     
     % [H LHVoiceI measure 132]                                   %! SM4
     s1 * 4
@@ -2617,7 +2617,7 @@ HLHVoiceI = {
 }
 
 
-HLHVoiceII = {
+H_LHVoiceII = {
     
     % [H LHVoiceII measure 132]                                  %! SM4
     s1 * 4
@@ -2655,7 +2655,7 @@ HLHVoiceII = {
 }
 
 
-HLHVoiceIII = {
+H_LHVoiceIII = {
     
     % [H LHVoiceIII measure 132]                                 %! SM4
     s1 * 4
@@ -2693,7 +2693,7 @@ HLHVoiceIII = {
 }
 
 
-HLHVoiceIV = {
+H_LHVoiceIV = {
     
     % [H LHVoiceIV measure 132]                                  %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3105,7 +3105,7 @@ HLHVoiceIV = {
 }
 
 
-HLHVoiceIVInserts = {
+H_LHVoiceIVInserts = {
     
     % [H LHVoiceIVInserts measure 132]                           %! SM4
     s1 * 4
@@ -3143,7 +3143,7 @@ HLHVoiceIVInserts = {
 }
 
 
-HLHVoiceV = {
+H_LHVoiceV = {
     
     % [H LHVoiceV measure 132]                                   %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -3183,7 +3183,7 @@ HLHVoiceV = {
 }
 
 
-HLHVoiceVInserts = {
+H_LHVoiceVInserts = {
     
     % [H LHVoiceVInserts measure 132]                            %! SM4
     s1 * 4
@@ -3221,7 +3221,7 @@ HLHVoiceVInserts = {
 }
 
 
-HLHVoiceVI = {
+H_LHVoiceVI = {
     
     % [H LHVoiceVI measure 132]                                  %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -3303,7 +3303,7 @@ HLHVoiceVI = {
 }
 
 
-HLHVoiceVIInserts = {
+H_LHVoiceVIInserts = {
     
     % [H LHVoiceVIInserts measure 132]                           %! SM4
     s1 * 4
@@ -3341,7 +3341,7 @@ HLHVoiceVIInserts = {
 }
 
 
-HLHResonanceVoice = {
+H_LHResonanceVoice = {
     
     % [H LHResonanceVoice measure 132]                           %! SM4
     s1 * 4

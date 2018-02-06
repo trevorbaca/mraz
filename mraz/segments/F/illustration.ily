@@ -1,4 +1,4 @@
-FGlobalSkips = {
+F_GlobalSkips = {
     
     % [F GlobalSkips measure 86]                                         %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
@@ -380,7 +380,7 @@ FGlobalSkips = {
 }
 
 
-FRHVoiceI = {
+F_RHVoiceI = {
     
     % [F RHVoiceI measure 86]                                    %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -407,7 +407,7 @@ FRHVoiceI = {
 }
 
 
-FRHVoiceIInserts = {
+F_RHVoiceIInserts = {
     
     % [F RHVoiceIInserts measure 86]                             %! SM4
     s1 * 29/16
@@ -427,7 +427,7 @@ FRHVoiceIInserts = {
 }
 
 
-FRHVoiceII = {
+F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
@@ -1184,7 +1184,7 @@ FRHVoiceII = {
 }
 
 
-FRHVoiceIIInserts = {
+F_RHVoiceIIInserts = {
     
     % [F RHVoiceIIInserts measure 86]                            %! SM4
     s1 * 29/16
@@ -1204,7 +1204,7 @@ FRHVoiceIIInserts = {
 }
 
 
-FRHVoiceIII = {
+F_RHVoiceIII = {
     
     % [F RHVoiceIII measure 86]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1226,7 +1226,7 @@ FRHVoiceIII = {
 }
 
 
-FRHVoiceIIIInserts = {
+F_RHVoiceIIIInserts = {
     
     % [F RHVoiceIIIInserts measure 86]                           %! SM4
     s1 * 29/16
@@ -1246,7 +1246,7 @@ FRHVoiceIIIInserts = {
 }
 
 
-FRHVoiceIV = {
+F_RHVoiceIV = {
     
     % [F RHVoiceIV measure 86]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1268,7 +1268,7 @@ FRHVoiceIV = {
 }
 
 
-FRHVoiceIVInserts = {
+F_RHVoiceIVInserts = {
     
     % [F RHVoiceIVInserts measure 86]                            %! SM4
     s1 * 29/16
@@ -1288,7 +1288,7 @@ FRHVoiceIVInserts = {
 }
 
 
-FRHVoiceV = {
+F_RHVoiceV = {
     
     % [F RHVoiceV measure 86]                                    %! SM4
     s1 * 29/16
@@ -1308,7 +1308,7 @@ FRHVoiceV = {
 }
 
 
-FRHVoiceVI = {
+F_RHVoiceVI = {
     
     % [F RHVoiceVI measure 86]                                   %! SM4
     s1 * 29/16
@@ -1328,7 +1328,7 @@ FRHVoiceVI = {
 }
 
 
-FRHResonanceVoice = {
+F_RHResonanceVoice = {
     
     % [F RHResonanceVoice measure 86]                            %! SM4
     s1 * 29/16
@@ -1348,7 +1348,7 @@ FRHResonanceVoice = {
 }
 
 
-FLHVoiceI = {
+F_LHVoiceI = {
     
     % [F LHVoiceI measure 86]                                    %! SM4
     s1 * 29/16
@@ -1368,7 +1368,7 @@ FLHVoiceI = {
 }
 
 
-FLHVoiceII = {
+F_LHVoiceII = {
     
     % [F LHVoiceII measure 86]                                   %! SM4
     s1 * 29/16
@@ -1388,7 +1388,7 @@ FLHVoiceII = {
 }
 
 
-FLHVoiceIII = {
+F_LHVoiceIII = {
     
     % [F LHVoiceIII measure 86]                                  %! SM4
     s1 * 29/16
@@ -1408,7 +1408,7 @@ FLHVoiceIII = {
 }
 
 
-FLHVoiceIV = {
+F_LHVoiceIV = {
     
     % [F LHVoiceIV measure 86]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1430,7 +1430,7 @@ FLHVoiceIV = {
 }
 
 
-FLHVoiceIVInserts = {
+F_LHVoiceIVInserts = {
     
     % [F LHVoiceIVInserts measure 86]                            %! SM4
     s1 * 29/16
@@ -1450,7 +1450,7 @@ FLHVoiceIVInserts = {
 }
 
 
-FLHVoiceV = {
+F_LHVoiceV = {
     
     % [F LHVoiceV measure 86]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1472,7 +1472,7 @@ FLHVoiceV = {
 }
 
 
-FLHVoiceVInserts = {
+F_LHVoiceVInserts = {
     
     % [F LHVoiceVInserts measure 86]                             %! SM4
     s1 * 29/16
@@ -1492,7 +1492,7 @@ FLHVoiceVInserts = {
 }
 
 
-FLHVoiceVI = {
+F_LHVoiceVI = {
     
     % [F LHVoiceVI measure 86]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -1556,7 +1556,7 @@ FLHVoiceVI = {
 }
 
 
-FLHVoiceVIInserts = {
+F_LHVoiceVIInserts = {
     
     % [F LHVoiceVIInserts measure 86]                            %! SM4
     s1 * 29/16
@@ -1576,7 +1576,7 @@ FLHVoiceVIInserts = {
 }
 
 
-FLHResonanceVoice = {
+F_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             

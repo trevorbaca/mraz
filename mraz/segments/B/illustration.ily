@@ -1,4 +1,4 @@
-BGlobalSkips = {
+B_GlobalSkips = {
     
     % [B GlobalSkips measure 10]                                         %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
@@ -964,7 +964,7 @@ BGlobalSkips = {
 }
 
 
-BRHVoiceI = {
+B_RHVoiceI = {
     
     % [B RHVoiceI measure 10]                                    %! SM4
     \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
@@ -1058,7 +1058,7 @@ BRHVoiceI = {
 }
 
 
-BRHVoiceIInserts = {
+B_RHVoiceIInserts = {
     
     % [B RHVoiceIInserts measure 10]                             %! SM4
     s1 * 1/2
@@ -1099,7 +1099,7 @@ BRHVoiceIInserts = {
 }
 
 
-BRHVoiceII = {
+B_RHVoiceII = {
     
     % [B RHVoiceII measure 10]                                   %! SM4
     \override Slur.direction = #up                               %! OC
@@ -1609,7 +1609,7 @@ BRHVoiceII = {
 }
 
 
-BRHVoiceIIInserts = {
+B_RHVoiceIIInserts = {
     
     % [B RHVoiceIIInserts measure 10]                            %! SM4
     s1 * 1/2
@@ -1650,7 +1650,7 @@ BRHVoiceIIInserts = {
 }
 
 
-BRHVoiceIII = {
+B_RHVoiceIII = {
     
     % [B RHVoiceIII measure 10]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1714,7 +1714,7 @@ BRHVoiceIII = {
 }
 
 
-BRHVoiceIIIInserts = {
+B_RHVoiceIIIInserts = {
     
     % [B RHVoiceIIIInserts measure 10]                           %! SM4
     s1 * 1/2
@@ -1755,7 +1755,7 @@ BRHVoiceIIIInserts = {
 }
 
 
-BRHVoiceIV = {
+B_RHVoiceIV = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
@@ -1894,7 +1894,7 @@ BRHVoiceIV = {
 }
 
 
-BRHVoiceIVInserts = {
+B_RHVoiceIVInserts = {
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
@@ -1973,7 +1973,7 @@ BRHVoiceIVInserts = {
 }
 
 
-BRHVoiceV = {
+B_RHVoiceV = {
     
     % [B RHVoiceV measure 10]                                    %! SM4
     s1 * 1/2
@@ -2014,7 +2014,7 @@ BRHVoiceV = {
 }
 
 
-BRHVoiceVI = {
+B_RHVoiceVI = {
     
     % [B RHVoiceVI measure 10]                                   %! SM4
     s1 * 1/2
@@ -2055,7 +2055,7 @@ BRHVoiceVI = {
 }
 
 
-BRHResonanceVoice = {
+B_RHResonanceVoice = {
     
     % [B RHResonanceVoice measure 10]                            %! SM4
     s1 * 1/2
@@ -2096,7 +2096,7 @@ BRHResonanceVoice = {
 }
 
 
-BLHVoiceI = {
+B_LHVoiceI = {
     
     % [B LHVoiceI measure 10]                                    %! SM4
     s1 * 1/2
@@ -2137,7 +2137,7 @@ BLHVoiceI = {
 }
 
 
-BLHVoiceII = {
+B_LHVoiceII = {
     
     % [B LHVoiceII measure 10]                                   %! SM4
     s1 * 67/8
@@ -2170,7 +2170,7 @@ BLHVoiceII = {
 }
 
 
-BLHVoiceIII = {
+B_LHVoiceIII = {
     
     % [B LHVoiceIII measure 10]                                  %! SM4
     s1 * 1/2
@@ -2211,7 +2211,7 @@ BLHVoiceIII = {
 }
 
 
-BLHVoiceIV = {
+B_LHVoiceIV = {
     
     % [B LHVoiceIV measure 10]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2254,7 +2254,7 @@ BLHVoiceIV = {
 }
 
 
-BLHVoiceIVInserts = {
+B_LHVoiceIVInserts = {
     
     % [B LHVoiceIVInserts measure 10]                            %! SM4
     s1 * 1/2
@@ -2295,7 +2295,7 @@ BLHVoiceIVInserts = {
 }
 
 
-BLHVoiceV = {
+B_LHVoiceV = {
     
     % [B LHVoiceV measure 10]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -2358,7 +2358,7 @@ BLHVoiceV = {
 }
 
 
-BLHVoiceVInserts = {
+B_LHVoiceVInserts = {
     
     % [B LHVoiceVInserts measure 10]                             %! SM4
     s1 * 1/2
@@ -2399,7 +2399,7 @@ BLHVoiceVInserts = {
 }
 
 
-BLHVoiceVI = {
+B_LHVoiceVI = {
     
     % [B LHVoiceVI measure 10]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
@@ -2484,7 +2484,7 @@ BLHVoiceVI = {
 }
 
 
-BLHVoiceVIInserts = {
+B_LHVoiceVIInserts = {
     
     % [B LHVoiceVIInserts measure 10]                            %! SM4
     s1 * 1/2
@@ -2525,7 +2525,7 @@ BLHVoiceVIInserts = {
 }
 
 
-BLHResonanceVoice = {
+B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
