@@ -722,10 +722,10 @@ A_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [A RHVoiceI measure 1]                             %! SM4
-            \set PianoMusicRHStaff.forceClef = ##t               %! DEFAULT_CLEF:SM8
-            \clef "treble"                                       %! DEFAULT_CLEF:SM8
-            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
-        %@% \override PianoMusicRHStaff.Clef.color = ##f         %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+            \set PianoMusicRHStaff.forceClef = ##t               %! ST3:DEFAULT_CLEF:SM8
+            \clef "treble"                                       %! ST3:DEFAULT_CLEF:SM8
+            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
+        %@% \override PianoMusicRHStaff.Clef.color = ##f         %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
             bf''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -745,7 +745,7 @@ A_RHVoiceI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
+            \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
         }
     }
     
@@ -1502,12 +1502,12 @@ A_RHResonanceVoice = {
 A_LHVoiceI = {
     
     % [A LHVoiceI measure 1]                                     %! SM4
-    \set PianoMusicLHStaff.forceClef = ##t                       %! DEFAULT_CLEF:SM8
-    \clef "bass"                                                 %! DEFAULT_CLEF:SM8
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! ST3:DEFAULT_CLEF:SM8
+    \clef "bass"                                                 %! ST3:DEFAULT_CLEF:SM8
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
     s1 * 1
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
     
     % [A LHVoiceI measure 2]                                     %! SM4
     s1 * 1/2
@@ -1846,30 +1846,30 @@ A_LHVoiceVInserts = {
 A_LHVoiceVI = {
     
     % [A LHVoiceVI measure 1]                                    %! SM4
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! DEFAULT_INSTRUMENT:SM8
-        \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
-            #16                                                  %! DEFAULT_INSTRUMENT:SM8
-            Piano                                                %! DEFAULT_INSTRUMENT:SM8
-        }                                                        %! DEFAULT_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! DEFAULT_INSTRUMENT:SM8
-        \null                                                    %! DEFAULT_INSTRUMENT:SM8
-        }                                                        %! DEFAULT_INSTRUMENT:SM8
-    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! ST1:DEFAULT_INSTRUMENT:SM8
+        \hcenter-in                                              %! ST1:DEFAULT_INSTRUMENT:SM8
+            #16                                                  %! ST1:DEFAULT_INSTRUMENT:SM8
+            Piano                                                %! ST1:DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:DEFAULT_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! ST1:DEFAULT_INSTRUMENT:SM8
+        \null                                                    %! ST1:DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:DEFAULT_INSTRUMENT:SM8
+    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     s1 * 3/2
-    ^ \markup {                                                  %! DEFAULT_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! DEFAULT_INSTRUMENT_ALERT:SM11
-            #(x11-color 'DarkViolet)                             %! DEFAULT_INSTRUMENT_ALERT:SM11
-            (“Piano”)                                            %! DEFAULT_INSTRUMENT_ALERT:SM11
-        }                                                        %! DEFAULT_INSTRUMENT_ALERT:SM11
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-            Piano                                                %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-        \null                                                    %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_DEFAULT_INSTRUMENT:SM8
-    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
+    ^ \markup {                                                  %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
+        \with-color                                              %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
+            #(x11-color 'DarkViolet)                             %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
+            (“Piano”)                                            %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
+        }                                                        %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        \hcenter-in                                              %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+            #16                                                  %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+            Piano                                                %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        \null                                                    %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %! ST1:REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
