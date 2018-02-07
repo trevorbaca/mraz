@@ -26,8 +26,10 @@ class MusicAccumulator(baca.MusicAccumulator):
         ..  docs::
 
             >>> abjad.f(lilypond_file[abjad.Staff], strict=79)
-            \new Staff <<
-                \context Voice = "RHVoiceI" {
+            \new Staff
+            <<
+                \context Voice = "RHVoiceI"
+                {
                     {
                         \scaleDurations #'(1 . 1) {
                             \set stemLeftBeamCount = 0

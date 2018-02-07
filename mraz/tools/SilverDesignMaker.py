@@ -20,9 +20,12 @@ class SilverDesignMaker(abjad.AbjadObject):
         ..  docs::
 
             >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-            \new Voice \with {
+            \new Voice
+            \with
+            {
                 \consists Horizontal_bracket_engraver
-            } {
+            }
+            {
                 \time 1/8
                 e'8
                 \startGroup
@@ -626,9 +629,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -705,9 +711,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -1333,9 +1342,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -1764,9 +1776,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -2179,9 +2194,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -2606,9 +2624,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -3000,9 +3021,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
@@ -3618,9 +3642,12 @@ class SilverDesignMaker(abjad.AbjadObject):
             ..  docs::
 
                 >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
-                \new Voice \with {
+                \new Voice
+                \with
+                {
                     \consists Horizontal_bracket_engraver
-                } {
+                }
+                {
                     \time 1/8
                     e'8
                     \startGroup
