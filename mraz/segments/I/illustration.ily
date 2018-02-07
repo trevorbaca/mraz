@@ -56,9 +56,9 @@ I_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 9/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+    \time 9/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 9/8
     \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -110,8 +110,8 @@ I_GlobalSkips = {
     % [I GlobalSkips measure 144]                                        %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! SPACING:HSS1
-    \time 4/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/2
     ^ \markup {
         \column
@@ -162,8 +162,8 @@ I_GlobalSkips = {
     % [I GlobalSkips measure 145]                                        %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)     %! SPACING:HSS1
-    \time 7/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 7/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 7/8
     ^ \markup {
         \column
@@ -214,8 +214,8 @@ I_GlobalSkips = {
     % [I GlobalSkips measure 146]                                        %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)     %! SPACING:HSS1
-    \time 5/8                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 5/8                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 5/8
     \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -352,11 +352,11 @@ I_RHVoiceIII = {
         \times 4/3 {
             
             % [I RHVoiceIII measure 143]                         %! SM4
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             fs'''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \pp                                                  %! EXPLICIT_DYNAMIC:SM8
+            \pp                                                  %! IC:EXPLICIT_DYNAMIC:SM8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -698,10 +698,10 @@ I_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
             
-            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             g'16
             -\tenuto                                             %! IC
-            \mp                                                  %! EXPLICIT_DYNAMIC:SM8
+            \mp                                                  %! IC:EXPLICIT_DYNAMIC:SM8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP

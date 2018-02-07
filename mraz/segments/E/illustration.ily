@@ -3,9 +3,9 @@ E_GlobalSkips = {
     % [E GlobalSkips measure 85]                                         %! SM4
     \newSpacingSection                                                   %! SPACING:HSS1
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! SPACING:HSS1
-    \time 59/16                                                          %! EXPLICIT_TIME_SIGNATURE:SM8
+    \time 59/16                                                          %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 59/16
     ^ \markup {
         \column
