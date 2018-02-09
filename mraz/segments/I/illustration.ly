@@ -29,53 +29,9 @@
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
                 <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
-                    <<
-                        \context RHVoiceI = "RHVoiceI"
-                        \I_RHVoiceI
-                        \context RHVoiceIInserts = "RHVoiceIInserts"
-                        \I_RHVoiceIInserts
-                        \context RHVoiceII = "RHVoiceII"
-                        \I_RHVoiceII
-                        \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        \I_RHVoiceIIInserts
-                        \context RHVoiceIII = "RHVoiceIII"
-                        \I_RHVoiceIII
-                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        \I_RHVoiceIIIInserts
-                        \context RHVoiceIV = "RHVoiceIV"
-                        \I_RHVoiceIV
-                        \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        \I_RHVoiceIVInserts
-                        \context RHVoiceV = "RHVoiceV"
-                        \I_RHVoiceV
-                        \context RHVoiceVI = "RHVoiceVI"
-                        \I_RHVoiceVI
-                        \context RHResonanceVoice = "RHResonanceVoice"
-                        \I_RHResonanceVoice
-                    >>
+                    \I_PianoMusicRHStaff
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
-                    <<
-                        \context LHVoiceI = "LHVoiceI"
-                        \I_LHVoiceI
-                        \context LHVoiceII = "LHVoiceII"
-                        \I_LHVoiceII
-                        \context LHVoiceIII = "LHVoiceIII"
-                        \I_LHVoiceIII
-                        \context LHVoiceIV = "LHVoiceIV"
-                        \I_LHVoiceIV
-                        \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        \I_LHVoiceIVInserts
-                        \context LHVoiceV = "LHVoiceV"
-                        \I_LHVoiceV
-                        \context LHVoiceVInserts = "LHVoiceVInserts"
-                        \I_LHVoiceVInserts
-                        \context LHVoiceVI = "LHVoiceVI"
-                        \I_LHVoiceVI
-                        \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        \I_LHVoiceVIInserts
-                        \context LHResonanceVoice = "LHResonanceVoice"
-                        \I_LHResonanceVoice
-                    >>
+                    \I_PianoMusicLHStaff
                 >>
             }
         >>

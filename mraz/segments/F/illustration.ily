@@ -1348,6 +1348,32 @@ F_RHResonanceVoice = {
 }
 
 
+F_PianoMusicRHStaff = <<
+    \context RHVoiceI = "RHVoiceI"
+    \F_RHVoiceI
+    \context RHVoiceIInserts = "RHVoiceIInserts"
+    \F_RHVoiceIInserts
+    \context RHVoiceII = "RHVoiceII"
+    \F_RHVoiceII
+    \context RHVoiceIIInserts = "RHVoiceIIInserts"
+    \F_RHVoiceIIInserts
+    \context RHVoiceIII = "RHVoiceIII"
+    \F_RHVoiceIII
+    \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
+    \F_RHVoiceIIIInserts
+    \context RHVoiceIV = "RHVoiceIV"
+    \F_RHVoiceIV
+    \context RHVoiceIVInserts = "RHVoiceIVInserts"
+    \F_RHVoiceIVInserts
+    \context RHVoiceV = "RHVoiceV"
+    \F_RHVoiceV
+    \context RHVoiceVI = "RHVoiceVI"
+    \F_RHVoiceVI
+    \context RHResonanceVoice = "RHResonanceVoice"
+    \F_RHResonanceVoice
+>>
+
+
 F_LHVoiceI = {
     
     % [F LHVoiceI measure 86]                                    %! SM4
@@ -1702,3 +1728,27 @@ F_LHResonanceVoice = {
         }
     }
 }
+
+
+F_PianoMusicLHStaff = <<
+    \context LHVoiceI = "LHVoiceI"
+    \F_LHVoiceI
+    \context LHVoiceII = "LHVoiceII"
+    \F_LHVoiceII
+    \context LHVoiceIII = "LHVoiceIII"
+    \F_LHVoiceIII
+    \context LHVoiceIV = "LHVoiceIV"
+    \F_LHVoiceIV
+    \context LHVoiceIVInserts = "LHVoiceIVInserts"
+    \F_LHVoiceIVInserts
+    \context LHVoiceV = "LHVoiceV"
+    \F_LHVoiceV
+    \context LHVoiceVInserts = "LHVoiceVInserts"
+    \F_LHVoiceVInserts
+    \context LHVoiceVI = "LHVoiceVI"
+    \F_LHVoiceVI
+    \context LHVoiceVIInserts = "LHVoiceVIInserts"
+    \F_LHVoiceVIInserts
+    \context LHResonanceVoice = "LHResonanceVoice"
+    \F_LHResonanceVoice
+>>
