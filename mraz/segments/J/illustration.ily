@@ -594,10 +594,10 @@ J_RHVoiceI = {
                 \override Stem.direction = #up                   %! OC
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \set PianoMusicRHStaff.forceClef = ##t           %! REAPPLIED_CLEF:SM8
                 \clef "treble"                                   %! REAPPLIED_CLEF:SM8
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
             %@% \override PianoMusicRHStaff.Clef.color = ##f     %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                \set PianoMusicRHStaff.forceClef = ##t           %! REAPPLIED_CLEF:SM8
                 \dynamicUp                                       %! IC
                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
                 e''16
@@ -2173,10 +2173,10 @@ J_LHVoiceIV = {
     % [J LHVoiceIV measure 147]                                  %! SM4
     \override Beam.positions = #'(-5.5 . -5.5)                   %! OC
     \override Script.direction = #down                           %! OC
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/8
     \mp                                                          %! REAPPLIED_DYNAMIC:SM8

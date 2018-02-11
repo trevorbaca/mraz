@@ -722,10 +722,10 @@ A_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [A RHVoiceI measure 1]                             %! SM4
-            \set PianoMusicRHStaff.forceClef = ##t               %! ST3:DEFAULT_CLEF:SM8
             \clef "treble"                                       %! ST3:DEFAULT_CLEF:SM8
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
         %@% \override PianoMusicRHStaff.Clef.color = ##f         %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+            \set PianoMusicRHStaff.forceClef = ##t               %! ST3:DEFAULT_CLEF:SM8
             bf''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1528,10 +1528,10 @@ A_PianoMusicRHStaff = <<
 A_LHVoiceI = {
     
     % [A LHVoiceI measure 1]                                     %! SM4
-    \set PianoMusicLHStaff.forceClef = ##t                       %! ST3:DEFAULT_CLEF:SM8
     \clef "bass"                                                 %! ST3:DEFAULT_CLEF:SM8
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! ST3:DEFAULT_CLEF:SM8
     s1 * 1
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
     
@@ -1905,10 +1905,10 @@ A_LHVoiceVI = {
             \override TupletBracket.direction = #down            %! OC
             \override TupletBracket.staff-padding = #6           %! OC
             \ottava #-1                                          %! SC
-            \set PianoMusicLHStaff.forceClef = ##t               %! IC:REDUNDANT_CLEF:SM8
             \clef "bass"                                         %! IC:REDUNDANT_CLEF:SM8
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+            \set PianoMusicLHStaff.forceClef = ##t               %! IC:REDUNDANT_CLEF:SM8
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             b,,,8
             \f                                                   %! IC:EXPLICIT_DYNAMIC:SM8

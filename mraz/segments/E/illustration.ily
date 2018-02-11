@@ -66,10 +66,10 @@ E_RHVoiceI = {
             \override Beam.positions = #'(6 . 6)                 %! OC
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set PianoMusicRHStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
             \clef "treble"                                       %! REAPPLIED_CLEF:SM8
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
         %@% \override PianoMusicRHStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+            \set PianoMusicRHStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
             e16
             \f                                                   %! REAPPLIED_DYNAMIC:SM8
@@ -541,11 +541,11 @@ E_LHVoiceVI = {
     \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REAPPLIED_INSTRUMENT:SM8
         \null                                                    %! REAPPLIED_INSTRUMENT:SM8
         }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
     \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 59/16
     \f                                                           %! REAPPLIED_DYNAMIC:SM8
