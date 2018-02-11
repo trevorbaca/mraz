@@ -272,10 +272,10 @@ I_GlobalSkips = {
 I_RHVoiceI = {
     
     % [I RHVoiceI measure 143]                                   %! SM4
-    \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \clef "treble"                                               %! REAPPLIED_CLEF:SM8
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 9/8
     \f                                                           %! REAPPLIED_DYNAMIC:SM8
@@ -712,10 +712,10 @@ I_LHVoiceIII = {
 I_LHVoiceIV = {
     
     % [I LHVoiceIV measure 143]                                  %! SM4
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 7/32
     \p                                                           %! REAPPLIED_DYNAMIC:SM8
