@@ -1,8 +1,8 @@
 E_GlobalSkips = {
     
     % [E GlobalSkips measure 85]                                         %! SM4
-    \newSpacingSection                                                   %! SPACING:HSS1
-    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! SPACING:HSS1
+    \newSpacingSection                                                   %! HSS1:SPACING
+    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 59/16                                                          %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -34,14 +34,14 @@ E_GlobalSkips = {
             %@%                 #(x11-color 'DarkCyan)                   %! STAGE_NUMBER_MARKUP:SM3
             %@%                 [E.1]                                    %! STAGE_NUMBER_MARKUP:SM3
             %@%     }                                                    %! STAGE_NUMBER_MARKUP:SM3
-            %@% \line                                                    %! SPACING_MARKUP:HSS2
-            %@%     {                                                    %! SPACING_MARKUP:HSS2
-            %@%         \with-color                                      %! SPACING_MARKUP:HSS2
-            %@%             #(x11-color 'DarkCyan)                       %! SPACING_MARKUP:HSS2
-            %@%             \fontsize                                    %! SPACING_MARKUP:HSS2
-            %@%                 #3                                       %! SPACING_MARKUP:HSS2
-            %@%                 [1/24]                                   %! SPACING_MARKUP:HSS2
-            %@%     }                                                    %! SPACING_MARKUP:HSS2
+            %@% \line                                                    %! HSS2:SPACING_MARKUP
+            %@%     {                                                    %! HSS2:SPACING_MARKUP
+            %@%         \with-color                                      %! HSS2:SPACING_MARKUP
+            %@%             #(x11-color 'DarkCyan)                       %! HSS2:SPACING_MARKUP
+            %@%             \fontsize                                    %! HSS2:SPACING_MARKUP
+            %@%                 #3                                       %! HSS2:SPACING_MARKUP
+            %@%                 [1/24]                                   %! HSS2:SPACING_MARKUP
+            %@%     }                                                    %! HSS2:SPACING_MARKUP
             %@% \line                                                    %! CLOCK_TIME_MARKUP:SM28
             %@%     {                                                    %! CLOCK_TIME_MARKUP:SM28
             %@%         \with-color                                      %! CLOCK_TIME_MARKUP:SM28
@@ -63,7 +63,7 @@ E_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceI measure 85]                            %! SM4
-            \override Beam.positions = #'(6 . 6)                 %! OC
+            \override Beam.positions = #'(6 . 6)                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \clef "treble"                                       %! SM37:REAPPLIED_CLEF:SM8
@@ -351,7 +351,7 @@ E_RHVoiceI = {
             \set stemRightBeamCount = 0
             e16
             ]
-            \revert Beam.positions                               %! OC
+            \revert Beam.positions                               %! OC2
             
         }
     }

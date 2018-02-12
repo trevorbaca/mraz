@@ -1374,8 +1374,8 @@ D_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [D RHVoiceII measure 69]                           %! SM4
-            \override Script.direction = #up                     %! OC
-            \override TextScript.direction = #up                 %! OC
+            \override Script.direction = #up                     %! OC1
+            \override TextScript.direction = #up                 %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM37:REDUNDANT_DYNAMIC_COLOR:SM6
@@ -1402,7 +1402,7 @@ D_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r2..
             
             d'''8
@@ -1419,9 +1419,9 @@ D_RHVoiceII = {
             -\accent                                             %! IC
             
             r2..
-            \revert Rest.direction                               %! OC
-            \revert Script.direction                             %! OC
-            \revert TextScript.direction                         %! OC
+            \revert Rest.direction                               %! OC2
+            \revert Script.direction                             %! OC2
+            \revert TextScript.direction                         %! OC2
         }
     }
     {
@@ -1433,8 +1433,8 @@ D_RHVoiceII = {
             \times 3/4 {
                 
                 % [D RHVoiceII measure 70]                       %! SM4
-                \override Beam.positions = #'(10.5 . 10.5)       %! OC
-                \override Script.direction = #up                 %! OC
+                \override Beam.positions = #'(10.5 . 10.5)       %! OC1
+                \override Script.direction = #up                 %! OC1
                 s8
                 [                                                %! SM35
                 
@@ -1484,7 +1484,7 @@ D_RHVoiceII = {
                 
                 s8
                 
-                \override Stem.direction = #up                   %! OC
+                \override Stem.direction = #up                   %! OC1
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
@@ -1806,7 +1806,7 @@ D_RHVoiceII = {
                 \set stemRightBeamCount = 1                      %! SM35
                 ef''8
                 -\accent                                         %! IC
-                \revert Stem.direction                           %! OC
+                \revert Stem.direction                           %! OC2
                 
                 s8
                 
@@ -1822,8 +1822,8 @@ D_RHVoiceII = {
                 
                 s8
                 ]                                                %! SM35
-                \revert Beam.positions                           %! OC
-                \revert Script.direction                         %! OC
+                \revert Beam.positions                           %! OC2
+                \revert Script.direction                         %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -1831,14 +1831,14 @@ D_RHVoiceII = {
     }
     
     % [D RHVoiceII measure 77]                                   %! SM4
-    \override Script.direction = #up                             %! OC
-    \override Slur.direction = #up                               %! OC
+    \override Script.direction = #up                             %! OC1
+    \override Slur.direction = #up                               %! OC1
     s1 * 1/4
     {
         \scaleDurations #'(1 . 1) {
             
             % [D RHVoiceII measure 78]                           %! SM4
-            \override Stem.direction = #down                     %! OC
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
@@ -2468,9 +2468,9 @@ D_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            \revert Script.direction                             %! OC
-            \revert Slur.direction                               %! OC
-            \revert Stem.direction                               %! OC
+            \revert Script.direction                             %! OC2
+            \revert Slur.direction                               %! OC2
+            \revert Stem.direction                               %! OC2
         }
     }
     {
@@ -2722,7 +2722,7 @@ D_RHVoiceIII = {
         \times 8/5 {
             
             % [D RHVoiceIII measure 69]                          %! SM4
-            \override TupletBracket.direction = #down            %! OC
+            \override TupletBracket.direction = #down            %! OC1
             \ottava #1                                           %! SC
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM37:REDUNDANT_DYNAMIC_COLOR:SM6
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2748,7 +2748,7 @@ D_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #down                     %! OC
+            \override Rest.direction = #down                     %! OC1
             r4
             
             cs''4
@@ -2771,8 +2771,8 @@ D_RHVoiceIII = {
             \ottava #0                                           %! SC
             
             r4
-            \revert Rest.direction                               %! OC
-            \revert TupletBracket.direction                      %! OC
+            \revert Rest.direction                               %! OC2
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     {
@@ -2782,7 +2782,7 @@ D_RHVoiceIII = {
             \times 3/4 {
                 
                 % [D RHVoiceIII measure 70]                      %! SM4
-                \override TupletBracket.direction = #down        %! OC
+                \override TupletBracket.direction = #down        %! OC1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
                 d'''8
@@ -2885,7 +2885,7 @@ D_RHVoiceIII = {
                 d'8
                 ]
                 )                                                %! SC
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -2894,10 +2894,10 @@ D_RHVoiceIII = {
         \times 1/1 {
             
             % [D RHVoiceIII measure 71]                          %! SM4
-            \once \override Script.color = #black                %! OC
-            \once \override Script.extra-offset = #'(1 . 0)      %! OC
-            \once \override Rest.transparent = ##t               %! OC
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
+            \once \override Script.color = #black                %! OC1
+            \once \override Script.extra-offset = #'(1 . 0)      %! OC1
+            \once \override Rest.transparent = ##t               %! OC1
+            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
@@ -2928,7 +2928,7 @@ D_RHVoiceIII = {
             \times 6/7 {
                 
                 % [D RHVoiceIII measure 72]                      %! SM4
-                \override TupletBracket.direction = #down        %! OC
+                \override TupletBracket.direction = #down        %! OC1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 cs'''8
                 [
@@ -3050,7 +3050,7 @@ D_RHVoiceIII = {
                 b'8
                 ]
                 )                                                %! SC
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -3063,7 +3063,7 @@ D_RHVoiceIII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [D RHVoiceIII measure 74]                      %! SM4
-                \override TupletBracket.direction = #down        %! OC
+                \override TupletBracket.direction = #down        %! OC1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 a'''8
                 [
@@ -3164,7 +3164,7 @@ D_RHVoiceIII = {
                 
                 a'8
                 )                                                %! SC
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -3173,9 +3173,9 @@ D_RHVoiceIII = {
         \times 1/1 {
             
             % [D RHVoiceIII measure 75]                          %! SM4
-            \once \override Script.color = #black                %! OC
-            \once \override Rest.transparent = ##t               %! OC
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
+            \once \override Script.color = #black                %! OC1
+            \once \override Rest.transparent = ##t               %! OC1
+            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
@@ -3205,7 +3205,7 @@ D_RHVoiceIII = {
             \times 6/7 {
                 
                 % [D RHVoiceIII measure 76]                      %! SM4
-                \override TupletBracket.direction = #down        %! OC
+                \override TupletBracket.direction = #down        %! OC1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 c'''8
                 [
@@ -3328,7 +3328,7 @@ D_RHVoiceIII = {
                 bf'8
                 ]
                 )                                                %! SC
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -3337,10 +3337,10 @@ D_RHVoiceIII = {
         \times 1/1 {
             
             % [D RHVoiceIII measure 77]                          %! SM4
-            \once \override Script.color = #black                %! OC
-            \once \override Script.extra-offset = #'(1 . 0)      %! OC
-            \once \override Rest.transparent = ##t               %! OC
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
+            \once \override Script.color = #black                %! OC1
+            \once \override Script.extra-offset = #'(1 . 0)      %! OC1
+            \once \override Rest.transparent = ##t               %! OC1
+            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
@@ -3373,8 +3373,8 @@ D_RHVoiceIII = {
             \times 6/7 {
                 
                 % [D RHVoiceIII measure 83]                      %! SM4
-                \override TupletBracket.direction = #down        %! OC
-                \override TupletBracket.staff-padding = #3       %! OC
+                \override TupletBracket.direction = #down        %! OC1
+                \override TupletBracket.staff-padding = #3       %! OC1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 f'''8
                 [
@@ -3445,8 +3445,8 @@ D_RHVoiceIII = {
                 d'8
                 ]
                 )                                                %! SC
-                \revert TupletBracket.direction                  %! OC
-                \revert TupletBracket.staff-padding              %! OC
+                \revert TupletBracket.direction                  %! OC2
+                \revert TupletBracket.staff-padding              %! OC2
             }
         }
     }
@@ -3455,10 +3455,10 @@ D_RHVoiceIII = {
         \times 1/1 {
             
             % [D RHVoiceIII measure 84]                          %! SM4
-            \once \override Script.color = #black                %! OC
-            \once \override Script.extra-offset = #'(1 . 0)      %! OC
-            \once \override Rest.transparent = ##t               %! OC
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
+            \once \override Script.color = #black                %! OC1
+            \once \override Script.extra-offset = #'(1 . 0)      %! OC1
+            \once \override Rest.transparent = ##t               %! OC1
+            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\fermata                                            %! IC
@@ -4000,7 +4000,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [D LHVoiceIV measure 72]                           %! SM4
-            \override Slur.direction = #down                     %! OC
+            \override Slur.direction = #down                     %! OC1
             \clef "bass"                                         %! IC:REDUNDANT_CLEF:SM8
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
@@ -4052,7 +4052,7 @@ D_LHVoiceIV = {
             r8.
             
             r4.
-            \revert Slur.direction                               %! OC
+            \revert Slur.direction                               %! OC2
         }
     }
     
@@ -4062,7 +4062,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [D LHVoiceIV measure 74]                           %! SM4
-            \override Slur.direction = #down                     %! OC
+            \override Slur.direction = #down                     %! OC1
             r2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4109,7 +4109,7 @@ D_LHVoiceIV = {
             )                                                    %! SC
             
             r16
-            \revert Slur.direction                               %! OC
+            \revert Slur.direction                               %! OC2
         }
     }
     {
@@ -4154,7 +4154,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [D LHVoiceIV measure 76]                           %! SM4
-            \override Slur.direction = #down                     %! OC
+            \override Slur.direction = #down                     %! OC1
             b'8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -4197,7 +4197,7 @@ D_LHVoiceIV = {
             )                                                    %! SC
             
             r16
-            \revert Slur.direction                               %! OC
+            \revert Slur.direction                               %! OC2
         }
     }
     {
@@ -4488,7 +4488,7 @@ D_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r32
             
             d,8.
@@ -4504,7 +4504,7 @@ D_LHVoiceV = {
             r32
             
             r8
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     
@@ -4636,9 +4636,9 @@ D_LHVoiceVI = {
         \times 4/3 {
             
             % [D LHVoiceVI measure 73]                           %! SM4
-            \override Stem.direction = #down                     %! OC
-            \override TupletBracket.direction = #down            %! OC
-            \override TupletBracket.staff-padding = #6           %! OC
+            \override Stem.direction = #down                     %! OC1
+            \override TupletBracket.direction = #down            %! OC1
+            \override TupletBracket.staff-padding = #6           %! OC1
             \ottava #-1                                          %! SC
             \clef "bass"                                         %! IC:REDUNDANT_CLEF:SM8
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
@@ -4666,17 +4666,17 @@ D_LHVoiceVI = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! IC:REDUNDANT_CLEF_REDRAW_COLOR:SM6
             
-            \override Rest.direction = #down                     %! OC
+            \override Rest.direction = #down                     %! OC1
             r4
             
             ef,,8
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
             \ottava #0                                           %! SC
             
             r4
-            \revert Rest.direction                               %! OC
-            \revert TupletBracket.direction                      %! OC
-            \revert TupletBracket.staff-padding                  %! OC
+            \revert Rest.direction                               %! OC2
+            \revert TupletBracket.direction                      %! OC2
+            \revert TupletBracket.staff-padding                  %! OC2
         }
     }
     
