@@ -4611,6 +4611,7 @@ C_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             a''4
             -\tenuto                                             %! IC
+            -\tenuto                                             %! IC
             \mf                                                  %! IC:EXPLICIT_DYNAMIC:SM8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4635,20 +4636,24 @@ C_RHVoiceIII = {
             
             cs''4
             -\tenuto                                             %! IC
+            -\tenuto                                             %! IC
             
             r4
             
             b''4
+            -\tenuto                                             %! IC
             -\tenuto                                             %! IC
             
             r4
             
             af''4
             -\tenuto                                             %! IC
+            -\tenuto                                             %! IC
             
             r4
             
             g'''4
+            -\tenuto                                             %! IC
             -\tenuto                                             %! IC
             \ottava #0                                           %! SC
             
