@@ -437,8 +437,10 @@ F_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             fs16
             -\staccato                                           %! IC
+            \ppp                                                 %! IC:EXPLICIT_DYNAMIC:SM8
             \ppp                                                 %! REDUNDANT_DYNAMIC:SM8
             [
             (                                                    %! SC
