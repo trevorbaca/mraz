@@ -1602,7 +1602,6 @@ B_RHVoiceII = {
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
-            \revert Slur.direction                               %! OC
             \ottava #0                                           %! SC
             
         }
