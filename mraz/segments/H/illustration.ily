@@ -880,14 +880,14 @@ H_GlobalSkips = {
 H_RHVoiceI = {
     
     % [H RHVoiceI measure 132]                                   %! SM4
-    \clef "treble"                                               %! REAPPLIED_CLEF:SM8
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
-    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \clef "treble"                                               %! SM37:REAPPLIED_CLEF:SM8
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicRHStaff.forceClef = ##t                       %! SM37:SM33:REAPPLIED_CLEF:SM8
+    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 4
-    \f                                                           %! REAPPLIED_DYNAMIC:SM8
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \f                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     
     % [H RHVoiceI measure 133]                                   %! SM4
     s1 * 5/2
@@ -1037,7 +1037,7 @@ H_RHVoiceII = {
                 \override Beam.positions = #'(10.5 . 10.5)       %! OC
                 \override Script.direction = #up                 %! OC
                 s8
-                [
+                [                                                %! SM35
                 
                 s8
                 
@@ -1086,15 +1086,15 @@ H_RHVoiceII = {
                 s8
                 
                 \override Stem.direction = #up                   %! OC
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
                 af'8
                 -\accent                                         %! IC
                 \fff                                             %! IC:REDUNDANT_DYNAMIC:SM8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 fs'8
                 -\accent                                         %! IC
             }
@@ -1162,8 +1162,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 c''8
                 -\accent                                         %! IC
                 
@@ -1176,13 +1176,13 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 cs''8
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 e''8
                 -\accent                                         %! IC
             }
@@ -1194,8 +1194,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 ef'8
                 -\accent                                         %! IC
                 
@@ -1204,7 +1204,7 @@ H_RHVoiceII = {
                 s8
                 
                 s8
-                ]
+                ]                                                %! SM35
             }
         }
         \revert TupletBracket.stencil
@@ -1222,7 +1222,7 @@ H_RHVoiceII = {
                 
                 % [H RHVoiceII measure 137]                      %! SM4
                 s8
-                [
+                [                                                %! SM35
                 
                 s8
                 
@@ -1239,8 +1239,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 fs''8
                 -\accent                                         %! IC
                 
@@ -1255,13 +1255,13 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 ef''8
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 f''8
                 -\accent                                         %! IC
                 
@@ -1271,8 +1271,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 e''8
                 -\accent                                         %! IC
                 
@@ -1282,8 +1282,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 f'8
                 -\accent                                         %! IC
                 
@@ -1296,8 +1296,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 af'8
                 -\accent                                         %! IC
                 
@@ -1325,15 +1325,15 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 bf''8
                 -\accent                                         %! IC
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 af''8
                 -\accent                                         %! IC
                 
@@ -1344,8 +1344,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 g''8
                 -\accent                                         %! IC
                 
@@ -1357,8 +1357,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 fs''8
                 -\accent                                         %! IC
                 
@@ -1368,8 +1368,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 a''8
                 -\accent                                         %! IC
                 
@@ -1382,13 +1382,13 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 c''8
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 b'8
                 -\accent                                         %! IC
             }
@@ -1403,8 +1403,8 @@ H_RHVoiceII = {
                 
                 s8
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 ef''8
                 -\accent                                         %! IC
                 
@@ -1421,7 +1421,7 @@ H_RHVoiceII = {
                 s8
                 
                 s8
-                ]
+                ]                                                %! SM35
             }
         }
         \revert TupletBracket.stencil
@@ -2390,9 +2390,9 @@ H_RHVoiceIIIInserts = {
 H_RHVoiceIV = {
     
     % [H RHVoiceIV measure 132]                                  %! SM4
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 4
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     
     % [H RHVoiceIV measure 133]                                  %! SM4
     s1 * 5/2
@@ -2722,9 +2722,9 @@ H_LHVoiceIII = {
 H_LHVoiceIV = {
     
     % [H LHVoiceIV measure 132]                                  %! SM4
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 27/4
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     {
         \scaleDurations #'(1 . 1) {
             
@@ -2733,7 +2733,7 @@ H_LHVoiceIV = {
             \clef "bass"                                         %! IC:REDUNDANT_CLEF:SM8
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-            \set PianoMusicLHStaff.forceClef = ##t               %! IC:REDUNDANT_CLEF:SM8
+            \set PianoMusicLHStaff.forceClef = ##t               %! IC:SM33:REDUNDANT_CLEF:SM8
             r2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3172,9 +3172,9 @@ H_LHVoiceIVInserts = {
 H_LHVoiceV = {
     
     % [H LHVoiceV measure 132]                                   %! SM4
-    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 4
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     
     % [H LHVoiceV measure 133]                                   %! SM4
     s1 * 5/2
@@ -3250,37 +3250,37 @@ H_LHVoiceVInserts = {
 H_LHVoiceVI = {
     
     % [H LHVoiceVI measure 132]                                  %! SM4
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
-    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \clef "bass"                                                 %! SM37:REAPPLIED_CLEF:SM8
+    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM37:SM33:REAPPLIED_CLEF:SM8
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 4
-    \f                                                           %! REAPPLIED_DYNAMIC:SM8
-    ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            (“Piano”)                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \f                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
+    ^ \markup {                                                  %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        \with-color                                              %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            #(x11-color 'green4)                                 %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Piano”)                                            %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     
     % [H LHVoiceVI measure 133]                                  %! SM4
     s1 * 5/2
