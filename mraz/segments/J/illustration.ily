@@ -590,8 +590,8 @@ J_RHVoiceI = {
             \times 5/6 {
                 
                 % [J RHVoiceI measure 147]                       %! SM4
-                \override Beam.positions = #'(10 . 10)           %! OC
-                \override Stem.direction = #up                   %! OC
+                \override Beam.positions = #'(10 . 10)           %! OC1
+                \override Stem.direction = #up                   %! OC1
                 \set stemLeftBeamCount = 0                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
                 \clef "treble"                                   %! SM37:REAPPLIED_CLEF:SM8
@@ -912,14 +912,14 @@ J_RHVoiceI = {
                 \set stemRightBeamCount = 0
                 bf'''16
                 ]
-                \revert Stem.direction                           %! OC
+                \revert Stem.direction                           %! OC2
             }
         }
     }
     
     % [J RHVoiceI measure 157]                                   %! SM4
     s1 * 1/8
-    \revert Beam.positions                                       %! OC
+    \revert Beam.positions                                       %! OC2
     
 }
 
@@ -934,8 +934,8 @@ J_RHVoiceIInserts = {
             \times 5/6 {
                 
                 % [J RHVoiceIInserts measure 147]                %! SM4
-                \override Beam.positions = #'(-6.5 . -6.5)       %! OC
-                \override Script.direction = #down               %! OC
+                \override Beam.positions = #'(-6.5 . -6.5)       %! OC1
+                \override Script.direction = #down               %! OC1
                 s16
                 [                                                %! SM35
                 
@@ -1028,7 +1028,7 @@ J_RHVoiceIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceIInserts measure 151]                %! SM4
-                \override Beam.positions = #'(-8.5 . -8.5)       %! OC
+                \override Beam.positions = #'(-8.5 . -8.5)       %! OC1
                 s16
                 [                                                %! SM35
                 
@@ -1040,7 +1040,7 @@ J_RHVoiceIInserts = {
                 s16
                 
                 s16
-                \revert Beam.positions                           %! OC
+                \revert Beam.positions                           %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -1129,7 +1129,7 @@ J_RHVoiceIInserts = {
                 
                 s16
                 ]
-                \revert Beam.positions                           %! OC
+                \revert Beam.positions                           %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -1138,7 +1138,7 @@ J_RHVoiceIInserts = {
     
     % [J RHVoiceIInserts measure 157]                            %! SM4
     s1 * 1/8
-    \revert Script.direction                                     %! OC
+    \revert Script.direction                                     %! OC2
     
 }
 
@@ -1146,8 +1146,8 @@ J_RHVoiceIInserts = {
 J_RHVoiceII = {
     
     % [J RHVoiceII measure 147]                                  %! SM4
-    \override Beam.positions = #'(-4.5 . -4.5)                   %! OC
-    \override Slur.direction = #up                               %! OC
+    \override Beam.positions = #'(-4.5 . -4.5)                   %! OC1
+    \override Slur.direction = #up                               %! OC1
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     \dynamicDown                                                 %! IC
     s1 * 3/4
@@ -1156,7 +1156,7 @@ J_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [J RHVoiceII measure 148]                          %! SM4
-            \override Stem.direction = #down                     %! OC
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
@@ -1510,9 +1510,9 @@ J_RHVoiceII = {
             af'''16
             ]                                                    %! SM35
             )                                                    %! SC
-            \revert Beam.positions                               %! OC
-            \revert Slur.direction                               %! OC
-            \revert Stem.direction                               %! OC
+            \revert Beam.positions                               %! OC2
+            \revert Slur.direction                               %! OC2
+            \revert Stem.direction                               %! OC2
             
         }
     }
@@ -1522,8 +1522,8 @@ J_RHVoiceII = {
 J_RHVoiceIIInserts = {
     
     % [J RHVoiceIIInserts measure 147]                           %! SM4
-    \override Beam.positions = #'(15.5 . 15.5)                   %! OC
-    \override Script.direction = #up                             %! OC
+    \override Beam.positions = #'(15.5 . 15.5)                   %! OC1
+    \override Script.direction = #up                             %! OC1
     s1 * 3/4
     {
         \override TupletBracket.stencil = ##f
@@ -1531,7 +1531,7 @@ J_RHVoiceIIInserts = {
         \scaleDurations #'(1 . 1) {
             
             % [J RHVoiceIIInserts measure 148]                   %! SM4
-            \override Stem.direction = #up                       %! OC
+            \override Stem.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             c''16
@@ -1597,7 +1597,7 @@ J_RHVoiceIIInserts = {
                 
                 s16
                 ]                                                %! SM35
-                \revert Beam.positions                           %! OC
+                \revert Beam.positions                           %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -1612,7 +1612,7 @@ J_RHVoiceIIInserts = {
         \times 2/3 {
             
             % [J RHVoiceIIInserts measure 152]                   %! SM4
-            \override Beam.positions = #'(13.5 . 13.5)           %! OC
+            \override Beam.positions = #'(13.5 . 13.5)           %! OC1
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             c''16
@@ -1700,7 +1700,7 @@ J_RHVoiceIIInserts = {
                 
                 s16
                 ]                                                %! SM35
-                \revert Beam.positions                           %! OC
+                \revert Beam.positions                           %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -1712,7 +1712,7 @@ J_RHVoiceIIInserts = {
         \scaleDurations #'(1 . 1) {
             
             % [J RHVoiceIIInserts measure 155]                   %! SM4
-            \override Beam.positions = #'(17 . 17)               %! OC
+            \override Beam.positions = #'(17 . 17)               %! OC1
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             f''16
@@ -1747,9 +1747,9 @@ J_RHVoiceIIInserts = {
             af'''16
             -\accent                                             %! IC
             ]                                                    %! SM35
-            \revert Beam.positions                               %! OC
-            \revert Script.direction                             %! OC
-            \revert Stem.direction                               %! OC
+            \revert Beam.positions                               %! OC2
+            \revert Script.direction                             %! OC2
+            \revert Stem.direction                               %! OC2
             
         }
         \revert TupletBracket.stencil
@@ -2171,8 +2171,8 @@ J_LHVoiceIII = {
 J_LHVoiceIV = {
     
     % [J LHVoiceIV measure 147]                                  %! SM4
-    \override Beam.positions = #'(-5.5 . -5.5)                   %! OC
-    \override Script.direction = #down                           %! OC
+    \override Beam.positions = #'(-5.5 . -5.5)                   %! OC1
+    \override Script.direction = #down                           %! OC1
     \clef "bass"                                                 %! SM37:REAPPLIED_CLEF:SM8
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -2185,7 +2185,7 @@ J_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
             
-            \override Stem.direction = #down                     %! OC
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2253,12 +2253,12 @@ J_LHVoiceIV = {
     }
     
     s1 * 11/8
-    \revert Beam.positions                                       %! OC
+    \revert Beam.positions                                       %! OC2
     {
         \scaleDurations #'(1 . 1) {
             
             % [J LHVoiceIV measure 152]                          %! SM4
-            \override Beam.positions = #'(-4.5 . -4.5)           %! OC
+            \override Beam.positions = #'(-4.5 . -4.5)           %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
@@ -2348,7 +2348,7 @@ J_LHVoiceIV = {
             \set stemRightBeamCount = 0
             b''16
             ]
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
         }
     }
     
@@ -2356,8 +2356,8 @@ J_LHVoiceIV = {
     
     % [J LHVoiceIV measure 157]                                  %! SM4
     s1 * 1/8
-    \revert Beam.positions                                       %! OC
-    \revert Script.direction                                     %! OC
+    \revert Beam.positions                                       %! OC2
+    \revert Script.direction                                     %! OC2
     
 }
 
@@ -2365,7 +2365,7 @@ J_LHVoiceIV = {
 J_LHVoiceIVInserts = {
     
     % [J LHVoiceIVInserts measure 147]                           %! SM4
-    \override Script.direction = #up                             %! OC
+    \override Script.direction = #up                             %! OC1
     s1 * 3/8
     {
         \override TupletBracket.stencil = ##f
@@ -2375,7 +2375,7 @@ J_LHVoiceIVInserts = {
             
             s16
             
-            \override Stem.direction = #up                       %! OC
+            \override Stem.direction = #up                       %! OC1
             c'16
             
             s16
@@ -2437,7 +2437,7 @@ J_LHVoiceIVInserts = {
             s16
             
             fs''16
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
             
             s16
         }
@@ -2449,7 +2449,7 @@ J_LHVoiceIVInserts = {
     
     % [J LHVoiceIVInserts measure 157]                           %! SM4
     s1 * 1/8
-    \revert Script.direction                                     %! OC
+    \revert Script.direction                                     %! OC2
     
 }
 
@@ -2457,8 +2457,8 @@ J_LHVoiceIVInserts = {
 J_LHVoiceV = {
     
     % [J LHVoiceV measure 147]                                   %! SM4
-    \override Beam.positions = #'(-6 . -6)                       %! OC
-    \override Script.direction = #down                           %! OC
+    \override Beam.positions = #'(-6 . -6)                       %! OC1
+    \override Script.direction = #down                           %! OC1
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 329/272
     \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
@@ -2467,7 +2467,7 @@ J_LHVoiceV = {
         \times 15/17 {
             \scaleDurations #'(1 . 1) {
                 
-                \override Stem.direction = #down                 %! OC
+                \override Stem.direction = #down                 %! OC1
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2572,7 +2572,7 @@ J_LHVoiceV = {
     }
     
     s1 * 75/136
-    \revert Beam.positions                                       %! OC
+    \revert Beam.positions                                       %! OC2
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 15/17 {
@@ -2677,7 +2677,7 @@ J_LHVoiceV = {
                 cs'''16
                 ]
                 )                                                %! SC
-                \revert Stem.direction                           %! OC
+                \revert Stem.direction                           %! OC2
             }
         }
     }
@@ -2692,7 +2692,7 @@ J_LHVoiceV = {
     
     % [J LHVoiceV measure 157]                                   %! SM4
     s1 * 1/8
-    \revert Script.direction                                     %! OC
+    \revert Script.direction                                     %! OC2
     
 }
 
@@ -2700,8 +2700,8 @@ J_LHVoiceV = {
 J_LHVoiceVInserts = {
     
     % [J LHVoiceVInserts measure 147]                            %! SM4
-    \override Script.direction = #up                             %! OC
-    \override Beam.positions = #'(9 . 9)                         %! OC
+    \override Script.direction = #up                             %! OC1
+    \override Beam.positions = #'(9 . 9)                         %! OC1
     s1 * 329/272
     {
         \override TupletBracket.stencil = ##f
@@ -2720,7 +2720,7 @@ J_LHVoiceVInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J LHVoiceVInserts measure 150]                %! SM4
-                \override Stem.direction = #up                   %! OC
+                \override Stem.direction = #up                   %! OC1
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 b'16
@@ -2829,7 +2829,7 @@ J_LHVoiceVInserts = {
                 cs'''16
                 -\staccato                                       %! IC
                 ]
-                \revert Stem.direction                           %! OC
+                \revert Stem.direction                           %! OC2
             }
         }
         \revert TupletBracket.stencil
@@ -2846,8 +2846,8 @@ J_LHVoiceVInserts = {
     
     % [J LHVoiceVInserts measure 157]                            %! SM4
     s1 * 1/8
-    \revert Script.direction                                     %! OC
-    \revert Beam.positions                                       %! OC
+    \revert Script.direction                                     %! OC2
+    \revert Beam.positions                                       %! OC2
     
 }
 

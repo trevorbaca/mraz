@@ -62,29 +62,29 @@ def music_maker():
                     {
             <BLANKLINE>
                         % [GlobalSkips measure 1]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 1/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 1/16
             <BLANKLINE>
                         % [GlobalSkips measure 2]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 7/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 7/16
             <BLANKLINE>
                         % [GlobalSkips measure 3]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 1/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 1/16
             <BLANKLINE>
                         % [GlobalSkips measure 4]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 6/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 3/8
@@ -190,22 +190,22 @@ def music_maker():
                     {
             <BLANKLINE>
                         % [GlobalSkips measure 1]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 9/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 9/16
             <BLANKLINE>
                         % [GlobalSkips measure 2]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 14/16                                                        %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 7/8
             <BLANKLINE>
                         % [GlobalSkips measure 3]                                          %! SM4
-                        \newSpacingSection                                                 %! SPACING:HSS1
-                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! SPACING:HSS1
+                        \newSpacingSection                                                 %! HSS1:SPACING
+                        \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)   %! HSS1:SPACING
                         \time 8/16                                                         %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
                         \once \override Score.TimeSignature.color = #(x11-color 'blue)     %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                         s1 * 1/2

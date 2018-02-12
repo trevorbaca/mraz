@@ -1270,7 +1270,7 @@ K_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [K LHVoiceV measure 158]                           %! SM4
-            \override TupletBracket.direction = #up              %! OC
+            \override TupletBracket.direction = #up              %! OC1
             \ottava #-1                                          %! SC
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -1325,7 +1325,7 @@ K_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r32
             
             a,,8
@@ -1350,7 +1350,7 @@ K_LHVoiceV = {
             a,,8
             
             r32
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     {
@@ -1410,7 +1410,7 @@ K_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r32
             
             d,8.
@@ -1424,7 +1424,7 @@ K_LHVoiceV = {
             b,,8.
             
             r32
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     {
@@ -1515,7 +1515,7 @@ K_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r4...
             
             c,,32
@@ -1529,7 +1529,7 @@ K_LHVoiceV = {
             ef,,32
             
             r4...
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     {
@@ -1635,13 +1635,13 @@ K_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r4...
             
             g,,32
             
             r4...
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     {
@@ -1716,7 +1716,7 @@ K_LHVoiceV = {
             \ottava #0                                           %! SC
             
             r32
-            \revert TupletBracket.direction                      %! OC
+            \revert TupletBracket.direction                      %! OC2
             
         }
     }
@@ -1767,8 +1767,8 @@ K_LHVoiceVInserts = {
 K_LHVoiceVI = {
     
     % [K LHVoiceVI measure 158]                                  %! SM4
-    \override Script.direction = #down                           %! OC
-    \override TupletBracket.staff-padding = #6                   %! OC
+    \override Script.direction = #down                           %! OC1
+    \override TupletBracket.staff-padding = #6                   %! OC1
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1799,7 +1799,7 @@ K_LHVoiceVI = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
             
-            \override Stem.direction = #down                     %! OC
+            \override Stem.direction = #down                     %! OC1
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
             af,,4
             -\tenuto                                             %! IC
@@ -1822,7 +1822,7 @@ K_LHVoiceVI = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.staff-position = #-10                 %! OC
+            \override Rest.staff-position = #-10                 %! OC1
             r4
             
             c,,4
@@ -1863,14 +1863,14 @@ K_LHVoiceVI = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             r4
             
             ef,,8
             -\tenuto                                             %! IC
             
             r4
-            \revert Rest.direction                               %! OC
+            \revert Rest.direction                               %! OC2
         }
     }
     
@@ -2022,10 +2022,10 @@ K_LHVoiceVI = {
             
             g,,8
             -\tenuto                                             %! IC
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
             
             r4
-            \revert Rest.staff-position                          %! OC
+            \revert Rest.staff-position                          %! OC2
         }
     }
     
@@ -2033,8 +2033,8 @@ K_LHVoiceVI = {
     
     % [K LHVoiceVI measure 169]                                  %! SM4
     s1 * 1/2
-    \revert Script.direction                                     %! OC
-    \revert TupletBracket.staff-padding                          %! OC
+    \revert Script.direction                                     %! OC2
+    \revert TupletBracket.staff-padding                          %! OC2
     
 }
 

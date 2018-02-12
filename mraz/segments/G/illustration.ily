@@ -2376,8 +2376,8 @@ G_GlobalSkips = {
 G_RHVoiceI = {
     
     % [G RHVoiceI measure 91]                                    %! SM4
-    \override TupletBracket.staff-padding = #8                   %! OC
-    \override TupletBracket.direction = #up                      %! OC
+    \override TupletBracket.staff-padding = #8                   %! OC1
+    \override TupletBracket.direction = #up                      %! OC1
     \clef "treble"                                               %! SM37:REAPPLIED_CLEF:SM8
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -2391,7 +2391,7 @@ G_RHVoiceI = {
         \times 5/4 {
             
             % [G RHVoiceI measure 107]                           %! SM4
-            \override TextScript.direction = #up                 %! OC
+            \override TextScript.direction = #up                 %! OC1
             \dynamicDown                                         %! IC
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2412,9 +2412,9 @@ G_RHVoiceI = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \once \override DynamicText.extra-offset = #'(0 . 1) %! OC
-            \once \override TextScript.color = #black            %! OC
-            \override Stem.direction = #up                       %! OC
+            \once \override DynamicText.extra-offset = #'(0 . 1) %! OC1
+            \once \override TextScript.color = #black            %! OC1
+            \override Stem.direction = #up                       %! OC1
             \ottava #1                                           %! SC
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             d''''8
@@ -2448,7 +2448,7 @@ G_RHVoiceI = {
             )                                                    %! SC
             
             r4.
-            \revert TextScript.direction                         %! OC
+            \revert TextScript.direction                         %! OC2
         }
     }
     {
@@ -2481,10 +2481,10 @@ G_RHVoiceI = {
         \times 1/1 {
             
             % [G RHVoiceI measure 110]                           %! SM4
-            \once \override Script.color = #black                %! OC
-            \once \override Script.extra-offset = #'(0.5 . 0)    %! OC
-            \once \override Rest.transparent = ##t               %! OC
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC
+            \once \override Script.color = #black                %! OC1
+            \once \override Script.extra-offset = #'(0.5 . 0)    %! OC1
+            \once \override Rest.transparent = ##t               %! OC1
+            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             r8
             -\fermata                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2773,7 +2773,7 @@ G_RHVoiceI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
             \ottava #0                                           %! SC
         }
     }
@@ -2789,8 +2789,8 @@ G_RHVoiceI = {
     
     % [G RHVoiceI measure 131]                                   %! SM4
     s1 * 3/2
-    \revert TupletBracket.staff-padding                          %! OC
-    \revert TupletBracket.direction                              %! OC
+    \revert TupletBracket.staff-padding                          %! OC2
+    \revert TupletBracket.direction                              %! OC2
     
 }
 
@@ -2933,7 +2933,7 @@ G_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [G RHVoiceII measure 92]                           %! SM4
-            \once \override Script.direction = #up               %! OC
+            \once \override Script.direction = #up               %! OC1
             \arpeggioArrowUp                                     %! IC
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3111,8 +3111,8 @@ G_RHVoiceII = {
         \times 4/5 {
             
             % [G RHVoiceII measure 123]                          %! SM4
-            \override DynamicLineSpanner.staff-padding = #'8     %! OC
-            \override Slur.direction = #up                       %! OC
+            \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+            \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
@@ -3221,18 +3221,18 @@ G_RHVoiceII = {
             ]
             \ff                                                  %! HC1
             )                                                    %! SC
-            \revert DynamicLineSpanner.staff-padding             %! OC
+            \revert DynamicLineSpanner.staff-padding             %! OC2
             \break                                               %! IC
-            \revert Slur.direction                               %! OC
+            \revert Slur.direction                               %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [G RHVoiceII measure 124]                          %! SM4
-            \override DynamicLineSpanner.staff-padding = #'8     %! OC
-            \override Slur.direction = #up                       %! OC
-            \override TextScript.direction = #up                 %! OC
+            \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+            \override Slur.direction = #up                       %! OC1
+            \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
@@ -3349,10 +3349,10 @@ G_RHVoiceII = {
             ]
             \ff                                                  %! HC1
             )                                                    %! SC
-            \revert DynamicLineSpanner.staff-padding             %! OC
+            \revert DynamicLineSpanner.staff-padding             %! OC2
             \break                                               %! IC
-            \revert Slur.direction                               %! OC
-            \revert TextScript.direction                         %! OC
+            \revert Slur.direction                               %! OC2
+            \revert TextScript.direction                         %! OC2
         }
     }
     {
@@ -3360,7 +3360,7 @@ G_RHVoiceII = {
             
             % [G RHVoiceII measure 125]                          %! SM4
             \arpeggioArrowUp                                     %! IC
-            \once \override Script.direction = #up               %! OC
+            \once \override Script.direction = #up               %! OC1
             \once \override Accidental.color = #red
             \once \override Beam.color = #red
             \once \override Dots.color = #red
@@ -3403,9 +3403,9 @@ G_RHVoiceII = {
         \times 2/3 {
             
             % [G RHVoiceII measure 126]                          %! SM4
-            \override DynamicLineSpanner.staff-padding = #'8     %! OC
-            \override Slur.direction = #up                       %! OC
-            \override TextScript.direction = #up                 %! OC
+            \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+            \override Slur.direction = #up                       %! OC1
+            \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override Accidental.color = #red
@@ -3537,18 +3537,18 @@ G_RHVoiceII = {
             ]
             \ff                                                  %! HC1
             )                                                    %! SC
-            \revert DynamicLineSpanner.staff-padding             %! OC
-            \revert Slur.direction                               %! OC
-            \revert TextScript.direction                         %! OC
+            \revert DynamicLineSpanner.staff-padding             %! OC2
+            \revert Slur.direction                               %! OC2
+            \revert TextScript.direction                         %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [G RHVoiceII measure 127]                          %! SM4
-            \override DynamicLineSpanner.staff-padding = #'8     %! OC
-            \override Slur.direction = #up                       %! OC
-            \override TextScript.direction = #up                 %! OC
+            \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+            \override Slur.direction = #up                       %! OC1
+            \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3627,10 +3627,10 @@ G_RHVoiceII = {
             )                                                    %! SC
             - \tweak color #red                                  %! SM14
             ^ \markup { @ }                                      %! SM14
-            \revert DynamicLineSpanner.staff-padding             %! OC
+            \revert DynamicLineSpanner.staff-padding             %! OC2
             \break                                               %! IC
-            \revert Slur.direction                               %! OC
-            \revert TextScript.direction                         %! OC
+            \revert Slur.direction                               %! OC2
+            \revert TextScript.direction                         %! OC2
         }
     }
     {
@@ -3903,8 +3903,8 @@ G_RHVoiceIII = {
         \times 12/11 {
             
             % [G RHVoiceIII measure 91]                          %! SM4
-            \override TextScript.direction = #up                 %! OC
-            \override TupletBracket.direction = #up              %! OC
+            \override TextScript.direction = #up                 %! OC1
+            \override TupletBracket.direction = #up              %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             ef8
@@ -3955,8 +3955,8 @@ G_RHVoiceIII = {
             
             r4
             \break                                               %! IC
-            \revert TextScript.direction                         %! OC
-            \revert TupletBracket.direction                      %! OC
+            \revert TextScript.direction                         %! OC2
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     
@@ -3967,7 +3967,7 @@ G_RHVoiceIII = {
         \times 6/7 {
             
             % [G RHVoiceIII measure 93]                          %! SM4
-            \override TupletBracket.direction = #up              %! OC
+            \override TupletBracket.direction = #up              %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4005,7 +4005,7 @@ G_RHVoiceIII = {
             
             bf4
             -\tenuto                                             %! IC
-            \revert TupletBracket.direction                      %! OC
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     {
@@ -4039,7 +4039,7 @@ G_RHVoiceIII = {
         \times 12/11 {
             
             % [G RHVoiceIII measure 95]                          %! SM4
-            \override TupletBracket.direction = #up              %! OC
+            \override TupletBracket.direction = #up              %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             ef'8
             -\tenuto                                             %! IC
@@ -4075,7 +4075,7 @@ G_RHVoiceIII = {
             -\tenuto                                             %! IC
             
             r4
-            \revert TupletBracket.direction                      %! OC
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     {
@@ -4112,8 +4112,8 @@ G_RHVoiceIII = {
         \times 6/7 {
             
             % [G RHVoiceIII measure 131]                         %! SM4
-            \override TextScript.direction = #up                 %! OC
-            \override TupletBracket.direction = #up              %! OC
+            \override TextScript.direction = #up                 %! OC1
+            \override TupletBracket.direction = #up              %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4158,8 +4158,8 @@ G_RHVoiceIII = {
             
             bf4
             -\tenuto                                             %! IC
-            \revert TextScript.direction                         %! OC
-            \revert TupletBracket.direction                      %! OC
+            \revert TextScript.direction                         %! OC2
+            \revert TupletBracket.direction                      %! OC2
             
         }
     }
@@ -5080,8 +5080,8 @@ G_LHVoiceII = {
         \times 1/1 {
             
             % [G LHVoiceII measure 128]                          %! SM4
-            \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC
-            \override Rest.transparent = ##t                     %! OC
+            \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC1
+            \override Rest.transparent = ##t                     %! OC1
             \set Staff.pedalSustainStyle = #'bracket             %! SC
             r1
             \sustainOn                                           %! SC
@@ -5112,8 +5112,8 @@ G_LHVoiceII = {
             % [G LHVoiceII measure 130]                          %! SM4
             r1
             \sustainOff                                          %! SC
-            \revert Staff.SustainPedalLineSpanner.staff-padding  %! OC
-            \revert Rest.transparent                             %! OC
+            \revert Staff.SustainPedalLineSpanner.staff-padding  %! OC2
+            \revert Rest.transparent                             %! OC2
         }
     }
     
@@ -5727,7 +5727,7 @@ G_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [G LHVoiceV measure 97]                            %! SM4
-            \override Rest.direction = #up                       %! OC
+            \override Rest.direction = #up                       %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
             r16
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5791,7 +5791,7 @@ G_LHVoiceV = {
             \scaleDurations #'(1 . 1) {
                 
                 % [G LHVoiceV measure 99]                        %! SM4
-                \override TupletBracket.direction = #up          %! OC
+                \override TupletBracket.direction = #up          %! OC1
                 r16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -5815,7 +5815,7 @@ G_LHVoiceV = {
                 -\marcato                                        %! IC
                 
                 r2
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -5912,7 +5912,7 @@ G_LHVoiceV = {
             \scaleDurations #'(1 . 1) {
                 
                 % [G LHVoiceV measure 103]                       %! SM4
-                \override TupletBracket.direction = #up          %! OC
+                \override TupletBracket.direction = #up          %! OC1
                 r16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -5936,7 +5936,7 @@ G_LHVoiceV = {
                 -\marcato                                        %! IC
                 
                 r2
-                \revert TupletBracket.direction                  %! OC
+                \revert TupletBracket.direction                  %! OC2
             }
         }
     }
@@ -5975,7 +5975,7 @@ G_LHVoiceV = {
             \scaleDurations #'(1 . 1) {
                 
                 % [G LHVoiceV measure 105]                       %! SM4
-                \override TupletBracket.direction = #up          %! OC
+                \override TupletBracket.direction = #up          %! OC1
                 r16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -5999,8 +5999,8 @@ G_LHVoiceV = {
                 -\marcato                                        %! IC
                 
                 r2
-                \revert TupletBracket.direction                  %! OC
-                \revert Rest.direction                           %! OC
+                \revert TupletBracket.direction                  %! OC2
+                \revert Rest.direction                           %! OC2
             }
         }
     }
@@ -6008,9 +6008,9 @@ G_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [G LHVoiceV measure 106]                           %! SM4
-            \once \override PianoStaff.Stem.color = #darkmagenta %! OC
-            \once \override Stem.direction = #up                 %! OC
-            \override TupletBracket.staff-padding = #2           %! OC
+            \once \override PianoStaff.Stem.color = #darkmagenta %! OC1
+            \once \override Stem.direction = #up                 %! OC1
+            \override TupletBracket.staff-padding = #2           %! OC1
             \crossStaff                                          %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             <g, e f af>16
@@ -6495,7 +6495,7 @@ G_LHVoiceV = {
             r16
             
             r4
-            \revert TupletBracket.staff-padding                  %! OC
+            \revert TupletBracket.staff-padding                  %! OC2
             
         }
     }
@@ -6505,7 +6505,7 @@ G_LHVoiceV = {
 G_LHVoiceVInserts = {
     
     % [G LHVoiceVInserts measure 91]                             %! SM4
-    \override Script.direction = #up                             %! OC
+    \override Script.direction = #up                             %! OC1
     s1 * 19
     {
         \override TupletBracket.stencil = ##f
@@ -6518,7 +6518,7 @@ G_LHVoiceVInserts = {
                 s4
                 [                                                %! SM35
                 
-                \override Stem.direction = #up                   %! OC
+                \override Stem.direction = #up                   %! OC1
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
                 bf'8
@@ -6643,7 +6643,7 @@ G_LHVoiceVInserts = {
             \set stemRightBeamCount = 1                          %! SM35
             af'8
             -\staccato                                           %! IC
-            \revert Stem.direction                               %! OC
+            \revert Stem.direction                               %! OC2
             
             s4.
             ]                                                    %! SM35
@@ -6687,7 +6687,7 @@ G_LHVoiceVInserts = {
     
     % [G LHVoiceVInserts measure 131]                            %! SM4
     s1 * 3/2
-    \revert Script.direction                                     %! OC
+    \revert Script.direction                                     %! OC2
     
 }
 
