@@ -2630,14 +2630,14 @@ C_RHVoiceI = {
     % [C RHVoiceI measure 22]                                    %! SM4
     \override TupletBracket.staff-padding = #8                   %! OC
     \override TupletBracket.direction = #up                      %! OC
-    \clef "treble"                                               %! REAPPLIED_CLEF:SM8
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicRHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
-    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \clef "treble"                                               %! SM37:REAPPLIED_CLEF:SM8
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicRHStaff.forceClef = ##t                       %! SM37:SM33:REAPPLIED_CLEF:SM8
+    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 143/8
-    \f                                                           %! REAPPLIED_DYNAMIC:SM8
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \f                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
@@ -3205,9 +3205,9 @@ C_RHVoiceIInserts = {
 C_RHVoiceII = {
     
     % [C RHVoiceII measure 22]                                   %! SM4
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/2
-    \ff                                                          %! REAPPLIED_DYNAMIC:SM8
+    \ff                                                          %! SM37:REAPPLIED_DYNAMIC:SM8
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 1/1 {
@@ -3424,11 +3424,11 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
             b'16
             [
-            \<
-            \f
+            \<                                                   %! HC1
+            \f                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3524,10 +3524,10 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
             cs''''16
             ]
-            \ff
+            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
@@ -3543,11 +3543,11 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
             ef''16
             [
-            \<
-            \f
+            \<                                                   %! HC1
+            \f                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3639,10 +3639,10 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
             bf'''16
             ]
-            \ff
+            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
@@ -3737,11 +3737,11 @@ C_RHVoiceII = {
             \once \override NoteHead.color = #red
             \once \override Stem.color = #red
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
             cs''16
             [
-            \<
-            \f
+            \<                                                   %! HC1
+            \f                                                   %! HC1
             (                                                    %! SC
             ^ \markup {
                 \column
@@ -3855,10 +3855,10 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
             f''''16
             ]
-            \ff
+            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
@@ -3874,11 +3874,11 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
             a''16
             [
-            \<
-            \f
+            \<                                                   %! HC1
+            \f                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3926,10 +3926,10 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
             fs''''16
             ]
-            \ff
+            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
@@ -4309,12 +4309,12 @@ C_RHVoiceIII = {
             \override TextScript.direction = #up                 %! OC
             \override TupletBracket.direction = #up              %! OC
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM37:REDUNDANT_DYNAMIC_COLOR:SM6
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             ef8
             -\tenuto                                             %! IC
             \ff                                                  %! IC:EXPLICIT_DYNAMIC:SM8
-            \ff                                                  %! REDUNDANT_DYNAMIC:SM8
+            \ff                                                  %! SM37:REDUNDANT_DYNAMIC:SM8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4815,9 +4815,9 @@ C_RHVoiceIIIInserts = {
 C_RHVoiceIV = {
     
     % [C RHVoiceIV measure 22]                                   %! SM4
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/2
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     
     % [C RHVoiceIV measure 23]                                   %! SM4
     s1 * 1/4
@@ -5895,9 +5895,9 @@ C_LHVoiceIII = {
 C_LHVoiceIV = {
     
     % [C LHVoiceIV measure 22]                                   %! SM4
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 4
-    \ff                                                          %! REAPPLIED_DYNAMIC:SM8
+    \ff                                                          %! SM37:REAPPLIED_DYNAMIC:SM8
     {
         \scaleDurations #'(1 . 1) {
             
@@ -6221,10 +6221,10 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 22]                            %! SM4
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+            \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
             \dynamicDown                                         %! IC
             r2.
-            \f                                                   %! REAPPLIED_DYNAMIC:SM8
+            \f                                                   %! SM37:REAPPLIED_DYNAMIC:SM8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7239,11 +7239,11 @@ C_LHVoiceVInserts = {
                 
                 % [C LHVoiceVInserts measure 45]                 %! SM4
                 s4
-                [
+                [                                                %! SM35
                 
                 \override Stem.direction = #up                   %! OC
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 bf'8
                 -\staccato                                       %! IC
             }
@@ -7274,15 +7274,15 @@ C_LHVoiceVInserts = {
                 % [C LHVoiceVInserts measure 47]                 %! SM4
                 s4
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 bf8
                 -\staccato                                       %! IC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 d'8
                 -\staccato                                       %! IC
             }
@@ -7291,7 +7291,7 @@ C_LHVoiceVInserts = {
                 s8
                 
                 s4
-                ]
+                ]                                                %! SM35
             }
         }
         \revert TupletBracket.stencil
@@ -7306,10 +7306,10 @@ C_LHVoiceVInserts = {
                 
                 % [C LHVoiceVInserts measure 48]                 %! SM4
                 s4
-                [
+                [                                                %! SM35
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 f'8
                 -\staccato                                       %! IC
             }
@@ -7336,8 +7336,8 @@ C_LHVoiceVInserts = {
                 % [C LHVoiceVInserts measure 51]                 %! SM4
                 s4
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 f'8
                 -\staccato                                       %! IC
             }
@@ -7362,14 +7362,14 @@ C_LHVoiceVInserts = {
             % [C LHVoiceVInserts measure 53]                     %! SM4
             s8
             
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 1                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             af'8
             -\staccato                                           %! IC
             \revert Stem.direction                               %! OC
             
             s4.
-            ]
+            ]                                                    %! SM35
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
@@ -7427,37 +7427,37 @@ C_LHVoiceVInserts = {
 C_LHVoiceVI = {
     
     % [C LHVoiceVI measure 22]                                   %! SM4
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
-    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \clef "bass"                                                 %! SM37:REAPPLIED_CLEF:SM8
+    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM37:SM33:REAPPLIED_CLEF:SM8
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/2
-    \f                                                           %! REAPPLIED_DYNAMIC:SM8
-    ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            (“Piano”)                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \f                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
+    ^ \markup {                                                  %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        \with-color                                              %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            #(x11-color 'green4)                                 %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Piano”)                                            %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     
     % [C LHVoiceVI measure 23]                                   %! SM4
     s1 * 1/4

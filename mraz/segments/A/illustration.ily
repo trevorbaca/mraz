@@ -725,7 +725,7 @@ A_RHVoiceI = {
             \clef "treble"                                       %! ST3:DEFAULT_CLEF:SM8
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
         %@% \override PianoMusicRHStaff.Clef.color = ##f         %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
-            \set PianoMusicRHStaff.forceClef = ##t               %! ST3:DEFAULT_CLEF:SM8
+            \set PianoMusicRHStaff.forceClef = ##t               %! ST3:SM33:DEFAULT_CLEF:SM8
             bf''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -819,11 +819,11 @@ A_RHVoiceII = {
             \set stemRightBeamCount = 2
             \ottava #1                                           %! SC
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
             b'16
             [
-            \<
-            \f
+            \<                                                   %! HC1
+            \f                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -919,10 +919,10 @@ A_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
             cs''''16
             ]
-            \ff
+            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC
             \revert Slur.direction                               %! OC
@@ -1531,7 +1531,7 @@ A_LHVoiceI = {
     \clef "bass"                                                 %! ST3:DEFAULT_CLEF:SM8
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicLHStaff.forceClef = ##t                       %! ST3:DEFAULT_CLEF:SM8
+    \set PianoMusicLHStaff.forceClef = ##t                       %! ST3:SM33:DEFAULT_CLEF:SM8
     s1 * 1
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
     
@@ -1888,14 +1888,14 @@ A_LHVoiceVI = {
             (“Piano”)                                            %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
         }                                                        %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
     \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'violet) %! ST1:REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-        \hcenter-in                                              %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-            #16                                                  %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-            Piano                                                %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-        }                                                        %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-        \null                                                    %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
-        }                                                        %! ST1:REDRAWN_DEFAULT_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        \hcenter-in                                              %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+            #16                                                  %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+            Piano                                                %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        \null                                                    %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
+        }                                                        %! ST1:SM34:REDRAWN_DEFAULT_INSTRUMENT:SM8
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
@@ -1908,7 +1908,7 @@ A_LHVoiceVI = {
             \clef "bass"                                         %! IC:REDUNDANT_CLEF:SM8
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_CLEF_COLOR:SM6
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! IC:REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
-            \set PianoMusicLHStaff.forceClef = ##t               %! IC:REDUNDANT_CLEF:SM8
+            \set PianoMusicLHStaff.forceClef = ##t               %! IC:SM33:REDUNDANT_CLEF:SM8
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
             b,,,8
             \f                                                   %! IC:EXPLICIT_DYNAMIC:SM8

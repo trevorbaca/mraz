@@ -592,17 +592,17 @@ J_RHVoiceI = {
                 % [J RHVoiceI measure 147]                       %! SM4
                 \override Beam.positions = #'(10 . 10)           %! OC
                 \override Stem.direction = #up                   %! OC
-                \set stemLeftBeamCount = 0
-                \set stemRightBeamCount = 2
-                \clef "treble"                                   %! REAPPLIED_CLEF:SM8
-                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-            %@% \override PianoMusicRHStaff.Clef.color = ##f     %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                \set PianoMusicRHStaff.forceClef = ##t           %! REAPPLIED_CLEF:SM8
+                \set stemLeftBeamCount = 0                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
+                \clef "treble"                                   %! SM37:REAPPLIED_CLEF:SM8
+                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+            %@% \override PianoMusicRHStaff.Clef.color = ##f     %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                \set PianoMusicRHStaff.forceClef = ##t           %! SM37:SM33:REAPPLIED_CLEF:SM8
                 \dynamicUp                                       %! IC
                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
                 e''16
                 \fff                                             %! IC:EXPLICIT_DYNAMIC:SM8
-                [
+                [                                                %! SM35
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -620,59 +620,59 @@ J_RHVoiceI = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
-                \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 cs''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 c'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 d'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 fs''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 d'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 g''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 af''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 bf''16
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 b''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 ef'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 a'''16
             }
         }
@@ -686,8 +686,8 @@ J_RHVoiceI = {
             \times 2/3 {
                 
                 % [J RHVoiceI measure 149]                       %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 fs''16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -707,33 +707,33 @@ J_RHVoiceI = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 bf''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 e'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 fs'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 g'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 a'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 0
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 0                      %! SM35
                 e'''16
-                ]
+                ]                                                %! SM35
             }
         }
     }
@@ -746,10 +746,10 @@ J_RHVoiceI = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceI measure 151]                       %! SM4
-                \set stemLeftBeamCount = 0
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 0                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 af''16
-                [
+                [                                                %! SM35
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -768,16 +768,16 @@ J_RHVoiceI = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 a''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 b''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 fs'''16
             }
         }
@@ -791,8 +791,8 @@ J_RHVoiceI = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceI measure 153]                       %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 af''16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -812,26 +812,26 @@ J_RHVoiceI = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 e'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 fs'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 bf'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 0
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 0                      %! SM35
                 fs'''16
-                ]
+                ]                                                %! SM35
             }
         }
     }
@@ -937,7 +937,7 @@ J_RHVoiceIInserts = {
                 \override Beam.positions = #'(-6.5 . -6.5)       %! OC
                 \override Script.direction = #down               %! OC
                 s16
-                [
+                [                                                %! SM35
                 
                 s16
                 
@@ -952,8 +952,8 @@ J_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 -\marcato                                        %! IC
                 
@@ -965,8 +965,8 @@ J_RHVoiceIInserts = {
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 b''16
                 -\marcato                                        %! IC
                 
@@ -998,20 +998,20 @@ J_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 fs'''16
                 -\marcato                                        %! IC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 g'''16
                 -\marcato                                        %! IC
                 
                 s16
                 
                 s16
-                ]
+                ]                                                %! SM35
             }
         }
         \revert TupletBracket.stencil
@@ -1030,10 +1030,10 @@ J_RHVoiceIInserts = {
                 % [J RHVoiceIInserts measure 151]                %! SM4
                 \override Beam.positions = #'(-8.5 . -8.5)       %! OC
                 s16
-                [
+                [                                                %! SM35
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 a''16
                 -\marcato                                        %! IC
                 
@@ -1057,13 +1057,13 @@ J_RHVoiceIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceIInserts measure 153]                %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 af''16
                 -\marcato                                        %! IC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f'''16
                 -\marcato                                        %! IC
                 
@@ -1074,7 +1074,7 @@ J_RHVoiceIInserts = {
                 s16
                 
                 s16
-                ]
+                ]                                                %! SM35
             }
         }
         \revert TupletBracket.stencil
@@ -1148,21 +1148,21 @@ J_RHVoiceII = {
     % [J RHVoiceII measure 147]                                  %! SM4
     \override Beam.positions = #'(-4.5 . -4.5)                   %! OC
     \override Slur.direction = #up                               %! OC
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     \dynamicDown                                                 %! IC
     s1 * 3/4
-    \fff                                                         %! REAPPLIED_DYNAMIC:SM8
+    \fff                                                         %! SM37:REAPPLIED_DYNAMIC:SM8
     {
         \scaleDurations #'(1 . 1) {
             
             % [J RHVoiceII measure 148]                          %! SM4
             \override Stem.direction = #down                     %! OC
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! IC:REDUNDANT_DYNAMIC_COLOR:SM6
             c''16
             \fff                                                 %! IC:REDUNDANT_DYNAMIC:SM8
-            [
+            [                                                    %! SM35
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1182,16 +1182,16 @@ J_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             d''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             ef''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             f''16
             )                                                    %! SC
         }
@@ -1205,8 +1205,8 @@ J_RHVoiceII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceII measure 150]                      %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 cs''16
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -1227,50 +1227,50 @@ J_RHVoiceII = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 b'16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 cs''16
                 (                                                %! SC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 d''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 e''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 b''16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 (                                                %! SC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 ef'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 0
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 0                      %! SM35
                 a''16
-                ]
+                ]                                                %! SM35
                 )                                                %! SC
             }
         }
@@ -1282,10 +1282,10 @@ J_RHVoiceII = {
         \times 2/3 {
             
             % [J RHVoiceII measure 152]                          %! SM4
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             c''16
-            [
+            [                                                    %! SM35
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1305,57 +1305,57 @@ J_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             bf''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             e''16
             )                                                    %! SC
         }
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
             
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 1                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             cs''16
             (                                                    %! SC
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             bf''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             a''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             b''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             ef'''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             b''16
             )                                                    %! SC
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 1                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             g''16
             (                                                    %! SC
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             f'''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             b''16
             )                                                    %! SC
         }
@@ -1369,8 +1369,8 @@ J_RHVoiceII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceII measure 154]                      %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 a''16
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -1391,46 +1391,46 @@ J_RHVoiceII = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 b''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 c'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 1
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 1                      %! SM35
                 d'''16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 ef'''16
                 (                                                %! SC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 c'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 b''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 cs'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f'''16
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 0
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 0                      %! SM35
                 cs'''16
-                ]
+                ]                                                %! SM35
                 )                                                %! SC
             }
         }
@@ -1439,10 +1439,10 @@ J_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [J RHVoiceII measure 155]                          %! SM4
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             f''16
-            [
+            [                                                    %! SM35
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1462,12 +1462,12 @@ J_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             a''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 1                          %! SM35
             ef'''16
             )                                                    %! SC
         }
@@ -1479,8 +1479,8 @@ J_RHVoiceII = {
         \times 2/3 {
             
             % [J RHVoiceII measure 157]                          %! SM4
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 1                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             e'''16
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1501,14 +1501,14 @@ J_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             d'''16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 0                          %! SM35
             af'''16
-            ]
+            ]                                                    %! SM35
             )                                                    %! SC
             \revert Beam.positions                               %! OC
             \revert Slur.direction                               %! OC
@@ -1532,14 +1532,14 @@ J_RHVoiceIIInserts = {
             
             % [J RHVoiceIIInserts measure 148]                   %! SM4
             \override Stem.direction = #up                       %! OC
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             c''16
             -\accent                                             %! IC
-            [
+            [                                                    %! SM35
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             d''16
             -\accent                                             %! IC
             
@@ -1561,13 +1561,13 @@ J_RHVoiceIIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceIIInserts measure 150]               %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 cs''16
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 -\accent                                         %! IC
                 
@@ -1585,18 +1585,18 @@ J_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 f''16
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 ef'''16
                 -\accent                                         %! IC
                 
                 s16
-                ]
+                ]                                                %! SM35
                 \revert Beam.positions                           %! OC
             }
         }
@@ -1613,14 +1613,14 @@ J_RHVoiceIIInserts = {
             
             % [J RHVoiceIIInserts measure 152]                   %! SM4
             \override Beam.positions = #'(13.5 . 13.5)           %! OC
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             c''16
             -\accent                                             %! IC
-            [
+            [                                                    %! SM35
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             bf''16
             -\accent                                             %! IC
             
@@ -1643,13 +1643,13 @@ J_RHVoiceIIInserts = {
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 1                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             g''16
             -\accent                                             %! IC
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             f'''16
             -\accent                                             %! IC
             
@@ -1669,8 +1669,8 @@ J_RHVoiceIIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [J RHVoiceIIInserts measure 154]               %! SM4
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 1                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 a''16
                 -\accent                                         %! IC
                 
@@ -1682,13 +1682,13 @@ J_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 ef'''16
                 -\accent                                         %! IC
                 
-                \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemLeftBeamCount = 2                       %! SM35
+                \set stemRightBeamCount = 2                      %! SM35
                 c'''16
                 -\accent                                         %! IC
                 
@@ -1699,7 +1699,7 @@ J_RHVoiceIIInserts = {
                 s16
                 
                 s16
-                ]
+                ]                                                %! SM35
                 \revert Beam.positions                           %! OC
             }
         }
@@ -1713,11 +1713,11 @@ J_RHVoiceIIInserts = {
             
             % [J RHVoiceIIInserts measure 155]                   %! SM4
             \override Beam.positions = #'(17 . 17)               %! OC
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 0                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             f''16
             -\accent                                             %! IC
-            [
+            [                                                    %! SM35
             
             s16
             
@@ -1737,16 +1737,16 @@ J_RHVoiceIIInserts = {
             % [J RHVoiceIIInserts measure 157]                   %! SM4
             s16
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 2                          %! SM35
             d'''16
             -\accent                                             %! IC
             
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
+            \set stemLeftBeamCount = 2                           %! SM35
+            \set stemRightBeamCount = 0                          %! SM35
             af'''16
             -\accent                                             %! IC
-            ]
+            ]                                                    %! SM35
             \revert Beam.positions                               %! OC
             \revert Script.direction                             %! OC
             \revert Stem.direction                               %! OC
@@ -1761,9 +1761,9 @@ J_RHVoiceIIInserts = {
 J_RHVoiceIII = {
     
     % [J RHVoiceIII measure 147]                                 %! SM4
-    \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/4
-    \pp                                                          %! REAPPLIED_DYNAMIC:SM8
+    \pp                                                          %! SM37:REAPPLIED_DYNAMIC:SM8
     
     % [J RHVoiceIII measure 148]                                 %! SM4
     s1 * 1/4
@@ -1839,9 +1839,9 @@ J_RHVoiceIIIInserts = {
 J_RHVoiceIV = {
     
     % [J RHVoiceIV measure 147]                                  %! SM4
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/4
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     
     % [J RHVoiceIV measure 148]                                  %! SM4
     s1 * 1/4
@@ -2173,14 +2173,14 @@ J_LHVoiceIV = {
     % [J LHVoiceIV measure 147]                                  %! SM4
     \override Beam.positions = #'(-5.5 . -5.5)                   %! OC
     \override Script.direction = #down                           %! OC
-    \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \set PianoMusicLHStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \clef "bass"                                                 %! SM37:REAPPLIED_CLEF:SM8
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM37:REAPPLIED_CLEF_COLOR:SM6
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM37:SM33:REAPPLIED_CLEF:SM8
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/8
-    \mp                                                          %! REAPPLIED_DYNAMIC:SM8
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+    \mp                                                          %! SM37:REAPPLIED_DYNAMIC:SM8
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
@@ -2459,9 +2459,9 @@ J_LHVoiceV = {
     % [J LHVoiceV measure 147]                                   %! SM4
     \override Beam.positions = #'(-6 . -6)                       %! OC
     \override Script.direction = #down                           %! OC
-    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 329/272
-    \p                                                           %! REAPPLIED_DYNAMIC:SM8
+    \p                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 15/17 {
@@ -2855,32 +2855,32 @@ J_LHVoiceVInserts = {
 J_LHVoiceVI = {
     
     % [J LHVoiceVI measure 147]                                  %! SM4
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT:SM8
+    \once \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM37:REAPPLIED_INSTRUMENT_COLOR:SM6
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM37:REAPPLIED_DYNAMIC_COLOR:SM6
     s1 * 3/4
-    \f                                                           %! REAPPLIED_DYNAMIC:SM8
-    ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            (“Piano”)                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-        }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-    \set PianoMusicStaffGroup.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            #16                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-            Piano                                                %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        \null                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-        }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \f                                                           %! SM37:REAPPLIED_DYNAMIC:SM8
+    ^ \markup {                                                  %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        \with-color                                              %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            #(x11-color 'green4)                                 %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Piano”)                                            %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+        }                                                        %! SM37:REAPPLIED_INSTRUMENT_ALERT:SM11
+    \override PianoMusicStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM37:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+    \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \hcenter-in                                              %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            #16                                                  %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+            Piano                                                %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+    \set PianoMusicStaffGroup.shortInstrumentName = \markup {    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        \null                                                    %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
+        }                                                        %! SM37:SM34:REDRAWN_REAPPLIED_INSTRUMENT:SM8
     
     % [J LHVoiceVI measure 148]                                  %! SM4
     s1 * 1/4
