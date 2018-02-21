@@ -111,7 +111,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         voice_name,
         collections,
         *specifiers,
-        allow_repeat_pitches=None,
+        allow_repeats=None,
         color_unregistered_pitches=None,
         counts=None,
         denominator=4,
@@ -132,7 +132,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         tuplet_denominator=None):
         superclass = super(MusicAccumulator, self)
         keywords = {
-            'allow_repeat_pitches': allow_repeat_pitches,
+            'allow_repeats': allow_repeats,
             'color_unregistered_pitches': color_unregistered_pitches,
             'division_masks': division_masks,
             'exhaustive': exhaustive,
