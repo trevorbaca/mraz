@@ -231,6 +231,6 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('LHVoiceIVInserts', 1, abjad.Infinity),
+    baca.scope('LHVoiceIVInserts', 'all'),
     baca.stems_up(),
     )

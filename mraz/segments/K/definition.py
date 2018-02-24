@@ -281,7 +281,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('LHVoiceV', 1, abjad.Infinity),
+    baca.scope('LHVoiceV', 'all'),
     #abjad.label().with_indices(),
     #abjad.label().with_pitches(),
     baca.ottava_bassa(),
@@ -289,7 +289,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceVI', 1, abjad.Infinity),
+    baca.scope('LHVoiceVI', 'all'),
     #abjad.label().with_pitches(),
     baca.scripts_down(),
     baca.stems_down(),

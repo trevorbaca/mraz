@@ -341,7 +341,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceI', 1, abjad.Infinity),
+    baca.scope('RHVoiceI', 'all'),
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),
@@ -358,12 +358,12 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', 1, abjad.Infinity),
+    baca.scope('RHVoiceIInserts', 'all'),
     baca.scripts_down(),
     )
 
 maker(
-    baca.scope('RHVoiceII', 1, abjad.Infinity),
+    baca.scope('RHVoiceII', 'all'),
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
     baca.slurs_up(),
@@ -371,7 +371,7 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', 9, abjad.Infinity),
+    baca.scope('RHVoiceIIInserts', (9, 'end')),
     baca.beam_positions(17),
     )
 
@@ -386,7 +386,7 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', 1, abjad.Infinity),
+    baca.scope('RHVoiceIIInserts', 'all'),
     baca.scripts_up(),
     baca.stems_up(),
     )
@@ -397,18 +397,18 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceIV', 6, abjad.Infinity),
+    baca.scope('LHVoiceIV', (6, 'end')),
     baca.beam_positions(-4.5),
     )
 
 maker(
-    baca.scope('LHVoiceIV', 1, abjad.Infinity),
+    baca.scope('LHVoiceIV', 'all'),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceIVInserts', 1, abjad.Infinity),
+    baca.scope('LHVoiceIVInserts', 'all'),
     baca.scripts_up(),
     baca.stems_up(),
     )
@@ -419,18 +419,18 @@ maker(
     )
 
 #maker(
-#    baca.scope('LHVoiceV', 6, abjad.Infinity),
+#    baca.scope('LHVoiceV', (6, 'end')),
 #    baca.beam_positions(-4.5),
 #    )
 
 maker(
-    baca.scope('LHVoiceV', 1, abjad.Infinity),
+    baca.scope('LHVoiceV', 'all'),
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceVInserts', 1, abjad.Infinity),
+    baca.scope('LHVoiceVInserts', 'all'),
     baca.scripts_up(),
     baca.stems_up(),
     baca.beam_positions(9),
