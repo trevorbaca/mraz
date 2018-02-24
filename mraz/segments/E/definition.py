@@ -65,6 +65,6 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 #maker(
-#    baca.scope('RHVoiceI', 1, 2),
+#    baca.scope('RHVoiceI', (1, 2)),
 #    baca.register(0, -12),
 #    )

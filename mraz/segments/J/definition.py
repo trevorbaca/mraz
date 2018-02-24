@@ -348,12 +348,12 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', 1, 5),
+    baca.scope('RHVoiceIInserts', (1, 5)),
     baca.beam_positions(-6.5),
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', 5, 10),
+    baca.scope('RHVoiceIInserts', (5, 10)),
     baca.beam_positions(-8.5),
     )
 
@@ -376,12 +376,12 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', 1, 4),
+    baca.scope('RHVoiceIIInserts', (1, 4)),
     baca.beam_positions(15.5),
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', 6, 8),
+    baca.scope('RHVoiceIIInserts', (6, 8)),
     baca.beam_positions(13.5),
     )
 
@@ -392,7 +392,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceIV', 1, 2),
+    baca.scope('LHVoiceIV', (1, 2)),
     baca.beam_positions(-5.5),
     )
 
@@ -414,7 +414,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceV', 1, 5),
+    baca.scope('LHVoiceV', (1, 5)),
     baca.beam_positions(-6),
     )
 

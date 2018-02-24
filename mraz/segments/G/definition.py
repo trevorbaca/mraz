@@ -924,7 +924,7 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceI', 1, 34),
+    baca.scope('RHVoiceI', (1, 34)),
     baca.ottava(),
     )
 
@@ -935,7 +935,7 @@ maker(
 
 # TODO: reveal
 #maker(
-#    baca.scope('RHVoiceII', 30, 32),
+#    baca.scope('RHVoiceII', (30, 32)),
 #    baca.marcati(),
 #    baca.scripts_up(),
 #    baca.up_arpeggios(),
@@ -948,7 +948,7 @@ maker(
 
 # TODO: reveal
 #maker(
-#    baca.scope('LHVoiceII', 30, 32),
+#    baca.scope('LHVoiceII', (30, 32)),
 #    baca.transparent_rests(),
 #    )
 
@@ -958,7 +958,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceV', 7, 15),
+    baca.scope('LHVoiceV', (7, 15)),
     baca.marcati(),
     baca.rests_up(),
     )
@@ -976,12 +976,12 @@ maker(
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 9, 10),
+    baca.scope('LHResonanceVoice', (9, 10)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 13, 14),
+    baca.scope('LHResonanceVoice', (13, 14)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
