@@ -1029,7 +1029,7 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceI', 1, 34),
+    baca.scope('RHVoiceI', (1, 34)),
     baca.ottava(),
     )
 
@@ -1049,7 +1049,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceV', 7, 15),
+    baca.scope('LHVoiceV', (7, 15)),
     baca.marcati(),
     baca.rests_up(),
     )

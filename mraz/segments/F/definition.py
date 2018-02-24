@@ -160,11 +160,11 @@ maker(
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 1, 2),
+    baca.scope('LHResonanceVoice', (1, 2)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 3, 5),
+    baca.scope('LHResonanceVoice', (3, 5)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
