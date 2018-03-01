@@ -776,7 +776,7 @@ accumulator(
     'RHVoiceII',
     collections['stage 5']['lh'].next(4),
     baca.anchor_to_figure('rh-1 4.5.3'),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
@@ -790,7 +790,7 @@ accumulator(
 accumulator(
     'RHVoiceII',
     collections['stage 5']['lh'].next(4),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
@@ -818,7 +818,7 @@ accumulator(
 accumulator(
     'RHVoiceII',
     collections['stage 5']['lh'].next(4),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
@@ -833,7 +833,7 @@ accumulator(
 accumulator(
     'RHVoiceII',
     collections['stage 5']['lh'].next(2),
-    baca.dynamic_line_spanner_staff_padding(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
