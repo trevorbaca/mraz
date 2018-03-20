@@ -214,13 +214,10 @@ maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
-    instruments=mraz.instruments,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.metronome_marks,
-    score_template=mraz.ScoreTemplate(),
+    metronome_mark_measure_map=metronome_mark_measure_map,
     skips_instead_of_rests=True,
     spacing=spacing,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=accumulator.time_signatures,
     )
 

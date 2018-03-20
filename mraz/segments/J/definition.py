@@ -322,15 +322,12 @@ maker = baca.SegmentMaker(
         ),
     final_markup_extra_offset=(-24, -8),
     ignore_repeat_pitch_classes=True,
-    instruments=mraz.instruments,
     last_segment=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.metronome_marks,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     range_checker=abjad.Piano().pitch_range,
-    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing=spacing,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=accumulator.time_signatures,
     )
 

@@ -365,14 +365,11 @@ maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
     final_bar_line=abjad.Exact,
     ignore_repeat_pitch_classes=True,
-    instruments=mraz.instruments,
     measures_per_stage=measures_per_stage,
-    metronome_marks=mraz.metronome_marks,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     range_checker=abjad.Piano().pitch_range,
-    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     #spacing=spacing,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=accumulator.time_signatures,
     )
 
