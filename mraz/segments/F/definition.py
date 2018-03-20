@@ -147,13 +147,13 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceII', 'all'),
+    baca.scope('RHVoiceII', (1, -1)),
     baca.scripts_up(),
     baca.slurs_up(),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 'all'),
+    baca.scope('LHResonanceVoice', (1, -1)),
     )
 
 maker(
