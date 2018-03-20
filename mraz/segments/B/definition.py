@@ -304,21 +304,21 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceI', 'all'),
+    baca.scope('RHVoiceI', (1, -1)),
     baca.ottava(),
     )
 
 maker(
-    baca.scope('RHVoiceII', 'all'),
+    baca.scope('RHVoiceII', (1, -1)),
     baca.slurs_up(),
     )
 
 maker(
-    baca.scope('RHVoiceIVInserts', 'all'),
+    baca.scope('RHVoiceIVInserts', (1, -1)),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 'all'),
+    baca.scope('LHResonanceVoice', (1, -1)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

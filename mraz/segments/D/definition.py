@@ -530,12 +530,12 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceIV', (2, 'end')),
+    baca.scope('LHVoiceIV', (2, -1)),
     baca.staccati(),
     baca.tenuti(),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', 'all'),
+    baca.scope('LHResonanceVoice', (1, -1)),
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

@@ -380,7 +380,7 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceII', (2, 'end')),
+    baca.scope('RHVoiceII', (2, -1)),
     baca.accents(),
     baca.beam_positions(10.5),
     baca.scripts_up(),
@@ -388,7 +388,7 @@ maker(
     )
 
 maker(
-    baca.scope('LHVoiceIV', (2, 'end')),
+    baca.scope('LHVoiceIV', (2, -1)),
     baca.staccati(),
     baca.tenuti(),
     )
