@@ -5204,6 +5204,7 @@ G_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [G LHVoiceV measure 91]                            %! SM4
+            \override Rest.direction = #up                       %! OC1
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
             \dynamicDown                                         %! IC
             r2.
@@ -5228,17 +5229,20 @@ G_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
             r16
             
             d'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
             
             e'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
@@ -5293,11 +5297,13 @@ G_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             af8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
             
             d'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
@@ -5305,6 +5311,7 @@ G_LHVoiceV = {
             r4
             
             e'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
@@ -5370,6 +5377,7 @@ G_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -5378,11 +5386,13 @@ G_LHVoiceV = {
             r4
             
             d'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
             
             e'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
@@ -5417,7 +5427,6 @@ G_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [G LHVoiceV measure 97]                            %! SM4
-            \override Rest.direction = #up                       %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
             r16
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -5690,7 +5699,6 @@ G_LHVoiceV = {
                 
                 r2
                 \revert TupletBracket.direction                  %! OC2
-                \revert Rest.direction                           %! OC2
             }
         }
     }
@@ -5704,6 +5712,7 @@ G_LHVoiceV = {
             \crossStaff                                          %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             <g, e f af>16
+            -\marcato                                            %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5754,6 +5763,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <c bf>8
+                -\marcato                                        %! IC
                 [
                 (                                                %! SC
             }
@@ -5762,6 +5772,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                -\marcato                                        %! IC
                 ]
                 )                                                %! SC
                 
@@ -5818,6 +5829,7 @@ G_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             <c e af>4.
+            -\marcato                                            %! IC
         }
     }
     
@@ -5851,6 +5863,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <bf'>8
+                -\marcato                                        %! IC
                 [
                 (                                                %! SC
             }
@@ -5859,12 +5872,14 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                -\marcato                                        %! IC
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <e af>8
+                -\marcato                                        %! IC
                 ]
                 )                                                %! SC
                 
@@ -5925,6 +5940,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <c f bf>8
+                -\marcato                                        %! IC
                 [
                 (                                                %! SC
             }
@@ -5933,12 +5949,14 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <e af d'>8
+                -\marcato                                        %! IC
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <bf c'>8
+                -\marcato                                        %! IC
                 ]
                 )                                                %! SC
                 
@@ -5974,6 +5992,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                -\marcato                                        %! IC
                 [
                 (                                                %! SC
             }
@@ -5982,6 +6001,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <af c' e'>8
+                -\marcato                                        %! IC
                 ]
                 )                                                %! SC
                 
@@ -6013,6 +6033,7 @@ G_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             <bf>8
+            -\marcato                                            %! IC
             
             r4.
         }
@@ -6070,6 +6091,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                -\marcato                                        %! IC
                 [
                 (                                                %! SC
             }
@@ -6078,6 +6100,7 @@ G_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <af e'>8
+                -\marcato                                        %! IC
                 ]
                 )                                                %! SC
                 
@@ -6109,6 +6132,7 @@ G_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             <c f bf>4.
+            -\marcato                                            %! IC
         }
     }
     {
@@ -6135,6 +6159,7 @@ G_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             <d' e' af'>8
+            -\marcato                                            %! IC
             
             r4.
         }
@@ -6167,12 +6192,14 @@ G_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
             r16
             
             d'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
@@ -6180,11 +6207,13 @@ G_LHVoiceV = {
             r4
             
             e'8.
+            -\marcato                                            %! IC
             -\tenuto                                             %! IC
             
             r16
             
             r4
+            \revert Rest.direction                               %! OC2
             \revert TupletBracket.staff-padding                  %! OC2
             
         }
