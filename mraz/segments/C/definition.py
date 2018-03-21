@@ -1019,51 +1019,51 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceI', (1, -1)),
+    'RHVoiceI',
     baca.stems_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_brackets_up(),
     )
 
 maker(
-    baca.scope('RHVoiceI', (1, 34)),
+    ('RHVoiceI', (1, 34)),
     baca.ottava(),
     )
 
 maker(
-    baca.scope('RHVoiceI', (36, -1)),
+    ('RHVoiceI', (36, -1)),
     baca.ottava(),
     )
 
 maker(
-    baca.scope('RHVoiceIII', (1, -1)),
+    'RHVoiceIII',
     baca.tenuti(),
     )
 
 maker(
-    baca.scope('LHVoiceV', (1, -1)),
+    'LHVoiceV',
     baca.dynamics_down(),
     )
 
 maker(
-    baca.scope('LHVoiceV', (7, 15)),
+    ('LHVoiceV', (7, 15)),
     baca.marcati(),
     baca.rests_up(),
     )
 
 maker(
-    baca.scope('LHVoiceV', (16, -1)),
+    ('LHVoiceV', (16, -1)),
     baca.tuplet_bracket_staff_padding(2),
     )
 
 maker(
-    baca.scope('LHVoiceVInserts', (1, -1)),
+    'LHVoiceVInserts',
     baca.scripts_up(),
     baca.staccati(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHResonanceVoice', (1, -1)),
+    'LHResonanceVoice',
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

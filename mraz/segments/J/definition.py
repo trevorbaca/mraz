@@ -338,29 +338,29 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    baca.scope('RHVoiceI', (1, -1)),
+    'RHVoiceI',
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', (1, 5)),
+    ('RHVoiceIInserts', (1, 5)),
     baca.beam_positions(-6.5),
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', (5, 10)),
+    ('RHVoiceIInserts', (5, 10)),
     baca.beam_positions(-8.5),
     )
 
 maker(
-    baca.scope('RHVoiceIInserts', (1, -1)),
+    'RHVoiceIInserts',
     baca.scripts_down(),
     )
 
 maker(
-    baca.scope('RHVoiceII', (1, -1)),
+    'RHVoiceII',
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
     baca.slurs_up(),
@@ -368,66 +368,66 @@ maker(
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', (9, -1)),
+    ('RHVoiceIIInserts', (9, -1)),
     baca.beam_positions(17),
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', (1, 4)),
+    ('RHVoiceIIInserts', (1, 4)),
     baca.beam_positions(15.5),
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', (6, 8)),
+    ('RHVoiceIIInserts', (6, 8)),
     baca.beam_positions(13.5),
     )
 
 maker(
-    baca.scope('RHVoiceIIInserts', (1, -1)),
+    'RHVoiceIIInserts',
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHVoiceIV', (1, 2)),
+    ('LHVoiceIV', (1, 2)),
     baca.beam_positions(-5.5),
     )
 
 maker(
-    baca.scope('LHVoiceIV', (6, -1)),
+    ('LHVoiceIV', (6, -1)),
     baca.beam_positions(-4.5),
     )
 
 maker(
-    baca.scope('LHVoiceIV', (1, -1)),
+    'LHVoiceIV',
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceIVInserts', (1, -1)),
+    'LHVoiceIVInserts',
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    baca.scope('LHVoiceV', (1, 5)),
+    ('LHVoiceV', (1, 5)),
     baca.beam_positions(-6),
     )
 
 #maker(
-#    baca.scope('LHVoiceV', (6, -1)),
+#    ('LHVoiceV', (6, -1)),
 #    baca.beam_positions(-4.5),
 #    )
 
 maker(
-    baca.scope('LHVoiceV', (1, -1)),
+    'LHVoiceV',
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    baca.scope('LHVoiceVInserts', (1, -1)),
+    'LHVoiceVInserts',
     baca.scripts_up(),
     baca.stems_up(),
     baca.beam_positions(9),
