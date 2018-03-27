@@ -98,9 +98,11 @@ class MusicAccumulator(baca.MusicAccumulator):
 
     ### INITIALIZER ###
 
+    #def __init__(self, score_template, segment_directory):
     def __init__(self, score_template):
         import mraz
         superclass = super(MusicAccumulator, self)
+        #superclass.__init__(score_template, segment_directory)
         superclass.__init__(score_template)
         self._music_maker = mraz.music_maker()
 
@@ -153,6 +155,27 @@ class MusicAccumulator(baca.MusicAccumulator):
             'tuplet_denominator': tuplet_denominator,
             }
         keywords['figure_index'] = self._figure_index
+        voice_name = self.score_template.voice_abbreviations.get(
+            voice_name,
+            voice_name,
+            )
+        for specifier in specifiers:
+            if isinstance(specifier, baca.ImbricationCommand):
+                voice_name_ = self.score_template.voice_abbreviations.get(
+                    specifier.voice_name,
+                    specifier.voice_name,
+                    )
+                specifier._voice_name = voice_name_
+            elif isinstance(specifier, baca.AnchorSpecifier):
+                voice_name_ = self.score_template.voice_abbreviations.get(
+                    specifier.remote_voice_name,
+                    specifier.remote_voice_name,
+                    )
+                specifier._remote_voice_name = voice_name_
+            else:
+                assert not hasattr(specifier, 'voice_name'), repr(specifier)
+                assert not hasattr(specifier, 'remote_voice_name'), repr(
+                    specifier)
         return superclass.__call__(
             self.music_maker(
                 voice_name,
@@ -166,6 +189,6 @@ class MusicAccumulator(baca.MusicAccumulator):
 
     @property
     def music_maker(self):
-        r'''Gets Mráz music-maker.
+        r'''Gets music-maker.
         '''
         return self._music_maker

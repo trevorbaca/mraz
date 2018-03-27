@@ -15,7 +15,7 @@ collections = collection_maker.make_segment_6_collections()
 #################################### [6.1] ####################################
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections['stage 1']['rh'].next(2),
     baca.dynamic('pp'),
     baca.flags(),
@@ -31,7 +31,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
@@ -45,7 +45,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections['stage 1']['rh'].next(),
     baca.flags(),
     baca.register(24, 12),
@@ -58,7 +58,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 24),
@@ -71,10 +71,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RHVoiceIII',
+        'rh_v3',
         baca.note(3),
         baca.note(2),
         ),
@@ -88,10 +88,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RHVoiceIII',
+        'rh_v3',
         baca.note(9),
         baca.note(2),
         ),
@@ -104,10 +104,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next(),
     baca.anchor(
-        'RHVoiceIII',
+        'rh_v3',
         baca.note(13),
         baca.note(1),
         ),
@@ -121,7 +121,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
     baca.flags(),
     baca.register(12, 0),
@@ -168,9 +168,9 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    'RHVoiceIII',
+    'rh_v3',
     )
 
 maker(
-    'LHVoiceIV',
+    'lh_v4',
     )

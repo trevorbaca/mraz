@@ -20,7 +20,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 ##################################### [B2] ####################################
 
 accumulator(
-    'RHVoiceIV',
+    'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
@@ -34,7 +34,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -45,7 +45,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_2['stage 2']['rh'][0][:1],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -55,7 +55,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -66,7 +66,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIV',
+    'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('p'),
     baca.register(6, 6+10),
@@ -80,7 +80,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_2['stage 2']['rh'][0][:2],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -90,7 +90,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -101,7 +101,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections_4['stage 1']['rh'][0],
     baca.dynamic('ff'),
     baca.flags(),
@@ -114,7 +114,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceV',
+    'lh_v5',
     collections_4['stage 1']['lh'].next(),
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
@@ -128,7 +128,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_2['stage 2']['rh'][0][:4],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -138,7 +138,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections_4['stage 5']['rh'][0],
     baca.dynamic('f'),
     baca.proportional_notation_duration((1, 4)),
@@ -149,7 +149,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections_4['stage 5']['rh'][1],
     baca.proportional_notation_duration((1, 4)),
     baca.register(36),
@@ -159,7 +159,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections_4['stage 5']['rh'][2],
     baca.register(36),
     baca.tenuti(),
@@ -169,7 +169,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_4['stage 5']['lh'][:4],
     baca.anchor_to_figure('b.2.13'),
     baca.dls_staff_padding(8),
@@ -184,7 +184,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     baca.anchor_to_figure('b.2.1'),
     counts=[8],
@@ -193,7 +193,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[4],
     figure_name='b.2.r.2',
@@ -201,7 +201,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[5],
     figure_name='b.2.r.3',
@@ -209,7 +209,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[8],
     figure_name='b.2.r.4',
@@ -217,7 +217,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[10],
     figure_name='b.2.r.5',
@@ -225,7 +225,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[2],
     figure_name='b.2.r.6',
@@ -233,7 +233,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     baca.anchor_to_figure('b.2.10'),
     counts=[21],
@@ -242,7 +242,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[28],
     figure_name='b.2.r.8',
@@ -250,7 +250,7 @@ accumulator(
     )
 
 accumulator(
-    'LHResonanceVoice',
+    'lh_resonance',
     [resonance],
     counts=[24],
     figure_name='b.2.r.9',
@@ -258,7 +258,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceII',
+    'lh_v2',
     [abjad.Rest((4, 4))],
     figure_name='b.2.r.10',
     hide_time_signature=True,
@@ -306,12 +306,12 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    'RHVoiceI',
+    'rh_v1',
     baca.ottava(),
     )
 
 maker(
-    'RHVoiceII',
+    'rh_v2',
     baca.slurs_up(),
     )
 
@@ -321,6 +321,6 @@ maker(
     )
 
 maker(
-    'LHResonanceVoice',
+    'lh_resonance',
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )

@@ -20,7 +20,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 ##################################### [B1] ####################################
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections_4['stage 5']['rh'][2],
     baca.register(36),
     baca.tenuti(),
@@ -30,7 +30,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_4['stage 5']['lh'][:4],
     baca.anchor_to_figure('b.1.1'),
     baca.dls_staff_padding(8),
@@ -45,12 +45,12 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'LHVoiceIVInserts',
+        'lh_v4_i',
         [14, 18],
         baca.flags(),
         ),
@@ -59,7 +59,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceVI',
+    'lh_v6',
     collections_8['stage 3']['lh'][1],
     baca.clef('bass'),
     baca.dynamic('f'),
@@ -76,7 +76,7 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceV',
+    'lh_v5',
     collections_8['stage 3']['rh'][4],
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
@@ -93,7 +93,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.line_break(),
     baca.proportional_notation_duration((1, 4)),
@@ -105,7 +105,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections_6['stage 1']['rh'][2],
     baca.dynamic('pp'),
     baca.flags(),
@@ -120,7 +120,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
@@ -131,7 +131,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections_6['stage 1']['rh'][3],
     baca.flags(),
     baca.register(24, 12),
@@ -144,7 +144,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
     baca.accents(),
     baca.dynamic('fff'),
@@ -161,7 +161,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceIII',
+    'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
@@ -180,7 +180,7 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     [abjad.Rest((1, 8))],
     baca.markup('(extremely short)', baca.rest(0)),
     baca.proportional_notation_duration((1, 4)),
@@ -230,6 +230,6 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    'LHVoiceIVInserts',
+    'lh_v4_i',
     baca.stems_up(),
     )

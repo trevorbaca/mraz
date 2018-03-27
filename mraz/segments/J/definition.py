@@ -15,13 +15,13 @@ collections = collection_maker.make_segment_7_collections()
 #################################### [7.1] ####################################
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.nest('2/16'),
     baca.register(13, 13+10),
     baca.imbricate(
-        'RHVoiceIInserts',
+        'rh_v1_i',
         [17, 23],
         baca.beam_everything(),
         baca.marcati(),
@@ -33,12 +33,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
     baca.register(7, 7+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [12, 14],
         baca.beam_everything(),
         baca.accents(),
@@ -50,12 +50,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(15, 15+10),
     baca.imbricate(
-        'RHVoiceIInserts',
+        'rh_v1_i',
         [30, 31],
         baca.beam_everything(),
         baca.marcati(),
@@ -65,12 +65,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(9, 9+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [13, 17, 17, 27],
         baca.accents(),
         baca.beam_everything(),
@@ -80,12 +80,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(17, 17+10),
     baca.imbricate(
-        'RHVoiceIInserts',
+        'rh_v1_i',
         [21],
         baca.beam_everything(),
         baca.marcati(),
@@ -96,11 +96,11 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.register(11, 11+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [12, 22, 19, 29],
         baca.accents(),
         baca.beam_everything(),
@@ -113,12 +113,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.nest('1/16'),
     baca.register(19, 19+10),
     baca.imbricate(
-        'RHVoiceIInserts',
+        'rh_v1_i',
         [20, 29],
         baca.beam_everything(),
         baca.marcati(),
@@ -127,12 +127,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.nest('-1/16'),
     baca.register(13, 13+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [21, 27, 24],
         baca.accents(),
         baca.beam_everything(),
@@ -145,11 +145,11 @@ accumulator(
 collections['stage 1']['rh'].next()
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.register(15, 15+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [17],
         baca.accents(),
         baca.beam_everything(),
@@ -161,12 +161,12 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.nest('2/16'),
     baca.register(23, 23+10),
     baca.imbricate(
-        'RHVoiceIInserts',
+        'rh_v1_i',
         [30, 34, 37],
         baca.beam_everything(),
         baca.marcati(),
@@ -176,11 +176,11 @@ accumulator(
     )
 
 accumulator(
-    'RHVoiceII',
+    'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
     baca.register(17, 17+10),
     baca.imbricate(
-        'RHVoiceIIInserts',
+        'rh_v2_i',
         [26, 32],
         baca.accents(),
         baca.beam_everything(),
@@ -193,17 +193,17 @@ accumulator(
 ###################################### LH #####################################
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next().transpose(0*7),
     baca.anchor(
-        'RHVoiceII',
+        'rh_v2',
         baca.note(0),
         baca.lt(7),
         ),
     baca.dynamic('ff'),
     baca.register(-2, -2+16),
     baca.imbricate(
-        'LHVoiceIVInserts',
+        'lh_v4_i',
         [0, 19, 23],
         baca.flags(),
         ),
@@ -212,10 +212,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceV',
+    'lh_v5',
     collections['stage 1']['lh'].next().transpose(1*7),
     baca.anchor(
-        'RHVoiceII',
+        'rh_v2',
         baca.note(4),
         baca.lt(3),
         ),
@@ -223,7 +223,7 @@ accumulator(
     baca.nest('-2/16'),
     baca.register(0, 0+16),
     baca.imbricate(
-        'LHVoiceVInserts',
+        'lh_v5_i',
         [11, 18, 24, 26],
         baca.beam_everything(),
         baca.staccati(),
@@ -234,17 +234,17 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next().transpose(2*7),
     baca.anchor(
-        'RHVoiceII',
+        'rh_v2',
         baca.note(14),
         baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(2, 2+16),
     baca.imbricate(
-        'LHVoiceIVInserts',
+        'lh_v4_i',
         [13],
         baca.flags(),
         ),
@@ -253,10 +253,10 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceV',
+    'lh_v5',
     collections['stage 1']['lh'].next().transpose(3*7),
     baca.anchor(
-        'RHVoiceII',
+        'rh_v2',
         baca.note(26),
         baca.lt(10),
         ),
@@ -264,7 +264,7 @@ accumulator(
     baca.nest('-2/16'),
     baca.register(4, 4+16),
     baca.imbricate(
-        'LHVoiceVInserts',
+        'lh_v5_i',
         [9, 16, 20, 25],
         baca.beam_everything(),
         baca.staccati(),
@@ -275,17 +275,17 @@ accumulator(
     )
 
 accumulator(
-    'LHVoiceIV',
+    'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
     baca.anchor(
-        'RHVoiceII',
+        'rh_v2',
         baca.note(-6),
         baca.lt(0),
         ),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'LHVoiceIVInserts',
+        'lh_v4_i',
         [14, 18],
         baca.flags(),
         ),
@@ -340,29 +340,29 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    'RHVoiceI',
+    'rh_v1',
     baca.beam_positions(10),
     baca.dynamics_up(),
     baca.stems_up(),
     )
 
 maker(
-    ('RHVoiceIInserts', (1, 5)),
+    ('rh_v1_i', (1, 5)),
     baca.beam_positions(-6.5),
     )
 
 maker(
-    ('RHVoiceIInserts', (5, 10)),
+    ('rh_v1_i', (5, 10)),
     baca.beam_positions(-8.5),
     )
 
 maker(
-    'RHVoiceIInserts',
+    'rh_v1_i',
     baca.scripts_down(),
     )
 
 maker(
-    'RHVoiceII',
+    'rh_v2',
     baca.beam_positions(-4.5),
     baca.dynamics_down(),
     baca.slurs_up(),
@@ -370,66 +370,66 @@ maker(
     )
 
 maker(
-    ('RHVoiceIIInserts', (9, -1)),
+    ('rh_v2_i', (9, -1)),
     baca.beam_positions(17),
     )
 
 maker(
-    ('RHVoiceIIInserts', (1, 4)),
+    ('rh_v2_i', (1, 4)),
     baca.beam_positions(15.5),
     )
 
 maker(
-    ('RHVoiceIIInserts', (6, 8)),
+    ('rh_v2_i', (6, 8)),
     baca.beam_positions(13.5),
     )
 
 maker(
-    'RHVoiceIIInserts',
+    'rh_v2_i',
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    ('LHVoiceIV', (1, 2)),
+    ('lh_v4', (1, 2)),
     baca.beam_positions(-5.5),
     )
 
 maker(
-    ('LHVoiceIV', (6, -1)),
+    ('lh_v4', (6, -1)),
     baca.beam_positions(-4.5),
     )
 
 maker(
-    'LHVoiceIV',
+    'lh_v4',
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    'LHVoiceIVInserts',
+    'lh_v4_i',
     baca.scripts_up(),
     baca.stems_up(),
     )
 
 maker(
-    ('LHVoiceV', (1, 5)),
+    ('lh_v5', (1, 5)),
     baca.beam_positions(-6),
     )
 
 #maker(
-#    ('LHVoiceV', (6, -1)),
+#    ('lh_v5', (6, -1)),
 #    baca.beam_positions(-4.5),
 #    )
 
 maker(
-    'LHVoiceV',
+    'lh_v5',
     baca.scripts_down(),
     baca.stems_down(),
     )
 
 maker(
-    'LHVoiceVInserts',
+    'lh_v5_i',
     baca.scripts_up(),
     baca.stems_up(),
     baca.beam_positions(9),
