@@ -16,9 +16,9 @@
 
 \score {
     <<
-        %{
-        %\include "layout.ly"
-        %}
+        {
+        \include "layout.ly"
+        }
         {
         \include "_segments/segment--.ly"
         \include "_segments/segment-A.ly"
