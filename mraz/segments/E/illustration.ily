@@ -1,19 +1,74 @@
-E_GlobalSkips = {
+F_GlobalSkips = {
     
-    % [E GlobalSkips measure 85]                                         %! SM4
+    % [F GlobalSkips measure 86]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
-    \time 59/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.5                                                 %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             84                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.arrow-width = 0.25                       %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.5                                         %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        84                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.arrow = ##f   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.arrow = ##t          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-fraction = 0.25                     %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 1.5                        %! SM29:METRONOME_MARK_SPANNER
+    \time 29/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 59/16
+    s1 * 29/16
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
             {
             %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
             %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM31:MEASURE_NUMBER_MARKUP
-            %@%             (85)                                         %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             (86)                                         %! SM31:MEASURE_NUMBER_MARKUP
             %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
             %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
             %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
@@ -28,12 +83,217 @@ E_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [E.1]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [F.1]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [3'46'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [3'53'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
+            }
+        }
+%@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
+    
+    % [F GlobalSkips measure 87]                                         %! SM4
+    \newSpacingSection                                                   %! HSS1:SPACING
+    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
+    \time 27/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    s1 * 27/16
+    ^ \markup {
+        \column
+            {
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             (87)                                         %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \make-dark-cyan                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%             <1>                                          %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%             ((2))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [F.2]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
+            %@%             [3'58'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
+            }
+        }
+%@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
+    
+    % [F GlobalSkips measure 88]                                         %! SM4
+    \newSpacingSection                                                   %! HSS1:SPACING
+    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #Y                                                       %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             #DOWN                                                    %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             \note-by-number                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #2                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #0                                                   %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%                 #1.5                                                 %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \upright                                                         %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             =                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%             112                                                      %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         }                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     \hspace                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \fontsize                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #-6                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    \general-align                                       %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #Y                                               %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        #DOWN                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        \note-by-number                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #2                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #0                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                            #1.5                                         %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \upright                                                 %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    {                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        =                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                        112                                              %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    }                                                    %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                \hspace                                                  %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+                    #1                                                   %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+            }                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+        }                                                                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
+    \time 21/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    s1 * 21/16
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
+    ^ \markup {
+        \column
+            {
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             (88)                                         %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \make-dark-cyan                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%             <2>                                          %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%             ((3))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [F.3]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
+            %@%             [4'03'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
+            }
+        }
+%@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
+    
+    % [F GlobalSkips measure 89]                                         %! SM4
+    \newSpacingSection                                                   %! HSS1:SPACING
+    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
+    \time 15/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    s1 * 15/16
+    ^ \markup {
+        \column
+            {
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             (89)                                         %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \make-dark-cyan                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%             <3>                                          %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%             ((4))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [F.4]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
+            %@%             [4'05'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
+            }
+        }
+%@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
+    
+    % [F GlobalSkips measure 90]                                         %! SM4
+    \newSpacingSection                                                   %! HSS1:SPACING
+    \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
+    \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    s1 * 1
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
+    ^ \markup {
+        \column
+            {
+            %@% \line                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM31:MEASURE_NUMBER_MARKUP
+            %@%             (90)                                         %! SM31:MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM31:MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%     {                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@%         \make-dark-cyan                                  %! SM32:MEASURE_INDEX_MARKUP
+            %@%             <4>                                          %! SM32:MEASURE_INDEX_MARKUP
+            %@%     }                                                    %! SM32:MEASURE_INDEX_MARKUP
+            %@% \line                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     {                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%             ((5))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@%     }                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+            %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [F.5]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
+            %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
+            %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
+            %@%             [4'07'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -44,29 +304,77 @@ E_GlobalSkips = {
 }
 
 
-E_RHVoiceI = {
+F_RHVoiceI = {
+    
+    % [F RHVoiceI measure 86]                                    %! SM4
+    \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PianoMusicRHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    s1 * 29/16
+    \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    
+    % [F RHVoiceI measure 87]                                    %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceI measure 88]                                    %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceI measure 89]                                    %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceI measure 90]                                    %! SM4
+    s1 * 1
+    
+}
+
+
+F_RHVoiceIInserts = {
+    
+    % [F RHVoiceIInserts measure 86]                             %! SM4
+    s1 * 29/16
+    
+    % [F RHVoiceIInserts measure 87]                             %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceIInserts measure 88]                             %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceIInserts measure 89]                             %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceIInserts measure 90]                             %! SM4
+    s1 * 1
+    
+}
+
+
+F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [E RHVoiceI measure 85]                            %! SM4
-            \override Beam.positions = #'(6 . 6)                 %! OC1
+            % [F RHVoiceII measure 86]                           %! SM4
+            \override Script.direction = #up                     %! OC1
+            \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \clef "treble"                                       %! SM8:REAPPLIED_CLEF:SM37
-            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-        %@% \override PianoMusicRHStaff.Clef.color = ##f         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-            \set PianoMusicRHStaff.forceClef = ##t               %! SM8:REAPPLIED_CLEF:SM33:SM37
-            \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-            e16
-            \f                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+            fs16
+            -\staccato                                           %! IC
+            \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:SM37
             [
+            (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
         %%%         \concat                                      %! FIGURE_NAME_MARKUP
         %%%             {                                        %! FIGURE_NAME_MARKUP
         %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-1 1.1.1"                         %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 2.2.1"                         %! FIGURE_NAME_MARKUP
         %%%                 \hspace                              %! FIGURE_NAME_MARKUP
         %%%                     #1                               %! FIGURE_NAME_MARKUP
         %%%                 \raise                               %! FIGURE_NAME_MARKUP
@@ -77,448 +385,1068 @@ E_RHVoiceI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            d'16
+            e'16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs16
+            f'16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            d'16
+            af'16
+            -\staccato                                           %! IC
+            )                                                    %! SC
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            f16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
             bf16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            b16
+            -\staccato                                           %! IC
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g''16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            a16
+            a''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            b16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            c'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            d'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            a16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            ef'16
+            d16
+            -\staccato                                           %! IC
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            ef''16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            g16
+            f''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            fs16
+            a16
+            -\staccato                                           %! IC
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            c'16
+            b16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            fs''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            c'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e16
+            -\staccato                                           %! IC
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'16
+            -\staccato                                           %! IC
+            )                                                    %! SC
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b16
+            -\staccato                                           %! IC
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            g16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            b16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            a16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            d'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            f16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            a16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            g16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            ef'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            d'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            c'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            c'16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            bf16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            d'16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            c'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            af16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            ef'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            c'16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            bf16
-        }
-        \scaleDurations #'(1 . 1) {
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            af16
-            
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            d'16
+            g'16
+            -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            e16
+            a'16
+            -\staccato                                           %! IC
             ]
-            \revert Beam.positions                               %! OC2
+            )                                                    %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F RHVoiceII measure 87]                           %! SM4
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
+            d'16
+            -\staccato                                           %! IC
+            [
+            (                                                    %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 2.2.2"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (1)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            cs''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            ef'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            f'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            a'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            fs'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            c''''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            e'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            f'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            ef''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            b''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            g'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            a''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            d'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            cs''''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            af'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            ef''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            f''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
+            a''16
+            -\staccato                                           %! IC
+            ]
+            )                                                    %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F RHVoiceII measure 88]                           %! SM4
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            [
+            (                                                    %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 2.2.3"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (2)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            fs'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            c''''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            e'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            f'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            bf'16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            ef'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            a''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            d'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            cs''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            ef'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            f'16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            a'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
+            g''16
+            -\staccato                                           %! IC
+            ]
+            )                                                    %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F RHVoiceII measure 89]                           %! SM4
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
+            fs''16
+            -\staccato                                           %! IC
+            [
+            (                                                    %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 2.2.4"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (3)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            c'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            e'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            f'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            af''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            ef'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            b''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            a'''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            d''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            cs'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            af'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            bf'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
+            ef''''16
+            -\staccato                                           %! IC
+            ]
+            )                                                    %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F RHVoiceII measure 90]                           %! SM4
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
+            f''16
+            -\staccato                                           %! IC
+            [
+            (                                                    %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 2.2.5"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (4)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            a''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            g'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            fs''''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            c''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            e''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            f''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            af''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            bf''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            ef'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            g''''16
+            -\staccato                                           %! IC
+            )                                                    %! SC
+        }
+        \scaleDurations #'(1 . 1) {
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            b''16
+            -\staccato                                           %! IC
+            (                                                    %! SC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            a'''16
+            -\staccato                                           %! IC
+            
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
+            d''''16
+            -\staccato                                           %! IC
+            ]
+            )                                                    %! SC
+            \revert Script.direction                             %! OC2
+            \revert Slur.direction                               %! OC2
             
         }
     }
 }
 
 
-E_RHVoiceIInserts = {
+F_RHVoiceIIInserts = {
     
-    % [E RHVoiceIInserts measure 85]                             %! SM4
-    s1 * 59/16
+    % [F RHVoiceIIInserts measure 86]                            %! SM4
+    s1 * 29/16
     
-}
-
-
-E_RHVoiceII = {
+    % [F RHVoiceIIInserts measure 87]                            %! SM4
+    s1 * 27/16
     
-    % [E RHVoiceII measure 85]                                   %! SM4
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
-    \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
+    % [F RHVoiceIIInserts measure 88]                            %! SM4
+    s1 * 21/16
     
-}
-
-
-E_RHVoiceIIInserts = {
+    % [F RHVoiceIIInserts measure 89]                            %! SM4
+    s1 * 15/16
     
-    % [E RHVoiceIIInserts measure 85]                            %! SM4
-    s1 * 59/16
+    % [F RHVoiceIIInserts measure 90]                            %! SM4
+    s1 * 1
     
 }
 
 
-E_RHVoiceIII = {
+F_RHVoiceIII = {
     
-    % [E RHVoiceIII measure 85]                                  %! SM4
+    % [F RHVoiceIII measure 86]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
+    s1 * 29/16
     \mp                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     
+    % [F RHVoiceIII measure 87]                                  %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceIII measure 88]                                  %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceIII measure 89]                                  %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceIII measure 90]                                  %! SM4
+    s1 * 1
+    
 }
 
 
-E_RHVoiceIIIInserts = {
+F_RHVoiceIIIInserts = {
     
-    % [E RHVoiceIIIInserts measure 85]                           %! SM4
-    s1 * 59/16
+    % [F RHVoiceIIIInserts measure 86]                           %! SM4
+    s1 * 29/16
+    
+    % [F RHVoiceIIIInserts measure 87]                           %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceIIIInserts measure 88]                           %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceIIIInserts measure 89]                           %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceIIIInserts measure 90]                           %! SM4
+    s1 * 1
     
 }
 
 
-E_RHVoiceIV = {
+F_RHVoiceIV = {
     
-    % [E RHVoiceIV measure 85]                                   %! SM4
+    % [F RHVoiceIV measure 86]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
+    s1 * 29/16
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
-}
-
-
-E_RHVoiceIVInserts = {
+    % [F RHVoiceIV measure 87]                                   %! SM4
+    s1 * 27/16
     
-    % [E RHVoiceIVInserts measure 85]                            %! SM4
-    s1 * 59/16
+    % [F RHVoiceIV measure 88]                                   %! SM4
+    s1 * 21/16
     
-}
-
-
-E_RHVoiceV = {
+    % [F RHVoiceIV measure 89]                                   %! SM4
+    s1 * 15/16
     
-    % [E RHVoiceV measure 85]                                    %! SM4
-    s1 * 59/16
+    % [F RHVoiceIV measure 90]                                   %! SM4
+    s1 * 1
     
 }
 
 
-E_RHVoiceVI = {
+F_RHVoiceIVInserts = {
     
-    % [E RHVoiceVI measure 85]                                   %! SM4
-    s1 * 59/16
+    % [F RHVoiceIVInserts measure 86]                            %! SM4
+    s1 * 29/16
+    
+    % [F RHVoiceIVInserts measure 87]                            %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceIVInserts measure 88]                            %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceIVInserts measure 89]                            %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceIVInserts measure 90]                            %! SM4
+    s1 * 1
     
 }
 
 
-E_RHResonanceVoice = {
+F_RHVoiceV = {
     
-    % [E RHResonanceVoice measure 85]                            %! SM4
-    s1 * 59/16
+    % [F RHVoiceV measure 86]                                    %! SM4
+    s1 * 29/16
+    
+    % [F RHVoiceV measure 87]                                    %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceV measure 88]                                    %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceV measure 89]                                    %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceV measure 90]                                    %! SM4
+    s1 * 1
     
 }
 
 
-E_PianoMusicRHStaff = <<
+F_RHVoiceVI = {
+    
+    % [F RHVoiceVI measure 86]                                   %! SM4
+    s1 * 29/16
+    
+    % [F RHVoiceVI measure 87]                                   %! SM4
+    s1 * 27/16
+    
+    % [F RHVoiceVI measure 88]                                   %! SM4
+    s1 * 21/16
+    
+    % [F RHVoiceVI measure 89]                                   %! SM4
+    s1 * 15/16
+    
+    % [F RHVoiceVI measure 90]                                   %! SM4
+    s1 * 1
+    
+}
+
+
+F_RHResonanceVoice = {
+    
+    % [F RHResonanceVoice measure 86]                            %! SM4
+    s1 * 29/16
+    
+    % [F RHResonanceVoice measure 87]                            %! SM4
+    s1 * 27/16
+    
+    % [F RHResonanceVoice measure 88]                            %! SM4
+    s1 * 21/16
+    
+    % [F RHResonanceVoice measure 89]                            %! SM4
+    s1 * 15/16
+    
+    % [F RHResonanceVoice measure 90]                            %! SM4
+    s1 * 1
+    
+}
+
+
+F_PianoMusicRHStaff = <<
     \context RHVoiceI = "RHVoiceI"
-    \E_RHVoiceI
+    \F_RHVoiceI
     \context RHVoiceIInserts = "RHVoiceIInserts"
-    \E_RHVoiceIInserts
+    \F_RHVoiceIInserts
     \context RHVoiceII = "RHVoiceII"
-    \E_RHVoiceII
+    \F_RHVoiceII
     \context RHVoiceIIInserts = "RHVoiceIIInserts"
-    \E_RHVoiceIIInserts
+    \F_RHVoiceIIInserts
     \context RHVoiceIII = "RHVoiceIII"
-    \E_RHVoiceIII
+    \F_RHVoiceIII
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-    \E_RHVoiceIIIInserts
+    \F_RHVoiceIIIInserts
     \context RHVoiceIV = "RHVoiceIV"
-    \E_RHVoiceIV
+    \F_RHVoiceIV
     \context RHVoiceIVInserts = "RHVoiceIVInserts"
-    \E_RHVoiceIVInserts
+    \F_RHVoiceIVInserts
     \context RHVoiceV = "RHVoiceV"
-    \E_RHVoiceV
+    \F_RHVoiceV
     \context RHVoiceVI = "RHVoiceVI"
-    \E_RHVoiceVI
+    \F_RHVoiceVI
     \context RHResonanceVoice = "RHResonanceVoice"
-    \E_RHResonanceVoice
+    \F_RHResonanceVoice
 >>
 
 
-E_LHVoiceI = {
+F_LHVoiceI = {
     
-    % [E LHVoiceI measure 85]                                    %! SM4
-    s1 * 59/16
+    % [F LHVoiceI measure 86]                                    %! SM4
+    s1 * 29/16
     
-}
-
-
-E_LHVoiceII = {
+    % [F LHVoiceI measure 87]                                    %! SM4
+    s1 * 27/16
     
-    % [E LHVoiceII measure 85]                                   %! SM4
-    s1 * 59/16
+    % [F LHVoiceI measure 88]                                    %! SM4
+    s1 * 21/16
     
-}
-
-
-E_LHVoiceIII = {
+    % [F LHVoiceI measure 89]                                    %! SM4
+    s1 * 15/16
     
-    % [E LHVoiceIII measure 85]                                  %! SM4
-    s1 * 59/16
+    % [F LHVoiceI measure 90]                                    %! SM4
+    s1 * 1
     
 }
 
 
-E_LHVoiceIV = {
+F_LHVoiceII = {
     
-    % [E LHVoiceIV measure 85]                                   %! SM4
+    % [F LHVoiceII measure 86]                                   %! SM4
+    s1 * 29/16
+    
+    % [F LHVoiceII measure 87]                                   %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceII measure 88]                                   %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceII measure 89]                                   %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceII measure 90]                                   %! SM4
+    s1 * 1
+    
+}
+
+
+F_LHVoiceIII = {
+    
+    % [F LHVoiceIII measure 86]                                  %! SM4
+    s1 * 29/16
+    
+    % [F LHVoiceIII measure 87]                                  %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceIII measure 88]                                  %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceIII measure 89]                                  %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceIII measure 90]                                  %! SM4
+    s1 * 1
+    
+}
+
+
+F_LHVoiceIV = {
+    
+    % [F LHVoiceIV measure 86]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
+    s1 * 29/16
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
+    % [F LHVoiceIV measure 87]                                   %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceIV measure 88]                                   %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceIV measure 89]                                   %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceIV measure 90]                                   %! SM4
+    s1 * 1
+    
 }
 
 
-E_LHVoiceIVInserts = {
+F_LHVoiceIVInserts = {
     
-    % [E LHVoiceIVInserts measure 85]                            %! SM4
-    s1 * 59/16
+    % [F LHVoiceIVInserts measure 86]                            %! SM4
+    s1 * 29/16
+    
+    % [F LHVoiceIVInserts measure 87]                            %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceIVInserts measure 88]                            %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceIVInserts measure 89]                            %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceIVInserts measure 90]                            %! SM4
+    s1 * 1
     
 }
 
 
-E_LHVoiceV = {
+F_LHVoiceV = {
     
-    % [E LHVoiceV measure 85]                                    %! SM4
+    % [F LHVoiceV measure 86]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
+    s1 * 29/16
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     
+    % [F LHVoiceV measure 87]                                    %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceV measure 88]                                    %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceV measure 89]                                    %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceV measure 90]                                    %! SM4
+    s1 * 1
+    
 }
 
 
-E_LHVoiceVInserts = {
+F_LHVoiceVInserts = {
     
-    % [E LHVoiceVInserts measure 85]                             %! SM4
-    s1 * 59/16
+    % [F LHVoiceVInserts measure 86]                             %! SM4
+    s1 * 29/16
+    
+    % [F LHVoiceVInserts measure 87]                             %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceVInserts measure 88]                             %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceVInserts measure 89]                             %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceVInserts measure 90]                             %! SM4
+    s1 * 1
     
 }
 
 
-E_LHVoiceVI = {
+F_LHVoiceVI = {
     
-    % [E LHVoiceVI measure 85]                                   %! SM4
+    % [F LHVoiceVI measure 86]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -533,7 +1461,7 @@ E_LHVoiceVI = {
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 59/16
+    s1 * 29/16
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -551,44 +1479,202 @@ E_LHVoiceVI = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-}
-
-
-E_LHVoiceVIInserts = {
+    % [F LHVoiceVI measure 87]                                   %! SM4
+    s1 * 27/16
     
-    % [E LHVoiceVIInserts measure 85]                            %! SM4
-    s1 * 59/16
+    % [F LHVoiceVI measure 88]                                   %! SM4
+    s1 * 21/16
     
-}
-
-
-E_LHResonanceVoice = {
+    % [F LHVoiceVI measure 89]                                   %! SM4
+    s1 * 15/16
     
-    % [E LHResonanceVoice measure 85]                            %! SM4
-    s1 * 59/16
+    % [F LHVoiceVI measure 90]                                   %! SM4
+    s1 * 1
     
 }
 
 
-E_PianoMusicLHStaff = <<
+F_LHVoiceVIInserts = {
+    
+    % [F LHVoiceVIInserts measure 86]                            %! SM4
+    s1 * 29/16
+    
+    % [F LHVoiceVIInserts measure 87]                            %! SM4
+    s1 * 27/16
+    
+    % [F LHVoiceVIInserts measure 88]                            %! SM4
+    s1 * 21/16
+    
+    % [F LHVoiceVIInserts measure 89]                            %! SM4
+    s1 * 15/16
+    
+    % [F LHVoiceVIInserts measure 90]                            %! SM4
+    s1 * 1
+    
+}
+
+
+F_LHResonanceVoice = {
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F LHResonanceVoice measure 86]                    %! SM4
+            <cs,, cs,>1..
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "lhr 2.2.1"                          %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (5)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            <cs,, cs,>16
+            \repeatTie                                           %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F LHResonanceVoice measure 87]                    %! SM4
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
+            <cs,, cs,>1.
+            \repeatTie                                           %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "lhr 2.2.2a"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (6)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            <cs,, cs,>8.
+            \repeatTie                                           %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F LHResonanceVoice measure 88]                    %! SM4
+            <ef,, ef,>1
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "lhr 2.2.3a"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (7)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            <ef,, ef,>4
+            \repeatTie                                           %! SC
+            
+            <ef,, ef,>16
+            \repeatTie                                           %! SC
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F LHResonanceVoice measure 89]                    %! SM4
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
+            <ef,, ef,>2...
+            \repeatTie                                           %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "lhr 2.2.4"                          %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (8)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+        }
+    }
+    {
+        \scaleDurations #'(1 . 1) {
+            
+            % [F LHResonanceVoice measure 90]                    %! SM4
+            <ef,, ef,>1
+            \repeatTie                                           %! SC
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "lhr 2.2.5"                          %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (9)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+        }
+    }
+}
+
+
+F_PianoMusicLHStaff = <<
     \context LHVoiceI = "LHVoiceI"
-    \E_LHVoiceI
+    \F_LHVoiceI
     \context LHVoiceII = "LHVoiceII"
-    \E_LHVoiceII
+    \F_LHVoiceII
     \context LHVoiceIII = "LHVoiceIII"
-    \E_LHVoiceIII
+    \F_LHVoiceIII
     \context LHVoiceIV = "LHVoiceIV"
-    \E_LHVoiceIV
+    \F_LHVoiceIV
     \context LHVoiceIVInserts = "LHVoiceIVInserts"
-    \E_LHVoiceIVInserts
+    \F_LHVoiceIVInserts
     \context LHVoiceV = "LHVoiceV"
-    \E_LHVoiceV
+    \F_LHVoiceV
     \context LHVoiceVInserts = "LHVoiceVInserts"
-    \E_LHVoiceVInserts
+    \F_LHVoiceVInserts
     \context LHVoiceVI = "LHVoiceVI"
-    \E_LHVoiceVI
+    \F_LHVoiceVI
     \context LHVoiceVIInserts = "LHVoiceVIInserts"
-    \E_LHVoiceVIInserts
+    \F_LHVoiceVIInserts
     \context LHResonanceVoice = "LHResonanceVoice"
-    \E_LHResonanceVoice
+    \F_LHResonanceVoice
 >>

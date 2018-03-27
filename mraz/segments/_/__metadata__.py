@@ -36,9 +36,9 @@ metadata = abjad.OrderedDict(
                 'LHResonanceVoice',
                 ],
             ),
-        ('duration', "0'08''"),
-        ('first_measure_number', 143),
-        ('last_measure_number', 146),
+        ('duration', "0'22''"),
+        ('first_measure_number', 1),
+        ('last_measure_number', 9),
         (
             'persistent_indicators',
             abjad.OrderedDict(
@@ -49,7 +49,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='LHVoiceIV',
                                 prototype='abjad.Dynamic',
-                                value='mp',
+                                value='ff',
                                 ),
                             ],
                         ),
@@ -59,7 +59,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='LHVoiceV',
                                 prototype='abjad.Dynamic',
-                                value='p',
+                                value='ppp',
                                 ),
                             ],
                         ),
@@ -77,7 +77,7 @@ metadata = abjad.OrderedDict(
                         'PianoMusicLHStaff',
                         [
                             abjad.Momento(
-                                context='LHVoiceIV',
+                                context='LHVoiceVI',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),
@@ -104,16 +104,6 @@ metadata = abjad.OrderedDict(
                             ],
                         ),
                     (
-                        'RHVoiceI',
-                        [
-                            abjad.Momento(
-                                context='RHVoiceI',
-                                prototype='abjad.Dynamic',
-                                value='f',
-                                ),
-                            ],
-                        ),
-                    (
                         'RHVoiceII',
                         [
                             abjad.Momento(
@@ -129,17 +119,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='RHVoiceIII',
                                 prototype='abjad.Dynamic',
-                                value='pp',
-                                ),
-                            ],
-                        ),
-                    (
-                        'RHVoiceIV',
-                        [
-                            abjad.Momento(
-                                context='RHVoiceIV',
-                                prototype='abjad.Dynamic',
-                                value='p',
+                                value='mf',
                                 ),
                             ],
                         ),
@@ -149,20 +129,20 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='GlobalSkips',
                                 prototype='abjad.MetronomeMark',
-                                value='84',
+                                value='112',
                                 ),
                             abjad.Momento(
                                 context='GlobalSkips',
                                 prototype='abjad.TimeSignature',
-                                value='5/8',
+                                value='1/8',
                                 ),
                             ],
                         ),
                     ]
                 ),
             ),
-        ('segment_name', 'I'),
-        ('segment_number', 9),
+        ('segment_name', '_'),
+        ('segment_number', 1),
         (
             'sounds_during_segment',
             abjad.OrderedDict(
@@ -172,14 +152,14 @@ metadata = abjad.OrderedDict(
                     ('LHVoiceII', False),
                     ('LHVoiceIII', False),
                     ('LHVoiceIV', True),
-                    ('LHVoiceIVInserts', False),
-                    ('LHVoiceV', False),
-                    ('LHVoiceVI', False),
+                    ('LHVoiceIVInserts', True),
+                    ('LHVoiceV', True),
+                    ('LHVoiceVI', True),
                     ('LHVoiceVIInserts', False),
                     ('LHVoiceVInserts', False),
                     ('RHResonanceVoice', False),
-                    ('RHVoiceI', False),
-                    ('RHVoiceII', False),
+                    ('RHVoiceI', True),
+                    ('RHVoiceII', True),
                     ('RHVoiceIII', True),
                     ('RHVoiceIIIInserts', False),
                     ('RHVoiceIIInserts', False),
@@ -191,11 +171,21 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
-        ('start_clock_time', "6'33''"),
-        ('stop_clock_time', "6'41''"),
+        ('start_clock_time', "0'00''"),
+        ('stop_clock_time', "0'22''"),
         (
             'time_signatures',
-            ['9/8', '4/8', '7/8', '5/8'],
+            [
+                '4/4',
+                '2/4',
+                '4/4',
+                '1/8',
+                '4/8',
+                '1/8',
+                '7/8',
+                '16/4',
+                '1/8',
+                ],
             ),
         ]
     )
