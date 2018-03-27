@@ -691,7 +691,6 @@ i_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                           %! SC
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             b'16
             [
@@ -813,7 +812,6 @@ i_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -847,7 +845,6 @@ i_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\fermata                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -878,7 +875,6 @@ i_RHVoiceII = {
             % [_ RHVoiceII measure 8]                            %! SM4
             \override Script.direction = #up                     %! OC1
             \override TextScript.direction = #up                 %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             c'''8
@@ -1645,7 +1641,6 @@ i_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [_ LHVoiceV measure 3]                             %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             bf,,8.

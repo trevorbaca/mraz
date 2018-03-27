@@ -2864,7 +2864,6 @@ C_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override Score.SpanBar.transparent = ##t      %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2891,7 +2890,6 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 36]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \arpeggioArrowUp                                     %! IC
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             <a g' af' b' cs'' f'' ef''' c''''>2.
             -\marcato                                            %! IC
@@ -3071,7 +3069,6 @@ C_RHVoiceII = {
             \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             b'16
             [
@@ -3190,7 +3187,6 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             ef''16
             [
@@ -3305,7 +3301,6 @@ C_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override Score.SpanBar.transparent = ##t      %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3337,7 +3332,6 @@ C_RHVoiceII = {
             \once \override Dots.color = #red
             \once \override NoteHead.color = #red
             \once \override Stem.color = #red
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             <a g' af' b' cs'' f'' ef''' c''''>1.
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
@@ -3384,7 +3378,6 @@ C_RHVoiceII = {
             \once \override Dots.color = #red
             \once \override NoteHead.color = #red
             \once \override Stem.color = #red
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             cs''16
             [
@@ -3593,7 +3586,6 @@ C_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override Score.SpanBar.transparent = ##t      %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3624,7 +3616,6 @@ C_RHVoiceII = {
             \once \override Dots.color = #red
             \once \override NoteHead.color = #red
             \once \override Stem.color = #red
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             <f'' ef''' c'''' e'''' fs'''' bf''''>1
             -\marcato                                            %! IC
@@ -3752,7 +3743,6 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 80]                           %! SM4
             \override Script.direction = #up                     %! OC1
             \override TextScript.direction = #up                 %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 6)
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             c'''8
@@ -3956,7 +3946,6 @@ C_RHVoiceIII = {
             % [C RHVoiceIII measure 34]                          %! SM4
             \override TextScript.direction = #up                 %! OC1
             \override TupletBracket.direction = #up              %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef8
@@ -4008,7 +3997,6 @@ C_RHVoiceIII = {
             
             % [C RHVoiceIII measure 37]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4056,7 +4044,6 @@ C_RHVoiceIII = {
         \times 1/1 {
             
             % [C RHVoiceIII measure 39]                          %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4083,7 +4070,6 @@ C_RHVoiceIII = {
             
             % [C RHVoiceIII measure 40]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             ef'8
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4126,7 +4112,6 @@ C_RHVoiceIII = {
         \times 1/1 {
             
             % [C RHVoiceIII measure 41]                          %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4155,7 +4140,6 @@ C_RHVoiceIII = {
             
             % [C RHVoiceIII measure 56]                          %! SM4
             \override TupletBracket.direction = #down            %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             af'''8
             -\tenuto                                             %! IC
             [
@@ -4201,7 +4185,6 @@ C_RHVoiceIII = {
             % [C RHVoiceIII measure 79]                          %! SM4
             \override TextScript.direction = #up                 %! OC1
             \override TupletBracket.direction = #up              %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5546,7 +5529,6 @@ C_LHVoiceIV = {
             
             % [C LHVoiceIV measure 38]                           %! SM4
             \override Slur.direction = #down                     %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             b'8.
             \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
@@ -5863,7 +5845,6 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 34]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
             \dynamicDown                                         %! IC
             r2.
@@ -5912,7 +5893,6 @@ C_LHVoiceV = {
         \times 1/1 {
             
             % [C LHVoiceV measure 36]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5937,7 +5917,6 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 37]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5984,7 +5963,6 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 39]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r16
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6018,7 +5996,6 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 40]                            %! SM4
             \override Rest.direction = #up                       %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6068,7 +6045,6 @@ C_LHVoiceV = {
         \times 1/1 {
             
             % [C LHVoiceV measure 41]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6093,7 +6069,6 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 42]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 10)
             r16
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7559,7 +7534,6 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 66]                    %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             <e, fs, gs, as, b,>4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7584,7 +7558,6 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 67]                    %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             <e, fs, gs, as, b,>1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP

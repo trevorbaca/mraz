@@ -793,7 +793,6 @@ B_RHVoiceI = {
             
             % [B RHVoiceI measure 31]                            %! SM4
             \ottava #1                                           %! SC
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef''''1..
             -\tenuto                                             %! IC
@@ -821,7 +820,6 @@ B_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceI measure 32]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             f''''1.
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -929,7 +927,6 @@ B_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1012,7 +1009,6 @@ B_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\fermata                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1127,7 +1123,6 @@ B_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1309,7 +1304,6 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                           %! SC
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             b'16
             [
@@ -1477,7 +1471,6 @@ B_RHVoiceIII = {
             
             % [B RHVoiceIII measure 29]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef8
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
