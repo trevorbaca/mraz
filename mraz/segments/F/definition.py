@@ -1,6 +1,7 @@
 import abjad
 import baca
 import mraz
+import os
 
 
 ###############################################################################
@@ -135,6 +136,7 @@ maker = baca.SegmentMaker(
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
     range_checker=abjad.Piano().pitch_range,
+    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     spacing=spacing,
     time_signatures=accumulator.time_signatures,

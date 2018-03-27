@@ -367,3 +367,41 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._assert_matching_custom_context_names(score)
         self._validate_voice_names(score)
         return score
+
+    ### PUBLIC PROPERTIES ###
+
+    @property
+    def voice_abbreviations(self):
+        r'''Gets voice abbreviations.
+
+        ..  container:: example
+
+            >>> score_template = mraz.ScoreTemplate()
+            >>> abjad.f(score_template.voice_abbreviations)
+            abjad.OrderedDict(
+                [
+                    ('rh_v1', 'RHVoiceI'),
+                    ('rh_v1_i', 'RHVoiceIInserts'),
+                    ('rh_v2', 'RHVoiceII'),
+                    ('rh_v2_i', 'RHVoiceIIInserts'),
+                    ('rh_v3', 'RHVoiceIII'),
+                    ('rh_v3_i', 'RHVoiceIIIInserts'),
+                    ('rh_v4', 'RHVoiceIV'),
+                    ('rh_v5', 'RHVoiceV'),
+                    ('rh_v6', 'RHVoiceVI'),
+                    ('rh_resonance', 'RHResonanceVoice'),
+                    ('lh_v1', 'LHVoiceI'),
+                    ('lh_v2', 'LHVoiceII'),
+                    ('lh_v3', 'LHVoiceIII'),
+                    ('lh_v4', 'LHVoiceIV'),
+                    ('lh_v4_i', 'LHVoiceIVInserts'),
+                    ('lh_v5', 'LHVoiceV'),
+                    ('lh_v5_i', 'LHVoiceVInserts'),
+                    ('lh_v6', 'LHVoiceVI'),
+                    ('lh_v6_i', 'LHVoiceVIInserts'),
+                    ('lh_resonance', 'LHResonanceVoice'),
+                    ]
+                )
+
+        '''
+        return super(ScoreTemplate, self).voice_abbreviations
