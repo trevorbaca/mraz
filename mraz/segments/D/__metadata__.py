@@ -36,9 +36,9 @@ metadata = abjad.OrderedDict(
                 'LHResonanceVoice',
                 ],
             ),
-        ('duration', "0'07''"),
+        ('duration', "0'16''"),
         ('first_measure_number', 85),
-        ('last_measure_number', 85),
+        ('last_measure_number', 89),
         (
             'persistent_indicators',
             abjad.OrderedDict(
@@ -154,7 +154,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='GlobalSkips',
                                 prototype='abjad.TimeSignature',
-                                value='59/16',
+                                value='4/4',
                                 ),
                             ],
                         ),
@@ -167,7 +167,7 @@ metadata = abjad.OrderedDict(
             'sounds_during_segment',
             abjad.OrderedDict(
                 [
-                    ('LHResonanceVoice', False),
+                    ('LHResonanceVoice', True),
                     ('LHVoiceI', False),
                     ('LHVoiceII', False),
                     ('LHVoiceIII', False),
@@ -178,8 +178,8 @@ metadata = abjad.OrderedDict(
                     ('LHVoiceVIInserts', False),
                     ('LHVoiceVInserts', False),
                     ('RHResonanceVoice', False),
-                    ('RHVoiceI', True),
-                    ('RHVoiceII', False),
+                    ('RHVoiceI', False),
+                    ('RHVoiceII', True),
                     ('RHVoiceIII', False),
                     ('RHVoiceIIIInserts', False),
                     ('RHVoiceIIInserts', False),
@@ -192,10 +192,10 @@ metadata = abjad.OrderedDict(
                 ),
             ),
         ('start_clock_time', "3'46''"),
-        ('stop_clock_time', "3'53''"),
+        ('stop_clock_time', "4'02''"),
         (
             'time_signatures',
-            ['59/16'],
+            ['29/16', '27/16', '21/16', '15/16', '4/4'],
             ),
         ]
     )
