@@ -17,7 +17,7 @@ collections_6 = collection_maker.make_segment_6_collections()
 collections_7 = collection_maker.make_segment_7_collections()
 collections_8 = collection_maker.make_segment_8_collections()
 
-##################################### [B1] ####################################
+##################################### [_] #####################################
 
 accumulator(
     'rh_v1',

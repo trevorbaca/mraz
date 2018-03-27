@@ -5,7 +5,7 @@ import os
 
 
 ###############################################################################
-##################################### [8] #####################################
+##################################### [A] #####################################
 ###############################################################################
 
 accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
@@ -276,21 +276,14 @@ maker = baca.SegmentMaker(
 
 accumulator.populate_segment_maker(maker)
 
-###############################################################################
-############################# CROSS-STAGE COMMANDS ############################
-###############################################################################
-
 maker(
     'lh_v5',
-    #abjad.label().with_indices(),
-    #abjad.label().with_pitches(),
     baca.ottava_bassa(),
     baca.tuplet_brackets_up(),
     )
 
 maker(
     'lh_v6',
-    #abjad.label().with_pitches(),
     baca.scripts_down(),
     baca.stems_down(),
     baca.tenuti(),
