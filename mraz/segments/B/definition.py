@@ -26,7 +26,7 @@ accumulator(
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'RHVoiceIVInserts',
+        'rh_v4_i',
         [14, 18],
         baca.flags(),
         ),
@@ -72,7 +72,7 @@ accumulator(
     baca.dynamic('p'),
     baca.register(6, 6+10),
     baca.imbricate(
-        'RHVoiceIVInserts',
+        'rh_v4_i',
         [14, 18],
         baca.flags(),
         ),
@@ -314,7 +314,7 @@ maker(
     )
 
 maker(
-    'RHVoiceIVInserts',
+    'rh_v4_i',
     baca.stems_up(),
     )
 
