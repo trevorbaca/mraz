@@ -16,17 +16,17 @@
 
 \score {
     <<
-        {
-        \include "layout.ly"
-        }
+        %{
+        %\include "layout.ly"
+        %}
         {
         \include "_segments/segment--.ly"
-        \include "_segments/segment-A.ly"
-        \include "_segments/segment-B.ly"
-        \include "_segments/segment-C.ly"
-        \include "_segments/segment-D.ly"
-        \include "_segments/segment-E.ly"
-        \include "_segments/segment-F.ly"
+        %\include "_segments/segment-A.ly"
+        %\include "_segments/segment-B.ly"
+        %\include "_segments/segment-C.ly"
+        %\include "_segments/segment-D.ly"
+        %\include "_segments/segment-E.ly"
+        %\include "_segments/segment-F.ly"
         }
     >>
 }

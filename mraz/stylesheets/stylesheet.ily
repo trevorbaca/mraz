@@ -14,6 +14,7 @@
             \fontsize #3
             \override #'(font-name . "Palatino")
             \concat {
+                \override #'(font-name . "Palatino Italic")
                 Mráz
                 \hspace #3
                 —
@@ -58,7 +59,7 @@
             \null
             \override #'(font-name . "Palatino Italic")
             \fontsize #3 {
-               " for Jared Redmond (Berkeley Premiere)"
+               "for Jared Redmond"
             }
         }
     }
@@ -66,7 +67,7 @@
 
 \layout {
     \accidentalStyle neo-modern
-    indent = 5
+    indent = 0
     ragged-bottom = ##t
     ragged-last = ##t
     ragged-right = ##t
