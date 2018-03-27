@@ -98,11 +98,9 @@ class MusicAccumulator(baca.MusicAccumulator):
 
     ### INITIALIZER ###
 
-    #def __init__(self, score_template, segment_directory):
     def __init__(self, score_template):
         import mraz
         superclass = super(MusicAccumulator, self)
-        #superclass.__init__(score_template, segment_directory)
         superclass.__init__(score_template)
         self._music_maker = mraz.music_maker()
 
