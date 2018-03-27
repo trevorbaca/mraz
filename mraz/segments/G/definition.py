@@ -5,331 +5,131 @@ import os
 
 
 ###############################################################################
-##################################### [5] #####################################
+##################################### [6] #####################################
 ###############################################################################
 
 accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
 collection_maker = mraz.CollectionMaker()
-collections = collection_maker.make_segment_5_collections()
+collections = collection_maker.make_segment_6_collections()
 
-#################################### [5.1] ####################################
-
-accumulator(
-    'rh_v2',
-    collections['stage 1']['rh'].next(exhausted=True),
-    baca.accents(),
-    baca.dynamic('fff'),
-    baca.dynamics_up(),
-    baca.flags(),
-    baca.markup('(black voice louder; green voice longer)'),
-    baca.proportional_notation_duration((1, 6)),
-    baca.register(20, 36),
-    baca.rests_up(),
-    baca.scripts_up(),
-    baca.text_scripts_up(),
-    counts=[2, -14],
-    figure_name='rh-2 5.1.1',
-    )
+#################################### [6.1] ####################################
 
 accumulator(
     'rh_v3',
-    collections['stage 1']['lh'].next(exhausted=True),
-    baca.anchor('rh_v2'),
-    baca.dynamic('mf'),
+    collections['stage 1']['rh'].next(2),
+    baca.dynamic('pp'),
     baca.flags(),
-    baca.markup('(first note A5)'),
-    baca.ottava(),
-    baca.register(10, 26),
-    baca.rests_down(),
+    baca.register(24, 12),
+    baca.rests_after([1]),
+    baca.staccati(),
     baca.tenuti(),
-    baca.tuplet_brackets_down(),
-    counts=[4, -4],
-    figure_name='rh-3 5.1.1',
-    time_treatments=[abjad.Duration(16, 4)],
-    tuplet_denominator=abjad.Duration(1, 1),
+    denominator=8,
+    figure_name='rh-3 6.1.1',
+    talea_denominator=8,
+    thread=True,
+    time_treatments=[1, 0],
     )
-
-#################################### [5.2] ####################################
 
 accumulator(
     'rh_v3',
-    collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
+    collections['stage 1']['rh'].next(),
+    baca.flags(),
+    baca.register(24, 12),
+    baca.staccati(),
+    baca.tenuti(),
+    denominator=8,
+    figure_name='rh-3 6.1.2',
+    talea_denominator=8,
+    thread=True,
+    time_treatments=[1, 0],
+    )
+
+accumulator(
+    'rh_v3',
+    collections['stage 1']['rh'].next(),
+    baca.flags(),
+    baca.register(24, 12),
+    baca.rests_around([1], [1]),
+    baca.staccati(),
+    baca.tenuti(),
+    denominator=8,
+    figure_name='rh-3 6.1.3',
+    talea_denominator=8,
+    )
+
+accumulator(
+    'rh_v3',
+    collections['stage 1']['rh'].next(exhausted=True),
+    baca.flags(),
+    baca.register(12, 24),
+    baca.staccati(),
+    baca.tenuti(),
+    denominator=8,
+    figure_name='rh-3 6.1.4',
+    talea_denominator=8,
+    time_treatments=[1],
+    )
+
+accumulator(
+    'lh_v4',
+    collections['stage 1']['lh'].next(),
+    baca.anchor(
+        'rh_v3',
+        baca.note(3),
+        baca.note(2),
+        ),
     baca.dynamic('mp'),
-    baca.imbricate(
-        'rh_v2',
-        [8, 6],
-        baca.beam_everything(),
-        baca.dynamic('fff'),
-        extend_beam=True,
-        hocket=True,
-        ),
-    baca.nest('-1/4'),
-    baca.proportional_notation_duration((1, 16)),
-    baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.tuplet_brackets_down(),
-    counts=[2],
-    figure_name='rh-3 5.2.1',
-    thread=True,
-    time_treatments=[-2, -2, 0],
-    )
-
-accumulator(
-    'rh_v3',
-    [abjad.Rest((1, 4))],
-    baca.line_break(),
-    baca.proportional_notation_duration((1, 4)),
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.short_fermata(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-3 5.2.2',
-    )
-
-accumulator(
-    'rh_v3',
-    collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
-    baca.imbricate(
-        'rh_v2',
-        [12, 13, 16, 3],
-        baca.beam_everything(),
-        hocket=True,
-        ),
-    baca.nest('-1/4'),
-    baca.proportional_notation_duration((1, 16)),
-    baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.tuplet_brackets_down(),
-    counts=[2],
-    figure_name='rh-3 5.2.3',
-    thread=True,
-    time_treatments=[-2, 0, -2],
-    )
-
-accumulator(
-    'rh_v3',
-    [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 4)),
-    baca.script_color('black'),
-    baca.short_fermata(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-3 5.2.4',
-    )
-
-accumulator(
-    'rh_v3',
-    collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
-    baca.imbricate(
-        'rh_v2',
-        [18, 15, 17, 16, 5, 8],
-        baca.beam_everything(),
-        extend_beam=True,
-        hocket=True,
-        ),
-    baca.nest('-3/8'),
-    baca.proportional_notation_duration((1, 16)),
-    baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.tuplet_brackets_down(),
-    counts=[2],
-    figure_name='rh-3 5.2.5',
-    thread=True,
-    time_treatments=[0, -2, -2],
-    )
-
-accumulator(
-    'rh_v3',
-    [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 4)),
-    baca.script_color('black'),
-    baca.short_fermata(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-3 5.2.6',
-    )
-
-accumulator(
-    'rh_v3',
-    collections['stage 2']['rh'].next(6),
-    baca.beam_divisions(),
-    baca.imbricate(
-        'rh_v2',
-        [22, 20, 19, 18, 21, 12, 11, 15],
-        baca.beam_everything(),
-        hocket=True,
-        ),
-    baca.nest('-3/8'),
-    baca.proportional_notation_duration((1, 16)),
-    baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.tuplet_brackets_down(),
-    counts=[2],
-    figure_name='rh-3 5.2.7',
-    thread=True,
-    time_treatments=[-2, -2, 0],
-    )
-
-accumulator(
-    'rh_v3',
-    [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 4)),
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.short_fermata(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-3 5.2.8',
-    )
-
-accumulator(
-    'rh_v3',
-    collections['stage 2']['rh'].next(3, exhausted=True),
-    baca.beam_divisions(),
-    baca.imbricate(
-        'rh_v2',
-        [15, 11, 6, 5],
-        baca.beam_everything(),
-        hocket=True,
-        ),
-    baca.nest('-1/4'),
-    baca.proportional_notation_duration((1, 24)),
-    baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.tuplet_brackets_down(),
-    baca.tuplet_bracket_staff_padding(3),
-    counts=[2],
-    figure_name='rh-3 5.2.9',
-    thread=True,
-    time_treatments=[-2, 0, -2],
-    )
-
-accumulator(
-    'rh_v3',
-    [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 4)),
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.short_fermata(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-3 5.2.10',
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.anchor_to_figure('rh-3 5.2.3'),
-    baca.clef('bass'),
-    baca.dynamic('p'),
     baca.flags(),
-    baca.register(6, -24),
-    baca.rests_around([8, 8, 8], [6]),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.slurs_down(),
-    counts=[3, -3],
-    figure_name='lh-4 5.2.1',
-    hide_time_signature=True,
+    baca.register(0, 12),
+    baca.tenuti(),
+    counts=[1, -1],
+    figure_name='lh-4 6.1.1',
+    time_treatments=[1],
     )
 
 accumulator(
     'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.anchor_to_figure('rh-3 5.2.5'),
+    collections['stage 1']['lh'].next(),
+    baca.anchor(
+        'rh_v3',
+        baca.note(9),
+        baca.note(2),
+        ),
     baca.flags(),
-    baca.register(6, -24),
-    baca.rests_before([8, 8]),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.slurs_down(),
-    counts=[3, -1],
-    figure_name='lh-4 5.2.2',
-    hide_time_signature=True,
+    baca.register(0, 12),
+    baca.tenuti(),
+    counts=[1, -2],
+    figure_name='lh-4 6.1.2',
+    time_treatments=[2],
     )
 
 accumulator(
     'lh_v4',
-    collections['stage 2']['lh'].next(),
+    collections['stage 1']['lh'].next(),
+    baca.anchor(
+        'rh_v3',
+        baca.note(13),
+        baca.note(1),
+        ),
     baca.flags(),
-    baca.register(6, -24),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[3, -1],
-    figure_name='lh-4 5.2.3',
+    baca.register(0, 12),
+    baca.tenuti(),
+    counts=[2, -1],
+    figure_name='lh-4 6.1.3',
     hide_time_signature=True,
+    talea_denominator=32,
     )
 
 accumulator(
     'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.anchor_to_figure('rh-3 5.2.7'),
+    collections['stage 1']['lh'].next(exhausted=True),
     baca.flags(),
-    baca.register(0, -24),
-    baca.map(baca.slur(), baca.tuplets()),
-    baca.slurs_down(),
-    counts=[3, -1],
-    figure_name='lh-4 5.2.4',
+    baca.register(12, 0),
+    baca.tenuti(),
+    counts=[2, -1],
+    figure_name='lh-4 6.1.4',
     hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
-    baca.register(0, -24),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[3],
-    figure_name='lh-4 5.2.5',
-    hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
-    baca.register(0, -24),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[3],
-    figure_name='lh-4 5.2.6',
-    hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
-    baca.register(-6, -48),
-    baca.rests_around([3], [4, 4, 4]),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[3],
-    figure_name='lh-4 5.2.7',
-    hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(),
-    baca.anchor_to_figure('rh-3 5.2.9'),
-    baca.beam_divisions(),
-    baca.register(-6, -36),
-    baca.rests_before([14]),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[2],
-    figure_name='lh-4 5.2.8',
-    hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v4',
-    collections['stage 2']['lh'].next(exhausted=True),
-    baca.beam_divisions(),
-    baca.register(-6, -36),
-    baca.map(baca.slur(), baca.tuplets()),
-    counts=[2],
-    figure_name='lh-4 5.2.9',
-    hide_time_signature=True,
+    talea_denominator=32,
     )
 
 ###############################################################################
@@ -338,18 +138,6 @@ accumulator(
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks['84']),
-    (1, abjad.Accelerando()),
-    (2, mraz.metronome_marks['112']),
-    (2, abjad.Ritardando()),
-    (3, mraz.metronome_marks['84']),
-    (3, abjad.Accelerando()),
-    (5, mraz.metronome_marks['112']),
-    (5, abjad.Ritardando()),
-    (7, mraz.metronome_marks['84']),
-    (7, abjad.Accelerando()),
-    (9, mraz.metronome_marks['112']),
-    (9, abjad.Ritardando()),
-    (11, mraz.metronome_marks['84']),
     ])
 
 spacing = baca.HorizontalSpacingSpecifier(
@@ -360,19 +148,17 @@ spacing = baca.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 maker = baca.SegmentMaker(
-    #allow_empty_selections=True,
-    color_octaves=False,
+    color_octaves=True,
     color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=False,
-    final_bar_line=abjad.Exact,
-    ignore_repeat_pitch_classes=True,
+    color_repeat_pitch_classes=True,
+    ignore_repeat_pitch_classes=False,
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     range_checker=abjad.Piano().pitch_range,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
-    #spacing=spacing,
+    spacing=spacing,
     time_signatures=accumulator.time_signatures,
     )
 
@@ -383,15 +169,9 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 maker(
-    ('rh_v2', (2, -1)),
-    baca.accents(),
-    baca.beam_positions(10.5),
-    baca.scripts_up(),
-    baca.stems_up(),
+    'rh_v3',
     )
 
 maker(
-    ('lh_v4', (2, -1)),
-    baca.staccati(),
-    baca.tenuti(),
+    'lh_v4',
     )
