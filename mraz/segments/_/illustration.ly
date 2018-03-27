@@ -17,16 +17,16 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \A_GlobalSkips
+                \i_GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
                 <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
-                    \A_PianoMusicRHStaff
+                    \i_PianoMusicRHStaff
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
-                    \A_PianoMusicLHStaff
+                    \i_PianoMusicLHStaff
                 >>
             }
         >>

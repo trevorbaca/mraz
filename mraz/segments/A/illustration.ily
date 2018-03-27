@@ -1,6 +1,6 @@
-B_GlobalSkips = {
+A_GlobalSkips = {
     
-    % [B GlobalSkips measure 10]                                         %! SM4
+    % [A GlobalSkips measure 10]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
@@ -79,7 +79,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.1]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.1]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -90,7 +90,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 11]                                         %! SM4
+    % [A GlobalSkips measure 11]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -117,7 +117,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.2]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.2]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -128,7 +128,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 12]                                         %! SM4
+    % [A GlobalSkips measure 12]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -207,7 +207,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.3]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.3]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -218,7 +218,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 13]                                         %! SM4
+    % [A GlobalSkips measure 13]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -245,7 +245,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.4]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.4]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -256,7 +256,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 14]                                         %! SM4
+    % [A GlobalSkips measure 14]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -335,7 +335,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.5]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.5]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -346,7 +346,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 15]                                         %! SM4
+    % [A GlobalSkips measure 15]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -425,7 +425,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.6]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.6]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -436,7 +436,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 16]                                         %! SM4
+    % [A GlobalSkips measure 16]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -463,7 +463,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.7]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.7]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -474,7 +474,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 17]                                         %! SM4
+    % [A GlobalSkips measure 17]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 6/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -501,7 +501,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.8]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.8]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -512,7 +512,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 18]                                         %! SM4
+    % [A GlobalSkips measure 18]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 21/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -539,7 +539,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.9]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.9]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -550,7 +550,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 19]                                         %! SM4
+    % [A GlobalSkips measure 19]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -685,7 +685,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.10]                                       %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.10]                                       %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -696,7 +696,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 20]                                         %! SM4
+    % [A GlobalSkips measure 20]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 6/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -723,7 +723,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.11]                                       %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.11]                                       %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -734,7 +734,7 @@ B_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [B GlobalSkips measure 21]                                         %! SM4
+    % [A GlobalSkips measure 21]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
@@ -763,7 +763,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [B.12]                                       %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [A.12]                                       %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -779,9 +779,9 @@ B_GlobalSkips = {
 }
 
 
-B_RHVoiceI = {
+A_RHVoiceI = {
     
-    % [B RHVoiceI measure 10]                                    %! SM4
+    % [A RHVoiceI measure 10]                                    %! SM4
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -791,7 +791,7 @@ B_RHVoiceI = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 19]                            %! SM4
+            % [A RHVoiceI measure 19]                            %! SM4
             \ottava #1                                           %! SC
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -820,7 +820,7 @@ B_RHVoiceI = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 20]                            %! SM4
+            % [A RHVoiceI measure 20]                            %! SM4
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             f''''1.
             -\tenuto                                             %! IC
@@ -846,7 +846,7 @@ B_RHVoiceI = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 21]                            %! SM4
+            % [A RHVoiceI measure 21]                            %! SM4
             bf''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -873,50 +873,50 @@ B_RHVoiceI = {
 }
 
 
-B_RHVoiceIInserts = {
+A_RHVoiceIInserts = {
     
-    % [B RHVoiceIInserts measure 10]                             %! SM4
+    % [A RHVoiceIInserts measure 10]                             %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIInserts measure 11]                             %! SM4
+    % [A RHVoiceIInserts measure 11]                             %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIInserts measure 12]                             %! SM4
+    % [A RHVoiceIInserts measure 12]                             %! SM4
     s1 * 5/16
     
-    % [B RHVoiceIInserts measure 13]                             %! SM4
+    % [A RHVoiceIInserts measure 13]                             %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIInserts measure 14]                             %! SM4
+    % [A RHVoiceIInserts measure 14]                             %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIInserts measure 15]                             %! SM4
+    % [A RHVoiceIInserts measure 15]                             %! SM4
     s1 * 5/8
     
-    % [B RHVoiceIInserts measure 16]                             %! SM4
+    % [A RHVoiceIInserts measure 16]                             %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIInserts measure 17]                             %! SM4
+    % [A RHVoiceIInserts measure 17]                             %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIInserts measure 18]                             %! SM4
+    % [A RHVoiceIInserts measure 18]                             %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIInserts measure 19]                             %! SM4
+    % [A RHVoiceIInserts measure 19]                             %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIInserts measure 20]                             %! SM4
+    % [A RHVoiceIInserts measure 20]                             %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIInserts measure 21]                             %! SM4
+    % [A RHVoiceIInserts measure 21]                             %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceII = {
+A_RHVoiceII = {
     
-    % [B RHVoiceII measure 10]                                   %! SM4
+    % [A RHVoiceII measure 10]                                   %! SM4
     \override Slur.direction = #up                               %! OC1
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 1/2
@@ -925,7 +925,7 @@ B_RHVoiceII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 1/1 {
             
-            % [B RHVoiceII measure 11]                           %! SM4
+            % [A RHVoiceII measure 11]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
@@ -954,7 +954,7 @@ B_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 12]                           %! SM4
+            % [A RHVoiceII measure 12]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1008,7 +1008,7 @@ B_RHVoiceII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 1/1 {
             
-            % [B RHVoiceII measure 13]                           %! SM4
+            % [A RHVoiceII measure 13]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
@@ -1035,12 +1035,12 @@ B_RHVoiceII = {
         }
     }
     
-    % [B RHVoiceII measure 14]                                   %! SM4
+    % [A RHVoiceII measure 14]                                   %! SM4
     s1 * 1/2
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 15]                           %! SM4
+            % [A RHVoiceII measure 15]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -1123,7 +1123,7 @@ B_RHVoiceII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 1/1 {
             
-            % [B RHVoiceII measure 16]                           %! SM4
+            % [A RHVoiceII measure 16]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
@@ -1150,12 +1150,12 @@ B_RHVoiceII = {
         }
     }
     
-    % [B RHVoiceII measure 17]                                   %! SM4
+    % [A RHVoiceII measure 17]                                   %! SM4
     s1 * 3/2
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 18]                           %! SM4
+            % [A RHVoiceII measure 18]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -1298,12 +1298,12 @@ B_RHVoiceII = {
         }
     }
     
-    % [B RHVoiceII measure 19]                                   %! SM4
+    % [A RHVoiceII measure 19]                                   %! SM4
     s1 * 13/4
     {
         \times 4/5 {
             
-            % [B RHVoiceII measure 21]                           %! SM4
+            % [A RHVoiceII measure 21]                           %! SM4
             \override DynamicLineSpanner.staff-padding = #'8     %! OC1
             \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
@@ -1424,50 +1424,50 @@ B_RHVoiceII = {
 }
 
 
-B_RHVoiceIIInserts = {
+A_RHVoiceIIInserts = {
     
-    % [B RHVoiceIIInserts measure 10]                            %! SM4
+    % [A RHVoiceIIInserts measure 10]                            %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIIInserts measure 11]                            %! SM4
+    % [A RHVoiceIIInserts measure 11]                            %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIInserts measure 12]                            %! SM4
+    % [A RHVoiceIIInserts measure 12]                            %! SM4
     s1 * 5/16
     
-    % [B RHVoiceIIInserts measure 13]                            %! SM4
+    % [A RHVoiceIIInserts measure 13]                            %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIInserts measure 14]                            %! SM4
+    % [A RHVoiceIIInserts measure 14]                            %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIIInserts measure 15]                            %! SM4
+    % [A RHVoiceIIInserts measure 15]                            %! SM4
     s1 * 5/8
     
-    % [B RHVoiceIIInserts measure 16]                            %! SM4
+    % [A RHVoiceIIInserts measure 16]                            %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIInserts measure 17]                            %! SM4
+    % [A RHVoiceIIInserts measure 17]                            %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIIInserts measure 18]                            %! SM4
+    % [A RHVoiceIIInserts measure 18]                            %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIIInserts measure 19]                            %! SM4
+    % [A RHVoiceIIInserts measure 19]                            %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIIInserts measure 20]                            %! SM4
+    % [A RHVoiceIIInserts measure 20]                            %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIIInserts measure 21]                            %! SM4
+    % [A RHVoiceIIInserts measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceIII = {
+A_RHVoiceIII = {
     
-    % [B RHVoiceIII measure 10]                                  %! SM4
+    % [A RHVoiceIII measure 10]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 37/16
     \mf                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -1475,7 +1475,7 @@ B_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
             
-            % [B RHVoiceIII measure 17]                          %! SM4
+            % [A RHVoiceIII measure 17]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1514,68 +1514,68 @@ B_RHVoiceIII = {
         }
     }
     
-    % [B RHVoiceIII measure 18]                                  %! SM4
+    % [A RHVoiceIII measure 18]                                  %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIII measure 19]                                  %! SM4
+    % [A RHVoiceIII measure 19]                                  %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIII measure 20]                                  %! SM4
+    % [A RHVoiceIII measure 20]                                  %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIII measure 21]                                  %! SM4
+    % [A RHVoiceIII measure 21]                                  %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceIIIInserts = {
+A_RHVoiceIIIInserts = {
     
-    % [B RHVoiceIIIInserts measure 10]                           %! SM4
+    % [A RHVoiceIIIInserts measure 10]                           %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIIIInserts measure 11]                           %! SM4
+    % [A RHVoiceIIIInserts measure 11]                           %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIIInserts measure 12]                           %! SM4
+    % [A RHVoiceIIIInserts measure 12]                           %! SM4
     s1 * 5/16
     
-    % [B RHVoiceIIIInserts measure 13]                           %! SM4
+    % [A RHVoiceIIIInserts measure 13]                           %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIIInserts measure 14]                           %! SM4
+    % [A RHVoiceIIIInserts measure 14]                           %! SM4
     s1 * 1/2
     
-    % [B RHVoiceIIIInserts measure 15]                           %! SM4
+    % [A RHVoiceIIIInserts measure 15]                           %! SM4
     s1 * 5/8
     
-    % [B RHVoiceIIIInserts measure 16]                           %! SM4
+    % [A RHVoiceIIIInserts measure 16]                           %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIIIInserts measure 17]                           %! SM4
+    % [A RHVoiceIIIInserts measure 17]                           %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIIIInserts measure 18]                           %! SM4
+    % [A RHVoiceIIIInserts measure 18]                           %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIIIInserts measure 19]                           %! SM4
+    % [A RHVoiceIIIInserts measure 19]                           %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIIIInserts measure 20]                           %! SM4
+    % [A RHVoiceIIIInserts measure 20]                           %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIIIInserts measure 21]                           %! SM4
+    % [A RHVoiceIIIInserts measure 21]                           %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceIV = {
+A_RHVoiceIV = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIV measure 10]                           %! SM4
+            % [A RHVoiceIV measure 10]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1627,13 +1627,13 @@ B_RHVoiceIV = {
         }
     }
     
-    % [B RHVoiceIV measure 11]                                   %! SM4
+    % [A RHVoiceIV measure 11]                                   %! SM4
     s1 * 9/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIV measure 14]                           %! SM4
+            % [A RHVoiceIV measure 14]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1685,38 +1685,38 @@ B_RHVoiceIV = {
         }
     }
     
-    % [B RHVoiceIV measure 15]                                   %! SM4
+    % [A RHVoiceIV measure 15]                                   %! SM4
     s1 * 5/8
     
-    % [B RHVoiceIV measure 16]                                   %! SM4
+    % [A RHVoiceIV measure 16]                                   %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIV measure 17]                                   %! SM4
+    % [A RHVoiceIV measure 17]                                   %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIV measure 18]                                   %! SM4
+    % [A RHVoiceIV measure 18]                                   %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIV measure 19]                                   %! SM4
+    % [A RHVoiceIV measure 19]                                   %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIV measure 20]                                   %! SM4
+    % [A RHVoiceIV measure 20]                                   %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIV measure 21]                                   %! SM4
+    % [A RHVoiceIV measure 21]                                   %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceIVInserts = {
+A_RHVoiceIVInserts = {
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIVInserts measure 10]                    %! SM4
+            % [A RHVoiceIVInserts measure 10]                    %! SM4
             \override Stem.direction = #up                       %! OC1
             d''16
             
@@ -1736,7 +1736,7 @@ B_RHVoiceIVInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [B RHVoiceIVInserts measure 11]                            %! SM4
+    % [A RHVoiceIVInserts measure 11]                            %! SM4
     s1 * 9/16
     {
         \override TupletBracket.stencil = ##f
@@ -1744,7 +1744,7 @@ B_RHVoiceIVInserts = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIVInserts measure 14]                    %! SM4
+            % [A RHVoiceIVInserts measure 14]                    %! SM4
             d''16
             
             s16
@@ -1764,229 +1764,229 @@ B_RHVoiceIVInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [B RHVoiceIVInserts measure 15]                            %! SM4
+    % [A RHVoiceIVInserts measure 15]                            %! SM4
     s1 * 5/8
     
-    % [B RHVoiceIVInserts measure 16]                            %! SM4
+    % [A RHVoiceIVInserts measure 16]                            %! SM4
     s1 * 1/8
     
-    % [B RHVoiceIVInserts measure 17]                            %! SM4
+    % [A RHVoiceIVInserts measure 17]                            %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIVInserts measure 18]                            %! SM4
+    % [A RHVoiceIVInserts measure 18]                            %! SM4
     s1 * 21/16
     
-    % [B RHVoiceIVInserts measure 19]                            %! SM4
+    % [A RHVoiceIVInserts measure 19]                            %! SM4
     s1 * 7/4
     
-    % [B RHVoiceIVInserts measure 20]                            %! SM4
+    % [A RHVoiceIVInserts measure 20]                            %! SM4
     s1 * 3/2
     
-    % [B RHVoiceIVInserts measure 21]                            %! SM4
+    % [A RHVoiceIVInserts measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceV = {
+A_RHVoiceV = {
     
-    % [B RHVoiceV measure 10]                                    %! SM4
+    % [A RHVoiceV measure 10]                                    %! SM4
     s1 * 1/2
     
-    % [B RHVoiceV measure 11]                                    %! SM4
+    % [A RHVoiceV measure 11]                                    %! SM4
     s1 * 1/8
     
-    % [B RHVoiceV measure 12]                                    %! SM4
+    % [A RHVoiceV measure 12]                                    %! SM4
     s1 * 5/16
     
-    % [B RHVoiceV measure 13]                                    %! SM4
+    % [A RHVoiceV measure 13]                                    %! SM4
     s1 * 1/8
     
-    % [B RHVoiceV measure 14]                                    %! SM4
+    % [A RHVoiceV measure 14]                                    %! SM4
     s1 * 1/2
     
-    % [B RHVoiceV measure 15]                                    %! SM4
+    % [A RHVoiceV measure 15]                                    %! SM4
     s1 * 5/8
     
-    % [B RHVoiceV measure 16]                                    %! SM4
+    % [A RHVoiceV measure 16]                                    %! SM4
     s1 * 1/8
     
-    % [B RHVoiceV measure 17]                                    %! SM4
+    % [A RHVoiceV measure 17]                                    %! SM4
     s1 * 3/2
     
-    % [B RHVoiceV measure 18]                                    %! SM4
+    % [A RHVoiceV measure 18]                                    %! SM4
     s1 * 21/16
     
-    % [B RHVoiceV measure 19]                                    %! SM4
+    % [A RHVoiceV measure 19]                                    %! SM4
     s1 * 7/4
     
-    % [B RHVoiceV measure 20]                                    %! SM4
+    % [A RHVoiceV measure 20]                                    %! SM4
     s1 * 3/2
     
-    % [B RHVoiceV measure 21]                                    %! SM4
+    % [A RHVoiceV measure 21]                                    %! SM4
     s1 * 1
     
 }
 
 
-B_RHVoiceVI = {
+A_RHVoiceVI = {
     
-    % [B RHVoiceVI measure 10]                                   %! SM4
+    % [A RHVoiceVI measure 10]                                   %! SM4
     s1 * 1/2
     
-    % [B RHVoiceVI measure 11]                                   %! SM4
+    % [A RHVoiceVI measure 11]                                   %! SM4
     s1 * 1/8
     
-    % [B RHVoiceVI measure 12]                                   %! SM4
+    % [A RHVoiceVI measure 12]                                   %! SM4
     s1 * 5/16
     
-    % [B RHVoiceVI measure 13]                                   %! SM4
+    % [A RHVoiceVI measure 13]                                   %! SM4
     s1 * 1/8
     
-    % [B RHVoiceVI measure 14]                                   %! SM4
+    % [A RHVoiceVI measure 14]                                   %! SM4
     s1 * 1/2
     
-    % [B RHVoiceVI measure 15]                                   %! SM4
+    % [A RHVoiceVI measure 15]                                   %! SM4
     s1 * 5/8
     
-    % [B RHVoiceVI measure 16]                                   %! SM4
+    % [A RHVoiceVI measure 16]                                   %! SM4
     s1 * 1/8
     
-    % [B RHVoiceVI measure 17]                                   %! SM4
+    % [A RHVoiceVI measure 17]                                   %! SM4
     s1 * 3/2
     
-    % [B RHVoiceVI measure 18]                                   %! SM4
+    % [A RHVoiceVI measure 18]                                   %! SM4
     s1 * 21/16
     
-    % [B RHVoiceVI measure 19]                                   %! SM4
+    % [A RHVoiceVI measure 19]                                   %! SM4
     s1 * 7/4
     
-    % [B RHVoiceVI measure 20]                                   %! SM4
+    % [A RHVoiceVI measure 20]                                   %! SM4
     s1 * 3/2
     
-    % [B RHVoiceVI measure 21]                                   %! SM4
+    % [A RHVoiceVI measure 21]                                   %! SM4
     s1 * 1
     
 }
 
 
-B_RHResonanceVoice = {
+A_RHResonanceVoice = {
     
-    % [B RHResonanceVoice measure 10]                            %! SM4
+    % [A RHResonanceVoice measure 10]                            %! SM4
     s1 * 1/2
     
-    % [B RHResonanceVoice measure 11]                            %! SM4
+    % [A RHResonanceVoice measure 11]                            %! SM4
     s1 * 1/8
     
-    % [B RHResonanceVoice measure 12]                            %! SM4
+    % [A RHResonanceVoice measure 12]                            %! SM4
     s1 * 5/16
     
-    % [B RHResonanceVoice measure 13]                            %! SM4
+    % [A RHResonanceVoice measure 13]                            %! SM4
     s1 * 1/8
     
-    % [B RHResonanceVoice measure 14]                            %! SM4
+    % [A RHResonanceVoice measure 14]                            %! SM4
     s1 * 1/2
     
-    % [B RHResonanceVoice measure 15]                            %! SM4
+    % [A RHResonanceVoice measure 15]                            %! SM4
     s1 * 5/8
     
-    % [B RHResonanceVoice measure 16]                            %! SM4
+    % [A RHResonanceVoice measure 16]                            %! SM4
     s1 * 1/8
     
-    % [B RHResonanceVoice measure 17]                            %! SM4
+    % [A RHResonanceVoice measure 17]                            %! SM4
     s1 * 3/2
     
-    % [B RHResonanceVoice measure 18]                            %! SM4
+    % [A RHResonanceVoice measure 18]                            %! SM4
     s1 * 21/16
     
-    % [B RHResonanceVoice measure 19]                            %! SM4
+    % [A RHResonanceVoice measure 19]                            %! SM4
     s1 * 7/4
     
-    % [B RHResonanceVoice measure 20]                            %! SM4
+    % [A RHResonanceVoice measure 20]                            %! SM4
     s1 * 3/2
     
-    % [B RHResonanceVoice measure 21]                            %! SM4
+    % [A RHResonanceVoice measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_PianoMusicRHStaff = <<
+A_PianoMusicRHStaff = <<
     \context RHVoiceI = "RHVoiceI"
-    \B_RHVoiceI
+    \A_RHVoiceI
     \context RHVoiceIInserts = "RHVoiceIInserts"
-    \B_RHVoiceIInserts
+    \A_RHVoiceIInserts
     \context RHVoiceII = "RHVoiceII"
-    \B_RHVoiceII
+    \A_RHVoiceII
     \context RHVoiceIIInserts = "RHVoiceIIInserts"
-    \B_RHVoiceIIInserts
+    \A_RHVoiceIIInserts
     \context RHVoiceIII = "RHVoiceIII"
-    \B_RHVoiceIII
+    \A_RHVoiceIII
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-    \B_RHVoiceIIIInserts
+    \A_RHVoiceIIIInserts
     \context RHVoiceIV = "RHVoiceIV"
-    \B_RHVoiceIV
+    \A_RHVoiceIV
     \context RHVoiceIVInserts = "RHVoiceIVInserts"
-    \B_RHVoiceIVInserts
+    \A_RHVoiceIVInserts
     \context RHVoiceV = "RHVoiceV"
-    \B_RHVoiceV
+    \A_RHVoiceV
     \context RHVoiceVI = "RHVoiceVI"
-    \B_RHVoiceVI
+    \A_RHVoiceVI
     \context RHResonanceVoice = "RHResonanceVoice"
-    \B_RHResonanceVoice
+    \A_RHResonanceVoice
 >>
 
 
-B_LHVoiceI = {
+A_LHVoiceI = {
     
-    % [B LHVoiceI measure 10]                                    %! SM4
+    % [A LHVoiceI measure 10]                                    %! SM4
     s1 * 1/2
     
-    % [B LHVoiceI measure 11]                                    %! SM4
+    % [A LHVoiceI measure 11]                                    %! SM4
     s1 * 1/8
     
-    % [B LHVoiceI measure 12]                                    %! SM4
+    % [A LHVoiceI measure 12]                                    %! SM4
     s1 * 5/16
     
-    % [B LHVoiceI measure 13]                                    %! SM4
+    % [A LHVoiceI measure 13]                                    %! SM4
     s1 * 1/8
     
-    % [B LHVoiceI measure 14]                                    %! SM4
+    % [A LHVoiceI measure 14]                                    %! SM4
     s1 * 1/2
     
-    % [B LHVoiceI measure 15]                                    %! SM4
+    % [A LHVoiceI measure 15]                                    %! SM4
     s1 * 5/8
     
-    % [B LHVoiceI measure 16]                                    %! SM4
+    % [A LHVoiceI measure 16]                                    %! SM4
     s1 * 1/8
     
-    % [B LHVoiceI measure 17]                                    %! SM4
+    % [A LHVoiceI measure 17]                                    %! SM4
     s1 * 3/2
     
-    % [B LHVoiceI measure 18]                                    %! SM4
+    % [A LHVoiceI measure 18]                                    %! SM4
     s1 * 21/16
     
-    % [B LHVoiceI measure 19]                                    %! SM4
+    % [A LHVoiceI measure 19]                                    %! SM4
     s1 * 7/4
     
-    % [B LHVoiceI measure 20]                                    %! SM4
+    % [A LHVoiceI measure 20]                                    %! SM4
     s1 * 3/2
     
-    % [B LHVoiceI measure 21]                                    %! SM4
+    % [A LHVoiceI measure 21]                                    %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceII = {
+A_LHVoiceII = {
     
-    % [B LHVoiceII measure 10]                                   %! SM4
+    % [A LHVoiceII measure 10]                                   %! SM4
     s1 * 67/8
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 1/1 {
             
-            % [B LHVoiceII measure 21]                           %! SM4
+            % [A LHVoiceII measure 21]                           %! SM4
             r1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2011,141 +2011,141 @@ B_LHVoiceII = {
 }
 
 
-B_LHVoiceIII = {
+A_LHVoiceIII = {
     
-    % [B LHVoiceIII measure 10]                                  %! SM4
+    % [A LHVoiceIII measure 10]                                  %! SM4
     s1 * 1/2
     
-    % [B LHVoiceIII measure 11]                                  %! SM4
+    % [A LHVoiceIII measure 11]                                  %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIII measure 12]                                  %! SM4
+    % [A LHVoiceIII measure 12]                                  %! SM4
     s1 * 5/16
     
-    % [B LHVoiceIII measure 13]                                  %! SM4
+    % [A LHVoiceIII measure 13]                                  %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIII measure 14]                                  %! SM4
+    % [A LHVoiceIII measure 14]                                  %! SM4
     s1 * 1/2
     
-    % [B LHVoiceIII measure 15]                                  %! SM4
+    % [A LHVoiceIII measure 15]                                  %! SM4
     s1 * 5/8
     
-    % [B LHVoiceIII measure 16]                                  %! SM4
+    % [A LHVoiceIII measure 16]                                  %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIII measure 17]                                  %! SM4
+    % [A LHVoiceIII measure 17]                                  %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIII measure 18]                                  %! SM4
+    % [A LHVoiceIII measure 18]                                  %! SM4
     s1 * 21/16
     
-    % [B LHVoiceIII measure 19]                                  %! SM4
+    % [A LHVoiceIII measure 19]                                  %! SM4
     s1 * 7/4
     
-    % [B LHVoiceIII measure 20]                                  %! SM4
+    % [A LHVoiceIII measure 20]                                  %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIII measure 21]                                  %! SM4
+    % [A LHVoiceIII measure 21]                                  %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceIV = {
+A_LHVoiceIV = {
     
-    % [B LHVoiceIV measure 10]                                   %! SM4
+    % [A LHVoiceIV measure 10]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 1/2
     \ff                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [B LHVoiceIV measure 11]                                   %! SM4
+    % [A LHVoiceIV measure 11]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIV measure 12]                                   %! SM4
+    % [A LHVoiceIV measure 12]                                   %! SM4
     s1 * 5/16
     
-    % [B LHVoiceIV measure 13]                                   %! SM4
+    % [A LHVoiceIV measure 13]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIV measure 14]                                   %! SM4
+    % [A LHVoiceIV measure 14]                                   %! SM4
     s1 * 1/2
     
-    % [B LHVoiceIV measure 15]                                   %! SM4
+    % [A LHVoiceIV measure 15]                                   %! SM4
     s1 * 5/8
     
-    % [B LHVoiceIV measure 16]                                   %! SM4
+    % [A LHVoiceIV measure 16]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIV measure 17]                                   %! SM4
+    % [A LHVoiceIV measure 17]                                   %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIV measure 18]                                   %! SM4
+    % [A LHVoiceIV measure 18]                                   %! SM4
     s1 * 21/16
     
-    % [B LHVoiceIV measure 19]                                   %! SM4
+    % [A LHVoiceIV measure 19]                                   %! SM4
     s1 * 7/4
     
-    % [B LHVoiceIV measure 20]                                   %! SM4
+    % [A LHVoiceIV measure 20]                                   %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIV measure 21]                                   %! SM4
+    % [A LHVoiceIV measure 21]                                   %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceIVInserts = {
+A_LHVoiceIVInserts = {
     
-    % [B LHVoiceIVInserts measure 10]                            %! SM4
+    % [A LHVoiceIVInserts measure 10]                            %! SM4
     s1 * 1/2
     
-    % [B LHVoiceIVInserts measure 11]                            %! SM4
+    % [A LHVoiceIVInserts measure 11]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIVInserts measure 12]                            %! SM4
+    % [A LHVoiceIVInserts measure 12]                            %! SM4
     s1 * 5/16
     
-    % [B LHVoiceIVInserts measure 13]                            %! SM4
+    % [A LHVoiceIVInserts measure 13]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIVInserts measure 14]                            %! SM4
+    % [A LHVoiceIVInserts measure 14]                            %! SM4
     s1 * 1/2
     
-    % [B LHVoiceIVInserts measure 15]                            %! SM4
+    % [A LHVoiceIVInserts measure 15]                            %! SM4
     s1 * 5/8
     
-    % [B LHVoiceIVInserts measure 16]                            %! SM4
+    % [A LHVoiceIVInserts measure 16]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceIVInserts measure 17]                            %! SM4
+    % [A LHVoiceIVInserts measure 17]                            %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIVInserts measure 18]                            %! SM4
+    % [A LHVoiceIVInserts measure 18]                            %! SM4
     s1 * 21/16
     
-    % [B LHVoiceIVInserts measure 19]                            %! SM4
+    % [A LHVoiceIVInserts measure 19]                            %! SM4
     s1 * 7/4
     
-    % [B LHVoiceIVInserts measure 20]                            %! SM4
+    % [A LHVoiceIVInserts measure 20]                            %! SM4
     s1 * 3/2
     
-    % [B LHVoiceIVInserts measure 21]                            %! SM4
+    % [A LHVoiceIVInserts measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceV = {
+A_LHVoiceV = {
     
-    % [B LHVoiceV measure 10]                                    %! SM4
+    % [A LHVoiceV measure 10]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 37/16
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHVoiceV measure 17]                            %! SM4
+            % [A LHVoiceV measure 17]                            %! SM4
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2184,65 +2184,65 @@ B_LHVoiceV = {
         }
     }
     
-    % [B LHVoiceV measure 18]                                    %! SM4
+    % [A LHVoiceV measure 18]                                    %! SM4
     s1 * 21/16
     
-    % [B LHVoiceV measure 19]                                    %! SM4
+    % [A LHVoiceV measure 19]                                    %! SM4
     s1 * 7/4
     
-    % [B LHVoiceV measure 20]                                    %! SM4
+    % [A LHVoiceV measure 20]                                    %! SM4
     s1 * 3/2
     
-    % [B LHVoiceV measure 21]                                    %! SM4
+    % [A LHVoiceV measure 21]                                    %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceVInserts = {
+A_LHVoiceVInserts = {
     
-    % [B LHVoiceVInserts measure 10]                             %! SM4
+    % [A LHVoiceVInserts measure 10]                             %! SM4
     s1 * 1/2
     
-    % [B LHVoiceVInserts measure 11]                             %! SM4
+    % [A LHVoiceVInserts measure 11]                             %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVInserts measure 12]                             %! SM4
+    % [A LHVoiceVInserts measure 12]                             %! SM4
     s1 * 5/16
     
-    % [B LHVoiceVInserts measure 13]                             %! SM4
+    % [A LHVoiceVInserts measure 13]                             %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVInserts measure 14]                             %! SM4
+    % [A LHVoiceVInserts measure 14]                             %! SM4
     s1 * 1/2
     
-    % [B LHVoiceVInserts measure 15]                             %! SM4
+    % [A LHVoiceVInserts measure 15]                             %! SM4
     s1 * 5/8
     
-    % [B LHVoiceVInserts measure 16]                             %! SM4
+    % [A LHVoiceVInserts measure 16]                             %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVInserts measure 17]                             %! SM4
+    % [A LHVoiceVInserts measure 17]                             %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVInserts measure 18]                             %! SM4
+    % [A LHVoiceVInserts measure 18]                             %! SM4
     s1 * 21/16
     
-    % [B LHVoiceVInserts measure 19]                             %! SM4
+    % [A LHVoiceVInserts measure 19]                             %! SM4
     s1 * 7/4
     
-    % [B LHVoiceVInserts measure 20]                             %! SM4
+    % [A LHVoiceVInserts measure 20]                             %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVInserts measure 21]                             %! SM4
+    % [A LHVoiceVInserts measure 21]                             %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceVI = {
+A_LHVoiceVI = {
     
-    % [B LHVoiceVI measure 10]                                   %! SM4
+    % [A LHVoiceVI measure 10]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -2275,88 +2275,88 @@ B_LHVoiceVI = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [B LHVoiceVI measure 11]                                   %! SM4
+    % [A LHVoiceVI measure 11]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVI measure 12]                                   %! SM4
+    % [A LHVoiceVI measure 12]                                   %! SM4
     s1 * 5/16
     
-    % [B LHVoiceVI measure 13]                                   %! SM4
+    % [A LHVoiceVI measure 13]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVI measure 14]                                   %! SM4
+    % [A LHVoiceVI measure 14]                                   %! SM4
     s1 * 1/2
     
-    % [B LHVoiceVI measure 15]                                   %! SM4
+    % [A LHVoiceVI measure 15]                                   %! SM4
     s1 * 5/8
     
-    % [B LHVoiceVI measure 16]                                   %! SM4
+    % [A LHVoiceVI measure 16]                                   %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVI measure 17]                                   %! SM4
+    % [A LHVoiceVI measure 17]                                   %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVI measure 18]                                   %! SM4
+    % [A LHVoiceVI measure 18]                                   %! SM4
     s1 * 21/16
     
-    % [B LHVoiceVI measure 19]                                   %! SM4
+    % [A LHVoiceVI measure 19]                                   %! SM4
     s1 * 7/4
     
-    % [B LHVoiceVI measure 20]                                   %! SM4
+    % [A LHVoiceVI measure 20]                                   %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVI measure 21]                                   %! SM4
+    % [A LHVoiceVI measure 21]                                   %! SM4
     s1 * 1
     
 }
 
 
-B_LHVoiceVIInserts = {
+A_LHVoiceVIInserts = {
     
-    % [B LHVoiceVIInserts measure 10]                            %! SM4
+    % [A LHVoiceVIInserts measure 10]                            %! SM4
     s1 * 1/2
     
-    % [B LHVoiceVIInserts measure 11]                            %! SM4
+    % [A LHVoiceVIInserts measure 11]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVIInserts measure 12]                            %! SM4
+    % [A LHVoiceVIInserts measure 12]                            %! SM4
     s1 * 5/16
     
-    % [B LHVoiceVIInserts measure 13]                            %! SM4
+    % [A LHVoiceVIInserts measure 13]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVIInserts measure 14]                            %! SM4
+    % [A LHVoiceVIInserts measure 14]                            %! SM4
     s1 * 1/2
     
-    % [B LHVoiceVIInserts measure 15]                            %! SM4
+    % [A LHVoiceVIInserts measure 15]                            %! SM4
     s1 * 5/8
     
-    % [B LHVoiceVIInserts measure 16]                            %! SM4
+    % [A LHVoiceVIInserts measure 16]                            %! SM4
     s1 * 1/8
     
-    % [B LHVoiceVIInserts measure 17]                            %! SM4
+    % [A LHVoiceVIInserts measure 17]                            %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVIInserts measure 18]                            %! SM4
+    % [A LHVoiceVIInserts measure 18]                            %! SM4
     s1 * 21/16
     
-    % [B LHVoiceVIInserts measure 19]                            %! SM4
+    % [A LHVoiceVIInserts measure 19]                            %! SM4
     s1 * 7/4
     
-    % [B LHVoiceVIInserts measure 20]                            %! SM4
+    % [A LHVoiceVIInserts measure 20]                            %! SM4
     s1 * 3/2
     
-    % [B LHVoiceVIInserts measure 21]                            %! SM4
+    % [A LHVoiceVIInserts measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_LHResonanceVoice = {
+A_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 10]                    %! SM4
+            % [A LHResonanceVoice measure 10]                    %! SM4
             <e, fs, gs, as, b,>2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2380,7 +2380,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 11]                    %! SM4
+            % [A LHResonanceVoice measure 11]                    %! SM4
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2436,7 +2436,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 14]                    %! SM4
+            % [A LHResonanceVoice measure 14]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
@@ -2462,7 +2462,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 15]                    %! SM4
+            % [A LHResonanceVoice measure 15]                    %! SM4
             <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2494,7 +2494,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 16]                    %! SM4
+            % [A LHResonanceVoice measure 16]                    %! SM4
             <e, fs, gs, as, b,>8
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2517,12 +2517,12 @@ B_LHResonanceVoice = {
         }
     }
     
-    % [B LHResonanceVoice measure 17]                            %! SM4
+    % [A LHResonanceVoice measure 17]                            %! SM4
     s1 * 3/2
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 18]                    %! SM4
+            % [A LHResonanceVoice measure 18]                    %! SM4
             <e, fs, gs, as, b,>1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2556,7 +2556,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 19]                    %! SM4
+            % [A LHResonanceVoice measure 19]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <e, fs, gs, as, b,>1..
             \repeatTie                                           %! SC
@@ -2582,7 +2582,7 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 20]                    %! SM4
+            % [A LHResonanceVoice measure 20]                    %! SM4
             <e, fs, gs, as, b,>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2605,31 +2605,31 @@ B_LHResonanceVoice = {
         }
     }
     
-    % [B LHResonanceVoice measure 21]                            %! SM4
+    % [A LHResonanceVoice measure 21]                            %! SM4
     s1 * 1
     
 }
 
 
-B_PianoMusicLHStaff = <<
+A_PianoMusicLHStaff = <<
     \context LHVoiceI = "LHVoiceI"
-    \B_LHVoiceI
+    \A_LHVoiceI
     \context LHVoiceII = "LHVoiceII"
-    \B_LHVoiceII
+    \A_LHVoiceII
     \context LHVoiceIII = "LHVoiceIII"
-    \B_LHVoiceIII
+    \A_LHVoiceIII
     \context LHVoiceIV = "LHVoiceIV"
-    \B_LHVoiceIV
+    \A_LHVoiceIV
     \context LHVoiceIVInserts = "LHVoiceIVInserts"
-    \B_LHVoiceIVInserts
+    \A_LHVoiceIVInserts
     \context LHVoiceV = "LHVoiceV"
-    \B_LHVoiceV
+    \A_LHVoiceV
     \context LHVoiceVInserts = "LHVoiceVInserts"
-    \B_LHVoiceVInserts
+    \A_LHVoiceVInserts
     \context LHVoiceVI = "LHVoiceVI"
-    \B_LHVoiceVI
+    \A_LHVoiceVI
     \context LHVoiceVIInserts = "LHVoiceVIInserts"
-    \B_LHVoiceVIInserts
+    \A_LHVoiceVIInserts
     \context LHResonanceVoice = "LHResonanceVoice"
-    \B_LHResonanceVoice
+    \A_LHResonanceVoice
 >>
