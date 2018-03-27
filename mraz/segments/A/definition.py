@@ -251,11 +251,6 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks['112']),
     ])
 
-spacing = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=(1, 4),
-    minimum_width=(1, 24),
-    )
-
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 maker = baca.SegmentMaker(
@@ -269,7 +264,6 @@ maker = baca.SegmentMaker(
     range_checker=abjad.Piano().pitch_range,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
-    #spacing=spacing,
     time_signatures=accumulator.time_signatures,
     )
 
