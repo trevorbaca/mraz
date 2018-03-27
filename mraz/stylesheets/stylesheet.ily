@@ -39,8 +39,9 @@
     right-margin = 0.25\in
     markup-system-spacing.minimum-distance = 48
     system-system-spacing.minimum-distance = 24
-    top-markup-spacing.minimum-distance = 18
-    top-margin = 0.5\in
+    top-markup-spacing.minimum-distance = 12
+    top-system-spacing.minimum-distance = 18
+    top-margin = 20\mm
 }
 
 \header {

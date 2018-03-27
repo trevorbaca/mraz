@@ -1176,7 +1176,6 @@ A_LHVoiceV = {
             % [A LHVoiceV measure 10]                            %! SM4
             \override TupletBracket.direction = #up              %! OC1
             \ottava #-1                                          %! SC
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             g,8.

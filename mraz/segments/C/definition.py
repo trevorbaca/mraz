@@ -25,7 +25,6 @@ accumulator(
     collections['stage 1']['rh'].next(),
     baca.dynamic('ff'),
     baca.flags(),
-    baca.proportional_notation_duration((1, 16)),
     baca.register(-12, 12),
     baca.text_scripts_up(),
     baca.tuplet_brackets_up(),
@@ -37,7 +36,6 @@ accumulator(
 accumulator(
     'rh_v2',
     [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 16)),
     baca.transparent_rests(),
     baca.transparent_span_bars(),
     baca.transparent_time_signatures(),
@@ -49,7 +47,6 @@ accumulator(
     collections['stage 6']['rh'][1],
     baca.dynamic('ff'),
     baca.marcati(),
-    baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
     baca.up_arpeggios(),
     counts=[12],
@@ -60,7 +57,6 @@ accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
     baca.flags(),
-    baca.proportional_notation_duration((1, 12)),
     baca.register(12, -12),
     baca.tuplet_brackets_up(),
     counts=[-4, 2, -4, 4],
@@ -73,7 +69,6 @@ accumulator(
     collections_5['stage 2']['lh'][0],
     baca.dynamic('p'),
     baca.flags(),
-    baca.proportional_notation_duration((1, 12)),
     baca.register(6, -24),
     baca.map(
         baca.slur(),
@@ -87,7 +82,6 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((3, 4))],
-    baca.proportional_notation_duration((1, 4)),
     figure_name='rh-3 4.1.4',
     )
 
@@ -95,7 +89,6 @@ accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
     baca.flags(),
-    baca.proportional_notation_duration((1, 12)),
     baca.register(-6),
     baca.tuplet_brackets_up(),
     counts=[2, -4, 2, -4, 4],
@@ -106,7 +99,6 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((3, 4))],
-    baca.proportional_notation_duration((1, 4)),
     figure_name='rh-3 4.1.6',
     )
 
@@ -116,7 +108,6 @@ accumulator(
     baca.anchor_to_figure('rh-3 4.1.1'),
     baca.dynamic('f'),
     baca.flags(),
-    baca.proportional_notation_duration((1, 4)),
     baca.register(-6, 6),
     baca.rests_before([12]),
     baca.tenuti(),
@@ -129,7 +120,6 @@ accumulator(
     'lh_v5',
     [abjad.Rest((3, 4))],
     baca.anchor_to_figure('rh-2 4.1.1'),
-    baca.proportional_notation_duration((1, 4)),
     # TODO: teach PianoPedalBracket to attach for a single leaf
 #    baca.sustain_pedal()
     figure_name='lh-5 4.1.2',
@@ -140,7 +130,6 @@ accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
     baca.flags(),
-    baca.proportional_notation_duration((1, 12)),
     baca.register(-6, 6),
     baca.rests_around([4], [4]),
     baca.tenuti(),
@@ -158,7 +147,6 @@ accumulator(
     baca.flags(),
     baca.line_break(),
     baca.marcati(),
-    baca.proportional_notation_duration((1, 4)),
     baca.rests_around([1], [8]),
     counts=[3],
     figure_name='lh-5 4.1.4',
@@ -170,7 +158,6 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.dynamic('f'),
     baca.flags(),
-    baca.proportional_notation_duration((1, 12)),
     baca.register(-6, 6),
     baca.rests_before([4, 4]),
     baca.tenuti(),
@@ -182,7 +169,6 @@ accumulator(
 accumulator(
     'lh_v5',
     [abjad.Rest((3, 4))],
-    baca.proportional_notation_duration((1, 4)),
     figure_name='lh-5 4.1.6',
     hide_time_signature=True,
     )
@@ -195,7 +181,6 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     baca.flags(),
-    baca.proportional_notation_duration((1, 10)),
     baca.rests_around([1], [8]),
     counts=[3],
     figure_name='lh-5 4.2.1',
@@ -428,7 +413,6 @@ accumulator(
     'rh_v3',
     collections_5['stage 2']['rh'][12],
     baca.beam_divisions(),
-    baca.proportional_notation_duration((1, 16)),
     baca.register(24),
     baca.map(
         baca.slur(),
@@ -644,7 +628,6 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     'lh_resonance',
     [resonance],
-    baca.proportional_notation_duration((1, 32)),
     baca.resume(),
     counts=[4],
     figure_name='lh-r 4.5.1',
@@ -654,7 +637,6 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    baca.proportional_notation_duration((1, 4)),
     counts=[28],
     figure_name='lh-r 4.5.2',
     )
@@ -683,7 +665,6 @@ accumulator(
 accumulator(
     'rh_v2',
     [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 16)),
     baca.transparent_rests(),
     baca.transparent_span_bars(),
     baca.transparent_time_signatures(),
@@ -780,7 +761,6 @@ accumulator(
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
     baca.slurs_up(),
@@ -794,7 +774,6 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
     baca.slurs_up(),
@@ -809,7 +788,6 @@ accumulator(
     collections['stage 6']['rh'][1],
     baca.anchor_to_figure('lh-r 4.5.6'),
     baca.marcati(),
-    baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
     baca.up_arpeggios(),
     counts=[24],
@@ -822,7 +800,6 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.proportional_notation_duration((1, 32)),
     baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
     baca.slurs_up(),
@@ -849,7 +826,6 @@ accumulator(
 accumulator(
     'rh_v2',
     [abjad.Rest((1, 4))],
-    baca.proportional_notation_duration((1, 16)),
     baca.transparent_bar_lines(),
     baca.transparent_rests(),
     baca.transparent_span_bars(),
@@ -865,7 +841,6 @@ accumulator(
     baca.up_arpeggios(),
     baca.dynamic('ff'),
     baca.marcati(),
-    baca.proportional_notation_duration((1, 4)),
     baca.resume(),
     counts=[16],
     figure_name='rh-2 4.6.1',
@@ -910,7 +885,6 @@ accumulator(
     baca.dynamic('mp'),
     baca.flags(),
     baca.markup('(memory of before)'),
-    baca.proportional_notation_duration((1, 16)),
     baca.register(12, -12),
     baca.resume(),
     baca.text_scripts_up(),
@@ -941,7 +915,6 @@ accumulator(
     baca.dynamic('fff'),
     baca.dynamics_up(),
     baca.flags(),
-    baca.proportional_notation_duration((1, 6)),
     baca.register(20, 36),
     baca.rests_up(),
     baca.scripts_up(),
