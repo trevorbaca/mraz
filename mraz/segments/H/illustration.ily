@@ -1,6 +1,6 @@
-I_GlobalSkips = {
+H_GlobalSkips = {
     
-    % [I GlobalSkips measure 143]                                        %! SM4
+    % [H GlobalSkips measure 143]                                        %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
@@ -79,7 +79,7 @@ I_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [I.1]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [H.1]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -90,7 +90,7 @@ I_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [I GlobalSkips measure 144]                                        %! SM4
+    % [H GlobalSkips measure 144]                                        %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 4/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -117,7 +117,7 @@ I_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [I.2]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [H.2]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -128,7 +128,7 @@ I_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [I GlobalSkips measure 145]                                        %! SM4
+    % [H GlobalSkips measure 145]                                        %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)     %! HSS1:SPACING
     \time 7/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -155,7 +155,7 @@ I_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [I.3]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [H.3]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -166,7 +166,7 @@ I_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/32]" }                               %! HSS2:SPACING_MARKUP
     
-    % [I GlobalSkips measure 146]                                        %! SM4
+    % [H GlobalSkips measure 146]                                        %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)     %! HSS1:SPACING
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -194,7 +194,7 @@ I_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [I.4]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [H.4]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -210,9 +210,9 @@ I_GlobalSkips = {
 }
 
 
-I_RHVoiceI = {
+H_RHVoiceI = {
     
-    % [I RHVoiceI measure 143]                                   %! SM4
+    % [H RHVoiceI measure 143]                                   %! SM4
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -222,77 +222,77 @@ I_RHVoiceI = {
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [I RHVoiceI measure 144]                                   %! SM4
+    % [H RHVoiceI measure 144]                                   %! SM4
     s1 * 1/2
     
-    % [I RHVoiceI measure 145]                                   %! SM4
+    % [H RHVoiceI measure 145]                                   %! SM4
     s1 * 7/8
     
-    % [I RHVoiceI measure 146]                                   %! SM4
+    % [H RHVoiceI measure 146]                                   %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceIInserts = {
+H_RHVoiceIInserts = {
     
-    % [I RHVoiceIInserts measure 143]                            %! SM4
+    % [H RHVoiceIInserts measure 143]                            %! SM4
     s1 * 9/8
     
-    % [I RHVoiceIInserts measure 144]                            %! SM4
+    % [H RHVoiceIInserts measure 144]                            %! SM4
     s1 * 1/2
     
-    % [I RHVoiceIInserts measure 145]                            %! SM4
+    % [H RHVoiceIInserts measure 145]                            %! SM4
     s1 * 7/8
     
-    % [I RHVoiceIInserts measure 146]                            %! SM4
+    % [H RHVoiceIInserts measure 146]                            %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceII = {
+H_RHVoiceII = {
     
-    % [I RHVoiceII measure 143]                                  %! SM4
+    % [H RHVoiceII measure 143]                                  %! SM4
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
     \fff                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [I RHVoiceII measure 144]                                  %! SM4
+    % [H RHVoiceII measure 144]                                  %! SM4
     s1 * 1/2
     
-    % [I RHVoiceII measure 145]                                  %! SM4
+    % [H RHVoiceII measure 145]                                  %! SM4
     s1 * 7/8
     
-    % [I RHVoiceII measure 146]                                  %! SM4
+    % [H RHVoiceII measure 146]                                  %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceIIInserts = {
+H_RHVoiceIIInserts = {
     
-    % [I RHVoiceIIInserts measure 143]                           %! SM4
+    % [H RHVoiceIIInserts measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I RHVoiceIIInserts measure 144]                           %! SM4
+    % [H RHVoiceIIInserts measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I RHVoiceIIInserts measure 145]                           %! SM4
+    % [H RHVoiceIIInserts measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I RHVoiceIIInserts measure 146]                           %! SM4
+    % [H RHVoiceIIInserts measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceIII = {
+H_RHVoiceIII = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [I RHVoiceIII measure 143]                         %! SM4
+            % [H RHVoiceIII measure 143]                         %! SM4
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs'''8
             -\staccato                                           %! IC
@@ -349,7 +349,7 @@ I_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [I RHVoiceIII measure 144]                         %! SM4
+            % [H RHVoiceIII measure 144]                         %! SM4
             bf'''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -383,7 +383,7 @@ I_RHVoiceIII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [I RHVoiceIII measure 145]                         %! SM4
+            % [H RHVoiceIII measure 145]                         %! SM4
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -430,7 +430,7 @@ I_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
             
-            % [I RHVoiceIII measure 146]                         %! SM4
+            % [H RHVoiceIII measure 146]                         %! SM4
             af''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -469,190 +469,190 @@ I_RHVoiceIII = {
 }
 
 
-I_RHVoiceIIIInserts = {
+H_RHVoiceIIIInserts = {
     
-    % [I RHVoiceIIIInserts measure 143]                          %! SM4
+    % [H RHVoiceIIIInserts measure 143]                          %! SM4
     s1 * 9/8
     
-    % [I RHVoiceIIIInserts measure 144]                          %! SM4
+    % [H RHVoiceIIIInserts measure 144]                          %! SM4
     s1 * 1/2
     
-    % [I RHVoiceIIIInserts measure 145]                          %! SM4
+    % [H RHVoiceIIIInserts measure 145]                          %! SM4
     s1 * 7/8
     
-    % [I RHVoiceIIIInserts measure 146]                          %! SM4
+    % [H RHVoiceIIIInserts measure 146]                          %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceIV = {
+H_RHVoiceIV = {
     
-    % [I RHVoiceIV measure 143]                                  %! SM4
+    % [H RHVoiceIV measure 143]                                  %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [I RHVoiceIV measure 144]                                  %! SM4
+    % [H RHVoiceIV measure 144]                                  %! SM4
     s1 * 1/2
     
-    % [I RHVoiceIV measure 145]                                  %! SM4
+    % [H RHVoiceIV measure 145]                                  %! SM4
     s1 * 7/8
     
-    % [I RHVoiceIV measure 146]                                  %! SM4
+    % [H RHVoiceIV measure 146]                                  %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceIVInserts = {
+H_RHVoiceIVInserts = {
     
-    % [I RHVoiceIVInserts measure 143]                           %! SM4
+    % [H RHVoiceIVInserts measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I RHVoiceIVInserts measure 144]                           %! SM4
+    % [H RHVoiceIVInserts measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I RHVoiceIVInserts measure 145]                           %! SM4
+    % [H RHVoiceIVInserts measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I RHVoiceIVInserts measure 146]                           %! SM4
+    % [H RHVoiceIVInserts measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceV = {
+H_RHVoiceV = {
     
-    % [I RHVoiceV measure 143]                                   %! SM4
+    % [H RHVoiceV measure 143]                                   %! SM4
     s1 * 9/8
     
-    % [I RHVoiceV measure 144]                                   %! SM4
+    % [H RHVoiceV measure 144]                                   %! SM4
     s1 * 1/2
     
-    % [I RHVoiceV measure 145]                                   %! SM4
+    % [H RHVoiceV measure 145]                                   %! SM4
     s1 * 7/8
     
-    % [I RHVoiceV measure 146]                                   %! SM4
+    % [H RHVoiceV measure 146]                                   %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHVoiceVI = {
+H_RHVoiceVI = {
     
-    % [I RHVoiceVI measure 143]                                  %! SM4
+    % [H RHVoiceVI measure 143]                                  %! SM4
     s1 * 9/8
     
-    % [I RHVoiceVI measure 144]                                  %! SM4
+    % [H RHVoiceVI measure 144]                                  %! SM4
     s1 * 1/2
     
-    % [I RHVoiceVI measure 145]                                  %! SM4
+    % [H RHVoiceVI measure 145]                                  %! SM4
     s1 * 7/8
     
-    % [I RHVoiceVI measure 146]                                  %! SM4
+    % [H RHVoiceVI measure 146]                                  %! SM4
     s1 * 5/8
     
 }
 
 
-I_RHResonanceVoice = {
+H_RHResonanceVoice = {
     
-    % [I RHResonanceVoice measure 143]                           %! SM4
+    % [H RHResonanceVoice measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I RHResonanceVoice measure 144]                           %! SM4
+    % [H RHResonanceVoice measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I RHResonanceVoice measure 145]                           %! SM4
+    % [H RHResonanceVoice measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I RHResonanceVoice measure 146]                           %! SM4
+    % [H RHResonanceVoice measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_PianoMusicRHStaff = <<
+H_PianoMusicRHStaff = <<
     \context RHVoiceI = "RHVoiceI"
-    \I_RHVoiceI
+    \H_RHVoiceI
     \context RHVoiceIInserts = "RHVoiceIInserts"
-    \I_RHVoiceIInserts
+    \H_RHVoiceIInserts
     \context RHVoiceII = "RHVoiceII"
-    \I_RHVoiceII
+    \H_RHVoiceII
     \context RHVoiceIIInserts = "RHVoiceIIInserts"
-    \I_RHVoiceIIInserts
+    \H_RHVoiceIIInserts
     \context RHVoiceIII = "RHVoiceIII"
-    \I_RHVoiceIII
+    \H_RHVoiceIII
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-    \I_RHVoiceIIIInserts
+    \H_RHVoiceIIIInserts
     \context RHVoiceIV = "RHVoiceIV"
-    \I_RHVoiceIV
+    \H_RHVoiceIV
     \context RHVoiceIVInserts = "RHVoiceIVInserts"
-    \I_RHVoiceIVInserts
+    \H_RHVoiceIVInserts
     \context RHVoiceV = "RHVoiceV"
-    \I_RHVoiceV
+    \H_RHVoiceV
     \context RHVoiceVI = "RHVoiceVI"
-    \I_RHVoiceVI
+    \H_RHVoiceVI
     \context RHResonanceVoice = "RHResonanceVoice"
-    \I_RHResonanceVoice
+    \H_RHResonanceVoice
 >>
 
 
-I_LHVoiceI = {
+H_LHVoiceI = {
     
-    % [I LHVoiceI measure 143]                                   %! SM4
+    % [H LHVoiceI measure 143]                                   %! SM4
     s1 * 9/8
     
-    % [I LHVoiceI measure 144]                                   %! SM4
+    % [H LHVoiceI measure 144]                                   %! SM4
     s1 * 1/2
     
-    % [I LHVoiceI measure 145]                                   %! SM4
+    % [H LHVoiceI measure 145]                                   %! SM4
     s1 * 7/8
     
-    % [I LHVoiceI measure 146]                                   %! SM4
+    % [H LHVoiceI measure 146]                                   %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceII = {
+H_LHVoiceII = {
     
-    % [I LHVoiceII measure 143]                                  %! SM4
+    % [H LHVoiceII measure 143]                                  %! SM4
     s1 * 9/8
     
-    % [I LHVoiceII measure 144]                                  %! SM4
+    % [H LHVoiceII measure 144]                                  %! SM4
     s1 * 1/2
     
-    % [I LHVoiceII measure 145]                                  %! SM4
+    % [H LHVoiceII measure 145]                                  %! SM4
     s1 * 7/8
     
-    % [I LHVoiceII measure 146]                                  %! SM4
+    % [H LHVoiceII measure 146]                                  %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceIII = {
+H_LHVoiceIII = {
     
-    % [I LHVoiceIII measure 143]                                 %! SM4
+    % [H LHVoiceIII measure 143]                                 %! SM4
     s1 * 9/8
     
-    % [I LHVoiceIII measure 144]                                 %! SM4
+    % [H LHVoiceIII measure 144]                                 %! SM4
     s1 * 1/2
     
-    % [I LHVoiceIII measure 145]                                 %! SM4
+    % [H LHVoiceIII measure 145]                                 %! SM4
     s1 * 7/8
     
-    % [I LHVoiceIII measure 146]                                 %! SM4
+    % [H LHVoiceIII measure 146]                                 %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceIV = {
+H_LHVoiceIV = {
     
-    % [I LHVoiceIV measure 143]                                  %! SM4
+    % [H LHVoiceIV measure 143]                                  %! SM4
     \clef "bass"                                                 %! SM8:REAPPLIED_CLEF:SM37
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -800,7 +800,7 @@ I_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [I LHVoiceIV measure 146]                          %! SM4
+            % [H LHVoiceIV measure 146]                          %! SM4
             fs''16
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -835,62 +835,62 @@ I_LHVoiceIV = {
 }
 
 
-I_LHVoiceIVInserts = {
+H_LHVoiceIVInserts = {
     
-    % [I LHVoiceIVInserts measure 143]                           %! SM4
+    % [H LHVoiceIVInserts measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I LHVoiceIVInserts measure 144]                           %! SM4
+    % [H LHVoiceIVInserts measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I LHVoiceIVInserts measure 145]                           %! SM4
+    % [H LHVoiceIVInserts measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I LHVoiceIVInserts measure 146]                           %! SM4
+    % [H LHVoiceIVInserts measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceV = {
+H_LHVoiceV = {
     
-    % [I LHVoiceV measure 143]                                   %! SM4
+    % [H LHVoiceV measure 143]                                   %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [I LHVoiceV measure 144]                                   %! SM4
+    % [H LHVoiceV measure 144]                                   %! SM4
     s1 * 1/2
     
-    % [I LHVoiceV measure 145]                                   %! SM4
+    % [H LHVoiceV measure 145]                                   %! SM4
     s1 * 7/8
     
-    % [I LHVoiceV measure 146]                                   %! SM4
+    % [H LHVoiceV measure 146]                                   %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceVInserts = {
+H_LHVoiceVInserts = {
     
-    % [I LHVoiceVInserts measure 143]                            %! SM4
+    % [H LHVoiceVInserts measure 143]                            %! SM4
     s1 * 9/8
     
-    % [I LHVoiceVInserts measure 144]                            %! SM4
+    % [H LHVoiceVInserts measure 144]                            %! SM4
     s1 * 1/2
     
-    % [I LHVoiceVInserts measure 145]                            %! SM4
+    % [H LHVoiceVInserts measure 145]                            %! SM4
     s1 * 7/8
     
-    % [I LHVoiceVInserts measure 146]                            %! SM4
+    % [H LHVoiceVInserts measure 146]                            %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceVI = {
+H_LHVoiceVI = {
     
-    % [I LHVoiceVI measure 143]                                  %! SM4
+    % [H LHVoiceVI measure 143]                                  %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -918,71 +918,71 @@ I_LHVoiceVI = {
         \null                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     
-    % [I LHVoiceVI measure 144]                                  %! SM4
+    % [H LHVoiceVI measure 144]                                  %! SM4
     s1 * 1/2
     
-    % [I LHVoiceVI measure 145]                                  %! SM4
+    % [H LHVoiceVI measure 145]                                  %! SM4
     s1 * 7/8
     
-    % [I LHVoiceVI measure 146]                                  %! SM4
+    % [H LHVoiceVI measure 146]                                  %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHVoiceVIInserts = {
+H_LHVoiceVIInserts = {
     
-    % [I LHVoiceVIInserts measure 143]                           %! SM4
+    % [H LHVoiceVIInserts measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I LHVoiceVIInserts measure 144]                           %! SM4
+    % [H LHVoiceVIInserts measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I LHVoiceVIInserts measure 145]                           %! SM4
+    % [H LHVoiceVIInserts measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I LHVoiceVIInserts measure 146]                           %! SM4
+    % [H LHVoiceVIInserts measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_LHResonanceVoice = {
+H_LHResonanceVoice = {
     
-    % [I LHResonanceVoice measure 143]                           %! SM4
+    % [H LHResonanceVoice measure 143]                           %! SM4
     s1 * 9/8
     
-    % [I LHResonanceVoice measure 144]                           %! SM4
+    % [H LHResonanceVoice measure 144]                           %! SM4
     s1 * 1/2
     
-    % [I LHResonanceVoice measure 145]                           %! SM4
+    % [H LHResonanceVoice measure 145]                           %! SM4
     s1 * 7/8
     
-    % [I LHResonanceVoice measure 146]                           %! SM4
+    % [H LHResonanceVoice measure 146]                           %! SM4
     s1 * 5/8
     
 }
 
 
-I_PianoMusicLHStaff = <<
+H_PianoMusicLHStaff = <<
     \context LHVoiceI = "LHVoiceI"
-    \I_LHVoiceI
+    \H_LHVoiceI
     \context LHVoiceII = "LHVoiceII"
-    \I_LHVoiceII
+    \H_LHVoiceII
     \context LHVoiceIII = "LHVoiceIII"
-    \I_LHVoiceIII
+    \H_LHVoiceIII
     \context LHVoiceIV = "LHVoiceIV"
-    \I_LHVoiceIV
+    \H_LHVoiceIV
     \context LHVoiceIVInserts = "LHVoiceIVInserts"
-    \I_LHVoiceIVInserts
+    \H_LHVoiceIVInserts
     \context LHVoiceV = "LHVoiceV"
-    \I_LHVoiceV
+    \H_LHVoiceV
     \context LHVoiceVInserts = "LHVoiceVInserts"
-    \I_LHVoiceVInserts
+    \H_LHVoiceVInserts
     \context LHVoiceVI = "LHVoiceVI"
-    \I_LHVoiceVI
+    \H_LHVoiceVI
     \context LHVoiceVIInserts = "LHVoiceVIInserts"
-    \I_LHVoiceVIInserts
+    \H_LHVoiceVIInserts
     \context LHResonanceVoice = "LHResonanceVoice"
-    \I_LHResonanceVoice
+    \H_LHResonanceVoice
 >>

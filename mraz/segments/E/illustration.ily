@@ -1,6 +1,6 @@
-F_GlobalSkips = {
+E_GlobalSkips = {
     
-    % [F GlobalSkips measure 86]                                         %! SM4
+    % [E GlobalSkips measure 86]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -83,7 +83,7 @@ F_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [F.1]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [E.1]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -94,7 +94,7 @@ F_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [F GlobalSkips measure 87]                                         %! SM4
+    % [E GlobalSkips measure 87]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 27/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -121,7 +121,7 @@ F_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [F.2]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [E.2]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -132,7 +132,7 @@ F_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [F GlobalSkips measure 88]                                         %! SM4
+    % [E GlobalSkips measure 88]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
 %@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -211,7 +211,7 @@ F_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [F.3]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [E.3]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -222,7 +222,7 @@ F_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [F GlobalSkips measure 89]                                         %! SM4
+    % [E GlobalSkips measure 89]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 15/16                                                          %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -249,7 +249,7 @@ F_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [F.4]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [E.4]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -260,7 +260,7 @@ F_GlobalSkips = {
         }
 %@% ^ \markup { \make-dark-cyan "[1/24]" }                               %! HSS2:SPACING_MARKUP
     
-    % [F GlobalSkips measure 90]                                         %! SM4
+    % [E GlobalSkips measure 90]                                         %! SM4
     \newSpacingSection                                                   %! HSS1:SPACING
     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)     %! HSS1:SPACING
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -288,7 +288,7 @@ F_GlobalSkips = {
             %@% \line                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%     {                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@%         \make-dark-cyan                                  %! SM3:STAGE_NUMBER_MARKUP
-            %@%             [F.5]                                        %! SM3:STAGE_NUMBER_MARKUP
+            %@%             [E.5]                                        %! SM3:STAGE_NUMBER_MARKUP
             %@%     }                                                    %! SM3:STAGE_NUMBER_MARKUP
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
@@ -304,9 +304,9 @@ F_GlobalSkips = {
 }
 
 
-F_RHVoiceI = {
+E_RHVoiceI = {
     
-    % [F RHVoiceI measure 86]                                    %! SM4
+    % [E RHVoiceI measure 86]                                    %! SM4
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -316,46 +316,46 @@ F_RHVoiceI = {
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F RHVoiceI measure 87]                                    %! SM4
+    % [E RHVoiceI measure 87]                                    %! SM4
     s1 * 27/16
     
-    % [F RHVoiceI measure 88]                                    %! SM4
+    % [E RHVoiceI measure 88]                                    %! SM4
     s1 * 21/16
     
-    % [F RHVoiceI measure 89]                                    %! SM4
+    % [E RHVoiceI measure 89]                                    %! SM4
     s1 * 15/16
     
-    % [F RHVoiceI measure 90]                                    %! SM4
+    % [E RHVoiceI measure 90]                                    %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceIInserts = {
+E_RHVoiceIInserts = {
     
-    % [F RHVoiceIInserts measure 86]                             %! SM4
+    % [E RHVoiceIInserts measure 86]                             %! SM4
     s1 * 29/16
     
-    % [F RHVoiceIInserts measure 87]                             %! SM4
+    % [E RHVoiceIInserts measure 87]                             %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIInserts measure 88]                             %! SM4
+    % [E RHVoiceIInserts measure 88]                             %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIInserts measure 89]                             %! SM4
+    % [E RHVoiceIInserts measure 89]                             %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIInserts measure 90]                             %! SM4
+    % [E RHVoiceIInserts measure 90]                             %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceII = {
+E_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 86]                           %! SM4
+            % [E RHVoiceII measure 86]                           %! SM4
             \override Script.direction = #up                     %! OC1
             \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
@@ -552,7 +552,7 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 87]                           %! SM4
+            % [E RHVoiceII measure 87]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d'16
@@ -729,7 +729,7 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 88]                           %! SM4
+            % [E RHVoiceII measure 88]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             b'16
@@ -876,7 +876,7 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 89]                           %! SM4
+            % [E RHVoiceII measure 89]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             fs''16
@@ -989,7 +989,7 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 90]                           %! SM4
+            % [E RHVoiceII measure 90]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
@@ -1110,343 +1110,343 @@ F_RHVoiceII = {
 }
 
 
-F_RHVoiceIIInserts = {
+E_RHVoiceIIInserts = {
     
-    % [F RHVoiceIIInserts measure 86]                            %! SM4
+    % [E RHVoiceIIInserts measure 86]                            %! SM4
     s1 * 29/16
     
-    % [F RHVoiceIIInserts measure 87]                            %! SM4
+    % [E RHVoiceIIInserts measure 87]                            %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIIInserts measure 88]                            %! SM4
+    % [E RHVoiceIIInserts measure 88]                            %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIIInserts measure 89]                            %! SM4
+    % [E RHVoiceIIInserts measure 89]                            %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIIInserts measure 90]                            %! SM4
+    % [E RHVoiceIIInserts measure 90]                            %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceIII = {
+E_RHVoiceIII = {
     
-    % [F RHVoiceIII measure 86]                                  %! SM4
+    % [E RHVoiceIII measure 86]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 29/16
     \mp                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F RHVoiceIII measure 87]                                  %! SM4
+    % [E RHVoiceIII measure 87]                                  %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIII measure 88]                                  %! SM4
+    % [E RHVoiceIII measure 88]                                  %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIII measure 89]                                  %! SM4
+    % [E RHVoiceIII measure 89]                                  %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIII measure 90]                                  %! SM4
+    % [E RHVoiceIII measure 90]                                  %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceIIIInserts = {
+E_RHVoiceIIIInserts = {
     
-    % [F RHVoiceIIIInserts measure 86]                           %! SM4
+    % [E RHVoiceIIIInserts measure 86]                           %! SM4
     s1 * 29/16
     
-    % [F RHVoiceIIIInserts measure 87]                           %! SM4
+    % [E RHVoiceIIIInserts measure 87]                           %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIIIInserts measure 88]                           %! SM4
+    % [E RHVoiceIIIInserts measure 88]                           %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIIIInserts measure 89]                           %! SM4
+    % [E RHVoiceIIIInserts measure 89]                           %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIIIInserts measure 90]                           %! SM4
+    % [E RHVoiceIIIInserts measure 90]                           %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceIV = {
+E_RHVoiceIV = {
     
-    % [F RHVoiceIV measure 86]                                   %! SM4
+    % [E RHVoiceIV measure 86]                                   %! SM4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 29/16
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F RHVoiceIV measure 87]                                   %! SM4
+    % [E RHVoiceIV measure 87]                                   %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIV measure 88]                                   %! SM4
+    % [E RHVoiceIV measure 88]                                   %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIV measure 89]                                   %! SM4
+    % [E RHVoiceIV measure 89]                                   %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIV measure 90]                                   %! SM4
+    % [E RHVoiceIV measure 90]                                   %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceIVInserts = {
+E_RHVoiceIVInserts = {
     
-    % [F RHVoiceIVInserts measure 86]                            %! SM4
+    % [E RHVoiceIVInserts measure 86]                            %! SM4
     s1 * 29/16
     
-    % [F RHVoiceIVInserts measure 87]                            %! SM4
+    % [E RHVoiceIVInserts measure 87]                            %! SM4
     s1 * 27/16
     
-    % [F RHVoiceIVInserts measure 88]                            %! SM4
+    % [E RHVoiceIVInserts measure 88]                            %! SM4
     s1 * 21/16
     
-    % [F RHVoiceIVInserts measure 89]                            %! SM4
+    % [E RHVoiceIVInserts measure 89]                            %! SM4
     s1 * 15/16
     
-    % [F RHVoiceIVInserts measure 90]                            %! SM4
+    % [E RHVoiceIVInserts measure 90]                            %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceV = {
+E_RHVoiceV = {
     
-    % [F RHVoiceV measure 86]                                    %! SM4
+    % [E RHVoiceV measure 86]                                    %! SM4
     s1 * 29/16
     
-    % [F RHVoiceV measure 87]                                    %! SM4
+    % [E RHVoiceV measure 87]                                    %! SM4
     s1 * 27/16
     
-    % [F RHVoiceV measure 88]                                    %! SM4
+    % [E RHVoiceV measure 88]                                    %! SM4
     s1 * 21/16
     
-    % [F RHVoiceV measure 89]                                    %! SM4
+    % [E RHVoiceV measure 89]                                    %! SM4
     s1 * 15/16
     
-    % [F RHVoiceV measure 90]                                    %! SM4
+    % [E RHVoiceV measure 90]                                    %! SM4
     s1 * 1
     
 }
 
 
-F_RHVoiceVI = {
+E_RHVoiceVI = {
     
-    % [F RHVoiceVI measure 86]                                   %! SM4
+    % [E RHVoiceVI measure 86]                                   %! SM4
     s1 * 29/16
     
-    % [F RHVoiceVI measure 87]                                   %! SM4
+    % [E RHVoiceVI measure 87]                                   %! SM4
     s1 * 27/16
     
-    % [F RHVoiceVI measure 88]                                   %! SM4
+    % [E RHVoiceVI measure 88]                                   %! SM4
     s1 * 21/16
     
-    % [F RHVoiceVI measure 89]                                   %! SM4
+    % [E RHVoiceVI measure 89]                                   %! SM4
     s1 * 15/16
     
-    % [F RHVoiceVI measure 90]                                   %! SM4
+    % [E RHVoiceVI measure 90]                                   %! SM4
     s1 * 1
     
 }
 
 
-F_RHResonanceVoice = {
+E_RHResonanceVoice = {
     
-    % [F RHResonanceVoice measure 86]                            %! SM4
+    % [E RHResonanceVoice measure 86]                            %! SM4
     s1 * 29/16
     
-    % [F RHResonanceVoice measure 87]                            %! SM4
+    % [E RHResonanceVoice measure 87]                            %! SM4
     s1 * 27/16
     
-    % [F RHResonanceVoice measure 88]                            %! SM4
+    % [E RHResonanceVoice measure 88]                            %! SM4
     s1 * 21/16
     
-    % [F RHResonanceVoice measure 89]                            %! SM4
+    % [E RHResonanceVoice measure 89]                            %! SM4
     s1 * 15/16
     
-    % [F RHResonanceVoice measure 90]                            %! SM4
+    % [E RHResonanceVoice measure 90]                            %! SM4
     s1 * 1
     
 }
 
 
-F_PianoMusicRHStaff = <<
+E_PianoMusicRHStaff = <<
     \context RHVoiceI = "RHVoiceI"
-    \F_RHVoiceI
+    \E_RHVoiceI
     \context RHVoiceIInserts = "RHVoiceIInserts"
-    \F_RHVoiceIInserts
+    \E_RHVoiceIInserts
     \context RHVoiceII = "RHVoiceII"
-    \F_RHVoiceII
+    \E_RHVoiceII
     \context RHVoiceIIInserts = "RHVoiceIIInserts"
-    \F_RHVoiceIIInserts
+    \E_RHVoiceIIInserts
     \context RHVoiceIII = "RHVoiceIII"
-    \F_RHVoiceIII
+    \E_RHVoiceIII
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-    \F_RHVoiceIIIInserts
+    \E_RHVoiceIIIInserts
     \context RHVoiceIV = "RHVoiceIV"
-    \F_RHVoiceIV
+    \E_RHVoiceIV
     \context RHVoiceIVInserts = "RHVoiceIVInserts"
-    \F_RHVoiceIVInserts
+    \E_RHVoiceIVInserts
     \context RHVoiceV = "RHVoiceV"
-    \F_RHVoiceV
+    \E_RHVoiceV
     \context RHVoiceVI = "RHVoiceVI"
-    \F_RHVoiceVI
+    \E_RHVoiceVI
     \context RHResonanceVoice = "RHResonanceVoice"
-    \F_RHResonanceVoice
+    \E_RHResonanceVoice
 >>
 
 
-F_LHVoiceI = {
+E_LHVoiceI = {
     
-    % [F LHVoiceI measure 86]                                    %! SM4
+    % [E LHVoiceI measure 86]                                    %! SM4
     s1 * 29/16
     
-    % [F LHVoiceI measure 87]                                    %! SM4
+    % [E LHVoiceI measure 87]                                    %! SM4
     s1 * 27/16
     
-    % [F LHVoiceI measure 88]                                    %! SM4
+    % [E LHVoiceI measure 88]                                    %! SM4
     s1 * 21/16
     
-    % [F LHVoiceI measure 89]                                    %! SM4
+    % [E LHVoiceI measure 89]                                    %! SM4
     s1 * 15/16
     
-    % [F LHVoiceI measure 90]                                    %! SM4
+    % [E LHVoiceI measure 90]                                    %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceII = {
+E_LHVoiceII = {
     
-    % [F LHVoiceII measure 86]                                   %! SM4
+    % [E LHVoiceII measure 86]                                   %! SM4
     s1 * 29/16
     
-    % [F LHVoiceII measure 87]                                   %! SM4
+    % [E LHVoiceII measure 87]                                   %! SM4
     s1 * 27/16
     
-    % [F LHVoiceII measure 88]                                   %! SM4
+    % [E LHVoiceII measure 88]                                   %! SM4
     s1 * 21/16
     
-    % [F LHVoiceII measure 89]                                   %! SM4
+    % [E LHVoiceII measure 89]                                   %! SM4
     s1 * 15/16
     
-    % [F LHVoiceII measure 90]                                   %! SM4
+    % [E LHVoiceII measure 90]                                   %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceIII = {
+E_LHVoiceIII = {
     
-    % [F LHVoiceIII measure 86]                                  %! SM4
+    % [E LHVoiceIII measure 86]                                  %! SM4
     s1 * 29/16
     
-    % [F LHVoiceIII measure 87]                                  %! SM4
+    % [E LHVoiceIII measure 87]                                  %! SM4
     s1 * 27/16
     
-    % [F LHVoiceIII measure 88]                                  %! SM4
+    % [E LHVoiceIII measure 88]                                  %! SM4
     s1 * 21/16
     
-    % [F LHVoiceIII measure 89]                                  %! SM4
+    % [E LHVoiceIII measure 89]                                  %! SM4
     s1 * 15/16
     
-    % [F LHVoiceIII measure 90]                                  %! SM4
+    % [E LHVoiceIII measure 90]                                  %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceIV = {
+E_LHVoiceIV = {
     
-    % [F LHVoiceIV measure 86]                                   %! SM4
+    % [E LHVoiceIV measure 86]                                   %! SM4
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 29/16
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F LHVoiceIV measure 87]                                   %! SM4
+    % [E LHVoiceIV measure 87]                                   %! SM4
     s1 * 27/16
     
-    % [F LHVoiceIV measure 88]                                   %! SM4
+    % [E LHVoiceIV measure 88]                                   %! SM4
     s1 * 21/16
     
-    % [F LHVoiceIV measure 89]                                   %! SM4
+    % [E LHVoiceIV measure 89]                                   %! SM4
     s1 * 15/16
     
-    % [F LHVoiceIV measure 90]                                   %! SM4
+    % [E LHVoiceIV measure 90]                                   %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceIVInserts = {
+E_LHVoiceIVInserts = {
     
-    % [F LHVoiceIVInserts measure 86]                            %! SM4
+    % [E LHVoiceIVInserts measure 86]                            %! SM4
     s1 * 29/16
     
-    % [F LHVoiceIVInserts measure 87]                            %! SM4
+    % [E LHVoiceIVInserts measure 87]                            %! SM4
     s1 * 27/16
     
-    % [F LHVoiceIVInserts measure 88]                            %! SM4
+    % [E LHVoiceIVInserts measure 88]                            %! SM4
     s1 * 21/16
     
-    % [F LHVoiceIVInserts measure 89]                            %! SM4
+    % [E LHVoiceIVInserts measure 89]                            %! SM4
     s1 * 15/16
     
-    % [F LHVoiceIVInserts measure 90]                            %! SM4
+    % [E LHVoiceIVInserts measure 90]                            %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceV = {
+E_LHVoiceV = {
     
-    % [F LHVoiceV measure 86]                                    %! SM4
+    % [E LHVoiceV measure 86]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 29/16
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F LHVoiceV measure 87]                                    %! SM4
+    % [E LHVoiceV measure 87]                                    %! SM4
     s1 * 27/16
     
-    % [F LHVoiceV measure 88]                                    %! SM4
+    % [E LHVoiceV measure 88]                                    %! SM4
     s1 * 21/16
     
-    % [F LHVoiceV measure 89]                                    %! SM4
+    % [E LHVoiceV measure 89]                                    %! SM4
     s1 * 15/16
     
-    % [F LHVoiceV measure 90]                                    %! SM4
+    % [E LHVoiceV measure 90]                                    %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceVInserts = {
+E_LHVoiceVInserts = {
     
-    % [F LHVoiceVInserts measure 86]                             %! SM4
+    % [E LHVoiceVInserts measure 86]                             %! SM4
     s1 * 29/16
     
-    % [F LHVoiceVInserts measure 87]                             %! SM4
+    % [E LHVoiceVInserts measure 87]                             %! SM4
     s1 * 27/16
     
-    % [F LHVoiceVInserts measure 88]                             %! SM4
+    % [E LHVoiceVInserts measure 88]                             %! SM4
     s1 * 21/16
     
-    % [F LHVoiceVInserts measure 89]                             %! SM4
+    % [E LHVoiceVInserts measure 89]                             %! SM4
     s1 * 15/16
     
-    % [F LHVoiceVInserts measure 90]                             %! SM4
+    % [E LHVoiceVInserts measure 90]                             %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceVI = {
+E_LHVoiceVI = {
     
-    % [F LHVoiceVI measure 86]                                   %! SM4
+    % [E LHVoiceVI measure 86]                                   %! SM4
     \set PianoMusicStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -1479,46 +1479,46 @@ F_LHVoiceVI = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F LHVoiceVI measure 87]                                   %! SM4
+    % [E LHVoiceVI measure 87]                                   %! SM4
     s1 * 27/16
     
-    % [F LHVoiceVI measure 88]                                   %! SM4
+    % [E LHVoiceVI measure 88]                                   %! SM4
     s1 * 21/16
     
-    % [F LHVoiceVI measure 89]                                   %! SM4
+    % [E LHVoiceVI measure 89]                                   %! SM4
     s1 * 15/16
     
-    % [F LHVoiceVI measure 90]                                   %! SM4
+    % [E LHVoiceVI measure 90]                                   %! SM4
     s1 * 1
     
 }
 
 
-F_LHVoiceVIInserts = {
+E_LHVoiceVIInserts = {
     
-    % [F LHVoiceVIInserts measure 86]                            %! SM4
+    % [E LHVoiceVIInserts measure 86]                            %! SM4
     s1 * 29/16
     
-    % [F LHVoiceVIInserts measure 87]                            %! SM4
+    % [E LHVoiceVIInserts measure 87]                            %! SM4
     s1 * 27/16
     
-    % [F LHVoiceVIInserts measure 88]                            %! SM4
+    % [E LHVoiceVIInserts measure 88]                            %! SM4
     s1 * 21/16
     
-    % [F LHVoiceVIInserts measure 89]                            %! SM4
+    % [E LHVoiceVIInserts measure 89]                            %! SM4
     s1 * 15/16
     
-    % [F LHVoiceVIInserts measure 90]                            %! SM4
+    % [E LHVoiceVIInserts measure 90]                            %! SM4
     s1 * 1
     
 }
 
 
-F_LHResonanceVoice = {
+E_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHResonanceVoice measure 86]                    %! SM4
+            % [E LHResonanceVoice measure 86]                    %! SM4
             <cs,, cs,>1..
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1545,7 +1545,7 @@ F_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHResonanceVoice measure 87]                    %! SM4
+            % [E LHResonanceVoice measure 87]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <cs,, cs,>1.
             \repeatTie                                           %! SC
@@ -1574,7 +1574,7 @@ F_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHResonanceVoice measure 88]                    %! SM4
+            % [E LHResonanceVoice measure 88]                    %! SM4
             <ef,, ef,>1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1604,7 +1604,7 @@ F_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHResonanceVoice measure 89]                    %! SM4
+            % [E LHResonanceVoice measure 89]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <ef,, ef,>2...
             \repeatTie                                           %! SC
@@ -1630,7 +1630,7 @@ F_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHResonanceVoice measure 90]                    %! SM4
+            % [E LHResonanceVoice measure 90]                    %! SM4
             <ef,, ef,>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1656,25 +1656,25 @@ F_LHResonanceVoice = {
 }
 
 
-F_PianoMusicLHStaff = <<
+E_PianoMusicLHStaff = <<
     \context LHVoiceI = "LHVoiceI"
-    \F_LHVoiceI
+    \E_LHVoiceI
     \context LHVoiceII = "LHVoiceII"
-    \F_LHVoiceII
+    \E_LHVoiceII
     \context LHVoiceIII = "LHVoiceIII"
-    \F_LHVoiceIII
+    \E_LHVoiceIII
     \context LHVoiceIV = "LHVoiceIV"
-    \F_LHVoiceIV
+    \E_LHVoiceIV
     \context LHVoiceIVInserts = "LHVoiceIVInserts"
-    \F_LHVoiceIVInserts
+    \E_LHVoiceIVInserts
     \context LHVoiceV = "LHVoiceV"
-    \F_LHVoiceV
+    \E_LHVoiceV
     \context LHVoiceVInserts = "LHVoiceVInserts"
-    \F_LHVoiceVInserts
+    \E_LHVoiceVInserts
     \context LHVoiceVI = "LHVoiceVI"
-    \F_LHVoiceVI
+    \E_LHVoiceVI
     \context LHVoiceVIInserts = "LHVoiceVIInserts"
-    \F_LHVoiceVIInserts
+    \E_LHVoiceVIInserts
     \context LHResonanceVoice = "LHResonanceVoice"
-    \F_LHResonanceVoice
+    \E_LHResonanceVoice
 >>
