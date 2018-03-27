@@ -1235,7 +1235,6 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 85]                           %! SM4
             \override Script.direction = #up                     %! OC1
             \override TextScript.direction = #up                 %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1700,7 +1699,6 @@ E_RHVoiceII = {
             \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs16
             -\staccato                                           %! IC
@@ -1894,7 +1892,6 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 95]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
             d'16
             -\staccato                                           %! IC
             [
@@ -2072,7 +2069,6 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 96]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
             b'16
             -\staccato                                           %! IC
             [
@@ -2221,7 +2217,6 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 97]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
             fs''16
             -\staccato                                           %! IC
             [
@@ -2338,7 +2333,6 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 98]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
             f''16
             -\staccato                                           %! IC
             [
@@ -2640,7 +2634,6 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 86]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
                 d'''8
                 \mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2755,7 +2748,6 @@ E_RHVoiceIII = {
             \once \override Script.extra-offset = #'(1 . 0)      %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2786,7 +2778,6 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 88]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 cs'''8
                 [
                 (                                                %! SC
@@ -2921,7 +2912,6 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 90]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 a'''8
                 [
                 (                                                %! SC
@@ -3033,7 +3023,6 @@ E_RHVoiceIII = {
             \once \override Script.color = #black                %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3063,7 +3052,6 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 92]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 c'''8
                 [
                 (                                                %! SC
@@ -3198,7 +3186,6 @@ E_RHVoiceIII = {
             \once \override Script.extra-offset = #'(1 . 0)      %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3232,7 +3219,6 @@ E_RHVoiceIII = {
                 % [E RHVoiceIII measure 99]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
                 \override TupletBracket.staff-padding = #3       %! OC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                 f'''8
                 [
                 (                                                %! SC
@@ -3316,7 +3302,6 @@ E_RHVoiceIII = {
             \once \override Script.extra-offset = #'(1 . 0)      %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r4
             -\fermata                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4322,7 +4307,6 @@ E_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceV measure 89]                            %! SM4
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             bf,,8.

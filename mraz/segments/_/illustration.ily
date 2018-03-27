@@ -945,7 +945,6 @@ i_RHVoiceII = {
             \once \override TextScript.direction = #up           %! OC1
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
             r8
             -\shortfermata                                       %! IC
             ^ \markup {

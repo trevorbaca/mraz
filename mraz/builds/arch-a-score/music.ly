@@ -20,12 +20,12 @@
         %\include "layout.ly"
         %}
         {
-        %\include "_segments/segment--.ly" % fail to A; ok to others
+        \include "_segments/segment--.ly"
         \include "_segments/segment-A.ly"
         \include "_segments/segment-B.ly"
         \include "_segments/segment-C.ly"
         \include "_segments/segment-D.ly"
-        %\include "_segments/segment-E.ly" % fail to F
+        \include "_segments/segment-E.ly"
         \include "_segments/segment-F.ly"
         }
     >>
