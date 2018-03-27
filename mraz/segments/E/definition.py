@@ -20,7 +20,7 @@ assert len(segments) == 14, repr(len(segments))
 segments = segments.cursor()
 
 accumulator(
-    'RHVoiceI',
+    'rh_v1',
     segments.next(14),
     baca.beam_positions(6),
     baca.register(-8),
@@ -64,6 +64,6 @@ accumulator.populate_segment_maker(maker)
 ###############################################################################
 
 #maker(
-#    ('RHVoiceI', (1, 2)),
+#    ('rh_v1', (1, 2)),
 #    baca.register(0, -12),
 #    )
