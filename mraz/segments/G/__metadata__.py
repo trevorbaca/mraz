@@ -37,8 +37,8 @@ metadata = abjad.OrderedDict(
                 ],
             ),
         ('duration', "0'08''"),
-        ('first_measure_number', 142),
-        ('last_measure_number', 145),
+        ('first_measure_number', 85),
+        ('last_measure_number', 88),
         (
             'persistent_indicators',
             abjad.OrderedDict(
@@ -59,7 +59,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='LHVoiceV',
                                 prototype='abjad.Dynamic',
-                                value='p',
+                                value='ppp',
                                 ),
                             ],
                         ),
@@ -77,7 +77,7 @@ metadata = abjad.OrderedDict(
                         'PianoMusicLHStaff',
                         [
                             abjad.Momento(
-                                context='LHVoiceIV',
+                                context='LHVoiceVI',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),
@@ -119,7 +119,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='RHVoiceII',
                                 prototype='abjad.Dynamic',
-                                value='fff',
+                                value='ppp',
                                 ),
                             ],
                         ),
@@ -162,7 +162,7 @@ metadata = abjad.OrderedDict(
                 ),
             ),
         ('segment_name', 'G'),
-        ('segment_number', 8),
+        ('segment_number', 5),
         (
             'sounds_during_segment',
             abjad.OrderedDict(
@@ -191,8 +191,8 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
-        ('start_clock_time', "6'26''"),
-        ('stop_clock_time', "6'34''"),
+        ('start_clock_time', "3'46''"),
+        ('stop_clock_time', "3'54''"),
         (
             'time_signatures',
             ['9/8', '4/8', '7/8', '5/8'],

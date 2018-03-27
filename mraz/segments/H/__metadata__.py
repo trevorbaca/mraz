@@ -37,8 +37,8 @@ metadata = abjad.OrderedDict(
                 ],
             ),
         ('duration', "0'12''"),
-        ('first_measure_number', 146),
-        ('last_measure_number', 156),
+        ('first_measure_number', 89),
+        ('last_measure_number', 99),
         (
             'persistent_indicators',
             abjad.OrderedDict(
@@ -77,7 +77,7 @@ metadata = abjad.OrderedDict(
                         'PianoMusicLHStaff',
                         [
                             abjad.Momento(
-                                context='LHVoiceIV',
+                                context='LHVoiceVI',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),
@@ -162,7 +162,7 @@ metadata = abjad.OrderedDict(
                 ),
             ),
         ('segment_name', 'H'),
-        ('segment_number', 9),
+        ('segment_number', 6),
         (
             'sounds_during_segment',
             abjad.OrderedDict(
@@ -191,8 +191,8 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
-        ('start_clock_time', "6'34''"),
-        ('stop_clock_time', "6'46''"),
+        ('start_clock_time', "3'54''"),
+        ('stop_clock_time', "4'06''"),
         (
             'time_signatures',
             [
