@@ -183,7 +183,6 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.markup('(extremely short)', baca.rest(0)),
-    baca.proportional_notation_duration((1, 4)),
     baca.scripts_up(),
     baca.short_fermata(),
     baca.text_scripts_up(),
