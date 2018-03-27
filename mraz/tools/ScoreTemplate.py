@@ -169,6 +169,33 @@ class ScoreTemplate(baca.ScoreTemplate):
         'LHResonanceVoice': 'darkred',
         }
 
+    ### INITIALIZER ###
+
+    def __init__(self):
+        super(ScoreTemplate, self).__init__()
+        self.voice_abbreviations.update({
+            'rh_v1': 'RHVoiceI',
+            'rh_v1_i': 'RHVoiceIInserts',
+            'rh_v2': 'RHVoiceII',
+            'rh_v2_i': 'RHVoiceIIInserts',
+            'rh_v3': 'RHVoiceIII',
+            'rh_v3_i': 'RHVoiceIIIInserts',
+            'rh_v4': 'RHVoiceIV',
+            'rh_v5': 'RHVoiceV',
+            'rh_v6': 'RHVoiceVI',
+            'rh_resonance': 'RHResonanceVoice',
+            'lh_v1': 'LHVoiceI',
+            'lh_v2': 'LHVoiceII',
+            'lh_v3': 'LHVoiceIII',
+            'lh_v4': 'LHVoiceIV',
+            'lh_v4_i': 'LHVoiceIVInserts',
+            'lh_v5': 'LHVoiceV',
+            'lh_v5_i': 'LHVoiceVInserts',
+            'lh_v6': 'LHVoiceVI',
+            'lh_v6_i': 'LHVoiceVIInserts',
+            'lh_resonance': 'LHResonanceVoice',
+            })
+
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
