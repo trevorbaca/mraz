@@ -16,22 +16,22 @@
         \context Score = "Score"
         \with
         {
-            currentBarNumber = #69
+            currentBarNumber = #85
         }
         <<
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \D_GlobalSkips
+                \E_GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
                 <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
-                    \D_PianoMusicRHStaff
+                    \E_PianoMusicRHStaff
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
-                    \D_PianoMusicLHStaff
+                    \E_PianoMusicLHStaff
                 >>
             }
         >>

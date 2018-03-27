@@ -5,37 +5,121 @@ import os
 
 
 ###############################################################################
-##################################### [1] #####################################
+##################################### [2] #####################################
 ###############################################################################
 
 accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
-maker = mraz.SilverDesignMaker()
-design = maker()
-design = abjad.CyclicTuple(design)
-assert len(design) == 34, repr(len(design))
+collection_maker = mraz.CollectionMaker()
+collections = collection_maker.make_segment_2_collections()
 
-segments = [baca.PitchClassSegment(_.get_payload()) for _ in design[45:59]]
-segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
-assert len(segments) == 14, repr(len(segments))
-segments = segments.cursor()
+#################################### [2.2] ####################################
 
 accumulator(
-    'rh_v1',
-    segments.next(14),
-    baca.beam_positions(6),
-    baca.register(-8),
-    extend_beam=True,
-    figure_name='rh-1 1.1.1',
+    'rh_v2',
+    collections['stage 2']['rh'].next(),
+    baca.bass_to_octave(3),
+    baca.dynamic('ppp'),
+    baca.map(baca.slur(), baca.tuplets()),
+    baca.staccati(),
+    figure_name='rh-2 2.2.1',
     )
 
-assert segments.is_exhausted
+accumulator(
+    'rh_v2',
+    collections['stage 2']['rh'].next(),
+    baca.bass_to_octave(4),
+    baca.map(baca.slur(), baca.tuplets()),
+    baca.staccati(),
+    figure_name='rh-2 2.2.2',
+    )
+
+accumulator(
+    'rh_v2',
+    collections['stage 2']['rh'].next(),
+    baca.bass_to_octave(4),
+    baca.map(baca.slur(), baca.tuplets()),
+    baca.staccati(),
+    figure_name='rh-2 2.2.3',
+    )
+
+accumulator(
+    'rh_v2',
+    collections['stage 2']['rh'].next(),
+    baca.bass_to_octave(5),
+    baca.map(baca.slur(), baca.tuplets()),
+    baca.staccati(),
+    figure_name='rh-2 2.2.4',
+    )
+
+accumulator(
+    'rh_v2',
+    collections['stage 2']['rh'].next(exhausted=True),
+    baca.bass_to_octave(5),
+    baca.map(baca.slur(), baca.tuplets()),
+    baca.staccati(),
+    figure_name='rh-2 2.2.5',
+    )
+
+### LH RESONANCE ###
+
+accumulator(
+    'lh_resonance',
+    [{-35, -23}],
+    baca.anchor('rh_v2', baca.note(0)),
+    baca.flags(),
+    color_unregistered_pitches=False,
+    counts=[29],
+    figure_name='lhr 2.2.1',
+    )
+
+accumulator(
+    'lh_resonance',
+    [{-35, -23}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    counts=[27],
+    figure_name='lhr 2.2.2a',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'lh_resonance',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    counts=[21],
+    figure_name='lhr 2.2.3a',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'lh_resonance',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    counts=[15],
+    figure_name='lhr 2.2.4',
+    hide_time_signature=True,
+    )
+
+accumulator(
+    'lh_resonance',
+    [{-33, -21}],
+    baca.flags(),
+    color_unregistered_pitches=False,
+    counts=[16],
+    figure_name='lhr 2.2.5',
+    hide_time_signature=True,
+    )
 
 ###############################################################################
 ################################ SEGMENT-MAKER ################################
 ###############################################################################
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['112']),
+    (1, mraz.metronome_marks['84']),
+    (1, abjad.Accelerando()),
+    (3, mraz.metronome_marks['112']),
     ])
 
 spacing = baca.HorizontalSpacingSpecifier(
@@ -46,12 +130,13 @@ spacing = baca.HorizontalSpacingSpecifier(
 measures_per_stage = len(accumulator.time_signatures) * [1]
 
 maker = baca.SegmentMaker(
-    color_octaves=True,
+    color_octaves=False,
     color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=True,
+    color_repeat_pitch_classes=False,
     measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
+    range_checker=abjad.Piano().pitch_range,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     spacing=spacing,
@@ -64,7 +149,22 @@ accumulator.populate_segment_maker(maker)
 ############################# CROSS-STAGE COMMANDS ############################
 ###############################################################################
 
-#maker(
-#    ('rh_v1', (1, 2)),
-#    baca.register(0, -12),
-#    )
+maker(
+    'rh_v2',
+    baca.scripts_up(),
+    baca.slurs_up(),
+    )
+
+maker(
+    'lh_resonance',
+    )
+
+maker(
+    ('lh_resonance', (1, 2)),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
+    )
+
+maker(
+    ('lh_resonance', (3, 5)),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
+    )

@@ -4,6 +4,7 @@
 #(ly:set-option 'relative-includes #t)
 
 \include "../../stylesheets/stylesheet.ily"
+\include "../../stylesheets/nonfirst-segment.ily"
 \include "illustration.ily"
 
 
@@ -13,20 +14,24 @@
             \include "layout.ly"
         }
         \context Score = "Score"
+        \with
+        {
+            currentBarNumber = #10
+        }
         <<
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \A_GlobalSkips
+                \B_GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
                 \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
                 <<
                     \context PianoMusicRHStaff = "PianoMusicRHStaff"
-                    \A_PianoMusicRHStaff
+                    \B_PianoMusicRHStaff
                     \context PianoMusicLHStaff = "PianoMusicLHStaff"
-                    \A_PianoMusicLHStaff
+                    \B_PianoMusicLHStaff
                 >>
             }
         >>
