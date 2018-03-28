@@ -300,8 +300,6 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (9, mraz.metronome_marks['112']),
     ])
 
-measures_per_stage = len(accumulator.time_signatures) * [1]
-
 maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
@@ -314,7 +312,6 @@ maker = baca.SegmentMaker(
     final_markup_extra_offset=(-24, -8),
     ignore_repeat_pitch_classes=True,
     last_segment=True,
-    measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     range_checker=abjad.Piano().pitch_range,
