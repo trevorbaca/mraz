@@ -2352,8 +2352,7 @@ C_RHVoiceI = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 54]                            %! SM4
             r2
@@ -2377,8 +2376,7 @@ C_RHVoiceI = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 55]                            %! SM4
             \once \override Script.color = #black                %! OC1
@@ -2857,8 +2855,7 @@ C_RHVoiceII = {
     s1 * 3/2
     \ff                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceII measure 35]                           %! SM4
             \once \override Rest.transparent = ##t               %! OC1
@@ -3294,8 +3291,7 @@ C_RHVoiceII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceII measure 71]                           %! SM4
             \once \override Rest.transparent = ##t               %! OC1
@@ -3548,8 +3544,7 @@ C_RHVoiceII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceII measure 75]                           %! SM4
             \once \override Score.BarLine.transparent = ##t      %! OC1
@@ -3965,8 +3960,7 @@ C_RHVoiceIII = {
     % [C RHVoiceIII measure 38]                                  %! SM4
     s1 * 9/8
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceIII measure 39]                          %! SM4
             r2.
@@ -4033,8 +4027,7 @@ C_RHVoiceIII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceIII measure 41]                          %! SM4
             r2.
@@ -5247,8 +5240,7 @@ C_LHVoiceII = {
     % [C LHVoiceII measure 34]                                   %! SM4
     s1 * 289/8
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceII measure 76]                           %! SM4
             \override Staff.SustainPedalLineSpanner.staff-padding = #4 %! OC1
@@ -5814,8 +5806,7 @@ C_LHVoiceV = {
     % [C LHVoiceV measure 35]                                    %! SM4
     s1 * 1/4
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 36]                            %! SM4
             r2.
@@ -5966,8 +5957,7 @@ C_LHVoiceV = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 41]                            %! SM4
             r2.
@@ -6343,8 +6333,7 @@ C_LHVoiceV = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 53]                            %! SM4
             r1
@@ -6446,8 +6435,7 @@ C_LHVoiceV = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 58]                            %! SM4
             r2
@@ -6591,8 +6579,7 @@ C_LHVoiceV = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 62]                            %! SM4
             r2

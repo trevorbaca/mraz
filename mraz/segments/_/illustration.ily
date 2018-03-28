@@ -784,8 +784,7 @@ i_RHVoiceII = {
     % [_ RHVoiceII measure 2]                                    %! SM4
     s1 * 3/2
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 4]                            %! SM4
             \once \override Script.direction = #up               %! OC1
@@ -817,8 +816,7 @@ i_RHVoiceII = {
     % [_ RHVoiceII measure 5]                                    %! SM4
     s1 * 1/2
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 6]                            %! SM4
             \once \override Script.direction = #up               %! OC1
@@ -912,8 +910,7 @@ i_RHVoiceII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 9]                            %! SM4
             \once \override Script.direction = #up               %! OC1

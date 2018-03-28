@@ -884,8 +884,7 @@ B_RHVoiceII = {
     s1 * 1/2
     \fff                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 23]                           %! SM4
             \once \override Script.direction = #up               %! OC1
@@ -966,8 +965,7 @@ B_RHVoiceII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 25]                           %! SM4
             \once \override Script.direction = #up               %! OC1
@@ -1080,8 +1078,7 @@ B_RHVoiceII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 28]                           %! SM4
             \once \override Script.direction = #up               %! OC1
@@ -1940,8 +1937,7 @@ B_LHVoiceII = {
     % [B LHVoiceII measure 22]                                   %! SM4
     s1 * 67/8
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [B LHVoiceII measure 33]                           %! SM4
             r1
