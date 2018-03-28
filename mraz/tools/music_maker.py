@@ -42,7 +42,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     ('ViolinMusicVoice', 1),
+        ...     ('MusicVoice', 1),
         ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
@@ -99,19 +99,79 @@ def music_maker():
                     {
                         \context Voice = "MusicVoice"
                         {
+                            \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                            % [MusicVoice measure 1]                                       %! SM4
-                            R1 * 1/16
+                                % [MusicVoice measure 1]                                   %! SM4
+                                e'16
+                            }
+                            \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                            % [MusicVoice measure 2]                                       %! SM4
-                            R1 * 7/16
+                                % [MusicVoice measure 2]                                   %! SM4
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
+                                fs'16
+                                [
             <BLANKLINE>
-                            % [MusicVoice measure 3]                                       %! SM4
-                            R1 * 1/16
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                d'16
             <BLANKLINE>
-                            % [MusicVoice measure 4]                                       %! SM4
-                            R1 * 3/8
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                ef'16
             <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                f'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
+                                c'16
+                                ]
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                % [MusicVoice measure 3]                                   %! SM4
+                                b'16
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                % [MusicVoice measure 4]                                   %! SM4
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
+                                bf'16
+                                [
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                g'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                c'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
+                                f'16
+                                ]
+            <BLANKLINE>
+                            }
                         }
                     }
                 >>
@@ -164,7 +224,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     ('ViolinMusicVoice', 1),
+        ...     ('MusicVoice', 1),
         ...     baca.RhythmCommand(
         ...         rhythm_maker=figures,
         ...         ),
@@ -220,16 +280,158 @@ def music_maker():
                     {
                         \context Voice = "MusicVoice"
                         {
+                            \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                            % [MusicVoice measure 1]                                       %! SM4
-                            R1 * 9/16
+                                % [MusicVoice measure 1]                                   %! SM4
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
+                                e'16
+                                [
+                            }
+                            \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                            % [MusicVoice measure 2]                                       %! SM4
-                            R1 * 7/8
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
+                                fs'16
             <BLANKLINE>
-                            % [MusicVoice measure 3]                                       %! SM4
-                            R1 * 1/2
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                d'16
             <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                ef'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                f'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                c'16
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
+                                b'16
+                                ]
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                % [MusicVoice measure 2]                                   %! SM4
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
+                                fs'16
+                                [
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                d'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                ef'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                f'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                c'16
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                b'16
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
+                                bf'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                g'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                c'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
+                                f'16
+                                ]
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                % [MusicVoice measure 3]                                   %! SM4
+                                \set stemLeftBeamCount = 0
+                                \set stemRightBeamCount = 2
+                                b'16
+                                [
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
+                                bf'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                g'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                a'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                af'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                c'16
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                f'16
+                            }
+                            \scaleDurations #'(1 . 1) {
+            <BLANKLINE>
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 0
+                                e'16
+                                ]
+            <BLANKLINE>
+                            }
                         }
                     }
                 >>

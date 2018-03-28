@@ -247,14 +247,11 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks['112']),
     ])
 
-measures_per_stage = len(accumulator.time_signatures) * [1]
-
 maker = baca.SegmentMaker(
     color_octaves=True,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
     final_bar_line=False,
-    measures_per_stage=measures_per_stage,
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     range_checker=abjad.Piano().pitch_range,
