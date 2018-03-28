@@ -143,6 +143,8 @@ class ScoreTemplate(baca.ScoreTemplate):
     ### CLASS VARIABLES ###
 
     __documentation_section__ = None
+    
+    _do_not_require_margin_markup = True
 
     ### CLASS VARIABLES ###
 

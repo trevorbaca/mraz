@@ -186,10 +186,6 @@ accumulator(
     figure_name='b.1.12',
     )
 
-###############################################################################
-################################ SEGMENT-MAKER ################################
-###############################################################################
-
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks['84']),
     (2, mraz.metronome_marks['112']),
@@ -214,11 +210,12 @@ maker = baca.SegmentMaker(
 
 accumulator.populate_segment_maker(maker)
 
-###############################################################################
-############################# CROSS-STAGE COMMANDS ############################
-###############################################################################
-
 maker(
     'lh_v4_i',
     baca.stems_up(),
+    )
+
+maker(
+    'rh_v1',
+    baca.start_markup('PIANO', context='PianoStaff', hcenter_in=12),
     )
