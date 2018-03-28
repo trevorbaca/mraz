@@ -21,6 +21,8 @@
         <<
             \context GlobalContext = "GlobalContext"
             <<
+                \context GlobalRests = "GlobalRests"
+                \A_GlobalRests
                 \context GlobalSkips = "GlobalSkips"
                 \A_GlobalSkips
             >>

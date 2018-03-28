@@ -95,7 +95,6 @@ accumulator(
     [abjad.Rest((1, 8))],
     baca.line_break(),
     baca.scripts_up(),
-    baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.1.6',
@@ -120,7 +119,6 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    baca.fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.1.8',
@@ -179,7 +177,6 @@ accumulator(
     [abjad.Rest((1, 8))],
     baca.markup('(extremely short)', baca.rest(0)),
     baca.scripts_up(),
-    baca.short_fermata(),
     baca.text_scripts_up(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
@@ -206,6 +203,17 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(3)),
+    baca.global_fermata('fermata', selector=baca.leaf(5)),
+    )
+
+maker(
+    'lh_v1',
+    baca.clef('treble'),
+    )
 
 maker(
     'lh_v4_i',

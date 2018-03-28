@@ -138,6 +138,8 @@ class ScoreTemplate(baca.ScoreTemplate):
     
     _do_not_require_margin_markup = True
 
+    _always_make_global_rests = True
+
     ### CLASS VARIABLES ###
 
     voice_colors = {

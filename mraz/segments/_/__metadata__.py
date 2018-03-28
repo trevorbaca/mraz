@@ -8,6 +8,7 @@ metadata = abjad.OrderedDict(
             [
                 'Score',
                 'GlobalContext',
+                'GlobalRests',
                 'GlobalSkips',
                 'MusicContext',
                 'PianoMusicStaffGroup',
@@ -37,6 +38,10 @@ metadata = abjad.OrderedDict(
                 ],
             ),
         ('duration', "0'22''"),
+        (
+            'fermata_measure_numbers',
+            [4, 6],
+            ),
         ('first_measure_number', 1),
         ('last_measure_number', 9),
         (

@@ -1,3 +1,47 @@
+i_GlobalRests = {
+    
+    % [_ GlobalRests measure 1]                                          %! SM4
+    R1 * 1
+    
+    % [_ GlobalRests measure 2]                                          %! SM4
+    R1 * 1/2
+    
+    % [_ GlobalRests measure 3]                                          %! SM4
+    R1 * 1
+    
+    % [_ GlobalRests measure 4]                                          %! SM4
+    \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
+    R1 * 1/8
+    ^ \markup {                                                          %! GFC1
+        \musicglyph                                                      %! GFC1
+            #"scripts.ushortfermata"                                     %! GFC1
+        }                                                                %! GFC1
+    
+    % [_ GlobalRests measure 5]                                          %! SM4
+    R1 * 1/2
+    
+    % [_ GlobalRests measure 6]                                          %! SM4
+    \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
+    R1 * 1/8
+    ^ \markup {                                                          %! GFC1
+        \musicglyph                                                      %! GFC1
+            #"scripts.ufermata"                                          %! GFC1
+        }                                                                %! GFC1
+    
+    % [_ GlobalRests measure 7]                                          %! SM4
+    R1 * 7/8
+    
+    % [_ GlobalRests measure 8]                                          %! SM4
+    R1 * 4
+    
+    % [_ GlobalRests measure 9]                                          %! SM4
+    R1 * 1/8
+    
+}
+
+
 i_GlobalSkips = {
     
     % [_ GlobalSkips measure 1]                                          %! SM4
@@ -791,7 +835,6 @@ i_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             r8
-            -\shortfermata                                       %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -823,7 +866,6 @@ i_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             r8
-            -\fermata                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -918,7 +960,6 @@ i_RHVoiceII = {
             \once \override Rest.transparent = ##t               %! OC1
             \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
             r8
-            -\shortfermata                                       %! IC
             ^ \markup {
                 \column
                     {
@@ -1372,12 +1413,12 @@ i_PianoMusicRHStaff = <<
 i_LHVoiceI = {
     
     % [_ LHVoiceI measure 1]                                     %! SM4
-    \clef "bass"                                                 %! SM8:DEFAULT_CLEF:ST3
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
-    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:DEFAULT_CLEF:SM33:ST3
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:EXPLICIT_CLEF:SM33:IC
     s1 * 1
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [_ LHVoiceI measure 2]                                     %! SM4
     s1 * 1/2
@@ -1730,10 +1771,10 @@ i_LHVoiceVI = {
             \override TupletBracket.direction = #down            %! OC1
             \override TupletBracket.staff-padding = #6           %! OC1
             \ottava #-1                                          %! SC
-            \clef "bass"                                         %! SM8:REDUNDANT_CLEF:IC
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-        %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-            \set PianoMusicLHStaff.forceClef = ##t               %! SM8:REDUNDANT_CLEF:SM33:IC
+            \clef "bass"                                         %! SM8:EXPLICIT_CLEF:IC
+            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+        %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+            \set PianoMusicLHStaff.forceClef = ##t               %! SM8:EXPLICIT_CLEF:SM33:IC
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             b,,,8
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
@@ -1754,7 +1795,7 @@ i_LHVoiceVI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
+            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
             
             \override Rest.direction = #down                     %! OC1
             r4

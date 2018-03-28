@@ -1,3 +1,44 @@
+A_GlobalRests = {
+    
+    % [A GlobalRests measure 10]                                         %! SM4
+    R1 * 7/16
+    
+    % [A GlobalRests measure 11]                                         %! SM4
+    R1 * 1
+    
+    % [A GlobalRests measure 12]                                         %! SM4
+    R1 * 3/2
+    
+    % [A GlobalRests measure 13]                                         %! SM4
+    R1 * 7/8
+    
+    % [A GlobalRests measure 14]                                         %! SM4
+    R1 * 5/16
+    
+    % [A GlobalRests measure 15]                                         %! SM4
+    R1 * 1/2
+    
+    % [A GlobalRests measure 16]                                         %! SM4
+    R1 * 2
+    
+    % [A GlobalRests measure 17]                                         %! SM4
+    R1 * 7/16
+    
+    % [A GlobalRests measure 18]                                         %! SM4
+    R1 * 1
+    
+    % [A GlobalRests measure 19]                                         %! SM4
+    R1 * 1
+    
+    % [A GlobalRests measure 20]                                         %! SM4
+    R1 * 7/8
+    
+    % [A GlobalRests measure 21]                                         %! SM4
+    R1 * 1/2
+    
+}
+
+
 A_GlobalSkips = {
     
     % [A GlobalSkips measure 10]                                         %! SM4

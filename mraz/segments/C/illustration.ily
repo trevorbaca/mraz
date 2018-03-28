@@ -1,3 +1,149 @@
+C_GlobalRests = {
+    
+    % [C GlobalRests measure 34]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 35]                                         %! SM4
+    R1 * 1/4
+    
+    % [C GlobalRests measure 36]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 37]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 38]                                         %! SM4
+    R1 * 9/8
+    
+    % [C GlobalRests measure 39]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 40]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 41]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 42]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 43]                                         %! SM4
+    R1 * 5/4
+    
+    % [C GlobalRests measure 44]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 45]                                         %! SM4
+    R1 * 5/4
+    
+    % [C GlobalRests measure 46]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 47]                                         %! SM4
+    R1 * 5/4
+    
+    % [C GlobalRests measure 48]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 49]                                         %! SM4
+    R1 * 5/4
+    
+    % [C GlobalRests measure 50]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 51]                                         %! SM4
+    R1 * 1/4
+    
+    % [C GlobalRests measure 52]                                         %! SM4
+    R1 * 7/8
+    
+    % [C GlobalRests measure 53]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 54]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 55]                                         %! SM4
+    R1 * 1/8
+    
+    % [C GlobalRests measure 56]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 57]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 58]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 59]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 60]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 61]                                         %! SM4
+    R1 * 5/8
+    
+    % [C GlobalRests measure 62]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 63]                                         %! SM4
+    R1 * 3/4
+    
+    % [C GlobalRests measure 64]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 65]                                         %! SM4
+    R1 * 5/8
+    
+    % [C GlobalRests measure 66]                                         %! SM4
+    R1 * 1/4
+    
+    % [C GlobalRests measure 67]                                         %! SM4
+    R1 * 7/4
+    
+    % [C GlobalRests measure 68]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 69]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 70]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 71]                                         %! SM4
+    R1 * 1/4
+    
+    % [C GlobalRests measure 72]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 73]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 74]                                         %! SM4
+    R1 * 1/2
+    
+    % [C GlobalRests measure 75]                                         %! SM4
+    R1 * 1/4
+    
+    % [C GlobalRests measure 76]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 77]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 78]                                         %! SM4
+    R1 * 1
+    
+    % [C GlobalRests measure 79]                                         %! SM4
+    R1 * 3/2
+    
+    % [C GlobalRests measure 80]                                         %! SM4
+    R1 * 4
+    
+}
+
+
 C_GlobalSkips = {
     
     % [C GlobalSkips measure 34]                                         %! SM4

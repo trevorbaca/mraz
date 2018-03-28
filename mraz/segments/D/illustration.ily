@@ -1,3 +1,20 @@
+D_GlobalRests = {
+    
+    % [D GlobalRests measure 81]                                         %! SM4
+    R1 * 9/8
+    
+    % [D GlobalRests measure 82]                                         %! SM4
+    R1 * 1/2
+    
+    % [D GlobalRests measure 83]                                         %! SM4
+    R1 * 7/8
+    
+    % [D GlobalRests measure 84]                                         %! SM4
+    R1 * 5/8
+    
+}
+
+
 D_GlobalSkips = {
     
     % [D GlobalSkips measure 81]                                         %! SM4
