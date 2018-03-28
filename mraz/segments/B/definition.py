@@ -18,7 +18,7 @@ collections_7 = collection_maker.make_segment_7_collections()
 collections_8 = collection_maker.make_segment_8_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
-##################################### [B2] ####################################
+##################################### [B] #####################################
 
 accumulator(
     'rh_v4',
@@ -257,10 +257,6 @@ accumulator(
     figure_name='b.2.r.10',
     hide_time_signature=True,
     )
-
-###############################################################################
-################################ SEGMENT-MAKER ################################
-###############################################################################
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, mraz.metronome_marks['112']),
