@@ -2740,8 +2740,7 @@ E_RHVoiceIII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 87]                          %! SM4
             \once \override Script.color = #black                %! OC1
@@ -3002,8 +3001,7 @@ E_RHVoiceIII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 91]                          %! SM4
             \once \override Script.color = #black                %! OC1
@@ -3164,8 +3162,7 @@ E_RHVoiceIII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 93]                          %! SM4
             \once \override Script.color = #black                %! OC1
@@ -3280,8 +3277,7 @@ E_RHVoiceIII = {
         }
     }
     {
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 1/1 {
+        \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 100]                         %! SM4
             \once \override Script.color = #black                %! OC1
