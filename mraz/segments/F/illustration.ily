@@ -1,3 +1,41 @@
+F_GlobalRests = {
+    
+    % [F GlobalRests measure 101]                                        %! SM4
+    R1 * 3/4
+    
+    % [F GlobalRests measure 102]                                        %! SM4
+    R1 * 1/4
+    
+    % [F GlobalRests measure 103]                                        %! SM4
+    R1 * 3/8
+    
+    % [F GlobalRests measure 104]                                        %! SM4
+    R1 * 9/16
+    
+    % [F GlobalRests measure 105]                                        %! SM4
+    R1 * 5/16
+    
+    % [F GlobalRests measure 106]                                        %! SM4
+    R1 * 9/16
+    
+    % [F GlobalRests measure 107]                                        %! SM4
+    R1 * 7/16
+    
+    % [F GlobalRests measure 108]                                        %! SM4
+    R1 * 9/16
+    
+    % [F GlobalRests measure 109]                                        %! SM4
+    R1 * 3/16
+    
+    % [F GlobalRests measure 110]                                        %! SM4
+    R1 * 5/8
+    
+    % [F GlobalRests measure 111]                                        %! SM4
+    R1 * 1/8
+    
+}
+
+
 F_GlobalSkips = {
     
     % [F GlobalSkips measure 101]                                        %! SM4

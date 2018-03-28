@@ -1,3 +1,56 @@
+E_GlobalRests = {
+    
+    % [E GlobalRests measure 85]                                         %! SM4
+    R1 * 4
+    
+    % [E GlobalRests measure 86]                                         %! SM4
+    R1 * 5/2
+    
+    % [E GlobalRests measure 87]                                         %! SM4
+    R1 * 1/4
+    
+    % [E GlobalRests measure 88]                                         %! SM4
+    R1 * 3
+    
+    % [E GlobalRests measure 89]                                         %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 90]                                         %! SM4
+    R1 * 5/2
+    
+    % [E GlobalRests measure 91]                                         %! SM4
+    R1 * 1/4
+    
+    % [E GlobalRests measure 92]                                         %! SM4
+    R1 * 13/4
+    
+    % [E GlobalRests measure 93]                                         %! SM4
+    R1 * 1/4
+    
+    % [E GlobalRests measure 94]                                         %! SM4
+    R1 * 29/16
+    
+    % [E GlobalRests measure 95]                                         %! SM4
+    R1 * 27/16
+    
+    % [E GlobalRests measure 96]                                         %! SM4
+    R1 * 21/16
+    
+    % [E GlobalRests measure 97]                                         %! SM4
+    R1 * 15/16
+    
+    % [E GlobalRests measure 98]                                         %! SM4
+    R1 * 1
+    
+    % [E GlobalRests measure 99]                                         %! SM4
+    R1 * 7/4
+    
+    % [E GlobalRests measure 100]                                        %! SM4
+    R1 * 1/4
+    
+}
+
+
 E_GlobalSkips = {
     
     % [E GlobalSkips measure 85]                                         %! SM4
