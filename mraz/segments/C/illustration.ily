@@ -3327,41 +3327,26 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 72]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \arpeggioArrowUp                                     %! IC
-            \once \override Accidental.color = #red
-            \once \override Beam.color = #red
-            \once \override Dots.color = #red
-            \once \override NoteHead.color = #red
-            \once \override Stem.color = #red
             <a g' af' b' cs'' f'' ef''' c''''>1.
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 4.5.3"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (66)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM14
-                            {                                    %! SM14
-                                @                                %! SM14
-                            }                                    %! SM14
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 4.5.3"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (66)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
@@ -3373,44 +3358,29 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override Accidental.color = #red
-            \once \override Beam.color = #red
-            \once \override Dots.color = #red
-            \once \override NoteHead.color = #red
-            \once \override Stem.color = #red
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             cs''16
             [
             \<                                                   %! HC1
             \f                                                   %! HC1
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 4.5.4"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (67)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM14
-                            {                                    %! SM14
-                                @                                %! SM14
-                            }                                    %! SM14
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 4.5.4"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (67)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3611,43 +3581,28 @@ C_RHVoiceII = {
             
             % [C RHVoiceII measure 76]                           %! SM4
             \arpeggioArrowUp                                     %! IC
-            \once \override Accidental.color = #red
-            \once \override Beam.color = #red
-            \once \override Dots.color = #red
-            \once \override NoteHead.color = #red
-            \once \override Stem.color = #red
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             <f'' ef''' c'''' e'''' fs'''' bf''''>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 4.6.1"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (70)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM14
-                            {                                    %! SM14
-                                @                                %! SM14
-                            }                                    %! SM14
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 4.6.1"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (70)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
@@ -3655,41 +3610,26 @@ C_RHVoiceII = {
             
             % [C RHVoiceII measure 77]                           %! SM4
             \arpeggioArrowUp                                     %! IC
-            \once \override Accidental.color = #red
-            \once \override Beam.color = #red
-            \once \override Dots.color = #red
-            \once \override NoteHead.color = #red
-            \once \override Stem.color = #red
             <a g' af' b' cs'' f'' ef''' c''''>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 4.6.2"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (71)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM14
-                            {                                    %! SM14
-                                @                                %! SM14
-                            }                                    %! SM14
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 4.6.2"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (71)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
@@ -3697,41 +3637,26 @@ C_RHVoiceII = {
             
             % [C RHVoiceII measure 78]                           %! SM4
             \arpeggioArrowUp                                     %! IC
-            \once \override Accidental.color = #red
-            \once \override Beam.color = #red
-            \once \override Dots.color = #red
-            \once \override NoteHead.color = #red
-            \once \override Stem.color = #red
             <e' fs' bf' a'' g''' af''' b''' cs''''>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 4.6.3"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (72)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM14
-                            {                                    %! SM14
-                                @                                %! SM14
-                            }                                    %! SM14
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 "rh-2 4.6.3"                         %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (72)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     

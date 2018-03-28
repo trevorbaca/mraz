@@ -2809,29 +2809,15 @@ E_RHVoiceIII = {
                 
                 a''8
                 
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
                 g''8
                 ]
                 )                                                %! SC
-                - \tweak color #red                              %! SM14
-                ^ \markup { @ }                                  %! SM14
             }
             \scaleDurations #'(1 . 1) {
                 
-                \once \override Accidental.color = #red
-                \once \override Beam.color = #red
-                \once \override Dots.color = #red
-                \once \override NoteHead.color = #red
-                \once \override Stem.color = #red
                 g''8
                 [
                 (                                                %! SC
-                - \tweak color #red                              %! SM14
-                ^ \markup { @ }                                  %! SM14
                 
                 bf''8
                 
