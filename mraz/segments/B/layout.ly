@@ -1,4 +1,4 @@
-% time_signatures = ['2/4', '1/8', '5/16', '1/8', '2/4', '5/8', '1/8', '6/4', '21/16', '7/4', '6/4', '4/4']
+% time_signatures = ['2/4', '1/4', '5/16', '1/4', '2/4', '5/8', '1/4', '6/4', '21/16', '7/4', '6/4', '4/4']
 % measure_count = 12
 
 
@@ -28,7 +28,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)              %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[1/4]" }                                     %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 24]                                                    %! SM4
@@ -42,7 +42,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)              %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[1/4]" }                                     %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 26]                                                    %! SM4
@@ -63,7 +63,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[[1/4 * 35/24]]" }                           %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 29]                                                    %! SM4
