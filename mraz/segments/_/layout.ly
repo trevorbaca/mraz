@@ -1,4 +1,4 @@
-% time_signatures = ['4/4', '2/4', '4/4', '1/8', '4/8', '1/8', '7/8', '16/4', '1/8']
+% time_signatures = ['4/4', '2/4', '4/4', '1/4', '4/8', '1/4', '7/8', '16/4', '1/4']
 % measure_count = 9
 
 
@@ -38,7 +38,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)              %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[1/4]" }                                     %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 5]                                                     %! SM4
@@ -52,7 +52,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[[1/4 * 35/24]]" }                           %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 7]                                                     %! SM4
@@ -76,7 +76,7 @@
             \newSpacingSection                                                           %! HSS1:SPACING
             \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
-            s1 * 1/8
+            s1 * 1/4
         %@% ^ \markup { \make-forest-green "[[1/4 * 35/24]]" }                           %! HSS2:SPACING_MARKUP
             
         }   %*% PageLayout

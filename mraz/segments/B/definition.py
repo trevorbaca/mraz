@@ -46,6 +46,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:1],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
+    baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.3',
@@ -77,6 +78,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:2],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
+    baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.6',
@@ -120,6 +122,7 @@ accumulator(
     collections_2['stage 2']['rh'][0][:4],
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
+    baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='b.2.10',
@@ -161,10 +164,11 @@ accumulator(
     baca.anchor_to_figure('b.2.13'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
+    baca.map(baca.slur(), baca.runs()),
     baca.ottava(),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.runs()),
     baca.slurs_up(),
+    baca.span_bar_extra_offset((-0.75, 0)),
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
     )
@@ -227,6 +231,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.accidental_x_extent_false(),
     baca.allow_octaves(),
     baca.anchor_to_figure('b.2.10'),
     counts=[21],
@@ -249,13 +254,6 @@ accumulator(
     baca.allow_octaves(),
     counts=[24],
     figure_name='b.2.r.9',
-    hide_time_signature=True,
-    )
-
-accumulator(
-    'lh_v2',
-    [abjad.Rest((4, 4))],
-    figure_name='b.2.r.10',
     hide_time_signature=True,
     )
 
@@ -299,9 +297,10 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.map(baca.tie(repeat=True), baca.qruns()),
     baca.beam_stencil_false(selector=baca.leaves()),
+    baca.dots_stencil_false(selector=baca.leaves()),
     baca.flag_stencil_false(selector=baca.leaves()),
+    baca.map(baca.tie(repeat=True), baca.qruns()),
     baca.stem_stencil_false(selector=baca.leaves()),
     )
 

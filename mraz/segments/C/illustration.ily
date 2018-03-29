@@ -64,7 +64,13 @@ C_GlobalRests = {
     R1 * 1/2
     
     % [C GlobalRests measure 55]                                         %! SM4
-    R1 * 1/8
+    \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
+    R1 * 1/4
+    ^ \markup {                                                          %! GFC1
+        \musicglyph                                                      %! GFC1
+            #"scripts.ufermata"                                          %! GFC1
+        }                                                                %! GFC1
     
     % [C GlobalRests measure 56]                                         %! SM4
     R1 * 1/2
@@ -232,7 +238,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'08'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'09'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -267,7 +273,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'12'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'13'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -302,7 +308,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'13'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'14'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -337,7 +343,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'15'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'16'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -372,7 +378,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'19'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'20'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -459,7 +465,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'22'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'23'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -550,7 +556,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'24'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'25'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -585,7 +591,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'28'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'29'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -619,7 +625,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'30'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'31'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -654,7 +660,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'32'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'33'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -689,7 +695,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'36'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'37'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -724,7 +730,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'39'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'40'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -759,7 +765,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'42'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'43'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -794,7 +800,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'44'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'45'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -829,7 +835,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'48'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'49'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -916,7 +922,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'51'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'52'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -951,7 +957,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'54'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'55'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -986,7 +992,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'56'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'57'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1021,7 +1027,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'56'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'57'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1056,7 +1062,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'58'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'59'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1125,15 +1131,15 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'00'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'01'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [C GlobalSkips measure 55]                                         %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -1160,7 +1166,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'01'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'02'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1195,7 +1201,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'02'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'03'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1282,7 +1288,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'03'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'04'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1373,7 +1379,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'06'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'07'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1408,7 +1414,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'07'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'08'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1443,7 +1449,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'09'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'10'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1478,7 +1484,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'10'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'12'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1565,7 +1571,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'12'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'13'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1600,7 +1606,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'13'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'14'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1691,7 +1697,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'15'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'17'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1726,7 +1732,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'16'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'18'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1813,7 +1819,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'18'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'19'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1904,7 +1910,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'18'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'20'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1939,7 +1945,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'22'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'23'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -1974,7 +1980,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'25'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'27'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2008,7 +2014,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'28'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'29'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2095,7 +2101,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'30'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'31'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2130,7 +2136,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'30'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'32'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2165,7 +2171,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'35'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'36'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2200,7 +2206,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'38'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'39'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2235,7 +2241,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'39'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'40'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2270,7 +2276,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'40'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'41'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2304,7 +2310,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'43'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'44'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2338,7 +2344,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'45'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'47'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2373,7 +2379,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'48'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'49'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2409,7 +2415,7 @@ C_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [2'53'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [2'54'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -2523,12 +2529,8 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 55]                            %! SM4
-            \once \override Script.color = #black                %! OC1
-            \once \override Script.extra-offset = #'(0.5 . 0)    %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override Score.TimeSignature.transparent = ##t %! OC1
-            r8
-            -\fermata                                            %! IC
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2956,7 +2958,7 @@ C_RHVoiceIInserts = {
     s1 * 1/2
     
     % [C RHVoiceIInserts measure 55]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceIInserts measure 56]                             %! SM4
     s1 * 1/2
@@ -3147,7 +3149,7 @@ C_RHVoiceII = {
     }
     
     % [C RHVoiceII measure 54]                                   %! SM4
-    s1 * 9/8
+    s1 * 5/4
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
@@ -4114,7 +4116,7 @@ C_RHVoiceIIInserts = {
     s1 * 1/2
     
     % [C RHVoiceIIInserts measure 55]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceIIInserts measure 56]                            %! SM4
     s1 * 1/2
@@ -4388,7 +4390,7 @@ C_RHVoiceIII = {
     }
     
     % [C RHVoiceIII measure 42]                                  %! SM4
-    s1 * 49/4
+    s1 * 99/8
     {
         \scaleDurations #'(1 . 1) {
             
@@ -4612,7 +4614,7 @@ C_RHVoiceIIIInserts = {
     s1 * 1/2
     
     % [C RHVoiceIIIInserts measure 55]                           %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceIIIInserts measure 56]                           %! SM4
     s1 * 1/2
@@ -4760,7 +4762,7 @@ C_RHVoiceIV = {
     s1 * 1/2
     
     % [C RHVoiceIV measure 55]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceIV measure 56]                                   %! SM4
     s1 * 1/2
@@ -4906,7 +4908,7 @@ C_RHVoiceIVInserts = {
     s1 * 1/2
     
     % [C RHVoiceIVInserts measure 55]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceIVInserts measure 56]                            %! SM4
     s1 * 1/2
@@ -5027,7 +5029,7 @@ C_RHVoiceV = {
     s1 * 1/2
     
     % [C RHVoiceV measure 55]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceV measure 56]                                    %! SM4
     s1 * 1/2
@@ -5173,7 +5175,7 @@ C_RHVoiceVI = {
     s1 * 1/2
     
     % [C RHVoiceVI measure 55]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHVoiceVI measure 56]                                   %! SM4
     s1 * 1/2
@@ -5319,7 +5321,7 @@ C_RHResonanceVoice = {
     s1 * 1/2
     
     % [C RHResonanceVoice measure 55]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C RHResonanceVoice measure 56]                            %! SM4
     s1 * 1/2
@@ -5491,7 +5493,7 @@ C_LHVoiceI = {
     s1 * 1/2
     
     % [C LHVoiceI measure 55]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceI measure 56]                                    %! SM4
     s1 * 1/2
@@ -5574,7 +5576,7 @@ C_LHVoiceI = {
 C_LHVoiceII = {
     
     % [C LHVoiceII measure 34]                                   %! SM4
-    s1 * 289/8
+    s1 * 145/4
     {
         \scaleDurations #'(1 . 1) {
             
@@ -5691,7 +5693,7 @@ C_LHVoiceIII = {
     s1 * 1/2
     
     % [C LHVoiceIII measure 55]                                  %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceIII measure 56]                                  %! SM4
     s1 * 1/2
@@ -5867,7 +5869,7 @@ C_LHVoiceIV = {
     s1 * 1/2
     
     % [C LHVoiceIV measure 55]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceIV measure 56]                                   %! SM4
     s1 * 1/2
@@ -6013,7 +6015,7 @@ C_LHVoiceIVInserts = {
     s1 * 1/2
     
     % [C LHVoiceIVInserts measure 55]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceIVInserts measure 56]                            %! SM4
     s1 * 1/2
@@ -6741,7 +6743,7 @@ C_LHVoiceV = {
     }
     
     % [C LHVoiceV measure 55]                                    %! SM4
-    s1 * 5/8
+    s1 * 3/4
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
@@ -7119,7 +7121,7 @@ C_LHVoiceVInserts = {
     
     % [C LHVoiceVInserts measure 34]                             %! SM4
     \override Script.direction = #up                             %! OC1
-    s1 * 167/8
+    s1 * 21
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
@@ -7392,7 +7394,7 @@ C_LHVoiceVI = {
     s1 * 1/2
     
     % [C LHVoiceVI measure 55]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceVI measure 56]                                   %! SM4
     s1 * 1/2
@@ -7538,7 +7540,7 @@ C_LHVoiceVIInserts = {
     s1 * 1/2
     
     % [C LHVoiceVIInserts measure 55]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [C LHVoiceVIInserts measure 56]                            %! SM4
     s1 * 1/2
@@ -7833,7 +7835,7 @@ C_LHResonanceVoice = {
     }
     
     % [C LHResonanceVoice measure 50]                            %! SM4
-    s1 * 21/2
+    s1 * 85/8
     {
         \scaleDurations #'(1 . 1) {
             

@@ -12,7 +12,7 @@ i_GlobalRests = {
     % [_ GlobalRests measure 4]                                          %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ushortfermata"                                     %! GFC1
@@ -24,7 +24,7 @@ i_GlobalRests = {
     % [_ GlobalRests measure 6]                                          %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ufermata"                                          %! GFC1
@@ -39,7 +39,7 @@ i_GlobalRests = {
     % [_ GlobalRests measure 9]                                          %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ushortfermata"                                     %! GFC1
@@ -259,9 +259,9 @@ i_GlobalSkips = {
         }
     
     % [_ GlobalSkips measure 4]                                          %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -381,9 +381,9 @@ i_GlobalSkips = {
         }
     
     % [_ GlobalSkips measure 6]                                          %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -410,7 +410,7 @@ i_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'07'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'08'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -588,16 +588,16 @@ i_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'10'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'11'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [_ GlobalSkips measure 9]                                          %! SM4
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     ^ \markup {
         \column
@@ -678,13 +678,13 @@ i_RHVoiceI = {
     s1 * 1
     
     % [_ RHVoiceI measure 4]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceI measure 5]                                     %! SM4
     s1 * 1/2
     
     % [_ RHVoiceI measure 6]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceI measure 7]                                     %! SM4
     s1 * 7/8
@@ -693,7 +693,7 @@ i_RHVoiceI = {
     s1 * 4
     
     % [_ RHVoiceI measure 9]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -710,13 +710,13 @@ i_RHVoiceIInserts = {
     s1 * 1
     
     % [_ RHVoiceIInserts measure 4]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIInserts measure 5]                              %! SM4
     s1 * 1/2
     
     % [_ RHVoiceIInserts measure 6]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIInserts measure 7]                              %! SM4
     s1 * 7/8
@@ -725,7 +725,7 @@ i_RHVoiceIInserts = {
     s1 * 4
     
     % [_ RHVoiceIInserts measure 9]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -857,10 +857,8 @@ i_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 4]                            %! SM4
-            \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override Score.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -887,10 +885,8 @@ i_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 6]                            %! SM4
-            \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override Score.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -971,10 +967,7 @@ i_RHVoiceII = {
             
             % [_ RHVoiceII measure 9]                            %! SM4
             \once \override Script.direction = #up               %! OC1
-            \once \override TextScript.direction = #up           %! OC1
-            \once \override Rest.transparent = ##t               %! OC1
-            \once \override Score.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1010,13 +1003,13 @@ i_RHVoiceIIInserts = {
     s1 * 1
     
     % [_ RHVoiceIIInserts measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIIInserts measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ RHVoiceIIInserts measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIIInserts measure 7]                             %! SM4
     s1 * 7/8
@@ -1025,7 +1018,7 @@ i_RHVoiceIIInserts = {
     s1 * 4
     
     % [_ RHVoiceIIInserts measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1033,7 +1026,7 @@ i_RHVoiceIIInserts = {
 i_RHVoiceIII = {
     
     % [_ RHVoiceIII measure 1]                                   %! SM4
-    s1 * 21/8
+    s1 * 11/4
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
@@ -1076,7 +1069,7 @@ i_RHVoiceIII = {
     }
     
     % [_ RHVoiceIII measure 6]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     {
         \scaleDurations #'(1 . 1) {
             
@@ -1185,7 +1178,7 @@ i_RHVoiceIII = {
     }
     
     % [_ RHVoiceIII measure 9]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1202,13 +1195,13 @@ i_RHVoiceIIIInserts = {
     s1 * 1
     
     % [_ RHVoiceIIIInserts measure 4]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIIIInserts measure 5]                            %! SM4
     s1 * 1/2
     
     % [_ RHVoiceIIIInserts measure 6]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIIIInserts measure 7]                            %! SM4
     s1 * 7/8
@@ -1217,7 +1210,7 @@ i_RHVoiceIIIInserts = {
     s1 * 4
     
     % [_ RHVoiceIIIInserts measure 9]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1234,13 +1227,13 @@ i_RHVoiceIV = {
     s1 * 1
     
     % [_ RHVoiceIV measure 4]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIV measure 5]                                    %! SM4
     s1 * 1/2
     
     % [_ RHVoiceIV measure 6]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIV measure 7]                                    %! SM4
     s1 * 7/8
@@ -1249,7 +1242,7 @@ i_RHVoiceIV = {
     s1 * 4
     
     % [_ RHVoiceIV measure 9]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1266,13 +1259,13 @@ i_RHVoiceIVInserts = {
     s1 * 1
     
     % [_ RHVoiceIVInserts measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIVInserts measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ RHVoiceIVInserts measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceIVInserts measure 7]                             %! SM4
     s1 * 7/8
@@ -1281,7 +1274,7 @@ i_RHVoiceIVInserts = {
     s1 * 4
     
     % [_ RHVoiceIVInserts measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1298,13 +1291,13 @@ i_RHVoiceV = {
     s1 * 1
     
     % [_ RHVoiceV measure 4]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceV measure 5]                                     %! SM4
     s1 * 1/2
     
     % [_ RHVoiceV measure 6]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceV measure 7]                                     %! SM4
     s1 * 7/8
@@ -1313,7 +1306,7 @@ i_RHVoiceV = {
     s1 * 4
     
     % [_ RHVoiceV measure 9]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1330,13 +1323,13 @@ i_RHVoiceVI = {
     s1 * 1
     
     % [_ RHVoiceVI measure 4]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceVI measure 5]                                    %! SM4
     s1 * 1/2
     
     % [_ RHVoiceVI measure 6]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHVoiceVI measure 7]                                    %! SM4
     s1 * 7/8
@@ -1345,7 +1338,7 @@ i_RHVoiceVI = {
     s1 * 4
     
     % [_ RHVoiceVI measure 9]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1362,13 +1355,13 @@ i_RHResonanceVoice = {
     s1 * 1
     
     % [_ RHResonanceVoice measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHResonanceVoice measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ RHResonanceVoice measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ RHResonanceVoice measure 7]                             %! SM4
     s1 * 7/8
@@ -1377,7 +1370,7 @@ i_RHResonanceVoice = {
     s1 * 4
     
     % [_ RHResonanceVoice measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1425,13 +1418,13 @@ i_LHVoiceI = {
     s1 * 1
     
     % [_ LHVoiceI measure 4]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceI measure 5]                                     %! SM4
     s1 * 1/2
     
     % [_ LHVoiceI measure 6]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceI measure 7]                                     %! SM4
     s1 * 7/8
@@ -1440,7 +1433,7 @@ i_LHVoiceI = {
     s1 * 4
     
     % [_ LHVoiceI measure 9]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1457,13 +1450,13 @@ i_LHVoiceII = {
     s1 * 1
     
     % [_ LHVoiceII measure 4]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceII measure 5]                                    %! SM4
     s1 * 1/2
     
     % [_ LHVoiceII measure 6]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceII measure 7]                                    %! SM4
     s1 * 7/8
@@ -1472,7 +1465,7 @@ i_LHVoiceII = {
     s1 * 4
     
     % [_ LHVoiceII measure 9]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1489,13 +1482,13 @@ i_LHVoiceIII = {
     s1 * 1
     
     % [_ LHVoiceIII measure 4]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIII measure 5]                                   %! SM4
     s1 * 1/2
     
     % [_ LHVoiceIII measure 6]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIII measure 7]                                   %! SM4
     s1 * 7/8
@@ -1504,7 +1497,7 @@ i_LHVoiceIII = {
     s1 * 4
     
     % [_ LHVoiceIII measure 9]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1573,13 +1566,13 @@ i_LHVoiceIV = {
     s1 * 1
     
     % [_ LHVoiceIV measure 4]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIV measure 5]                                    %! SM4
     s1 * 1/2
     
     % [_ LHVoiceIV measure 6]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIV measure 7]                                    %! SM4
     s1 * 7/8
@@ -1588,7 +1581,7 @@ i_LHVoiceIV = {
     s1 * 4
     
     % [_ LHVoiceIV measure 9]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1626,13 +1619,13 @@ i_LHVoiceIVInserts = {
     s1 * 1
     
     % [_ LHVoiceIVInserts measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIVInserts measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ LHVoiceIVInserts measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceIVInserts measure 7]                             %! SM4
     s1 * 7/8
@@ -1641,7 +1634,7 @@ i_LHVoiceIVInserts = {
     s1 * 4
     
     % [_ LHVoiceIVInserts measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1698,13 +1691,13 @@ i_LHVoiceV = {
     }
     
     % [_ LHVoiceV measure 4]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceV measure 5]                                     %! SM4
     s1 * 1/2
     
     % [_ LHVoiceV measure 6]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceV measure 7]                                     %! SM4
     s1 * 7/8
@@ -1713,7 +1706,7 @@ i_LHVoiceV = {
     s1 * 4
     
     % [_ LHVoiceV measure 9]                                     %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1730,13 +1723,13 @@ i_LHVoiceVInserts = {
     s1 * 1
     
     % [_ LHVoiceVInserts measure 4]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVInserts measure 5]                              %! SM4
     s1 * 1/2
     
     % [_ LHVoiceVInserts measure 6]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVInserts measure 7]                              %! SM4
     s1 * 7/8
@@ -1745,7 +1738,7 @@ i_LHVoiceVInserts = {
     s1 * 4
     
     % [_ LHVoiceVInserts measure 9]                              %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1807,13 +1800,13 @@ i_LHVoiceVI = {
     }
     
     % [_ LHVoiceVI measure 4]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVI measure 5]                                    %! SM4
     s1 * 1/2
     
     % [_ LHVoiceVI measure 6]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVI measure 7]                                    %! SM4
     s1 * 7/8
@@ -1822,7 +1815,7 @@ i_LHVoiceVI = {
     s1 * 4
     
     % [_ LHVoiceVI measure 9]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1839,13 +1832,13 @@ i_LHVoiceVIInserts = {
     s1 * 1
     
     % [_ LHVoiceVIInserts measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVIInserts measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ LHVoiceVIInserts measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHVoiceVIInserts measure 7]                             %! SM4
     s1 * 7/8
@@ -1854,7 +1847,7 @@ i_LHVoiceVIInserts = {
     s1 * 4
     
     % [_ LHVoiceVIInserts measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 
@@ -1871,13 +1864,13 @@ i_LHResonanceVoice = {
     s1 * 1
     
     % [_ LHResonanceVoice measure 4]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHResonanceVoice measure 5]                             %! SM4
     s1 * 1/2
     
     % [_ LHResonanceVoice measure 6]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [_ LHResonanceVoice measure 7]                             %! SM4
     s1 * 7/8
@@ -1886,7 +1879,7 @@ i_LHResonanceVoice = {
     s1 * 4
     
     % [_ LHResonanceVoice measure 9]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
 }
 

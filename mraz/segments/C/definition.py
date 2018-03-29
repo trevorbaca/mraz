@@ -398,12 +398,8 @@ accumulator(
 
 accumulator(
     'rh_v1',
-    [abjad.Rest((1, 8))],
-    baca.fermata(),
-    baca.script_color('black'),
-    baca.script_extra_offset((0.5, 0)),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     counts=[4],
     figure_name='rh-1 4.4.3',
     )
@@ -971,6 +967,11 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('fermata', selector=baca.leaf(21)),
+    )
 
 maker(
     'rh_v1',
