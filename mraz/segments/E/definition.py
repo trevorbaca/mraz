@@ -97,7 +97,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
-    #baca.tie_repeat_pitches(),
+    baca.tie_repeat_pitches(),
     baca.tuplet_brackets_down(),
     counts=[2],
     figure_name='rh-3 5.2.3',
