@@ -209,8 +209,6 @@ D_GlobalSkips = {
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
-    \override Score.BarLine.transparent = ##f                            %! SM5
-    \bar "|"                                                             %! SM5
     
 }
 
