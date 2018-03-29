@@ -42,51 +42,51 @@ B_GlobalRests = {
 B_GlobalSkips = {
     
     % [B GlobalSkips measure 22]                                         %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@% \markup {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #-6                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         \general-align                                               %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #Y                                                       %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             #DOWN                                                    %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             \note-by-number                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #2                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #0                                                   %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%                 #1.5                                                 %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \upright                                                         %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         {                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             =                                                        %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%             112                                                      %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         }                                                            %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     \hspace                                                          %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%         #1                                                           %! SM27:REDUNDANT_METRONOME_MARK:SM30
-%@%     }                                                                %! SM27:REDUNDANT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
+%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@% \markup {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \fontsize                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #-6                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         \general-align                                               %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #Y                                                       %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             #DOWN                                                    %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             \note-by-number                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #2                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #0                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%                 #1.5                                                 %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \upright                                                         %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             =                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%             112                                                      %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         }                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     \hspace                                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%         #1                                                           %! SM27:REAPPLIED_METRONOME_MARK:SM36
+%@%     }                                                                %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left.text =                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-    \markup {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        \with-color                                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            #(x11-color 'DeepPink1)                                      %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            {                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \fontsize                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #-6                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    \general-align                                       %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #Y                                               %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        #DOWN                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        \note-by-number                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #2                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #0                                           %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                            #1.5                                         %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \upright                                                 %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    {                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        =                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                        112                                              %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    }                                                    %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                \hspace                                                  %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-                    #1                                                   %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-            }                                                            %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30
-        }                                                                %! SM15:REDUNDANT_METRONOME_MARK_WITH_COLOR:SM30 %! SM29:METRONOME_MARK_SPANNER
+    \once \override TextSpanner.bound-details.left.text =                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+    \markup {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        \with-color                                                      %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            #(x11-color 'green4)                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            {                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \fontsize                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #-6                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    \general-align                                       %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #Y                                               %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        #DOWN                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        \note-by-number                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #2                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #0                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                            #1.5                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \upright                                                 %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    {                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        =                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                        112                                              %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    }                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                \hspace                                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+                    #1                                                   %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+            }                                                            %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36
+        }                                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.padding = 0   %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right-broken.text = ##f    %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.right.padding = 0          %! SM29:METRONOME_MARK_SPANNER
@@ -848,36 +848,25 @@ B_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceI measure 33]                            %! SM4
-            \makeRed                                             %! SM12
             bf''''1
             -\tenuto                                             %! IC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.13               %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (12)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.13                               %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (12)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             \ottava #0                                           %! SC
             
         }
@@ -968,39 +957,28 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            \makeRed                                             %! SM12
             fs16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.3                %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (2)          %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.3                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (2)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1009,11 +987,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1066,39 +1041,28 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            \makeRed                                             %! SM12
             fs16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.6                %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (5)          %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.6                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (5)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1107,11 +1071,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1139,11 +1100,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1196,39 +1154,28 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            \makeRed                                             %! SM12
             fs16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.10               %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (9)          %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.10                               %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (9)                          %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1237,11 +1184,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1269,11 +1213,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1330,11 +1271,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1343,11 +1281,8 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             fs''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -1413,10 +1348,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf''16
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1446,10 +1378,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf'''16
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1678,10 +1607,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e''16
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1689,11 +1615,8 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             b''16
             ]
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     
@@ -1742,10 +1665,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e''16
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1753,11 +1673,8 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             b''16
             ]
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     
@@ -2414,106 +2331,73 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 22]                    %! SM4
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>2
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.1              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (14)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.1                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (14)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 23]                    %! SM4
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.2              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (15)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.2                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (15)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.3              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (16)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.3                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (16)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2528,72 +2412,50 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 26]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.4              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (17)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.4                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (17)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 27]                    %! SM4
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.5              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (18)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.5                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (18)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
@@ -2635,41 +2497,27 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 30]                    %! SM4
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>1
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     b.2.r.7              %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (20)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
+        %%%         #2                                           %! FIGURE_NAME_MARKUP
+        %%%         \concat                                      %! FIGURE_NAME_MARKUP
+        %%%             {                                        %! FIGURE_NAME_MARKUP
+        %%%                 [                                    %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.7                              %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
+        %%%                     #1                               %! FIGURE_NAME_MARKUP
+        %%%                 \raise                               %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
+        %%%                         #-2                          %! FIGURE_NAME_MARKUP
+        %%%                         (20)                         %! FIGURE_NAME_MARKUP
+        %%%                 ]                                    %! FIGURE_NAME_MARKUP
+        %%%             }                                        %! FIGURE_NAME_MARKUP
+        %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
