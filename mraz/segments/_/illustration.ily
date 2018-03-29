@@ -1123,6 +1123,7 @@ i_RHVoiceIII = {
             -\tenuto                                             %! IC
             
             r8
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0) %! OC1
         }
     }
     {

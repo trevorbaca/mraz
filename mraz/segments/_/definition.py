@@ -132,6 +132,7 @@ accumulator(
     baca.flags(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
+    baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
     baca.staccati(),
     baca.tenuti(),
     denominator=8,
