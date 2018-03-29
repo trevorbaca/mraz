@@ -22,6 +22,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
+    baca.allow_octaves(),
     baca.register(36),
     baca.tenuti(),
     counts=[16],
@@ -182,9 +183,6 @@ accumulator(
     )
 
 maker = baca.SegmentMaker(
-    color_octaves=False,
-    color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=True,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -198,6 +196,7 @@ maker(
     baca.metronome_mark('84', selector=baca.leaf(0)),
     baca.metronome_mark('112', selector=baca.leaf(1)),
     baca.metronome_mark('84', selector=baca.leaf(4)),
+    baca.metronome_mark('84', selector=baca.leaf(-2)),
     baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(-2)),
     baca.metronome_mark('112', selector=baca.leaf(-1)),
     )
