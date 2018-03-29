@@ -191,7 +191,6 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    baca.accidental_stencil_false(),
     baca.allow_octaves(),
     counts=[5],
     figure_name='b.2.r.3',
@@ -301,19 +300,32 @@ maker(
 maker(
     'lh_resonance',
     baca.map(baca.tie(repeat=True), baca.qruns()),
+    baca.beam_stencil_false(selector=baca.leaves()),
+    baca.flag_stencil_false(selector=baca.leaves()),
+    baca.stem_stencil_false(selector=baca.leaves()),
     )
 
-#maker(
-#    ('lh_resonance', [1, 3, 5]),
-#    baca.stem_stencil_false(),
-#    )
+maker(
+    ('lh_resonance', [(2, 7), (10, -1)]),
+    baca.accidental_stencil_false(selector=baca.leaves()),
+    )
 
-#maker(
-#    ('lh_resonance', [2, 4, 7]),
-#    baca.accidental_stencil_false(),
-#    baca.beam_stencil_false(),
-#    baca.flag_stencil_false(),
-#    baca.note_head_stencil_false(),
-#    baca.repeat_tie_stencil_false(),
-#    baca.stem_stencil_false(),
-#    )
+def hide_music(selector):
+    return [
+        baca.accidental_stencil_false(selector=selector),
+        baca.beam_stencil_false(selector=selector),
+        baca.flag_stencil_false(selector=selector),
+        baca.note_head_stencil_false(selector=selector),
+        baca.repeat_tie_stencil_false(selector=selector),
+        baca.stem_stencil_false(selector=selector),
+        ]
+
+maker(
+    ('lh_resonance', [2, 4]),
+    *hide_music(selector=baca.leaf(0)),
+    )
+
+maker(
+    ('lh_resonance', [3, 6, 9]),
+    *hide_music(selector=baca.leaves()[1:]),
+    )
