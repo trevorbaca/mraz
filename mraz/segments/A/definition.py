@@ -243,16 +243,8 @@ accumulator(
     time_treatments=[-6],
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['112']),
-    ])
-
 maker = baca.SegmentMaker(
-    color_octaves=True,
-    color_out_of_range_pitches=True,
-    color_repeat_pitch_classes=True,
     final_bar_line=False,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     range_checker=abjad.Piano().pitch_range,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,

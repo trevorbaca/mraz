@@ -67,7 +67,6 @@ accumulator(
     baca.ottava_bassa(),
     baca.register(-39),
     baca.rests_down(),
-    baca.stems_down(),
     baca.tuplet_brackets_down(),
     baca.tuplet_bracket_staff_padding(6),
     counts=[2, -4],
@@ -80,6 +79,7 @@ accumulator(
     collections_8['stage 3']['rh'][4],
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
+    baca.dynamic_text_x_offset(-0.5),
     baca.dynamics_up(),
     baca.flags(),
     baca.register(-27, -39),
@@ -104,10 +104,12 @@ accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][2],
     baca.dynamic('pp'),
+    baca.dynamic_text_x_offset(0.5),
     baca.flags(),
     baca.register(24, 12),
     baca.staccati(),
     baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name='b.1.7',
     talea_denominator=8,
@@ -158,6 +160,7 @@ accumulator(
     collections_5['stage 1']['lh'].next(exhausted=True),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
+    baca.dynamic_text_x_offset(0.25),
     baca.flags(),
     baca.ottava(),
     baca.register(10, 26),
@@ -216,9 +219,4 @@ maker(
 maker(
     'lh_v1',
     baca.clef('treble'),
-    )
-
-maker(
-    'lh_v4_i',
-    baca.stems_up(),
     )

@@ -1,5 +1,3 @@
-%\include "voice-colors.ily"
-
 \layout {
 
     % GLOBAL SKIPS
@@ -103,6 +101,181 @@
         \Voice
         \remove Forbid_line_break_engraver
     }
+
+    \context {
+        \Voice
+        \name RHVoiceI
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceIInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceII
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+    \context {
+        \Voice
+        \name RHVoiceIIInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceIII
+        \type Engraver_group
+        \alias Voice
+        \voiceThree
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceIIIInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceFour
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceIV
+        \type Engraver_group
+        \alias Voice
+        \voiceFour
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceIVInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceThree
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceV
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name RHVoiceVI
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name RHResonanceVoice
+        \type Engraver_group
+        \alias Voice
+        \override NoteHead.style = #'harmonic
+        \override TupletBracket.stencil = ##f
+        \override TupletNumber.stencil = ##f
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceI
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceII
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceIII
+        \type Engraver_group
+        \alias Voice
+        \voiceThree
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceIV
+        \type Engraver_group
+        \alias Voice
+        \voiceFour
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceIVInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceThree
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceV
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceVInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceVI
+        \type Engraver_group
+        \alias Voice
+        \voiceTwo
+    }
+
+    \context {
+        \Voice
+        \name LHVoiceVIInserts
+        \type Engraver_group
+        \alias Voice
+        \voiceOne
+    }
+
+    \context {
+        \Voice
+        \name LHResonanceVoice
+        \type Engraver_group
+        \alias Voice
+        \override NoteHead.style = #'harmonic
+        \override TupletBracket.stencil = ##f
+        \override TupletNumber.stencil = ##f
+        \voiceTwo
+    }
+
+    %\include "voice-colors.ily"
 
     % PIANO MUSIC RH STAFF
     \context {
@@ -219,7 +392,7 @@
         \override TupletBracket.padding = 1.5
         \override TupletBracket.staff-padding = 1.5
 
-        \override TupletNumber.font-size = -1.5
+        \override TupletNumber.font-size = 0
 
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
