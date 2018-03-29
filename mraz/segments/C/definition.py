@@ -936,30 +936,9 @@ accumulator(
     tuplet_denominator=abjad.Duration(1, 1),
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['84']),
-    (1, abjad.Accelerando()),
-    (6, mraz.metronome_marks['112']),
-    (7, mraz.metronome_marks['84']),
-    (7, abjad.Accelerando()),
-    (16, mraz.metronome_marks['112']),
-    (21, abjad.Ritardando()),
-    (24, mraz.metronome_marks['84']),
-    (25, mraz.metronome_marks['112']),
-    (25, abjad.Ritardando()),
-    (29, mraz.metronome_marks['84']),
-    (31, mraz.metronome_marks['112']),
-    (31, abjad.Ritardando()),
-    (33, mraz.metronome_marks['84']),
-    (34, mraz.metronome_marks['112']),
-    (34, abjad.Ritardando()),
-    (38, mraz.metronome_marks['84']),
-    ])
-
 maker = baca.SegmentMaker(
     color_octaves=False,
     final_bar_line=False,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -967,6 +946,28 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'GlobalSkips',
+    baca.metronome_mark('84', selector=baca.leaf(0)),
+    baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(0)),
+    baca.metronome_mark('112', selector=baca.leaf(5)),
+    baca.metronome_mark('84', selector=baca.leaf(6)),
+    baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(6)),
+    baca.metronome_mark('112', selector=baca.leaf(15)),
+    baca.metronome_mark('112', selector=baca.leaf(20)),
+    baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(20)),
+    baca.metronome_mark('84', selector=baca.leaf(23)),
+    baca.metronome_mark('112', selector=baca.leaf(24)),
+    baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(24)),
+    baca.metronome_mark('84', selector=baca.leaf(28)),
+    baca.metronome_mark('112', selector=baca.leaf(30)),
+    baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(30)),
+    baca.metronome_mark('84', selector=baca.leaf(32)),
+    baca.metronome_mark('112', selector=baca.leaf(33)),
+    baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(33)),
+    baca.metronome_mark('84', selector=baca.leaf(38)),
+    )
 
 maker(
     'GlobalRests',
