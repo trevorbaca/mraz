@@ -1317,23 +1317,23 @@ E_RHVoiceII = {
             -\accent                                             %! IC
             \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             \fff                                                 %! SM8:REDUNDANT_DYNAMIC:SM37
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-2 5.1.1"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (0)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 5.1.1"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (0)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \override Rest.direction = #up                       %! OC1
             r2..
@@ -1721,11 +1721,8 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                \makeRed                                         %! SM12
                 b'8
                 -\accent                                         %! IC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
@@ -1778,285 +1775,190 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            \makeRed                                             %! SM12
             fs16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 2.2.1"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (11)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 2.2.1"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (11)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             c'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             af'16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             a''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             d16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             cs'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             f''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             fs''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             c'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             ef'16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             a'16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -2065,264 +1967,175 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 95]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             d'16
             -\staccato                                           %! IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 2.2.2"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (12)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 2.2.2"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (12)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             cs''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             ef'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             fs'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             c''''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             b''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             d'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             cs''''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             a''16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -2331,216 +2144,145 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 96]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 2.2.3"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (13)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 2.2.3"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (13)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             fs'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             c''''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             bf'16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             a''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             d'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             cs''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             ef'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f'16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             g''16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -2549,164 +2291,111 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 97]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             fs''16
             -\staccato                                           %! IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 2.2.4"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (14)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 2.2.4"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (14)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             c'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             f'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             ef'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             a'''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             d''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             cs'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             af'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             ef''''16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             \revert Script.direction                             %! OC2
             \revert Slur.direction                               %! OC2
             \revert Stem.direction                               %! OC2
@@ -2718,172 +2407,116 @@ E_RHVoiceII = {
             % [E RHVoiceII measure 98]                           %! SM4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f''16
             -\staccato                                           %! IC
             [
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "rh-2 2.2.5"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (15)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-2 2.2.5"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (15)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             g'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             fs''''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             c''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             e''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             f''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             af''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             bf''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             ef'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            \makeRed                                             %! SM12
             g''''16
             -\staccato                                           %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             b''16
             -\staccato                                           %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \makeRed                                             %! SM12
             a'''16
             -\staccato                                           %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeRed                                             %! SM12
             d''''16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -3022,23 +2655,23 @@ E_RHVoiceIII = {
             a''4
             -\tenuto                                             %! IC
             \mf                                                  %! SM8:EXPLICIT_DYNAMIC:IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 5.1.1"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (1)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-3 5.1.1"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (1)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \override Rest.direction = #down                     %! OC1
             r4
@@ -3080,23 +2713,23 @@ E_RHVoiceIII = {
                 \mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
                 [
                 (                                                %! SC
-            %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
-            %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
-            %%%         #2                                       %! FIGURE_NAME_MARKUP
-            %%%         \concat                                  %! FIGURE_NAME_MARKUP
-            %%%             {                                    %! FIGURE_NAME_MARKUP
-            %%%                 [                                %! FIGURE_NAME_MARKUP
-            %%%                 "rh-3 5.2.1"                     %! FIGURE_NAME_MARKUP
-            %%%                 \hspace                          %! FIGURE_NAME_MARKUP
-            %%%                     #1                           %! FIGURE_NAME_MARKUP
-            %%%                 \raise                           %! FIGURE_NAME_MARKUP
-            %%%                     #0.25                        %! FIGURE_NAME_MARKUP
-            %%%                     \fontsize                    %! FIGURE_NAME_MARKUP
-            %%%                         #-2                      %! FIGURE_NAME_MARKUP
-            %%%                         (2)                      %! FIGURE_NAME_MARKUP
-            %%%                 ]                                %! FIGURE_NAME_MARKUP
-            %%%             }                                    %! FIGURE_NAME_MARKUP
-            %%%     }                                            %! FIGURE_NAME_MARKUP
+                ^ \markup {                                      %! FIGURE_NAME_MARKUP
+                    \fontsize                                    %! FIGURE_NAME_MARKUP
+                        #2                                       %! FIGURE_NAME_MARKUP
+                        \concat                                  %! FIGURE_NAME_MARKUP
+                            {                                    %! FIGURE_NAME_MARKUP
+                                [                                %! FIGURE_NAME_MARKUP
+                                "rh-3 5.2.1"                     %! FIGURE_NAME_MARKUP
+                                \hspace                          %! FIGURE_NAME_MARKUP
+                                    #1                           %! FIGURE_NAME_MARKUP
+                                \raise                           %! FIGURE_NAME_MARKUP
+                                    #0.25                        %! FIGURE_NAME_MARKUP
+                                    \fontsize                    %! FIGURE_NAME_MARKUP
+                                        #-2                      %! FIGURE_NAME_MARKUP
+                                        (2)                      %! FIGURE_NAME_MARKUP
+                                ]                                %! FIGURE_NAME_MARKUP
+                            }                                    %! FIGURE_NAME_MARKUP
+                    }                                            %! FIGURE_NAME_MARKUP
                 
                 ef'''8
                 
@@ -3186,23 +2819,23 @@ E_RHVoiceIII = {
             % [E RHVoiceIII measure 87]                          %! SM4
             \once \override Rest.transparent = ##t               %! OC1
             r4
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 5.2.2"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (3)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-3 5.2.2"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (3)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
@@ -3216,23 +2849,23 @@ E_RHVoiceIII = {
                 cs'''8
                 [
                 (                                                %! SC
-            %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
-            %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
-            %%%         #2                                       %! FIGURE_NAME_MARKUP
-            %%%         \concat                                  %! FIGURE_NAME_MARKUP
-            %%%             {                                    %! FIGURE_NAME_MARKUP
-            %%%                 [                                %! FIGURE_NAME_MARKUP
-            %%%                 "rh-3 5.2.3"                     %! FIGURE_NAME_MARKUP
-            %%%                 \hspace                          %! FIGURE_NAME_MARKUP
-            %%%                     #1                           %! FIGURE_NAME_MARKUP
-            %%%                 \raise                           %! FIGURE_NAME_MARKUP
-            %%%                     #0.25                        %! FIGURE_NAME_MARKUP
-            %%%                     \fontsize                    %! FIGURE_NAME_MARKUP
-            %%%                         #-2                      %! FIGURE_NAME_MARKUP
-            %%%                         (4)                      %! FIGURE_NAME_MARKUP
-            %%%                 ]                                %! FIGURE_NAME_MARKUP
-            %%%             }                                    %! FIGURE_NAME_MARKUP
-            %%%     }                                            %! FIGURE_NAME_MARKUP
+                ^ \markup {                                      %! FIGURE_NAME_MARKUP
+                    \fontsize                                    %! FIGURE_NAME_MARKUP
+                        #2                                       %! FIGURE_NAME_MARKUP
+                        \concat                                  %! FIGURE_NAME_MARKUP
+                            {                                    %! FIGURE_NAME_MARKUP
+                                [                                %! FIGURE_NAME_MARKUP
+                                "rh-3 5.2.3"                     %! FIGURE_NAME_MARKUP
+                                \hspace                          %! FIGURE_NAME_MARKUP
+                                    #1                           %! FIGURE_NAME_MARKUP
+                                \raise                           %! FIGURE_NAME_MARKUP
+                                    #0.25                        %! FIGURE_NAME_MARKUP
+                                    \fontsize                    %! FIGURE_NAME_MARKUP
+                                        #-2                      %! FIGURE_NAME_MARKUP
+                                        (4)                      %! FIGURE_NAME_MARKUP
+                                ]                                %! FIGURE_NAME_MARKUP
+                            }                                    %! FIGURE_NAME_MARKUP
+                    }                                            %! FIGURE_NAME_MARKUP
                 
                 c'''8
                 
@@ -3342,23 +2975,23 @@ E_RHVoiceIII = {
                 a'''8
                 [
                 (                                                %! SC
-            %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
-            %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
-            %%%         #2                                       %! FIGURE_NAME_MARKUP
-            %%%         \concat                                  %! FIGURE_NAME_MARKUP
-            %%%             {                                    %! FIGURE_NAME_MARKUP
-            %%%                 [                                %! FIGURE_NAME_MARKUP
-            %%%                 "rh-3 5.2.5"                     %! FIGURE_NAME_MARKUP
-            %%%                 \hspace                          %! FIGURE_NAME_MARKUP
-            %%%                     #1                           %! FIGURE_NAME_MARKUP
-            %%%                 \raise                           %! FIGURE_NAME_MARKUP
-            %%%                     #0.25                        %! FIGURE_NAME_MARKUP
-            %%%                     \fontsize                    %! FIGURE_NAME_MARKUP
-            %%%                         #-2                      %! FIGURE_NAME_MARKUP
-            %%%                         (7)                      %! FIGURE_NAME_MARKUP
-            %%%                 ]                                %! FIGURE_NAME_MARKUP
-            %%%             }                                    %! FIGURE_NAME_MARKUP
-            %%%     }                                            %! FIGURE_NAME_MARKUP
+                ^ \markup {                                      %! FIGURE_NAME_MARKUP
+                    \fontsize                                    %! FIGURE_NAME_MARKUP
+                        #2                                       %! FIGURE_NAME_MARKUP
+                        \concat                                  %! FIGURE_NAME_MARKUP
+                            {                                    %! FIGURE_NAME_MARKUP
+                                [                                %! FIGURE_NAME_MARKUP
+                                "rh-3 5.2.5"                     %! FIGURE_NAME_MARKUP
+                                \hspace                          %! FIGURE_NAME_MARKUP
+                                    #1                           %! FIGURE_NAME_MARKUP
+                                \raise                           %! FIGURE_NAME_MARKUP
+                                    #0.25                        %! FIGURE_NAME_MARKUP
+                                    \fontsize                    %! FIGURE_NAME_MARKUP
+                                        #-2                      %! FIGURE_NAME_MARKUP
+                                        (7)                      %! FIGURE_NAME_MARKUP
+                                ]                                %! FIGURE_NAME_MARKUP
+                            }                                    %! FIGURE_NAME_MARKUP
+                    }                                            %! FIGURE_NAME_MARKUP
                 
                 d'''8
                 
@@ -3394,11 +3027,8 @@ E_RHVoiceIII = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \makeRed                                         %! SM12
                 af''8
                 (                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
                 
                 s8
                 
@@ -3430,12 +3060,9 @@ E_RHVoiceIII = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \makeRed                                         %! SM12
                 b'8
                 [
                 (                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
                 
                 fs'8
                 ]
@@ -3454,23 +3081,23 @@ E_RHVoiceIII = {
             % [E RHVoiceIII measure 91]                          %! SM4
             \once \override Rest.transparent = ##t               %! OC1
             r4
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 5.2.6"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (8)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-3 5.2.6"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (8)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
@@ -3484,23 +3111,23 @@ E_RHVoiceIII = {
                 c'''8
                 [
                 (                                                %! SC
-            %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
-            %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
-            %%%         #2                                       %! FIGURE_NAME_MARKUP
-            %%%         \concat                                  %! FIGURE_NAME_MARKUP
-            %%%             {                                    %! FIGURE_NAME_MARKUP
-            %%%                 [                                %! FIGURE_NAME_MARKUP
-            %%%                 "rh-3 5.2.7"                     %! FIGURE_NAME_MARKUP
-            %%%                 \hspace                          %! FIGURE_NAME_MARKUP
-            %%%                     #1                           %! FIGURE_NAME_MARKUP
-            %%%                 \raise                           %! FIGURE_NAME_MARKUP
-            %%%                     #0.25                        %! FIGURE_NAME_MARKUP
-            %%%                     \fontsize                    %! FIGURE_NAME_MARKUP
-            %%%                         #-2                      %! FIGURE_NAME_MARKUP
-            %%%                         (9)                      %! FIGURE_NAME_MARKUP
-            %%%                 ]                                %! FIGURE_NAME_MARKUP
-            %%%             }                                    %! FIGURE_NAME_MARKUP
-            %%%     }                                            %! FIGURE_NAME_MARKUP
+                ^ \markup {                                      %! FIGURE_NAME_MARKUP
+                    \fontsize                                    %! FIGURE_NAME_MARKUP
+                        #2                                       %! FIGURE_NAME_MARKUP
+                        \concat                                  %! FIGURE_NAME_MARKUP
+                            {                                    %! FIGURE_NAME_MARKUP
+                                [                                %! FIGURE_NAME_MARKUP
+                                "rh-3 5.2.7"                     %! FIGURE_NAME_MARKUP
+                                \hspace                          %! FIGURE_NAME_MARKUP
+                                    #1                           %! FIGURE_NAME_MARKUP
+                                \raise                           %! FIGURE_NAME_MARKUP
+                                    #0.25                        %! FIGURE_NAME_MARKUP
+                                    \fontsize                    %! FIGURE_NAME_MARKUP
+                                        #-2                      %! FIGURE_NAME_MARKUP
+                                        (9)                      %! FIGURE_NAME_MARKUP
+                                ]                                %! FIGURE_NAME_MARKUP
+                            }                                    %! FIGURE_NAME_MARKUP
+                    }                                            %! FIGURE_NAME_MARKUP
                 
                 g'''8
                 
@@ -3527,12 +3154,9 @@ E_RHVoiceIII = {
                 a''8
                 [
                 
-                \makeRed                                         %! SM12
                 af''8
                 ]
                 )                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -3551,11 +3175,8 @@ E_RHVoiceIII = {
                 
                 s8
                 
-                \makeRed                                         %! SM12
                 g''8
                 )                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
@@ -3618,23 +3239,23 @@ E_RHVoiceIII = {
             % [E RHVoiceIII measure 93]                          %! SM4
             \once \override Rest.transparent = ##t               %! OC1
             r4
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 5.2.8"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (10)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-3 5.2.8"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (10)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
         }
     }
     
@@ -3652,23 +3273,23 @@ E_RHVoiceIII = {
                 f'''8
                 [
                 (                                                %! SC
-            %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
-            %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
-            %%%         #2                                       %! FIGURE_NAME_MARKUP
-            %%%         \concat                                  %! FIGURE_NAME_MARKUP
-            %%%             {                                    %! FIGURE_NAME_MARKUP
-            %%%                 [                                %! FIGURE_NAME_MARKUP
-            %%%                 "rh-3 5.2.9"                     %! FIGURE_NAME_MARKUP
-            %%%                 \hspace                          %! FIGURE_NAME_MARKUP
-            %%%                     #1                           %! FIGURE_NAME_MARKUP
-            %%%                 \raise                           %! FIGURE_NAME_MARKUP
-            %%%                     #0.25                        %! FIGURE_NAME_MARKUP
-            %%%                     \fontsize                    %! FIGURE_NAME_MARKUP
-            %%%                         #-2                      %! FIGURE_NAME_MARKUP
-            %%%                         (21)                     %! FIGURE_NAME_MARKUP
-            %%%                 ]                                %! FIGURE_NAME_MARKUP
-            %%%             }                                    %! FIGURE_NAME_MARKUP
-            %%%     }                                            %! FIGURE_NAME_MARKUP
+                ^ \markup {                                      %! FIGURE_NAME_MARKUP
+                    \fontsize                                    %! FIGURE_NAME_MARKUP
+                        #2                                       %! FIGURE_NAME_MARKUP
+                        \concat                                  %! FIGURE_NAME_MARKUP
+                            {                                    %! FIGURE_NAME_MARKUP
+                                [                                %! FIGURE_NAME_MARKUP
+                                "rh-3 5.2.9"                     %! FIGURE_NAME_MARKUP
+                                \hspace                          %! FIGURE_NAME_MARKUP
+                                    #1                           %! FIGURE_NAME_MARKUP
+                                \raise                           %! FIGURE_NAME_MARKUP
+                                    #0.25                        %! FIGURE_NAME_MARKUP
+                                    \fontsize                    %! FIGURE_NAME_MARKUP
+                                        #-2                      %! FIGURE_NAME_MARKUP
+                                        (21)                     %! FIGURE_NAME_MARKUP
+                                ]                                %! FIGURE_NAME_MARKUP
+                            }                                    %! FIGURE_NAME_MARKUP
+                    }                                            %! FIGURE_NAME_MARKUP
                 
                 af'''8
                 
@@ -3694,21 +3315,15 @@ E_RHVoiceIII = {
                 
                 e''8
                 
-                \makeRed                                         %! SM12
                 cs''8
                 ]
                 )                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
                 
-                \makeRed                                         %! SM12
                 af''8
                 (                                                %! SC
-                - \tweak color #red                              %! SM12
-                ^ \markup { OCTAVE }                             %! SM12
                 
                 s8
                 
@@ -3735,23 +3350,23 @@ E_RHVoiceIII = {
             % [E RHVoiceIII measure 100]                         %! SM4
             \once \override Rest.transparent = ##t               %! OC1
             r4
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 final"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (31)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "rh-3 final"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (31)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
         }
     }
@@ -4286,23 +3901,23 @@ E_LHVoiceIV = {
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
             \set PianoMusicLHStaff.forceClef = ##t               %! SM8:EXPLICIT_CLEF:SM33:IC
             r2
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.1"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (22)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.1"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (22)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
             
             r2
@@ -4344,33 +3959,30 @@ E_LHVoiceIV = {
             % [E LHVoiceIV measure 90]                           %! SM4
             \override Slur.direction = #down                     %! OC1
             r2
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.2"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (23)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.2"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (23)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             r2
             
-            \makeRed                                             %! SM12
             af'8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             r16
             
@@ -4398,38 +4010,27 @@ E_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            \makeRed                                             %! SM12
             b'8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             (                                                    %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lh-4 5.2.3"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (24)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.3"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (24)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             r16
             
@@ -4453,23 +4054,23 @@ E_LHVoiceIV = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             (                                                    %! SC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.4"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (25)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.4"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (25)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             r16
             
@@ -4485,13 +4086,10 @@ E_LHVoiceIV = {
             
             r16
             
-            \makeRed                                             %! SM12
             af,8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             r16
             \revert Slur.direction                               %! OC2
@@ -4505,23 +4103,23 @@ E_LHVoiceIV = {
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.5"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (26)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.5"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (26)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             bf8.
             -\staccato                                           %! IC
@@ -4538,68 +4136,62 @@ E_LHVoiceIV = {
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.6"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (27)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.6"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (27)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             b8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            \makeRed                                             %! SM12
             g8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             ]
             )                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             r8.
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.7"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (28)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.7"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (28)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             b8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             ef,8.
             -\staccato                                           %! IC
@@ -4622,39 +4214,33 @@ E_LHVoiceIV = {
             
             % [E LHVoiceIV measure 99]                           %! SM4
             r2..
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.8"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (29)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.8"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (29)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             cs'8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
-            \makeRed                                             %! SM12
             af,8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
             e,8
             -\staccato                                           %! IC
@@ -4671,23 +4257,23 @@ E_LHVoiceIV = {
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 5.2.9"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (30)                         %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lh-4 5.2.9"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (30)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             cs8
             -\staccato                                           %! IC
@@ -4778,23 +4364,23 @@ E_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             bf,,8.
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 b.1.5                                %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (6)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            b.1.5                                %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (6)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
             \override Rest.direction = #up                       %! OC1
             r32
@@ -4932,23 +4518,23 @@ E_LHVoiceVI = {
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             b,,,8
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 b.1.4                                %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (5)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            b.1.4                                %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (5)                          %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
             
             \override Rest.direction = #down                     %! OC1
@@ -5062,41 +4648,27 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 94]                    %! SM4
-            \makeRed                                             %! SM12
             <cs,, cs,>1..
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lhr 2.2.1"          %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (16)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lhr 2.2.1"                          %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (16)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             <cs,, cs,>16
             \repeatTie                                           %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -5104,89 +4676,58 @@ E_LHResonanceVoice = {
             
             % [E LHResonanceVoice measure 95]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            \makeRed                                             %! SM12
             <cs,, cs,>1.
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lhr 2.2.2a"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (17)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lhr 2.2.2a"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (17)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             <cs,, cs,>8.
             \repeatTie                                           %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 96]                    %! SM4
-            \makeRed                                             %! SM12
             <ef,, ef,>1
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lhr 2.2.3a"         %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (18)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lhr 2.2.3a"                         %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (18)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
             
-            \makeRed                                             %! SM12
             <ef,, ef,>4
             \repeatTie                                           %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
             
-            \makeRed                                             %! SM12
             <ef,, ef,>16
             \repeatTie                                           %! SC
-            - \tweak color #red                                  %! SM12
-            ^ \markup { OCTAVE }                                 %! SM12
         }
     }
     {
@@ -5194,72 +4735,50 @@ E_LHResonanceVoice = {
             
             % [E LHResonanceVoice measure 97]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            \makeRed                                             %! SM12
             <ef,, ef,>2...
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lhr 2.2.4"          %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (19)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lhr 2.2.4"                          %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (19)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 98]                    %! SM4
-            \makeRed                                             %! SM12
             <ef,, ef,>1
             \repeatTie                                           %! SC
-            ^ \markup {
-                \column
-                    {
-                    %%% \line                                    %! FIGURE_NAME_MARKUP
-                    %%%     {                                    %! FIGURE_NAME_MARKUP
-                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
-                    %%%             #2                           %! FIGURE_NAME_MARKUP
-                    %%%             \concat                      %! FIGURE_NAME_MARKUP
-                    %%%                 {                        %! FIGURE_NAME_MARKUP
-                    %%%                     [                    %! FIGURE_NAME_MARKUP
-                    %%%                     "lhr 2.2.5"          %! FIGURE_NAME_MARKUP
-                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
-                    %%%                         #1               %! FIGURE_NAME_MARKUP
-                    %%%                     \raise               %! FIGURE_NAME_MARKUP
-                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
-                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
-                    %%%                             #-2          %! FIGURE_NAME_MARKUP
-                    %%%                             (20)         %! FIGURE_NAME_MARKUP
-                    %%%                     ]                    %! FIGURE_NAME_MARKUP
-                    %%%                 }                        %! FIGURE_NAME_MARKUP
-                    %%%     }                                    %! FIGURE_NAME_MARKUP
-                        \line                                    %! SM12
-                            {                                    %! SM12
-                                OCTAVE                           %! SM12
-                            }                                    %! SM12
-                    }
-                }
+            ^ \markup {                                          %! FIGURE_NAME_MARKUP
+                \fontsize                                        %! FIGURE_NAME_MARKUP
+                    #2                                           %! FIGURE_NAME_MARKUP
+                    \concat                                      %! FIGURE_NAME_MARKUP
+                        {                                        %! FIGURE_NAME_MARKUP
+                            [                                    %! FIGURE_NAME_MARKUP
+                            "lhr 2.2.5"                          %! FIGURE_NAME_MARKUP
+                            \hspace                              %! FIGURE_NAME_MARKUP
+                                #1                               %! FIGURE_NAME_MARKUP
+                            \raise                               %! FIGURE_NAME_MARKUP
+                                #0.25                            %! FIGURE_NAME_MARKUP
+                                \fontsize                        %! FIGURE_NAME_MARKUP
+                                    #-2                          %! FIGURE_NAME_MARKUP
+                                    (20)                         %! FIGURE_NAME_MARKUP
+                            ]                                    %! FIGURE_NAME_MARKUP
+                        }                                        %! FIGURE_NAME_MARKUP
+                }                                                %! FIGURE_NAME_MARKUP
         }
     }
     

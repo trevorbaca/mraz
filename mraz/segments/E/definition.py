@@ -94,9 +94,10 @@ accumulator(
         baca.beam_everything(),
         hocket=True,
         ),
+    baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
-    baca.map(baca.slur(), baca.tuplets()),
+    #baca.tie_repeat_pitches(),
     baca.tuplet_brackets_down(),
     counts=[2],
     figure_name='rh-3 5.2.3',
@@ -452,8 +453,8 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     ])
 
 maker = baca.SegmentMaker(
+    color_octaves=False,
     final_bar_line=False,
-    ignore_repeat_pitch_classes=True,
     metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
