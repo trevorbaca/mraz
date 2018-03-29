@@ -859,7 +859,7 @@ i_RHVoiceII = {
             % [_ RHVoiceII measure 4]                            %! SM4
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
+            \once \override Score.TimeSignature.transparent = ##t %! OC1
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -889,7 +889,7 @@ i_RHVoiceII = {
             % [_ RHVoiceII measure 6]                            %! SM4
             \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
+            \once \override Score.TimeSignature.transparent = ##t %! OC1
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -973,7 +973,7 @@ i_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \once \override TextScript.direction = #up           %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
+            \once \override Score.TimeSignature.transparent = ##t %! OC1
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
