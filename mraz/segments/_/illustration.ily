@@ -37,7 +37,13 @@ i_GlobalRests = {
     R1 * 4
     
     % [_ GlobalRests measure 9]                                          %! SM4
+    \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
     R1 * 1/8
+    ^ \markup {                                                          %! GFC1
+        \musicglyph                                                      %! GFC1
+            #"scripts.ushortfermata"                                     %! GFC1
+        }                                                                %! GFC1
     
 }
 
