@@ -17,6 +17,7 @@ collections_6 = collection_maker.make_segment_6_collections()
 collections_7 = collection_maker.make_segment_7_collections()
 collections_8 = collection_maker.make_segment_8_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
+resonance = [-12]
 
 ##################################### [B] #####################################
 
@@ -38,7 +39,6 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    #baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.2',
@@ -58,7 +58,6 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    #baca.fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.4',
@@ -92,7 +91,6 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    #baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.7',
@@ -192,10 +190,6 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.allow_octaves(),
-#    baca.accidental_stencil_false(),
-#    baca.note_head_stencil_false(),
-#    baca.repeat_tie_stencil_false(),
-#    baca.stem_stencil_false(),
     counts=[4],
     figure_name='b.2.r.2',
     hide_time_signature=True,
@@ -204,6 +198,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.accidental_stencil_false(),
     baca.allow_octaves(),
     counts=[5],
     figure_name='b.2.r.3',
@@ -316,8 +311,15 @@ maker(
     )
 
 #maker(
-#    ('lh_resonance', [1, 3, 6]),
+#    ('lh_resonance', [1, 3, 5]),
+#    baca.stem_stencil_false(),
+#    )
+
+#maker(
+#    ('lh_resonance', [2, 4, 7]),
 #    baca.accidental_stencil_false(),
+#    baca.beam_stencil_false(),
+#    baca.flag_stencil_false(),
 #    baca.note_head_stencil_false(),
 #    baca.repeat_tie_stencil_false(),
 #    baca.stem_stencil_false(),
