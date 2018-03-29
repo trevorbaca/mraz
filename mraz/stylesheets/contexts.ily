@@ -8,6 +8,7 @@
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
+
         \override StaffSymbol.stencil = ##f
 
         \override TextScript.font-size = 6
@@ -45,7 +46,7 @@
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
-        %\consists Bar_number_engraver
+        \consists Bar_number_engraver
         \consists Mark_engraver
         \consists Metronome_mark_engraver
         \consists Time_signature_engraver
@@ -53,7 +54,8 @@
         \accepts GlobalRests
         \accepts PageLayout
 
-        \override BarNumber.extra-offset = #'(-4 . -4)
+        \override BarNumber.X-offset = -7
+        \override BarNumber.Y-offset = -0.75
         \override BarNumber.font-size = 1
 
         \override MetronomeMark.X-extent = #'(0 . 0)
@@ -63,8 +65,7 @@
         \override MetronomeMark.font-size = 3
 
         \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.X-offset = 6
+        \override RehearsalMark.Y-extent = #'(0 . 0)
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
@@ -72,22 +73,18 @@
         \override RehearsalMark.outside-staff-priority = 200
         \override RehearsalMark.self-alignment-X = #center
 
-        \override TimeSignature.X-extent = #'(0 . 0)
+        % prevents StaffSymbol from starting too early after cut-away measures:
+        \override TimeSignature.X-extent = ##f
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-
-        %\override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 24
-        \override VerticalAxisGroup.default-staff-staff-spacing.minimum-distance = 12
-        \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
 
     % PIANO STAFF
     \context {
         \PianoStaff
-        %\remove "Keep_alive_together_engraver" 
         \consists #Span_stem_engraver
     }
 
@@ -625,7 +622,6 @@
         \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
 
-        \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
             (custos minimum-space . 0.0) 
@@ -649,8 +645,6 @@
         \override Glissando.thickness = 3
 
         \override NoteCollision.merge-differently-dotted = ##t
-
-        \override NoteColumn.ignore-collision = ##t
 
         \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
@@ -677,12 +671,13 @@
         \override TupletBracket.staff-padding = 1.5
 
         \override TupletNumber.font-size = -1.5
-        \override TupletNumber.text = #tuplet-number::calc-fraction-text
 
         autoBeaming = ##f
-        %barNumberFormatter = #format-oval-barnumbers
+        barNumberFormatter = #format-oval-barnumbers
+        explicitClefVisibility = #end-of-line-invisible
+        forceClef = ##t
         markFormatter = #format-mark-box-alphabet
-        proportionalNotationDuration = #(ly:make-moment 1 29)
+        proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
 }
