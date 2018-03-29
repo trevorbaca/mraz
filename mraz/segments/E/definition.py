@@ -80,11 +80,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.short_fermata(),
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='rh-3 5.2.2',
     )
 
@@ -165,10 +161,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.script_color('black'),
-    baca.short_fermata(),
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='rh-3 5.2.6',
     )
 
@@ -195,11 +188,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.short_fermata(),
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='rh-3 5.2.8',
     )
 
@@ -438,11 +427,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.script_color('black'),
-    baca.script_extra_offset((1, 0)),
-    baca.fermata(),
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='rh-3 final',
     )
 
@@ -477,6 +462,14 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(2)),
+    baca.global_fermata('short', selector=baca.leaf(6)),
+    baca.global_fermata('short', selector=baca.leaf(8)),
+    baca.global_fermata('fermata', selector=baca.leaf(-1)),
+    )
 
 maker(
     ('rh_v2', (2, 8)),

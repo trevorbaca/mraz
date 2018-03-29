@@ -93,10 +93,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
-    baca.scripts_up(),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.1.6',
     )
 
@@ -119,10 +117,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
-    baca.scripts_up(),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.1.8',
     )
 
@@ -178,11 +174,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
+    [abjad.Rest((1, 4))],
     baca.scripts_up(),
-    baca.text_scripts_up(),
-    baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.1.12',
     )
 

@@ -23,6 +23,7 @@ accumulator(
     baca.rests_after([1]),
     baca.staccati(),
     baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name='rh-3 6.1.1',
     talea_denominator=8,
@@ -37,6 +38,7 @@ accumulator(
     baca.register(24, 12),
     baca.staccati(),
     baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name='rh-3 6.1.2',
     talea_denominator=8,
@@ -78,10 +80,12 @@ accumulator(
         baca.note(3),
         baca.note(2),
         ),
+    baca.clef('treble'),
     baca.dynamic('mp'),
     baca.flags(),
     baca.register(0, 12),
     baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(3),
     counts=[1, -1],
     figure_name='lh-4 6.1.1',
     time_treatments=[1],
@@ -98,6 +102,7 @@ accumulator(
     baca.flags(),
     baca.register(0, 12),
     baca.tenuti(),
+    baca.tuplet_bracket_staff_padding(3),
     counts=[1, -2],
     figure_name='lh-4 6.1.2',
     time_treatments=[2],
@@ -132,14 +137,9 @@ accumulator(
     talea_denominator=32,
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['84']),
-    ])
-
 maker = baca.SegmentMaker(
     final_bar_line=False,
     ignore_repeat_pitch_classes=False,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -147,11 +147,3 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
-
-maker(
-    'rh_v3',
-    )
-
-maker(
-    'lh_v4',
-    )
