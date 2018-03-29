@@ -6,7 +6,7 @@ B_GlobalRests = {
     % [B GlobalRests measure 23]                                         %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ushortfermata"                                     %! GFC1
@@ -18,7 +18,7 @@ B_GlobalRests = {
     % [B GlobalRests measure 25]                                         %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ufermata"                                          %! GFC1
@@ -33,7 +33,7 @@ B_GlobalRests = {
     % [B GlobalRests measure 28]                                         %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! GFC2
     \once \override Score.TimeSignature.stencil = ##f                    %! GFC2
-    R1 * 1/8
+    R1 * 1/4
     ^ \markup {                                                          %! GFC1
         \musicglyph                                                      %! GFC1
             #"scripts.ushortfermata"                                     %! GFC1
@@ -147,9 +147,9 @@ B_GlobalSkips = {
         }
     
     % [B GlobalSkips measure 23]                                         %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -269,9 +269,9 @@ B_GlobalSkips = {
         }
     
     % [B GlobalSkips measure 25]                                         %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -385,7 +385,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'46'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'47'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -472,15 +472,15 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'47'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'48'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
     
     % [B GlobalSkips measure 28]                                         %! SM4
-    \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
-    s1 * 1/8
+    s1 * 1/4
     ^ \markup {
         \column
             {
@@ -507,7 +507,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'49'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'50'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -542,7 +542,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'49'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'50'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -577,7 +577,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'54'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'55'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -720,7 +720,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [0'57'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [0'58'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -755,7 +755,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'01'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'02'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -792,7 +792,7 @@ B_GlobalSkips = {
             %@% \line                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%     {                                                    %! SM28:CLOCK_TIME_MARKUP
             %@%         \make-dark-cyan                                  %! SM28:CLOCK_TIME_MARKUP
-            %@%             [1'04'']                                     %! SM28:CLOCK_TIME_MARKUP
+            %@%             [1'05'']                                     %! SM28:CLOCK_TIME_MARKUP
             %@%     }                                                    %! SM28:CLOCK_TIME_MARKUP
             }
         }
@@ -807,7 +807,7 @@ B_RHVoiceI = {
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set PianoMusicRHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
-    s1 * 41/8
+    s1 * 11/2
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     {
         \scaleDurations #'(1 . 1) {
@@ -898,13 +898,13 @@ B_RHVoiceIInserts = {
     s1 * 1/2
     
     % [B RHVoiceIInserts measure 23]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIInserts measure 24]                             %! SM4
     s1 * 5/16
     
     % [B RHVoiceIInserts measure 25]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIInserts measure 26]                             %! SM4
     s1 * 1/2
@@ -913,7 +913,7 @@ B_RHVoiceIInserts = {
     s1 * 5/8
     
     % [B RHVoiceIInserts measure 28]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIInserts measure 29]                             %! SM4
     s1 * 3/2
@@ -945,10 +945,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 23]                           %! SM4
-            \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1025,10 +1023,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 25]                           %! SM4
-            \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1137,10 +1133,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 28]                           %! SM4
-            \once \override Script.direction = #up               %! OC1
             \once \override Rest.transparent = ##t               %! OC1
-            \once \override GlobalContext.TimeSignature.transparent = ##t %! OC1
-            r8
+            r4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1441,13 +1435,13 @@ B_RHVoiceIIInserts = {
     s1 * 1/2
     
     % [B RHVoiceIIInserts measure 23]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIInserts measure 24]                            %! SM4
     s1 * 5/16
     
     % [B RHVoiceIIInserts measure 25]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIInserts measure 26]                            %! SM4
     s1 * 1/2
@@ -1456,7 +1450,7 @@ B_RHVoiceIIInserts = {
     s1 * 5/8
     
     % [B RHVoiceIIInserts measure 28]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIInserts measure 29]                            %! SM4
     s1 * 3/2
@@ -1480,7 +1474,7 @@ B_RHVoiceIII = {
     
     % [B RHVoiceIII measure 22]                                  %! SM4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 37/16
+    s1 * 43/16
     \mf                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     {
         \tweak text #tuplet-number::calc-fraction-text
@@ -1545,13 +1539,13 @@ B_RHVoiceIIIInserts = {
     s1 * 1/2
     
     % [B RHVoiceIIIInserts measure 23]                           %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIIInserts measure 24]                           %! SM4
     s1 * 5/16
     
     % [B RHVoiceIIIInserts measure 25]                           %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIIInserts measure 26]                           %! SM4
     s1 * 1/2
@@ -1560,7 +1554,7 @@ B_RHVoiceIIIInserts = {
     s1 * 5/8
     
     % [B RHVoiceIIIInserts measure 28]                           %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIIIInserts measure 29]                           %! SM4
     s1 * 3/2
@@ -1638,7 +1632,7 @@ B_RHVoiceIV = {
     }
     
     % [B RHVoiceIV measure 23]                                   %! SM4
-    s1 * 9/16
+    s1 * 13/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
@@ -1699,7 +1693,7 @@ B_RHVoiceIV = {
     s1 * 5/8
     
     % [B RHVoiceIV measure 28]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIV measure 29]                                   %! SM4
     s1 * 3/2
@@ -1746,7 +1740,7 @@ B_RHVoiceIVInserts = {
     }
     
     % [B RHVoiceIVInserts measure 23]                            %! SM4
-    s1 * 9/16
+    s1 * 13/16
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
@@ -1776,7 +1770,7 @@ B_RHVoiceIVInserts = {
     s1 * 5/8
     
     % [B RHVoiceIVInserts measure 28]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceIVInserts measure 29]                            %! SM4
     s1 * 3/2
@@ -1802,13 +1796,13 @@ B_RHVoiceV = {
     s1 * 1/2
     
     % [B RHVoiceV measure 23]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceV measure 24]                                    %! SM4
     s1 * 5/16
     
     % [B RHVoiceV measure 25]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceV measure 26]                                    %! SM4
     s1 * 1/2
@@ -1817,7 +1811,7 @@ B_RHVoiceV = {
     s1 * 5/8
     
     % [B RHVoiceV measure 28]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceV measure 29]                                    %! SM4
     s1 * 3/2
@@ -1843,13 +1837,13 @@ B_RHVoiceVI = {
     s1 * 1/2
     
     % [B RHVoiceVI measure 23]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceVI measure 24]                                   %! SM4
     s1 * 5/16
     
     % [B RHVoiceVI measure 25]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceVI measure 26]                                   %! SM4
     s1 * 1/2
@@ -1858,7 +1852,7 @@ B_RHVoiceVI = {
     s1 * 5/8
     
     % [B RHVoiceVI measure 28]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHVoiceVI measure 29]                                   %! SM4
     s1 * 3/2
@@ -1884,13 +1878,13 @@ B_RHResonanceVoice = {
     s1 * 1/2
     
     % [B RHResonanceVoice measure 23]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHResonanceVoice measure 24]                            %! SM4
     s1 * 5/16
     
     % [B RHResonanceVoice measure 25]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHResonanceVoice measure 26]                            %! SM4
     s1 * 1/2
@@ -1899,7 +1893,7 @@ B_RHResonanceVoice = {
     s1 * 5/8
     
     % [B RHResonanceVoice measure 28]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B RHResonanceVoice measure 29]                            %! SM4
     s1 * 3/2
@@ -1951,13 +1945,13 @@ B_LHVoiceI = {
     s1 * 1/2
     
     % [B LHVoiceI measure 23]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceI measure 24]                                    %! SM4
     s1 * 5/16
     
     % [B LHVoiceI measure 25]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceI measure 26]                                    %! SM4
     s1 * 1/2
@@ -1966,7 +1960,7 @@ B_LHVoiceI = {
     s1 * 5/8
     
     % [B LHVoiceI measure 28]                                    %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceI measure 29]                                    %! SM4
     s1 * 3/2
@@ -1989,7 +1983,7 @@ B_LHVoiceI = {
 B_LHVoiceII = {
     
     % [B LHVoiceII measure 22]                                   %! SM4
-    s1 * 67/8
+    s1 * 35/4
     {
         \scaleDurations #'(1 . 1) {
             
@@ -2024,13 +2018,13 @@ B_LHVoiceIII = {
     s1 * 1/2
     
     % [B LHVoiceIII measure 23]                                  %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIII measure 24]                                  %! SM4
     s1 * 5/16
     
     % [B LHVoiceIII measure 25]                                  %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIII measure 26]                                  %! SM4
     s1 * 1/2
@@ -2039,7 +2033,7 @@ B_LHVoiceIII = {
     s1 * 5/8
     
     % [B LHVoiceIII measure 28]                                  %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIII measure 29]                                  %! SM4
     s1 * 3/2
@@ -2067,13 +2061,13 @@ B_LHVoiceIV = {
     \ff                                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     
     % [B LHVoiceIV measure 23]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIV measure 24]                                   %! SM4
     s1 * 5/16
     
     % [B LHVoiceIV measure 25]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIV measure 26]                                   %! SM4
     s1 * 1/2
@@ -2082,7 +2076,7 @@ B_LHVoiceIV = {
     s1 * 5/8
     
     % [B LHVoiceIV measure 28]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIV measure 29]                                   %! SM4
     s1 * 3/2
@@ -2108,13 +2102,13 @@ B_LHVoiceIVInserts = {
     s1 * 1/2
     
     % [B LHVoiceIVInserts measure 23]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIVInserts measure 24]                            %! SM4
     s1 * 5/16
     
     % [B LHVoiceIVInserts measure 25]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIVInserts measure 26]                            %! SM4
     s1 * 1/2
@@ -2123,7 +2117,7 @@ B_LHVoiceIVInserts = {
     s1 * 5/8
     
     % [B LHVoiceIVInserts measure 28]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceIVInserts measure 29]                            %! SM4
     s1 * 3/2
@@ -2147,7 +2141,7 @@ B_LHVoiceV = {
     
     % [B LHVoiceV measure 22]                                    %! SM4
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    s1 * 37/16
+    s1 * 43/16
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     {
         \scaleDurations #'(1 . 1) {
@@ -2212,13 +2206,13 @@ B_LHVoiceVInserts = {
     s1 * 1/2
     
     % [B LHVoiceVInserts measure 23]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVInserts measure 24]                             %! SM4
     s1 * 5/16
     
     % [B LHVoiceVInserts measure 25]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVInserts measure 26]                             %! SM4
     s1 * 1/2
@@ -2227,7 +2221,7 @@ B_LHVoiceVInserts = {
     s1 * 5/8
     
     % [B LHVoiceVInserts measure 28]                             %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVInserts measure 29]                             %! SM4
     s1 * 3/2
@@ -2265,13 +2259,13 @@ B_LHVoiceVI = {
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [B LHVoiceVI measure 23]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVI measure 24]                                   %! SM4
     s1 * 5/16
     
     % [B LHVoiceVI measure 25]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVI measure 26]                                   %! SM4
     s1 * 1/2
@@ -2280,7 +2274,7 @@ B_LHVoiceVI = {
     s1 * 5/8
     
     % [B LHVoiceVI measure 28]                                   %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVI measure 29]                                   %! SM4
     s1 * 3/2
@@ -2306,13 +2300,13 @@ B_LHVoiceVIInserts = {
     s1 * 1/2
     
     % [B LHVoiceVIInserts measure 23]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVIInserts measure 24]                            %! SM4
     s1 * 5/16
     
     % [B LHVoiceVIInserts measure 25]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVIInserts measure 26]                            %! SM4
     s1 * 1/2
@@ -2321,7 +2315,7 @@ B_LHVoiceVIInserts = {
     s1 * 5/8
     
     % [B LHVoiceVIInserts measure 28]                            %! SM4
-    s1 * 1/8
+    s1 * 1/4
     
     % [B LHVoiceVIInserts measure 29]                            %! SM4
     s1 * 3/2
@@ -2346,8 +2340,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 22]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c2
+            <e, fs, gs, as, b,>2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2371,8 +2364,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 23]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c4
+            <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2396,9 +2388,9 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
+            % [B LHResonanceVoice measure 24]                    %! SM4
             \once \override Accidental.stencil = ##f             %! OC1
-            \makeMagenta                                         %! SM25
-            c4
+            <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2420,8 +2412,7 @@ B_LHResonanceVoice = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeMagenta                                         %! SM25
-            c16
+            <e, fs, gs, as, b,>16
             \repeatTie                                           %! SC
             [
             ]
@@ -2430,10 +2421,9 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 26]                    %! SM4
+            % [B LHResonanceVoice measure 25]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            \makeMagenta                                         %! SM25
-            c2
+            <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2457,9 +2447,8 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 27]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c2
+            % [B LHResonanceVoice measure 26]                    %! SM4
+            <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2478,22 +2467,13 @@ B_LHResonanceVoice = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 0
-            \makeMagenta                                         %! SM25
-            c8
-            \repeatTie                                           %! SC
-            [
-            ]
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 28]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c8
+            % [B LHResonanceVoice measure 27]                    %! SM4
+            <e, fs, gs, as, b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2512,17 +2492,23 @@ B_LHResonanceVoice = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 0
+            <e, fs, gs, as, b,>8
+            \repeatTie                                           %! SC
+            [
+            ]
         }
     }
     
-    % [B LHResonanceVoice measure 29]                            %! SM4
-    s1 * 3/2
+    % [B LHResonanceVoice measure 28]                            %! SM4
+    s1 * 7/4
     {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 30]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c1
+            <e, fs, gs, as, b,>1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2541,14 +2527,12 @@ B_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \makeMagenta                                         %! SM25
-            c4
+            <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \makeMagenta                                         %! SM25
-            c16
+            <e, fs, gs, as, b,>16
             \repeatTie                                           %! SC
             [
             ]
@@ -2559,8 +2543,7 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 31]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            \makeMagenta                                         %! SM25
-            c1..
+            <e, fs, gs, as, b,>1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2585,8 +2568,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 32]                    %! SM4
-            \makeMagenta                                         %! SM25
-            c1.
+            <e, fs, gs, as, b,>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP

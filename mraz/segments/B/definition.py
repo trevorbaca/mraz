@@ -17,7 +17,6 @@ collections_6 = collection_maker.make_segment_6_collections()
 collections_7 = collection_maker.make_segment_7_collections()
 collections_8 = collection_maker.make_segment_8_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
-resonance = [-12]
 
 ##################################### [B] #####################################
 
@@ -37,10 +36,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
-    baca.scripts_up(),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.2.2',
     )
 
@@ -56,10 +53,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
-    baca.scripts_up(),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.2.4',
     )
 
@@ -89,10 +84,8 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 8))],
-    baca.scripts_up(),
+    [abjad.Rest((1, 4))],
     baca.transparent_rests(),
-    baca.transparent_time_signatures(),
     figure_name='b.2.7',
     )
 
@@ -209,7 +202,7 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.allow_octaves(),
-    counts=[8],
+    counts=[4],
     figure_name='b.2.r.4',
     hide_time_signature=True,
     )
@@ -218,7 +211,7 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.allow_octaves(),
-    counts=[10],
+    counts=[8],
     figure_name='b.2.r.5',
     hide_time_signature=True,
     )
@@ -227,7 +220,7 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.allow_octaves(),
-    counts=[2],
+    counts=[10],
     figure_name='b.2.r.6',
     hide_time_signature=True,
     )
