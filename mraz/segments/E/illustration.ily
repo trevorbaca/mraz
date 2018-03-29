@@ -2261,7 +2261,6 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
-            \break                                               %! IC
         }
     }
     {
@@ -2819,7 +2818,6 @@ E_RHVoiceIII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \break                                               %! IC
         }
     }
     {
