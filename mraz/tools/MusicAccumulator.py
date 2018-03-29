@@ -129,7 +129,8 @@ class MusicAccumulator(baca.MusicAccumulator):
         talea_denominator=None,
         thread=None,
         time_treatments=None,
-        tuplet_denominator=None):
+        tuplet_denominator=None,
+        tuplet_force_fraction=None):
         superclass = super(MusicAccumulator, self)
         keywords = {
             'allow_repeats': allow_repeats,
@@ -151,6 +152,7 @@ class MusicAccumulator(baca.MusicAccumulator):
             'thread': thread,
             'time_treatments': time_treatments,
             'tuplet_denominator': tuplet_denominator,
+            'tuplet_force_fraction': tuplet_force_fraction,
             }
         keywords['figure_index'] = self._figure_index
         voice_name = self.score_template.voice_abbreviations.get(

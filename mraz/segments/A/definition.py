@@ -107,6 +107,7 @@ accumulator(
     collections['stage 3']['rh'].next(2),
     baca.flags(),
     baca.register(-39, -27),
+    baca.tuplet_bracket_staff_padding(3),
     counts=[4, -1],
     figure_name='lh-5 8.3.9',
     talea_denominator=32,
@@ -241,6 +242,8 @@ accumulator(
     figure_name='lh-6 8.3.6',
     hide_time_signature=True,
     time_treatments=[-6],
+    tuplet_denominator=4,
+    tuplet_force_fraction=True,
     )
 
 maker = baca.SegmentMaker(

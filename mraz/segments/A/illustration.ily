@@ -1513,6 +1513,7 @@ A_LHVoiceV = {
         \times 16/15 {
             
             % [A LHVoiceV measure 18]                            %! SM4
+            \override TupletBracket.staff-padding = #3           %! OC1
             fs,,8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1556,6 +1557,7 @@ A_LHVoiceV = {
             f,8
             
             r32
+            \revert TupletBracket.staff-padding                  %! OC2
         }
     }
     {
@@ -1923,7 +1925,8 @@ A_LHVoiceVI = {
     
     s1 * 1/16
     {
-        \times 2/3 {
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 4/6 {
             
             e,,8
             -\tenuto                                             %! IC
