@@ -294,13 +294,8 @@ accumulator(
     time_treatments=[1],
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['84']),
-    (1, abjad.Accelerando()),
-    (9, mraz.metronome_marks['112']),
-    ])
-
 maker = baca.SegmentMaker(
+    color_octaves=False,
     final_bar_line='|.',
     final_markup=(
         ['Madison, WI', 'Los Angeles, CA.'],
@@ -309,7 +304,6 @@ maker = baca.SegmentMaker(
     final_markup_extra_offset=(-24, -8),
     ignore_repeat_pitch_classes=True,
     last_segment=True,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -317,6 +311,13 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'GlobalSkips',
+    baca.metronome_mark('84', selector=baca.leaf(0)),
+    baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(0)),
+    baca.metronome_mark('112', selector=baca.leaf(8)),
+    )
 
 maker(
     'rh_v1',
