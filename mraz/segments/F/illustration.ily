@@ -624,7 +624,10 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
+                \makeRed                                         %! SM12
                 ef'''16
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
@@ -683,7 +686,10 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
+                \makeRed                                         %! SM12
                 a'''16
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 0                      %! SM35
@@ -785,8 +791,11 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 0                      %! SM35
+                \makeRed                                         %! SM12
                 fs'''16
                 ]                                                %! SM35
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
             }
         }
     }
@@ -1356,8 +1365,11 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
+                \makeRed                                         %! SM12
                 d'''16
                 )                                                %! SC
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -2182,7 +2194,10 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
+            \makeRed                                             %! SM12
             ef''16
+            - \tweak color #red                                  %! SM12
+            ^ \markup { OCTAVE }                                 %! SM12
         }
         \times 2/3 {
             
@@ -2445,7 +2460,10 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
+                \makeRed                                         %! SM12
                 a'16
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
@@ -2591,8 +2609,11 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
+                \makeRed                                         %! SM12
                 fs''16
                 )                                                %! SC
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -2612,7 +2633,10 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
+                \makeRed                                         %! SM12
                 d'''16
+                - \tweak color #red                              %! SM12
+                ^ \markup { OCTAVE }                             %! SM12
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2

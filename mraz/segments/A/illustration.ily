@@ -1217,6 +1217,7 @@ A_LHVoiceV = {
             % [A LHVoiceV measure 10]                            %! SM4
             \override TupletBracket.direction = #up              %! OC1
             \ottava #-1                                          %! SC
+            \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             g,8.
@@ -1841,6 +1842,7 @@ A_LHVoiceVI = {
             
             r8.
             
+            \once \override NoteColumn.force-hshift = #-1        %! OC1
             e,,16
             -\tenuto                                             %! IC
             

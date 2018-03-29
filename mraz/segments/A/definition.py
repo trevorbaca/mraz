@@ -18,6 +18,7 @@ accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
     baca.dynamic('ppp'),
+    baca.dynamics_up(),
     baca.flags(),
     baca.register(-27, -39),
     counts=[6, -1],
@@ -189,6 +190,7 @@ accumulator(
         baca.note(-1),
         ),
     baca.flags(),
+    baca.note_column_shift(-1, selector=baca.pleaf(-1)),
     baca.register(-39),
     counts=[1, -3],
     figure_name='lh-6 8.3.3',
@@ -249,7 +251,6 @@ accumulator(
 maker = baca.SegmentMaker(
     final_bar_line=False,
     metronome_mark_stem_height=1.5,
-    range_checker=abjad.Piano().pitch_range,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
