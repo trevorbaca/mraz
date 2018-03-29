@@ -156,6 +156,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
+    baca.allow_octaves(),
     baca.register(36),
     baca.tenuti(),
     counts=[16],
@@ -180,6 +181,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     baca.anchor_to_figure('b.2.1'),
     counts=[8],
     figure_name='b.2.r.1',
@@ -189,6 +191,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[4],
     figure_name='b.2.r.2',
     hide_time_signature=True,
@@ -197,6 +200,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[5],
     figure_name='b.2.r.3',
     hide_time_signature=True,
@@ -205,6 +209,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[8],
     figure_name='b.2.r.4',
     hide_time_signature=True,
@@ -213,6 +218,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[10],
     figure_name='b.2.r.5',
     hide_time_signature=True,
@@ -221,6 +227,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[2],
     figure_name='b.2.r.6',
     hide_time_signature=True,
@@ -229,6 +236,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     baca.anchor_to_figure('b.2.10'),
     counts=[21],
     figure_name='b.2.r.7',
@@ -238,6 +246,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[28],
     figure_name='b.2.r.8',
     hide_time_signature=True,
@@ -246,6 +255,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
+    baca.allow_octaves(),
     counts=[24],
     figure_name='b.2.r.9',
     hide_time_signature=True,
@@ -259,7 +269,6 @@ accumulator(
     )
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['112']),
     (3, mraz.metronome_marks['84']),
     (5, mraz.metronome_marks['112']),
     (6, mraz.metronome_marks['84']),

@@ -275,7 +275,7 @@
         \voiceTwo
     }
 
-    %\include "voice-colors.ily"
+    \include "voice-colors.ily"
 
     % PIANO MUSIC RH STAFF
     \context {
