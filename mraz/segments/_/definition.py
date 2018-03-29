@@ -143,10 +143,10 @@ accumulator(
     baca.dynamic('fff'),
     baca.dynamics_up(),
     baca.flags(),
-    baca.markup('(black voice louder; green voice longer)'),
     baca.register(20, 36),
     baca.rests_up(),
     baca.scripts_up(),
+    baca.stems_up(),
     baca.text_scripts_up(),
     counts=[2, -14],
     figure_name='b.1.10',
@@ -158,10 +158,10 @@ accumulator(
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.flags(),
-    baca.markup('(first note A5)'),
     baca.ottava(),
     baca.register(10, 26),
     baca.rests_down(),
+    baca.stems_down(),
     baca.tenuti(),
     baca.tuplet_brackets_down(),
     counts=[4, -4],
@@ -174,7 +174,6 @@ accumulator(
 accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
-    baca.markup('(extremely short)', baca.rest(0)),
     baca.scripts_up(),
     baca.text_scripts_up(),
     baca.transparent_rests(),
@@ -182,19 +181,10 @@ accumulator(
     figure_name='b.1.12',
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, mraz.metronome_marks['84']),
-    (2, mraz.metronome_marks['112']),
-    (5, mraz.metronome_marks['84']),
-    (8, abjad.Accelerando()),
-    (9, mraz.metronome_marks['112']),
-    ])
-
 maker = baca.SegmentMaker(
     color_octaves=False,
     color_out_of_range_pitches=True,
     color_repeat_pitch_classes=True,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -204,10 +194,24 @@ maker = baca.SegmentMaker(
 accumulator.populate_segment_maker(maker)
 
 maker(
+    'GlobalSkips',
+    baca.metronome_mark('84', selector=baca.leaf(0)),
+    baca.metronome_mark('112', selector=baca.leaf(1)),
+    baca.metronome_mark('84', selector=baca.leaf(4)),
+    baca.metronome_mark(abjad.Accelerando(), selector=baca.leaf(-2)),
+    baca.metronome_mark('112', selector=baca.leaf(-1)),
+    )
+
+maker(
     'GlobalRests',
     baca.global_fermata('short', selector=baca.leaf(3)),
     baca.global_fermata('fermata', selector=baca.leaf(5)),
     baca.global_fermata('short', selector=baca.leaf(8)),
+    )
+
+maker(
+    'rh_v1',
+    baca.start_markup('PIANO', context='PianoStaff', hcenter_in=12),
     )
 
 maker(
@@ -218,9 +222,4 @@ maker(
 maker(
     'lh_v4_i',
     baca.stems_up(),
-    )
-
-maker(
-    'rh_v1',
-    baca.start_markup('PIANO', context='PianoStaff', hcenter_in=12),
     )
