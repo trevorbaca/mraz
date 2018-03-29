@@ -37,7 +37,15 @@ metadata = abjad.OrderedDict(
                 'LHResonanceVoice',
                 ],
             ),
+        (
+            'bol_measure_numbers',
+            [22, 29, 31, 32],
+            ),
         ('duration', "0'23''"),
+        (
+            'fermata_measure_numbers',
+            [23, 25, 28],
+            ),
         ('first_measure_number', 22),
         ('last_measure_number', 33),
         (

@@ -38,7 +38,7 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    baca.short_fermata(),
+    #baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.2',
@@ -58,7 +58,7 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    baca.fermata(),
+    #baca.fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.4',
@@ -92,7 +92,7 @@ accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
     baca.scripts_up(),
-    baca.short_fermata(),
+    #baca.short_fermata(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),
     figure_name='b.2.7',
@@ -192,6 +192,10 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.allow_octaves(),
+#    baca.accidental_stencil_false(),
+#    baca.note_head_stencil_false(),
+#    baca.repeat_tie_stencil_false(),
+#    baca.stem_stencil_false(),
     counts=[4],
     figure_name='b.2.r.2',
     hide_time_signature=True,
@@ -268,18 +272,8 @@ accumulator(
     hide_time_signature=True,
     )
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (3, mraz.metronome_marks['84']),
-    (5, mraz.metronome_marks['112']),
-    (6, mraz.metronome_marks['84']),
-    (10, mraz.metronome_marks['112']),
-    (10, abjad.Ritardando()),
-    (12, mraz.metronome_marks['84']),
-    ])
-
 maker = baca.SegmentMaker(
     final_bar_line=False,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
@@ -289,21 +283,42 @@ maker = baca.SegmentMaker(
 accumulator.populate_segment_maker(maker)
 
 maker(
+    'GlobalSkips',
+    baca.metronome_mark('84', selector=baca.leaf(2)),
+    baca.metronome_mark('112', selector=baca.leaf(4)),
+    baca.metronome_mark('84', selector=baca.leaf(5)),
+    baca.metronome_mark('112', selector=baca.leaf(-3)),
+    baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(-3)),
+    baca.metronome_mark('84', selector=baca.leaf(-1)),
+    )
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(1)),
+    baca.global_fermata('fermata', selector=baca.leaf(3)),
+    baca.global_fermata('short', selector=baca.leaf(6)),
+    )
+
+maker(
     'rh_v1',
     baca.ottava(),
     )
 
 maker(
     'rh_v2',
+    baca.scripts_up(),
     baca.slurs_up(),
-    )
-
-maker(
-    'rh_v4_i',
-    baca.stems_up(),
     )
 
 maker(
     'lh_resonance',
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
+
+#maker(
+#    ('lh_resonance', [1, 3, 6]),
+#    baca.accidental_stencil_false(),
+#    baca.note_head_stencil_false(),
+#    baca.repeat_tie_stencil_false(),
+#    baca.stem_stencil_false(),
+#    )
