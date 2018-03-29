@@ -145,7 +145,6 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     baca.flags(),
-    baca.line_break(),
     baca.marcati(),
     baca.rests_around([1], [8]),
     counts=[3],

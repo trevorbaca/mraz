@@ -6050,7 +6050,6 @@ C_LHVoiceV = {
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             
             r2
-            \break                                               %! IC
         }
     }
     {

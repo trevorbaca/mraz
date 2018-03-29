@@ -17,6 +17,7 @@
 
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
+        \override TextSpanner.padding = 8
         \override TextSpanner.staff-padding = 4
         }
 
@@ -28,6 +29,7 @@
 
         \override MultiMeasureRest.transparent = ##t
 
+        \override MultiMeasureRestText.extra-offset = #'(0 . -12)
         \override MultiMeasureRestText.font-size = 3
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0

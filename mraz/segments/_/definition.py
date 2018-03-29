@@ -93,7 +93,6 @@ accumulator(
 accumulator(
     'rh_v2',
     [abjad.Rest((1, 8))],
-    baca.line_break(),
     baca.scripts_up(),
     baca.transparent_rests(),
     baca.transparent_time_signatures(),

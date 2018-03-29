@@ -80,7 +80,6 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.line_break(),
     baca.script_color('black'),
     baca.script_extra_offset((1, 0)),
     baca.short_fermata(),
@@ -227,7 +226,6 @@ accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
-    baca.line_break(),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
     figure_name='rh-2 2.2.3',
