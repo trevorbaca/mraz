@@ -2346,7 +2346,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 22]                    %! SM4
-            <e, fs, gs, as, b,>2
+            \makeMagenta                                         %! SM25
+            c2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2370,7 +2371,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 23]                    %! SM4
-            <e, fs, gs, as, b,>4
+            \makeMagenta                                         %! SM25
+            c4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2394,7 +2396,9 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            <e, fs, gs, as, b,>4
+            \once \override Accidental.stencil = ##f             %! OC1
+            \makeMagenta                                         %! SM25
+            c4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2416,7 +2420,8 @@ B_LHResonanceVoice = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>16
+            \makeMagenta                                         %! SM25
+            c16
             \repeatTie                                           %! SC
             [
             ]
@@ -2427,7 +2432,8 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 26]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <e, fs, gs, as, b,>2
+            \makeMagenta                                         %! SM25
+            c2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2452,7 +2458,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 27]                    %! SM4
-            <e, fs, gs, as, b,>2
+            \makeMagenta                                         %! SM25
+            c2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2474,7 +2481,8 @@ B_LHResonanceVoice = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>8
+            \makeMagenta                                         %! SM25
+            c8
             \repeatTie                                           %! SC
             [
             ]
@@ -2484,7 +2492,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 28]                    %! SM4
-            <e, fs, gs, as, b,>8
+            \makeMagenta                                         %! SM25
+            c8
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2512,7 +2521,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 30]                    %! SM4
-            <e, fs, gs, as, b,>1
+            \makeMagenta                                         %! SM25
+            c1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2531,12 +2541,14 @@ B_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <e, fs, gs, as, b,>4
+            \makeMagenta                                         %! SM25
+            c4
             \repeatTie                                           %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>16
+            \makeMagenta                                         %! SM25
+            c16
             \repeatTie                                           %! SC
             [
             ]
@@ -2547,7 +2559,8 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 31]                    %! SM4
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <e, fs, gs, as, b,>1..
+            \makeMagenta                                         %! SM25
+            c1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2572,7 +2585,8 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 32]                    %! SM4
-            <e, fs, gs, as, b,>1.
+            \makeMagenta                                         %! SM25
+            c1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
