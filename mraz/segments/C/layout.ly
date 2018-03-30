@@ -165,10 +165,10 @@
             
             % [PageLayout measure 54]                                                    %! SM4
             \newSpacingSection                                                           %! HSS1:SPACING
-            \set Score.proportionalNotationDuration = #(ly:make-moment 35 576)           %! HSS1:SPACING
+            \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
             s1 * 1/4
-        %@% ^ \markup { \make-forest-green "[[1/24 * 35/24]]" }                          %! HSS2:SPACING_MARKUP
+        %@% ^ \markup { \make-forest-green "[[1/4 * 35/24]]" }                           %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 55]                                                    %! SM4
             \newSpacingSection                                                           %! HSS1:SPACING
