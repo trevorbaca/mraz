@@ -297,11 +297,8 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.beam_stencil_false(selector=baca.leaves()),
-    baca.dots_stencil_false(selector=baca.leaves()),
-    baca.flag_stencil_false(selector=baca.leaves()),
     baca.map(baca.tie(repeat=True), baca.qruns()),
-    baca.stem_stencil_false(selector=baca.leaves()),
+    *mraz.clean_up_repeat_ties(),
     )
 
 maker(
@@ -309,22 +306,12 @@ maker(
     baca.accidental_stencil_false(selector=baca.leaves()),
     )
 
-def hide_music(selector):
-    return [
-        baca.accidental_stencil_false(selector=selector),
-        baca.beam_stencil_false(selector=selector),
-        baca.flag_stencil_false(selector=selector),
-        baca.note_head_stencil_false(selector=selector),
-        baca.repeat_tie_stencil_false(selector=selector),
-        baca.stem_stencil_false(selector=selector),
-        ]
-
 maker(
     ('lh_resonance', [2, 4]),
-    *hide_music(selector=baca.leaf(0)),
+    *mraz.hide_music(selector=baca.leaf(0)),
     )
 
 maker(
     ('lh_resonance', [3, 6, 9]),
-    *hide_music(selector=baca.leaves()[1:]),
+    *mraz.hide_music(selector=baca.leaves()[1:]),
     )
