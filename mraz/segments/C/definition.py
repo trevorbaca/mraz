@@ -1018,3 +1018,8 @@ maker(
     'lh_resonance',
     baca.map(baca.tie(repeat=True), baca.qruns()),
     )
+
+maker(
+    ('lh_resonance', [11, 15]),
+    baca.accidental_stencil_false(),
+    )

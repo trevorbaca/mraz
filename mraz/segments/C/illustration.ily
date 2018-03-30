@@ -7360,6 +7360,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 44]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
             <cs,, cs,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7441,6 +7442,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 48]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
             <ef,, ef,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
