@@ -3174,14 +3174,14 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             c''''16
+            \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             cs''''16
             ]
-            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
             \revert Slur.direction                               %! OC2
@@ -3288,14 +3288,14 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             cs''''16
+            \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             bf'''16
             ]
-            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
             \revert Slur.direction                               %! OC2
@@ -3443,14 +3443,14 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             ef''''16
+            \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             f''''16
             ]
-            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
             \revert Slur.direction                               %! OC2
@@ -3514,14 +3514,14 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             af'''16
+            \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
             fs''''16
             ]
-            \ff                                                  %! HC1
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
             \revert Slur.direction                               %! OC2
@@ -3534,11 +3534,9 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 73]                           %! SM4
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             <f'' ef''' c'''' e'''' fs'''' bf''''>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
-            \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3817,6 +3815,7 @@ C_RHVoiceIII = {
         \times 12/11 {
             
             % [C RHVoiceIII measure 34]                          %! SM4
+            \override Stem.direction = #up                       %! OC1
             \override TextScript.direction = #up                 %! OC1
             \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
@@ -3855,6 +3854,7 @@ C_RHVoiceIII = {
             
             bf'8
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             
             r4
             \revert TextScript.direction                         %! OC2
@@ -3890,6 +3890,7 @@ C_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \override Stem.direction = #up                       %! OC1
             ef''8
             -\tenuto                                             %! IC
             
@@ -3907,6 +3908,7 @@ C_RHVoiceIII = {
             
             bf4
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             \revert TupletBracket.direction                      %! OC2
             \revert TupletBracket.staff-padding                  %! OC2
         }
@@ -3943,6 +3945,7 @@ C_RHVoiceIII = {
         \times 12/11 {
             
             % [C RHVoiceIII measure 39]                          %! SM4
+            \override Stem.direction = #up                       %! OC1
             \override TupletBracket.direction = #up              %! OC1
             ef'8
             -\tenuto                                             %! IC
@@ -3976,6 +3979,7 @@ C_RHVoiceIII = {
             
             bf8
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             
             r4
             \revert TupletBracket.direction                      %! OC2
@@ -4012,6 +4016,7 @@ C_RHVoiceIII = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceIII measure 55]                          %! SM4
+            \override Stem.direction = #down                     %! OC1
             \override TupletBracket.direction = #down            %! OC1
             af'''8
             -\tenuto                                             %! IC
@@ -4045,6 +4050,7 @@ C_RHVoiceIII = {
             -\tenuto                                             %! IC
             ]
             )                                                    %! SC
+            \revert Stem.direction                               %! OC2
             \revert TupletBracket.direction                      %! OC2
         }
     }
@@ -4078,6 +4084,7 @@ C_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \override Stem.direction = #up                       %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef''8
             -\tenuto                                             %! IC
@@ -4097,6 +4104,7 @@ C_RHVoiceIII = {
             
             bf4
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             \revert TextScript.direction                         %! OC2
             \revert TupletBracket.staff-padding                  %! OC2
             \revert TupletBracket.direction                      %! OC2
@@ -5330,7 +5338,7 @@ C_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceIV measure 37]                           %! SM4
-            \override Slur.direction = #down                     %! OC1
+            \override Slur.direction = #up                       %! OC1
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             b'8.
             \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC

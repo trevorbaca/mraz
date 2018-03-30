@@ -971,8 +971,10 @@ B_RHVoiceII = {
             
             % [B RHVoiceII measure 24]                           %! SM4
             \once \override DynamicText.X-offset = #0            %! OC1
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs16
             -\staccato                                           %! IC
@@ -1018,6 +1020,7 @@ B_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Stem.direction                               %! OC2
         }
     }
     {
@@ -1053,6 +1056,7 @@ B_RHVoiceII = {
             
             % [B RHVoiceII measure 27]                           %! SM4
             \once \override DynamicText.X-offset = #0            %! OC1
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -1129,6 +1133,7 @@ B_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Stem.direction                               %! OC2
         }
     }
     {
@@ -1164,6 +1169,7 @@ B_RHVoiceII = {
             
             % [B RHVoiceII measure 30]                           %! SM4
             \once \override DynamicText.X-offset = #0            %! OC1
+            \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -1303,6 +1309,7 @@ B_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Stem.direction                               %! OC2
         }
     }
     
@@ -2160,6 +2167,8 @@ B_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHVoiceV measure 29]                            %! SM4
+            \override Rest.direction = #up                       %! OC1
+            \dynamicDown                                         %! IC
             r2.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2195,6 +2204,7 @@ B_LHVoiceV = {
             -\tenuto                                             %! IC
             
             r16
+            \revert Rest.direction                               %! OC2
         }
     }
     
