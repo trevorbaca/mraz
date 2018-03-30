@@ -36,7 +36,6 @@ accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
-    baca.register(7, 7+10),
     baca.imbricate(
         'rh_v2_i',
         [12, 14],
@@ -45,6 +44,7 @@ accumulator(
         extend_beam=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.register(7, 7+10),
     extend_beam=True,
     figure_name='rh-2 7.1.1',
     )
@@ -67,8 +67,6 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.nest('-1/16'),
-    baca.register(9, 9+10),
     baca.imbricate(
         'rh_v2_i',
         [13, 17, 17, 27],
@@ -76,6 +74,8 @@ accumulator(
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.nest('-1/16'),
+    baca.register(9, 9+10),
     figure_name='rh-2 7.1.2',
     )
 
@@ -98,7 +98,6 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.register(11, 11+10),
     baca.imbricate(
         'rh_v2_i',
         [12, 22, 19, 29],
@@ -107,6 +106,7 @@ accumulator(
         extend_beam=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.register(11, 11+10),
     extend_beam=True,
     figure_name='rh-2 7.1.3',
     time_treatments=[-1],
@@ -129,8 +129,6 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.nest('-1/16'),
-    baca.register(13, 13+10),
     baca.imbricate(
         'rh_v2_i',
         [21, 27, 24],
@@ -138,6 +136,8 @@ accumulator(
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.nest('-1/16'),
+    baca.register(13, 13+10),
     figure_name='rh-2 7.1.4',
     )
 
@@ -147,7 +147,6 @@ collections['stage 1']['rh'].next()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.register(15, 15+10),
     baca.imbricate(
         'rh_v2_i',
         [17],
@@ -156,6 +155,7 @@ accumulator(
         extend_beam=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.register(15, 15+10),
     extend_beam=True,
     figure_name='rh-2 7.1.5',
     )
@@ -163,14 +163,15 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.nest('2/16'),
-    baca.register(23, 23+10),
+    baca.beam_positions(12),
     baca.imbricate(
         'rh_v1_i',
         [30, 34, 37],
         baca.beam_everything(),
         baca.marcati(),
         ),
+    baca.nest('2/16'),
+    baca.register(23, 23+10),
     figure_name='rh-1 7.1.5',
     time_treatments=[-1],
     )
@@ -178,7 +179,6 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.register(17, 17+10),
     baca.imbricate(
         'rh_v2_i',
         [26, 32],
@@ -186,6 +186,7 @@ accumulator(
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.register(17, 17+10),
     figure_name='rh-2 7.1.6',
     time_treatments=[-1],
     )
@@ -220,8 +221,6 @@ accumulator(
         baca.lt(3),
         ),
     baca.dynamic('pp'),
-    baca.nest('-2/16'),
-    baca.register(0, 0+16),
     baca.imbricate(
         'lh_v5_i',
         [11, 18, 24, 26],
@@ -229,6 +228,9 @@ accumulator(
         baca.staccati(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.nest('-2/16'),
+    baca.register(0, 0+16),
+    baca.tuplet_brackets_down(),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
     )
@@ -261,8 +263,6 @@ accumulator(
         baca.lt(10),
         ),
     baca.dynamic('pp'),
-    baca.nest('-2/16'),
-    baca.register(4, 4+16),
     baca.imbricate(
         'lh_v5_i',
         [9, 16, 20, 25],
@@ -270,6 +270,8 @@ accumulator(
         baca.staccati(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
+    baca.nest('-2/16'),
+    baca.register(4, 4+16),
     figure_name='lh-5 7.1.2',
     hide_time_signature=True,
     )
@@ -351,7 +353,7 @@ maker(
 
 maker(
     ('rh_v2_i', (9, -1)),
-    baca.beam_positions(17),
+    baca.beam_positions(18.5),
     )
 
 maker(
@@ -382,6 +384,7 @@ maker(
 
 maker(
     'lh_v4',
+    baca.clef('treble'),
     baca.scripts_down(),
     baca.stems_down(),
     )
