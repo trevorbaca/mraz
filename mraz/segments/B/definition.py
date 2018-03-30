@@ -171,10 +171,12 @@ accumulator(
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
     baca.map(baca.slur(), baca.runs()),
+    baca.only_segment(
+        baca.span_bar_extra_offset((-0.75, 0)),
+        ),
     baca.ottava(),
     baca.register(10, 36),
     baca.slurs_up(),
-    baca.span_bar_extra_offset((-0.75, 0)),
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
     )

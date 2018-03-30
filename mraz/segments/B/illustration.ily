@@ -1320,8 +1320,8 @@ B_RHVoiceII = {
             
             % [B RHVoiceII measure 33]                           %! SM4
             \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0) %! OC1:+SEGMENT
             \override Slur.direction = #up                       %! OC1
-            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0) %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                           %! SC
