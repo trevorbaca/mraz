@@ -7,3 +7,4 @@ from .clean_up_repeat_ties import clean_up_repeat_ties
 from .final_markup import final_markup
 from .hide_music import hide_music
 from .music_maker import music_maker
+from .transparent_music import transparent_music
