@@ -32,19 +32,19 @@ breaks = baca.breaks(
         ),
     baca.page(
         baca.system(
-            10, 15,
+            20, 15,
             measure=68,
             y_offset=0,
             ),
         baca.system(
-            10, 15,
-            measure=73,
-            y_offset=55,
+            20, 15,
+            measure=72,
+            y_offset=60,
             ),
         baca.system(
-            10, 15,
+            20, 15,
             measure=78,
-            y_offset=110,
+            y_offset=120,
             ),
         number=2,
         ),
