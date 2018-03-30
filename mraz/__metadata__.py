@@ -5,6 +5,29 @@ metadata = abjad.OrderedDict(
     [
         ('catalog_number', 'AWN-017'),
         ('composer ', 'Trevor Bača'),
+        (
+            'fermata_measure_numbers',
+            abjad.OrderedDict(
+                [
+                    (
+                        '_',
+                        [4, 6, 9],
+                        ),
+                    (
+                        'B',
+                        [23, 25, 28],
+                        ),
+                    (
+                        'C',
+                        [54],
+                        ),
+                    (
+                        'E',
+                        [84, 88, 90, 97],
+                        ),
+                    ]
+                ),
+            ),
         ('forces_tagline', 'for piano'),
         (
             'time_signatures',
@@ -16,12 +39,12 @@ metadata = abjad.OrderedDict(
                             '4/4',
                             '2/4',
                             '4/4',
-                            '1/8',
+                            '1/4',
                             '4/8',
-                            '1/8',
+                            '1/4',
                             '7/8',
                             '16/4',
-                            '1/8',
+                            '1/4',
                             ],
                         ),
                     (
@@ -45,12 +68,12 @@ metadata = abjad.OrderedDict(
                         'B',
                         [
                             '2/4',
-                            '1/8',
+                            '1/4',
                             '5/16',
-                            '1/8',
+                            '1/4',
                             '2/4',
                             '5/8',
-                            '1/8',
+                            '1/4',
                             '6/4',
                             '21/16',
                             '7/4',
@@ -62,7 +85,6 @@ metadata = abjad.OrderedDict(
                         'C',
                         [
                             '6/4',
-                            '1/4',
                             '3/4',
                             '6/4',
                             '9/8',
@@ -82,7 +104,7 @@ metadata = abjad.OrderedDict(
                             '7/8',
                             '4/4',
                             '2/4',
-                            '1/8',
+                            '1/4',
                             '2/4',
                             '4/4',
                             '2/4',
@@ -98,11 +120,9 @@ metadata = abjad.OrderedDict(
                             '6/4',
                             '4/4',
                             '4/4',
-                            '1/4',
                             '6/4',
                             '4/4',
                             '2/4',
-                            '1/4',
                             '4/4',
                             '4/4',
                             '4/4',

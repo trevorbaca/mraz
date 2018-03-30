@@ -34,9 +34,7 @@
     oddHeaderMarkup = \markup \null
     print-first-page-number = ##f
     print-page-number = ##t
-    ragged-bottom = ##t
-    ragged-last-bottom = ##t
-    right-margin = 0.25\in
+    right-margin = 0.5\in
     markup-system-spacing.minimum-distance = 48
     system-system-spacing.minimum-distance = 24
     %top-markup-spacing.minimum-distance = 12
@@ -71,5 +69,6 @@
     indent = 0
     ragged-bottom = ##t
     ragged-last = ##t
+    ragged-last-bottom = ##t
     ragged-right = ##t
 }

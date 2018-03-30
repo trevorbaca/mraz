@@ -4,4 +4,9 @@
 #(set-default-paper-size "arch a")
 
 \paper {
+    top-markup-spacing.minimum-distance = 12
+}
+
+\layout {
+    %ragged-right = ##f
 }
