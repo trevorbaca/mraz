@@ -23,7 +23,8 @@ accumulator(
     baca.rests_after([1]),
     baca.staccati(),
     baca.tenuti(),
-    baca.tuplet_bracket_staff_padding(8),
+    baca.tuplet_bracket_staff_padding(7),
+    baca.tuplet_brackets_up(),
     denominator=8,
     figure_name='rh-3 6.1.1',
     talea_denominator=8,
@@ -38,7 +39,8 @@ accumulator(
     baca.register(24, 12),
     baca.staccati(),
     baca.tenuti(),
-    baca.tuplet_bracket_staff_padding(8),
+    baca.tuplet_bracket_staff_padding(7),
+    baca.tuplet_brackets_up(),
     denominator=8,
     figure_name='rh-3 6.1.2',
     talea_denominator=8,
@@ -66,6 +68,7 @@ accumulator(
     baca.register(12, 24),
     baca.staccati(),
     baca.tenuti(),
+    baca.tuplet_brackets_up(),
     denominator=8,
     figure_name='rh-3 6.1.4',
     talea_denominator=8,
@@ -80,7 +83,6 @@ accumulator(
         baca.note(3),
         baca.note(2),
         ),
-    baca.clef('treble'),
     baca.dynamic('mp'),
     baca.flags(),
     baca.register(0, 12),
@@ -147,3 +149,8 @@ maker = baca.SegmentMaker(
     )
 
 accumulator.populate_segment_maker(maker)
+
+maker(
+    'lh_v4',
+    baca.clef('treble'),
+    )

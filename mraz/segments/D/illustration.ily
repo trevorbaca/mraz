@@ -296,7 +296,8 @@ D_RHVoiceIII = {
         \times 4/3 {
             
             % [D RHVoiceIII measure 78]                          %! SM4
-            \override TupletBracket.staff-padding = #8           %! OC1
+            \override TupletBracket.staff-padding = #7           %! OC1
+            \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs'''8
             -\staccato                                           %! IC
@@ -348,6 +349,7 @@ D_RHVoiceIII = {
             
             r8
             \revert TupletBracket.staff-padding                  %! OC2
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     {
@@ -355,7 +357,8 @@ D_RHVoiceIII = {
         \times 4/3 {
             
             % [D RHVoiceIII measure 79]                          %! SM4
-            \override TupletBracket.staff-padding = #8           %! OC1
+            \override TupletBracket.staff-padding = #7           %! OC1
+            \override TupletBracket.direction = #up              %! OC1
             bf'''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -385,6 +388,7 @@ D_RHVoiceIII = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \revert TupletBracket.staff-padding                  %! OC2
+            \revert TupletBracket.direction                      %! OC2
         }
     }
     {
@@ -438,6 +442,7 @@ D_RHVoiceIII = {
         \times 5/4 {
             
             % [D RHVoiceIII measure 81]                          %! SM4
+            \override TupletBracket.direction = #up              %! OC1
             af''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -470,6 +475,7 @@ D_RHVoiceIII = {
             a''8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
+            \revert TupletBracket.direction                      %! OC2
             
         }
     }
@@ -660,18 +666,19 @@ D_LHVoiceIII = {
 D_LHVoiceIV = {
     
     % [D LHVoiceIV measure 78]                                   %! SM4
+    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:EXPLICIT_CLEF:SM33:IC
     s1 * 7/32
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
             
             \override TupletBracket.staff-padding = #3           %! OC1
-            \clef "treble"                                       %! SM8:EXPLICIT_CLEF:IC
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-        %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-            \set PianoMusicLHStaff.forceClef = ##t               %! SM8:EXPLICIT_CLEF:SM33:IC
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             g'16
             -\tenuto                                             %! IC
@@ -693,7 +700,6 @@ D_LHVoiceIV = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
             
             r16
             
@@ -902,10 +908,6 @@ D_LHVoiceVInserts = {
 D_LHVoiceVI = {
     
     % [D LHVoiceVI measure 78]                                   %! SM4
-    \clef "bass"                                                 %! SM8:REAPPLIED_CLEF:SM37
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -914,7 +916,6 @@ D_LHVoiceVI = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“Piano”)                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [D LHVoiceVI measure 79]                                   %! SM4
     s1 * 1/2
