@@ -1773,9 +1773,11 @@ E_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 91]                           %! SM4
+            \override Beam.positions = #'(-8 . -8)               %! OC1
             \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs16
             -\staccato                                           %! IC
@@ -1961,12 +1963,14 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Beam.positions                               %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 92]                           %! SM4
+            \override Beam.positions = #'(-8 . -8)               %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d'16
@@ -2138,12 +2142,14 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Beam.positions                               %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 93]                           %! SM4
+            \override Beam.positions = #'(-8 . -8)               %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             b'16
@@ -2285,12 +2291,14 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Beam.positions                               %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 94]                           %! SM4
+            \override Beam.positions = #'(-8 . -8)               %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             fs''16
@@ -2398,6 +2406,7 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Beam.positions                               %! OC2
             \revert Script.direction                             %! OC2
             \revert Slur.direction                               %! OC2
             \revert Stem.direction                               %! OC2
@@ -2407,6 +2416,7 @@ E_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 95]                           %! SM4
+            \override Beam.positions = #'(-8 . -8)               %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
@@ -2519,6 +2529,7 @@ E_RHVoiceII = {
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
+            \revert Beam.positions                               %! OC2
         }
     }
     {
@@ -4057,7 +4068,6 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceIV measure 89]                           %! SM4
-            \override Slur.direction = #down                     %! OC1
             b'8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
@@ -4100,7 +4110,6 @@ E_LHVoiceIV = {
             )                                                    %! SC
             
             r16
-            \revert Slur.direction                               %! OC2
         }
     }
     {
@@ -4371,6 +4380,7 @@ E_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceV measure 86]                            %! SM4
+            \override Stem.direction = #up                       %! OC1
             \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             bf,,8.
@@ -4405,6 +4415,7 @@ E_LHVoiceV = {
             r32
             
             b,,8.
+            \revert Stem.direction                               %! OC2
             
             r32
             
