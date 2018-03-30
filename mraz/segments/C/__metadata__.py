@@ -39,12 +39,12 @@ metadata = abjad.OrderedDict(
             ),
         (
             'bol_measure_numbers',
-            [34, 38, 42, 46, 50, 54, 58, 62, 66, 70, 74, 78],
+            [34, 40, 47, 55, 61, 68, 73, 78],
             ),
         ('duration', "1'55''"),
         (
             'fermata_measure_numbers',
-            [55],
+            [54],
             ),
         ('first_measure_number', 34),
         ('last_measure_number', 79),

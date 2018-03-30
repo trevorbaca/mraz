@@ -10,22 +10,22 @@ breaks = baca.breaks(
             ),
         baca.system(
             10, 15,
-            measure=38,
+            measure=40,
             y_offset=55,
             ),
         baca.system(
-            10, 15,
-            measure=42,
-            y_offset=110,
+            22, 15,
+            measure=47,
+            y_offset=105,
             ),
         baca.system(
-            10, 15,
-            measure=46,
+            20, 15,
+            measure=55,
             y_offset=165,
             ),
         baca.system(
             20, 15,
-            measure=50,
+            measure=61,
             y_offset=220,
             ),
         number=1,
@@ -33,43 +33,20 @@ breaks = baca.breaks(
     baca.page(
         baca.system(
             10, 15,
-            measure=54,
+            measure=68,
             y_offset=0,
             ),
         baca.system(
             10, 15,
-            measure=58,
+            measure=73,
             y_offset=55,
-            ),
-        baca.system(
-            10, 15,
-            measure=62,
-            y_offset=110,
-            ),
-        baca.system(
-            10, 15,
-            measure=66,
-            y_offset=165,
-            ),
-        baca.system(
-            10, 15,
-            measure=70,
-            y_offset=220,
-            ),
-        number=2,
-        ),
-    baca.page(
-        baca.system(
-            10, 15,
-            measure=74,
-            y_offset=0,
             ),
         baca.system(
             10, 15,
             measure=78,
-            y_offset=55,
+            y_offset=110,
             ),
-        number=3,
+        number=2,
         ),
     )
 
@@ -78,3 +55,4 @@ spacing = baca.scorewide_spacing(
     breaks=breaks,
     fallback_duration=(1, 12),
     )
+spacing.override((51, 65), (1, 24))
