@@ -276,7 +276,8 @@ accumulator(
     baca.dynamic('mp'),
     baca.flags(),
     baca.rests_after([3]),
-    baca.stem_color('darkmagenta', context='PianoStaff'),
+    # TODO: tag colored score only:
+    #baca.stem_color('darkmagenta', context='PianoStaff'),
     baca.stems_up(),
     counts=[1],
     figure_name='lh-5 4.2.10',
@@ -871,7 +872,6 @@ accumulator(
     collections['stage 1']['rh'][1],
     baca.dynamic('mp'),
     baca.flags(),
-    baca.markup('(memory of before)'),
     baca.register(12, -12),
     baca.resume(),
     baca.text_scripts_up(),
@@ -930,7 +930,9 @@ accumulator(
 
 maker = baca.SegmentMaker(
     color_octaves=False,
+    color_repeat_pitch_classes=False,
     final_bar_line=False,
+    ignore_repeat_pitch_classes=True,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,

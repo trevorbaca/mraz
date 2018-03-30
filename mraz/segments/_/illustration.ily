@@ -650,23 +650,35 @@ i_RHVoiceI = {
             \set PianoMusicRHStaff.forceClef = ##t               %! SM8:DEFAULT_CLEF:SM33:ST3
             bf''''1
             -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 b.1.1                                %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (0)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            ^ \markup {
+                \column
+                    {
+                        \line                                    %! IC
+                            {                                    %! IC
+                                \whiteout                        %! IC
+                                    \upright                     %! IC
+                                        "(ottava brackets always govern all voices on staff)" %! IC
+                            }                                    %! IC
+                    %%% \line                                    %! FIGURE_NAME_MARKUP
+                    %%%     {                                    %! FIGURE_NAME_MARKUP
+                    %%%         \fontsize                        %! FIGURE_NAME_MARKUP
+                    %%%             #2                           %! FIGURE_NAME_MARKUP
+                    %%%             \concat                      %! FIGURE_NAME_MARKUP
+                    %%%                 {                        %! FIGURE_NAME_MARKUP
+                    %%%                     [                    %! FIGURE_NAME_MARKUP
+                    %%%                     b.1.1                %! FIGURE_NAME_MARKUP
+                    %%%                     \hspace              %! FIGURE_NAME_MARKUP
+                    %%%                         #1               %! FIGURE_NAME_MARKUP
+                    %%%                     \raise               %! FIGURE_NAME_MARKUP
+                    %%%                         #0.25            %! FIGURE_NAME_MARKUP
+                    %%%                         \fontsize        %! FIGURE_NAME_MARKUP
+                    %%%                             #-2          %! FIGURE_NAME_MARKUP
+                    %%%                             (0)          %! FIGURE_NAME_MARKUP
+                    %%%                     ]                    %! FIGURE_NAME_MARKUP
+                    %%%                 }                        %! FIGURE_NAME_MARKUP
+                    %%%     }                                    %! FIGURE_NAME_MARKUP
+                    }
+                }
             \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
         }
     }
