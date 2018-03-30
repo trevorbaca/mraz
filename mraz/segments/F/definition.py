@@ -18,8 +18,6 @@ accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
     baca.dynamic('fff'),
-    baca.nest('2/16'),
-    baca.register(13, 13+10),
     baca.imbricate(
         'rh_v1_i',
         [17, 23],
@@ -27,6 +25,8 @@ accumulator(
         baca.marcati(),
         extend_beam=True,
         ),
+    baca.nest('2/16'),
+    baca.register(13, 13+10),
     extend_beam=True,
     figure_name='rh-1 7.1.1',
     time_treatments=[-1],
@@ -52,14 +52,14 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.nest('1/16'),
-    baca.register(15, 15+10),
     baca.imbricate(
         'rh_v1_i',
         [30, 31],
         baca.beam_everything(),
         baca.marcati(),
         ),
+    baca.nest('1/16'),
+    baca.register(15, 15+10),
     figure_name='rh-1 7.1.2',
     time_treatments=[-1],
     )
@@ -82,8 +82,6 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.nest('1/16'),
-    baca.register(17, 17+10),
     baca.imbricate(
         'rh_v1_i',
         [21],
@@ -91,6 +89,8 @@ accumulator(
         baca.marcati(),
         extend_beam=True,
         ),
+    baca.nest('1/16'),
+    baca.register(17, 17+10),
     extend_beam=True,
     figure_name='rh-1 7.1.3',
     )
@@ -115,14 +115,14 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.nest('1/16'),
-    baca.register(19, 19+10),
     baca.imbricate(
         'rh_v1_i',
         [20, 29],
         baca.beam_everything(),
         baca.marcati(),
         ),
+    baca.nest('1/16'),
+    baca.register(19, 19+10),
     figure_name='rh-1 7.1.4',
     )
 
@@ -221,6 +221,7 @@ accumulator(
         baca.lt(3),
         ),
     baca.dynamic('pp'),
+    baca.dynamics_down(),
     baca.imbricate(
         'lh_v5_i',
         [11, 18, 24, 26],
@@ -384,7 +385,6 @@ maker(
 
 maker(
     'lh_v4',
-    baca.clef('treble'),
     baca.scripts_down(),
     baca.stems_down(),
     )
