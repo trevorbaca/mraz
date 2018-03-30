@@ -1106,7 +1106,7 @@ F_RHVoiceII = {
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     \dynamicDown                                                 %! IC
     s1 * 3/4
-    \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
+    \fff                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     {
         \scaleDurations #'(1 . 1) {
             
@@ -1114,9 +1114,9 @@ F_RHVoiceII = {
             \override Stem.direction = #down                     %! OC1
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             c''16
-            \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            \fff                                                 %! SM8:REDUNDANT_DYNAMIC:IC
             [                                                    %! SM35
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2128,9 +2128,14 @@ F_LHVoiceIV = {
     % [F LHVoiceIV measure 98]                                   %! SM4
     \override Beam.positions = #'(-5.5 . -5.5)                   %! OC1
     \override Script.direction = #down                           %! OC1
+    \clef "bass"                                                 %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 3/8
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
@@ -2805,10 +2810,6 @@ F_LHVoiceVInserts = {
 F_LHVoiceVI = {
     
     % [F LHVoiceVI measure 98]                                   %! SM4
-    \clef "bass"                                                 %! SM8:REAPPLIED_CLEF:SM37
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 3/4
     \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -2817,7 +2818,6 @@ F_LHVoiceVI = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“Piano”)                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [F LHVoiceVI measure 99]                                   %! SM4
     s1 * 1/4
