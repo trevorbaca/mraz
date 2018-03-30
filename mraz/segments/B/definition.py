@@ -308,10 +308,10 @@ maker(
 
 maker(
     ('lh_resonance', [2, 4]),
-    *mraz.hide_music(selector=baca.leaf(0)),
+    *mraz.transparent_music(selector=baca.leaf(0)),
     )
 
 maker(
     ('lh_resonance', [3, 6, 9]),
-    *mraz.hide_music(selector=baca.leaves()[1:]),
+    *mraz.transparent_music(selector=baca.leaves()[1:]),
     )

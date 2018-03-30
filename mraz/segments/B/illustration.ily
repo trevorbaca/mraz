@@ -2382,12 +2382,13 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 23]                    %! SM4
             \override Accidental.stencil = ##f                   %! OC1
-            \once \override Accidental.stencil = ##f             %! OC1
-            \once \override Beam.stencil = ##f                   %! OC1
-            \once \override Flag.stencil = ##f                   %! OC1
-            \once \override NoteHead.stencil = ##f               %! OC1
-            \once \override RepeatTie.stencil = ##f              %! OC1
-            \once \override Stem.stencil = ##f                   %! OC1
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2433,12 +2434,13 @@ B_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \once \override Accidental.stencil = ##f             %! OC1
-            \once \override Beam.stencil = ##f                   %! OC1
-            \once \override Flag.stencil = ##f                   %! OC1
-            \once \override NoteHead.stencil = ##f               %! OC1
-            \once \override RepeatTie.stencil = ##f              %! OC1
-            \once \override Stem.stencil = ##f                   %! OC1
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs, gs, as, b,>16
@@ -2451,12 +2453,13 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 25]                    %! SM4
-            \once \override Accidental.stencil = ##f             %! OC1
-            \once \override Beam.stencil = ##f                   %! OC1
-            \once \override Flag.stencil = ##f                   %! OC1
-            \once \override NoteHead.stencil = ##f               %! OC1
-            \once \override RepeatTie.stencil = ##f              %! OC1
-            \once \override Stem.stencil = ##f                   %! OC1
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
@@ -2528,12 +2531,13 @@ B_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \once \override Accidental.stencil = ##f             %! OC1
-            \once \override Beam.stencil = ##f                   %! OC1
-            \once \override Flag.stencil = ##f                   %! OC1
-            \once \override NoteHead.stencil = ##f               %! OC1
-            \once \override RepeatTie.stencil = ##f              %! OC1
-            \once \override Stem.stencil = ##f                   %! OC1
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
             <e, fs, gs, as, b,>8
@@ -2570,12 +2574,13 @@ B_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \override Accidental.stencil = ##f                   %! OC1
-            \override Beam.stencil = ##f                         %! OC1
-            \override Flag.stencil = ##f                         %! OC1
-            \override NoteHead.stencil = ##f                     %! OC1
-            \override RepeatTie.stencil = ##f                    %! OC1
-            \override Stem.stencil = ##f                         %! OC1
+            \override NoteHead.no-ledgers = ##t                  %! OC1
+            \override Accidental.transparent = ##t               %! OC1
+            \override Beam.transparent = ##t                     %! OC1
+            \override Flag.transparent = ##t                     %! OC1
+            \override NoteHead.transparent = ##t                 %! OC1
+            \override RepeatTie.transparent = ##t                %! OC1
+            \override Stem.transparent = ##t                     %! OC1
             <e, fs, gs, as, b,>4
             \repeatTie                                           %! SC
             
@@ -2585,12 +2590,13 @@ B_LHResonanceVoice = {
             \repeatTie                                           %! SC
             [
             ]
-            \revert Accidental.stencil                           %! OC2
-            \revert Beam.stencil                                 %! OC2
-            \revert Flag.stencil                                 %! OC2
-            \revert NoteHead.stencil                             %! OC2
-            \revert RepeatTie.stencil                            %! OC2
-            \revert Stem.stencil                                 %! OC2
+            \revert NoteHead.no-ledgers                          %! OC2
+            \revert Accidental.transparent                       %! OC2
+            \revert Beam.transparent                             %! OC2
+            \revert Flag.transparent                             %! OC2
+            \revert NoteHead.transparent                         %! OC2
+            \revert RepeatTie.transparent                        %! OC2
+            \revert Stem.transparent                             %! OC2
         }
     }
     {
