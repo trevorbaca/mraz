@@ -18,7 +18,7 @@
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
         \override TextSpanner.padding = 8
-        \override TextSpanner.staff-padding = 4
+        %\override TextSpanner.staff-padding = 4
         }
 
     % GLOBAL RESTS
