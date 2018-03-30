@@ -37,13 +37,17 @@ metadata = abjad.OrderedDict(
                 'LHResonanceVoice',
                 ],
             ),
-        ('duration', "1'56''"),
+        (
+            'bol_measure_numbers',
+            [34, 38, 42, 46, 50, 54, 58, 62, 66, 70, 74, 78],
+            ),
+        ('duration', "1'55''"),
         (
             'fermata_measure_numbers',
             [55],
             ),
         ('first_measure_number', 34),
-        ('last_measure_number', 80),
+        ('last_measure_number', 79),
         (
             'persistent_indicators',
             abjad.OrderedDict(
@@ -197,12 +201,11 @@ metadata = abjad.OrderedDict(
                 ),
             ),
         ('start_clock_time', "1'09''"),
-        ('stop_clock_time', "3'05''"),
+        ('stop_clock_time', "3'04''"),
         (
             'time_signatures',
             [
                 '6/4',
-                '1/4',
                 '3/4',
                 '6/4',
                 '9/8',

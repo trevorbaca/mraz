@@ -35,18 +35,10 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 4))],
-    baca.transparent_rests(),
-    baca.transparent_span_bars(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-2 skip',
-    )
-
-accumulator(
-    'rh_v2',
     collections['stage 6']['rh'][1],
     baca.dynamic('ff'),
     baca.marcati(),
+    #baca.note_column_shift(1),
     baca.scripts_up(),
     baca.up_arpeggios(),
     counts=[12],
@@ -59,6 +51,7 @@ accumulator(
     baca.flags(),
     baca.register(12, -12),
     baca.tuplet_brackets_up(),
+    baca.tuplet_bracket_staff_padding(4),
     counts=[-4, 2, -4, 4],
     figure_name='rh-3 4.1.3',
     time_treatments=[-4],
