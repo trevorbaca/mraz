@@ -14,5 +14,5 @@
         \override TextSpanner.padding = 6
     }
 
-    %ragged-right = ##f
+    ragged-right = ##f
 }
