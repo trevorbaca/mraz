@@ -1309,7 +1309,7 @@ E_RHVoiceII = {
             
             % [E RHVoiceII measure 82]                           %! SM4
             \override Script.direction = #up                     %! OC1
-            \override TextScript.direction = #up                 %! OC1
+            \override Stem.direction = #up                       %! OC1
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -1350,11 +1350,11 @@ E_RHVoiceII = {
             
             f''''8
             -\accent                                             %! IC
+            \revert Stem.direction                               %! OC2
             
             r2..
             \revert Rest.direction                               %! OC2
             \revert Script.direction                             %! OC2
-            \revert TextScript.direction                         %! OC2
         }
     }
     {
@@ -2649,6 +2649,7 @@ E_RHVoiceIII = {
         \times 8/5 {
             
             % [E RHVoiceIII measure 82]                          %! SM4
+            \override Stem.direction = #down                     %! OC1
             \override TupletBracket.direction = #down            %! OC1
             \ottava #1                                           %! SC
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
@@ -2693,6 +2694,7 @@ E_RHVoiceIII = {
             
             g'''4
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             \ottava #0                                           %! SC
             
             r4
@@ -3889,8 +3891,9 @@ E_LHVoiceIV = {
             
             % [E LHVoiceIV measure 85]                           %! SM4
             \override Slur.direction = #down                     %! OC1
-            \once \override PianoMusicLHStaff.Clef.X-extent = ##f %! OC1:MEASURE_85:SHIFTED_CLEF
-            \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_85:SHIFTED_CLEF
+            \override Script.direction = #up                     %! OC1
+        %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f %! OC1:MEASURE_85:SHIFTED_CLEF
+        %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_85:SHIFTED_CLEF
             \clef "bass"                                         %! SM8:EXPLICIT_CLEF:IC
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
         %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
@@ -4288,6 +4291,7 @@ E_LHVoiceIV = {
     
     % [E LHVoiceIV measure 97]                                   %! SM4
     s1 * 1/4
+    \revert Script.direction                                     %! OC2
     
 }
 
@@ -4506,10 +4510,6 @@ E_LHVoiceVI = {
             \override TupletBracket.direction = #down            %! OC1
             \override TupletBracket.staff-padding = #6           %! OC1
             \ottava #-1                                          %! SC
-            \clef "bass"                                         %! SM8:REDUNDANT_CLEF:IC
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_CLEF_COLOR:IC
-        %@% \override PianoMusicLHStaff.Clef.color = ##f         %! SM7:REDUNDANT_CLEF_COLOR_CANCELLATION:IC
-            \set PianoMusicLHStaff.forceClef = ##t               %! SM8:REDUNDANT_CLEF:SM33:IC
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             b,,,8
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
@@ -4530,7 +4530,6 @@ E_LHVoiceVI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepPink4) %! SM6:REDUNDANT_CLEF_REDRAW_COLOR:IC
             
             \override Rest.direction = #down                     %! OC1
             r4
