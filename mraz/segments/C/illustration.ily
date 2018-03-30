@@ -7140,6 +7140,8 @@ C_LHResonanceVoice = {
             
             % [C LHResonanceVoice measure 44]                    %! SM4
             \once \override Accidental.stencil = ##f             %! OC1
+            \override Dots.stencil = ##f                         %! OC1
+            \override Stem.stencil = ##f                         %! OC1
             <cs,, cs,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7183,6 +7185,8 @@ C_LHResonanceVoice = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \revert Dots.stencil                                 %! OC2
+            \revert Stem.stencil                                 %! OC2
         }
     }
     
@@ -7222,6 +7226,8 @@ C_LHResonanceVoice = {
             
             % [C LHResonanceVoice measure 48]                    %! SM4
             \once \override Accidental.stencil = ##f             %! OC1
+            \override Dots.stencil = ##f                         %! OC1
+            \override Stem.stencil = ##f                         %! OC1
             <ef,, ef,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7265,6 +7271,8 @@ C_LHResonanceVoice = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \revert Dots.stencil                                 %! OC2
+            \revert Stem.stencil                                 %! OC2
         }
     }
     
@@ -7299,6 +7307,9 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 66]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
+            \override Dots.stencil = ##f                         %! OC1
+            \override Stem.stencil = ##f                         %! OC1
             <e, fs, gs, as, b,>1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -7468,6 +7479,8 @@ C_LHResonanceVoice = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \revert Dots.stencil                                 %! OC2
+            \revert Stem.stencil                                 %! OC2
         }
     }
     

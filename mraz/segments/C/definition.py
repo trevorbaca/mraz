@@ -1004,8 +1004,10 @@ maker(
     )
 
 maker(
-    ('lh_resonance', [11, 15]),
+    ('lh_resonance', [11, 15, (33, 39)]),
     baca.accidental_stencil_false(),
+    baca.dots_stencil_false(selector=baca.leaves()),
+    baca.stem_stencil_false(selector=baca.leaves()),
     )
 
 maker(
