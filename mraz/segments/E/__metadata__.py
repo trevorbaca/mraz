@@ -37,6 +37,10 @@ metadata = abjad.OrderedDict(
                 'LHResonanceVoice',
                 ],
             ),
+        (
+            'bol_measure_numbers',
+            [82, 85, 87, 89, 91, 93, 96],
+            ),
         ('duration', "1'05''"),
         (
             'fermata_measure_numbers',
@@ -83,7 +87,7 @@ metadata = abjad.OrderedDict(
                         'PianoMusicLHStaff',
                         [
                             abjad.Momento(
-                                context='LHVoiceVI',
+                                context='LHVoiceIV',
                                 prototype='abjad.Clef',
                                 value='bass',
                                 ),
