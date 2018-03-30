@@ -974,12 +974,12 @@ maker(
     )
 
 maker(
-    ('rh_v1', (1, 34)),
+    ('rh_v1', (1, 36)),
     baca.ottava(),
     )
 
 maker(
-    ('rh_v1', (36, -1)),
+    ('rh_v1', (39, 40)),
     baca.ottava(),
     )
 

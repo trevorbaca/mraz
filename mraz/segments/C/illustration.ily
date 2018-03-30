@@ -2699,7 +2699,6 @@ C_RHVoiceI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \ottava #0                                           %! SC
         }
     }
     {
@@ -2731,7 +2730,6 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 69]                            %! SM4
-            \ottava #1                                           %! SC
             ef''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2751,6 +2749,7 @@ C_RHVoiceI = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \ottava #0                                           %! SC
         }
     }
     
@@ -2760,6 +2759,7 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 72]                            %! SM4
+            \ottava #1                                           %! SC
             f''''1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
