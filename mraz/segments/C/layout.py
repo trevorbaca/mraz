@@ -9,22 +9,22 @@ breaks = baca.breaks(
             y_offset=0,
             ),
         baca.system(
-            10, 15,
+            10, 17,
             measure=40,
             y_offset=55,
             ),
         baca.system(
-            22, 15,
+            22, 17,
             measure=47,
-            y_offset=105,
+            y_offset=100,
             ),
         baca.system(
-            20, 15,
+            22, 17,
             measure=55,
-            y_offset=165,
+            y_offset=162.5,
             ),
         baca.system(
-            20, 15,
+            20, 17,
             measure=61,
             y_offset=220,
             ),
