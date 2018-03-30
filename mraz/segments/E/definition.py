@@ -438,10 +438,11 @@ accumulator(
     )
 
 accumulator(
-    'rh_v3',
+    'lh_v4',
     [abjad.Rest((1, 4))],
+    baca.clef('treble'),
     baca.transparent_rests(),
-    figure_name='rh-3 final',
+    figure_name='lh-4 final',
     )
 
 maker = baca.SegmentMaker(

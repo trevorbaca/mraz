@@ -2130,16 +2130,14 @@ F_LHVoiceIV = {
     % [F LHVoiceIV measure 98]                                   %! SM4
     \override Beam.positions = #'(-5.5 . -5.5)                   %! OC1
     \override Script.direction = #down                           %! OC1
-%%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f        %! OC1:MEASURE_98:SHIFTED_CLEF
-%%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_98:SHIFTED_CLEF
-    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
+    \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:EXPLICIT_CLEF:SM33:IC
     s1 * 3/8
     \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
@@ -2430,6 +2428,7 @@ F_LHVoiceV = {
                 \override Stem.direction = #down                 %! OC1
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
+                \dynamicDown                                     %! IC
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
                 cs'16
                 \pp                                              %! SM8:EXPLICIT_DYNAMIC:IC

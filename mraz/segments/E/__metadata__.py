@@ -89,7 +89,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='LHVoiceIV',
                                 prototype='abjad.Clef',
-                                value='bass',
+                                value='treble',
                                 ),
                             ],
                         ),
