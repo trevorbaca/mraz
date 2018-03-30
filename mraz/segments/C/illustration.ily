@@ -2426,7 +2426,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 51]                            %! SM4
             \override TextScript.direction = #up                 %! OC1
-            \dynamicDown                                         %! IC
+            \dynamicUp                                           %! IC
             r8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2446,7 +2446,8 @@ C_RHVoiceI = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            \once \override DynamicText.extra-offset = #'(0 . 1) %! OC1
+            \once \override DynamicText.X-offset = #-4           %! OC1
+            \once \override DynamicText.extra-offset = #-8       %! OC1
             \once \override TextScript.color = #black            %! OC1
             \override Stem.direction = #up                       %! OC1
             \ottava #1                                           %! SC
@@ -2455,11 +2456,6 @@ C_RHVoiceI = {
             \mf                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             [
             (                                                    %! SC
-            ^ \markup {                                          %! IC
-                \whiteout                                        %! IC
-                    \upright                                     %! IC
-                        "(ottava brackets always govern all voices on staff)" %! IC
-                }                                                %! IC
             
             af''''8
             ]
@@ -6285,7 +6281,6 @@ C_LHVoiceV = {
             r8.
             
             r1
-            \revert Rest.direction                               %! OC2
         }
     }
     {
@@ -6295,7 +6290,6 @@ C_LHVoiceV = {
                 
                 % [C LHVoiceV measure 49]                        %! SM4
                 \override TupletBracket.direction = #up          %! OC1
-                \override TupletBracket.staff-padding = #2       %! OC1
                 r16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6316,9 +6310,11 @@ C_LHVoiceV = {
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
                 <g b f' fs' a'>8.
+                -\marcato                                        %! IC
                 
                 r2
                 \revert TupletBracket.direction                  %! OC2
+                \revert Rest.direction                           %! OC2
             }
         }
     }
@@ -6358,6 +6354,8 @@ C_LHVoiceV = {
             \scaleDurations #'(1 . 1) {
                 
                 % [C LHVoiceV measure 51]                        %! SM4
+                \override TupletBracket.staff-padding = #2       %! OC1
+                \override TupletBracket.direction = #down        %! OC1
                 r4
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -6377,6 +6375,7 @@ C_LHVoiceV = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
+                \override Stem.direction = #down                 %! OC1
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <c bf>8
@@ -6804,6 +6803,7 @@ C_LHVoiceV = {
             
             e'8.
             -\tenuto                                             %! IC
+            \revert Stem.direction                               %! OC2
             
             r16
             
@@ -6814,6 +6814,7 @@ C_LHVoiceV = {
     % [C LHVoiceV measure 79]                                    %! SM4
     s1 * 4
     \revert TupletBracket.staff-padding                          %! OC2
+    \revert TupletBracket.direction                              %! OC2
     
 }
 

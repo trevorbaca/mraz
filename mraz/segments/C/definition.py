@@ -61,11 +61,11 @@ accumulator(
     collections_5['stage 2']['lh'][0],
     baca.dynamic('p'),
     baca.flags(),
-    baca.register(6, -24),
     baca.map(
         baca.slur(),
         baca.tuplets().map(baca.tleaves()).nontrivial(),
         ),
+    baca.register(6, -24),
     baca.slurs_down(),
     counts=[3, -3],
     figure_name='insert 5.1',
@@ -362,11 +362,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.nest(['+2/16']),
     baca.register(-12, 0),
     baca.rests_around([4], [4]),
     baca.resume_after('lh_v5'),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.1',
     hide_time_signature=False,
@@ -382,9 +382,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.register(-12, 0),
     baca.rests_before([2]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[6],
     figure_name='lh-5 4.4.3',
     )
@@ -401,11 +401,11 @@ accumulator(
     'rh_v3',
     collections_5['stage 2']['rh'][12],
     baca.beam_divisions(),
-    baca.register(24),
     baca.map(
         baca.slur(),
         baca.tuplets().map(baca.tleaves()).nontrivial(),
         ),
+    baca.register(24),
     baca.tuplet_brackets_down(),
     counts=[2],
     figure_name='insert 5.2',
@@ -420,10 +420,10 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [4]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.4',
     )
@@ -442,10 +442,10 @@ accumulator(
         [-2, 2],
         baca.beam_everything(),
         ),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(-12, 0),
     baca.rests_around([4], [4]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.6',
     )
@@ -459,10 +459,10 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [2]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.7',
     )
@@ -471,9 +471,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.register(-12, 0),
     baca.rests_around([2], [6]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.8',
     )
@@ -493,10 +493,10 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
     baca.rests_around([4], [2]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.10',
     )
@@ -505,9 +505,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.register(-12, 0),
     baca.rests_before([2]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[6],
     figure_name='lh-5 4.4.11',
     )
@@ -521,9 +521,9 @@ accumulator(
         [8],
         baca.beam_everything(),
         ),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.register(0, -12),
     baca.rests_around([2], [6]),
-    baca.map(baca.slur(), baca.ntruns()),
     counts=[2],
     figure_name='lh-5 4.4.12',
     )
@@ -533,8 +533,9 @@ accumulator(
     collections['stage 4']['rh'].next(),
     baca.beam_runs(hide_nibs=True),
     baca.dynamic('mf'),
-    baca.dynamic_text_extra_offset((0, 1)),
-    baca.dynamics_down(),
+    baca.dynamic_text_x_offset(-4),
+    baca.dynamic_text_extra_offset(-8),
+    baca.dynamics_up(),
     baca.imbricate(
         'rh_v2',
         [3, 2, 5],
@@ -545,11 +546,10 @@ accumulator(
         hocket=True,
         by_pitch_class=True,
         ),
-    baca.markup('(ottava brackets always govern all voices on staff)'),
+    baca.map(baca.slur(), baca.ntruns()),
     baca.register(36, 22),
     baca.rests_around([2], [6]),
     baca.resume_after('rh_v5'),
-    baca.map(baca.slur(), baca.ntruns()),
     baca.text_script_color('black', baca.pleaf(0)),
     baca.text_scripts_up(),
     counts=[2],
@@ -578,8 +578,8 @@ accumulator(
         by_pitch_class=True,
         hocket=True,
         ),
-    baca.register(36, 22),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(36, 22),
     figure_name='rh-1 4.4.4',
     counts=[2],
     hide_time_signature=True,
@@ -601,8 +601,8 @@ accumulator(
         by_pitch_class=True,
         hocket=True,
         ),
-    baca.register(36, 22),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(36, 22),
     counts=[2],
     figure_name='rh-1 4.4.5',
     hide_time_signature=True,
@@ -749,8 +749,8 @@ accumulator(
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(10, 36),
     baca.slurs_up(),
     figure_name='rh-2 4.5.1',
     hide_time_signature=True,
@@ -762,8 +762,8 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(10, 36),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.2',
@@ -788,8 +788,8 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(10, 36),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.4',
@@ -802,8 +802,8 @@ accumulator(
     collections['stage 5']['lh'].next(2),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.register(10, 36),
     baca.map(baca.slur(), baca.ntruns()),
+    baca.register(10, 36),
     baca.slurs_up(),
     baca.text_scripts_up(),
     figure_name='rh-2 4.5.5',
@@ -856,7 +856,7 @@ accumulator(
     'lh_v2',
     [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
     baca.anchor_to_figure('rh-2 4.6.1'),
-    # TODO: debug and figure out why bracket extends indefinitely to right
+    # TODO: debug: figure out why bracket extends indefinitely to right
     baca.map(
         baca.sustain_pedal(baca.rleaves()),
         baca.lts()[:-1],
@@ -976,12 +976,7 @@ maker(
     )
 
 maker(
-    ('rh_v1', (1, 36)),
-    baca.ottava(),
-    )
-
-maker(
-    ('rh_v1', (39, 40)),
+    ('rh_v1', [(1, 36), (39, 40)]),
     baca.ottava(),
     )
 
@@ -996,14 +991,16 @@ maker(
     )
 
 maker(
-    ('lh_v5', (7, 15)),
+    ('lh_v5', (7, 16)),
     baca.marcati(),
     baca.rests_up(),
     )
 
 maker(
-    ('lh_v5', (16, -1)),
+    ('lh_v5', (18, -1)),
+    baca.stems_down(),
     baca.tuplet_bracket_staff_padding(2),
+    baca.tuplet_brackets_down(),
     )
 
 maker(
