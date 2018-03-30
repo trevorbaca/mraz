@@ -47,8 +47,10 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
+    baca.dynamics_down(),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
+    baca.stems_down(),
     figure_name='b.2.3',
     )
 
@@ -81,6 +83,7 @@ accumulator(
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
+    baca.stems_down(),
     figure_name='b.2.6',
     )
 
@@ -108,9 +111,11 @@ accumulator(
     collections_4['stage 1']['lh'].next(),
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
+    baca.dynamics_down(),
     baca.flags(),
     baca.register(-6, 6),
     baca.rests_before([12]),
+    baca.rests_up(),
     baca.tenuti(),
     counts=[3, -1],
     figure_name='b.2.9',
@@ -125,6 +130,7 @@ accumulator(
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
     baca.staccati(),
+    baca.stems_down(),
     figure_name='b.2.10',
     )
 
