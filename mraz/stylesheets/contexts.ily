@@ -355,7 +355,7 @@
             (right-edge extra-space . 0.0)
             )
         \override BarLine.transparent = ##t
-        \override BarLine.X-extent = #'(0 . 0)
+        %\override BarLine.X-extent = #'(0 . 0)
 
         \override Beam.breakable = ##t
         \override Beam.damping = 99
