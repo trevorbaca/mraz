@@ -8,5 +8,11 @@
 }
 
 \layout {
+
+    \context {
+        \GlobalSkips
+        \override TextSpanner.padding = 6
+    }
+
     %ragged-right = ##f
 }
