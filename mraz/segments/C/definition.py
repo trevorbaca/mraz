@@ -652,15 +652,6 @@ accumulator(
     )
 
 accumulator(
-    'rh_v2',
-    [abjad.Rest((1, 4))],
-    baca.transparent_rests(),
-    baca.transparent_span_bars(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-2 skip-2',
-    )
-
-accumulator(
     'lh_resonance',
     [resonance],
     counts=[24],
@@ -812,16 +803,6 @@ accumulator(
     time_treatments=[abjad.Duration(1, 4)],
     )
 
-accumulator(
-    'rh_v2',
-    [abjad.Rest((1, 4))],
-    baca.transparent_bar_lines(),
-    baca.transparent_rests(),
-    baca.transparent_span_bars(),
-    baca.transparent_time_signatures(),
-    figure_name='rh-2 skip-3',
-    )
-
 #################################### [4.6] ####################################
 
 accumulator(
@@ -831,6 +812,7 @@ accumulator(
     baca.dynamic('ff'),
     baca.marcati(),
     baca.resume(),
+    baca.scripts_up(),
     counts=[16],
     figure_name='rh-2 4.6.1',
     )
@@ -840,6 +822,7 @@ accumulator(
     collections['stage 6']['rh'].next(),
     baca.up_arpeggios(),
     baca.marcati(),
+    baca.scripts_up(),
     counts=[16],
     figure_name='rh-2 4.6.2',
     )
@@ -849,6 +832,7 @@ accumulator(
     collections['stage 6']['rh'].next(exhausted=True),
     baca.up_arpeggios(),
     baca.marcati(),
+    baca.scripts_up(),
     counts=[16],
     figure_name='rh-2 4.6.3',
     )
@@ -964,7 +948,7 @@ maker(
     baca.metronome_mark('84', selector=baca.leaf(31)),
     baca.metronome_mark('112', selector=baca.leaf(32)),
     baca.metronome_mark(abjad.Ritardando(), selector=baca.leaf(32)),
-    baca.metronome_mark('84', selector=baca.leaf(37)),
+    baca.metronome_mark('84', selector=baca.leaf(36)),
     )
 
 maker(
@@ -980,7 +964,7 @@ maker(
     )
 
 maker(
-    ('rh_v1', [(1, 36), (39, 40)]),
+    ('rh_v1', [(1, 36), (38, 39)]),
     baca.ottava(),
     )
 
@@ -1022,4 +1006,9 @@ maker(
 maker(
     ('lh_resonance', [11, 15]),
     baca.accidental_stencil_false(),
+    )
+
+maker(
+    ('lh_resonance', 32),
+    baca.accidental_x_extent_false(),
     )

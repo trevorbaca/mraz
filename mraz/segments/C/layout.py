@@ -32,18 +32,18 @@ breaks = baca.breaks(
         ),
     baca.page(
         baca.system(
-            20, 15,
+            15, 15,
             measure=68,
             y_offset=0,
             ),
         baca.system(
-            20, 15,
-            measure=72,
+            17, 15,
+            measure=71,
             y_offset=60,
             ),
         baca.system(
-            20, 15,
-            measure=78,
+            17, 15,
+            measure=76,
             y_offset=120,
             ),
         number=2,
@@ -58,3 +58,4 @@ spacing = baca.scorewide_spacing(
 spacing.override((51, 65), (1, 24))
 spacing.override(54, (1, 4)),
 spacing.override((68, 69), (1, 32))
+spacing.override((71, 72), (1, 32))
