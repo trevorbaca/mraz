@@ -142,10 +142,12 @@ accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
     baca.beam_divisions(),
+    baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
         [18, 15, 17, 16, 5, 8],
         baca.beam_everything(),
+        baca.dynamic('fff'),
         extend_beam=True,
         hocket=True,
         ),
@@ -296,10 +298,12 @@ accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(3, exhausted=True),
     baca.beam_divisions(),
+    baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
         [15, 11, 6, 5],
         baca.beam_everything(),
+        baca.dynamic('fff'),
         hocket=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -333,6 +337,7 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.5'),
+    baca.dynamic('p'),
     baca.flags(),
     baca.map(baca.slur(), baca.tuplets()),
     baca.register(6, -24),
@@ -406,6 +411,7 @@ accumulator(
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.9'),
     baca.beam_divisions(),
+    baca.dynamic('p'),
     baca.map(baca.slur(), baca.tuplets()),
     baca.register(-6, -36),
     baca.rests_before([14]),
@@ -497,4 +503,16 @@ maker(
 maker(
     'lh_resonance',
     baca.map(baca.tie(repeat=True), baca.qruns()),
+    baca.transparent_dots(),
+    )
+
+maker(
+    ('lh_resonance', [10, 11, 12, 13, 14]),
+    *mraz.transparent_music(selector=baca.leaves()[1:]),
+    )
+
+maker(
+    ('lh_resonance', [11, 13, 14]),
+    baca.accidental_stencil_false(),
+    baca.transparent_stems(),
     )

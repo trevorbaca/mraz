@@ -1573,8 +1573,10 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
+                \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 fs''8
                 -\accent                                         %! IC
+                \fff                                             %! SM8:REDUNDANT_DYNAMIC:IC
                 
                 s8
                 
@@ -2547,7 +2549,9 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
+                \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
                 ef''8
+                \fff                                             %! SM8:EXPLICIT_DYNAMIC:IC
                 
                 s8
                 
@@ -2969,7 +2973,9 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 87]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
+                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 a'''8
+                \mp                                              %! SM8:REDUNDANT_DYNAMIC:IC
                 [
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -3267,7 +3273,9 @@ E_RHVoiceIII = {
                 % [E RHVoiceIII measure 96]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
                 \override TupletBracket.staff-padding = #3       %! OC1
+                \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 f'''8
+                \mp                                              %! SM8:REDUNDANT_DYNAMIC:IC
                 [
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -3977,9 +3985,11 @@ E_LHVoiceIV = {
             
             r2
             
+            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             af'8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
+            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             (                                                    %! SC
             
             r16
@@ -4230,9 +4240,11 @@ E_LHVoiceIV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             cs'8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
+            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             [
             (                                                    %! SC
             
@@ -4637,6 +4649,7 @@ E_LHVoiceVIInserts = {
 E_LHResonanceVoice = {
     
     % [E LHResonanceVoice measure 82]                            %! SM4
+    \override Dots.transparent = ##t                             %! OC1
     s1 * 17
     {
         \scaleDurations #'(1 . 1) {
@@ -4661,6 +4674,13 @@ E_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             <cs,, cs,>16
             \repeatTie                                           %! SC
         }
@@ -4669,6 +4689,8 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 92]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
+            \override Stem.transparent = ##t                     %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <cs,, cs,>1.
             \repeatTie                                           %! SC
@@ -4690,8 +4712,16 @@ E_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \once \override NoteHead.no-ledgers = ##t            %! OC1
+            \once \override Accidental.transparent = ##t         %! OC1
+            \once \override Beam.transparent = ##t               %! OC1
+            \once \override Flag.transparent = ##t               %! OC1
+            \once \override NoteHead.transparent = ##t           %! OC1
+            \once \override RepeatTie.transparent = ##t          %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             <cs,, cs,>8.
             \repeatTie                                           %! SC
+            \revert Stem.transparent                             %! OC2
         }
     }
     {
@@ -4717,17 +4747,33 @@ E_LHResonanceVoice = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
+            \override NoteHead.no-ledgers = ##t                  %! OC1
+            \override Accidental.transparent = ##t               %! OC1
+            \override Beam.transparent = ##t                     %! OC1
+            \override Flag.transparent = ##t                     %! OC1
+            \override NoteHead.transparent = ##t                 %! OC1
+            \override RepeatTie.transparent = ##t                %! OC1
+            \override Stem.transparent = ##t                     %! OC1
             <ef,, ef,>4
             \repeatTie                                           %! SC
             
             <ef,, ef,>16
             \repeatTie                                           %! SC
+            \revert NoteHead.no-ledgers                          %! OC2
+            \revert Accidental.transparent                       %! OC2
+            \revert Beam.transparent                             %! OC2
+            \revert Flag.transparent                             %! OC2
+            \revert NoteHead.transparent                         %! OC2
+            \revert RepeatTie.transparent                        %! OC2
+            \revert Stem.transparent                             %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 94]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
             <ef,, ef,>2...
             \repeatTie                                           %! SC
@@ -4754,6 +4800,8 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 95]                    %! SM4
+            \once \override Accidental.stencil = ##f             %! OC1
+            \once \override Stem.transparent = ##t               %! OC1
             <ef,, ef,>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -4781,6 +4829,7 @@ E_LHResonanceVoice = {
     
     % [E LHResonanceVoice measure 97]                            %! SM4
     s1 * 1/4
+    \revert Dots.transparent                                     %! OC2
     
 }
 
