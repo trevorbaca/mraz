@@ -355,12 +355,10 @@
             (right-edge extra-space . 0.0)
             )
         \override BarLine.transparent = ##t
-        %\override BarLine.X-extent = #'(0 . 0)
 
         \override Beam.breakable = ##t
         \override Beam.damping = 99
 
-        \override DynamicLineSpanner.Y-extent = #'(-4 . 4)
         \override DynamicLineSpanner.padding = #1.5
 
         \override Glissando.breakable = ##t
@@ -383,6 +381,7 @@
         \override TextScript.padding = 1
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
+
         \override TextSpanner.staff-padding = 2
 
         \override TrillSpanner.bound-details.right.padding = 2
