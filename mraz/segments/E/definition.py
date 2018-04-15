@@ -509,7 +509,7 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.map(baca.tie(repeat=True), baca.qruns()),
+    baca.map(baca.repeat_tie(), baca.qruns()),
     baca.transparent_dots(),
     )
 
