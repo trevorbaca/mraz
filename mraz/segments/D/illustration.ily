@@ -299,7 +299,7 @@ D_RHVoiceIII = {
             \override TupletBracket.staff-padding = #7           %! OC1
             \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            fs'''8
+            fs'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
@@ -335,7 +335,7 @@ D_RHVoiceIII = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            af''8
+            af''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -343,7 +343,7 @@ D_RHVoiceIII = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            cs''8
+            cs''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -359,7 +359,7 @@ D_RHVoiceIII = {
             % [D RHVoiceIII measure 79]                          %! SM4
             \override TupletBracket.staff-padding = #7           %! OC1
             \override TupletBracket.direction = #up              %! OC1
-            bf'''8
+            bf'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -380,11 +380,11 @@ D_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            cs'''8
+            cs'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            ef'''8
+            ef'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \revert TupletBracket.staff-padding                  %! OC2
@@ -426,7 +426,7 @@ D_RHVoiceIII = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            ef'''8
+            ef'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -443,7 +443,7 @@ D_RHVoiceIII = {
             
             % [D RHVoiceIII measure 81]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
-            af''8
+            af''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -703,12 +703,12 @@ D_LHVoiceIV = {
             
             r16
             
-            af'16
+            af'!16
             -\tenuto                                             %! IC
             
             r16
             
-            bf'16
+            bf'!16
             -\tenuto                                             %! IC
             
             r16
@@ -759,7 +759,7 @@ D_LHVoiceIV = {
             
             r8
             
-            cs''16
+            cs''!16
             -\tenuto                                             %! IC
             
             r8
@@ -803,7 +803,7 @@ D_LHVoiceIV = {
             
             r32
             
-            ef''16
+            ef''!16
             -\tenuto                                             %! IC
             
             r32
@@ -818,7 +818,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [D LHVoiceIV measure 81]                           %! SM4
-            fs''16
+            fs''!16
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP

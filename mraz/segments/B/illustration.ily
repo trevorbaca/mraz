@@ -815,7 +815,7 @@ B_RHVoiceI = {
             % [B RHVoiceI measure 31]                            %! SM4
             \ottava #1                                           %! SC
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef''''1..
+            ef''''!1..
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -866,7 +866,7 @@ B_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceI measure 33]                            %! SM4
-            bf''''1
+            bf''''!1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -976,7 +976,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            fs16
+            fs!16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             [
@@ -1016,7 +1016,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            af'16
+            af'!16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
@@ -1060,7 +1060,7 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            fs16
+            fs!16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
             [
@@ -1100,7 +1100,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            af'16
+            af'!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -1108,13 +1108,13 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf16
+            bf!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef'16
+            ef'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1173,7 +1173,7 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            fs16
+            fs!16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
             [
@@ -1213,7 +1213,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            af'16
+            af'!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -1221,13 +1221,13 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf16
+            bf!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef'16
+            ef'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1256,22 +1256,22 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'16
+            cs'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'16
+            bf'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1300,7 +1300,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1351,7 +1351,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1363,21 +1363,21 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs'''16
+            cs'''!16
         }
         \times 4/5 {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'''16
+            cs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1391,7 +1391,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'''16
+            ef'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1399,7 +1399,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'''16
+            bf'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1407,7 +1407,7 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs''''16
+            cs''''!16
         }
         \scaleDurations #'(1 . 1) {
             
@@ -1426,7 +1426,7 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-            cs''''16
+            cs''''!16
             ]
             \ff                                                  %! HC1
             )                                                    %! SC
@@ -1494,7 +1494,7 @@ B_RHVoiceIII = {
             % [B RHVoiceIII measure 29]                          %! SM4
             \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef8
+            ef!8
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1516,13 +1516,13 @@ B_RHVoiceIII = {
             
             r4
             
-            cs'8
+            cs'!8
             
             r4
             
             c'4
             
-            bf'8
+            bf'!8
             
             r4
             \revert TupletBracket.direction                      %! OC2
@@ -1617,7 +1617,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1625,7 +1625,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1633,7 +1633,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -1675,7 +1675,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1683,7 +1683,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1691,7 +1691,7 @@ B_RHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -1742,7 +1742,7 @@ B_RHVoiceIVInserts = {
             
             s16
             
-            fs''16
+            fs''!16
             
             s16
         }
@@ -1769,7 +1769,7 @@ B_RHVoiceIVInserts = {
             
             s16
             
-            fs''16
+            fs''!16
             
             s16
         }
@@ -2189,7 +2189,7 @@ B_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            af8.
+            af!8.
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -2367,7 +2367,7 @@ B_LHResonanceVoice = {
             \override Dots.stencil = ##f                         %! OC1
             \override Flag.stencil = ##f                         %! OC1
             \override Stem.stencil = ##f                         %! OC1
-            <e, fs, gs, as, b,>2
+            <e, fs,! gs,! as,! b,>2
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2399,7 +2399,7 @@ B_LHResonanceVoice = {
             \once \override NoteHead.transparent = ##t           %! OC1
             \once \override RepeatTie.transparent = ##t          %! OC1
             \once \override Stem.transparent = ##t               %! OC1
-            <e, fs, gs, as, b,>4
+            <e, fs,! gs,! as,! b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2424,7 +2424,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 24]                    %! SM4
-            <e, fs, gs, as, b,>4
+            <e, fs,! gs,! as,! b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2453,7 +2453,7 @@ B_LHResonanceVoice = {
             \once \override Stem.transparent = ##t               %! OC1
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>16
+            <e, fs,! gs,! as,! b,>16
             \repeatTie                                           %! SC
             [
             ]
@@ -2471,7 +2471,7 @@ B_LHResonanceVoice = {
             \once \override RepeatTie.transparent = ##t          %! OC1
             \once \override Stem.transparent = ##t               %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <e, fs, gs, as, b,>4
+            <e, fs,! gs,! as,! b,>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2496,7 +2496,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 26]                    %! SM4
-            <e, fs, gs, as, b,>2
+            <e, fs,! gs,! as,! b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2521,7 +2521,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 27]                    %! SM4
-            <e, fs, gs, as, b,>2
+            <e, fs,! gs,! as,! b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2550,7 +2550,7 @@ B_LHResonanceVoice = {
             \once \override Stem.transparent = ##t               %! OC1
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>8
+            <e, fs,! gs,! as,! b,>8
             \repeatTie                                           %! SC
             [
             ]
@@ -2565,7 +2565,7 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 30]                    %! SM4
             \once \override Accidental.X-extent = ##f            %! OC1
-            <e, fs, gs, as, b,>1
+            <e, fs,! gs,! as,! b,>1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2591,12 +2591,12 @@ B_LHResonanceVoice = {
             \override NoteHead.transparent = ##t                 %! OC1
             \override RepeatTie.transparent = ##t                %! OC1
             \override Stem.transparent = ##t                     %! OC1
-            <e, fs, gs, as, b,>4
+            <e, fs,! gs,! as,! b,>4
             \repeatTie                                           %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            <e, fs, gs, as, b,>16
+            <e, fs,! gs,! as,! b,>16
             \repeatTie                                           %! SC
             [
             ]
@@ -2615,7 +2615,7 @@ B_LHResonanceVoice = {
             % [B LHResonanceVoice measure 31]                    %! SM4
             \override Accidental.stencil = ##f                   %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <e, fs, gs, as, b,>1..
+            <e, fs,! gs,! as,! b,>1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2640,7 +2640,7 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 32]                    %! SM4
-            <e, fs, gs, as, b,>1.
+            <e, fs,! gs,! as,! b,>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP

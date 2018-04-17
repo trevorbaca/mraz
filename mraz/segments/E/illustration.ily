@@ -1343,7 +1343,7 @@ E_RHVoiceII = {
             
             r2..
             
-            ef''''8
+            ef''''!8
             -\accent                                             %! IC
             
             r2..
@@ -1421,13 +1421,13 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-                af'8
+                af'!8
                 -\accent                                         %! IC
                 \fff                                             %! SM8:REDUNDANT_DYNAMIC:IC
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                fs'8
+                fs'!8
                 -\accent                                         %! IC
             }
             \tweak text #tuplet-number::calc-fraction-text
@@ -1510,7 +1510,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                cs''8
+                cs''!8
                 -\accent                                         %! IC
                 
                 \set stemLeftBeamCount = 1                       %! SM35
@@ -1528,7 +1528,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                ef'8
+                ef'!8
                 -\accent                                         %! IC
                 
                 s8
@@ -1574,7 +1574,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-                fs''8
+                fs''!8
                 -\accent                                         %! IC
                 \fff                                             %! SM8:REDUNDANT_DYNAMIC:IC
                 
@@ -1591,7 +1591,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                ef''8
+                ef''!8
                 -\accent                                         %! IC
                 
                 \set stemLeftBeamCount = 1                       %! SM35
@@ -1632,7 +1632,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                af'8
+                af'!8
                 -\accent                                         %! IC
                 
                 s8
@@ -1661,14 +1661,14 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                bf''8
+                bf''!8
                 -\accent                                         %! IC
                 
                 s8
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                af''8
+                af''!8
                 -\accent                                         %! IC
                 
                 s8
@@ -1693,7 +1693,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                fs''8
+                fs''!8
                 -\accent                                         %! IC
                 
                 s8
@@ -1739,7 +1739,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                ef''8
+                ef''!8
                 -\accent                                         %! IC
                 \revert Stem.direction                           %! OC2
                 
@@ -1779,7 +1779,7 @@ E_RHVoiceII = {
             \set stemRightBeamCount = 2
             \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            fs16
+            fs!16
             -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             [
@@ -1819,7 +1819,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            af'16
+            af'!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -1827,13 +1827,13 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf16
+            bf!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef'16
+            ef'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1862,22 +1862,22 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'16
+            cs'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'16
+            bf'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1906,7 +1906,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -1930,17 +1930,17 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af16
+            af!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf16
+            bf!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef'16
+            ef'!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -1997,22 +1997,22 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef'''16
+            ef'''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2041,7 +2041,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs'''16
+            fs'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -2065,17 +2065,17 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'16
+            bf'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -2109,7 +2109,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs''''16
+            cs''''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2117,18 +2117,18 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'16
+            bf'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -2181,7 +2181,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs'''16
+            fs'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -2205,12 +2205,12 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            bf'16
+            bf'!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2218,7 +2218,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'16
+            ef'!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
@@ -2248,22 +2248,22 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef'''16
+            ef'''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2301,7 +2301,7 @@ E_RHVoiceII = {
             \override Beam.positions = #'(-8 . -8)               %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             -\staccato                                           %! IC
             [
             (                                                    %! SC
@@ -2343,18 +2343,18 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef'''16
+            ef'''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2387,22 +2387,22 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'''16
+            cs'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'''16
+            af'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'''16
+            bf'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            ef''''16
+            ef''''!16
             -\staccato                                           %! IC
             ]
             )                                                    %! SC
@@ -2458,7 +2458,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            fs''''16
+            fs''''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2482,7 +2482,7 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            af''16
+            af''!16
             -\staccato                                           %! IC
             )                                                    %! SC
         }
@@ -2490,13 +2490,13 @@ E_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             -\staccato                                           %! IC
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef'''16
+            ef'''!16
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 2
@@ -2561,7 +2561,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-                ef''8
+                ef''!8
                 \fff                                             %! SM8:EXPLICIT_DYNAMIC:IC
                 
                 s8
@@ -2583,7 +2583,7 @@ E_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                fs'8
+                fs'!8
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -2692,7 +2692,7 @@ E_RHVoiceIII = {
             \override Rest.direction = #down                     %! OC1
             r4
             
-            cs''4
+            cs''!4
             -\tenuto                                             %! IC
             
             r4
@@ -2702,7 +2702,7 @@ E_RHVoiceIII = {
             
             r4
             
-            af''4
+            af''!4
             -\tenuto                                             %! IC
             
             r4
@@ -2748,7 +2748,7 @@ E_RHVoiceIII = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                ef'''8
+                ef'''!8
                 
                 f'''8
                 
@@ -2763,7 +2763,7 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                bf''8
+                bf''!8
                 
                 c'''8
                 
@@ -2773,7 +2773,7 @@ E_RHVoiceIII = {
                 
                 f''8
                 
-                ef''8
+                ef''!8
                 ]
                 )                                                %! SC
             }
@@ -2783,11 +2783,11 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                fs''8
+                fs''!8
                 
-                af''8
+                af''!8
                 
-                ef''8
+                ef''!8
                 ]
                 )                                                %! SC
             }
@@ -2798,11 +2798,11 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                cs''8
+                cs''!8
                 
-                ef''8
+                ef''!8
                 
-                bf'8
+                bf'!8
                 
                 g'8
                 ]
@@ -2863,7 +2863,7 @@ E_RHVoiceIII = {
                 
                 % [E RHVoiceIII measure 85]                      %! SM4
                 \override TupletBracket.direction = #down        %! OC1
-                cs'''8
+                cs'''!8
                 [
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
@@ -2890,7 +2890,7 @@ E_RHVoiceIII = {
                 
                 b''8
                 
-                fs'''8
+                fs'''!8
                 
                 a''8
                 
@@ -2905,7 +2905,7 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                bf''8
+                bf''!8
                 
                 c'''8
                 
@@ -2920,7 +2920,7 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                ef''8
+                ef''!8
                 
                 f''8
                 
@@ -2931,13 +2931,13 @@ E_RHVoiceIII = {
                 
                 s8
                 
-                bf'8
+                bf'!8
                 )                                                %! SC
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                fs''8
+                fs''!8
                 [
                 (                                                %! SC
                 
@@ -2962,10 +2962,10 @@ E_RHVoiceIII = {
                 
                 s8
                 
-                af'8
+                af'!8
                 [
                 
-                cs'8
+                cs'!8
                 
                 b'8
                 ]
@@ -3018,7 +3018,7 @@ E_RHVoiceIII = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
                 
-                af''8
+                af''!8
                 [
                 (                                                %! SC
                 
@@ -3041,14 +3041,14 @@ E_RHVoiceIII = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                af''8
+                af''!8
                 (                                                %! SC
                 
                 s8
                 
                 s8
                 
-                fs''8
+                fs''!8
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
@@ -3058,17 +3058,17 @@ E_RHVoiceIII = {
                 
                 s8
                 
-                fs''8
+                fs''!8
                 [
                 
                 g'8
                 
-                bf'8
+                bf'!8
                 ]
                 
                 s8
                 
-                ef''8
+                ef''!8
                 )                                                %! SC
             }
             \tweak text #tuplet-number::calc-fraction-text
@@ -3078,7 +3078,7 @@ E_RHVoiceIII = {
                 [
                 (                                                %! SC
                 
-                fs'8
+                fs'!8
                 ]
                 
                 s8
@@ -3150,17 +3150,17 @@ E_RHVoiceIII = {
                 
                 s8
                 
-                cs'''8
+                cs'''!8
                 
                 s8
                 
-                fs'''8
+                fs'''!8
                 )                                                %! SC
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                bf''8
+                bf''!8
                 (                                                %! SC
                 
                 s8
@@ -3168,18 +3168,18 @@ E_RHVoiceIII = {
                 a''8
                 [
                 
-                af''8
+                af''!8
                 ]
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                cs'''8
+                cs'''!8
                 (                                                %! SC
                 
                 s8
                 
-                af''8
+                af''!8
                 [
                 
                 b''8
@@ -3195,11 +3195,11 @@ E_RHVoiceIII = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                cs''8
+                cs''!8
                 [
                 (                                                %! SC
                 
-                bf'8
+                bf'!8
                 ]
                 )                                                %! SC
                 
@@ -3226,7 +3226,7 @@ E_RHVoiceIII = {
                 c''8
                 [
                 
-                bf'8
+                bf'!8
                 ]
                 )                                                %! SC
             }
@@ -3238,9 +3238,9 @@ E_RHVoiceIII = {
                 
                 b'8
                 
-                cs'8
+                cs'!8
                 
-                bf'8
+                bf'!8
                 ]
                 )                                                %! SC
                 \revert TupletBracket.direction                  %! OC2
@@ -3307,15 +3307,15 @@ E_RHVoiceIII = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                af'''8
+                af'''!8
                 
-                bf''8
+                bf''!8
                 
-                ef'''8
+                ef'''!8
                 
                 d'''8
                 
-                cs'''8
+                cs'''!8
                 
                 b''8
                 ]
@@ -3331,19 +3331,19 @@ E_RHVoiceIII = {
                 
                 e''8
                 
-                cs''8
+                cs''!8
                 ]
                 )                                                %! SC
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
                 
-                af''8
+                af''!8
                 (                                                %! SC
                 
                 s8
                 
-                cs''8
+                cs''!8
                 
                 s8
                 
@@ -3928,13 +3928,13 @@ E_LHVoiceIV = {
             
             r8.
             
-            ef'8.
+            ef'!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
             r8.
             
-            cs8.
+            cs!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             )                                                    %! SC
@@ -3975,7 +3975,7 @@ E_LHVoiceIV = {
             r2
             
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            af'8.
+            af'!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
@@ -3989,13 +3989,13 @@ E_LHVoiceIV = {
             
             r16
             
-            bf8.
+            bf!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
             r16
             
-            cs8.
+            cs!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             )                                                    %! SC
@@ -4070,19 +4070,19 @@ E_LHVoiceIV = {
             
             r16
             
-            ef'8.
+            ef'!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
             r16
             
-            cs8.
+            cs!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
             r16
             
-            af,8.
+            af,!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             )                                                    %! SC
@@ -4116,7 +4116,7 @@ E_LHVoiceIV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            bf8.
+            bf!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             ]
@@ -4126,7 +4126,7 @@ E_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            cs'8.
+            cs'!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             [
@@ -4188,7 +4188,7 @@ E_LHVoiceIV = {
             [
             (                                                    %! SC
             
-            ef,8.
+            ef,!8.
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             ]
@@ -4228,14 +4228,14 @@ E_LHVoiceIV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            cs'8
+            cs'!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             [
             (                                                    %! SC
             
-            af,8
+            af,!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -4249,7 +4249,7 @@ E_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            bf8
+            bf!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             [
@@ -4272,7 +4272,7 @@ E_LHVoiceIV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            cs8
+            cs!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -4388,7 +4388,7 @@ E_LHVoiceV = {
             \override Stem.direction = #up                       %! OC1
             \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            bf,,8.
+            bf,,!8.
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4562,7 +4562,7 @@ E_LHVoiceVI = {
             \override Rest.direction = #down                     %! OC1
             r4
             
-            ef,,8
+            ef,,!8
             \revert Stem.direction                               %! OC2
             \ottava #0                                           %! SC
             
@@ -4671,7 +4671,7 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 91]                    %! SM4
-            <cs,, cs,>1..
+            <cs,,! cs,!>1..
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4697,7 +4697,7 @@ E_LHResonanceVoice = {
             \once \override NoteHead.transparent = ##t           %! OC1
             \once \override RepeatTie.transparent = ##t          %! OC1
             \once \override Stem.transparent = ##t               %! OC1
-            <cs,, cs,>16
+            <cs,,! cs,!>16
             \repeatTie                                           %! SC
         }
     }
@@ -4708,7 +4708,7 @@ E_LHResonanceVoice = {
             \once \override Accidental.stencil = ##f             %! OC1
             \override Stem.transparent = ##t                     %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <cs,, cs,>1.
+            <cs,,! cs,!>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4735,7 +4735,7 @@ E_LHResonanceVoice = {
             \once \override NoteHead.transparent = ##t           %! OC1
             \once \override RepeatTie.transparent = ##t          %! OC1
             \once \override Stem.transparent = ##t               %! OC1
-            <cs,, cs,>8.
+            <cs,,! cs,!>8.
             \repeatTie                                           %! SC
             \revert Stem.transparent                             %! OC2
         }
@@ -4744,7 +4744,7 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 93]                    %! SM4
-            <ef,, ef,>1
+            <ef,,! ef,!>1
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4770,10 +4770,10 @@ E_LHResonanceVoice = {
             \override NoteHead.transparent = ##t                 %! OC1
             \override RepeatTie.transparent = ##t                %! OC1
             \override Stem.transparent = ##t                     %! OC1
-            <ef,, ef,>4
+            <ef,,! ef,!>4
             \repeatTie                                           %! SC
             
-            <ef,, ef,>16
+            <ef,,! ef,!>16
             \repeatTie                                           %! SC
             \revert NoteHead.no-ledgers                          %! OC2
             \revert Accidental.transparent                       %! OC2
@@ -4791,7 +4791,7 @@ E_LHResonanceVoice = {
             \once \override Accidental.stencil = ##f             %! OC1
             \once \override Stem.transparent = ##t               %! OC1
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
-            <ef,, ef,>2...
+            <ef,,! ef,!>2...
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -4818,7 +4818,7 @@ E_LHResonanceVoice = {
             % [E LHResonanceVoice measure 95]                    %! SM4
             \once \override Accidental.stencil = ##f             %! OC1
             \once \override Stem.transparent = ##t               %! OC1
-            <ef,, ef,>1
+            <ef,,! ef,!>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP

@@ -1243,7 +1243,7 @@ A_LHVoiceV = {
             
             r32
             
-            fs,,8.
+            fs,,!8.
             
             r32
         }
@@ -1279,7 +1279,7 @@ A_LHVoiceV = {
             
             r32
             
-            cs,,8
+            cs,,!8
             
             r32
         }
@@ -1290,7 +1290,7 @@ A_LHVoiceV = {
             
             r32
             
-            af,,8
+            af,,!8
             
             r32
             
@@ -1304,7 +1304,7 @@ A_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [A LHVoiceV measure 12]                            %! SM4
-            cs,,32
+            cs,,!32
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1329,7 +1329,7 @@ A_LHVoiceV = {
             
             r4...
             
-            af,,32
+            af,,!32
             
             r4...
         }
@@ -1338,7 +1338,7 @@ A_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [A LHVoiceV measure 13]                            %! SM4
-            bf,,8.
+            bf,,!8.
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1399,7 +1399,7 @@ A_LHVoiceV = {
             
             r32
             
-            bf,,8
+            bf,,!8
             
             r32
         }
@@ -1430,7 +1430,7 @@ A_LHVoiceV = {
             
             r32
             
-            cs,,8
+            cs,,!8
             
             r32
             
@@ -1443,7 +1443,7 @@ A_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [A LHVoiceV measure 16]                            %! SM4
-            ef,,32
+            ef,,!32
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1469,11 +1469,11 @@ A_LHVoiceV = {
             
             r4...
             
-            cs,,32
+            cs,,!32
             
             r4...
             
-            ef,,32
+            ef,,!32
             
             r4...
             \revert Rest.direction                               %! OC2
@@ -1515,7 +1515,7 @@ A_LHVoiceV = {
             
             % [A LHVoiceV measure 18]                            %! SM4
             \override TupletBracket.staff-padding = #3           %! OC1
-            fs,,8
+            fs,,!8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1540,7 +1540,7 @@ A_LHVoiceV = {
             
             r32
             
-            ef,,8
+            ef,,!8
             
             r32
         }
@@ -1551,7 +1551,7 @@ A_LHVoiceV = {
             
             r32
             
-            ef,8
+            ef,!8
             
             r32
             
@@ -1636,7 +1636,7 @@ A_LHVoiceV = {
         \times 16/15 {
             
             % [A LHVoiceV measure 21]                            %! SM4
-            fs,,8
+            fs,,!8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1657,11 +1657,11 @@ A_LHVoiceV = {
             
             r32
             
-            bf,,8
+            bf,,!8
             
             r32
             
-            af,,8
+            af,,!8
             \ottava #0                                           %! SC
             
             r32
@@ -1737,7 +1737,7 @@ A_LHVoiceVI = {
             
             \override Stem.direction = #down                     %! OC1
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            af,,4
+            af,,!4
             -\tenuto                                             %! IC
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1766,7 +1766,7 @@ A_LHVoiceVI = {
             
             r4
             
-            bf,,,4
+            bf,,,!4
             -\tenuto                                             %! IC
             
             r4
@@ -1802,7 +1802,7 @@ A_LHVoiceVI = {
             \override Rest.direction = #up                       %! OC1
             r4
             
-            ef,,8
+            ef,,!8
             -\tenuto                                             %! IC
             
             r4
@@ -1815,7 +1815,7 @@ A_LHVoiceVI = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            bf,,,16
+            bf,,,!16
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1882,7 +1882,7 @@ A_LHVoiceVI = {
             
             r8.
             
-            cs,,16
+            cs,,!16
             -\tenuto                                             %! IC
             
             r8.
@@ -1917,10 +1917,10 @@ A_LHVoiceVI = {
             e,,8
             -\tenuto                                             %! IC
             
-            af,,8
+            af,,!8
             -\tenuto                                             %! IC
             
-            fs,,8
+            fs,,!8
             -\tenuto                                             %! IC
         }
     }
