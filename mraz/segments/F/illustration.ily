@@ -579,7 +579,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                cs''16
+                cs''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -591,7 +591,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                fs''16
+                fs''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
@@ -610,11 +610,11 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                af''16
+                af''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                bf''16
+                bf''!16
             }
             \times 2/3 {
                 
@@ -624,7 +624,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                ef'''16
+                ef'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
@@ -643,7 +643,7 @@ F_RHVoiceI = {
                 % [F RHVoiceI measure 100]                       %! SM4
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                fs''16
+                fs''!16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -664,7 +664,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                bf''16
+                bf''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
@@ -675,7 +675,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                fs'''16
+                fs'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -703,7 +703,7 @@ F_RHVoiceI = {
                 % [F RHVoiceI measure 102]                       %! SM4
                 \set stemLeftBeamCount = 0                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                af''16
+                af''!16
                 [                                                %! SM35
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -733,7 +733,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                fs'''16
+                fs'''!16
             }
         }
     }
@@ -748,7 +748,7 @@ F_RHVoiceI = {
                 % [F RHVoiceI measure 104]                       %! SM4
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                af''16
+                af''!16
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -777,15 +777,15 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                fs'''16
+                fs'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                bf'''16
+                bf'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 0                      %! SM35
-                fs'''16
+                fs'''!16
                 ]                                                %! SM35
             }
         }
@@ -825,15 +825,15 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                fs'''16
+                fs'''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                af'''16
+                af'''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
-                ef'''16
+                ef'''!16
             }
             \times 2/3 {
                 
@@ -847,7 +847,7 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
-                bf'''16
+                bf'''!16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
@@ -858,15 +858,15 @@ F_RHVoiceI = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                cs''''16
+                cs''''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                ef''''16
+                ef''''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
-                bf'''16
+                bf'''!16
                 ]
                 \revert Beam.positions                           %! OC2
                 \revert Stem.direction                           %! OC2
@@ -957,7 +957,7 @@ F_RHVoiceIInserts = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                fs'''16
+                fs'''!16
                 -\marcato                                        %! IC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1016,7 +1016,7 @@ F_RHVoiceIInserts = {
                 % [F RHVoiceIInserts measure 104]                %! SM4
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                af''16
+                af''!16
                 -\marcato                                        %! IC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1054,7 +1054,7 @@ F_RHVoiceIInserts = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                fs'''16
+                fs'''!16
                 -\marcato                                        %! IC
                 
                 s16
@@ -1069,7 +1069,7 @@ F_RHVoiceIInserts = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                bf'''16
+                bf'''!16
                 -\marcato                                        %! IC
             }
             \tweak text #tuplet-number::calc-fraction-text
@@ -1079,7 +1079,7 @@ F_RHVoiceIInserts = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                cs''''16
+                cs''''!16
                 -\marcato                                        %! IC
                 
                 s16
@@ -1145,7 +1145,7 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            ef''16
+            ef''!16
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 1                          %! SM35
@@ -1164,7 +1164,7 @@ F_RHVoiceII = {
                 % [F RHVoiceII measure 101]                      %! SM4
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                cs''16
+                cs''!16
                 (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
@@ -1197,7 +1197,7 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                cs''16
+                cs''!16
                 (                                                %! SC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1222,7 +1222,7 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                ef'''16
+                ef'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 0                      %! SM35
@@ -1264,7 +1264,7 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 1                          %! SM35
@@ -1276,12 +1276,12 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 1                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            cs''16
+            cs''!16
             (                                                    %! SC
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
@@ -1293,7 +1293,7 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            ef'''16
+            ef'''!16
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 1                          %! SM35
@@ -1365,7 +1365,7 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                ef'''16
+                ef'''!16
                 (                                                %! SC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1378,7 +1378,7 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                cs'''16
+                cs'''!16
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -1386,7 +1386,7 @@ F_RHVoiceII = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 0                      %! SM35
-                cs'''16
+                cs'''!16
                 ]                                                %! SM35
                 )                                                %! SC
             }
@@ -1425,7 +1425,7 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 1                          %! SM35
-            ef'''16
+            ef'''!16
             )                                                    %! SC
         }
     }
@@ -1464,7 +1464,7 @@ F_RHVoiceII = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 0                          %! SM35
-            af'''16
+            af'''!16
             ]                                                    %! SM35
             )                                                    %! SC
             \revert Beam.positions                               %! OC2
@@ -1520,7 +1520,7 @@ F_RHVoiceIIInserts = {
                 % [F RHVoiceIIInserts measure 101]               %! SM4
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                cs''16
+                cs''!16
                 -\accent                                         %! IC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1549,7 +1549,7 @@ F_RHVoiceIIInserts = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                ef'''16
+                ef'''!16
                 -\accent                                         %! IC
                 
                 s16
@@ -1578,7 +1578,7 @@ F_RHVoiceIIInserts = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
-            bf''16
+            bf''!16
             -\accent                                             %! IC
             
             s16
@@ -1641,7 +1641,7 @@ F_RHVoiceIIInserts = {
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
-                ef'''16
+                ef'''!16
                 -\accent                                         %! IC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -1701,7 +1701,7 @@ F_RHVoiceIIInserts = {
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 0                          %! SM35
-            af'''16
+            af'''!16
             -\accent                                             %! IC
             ]                                                    %! SM35
             \revert Beam.positions                               %! OC2
@@ -2146,7 +2146,7 @@ F_LHVoiceIV = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            fs'16
+            fs'!16
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             [
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2181,15 +2181,15 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'16
+            bf'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef''16
+            ef''!16
         }
         \times 2/3 {
             
@@ -2219,7 +2219,7 @@ F_LHVoiceIV = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            cs''16
+            cs''!16
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
             [
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2242,7 +2242,7 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2283,7 +2283,7 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2291,7 +2291,7 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2299,7 +2299,7 @@ F_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2365,7 +2365,7 @@ F_LHVoiceIVInserts = {
         \scaleDurations #'(1 . 1) {
             
             % [F LHVoiceIVInserts measure 103]                   %! SM4
-            cs''16
+            cs''!16
             
             s16
             
@@ -2393,7 +2393,7 @@ F_LHVoiceIVInserts = {
             
             s16
             
-            fs''16
+            fs''!16
             \revert Stem.direction                               %! OC2
             
             s16
@@ -2430,7 +2430,7 @@ F_LHVoiceV = {
                 \set stemRightBeamCount = 2
                 \dynamicDown                                     %! IC
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-                cs'16
+                cs'!16
                 \pp                                              %! SM8:EXPLICIT_DYNAMIC:IC
                 [
                 (                                                %! SC
@@ -2458,7 +2458,7 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
-                cs'16
+                cs'!16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
@@ -2475,11 +2475,11 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                ef''16
+                ef''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                bf'16
+                bf'!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2498,7 +2498,7 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
-                fs''16
+                fs''!16
                 (                                                %! SC
                 
                 \set stemLeftBeamCount = 2
@@ -2507,7 +2507,7 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                bf''16
+                bf''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2541,7 +2541,7 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-                ef''16
+                ef''!16
                 \pp                                              %! SM8:REDUNDANT_DYNAMIC:IC
                 [
                 (                                                %! SC
@@ -2569,7 +2569,7 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
-                cs''16
+                cs''!16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
@@ -2581,11 +2581,11 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                af'16
+                af'!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                fs''16
+                fs''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2597,11 +2597,11 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                cs''16
+                cs''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
-                fs''16
+                fs''!16
                 )                                                %! SC
             }
             \scaleDurations #'(1 . 1) {
@@ -2614,11 +2614,11 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                ef''16
+                ef''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                cs'''16
+                cs'''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2626,15 +2626,15 @@ F_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                fs''16
+                fs''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                af''16
+                af''!16
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
-                cs'''16
+                cs'''!16
                 ]
                 )                                                %! SC
                 \revert Stem.direction                           %! OC2
@@ -2702,7 +2702,7 @@ F_LHVoiceVInserts = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                fs''16
+                fs''!16
                 -\staccato                                       %! IC
                 
                 s16
@@ -2781,12 +2781,12 @@ F_LHVoiceVInserts = {
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                af''16
+                af''!16
                 -\staccato                                       %! IC
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
-                cs'''16
+                cs'''!16
                 -\staccato                                       %! IC
                 ]
                 \revert Stem.direction                           %! OC2

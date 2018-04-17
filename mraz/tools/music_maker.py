@@ -109,7 +109,7 @@ def music_maker():
                                 % [MusicVoice measure 2]                                   %! SM4
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
-                                fs'16
+                                fs'!16
                                 [
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
@@ -118,7 +118,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                ef'16
+                                ef'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -130,7 +130,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
@@ -147,7 +147,7 @@ def music_maker():
                                 % [MusicVoice measure 4]                                   %! SM4
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
-                                bf'16
+                                bf'!16
                                 [
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
@@ -160,7 +160,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -292,7 +292,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                fs'16
+                                fs'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -300,7 +300,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                ef'16
+                                ef'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -312,7 +312,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
@@ -330,7 +330,7 @@ def music_maker():
                                 % [MusicVoice measure 2]                                   %! SM4
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
-                                fs'16
+                                fs'!16
                                 [
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
@@ -339,7 +339,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                ef'16
+                                ef'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -351,7 +351,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
@@ -367,7 +367,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                bf'16
+                                bf'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -379,7 +379,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -402,7 +402,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                bf'16
+                                bf'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -414,7 +414,7 @@ def music_maker():
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                af'16
+                                af'!16
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2

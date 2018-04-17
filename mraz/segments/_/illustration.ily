@@ -648,7 +648,7 @@ i_RHVoiceI = {
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! SM6:DEFAULT_CLEF_COLOR:ST3
         %@% \override PianoMusicRHStaff.Clef.color = ##f         %! SM7:DEFAULT_CLEF_COLOR_CANCELLATION:ST3
             \set PianoMusicRHStaff.forceClef = ##t               %! SM8:DEFAULT_CLEF:SM33:ST3
-            bf''''1
+            bf''''!1
             -\tenuto                                             %! IC
             ^ \markup {
                 \column
@@ -778,7 +778,7 @@ i_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -790,21 +790,21 @@ i_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs'''16
+            cs'''!16
         }
         \times 4/5 {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'''16
+            cs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -818,7 +818,7 @@ i_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'''16
+            ef'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -826,7 +826,7 @@ i_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'''16
+            bf'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -834,7 +834,7 @@ i_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs''''16
+            cs''''!16
         }
         \scaleDurations #'(1 . 1) {
             
@@ -853,7 +853,7 @@ i_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-            cs''''16
+            cs''''!16
             ]
             \ff                                                  %! HC1
             )                                                    %! SC
@@ -959,7 +959,7 @@ i_RHVoiceII = {
             
             r2..
             
-            ef''''8
+            ef''''!8
             -\accent                                             %! IC
             
             r2..
@@ -1047,7 +1047,7 @@ i_RHVoiceIII = {
             \once \override DynamicText.X-offset = #0.5          %! OC1
             \override TupletBracket.staff-padding = #8           %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            bf'''8
+            bf'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
@@ -1069,11 +1069,11 @@ i_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            cs'''8
+            cs'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            ef'''8
+            ef'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             \revert TupletBracket.staff-padding                  %! OC2
@@ -1117,7 +1117,7 @@ i_RHVoiceIII = {
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
-            ef'''8
+            ef'''!8
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
             
@@ -1163,7 +1163,7 @@ i_RHVoiceIII = {
             \override Rest.direction = #down                     %! OC1
             r4
             
-            cs''4
+            cs''!4
             -\tenuto                                             %! IC
             
             r4
@@ -1173,7 +1173,7 @@ i_RHVoiceIII = {
             
             r4
             
-            af''4
+            af''!4
             -\tenuto                                             %! IC
             
             r4
@@ -1549,7 +1549,7 @@ i_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'16
+            af'!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1557,7 +1557,7 @@ i_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''16
+            cs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1565,7 +1565,7 @@ i_LHVoiceIV = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -1619,7 +1619,7 @@ i_LHVoiceIVInserts = {
             
             s16
             
-            fs''16
+            fs''!16
             
             s16
         }
@@ -1662,7 +1662,7 @@ i_LHVoiceV = {
             \once \override DynamicText.X-offset = #-0.5         %! OC1
             \dynamicUp                                           %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            bf,,8.
+            bf,,!8.
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -1801,7 +1801,7 @@ i_LHVoiceVI = {
             \override Rest.direction = #down                     %! OC1
             r4
             
-            ef,,8
+            ef,,!8
             \ottava #0                                           %! SC
             
             r4

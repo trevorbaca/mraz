@@ -2381,7 +2381,7 @@ C_RHVoiceI = {
             [
             (                                                    %! SC
             
-            af''''8
+            af''''!8
             ]
             )                                                    %! SC
             
@@ -2462,7 +2462,7 @@ C_RHVoiceI = {
         \times 6/4 {
             
             % [C RHVoiceI measure 56]                            %! SM4
-            bf''''8
+            bf''''!8
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2491,7 +2491,7 @@ C_RHVoiceI = {
             
             g'''8
             
-            cs''''8
+            cs''''!8
             ]
             )                                                    %! SC
             
@@ -2509,7 +2509,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 60]                            %! SM4
             \once \override Slur.direction = #down               %! OC1
-            ef''''8
+            ef''''!8
             [
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2530,7 +2530,7 @@ C_RHVoiceI = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            af''''8
+            af''''!8
             
             d''''8
             ]
@@ -2558,11 +2558,11 @@ C_RHVoiceI = {
             
             s8
             
-            fs'''8
+            fs'''!8
             [
             (                                                    %! SC
             
-            cs'''8
+            cs'''!8
             ]
             )                                                    %! SC
         }
@@ -2575,7 +2575,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 66]                            %! SM4
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef''''1..
+            ef''''!1..
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2626,7 +2626,7 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 68]                            %! SM4
-            bf''''1
+            bf''''!1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2651,7 +2651,7 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 69]                            %! SM4
-            ef''''1
+            ef''''!1
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2706,7 +2706,7 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 72]                            %! SM4
-            bf''''2
+            bf''''!2
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -2900,7 +2900,7 @@ C_RHVoiceII = {
             \once \override Script.direction = #up               %! OC1
             \arpeggioArrowUp                                     %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            <a g' af' b' cs'' f'' ef''' c''''>2.
+            <a g' af'! b' cs''! f'' ef'''! c''''>2.
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
@@ -2943,7 +2943,7 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef'''8
+            ef'''!8
             -\staccato                                           %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -2989,7 +2989,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            fs'''8
+            fs'''!8
             -\staccato                                           %! IC
             
             s8
@@ -3000,7 +3000,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            fs''''8
+            fs''''!8
             -\staccato                                           %! IC
             
             s8
@@ -3033,7 +3033,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            bf'''8
+            bf'''!8
             -\staccato                                           %! IC
             
             s8
@@ -3044,12 +3044,12 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            bf'''8
+            bf'''!8
             -\staccato                                           %! IC
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            cs''''8
+            cs''''!8
             -\staccato                                           %! IC
             
             s8
@@ -3104,7 +3104,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3116,21 +3116,21 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs'''16
+            cs'''!16
         }
         \times 4/5 {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'''16
+            cs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3144,7 +3144,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'''16
+            ef'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3152,7 +3152,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'''16
+            bf'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3160,7 +3160,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs''''16
+            cs''''!16
         }
         \scaleDurations #'(1 . 1) {
             
@@ -3180,7 +3180,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            cs''''16
+            cs''''!16
             ]
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -3197,7 +3197,7 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-            ef''16
+            ef''!16
             [
             \<                                                   %! HC1
             \f                                                   %! HC1
@@ -3236,7 +3236,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3248,7 +3248,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs'''16
+            fs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
@@ -3270,13 +3270,13 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            af'''16
+            af'''!16
         }
         \times 4/5 {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            fs'''16
+            fs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3289,12 +3289,12 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-            cs''''16
+            cs''''!16
             \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            bf'''16
+            bf'''!16
             ]
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -3308,7 +3308,7 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 70]                           %! SM4
             \once \override Script.direction = #up               %! OC1
             \arpeggioArrowUp                                     %! IC
-            <a g' af' b' cs'' f'' ef''' c''''>1.
+            <a g' af'! b' cs''! f'' ef'''! c''''>1.
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3340,7 +3340,7 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-            cs''16
+            cs''!16
             [
             \<                                                   %! HC1
             \f                                                   %! HC1
@@ -3365,7 +3365,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af''16
+            af''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3377,7 +3377,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            ef''16
+            ef''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
@@ -3387,11 +3387,11 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'''16
+            ef'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf''16
+            bf''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3399,7 +3399,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs'''16
+            cs'''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
@@ -3421,11 +3421,11 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''''16
+            cs''''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            ef''''16
+            ef''''!16
         }
         \times 4/5 {
             
@@ -3444,7 +3444,7 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-            ef''''16
+            ef''''!16
             \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
@@ -3492,7 +3492,7 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''16
+            fs''!16
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3515,12 +3515,12 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-            af'''16
+            af'''!16
             \ff                                                  %! HC1
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            fs''''16
+            fs''''!16
             ]
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -3534,7 +3534,7 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 73]                           %! SM4
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
-            <f'' ef''' c'''' e'''' fs'''' bf''''>1
+            <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3562,7 +3562,7 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 74]                           %! SM4
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
-            <a g' af' b' cs'' f'' ef''' c''''>1
+            <a g' af'! b' cs''! f'' ef'''! c''''>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3590,7 +3590,7 @@ C_RHVoiceII = {
             % [C RHVoiceII measure 75]                           %! SM4
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
-            <e' fs' bf' a'' g''' af''' b''' cs''''>1
+            <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -3653,7 +3653,7 @@ C_RHVoiceII = {
             
             r2..
             
-            ef''''8
+            ef''''!8
             -\accent                                             %! IC
             
             r2..
@@ -3820,7 +3820,7 @@ C_RHVoiceIII = {
             \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef8
+            ef!8
             -\tenuto                                             %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:SM37
@@ -3844,7 +3844,7 @@ C_RHVoiceIII = {
             
             r4
             
-            cs'8
+            cs'!8
             -\tenuto                                             %! IC
             
             r4
@@ -3852,7 +3852,7 @@ C_RHVoiceIII = {
             c'4
             -\tenuto                                             %! IC
             
-            bf'8
+            bf'!8
             -\tenuto                                             %! IC
             \revert Stem.direction                               %! OC2
             
@@ -3891,12 +3891,12 @@ C_RHVoiceIII = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \override Stem.direction = #up                       %! OC1
-            ef''8
+            ef''!8
             -\tenuto                                             %! IC
             
             r4
             
-            cs''4
+            cs''!4
             -\tenuto                                             %! IC
             
             r4
@@ -3906,7 +3906,7 @@ C_RHVoiceIII = {
             
             r4
             
-            bf4
+            bf!4
             -\tenuto                                             %! IC
             \revert Stem.direction                               %! OC2
             \revert TupletBracket.direction                      %! OC2
@@ -3947,7 +3947,7 @@ C_RHVoiceIII = {
             % [C RHVoiceIII measure 39]                          %! SM4
             \override Stem.direction = #up                       %! OC1
             \override TupletBracket.direction = #up              %! OC1
-            ef'8
+            ef'!8
             -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3969,7 +3969,7 @@ C_RHVoiceIII = {
             
             r4
             
-            cs'8
+            cs'!8
             -\tenuto                                             %! IC
             
             r4
@@ -3977,7 +3977,7 @@ C_RHVoiceIII = {
             c'4
             -\tenuto                                             %! IC
             
-            bf8
+            bf!8
             -\tenuto                                             %! IC
             \revert Stem.direction                               %! OC2
             
@@ -4018,7 +4018,7 @@ C_RHVoiceIII = {
             % [C RHVoiceIII measure 55]                          %! SM4
             \override Stem.direction = #down                     %! OC1
             \override TupletBracket.direction = #down            %! OC1
-            af'''8
+            af'''!8
             -\tenuto                                             %! IC
             [
             (                                                    %! SC
@@ -4040,13 +4040,13 @@ C_RHVoiceIII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            ef'''8
+            ef'''!8
             -\tenuto                                             %! IC
             
             f'''8
             -\tenuto                                             %! IC
             
-            fs'''8
+            fs'''!8
             -\tenuto                                             %! IC
             ]
             )                                                    %! SC
@@ -4086,13 +4086,13 @@ C_RHVoiceIII = {
             
             \override Stem.direction = #up                       %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            ef''8
+            ef''!8
             -\tenuto                                             %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             
             r4
             
-            cs''4
+            cs''!4
             -\tenuto                                             %! IC
             
             r4
@@ -4102,7 +4102,7 @@ C_RHVoiceIII = {
             
             r4
             
-            bf4
+            bf!4
             -\tenuto                                             %! IC
             \revert Stem.direction                               %! OC2
             \revert TextScript.direction                         %! OC2
@@ -4143,7 +4143,7 @@ C_RHVoiceIII = {
             \override Rest.direction = #down                     %! OC1
             r4
             
-            cs''4
+            cs''!4
             -\tenuto                                             %! IC
             
             r4
@@ -4153,7 +4153,7 @@ C_RHVoiceIII = {
             
             r4
             
-            af''4
+            af''!4
             -\tenuto                                             %! IC
             
             r4
@@ -4593,7 +4593,7 @@ C_RHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceV measure 50]                            %! SM4
-            <b d' fs' a'>16
+            <b d' fs'! a'>16
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -5363,11 +5363,11 @@ C_LHVoiceIV = {
             
             r8.
             
-            ef'8.
+            ef'!8.
             
             r8.
             
-            cs8.
+            cs!8.
             )                                                    %! SC
             
             r8.
@@ -5663,7 +5663,7 @@ C_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
-            af8.
+            af!8.
             -\tenuto                                             %! IC
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             
@@ -5727,7 +5727,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            af8.
+            af!8.
             -\tenuto                                             %! IC
             
             r16
@@ -5774,7 +5774,7 @@ C_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            <g b f' fs' a'>8.
+            <g b f' fs'! a'>8.
             -\marcato                                            %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -5807,7 +5807,7 @@ C_LHVoiceV = {
             r4
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            af8.
+            af!8.
             -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -5875,7 +5875,7 @@ C_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            <g b f' fs' a'>8.
+            <g b f' fs'! a'>8.
             -\marcato                                            %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -5886,7 +5886,7 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 42]                            %! SM4
-            <g b f' fs' a'>16
+            <g b f' fs'! a'>16
             -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5937,7 +5937,7 @@ C_LHVoiceV = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                <g b f' fs' a'>8.
+                <g b f' fs'! a'>8.
                 -\marcato                                        %! IC
                 
                 r2
@@ -5949,7 +5949,7 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 44]                            %! SM4
-            <g b f' fs' a'>16
+            <g b f' fs'! a'>16
             -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -5997,7 +5997,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <g b f' fs' a'>8.
+            <g b f' fs'! a'>8.
             -\marcato                                            %! IC
             
             r2
@@ -6007,7 +6007,7 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 46]                            %! SM4
-            <g b f' fs' a'>16
+            <g b f' fs'! a'>16
             -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6058,7 +6058,7 @@ C_LHVoiceV = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                <g b f' fs' a'>8.
+                <g b f' fs'! a'>8.
                 -\marcato                                        %! IC
                 
                 r2
@@ -6070,7 +6070,7 @@ C_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHVoiceV measure 48]                            %! SM4
-            <g b f' fs' a'>16
+            <g b f' fs'! a'>16
             -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6121,7 +6121,7 @@ C_LHVoiceV = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                <g b f' fs' a'>8.
+                <g b f' fs'! a'>8.
                 -\marcato                                        %! IC
                 
                 r2
@@ -6137,7 +6137,7 @@ C_LHVoiceV = {
             \once \override Stem.direction = #up                 %! OC1
             \crossStaff                                          %! IC
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            <g, e f af>16
+            <g, e f af!>16
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -6190,7 +6190,7 @@ C_LHVoiceV = {
                 \override Stem.direction = #down                 %! OC1
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <c bf>8
+                <c bf!>8
                 [
                 (                                                %! SC
             }
@@ -6253,7 +6253,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <c e af>4.
+            <c e af!>4.
         }
     }
     
@@ -6286,7 +6286,7 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <bf'>8
+                <bf'!>8
                 [
                 (                                                %! SC
             }
@@ -6300,7 +6300,7 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <e af>8
+                <e af!>8
                 ]
                 )                                                %! SC
                 
@@ -6359,7 +6359,7 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <c f bf>8
+                <c f bf!>8
                 [
                 (                                                %! SC
             }
@@ -6367,13 +6367,13 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <e af d'>8
+                <e af! d'>8
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <bf c'>8
+                <bf! c'>8
                 ]
                 )                                                %! SC
                 
@@ -6416,7 +6416,7 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <af c' e'>8
+                <af! c' e'>8
                 ]
                 )                                                %! SC
                 
@@ -6447,7 +6447,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <bf>8
+            <bf!>8
             
             r4.
         }
@@ -6511,7 +6511,7 @@ C_LHVoiceV = {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
-                <af e'>8
+                <af! e'>8
                 ]
                 )                                                %! SC
                 
@@ -6542,7 +6542,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <c f bf>4.
+            <c f bf!>4.
         }
     }
     {
@@ -6568,7 +6568,7 @@ C_LHVoiceV = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
-            <d' e' af'>8
+            <d' e' af'!>8
             
             r4.
         }
@@ -6600,7 +6600,7 @@ C_LHVoiceV = {
         %%%     }                                                %! FIGURE_NAME_MARKUP
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-            af8.
+            af!8.
             -\tenuto                                             %! IC
             \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             
@@ -6650,7 +6650,7 @@ C_LHVoiceVInserts = {
                 \override Stem.direction = #up                   %! OC1
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                bf'8
+                bf'!8
                 -\staccato                                       %! IC
             }
             \scaleDurations #'(1 . 1) {
@@ -6682,7 +6682,7 @@ C_LHVoiceVInserts = {
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
-                bf8
+                bf!8
                 -\staccato                                       %! IC
             }
             \scaleDurations #'(1 . 1) {
@@ -6770,7 +6770,7 @@ C_LHVoiceVInserts = {
             
             \set stemLeftBeamCount = 1                           %! SM35
             \set stemRightBeamCount = 1                          %! SM35
-            af'8
+            af'!8
             -\staccato                                           %! IC
             \revert Stem.direction                               %! OC2
             
@@ -7139,7 +7139,7 @@ C_LHResonanceVoice = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                <cs,, cs,>2
+                <cs,,! cs,!>2
             }
         }
     }
@@ -7150,7 +7150,7 @@ C_LHResonanceVoice = {
             \override Accidental.stencil = ##f                   %! OC1
             \override Dots.stencil = ##f                         %! OC1
             \override Stem.stencil = ##f                         %! OC1
-            <cs,, cs,>4
+            <cs,,! cs,!>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7174,7 +7174,7 @@ C_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            <cs,, cs,>1
+            <cs,,! cs,!>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7226,7 +7226,7 @@ C_LHResonanceVoice = {
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
                 
-                <ef,, ef,>2
+                <ef,,! ef,!>2
             }
         }
     }
@@ -7237,7 +7237,7 @@ C_LHResonanceVoice = {
             \override Accidental.stencil = ##f                   %! OC1
             \override Dots.stencil = ##f                         %! OC1
             \override Stem.stencil = ##f                         %! OC1
-            <ef,, ef,>4
+            <ef,,! ef,!>4
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7261,7 +7261,7 @@ C_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            <ef,, ef,>1
+            <ef,,! ef,!>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7293,7 +7293,7 @@ C_LHResonanceVoice = {
             
             % [C LHResonanceVoice measure 65]                    %! SM4
             \once \override Accidental.X-extent = ##f            %! OC1
-            <e, fs, gs, as, b,>4
+            <e, fs,! gs,! as,! b,>4
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -7320,7 +7320,7 @@ C_LHResonanceVoice = {
             \override Accidental.stencil = ##f                   %! OC1
             \override Dots.stencil = ##f                         %! OC1
             \override Stem.stencil = ##f                         %! OC1
-            <e, fs, gs, as, b,>1..
+            <e, fs,! gs,! as,! b,>1..
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7345,7 +7345,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 67]                    %! SM4
-            <e, fs, gs, as, b,>1.
+            <e, fs,! gs,! as,! b,>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7370,7 +7370,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 68]                    %! SM4
-            <e, fs, gs, as, b,>1
+            <e, fs,! gs,! as,! b,>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7395,7 +7395,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 69]                    %! SM4
-            <e, fs, gs, as, b,>1
+            <e, fs,! gs,! as,! b,>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7420,7 +7420,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 70]                    %! SM4
-            <e, fs, gs, as, b,>1.
+            <e, fs,! gs,! as,! b,>1.
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7445,7 +7445,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 71]                    %! SM4
-            <e, fs, gs, as, b,>1
+            <e, fs,! gs,! as,! b,>1
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -7470,7 +7470,7 @@ C_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [C LHResonanceVoice measure 72]                    %! SM4
-            <e, fs, gs, as, b,>2
+            <e, fs,! gs,! as,! b,>2
             \repeatTie                                           %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
