@@ -23,14 +23,14 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.accents(),
+    baca.accent(),
     baca.dynamic('fff'),
-    baca.dynamics_up(),
+    baca.dynamic_up(),
     baca.flags(),
     baca.register(20, 36),
-    baca.rests_up(),
-    baca.scripts_up(),
-    baca.stems_up(),
+    baca.rest_up(),
+    baca.script_up(),
+    baca.stem_up(),
     counts=[2, -14],
     figure_name='rh-2 5.1.1',
     )
@@ -43,10 +43,10 @@ accumulator(
     baca.flags(),
     baca.ottava(),
     baca.register(10, 26),
-    baca.rests_down(),
-    baca.stems_down(),
-    baca.tenuti(),
-    baca.tuplet_brackets_down(),
+    baca.rest_down(),
+    baca.stem_down(),
+    baca.tenuto(),
+    baca.tuplet_bracket_down(),
     counts=[4, -4],
     figure_name='rh-3 5.1.1',
     time_treatments=[abjad.Duration(16, 4)],
@@ -71,7 +71,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     counts=[2],
     figure_name='rh-3 5.2.1',
     thread=True,
@@ -81,7 +81,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.transparent_rests(),
+    baca.rest_transparent(),
     figure_name='rh-3 5.2.2',
     )
 
@@ -99,7 +99,7 @@ accumulator(
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tie_repeat_pitches(),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     counts=[2],
     figure_name='rh-3 5.2.3',
     thread=True,
@@ -113,9 +113,9 @@ accumulator(
     baca.flags(),
     baca.ottava_bassa(),
     baca.register(-39),
-    baca.rests_down(),
-    baca.stems_down(),
-    baca.tuplet_brackets_down(),
+    baca.rest_down(),
+    baca.stem_down(),
+    baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     counts=[2, -4],
     figure_name='b.1.4',
@@ -127,12 +127,12 @@ accumulator(
     collections_8['stage 3']['rh'][4],
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
-    baca.dynamics_up(),
+    baca.dynamic_up(),
     baca.flags(),
     baca.register(-27, -39),
     baca.rests_after([4]),
-    baca.rests_up(),
-    baca.stems_up(),
+    baca.rest_up(),
+    baca.stem_up(),
     counts=[6, -1],
     figure_name='b.1.5',
     hide_time_signature=True,
@@ -155,7 +155,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-3/8'),
     baca.register(24, 0),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     counts=[2],
     figure_name='rh-3 5.2.5',
     thread=True,
@@ -165,7 +165,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.transparent_rests(),
+    baca.rest_transparent(),
     figure_name='rh-3 5.2.6',
     )
 
@@ -182,7 +182,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-3/8'),
     baca.register(24, 0),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     counts=[2],
     figure_name='rh-3 5.2.7',
     thread=True,
@@ -192,7 +192,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
-    baca.transparent_rests(),
+    baca.rest_transparent(),
     figure_name='rh-3 5.2.8',
     )
 
@@ -202,9 +202,9 @@ accumulator(
     baca.bass_to_octave(3),
     baca.beam_positions(-8),
     baca.dynamic('ppp'),
-    baca.dynamics_down(),
+    baca.dynamic_down(),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccati(),
+    baca.staccato(),
     figure_name='rh-2 2.2.1',
     )
 
@@ -214,7 +214,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccati(),
+    baca.staccato(),
     figure_name='rh-2 2.2.2',
     )
 
@@ -224,7 +224,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccati(),
+    baca.staccato(),
     figure_name='rh-2 2.2.3',
     )
 
@@ -234,7 +234,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccati(),
+    baca.staccato(),
     figure_name='rh-2 2.2.4',
     )
 
@@ -244,7 +244,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccati(),
+    baca.staccato(),
     figure_name='rh-2 2.2.5',
     )
 
@@ -316,7 +316,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     counts=[2],
     figure_name='rh-3 5.2.9',
@@ -334,7 +334,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.register(6, -24),
     baca.rests_around([8, 8, 8], [6]),
-    baca.slurs_down(),
+    baca.slur_down(),
     counts=[3, -3],
     figure_name='lh-4 5.2.1',
     hide_time_signature=True,
@@ -349,7 +349,7 @@ accumulator(
     baca.map(baca.slur(), baca.tuplets()),
     baca.register(6, -24),
     baca.rests_before([8, 8]),
-    baca.slurs_down(),
+    baca.slur_down(),
     counts=[3, -1],
     figure_name='lh-4 5.2.2',
     hide_time_signature=True,
@@ -441,7 +441,7 @@ accumulator(
     'lh_v4',
     [abjad.Rest((1, 4))],
     baca.clef('treble'),
-    baca.transparent_rests(),
+    baca.rest_transparent(),
     figure_name='lh-4 final',
     )
 
@@ -487,30 +487,30 @@ maker(
 
 maker(
     ('rh_v2', (2, 8)),
-    baca.accents(),
+    baca.accent(),
     baca.beam_positions(10.5),
-    baca.scripts_up(),
-    baca.stems_up(),
+    baca.script_up(),
+    baca.stem_up(),
     )
 
 maker(
     ('rh_v2', (9, 13)),
-    baca.scripts_up(),
-    baca.slurs_up(),
-    baca.stems_down(),
+    baca.script_up(),
+    baca.slur_up(),
+    baca.stem_down(),
     )
 
 maker(
     ('lh_v4', (2, -1)),
-    baca.scripts_up(),
-    baca.staccati(),
-    baca.tenuti(),
+    baca.script_up(),
+    baca.staccato(),
+    baca.tenuto(),
     )
 
 maker(
     'lh_resonance',
     baca.map(baca.repeat_tie(), baca.qruns()),
-    baca.transparent_dots(),
+    baca.dots_transparent(),
     )
 
 maker(
@@ -521,5 +521,5 @@ maker(
 maker(
     ('lh_resonance', [11, 13, 14]),
     baca.accidental_stencil_false(),
-    baca.transparent_stems(),
+    baca.stem_transparent(),
     )
