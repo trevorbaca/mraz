@@ -6,10 +6,10 @@ def transparent_music(selector):
     '''
     return [
         baca.no_ledgers(selector=selector),
-        baca.transparent_accidentals(selector=selector),
-        baca.transparent_beams(selector=selector),
-        baca.transparent_flags(selector=selector),
-        baca.transparent_note_heads(selector=selector),
-        baca.transparent_repeat_ties(selector=selector),
-        baca.transparent_stems(selector=selector),
+        baca.accidental_transparent(selector=selector),
+        baca.beam_transparent(selector=selector),
+        baca.flag_transparent(selector=selector),
+        baca.note_head_transparent(selector=selector),
+        baca.repeat_tie_transparent(selector=selector),
+        baca.stem_transparent(selector=selector),
         ]

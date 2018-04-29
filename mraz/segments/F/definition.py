@@ -22,7 +22,7 @@ accumulator(
         'rh_v1_i',
         [17, 23],
         baca.beam_everything(),
-        baca.marcati(),
+        baca.marcato(),
         extend_beam=True,
         ),
     baca.nest('2/16'),
@@ -40,7 +40,7 @@ accumulator(
         'rh_v2_i',
         [12, 14],
         baca.beam_everything(),
-        baca.accents(),
+        baca.accent(),
         extend_beam=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -56,7 +56,7 @@ accumulator(
         'rh_v1_i',
         [30, 31],
         baca.beam_everything(),
-        baca.marcati(),
+        baca.marcato(),
         ),
     baca.nest('1/16'),
     baca.register(15, 15+10),
@@ -70,7 +70,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [13, 17, 17, 27],
-        baca.accents(),
+        baca.accent(),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -86,7 +86,7 @@ accumulator(
         'rh_v1_i',
         [21],
         baca.beam_everything(),
-        baca.marcati(),
+        baca.marcato(),
         extend_beam=True,
         ),
     baca.nest('1/16'),
@@ -101,7 +101,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [12, 22, 19, 29],
-        baca.accents(),
+        baca.accent(),
         baca.beam_everything(),
         extend_beam=True,
         ),
@@ -119,7 +119,7 @@ accumulator(
         'rh_v1_i',
         [20, 29],
         baca.beam_everything(),
-        baca.marcati(),
+        baca.marcato(),
         ),
     baca.nest('1/16'),
     baca.register(19, 19+10),
@@ -132,7 +132,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [21, 27, 24],
-        baca.accents(),
+        baca.accent(),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -150,7 +150,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [17],
-        baca.accents(),
+        baca.accent(),
         baca.beam_everything(),
         extend_beam=True,
         ),
@@ -168,7 +168,7 @@ accumulator(
         'rh_v1_i',
         [30, 34, 37],
         baca.beam_everything(),
-        baca.marcati(),
+        baca.marcato(),
         ),
     baca.nest('2/16'),
     baca.register(23, 23+10),
@@ -182,7 +182,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [26, 32],
-        baca.accents(),
+        baca.accent(),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -221,17 +221,17 @@ accumulator(
         baca.lt(3),
         ),
     baca.dynamic('pp'),
-    baca.dynamics_down(),
+    baca.dynamic_down(),
     baca.imbricate(
         'lh_v5_i',
         [11, 18, 24, 26],
         baca.beam_everything(),
-        baca.staccati(),
+        baca.staccato(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-2/16'),
     baca.register(0, 0+16),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
     )
@@ -268,7 +268,7 @@ accumulator(
         'lh_v5_i',
         [9, 16, 20, 25],
         baca.beam_everything(),
-        baca.staccati(),
+        baca.staccato(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
     baca.nest('-2/16'),
@@ -325,8 +325,8 @@ maker(
 maker(
     'rh_v1',
     baca.beam_positions(10),
-    baca.dynamics_up(),
-    baca.stems_up(),
+    baca.dynamic_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -341,15 +341,15 @@ maker(
 
 maker(
     'rh_v1_i',
-    baca.scripts_down(),
+    baca.script_down(),
     )
 
 maker(
     'rh_v2',
     baca.beam_positions(-4.5),
-    baca.dynamics_down(),
-    baca.slurs_up(),
-    baca.stems_down(),
+    baca.dynamic_down(),
+    baca.slur_up(),
+    baca.stem_down(),
     )
 
 maker(
@@ -369,8 +369,8 @@ maker(
 
 maker(
     'rh_v2_i',
-    baca.scripts_up(),
-    baca.stems_up(),
+    baca.script_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -385,14 +385,14 @@ maker(
 
 maker(
     'lh_v4',
-    baca.scripts_down(),
-    baca.stems_down(),
+    baca.script_down(),
+    baca.stem_down(),
     )
 
 maker(
     'lh_v4_i',
-    baca.scripts_up(),
-    baca.stems_up(),
+    baca.script_up(),
+    baca.stem_up(),
     )
 
 maker(
@@ -402,13 +402,13 @@ maker(
 
 maker(
     'lh_v5',
-    baca.scripts_down(),
-    baca.stems_down(),
+    baca.script_down(),
+    baca.stem_down(),
     )
 
 maker(
     'lh_v5_i',
-    baca.scripts_up(),
-    baca.stems_up(),
+    baca.script_up(),
+    baca.stem_up(),
     baca.beam_positions(9),
     )
