@@ -546,7 +546,7 @@ accumulator(
         baca.beam_everything(),
         baca.dynamic('mp'),
         baca.register(22, 36),
-        baca.staccato(),
+        baca.staccato(baca.pheads()),
         hocket=True,
         by_pitch_class=True,
         ),
@@ -578,7 +578,7 @@ accumulator(
         [5, 6, 6],
         baca.beam_everything(),
         baca.register(22, 36),
-        baca.staccato(),
+        baca.staccato(baca.pheads()),
         by_pitch_class=True,
         hocket=True,
         ),
@@ -601,7 +601,7 @@ accumulator(
         [9, 10, 10, 1, 0],
         baca.beam_everything(),
         baca.register(22, 36),
-        baca.staccato(),
+        baca.staccato(baca.pheads()),
         by_pitch_class=True,
         hocket=True,
         ),
@@ -998,7 +998,7 @@ maker(
 maker(
     'lh_v5_i',
     baca.script_up(),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.stem_up(),
     )
 

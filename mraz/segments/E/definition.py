@@ -204,7 +204,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_down(),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     figure_name='rh-2 2.2.1',
     )
 
@@ -214,7 +214,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     figure_name='rh-2 2.2.2',
     )
 
@@ -224,7 +224,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     figure_name='rh-2 2.2.3',
     )
 
@@ -234,7 +234,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     figure_name='rh-2 2.2.4',
     )
 
@@ -244,7 +244,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     figure_name='rh-2 2.2.5',
     )
 
@@ -503,7 +503,7 @@ maker(
 maker(
     ('lh_v4', (2, -1)),
     baca.script_up(),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.tenuto(),
     )
 

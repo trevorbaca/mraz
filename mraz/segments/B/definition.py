@@ -49,7 +49,7 @@ accumulator(
     baca.dynamic_text_x_offset(0),
     baca.dynamic_down(),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.3',
     )
@@ -82,7 +82,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.6',
     )
@@ -129,7 +129,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.10',
     )
