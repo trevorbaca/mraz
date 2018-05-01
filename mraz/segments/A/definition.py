@@ -268,7 +268,7 @@ maker(
     'lh_v6',
     baca.script_down(),
     baca.stem_down(),
-    baca.tenuto(),
+    baca.tenuto(baca.pheads()),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
     )
