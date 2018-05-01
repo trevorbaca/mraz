@@ -45,7 +45,7 @@ accumulator(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(),
+    baca.tenuto(baca.pheads()),
     baca.tuplet_bracket_down(),
     counts=[4, -4],
     figure_name='rh-3 5.1.1',
@@ -504,7 +504,7 @@ maker(
     ('lh_v4', (2, -1)),
     baca.script_up(),
     baca.staccato(baca.pheads()),
-    baca.tenuto(),
+    baca.tenuto(baca.pheads()),
     )
 
 maker(
