@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
     baca.flags(),
@@ -487,7 +487,7 @@ maker(
 
 maker(
     ('rh_v2', (2, 8)),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.beam_positions(10.5),
     baca.script_up(),
     baca.stem_up(),

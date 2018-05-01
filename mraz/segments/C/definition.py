@@ -888,7 +888,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
     baca.flags(),

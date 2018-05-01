@@ -40,7 +40,7 @@ accumulator(
         'rh_v2_i',
         [12, 14],
         baca.beam_everything(),
-        baca.accent(),
+        baca.accent(baca.pheads()),
         extend_beam=True,
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -70,7 +70,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [13, 17, 17, 27],
-        baca.accent(),
+        baca.accent(baca.pheads()),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -101,7 +101,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [12, 22, 19, 29],
-        baca.accent(),
+        baca.accent(baca.pheads()),
         baca.beam_everything(),
         extend_beam=True,
         ),
@@ -132,7 +132,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [21, 27, 24],
-        baca.accent(),
+        baca.accent(baca.pheads()),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
@@ -150,7 +150,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [17],
-        baca.accent(),
+        baca.accent(baca.pheads()),
         baca.beam_everything(),
         extend_beam=True,
         ),
@@ -182,7 +182,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [26, 32],
-        baca.accent(),
+        baca.accent(baca.pheads()),
         baca.beam_everything(),
         ),
     baca.map(baca.slur(), baca.tuplets()),
