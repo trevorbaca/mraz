@@ -40,7 +40,7 @@ accumulator(
     baca.dynamic('ff'),
     baca.marcato(baca.pheads()),
     baca.script_up(),
-    baca.up_arpeggio(),
+    baca.up_arpeggio(baca.pheads()),
     counts=[12],
     figure_name='rh-2 4.1.1',
     )
@@ -773,7 +773,7 @@ accumulator(
     baca.anchor_to_figure('lh-r 4.5.6'),
     baca.marcato(baca.pheads()),
     baca.script_up(),
-    baca.up_arpeggio(),
+    baca.up_arpeggio(baca.pheads()),
     counts=[24],
     figure_name='rh-2 4.5.3',
     hide_time_signature=True,
@@ -812,7 +812,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(),
-    baca.up_arpeggio(),
+    baca.up_arpeggio(baca.pheads()),
     baca.marcato(baca.pheads()),
     baca.resume(),
     baca.script_up(),
@@ -823,7 +823,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(),
-    baca.up_arpeggio(),
+    baca.up_arpeggio(baca.pheads()),
     baca.marcato(baca.pheads()),
     baca.script_up(),
     counts=[16],
@@ -833,7 +833,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(exhausted=True),
-    baca.up_arpeggio(),
+    baca.up_arpeggio(baca.pheads()),
     baca.marcato(baca.pheads()),
     baca.script_up(),
     counts=[16],
