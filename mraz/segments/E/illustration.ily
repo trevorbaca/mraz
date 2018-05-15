@@ -1293,9 +1293,9 @@ E_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             c'''8
-            -\accent                                             %! IC
             \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
             \fff                                                 %! SM8:REDUNDANT_DYNAMIC:SM37
+            -\accent                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1401,8 +1401,8 @@ E_RHVoiceII = {
                 \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 af'!8
-                -\accent                                         %! IC
                 \fff                                             %! SM8:REDUNDANT_DYNAMIC:IC
+                -\accent                                         %! IC
                 
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 1                      %! SM35
@@ -1554,8 +1554,8 @@ E_RHVoiceII = {
                 \set stemRightBeamCount = 1                      %! SM35
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 fs''!8
-                -\accent                                         %! IC
                 \fff                                             %! SM8:REDUNDANT_DYNAMIC:IC
+                -\accent                                         %! IC
                 
                 s8
                 
@@ -1759,8 +1759,8 @@ E_RHVoiceII = {
             \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs!16
-            -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            -\staccato                                           %! IC
             [
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2648,8 +2648,8 @@ E_RHVoiceIII = {
             \ottava #1                                           %! SC
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             a''4
-            -\tenuto                                             %! IC
             \mf                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3900,9 +3900,9 @@ E_LHVoiceIV = {
             
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             b'8.
+            \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
             (                                                    %! SC
             
             r8.
@@ -3955,9 +3955,9 @@ E_LHVoiceIV = {
             
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             af'!8.
+            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             (                                                    %! SC
             
             r16
@@ -4208,9 +4208,9 @@ E_LHVoiceIV = {
             
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             cs'!8
+            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \p                                                   %! SM8:REDUNDANT_DYNAMIC:IC
             [
             (                                                    %! SC
             

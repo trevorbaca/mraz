@@ -2552,8 +2552,8 @@ C_RHVoiceI = {
             % [C RHVoiceI measure 66]                            %! SM4
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef''''!1..
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2877,9 +2877,9 @@ C_RHVoiceII = {
             \arpeggioArrowUp                                     %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
+            \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
             -\marcato                                            %! IC
             \arpeggio                                            %! IC
-            \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2920,8 +2920,8 @@ C_RHVoiceII = {
             \set stemRightBeamCount = 1
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef'''!8
-            -\staccato                                           %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\staccato                                           %! IC
             
             s8
             
@@ -3511,8 +3511,8 @@ C_RHVoiceII = {
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
-            -\marcato                                            %! IC
             \arpeggio                                            %! IC
+            -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3539,8 +3539,8 @@ C_RHVoiceII = {
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
             <a g' af'! b' cs''! f'' ef'''! c''''>1
-            -\marcato                                            %! IC
             \arpeggio                                            %! IC
+            -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3567,8 +3567,8 @@ C_RHVoiceII = {
             \arpeggioArrowUp                                     %! IC
             \once \override Script.direction = #up               %! OC1
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
-            -\marcato                                            %! IC
             \arpeggio                                            %! IC
+            -\marcato                                            %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3601,8 +3601,8 @@ C_RHVoiceII = {
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             c'''8
-            -\accent                                             %! IC
             \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            -\accent                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3797,9 +3797,9 @@ C_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:SM37
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef!8
-            -\tenuto                                             %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:SM37
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -4063,8 +4063,8 @@ C_RHVoiceIII = {
             \override Stem.direction = #up                       %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef''!8
-            -\tenuto                                             %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
             
             r4
             
@@ -4096,8 +4096,8 @@ C_RHVoiceIII = {
             \ottava #1                                           %! SC
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             a''4
-            -\tenuto                                             %! IC
             \mf                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -5640,8 +5640,8 @@ C_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             af!8.
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
+            -\tenuto                                             %! IC
             
             r16
             
@@ -5751,8 +5751,8 @@ C_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             <g b f' fs'! a'>8.
-            -\marcato                                            %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\marcato                                            %! IC
             
             r2
         }
@@ -5784,8 +5784,8 @@ C_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af!8.
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
             
             r16
             
@@ -5852,8 +5852,8 @@ C_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             <g b f' fs'! a'>8.
-            -\marcato                                            %! IC
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\marcato                                            %! IC
             
             r2
         }
@@ -6577,8 +6577,8 @@ C_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af!8.
-            -\tenuto                                             %! IC
             \p                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
             
             r16
             

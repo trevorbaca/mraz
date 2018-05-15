@@ -1736,8 +1736,8 @@ A_LHVoiceVI = {
             \override Stem.direction = #down                     %! OC1
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             af,,!4
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:REDUNDANT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
