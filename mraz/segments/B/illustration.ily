@@ -803,8 +803,8 @@ B_RHVoiceI = {
             \ottava #1                                           %! SC
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             ef''''!1..
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -964,8 +964,8 @@ B_RHVoiceII = {
             \dynamicDown                                         %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs!16
-            -\staccato                                           %! IC
             \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            -\staccato                                           %! IC
             [
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1048,8 +1048,8 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             fs!16
-            -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
+            -\staccato                                           %! IC
             [
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -1161,8 +1161,8 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             fs!16
-            -\staccato                                           %! IC
             \ppp                                                 %! SM8:REDUNDANT_DYNAMIC:IC
+            -\staccato                                           %! IC
             [
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
@@ -2177,8 +2177,8 @@ B_LHVoiceV = {
             
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             af!8.
-            -\tenuto                                             %! IC
             \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
             
             r16
             

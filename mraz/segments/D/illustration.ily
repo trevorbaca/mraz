@@ -298,9 +298,9 @@ D_RHVoiceIII = {
             \override TupletBracket.direction = #up              %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs'''!8
+            \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -679,8 +679,8 @@ D_LHVoiceIV = {
             \override TupletBracket.staff-padding = #3           %! OC1
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             g'16
-            -\tenuto                                             %! IC
             \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP

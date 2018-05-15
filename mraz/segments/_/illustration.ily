@@ -920,8 +920,8 @@ i_RHVoiceII = {
             \dynamicUp                                           %! IC
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             c'''8
-            -\accent                                             %! IC
             \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
+            -\accent                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1037,9 +1037,9 @@ i_RHVoiceIII = {
             \override TupletBracket.staff-padding = #8           %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             bf'''!8
+            \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
             -\staccato                                           %! IC
             -\tenuto                                             %! IC
-            \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1129,8 +1129,8 @@ i_RHVoiceIII = {
             \ottava #1                                           %! SC
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             a''4
-            -\tenuto                                             %! IC
             \mf                                                  %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                             %! IC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
