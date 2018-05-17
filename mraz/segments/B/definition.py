@@ -49,7 +49,7 @@ accumulator(
     baca.dynamic_text_x_offset(0),
     baca.dynamic_down(),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.3',
     )
@@ -82,7 +82,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.6',
     )
@@ -116,7 +116,7 @@ accumulator(
     baca.register(-6, 6),
     baca.rests_before([12]),
     baca.rest_up(),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     counts=[3, -1],
     figure_name='b.2.9',
     hide_time_signature=True,
@@ -129,7 +129,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.10',
     )
@@ -139,7 +139,7 @@ accumulator(
     collections_4['stage 5']['rh'][0],
     baca.dynamic('f'),
     baca.register(36),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     counts=[28],
     figure_name='b.2.11',
     )
@@ -148,7 +148,7 @@ accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][1],
     baca.register(36),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     counts=[24],
     figure_name='b.2.12',
     )
@@ -158,7 +158,7 @@ accumulator(
     collections_4['stage 5']['rh'][2],
     baca.allow_octaves(),
     baca.register(36),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     counts=[16],
     figure_name='b.2.13',
     hide_time_signature=True,

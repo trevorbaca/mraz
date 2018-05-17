@@ -3,7 +3,8 @@ import baca
 
 
 class SilverDesignMaker(abjad.AbjadObject):
-    r'''Silver design-maker.
+    r"""
+    Silver design-maker.
 
     >>> import mraz
 
@@ -595,7 +596,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \override Score.BarLine.transparent = ##f
             }
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -605,16 +606,18 @@ class SilverDesignMaker(abjad.AbjadObject):
     ### SPECIAL METHODS ###
 
     def __call__(self):
-        r'''Calls silver design-maker.
+        """
+        Calls silver design-maker.
 
         Returns pitch-class tree.
-        '''
+        """
         return self.make_stage_07()
 
     ### PUBLIC METHODS ###
 
     def make_stage_00(self):
-        r'''Makes stage zero.
+        r"""
+        Makes stage zero.
 
         ..  container:: example
 
@@ -684,7 +687,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         J = baca.PitchClassSegment([4, 6, 10])
         K = baca.PitchClassSegment([9, 7, 8, 11, 9, 1])
         L = baca.PitchClassSegment([0, 2, 3, 5])
@@ -696,7 +699,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return cells
 
     def make_stage_01(self):
-        r'''Makes stage one.
+        r"""
+        Makes stage one.
 
         ..  container:: example
 
@@ -1311,7 +1315,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_00 = self.make_stage_00()
         trees = stage_00.iterate(level=-2)
         segments = []
@@ -1327,7 +1331,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_02(self):
-        r'''Makes stage two.
+        r"""
+        Makes stage two.
 
         ..  container:: example
 
@@ -1726,7 +1731,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_01_tree = self.make_stage_01()
         trees = stage_01_tree.iterate(level=-2)
         segments = []
@@ -1761,7 +1766,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_03(self):
-        r'''Makes stage three.
+        r"""
+        Makes stage three.
 
         ..  container:: example
 
@@ -2160,7 +2166,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_02_tree = self.make_stage_02()
         trees = stage_02_tree.iterate(level=-2)
         segments = []
@@ -2179,7 +2185,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_04(self):
-        r'''Makes stage four.
+        r"""
+        Makes stage four.
 
         ..  container:: example
 
@@ -2578,7 +2585,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_03_tree = self.make_stage_03()
         trees = stage_03_tree.iterate(level=-2)
         segments = []
@@ -2609,7 +2616,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_05(self):
-        r'''Makes stage five.
+        r"""
+        Makes stage five.
 
         ..  container:: example
 
@@ -2968,7 +2976,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_04_tree = self.make_stage_04()
         trees = stage_04_tree.iterate(level=-2)
         segments = []
@@ -3006,7 +3014,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_06(self):
-        r'''Makes stage six.
+        r"""
+        Makes stage six.
 
         ..  container:: example
 
@@ -3597,7 +3606,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 }
 
         Returns pitch-class tree.
-        '''
+        """
         stage_05_tree = self.make_stage_05()
         trees = stage_05_tree.iterate(level=-2)
         segments = []
@@ -3627,7 +3636,8 @@ class SilverDesignMaker(abjad.AbjadObject):
         return tree
 
     def make_stage_07(self):
-        r'''Makes stage seven.
+        r"""
+        Makes stage seven.
 
         ..  container:: example
 
@@ -4217,7 +4227,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \override Score.BarLine.transparent = ##f
                 }
 
-        '''
+        """
         stage_06_tree = self.make_stage_06()
         trees = stage_06_tree.iterate(level=-2)
         segments = []

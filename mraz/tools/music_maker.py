@@ -4,7 +4,8 @@ from abjad import rhythmmakertools as rhythmos
 
 
 def music_maker():
-    r'''Makes Mráz music-maker.
+    r"""
+    Makes Mráz music-maker.
 
     >>> import mraz
 
@@ -438,7 +439,7 @@ def music_maker():
             >>
 
     Returns music-maker.
-    '''
+    """
     import mraz
     voice_names = []
     score_template = mraz.ScoreTemplate()
