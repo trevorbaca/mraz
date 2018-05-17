@@ -2,10 +2,11 @@ import abjad
 
 
 class Gallery(abjad.AbjadObject):
-    r'''Gallery.
+    """
+    Gallery.
 
     >>> import mraz
 
-    '''
+    """
 
     pass

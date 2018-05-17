@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.accent(baca.pheads()),
+    baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
     baca.flags(),
@@ -45,7 +45,7 @@ accumulator(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_down(),
     counts=[4, -4],
     figure_name='rh-3 5.1.1',
@@ -204,7 +204,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_down(),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.1',
     )
 
@@ -214,7 +214,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.2',
     )
 
@@ -224,7 +224,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.3',
     )
 
@@ -234,7 +234,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.4',
     )
 
@@ -244,7 +244,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.map(baca.slur(), baca.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.5',
     )
 
@@ -487,7 +487,7 @@ maker(
 
 maker(
     ('rh_v2', (2, 8)),
-    baca.accent(baca.pheads()),
+    baca.accent(selector=baca.pheads()),
     baca.beam_positions(10.5),
     baca.script_up(),
     baca.stem_up(),
@@ -503,8 +503,8 @@ maker(
 maker(
     ('lh_v4', (2, -1)),
     baca.script_up(),
-    baca.staccato(baca.pheads()),
-    baca.tenuto(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
+    baca.tenuto(selector=baca.pheads()),
     )
 
 maker(

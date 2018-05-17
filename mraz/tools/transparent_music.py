@@ -2,8 +2,9 @@ import baca
 
 
 def transparent_music(selector):
-    r'''Makes transparent music.
-    '''
+    """
+    Makes transparent music.
+    """
     return [
         baca.no_ledgers(selector=selector),
         baca.accidental_transparent(selector=selector),

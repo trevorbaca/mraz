@@ -2,7 +2,8 @@ import baca
 
 
 class MusicAccumulator(baca.MusicAccumulator):
-    r'''Music-accumulator.
+    r"""
+    Music-accumulator.
 
     >>> import mraz
 
@@ -86,7 +87,7 @@ class MusicAccumulator(baca.MusicAccumulator):
                 }
             >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -189,6 +190,7 @@ class MusicAccumulator(baca.MusicAccumulator):
 
     @property
     def music_maker(self):
-        r'''Gets music-maker.
-        '''
+        """
+        Gets music-maker.
+        """
         return self._music_maker

@@ -4,8 +4,9 @@ import mraz
 
 
 class CollectionMaker(object):
-    r'''Collection maker.
-    '''
+    """
+    Collection maker.
+    """
 
     ### CLASS VARIABLES ###
 
@@ -25,8 +26,9 @@ class CollectionMaker(object):
     ### PUBLIC METHODS ###
 
     def make_segment_2_collections(self):
-        r'''Makes segment 2 collections.
-        '''
+        """
+        Makes segment 2 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -57,8 +59,9 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_4_collections(self):
-        r'''Makes segment 4 collections.
-        '''
+        """
+        Makes segment 4 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -140,8 +143,9 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_5_collections(self):
-        r'''Makes segment 5 collections.
-        '''
+        """
+        Makes segment 5 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -182,8 +186,9 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_6_collections(self):
-        r'''Makes segment 6 collections.
-        '''
+        """
+        Makes segment 6 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -226,8 +231,9 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_7_collections(self):
-        r'''Make segment 7 collections.
-        '''
+        """
+        Make segment 7 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
@@ -292,8 +298,9 @@ class CollectionMaker(object):
         return collections
 
     def make_segment_8_collections(self):
-        r'''Makes segment 8 collections.
-        '''
+        """
+        Makes segment 8 collections.
+        """
         collections = {
             'stage 1': {},
             'stage 2': {},
