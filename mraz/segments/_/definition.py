@@ -39,7 +39,10 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.ottava(),
     baca.register(10, 36),
-    baca.map(baca.slur(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.slur(),
+        ),
     baca.slur_up(),
     figure_name='b.1.2',
     time_treatments=[abjad.Duration(1, 4)],
