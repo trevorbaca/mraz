@@ -1746,7 +1746,7 @@ class SilverDesignMaker(abjad.AbjadObject):
             cyclic=True,
             overhang=True,
             )
-        #fused_segment_names = baca.Cursor(source=['Q', 'R', 'S'])
+        #fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
         segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
@@ -3622,7 +3622,7 @@ class SilverDesignMaker(abjad.AbjadObject):
         new_segments = []
         segments = abjad.sequence(segments)
         parts = segments.partition_by_ratio_of_lengths(5 * [1])
-        indices = baca.Cursor(source=[0, 5, 9, 10, 11])
+        indices = baca.Cursor([0, 5, 9, 10, 11])
         for i, part in enumerate(parts):
             index = indices.next()[0] % 12
             for segment in part:

@@ -54,7 +54,7 @@ class CollectionMaker(object):
             [6, 5, 5, 4, 4], overhang=abjad.Exact)
         assert measures.sum() == stage_2_segments
         measures = [_.arpeggiate_up() for _ in measures]
-        measures = baca.Cursor(source=measures, singletons=True)
+        measures = baca.Cursor(measures, singletons=True)
         collections['stage 2']['rh'] = measures
         return collections
 
@@ -96,11 +96,7 @@ class CollectionMaker(object):
         chords = 10 * [chord]
         last = stages[1].join()[0]
         chords.append(last)
-        stage_2_segments = baca.Cursor(
-            source=chords,
-            cyclic=False,
-            singletons=True,
-            )
+        stage_2_segments = baca.Cursor(chords, cyclic=False, singletons=True)
         assert len(stage_4_segments) == 2
         rh, lh = stage_4_segments.partition([1, 1], overhang=abjad.Exact)
         lh = lh.remove_duplicates(level=-1)
@@ -273,10 +269,7 @@ class CollectionMaker(object):
         rh_segment_lists = [
             baca.CollectionList(_) for _ in rh_segment_lists
             ]
-        rh_segment_lists = baca.Cursor(
-            source=rh_segment_lists,
-            singletons=True,
-            )
+        rh_segment_lists = baca.Cursor(rh_segment_lists, singletons=True)
         collections['stage 1']['rh'] = rh_segment_lists
         all_lh_segments = []
         for i in range(5):
@@ -294,10 +287,7 @@ class CollectionMaker(object):
         lh_segment_lists = [
             baca.CollectionList(_) for _ in lh_segment_lists
             ]
-        lh_segment_lists = baca.Cursor(
-            source=lh_segment_lists,
-            singletons=True,
-            )
+        lh_segment_lists = baca.Cursor(lh_segment_lists, singletons=True)
         collections['stage 1']['lh'] = lh_segment_lists
         return collections
 
