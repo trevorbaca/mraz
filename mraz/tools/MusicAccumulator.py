@@ -175,7 +175,7 @@ class MusicAccumulator(baca.MusicAccumulator):
                 assert not hasattr(specifier, 'voice_name'), repr(specifier)
                 assert not hasattr(specifier, 'remote_voice_name'), repr(
                     specifier)
-        return super(MusicAccumulate, self).__call__(
+        return super(MusicAccumulator, self).__call__(
             self.music_maker(
                 voice_name,
                 collections,
