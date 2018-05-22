@@ -48,7 +48,10 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
     baca.dynamic_down(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.3',
@@ -81,7 +84,10 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.6',
@@ -128,7 +134,10 @@ accumulator(
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
     figure_name='b.2.10',
@@ -170,7 +179,10 @@ accumulator(
     baca.anchor_to_figure('b.2.13'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
-    baca.map(baca.slur(), baca.runs()),
+    baca.map(
+        baca.runs(),
+        baca.slur(),
+        ),
     baca.only_segment(
         baca.span_bar_extra_offset((-0.75, 0)),
         ),
@@ -305,7 +317,10 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.map(baca.repeat_tie(), baca.qruns()),
+    baca.map(
+        baca.qruns(),
+        baca.repeat_tie(),
+        ),
     *mraz.clean_up_repeat_ties(),
     )
 

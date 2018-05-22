@@ -68,7 +68,10 @@ accumulator(
         extend_beam=True,
         hocket=True,
         ),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -95,7 +98,10 @@ accumulator(
         baca.beam_everything(),
         hocket=True,
         ),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tie_repeat_pitches(),
@@ -152,7 +158,10 @@ accumulator(
         extend_beam=True,
         hocket=True,
         ),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.nest('-3/8'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -179,7 +188,10 @@ accumulator(
         baca.beam_everything(),
         hocket=True,
         ),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.nest('-3/8'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -203,7 +215,10 @@ accumulator(
     baca.beam_positions(-8),
     baca.dynamic('ppp'),
     baca.dynamic_down(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.1',
     )
@@ -213,7 +228,10 @@ accumulator(
     collections_2['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.2',
     )
@@ -223,7 +241,10 @@ accumulator(
     collections_2['stage 2']['rh'].next(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.3',
     )
@@ -233,7 +254,10 @@ accumulator(
     collections_2['stage 2']['rh'].next(),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.4',
     )
@@ -243,7 +267,10 @@ accumulator(
     collections_2['stage 2']['rh'].next(exhausted=True),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.5',
     )
@@ -313,7 +340,10 @@ accumulator(
         baca.dynamic('fff'),
         hocket=True,
         ),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -331,7 +361,10 @@ accumulator(
     baca.clef('bass'),
     baca.dynamic('p'),
     baca.flags(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(6, -24),
     baca.rests_around([8, 8, 8], [6]),
     baca.slur_down(),
@@ -346,7 +379,10 @@ accumulator(
     baca.anchor_to_figure('rh-3 5.2.5'),
     baca.dynamic('p'),
     baca.flags(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(6, -24),
     baca.rests_before([8, 8]),
     baca.slur_down(),
@@ -359,7 +395,10 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.flags(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(6, -24),
     counts=[3, -1],
     figure_name='lh-4 5.2.3',
@@ -371,7 +410,10 @@ accumulator(
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.7'),
     baca.flags(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(0, -24),
     counts=[3, -1],
     figure_name='lh-4 5.2.4',
@@ -382,7 +424,10 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(0, -24),
     counts=[3],
     figure_name='lh-4 5.2.5',
@@ -393,7 +438,10 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(0, -24),
     counts=[3],
     figure_name='lh-4 5.2.6',
@@ -404,7 +452,10 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.beam_divisions(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(-6, -48),
     baca.rests_around([3], [4, 4, 4]),
     counts=[3],
@@ -418,7 +469,10 @@ accumulator(
     baca.anchor_to_figure('rh-3 5.2.9'),
     baca.beam_divisions(),
     baca.dynamic('p'),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(-6, -36),
     baca.rests_before([14]),
     counts=[2],
@@ -430,7 +484,10 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(exhausted=True),
     baca.beam_divisions(),
-    baca.map(baca.slur(), baca.tuplets()),
+    baca.map(
+        baca.tuplets(),
+        baca.slur(),
+        ),
     baca.register(-6, -36),
     counts=[2],
     figure_name='lh-4 5.2.9',
@@ -509,7 +566,10 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.map(baca.repeat_tie(), baca.qruns()),
+    baca.map(
+        baca.qruns(),
+        baca.repeat_tie(),
+        ),
     baca.dots_transparent(),
     )
 
