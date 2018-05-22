@@ -131,7 +131,6 @@ class MusicAccumulator(baca.MusicAccumulator):
         time_treatments=None,
         tuplet_denominator=None,
         tuplet_force_fraction=None):
-        superclass = super(MusicAccumulator, self)
         keywords = {
             'allow_repeats': allow_repeats,
             'color_unregistered_pitches': color_unregistered_pitches,
@@ -176,7 +175,7 @@ class MusicAccumulator(baca.MusicAccumulator):
                 assert not hasattr(specifier, 'voice_name'), repr(specifier)
                 assert not hasattr(specifier, 'remote_voice_name'), repr(
                     specifier)
-        return superclass.__call__(
+        return super(MusicAccumulate, self).__call__(
             self.music_maker(
                 voice_name,
                 collections,
