@@ -10,7 +10,7 @@ class MusicAccumulator(baca.MusicAccumulator):
     ..  container:: example
 
         >>> score_template = mraz.ScoreTemplate()
-        >>> accumulator = mraz.MusicAccumulator(score_template=score_template)
+        >>> accumulator = mraz.MusicAccumulator(score_template)
         >>> accumulator(
         ...     'RHVoiceI',
         ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
@@ -101,8 +101,7 @@ class MusicAccumulator(baca.MusicAccumulator):
 
     def __init__(self, score_template):
         import mraz
-        superclass = super(MusicAccumulator, self)
-        superclass.__init__(score_template=score_template)
+        super(MusicAccumulator, self).__init__(score_template)
         self._music_maker = mraz.music_maker()
 
     ### SPECIAL METHODS ###
