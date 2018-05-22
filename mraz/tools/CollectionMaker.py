@@ -54,7 +54,7 @@ class CollectionMaker(object):
             [6, 5, 5, 4, 4], overhang=abjad.Exact)
         assert measures.sum() == stage_2_segments
         measures = [_.arpeggiate_up() for _ in measures]
-        measures = baca.Cursor(measures, singletons=True)
+        measures = baca.Cursor(source=measures, singletons=True)
         collections['stage 2']['rh'] = measures
         return collections
 
@@ -96,7 +96,11 @@ class CollectionMaker(object):
         chords = 10 * [chord]
         last = stages[1].join()[0]
         chords.append(last)
-        stage_2_segments = baca.Cursor(chords, cyclic=False, singletons=True)
+        stage_2_segments = baca.Cursor(
+            source=chords,
+            cyclic=False,
+            singletons=True,
+            )
         assert len(stage_4_segments) == 2
         rh, lh = stage_4_segments.partition([1, 1], overhang=abjad.Exact)
         lh = lh.remove_duplicates(level=-1)
