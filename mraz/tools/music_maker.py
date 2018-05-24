@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def music_maker():
@@ -448,12 +448,12 @@ def music_maker():
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
-        rhythmos.BeamSpecifier(
+        rmakers.BeamSpecifier(
             beam_divisions_together=True,
             ),
         baca.PitchFirstRhythmCommand(
             rhythm_maker=baca.PitchFirstRhythmMaker(
-                talea=rhythmos.Talea(
+                talea=rmakers.Talea(
                     counts=[1],
                     denominator=16,
                     ),
