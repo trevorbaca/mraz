@@ -2927,40 +2927,38 @@ F_LHResonanceVoice = {
     \once \override TextScript.extra-offset = #'(-24 . -8)
     s1 * 1/8
     _ \markup {                                                  %! SCORE2
-        \whiteout                                                %! SCORE2
-            \upright                                             %! SCORE2
-                \override                                        %! SCORE2
-                    #'(font-name . "Palatino")                   %! SCORE2
-                    \with-color                                  %! SCORE2
-                        #black                                   %! SCORE2
-                        \right-column                            %! SCORE2
+        \override                                                %! SCORE2
+            #'(font-name . "Palatino")                           %! SCORE2
+            \with-color                                          %! SCORE2
+                #black                                           %! SCORE2
+                \right-column                                    %! SCORE2
+                    {                                            %! SCORE2
+                        \line                                    %! SCORE2
                             {                                    %! SCORE2
-                                \line                            %! SCORE2
-                                    {                            %! SCORE2
-                                        Madison,                 %! SCORE2
-                                        WI                       %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        –                        %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        Los                      %! SCORE2
-                                        Angeles,                 %! SCORE2
-                                        CA.                      %! SCORE2
-                                    }                            %! SCORE2
-                                \line                            %! SCORE2
-                                    {                            %! SCORE2
-                                        December                 %! SCORE2
-                                        2016                     %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        –                        %! SCORE2
-                                        \hspace                  %! SCORE2
-                                            #0.75                %! SCORE2
-                                        March                    %! SCORE2
-                                        2017.                    %! SCORE2
-                                    }                            %! SCORE2
+                                Madison,                         %! SCORE2
+                                WI                               %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                –                                %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                Los                              %! SCORE2
+                                Angeles,                         %! SCORE2
+                                CA.                              %! SCORE2
                             }                                    %! SCORE2
+                        \line                                    %! SCORE2
+                            {                                    %! SCORE2
+                                December                         %! SCORE2
+                                2016                             %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                –                                %! SCORE2
+                                \hspace                          %! SCORE2
+                                    #0.75                        %! SCORE2
+                                March                            %! SCORE2
+                                2017.                            %! SCORE2
+                            }                                    %! SCORE2
+                    }                                            %! SCORE2
         }                                                        %! SCORE2
     
 }
