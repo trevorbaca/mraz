@@ -644,9 +644,7 @@ i_RHVoiceI = {
                     {
                         \line                                    %! IC
                             {                                    %! IC
-                                \whiteout                        %! IC
-                                    \upright                     %! IC
-                                        "(ottava brackets always govern all voices on staff)" %! IC
+                                "(ottava brackets always govern all voices on staff)" %! IC
                             }                                    %! IC
                     %%% \line                                    %! FIGURE_NAME_MARKUP
                     %%%     {                                    %! FIGURE_NAME_MARKUP
