@@ -23,7 +23,7 @@ accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
     baca.allow_octaves(),
-    baca.markups.markup('(ottava brackets always govern all voices on staff)'),
+    baca.markup('(ottava brackets always govern all voices on staff)'),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[16],
