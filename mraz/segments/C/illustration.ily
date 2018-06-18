@@ -3057,8 +3057,8 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             b'16
             [
-            \<                                                   %! HC1
             \f                                                   %! HC1
+            \<                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3175,8 +3175,8 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             ef''!16
             [
-            \<                                                   %! HC1
             \f                                                   %! HC1
+            \<                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3318,8 +3318,8 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             cs''!16
             [
-            \<                                                   %! HC1
             \f                                                   %! HC1
+            \<                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
@@ -3445,8 +3445,8 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
             a''16
             [
-            \<                                                   %! HC1
             \f                                                   %! HC1
+            \<                                                   %! HC1
             (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
