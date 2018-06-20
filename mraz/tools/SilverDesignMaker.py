@@ -1323,7 +1323,8 @@ class SilverDesignMaker(abjad.AbjadObject):
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
             segments.append(segment)
-        segments = baca.helianthate(segments, -1, -1)
+        segments = baca.sequence(segments)
+        segments = segments.helianthate(-1, -1)
         tree = baca.PitchTree(
             item_class=abjad.NumberedPitchClass,
             items=segments,
