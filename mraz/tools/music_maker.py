@@ -102,6 +102,8 @@ def music_maker():
             <BLANKLINE>
                                 % [MusicVoice measure 1]                                   %! SM4
                                 e'16
+                                [
+                                ]
                             }
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
@@ -140,6 +142,8 @@ def music_maker():
             <BLANKLINE>
                                 % [MusicVoice measure 3]                                   %! SM4
                                 b'16
+                                [
+                                ]
                             }
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
