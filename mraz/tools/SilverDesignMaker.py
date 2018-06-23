@@ -29,7 +29,6 @@ class SilverDesignMaker(abjad.AbjadObject):
             {
                 \time 1/8
                 e'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -39,12 +38,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 0 }
+                \startGroup
                 fs'8
                 bf'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -54,6 +53,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 1 }
+                \startGroup
                 g'8
                 af'8
                 b'8
@@ -62,7 +62,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 c'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -72,13 +71,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 2 }
+                \startGroup
                 d'8
                 ef'8
                 f'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -88,6 +87,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 3 }
+                \startGroup
                 cs'8
                 a'8
                 b'8
@@ -96,7 +96,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 d'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -106,13 +105,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 4 }
+                \startGroup
                 ef'8
                 f'8
                 c'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -122,6 +121,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 5 }
+                \startGroup
                 bf'8
                 c'8
                 g'8
@@ -131,7 +131,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -141,12 +140,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 6 }
+                \startGroup
                 ef'8
                 cs'8
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -156,6 +155,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 7 }
+                \startGroup
                 e'8
                 af'8
                 bf'8
@@ -165,7 +165,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -175,12 +174,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 8 }
+                \startGroup
                 a'8
                 b'8
                 \stopGroup
                 s8
                 cs'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -190,6 +189,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 9 }
+                \startGroup
                 g'8
                 ef'8
                 f'8
@@ -199,7 +199,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -209,11 +208,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 10 }
+                \startGroup
                 b'8
                 \stopGroup
                 s8
                 e'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -223,6 +222,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 11 }
+                \startGroup
                 cs'8
                 c'8
                 d'8
@@ -231,7 +231,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 f'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -241,13 +240,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 12 }
+                \startGroup
                 g'8
                 af'8
                 bf'8
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -257,12 +256,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 13 }
+                \startGroup
                 ef'8
                 a'8
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -272,13 +271,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 14 }
+                \startGroup
                 c'8
                 d'8
                 a'8
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -288,12 +287,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 15 }
+                \startGroup
                 cs'8
                 g'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -303,6 +302,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 16 }
+                \startGroup
                 c'8
                 e'8
                 f'8
@@ -312,7 +312,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -322,12 +321,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 17 }
+                \startGroup
                 g'8
                 b'8
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -337,6 +336,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 18 }
+                \startGroup
                 d'8
                 cs'8
                 af'8
@@ -346,7 +346,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -356,12 +355,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 19 }
+                \startGroup
                 b'8
                 g'8
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -371,6 +370,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 20 }
+                \startGroup
                 d'8
                 c'8
                 cs'8
@@ -380,7 +380,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 bf'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -390,12 +389,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 21 }
+                \startGroup
                 ef'8
                 d'8
                 \stopGroup
                 s8
                 c'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -405,11 +404,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 22 }
+                \startGroup
                 af'8
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -419,13 +418,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 23 }
+                \startGroup
                 cs'8
                 c'8
                 bf'8
                 \stopGroup
                 s8
                 af'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -435,12 +434,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 24 }
+                \startGroup
                 d'8
                 e'8
                 \stopGroup
                 s8
                 fs'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -450,6 +449,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 25 }
+                \startGroup
                 a'8
                 g'8
                 b'8
@@ -458,7 +458,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 d'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -468,12 +467,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 26 }
+                \startGroup
                 e'8
                 af'8
                 \stopGroup
                 s8
                 g'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -483,6 +482,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 27 }
+                \startGroup
                 fs'8
                 af'8
                 c'8
@@ -491,7 +491,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 a'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -501,6 +500,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 28 }
+                \startGroup
                 b'8
                 fs'8
                 g'8
@@ -510,7 +510,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 d'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -520,12 +519,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 29 }
+                \startGroup
                 af'8
                 ef'8
                 \stopGroup
                 s8
                 c'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -535,6 +534,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 30 }
+                \startGroup
                 bf'8
                 f'8
                 d'8
@@ -544,7 +544,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 ef'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -554,12 +553,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 31 }
+                \startGroup
                 f'8
                 bf'8
                 \stopGroup
                 s8
                 b'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -569,6 +568,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 32 }
+                \startGroup
                 fs'8
                 g'8
                 a'8
@@ -578,7 +578,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 \stopGroup
                 s8
                 f'8
-                \startGroup
                 ^ \markup {
                     \small
                         \line
@@ -588,6 +587,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     }
                 - \tweak staff-padding #7
                 _ \markup { 33 }
+                \startGroup
                 ef'8
                 c'8
                 \stopGroup
@@ -640,7 +640,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -648,12 +647,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                                     "SC(3-9){0, 2, 6}"
                                 }
                         }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -661,6 +660,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                                     "SC(5-6){0, 1, 2, 4, 6}"
                                 }
                         }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -669,7 +669,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -677,6 +676,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                                     "SC(4-19){0, 2, 3, 5}"
                                 }
                         }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
@@ -723,7 +723,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -733,12 +732,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -748,6 +747,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -756,7 +756,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -766,13 +765,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -782,6 +781,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -790,7 +790,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -800,13 +799,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -816,12 +815,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -831,13 +830,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     f'8
                     c'8
                     d'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -847,12 +846,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -862,6 +861,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -870,7 +870,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -880,12 +879,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -895,6 +894,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -903,7 +903,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -913,13 +912,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     c'8
                     d'8
                     ef'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -929,6 +928,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -937,7 +937,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -947,13 +946,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -963,12 +962,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -978,13 +977,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -994,12 +993,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1009,6 +1008,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     a'8
                     g'8
                     af'8
@@ -1017,7 +1017,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1027,12 +1026,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 18 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1042,6 +1041,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 19 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -1050,7 +1050,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1060,13 +1059,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 20 }
+                    \startGroup
                     f'8
                     c'8
                     d'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1076,6 +1075,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 21 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -1084,7 +1084,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1094,13 +1093,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 22 }
+                    \startGroup
                     c'8
                     d'8
                     ef'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1110,12 +1109,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 23 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1125,13 +1124,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 24 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1141,12 +1140,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 25 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1156,6 +1155,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 26 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -1164,7 +1164,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1174,12 +1173,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 27 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1189,6 +1188,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 28 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -1197,7 +1197,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1207,13 +1206,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 29 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1223,6 +1222,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 30 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -1231,7 +1231,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1241,13 +1240,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 31 }
+                    \startGroup
                     f'8
                     c'8
                     d'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1257,12 +1256,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 32 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1272,13 +1271,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 33 }
+                    \startGroup
                     c'8
                     d'8
                     ef'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1288,12 +1287,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 34 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1303,6 +1302,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 35 }
+                    \startGroup
                     a'8
                     g'8
                     af'8
@@ -1356,7 +1356,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1366,12 +1365,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1381,6 +1380,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -1389,7 +1389,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1399,13 +1398,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1415,6 +1414,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -1423,7 +1423,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1433,13 +1432,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1449,6 +1448,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     bf'8
                     e'8
                     ef'8
@@ -1480,7 +1480,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1490,6 +1489,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -1498,7 +1498,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1508,13 +1507,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1524,12 +1523,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1539,13 +1538,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1555,12 +1554,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1570,6 +1569,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     a'8
                     g'8
                     af'8
@@ -1604,7 +1604,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1614,13 +1613,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1630,12 +1629,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1645,6 +1644,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -1653,7 +1653,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1663,12 +1662,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1678,6 +1677,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -1686,7 +1686,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1696,6 +1695,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
@@ -1791,7 +1791,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1801,12 +1800,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1816,6 +1815,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -1824,7 +1824,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1834,13 +1833,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1850,6 +1849,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -1858,7 +1858,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1868,13 +1867,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1884,6 +1883,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     d'8
                     c'8
                     f'8
@@ -1915,7 +1915,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1925,6 +1924,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -1933,7 +1933,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1943,13 +1942,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1959,12 +1958,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1974,13 +1973,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -1990,12 +1989,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2005,6 +2004,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     bf'8
                     fs'8
                     ef'8
@@ -2039,7 +2039,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2049,13 +2048,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2065,12 +2064,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2080,6 +2079,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -2088,7 +2088,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2098,12 +2097,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2113,6 +2112,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -2121,7 +2121,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2131,6 +2130,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     b'8
                     af'8
                     g'8
@@ -2210,7 +2210,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2220,12 +2219,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2235,6 +2234,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -2243,7 +2243,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2253,13 +2252,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2269,6 +2268,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -2277,7 +2277,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2287,13 +2286,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2303,6 +2302,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     bf'8
                     c'8
                     g'8
@@ -2334,7 +2334,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2344,6 +2343,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -2352,7 +2352,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2362,13 +2361,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2378,12 +2377,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2393,13 +2392,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2409,12 +2408,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2424,6 +2423,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     ef'8
                     g'8
                     af'8
@@ -2458,7 +2458,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2468,13 +2467,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2484,12 +2483,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2499,6 +2498,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -2507,7 +2507,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2517,12 +2516,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2532,6 +2531,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -2540,7 +2540,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -2550,6 +2549,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     c'8
                     g'8
                     af'8
@@ -2641,17 +2641,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -2660,18 +2660,18 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -2680,19 +2680,19 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
+                    \startGroup
                     bf'8
                     c'8
                     g'8
@@ -2702,17 +2702,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     ef'8
                     cs'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     fs'8
                     af'8
                     f'8
@@ -2722,17 +2722,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     d'8
                     bf'8
                     c'8
@@ -2742,17 +2742,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     fs'8
                     \stopGroup
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     cs'8
                     a'8
                     g'8
@@ -2761,44 +2761,44 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     bf'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
+                    \startGroup
                     ef'8
                     g'8
                     af'8
@@ -2808,17 +2808,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     bf'8
                     d'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 18 }
+                    \startGroup
                     f'8
                     e'8
                     b'8
@@ -2828,17 +2828,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 19 }
+                    \startGroup
                     d'8
                     c'8
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 20 }
+                    \startGroup
                     e'8
                     d'8
                     ef'8
@@ -2848,42 +2848,42 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 21 }
+                    \startGroup
                     f'8
                     e'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 22 }
+                    \startGroup
                     bf'8
                     \stopGroup
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 23 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 24 }
+                    \startGroup
                     e'8
                     fs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 25 }
+                    \startGroup
                     b'8
                     a'8
                     cs'8
@@ -2892,17 +2892,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 26 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 27 }
+                    \startGroup
                     a'8
                     cs'8
                     a'8
@@ -2911,10 +2911,10 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 28 }
+                    \startGroup
+                    \startGroup
                     c'8
                     g'8
                     af'8
@@ -2924,17 +2924,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 29 }
+                    \startGroup
                     a'8
                     e'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 30 }
+                    \startGroup
                     b'8
                     fs'8
                     ef'8
@@ -2944,17 +2944,17 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 31 }
+                    \startGroup
                     fs'8
                     e'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 32 }
+                    \startGroup
                     g'8
                     af'8
                     bf'8
@@ -2964,9 +2964,9 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     - \tweak staff-padding #7
                     _ \markup { 33 }
+                    \startGroup
                     e'8
                     cs'8
                     \stopGroup
@@ -3039,7 +3039,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3049,12 +3048,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3064,6 +3063,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -3072,7 +3072,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3082,13 +3081,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3098,6 +3097,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     af'8
                     b'8
                     a'8
@@ -3106,7 +3106,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3116,13 +3115,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3132,6 +3131,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     bf'8
                     c'8
                     g'8
@@ -3141,7 +3141,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3151,12 +3150,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     ef'8
                     cs'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3166,6 +3165,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     b'8
                     cs'8
                     bf'8
@@ -3175,7 +3175,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3185,12 +3184,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     a'8
                     b'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3200,6 +3199,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     g'8
                     ef'8
                     f'8
@@ -3209,7 +3209,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3219,11 +3218,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     b'8
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3233,6 +3232,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     fs'8
                     d'8
                     c'8
@@ -3241,7 +3241,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3251,13 +3250,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     g'8
                     af'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3267,12 +3266,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     ef'8
                     a'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3282,13 +3281,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     c'8
                     d'8
                     a'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3298,12 +3297,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     cs'8
                     ef'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3313,6 +3312,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     c'8
                     e'8
                     f'8
@@ -3322,7 +3322,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3332,12 +3331,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     g'8
                     b'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3347,6 +3346,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 18 }
+                    \startGroup
                     d'8
                     cs'8
                     af'8
@@ -3356,7 +3356,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3366,12 +3365,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 19 }
+                    \startGroup
                     b'8
                     a'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3381,6 +3380,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 20 }
+                    \startGroup
                     d'8
                     c'8
                     cs'8
@@ -3390,7 +3390,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3400,12 +3399,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 21 }
+                    \startGroup
                     ef'8
                     d'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3415,11 +3414,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 22 }
+                    \startGroup
                     af'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3429,13 +3428,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 23 }
+                    \startGroup
                     c'8
                     cs'8
                     ef'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3445,12 +3444,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 24 }
+                    \startGroup
                     d'8
                     e'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3460,6 +3459,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 25 }
+                    \startGroup
                     a'8
                     g'8
                     b'8
@@ -3468,7 +3468,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3478,12 +3477,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 26 }
+                    \startGroup
                     e'8
                     af'8
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3493,6 +3492,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 27 }
+                    \startGroup
                     af'8
                     c'8
                     af'8
@@ -3501,7 +3501,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3511,6 +3510,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 28 }
+                    \startGroup
                     b'8
                     fs'8
                     g'8
@@ -3520,7 +3520,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3530,12 +3529,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 29 }
+                    \startGroup
                     af'8
                     ef'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3545,6 +3544,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 30 }
+                    \startGroup
                     bf'8
                     f'8
                     d'8
@@ -3554,7 +3554,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3564,12 +3563,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 31 }
+                    \startGroup
                     f'8
                     ef'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3579,6 +3578,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 32 }
+                    \startGroup
                     fs'8
                     g'8
                     a'8
@@ -3588,7 +3588,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3598,6 +3597,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 33 }
+                    \startGroup
                     ef'8
                     c'8
                     \stopGroup
@@ -3661,7 +3661,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                 {
                     \time 1/8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3671,12 +3670,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 0 }
+                    \startGroup
                     fs'8
                     bf'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3686,6 +3685,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 1 }
+                    \startGroup
                     g'8
                     af'8
                     b'8
@@ -3694,7 +3694,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3704,13 +3703,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 2 }
+                    \startGroup
                     d'8
                     ef'8
                     f'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3720,6 +3719,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 3 }
+                    \startGroup
                     cs'8
                     a'8
                     b'8
@@ -3728,7 +3728,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3738,13 +3737,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 4 }
+                    \startGroup
                     ef'8
                     f'8
                     c'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3754,6 +3753,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 5 }
+                    \startGroup
                     bf'8
                     c'8
                     g'8
@@ -3763,7 +3763,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3773,12 +3772,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 6 }
+                    \startGroup
                     ef'8
                     cs'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3788,6 +3787,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 7 }
+                    \startGroup
                     e'8
                     af'8
                     bf'8
@@ -3797,7 +3797,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3807,12 +3806,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 8 }
+                    \startGroup
                     a'8
                     b'8
                     \stopGroup
                     s8
                     cs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3822,6 +3821,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 9 }
+                    \startGroup
                     g'8
                     ef'8
                     f'8
@@ -3831,7 +3831,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3841,11 +3840,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 10 }
+                    \startGroup
                     b'8
                     \stopGroup
                     s8
                     e'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3855,6 +3854,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 11 }
+                    \startGroup
                     cs'8
                     c'8
                     d'8
@@ -3863,7 +3863,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3873,13 +3872,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 12 }
+                    \startGroup
                     g'8
                     af'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3889,12 +3888,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 13 }
+                    \startGroup
                     ef'8
                     a'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3904,13 +3903,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 14 }
+                    \startGroup
                     c'8
                     d'8
                     a'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3920,12 +3919,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 15 }
+                    \startGroup
                     cs'8
                     g'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3935,6 +3934,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 16 }
+                    \startGroup
                     c'8
                     e'8
                     f'8
@@ -3944,7 +3944,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3954,12 +3953,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 17 }
+                    \startGroup
                     g'8
                     b'8
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3969,6 +3968,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 18 }
+                    \startGroup
                     d'8
                     cs'8
                     af'8
@@ -3978,7 +3978,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -3988,12 +3987,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 19 }
+                    \startGroup
                     b'8
                     g'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4003,6 +4002,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 20 }
+                    \startGroup
                     d'8
                     c'8
                     cs'8
@@ -4012,7 +4012,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     bf'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4022,12 +4021,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 21 }
+                    \startGroup
                     ef'8
                     d'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4037,11 +4036,11 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 22 }
+                    \startGroup
                     af'8
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4051,13 +4050,13 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 23 }
+                    \startGroup
                     cs'8
                     c'8
                     bf'8
                     \stopGroup
                     s8
                     af'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4067,12 +4066,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 24 }
+                    \startGroup
                     d'8
                     e'8
                     \stopGroup
                     s8
                     fs'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4082,6 +4081,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 25 }
+                    \startGroup
                     a'8
                     g'8
                     b'8
@@ -4090,7 +4090,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4100,12 +4099,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 26 }
+                    \startGroup
                     e'8
                     af'8
                     \stopGroup
                     s8
                     g'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4115,6 +4114,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 27 }
+                    \startGroup
                     fs'8
                     af'8
                     c'8
@@ -4123,7 +4123,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     a'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4133,6 +4132,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 28 }
+                    \startGroup
                     b'8
                     fs'8
                     g'8
@@ -4142,7 +4142,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     d'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4152,12 +4151,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 29 }
+                    \startGroup
                     af'8
                     ef'8
                     \stopGroup
                     s8
                     c'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4167,6 +4166,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 30 }
+                    \startGroup
                     bf'8
                     f'8
                     d'8
@@ -4176,7 +4176,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     ef'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4186,12 +4185,12 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 31 }
+                    \startGroup
                     f'8
                     bf'8
                     \stopGroup
                     s8
                     b'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4201,6 +4200,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 32 }
+                    \startGroup
                     fs'8
                     g'8
                     a'8
@@ -4210,7 +4210,6 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     s8
                     f'8
-                    \startGroup
                     ^ \markup {
                         \small
                             \line
@@ -4220,6 +4219,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                         }
                     - \tweak staff-padding #7
                     _ \markup { 33 }
+                    \startGroup
                     ef'8
                     c'8
                     \stopGroup

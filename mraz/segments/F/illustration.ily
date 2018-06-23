@@ -43,6 +43,26 @@ F_GlobalSkips = {
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (98)                                                         %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [F.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [4'16'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:REDUNDANT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
 %@%     \fontsize                                                        %! SM27:REDUNDANT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
@@ -96,26 +116,6 @@ F_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (98)                                                         %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [F.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [4'16'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [F GlobalSkips measure 99 / measure 2]                             %! SM4
     \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -296,6 +296,26 @@ F_GlobalSkips = {
     \time 3/16                                                           %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/16
+%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (106)                                                        %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
+%@%         <8>                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((9))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
+%@%         [F.9]                                                        %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
+%@%         [4'26'']                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     - \tweak Y-extent ##f                                                %! SM29:METRONOME_MARK_SPANNER
 %@% - \tweak bound-details.left.text \markup {                           %! SM27:EXPLICIT_METRONOME_MARK %! SM29:METRONOME_MARK_SPANNER
@@ -346,26 +366,6 @@ F_GlobalSkips = {
     - \tweak bound-details.right.stencil-align-dir-y #center             %! SM29:METRONOME_MARK_SPANNER
     - \tweak bound-details.left-broken.text ##f                          %! SM29:METRONOME_MARK_SPANNER
     \startTextSpan                                                       %! SM29:METRONOME_MARK_SPANNER
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (106)                                                        %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <8>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((9))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [F.9]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [4'26'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
     
     % [F GlobalSkips measure 107 / measure 10]                           %! SM4
     \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
@@ -396,7 +396,6 @@ F_GlobalSkips = {
     \time 1/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/8
-    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
 %@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
 %@%         (108)                                                        %! SM31:MEASURE_NUMBER_MARKUP
@@ -417,6 +416,7 @@ F_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
 %@%         [4'28'']                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                        %! SM29:METRONOME_MARK_SPANNER
     \override Score.BarLine.transparent = ##f                            %! SM5
     \bar "|."                                                            %! SM5
     
@@ -443,7 +443,6 @@ F_RHVoiceI = {
                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
                 e''16
                 \fff                                             %! SM8:EXPLICIT_DYNAMIC:IC
-                [                                                %! SM35
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -461,6 +460,7 @@ F_RHVoiceI = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                [                                                %! SM35
                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
                 
                 \set stemLeftBeamCount = 2                       %! SM35
@@ -590,7 +590,6 @@ F_RHVoiceI = {
                 \set stemLeftBeamCount = 0                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
                 af''!16
-                [                                                %! SM35
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -608,6 +607,7 @@ F_RHVoiceI = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                [                                                %! SM35
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -690,7 +690,6 @@ F_RHVoiceI = {
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 f'''16
-                [
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -708,6 +707,7 @@ F_RHVoiceI = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                [
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1005,8 +1005,6 @@ F_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             c''16
             \fff                                                 %! SM8:REDUNDANT_DYNAMIC:IC
-            [                                                    %! SM35
-            (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1024,6 +1022,8 @@ F_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [                                                    %! SM35
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
@@ -1051,7 +1051,6 @@ F_RHVoiceII = {
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
                 cs''!16
-                (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1069,6 +1068,7 @@ F_RHVoiceII = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                (                                                %! SC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -1128,8 +1128,6 @@ F_RHVoiceII = {
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             c''16
-            [                                                    %! SM35
-            (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1147,6 +1145,8 @@ F_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [                                                    %! SM35
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
@@ -1215,7 +1215,6 @@ F_RHVoiceII = {
                 \set stemLeftBeamCount = 1                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
                 a''16
-                (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -1233,6 +1232,7 @@ F_RHVoiceII = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                (                                                %! SC
                 
                 \set stemLeftBeamCount = 2                       %! SM35
                 \set stemRightBeamCount = 2                      %! SM35
@@ -1285,8 +1285,6 @@ F_RHVoiceII = {
             \set stemLeftBeamCount = 0                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             f''16
-            [                                                    %! SM35
-            (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1304,6 +1302,8 @@ F_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [                                                    %! SM35
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
@@ -1325,7 +1325,6 @@ F_RHVoiceII = {
             \set stemLeftBeamCount = 1                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
             e'''16
-            (                                                    %! SC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1343,6 +1342,7 @@ F_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            (                                                    %! SC
             
             \set stemLeftBeamCount = 2                           %! SM35
             \set stemRightBeamCount = 2                          %! SM35
@@ -2034,7 +2034,6 @@ F_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs'!16
             \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC
-            [
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2052,6 +2051,7 @@ F_LHVoiceIV = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2107,7 +2107,6 @@ F_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             cs''!16
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
-            [
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2125,6 +2124,7 @@ F_LHVoiceIV = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2148,7 +2148,6 @@ F_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             d''16
             \ff                                                  %! SM8:REDUNDANT_DYNAMIC:IC
-            [
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2166,6 +2165,7 @@ F_LHVoiceIV = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            [
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2318,8 +2318,6 @@ F_LHVoiceV = {
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
                 cs'!16
                 \pp                                              %! SM8:EXPLICIT_DYNAMIC:IC
-                [
-                (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2337,6 +2335,8 @@ F_LHVoiceV = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                [
+                (                                                %! SC
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2429,8 +2429,6 @@ F_LHVoiceV = {
                 \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
                 ef''!16
                 \pp                                              %! SM8:REDUNDANT_DYNAMIC:IC
-                [
-                (                                                %! SC
             %%% ^ \markup {                                      %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                    %! FIGURE_NAME_MARKUP
             %%%         #2                                       %! FIGURE_NAME_MARKUP
@@ -2448,6 +2446,8 @@ F_LHVoiceV = {
             %%%                 ]                                %! FIGURE_NAME_MARKUP
             %%%             }                                    %! FIGURE_NAME_MARKUP
             %%%     }                                            %! FIGURE_NAME_MARKUP
+                [
+                (                                                %! SC
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2

@@ -36,7 +36,6 @@ class MusicAccumulator(baca.MusicAccumulator):
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 2
                             c'16
-                            [
                             ^ \markup {                                                    %! FIGURE_NAME_MARKUP
                                 \fontsize                                                  %! FIGURE_NAME_MARKUP
                                     #2                                                     %! FIGURE_NAME_MARKUP
@@ -54,6 +53,7 @@ class MusicAccumulator(baca.MusicAccumulator):
                                             ]                                              %! FIGURE_NAME_MARKUP
                                         }                                                  %! FIGURE_NAME_MARKUP
                                 }                                                          %! FIGURE_NAME_MARKUP
+                            [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             cs'16
