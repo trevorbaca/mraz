@@ -2610,8 +2610,9 @@ C_RHVoiceII = {
             \override Slur.direction = #up                       %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             b'16
+            \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2630,9 +2631,8 @@ C_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             [
-            \f                                                   %! HC1
-            \<                                                   %! HC1
             (                                                    %! SC
+            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2706,9 +2706,9 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             c''''16
-            \ff                                                  %! HC1
+            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2728,8 +2728,9 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             ef''!16
+            \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2748,9 +2749,8 @@ C_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             [
-            \f                                                   %! HC1
-            \<                                                   %! HC1
             (                                                    %! SC
+            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2820,9 +2820,9 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             cs''''!16
-            \ff                                                  %! HC1
+            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2871,8 +2871,9 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             cs''!16
+            \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -2891,9 +2892,8 @@ C_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             [
-            \f                                                   %! HC1
-            \<                                                   %! HC1
             (                                                    %! SC
+            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2975,9 +2975,9 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             ef''''!16
-            \ff                                                  %! HC1
+            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2998,8 +2998,9 @@ C_RHVoiceII = {
             \override TextScript.direction = #up                 %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             a''16
+            \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -3018,9 +3019,8 @@ C_RHVoiceII = {
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
             [
-            \f                                                   %! HC1
-            \<                                                   %! HC1
             (                                                    %! SC
+            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3046,9 +3046,9 @@ C_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
             af'''!16
-            \ff                                                  %! HC1
+            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
