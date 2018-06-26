@@ -2630,9 +2630,9 @@ C_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \<                                                   %! IC:BACA_HAIRPIN
             [
             (                                                    %! SC
-            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2748,9 +2748,9 @@ C_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \<                                                   %! IC:BACA_HAIRPIN
             [
             (                                                    %! SC
-            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2891,9 +2891,9 @@ C_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \<                                                   %! IC:BACA_HAIRPIN
             [
             (                                                    %! SC
-            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -3018,9 +3018,9 @@ C_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
+            \<                                                   %! IC:BACA_HAIRPIN
             [
             (                                                    %! SC
-            \<                                                   %! IC:BACA_HAIRPIN
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
