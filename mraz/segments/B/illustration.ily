@@ -1192,9 +1192,9 @@ B_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                           %! SC
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
             b'16
-            \f                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+            \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
         %%%         #2                                           %! FIGURE_NAME_MARKUP
@@ -1212,7 +1212,7 @@ B_RHVoiceII = {
         %%%                 ]                                    %! FIGURE_NAME_MARKUP
         %%%             }                                        %! FIGURE_NAME_MARKUP
         %%%     }                                                %! FIGURE_NAME_MARKUP
-            \<                                                   %! IC:BACA_HAIRPIN
+            \<                                                   %! PIC
             [
             (                                                    %! SC
             
@@ -1292,9 +1292,9 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
             cs''''!16
-            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+            \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
             ]
             )                                                    %! SC
             \revert DynamicLineSpanner.staff-padding             %! OC2

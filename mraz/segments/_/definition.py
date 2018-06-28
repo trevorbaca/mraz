@@ -36,7 +36,7 @@ accumulator(
     collections_4['stage 5']['lh'][:4],
     baca.anchor_to_figure('b.1.1'),
     baca.dls_staff_padding(8),
-    baca.hairpin('f < ff'),
+    baca.generalized_hairpin('f < ff'),
     baca.ottava(),
     baca.register(10, 36),
     baca.map(
