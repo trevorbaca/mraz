@@ -780,7 +780,7 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dls_staff_padding(8),
-    baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
+    baca.generalized_hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.map(
         baca.ntruns(),
         baca.slur(),
@@ -796,7 +796,7 @@ accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
-    baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
+    baca.generalized_hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.map(
         baca.ntruns(),
         baca.slur(),
@@ -825,7 +825,7 @@ accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
-    baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
+    baca.generalized_hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.map(
         baca.ntruns(),
         baca.slur(),
@@ -842,7 +842,7 @@ accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(2),
     baca.dls_staff_padding(8),
-    baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
+    baca.generalized_hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.map(
         baca.ntruns(),
         baca.slur(),
