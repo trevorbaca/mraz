@@ -14,8 +14,7 @@
         {   %*% PageLayout
             
             % [PageLayout measure 78]                                                    %! SM4
-            \newSpacingSection                                                           %! HSS1:SPACING
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)             %! HSS1:SPACING
+            \baca_new_spacing_section #1 #32                                             %! HSS1:SPACING
             \autoPageBreaksOff                                                           %! BMM1:BREAK
             \noBreak                                                                     %! BMM2:BREAK
             \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! IC:BREAK
@@ -25,22 +24,19 @@
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 79]                                                    %! SM4
-            \newSpacingSection                                                           %! HSS1:SPACING
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)             %! HSS1:SPACING
+            \baca_new_spacing_section #1 #32                                             %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
             s1 * 1/2
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 80]                                                    %! SM4
-            \newSpacingSection                                                           %! HSS1:SPACING
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 32)             %! HSS1:SPACING
+            \baca_new_spacing_section #1 #32                                             %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
             s1 * 7/8
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HSS2:SPACING_MARKUP
             
             % [PageLayout measure 81]                                                    %! SM4
-            \newSpacingSection                                                           %! HSS1:SPACING
-            \set Score.proportionalNotationDuration = #(ly:make-moment 35 768)           %! HSS1:SPACING
+            \baca_new_spacing_section #35 #768                                           %! HSS1:SPACING
             \noBreak                                                                     %! BMM2:BREAK
             s1 * 5/8
         %@% ^ \markup { \baca-forest-green-markup "[[1/32 * 35/24]]" }                   %! HSS2:SPACING_MARKUP
