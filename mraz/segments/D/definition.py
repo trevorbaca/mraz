@@ -140,6 +140,7 @@ accumulator(
     )
 
 maker = baca.SegmentMaker(
+    do_not_attach_metronome_mark_spanner=True,
     final_bar_line=False,
     ignore_repeat_pitch_classes=False,
     metronome_mark_stem_height=1.5,

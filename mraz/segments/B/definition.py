@@ -278,6 +278,7 @@ accumulator(
     )
 
 maker = baca.SegmentMaker(
+    do_not_attach_metronome_mark_spanner=True,
     final_bar_line=False,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -289,12 +290,12 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark('84', selector=baca.leaf(2)),
-    baca.metronome_mark('112', selector=baca.leaf(4)),
-    baca.metronome_mark('84', selector=baca.leaf(5)),
-    baca.metronome_mark('112', selector=baca.leaf(-3)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(-3)),
-    baca.metronome_mark('84', selector=baca.leaf(-1)),
+    baca.metronome_mark_new('84', selector=baca.leaf(2)),
+    baca.metronome_mark_new('112', selector=baca.leaf(4)),
+    baca.metronome_mark_new('84', selector=baca.leaf(5)),
+    baca.metronome_mark_new('112', selector=baca.leaf(-3)),
+    baca.metronome_mark_new(baca.Ritardando(), selector=baca.leaf(-3)),
+    baca.metronome_mark_new('84', selector=baca.leaf(-1)),
     )
 
 maker(
