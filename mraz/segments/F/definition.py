@@ -323,7 +323,6 @@ accumulator(
 
 maker = baca.SegmentMaker(
     color_octaves=False,
-    do_not_attach_metronome_mark_spanner=True,
     final_bar_line='|.',
     final_markup=(
         ['Madison, WI', 'Los Angeles, CA.'],
@@ -342,9 +341,9 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark_new('84', selector=baca.leaf(0)),
-    baca.metronome_mark_new(baca.Accelerando(), selector=baca.leaf(0)),
-    baca.metronome_mark_new('112', selector=baca.leaf(8)),
+    baca.metronome_mark('84', selector=baca.leaf(0)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(0)),
+    baca.metronome_mark('112', selector=baca.leaf(8)),
     )
 
 maker(

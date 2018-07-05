@@ -504,7 +504,6 @@ accumulator(
 
 maker = baca.SegmentMaker(
     color_octaves=False,
-    do_not_attach_metronome_mark_spanner=True,
     final_bar_line=False,
     metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -516,23 +515,23 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     'GlobalSkips',
-    baca.metronome_mark_new('84', selector=baca.leaf(0)),
-    baca.metronome_mark_new(baca.Accelerando(), selector=baca.leaf(0)),
-    baca.metronome_mark_new('112', selector=baca.leaf(1)),
-    baca.metronome_mark_new(baca.Ritardando(), selector=baca.leaf(1)),
-    baca.metronome_mark_new('84', selector=baca.leaf(2)),
-    baca.metronome_mark_new(baca.Accelerando(), selector=baca.leaf(2)),
-    baca.metronome_mark_new('112', selector=baca.leaf(4)),
-    baca.metronome_mark_new(baca.Ritardando(), selector=baca.leaf(4)),
-    baca.metronome_mark_new('84', selector=baca.leaf(6)),
-    baca.metronome_mark_new(baca.Accelerando(), selector=baca.leaf(6)),
-    baca.metronome_mark_new('112', selector=baca.leaf(8)),
-    baca.metronome_mark_new('84', selector=baca.leaf(9)),
-    baca.metronome_mark_new(baca.Accelerando(), selector=baca.leaf(9)),
-    baca.metronome_mark_new('112', selector=baca.leaf(11)),
-    baca.metronome_mark_new('112', selector=baca.leaf(14)),
-    baca.metronome_mark_new(baca.Ritardando(), selector=baca.leaf(14)),
-    baca.metronome_mark_new('84', selector=baca.leaf(15)),
+    baca.metronome_mark('84', selector=baca.leaf(0)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(0)),
+    baca.metronome_mark('112', selector=baca.leaf(1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(1)),
+    baca.metronome_mark('84', selector=baca.leaf(2)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(2)),
+    baca.metronome_mark('112', selector=baca.leaf(4)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(4)),
+    baca.metronome_mark('84', selector=baca.leaf(6)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(6)),
+    baca.metronome_mark('112', selector=baca.leaf(8)),
+    baca.metronome_mark('84', selector=baca.leaf(9)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(9)),
+    baca.metronome_mark('112', selector=baca.leaf(11)),
+    baca.metronome_mark('112', selector=baca.leaf(14)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(14)),
+    baca.metronome_mark('84', selector=baca.leaf(15)),
     )
 
 maker(
