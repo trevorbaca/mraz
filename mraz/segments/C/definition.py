@@ -973,7 +973,6 @@ maker = baca.SegmentMaker(
     color_repeat_pitch_classes=False,
     final_bar_line=False,
     ignore_repeat_pitch_classes=True,
-    metronome_mark_stem_height=1.5,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
