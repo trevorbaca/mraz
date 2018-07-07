@@ -1,15 +1,15 @@
 D_GlobalRests = {
     
-    % [D GlobalRests measure 78 / measure 1]                             %! SM4
+    % [D GlobalRests measure 78 / measure 1]                                       %! SM4
     R1 * 9/8
     
-    % [D GlobalRests measure 79 / measure 2]                             %! SM4
+    % [D GlobalRests measure 79 / measure 2]                                       %! SM4
     R1 * 1/2
     
-    % [D GlobalRests measure 80 / measure 3]                             %! SM4
+    % [D GlobalRests measure 80 / measure 3]                                       %! SM4
     R1 * 7/8
     
-    % [D GlobalRests measure 81 / measure 4]                             %! SM4
+    % [D GlobalRests measure 81 / measure 4]                                       %! SM4
     R1 * 5/8
     
 }
@@ -17,153 +17,153 @@ D_GlobalRests = {
 
 D_GlobalSkips = {
     
-    % [D GlobalSkips measure 78 / measure 1]                             %! SM4
-    \time 9/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'blue                                    %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [D GlobalSkips measure 78 / measure 1]                                       %! SM4
+    \time 9/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
+    \baca_time_signature_color #'blue                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 9/8
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (78)                                                         %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <0>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((1))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.1]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [3'03'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! MMI1
-%@% - \abjad_invisible_line                                              %! MMI2
-%@% - \tweak bound-details.left.text \markup {                           %! MMI2
-%@%     \concat                                                          %! MMI2
-%@%         {                                                            %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"              %! MMI2
-%@%             \hspace                                                  %! MMI2
-%@%                 #0.5                                                 %! MMI2
-%@%         }                                                            %! MMI2
-%@%     }                                                                %! MMI2
-%@% \startTextSpan                                                       %! MMI2
-    - \abjad_invisible_line                                              %! MMI3
-    - \tweak bound-details.left.text \markup {                           %! MMI3
-        \concat                                                          %! MMI3
-            {                                                            %! MMI3
-                \with-color                                              %! MMI3
-                    #(x11-color 'green4)                                 %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"84"          %! MMI3
-                \hspace                                                  %! MMI3
-                    #0.5                                                 %! MMI3
-            }                                                            %! MMI3
-        }                                                                %! MMI3
-    \startTextSpan                                                       %! MMI3
+%@% ^ \markup {                                                                    %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (78)                                                                   %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM32:MEASURE_INDEX_MARKUP
+%@%         <0>                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((1))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.1]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%         [3'03'']                                                               %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                          %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                                  %! MMI1
+%@% - \abjad_invisible_line                                                        %! MMI2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
+%@%     \concat                                                                    %! MMI2
+%@%         {                                                                      %! MMI2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! MMI2
+%@%             \hspace                                                            %! MMI2
+%@%                 #0.5                                                           %! MMI2
+%@%         }                                                                      %! MMI2
+%@%     }                                                                          %! MMI2
+%@% \startTextSpan                                                                 %! MMI2
+    - \abjad_invisible_line                                                        %! MMI3
+    - \tweak bound-details.left.text \markup {                                     %! MMI3
+        \concat                                                                    %! MMI3
+            {                                                                      %! MMI3
+                \with-color                                                        %! MMI3
+                    #(x11-color 'green4)                                           %! MMI3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! MMI3
+                \hspace                                                            %! MMI3
+                    #0.5                                                           %! MMI3
+            }                                                                      %! MMI3
+        }                                                                          %! MMI3
+    \startTextSpan                                                                 %! MMI3
     
-    % [D GlobalSkips measure 79 / measure 2]                             %! SM4
-    \time 4/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color #'blue                                    %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [D GlobalSkips measure 79 / measure 2]                                       %! SM4
+    \time 4/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \baca_time_signature_color #'blue                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (79)                                                         %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <1>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((2))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.2]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [3'06'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+%@% ^ \markup {                                                                    %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (79)                                                                   %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM32:MEASURE_INDEX_MARKUP
+%@%         <1>                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((2))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.2]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%         [3'06'']                                                               %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                          %! SM28:CLOCK_TIME_MARKUP
     
-    % [D GlobalSkips measure 80 / measure 3]                             %! SM4
-    \time 7/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color #'blue                                    %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [D GlobalSkips measure 80 / measure 3]                                       %! SM4
+    \time 7/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \baca_time_signature_color #'blue                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/8
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (80)                                                         %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <2>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((3))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.3]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [3'07'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
+%@% ^ \markup {                                                                    %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (80)                                                                   %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM32:MEASURE_INDEX_MARKUP
+%@%         <2>                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((3))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.3]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%         [3'07'']                                                               %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                          %! SM28:CLOCK_TIME_MARKUP
     
-    % [D GlobalSkips measure 81 / measure 4]                             %! SM4
-    \time 5/8                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color #'blue                                    %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [D GlobalSkips measure 81 / measure 4]                                       %! SM4
+    \time 5/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    \baca_time_signature_color #'blue                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 5/8
-%@% ^ \markup {                                                          %! SM31:MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM31:MEASURE_NUMBER_MARKUP
-%@%         (81)                                                         %! SM31:MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM31:MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM32:MEASURE_INDEX_MARKUP
-%@%         <3>                                                          %! SM32:MEASURE_INDEX_MARKUP
-%@%     }                                                                %! SM32:MEASURE_INDEX_MARKUP
-%@% ^ \markup {                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%         ((4))                                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@%     }                                                                %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM3:STAGE_NUMBER_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM3:STAGE_NUMBER_MARKUP
-%@%         [D.4]                                                        %! SM3:STAGE_NUMBER_MARKUP
-%@%     }                                                                %! SM3:STAGE_NUMBER_MARKUP
-%@% ^ \markup {                                                          %! SM28:CLOCK_TIME_MARKUP
-%@%     \baca-dark-cyan-markup                                           %! SM28:CLOCK_TIME_MARKUP
-%@%         [3'10'']                                                     %! SM28:CLOCK_TIME_MARKUP
-%@%     }                                                                %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                        %! MMI4
+%@% ^ \markup {                                                                    %! SM31:MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM31:MEASURE_NUMBER_MARKUP
+%@%         (81)                                                                   %! SM31:MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM31:MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM32:MEASURE_INDEX_MARKUP
+%@%         <3>                                                                    %! SM32:MEASURE_INDEX_MARKUP
+%@%     }                                                                          %! SM32:MEASURE_INDEX_MARKUP
+%@% ^ \markup {                                                                    %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%         ((4))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [D.4]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
+%@%         [3'10'']                                                               %! SM28:CLOCK_TIME_MARKUP
+%@%     }                                                                          %! SM28:CLOCK_TIME_MARKUP
+    \stopTextSpan                                                                  %! MMI4
     
 }
 
 
 D_RHVoiceI = {
     
-    % [D RHVoiceI measure 78 / measure 1]                        %! SM4
-    \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override PianoMusicRHStaff.Clef.color = ##f                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set PianoMusicRHStaff.forceClef = ##t                       %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceI measure 78 / measure 1]                                  %! SM4
+    \clef "treble"                                                         %! SM8:REAPPLIED_CLEF:SM37
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override PianoMusicRHStaff.Clef.color = ##f                           %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set PianoMusicRHStaff.forceClef = ##t                                 %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4)      %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
-    \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \f                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)       %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [D RHVoiceI measure 79 / measure 2]                        %! SM4
+    % [D RHVoiceI measure 79 / measure 2]                                  %! SM4
     s1 * 1/2
     
-    % [D RHVoiceI measure 80 / measure 3]                        %! SM4
+    % [D RHVoiceI measure 80 / measure 3]                                  %! SM4
     s1 * 7/8
     
-    % [D RHVoiceI measure 81 / measure 4]                        %! SM4
+    % [D RHVoiceI measure 81 / measure 4]                                  %! SM4
     s1 * 5/8
     
 }
@@ -171,16 +171,16 @@ D_RHVoiceI = {
 
 D_RHVoiceIInserts = {
     
-    % [D RHVoiceIInserts measure 78 / measure 1]                 %! SM4
+    % [D RHVoiceIInserts measure 78 / measure 1]                           %! SM4
     s1 * 9/8
     
-    % [D RHVoiceIInserts measure 79 / measure 2]                 %! SM4
+    % [D RHVoiceIInserts measure 79 / measure 2]                           %! SM4
     s1 * 1/2
     
-    % [D RHVoiceIInserts measure 80 / measure 3]                 %! SM4
+    % [D RHVoiceIInserts measure 80 / measure 3]                           %! SM4
     s1 * 7/8
     
-    % [D RHVoiceIInserts measure 81 / measure 4]                 %! SM4
+    % [D RHVoiceIInserts measure 81 / measure 4]                           %! SM4
     s1 * 5/8
     
 }
@@ -188,18 +188,18 @@ D_RHVoiceIInserts = {
 
 D_RHVoiceII = {
     
-    % [D RHVoiceII measure 78 / measure 1]                       %! SM4
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceII measure 78 / measure 1]                                 %! SM4
+    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
-    \fff                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
+    \fff                                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [D RHVoiceII measure 79 / measure 2]                       %! SM4
+    % [D RHVoiceII measure 79 / measure 2]                                 %! SM4
     s1 * 1/2
     
-    % [D RHVoiceII measure 80 / measure 3]                       %! SM4
+    % [D RHVoiceII measure 80 / measure 3]                                 %! SM4
     s1 * 7/8
     
-    % [D RHVoiceII measure 81 / measure 4]                       %! SM4
+    % [D RHVoiceII measure 81 / measure 4]                                 %! SM4
     s1 * 5/8
     
 }
@@ -207,16 +207,16 @@ D_RHVoiceII = {
 
 D_RHVoiceIIInserts = {
     
-    % [D RHVoiceIIInserts measure 78 / measure 1]                %! SM4
+    % [D RHVoiceIIInserts measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D RHVoiceIIInserts measure 79 / measure 2]                %! SM4
+    % [D RHVoiceIIInserts measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D RHVoiceIIInserts measure 80 / measure 3]                %! SM4
+    % [D RHVoiceIIInserts measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D RHVoiceIIInserts measure 81 / measure 4]                %! SM4
+    % [D RHVoiceIIInserts measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
@@ -227,144 +227,144 @@ D_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [D RHVoiceIII measure 78 / measure 1]              %! SM4
-            \override TupletBracket.staff-padding = #7           %! OC1
-            \override TupletBracket.direction = #up              %! OC1
+            % [D RHVoiceIII measure 78 / measure 1]                        %! SM4
+            \override TupletBracket.staff-padding = #7                     %! OC1
+            \override TupletBracket.direction = #up                        %! OC1
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             fs'''!8
-            \pp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 6.1.1"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (0)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            \pp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "rh-3 6.1.1"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (0)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             a'''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             b''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
         }
         \scaleDurations #'(1 . 1) {
             
             c'''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             af''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             b''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             cs''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             r8
-            \revert TupletBracket.staff-padding                  %! OC2
-            \revert TupletBracket.direction                      %! OC2
+            \revert TupletBracket.staff-padding                            %! OC2
+            \revert TupletBracket.direction                                %! OC2
         }
     }
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [D RHVoiceIII measure 79 / measure 2]              %! SM4
-            \override TupletBracket.staff-padding = #7           %! OC1
-            \override TupletBracket.direction = #up              %! OC1
+            % [D RHVoiceIII measure 79 / measure 2]                        %! SM4
+            \override TupletBracket.staff-padding = #7                     %! OC1
+            \override TupletBracket.direction = #up                        %! OC1
             bf'''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 6.1.2"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (1)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "rh-3 6.1.2"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (1)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             cs'''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             ef'''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
-            \revert TupletBracket.staff-padding                  %! OC2
-            \revert TupletBracket.direction                      %! OC2
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
+            \revert TupletBracket.staff-padding                            %! OC2
+            \revert TupletBracket.direction                                %! OC2
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [D RHVoiceIII measure 80 / measure 3]              %! SM4
+            % [D RHVoiceIII measure 80 / measure 3]                        %! SM4
             r8
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 6.1.3"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (2)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "rh-3 6.1.3"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (2)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             d'''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             e'''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             c'''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             ef'''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             f''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             r8
         }
@@ -373,41 +373,41 @@ D_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
             
-            % [D RHVoiceIII measure 81 / measure 4]              %! SM4
-            \override TupletBracket.direction = #up              %! OC1
+            % [D RHVoiceIII measure 81 / measure 4]                        %! SM4
+            \override TupletBracket.direction = #up                        %! OC1
             af''!8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "rh-3 6.1.4"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (3)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "rh-3 6.1.4"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (3)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             e''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             g''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
             
             a''8
-            -\staccato                                           %! IC
-            -\tenuto                                             %! IC
-            \revert TupletBracket.direction                      %! OC2
+            -\staccato                                                     %! IC
+            -\tenuto                                                       %! IC
+            \revert TupletBracket.direction                                %! OC2
             
         }
     }
@@ -416,16 +416,16 @@ D_RHVoiceIII = {
 
 D_RHVoiceIIIInserts = {
     
-    % [D RHVoiceIIIInserts measure 78 / measure 1]               %! SM4
+    % [D RHVoiceIIIInserts measure 78 / measure 1]                         %! SM4
     s1 * 9/8
     
-    % [D RHVoiceIIIInserts measure 79 / measure 2]               %! SM4
+    % [D RHVoiceIIIInserts measure 79 / measure 2]                         %! SM4
     s1 * 1/2
     
-    % [D RHVoiceIIIInserts measure 80 / measure 3]               %! SM4
+    % [D RHVoiceIIIInserts measure 80 / measure 3]                         %! SM4
     s1 * 7/8
     
-    % [D RHVoiceIIIInserts measure 81 / measure 4]               %! SM4
+    % [D RHVoiceIIIInserts measure 81 / measure 4]                         %! SM4
     s1 * 5/8
     
 }
@@ -433,18 +433,18 @@ D_RHVoiceIIIInserts = {
 
 D_RHVoiceIV = {
     
-    % [D RHVoiceIV measure 78 / measure 1]                       %! SM4
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceIV measure 78 / measure 1]                                 %! SM4
+    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
-    \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+    \p                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [D RHVoiceIV measure 79 / measure 2]                       %! SM4
+    % [D RHVoiceIV measure 79 / measure 2]                                 %! SM4
     s1 * 1/2
     
-    % [D RHVoiceIV measure 80 / measure 3]                       %! SM4
+    % [D RHVoiceIV measure 80 / measure 3]                                 %! SM4
     s1 * 7/8
     
-    % [D RHVoiceIV measure 81 / measure 4]                       %! SM4
+    % [D RHVoiceIV measure 81 / measure 4]                                 %! SM4
     s1 * 5/8
     
 }
@@ -452,16 +452,16 @@ D_RHVoiceIV = {
 
 D_RHVoiceIVInserts = {
     
-    % [D RHVoiceIVInserts measure 78 / measure 1]                %! SM4
+    % [D RHVoiceIVInserts measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D RHVoiceIVInserts measure 79 / measure 2]                %! SM4
+    % [D RHVoiceIVInserts measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D RHVoiceIVInserts measure 80 / measure 3]                %! SM4
+    % [D RHVoiceIVInserts measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D RHVoiceIVInserts measure 81 / measure 4]                %! SM4
+    % [D RHVoiceIVInserts measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
@@ -469,16 +469,16 @@ D_RHVoiceIVInserts = {
 
 D_RHVoiceV = {
     
-    % [D RHVoiceV measure 78 / measure 1]                        %! SM4
+    % [D RHVoiceV measure 78 / measure 1]                                  %! SM4
     s1 * 9/8
     
-    % [D RHVoiceV measure 79 / measure 2]                        %! SM4
+    % [D RHVoiceV measure 79 / measure 2]                                  %! SM4
     s1 * 1/2
     
-    % [D RHVoiceV measure 80 / measure 3]                        %! SM4
+    % [D RHVoiceV measure 80 / measure 3]                                  %! SM4
     s1 * 7/8
     
-    % [D RHVoiceV measure 81 / measure 4]                        %! SM4
+    % [D RHVoiceV measure 81 / measure 4]                                  %! SM4
     s1 * 5/8
     
 }
@@ -486,16 +486,16 @@ D_RHVoiceV = {
 
 D_RHVoiceVI = {
     
-    % [D RHVoiceVI measure 78 / measure 1]                       %! SM4
+    % [D RHVoiceVI measure 78 / measure 1]                                 %! SM4
     s1 * 9/8
     
-    % [D RHVoiceVI measure 79 / measure 2]                       %! SM4
+    % [D RHVoiceVI measure 79 / measure 2]                                 %! SM4
     s1 * 1/2
     
-    % [D RHVoiceVI measure 80 / measure 3]                       %! SM4
+    % [D RHVoiceVI measure 80 / measure 3]                                 %! SM4
     s1 * 7/8
     
-    % [D RHVoiceVI measure 81 / measure 4]                       %! SM4
+    % [D RHVoiceVI measure 81 / measure 4]                                 %! SM4
     s1 * 5/8
     
 }
@@ -503,16 +503,16 @@ D_RHVoiceVI = {
 
 D_RHResonanceVoice = {
     
-    % [D RHResonanceVoice measure 78 / measure 1]                %! SM4
+    % [D RHResonanceVoice measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D RHResonanceVoice measure 79 / measure 2]                %! SM4
+    % [D RHResonanceVoice measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D RHResonanceVoice measure 80 / measure 3]                %! SM4
+    % [D RHResonanceVoice measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D RHResonanceVoice measure 81 / measure 4]                %! SM4
+    % [D RHResonanceVoice measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
@@ -546,16 +546,16 @@ D_PianoMusicRHStaff = <<
 
 D_LHVoiceI = {
     
-    % [D LHVoiceI measure 78 / measure 1]                        %! SM4
+    % [D LHVoiceI measure 78 / measure 1]                                  %! SM4
     s1 * 9/8
     
-    % [D LHVoiceI measure 79 / measure 2]                        %! SM4
+    % [D LHVoiceI measure 79 / measure 2]                                  %! SM4
     s1 * 1/2
     
-    % [D LHVoiceI measure 80 / measure 3]                        %! SM4
+    % [D LHVoiceI measure 80 / measure 3]                                  %! SM4
     s1 * 7/8
     
-    % [D LHVoiceI measure 81 / measure 4]                        %! SM4
+    % [D LHVoiceI measure 81 / measure 4]                                  %! SM4
     s1 * 5/8
     
 }
@@ -563,16 +563,16 @@ D_LHVoiceI = {
 
 D_LHVoiceII = {
     
-    % [D LHVoiceII measure 78 / measure 1]                       %! SM4
+    % [D LHVoiceII measure 78 / measure 1]                                 %! SM4
     s1 * 9/8
     
-    % [D LHVoiceII measure 79 / measure 2]                       %! SM4
+    % [D LHVoiceII measure 79 / measure 2]                                 %! SM4
     s1 * 1/2
     
-    % [D LHVoiceII measure 80 / measure 3]                       %! SM4
+    % [D LHVoiceII measure 80 / measure 3]                                 %! SM4
     s1 * 7/8
     
-    % [D LHVoiceII measure 81 / measure 4]                       %! SM4
+    % [D LHVoiceII measure 81 / measure 4]                                 %! SM4
     s1 * 5/8
     
 }
@@ -580,16 +580,16 @@ D_LHVoiceII = {
 
 D_LHVoiceIII = {
     
-    % [D LHVoiceIII measure 78 / measure 1]                      %! SM4
+    % [D LHVoiceIII measure 78 / measure 1]                                %! SM4
     s1 * 9/8
     
-    % [D LHVoiceIII measure 79 / measure 2]                      %! SM4
+    % [D LHVoiceIII measure 79 / measure 2]                                %! SM4
     s1 * 1/2
     
-    % [D LHVoiceIII measure 80 / measure 3]                      %! SM4
+    % [D LHVoiceIII measure 80 / measure 3]                                %! SM4
     s1 * 7/8
     
-    % [D LHVoiceIII measure 81 / measure 4]                      %! SM4
+    % [D LHVoiceIII measure 81 / measure 4]                                %! SM4
     s1 * 5/8
     
 }
@@ -597,59 +597,59 @@ D_LHVoiceIII = {
 
 D_LHVoiceIV = {
     
-    % [D LHVoiceIV measure 78 / measure 1]                       %! SM4
-    \clef "treble"                                               %! SM8:EXPLICIT_CLEF:IC
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override PianoMusicLHStaff.Clef.color = ##f                 %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set PianoMusicLHStaff.forceClef = ##t                       %! SM8:EXPLICIT_CLEF:SM33:IC
+    % [D LHVoiceIV measure 78 / measure 1]                                 %! SM4
+    \clef "treble"                                                         %! SM8:EXPLICIT_CLEF:IC
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)      %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override PianoMusicLHStaff.Clef.color = ##f                           %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! SM8:EXPLICIT_CLEF:SM33:IC
     s1 * 7/32
-    \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \p                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)    %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
             
-            \override TupletBracket.staff-padding = #3           %! OC1
+            \override TupletBracket.staff-padding = #3                     %! OC1
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
             g'16
-            \mp                                                  %! SM8:EXPLICIT_DYNAMIC:IC
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 6.1.1"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (4)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            \mp                                                            %! SM8:EXPLICIT_DYNAMIC:IC
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "lh-4 6.1.1"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (4)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             r16
             
             af'!16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r16
             
             bf'!16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r16
             
             a'16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r16
-            \revert TupletBracket.staff-padding                  %! OC2
+            \revert TupletBracket.staff-padding                            %! OC2
         }
     }
     
@@ -658,44 +658,44 @@ D_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
             
-            \override TupletBracket.staff-padding = #3           %! OC1
+            \override TupletBracket.staff-padding = #3                     %! OC1
             b'16
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 6.1.2"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (5)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "lh-4 6.1.2"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (5)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             r8
             
             c''16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r8
             
             d''16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r8
             
             cs''!16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r8
-            \revert TupletBracket.staff-padding                  %! OC2
+            \revert TupletBracket.staff-padding                            %! OC2
         }
     }
     
@@ -704,44 +704,44 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             d'16
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 6.1.3"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (6)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "lh-4 6.1.3"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (6)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             r32
             
             f'16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r32
             
             g'16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r32
             
             ef''!16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r32
             
             e''16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r32
         }
@@ -749,31 +749,31 @@ D_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [D LHVoiceIV measure 81 / measure 4]               %! SM4
+            % [D LHVoiceIV measure 81 / measure 4]                         %! SM4
             fs''!16
-            -\tenuto                                             %! IC
-        %%% ^ \markup {                                          %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                        %! FIGURE_NAME_MARKUP
-        %%%         #2                                           %! FIGURE_NAME_MARKUP
-        %%%         \concat                                      %! FIGURE_NAME_MARKUP
-        %%%             {                                        %! FIGURE_NAME_MARKUP
-        %%%                 [                                    %! FIGURE_NAME_MARKUP
-        %%%                 "lh-4 6.1.4"                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                              %! FIGURE_NAME_MARKUP
-        %%%                     #1                               %! FIGURE_NAME_MARKUP
-        %%%                 \raise                               %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                            %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                        %! FIGURE_NAME_MARKUP
-        %%%                         #-2                          %! FIGURE_NAME_MARKUP
-        %%%                         (7)                          %! FIGURE_NAME_MARKUP
-        %%%                 ]                                    %! FIGURE_NAME_MARKUP
-        %%%             }                                        %! FIGURE_NAME_MARKUP
-        %%%     }                                                %! FIGURE_NAME_MARKUP
+            -\tenuto                                                       %! IC
+        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
+        %%%         #2                                                     %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                %! FIGURE_NAME_MARKUP
+        %%%             {                                                  %! FIGURE_NAME_MARKUP
+        %%%                 [                                              %! FIGURE_NAME_MARKUP
+        %%%                 "lh-4 6.1.4"                                   %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
+        %%%                     #1                                         %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
+        %%%                         (7)                                    %! FIGURE_NAME_MARKUP
+        %%%                 ]                                              %! FIGURE_NAME_MARKUP
+        %%%             }                                                  %! FIGURE_NAME_MARKUP
+        %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             r32
             
             f''16
-            -\tenuto                                             %! IC
+            -\tenuto                                                       %! IC
             
             r32
         }
@@ -786,16 +786,16 @@ D_LHVoiceIV = {
 
 D_LHVoiceIVInserts = {
     
-    % [D LHVoiceIVInserts measure 78 / measure 1]                %! SM4
+    % [D LHVoiceIVInserts measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D LHVoiceIVInserts measure 79 / measure 2]                %! SM4
+    % [D LHVoiceIVInserts measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D LHVoiceIVInserts measure 80 / measure 3]                %! SM4
+    % [D LHVoiceIVInserts measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D LHVoiceIVInserts measure 81 / measure 4]                %! SM4
+    % [D LHVoiceIVInserts measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
@@ -803,18 +803,18 @@ D_LHVoiceIVInserts = {
 
 D_LHVoiceV = {
     
-    % [D LHVoiceV measure 78 / measure 1]                        %! SM4
-    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D LHVoiceV measure 78 / measure 1]                                  %! SM4
+    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)      %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
-    \p                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+    \p                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [D LHVoiceV measure 79 / measure 2]                        %! SM4
+    % [D LHVoiceV measure 79 / measure 2]                                  %! SM4
     s1 * 1/2
     
-    % [D LHVoiceV measure 80 / measure 3]                        %! SM4
+    % [D LHVoiceV measure 80 / measure 3]                                  %! SM4
     s1 * 7/8
     
-    % [D LHVoiceV measure 81 / measure 4]                        %! SM4
+    % [D LHVoiceV measure 81 / measure 4]                                  %! SM4
     s1 * 5/8
     
 }
@@ -822,16 +822,16 @@ D_LHVoiceV = {
 
 D_LHVoiceVInserts = {
     
-    % [D LHVoiceVInserts measure 78 / measure 1]                 %! SM4
+    % [D LHVoiceVInserts measure 78 / measure 1]                           %! SM4
     s1 * 9/8
     
-    % [D LHVoiceVInserts measure 79 / measure 2]                 %! SM4
+    % [D LHVoiceVInserts measure 79 / measure 2]                           %! SM4
     s1 * 1/2
     
-    % [D LHVoiceVInserts measure 80 / measure 3]                 %! SM4
+    % [D LHVoiceVInserts measure 80 / measure 3]                           %! SM4
     s1 * 7/8
     
-    % [D LHVoiceVInserts measure 81 / measure 4]                 %! SM4
+    % [D LHVoiceVInserts measure 81 / measure 4]                           %! SM4
     s1 * 5/8
     
 }
@@ -839,23 +839,23 @@ D_LHVoiceVInserts = {
 
 D_LHVoiceVI = {
     
-    % [D LHVoiceVI measure 78 / measure 1]                       %! SM4
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D LHVoiceVI measure 78 / measure 1]                                 %! SM4
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 9/8
-    \f                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
-    ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            (“Piano”)                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+    \f                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
+    ^ \markup {                                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        \with-color                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            #(x11-color 'green4)                                           %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+            (“Piano”)                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     
-    % [D LHVoiceVI measure 79 / measure 2]                       %! SM4
+    % [D LHVoiceVI measure 79 / measure 2]                                 %! SM4
     s1 * 1/2
     
-    % [D LHVoiceVI measure 80 / measure 3]                       %! SM4
+    % [D LHVoiceVI measure 80 / measure 3]                                 %! SM4
     s1 * 7/8
     
-    % [D LHVoiceVI measure 81 / measure 4]                       %! SM4
+    % [D LHVoiceVI measure 81 / measure 4]                                 %! SM4
     s1 * 5/8
     
 }
@@ -863,16 +863,16 @@ D_LHVoiceVI = {
 
 D_LHVoiceVIInserts = {
     
-    % [D LHVoiceVIInserts measure 78 / measure 1]                %! SM4
+    % [D LHVoiceVIInserts measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D LHVoiceVIInserts measure 79 / measure 2]                %! SM4
+    % [D LHVoiceVIInserts measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D LHVoiceVIInserts measure 80 / measure 3]                %! SM4
+    % [D LHVoiceVIInserts measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D LHVoiceVIInserts measure 81 / measure 4]                %! SM4
+    % [D LHVoiceVIInserts measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
@@ -880,16 +880,16 @@ D_LHVoiceVIInserts = {
 
 D_LHResonanceVoice = {
     
-    % [D LHResonanceVoice measure 78 / measure 1]                %! SM4
+    % [D LHResonanceVoice measure 78 / measure 1]                          %! SM4
     s1 * 9/8
     
-    % [D LHResonanceVoice measure 79 / measure 2]                %! SM4
+    % [D LHResonanceVoice measure 79 / measure 2]                          %! SM4
     s1 * 1/2
     
-    % [D LHResonanceVoice measure 80 / measure 3]                %! SM4
+    % [D LHResonanceVoice measure 80 / measure 3]                          %! SM4
     s1 * 7/8
     
-    % [D LHResonanceVoice measure 81 / measure 4]                %! SM4
+    % [D LHResonanceVoice measure 81 / measure 4]                          %! SM4
     s1 * 5/8
     
 }
