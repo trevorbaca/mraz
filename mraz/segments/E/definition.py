@@ -104,6 +104,9 @@ accumulator(
         ),
     baca.nest('-1/4'),
     baca.register(24, 0),
+    # 2018-07-10: F4 flipped to F5 because baca.tie_repeat_pitches()
+    # now SpannerCommand (interpreted before register command) rather than
+    # deprecated Map object (interpreted as 'remaining' command after register)
     baca.tie_repeat_pitches(),
     baca.tuplet_bracket_down(),
     counts=[2],
