@@ -2458,7 +2458,7 @@ E_RHVoiceIII = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                f'8
+                f''8
                 [
                 (                                                          %! SC
                 
