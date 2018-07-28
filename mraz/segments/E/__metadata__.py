@@ -108,7 +108,7 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='LHVoiceVI',
-                                prototype='abjad.Instrument',
+                                manifest='instruments',
                                 value='Piano',
                                 ),
                             ],
@@ -158,7 +158,7 @@ metadata = abjad.OrderedDict(
                         [
                             abjad.Momento(
                                 context='GlobalSkips',
-                                prototype='abjad.MetronomeMark',
+                                manifest='metronome_marks',
                                 value='84',
                                 ),
                             abjad.Momento(
