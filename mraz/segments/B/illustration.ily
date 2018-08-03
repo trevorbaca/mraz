@@ -852,7 +852,7 @@ B_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+            - \tweak color #blue                                           %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
             \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
             [
             (                                                              %! SC
