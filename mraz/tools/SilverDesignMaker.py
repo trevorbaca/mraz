@@ -592,7 +592,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                 c'8
                 \stopGroup
                 s8
-                \bar "|."                                                                  %! SCORE1
+                \bar "|."                                                                  %! SCORE_1
                 \override Score.BarLine.transparent = ##f
             }
 
@@ -682,7 +682,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     f'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1310,7 +1310,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     a'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1727,7 +1727,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     a'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2162,7 +2162,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     d'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2581,7 +2581,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     cs'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2972,7 +2972,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     \stopGroup
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -3602,7 +3602,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     c'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -4224,7 +4224,7 @@ class SilverDesignMaker(abjad.AbjadObject):
                     c'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE1
+                    \bar "|."                                                                  %! SCORE_1
                     \override Score.BarLine.transparent = ##f
                 }
 
