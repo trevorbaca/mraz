@@ -1,36 +1,36 @@
 F_GlobalRests = {
     
-    % [F GlobalRests measure 98 / measure 1]                                       %! SM4
+    % [F GlobalRests measure 98 / measure 1]                                       %! SM_4
     R1 * 3/4
     
-    % [F GlobalRests measure 99 / measure 2]                                       %! SM4
+    % [F GlobalRests measure 99 / measure 2]                                       %! SM_4
     R1 * 1/4
     
-    % [F GlobalRests measure 100 / measure 3]                                      %! SM4
+    % [F GlobalRests measure 100 / measure 3]                                      %! SM_4
     R1 * 3/8
     
-    % [F GlobalRests measure 101 / measure 4]                                      %! SM4
+    % [F GlobalRests measure 101 / measure 4]                                      %! SM_4
     R1 * 9/16
     
-    % [F GlobalRests measure 102 / measure 5]                                      %! SM4
+    % [F GlobalRests measure 102 / measure 5]                                      %! SM_4
     R1 * 5/16
     
-    % [F GlobalRests measure 103 / measure 6]                                      %! SM4
+    % [F GlobalRests measure 103 / measure 6]                                      %! SM_4
     R1 * 9/16
     
-    % [F GlobalRests measure 104 / measure 7]                                      %! SM4
+    % [F GlobalRests measure 104 / measure 7]                                      %! SM_4
     R1 * 7/16
     
-    % [F GlobalRests measure 105 / measure 8]                                      %! SM4
+    % [F GlobalRests measure 105 / measure 8]                                      %! SM_4
     R1 * 9/16
     
-    % [F GlobalRests measure 106 / measure 9]                                      %! SM4
+    % [F GlobalRests measure 106 / measure 9]                                      %! SM_4
     R1 * 3/16
     
-    % [F GlobalRests measure 107 / measure 10]                                     %! SM4
+    % [F GlobalRests measure 107 / measure 10]                                     %! SM_4
     R1 * 5/8
     
-    % [F GlobalRests measure 108 / measure 11]                                     %! SM4
+    % [F GlobalRests measure 108 / measure 11]                                     %! SM_4
     R1 * 1/8
     
 }
@@ -38,43 +38,43 @@ F_GlobalRests = {
 
 F_GlobalSkips = {
     
-    % [F GlobalSkips measure 98 / measure 1]                                       %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    % [F GlobalSkips measure 98 / measure 1]                                       %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
     \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (98)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <0>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [F.1]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'16'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'DeepPink1)                                        %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'DeepPink1)                                        %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [F GlobalSkips measure 99 / measure 2]                                       %! SM4
-    \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 99 / measure 2]                                       %! SM_4
+    \time 1/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/4
 %@% ^ \markup \baca-dark-cyan-markup (99)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <1>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -82,9 +82,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.2]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'18'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 100 / measure 3]                                      %! SM4
-    \time 3/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 100 / measure 3]                                      %! SM_4
+    \time 3/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/8
 %@% ^ \markup \baca-dark-cyan-markup (100)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <2>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -92,9 +92,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.3]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'18'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 101 / measure 4]                                      %! SM4
-    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 101 / measure 4]                                      %! SM_4
+    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 9/16
 %@% ^ \markup \baca-dark-cyan-markup (101)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <3>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -102,9 +102,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.4]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'19'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 102 / measure 5]                                      %! SM4
-    \time 5/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 102 / measure 5]                                      %! SM_4
+    \time 5/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 5/16
 %@% ^ \markup \baca-dark-cyan-markup (102)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <4>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -112,9 +112,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.5]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'21'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 103 / measure 6]                                      %! SM4
-    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 103 / measure 6]                                      %! SM_4
+    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 9/16
 %@% ^ \markup \baca-dark-cyan-markup (103)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <5>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -122,9 +122,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.6]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'22'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 104 / measure 7]                                      %! SM4
-    \time 7/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 104 / measure 7]                                      %! SM_4
+    \time 7/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 7/16
 %@% ^ \markup \baca-dark-cyan-markup (104)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <6>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -132,9 +132,9 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.7]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'24'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 105 / measure 8]                                      %! SM4
-    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 105 / measure 8]                                      %! SM_4
+    \time 9/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 9/16
 %@% ^ \markup \baca-dark-cyan-markup (105)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <7>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -142,42 +142,42 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.8]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'25'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 106 / measure 9]                                      %! SM4
-    \time 3/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 106 / measure 9]                                      %! SM_4
+    \time 3/16                                                                     %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/16
 %@% ^ \markup \baca-dark-cyan-markup (106)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <8>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((9))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [F.9]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'26'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                       %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                   %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                       %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                   %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [F GlobalSkips measure 107 / measure 10]                                     %! SM4
-    \time 5/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 107 / measure 10]                                     %! SM_4
+    \time 5/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 5/8
 %@% ^ \markup \baca-dark-cyan-markup (107)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <9>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -185,18 +185,18 @@ F_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [F.10]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'27'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [F GlobalSkips measure 108 / measure 11]                                     %! SM4
-    \time 1/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [F GlobalSkips measure 108 / measure 11]                                     %! SM_4
+    \time 1/8                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/8
 %@% ^ \markup \baca-dark-cyan-markup (108)                                         %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <10>                                          %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((11))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [F.11]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'28'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI4
-    \baca_bar_line_visible                                                         %! SM5
-    \bar "|."                                                                      %! SM5
+    \stopTextSpan                                                                  %! MMI_4
+    \baca_bar_line_visible                                                         %! SM_5
+    \bar "|."                                                                      %! SM_5
     
 }
 
@@ -208,11 +208,11 @@ F_RHVoiceI = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 5/6 {
                 
-                % [F RHVoiceI measure 98 / measure 1]                      %! SM4
+                % [F RHVoiceI measure 98 / measure 1]                      %! SM_4
                 \override Beam.positions = #'(10 . 10)                     %! OC1
                 \override Stem.direction = #up                             %! OC1
-                \set stemLeftBeamCount = 0                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 0                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 \clef "treble"                                             %! SM8:REAPPLIED_CLEF:SM37
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
             %@% \override PianoMusicRHStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -238,75 +238,75 @@ F_RHVoiceI = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                [                                                          %! SM35
+                [                                                          %! SM_35
                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 cs''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 d'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 fs''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 d'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 g''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 af''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 bf''!16
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 ef'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 a'''16
             }
         }
     }
     
-    % [F RHVoiceI measure 99 / measure 2]                                  %! SM4
+    % [F RHVoiceI measure 99 / measure 2]                                  %! SM_4
     s1 * 1/4
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
             \times 2/3 {
                 
-                % [F RHVoiceI measure 100 / measure 3]                     %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceI measure 100 / measure 3]                     %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 fs''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -326,47 +326,47 @@ F_RHVoiceI = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 bf''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 e'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 fs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 g'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 a'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 0                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 0                                %! SM_35
                 e'''16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
             }
         }
     }
     
-    % [F RHVoiceI measure 101 / measure 4]                                 %! SM4
+    % [F RHVoiceI measure 101 / measure 4]                                 %! SM_4
     s1 * 9/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceI measure 102 / measure 5]                     %! SM4
-                \set stemLeftBeamCount = 0                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceI measure 102 / measure 5]                     %! SM_4
+                \set stemLeftBeamCount = 0                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 af''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -385,33 +385,33 @@ F_RHVoiceI = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                [                                                          %! SM35
+                [                                                          %! SM_35
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 a''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 fs'''!16
             }
         }
     }
     
-    % [F RHVoiceI measure 103 / measure 6]                                 %! SM4
+    % [F RHVoiceI measure 103 / measure 6]                                 %! SM_4
     s1 * 9/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceI measure 104 / measure 7]                     %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceI measure 104 / measure 7]                     %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 af''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -431,31 +431,31 @@ F_RHVoiceI = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 e'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 fs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 bf'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 0                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 0                                %! SM_35
                 fs'''!16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
             }
         }
     }
     
-    % [F RHVoiceI measure 105 / measure 8]                                 %! SM4
+    % [F RHVoiceI measure 105 / measure 8]                                 %! SM_4
     s1 * 3/4
     {
         \tweak text #tuplet-number::calc-fraction-text
@@ -463,7 +463,7 @@ F_RHVoiceI = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                % [F RHVoiceI measure 107 / measure 10]                    %! SM4
+                % [F RHVoiceI measure 107 / measure 10]                    %! SM_4
                 \override Beam.positions = #'(12 . 12)                     %! OC1
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
@@ -538,7 +538,7 @@ F_RHVoiceI = {
         }
     }
     
-    % [F RHVoiceI measure 108 / measure 11]                                %! SM4
+    % [F RHVoiceI measure 108 / measure 11]                                %! SM_4
     s1 * 1/8
     \revert Beam.positions                                                 %! OC2
     
@@ -554,11 +554,11 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 5/6 {
                 
-                % [F RHVoiceIInserts measure 98 / measure 1]               %! SM4
+                % [F RHVoiceIInserts measure 98 / measure 1]               %! SM_4
                 \override Beam.positions = #'(-6.5 . -6.5)                 %! OC1
                 \override Script.direction = #down                         %! OC1
                 s16
-                [                                                          %! SM35
+                [                                                          %! SM_35
                 
                 s16
                 
@@ -573,8 +573,8 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 -\marcato                                                  %! IC
                 
@@ -586,8 +586,8 @@ F_RHVoiceIInserts = {
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 b''16
                 -\marcato                                                  %! IC
                 
@@ -600,7 +600,7 @@ F_RHVoiceIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIInserts measure 99 / measure 2]                           %! SM4
+    % [F RHVoiceIInserts measure 99 / measure 2]                           %! SM_4
     s1 * 1/4
     {
         \override TupletBracket.stencil = ##f
@@ -609,7 +609,7 @@ F_RHVoiceIInserts = {
         \times 6/5 {
             \times 2/3 {
                 
-                % [F RHVoiceIInserts measure 100 / measure 3]              %! SM4
+                % [F RHVoiceIInserts measure 100 / measure 3]              %! SM_4
                 s16
                 
                 s16
@@ -619,27 +619,27 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 fs'''!16
                 -\marcato                                                  %! IC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 g'''16
                 -\marcato                                                  %! IC
                 
                 s16
                 
                 s16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
             }
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIInserts measure 101 / measure 4]                          %! SM4
+    % [F RHVoiceIInserts measure 101 / measure 4]                          %! SM_4
     s1 * 9/16
     {
         \override TupletBracket.stencil = ##f
@@ -648,13 +648,13 @@ F_RHVoiceIInserts = {
         \times 5/4 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceIInserts measure 102 / measure 5]              %! SM4
+                % [F RHVoiceIInserts measure 102 / measure 5]              %! SM_4
                 \override Beam.positions = #'(-8.5 . -8.5)                 %! OC1
                 s16
-                [                                                          %! SM35
+                [                                                          %! SM_35
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 a''16
                 -\marcato                                                  %! IC
                 
@@ -668,7 +668,7 @@ F_RHVoiceIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIInserts measure 103 / measure 6]                          %! SM4
+    % [F RHVoiceIInserts measure 103 / measure 6]                          %! SM_4
     s1 * 9/16
     {
         \override TupletBracket.stencil = ##f
@@ -677,14 +677,14 @@ F_RHVoiceIInserts = {
         \times 7/6 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceIInserts measure 104 / measure 7]              %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceIInserts measure 104 / measure 7]              %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 af''!16
                 -\marcato                                                  %! IC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f'''16
                 -\marcato                                                  %! IC
                 
@@ -695,14 +695,14 @@ F_RHVoiceIInserts = {
                 s16
                 
                 s16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
             }
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIInserts measure 105 / measure 8]                          %! SM4
+    % [F RHVoiceIInserts measure 105 / measure 8]                          %! SM_4
     s1 * 3/4
     {
         \override TupletBracket.stencil = ##f
@@ -712,7 +712,7 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                % [F RHVoiceIInserts measure 107 / measure 10]             %! SM4
+                % [F RHVoiceIInserts measure 107 / measure 10]             %! SM_4
                 s16
                 [
                 
@@ -757,7 +757,7 @@ F_RHVoiceIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIInserts measure 108 / measure 11]                         %! SM4
+    % [F RHVoiceIInserts measure 108 / measure 11]                         %! SM_4
     s1 * 1/8
     \revert Script.direction                                               %! OC2
     
@@ -766,7 +766,7 @@ F_RHVoiceIInserts = {
 
 F_RHVoiceII = {
     
-    % [F RHVoiceII measure 98 / measure 1]                                 %! SM4
+    % [F RHVoiceII measure 98 / measure 1]                                 %! SM_4
     \override Beam.positions = #'(-4.5 . -4.5)                             %! OC1
     \override Slur.direction = #up                                         %! OC1
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
@@ -776,10 +776,10 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 99 / measure 2]                         %! SM4
+            % [F RHVoiceII measure 99 / measure 2]                         %! SM_4
             \override Stem.direction = #down                               %! OC1
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
             c''16
             \fff                                                           %! SM8:REDUNDANT_DYNAMIC:IC
@@ -800,34 +800,34 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM35
+            [                                                              %! SM_35
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             d''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             ef''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 1                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 1                                    %! SM_35
             f''16
             )                                                              %! SC
         }
     }
     
-    % [F RHVoiceII measure 100 / measure 3]                                %! SM4
+    % [F RHVoiceII measure 100 / measure 3]                                %! SM_4
     s1 * 3/8
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/10 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceII measure 101 / measure 4]                    %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceII measure 101 / measure 4]                    %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 cs''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -848,63 +848,63 @@ F_RHVoiceII = {
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 (                                                          %! SC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 b'16
                 )                                                          %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 cs''!16
                 (                                                          %! SC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 d''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 e''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 b''16
                 )                                                          %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 (                                                          %! SC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 ef'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 0                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 0                                %! SM_35
                 a''16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
                 )                                                          %! SC
             }
         }
     }
     
-    % [F RHVoiceII measure 102 / measure 5]                                %! SM4
+    % [F RHVoiceII measure 102 / measure 5]                                %! SM_4
     s1 * 5/16
     {
         \times 2/3 {
             
-            % [F RHVoiceII measure 103 / measure 6]                        %! SM4
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            % [F RHVoiceII measure 103 / measure 6]                        %! SM_4
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             c''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -923,75 +923,75 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM35
+            [                                                              %! SM_35
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             bf''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 1                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 1                                    %! SM_35
             e''16
             )                                                              %! SC
         }
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
             
-            \set stemLeftBeamCount = 1                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 1                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             cs''!16
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             bf''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             a''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             b''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             ef'''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 1                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 1                                    %! SM_35
             b''16
             )                                                              %! SC
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 1                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             g''16
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             f'''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 1                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 1                                    %! SM_35
             b''16
             )                                                              %! SC
         }
     }
     
-    % [F RHVoiceII measure 104 / measure 7]                                %! SM4
+    % [F RHVoiceII measure 104 / measure 7]                                %! SM_4
     s1 * 7/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/10 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceII measure 105 / measure 8]                    %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceII measure 105 / measure 8]                    %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 a''16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -1012,46 +1012,46 @@ F_RHVoiceII = {
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 (                                                          %! SC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 1                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 1                                %! SM_35
                 d'''16
                 )                                                          %! SC
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 ef'''!16
                 (                                                          %! SC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 cs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 0                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 0                                %! SM_35
                 cs'''!16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
                 )                                                          %! SC
             }
         }
@@ -1059,9 +1059,9 @@ F_RHVoiceII = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceII measure 106 / measure 9]                        %! SM4
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            % [F RHVoiceII measure 106 / measure 9]                        %! SM_4
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             f''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1080,28 +1080,28 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM35
+            [                                                              %! SM_35
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             a''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 1                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 1                                    %! SM_35
             ef'''!16
             )                                                              %! SC
         }
     }
     
-    % [F RHVoiceII measure 107 / measure 10]                               %! SM4
+    % [F RHVoiceII measure 107 / measure 10]                               %! SM_4
     s1 * 5/8
     {
         \times 2/3 {
             
-            % [F RHVoiceII measure 108 / measure 11]                       %! SM4
-            \set stemLeftBeamCount = 1                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            % [F RHVoiceII measure 108 / measure 11]                       %! SM_4
+            \set stemLeftBeamCount = 1                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             e'''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1122,14 +1122,14 @@ F_RHVoiceII = {
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             (                                                              %! SC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             d'''16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 0                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 0                                    %! SM_35
             af'''!16
-            ]                                                              %! SM35
+            ]                                                              %! SM_35
             )                                                              %! SC
             \revert Beam.positions                                         %! OC2
             \revert Slur.direction                                         %! OC2
@@ -1142,7 +1142,7 @@ F_RHVoiceII = {
 
 F_RHVoiceIIInserts = {
     
-    % [F RHVoiceIIInserts measure 98 / measure 1]                          %! SM4
+    % [F RHVoiceIIInserts measure 98 / measure 1]                          %! SM_4
     \override Beam.positions = #'(15.5 . 15.5)                             %! OC1
     \override Script.direction = #up                                       %! OC1
     s1 * 3/4
@@ -1151,16 +1151,16 @@ F_RHVoiceIIInserts = {
         \override TupletNumber.stencil = ##f
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceIIInserts measure 99 / measure 2]                  %! SM4
+            % [F RHVoiceIIInserts measure 99 / measure 2]                  %! SM_4
             \override Stem.direction = #up                                 %! OC1
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             c''16
             -\accent                                                       %! IC
-            [                                                              %! SM35
+            [                                                              %! SM_35
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             d''16
             -\accent                                                       %! IC
             
@@ -1172,7 +1172,7 @@ F_RHVoiceIIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIIInserts measure 100 / measure 3]                         %! SM4
+    % [F RHVoiceIIInserts measure 100 / measure 3]                         %! SM_4
     s1 * 3/8
     {
         \override TupletBracket.stencil = ##f
@@ -1181,14 +1181,14 @@ F_RHVoiceIIInserts = {
         \times 9/10 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceIIInserts measure 101 / measure 4]             %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceIIInserts measure 101 / measure 4]             %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 cs''!16
                 -\accent                                                   %! IC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 -\accent                                                   %! IC
                 
@@ -1206,18 +1206,18 @@ F_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 f''16
                 -\accent                                                   %! IC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 ef'''!16
                 -\accent                                                   %! IC
                 
                 s16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
                 \revert Beam.positions                                     %! OC2
             }
         }
@@ -1225,23 +1225,23 @@ F_RHVoiceIIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIIInserts measure 102 / measure 5]                         %! SM4
+    % [F RHVoiceIIInserts measure 102 / measure 5]                         %! SM_4
     s1 * 5/16
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
         \times 2/3 {
             
-            % [F RHVoiceIIInserts measure 103 / measure 6]                 %! SM4
+            % [F RHVoiceIIInserts measure 103 / measure 6]                 %! SM_4
             \override Beam.positions = #'(13.5 . 13.5)                     %! OC1
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             c''16
             -\accent                                                       %! IC
-            [                                                              %! SM35
+            [                                                              %! SM_35
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             bf''!16
             -\accent                                                       %! IC
             
@@ -1264,13 +1264,13 @@ F_RHVoiceIIInserts = {
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 1                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             g''16
             -\accent                                                       %! IC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             f'''16
             -\accent                                                       %! IC
             
@@ -1280,7 +1280,7 @@ F_RHVoiceIIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIIInserts measure 104 / measure 7]                         %! SM4
+    % [F RHVoiceIIInserts measure 104 / measure 7]                         %! SM_4
     s1 * 7/16
     {
         \override TupletBracket.stencil = ##f
@@ -1289,9 +1289,9 @@ F_RHVoiceIIInserts = {
         \times 9/10 {
             \scaleDurations #'(1 . 1) {
                 
-                % [F RHVoiceIIInserts measure 105 / measure 8]             %! SM4
-                \set stemLeftBeamCount = 1                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                % [F RHVoiceIIInserts measure 105 / measure 8]             %! SM_4
+                \set stemLeftBeamCount = 1                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 a''16
                 -\accent                                                   %! IC
                 
@@ -1303,13 +1303,13 @@ F_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 ef'''!16
                 -\accent                                                   %! IC
                 
-                \set stemLeftBeamCount = 2                                 %! SM35
-                \set stemRightBeamCount = 2                                %! SM35
+                \set stemLeftBeamCount = 2                                 %! SM_35
+                \set stemRightBeamCount = 2                                %! SM_35
                 c'''16
                 -\accent                                                   %! IC
                 
@@ -1320,7 +1320,7 @@ F_RHVoiceIIInserts = {
                 s16
                 
                 s16
-                ]                                                          %! SM35
+                ]                                                          %! SM_35
                 \revert Beam.positions                                     %! OC2
             }
         }
@@ -1332,13 +1332,13 @@ F_RHVoiceIIInserts = {
         \override TupletNumber.stencil = ##f
         \scaleDurations #'(1 . 1) {
             
-            % [F RHVoiceIIInserts measure 106 / measure 9]                 %! SM4
+            % [F RHVoiceIIInserts measure 106 / measure 9]                 %! SM_4
             \override Beam.positions = #'(18.5 . 18.5)                     %! OC1
-            \set stemLeftBeamCount = 0                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 0                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             f''16
             -\accent                                                       %! IC
-            [                                                              %! SM35
+            [                                                              %! SM_35
             
             s16
             
@@ -1348,26 +1348,26 @@ F_RHVoiceIIInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [F RHVoiceIIInserts measure 107 / measure 10]                        %! SM4
+    % [F RHVoiceIIInserts measure 107 / measure 10]                        %! SM_4
     s1 * 5/8
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
         \times 2/3 {
             
-            % [F RHVoiceIIInserts measure 108 / measure 11]                %! SM4
+            % [F RHVoiceIIInserts measure 108 / measure 11]                %! SM_4
             s16
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 2                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 2                                    %! SM_35
             d'''16
             -\accent                                                       %! IC
             
-            \set stemLeftBeamCount = 2                                     %! SM35
-            \set stemRightBeamCount = 0                                    %! SM35
+            \set stemLeftBeamCount = 2                                     %! SM_35
+            \set stemRightBeamCount = 0                                    %! SM_35
             af'''!16
             -\accent                                                       %! IC
-            ]                                                              %! SM35
+            ]                                                              %! SM_35
             \revert Beam.positions                                         %! OC2
             \revert Script.direction                                       %! OC2
             \revert Stem.direction                                         %! OC2
@@ -1381,39 +1381,39 @@ F_RHVoiceIIInserts = {
 
 F_RHVoiceIII = {
     
-    % [F RHVoiceIII measure 98 / measure 1]                                %! SM4
+    % [F RHVoiceIII measure 98 / measure 1]                                %! SM_4
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4)    %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 3/4
     \mp                                                                    %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F RHVoiceIII measure 99 / measure 2]                                %! SM4
+    % [F RHVoiceIII measure 99 / measure 2]                                %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceIII measure 100 / measure 3]                               %! SM4
+    % [F RHVoiceIII measure 100 / measure 3]                               %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceIII measure 101 / measure 4]                               %! SM4
+    % [F RHVoiceIII measure 101 / measure 4]                               %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIII measure 102 / measure 5]                               %! SM4
+    % [F RHVoiceIII measure 102 / measure 5]                               %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceIII measure 103 / measure 6]                               %! SM4
+    % [F RHVoiceIII measure 103 / measure 6]                               %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIII measure 104 / measure 7]                               %! SM4
+    % [F RHVoiceIII measure 104 / measure 7]                               %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceIII measure 105 / measure 8]                               %! SM4
+    % [F RHVoiceIII measure 105 / measure 8]                               %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIII measure 106 / measure 9]                               %! SM4
+    % [F RHVoiceIII measure 106 / measure 9]                               %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceIII measure 107 / measure 10]                              %! SM4
+    % [F RHVoiceIII measure 107 / measure 10]                              %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceIII measure 108 / measure 11]                              %! SM4
+    % [F RHVoiceIII measure 108 / measure 11]                              %! SM_4
     s1 * 1/8
     
 }
@@ -1421,37 +1421,37 @@ F_RHVoiceIII = {
 
 F_RHVoiceIIIInserts = {
     
-    % [F RHVoiceIIIInserts measure 98 / measure 1]                         %! SM4
+    % [F RHVoiceIIIInserts measure 98 / measure 1]                         %! SM_4
     s1 * 3/4
     
-    % [F RHVoiceIIIInserts measure 99 / measure 2]                         %! SM4
+    % [F RHVoiceIIIInserts measure 99 / measure 2]                         %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceIIIInserts measure 100 / measure 3]                        %! SM4
+    % [F RHVoiceIIIInserts measure 100 / measure 3]                        %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceIIIInserts measure 101 / measure 4]                        %! SM4
+    % [F RHVoiceIIIInserts measure 101 / measure 4]                        %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIIIInserts measure 102 / measure 5]                        %! SM4
+    % [F RHVoiceIIIInserts measure 102 / measure 5]                        %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceIIIInserts measure 103 / measure 6]                        %! SM4
+    % [F RHVoiceIIIInserts measure 103 / measure 6]                        %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIIIInserts measure 104 / measure 7]                        %! SM4
+    % [F RHVoiceIIIInserts measure 104 / measure 7]                        %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceIIIInserts measure 105 / measure 8]                        %! SM4
+    % [F RHVoiceIIIInserts measure 105 / measure 8]                        %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIIIInserts measure 106 / measure 9]                        %! SM4
+    % [F RHVoiceIIIInserts measure 106 / measure 9]                        %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceIIIInserts measure 107 / measure 10]                       %! SM4
+    % [F RHVoiceIIIInserts measure 107 / measure 10]                       %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceIIIInserts measure 108 / measure 11]                       %! SM4
+    % [F RHVoiceIIIInserts measure 108 / measure 11]                       %! SM_4
     s1 * 1/8
     
 }
@@ -1459,39 +1459,39 @@ F_RHVoiceIIIInserts = {
 
 F_RHVoiceIV = {
     
-    % [F RHVoiceIV measure 98 / measure 1]                                 %! SM4
+    % [F RHVoiceIV measure 98 / measure 1]                                 %! SM_4
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 3/4
     \p                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
     
-    % [F RHVoiceIV measure 99 / measure 2]                                 %! SM4
+    % [F RHVoiceIV measure 99 / measure 2]                                 %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceIV measure 100 / measure 3]                                %! SM4
+    % [F RHVoiceIV measure 100 / measure 3]                                %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceIV measure 101 / measure 4]                                %! SM4
+    % [F RHVoiceIV measure 101 / measure 4]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIV measure 102 / measure 5]                                %! SM4
+    % [F RHVoiceIV measure 102 / measure 5]                                %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceIV measure 103 / measure 6]                                %! SM4
+    % [F RHVoiceIV measure 103 / measure 6]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIV measure 104 / measure 7]                                %! SM4
+    % [F RHVoiceIV measure 104 / measure 7]                                %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceIV measure 105 / measure 8]                                %! SM4
+    % [F RHVoiceIV measure 105 / measure 8]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIV measure 106 / measure 9]                                %! SM4
+    % [F RHVoiceIV measure 106 / measure 9]                                %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceIV measure 107 / measure 10]                               %! SM4
+    % [F RHVoiceIV measure 107 / measure 10]                               %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceIV measure 108 / measure 11]                               %! SM4
+    % [F RHVoiceIV measure 108 / measure 11]                               %! SM_4
     s1 * 1/8
     
 }
@@ -1499,37 +1499,37 @@ F_RHVoiceIV = {
 
 F_RHVoiceIVInserts = {
     
-    % [F RHVoiceIVInserts measure 98 / measure 1]                          %! SM4
+    % [F RHVoiceIVInserts measure 98 / measure 1]                          %! SM_4
     s1 * 3/4
     
-    % [F RHVoiceIVInserts measure 99 / measure 2]                          %! SM4
+    % [F RHVoiceIVInserts measure 99 / measure 2]                          %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceIVInserts measure 100 / measure 3]                         %! SM4
+    % [F RHVoiceIVInserts measure 100 / measure 3]                         %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceIVInserts measure 101 / measure 4]                         %! SM4
+    % [F RHVoiceIVInserts measure 101 / measure 4]                         %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIVInserts measure 102 / measure 5]                         %! SM4
+    % [F RHVoiceIVInserts measure 102 / measure 5]                         %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceIVInserts measure 103 / measure 6]                         %! SM4
+    % [F RHVoiceIVInserts measure 103 / measure 6]                         %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIVInserts measure 104 / measure 7]                         %! SM4
+    % [F RHVoiceIVInserts measure 104 / measure 7]                         %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceIVInserts measure 105 / measure 8]                         %! SM4
+    % [F RHVoiceIVInserts measure 105 / measure 8]                         %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceIVInserts measure 106 / measure 9]                         %! SM4
+    % [F RHVoiceIVInserts measure 106 / measure 9]                         %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceIVInserts measure 107 / measure 10]                        %! SM4
+    % [F RHVoiceIVInserts measure 107 / measure 10]                        %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceIVInserts measure 108 / measure 11]                        %! SM4
+    % [F RHVoiceIVInserts measure 108 / measure 11]                        %! SM_4
     s1 * 1/8
     
 }
@@ -1537,37 +1537,37 @@ F_RHVoiceIVInserts = {
 
 F_RHVoiceV = {
     
-    % [F RHVoiceV measure 98 / measure 1]                                  %! SM4
+    % [F RHVoiceV measure 98 / measure 1]                                  %! SM_4
     s1 * 3/4
     
-    % [F RHVoiceV measure 99 / measure 2]                                  %! SM4
+    % [F RHVoiceV measure 99 / measure 2]                                  %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceV measure 100 / measure 3]                                 %! SM4
+    % [F RHVoiceV measure 100 / measure 3]                                 %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceV measure 101 / measure 4]                                 %! SM4
+    % [F RHVoiceV measure 101 / measure 4]                                 %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceV measure 102 / measure 5]                                 %! SM4
+    % [F RHVoiceV measure 102 / measure 5]                                 %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceV measure 103 / measure 6]                                 %! SM4
+    % [F RHVoiceV measure 103 / measure 6]                                 %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceV measure 104 / measure 7]                                 %! SM4
+    % [F RHVoiceV measure 104 / measure 7]                                 %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceV measure 105 / measure 8]                                 %! SM4
+    % [F RHVoiceV measure 105 / measure 8]                                 %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceV measure 106 / measure 9]                                 %! SM4
+    % [F RHVoiceV measure 106 / measure 9]                                 %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceV measure 107 / measure 10]                                %! SM4
+    % [F RHVoiceV measure 107 / measure 10]                                %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceV measure 108 / measure 11]                                %! SM4
+    % [F RHVoiceV measure 108 / measure 11]                                %! SM_4
     s1 * 1/8
     
 }
@@ -1575,37 +1575,37 @@ F_RHVoiceV = {
 
 F_RHVoiceVI = {
     
-    % [F RHVoiceVI measure 98 / measure 1]                                 %! SM4
+    % [F RHVoiceVI measure 98 / measure 1]                                 %! SM_4
     s1 * 3/4
     
-    % [F RHVoiceVI measure 99 / measure 2]                                 %! SM4
+    % [F RHVoiceVI measure 99 / measure 2]                                 %! SM_4
     s1 * 1/4
     
-    % [F RHVoiceVI measure 100 / measure 3]                                %! SM4
+    % [F RHVoiceVI measure 100 / measure 3]                                %! SM_4
     s1 * 3/8
     
-    % [F RHVoiceVI measure 101 / measure 4]                                %! SM4
+    % [F RHVoiceVI measure 101 / measure 4]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceVI measure 102 / measure 5]                                %! SM4
+    % [F RHVoiceVI measure 102 / measure 5]                                %! SM_4
     s1 * 5/16
     
-    % [F RHVoiceVI measure 103 / measure 6]                                %! SM4
+    % [F RHVoiceVI measure 103 / measure 6]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceVI measure 104 / measure 7]                                %! SM4
+    % [F RHVoiceVI measure 104 / measure 7]                                %! SM_4
     s1 * 7/16
     
-    % [F RHVoiceVI measure 105 / measure 8]                                %! SM4
+    % [F RHVoiceVI measure 105 / measure 8]                                %! SM_4
     s1 * 9/16
     
-    % [F RHVoiceVI measure 106 / measure 9]                                %! SM4
+    % [F RHVoiceVI measure 106 / measure 9]                                %! SM_4
     s1 * 3/16
     
-    % [F RHVoiceVI measure 107 / measure 10]                               %! SM4
+    % [F RHVoiceVI measure 107 / measure 10]                               %! SM_4
     s1 * 5/8
     
-    % [F RHVoiceVI measure 108 / measure 11]                               %! SM4
+    % [F RHVoiceVI measure 108 / measure 11]                               %! SM_4
     s1 * 1/8
     
 }
@@ -1613,37 +1613,37 @@ F_RHVoiceVI = {
 
 F_RHResonanceVoice = {
     
-    % [F RHResonanceVoice measure 98 / measure 1]                          %! SM4
+    % [F RHResonanceVoice measure 98 / measure 1]                          %! SM_4
     s1 * 3/4
     
-    % [F RHResonanceVoice measure 99 / measure 2]                          %! SM4
+    % [F RHResonanceVoice measure 99 / measure 2]                          %! SM_4
     s1 * 1/4
     
-    % [F RHResonanceVoice measure 100 / measure 3]                         %! SM4
+    % [F RHResonanceVoice measure 100 / measure 3]                         %! SM_4
     s1 * 3/8
     
-    % [F RHResonanceVoice measure 101 / measure 4]                         %! SM4
+    % [F RHResonanceVoice measure 101 / measure 4]                         %! SM_4
     s1 * 9/16
     
-    % [F RHResonanceVoice measure 102 / measure 5]                         %! SM4
+    % [F RHResonanceVoice measure 102 / measure 5]                         %! SM_4
     s1 * 5/16
     
-    % [F RHResonanceVoice measure 103 / measure 6]                         %! SM4
+    % [F RHResonanceVoice measure 103 / measure 6]                         %! SM_4
     s1 * 9/16
     
-    % [F RHResonanceVoice measure 104 / measure 7]                         %! SM4
+    % [F RHResonanceVoice measure 104 / measure 7]                         %! SM_4
     s1 * 7/16
     
-    % [F RHResonanceVoice measure 105 / measure 8]                         %! SM4
+    % [F RHResonanceVoice measure 105 / measure 8]                         %! SM_4
     s1 * 9/16
     
-    % [F RHResonanceVoice measure 106 / measure 9]                         %! SM4
+    % [F RHResonanceVoice measure 106 / measure 9]                         %! SM_4
     s1 * 3/16
     
-    % [F RHResonanceVoice measure 107 / measure 10]                        %! SM4
+    % [F RHResonanceVoice measure 107 / measure 10]                        %! SM_4
     s1 * 5/8
     
-    % [F RHResonanceVoice measure 108 / measure 11]                        %! SM4
+    % [F RHResonanceVoice measure 108 / measure 11]                        %! SM_4
     s1 * 1/8
     
 }
@@ -1677,37 +1677,37 @@ F_PianoMusicRHStaff = <<
 
 F_LHVoiceI = {
     
-    % [F LHVoiceI measure 98 / measure 1]                                  %! SM4
+    % [F LHVoiceI measure 98 / measure 1]                                  %! SM_4
     s1 * 3/4
     
-    % [F LHVoiceI measure 99 / measure 2]                                  %! SM4
+    % [F LHVoiceI measure 99 / measure 2]                                  %! SM_4
     s1 * 1/4
     
-    % [F LHVoiceI measure 100 / measure 3]                                 %! SM4
+    % [F LHVoiceI measure 100 / measure 3]                                 %! SM_4
     s1 * 3/8
     
-    % [F LHVoiceI measure 101 / measure 4]                                 %! SM4
+    % [F LHVoiceI measure 101 / measure 4]                                 %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceI measure 102 / measure 5]                                 %! SM4
+    % [F LHVoiceI measure 102 / measure 5]                                 %! SM_4
     s1 * 5/16
     
-    % [F LHVoiceI measure 103 / measure 6]                                 %! SM4
+    % [F LHVoiceI measure 103 / measure 6]                                 %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceI measure 104 / measure 7]                                 %! SM4
+    % [F LHVoiceI measure 104 / measure 7]                                 %! SM_4
     s1 * 7/16
     
-    % [F LHVoiceI measure 105 / measure 8]                                 %! SM4
+    % [F LHVoiceI measure 105 / measure 8]                                 %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceI measure 106 / measure 9]                                 %! SM4
+    % [F LHVoiceI measure 106 / measure 9]                                 %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceI measure 107 / measure 10]                                %! SM4
+    % [F LHVoiceI measure 107 / measure 10]                                %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceI measure 108 / measure 11]                                %! SM4
+    % [F LHVoiceI measure 108 / measure 11]                                %! SM_4
     s1 * 1/8
     
 }
@@ -1715,37 +1715,37 @@ F_LHVoiceI = {
 
 F_LHVoiceII = {
     
-    % [F LHVoiceII measure 98 / measure 1]                                 %! SM4
+    % [F LHVoiceII measure 98 / measure 1]                                 %! SM_4
     s1 * 3/4
     
-    % [F LHVoiceII measure 99 / measure 2]                                 %! SM4
+    % [F LHVoiceII measure 99 / measure 2]                                 %! SM_4
     s1 * 1/4
     
-    % [F LHVoiceII measure 100 / measure 3]                                %! SM4
+    % [F LHVoiceII measure 100 / measure 3]                                %! SM_4
     s1 * 3/8
     
-    % [F LHVoiceII measure 101 / measure 4]                                %! SM4
+    % [F LHVoiceII measure 101 / measure 4]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceII measure 102 / measure 5]                                %! SM4
+    % [F LHVoiceII measure 102 / measure 5]                                %! SM_4
     s1 * 5/16
     
-    % [F LHVoiceII measure 103 / measure 6]                                %! SM4
+    % [F LHVoiceII measure 103 / measure 6]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceII measure 104 / measure 7]                                %! SM4
+    % [F LHVoiceII measure 104 / measure 7]                                %! SM_4
     s1 * 7/16
     
-    % [F LHVoiceII measure 105 / measure 8]                                %! SM4
+    % [F LHVoiceII measure 105 / measure 8]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceII measure 106 / measure 9]                                %! SM4
+    % [F LHVoiceII measure 106 / measure 9]                                %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceII measure 107 / measure 10]                               %! SM4
+    % [F LHVoiceII measure 107 / measure 10]                               %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceII measure 108 / measure 11]                               %! SM4
+    % [F LHVoiceII measure 108 / measure 11]                               %! SM_4
     s1 * 1/8
     
 }
@@ -1753,37 +1753,37 @@ F_LHVoiceII = {
 
 F_LHVoiceIII = {
     
-    % [F LHVoiceIII measure 98 / measure 1]                                %! SM4
+    % [F LHVoiceIII measure 98 / measure 1]                                %! SM_4
     s1 * 3/4
     
-    % [F LHVoiceIII measure 99 / measure 2]                                %! SM4
+    % [F LHVoiceIII measure 99 / measure 2]                                %! SM_4
     s1 * 1/4
     
-    % [F LHVoiceIII measure 100 / measure 3]                               %! SM4
+    % [F LHVoiceIII measure 100 / measure 3]                               %! SM_4
     s1 * 3/8
     
-    % [F LHVoiceIII measure 101 / measure 4]                               %! SM4
+    % [F LHVoiceIII measure 101 / measure 4]                               %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceIII measure 102 / measure 5]                               %! SM4
+    % [F LHVoiceIII measure 102 / measure 5]                               %! SM_4
     s1 * 5/16
     
-    % [F LHVoiceIII measure 103 / measure 6]                               %! SM4
+    % [F LHVoiceIII measure 103 / measure 6]                               %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceIII measure 104 / measure 7]                               %! SM4
+    % [F LHVoiceIII measure 104 / measure 7]                               %! SM_4
     s1 * 7/16
     
-    % [F LHVoiceIII measure 105 / measure 8]                               %! SM4
+    % [F LHVoiceIII measure 105 / measure 8]                               %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceIII measure 106 / measure 9]                               %! SM4
+    % [F LHVoiceIII measure 106 / measure 9]                               %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceIII measure 107 / measure 10]                              %! SM4
+    % [F LHVoiceIII measure 107 / measure 10]                              %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceIII measure 108 / measure 11]                              %! SM4
+    % [F LHVoiceIII measure 108 / measure 11]                              %! SM_4
     s1 * 1/8
     
 }
@@ -1791,7 +1791,7 @@ F_LHVoiceIII = {
 
 F_LHVoiceIV = {
     
-    % [F LHVoiceIV measure 98 / measure 1]                                 %! SM4
+    % [F LHVoiceIV measure 98 / measure 1]                                 %! SM_4
     \override Beam.positions = #'(-5.5 . -5.5)                             %! OC1
     \override Script.direction = #down                                     %! OC1
     \clef "treble"                                                         %! SM8:REAPPLIED_CLEF:SM37
@@ -1857,7 +1857,7 @@ F_LHVoiceIV = {
         }
         \times 2/3 {
             
-            % [F LHVoiceIV measure 99 / measure 2]                         %! SM4
+            % [F LHVoiceIV measure 99 / measure 2]                         %! SM_4
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b'16
@@ -1878,7 +1878,7 @@ F_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [F LHVoiceIV measure 103 / measure 6]                        %! SM4
+            % [F LHVoiceIV measure 103 / measure 6]                        %! SM_4
             \override Beam.positions = #'(-4.5 . -4.5)                     %! OC1
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -1920,7 +1920,7 @@ F_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [F LHVoiceIV measure 106 / measure 9]                        %! SM4
+            % [F LHVoiceIV measure 106 / measure 9]                        %! SM_4
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
@@ -1975,7 +1975,7 @@ F_LHVoiceIV = {
     
     s1 * 5/16
     
-    % [F LHVoiceIV measure 108 / measure 11]                               %! SM4
+    % [F LHVoiceIV measure 108 / measure 11]                               %! SM_4
     s1 * 1/8
     \revert Beam.positions                                                 %! OC2
     \revert Script.direction                                               %! OC2
@@ -1985,7 +1985,7 @@ F_LHVoiceIV = {
 
 F_LHVoiceIVInserts = {
     
-    % [F LHVoiceIVInserts measure 98 / measure 1]                          %! SM4
+    % [F LHVoiceIVInserts measure 98 / measure 1]                          %! SM_4
     \override Script.direction = #up                                       %! OC1
     s1 * 3/8
     {
@@ -2011,7 +2011,7 @@ F_LHVoiceIVInserts = {
         }
         \times 2/3 {
             
-            % [F LHVoiceIVInserts measure 99 / measure 2]                  %! SM4
+            % [F LHVoiceIVInserts measure 99 / measure 2]                  %! SM_4
             s16
             
             g''16
@@ -2028,7 +2028,7 @@ F_LHVoiceIVInserts = {
         \override TupletNumber.stencil = ##f
         \scaleDurations #'(1 . 1) {
             
-            % [F LHVoiceIVInserts measure 103 / measure 6]                 %! SM4
+            % [F LHVoiceIVInserts measure 103 / measure 6]                 %! SM_4
             cs''!16
             
             s16
@@ -2046,7 +2046,7 @@ F_LHVoiceIVInserts = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [F LHVoiceIVInserts measure 106 / measure 9]                 %! SM4
+            % [F LHVoiceIVInserts measure 106 / measure 9]                 %! SM_4
             d''16
             
             s16
@@ -2068,7 +2068,7 @@ F_LHVoiceIVInserts = {
     
     s1 * 5/16
     
-    % [F LHVoiceIVInserts measure 108 / measure 11]                        %! SM4
+    % [F LHVoiceIVInserts measure 108 / measure 11]                        %! SM_4
     s1 * 1/8
     \revert Script.direction                                               %! OC2
     
@@ -2077,7 +2077,7 @@ F_LHVoiceIVInserts = {
 
 F_LHVoiceV = {
     
-    % [F LHVoiceV measure 98 / measure 1]                                  %! SM4
+    % [F LHVoiceV measure 98 / measure 1]                                  %! SM_4
     \override Beam.positions = #'(-6 . -6)                                 %! OC1
     \override Script.direction = #down                                     %! OC1
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)      %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
@@ -2127,7 +2127,7 @@ F_LHVoiceV = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                % [F LHVoiceV measure 101 / measure 4]                     %! SM4
+                % [F LHVoiceV measure 101 / measure 4]                     %! SM_4
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b'16
@@ -2270,7 +2270,7 @@ F_LHVoiceV = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                % [F LHVoiceV measure 105 / measure 8]                     %! SM4
+                % [F LHVoiceV measure 105 / measure 8]                     %! SM_4
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
@@ -2308,13 +2308,13 @@ F_LHVoiceV = {
     
     s1 * 3/17
     
-    % [F LHVoiceV measure 106 / measure 9]                                 %! SM4
+    % [F LHVoiceV measure 106 / measure 9]                                 %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceV measure 107 / measure 10]                                %! SM4
+    % [F LHVoiceV measure 107 / measure 10]                                %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceV measure 108 / measure 11]                                %! SM4
+    % [F LHVoiceV measure 108 / measure 11]                                %! SM_4
     s1 * 1/8
     \revert Script.direction                                               %! OC2
     
@@ -2323,7 +2323,7 @@ F_LHVoiceV = {
 
 F_LHVoiceVInserts = {
     
-    % [F LHVoiceVInserts measure 98 / measure 1]                           %! SM4
+    % [F LHVoiceVInserts measure 98 / measure 1]                           %! SM_4
     \override Script.direction = #up                                       %! OC1
     \override Beam.positions = #'(9 . 9)                                   %! OC1
     s1 * 329/272
@@ -2343,7 +2343,7 @@ F_LHVoiceVInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                % [F LHVoiceVInserts measure 101 / measure 4]              %! SM4
+                % [F LHVoiceVInserts measure 101 / measure 4]              %! SM_4
                 \override Stem.direction = #up                             %! OC1
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2429,7 +2429,7 @@ F_LHVoiceVInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                % [F LHVoiceVInserts measure 105 / measure 8]              %! SM4
+                % [F LHVoiceVInserts measure 105 / measure 8]              %! SM_4
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 e''16
@@ -2462,13 +2462,13 @@ F_LHVoiceVInserts = {
     
     s1 * 3/17
     
-    % [F LHVoiceVInserts measure 106 / measure 9]                          %! SM4
+    % [F LHVoiceVInserts measure 106 / measure 9]                          %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceVInserts measure 107 / measure 10]                         %! SM4
+    % [F LHVoiceVInserts measure 107 / measure 10]                         %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceVInserts measure 108 / measure 11]                         %! SM4
+    % [F LHVoiceVInserts measure 108 / measure 11]                         %! SM_4
     s1 * 1/8
     \revert Script.direction                                               %! OC2
     \revert Beam.positions                                                 %! OC2
@@ -2478,7 +2478,7 @@ F_LHVoiceVInserts = {
 
 F_LHVoiceVI = {
     
-    % [F LHVoiceVI measure 98 / measure 1]                                 %! SM4
+    % [F LHVoiceVI measure 98 / measure 1]                                 %! SM_4
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     s1 * 3/4
     \f                                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -2488,34 +2488,34 @@ F_LHVoiceVI = {
             (“Piano”)                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     
-    % [F LHVoiceVI measure 99 / measure 2]                                 %! SM4
+    % [F LHVoiceVI measure 99 / measure 2]                                 %! SM_4
     s1 * 1/4
     
-    % [F LHVoiceVI measure 100 / measure 3]                                %! SM4
+    % [F LHVoiceVI measure 100 / measure 3]                                %! SM_4
     s1 * 3/8
     
-    % [F LHVoiceVI measure 101 / measure 4]                                %! SM4
+    % [F LHVoiceVI measure 101 / measure 4]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVI measure 102 / measure 5]                                %! SM4
+    % [F LHVoiceVI measure 102 / measure 5]                                %! SM_4
     s1 * 5/16
     
-    % [F LHVoiceVI measure 103 / measure 6]                                %! SM4
+    % [F LHVoiceVI measure 103 / measure 6]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVI measure 104 / measure 7]                                %! SM4
+    % [F LHVoiceVI measure 104 / measure 7]                                %! SM_4
     s1 * 7/16
     
-    % [F LHVoiceVI measure 105 / measure 8]                                %! SM4
+    % [F LHVoiceVI measure 105 / measure 8]                                %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVI measure 106 / measure 9]                                %! SM4
+    % [F LHVoiceVI measure 106 / measure 9]                                %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceVI measure 107 / measure 10]                               %! SM4
+    % [F LHVoiceVI measure 107 / measure 10]                               %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceVI measure 108 / measure 11]                               %! SM4
+    % [F LHVoiceVI measure 108 / measure 11]                               %! SM_4
     s1 * 1/8
     
 }
@@ -2523,37 +2523,37 @@ F_LHVoiceVI = {
 
 F_LHVoiceVIInserts = {
     
-    % [F LHVoiceVIInserts measure 98 / measure 1]                          %! SM4
+    % [F LHVoiceVIInserts measure 98 / measure 1]                          %! SM_4
     s1 * 3/4
     
-    % [F LHVoiceVIInserts measure 99 / measure 2]                          %! SM4
+    % [F LHVoiceVIInserts measure 99 / measure 2]                          %! SM_4
     s1 * 1/4
     
-    % [F LHVoiceVIInserts measure 100 / measure 3]                         %! SM4
+    % [F LHVoiceVIInserts measure 100 / measure 3]                         %! SM_4
     s1 * 3/8
     
-    % [F LHVoiceVIInserts measure 101 / measure 4]                         %! SM4
+    % [F LHVoiceVIInserts measure 101 / measure 4]                         %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVIInserts measure 102 / measure 5]                         %! SM4
+    % [F LHVoiceVIInserts measure 102 / measure 5]                         %! SM_4
     s1 * 5/16
     
-    % [F LHVoiceVIInserts measure 103 / measure 6]                         %! SM4
+    % [F LHVoiceVIInserts measure 103 / measure 6]                         %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVIInserts measure 104 / measure 7]                         %! SM4
+    % [F LHVoiceVIInserts measure 104 / measure 7]                         %! SM_4
     s1 * 7/16
     
-    % [F LHVoiceVIInserts measure 105 / measure 8]                         %! SM4
+    % [F LHVoiceVIInserts measure 105 / measure 8]                         %! SM_4
     s1 * 9/16
     
-    % [F LHVoiceVIInserts measure 106 / measure 9]                         %! SM4
+    % [F LHVoiceVIInserts measure 106 / measure 9]                         %! SM_4
     s1 * 3/16
     
-    % [F LHVoiceVIInserts measure 107 / measure 10]                        %! SM4
+    % [F LHVoiceVIInserts measure 107 / measure 10]                        %! SM_4
     s1 * 5/8
     
-    % [F LHVoiceVIInserts measure 108 / measure 11]                        %! SM4
+    % [F LHVoiceVIInserts measure 108 / measure 11]                        %! SM_4
     s1 * 1/8
     
 }
@@ -2561,73 +2561,73 @@ F_LHVoiceVIInserts = {
 
 F_LHResonanceVoice = {
     
-    % [F LHResonanceVoice measure 98 / measure 1]                          %! SM4
+    % [F LHResonanceVoice measure 98 / measure 1]                          %! SM_4
     s1 * 3/4
     
-    % [F LHResonanceVoice measure 99 / measure 2]                          %! SM4
+    % [F LHResonanceVoice measure 99 / measure 2]                          %! SM_4
     s1 * 1/4
     
-    % [F LHResonanceVoice measure 100 / measure 3]                         %! SM4
+    % [F LHResonanceVoice measure 100 / measure 3]                         %! SM_4
     s1 * 3/8
     
-    % [F LHResonanceVoice measure 101 / measure 4]                         %! SM4
+    % [F LHResonanceVoice measure 101 / measure 4]                         %! SM_4
     s1 * 9/16
     
-    % [F LHResonanceVoice measure 102 / measure 5]                         %! SM4
+    % [F LHResonanceVoice measure 102 / measure 5]                         %! SM_4
     s1 * 5/16
     
-    % [F LHResonanceVoice measure 103 / measure 6]                         %! SM4
+    % [F LHResonanceVoice measure 103 / measure 6]                         %! SM_4
     s1 * 9/16
     
-    % [F LHResonanceVoice measure 104 / measure 7]                         %! SM4
+    % [F LHResonanceVoice measure 104 / measure 7]                         %! SM_4
     s1 * 7/16
     
-    % [F LHResonanceVoice measure 105 / measure 8]                         %! SM4
+    % [F LHResonanceVoice measure 105 / measure 8]                         %! SM_4
     s1 * 9/16
     
-    % [F LHResonanceVoice measure 106 / measure 9]                         %! SM4
+    % [F LHResonanceVoice measure 106 / measure 9]                         %! SM_4
     s1 * 3/16
     
-    % [F LHResonanceVoice measure 107 / measure 10]                        %! SM4
+    % [F LHResonanceVoice measure 107 / measure 10]                        %! SM_4
     s1 * 5/8
     
-    % [F LHResonanceVoice measure 108 / measure 11]                        %! SM4
+    % [F LHResonanceVoice measure 108 / measure 11]                        %! SM_4
     \once \override TextScript.extra-offset = #'(-24 . -8)
     s1 * 1/8
-    _ \markup {                                                            %! SCORE2
-        \override                                                          %! SCORE2
-            #'(font-name . "Palatino")                                     %! SCORE2
-            \with-color                                                    %! SCORE2
-                #black                                                     %! SCORE2
-                \right-column                                              %! SCORE2
-                    {                                                      %! SCORE2
-                        \line                                              %! SCORE2
-                            {                                              %! SCORE2
-                                Madison,                                   %! SCORE2
-                                WI                                         %! SCORE2
-                                \hspace                                    %! SCORE2
-                                    #0.75                                  %! SCORE2
-                                –                                          %! SCORE2
-                                \hspace                                    %! SCORE2
-                                    #0.75                                  %! SCORE2
-                                Los                                        %! SCORE2
-                                Angeles,                                   %! SCORE2
-                                CA.                                        %! SCORE2
-                            }                                              %! SCORE2
-                        \line                                              %! SCORE2
-                            {                                              %! SCORE2
-                                December                                   %! SCORE2
-                                2016                                       %! SCORE2
-                                \hspace                                    %! SCORE2
-                                    #0.75                                  %! SCORE2
-                                –                                          %! SCORE2
-                                \hspace                                    %! SCORE2
-                                    #0.75                                  %! SCORE2
-                                March                                      %! SCORE2
-                                2017.                                      %! SCORE2
-                            }                                              %! SCORE2
-                    }                                                      %! SCORE2
-        }                                                                  %! SCORE2
+    _ \markup {                                                            %! SCORE_2
+        \override                                                          %! SCORE_2
+            #'(font-name . "Palatino")                                     %! SCORE_2
+            \with-color                                                    %! SCORE_2
+                #black                                                     %! SCORE_2
+                \right-column                                              %! SCORE_2
+                    {                                                      %! SCORE_2
+                        \line                                              %! SCORE_2
+                            {                                              %! SCORE_2
+                                Madison,                                   %! SCORE_2
+                                WI                                         %! SCORE_2
+                                \hspace                                    %! SCORE_2
+                                    #0.75                                  %! SCORE_2
+                                –                                          %! SCORE_2
+                                \hspace                                    %! SCORE_2
+                                    #0.75                                  %! SCORE_2
+                                Los                                        %! SCORE_2
+                                Angeles,                                   %! SCORE_2
+                                CA.                                        %! SCORE_2
+                            }                                              %! SCORE_2
+                        \line                                              %! SCORE_2
+                            {                                              %! SCORE_2
+                                December                                   %! SCORE_2
+                                2016                                       %! SCORE_2
+                                \hspace                                    %! SCORE_2
+                                    #0.75                                  %! SCORE_2
+                                –                                          %! SCORE_2
+                                \hspace                                    %! SCORE_2
+                                    #0.75                                  %! SCORE_2
+                                March                                      %! SCORE_2
+                                2017.                                      %! SCORE_2
+                            }                                              %! SCORE_2
+                    }                                                      %! SCORE_2
+        }                                                                  %! SCORE_2
     
 }
 
