@@ -1,108 +1,108 @@
 D_GlobalRests = {
     
-    % [D GlobalRests measure 78 / measure 1]                                       %! COMMENT_MEASURE_NUMBERS
-    R1 * 9/8                                                                       %! MAKE_GLOBAL_RESTS
+    % [D GlobalRests measure 78 / measure 1]                                       %! _comment_measure_numbers
+    R1 * 9/8                                                                       %! _make_global_rests
     
-    % [D GlobalRests measure 79 / measure 2]                                       %! COMMENT_MEASURE_NUMBERS
-    R1 * 1/2                                                                       %! MAKE_GLOBAL_RESTS
+    % [D GlobalRests measure 79 / measure 2]                                       %! _comment_measure_numbers
+    R1 * 1/2                                                                       %! _make_global_rests
     
-    % [D GlobalRests measure 80 / measure 3]                                       %! COMMENT_MEASURE_NUMBERS
-    R1 * 7/8                                                                       %! MAKE_GLOBAL_RESTS
+    % [D GlobalRests measure 80 / measure 3]                                       %! _comment_measure_numbers
+    R1 * 7/8                                                                       %! _make_global_rests
     
-    % [D GlobalRests measure 81 / measure 4]                                       %! COMMENT_MEASURE_NUMBERS
-    R1 * 5/8                                                                       %! MAKE_GLOBAL_RESTS
+    % [D GlobalRests measure 81 / measure 4]                                       %! _comment_measure_numbers
+    R1 * 5/8                                                                       %! _make_global_rests
     
 }
 
 
 D_GlobalSkips = {
     
-    % [D GlobalSkips measure 78 / measure 1]                                       %! COMMENT_MEASURE_NUMBERS
-    \time 9/8                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \bar ""                                                                        %! MAKE_GLOBAL_SKIPS_3:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 9/8                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (78)                                          %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <0>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [D.1]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[3'03'']"                                    %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
-%@% - \abjad_invisible_line                                                        %! ATTACH_METRONOME_MARKS_2
-%@% - \tweak bound-details.left.text \markup {                                     %! ATTACH_METRONOME_MARKS_2
-%@%     \concat                                                                    %! ATTACH_METRONOME_MARKS_2
-%@%         {                                                                      %! ATTACH_METRONOME_MARKS_2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! ATTACH_METRONOME_MARKS_2
-%@%             \hspace                                                            %! ATTACH_METRONOME_MARKS_2
-%@%                 #0.5                                                           %! ATTACH_METRONOME_MARKS_2
-%@%         }                                                                      %! ATTACH_METRONOME_MARKS_2
-%@%     }                                                                          %! ATTACH_METRONOME_MARKS_2
-%@% \startTextSpan                                                                 %! ATTACH_METRONOME_MARKS_2
-    - \abjad_invisible_line                                                        %! ATTACH_METRONOME_MARKS_3
-    - \tweak bound-details.left.text \markup {                                     %! ATTACH_METRONOME_MARKS_3
-        \concat                                                                    %! ATTACH_METRONOME_MARKS_3
-            {                                                                      %! ATTACH_METRONOME_MARKS_3
-                \with-color                                                        %! ATTACH_METRONOME_MARKS_3
-                    #(x11-color 'green4)                                           %! ATTACH_METRONOME_MARKS_3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! ATTACH_METRONOME_MARKS_3
-                \hspace                                                            %! ATTACH_METRONOME_MARKS_3
-                    #0.5                                                           %! ATTACH_METRONOME_MARKS_3
-            }                                                                      %! ATTACH_METRONOME_MARKS_3
-        }                                                                          %! ATTACH_METRONOME_MARKS_3
-    \startTextSpan                                                                 %! ATTACH_METRONOME_MARKS_3
+    % [D GlobalSkips measure 78 / measure 1]                                       %! _comment_measure_numbers
+    \time 9/8                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \bar ""                                                                        %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 9/8                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (78)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <0>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [D.1]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[3'03'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! _attach_metronome_marks(2)
+%@%             \hspace                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
+        \concat                                                                    %! _attach_metronome_marks(3)
+            {                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'green4)                                           %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! _attach_metronome_marks(3)
+                \hspace                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                           %! _attach_metronome_marks(3)
+            }                                                                      %! _attach_metronome_marks(3)
+        }                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                 %! _attach_metronome_marks(3)
     
-    % [D GlobalSkips measure 79 / measure 2]                                       %! COMMENT_MEASURE_NUMBERS
-    \time 4/8                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 1/2                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (79)                                          %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <1>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [D.2]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[3'06'']"                                    %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [D GlobalSkips measure 79 / measure 2]                                       %! _comment_measure_numbers
+    \time 4/8                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (79)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <1>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [D.2]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[3'06'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [D GlobalSkips measure 80 / measure 3]                                       %! COMMENT_MEASURE_NUMBERS
-    \time 7/8                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 7/8                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (80)                                          %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <2>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((3))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [D.3]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[3'07'']"                                    %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [D GlobalSkips measure 80 / measure 3]                                       %! _comment_measure_numbers
+    \time 7/8                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/8                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (80)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <2>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((3))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [D.3]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[3'07'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [D GlobalSkips measure 81 / measure 4]                                       %! COMMENT_MEASURE_NUMBERS
-    \time 5/8                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 5/8                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (81)                                          %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <3>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [D.4]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[3'10'']"                                    %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! ATTACH_METRONOME_MARKS_4
+    % [D GlobalSkips measure 81 / measure 4]                                       %! _comment_measure_numbers
+    \time 5/8                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/8                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (81)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <3>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [D.4]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[3'10'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                  %! _attach_metronome_marks(4)
     
 }
 
 
 D_RHVoiceI = {
     
-    % [D RHVoiceI measure 78 / measure 1]                                  %! COMMENT_MEASURE_NUMBERS
-    \clef "treble"                                                         %! SET_STATUS_TAG:REAPPLIED_CLEF:SM37
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_COLOR:SM37
-%@% \override PianoMusicRHStaff.Clef.color = ##f                           %! ATTACH_COLOR_LITERAL_1:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set PianoMusicRHStaff.forceClef = ##t                                 %! SET_STATUS_TAG:REAPPLIED_CLEF:SM33:SM37
-    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4)      %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceI measure 78 / measure 1]                                  %! _comment_measure_numbers
+    \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override PianoMusicRHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4)      %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 9/8
-    \f                                                                     %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)       %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    % [D RHVoiceI measure 79 / measure 2]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceI measure 79 / measure 2]                                  %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceI measure 80 / measure 3]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceI measure 80 / measure 3]                                  %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceI measure 81 / measure 4]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceI measure 81 / measure 4]                                  %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -110,16 +110,16 @@ D_RHVoiceI = {
 
 D_RHVoiceIInserts = {
     
-    % [D RHVoiceIInserts measure 78 / measure 1]                           %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIInserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceIInserts measure 79 / measure 2]                           %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIInserts measure 79 / measure 2]                           %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceIInserts measure 80 / measure 3]                           %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIInserts measure 80 / measure 3]                           %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceIInserts measure 81 / measure 4]                           %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIInserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -127,18 +127,18 @@ D_RHVoiceIInserts = {
 
 D_RHVoiceII = {
     
-    % [D RHVoiceII measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceII measure 78 / measure 1]                                 %! _comment_measure_numbers
+    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 9/8
-    \fff                                                                   %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
+    \fff                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     
-    % [D RHVoiceII measure 79 / measure 2]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceII measure 79 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceII measure 80 / measure 3]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceII measure 80 / measure 3]                                 %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceII measure 81 / measure 4]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceII measure 81 / measure 4]                                 %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -146,16 +146,16 @@ D_RHVoiceII = {
 
 D_RHVoiceIIInserts = {
     
-    % [D RHVoiceIIInserts measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIInserts measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceIIInserts measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIInserts measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceIIInserts measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIInserts measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceIIInserts measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIInserts measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -166,14 +166,14 @@ D_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [D RHVoiceIII measure 78 / measure 1]                        %! COMMENT_MEASURE_NUMBERS
-            \override TupletBracket.staff-padding = #7                     %! OVERRIDE_COMMAND_1
-            \override TupletBracket.direction = #up                        %! OVERRIDE_COMMAND_1
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:INDICATOR_COMMAND
+            % [D RHVoiceIII measure 78 / measure 1]                        %! _comment_measure_numbers
+            \override TupletBracket.staff-padding = #7                     %! OverrideCommand(1)
+            \override TupletBracket.direction = #up                        %! OverrideCommand(1)
+            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs'''!8
-            \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:INDICATOR_COMMAND
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -193,46 +193,46 @@ D_RHVoiceIII = {
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             a'''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             b''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
         }
         \scaleDurations #'(1 . 1) {
             
             c'''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             af''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             b''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             cs''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             r8
-            \revert TupletBracket.staff-padding                            %! OVERRIDE_COMMAND_2
-            \revert TupletBracket.direction                                %! OVERRIDE_COMMAND_2
+            \revert TupletBracket.staff-padding                            %! OverrideCommand(2)
+            \revert TupletBracket.direction                                %! OverrideCommand(2)
         }
     }
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
             
-            % [D RHVoiceIII measure 79 / measure 2]                        %! COMMENT_MEASURE_NUMBERS
-            \override TupletBracket.staff-padding = #7                     %! OVERRIDE_COMMAND_1
-            \override TupletBracket.direction = #up                        %! OVERRIDE_COMMAND_1
+            % [D RHVoiceIII measure 79 / measure 2]                        %! _comment_measure_numbers
+            \override TupletBracket.staff-padding = #7                     %! OverrideCommand(1)
+            \override TupletBracket.direction = #up                        %! OverrideCommand(1)
             bf'''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -252,20 +252,20 @@ D_RHVoiceIII = {
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             cs'''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
-            \revert TupletBracket.staff-padding                            %! OVERRIDE_COMMAND_2
-            \revert TupletBracket.direction                                %! OVERRIDE_COMMAND_2
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
+            \revert TupletBracket.staff-padding                            %! OverrideCommand(2)
+            \revert TupletBracket.direction                                %! OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [D RHVoiceIII measure 80 / measure 3]                        %! COMMENT_MEASURE_NUMBERS
+            % [D RHVoiceIII measure 80 / measure 3]                        %! _comment_measure_numbers
             r8
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -286,24 +286,24 @@ D_RHVoiceIII = {
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             d'''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             e'''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             c'''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             f''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             r8
         }
@@ -312,11 +312,11 @@ D_RHVoiceIII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
             
-            % [D RHVoiceIII measure 81 / measure 4]                        %! COMMENT_MEASURE_NUMBERS
-            \override TupletBracket.direction = #up                        %! OVERRIDE_COMMAND_1
+            % [D RHVoiceIII measure 81 / measure 4]                        %! _comment_measure_numbers
+            \override TupletBracket.direction = #up                        %! OverrideCommand(1)
             af''!8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -336,17 +336,17 @@ D_RHVoiceIII = {
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             
             e''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             g''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
             
             a''8
-            -\staccato                                                     %! INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
-            \revert TupletBracket.direction                                %! OVERRIDE_COMMAND_2
+            -\staccato                                                     %! IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
+            \revert TupletBracket.direction                                %! OverrideCommand(2)
             
         }
     }
@@ -355,16 +355,16 @@ D_RHVoiceIII = {
 
 D_RHVoiceIIIInserts = {
     
-    % [D RHVoiceIIIInserts measure 78 / measure 1]                         %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIIInserts measure 78 / measure 1]                         %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceIIIInserts measure 79 / measure 2]                         %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIIInserts measure 79 / measure 2]                         %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceIIIInserts measure 80 / measure 3]                         %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIIInserts measure 80 / measure 3]                         %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceIIIInserts measure 81 / measure 4]                         %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIIIInserts measure 81 / measure 4]                         %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -372,18 +372,18 @@ D_RHVoiceIIIInserts = {
 
 D_RHVoiceIV = {
     
-    % [D RHVoiceIV measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D RHVoiceIV measure 78 / measure 1]                                 %! _comment_measure_numbers
+    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 9/8
-    \p                                                                     %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
+    \p                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     
-    % [D RHVoiceIV measure 79 / measure 2]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIV measure 79 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceIV measure 80 / measure 3]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIV measure 80 / measure 3]                                 %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceIV measure 81 / measure 4]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIV measure 81 / measure 4]                                 %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -391,16 +391,16 @@ D_RHVoiceIV = {
 
 D_RHVoiceIVInserts = {
     
-    % [D RHVoiceIVInserts measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIVInserts measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceIVInserts measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIVInserts measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceIVInserts measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIVInserts measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceIVInserts measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceIVInserts measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -408,16 +408,16 @@ D_RHVoiceIVInserts = {
 
 D_RHVoiceV = {
     
-    % [D RHVoiceV measure 78 / measure 1]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceV measure 78 / measure 1]                                  %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceV measure 79 / measure 2]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceV measure 79 / measure 2]                                  %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceV measure 80 / measure 3]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceV measure 80 / measure 3]                                  %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceV measure 81 / measure 4]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceV measure 81 / measure 4]                                  %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -425,16 +425,16 @@ D_RHVoiceV = {
 
 D_RHVoiceVI = {
     
-    % [D RHVoiceVI measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceVI measure 78 / measure 1]                                 %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHVoiceVI measure 79 / measure 2]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceVI measure 79 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHVoiceVI measure 80 / measure 3]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceVI measure 80 / measure 3]                                 %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHVoiceVI measure 81 / measure 4]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D RHVoiceVI measure 81 / measure 4]                                 %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -442,16 +442,16 @@ D_RHVoiceVI = {
 
 D_RHResonanceVoice = {
     
-    % [D RHResonanceVoice measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHResonanceVoice measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D RHResonanceVoice measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHResonanceVoice measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D RHResonanceVoice measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHResonanceVoice measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D RHResonanceVoice measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D RHResonanceVoice measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -485,16 +485,16 @@ D_PianoMusicRHStaff = <<
 
 D_LHVoiceI = {
     
-    % [D LHVoiceI measure 78 / measure 1]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceI measure 78 / measure 1]                                  %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceI measure 79 / measure 2]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceI measure 79 / measure 2]                                  %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceI measure 80 / measure 3]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceI measure 80 / measure 3]                                  %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceI measure 81 / measure 4]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceI measure 81 / measure 4]                                  %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -502,16 +502,16 @@ D_LHVoiceI = {
 
 D_LHVoiceII = {
     
-    % [D LHVoiceII measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceII measure 78 / measure 1]                                 %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceII measure 79 / measure 2]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceII measure 79 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceII measure 80 / measure 3]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceII measure 80 / measure 3]                                 %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceII measure 81 / measure 4]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceII measure 81 / measure 4]                                 %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -519,16 +519,16 @@ D_LHVoiceII = {
 
 D_LHVoiceIII = {
     
-    % [D LHVoiceIII measure 78 / measure 1]                                %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIII measure 78 / measure 1]                                %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceIII measure 79 / measure 2]                                %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIII measure 79 / measure 2]                                %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceIII measure 80 / measure 3]                                %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIII measure 80 / measure 3]                                %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceIII measure 81 / measure 4]                                %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIII measure 81 / measure 4]                                %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -536,24 +536,24 @@ D_LHVoiceIII = {
 
 D_LHVoiceIV = {
     
-    % [D LHVoiceIV measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
-    \clef "treble"                                                         %! SET_STATUS_TAG:EXPLICIT_CLEF:INDICATOR_COMMAND
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)      %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_COLOR:INDICATOR_COMMAND
-%@% \override PianoMusicLHStaff.Clef.color = ##f                           %! ATTACH_COLOR_LITERAL_1:EXPLICIT_CLEF_COLOR_CANCELLATION:INDICATOR_COMMAND
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! SET_STATUS_TAG:EXPLICIT_CLEF:SM33:INDICATOR_COMMAND
+    % [D LHVoiceIV measure 78 / measure 1]                                 %! _comment_measure_numbers
+    \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override PianoMusicLHStaff.Clef.color = ##f                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
     s1 * 7/32
-    \p                                                                     %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)    %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_REDRAW_COLOR:INDICATOR_COMMAND
+    \p                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
             
-            \override TupletBracket.staff-padding = #3                     %! OVERRIDE_COMMAND_1
-            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:INDICATOR_COMMAND
+            \override TupletBracket.staff-padding = #3                     %! OverrideCommand(1)
+            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             g'16
-            \mp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:INDICATOR_COMMAND
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            \mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -575,20 +575,20 @@ D_LHVoiceIV = {
             r16
             
             af'!16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r16
             
             bf'!16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r16
             
             a'16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r16
-            \revert TupletBracket.staff-padding                            %! OVERRIDE_COMMAND_2
+            \revert TupletBracket.staff-padding                            %! OverrideCommand(2)
         }
     }
     
@@ -597,9 +597,9 @@ D_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
             
-            \override TupletBracket.staff-padding = #3                     %! OVERRIDE_COMMAND_1
+            \override TupletBracket.staff-padding = #3                     %! OverrideCommand(1)
             b'16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -621,20 +621,20 @@ D_LHVoiceIV = {
             r8
             
             c''16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r8
             
             d''16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r8
             
             cs''!16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r8
-            \revert TupletBracket.staff-padding                            %! OVERRIDE_COMMAND_2
+            \revert TupletBracket.staff-padding                            %! OverrideCommand(2)
         }
     }
     
@@ -643,7 +643,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             d'16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -665,22 +665,22 @@ D_LHVoiceIV = {
             r32
             
             f'16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r32
             
             g'16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r32
             
             ef''!16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r32
             
             e''16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r32
         }
@@ -688,9 +688,9 @@ D_LHVoiceIV = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [D LHVoiceIV measure 81 / measure 4]                         %! COMMENT_MEASURE_NUMBERS
+            % [D LHVoiceIV measure 81 / measure 4]                         %! _comment_measure_numbers
             fs''!16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
         %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -712,7 +712,7 @@ D_LHVoiceIV = {
             r32
             
             f''16
-            -\tenuto                                                       %! INDICATOR_COMMAND
+            -\tenuto                                                       %! IndicatorCommand
             
             r32
         }
@@ -725,16 +725,16 @@ D_LHVoiceIV = {
 
 D_LHVoiceIVInserts = {
     
-    % [D LHVoiceIVInserts measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIVInserts measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceIVInserts measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIVInserts measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceIVInserts measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIVInserts measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceIVInserts measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceIVInserts measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -742,18 +742,18 @@ D_LHVoiceIVInserts = {
 
 D_LHVoiceV = {
     
-    % [D LHVoiceV measure 78 / measure 1]                                  %! COMMENT_MEASURE_NUMBERS
-    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)      %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D LHVoiceV measure 78 / measure 1]                                  %! _comment_measure_numbers
+    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)      %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 9/8
-    \p                                                                     %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
+    \p                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     
-    % [D LHVoiceV measure 79 / measure 2]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceV measure 79 / measure 2]                                  %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceV measure 80 / measure 3]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceV measure 80 / measure 3]                                  %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceV measure 81 / measure 4]                                  %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceV measure 81 / measure 4]                                  %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -761,16 +761,16 @@ D_LHVoiceV = {
 
 D_LHVoiceVInserts = {
     
-    % [D LHVoiceVInserts measure 78 / measure 1]                           %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVInserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceVInserts measure 79 / measure 2]                           %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVInserts measure 79 / measure 2]                           %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceVInserts measure 80 / measure 3]                           %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVInserts measure 80 / measure 3]                           %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceVInserts measure 81 / measure 4]                           %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVInserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -778,23 +778,19 @@ D_LHVoiceVInserts = {
 
 D_LHVoiceVI = {
     
-    % [D LHVoiceVI measure 78 / measure 1]                                 %! COMMENT_MEASURE_NUMBERS
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [D LHVoiceVI measure 78 / measure 1]                                 %! _comment_measure_numbers
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 9/8
-    \f                                                                     %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-    ^ \markup {                                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \with-color                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            #(x11-color 'green4)                                           %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            (“Piano”)                                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+    \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    ^ \markup \baca-reapplied-indicator-markup "(“Piano”)"                 %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     
-    % [D LHVoiceVI measure 79 / measure 2]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVI measure 79 / measure 2]                                 %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceVI measure 80 / measure 3]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVI measure 80 / measure 3]                                 %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceVI measure 81 / measure 4]                                 %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVI measure 81 / measure 4]                                 %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -802,16 +798,16 @@ D_LHVoiceVI = {
 
 D_LHVoiceVIInserts = {
     
-    % [D LHVoiceVIInserts measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVIInserts measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHVoiceVIInserts measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVIInserts measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHVoiceVIInserts measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVIInserts measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHVoiceVIInserts measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHVoiceVIInserts measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }
@@ -819,16 +815,16 @@ D_LHVoiceVIInserts = {
 
 D_LHResonanceVoice = {
     
-    % [D LHResonanceVoice measure 78 / measure 1]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHResonanceVoice measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8
     
-    % [D LHResonanceVoice measure 79 / measure 2]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHResonanceVoice measure 79 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/2
     
-    % [D LHResonanceVoice measure 80 / measure 3]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHResonanceVoice measure 80 / measure 3]                          %! _comment_measure_numbers
     s1 * 7/8
     
-    % [D LHResonanceVoice measure 81 / measure 4]                          %! COMMENT_MEASURE_NUMBERS
+    % [D LHResonanceVoice measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8
     
 }

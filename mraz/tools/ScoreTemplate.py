@@ -39,7 +39,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                     <<
                         \context RHVoiceI = "RHVoiceI"
                         {
-                            \clef "treble"                                             %! ST_3
+                            \clef "treble"                                             %! ScoreTemplate(3)
                             s1
                         }
                         \context RHVoiceIInserts = "RHVoiceIInserts"
@@ -87,7 +87,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                     <<
                         \context LHVoiceI = "LHVoiceI"
                         {
-                            \clef "bass"                                               %! ST_3
+                            \clef "bass"                                               %! ScoreTemplate(3)
                             s1
                         }
                         \context LHVoiceII = "LHVoiceII"
