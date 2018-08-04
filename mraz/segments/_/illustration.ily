@@ -257,7 +257,7 @@ i_RHVoiceI = {
             \clef "treble"                                                 %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicRHStaff.Clef.color = ##f                   %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-            \set PianoMusicRHStaff.forceClef = ##t                         %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+            \set PianoMusicRHStaff.forceClef = ##t                         %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
             bf''''!1
             -\tenuto                                                       %! IndicatorCommand
             ^ \markup { "(ottava brackets always govern all voices on staff)" } %! IndicatorCommand
@@ -350,7 +350,7 @@ i_RHVoiceII = {
             \override Slur.direction = #up                                 %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'16
             \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -371,10 +371,10 @@ i_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -456,10 +456,10 @@ i_RHVoiceII = {
             cs''''!16
             \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
         }
     }
     
@@ -737,7 +737,7 @@ i_RHVoiceIII = {
             \once \override DynamicText.X-offset = #0.25                   %! OverrideCommand(1)
             \override Stem.direction = #down                               %! OverrideCommand(1)
             \override TupletBracket.direction = #down                      %! OverrideCommand(1)
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
             \mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -781,7 +781,7 @@ i_RHVoiceIII = {
             g'''4
             -\tenuto                                                       %! IndicatorCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
             
             r4
             \revert Rest.direction                                         %! OverrideCommand(2)
@@ -1019,7 +1019,7 @@ i_LHVoiceI = {
     \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     s1 * 1
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
@@ -1367,11 +1367,11 @@ i_LHVoiceVI = {
             % [_ LHVoiceVI measure 3]                                      %! _comment_measure_numbers
             \override TupletBracket.direction = #down                      %! OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                     %! OverrideCommand(1)
-            \ottava #-1                                                    %! SC
+            \ottava #-1                                                    %! SpannerCommand
             \clef "bass"                                                   %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-            \set PianoMusicLHStaff.forceClef = ##t                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+            \set PianoMusicLHStaff.forceClef = ##t                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b,,,8
             \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1398,7 +1398,7 @@ i_LHVoiceVI = {
             r4
             
             ef,,!8
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
             
             r4
             \revert Rest.direction                                         %! OverrideCommand(2)

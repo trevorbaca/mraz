@@ -863,7 +863,7 @@ C_RHVoiceI = {
     \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicRHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4)      %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 141/8
     \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -898,16 +898,16 @@ C_RHVoiceI = {
             \once \override DynamicText.extra-offset = #'(0 . -8)          %! OverrideCommand(1)
             \once \override TextScript.color = #black                      %! OverrideCommand(1)
             \override Stem.direction = #up                                 %! OverrideCommand(1)
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             d''''8
             \mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             af''''!8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             s8
             
@@ -919,11 +919,11 @@ C_RHVoiceI = {
             
             b'''8
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             e'''8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             r4.
             \revert TextScript.direction                                   %! OverrideCommand(2)
@@ -1011,13 +1011,13 @@ C_RHVoiceI = {
             
             c''''8
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             g'''8
             
             cs''''!8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             s8
             
@@ -1052,13 +1052,13 @@ C_RHVoiceI = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             af''''!8
             
             d''''8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             s8
             
@@ -1066,13 +1066,13 @@ C_RHVoiceI = {
             
             e''''8
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             b'''8
             
             f'''8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             s8
             
@@ -1084,11 +1084,11 @@ C_RHVoiceI = {
             
             fs'''!8
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             cs'''!8
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
     }
     
@@ -1194,7 +1194,7 @@ C_RHVoiceI = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
         }
     }
     
@@ -1204,7 +1204,7 @@ C_RHVoiceI = {
         \scaleDurations #'(1 . 1) {
             
             % [C RHVoiceI measure 71 / measure 38]                         %! _comment_measure_numbers
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             f''''1
             -\tenuto                                                       %! IndicatorCommand
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
@@ -1250,7 +1250,7 @@ C_RHVoiceI = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             \revert Stem.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
         }
     }
     
@@ -1622,10 +1622,10 @@ C_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1707,7 +1707,7 @@ C_RHVoiceII = {
             \set stemRightBeamCount = 0
             cs''''!16
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
         }
@@ -1741,10 +1741,10 @@ C_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1822,7 +1822,7 @@ C_RHVoiceII = {
             \set stemRightBeamCount = 0
             bf'''!16
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
             \revert TextScript.direction                                   %! OverrideCommand(2)
@@ -1885,10 +1885,10 @@ C_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1978,7 +1978,7 @@ C_RHVoiceII = {
             \set stemRightBeamCount = 0
             f''''16
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
             \revert TextScript.direction                                   %! OverrideCommand(2)
@@ -2013,10 +2013,10 @@ C_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2050,7 +2050,7 @@ C_RHVoiceII = {
             \set stemRightBeamCount = 0
             fs''''!16
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
             \revert TextScript.direction                                   %! OverrideCommand(2)
@@ -2566,7 +2566,7 @@ C_RHVoiceIII = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             ef'''!8
             -\tenuto                                                       %! IndicatorCommand
@@ -2577,7 +2577,7 @@ C_RHVoiceIII = {
             fs'''!8
             -\tenuto                                                       %! IndicatorCommand
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
             \revert TupletBracket.direction                                %! OverrideCommand(2)
         }
@@ -2645,7 +2645,7 @@ C_RHVoiceIII = {
             % [C RHVoiceIII measure 77 / measure 44]                       %! _comment_measure_numbers
             \override Stem.direction = #down                               %! OverrideCommand(1)
             \override TupletBracket.direction = #down                      %! OverrideCommand(1)
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
             \mf                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2689,7 +2689,7 @@ C_RHVoiceIII = {
             g'''4
             -\tenuto                                                       %! IndicatorCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
             
             r4
             \revert Rest.direction                                         %! OverrideCommand(2)
@@ -3675,7 +3675,7 @@ C_LHVoiceII = {
             % [C LHVoiceII measure 73 / measure 40]                        %! _comment_measure_numbers
             \override Staff.SustainPedalLineSpanner.staff-padding = #4     %! OverrideCommand(1)
             \override Rest.transparent = ##t                               %! OverrideCommand(1)
-            \set Staff.pedalSustainStyle = #'bracket                       %! SC
+            \set Staff.pedalSustainStyle = #'bracket                       %! SpannerCommand
             r1
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -3694,17 +3694,17 @@ C_LHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \sustainOn                                                     %! SC
+            \sustainOn                                                     %! SpannerCommand
             
             % [C LHVoiceII measure 74 / measure 41]                        %! _comment_measure_numbers
-            \set Staff.pedalSustainStyle = #'bracket                       %! SC
+            \set Staff.pedalSustainStyle = #'bracket                       %! SpannerCommand
             r1
-            \sustainOff                                                    %! SC
-            \sustainOn                                                     %! SC
+            \sustainOff                                                    %! SpannerCommand
+            \sustainOn                                                     %! SpannerCommand
             
             % [C LHVoiceII measure 75 / measure 42]                        %! _comment_measure_numbers
             r1
-            \sustainOff                                                    %! SC
+            \sustainOff                                                    %! SpannerCommand
             \revert Staff.SustainPedalLineSpanner.staff-padding            %! OverrideCommand(2)
             \revert Rest.transparent                                       %! OverrideCommand(2)
         }
@@ -3887,7 +3887,7 @@ C_LHVoiceIV = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             r8.
             
@@ -3896,7 +3896,7 @@ C_LHVoiceIV = {
             r8.
             
             cs!8.
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             
             r8.
             \revert Slur.direction                                         %! OverrideCommand(2)
@@ -4720,7 +4720,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <c bf!>8
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -4728,7 +4728,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <d' f'>8
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 
                 r4
             }
@@ -4816,7 +4816,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <bf'!>8
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -4830,7 +4830,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <e af!>8
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 
                 r4
             }
@@ -4889,7 +4889,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <c f bf!>8
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -4903,7 +4903,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <bf! c'>8
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 
                 r4
             }
@@ -4938,7 +4938,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <d' f'>8
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -4946,7 +4946,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <af! c' e'>8
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 
                 r8
             }
@@ -5033,7 +5033,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <d' f'>8
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -5041,7 +5041,7 @@ C_LHVoiceV = {
                 \set stemRightBeamCount = 1
                 <af! e'>8
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 
                 r8
             }
@@ -5173,11 +5173,11 @@ C_LHVoiceVInserts = {
                 
                 % [C LHVoiceVInserts measure 56 / measure 23]              %! _comment_measure_numbers
                 s4
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 
                 \override Stem.direction = #up                             %! OverrideCommand(1)
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 bf'!8
                 -\staccato                                                 %! IndicatorCommand
             }
@@ -5208,15 +5208,15 @@ C_LHVoiceVInserts = {
                 % [C LHVoiceVInserts measure 58 / measure 25]              %! _comment_measure_numbers
                 s4
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 bf!8
                 -\staccato                                                 %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 d'8
                 -\staccato                                                 %! IndicatorCommand
             }
@@ -5225,7 +5225,7 @@ C_LHVoiceVInserts = {
                 s8
                 
                 s4
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
             }
         }
         \revert TupletBracket.stencil
@@ -5240,10 +5240,10 @@ C_LHVoiceVInserts = {
                 
                 % [C LHVoiceVInserts measure 59 / measure 26]              %! _comment_measure_numbers
                 s4
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 f'8
                 -\staccato                                                 %! IndicatorCommand
             }
@@ -5270,8 +5270,8 @@ C_LHVoiceVInserts = {
                 % [C LHVoiceVInserts measure 62 / measure 29]              %! _comment_measure_numbers
                 s4
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 f'8
                 -\staccato                                                 %! IndicatorCommand
             }
@@ -5296,14 +5296,14 @@ C_LHVoiceVInserts = {
             % [C LHVoiceVInserts measure 64 / measure 31]                  %! _comment_measure_numbers
             s8
             
-            \set stemLeftBeamCount = 1                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 1                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             af'!8
             -\staccato                                                     %! IndicatorCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
             
             s4.
-            ]                                                              %! SM_35
+            ]                                                              %! _extend_beam
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
@@ -5358,7 +5358,7 @@ C_LHVoiceVI = {
     \clef "bass"                                                           %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/2
     \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -5692,7 +5692,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5716,7 +5716,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             \revert Accidental.stencil                                     %! OverrideCommand(2)
             \revert Dots.stencil                                           %! OverrideCommand(2)
             \revert Stem.stencil                                           %! OverrideCommand(2)
@@ -5779,7 +5779,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5803,7 +5803,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             \revert Accidental.stencil                                     %! OverrideCommand(2)
             \revert Dots.stencil                                           %! OverrideCommand(2)
             \revert Stem.stencil                                           %! OverrideCommand(2)
@@ -5862,7 +5862,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5887,7 +5887,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5912,7 +5912,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5937,7 +5937,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5962,7 +5962,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -5987,7 +5987,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -6012,7 +6012,7 @@ C_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             \revert Accidental.stencil                                     %! OverrideCommand(2)
             \revert Dots.stencil                                           %! OverrideCommand(2)
             \revert Stem.stencil                                           %! OverrideCommand(2)
