@@ -312,14 +312,14 @@ B_RHVoiceI = {
     \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicRHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     s1 * 11/2
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceI measure 31 / measure 10]                         %! _comment_measure_numbers
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''''!1..
             \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -391,7 +391,7 @@ B_RHVoiceI = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
             
         }
     }
@@ -503,7 +503,7 @@ B_RHVoiceII = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -525,7 +525,7 @@ B_RHVoiceII = {
             af'!16
             -\staccato                                                     %! IndicatorCommand
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
         }
     }
@@ -587,7 +587,7 @@ B_RHVoiceII = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -608,7 +608,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 1
             af'!16
             -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
@@ -616,7 +616,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             bf!16
             -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -638,7 +638,7 @@ B_RHVoiceII = {
             a''16
             -\staccato                                                     %! IndicatorCommand
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
         }
     }
@@ -700,7 +700,7 @@ B_RHVoiceII = {
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -721,7 +721,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 1
             af'!16
             -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
@@ -729,7 +729,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             bf!16
             -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -750,7 +750,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 1
             a''16
             -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
@@ -758,7 +758,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             d16
             -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -784,7 +784,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 1
             f''16
             -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
@@ -792,7 +792,7 @@ B_RHVoiceII = {
             \set stemRightBeamCount = 2
             a16
             -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -814,7 +814,7 @@ B_RHVoiceII = {
             c'''16
             -\staccato                                                     %! IndicatorCommand
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert Stem.direction                                         %! OverrideCommand(2)
         }
     }
@@ -830,7 +830,7 @@ B_RHVoiceII = {
             \override Slur.direction = #up                                 %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \ottava #1                                                     %! SC
+            \ottava #1                                                     %! SpannerCommand
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'16
             \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -851,10 +851,10 @@ B_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -936,11 +936,11 @@ B_RHVoiceII = {
             cs''''!16
             \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             ]
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
             \revert Script.direction                                       %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SC
+            \ottava #0                                                     %! SpannerCommand
             
         }
     }
@@ -1777,7 +1777,7 @@ B_LHVoiceVI = {
     \clef "bass"                                                           %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 1/2
     \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1920,7 +1920,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -1945,7 +1945,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             
             \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
             \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
@@ -1957,7 +1957,7 @@ B_LHResonanceVoice = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             [
             ]
         }
@@ -1973,7 +1973,7 @@ B_LHResonanceVoice = {
             \once \override NoteHead.transparent = ##t                     %! OverrideCommand(1)
             \once \override RepeatTie.transparent = ##t                    %! OverrideCommand(1)
             \once \override Stem.transparent = ##t                         %! OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! SM_26
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>4
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1992,7 +1992,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -2017,7 +2017,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -2042,7 +2042,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             
             \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
             \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
@@ -2054,7 +2054,7 @@ B_LHResonanceVoice = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>8
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             [
             ]
         }
@@ -2095,12 +2095,12 @@ B_LHResonanceVoice = {
             \override RepeatTie.transparent = ##t                          %! OverrideCommand(1)
             \override Stem.transparent = ##t                               %! OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
             [
             ]
             \revert NoteHead.no-ledgers                                    %! OverrideCommand(2)
@@ -2117,7 +2117,7 @@ B_LHResonanceVoice = {
             
             % [B LHResonanceVoice measure 31 / measure 10]                 %! _comment_measure_numbers
             \override Accidental.stencil = ##f                             %! OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! SM_26
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>1..
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -2136,7 +2136,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     {
@@ -2161,7 +2161,7 @@ B_LHResonanceVoice = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SC
+            \repeatTie                                                     %! SpannerCommand
         }
     }
     

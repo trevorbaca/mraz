@@ -210,12 +210,12 @@ F_RHVoiceI = {
                 % [F RHVoiceI measure 98 / measure 1]                      %! _comment_measure_numbers
                 \override Beam.positions = #'(10 . 10)                     %! OverrideCommand(1)
                 \override Stem.direction = #up                             %! OverrideCommand(1)
-                \set stemLeftBeamCount = 0                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 0                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 \clef "treble"                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
             %@% \override PianoMusicRHStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-                \set PianoMusicRHStaff.forceClef = ##t                     %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+                \set PianoMusicRHStaff.forceClef = ##t                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
                 \dynamicUp                                                 %! IndicatorCommand
                 \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
                 e''16
@@ -237,60 +237,60 @@ F_RHVoiceI = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 cs''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 d'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 fs''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 d'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 g''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 af''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 bf''!16
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 ef'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 a'''16
             }
         }
@@ -304,8 +304,8 @@ F_RHVoiceI = {
             \times 2/3 {
                 
                 % [F RHVoiceI measure 100 / measure 3]                     %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 fs''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -325,33 +325,33 @@ F_RHVoiceI = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 bf''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 e'''16
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 fs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 g'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 a'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 0                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 0                                %! _extend_beam
                 e'''16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
             }
         }
     }
@@ -364,8 +364,8 @@ F_RHVoiceI = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceI measure 102 / measure 5]                     %! _comment_measure_numbers
-                \set stemLeftBeamCount = 0                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 0                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 af''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -384,18 +384,18 @@ F_RHVoiceI = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 a''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 fs'''!16
             }
         }
@@ -409,8 +409,8 @@ F_RHVoiceI = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceI measure 104 / measure 7]                     %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 af''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -430,26 +430,26 @@ F_RHVoiceI = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 e'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 fs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 bf'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 0                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 0                                %! _extend_beam
                 fs'''!16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
             }
         }
     }
@@ -557,7 +557,7 @@ F_RHVoiceIInserts = {
                 \override Beam.positions = #'(-6.5 . -6.5)                 %! OverrideCommand(1)
                 \override Script.direction = #down                         %! OverrideCommand(1)
                 s16
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 
                 s16
                 
@@ -572,8 +572,8 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
                 -\marcato                                                  %! IndicatorCommand
                 
@@ -585,8 +585,8 @@ F_RHVoiceIInserts = {
             }
             \times 2/3 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 b''16
                 -\marcato                                                  %! IndicatorCommand
                 
@@ -618,20 +618,20 @@ F_RHVoiceIInserts = {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 fs'''!16
                 -\marcato                                                  %! IndicatorCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 g'''16
                 -\marcato                                                  %! IndicatorCommand
                 
                 s16
                 
                 s16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
             }
         }
         \revert TupletBracket.stencil
@@ -650,10 +650,10 @@ F_RHVoiceIInserts = {
                 % [F RHVoiceIInserts measure 102 / measure 5]              %! _comment_measure_numbers
                 \override Beam.positions = #'(-8.5 . -8.5)                 %! OverrideCommand(1)
                 s16
-                [                                                          %! SM_35
+                [                                                          %! _extend_beam
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 a''16
                 -\marcato                                                  %! IndicatorCommand
                 
@@ -677,13 +677,13 @@ F_RHVoiceIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceIInserts measure 104 / measure 7]              %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 af''!16
                 -\marcato                                                  %! IndicatorCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f'''16
                 -\marcato                                                  %! IndicatorCommand
                 
@@ -694,7 +694,7 @@ F_RHVoiceIInserts = {
                 s16
                 
                 s16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
             }
         }
         \revert TupletBracket.stencil
@@ -777,8 +777,8 @@ F_RHVoiceII = {
             
             % [F RHVoiceII measure 99 / measure 2]                         %! _comment_measure_numbers
             \override Stem.direction = #down                               %! OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             c''16
             \fff                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -799,21 +799,21 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM_35
-            (                                                              %! SC
+            [                                                              %! _extend_beam
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             d''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             ef''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             f''16
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
     }
     
@@ -825,8 +825,8 @@ F_RHVoiceII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceII measure 101 / measure 4]                    %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 cs''!16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -845,53 +845,53 @@ F_RHVoiceII = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 b'16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 cs''!16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 d''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 e''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 b''16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 ef'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 0                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 0                                %! _extend_beam
                 a''16
-                ]                                                          %! SM_35
-                )                                                          %! SC
+                ]                                                          %! _extend_beam
+                )                                                          %! SpannerCommand
             }
         }
     }
@@ -902,8 +902,8 @@ F_RHVoiceII = {
         \times 2/3 {
             
             % [F RHVoiceII measure 103 / measure 6]                        %! _comment_measure_numbers
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             c''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -922,62 +922,62 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM_35
-            (                                                              %! SC
+            [                                                              %! _extend_beam
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             bf''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             e''16
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
             
-            \set stemLeftBeamCount = 1                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 1                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             cs''!16
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             bf''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             a''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             b''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             ef'''!16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             b''16
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 1                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             g''16
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             f'''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             b''16
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
     }
     
@@ -989,8 +989,8 @@ F_RHVoiceII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceII measure 105 / measure 8]                    %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 a''16
             %%% ^ \markup {                                                %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                              %! FIGURE_NAME_MARKUP
@@ -1009,49 +1009,49 @@ F_RHVoiceII = {
             %%%                 ]                                          %! FIGURE_NAME_MARKUP
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 1                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 1                                %! _extend_beam
                 d'''16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 ef'''!16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 c'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 b''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 cs'''!16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f'''16
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 0                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 0                                %! _extend_beam
                 cs'''!16
-                ]                                                          %! SM_35
-                )                                                          %! SC
+                ]                                                          %! _extend_beam
+                )                                                          %! SpannerCommand
             }
         }
     }
@@ -1059,8 +1059,8 @@ F_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [F RHVoiceII measure 106 / measure 9]                        %! _comment_measure_numbers
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             f''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1079,17 +1079,17 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            [                                                              %! SM_35
-            (                                                              %! SC
+            [                                                              %! _extend_beam
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             a''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 1                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 1                                    %! _extend_beam
             ef'''!16
-            )                                                              %! SC
+            )                                                              %! SpannerCommand
         }
     }
     
@@ -1099,8 +1099,8 @@ F_RHVoiceII = {
         \times 2/3 {
             
             % [F RHVoiceII measure 108 / measure 11]                       %! _comment_measure_numbers
-            \set stemLeftBeamCount = 1                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 1                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             e'''16
         %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1119,17 +1119,17 @@ F_RHVoiceII = {
         %%%                 ]                                              %! FIGURE_NAME_MARKUP
         %%%             }                                                  %! FIGURE_NAME_MARKUP
         %%%     }                                                          %! FIGURE_NAME_MARKUP
-            (                                                              %! SC
+            (                                                              %! SpannerCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             d'''16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 0                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 0                                    %! _extend_beam
             af'''!16
-            ]                                                              %! SM_35
-            )                                                              %! SC
+            ]                                                              %! _extend_beam
+            )                                                              %! SpannerCommand
             \revert Beam.positions                                         %! OverrideCommand(2)
             \revert Slur.direction                                         %! OverrideCommand(2)
             \revert Stem.direction                                         %! OverrideCommand(2)
@@ -1152,14 +1152,14 @@ F_RHVoiceIIInserts = {
             
             % [F RHVoiceIIInserts measure 99 / measure 2]                  %! _comment_measure_numbers
             \override Stem.direction = #up                                 %! OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             c''16
             -\accent                                                       %! IndicatorCommand
-            [                                                              %! SM_35
+            [                                                              %! _extend_beam
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             d''16
             -\accent                                                       %! IndicatorCommand
             
@@ -1181,13 +1181,13 @@ F_RHVoiceIIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceIIInserts measure 101 / measure 4]             %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 cs''!16
                 -\accent                                                   %! IndicatorCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
                 -\accent                                                   %! IndicatorCommand
                 
@@ -1205,18 +1205,18 @@ F_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 f''16
                 -\accent                                                   %! IndicatorCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 ef'''!16
                 -\accent                                                   %! IndicatorCommand
                 
                 s16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
                 \revert Beam.positions                                     %! OverrideCommand(2)
             }
         }
@@ -1233,14 +1233,14 @@ F_RHVoiceIIInserts = {
             
             % [F RHVoiceIIInserts measure 103 / measure 6]                 %! _comment_measure_numbers
             \override Beam.positions = #'(13.5 . 13.5)                     %! OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             c''16
             -\accent                                                       %! IndicatorCommand
-            [                                                              %! SM_35
+            [                                                              %! _extend_beam
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             bf''!16
             -\accent                                                       %! IndicatorCommand
             
@@ -1263,13 +1263,13 @@ F_RHVoiceIIInserts = {
         }
         \times 2/3 {
             
-            \set stemLeftBeamCount = 1                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 1                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             g''16
             -\accent                                                       %! IndicatorCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             f'''16
             -\accent                                                       %! IndicatorCommand
             
@@ -1289,8 +1289,8 @@ F_RHVoiceIIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceIIInserts measure 105 / measure 8]             %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 1                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 a''16
                 -\accent                                                   %! IndicatorCommand
                 
@@ -1302,13 +1302,13 @@ F_RHVoiceIIInserts = {
             }
             \scaleDurations #'(1 . 1) {
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 ef'''!16
                 -\accent                                                   %! IndicatorCommand
                 
-                \set stemLeftBeamCount = 2                                 %! SM_35
-                \set stemRightBeamCount = 2                                %! SM_35
+                \set stemLeftBeamCount = 2                                 %! _extend_beam
+                \set stemRightBeamCount = 2                                %! _extend_beam
                 c'''16
                 -\accent                                                   %! IndicatorCommand
                 
@@ -1319,7 +1319,7 @@ F_RHVoiceIIInserts = {
                 s16
                 
                 s16
-                ]                                                          %! SM_35
+                ]                                                          %! _extend_beam
                 \revert Beam.positions                                     %! OverrideCommand(2)
             }
         }
@@ -1333,11 +1333,11 @@ F_RHVoiceIIInserts = {
             
             % [F RHVoiceIIInserts measure 106 / measure 9]                 %! _comment_measure_numbers
             \override Beam.positions = #'(18.5 . 18.5)                     %! OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 0                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             f''16
             -\accent                                                       %! IndicatorCommand
-            [                                                              %! SM_35
+            [                                                              %! _extend_beam
             
             s16
             
@@ -1357,16 +1357,16 @@ F_RHVoiceIIInserts = {
             % [F RHVoiceIIInserts measure 108 / measure 11]                %! _comment_measure_numbers
             s16
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 2                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 2                                    %! _extend_beam
             d'''16
             -\accent                                                       %! IndicatorCommand
             
-            \set stemLeftBeamCount = 2                                     %! SM_35
-            \set stemRightBeamCount = 0                                    %! SM_35
+            \set stemLeftBeamCount = 2                                     %! _extend_beam
+            \set stemRightBeamCount = 0                                    %! _extend_beam
             af'''!16
             -\accent                                                       %! IndicatorCommand
-            ]                                                              %! SM_35
+            ]                                                              %! _extend_beam
             \revert Beam.positions                                         %! OverrideCommand(2)
             \revert Script.direction                                       %! OverrideCommand(2)
             \revert Stem.direction                                         %! OverrideCommand(2)
@@ -1796,7 +1796,7 @@ F_LHVoiceIV = {
     \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/8
     \p                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -2113,7 +2113,7 @@ F_LHVoiceV = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2122,7 +2122,7 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs'!16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -2130,7 +2130,7 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b'16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2155,14 +2155,14 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 g''16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2188,7 +2188,7 @@ F_LHVoiceV = {
                 \set stemRightBeamCount = 0
                 d'''16
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 \revert TupletBracket.direction                            %! OverrideCommand(2)
             }
         }
@@ -2224,7 +2224,7 @@ F_LHVoiceV = {
             %%%             }                                              %! FIGURE_NAME_MARKUP
             %%%     }                                                      %! FIGURE_NAME_MARKUP
                 [
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2233,14 +2233,14 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs''!16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a'16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2265,7 +2265,7 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 fs''!16
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -2273,7 +2273,7 @@ F_LHVoiceV = {
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
-                (                                                          %! SC
+                (                                                          %! SpannerCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2299,7 +2299,7 @@ F_LHVoiceV = {
                 \set stemRightBeamCount = 0
                 cs'''!16
                 ]
-                )                                                          %! SC
+                )                                                          %! SpannerCommand
                 \revert Stem.direction                                     %! OverrideCommand(2)
             }
         }
