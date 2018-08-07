@@ -20,8 +20,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-        \context Score = "Score"
-        <<
+        \context Score = "Score"                                                       %! ScoreTemplate
+        <<                                                                             %! ScoreTemplate
             \context GlobalContext = "GlobalContext"                                   %! _make_global_context
             <<                                                                         %! _make_global_context
                 \context GlobalRests = "GlobalRests"                                   %! _make_global_context
@@ -31,105 +31,105 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {                                                                      %! _make_global_context
                 }                                                                      %! _make_global_context
             >>                                                                         %! _make_global_context
-            \context MusicContext = "MusicContext"
-            {
-                \context PianoMusicStaffGroup = "PianoMusicStaffGroup"
-                <<
-                    \context PianoMusicRHStaff = "PianoMusicRHStaff"
-                    <<
-                        \context RHVoiceI = "RHVoiceI"
-                        {
+            \context MusicContext = "MusicContext"                                     %! ScoreTemplate
+            {                                                                          %! ScoreTemplate
+                \context PianoMusicStaffGroup = "PianoMusicStaffGroup"                 %! ScoreTemplate
+                <<                                                                     %! ScoreTemplate
+                    \context PianoMusicRHStaff = "PianoMusicRHStaff"                   %! ScoreTemplate
+                    <<                                                                 %! ScoreTemplate
+                        \context RHVoiceI = "RHVoiceI"                                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIInserts = "RHVoiceIInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIInserts = "RHVoiceIInserts"                   %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceII = "RHVoiceII"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceII = "RHVoiceII"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIIInserts = "RHVoiceIIInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIIInserts = "RHVoiceIIInserts"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIII = "RHVoiceIII"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIII = "RHVoiceIII"                             %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIIIInserts = "RHVoiceIIIInserts"               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIV = "RHVoiceIV"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIV = "RHVoiceIV"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceIVInserts = "RHVoiceIVInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceIVInserts = "RHVoiceIVInserts"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceV = "RHVoiceV"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceV = "RHVoiceV"                                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHVoiceVI = "RHVoiceVI"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHVoiceVI = "RHVoiceVI"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context RHResonanceVoice = "RHResonanceVoice"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context RHResonanceVoice = "RHResonanceVoice"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    >>
-                    \context PianoMusicLHStaff = "PianoMusicLHStaff"
-                    <<
-                        \context LHVoiceI = "LHVoiceI"
-                        {
+                        }                                                              %! ScoreTemplate
+                    >>                                                                 %! ScoreTemplate
+                    \context PianoMusicLHStaff = "PianoMusicLHStaff"                   %! ScoreTemplate
+                    <<                                                                 %! ScoreTemplate
+                        \context LHVoiceI = "LHVoiceI"                                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "bass"                                               %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceII = "LHVoiceII"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceII = "LHVoiceII"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceIII = "LHVoiceIII"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceIII = "LHVoiceIII"                             %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceIV = "LHVoiceIV"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceIV = "LHVoiceIV"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceIVInserts = "LHVoiceIVInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceIVInserts = "LHVoiceIVInserts"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceV = "LHVoiceV"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceV = "LHVoiceV"                                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceVInserts = "LHVoiceVInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceVInserts = "LHVoiceVInserts"                   %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceVI = "LHVoiceVI"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceVI = "LHVoiceVI"                               %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHVoiceVIInserts = "LHVoiceVIInserts"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHVoiceVIInserts = "LHVoiceVIInserts"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                        \context LHResonanceVoice = "LHResonanceVoice"
-                        {
+                        }                                                              %! ScoreTemplate
+                        \context LHResonanceVoice = "LHResonanceVoice"                 %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    >>
-                >>
-            }
-        >>
+                        }                                                              %! ScoreTemplate
+                    >>                                                                 %! ScoreTemplate
+                >>                                                                     %! ScoreTemplate
+            }                                                                          %! ScoreTemplate
+        >>                                                                             %! ScoreTemplate
 
     """
 
@@ -205,6 +205,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
+        tag = 'ScoreTemplate'
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
@@ -212,88 +213,109 @@ class ScoreTemplate(baca.ScoreTemplate):
         rh_voice_1 = abjad.Voice(
             lilypond_type='RHVoiceI',
             name='RHVoiceI',
+            tag=tag,
             )
         rh_voice_1I = abjad.Voice(
             lilypond_type='RHVoiceIInserts',
             name='RHVoiceIInserts',
+            tag=tag,
             )
         rh_voice_2 = abjad.Voice(
             lilypond_type='RHVoiceII',
             name='RHVoiceII',
+            tag=tag,
             )
         rh_voice_2I = abjad.Voice(
             lilypond_type='RHVoiceIIInserts',
             name='RHVoiceIIInserts',
+            tag=tag,
             )
         rh_voice_3 = abjad.Voice(
             lilypond_type='RHVoiceIII',
             name='RHVoiceIII',
+            tag=tag,
             )
         rh_voice_3I = abjad.Voice(
             lilypond_type='RHVoiceIIIInserts',
             name='RHVoiceIIIInserts',
+            tag=tag,
             )
         rh_voice_4 = abjad.Voice(
             lilypond_type='RHVoiceIV',
             name='RHVoiceIV',
+            tag=tag,
             )
         rh_voice_4I = abjad.Voice(
             lilypond_type='RHVoiceIVInserts',
             name='RHVoiceIVInserts',
+            tag=tag,
             )
         rh_voice_5 = abjad.Voice(
             lilypond_type='RHVoiceV',
             name='RHVoiceV',
+            tag=tag,
             )
         rh_voice_6 = abjad.Voice(
             lilypond_type='RHVoiceVI',
             name='RHVoiceVI',
+            tag=tag,
             )
         rh_resonance_voice = abjad.Voice(
             lilypond_type='RHResonanceVoice',
             name='RHResonanceVoice',
+            tag=tag,
             )
 
         # LH VOICES
         lh_voice_1 = abjad.Voice(
             lilypond_type='LHVoiceI',
             name='LHVoiceI',
+            tag=tag,
             )
         lh_voice_2 = abjad.Voice(
             lilypond_type='LHVoiceII',
             name='LHVoiceII',
+            tag=tag,
             )
         lh_voice_3 = abjad.Voice(
             lilypond_type='LHVoiceIII',
             name='LHVoiceIII',
+            tag=tag,
             )
         lh_voice_4 = abjad.Voice(
             lilypond_type='LHVoiceIV',
             name='LHVoiceIV',
+            tag=tag,
             )
         lh_voice_4I = abjad.Voice(
             lilypond_type='LHVoiceIVInserts',
             name='LHVoiceIVInserts',
+            tag=tag,
             )
         lh_voice_5 = abjad.Voice(
             lilypond_type='LHVoiceV',
             name='LHVoiceV',
+            tag=tag,
             )
         lh_voice_5I = abjad.Voice(
             lilypond_type='LHVoiceVInserts',
             name='LHVoiceVInserts',
+            tag=tag,
             )
         lh_voice_6 = abjad.Voice(
             lilypond_type='LHVoiceVI',
             name='LHVoiceVI',
+            tag=tag,
             )
         lh_voice_6I = abjad.Voice(
             lilypond_type='LHVoiceVIInserts',
             name='LHVoiceVIInserts',
+            tag=tag,
             )
         lh_resonance_voice = abjad.Voice(
             lilypond_type='LHResonanceVoice',
             name='LHResonanceVoice',
+            tag=tag,
             )
 
         # RH STAFF
@@ -314,6 +336,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='PianoMusicRHStaff',
             is_simultaneous=True,
             name='PianoMusicRHStaff',
+            tag=tag,
             )
         abjad.annotate(
             piano_music_rh_staff,
@@ -338,6 +361,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='PianoMusicLHStaff',
             is_simultaneous=True,
             name='PianoMusicLHStaff',
+            tag=tag,
             )
         abjad.annotate(
             piano_music_lh_staff,
@@ -350,6 +374,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             [piano_music_rh_staff, piano_music_lh_staff],
             lilypond_type='PianoMusicStaffGroup',
             name='PianoMusicStaffGroup',
+            tag=tag,
             )
         piano = mraz.instruments['Piano']
         abjad.annotate(piano_music_staff_group, 'default_instrument', piano)
@@ -359,12 +384,14 @@ class ScoreTemplate(baca.ScoreTemplate):
             [piano_music_staff_group],
             lilypond_type='MusicContext',
             name='MusicContext',
+            tag=tag,
             )
 
         # SCORE
         score = abjad.Score(
             [global_context, music_context],
             name='Score',
+            tag=tag,
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
