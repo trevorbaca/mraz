@@ -1101,7 +1101,7 @@ C_RHVoiceI = {
             \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''''!1..
             \f                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1126,7 +1126,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 67 / measure 34]                                                 %! _comment_measure_numbers
             f''''1.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1151,7 +1151,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 68 / measure 35]                                                 %! _comment_measure_numbers
             bf''''!1
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1176,7 +1176,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 69 / measure 36]                                                 %! _comment_measure_numbers
             ef''''!1
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1206,7 +1206,7 @@ C_RHVoiceI = {
             % [C RHVoiceI measure 71 / measure 38]                                                 %! _comment_measure_numbers
             \ottava #1                                                                             %! SpannerCommand
             f''''1
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1231,7 +1231,7 @@ C_RHVoiceI = {
             
             % [C RHVoiceI measure 72 / measure 39]                                                 %! _comment_measure_numbers
             bf''''!2
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1426,7 +1426,7 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
             \ff                                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
             \arpeggio                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -1469,19 +1469,19 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef'''!8
             \mp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             d'''8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             f''''8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
@@ -1509,12 +1509,12 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             f'''8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             fs'''!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
@@ -1525,7 +1525,7 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             fs''''!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             ]
@@ -1553,12 +1553,12 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             a'''8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             bf'''!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
@@ -1569,19 +1569,19 @@ C_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             bf'''!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             cs''''!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             c''''8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             s8
             
@@ -1835,7 +1835,7 @@ C_RHVoiceII = {
             \once \override Script.direction = #up                                                 %! OverrideCommand(1)
             \arpeggioArrowUp                                                                       %! IndicatorCommand
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
             \arpeggio                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -2064,7 +2064,7 @@ C_RHVoiceII = {
             \once \override Script.direction = #up                                                 %! OverrideCommand(1)
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
             \arpeggio                                                                              %! IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2092,7 +2092,7 @@ C_RHVoiceII = {
             \once \override Script.direction = #up                                                 %! OverrideCommand(1)
             <a g' af'! b' cs''! f'' ef'''! c''''>1
             \arpeggio                                                                              %! IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2120,7 +2120,7 @@ C_RHVoiceII = {
             \once \override Script.direction = #up                                                 %! OverrideCommand(1)
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
             \arpeggio                                                                              %! IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2154,7 +2154,7 @@ C_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             c'''8
             \fff                                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2177,17 +2177,17 @@ C_RHVoiceII = {
             r2..
             
             d'''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             ef''''!8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             f''''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r2..
@@ -2351,7 +2351,7 @@ C_RHVoiceIII = {
             ef!8
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \ff                                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2373,15 +2373,15 @@ C_RHVoiceIII = {
             r4
             
             cs'!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             c'4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             bf'!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r4
@@ -2420,22 +2420,22 @@ C_RHVoiceIII = {
             
             \override Stem.direction = #up                                                         %! OverrideCommand(1)
             ef''!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             cs''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             c'8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             bf!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             \revert TupletBracket.direction                                                        %! OverrideCommand(2)
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
@@ -2476,7 +2476,7 @@ C_RHVoiceIII = {
             \override Stem.direction = #up                                                         %! OverrideCommand(1)
             \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
             ef'!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2498,15 +2498,15 @@ C_RHVoiceIII = {
             r4
             
             cs'!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             c'4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             bf!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r4
@@ -2547,7 +2547,7 @@ C_RHVoiceIII = {
             \override Stem.direction = #down                                                       %! OverrideCommand(1)
             \override TupletBracket.direction = #down                                              %! OverrideCommand(1)
             af'''!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2569,13 +2569,13 @@ C_RHVoiceIII = {
             (                                                                                      %! SpannerCommand
             
             ef'''!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             f'''8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             fs'''!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
@@ -2616,22 +2616,22 @@ C_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''!8
             \mp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             cs''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             c'8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             bf!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             \revert TextScript.direction                                                           %! OverrideCommand(2)
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
@@ -2649,7 +2649,7 @@ C_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
             \mf                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -2672,22 +2672,22 @@ C_RHVoiceIII = {
             r4
             
             cs''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             b''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             af''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             g'''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
@@ -4193,17 +4193,17 @@ C_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1)                   %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
             \f                                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             d'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             e'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
         }
@@ -4256,19 +4256,19 @@ C_LHVoiceV = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             af!8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             d'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             r4
             
             e'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
@@ -4304,7 +4304,7 @@ C_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             <g b f' fs'! a'>8.
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
             
             r2
         }
@@ -4337,19 +4337,19 @@ C_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
             \f                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             r4
             
             d'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             e'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
         }
@@ -4405,7 +4405,7 @@ C_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             <g b f' fs'! a'>8.
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
             
             r2
         }
@@ -4415,7 +4415,7 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 42 / measure 9]                                                  %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -4466,7 +4466,7 @@ C_LHVoiceV = {
             %%%     }                                                                              %! FIGURE_NAME_MARKUP
                 
                 <g b f' fs'! a'>8.
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 r2
                 \revert TupletBracket.direction                                                    %! OverrideCommand(2)
@@ -4478,7 +4478,7 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 44 / measure 11]                                                 %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -4526,7 +4526,7 @@ C_LHVoiceV = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             <g b f' fs'! a'>8.
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
             
             r2
         }
@@ -4536,7 +4536,7 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 46 / measure 13]                                                 %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -4587,7 +4587,7 @@ C_LHVoiceV = {
             %%%     }                                                                              %! FIGURE_NAME_MARKUP
                 
                 <g b f' fs'! a'>8.
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 r2
                 \revert TupletBracket.direction                                                    %! OverrideCommand(2)
@@ -4599,7 +4599,7 @@ C_LHVoiceV = {
             
             % [C LHVoiceV measure 48 / measure 15]                                                 %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            -\marcato                                                                              %! IndicatorCommand
+            - \marcato                                                                             %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -4650,7 +4650,7 @@ C_LHVoiceV = {
             %%%     }                                                                              %! FIGURE_NAME_MARKUP
                 
                 <g b f' fs'! a'>8.
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 r2
                 \revert TupletBracket.direction                                                    %! OverrideCommand(2)
@@ -5130,19 +5130,19 @@ C_LHVoiceV = {
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
             \p                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             d'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             r4
             
             e'8.
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r16
@@ -5179,7 +5179,7 @@ C_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 bf'!8
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -5211,14 +5211,14 @@ C_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 bf!8
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 d'8
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -5245,7 +5245,7 @@ C_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 f'8
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -5273,7 +5273,7 @@ C_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 f'8
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -5299,7 +5299,7 @@ C_LHVoiceVInserts = {
             \set stemLeftBeamCount = 1                                                             %! _extend_beam
             \set stemRightBeamCount = 1                                                            %! _extend_beam
             af'!8
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             s4.

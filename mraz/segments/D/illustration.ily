@@ -172,8 +172,8 @@ D_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs'''!8
             \pp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -193,30 +193,30 @@ D_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             a'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             b''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         }
         \scaleDurations #'(1 . 1) {
             
             c'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             af''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             b''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             cs''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
@@ -231,8 +231,8 @@ D_RHVoiceIII = {
             \override TupletBracket.staff-padding = #7                                             %! OverrideCommand(1)
             \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
             bf'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -252,12 +252,12 @@ D_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             cs'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
             \revert TupletBracket.direction                                                        %! OverrideCommand(2)
         }
@@ -286,24 +286,24 @@ D_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             d'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             e'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             c'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             f''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
         }
@@ -315,8 +315,8 @@ D_RHVoiceIII = {
             % [D RHVoiceIII measure 81 / measure 4]                                                %! _comment_measure_numbers
             \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
             af''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -336,16 +336,16 @@ D_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             e''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             g''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             a''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert TupletBracket.direction                                                        %! OverrideCommand(2)
             
         }
@@ -553,7 +553,7 @@ D_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             g'16
             \mp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -575,17 +575,17 @@ D_LHVoiceIV = {
             r16
             
             af'!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             bf'!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             a'16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
@@ -599,7 +599,7 @@ D_LHVoiceIV = {
             
             \override TupletBracket.staff-padding = #3                                             %! OverrideCommand(1)
             b'16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -621,17 +621,17 @@ D_LHVoiceIV = {
             r8
             
             c''16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
             
             d''16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
             
             cs''!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
@@ -643,7 +643,7 @@ D_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             d'16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -665,22 +665,22 @@ D_LHVoiceIV = {
             r32
             
             f'16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r32
             
             g'16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r32
             
             ef''!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r32
             
             e''16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r32
         }
@@ -690,7 +690,7 @@ D_LHVoiceIV = {
             
             % [D LHVoiceIV measure 81 / measure 4]                                                 %! _comment_measure_numbers
             fs''!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -712,7 +712,7 @@ D_LHVoiceIV = {
             r32
             
             f''16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r32
         }

@@ -582,7 +582,7 @@ E_RHVoiceII = {
             c'''8
             \fff                                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \fff                                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -605,17 +605,17 @@ E_RHVoiceII = {
             r2..
             
             d'''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             ef''''!8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             f''''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r2..
@@ -689,12 +689,12 @@ E_RHVoiceII = {
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
                 af'!8
                 \fff                                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 fs'!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
@@ -763,7 +763,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 c''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -777,12 +777,12 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 cs''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 e''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
                 
@@ -795,7 +795,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 ef'!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
@@ -842,7 +842,7 @@ E_RHVoiceII = {
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
                 fs''!8
                 \fff                                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
@@ -858,12 +858,12 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 ef''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 f''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -874,7 +874,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 e''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
@@ -885,7 +885,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 f'8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -899,7 +899,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 af'!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -928,14 +928,14 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 bf''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 af''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -947,7 +947,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 g''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
@@ -960,7 +960,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 fs''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
                 
@@ -971,7 +971,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 a''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s8
             }
@@ -985,12 +985,12 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 c''8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 b'8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
@@ -1006,7 +1006,7 @@ E_RHVoiceII = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 ef''!8
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 \revert Stem.direction                                                             %! OverrideCommand(2)
                 
                 s8
@@ -1047,7 +1047,7 @@ E_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs!16
             \ppp                                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1071,22 +1071,22 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1094,28 +1094,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1123,33 +1123,33 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1157,28 +1157,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             a16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1186,28 +1186,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1215,18 +1215,18 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             a'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Beam.positions                                                                 %! OverrideCommand(2)
@@ -1240,7 +1240,7 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1264,22 +1264,22 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1287,33 +1287,33 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c''''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1321,33 +1321,33 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1355,28 +1355,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             g'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             d'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs''''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1384,28 +1384,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             af'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             a''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Beam.positions                                                                 %! OverrideCommand(2)
@@ -1419,7 +1419,7 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1443,17 +1443,17 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c''''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1461,23 +1461,23 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             bf'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1485,23 +1485,23 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             ef'!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1509,28 +1509,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1538,23 +1538,23 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             g''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Beam.positions                                                                 %! OverrideCommand(2)
@@ -1568,7 +1568,7 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             fs''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1592,17 +1592,17 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1610,18 +1610,18 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             af''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1629,18 +1629,18 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1648,28 +1648,28 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             ef''''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Beam.positions                                                                 %! OverrideCommand(2)
@@ -1686,7 +1686,7 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1710,22 +1710,22 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             fs''''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1733,23 +1733,23 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             c''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1757,23 +1757,23 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'''!16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             g''''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
@@ -1781,18 +1781,18 @@ E_RHVoiceII = {
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             d''''16
-            -\staccato                                                                             %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             \revert Beam.positions                                                                 %! OverrideCommand(2)
@@ -1936,7 +1936,7 @@ E_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
             \mf                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1959,22 +1959,22 @@ E_RHVoiceIII = {
             r4
             
             cs''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             b''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             af''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             g'''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
@@ -3188,21 +3188,21 @@ E_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'8.
             \p                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             r8.
             
             ef'!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8.
             
             cs!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             )                                                                                      %! SpannerCommand
             
             r8.
@@ -3243,27 +3243,27 @@ E_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af'!8.
             \p                                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             (                                                                                      %! SpannerCommand
             
             r16
             
             e'8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             bf!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             cs!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             )                                                                                      %! SpannerCommand
             
             r16
@@ -3274,8 +3274,8 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             b'8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -3298,8 +3298,8 @@ E_LHVoiceIV = {
             r16
             
             g8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             )                                                                                      %! SpannerCommand
             
             r16
@@ -3313,8 +3313,8 @@ E_LHVoiceIV = {
             
             % [E LHVoiceIV measure 89 / measure 8]                                                 %! _comment_measure_numbers
             b'8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -3337,20 +3337,20 @@ E_LHVoiceIV = {
             r16
             
             ef'!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             cs!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r16
             
             af,!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             )                                                                                      %! SpannerCommand
             
             r16
@@ -3360,8 +3360,8 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             e'8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -3383,8 +3383,8 @@ E_LHVoiceIV = {
             (                                                                                      %! SpannerCommand
             
             bf!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
         }
@@ -3393,8 +3393,8 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             cs'!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -3416,12 +3416,12 @@ E_LHVoiceIV = {
             (                                                                                      %! SpannerCommand
             
             b8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             g8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
         }
@@ -3449,14 +3449,14 @@ E_LHVoiceIV = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             b8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             [
             (                                                                                      %! SpannerCommand
             
             ef,!8.
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
             
@@ -3496,18 +3496,18 @@ E_LHVoiceIV = {
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             cs'!8
             \p                                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             [
             (                                                                                      %! SpannerCommand
             
             af,!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             e,8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
         }
@@ -3516,8 +3516,8 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             bf!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -3539,16 +3539,16 @@ E_LHVoiceIV = {
             (                                                                                      %! SpannerCommand
             
             cs!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             b,8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             g,8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
         }

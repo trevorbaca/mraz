@@ -575,7 +575,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 f''16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -588,7 +588,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 b''16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -621,12 +621,12 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 fs'''!16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 g'''16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -655,7 +655,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 a''16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -680,12 +680,12 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 af''!16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 f'''16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -718,7 +718,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 fs'''!16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -733,7 +733,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 bf'''!16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
@@ -743,7 +743,7 @@ F_RHVoiceIInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 cs''''!16
-                -\marcato                                                                          %! IndicatorCommand
+                - \marcato                                                                         %! IndicatorCommand
                 
                 s16
                 
@@ -1155,13 +1155,13 @@ F_RHVoiceIIInserts = {
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             c''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             [                                                                                      %! _extend_beam
             
             \set stemLeftBeamCount = 2                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             d''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             s16
             
@@ -1184,12 +1184,12 @@ F_RHVoiceIIInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 cs''!16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 f''16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s16
             }
@@ -1208,12 +1208,12 @@ F_RHVoiceIIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 f''16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 ef'''!16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s16
                 ]                                                                                  %! _extend_beam
@@ -1236,13 +1236,13 @@ F_RHVoiceIIInserts = {
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             c''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             [                                                                                      %! _extend_beam
             
             \set stemLeftBeamCount = 2                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             bf''!16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             s16
         }
@@ -1266,12 +1266,12 @@ F_RHVoiceIIInserts = {
             \set stemLeftBeamCount = 1                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             g''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             \set stemLeftBeamCount = 2                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             f'''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             s16
         }
@@ -1292,7 +1292,7 @@ F_RHVoiceIIInserts = {
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 a''16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s16
                 
@@ -1305,12 +1305,12 @@ F_RHVoiceIIInserts = {
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 ef'''!16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 c'''16
-                -\accent                                                                           %! IndicatorCommand
+                - \accent                                                                          %! IndicatorCommand
                 
                 s16
                 
@@ -1336,7 +1336,7 @@ F_RHVoiceIIInserts = {
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             f''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             [                                                                                      %! _extend_beam
             
             s16
@@ -1360,12 +1360,12 @@ F_RHVoiceIIInserts = {
             \set stemLeftBeamCount = 2                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             d'''16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             \set stemLeftBeamCount = 2                                                             %! _extend_beam
             \set stemRightBeamCount = 0                                                            %! _extend_beam
             af'''!16
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             ]                                                                                      %! _extend_beam
             \revert Beam.positions                                                                 %! OverrideCommand(2)
             \revert Script.direction                                                               %! OverrideCommand(2)
@@ -2347,7 +2347,7 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 b'16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 s16
                 
@@ -2366,7 +2366,7 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 fs''!16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 s16
                 
@@ -2379,12 +2379,12 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 c'''16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 d'''16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 ]
             }
         }
@@ -2412,7 +2412,7 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 a'16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 s16
                 
@@ -2432,7 +2432,7 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 e''16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 s16
                 
@@ -2445,12 +2445,12 @@ F_LHVoiceVInserts = {
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 af''!16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 cs'''!16
-                -\staccato                                                                         %! IndicatorCommand
+                - \staccato                                                                        %! IndicatorCommand
                 ]
                 \revert Stem.direction                                                             %! OverrideCommand(2)
             }
