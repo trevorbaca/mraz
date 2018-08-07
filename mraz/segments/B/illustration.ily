@@ -1,397 +1,397 @@
 B_GlobalRests = {
     
-    % [B GlobalRests measure 22 / measure 1]                                       %! _comment_measure_numbers
-    R1 * 1/2                                                                       %! _make_global_rests
+    % [B GlobalRests measure 22 / measure 1]                                                       %! _comment_measure_numbers
+    R1 * 1/2                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 23 / measure 2]                                       %! _comment_measure_numbers
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GlobalFermataCommand(2)
-    \once \override Score.TimeSignature.stencil = ##f                              %! GlobalFermataCommand(2)
-    R1 * 1/4                                                                       %! _make_global_rests
-    ^ \markup {                                                                    %! GlobalFermataCommand(1)
-        \musicglyph                                                                %! GlobalFermataCommand(1)
-            #"scripts.ushortfermata"                                               %! GlobalFermataCommand(1)
-        }                                                                          %! GlobalFermataCommand(1)
+    % [B GlobalRests measure 23 / measure 2]                                                       %! _comment_measure_numbers
+    \once \override Score.MultiMeasureRest.transparent = ##t                                       %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                                              %! GlobalFermataCommand(2)
+    R1 * 1/4                                                                                       %! _make_global_rests
+    ^ \markup {                                                                                    %! GlobalFermataCommand(1)
+        \musicglyph                                                                                %! GlobalFermataCommand(1)
+            #"scripts.ushortfermata"                                                               %! GlobalFermataCommand(1)
+        }                                                                                          %! GlobalFermataCommand(1)
     
-    % [B GlobalRests measure 24 / measure 3]                                       %! _comment_measure_numbers
-    R1 * 5/16                                                                      %! _make_global_rests
+    % [B GlobalRests measure 24 / measure 3]                                                       %! _comment_measure_numbers
+    R1 * 5/16                                                                                      %! _make_global_rests
     
-    % [B GlobalRests measure 25 / measure 4]                                       %! _comment_measure_numbers
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GlobalFermataCommand(2)
-    \once \override Score.TimeSignature.stencil = ##f                              %! GlobalFermataCommand(2)
-    R1 * 1/4                                                                       %! _make_global_rests
-    ^ \markup {                                                                    %! GlobalFermataCommand(1)
-        \musicglyph                                                                %! GlobalFermataCommand(1)
-            #"scripts.ufermata"                                                    %! GlobalFermataCommand(1)
-        }                                                                          %! GlobalFermataCommand(1)
+    % [B GlobalRests measure 25 / measure 4]                                                       %! _comment_measure_numbers
+    \once \override Score.MultiMeasureRest.transparent = ##t                                       %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                                              %! GlobalFermataCommand(2)
+    R1 * 1/4                                                                                       %! _make_global_rests
+    ^ \markup {                                                                                    %! GlobalFermataCommand(1)
+        \musicglyph                                                                                %! GlobalFermataCommand(1)
+            #"scripts.ufermata"                                                                    %! GlobalFermataCommand(1)
+        }                                                                                          %! GlobalFermataCommand(1)
     
-    % [B GlobalRests measure 26 / measure 5]                                       %! _comment_measure_numbers
-    R1 * 1/2                                                                       %! _make_global_rests
+    % [B GlobalRests measure 26 / measure 5]                                                       %! _comment_measure_numbers
+    R1 * 1/2                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 27 / measure 6]                                       %! _comment_measure_numbers
-    R1 * 5/8                                                                       %! _make_global_rests
+    % [B GlobalRests measure 27 / measure 6]                                                       %! _comment_measure_numbers
+    R1 * 5/8                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 28 / measure 7]                                       %! _comment_measure_numbers
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GlobalFermataCommand(2)
-    \once \override Score.TimeSignature.stencil = ##f                              %! GlobalFermataCommand(2)
-    R1 * 1/4                                                                       %! _make_global_rests
-    ^ \markup {                                                                    %! GlobalFermataCommand(1)
-        \musicglyph                                                                %! GlobalFermataCommand(1)
-            #"scripts.ushortfermata"                                               %! GlobalFermataCommand(1)
-        }                                                                          %! GlobalFermataCommand(1)
+    % [B GlobalRests measure 28 / measure 7]                                                       %! _comment_measure_numbers
+    \once \override Score.MultiMeasureRest.transparent = ##t                                       %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                                              %! GlobalFermataCommand(2)
+    R1 * 1/4                                                                                       %! _make_global_rests
+    ^ \markup {                                                                                    %! GlobalFermataCommand(1)
+        \musicglyph                                                                                %! GlobalFermataCommand(1)
+            #"scripts.ushortfermata"                                                               %! GlobalFermataCommand(1)
+        }                                                                                          %! GlobalFermataCommand(1)
     
-    % [B GlobalRests measure 29 / measure 8]                                       %! _comment_measure_numbers
-    R1 * 3/2                                                                       %! _make_global_rests
+    % [B GlobalRests measure 29 / measure 8]                                                       %! _comment_measure_numbers
+    R1 * 3/2                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 30 / measure 9]                                       %! _comment_measure_numbers
-    R1 * 21/16                                                                     %! _make_global_rests
+    % [B GlobalRests measure 30 / measure 9]                                                       %! _comment_measure_numbers
+    R1 * 21/16                                                                                     %! _make_global_rests
     
-    % [B GlobalRests measure 31 / measure 10]                                      %! _comment_measure_numbers
-    R1 * 7/4                                                                       %! _make_global_rests
+    % [B GlobalRests measure 31 / measure 10]                                                      %! _comment_measure_numbers
+    R1 * 7/4                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 32 / measure 11]                                      %! _comment_measure_numbers
-    R1 * 3/2                                                                       %! _make_global_rests
+    % [B GlobalRests measure 32 / measure 11]                                                      %! _comment_measure_numbers
+    R1 * 3/2                                                                                       %! _make_global_rests
     
-    % [B GlobalRests measure 33 / measure 12]                                      %! _comment_measure_numbers
-    R1 * 1                                                                         %! _make_global_rests
+    % [B GlobalRests measure 33 / measure 12]                                                      %! _comment_measure_numbers
+    R1 * 1                                                                                         %! _make_global_rests
     
 }
 
 
 B_GlobalSkips = {
     
-    % [B GlobalSkips measure 22 / measure 1]                                       %! _comment_measure_numbers
-    \time 2/4                                                                      %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
-    \bar ""                                                                        %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "green4"                                            %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1/2                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (22)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <0>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.1]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'45'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
-%@%     \concat                                                                    %! _attach_metronome_marks(2)
-%@%         {                                                                      %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                       %! _attach_metronome_marks(2)
-%@%             \hspace                                                            %! _attach_metronome_marks(2)
-%@%                 #0.5                                                           %! _attach_metronome_marks(2)
-%@%         }                                                                      %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
-    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
-        \concat                                                                    %! _attach_metronome_marks(3)
-            {                                                                      %! _attach_metronome_marks(3)
-                \with-color                                                        %! _attach_metronome_marks(3)
-                    #(x11-color 'green4)                                           %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                   %! _attach_metronome_marks(3)
-                \hspace                                                            %! _attach_metronome_marks(3)
-                    #0.5                                                           %! _attach_metronome_marks(3)
-            }                                                                      %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    \startTextSpan                                                                 %! _attach_metronome_marks(3)
+    % [B GlobalSkips measure 22 / measure 1]                                                       %! _comment_measure_numbers
+    \time 2/4                                                                                      %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
+    \bar ""                                                                                        %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
+    \baca_time_signature_color "green4"                                                            %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (22)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <0>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((1))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.1]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'45'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+%@% - \abjad_invisible_line                                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                                       %! _attach_metronome_marks(2)
+%@%             \hspace                                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(3)
+        \concat                                                                                    %! _attach_metronome_marks(3)
+            {                                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'green4)                                                           %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                                   %! _attach_metronome_marks(3)
+                \hspace                                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                                           %! _attach_metronome_marks(3)
+            }                                                                                      %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                                 %! _attach_metronome_marks(3)
     
-    % [B GlobalSkips measure 23 / measure 2]                                       %! _comment_measure_numbers
-    \time 1/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1/4                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (23)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <1>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.2]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'46'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 23 / measure 2]                                                       %! _comment_measure_numbers
+    \time 1/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/4                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (23)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <1>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((2))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.2]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'46'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 24 / measure 3]                                       %! _comment_measure_numbers
-    \time 5/16                                                                     %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 5/16                                                                      %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (24)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <2>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((3))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.3]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'46'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-    \stopTextSpan                                                                  %! _attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
-%@%     \concat                                                                    %! _attach_metronome_marks(2)
-%@%         {                                                                      %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! _attach_metronome_marks(2)
-%@%             \hspace                                                            %! _attach_metronome_marks(2)
-%@%                 #0.5                                                           %! _attach_metronome_marks(2)
-%@%         }                                                                      %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
-    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
-        \concat                                                                    %! _attach_metronome_marks(3)
-            {                                                                      %! _attach_metronome_marks(3)
-                \with-color                                                        %! _attach_metronome_marks(3)
-                    #(x11-color 'blue)                                             %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! _attach_metronome_marks(3)
-                \hspace                                                            %! _attach_metronome_marks(3)
-                    #0.5                                                           %! _attach_metronome_marks(3)
-            }                                                                      %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    \startTextSpan                                                                 %! _attach_metronome_marks(3)
+    % [B GlobalSkips measure 24 / measure 3]                                                       %! _comment_measure_numbers
+    \time 5/16                                                                                     %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/16                                                                                      %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (24)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <2>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((3))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.3]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'46'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                                  %! _attach_metronome_marks(1)
+%@% - \abjad_invisible_line                                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                                        %! _attach_metronome_marks(2)
+%@%             \hspace                                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(3)
+        \concat                                                                                    %! _attach_metronome_marks(3)
+            {                                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'blue)                                                             %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                                    %! _attach_metronome_marks(3)
+                \hspace                                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                                           %! _attach_metronome_marks(3)
+            }                                                                                      %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                                 %! _attach_metronome_marks(3)
     
-    % [B GlobalSkips measure 25 / measure 4]                                       %! _comment_measure_numbers
-    \time 1/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1/4                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (25)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <3>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.4]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'47'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 25 / measure 4]                                                       %! _comment_measure_numbers
+    \time 1/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/4                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (25)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <3>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((4))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.4]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'47'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 26 / measure 5]                                       %! _comment_measure_numbers
-    \time 2/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1/2                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (26)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <4>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((5))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.5]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'48'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-    \stopTextSpan                                                                  %! _attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
-%@%     \concat                                                                    %! _attach_metronome_marks(2)
-%@%         {                                                                      %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                       %! _attach_metronome_marks(2)
-%@%             \hspace                                                            %! _attach_metronome_marks(2)
-%@%                 #0.5                                                           %! _attach_metronome_marks(2)
-%@%         }                                                                      %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
-    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
-        \concat                                                                    %! _attach_metronome_marks(3)
-            {                                                                      %! _attach_metronome_marks(3)
-                \with-color                                                        %! _attach_metronome_marks(3)
-                    #(x11-color 'blue)                                             %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                   %! _attach_metronome_marks(3)
-                \hspace                                                            %! _attach_metronome_marks(3)
-                    #0.5                                                           %! _attach_metronome_marks(3)
-            }                                                                      %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    \startTextSpan                                                                 %! _attach_metronome_marks(3)
+    % [B GlobalSkips measure 26 / measure 5]                                                       %! _comment_measure_numbers
+    \time 2/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (26)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <4>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((5))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.5]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'48'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                                  %! _attach_metronome_marks(1)
+%@% - \abjad_invisible_line                                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                                       %! _attach_metronome_marks(2)
+%@%             \hspace                                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(3)
+        \concat                                                                                    %! _attach_metronome_marks(3)
+            {                                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'blue)                                                             %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                                   %! _attach_metronome_marks(3)
+                \hspace                                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                                           %! _attach_metronome_marks(3)
+            }                                                                                      %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                                 %! _attach_metronome_marks(3)
     
-    % [B GlobalSkips measure 27 / measure 6]                                       %! _comment_measure_numbers
-    \time 5/8                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 5/8                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (27)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <5>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((6))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.6]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'49'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-    \stopTextSpan                                                                  %! _attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
-%@%     \concat                                                                    %! _attach_metronome_marks(2)
-%@%         {                                                                      %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! _attach_metronome_marks(2)
-%@%             \hspace                                                            %! _attach_metronome_marks(2)
-%@%                 #0.5                                                           %! _attach_metronome_marks(2)
-%@%         }                                                                      %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
-    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
-        \concat                                                                    %! _attach_metronome_marks(3)
-            {                                                                      %! _attach_metronome_marks(3)
-                \with-color                                                        %! _attach_metronome_marks(3)
-                    #(x11-color 'blue)                                             %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                    %! _attach_metronome_marks(3)
-                \hspace                                                            %! _attach_metronome_marks(3)
-                    #0.5                                                           %! _attach_metronome_marks(3)
-            }                                                                      %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    \startTextSpan                                                                 %! _attach_metronome_marks(3)
+    % [B GlobalSkips measure 27 / measure 6]                                                       %! _comment_measure_numbers
+    \time 5/8                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 5/8                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (27)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <5>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((6))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.6]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'49'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                                  %! _attach_metronome_marks(1)
+%@% - \abjad_invisible_line                                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"84"                                        %! _attach_metronome_marks(2)
+%@%             \hspace                                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(3)
+        \concat                                                                                    %! _attach_metronome_marks(3)
+            {                                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'blue)                                                             %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"84"                                    %! _attach_metronome_marks(3)
+                \hspace                                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                                           %! _attach_metronome_marks(3)
+            }                                                                                      %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                                 %! _attach_metronome_marks(3)
     
-    % [B GlobalSkips measure 28 / measure 7]                                       %! _comment_measure_numbers
-    \time 1/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1/4                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (28)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <6>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((7))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.7]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'51'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 28 / measure 7]                                                       %! _comment_measure_numbers
+    \time 1/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/4                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (28)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <6>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((7))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.7]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'51'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 29 / measure 8]                                       %! _comment_measure_numbers
-    \time 6/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 3/2                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (29)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <7>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((8))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.8]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'51'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 29 / measure 8]                                                       %! _comment_measure_numbers
+    \time 6/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/2                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (29)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <7>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((8))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.8]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'51'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 30 / measure 9]                                       %! _comment_measure_numbers
-    \time 21/16                                                                    %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 21/16                                                                     %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (30)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <8>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((9))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.9]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'56'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 30 / measure 9]                                                       %! _comment_measure_numbers
+    \time 21/16                                                                                    %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 21/16                                                                                     %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (30)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <8>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((9))                                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.9]                                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'56'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 31 / measure 10]                                      %! _comment_measure_numbers
-    \time 7/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 7/4                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (31)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <9>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((10))                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.10]                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[0'59'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-    \stopTextSpan                                                                  %! _attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                                %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
-%@%     \concat                                                                    %! _attach_metronome_marks(2)
-%@%         {                                                                      %! _attach_metronome_marks(2)
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                       %! _attach_metronome_marks(2)
-%@%             \hspace                                                            %! _attach_metronome_marks(2)
-%@%                 #0.5                                                           %! _attach_metronome_marks(2)
-%@%         }                                                                      %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% - \tweak bound-details.right.text \markup {                                    %! _attach_metronome_marks(2)
-%@%     \abjad-metronome-mark-markup #2 #0 #1 #"84"                                %! _attach_metronome_marks(2)
-%@%     }                                                                          %! _attach_metronome_marks(2)
-%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                                %! _attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
-        \concat                                                                    %! _attach_metronome_marks(3)
-            {                                                                      %! _attach_metronome_marks(3)
-                \with-color                                                        %! _attach_metronome_marks(3)
-                    #(x11-color 'blue)                                             %! _attach_metronome_marks(3)
-                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                   %! _attach_metronome_marks(3)
-                \hspace                                                            %! _attach_metronome_marks(3)
-                    #0.5                                                           %! _attach_metronome_marks(3)
-            }                                                                      %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    - \tweak bound-details.right.text \markup {                                    %! _attach_metronome_marks(3)
-        \with-color                                                                %! _attach_metronome_marks(3)
-            #(x11-color 'blue)                                                     %! _attach_metronome_marks(3)
-            \abjad-metronome-mark-markup #2 #0 #1 #"84"                            %! _attach_metronome_marks(3)
-        }                                                                          %! _attach_metronome_marks(3)
-    \startTextSpan                                                                 %! _attach_metronome_marks(3)
+    % [B GlobalSkips measure 31 / measure 10]                                                      %! _comment_measure_numbers
+    \time 7/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/4                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (31)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <9>                                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((10))                                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.10]                                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[0'59'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                                  %! _attach_metronome_marks(1)
+%@% - \abjad_dashed_line_with_arrow                                                                %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"112"                                       %! _attach_metronome_marks(2)
+%@%             \hspace                                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.right.text \markup {                                                    %! _attach_metronome_marks(2)
+%@%     \abjad-metronome-mark-markup #2 #0 #1 #"84"                                                %! _attach_metronome_marks(2)
+%@%     }                                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                                 %! _attach_metronome_marks(2)
+    - \abjad_dashed_line_with_arrow                                                                %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                                     %! _attach_metronome_marks(3)
+        \concat                                                                                    %! _attach_metronome_marks(3)
+            {                                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'blue)                                                             %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"112"                                   %! _attach_metronome_marks(3)
+                \hspace                                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                                           %! _attach_metronome_marks(3)
+            }                                                                                      %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    - \tweak bound-details.right.text \markup {                                                    %! _attach_metronome_marks(3)
+        \with-color                                                                                %! _attach_metronome_marks(3)
+            #(x11-color 'blue)                                                                     %! _attach_metronome_marks(3)
+            \abjad-metronome-mark-markup #2 #0 #1 #"84"                                            %! _attach_metronome_marks(3)
+        }                                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                                 %! _attach_metronome_marks(3)
     
-    % [B GlobalSkips measure 32 / measure 11]                                      %! _comment_measure_numbers
-    \time 6/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 3/2                                                                       %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (32)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <10>                                          %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((11))                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.11]                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[1'03'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    % [B GlobalSkips measure 32 / measure 11]                                                      %! _comment_measure_numbers
+    \time 6/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/2                                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (32)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <10>                                                          %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((11))                                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.11]                                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[1'03'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [B GlobalSkips measure 33 / measure 12]                                      %! _comment_measure_numbers
-    \time 4/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
-    s1 * 1                                                                         %! _make_global_skips(1)
-%@% ^ \markup \baca-dark-cyan-markup (33)                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
-%@% ^ \markup \baca-dark-cyan-markup <11>                                          %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
-%@% ^ \markup \baca-dark-cyan-markup ((12))                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
-%@% ^ \markup \baca-dark-cyan-markup [B.12]                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[1'06'']"                                    %! CLOCK_TIME_MARKUP:_label_clock_time
-    \stopTextSpan                                                                  %! _attach_metronome_marks(4)
+    % [B GlobalSkips measure 33 / measure 12]                                                      %! _comment_measure_numbers
+    \time 4/4                                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                                         %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (33)                                                          %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <11>                                                          %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((12))                                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [B.12]                                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[1'06'']"                                                    %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                                  %! _attach_metronome_marks(4)
     
 }
 
 
 B_RHVoiceI = {
     
-    % [B RHVoiceI measure 22 / measure 1]                                  %! _comment_measure_numbers
-    \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
-%@% \override PianoMusicRHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicRHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    % [B RHVoiceI measure 22 / measure 1]                                                          %! _comment_measure_numbers
+    \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)                            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override PianoMusicRHStaff.Clef.color = ##f                                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set PianoMusicRHStaff.forceClef = ##t                                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     s1 * 11/2
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)                               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 31 / measure 10]                         %! _comment_measure_numbers
-            \ottava #1                                                     %! SpannerCommand
-            \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            % [B RHVoiceI measure 31 / measure 10]                                                 %! _comment_measure_numbers
+            \ottava #1                                                                             %! SpannerCommand
+            \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''''!1..
-            \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                       %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.11                                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (10)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \f                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\tenuto                                                                               %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.11                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (10)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 32 / measure 11]                         %! _comment_measure_numbers
+            % [B RHVoiceI measure 32 / measure 11]                                                 %! _comment_measure_numbers
             f''''1.
-            -\tenuto                                                       %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.12                                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (11)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            -\tenuto                                                                               %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.12                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (11)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceI measure 33 / measure 12]                         %! _comment_measure_numbers
+            % [B RHVoiceI measure 33 / measure 12]                                                 %! _comment_measure_numbers
             bf''''!1
-            -\tenuto                                                       %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.13                                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (12)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \ottava #0                                                     %! SpannerCommand
+            -\tenuto                                                                               %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.13                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (12)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \ottava #0                                                                             %! SpannerCommand
             
         }
     }
@@ -400,461 +400,461 @@ B_RHVoiceI = {
 
 B_RHVoiceIInserts = {
     
-    % [B RHVoiceIInserts measure 22 / measure 1]                           %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIInserts measure 22 / measure 1]                                                   %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 23 / measure 2]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIInserts measure 23 / measure 2]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 24 / measure 3]                           %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHVoiceIInserts measure 24 / measure 3]                                                   %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 25 / measure 4]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIInserts measure 25 / measure 4]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 26 / measure 5]                           %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIInserts measure 26 / measure 5]                                                   %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 27 / measure 6]                           %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceIInserts measure 27 / measure 6]                                                   %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 28 / measure 7]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIInserts measure 28 / measure 7]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 29 / measure 8]                           %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIInserts measure 29 / measure 8]                                                   %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 30 / measure 9]                           %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIInserts measure 30 / measure 9]                                                   %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 31 / measure 10]                          %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIInserts measure 31 / measure 10]                                                  %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 32 / measure 11]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIInserts measure 32 / measure 11]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIInserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIInserts measure 33 / measure 12]                                                  %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_RHVoiceII = {
     
-    % [B RHVoiceII measure 22 / measure 1]                                 %! _comment_measure_numbers
-    \override Script.direction = #up                                       %! OverrideCommand(1)
-    \override Slur.direction = #up                                         %! OverrideCommand(1)
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    % [B RHVoiceII measure 22 / measure 1]                                                         %! _comment_measure_numbers
+    \override Script.direction = #up                                                               %! OverrideCommand(1)
+    \override Slur.direction = #up                                                                 %! OverrideCommand(1)
+    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 1/2
-    \fff                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \fff                                                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 23 / measure 2]                         %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                         %! OverrideCommand(1)
+            % [B RHVoiceII measure 23 / measure 2]                                                 %! _comment_measure_numbers
+            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
             r4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.2                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (1)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.2                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (1)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 24 / measure 3]                         %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                      %! OverrideCommand(1)
-            \override Stem.direction = #down                               %! OverrideCommand(1)
+            % [B RHVoiceII measure 24 / measure 3]                                                 %! _comment_measure_numbers
+            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \dynamicDown                                                   %! IndicatorCommand
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \dynamicDown                                                                           %! IndicatorCommand
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs!16
-            \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                     %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.3                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (2)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \ppp                                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.3                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (2)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SpannerCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             af'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             ]
-            )                                                              %! SpannerCommand
-            \revert Stem.direction                                         %! OverrideCommand(2)
+            )                                                                                      %! SpannerCommand
+            \revert Stem.direction                                                                 %! OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 25 / measure 4]                         %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                         %! OverrideCommand(1)
+            % [B RHVoiceII measure 25 / measure 4]                                                 %! _comment_measure_numbers
+            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
             r4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.4                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (3)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.4                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (3)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     
-    % [B RHVoiceII measure 26 / measure 5]                                 %! _comment_measure_numbers
+    % [B RHVoiceII measure 26 / measure 5]                                                         %! _comment_measure_numbers
     s1 * 1/2
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 27 / measure 6]                         %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                      %! OverrideCommand(1)
-            \override Stem.direction = #down                               %! OverrideCommand(1)
+            % [B RHVoiceII measure 27 / measure 6]                                                 %! _comment_measure_numbers
+            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs!16
-            \ppp                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                     %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.6                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (5)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \ppp                                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.6                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (5)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SpannerCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af'!16
-            -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf!16
-            -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             a''16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             ]
-            )                                                              %! SpannerCommand
-            \revert Stem.direction                                         %! OverrideCommand(2)
+            )                                                                                      %! SpannerCommand
+            \revert Stem.direction                                                                 %! OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 28 / measure 7]                         %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                         %! OverrideCommand(1)
+            % [B RHVoiceII measure 28 / measure 7]                                                 %! _comment_measure_numbers
+            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
             r4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.7                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (6)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.7                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (6)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     
-    % [B RHVoiceII measure 29 / measure 8]                                 %! _comment_measure_numbers
+    % [B RHVoiceII measure 29 / measure 8]                                                         %! _comment_measure_numbers
     s1 * 3/2
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B RHVoiceII measure 30 / measure 9]                         %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                      %! OverrideCommand(1)
-            \override Stem.direction = #down                               %! OverrideCommand(1)
+            % [B RHVoiceII measure 30 / measure 9]                                                 %! _comment_measure_numbers
+            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs!16
-            \ppp                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                     %! IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.10                                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (9)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \ppp                                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.10                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (9)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             [
-            (                                                              %! SpannerCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af'!16
-            -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf!16
-            -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a''16
-            -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d16
-            -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f''16
-            -\staccato                                                     %! IndicatorCommand
-            )                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            )                                                                                      %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
             
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             a16
-            -\staccato                                                     %! IndicatorCommand
-            (                                                              %! SpannerCommand
+            -\staccato                                                                             %! IndicatorCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs''!16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             c'''16
-            -\staccato                                                     %! IndicatorCommand
+            -\staccato                                                                             %! IndicatorCommand
             ]
-            )                                                              %! SpannerCommand
-            \revert Stem.direction                                         %! OverrideCommand(2)
+            )                                                                                      %! SpannerCommand
+            \revert Stem.direction                                                                 %! OverrideCommand(2)
         }
     }
     
-    % [B RHVoiceII measure 31 / measure 10]                                %! _comment_measure_numbers
+    % [B RHVoiceII measure 31 / measure 10]                                                        %! _comment_measure_numbers
     s1 * 13/4
     {
         \times 4/5 {
             
-            % [B RHVoiceII measure 33 / measure 12]                        %! _comment_measure_numbers
-            \override DynamicLineSpanner.staff-padding = #'8               %! OverrideCommand(1)
-            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)     %! OverrideCommand(1):+SEGMENT
-            \override Slur.direction = #up                                 %! OverrideCommand(1)
+            % [B RHVoiceII measure 33 / measure 12]                                                %! _comment_measure_numbers
+            \override DynamicLineSpanner.staff-padding = #'8                                       %! OverrideCommand(1)
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! OverrideCommand(1):+SEGMENT
+            \override Slur.direction = #up                                                         %! OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \ottava #1                                                     %! SpannerCommand
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \ottava #1                                                                             %! SpannerCommand
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'16
-            \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.14                                         %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (13)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-            \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            \f                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.14                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (13)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            - \tweak color #blue                                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            \<                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
-            (                                                              %! SpannerCommand
+            (                                                                                      %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -932,15 +932,15 @@ B_RHVoiceII = {
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             cs''''!16
-            \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+            \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             ]
-            )                                                              %! SpannerCommand
-            \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
-            \revert Script.direction                                       %! OverrideCommand(2)
-            \revert Slur.direction                                         %! OverrideCommand(2)
-            \ottava #0                                                     %! SpannerCommand
+            )                                                                                      %! SpannerCommand
+            \revert DynamicLineSpanner.staff-padding                                               %! OverrideCommand(2)
+            \revert Script.direction                                                               %! OverrideCommand(2)
+            \revert Slur.direction                                                                 %! OverrideCommand(2)
+            \ottava #0                                                                             %! SpannerCommand
             
         }
     }
@@ -949,77 +949,77 @@ B_RHVoiceII = {
 
 B_RHVoiceIIInserts = {
     
-    % [B RHVoiceIIInserts measure 22 / measure 1]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIIInserts measure 22 / measure 1]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 23 / measure 2]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIInserts measure 23 / measure 2]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 24 / measure 3]                          %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHVoiceIIInserts measure 24 / measure 3]                                                  %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 25 / measure 4]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIInserts measure 25 / measure 4]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 26 / measure 5]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIIInserts measure 26 / measure 5]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 27 / measure 6]                          %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceIIInserts measure 27 / measure 6]                                                  %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 28 / measure 7]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIInserts measure 28 / measure 7]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIIInserts measure 29 / measure 8]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 30 / measure 9]                          %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIIInserts measure 30 / measure 9]                                                  %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 31 / measure 10]                         %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIIInserts measure 31 / measure 10]                                                 %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIIInserts measure 32 / measure 11]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIInserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIIInserts measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_RHVoiceIII = {
     
-    % [B RHVoiceIII measure 22 / measure 1]                                %! _comment_measure_numbers
-    \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4)    %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    % [B RHVoiceIII measure 22 / measure 1]                                                        %! _comment_measure_numbers
+    \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4)                            %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 43/16
-    \mf                                                                    %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \mf                                                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
             
-            % [B RHVoiceIII measure 29 / measure 8]                        %! _comment_measure_numbers
-            \override TupletBracket.direction = #up                        %! OverrideCommand(1)
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            % [B RHVoiceIII measure 29 / measure 8]                                                %! _comment_measure_numbers
+            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef!8
-            \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.8                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (7)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.8                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (7)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             r4
             
@@ -1032,62 +1032,62 @@ B_RHVoiceIII = {
             bf'!8
             
             r4
-            \revert TupletBracket.direction                                %! OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
         }
     }
     
-    % [B RHVoiceIII measure 30 / measure 9]                                %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIII measure 30 / measure 9]                                                        %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _make_measure_silences
     
-    % [B RHVoiceIII measure 31 / measure 10]                               %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIII measure 31 / measure 10]                                                       %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIII measure 32 / measure 11]                               %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIII measure 32 / measure 11]                                                       %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIII measure 33 / measure 12]                               %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIII measure 33 / measure 12]                                                       %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _make_measure_silences
     
 }
 
 
 B_RHVoiceIIIInserts = {
     
-    % [B RHVoiceIIIInserts measure 22 / measure 1]                         %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIIIInserts measure 22 / measure 1]                                                 %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 23 / measure 2]                         %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIIInserts measure 23 / measure 2]                                                 %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 24 / measure 3]                         %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHVoiceIIIInserts measure 24 / measure 3]                                                 %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 25 / measure 4]                         %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIIInserts measure 25 / measure 4]                                                 %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 26 / measure 5]                         %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceIIIInserts measure 26 / measure 5]                                                 %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 27 / measure 6]                         %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceIIIInserts measure 27 / measure 6]                                                 %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 28 / measure 7]                         %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIIIInserts measure 28 / measure 7]                                                 %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 29 / measure 8]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIIIInserts measure 29 / measure 8]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 30 / measure 9]                         %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIIIInserts measure 30 / measure 9]                                                 %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 31 / measure 10]                        %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIIIInserts measure 31 / measure 10]                                                %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 32 / measure 11]                        %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIIIInserts measure 32 / measure 11]                                                %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceIIIInserts measure 33 / measure 12]                        %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIIIInserts measure 33 / measure 12]                                                %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
@@ -1097,29 +1097,29 @@ B_RHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIV measure 22 / measure 1]                         %! _comment_measure_numbers
+            % [B RHVoiceIV measure 22 / measure 1]                                                 %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             d''16
-            \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.1                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (0)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.1                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (0)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             [
             
             \set stemLeftBeamCount = 2
@@ -1149,35 +1149,35 @@ B_RHVoiceIV = {
         }
     }
     
-    % [B RHVoiceIV measure 23 / measure 2]                                 %! _comment_measure_numbers
+    % [B RHVoiceIV measure 23 / measure 2]                                                         %! _comment_measure_numbers
     s1 * 13/16
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIV measure 26 / measure 5]                         %! _comment_measure_numbers
+            % [B RHVoiceIV measure 26 / measure 5]                                                 %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override RHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             d''16
-            \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.5                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (4)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+            \p                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.5                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (4)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             [
             
             \set stemLeftBeamCount = 2
@@ -1207,26 +1207,26 @@ B_RHVoiceIV = {
         }
     }
     
-    % [B RHVoiceIV measure 27 / measure 6]                                 %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceIV measure 27 / measure 6]                                                         %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIV measure 28 / measure 7]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIV measure 28 / measure 7]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIV measure 29 / measure 8]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIV measure 29 / measure 8]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIV measure 30 / measure 9]                                 %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIV measure 30 / measure 9]                                                         %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _make_measure_silences
     
-    % [B RHVoiceIV measure 31 / measure 10]                                %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIV measure 31 / measure 10]                                                        %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIV measure 32 / measure 11]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIV measure 32 / measure 11]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIV measure 33 / measure 12]                                %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIV measure 33 / measure 12]                                                        %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _make_measure_silences
     
 }
 
@@ -1238,7 +1238,7 @@ B_RHVoiceIVInserts = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIVInserts measure 22 / measure 1]                  %! _comment_measure_numbers
+            % [B RHVoiceIVInserts measure 22 / measure 1]                                          %! _comment_measure_numbers
             d''16
             
             s16
@@ -1257,7 +1257,7 @@ B_RHVoiceIVInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [B RHVoiceIVInserts measure 23 / measure 2]                          %! _comment_measure_numbers
+    % [B RHVoiceIVInserts measure 23 / measure 2]                                                  %! _comment_measure_numbers
     s1 * 13/16
     {
         \override TupletBracket.stencil = ##f
@@ -1265,7 +1265,7 @@ B_RHVoiceIVInserts = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
             
-            % [B RHVoiceIVInserts measure 26 / measure 5]                  %! _comment_measure_numbers
+            % [B RHVoiceIVInserts measure 26 / measure 5]                                          %! _comment_measure_numbers
             d''16
             
             s16
@@ -1284,579 +1284,579 @@ B_RHVoiceIVInserts = {
         \revert TupletNumber.stencil
     }
     
-    % [B RHVoiceIVInserts measure 27 / measure 6]                          %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceIVInserts measure 27 / measure 6]                                                  %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 28 / measure 7]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceIVInserts measure 28 / measure 7]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIVInserts measure 29 / measure 8]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 30 / measure 9]                          %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceIVInserts measure 30 / measure 9]                                                  %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 31 / measure 10]                         %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceIVInserts measure 31 / measure 10]                                                 %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceIVInserts measure 32 / measure 11]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B RHVoiceIVInserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceIVInserts measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _make_measure_silences
     
 }
 
 
 B_RHVoiceV = {
     
-    % [B RHVoiceV measure 22 / measure 1]                                  %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceV measure 22 / measure 1]                                                          %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 23 / measure 2]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceV measure 23 / measure 2]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 24 / measure 3]                                  %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHVoiceV measure 24 / measure 3]                                                          %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 25 / measure 4]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceV measure 25 / measure 4]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 26 / measure 5]                                  %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceV measure 26 / measure 5]                                                          %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 27 / measure 6]                                  %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceV measure 27 / measure 6]                                                          %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 28 / measure 7]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceV measure 28 / measure 7]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 29 / measure 8]                                  %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceV measure 29 / measure 8]                                                          %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 30 / measure 9]                                  %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceV measure 30 / measure 9]                                                          %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 31 / measure 10]                                 %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceV measure 31 / measure 10]                                                         %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 32 / measure 11]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceV measure 32 / measure 11]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceV measure 33 / measure 12]                                 %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceV measure 33 / measure 12]                                                         %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_RHVoiceVI = {
     
-    % [B RHVoiceVI measure 22 / measure 1]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceVI measure 22 / measure 1]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 23 / measure 2]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceVI measure 23 / measure 2]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 24 / measure 3]                                 %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHVoiceVI measure 24 / measure 3]                                                         %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 25 / measure 4]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceVI measure 25 / measure 4]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 26 / measure 5]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHVoiceVI measure 26 / measure 5]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 27 / measure 6]                                 %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHVoiceVI measure 27 / measure 6]                                                         %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 28 / measure 7]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHVoiceVI measure 28 / measure 7]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 29 / measure 8]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceVI measure 29 / measure 8]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 30 / measure 9]                                 %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHVoiceVI measure 30 / measure 9]                                                         %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 31 / measure 10]                                %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHVoiceVI measure 31 / measure 10]                                                        %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 32 / measure 11]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHVoiceVI measure 32 / measure 11]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHVoiceVI measure 33 / measure 12]                                %! _comment_measure_numbers
-    s1 * 1
+    % [B RHVoiceVI measure 33 / measure 12]                                                        %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_RHResonanceVoice = {
     
-    % [B RHResonanceVoice measure 22 / measure 1]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHResonanceVoice measure 22 / measure 1]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 23 / measure 2]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHResonanceVoice measure 23 / measure 2]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 24 / measure 3]                          %! _comment_measure_numbers
-    s1 * 5/16
+    % [B RHResonanceVoice measure 24 / measure 3]                                                  %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 25 / measure 4]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHResonanceVoice measure 25 / measure 4]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 26 / measure 5]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B RHResonanceVoice measure 26 / measure 5]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 27 / measure 6]                          %! _comment_measure_numbers
-    s1 * 5/8
+    % [B RHResonanceVoice measure 27 / measure 6]                                                  %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 28 / measure 7]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B RHResonanceVoice measure 28 / measure 7]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHResonanceVoice measure 29 / measure 8]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 30 / measure 9]                          %! _comment_measure_numbers
-    s1 * 21/16
+    % [B RHResonanceVoice measure 30 / measure 9]                                                  %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 31 / measure 10]                         %! _comment_measure_numbers
-    s1 * 7/4
+    % [B RHResonanceVoice measure 31 / measure 10]                                                 %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B RHResonanceVoice measure 32 / measure 11]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B RHResonanceVoice measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
+    % [B RHResonanceVoice measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_PianoMusicRHStaff = <<
     \context RHVoiceI = "RHVoiceI"
-    \B_RHVoiceI
+    \B_RHVoiceI                                                                                    %! extern
     \context RHVoiceIInserts = "RHVoiceIInserts"
-    \B_RHVoiceIInserts
+    \B_RHVoiceIInserts                                                                             %! extern
     \context RHVoiceII = "RHVoiceII"
-    \B_RHVoiceII
+    \B_RHVoiceII                                                                                   %! extern
     \context RHVoiceIIInserts = "RHVoiceIIInserts"
-    \B_RHVoiceIIInserts
+    \B_RHVoiceIIInserts                                                                            %! extern
     \context RHVoiceIII = "RHVoiceIII"
-    \B_RHVoiceIII
+    \B_RHVoiceIII                                                                                  %! extern
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
-    \B_RHVoiceIIIInserts
+    \B_RHVoiceIIIInserts                                                                           %! extern
     \context RHVoiceIV = "RHVoiceIV"
-    \B_RHVoiceIV
+    \B_RHVoiceIV                                                                                   %! extern
     \context RHVoiceIVInserts = "RHVoiceIVInserts"
-    \B_RHVoiceIVInserts
+    \B_RHVoiceIVInserts                                                                            %! extern
     \context RHVoiceV = "RHVoiceV"
-    \B_RHVoiceV
+    \B_RHVoiceV                                                                                    %! extern
     \context RHVoiceVI = "RHVoiceVI"
-    \B_RHVoiceVI
+    \B_RHVoiceVI                                                                                   %! extern
     \context RHResonanceVoice = "RHResonanceVoice"
-    \B_RHResonanceVoice
+    \B_RHResonanceVoice                                                                            %! extern
 >>
 
 
 B_LHVoiceI = {
     
-    % [B LHVoiceI measure 22 / measure 1]                                  %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceI measure 22 / measure 1]                                                          %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 23 / measure 2]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceI measure 23 / measure 2]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 24 / measure 3]                                  %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceI measure 24 / measure 3]                                                          %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 25 / measure 4]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceI measure 25 / measure 4]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 26 / measure 5]                                  %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceI measure 26 / measure 5]                                                          %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 27 / measure 6]                                  %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceI measure 27 / measure 6]                                                          %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 28 / measure 7]                                  %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceI measure 28 / measure 7]                                                          %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 29 / measure 8]                                  %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceI measure 29 / measure 8]                                                          %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 30 / measure 9]                                  %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceI measure 30 / measure 9]                                                          %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 31 / measure 10]                                 %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceI measure 31 / measure 10]                                                         %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 32 / measure 11]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceI measure 32 / measure 11]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceI measure 33 / measure 12]                                 %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceI measure 33 / measure 12]                                                         %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceII = {
     
-    % [B LHVoiceII measure 22 / measure 1]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceII measure 22 / measure 1]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 23 / measure 2]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceII measure 23 / measure 2]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 24 / measure 3]                                 %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceII measure 24 / measure 3]                                                         %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 25 / measure 4]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceII measure 25 / measure 4]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 26 / measure 5]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceII measure 26 / measure 5]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 27 / measure 6]                                 %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceII measure 27 / measure 6]                                                         %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 28 / measure 7]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceII measure 28 / measure 7]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 29 / measure 8]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceII measure 29 / measure 8]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 30 / measure 9]                                 %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceII measure 30 / measure 9]                                                         %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 31 / measure 10]                                %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceII measure 31 / measure 10]                                                        %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 32 / measure 11]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceII measure 32 / measure 11]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceII measure 33 / measure 12]                                %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceII measure 33 / measure 12]                                                        %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceIII = {
     
-    % [B LHVoiceIII measure 22 / measure 1]                                %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceIII measure 22 / measure 1]                                                        %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 23 / measure 2]                                %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIII measure 23 / measure 2]                                                        %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 24 / measure 3]                                %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceIII measure 24 / measure 3]                                                        %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 25 / measure 4]                                %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIII measure 25 / measure 4]                                                        %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 26 / measure 5]                                %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceIII measure 26 / measure 5]                                                        %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 27 / measure 6]                                %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceIII measure 27 / measure 6]                                                        %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 28 / measure 7]                                %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIII measure 28 / measure 7]                                                        %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 29 / measure 8]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIII measure 29 / measure 8]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 30 / measure 9]                                %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceIII measure 30 / measure 9]                                                        %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 31 / measure 10]                               %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceIII measure 31 / measure 10]                                                       %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 32 / measure 11]                               %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIII measure 32 / measure 11]                                                       %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIII measure 33 / measure 12]                               %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceIII measure 33 / measure 12]                                                       %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceIV = {
     
-    % [B LHVoiceIV measure 22 / measure 1]                                 %! _comment_measure_numbers
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    s1 * 1/2
-    \ff                                                                    %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    % [B LHVoiceIV measure 22 / measure 1]                                                         %! _comment_measure_numbers
+    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
+    \ff                                                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     
-    % [B LHVoiceIV measure 23 / measure 2]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIV measure 23 / measure 2]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 24 / measure 3]                                 %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceIV measure 24 / measure 3]                                                         %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 25 / measure 4]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIV measure 25 / measure 4]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 26 / measure 5]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceIV measure 26 / measure 5]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 27 / measure 6]                                 %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceIV measure 27 / measure 6]                                                         %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 28 / measure 7]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIV measure 28 / measure 7]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 29 / measure 8]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIV measure 29 / measure 8]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 30 / measure 9]                                 %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceIV measure 30 / measure 9]                                                         %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 31 / measure 10]                                %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceIV measure 31 / measure 10]                                                        %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 32 / measure 11]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIV measure 32 / measure 11]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIV measure 33 / measure 12]                                %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceIV measure 33 / measure 12]                                                        %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceIVInserts = {
     
-    % [B LHVoiceIVInserts measure 22 / measure 1]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceIVInserts measure 22 / measure 1]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 23 / measure 2]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIVInserts measure 23 / measure 2]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 24 / measure 3]                          %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceIVInserts measure 24 / measure 3]                                                  %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 25 / measure 4]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIVInserts measure 25 / measure 4]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 26 / measure 5]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceIVInserts measure 26 / measure 5]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 27 / measure 6]                          %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceIVInserts measure 27 / measure 6]                                                  %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 28 / measure 7]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceIVInserts measure 28 / measure 7]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIVInserts measure 29 / measure 8]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 30 / measure 9]                          %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceIVInserts measure 30 / measure 9]                                                  %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 31 / measure 10]                         %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceIVInserts measure 31 / measure 10]                                                 %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceIVInserts measure 32 / measure 11]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceIVInserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceIVInserts measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceV = {
     
-    % [B LHVoiceV measure 22 / measure 1]                                  %! _comment_measure_numbers
-    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)      %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    % [B LHVoiceV measure 22 / measure 1]                                                          %! _comment_measure_numbers
+    \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)                              %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 43/16
-    \ppp                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \ppp                                                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHVoiceV measure 29 / measure 8]                          %! _comment_measure_numbers
-            \override Rest.direction = #up                                 %! OverrideCommand(1)
-            \dynamicDown                                                   %! IndicatorCommand
+            % [B LHVoiceV measure 29 / measure 8]                                                  %! _comment_measure_numbers
+            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \dynamicDown                                                                           %! IndicatorCommand
             r2.
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.9                                          %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (8)                                    %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.9                                                                  %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (8)                                                            %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
-            \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                       %! IndicatorCommand
+            \f                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            -\tenuto                                                                               %! IndicatorCommand
             
             r16
             
             d'8.
-            -\tenuto                                                       %! IndicatorCommand
+            -\tenuto                                                                               %! IndicatorCommand
             
             r16
             
             e'8.
-            -\tenuto                                                       %! IndicatorCommand
+            -\tenuto                                                                               %! IndicatorCommand
             
             r16
-            \revert Rest.direction                                         %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! OverrideCommand(2)
         }
     }
     
-    % [B LHVoiceV measure 30 / measure 9]                                  %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceV measure 30 / measure 9]                                                          %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _make_measure_silences
     
-    % [B LHVoiceV measure 31 / measure 10]                                 %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceV measure 31 / measure 10]                                                         %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _make_measure_silences
     
-    % [B LHVoiceV measure 32 / measure 11]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceV measure 32 / measure 11]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _make_measure_silences
     
-    % [B LHVoiceV measure 33 / measure 12]                                 %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceV measure 33 / measure 12]                                                         %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _make_measure_silences
     
 }
 
 
 B_LHVoiceVInserts = {
     
-    % [B LHVoiceVInserts measure 22 / measure 1]                           %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceVInserts measure 22 / measure 1]                                                   %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 23 / measure 2]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVInserts measure 23 / measure 2]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 24 / measure 3]                           %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceVInserts measure 24 / measure 3]                                                   %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 25 / measure 4]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVInserts measure 25 / measure 4]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 26 / measure 5]                           %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceVInserts measure 26 / measure 5]                                                   %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 27 / measure 6]                           %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceVInserts measure 27 / measure 6]                                                   %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 28 / measure 7]                           %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVInserts measure 28 / measure 7]                                                   %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 29 / measure 8]                           %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVInserts measure 29 / measure 8]                                                   %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 30 / measure 9]                           %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceVInserts measure 30 / measure 9]                                                   %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 31 / measure 10]                          %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceVInserts measure 31 / measure 10]                                                  %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 32 / measure 11]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVInserts measure 32 / measure 11]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVInserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceVInserts measure 33 / measure 12]                                                  %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceVI = {
     
-    % [B LHVoiceVI measure 22 / measure 1]                                 %! _comment_measure_numbers
-    \clef "bass"                                                           %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
-%@% \override PianoMusicLHStaff.Clef.color = ##f                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    s1 * 1/2
-    \f                                                                     %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-    ^ \markup \baca-reapplied-indicator-markup "(“Piano”)"                 %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    % [B LHVoiceVI measure 22 / measure 1]                                                         %! _comment_measure_numbers
+    \clef "bass"                                                                                   %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)                            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override PianoMusicLHStaff.Clef.color = ##f                                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set PianoMusicLHStaff.forceClef = ##t                                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
+    \f                                                                                             %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    ^ \markup \baca-reapplied-indicator-markup "(“Piano”)"                                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)                               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    % [B LHVoiceVI measure 23 / measure 2]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVI measure 23 / measure 2]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 24 / measure 3]                                 %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceVI measure 24 / measure 3]                                                         %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 25 / measure 4]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVI measure 25 / measure 4]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 26 / measure 5]                                 %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceVI measure 26 / measure 5]                                                         %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 27 / measure 6]                                 %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceVI measure 27 / measure 6]                                                         %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 28 / measure 7]                                 %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVI measure 28 / measure 7]                                                         %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 29 / measure 8]                                 %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVI measure 29 / measure 8]                                                         %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 30 / measure 9]                                 %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceVI measure 30 / measure 9]                                                         %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 31 / measure 10]                                %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceVI measure 31 / measure 10]                                                        %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 32 / measure 11]                                %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVI measure 32 / measure 11]                                                        %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVI measure 33 / measure 12]                                %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceVI measure 33 / measure 12]                                                        %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
 
 B_LHVoiceVIInserts = {
     
-    % [B LHVoiceVIInserts measure 22 / measure 1]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceVIInserts measure 22 / measure 1]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 23 / measure 2]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVIInserts measure 23 / measure 2]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 24 / measure 3]                          %! _comment_measure_numbers
-    s1 * 5/16
+    % [B LHVoiceVIInserts measure 24 / measure 3]                                                  %! _comment_measure_numbers
+    s1 * 5/16                                                                                      %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 25 / measure 4]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVIInserts measure 25 / measure 4]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 26 / measure 5]                          %! _comment_measure_numbers
-    s1 * 1/2
+    % [B LHVoiceVIInserts measure 26 / measure 5]                                                  %! _comment_measure_numbers
+    s1 * 1/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 27 / measure 6]                          %! _comment_measure_numbers
-    s1 * 5/8
+    % [B LHVoiceVIInserts measure 27 / measure 6]                                                  %! _comment_measure_numbers
+    s1 * 5/8                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 28 / measure 7]                          %! _comment_measure_numbers
-    s1 * 1/4
+    % [B LHVoiceVIInserts measure 28 / measure 7]                                                  %! _comment_measure_numbers
+    s1 * 1/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVIInserts measure 29 / measure 8]                                                  %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 30 / measure 9]                          %! _comment_measure_numbers
-    s1 * 21/16
+    % [B LHVoiceVIInserts measure 30 / measure 9]                                                  %! _comment_measure_numbers
+    s1 * 21/16                                                                                     %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 31 / measure 10]                         %! _comment_measure_numbers
-    s1 * 7/4
+    % [B LHVoiceVIInserts measure 31 / measure 10]                                                 %! _comment_measure_numbers
+    s1 * 7/4                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2
+    % [B LHVoiceVIInserts measure 32 / measure 11]                                                 %! _comment_measure_numbers
+    s1 * 3/2                                                                                       %! _call_rhythm_commands
     
-    % [B LHVoiceVIInserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
+    % [B LHVoiceVIInserts measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _call_rhythm_commands
     
 }
 
@@ -1865,99 +1865,99 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 22 / measure 1]                  %! _comment_measure_numbers
-            \override Beam.stencil = ##f                                   %! OverrideCommand(1)
-            \override Dots.stencil = ##f                                   %! OverrideCommand(1)
-            \override Flag.stencil = ##f                                   %! OverrideCommand(1)
-            \override Stem.stencil = ##f                                   %! OverrideCommand(1)
+            % [B LHResonanceVoice measure 22 / measure 1]                                          %! _comment_measure_numbers
+            \override Beam.stencil = ##f                                                           %! OverrideCommand(1)
+            \override Dots.stencil = ##f                                                           %! OverrideCommand(1)
+            \override Flag.stencil = ##f                                                           %! OverrideCommand(1)
+            \override Stem.stencil = ##f                                                           %! OverrideCommand(1)
             <e, fs,! gs,! as,! b,>2
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.1                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (14)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.1                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (14)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 23 / measure 2]                  %! _comment_measure_numbers
-            \override Accidental.stencil = ##f                             %! OverrideCommand(1)
-            \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                         %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                         %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                     %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                    %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                         %! OverrideCommand(1)
+            % [B LHResonanceVoice measure 23 / measure 2]                                          %! _comment_measure_numbers
+            \override Accidental.stencil = ##f                                                     %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.2                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (15)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.2                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (15)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 24 / measure 3]                  %! _comment_measure_numbers
+            % [B LHResonanceVoice measure 24 / measure 3]                                          %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.3                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (16)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.3                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (16)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
             
-            \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                         %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                         %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                     %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                    %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                         %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                     %! SpannerCommand
+            \repeatTie                                                                             %! SpannerCommand
             [
             ]
         }
@@ -1965,236 +1965,236 @@ B_LHResonanceVoice = {
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 25 / measure 4]                  %! _comment_measure_numbers
-            \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                         %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                         %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                     %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                    %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                         %! OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! _shorten_long_repeat_ties
+            % [B LHResonanceVoice measure 25 / measure 4]                                          %! _comment_measure_numbers
+            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>4
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.4                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (17)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.4                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (17)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 26 / measure 5]                  %! _comment_measure_numbers
+            % [B LHResonanceVoice measure 26 / measure 5]                                          %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>2
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.5                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (18)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.5                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (18)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 27 / measure 6]                  %! _comment_measure_numbers
+            % [B LHResonanceVoice measure 27 / measure 6]                                          %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>2
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.6                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (19)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.6                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (19)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
             
-            \once \override NoteHead.no-ledgers = ##t                      %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                   %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                         %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                         %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                     %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                    %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                         %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>8
-            \repeatTie                                                     %! SpannerCommand
+            \repeatTie                                                                             %! SpannerCommand
             [
             ]
         }
     }
     
-    % [B LHResonanceVoice measure 28 / measure 7]                          %! _comment_measure_numbers
+    % [B LHResonanceVoice measure 28 / measure 7]                                                  %! _comment_measure_numbers
     s1 * 7/4
-    \revert Accidental.stencil                                             %! OverrideCommand(2)
+    \revert Accidental.stencil                                                                     %! OverrideCommand(2)
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 30 / measure 9]                  %! _comment_measure_numbers
-            \once \override Accidental.X-extent = ##f                      %! OverrideCommand(1)
+            % [B LHResonanceVoice measure 30 / measure 9]                                          %! _comment_measure_numbers
+            \once \override Accidental.X-extent = ##f                                              %! OverrideCommand(1)
             <e, fs,! gs,! as,! b,>1
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.7                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (20)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.7                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (20)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override NoteHead.no-ledgers = ##t                            %! OverrideCommand(1)
-            \override Accidental.transparent = ##t                         %! OverrideCommand(1)
-            \override Beam.transparent = ##t                               %! OverrideCommand(1)
-            \override Flag.transparent = ##t                               %! OverrideCommand(1)
-            \override NoteHead.transparent = ##t                           %! OverrideCommand(1)
-            \override RepeatTie.transparent = ##t                          %! OverrideCommand(1)
-            \override Stem.transparent = ##t                               %! OverrideCommand(1)
+            \override NoteHead.no-ledgers = ##t                                                    %! OverrideCommand(1)
+            \override Accidental.transparent = ##t                                                 %! OverrideCommand(1)
+            \override Beam.transparent = ##t                                                       %! OverrideCommand(1)
+            \override Flag.transparent = ##t                                                       %! OverrideCommand(1)
+            \override NoteHead.transparent = ##t                                                   %! OverrideCommand(1)
+            \override RepeatTie.transparent = ##t                                                  %! OverrideCommand(1)
+            \override Stem.transparent = ##t                                                       %! OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-            \repeatTie                                                     %! SpannerCommand
+            \repeatTie                                                                             %! SpannerCommand
             
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                     %! SpannerCommand
+            \repeatTie                                                                             %! SpannerCommand
             [
             ]
-            \revert NoteHead.no-ledgers                                    %! OverrideCommand(2)
-            \revert Accidental.transparent                                 %! OverrideCommand(2)
-            \revert Beam.transparent                                       %! OverrideCommand(2)
-            \revert Flag.transparent                                       %! OverrideCommand(2)
-            \revert NoteHead.transparent                                   %! OverrideCommand(2)
-            \revert RepeatTie.transparent                                  %! OverrideCommand(2)
-            \revert Stem.transparent                                       %! OverrideCommand(2)
+            \revert NoteHead.no-ledgers                                                            %! OverrideCommand(2)
+            \revert Accidental.transparent                                                         %! OverrideCommand(2)
+            \revert Beam.transparent                                                               %! OverrideCommand(2)
+            \revert Flag.transparent                                                               %! OverrideCommand(2)
+            \revert NoteHead.transparent                                                           %! OverrideCommand(2)
+            \revert RepeatTie.transparent                                                          %! OverrideCommand(2)
+            \revert Stem.transparent                                                               %! OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 31 / measure 10]                 %! _comment_measure_numbers
-            \override Accidental.stencil = ##f                             %! OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie         %! _shorten_long_repeat_ties
+            % [B LHResonanceVoice measure 31 / measure 10]                                         %! _comment_measure_numbers
+            \override Accidental.stencil = ##f                                                     %! OverrideCommand(1)
+            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>1..
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.8                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (21)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.8                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (21)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
-            % [B LHResonanceVoice measure 32 / measure 11]                 %! _comment_measure_numbers
+            % [B LHResonanceVoice measure 32 / measure 11]                                         %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1.
-        %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
-        %%%         #2                                                     %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                %! FIGURE_NAME_MARKUP
-        %%%             {                                                  %! FIGURE_NAME_MARKUP
-        %%%                 [                                              %! FIGURE_NAME_MARKUP
-        %%%                 b.2.r.9                                        %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                        %! FIGURE_NAME_MARKUP
-        %%%                     #1                                         %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                         %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                      %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                  %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                    %! FIGURE_NAME_MARKUP
-        %%%                         (22)                                   %! FIGURE_NAME_MARKUP
-        %%%                 ]                                              %! FIGURE_NAME_MARKUP
-        %%%             }                                                  %! FIGURE_NAME_MARKUP
-        %%%     }                                                          %! FIGURE_NAME_MARKUP
-            \repeatTie                                                     %! SpannerCommand
+        %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
+        %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
+        %%%         #2                                                                             %! FIGURE_NAME_MARKUP
+        %%%         \concat                                                                        %! FIGURE_NAME_MARKUP
+        %%%             {                                                                          %! FIGURE_NAME_MARKUP
+        %%%                 [                                                                      %! FIGURE_NAME_MARKUP
+        %%%                 b.2.r.9                                                                %! FIGURE_NAME_MARKUP
+        %%%                 \hspace                                                                %! FIGURE_NAME_MARKUP
+        %%%                     #1                                                                 %! FIGURE_NAME_MARKUP
+        %%%                 \raise                                                                 %! FIGURE_NAME_MARKUP
+        %%%                     #0.25                                                              %! FIGURE_NAME_MARKUP
+        %%%                     \fontsize                                                          %! FIGURE_NAME_MARKUP
+        %%%                         #-2                                                            %! FIGURE_NAME_MARKUP
+        %%%                         (22)                                                           %! FIGURE_NAME_MARKUP
+        %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
+        %%%             }                                                                          %! FIGURE_NAME_MARKUP
+        %%%     }                                                                                  %! FIGURE_NAME_MARKUP
+            \repeatTie                                                                             %! SpannerCommand
         }
     }
     
-    % [B LHResonanceVoice measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1
-    \revert Beam.stencil                                                   %! OverrideCommand(2)
-    \revert Dots.stencil                                                   %! OverrideCommand(2)
-    \revert Flag.stencil                                                   %! OverrideCommand(2)
-    \revert Stem.stencil                                                   %! OverrideCommand(2)
-    \revert Accidental.stencil                                             %! OverrideCommand(2)
+    % [B LHResonanceVoice measure 33 / measure 12]                                                 %! _comment_measure_numbers
+    s1 * 1                                                                                         %! _make_measure_silences
+    \revert Beam.stencil                                                                           %! OverrideCommand(2)
+    \revert Dots.stencil                                                                           %! OverrideCommand(2)
+    \revert Flag.stencil                                                                           %! OverrideCommand(2)
+    \revert Stem.stencil                                                                           %! OverrideCommand(2)
+    \revert Accidental.stencil                                                                     %! OverrideCommand(2)
     
 }
 
 
 B_PianoMusicLHStaff = <<
     \context LHVoiceI = "LHVoiceI"
-    \B_LHVoiceI
+    \B_LHVoiceI                                                                                    %! extern
     \context LHVoiceII = "LHVoiceII"
-    \B_LHVoiceII
+    \B_LHVoiceII                                                                                   %! extern
     \context LHVoiceIII = "LHVoiceIII"
-    \B_LHVoiceIII
+    \B_LHVoiceIII                                                                                  %! extern
     \context LHVoiceIV = "LHVoiceIV"
-    \B_LHVoiceIV
+    \B_LHVoiceIV                                                                                   %! extern
     \context LHVoiceIVInserts = "LHVoiceIVInserts"
-    \B_LHVoiceIVInserts
+    \B_LHVoiceIVInserts                                                                            %! extern
     \context LHVoiceV = "LHVoiceV"
-    \B_LHVoiceV
+    \B_LHVoiceV                                                                                    %! extern
     \context LHVoiceVInserts = "LHVoiceVInserts"
-    \B_LHVoiceVInserts
+    \B_LHVoiceVInserts                                                                             %! extern
     \context LHVoiceVI = "LHVoiceVI"
-    \B_LHVoiceVI
+    \B_LHVoiceVI                                                                                   %! extern
     \context LHVoiceVIInserts = "LHVoiceVIInserts"
-    \B_LHVoiceVIInserts
+    \B_LHVoiceVIInserts                                                                            %! extern
     \context LHResonanceVoice = "LHResonanceVoice"
-    \B_LHResonanceVoice
+    \B_LHResonanceVoice                                                                            %! extern
 >>
