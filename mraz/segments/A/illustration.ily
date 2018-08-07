@@ -1406,7 +1406,7 @@ A_LHVoiceVI = {
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af,,!4
             \f                                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1429,12 +1429,12 @@ A_LHVoiceVI = {
             r4
             
             c,,4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             bf,,,!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
         }
@@ -1447,7 +1447,7 @@ A_LHVoiceVI = {
             
             % [A LHVoiceVI measure 13 / measure 4]                                                 %! _comment_measure_numbers
             b,,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1470,7 +1470,7 @@ A_LHVoiceVI = {
             r4
             
             ef,,!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             \revert Rest.direction                                                                 %! OverrideCommand(2)
@@ -1483,7 +1483,7 @@ A_LHVoiceVI = {
         \times 4/3 {
             
             bf,,,!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1505,13 +1505,13 @@ A_LHVoiceVI = {
             r8.
             
             c,,16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8.
             
             \once \override NoteColumn.force-hshift = #-1                                          %! OverrideCommand(1)
             e,,16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8.
         }
@@ -1523,7 +1523,7 @@ A_LHVoiceVI = {
         \times 4/3 {
             
             g,,16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1545,12 +1545,12 @@ A_LHVoiceVI = {
             r8.
             
             f,,16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8.
             
             cs,,!16
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8.
         }
@@ -1562,7 +1562,7 @@ A_LHVoiceVI = {
         \times 5/4 {
             
             d,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1582,13 +1582,13 @@ A_LHVoiceVI = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             e,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             af,,!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             fs,,!8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         }
     }
     
@@ -1598,7 +1598,7 @@ A_LHVoiceVI = {
         \times 4/6 {
             
             e,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -1621,12 +1621,12 @@ A_LHVoiceVI = {
             
             % [A LHVoiceVI measure 20 / measure 11]                                                %! _comment_measure_numbers
             f,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             g,,8
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r4

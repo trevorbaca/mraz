@@ -259,7 +259,7 @@ i_RHVoiceI = {
         %@% \override PianoMusicRHStaff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
             \set PianoMusicRHStaff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
             bf''''!1
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             ^ \markup { "(ottava brackets always govern all voices on staff)" }                    %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -532,7 +532,7 @@ i_RHVoiceII = {
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             c'''8
             \fff                                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -555,17 +555,17 @@ i_RHVoiceII = {
             r2..
             
             d'''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             ef''''!8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             
             r2..
             
             f''''8
-            -\accent                                                                               %! IndicatorCommand
+            - \accent                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             
             r2..
@@ -649,8 +649,8 @@ i_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             bf'''!8
             \pp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -670,12 +670,12 @@ i_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             cs'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
         }
     }
@@ -706,24 +706,24 @@ i_RHVoiceIII = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
             d'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             e'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             c'''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             ef'''!8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             f''8
-            -\staccato                                                                             %! IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \staccato                                                                            %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r8
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! OverrideCommand(1)
@@ -741,7 +741,7 @@ i_RHVoiceIII = {
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
             \mf                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
         %%%         #2                                                                             %! FIGURE_NAME_MARKUP
@@ -764,22 +764,22 @@ i_RHVoiceIII = {
             r4
             
             cs''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             b''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             af''!4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             
             r4
             
             g'''4
-            -\tenuto                                                                               %! IndicatorCommand
+            - \tenuto                                                                              %! IndicatorCommand
             \revert Stem.direction                                                                 %! OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
