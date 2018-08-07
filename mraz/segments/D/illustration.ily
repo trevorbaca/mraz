@@ -458,27 +458,27 @@ D_RHResonanceVoice = {
 
 
 D_PianoMusicRHStaff = <<
-    \context RHVoiceI = "RHVoiceI"
+    \context RHVoiceI = "RHVoiceI"                                                                 %! ScoreTemplate
     \D_RHVoiceI                                                                                    %! extern
-    \context RHVoiceIInserts = "RHVoiceIInserts"
+    \context RHVoiceIInserts = "RHVoiceIInserts"                                                   %! ScoreTemplate
     \D_RHVoiceIInserts                                                                             %! extern
-    \context RHVoiceII = "RHVoiceII"
+    \context RHVoiceII = "RHVoiceII"                                                               %! ScoreTemplate
     \D_RHVoiceII                                                                                   %! extern
-    \context RHVoiceIIInserts = "RHVoiceIIInserts"
+    \context RHVoiceIIInserts = "RHVoiceIIInserts"                                                 %! ScoreTemplate
     \D_RHVoiceIIInserts                                                                            %! extern
-    \context RHVoiceIII = "RHVoiceIII"
+    \context RHVoiceIII = "RHVoiceIII"                                                             %! ScoreTemplate
     \D_RHVoiceIII                                                                                  %! extern
-    \context RHVoiceIIIInserts = "RHVoiceIIIInserts"
+    \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                                               %! ScoreTemplate
     \D_RHVoiceIIIInserts                                                                           %! extern
-    \context RHVoiceIV = "RHVoiceIV"
+    \context RHVoiceIV = "RHVoiceIV"                                                               %! ScoreTemplate
     \D_RHVoiceIV                                                                                   %! extern
-    \context RHVoiceIVInserts = "RHVoiceIVInserts"
+    \context RHVoiceIVInserts = "RHVoiceIVInserts"                                                 %! ScoreTemplate
     \D_RHVoiceIVInserts                                                                            %! extern
-    \context RHVoiceV = "RHVoiceV"
+    \context RHVoiceV = "RHVoiceV"                                                                 %! ScoreTemplate
     \D_RHVoiceV                                                                                    %! extern
-    \context RHVoiceVI = "RHVoiceVI"
+    \context RHVoiceVI = "RHVoiceVI"                                                               %! ScoreTemplate
     \D_RHVoiceVI                                                                                   %! extern
-    \context RHResonanceVoice = "RHResonanceVoice"
+    \context RHResonanceVoice = "RHResonanceVoice"                                                 %! ScoreTemplate
     \D_RHResonanceVoice                                                                            %! extern
 >>
 
@@ -831,24 +831,24 @@ D_LHResonanceVoice = {
 
 
 D_PianoMusicLHStaff = <<
-    \context LHVoiceI = "LHVoiceI"
+    \context LHVoiceI = "LHVoiceI"                                                                 %! ScoreTemplate
     \D_LHVoiceI                                                                                    %! extern
-    \context LHVoiceII = "LHVoiceII"
+    \context LHVoiceII = "LHVoiceII"                                                               %! ScoreTemplate
     \D_LHVoiceII                                                                                   %! extern
-    \context LHVoiceIII = "LHVoiceIII"
+    \context LHVoiceIII = "LHVoiceIII"                                                             %! ScoreTemplate
     \D_LHVoiceIII                                                                                  %! extern
-    \context LHVoiceIV = "LHVoiceIV"
+    \context LHVoiceIV = "LHVoiceIV"                                                               %! ScoreTemplate
     \D_LHVoiceIV                                                                                   %! extern
-    \context LHVoiceIVInserts = "LHVoiceIVInserts"
+    \context LHVoiceIVInserts = "LHVoiceIVInserts"                                                 %! ScoreTemplate
     \D_LHVoiceIVInserts                                                                            %! extern
-    \context LHVoiceV = "LHVoiceV"
+    \context LHVoiceV = "LHVoiceV"                                                                 %! ScoreTemplate
     \D_LHVoiceV                                                                                    %! extern
-    \context LHVoiceVInserts = "LHVoiceVInserts"
+    \context LHVoiceVInserts = "LHVoiceVInserts"                                                   %! ScoreTemplate
     \D_LHVoiceVInserts                                                                             %! extern
-    \context LHVoiceVI = "LHVoiceVI"
+    \context LHVoiceVI = "LHVoiceVI"                                                               %! ScoreTemplate
     \D_LHVoiceVI                                                                                   %! extern
-    \context LHVoiceVIInserts = "LHVoiceVIInserts"
+    \context LHVoiceVIInserts = "LHVoiceVIInserts"                                                 %! ScoreTemplate
     \D_LHVoiceVIInserts                                                                            %! extern
-    \context LHResonanceVoice = "LHResonanceVoice"
+    \context LHResonanceVoice = "LHResonanceVoice"                                                 %! ScoreTemplate
     \D_LHResonanceVoice                                                                            %! extern
 >>
