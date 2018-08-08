@@ -442,8 +442,8 @@ B_RHVoiceIInserts = {
 B_RHVoiceII = {
     
     % [B RHVoiceII measure 22 / measure 1]                                                         %! _comment_measure_numbers
-    \override Script.direction = #up                                                               %! OverrideCommand(1)
-    \override Slur.direction = #up                                                                 %! OverrideCommand(1)
+    \override Script.direction = #up                                                               %! baca_script_up:OverrideCommand(1)
+    \override Slur.direction = #up                                                                 %! baca_slur_up:OverrideCommand(1)
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 1/2
     \fff                                                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -451,7 +451,7 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 23 / measure 2]                                                 %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -476,8 +476,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 24 / measure 3]                                                 %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #0                                              %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \dynamicDown                                                                           %! IndicatorCommand
@@ -526,14 +526,14 @@ B_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 25 / measure 4]                                                 %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -561,8 +561,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 27 / measure 6]                                                 %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #0                                              %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -639,14 +639,14 @@ B_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 28 / measure 7]                                                 %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -674,8 +674,8 @@ B_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [B RHVoiceII measure 30 / measure 9]                                                 %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                                              %! OverrideCommand(1)
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #0                                              %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -815,7 +815,7 @@ B_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
         }
     }
     
@@ -825,9 +825,9 @@ B_RHVoiceII = {
         \times 4/5 {
             
             % [B RHVoiceII measure 33 / measure 12]                                                %! _comment_measure_numbers
-            \override DynamicLineSpanner.staff-padding = #'8                                       %! OverrideCommand(1)
-            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! OverrideCommand(1):+SEGMENT
-            \override Slur.direction = #up                                                         %! OverrideCommand(1)
+            \override DynamicLineSpanner.staff-padding = #'8                                       %! baca_dls_staff_padding:OverrideCommand(1)
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! +SEGMENT:baca_span_bar_extra_offset:OverrideCommand(1)
+            \override Slur.direction = #up                                                         %! baca_slur_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                                                             %! SpannerCommand
@@ -937,9 +937,9 @@ B_RHVoiceII = {
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             ]
             )                                                                                      %! SpannerCommand
-            \revert DynamicLineSpanner.staff-padding                                               %! OverrideCommand(2)
-            \revert Script.direction                                                               %! OverrideCommand(2)
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
+            \revert DynamicLineSpanner.staff-padding                                               %! baca_dls_staff_padding:OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_up:OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
         }
@@ -999,7 +999,7 @@ B_RHVoiceIII = {
         \times 12/11 {
             
             % [B RHVoiceIII measure 29 / measure 8]                                                %! _comment_measure_numbers
-            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \override TupletBracket.direction = #up                                                %! baca_tuplet_bracket_up:OverrideCommand(1)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef!8
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1032,7 +1032,7 @@ B_RHVoiceIII = {
             bf'!8
             
             r4
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_up:OverrideCommand(2)
         }
     }
     
@@ -1674,7 +1674,7 @@ B_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHVoiceV measure 29 / measure 8]                                                  %! _comment_measure_numbers
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             \dynamicDown                                                                           %! IndicatorCommand
             r2.
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -1711,7 +1711,7 @@ B_LHVoiceV = {
             - \tenuto                                                                              %! IndicatorCommand
             
             r16
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     
@@ -1866,10 +1866,10 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 22 / measure 1]                                          %! _comment_measure_numbers
-            \override Beam.stencil = ##f                                                           %! OverrideCommand(1)
-            \override Dots.stencil = ##f                                                           %! OverrideCommand(1)
-            \override Flag.stencil = ##f                                                           %! OverrideCommand(1)
-            \override Stem.stencil = ##f                                                           %! OverrideCommand(1)
+            \override Beam.stencil = ##f                                                           %! baca_beam_stencil_false:OverrideCommand(1)
+            \override Dots.stencil = ##f                                                           %! baca_dots_stencil_false:OverrideCommand(1)
+            \override Flag.stencil = ##f                                                           %! baca_flag_stencil_false:OverrideCommand(1)
+            \override Stem.stencil = ##f                                                           %! baca_stem_stencil_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>2
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -1894,14 +1894,14 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 23 / measure 2]                                          %! _comment_measure_numbers
-            \override Accidental.stencil = ##f                                                     %! OverrideCommand(1)
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \override Accidental.stencil = ##f                                                     %! baca_accidental_stencil_false:OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -1947,13 +1947,13 @@ B_LHResonanceVoice = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             \repeatTie                                                                             %! SpannerCommand
             
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
@@ -1966,13 +1966,13 @@ B_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 25 / measure 4]                                          %! _comment_measure_numbers
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -2044,13 +2044,13 @@ B_LHResonanceVoice = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             \repeatTie                                                                             %! SpannerCommand
             
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>8
@@ -2062,12 +2062,12 @@ B_LHResonanceVoice = {
     
     % [B LHResonanceVoice measure 28 / measure 7]                                                  %! _comment_measure_numbers
     s1 * 7/4
-    \revert Accidental.stencil                                                                     %! OverrideCommand(2)
+    \revert Accidental.stencil                                                                     %! baca_accidental_stencil_false:OverrideCommand(2)
     {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 30 / measure 9]                                          %! _comment_measure_numbers
-            \once \override Accidental.X-extent = ##f                                              %! OverrideCommand(1)
+            \once \override Accidental.X-extent = ##f                                              %! baca_accidental_x_extent_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>1
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -2087,13 +2087,13 @@ B_LHResonanceVoice = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override NoteHead.no-ledgers = ##t                                                    %! OverrideCommand(1)
-            \override Accidental.transparent = ##t                                                 %! OverrideCommand(1)
-            \override Beam.transparent = ##t                                                       %! OverrideCommand(1)
-            \override Flag.transparent = ##t                                                       %! OverrideCommand(1)
-            \override NoteHead.transparent = ##t                                                   %! OverrideCommand(1)
-            \override RepeatTie.transparent = ##t                                                  %! OverrideCommand(1)
-            \override Stem.transparent = ##t                                                       %! OverrideCommand(1)
+            \override NoteHead.no-ledgers = ##t                                                    %! baca_no_ledgers:OverrideCommand(1)
+            \override Accidental.transparent = ##t                                                 %! baca_accidental_transparent:OverrideCommand(1)
+            \override Beam.transparent = ##t                                                       %! baca_beam_transparent:OverrideCommand(1)
+            \override Flag.transparent = ##t                                                       %! baca_flag_transparent:OverrideCommand(1)
+            \override NoteHead.transparent = ##t                                                   %! baca_note_head_transparent:OverrideCommand(1)
+            \override RepeatTie.transparent = ##t                                                  %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \override Stem.transparent = ##t                                                       %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
             \repeatTie                                                                             %! SpannerCommand
             
@@ -2103,20 +2103,20 @@ B_LHResonanceVoice = {
             \repeatTie                                                                             %! SpannerCommand
             [
             ]
-            \revert NoteHead.no-ledgers                                                            %! OverrideCommand(2)
-            \revert Accidental.transparent                                                         %! OverrideCommand(2)
-            \revert Beam.transparent                                                               %! OverrideCommand(2)
-            \revert Flag.transparent                                                               %! OverrideCommand(2)
-            \revert NoteHead.transparent                                                           %! OverrideCommand(2)
-            \revert RepeatTie.transparent                                                          %! OverrideCommand(2)
-            \revert Stem.transparent                                                               %! OverrideCommand(2)
+            \revert NoteHead.no-ledgers                                                            %! baca_no_ledgers:OverrideCommand(2)
+            \revert Accidental.transparent                                                         %! baca_accidental_transparent:OverrideCommand(2)
+            \revert Beam.transparent                                                               %! baca_beam_transparent:OverrideCommand(2)
+            \revert Flag.transparent                                                               %! baca_flag_transparent:OverrideCommand(2)
+            \revert NoteHead.transparent                                                           %! baca_note_head_transparent:OverrideCommand(2)
+            \revert RepeatTie.transparent                                                          %! baca_repeat_tie_transparent:OverrideCommand(2)
+            \revert Stem.transparent                                                               %! baca_stem_transparent:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [B LHResonanceVoice measure 31 / measure 10]                                         %! _comment_measure_numbers
-            \override Accidental.stencil = ##f                                                     %! OverrideCommand(1)
+            \override Accidental.stencil = ##f                                                     %! baca_accidental_stencil_false:OverrideCommand(1)
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>1..
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -2167,11 +2167,11 @@ B_LHResonanceVoice = {
     
     % [B LHResonanceVoice measure 33 / measure 12]                                                 %! _comment_measure_numbers
     s1 * 1                                                                                         %! _make_measure_silences
-    \revert Beam.stencil                                                                           %! OverrideCommand(2)
-    \revert Dots.stencil                                                                           %! OverrideCommand(2)
-    \revert Flag.stencil                                                                           %! OverrideCommand(2)
-    \revert Stem.stencil                                                                           %! OverrideCommand(2)
-    \revert Accidental.stencil                                                                     %! OverrideCommand(2)
+    \revert Beam.stencil                                                                           %! baca_beam_stencil_false:OverrideCommand(2)
+    \revert Dots.stencil                                                                           %! baca_dots_stencil_false:OverrideCommand(2)
+    \revert Flag.stencil                                                                           %! baca_flag_stencil_false:OverrideCommand(2)
+    \revert Stem.stencil                                                                           %! baca_stem_stencil_false:OverrideCommand(2)
+    \revert Accidental.stencil                                                                     %! baca_accidental_stencil_false:OverrideCommand(2)
     
 }
 

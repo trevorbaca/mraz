@@ -574,8 +574,8 @@ E_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 82 / measure 1]                                                 %! _comment_measure_numbers
-            \override Script.direction = #up                                                       %! OverrideCommand(1)
-            \override Stem.direction = #up                                                         %! OverrideCommand(1)
+            \override Script.direction = #up                                                       %! baca_script_up:OverrideCommand(1)
+            \override Stem.direction = #up                                                         %! baca_stem_up:OverrideCommand(1)
             \dynamicUp                                                                             %! IndicatorCommand
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -601,7 +601,7 @@ E_RHVoiceII = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r2..
             
             d'''8
@@ -616,11 +616,11 @@ E_RHVoiceII = {
             
             f''''8
             - \accent                                                                              %! IndicatorCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_up:OverrideCommand(2)
             
             r2..
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert Script.direction                                                               %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
         }
     }
     {
@@ -632,8 +632,8 @@ E_RHVoiceII = {
             \times 3/4 {
                 
                 % [E RHVoiceII measure 83 / measure 2]                                             %! _comment_measure_numbers
-                \override Beam.positions = #'(10.5 . 10.5)                                         %! OverrideCommand(1)
-                \override Script.direction = #up                                                   %! OverrideCommand(1)
+                \override Beam.positions = #'(10.5 . 10.5)                                         %! baca_beam_positions:OverrideCommand(1)
+                \override Script.direction = #up                                                   %! baca_script_up:OverrideCommand(1)
                 s8
                 [                                                                                  %! _extend_beam
                 
@@ -683,7 +683,7 @@ E_RHVoiceII = {
                 
                 s8
                 
-                \override Stem.direction = #up                                                     %! OverrideCommand(1)
+                \override Stem.direction = #up                                                     %! baca_stem_up:OverrideCommand(1)
                 \set stemLeftBeamCount = 1                                                         %! _extend_beam
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1007,7 +1007,7 @@ E_RHVoiceII = {
                 \set stemRightBeamCount = 1                                                        %! _extend_beam
                 ef''!8
                 - \accent                                                                          %! IndicatorCommand
-                \revert Stem.direction                                                             %! OverrideCommand(2)
+                \revert Stem.direction                                                             %! baca_stem_up:OverrideCommand(2)
                 
                 s8
                 
@@ -1023,8 +1023,8 @@ E_RHVoiceII = {
                 
                 s8
                 ]                                                                                  %! _extend_beam
-                \revert Beam.positions                                                             %! OverrideCommand(2)
-                \revert Script.direction                                                           %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
+                \revert Script.direction                                                           %! baca_script_up:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -1032,15 +1032,15 @@ E_RHVoiceII = {
     }
     
     % [E RHVoiceII measure 90 / measure 9]                                                         %! _comment_measure_numbers
-    \override Script.direction = #up                                                               %! OverrideCommand(1)
-    \override Slur.direction = #up                                                                 %! OverrideCommand(1)
+    \override Script.direction = #up                                                               %! baca_script_up:OverrideCommand(1)
+    \override Slur.direction = #up                                                                 %! baca_slur_up:OverrideCommand(1)
     s1 * 1/4
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 91 / measure 10]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-8 . -8)                                                 %! OverrideCommand(1)
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \override Beam.positions = #'(-8 . -8)                                                 %! baca_beam_positions:OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \dynamicDown                                                                           %! IndicatorCommand
@@ -1229,14 +1229,14 @@ E_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 92 / measure 11]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-8 . -8)                                                 %! OverrideCommand(1)
+            \override Beam.positions = #'(-8 . -8)                                                 %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d'16
@@ -1408,14 +1408,14 @@ E_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 93 / measure 12]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-8 . -8)                                                 %! OverrideCommand(1)
+            \override Beam.positions = #'(-8 . -8)                                                 %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             b'16
@@ -1557,14 +1557,14 @@ E_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 94 / measure 13]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-8 . -8)                                                 %! OverrideCommand(1)
+            \override Beam.positions = #'(-8 . -8)                                                 %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             fs''!16
@@ -1672,17 +1672,17 @@ E_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
-            \revert Script.direction                                                               %! OverrideCommand(2)
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_up:OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceII measure 95 / measure 14]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-8 . -8)                                                 %! OverrideCommand(1)
+            \override Beam.positions = #'(-8 . -8)                                                 %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
@@ -1795,7 +1795,7 @@ E_RHVoiceII = {
             - \staccato                                                                            %! IndicatorCommand
             ]
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
         }
     }
     {
@@ -1930,8 +1930,8 @@ E_RHVoiceIII = {
         \times 8/5 {
             
             % [E RHVoiceIII measure 82 / measure 1]                                                %! _comment_measure_numbers
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
-            \override TupletBracket.direction = #down                                              %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
+            \override TupletBracket.direction = #down                                              %! baca_tuplet_bracket_down:OverrideCommand(1)
             \ottava #1                                                                             %! SpannerCommand
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
@@ -1955,7 +1955,7 @@ E_RHVoiceIII = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #down                                                       %! OverrideCommand(1)
+            \override Rest.direction = #down                                                       %! baca_rest_down:OverrideCommand(1)
             r4
             
             cs''!4
@@ -1975,12 +1975,12 @@ E_RHVoiceIII = {
             
             g'''4
             - \tenuto                                                                              %! IndicatorCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
             r4
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_down:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
         }
     }
     {
@@ -1990,7 +1990,7 @@ E_RHVoiceIII = {
             \times 3/4 {
                 
                 % [E RHVoiceIII measure 83 / measure 2]                                            %! _comment_measure_numbers
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
                 d'''8
                 \mp                                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2092,7 +2092,7 @@ E_RHVoiceIII = {
                 d'8
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             }
         }
     }
@@ -2100,7 +2100,7 @@ E_RHVoiceIII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 84 / measure 3]                                                %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -2128,7 +2128,7 @@ E_RHVoiceIII = {
             \times 6/7 {
                 
                 % [E RHVoiceIII measure 85 / measure 4]                                            %! _comment_measure_numbers
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
                 cs'''!8
             %%% ^ \markup {                                                                        %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                                      %! FIGURE_NAME_MARKUP
@@ -2236,7 +2236,7 @@ E_RHVoiceIII = {
                 b'8
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             }
         }
     }
@@ -2249,7 +2249,7 @@ E_RHVoiceIII = {
             \scaleDurations #'(1 . 1) {
                 
                 % [E RHVoiceIII measure 87 / measure 6]                                            %! _comment_measure_numbers
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1)             %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
                 a'''8
                 \mp                                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2351,7 +2351,7 @@ E_RHVoiceIII = {
                 
                 a'8
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             }
         }
     }
@@ -2359,7 +2359,7 @@ E_RHVoiceIII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 88 / measure 7]                                                %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -2387,7 +2387,7 @@ E_RHVoiceIII = {
             \times 6/7 {
                 
                 % [E RHVoiceIII measure 89 / measure 8]                                            %! _comment_measure_numbers
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
                 c'''8
             %%% ^ \markup {                                                                        %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                                      %! FIGURE_NAME_MARKUP
@@ -2509,7 +2509,7 @@ E_RHVoiceIII = {
                 bf'!8
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             }
         }
     }
@@ -2517,7 +2517,7 @@ E_RHVoiceIII = {
         \scaleDurations #'(1 . 1) {
             
             % [E RHVoiceIII measure 90 / measure 9]                                                %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -2548,8 +2548,8 @@ E_RHVoiceIII = {
             \times 6/7 {
                 
                 % [E RHVoiceIII measure 96 / measure 15]                                           %! _comment_measure_numbers
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
-                \override TupletBracket.staff-padding = #3                                         %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
+                \override TupletBracket.staff-padding = #3                                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1)             %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
                 f'''8
                 \mp                                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2621,8 +2621,8 @@ E_RHVoiceIII = {
                 d'8
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
-                \revert TupletBracket.staff-padding                                                %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
+                \revert TupletBracket.staff-padding                                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
             }
         }
     }
@@ -3153,10 +3153,10 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceIV measure 85 / measure 4]                                                 %! _comment_measure_numbers
-            \override Slur.direction = #down                                                       %! OverrideCommand(1)
-            \override Script.direction = #up                                                       %! OverrideCommand(1)
-        %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                                  %! OverrideCommand(1):MEASURE_85:SHIFTED_CLEF
-        %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)                    %! OverrideCommand(1):MEASURE_85:SHIFTED_CLEF
+            \override Slur.direction = #down                                                       %! baca_slur_down:OverrideCommand(1)
+            \override Script.direction = #up                                                       %! baca_script_up:OverrideCommand(1)
+        %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                                  %! MEASURE_85:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_85:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
             \clef "bass"                                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3208,7 +3208,7 @@ E_LHVoiceIV = {
             r8.
             
             r4.
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_down:OverrideCommand(2)
         }
     }
     
@@ -3218,7 +3218,7 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceIV measure 87 / measure 6]                                                 %! _comment_measure_numbers
-            \override Slur.direction = #down                                                       %! OverrideCommand(1)
+            \override Slur.direction = #down                                                       %! baca_slur_down:OverrideCommand(1)
             r2
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -3267,7 +3267,7 @@ E_LHVoiceIV = {
             )                                                                                      %! SpannerCommand
             
             r16
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_down:OverrideCommand(2)
         }
     }
     {
@@ -3557,7 +3557,7 @@ E_LHVoiceIV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceIV measure 97 / measure 16]                                                %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             \clef "treble"                                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3580,7 +3580,7 @@ E_LHVoiceIV = {
         %%%                 ]                                                                      %! FIGURE_NAME_MARKUP
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
-            \revert Script.direction                                                               %! OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
             
         }
@@ -3651,7 +3651,7 @@ E_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHVoiceV measure 86 / measure 5]                                                  %! _comment_measure_numbers
-            \override Stem.direction = #up                                                         %! OverrideCommand(1)
+            \override Stem.direction = #up                                                         %! baca_stem_up:OverrideCommand(1)
             \dynamicUp                                                                             %! IndicatorCommand
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             bf,,!8.
@@ -3674,7 +3674,7 @@ E_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r32
             
             d,8.
@@ -3686,12 +3686,12 @@ E_LHVoiceV = {
             r32
             
             b,,8.
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_up:OverrideCommand(2)
             
             r32
             
             r8
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     
@@ -3796,9 +3796,9 @@ E_LHVoiceVI = {
         \times 4/3 {
             
             % [E LHVoiceVI measure 86 / measure 5]                                                 %! _comment_measure_numbers
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
-            \override TupletBracket.direction = #down                                              %! OverrideCommand(1)
-            \override TupletBracket.staff-padding = #6                                             %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
+            \override TupletBracket.direction = #down                                              %! baca_tuplet_bracket_down:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #6                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \ottava #-1                                                                            %! SpannerCommand
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             b,,,8
@@ -3821,17 +3821,17 @@ E_LHVoiceVI = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #down                                                       %! OverrideCommand(1)
+            \override Rest.direction = #down                                                       %! baca_rest_down:OverrideCommand(1)
             r4
             
             ef,,!8
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
             r4
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_down:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     
@@ -3927,7 +3927,7 @@ E_LHVoiceVIInserts = {
 E_LHResonanceVoice = {
     
     % [E LHResonanceVoice measure 82 / measure 1]                                                  %! _comment_measure_numbers
-    \override Dots.transparent = ##t                                                               %! OverrideCommand(1)
+    \override Dots.transparent = ##t                                                               %! baca_dots_transparent:OverrideCommand(1)
     s1 * 17
     {
         \scaleDurations #'(1 . 1) {
@@ -3952,13 +3952,13 @@ E_LHResonanceVoice = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             <cs,,! cs,!>16
             \repeatTie                                                                             %! SpannerCommand
         }
@@ -3967,8 +3967,8 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 92 / measure 11]                                         %! _comment_measure_numbers
-            \once \override Accidental.stencil = ##f                                               %! OverrideCommand(1)
-            \override Stem.transparent = ##t                                                       %! OverrideCommand(1)
+            \once \override Accidental.stencil = ##f                                               %! baca_accidental_stencil_false:OverrideCommand(1)
+            \override Stem.transparent = ##t                                                       %! baca_stem_transparent:OverrideCommand(1)
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <cs,,! cs,!>1.
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -3990,16 +3990,16 @@ E_LHResonanceVoice = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             \repeatTie                                                                             %! SpannerCommand
             
-            \once \override NoteHead.no-ledgers = ##t                                              %! OverrideCommand(1)
-            \once \override Accidental.transparent = ##t                                           %! OverrideCommand(1)
-            \once \override Beam.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override Flag.transparent = ##t                                                 %! OverrideCommand(1)
-            \once \override NoteHead.transparent = ##t                                             %! OverrideCommand(1)
-            \once \override RepeatTie.transparent = ##t                                            %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override NoteHead.no-ledgers = ##t                                              %! baca_no_ledgers:OverrideCommand(1)
+            \once \override Accidental.transparent = ##t                                           %! baca_accidental_transparent:OverrideCommand(1)
+            \once \override Beam.transparent = ##t                                                 %! baca_beam_transparent:OverrideCommand(1)
+            \once \override Flag.transparent = ##t                                                 %! baca_flag_transparent:OverrideCommand(1)
+            \once \override NoteHead.transparent = ##t                                             %! baca_note_head_transparent:OverrideCommand(1)
+            \once \override RepeatTie.transparent = ##t                                            %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             <cs,,! cs,!>8.
             \repeatTie                                                                             %! SpannerCommand
-            \revert Stem.transparent                                                               %! OverrideCommand(2)
+            \revert Stem.transparent                                                               %! baca_stem_transparent:OverrideCommand(2)
         }
     }
     {
@@ -4025,33 +4025,33 @@ E_LHResonanceVoice = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override NoteHead.no-ledgers = ##t                                                    %! OverrideCommand(1)
-            \override Accidental.transparent = ##t                                                 %! OverrideCommand(1)
-            \override Beam.transparent = ##t                                                       %! OverrideCommand(1)
-            \override Flag.transparent = ##t                                                       %! OverrideCommand(1)
-            \override NoteHead.transparent = ##t                                                   %! OverrideCommand(1)
-            \override RepeatTie.transparent = ##t                                                  %! OverrideCommand(1)
-            \override Stem.transparent = ##t                                                       %! OverrideCommand(1)
+            \override NoteHead.no-ledgers = ##t                                                    %! baca_no_ledgers:OverrideCommand(1)
+            \override Accidental.transparent = ##t                                                 %! baca_accidental_transparent:OverrideCommand(1)
+            \override Beam.transparent = ##t                                                       %! baca_beam_transparent:OverrideCommand(1)
+            \override Flag.transparent = ##t                                                       %! baca_flag_transparent:OverrideCommand(1)
+            \override NoteHead.transparent = ##t                                                   %! baca_note_head_transparent:OverrideCommand(1)
+            \override RepeatTie.transparent = ##t                                                  %! baca_repeat_tie_transparent:OverrideCommand(1)
+            \override Stem.transparent = ##t                                                       %! baca_stem_transparent:OverrideCommand(1)
             <ef,,! ef,!>4
             \repeatTie                                                                             %! SpannerCommand
             
             <ef,,! ef,!>16
             \repeatTie                                                                             %! SpannerCommand
-            \revert NoteHead.no-ledgers                                                            %! OverrideCommand(2)
-            \revert Accidental.transparent                                                         %! OverrideCommand(2)
-            \revert Beam.transparent                                                               %! OverrideCommand(2)
-            \revert Flag.transparent                                                               %! OverrideCommand(2)
-            \revert NoteHead.transparent                                                           %! OverrideCommand(2)
-            \revert RepeatTie.transparent                                                          %! OverrideCommand(2)
-            \revert Stem.transparent                                                               %! OverrideCommand(2)
+            \revert NoteHead.no-ledgers                                                            %! baca_no_ledgers:OverrideCommand(2)
+            \revert Accidental.transparent                                                         %! baca_accidental_transparent:OverrideCommand(2)
+            \revert Beam.transparent                                                               %! baca_beam_transparent:OverrideCommand(2)
+            \revert Flag.transparent                                                               %! baca_flag_transparent:OverrideCommand(2)
+            \revert NoteHead.transparent                                                           %! baca_note_head_transparent:OverrideCommand(2)
+            \revert RepeatTie.transparent                                                          %! baca_repeat_tie_transparent:OverrideCommand(2)
+            \revert Stem.transparent                                                               %! baca_stem_transparent:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 94 / measure 13]                                         %! _comment_measure_numbers
-            \once \override Accidental.stencil = ##f                                               %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Accidental.stencil = ##f                                               %! baca_accidental_stencil_false:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                 %! _shorten_long_repeat_ties
             <ef,,! ef,!>2...
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -4078,8 +4078,8 @@ E_LHResonanceVoice = {
         \scaleDurations #'(1 . 1) {
             
             % [E LHResonanceVoice measure 95 / measure 14]                                         %! _comment_measure_numbers
-            \once \override Accidental.stencil = ##f                                               %! OverrideCommand(1)
-            \once \override Stem.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Accidental.stencil = ##f                                               %! baca_accidental_stencil_false:OverrideCommand(1)
+            \once \override Stem.transparent = ##t                                                 %! baca_stem_transparent:OverrideCommand(1)
             <ef,,! ef,!>1
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -4107,7 +4107,7 @@ E_LHResonanceVoice = {
     
     % [E LHResonanceVoice measure 97 / measure 16]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                                       %! _make_measure_silences
-    \revert Dots.transparent                                                                       %! OverrideCommand(2)
+    \revert Dots.transparent                                                                       %! baca_dots_transparent:OverrideCommand(2)
     
 }
 

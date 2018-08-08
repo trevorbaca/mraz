@@ -208,8 +208,8 @@ F_RHVoiceI = {
             \times 5/6 {
                 
                 % [F RHVoiceI measure 98 / measure 1]                                              %! _comment_measure_numbers
-                \override Beam.positions = #'(10 . 10)                                             %! OverrideCommand(1)
-                \override Stem.direction = #up                                                     %! OverrideCommand(1)
+                \override Beam.positions = #'(10 . 10)                                             %! baca_beam_positions:OverrideCommand(1)
+                \override Stem.direction = #up                                                     %! baca_stem_up:OverrideCommand(1)
                 \set stemLeftBeamCount = 0                                                         %! _extend_beam
                 \set stemRightBeamCount = 2                                                        %! _extend_beam
                 \clef "treble"                                                                     %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -463,7 +463,7 @@ F_RHVoiceI = {
             \times 3/4 {
                 
                 % [F RHVoiceI measure 107 / measure 10]                                            %! _comment_measure_numbers
-                \override Beam.positions = #'(12 . 12)                                             %! OverrideCommand(1)
+                \override Beam.positions = #'(12 . 12)                                             %! baca_beam_positions:OverrideCommand(1)
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 f'''16
@@ -531,15 +531,15 @@ F_RHVoiceI = {
                 \set stemRightBeamCount = 0
                 bf'''!16
                 ]
-                \revert Beam.positions                                                             %! OverrideCommand(2)
-                \revert Stem.direction                                                             %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
+                \revert Stem.direction                                                             %! baca_stem_up:OverrideCommand(2)
             }
         }
     }
     
     % [F RHVoiceI measure 108 / measure 11]                                                        %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
     
 }
 
@@ -554,8 +554,8 @@ F_RHVoiceIInserts = {
             \times 5/6 {
                 
                 % [F RHVoiceIInserts measure 98 / measure 1]                                       %! _comment_measure_numbers
-                \override Beam.positions = #'(-6.5 . -6.5)                                         %! OverrideCommand(1)
-                \override Script.direction = #down                                                 %! OverrideCommand(1)
+                \override Beam.positions = #'(-6.5 . -6.5)                                         %! baca_beam_positions:OverrideCommand(1)
+                \override Script.direction = #down                                                 %! baca_script_down:OverrideCommand(1)
                 s16
                 [                                                                                  %! _extend_beam
                 
@@ -648,7 +648,7 @@ F_RHVoiceIInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F RHVoiceIInserts measure 102 / measure 5]                                      %! _comment_measure_numbers
-                \override Beam.positions = #'(-8.5 . -8.5)                                         %! OverrideCommand(1)
+                \override Beam.positions = #'(-8.5 . -8.5)                                         %! baca_beam_positions:OverrideCommand(1)
                 s16
                 [                                                                                  %! _extend_beam
                 
@@ -660,7 +660,7 @@ F_RHVoiceIInserts = {
                 s16
                 
                 s16
-                \revert Beam.positions                                                             %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -749,7 +749,7 @@ F_RHVoiceIInserts = {
                 
                 s16
                 ]
-                \revert Beam.positions                                                             %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -758,7 +758,7 @@ F_RHVoiceIInserts = {
     
     % [F RHVoiceIInserts measure 108 / measure 11]                                                 %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Script.direction                                                                       %! OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_down:OverrideCommand(2)
     
 }
 
@@ -766,8 +766,8 @@ F_RHVoiceIInserts = {
 F_RHVoiceII = {
     
     % [F RHVoiceII measure 98 / measure 1]                                                         %! _comment_measure_numbers
-    \override Beam.positions = #'(-4.5 . -4.5)                                                     %! OverrideCommand(1)
-    \override Slur.direction = #up                                                                 %! OverrideCommand(1)
+    \override Beam.positions = #'(-4.5 . -4.5)                                                     %! baca_beam_positions:OverrideCommand(1)
+    \override Slur.direction = #up                                                                 %! baca_slur_up:OverrideCommand(1)
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     \dynamicDown                                                                                   %! IndicatorCommand
     s1 * 3/4
@@ -776,7 +776,7 @@ F_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [F RHVoiceII measure 99 / measure 2]                                                 %! _comment_measure_numbers
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1130,9 +1130,9 @@ F_RHVoiceII = {
             af'''!16
             ]                                                                                      %! _extend_beam
             )                                                                                      %! SpannerCommand
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_up:OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
             
         }
     }
@@ -1142,8 +1142,8 @@ F_RHVoiceII = {
 F_RHVoiceIIInserts = {
     
     % [F RHVoiceIIInserts measure 98 / measure 1]                                                  %! _comment_measure_numbers
-    \override Beam.positions = #'(15.5 . 15.5)                                                     %! OverrideCommand(1)
-    \override Script.direction = #up                                                               %! OverrideCommand(1)
+    \override Beam.positions = #'(15.5 . 15.5)                                                     %! baca_beam_positions:OverrideCommand(1)
+    \override Script.direction = #up                                                               %! baca_script_up:OverrideCommand(1)
     s1 * 3/4
     {
         \override TupletBracket.stencil = ##f
@@ -1151,7 +1151,7 @@ F_RHVoiceIIInserts = {
         \scaleDurations #'(1 . 1) {
             
             % [F RHVoiceIIInserts measure 99 / measure 2]                                          %! _comment_measure_numbers
-            \override Stem.direction = #up                                                         %! OverrideCommand(1)
+            \override Stem.direction = #up                                                         %! baca_stem_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             c''16
@@ -1217,7 +1217,7 @@ F_RHVoiceIIInserts = {
                 
                 s16
                 ]                                                                                  %! _extend_beam
-                \revert Beam.positions                                                             %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -1232,7 +1232,7 @@ F_RHVoiceIIInserts = {
         \times 2/3 {
             
             % [F RHVoiceIIInserts measure 103 / measure 6]                                         %! _comment_measure_numbers
-            \override Beam.positions = #'(13.5 . 13.5)                                             %! OverrideCommand(1)
+            \override Beam.positions = #'(13.5 . 13.5)                                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             c''16
@@ -1320,7 +1320,7 @@ F_RHVoiceIIInserts = {
                 
                 s16
                 ]                                                                                  %! _extend_beam
-                \revert Beam.positions                                                             %! OverrideCommand(2)
+                \revert Beam.positions                                                             %! baca_beam_positions:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -1332,7 +1332,7 @@ F_RHVoiceIIInserts = {
         \scaleDurations #'(1 . 1) {
             
             % [F RHVoiceIIInserts measure 106 / measure 9]                                         %! _comment_measure_numbers
-            \override Beam.positions = #'(18.5 . 18.5)                                             %! OverrideCommand(1)
+            \override Beam.positions = #'(18.5 . 18.5)                                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0                                                             %! _extend_beam
             \set stemRightBeamCount = 2                                                            %! _extend_beam
             f''16
@@ -1367,9 +1367,9 @@ F_RHVoiceIIInserts = {
             af'''!16
             - \accent                                                                              %! IndicatorCommand
             ]                                                                                      %! _extend_beam
-            \revert Beam.positions                                                                 %! OverrideCommand(2)
-            \revert Script.direction                                                               %! OverrideCommand(2)
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Beam.positions                                                                 %! baca_beam_positions:OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_up:OverrideCommand(2)
             
         }
         \revert TupletBracket.stencil
@@ -1791,8 +1791,8 @@ F_LHVoiceIII = {
 F_LHVoiceIV = {
     
     % [F LHVoiceIV measure 98 / measure 1]                                                         %! _comment_measure_numbers
-    \override Beam.positions = #'(-5.5 . -5.5)                                                     %! OverrideCommand(1)
-    \override Script.direction = #down                                                             %! OverrideCommand(1)
+    \override Beam.positions = #'(-5.5 . -5.5)                                                     %! baca_beam_positions:OverrideCommand(1)
+    \override Script.direction = #down                                                             %! baca_script_down:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)                            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1805,7 +1805,7 @@ F_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
             
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1873,12 +1873,12 @@ F_LHVoiceIV = {
     }
     
     s1 * 11/8
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
     {
         \scaleDurations #'(1 . 1) {
             
             % [F LHVoiceIV measure 103 / measure 6]                                                %! _comment_measure_numbers
-            \override Beam.positions = #'(-4.5 . -4.5)                                             %! OverrideCommand(1)
+            \override Beam.positions = #'(-4.5 . -4.5)                                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1968,7 +1968,7 @@ F_LHVoiceIV = {
             \set stemRightBeamCount = 0
             b''16
             ]
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
         }
     }
     
@@ -1976,8 +1976,8 @@ F_LHVoiceIV = {
     
     % [F LHVoiceIV measure 108 / measure 11]                                                       %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
-    \revert Script.direction                                                                       %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_down:OverrideCommand(2)
     
 }
 
@@ -1985,7 +1985,7 @@ F_LHVoiceIV = {
 F_LHVoiceIVInserts = {
     
     % [F LHVoiceIVInserts measure 98 / measure 1]                                                  %! _comment_measure_numbers
-    \override Script.direction = #up                                                               %! OverrideCommand(1)
+    \override Script.direction = #up                                                               %! baca_script_up:OverrideCommand(1)
     s1 * 3/8
     {
         \override TupletBracket.stencil = ##f
@@ -1995,7 +1995,7 @@ F_LHVoiceIVInserts = {
             
             s16
             
-            \override Stem.direction = #up                                                         %! OverrideCommand(1)
+            \override Stem.direction = #up                                                         %! baca_stem_up:OverrideCommand(1)
             c'16
             
             s16
@@ -2057,7 +2057,7 @@ F_LHVoiceIVInserts = {
             s16
             
             fs''!16
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_up:OverrideCommand(2)
             
             s16
         }
@@ -2069,7 +2069,7 @@ F_LHVoiceIVInserts = {
     
     % [F LHVoiceIVInserts measure 108 / measure 11]                                                %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Script.direction                                                                       %! OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_up:OverrideCommand(2)
     
 }
 
@@ -2077,8 +2077,8 @@ F_LHVoiceIVInserts = {
 F_LHVoiceV = {
     
     % [F LHVoiceV measure 98 / measure 1]                                                          %! _comment_measure_numbers
-    \override Beam.positions = #'(-6 . -6)                                                         %! OverrideCommand(1)
-    \override Script.direction = #down                                                             %! OverrideCommand(1)
+    \override Beam.positions = #'(-6 . -6)                                                         %! baca_beam_positions:OverrideCommand(1)
+    \override Script.direction = #down                                                             %! baca_script_down:OverrideCommand(1)
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)                              %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 329/272
     \ppp                                                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -2087,8 +2087,8 @@ F_LHVoiceV = {
         \times 15/17 {
             \scaleDurations #'(1 . 1) {
                 
-                \override TupletBracket.direction = #down                                          %! OverrideCommand(1)
-                \override Stem.direction = #down                                                   %! OverrideCommand(1)
+                \override TupletBracket.direction = #down                                          %! baca_tuplet_bracket_down:OverrideCommand(1)
+                \override Stem.direction = #down                                                   %! baca_stem_down:OverrideCommand(1)
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 \dynamicDown                                                                       %! IndicatorCommand
@@ -2189,13 +2189,13 @@ F_LHVoiceV = {
                 d'''16
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert TupletBracket.direction                                                    %! OverrideCommand(2)
+                \revert TupletBracket.direction                                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             }
         }
     }
     
     s1 * 75/136
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 15/17 {
@@ -2300,7 +2300,7 @@ F_LHVoiceV = {
                 cs'''!16
                 ]
                 )                                                                                  %! SpannerCommand
-                \revert Stem.direction                                                             %! OverrideCommand(2)
+                \revert Stem.direction                                                             %! baca_stem_down:OverrideCommand(2)
             }
         }
     }
@@ -2315,7 +2315,7 @@ F_LHVoiceV = {
     
     % [F LHVoiceV measure 108 / measure 11]                                                        %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Script.direction                                                                       %! OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_down:OverrideCommand(2)
     
 }
 
@@ -2323,8 +2323,8 @@ F_LHVoiceV = {
 F_LHVoiceVInserts = {
     
     % [F LHVoiceVInserts measure 98 / measure 1]                                                   %! _comment_measure_numbers
-    \override Script.direction = #up                                                               %! OverrideCommand(1)
-    \override Beam.positions = #'(9 . 9)                                                           %! OverrideCommand(1)
+    \override Script.direction = #up                                                               %! baca_script_up:OverrideCommand(1)
+    \override Beam.positions = #'(9 . 9)                                                           %! baca_beam_positions:OverrideCommand(1)
     s1 * 329/272
     {
         \override TupletBracket.stencil = ##f
@@ -2343,7 +2343,7 @@ F_LHVoiceVInserts = {
             \scaleDurations #'(1 . 1) {
                 
                 % [F LHVoiceVInserts measure 101 / measure 4]                                      %! _comment_measure_numbers
-                \override Stem.direction = #up                                                     %! OverrideCommand(1)
+                \override Stem.direction = #up                                                     %! baca_stem_up:OverrideCommand(1)
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 b'16
@@ -2452,7 +2452,7 @@ F_LHVoiceVInserts = {
                 cs'''!16
                 - \staccato                                                                        %! IndicatorCommand
                 ]
-                \revert Stem.direction                                                             %! OverrideCommand(2)
+                \revert Stem.direction                                                             %! baca_stem_up:OverrideCommand(2)
             }
         }
         \revert TupletBracket.stencil
@@ -2469,8 +2469,8 @@ F_LHVoiceVInserts = {
     
     % [F LHVoiceVInserts measure 108 / measure 11]                                                 %! _comment_measure_numbers
     s1 * 1/8                                                                                       %! _make_measure_silences
-    \revert Script.direction                                                                       %! OverrideCommand(2)
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_up:OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
     
 }
 
