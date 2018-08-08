@@ -346,8 +346,8 @@ i_RHVoiceII = {
         \times 4/5 {
             
             % [_ RHVoiceII measure 1]                                                              %! _comment_measure_numbers
-            \override DynamicLineSpanner.staff-padding = #'8                                       %! OverrideCommand(1)
-            \override Slur.direction = #up                                                         %! OverrideCommand(1)
+            \override DynamicLineSpanner.staff-padding = #'8                                       %! baca_dls_staff_padding:OverrideCommand(1)
+            \override Slur.direction = #up                                                         %! baca_slur_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \ottava #1                                                                             %! SpannerCommand
@@ -457,8 +457,8 @@ i_RHVoiceII = {
             \ff                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             ]
             )                                                                                      %! SpannerCommand
-            \revert DynamicLineSpanner.staff-padding                                               %! OverrideCommand(2)
-            \revert Slur.direction                                                                 %! OverrideCommand(2)
+            \revert DynamicLineSpanner.staff-padding                                               %! baca_dls_staff_padding:OverrideCommand(2)
+            \revert Slur.direction                                                                 %! baca_slur_up:OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
         }
     }
@@ -469,7 +469,7 @@ i_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 4]                                                              %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -497,7 +497,7 @@ i_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 6]                                                              %! _comment_measure_numbers
-            \once \override Rest.transparent = ##t                                                 %! OverrideCommand(1)
+            \once \override Rest.transparent = ##t                                                 %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -525,9 +525,9 @@ i_RHVoiceII = {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 8]                                                              %! _comment_measure_numbers
-            \override Script.direction = #up                                                       %! OverrideCommand(1)
-            \override Stem.direction = #up                                                         %! OverrideCommand(1)
-            \override TextScript.direction = #up                                                   %! OverrideCommand(1)
+            \override Script.direction = #up                                                       %! baca_script_up:OverrideCommand(1)
+            \override Stem.direction = #up                                                         %! baca_stem_up:OverrideCommand(1)
+            \override TextScript.direction = #up                                                   %! baca_text_script_up:OverrideCommand(1)
             \dynamicUp                                                                             %! IndicatorCommand
             \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             c'''8
@@ -551,7 +551,7 @@ i_RHVoiceII = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r2..
             
             d'''8
@@ -566,19 +566,19 @@ i_RHVoiceII = {
             
             f''''8
             - \accent                                                                              %! IndicatorCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_up:OverrideCommand(2)
             
             r2..
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert Script.direction                                                               %! OverrideCommand(2)
-            \revert TextScript.direction                                                           %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
+            \revert Script.direction                                                               %! baca_script_up:OverrideCommand(2)
+            \revert TextScript.direction                                                           %! baca_text_script_up:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
             
             % [_ RHVoiceII measure 9]                                                              %! _comment_measure_numbers
-            \once \override Script.direction = #up                                                 %! OverrideCommand(1)
+            \once \override Script.direction = #up                                                 %! baca_script_up:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -644,8 +644,8 @@ i_RHVoiceIII = {
         \times 4/3 {
             
             % [_ RHVoiceIII measure 5]                                                             %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0.5                                            %! OverrideCommand(1)
-            \override TupletBracket.staff-padding = #8                                             %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #0.5                                            %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #8                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             bf'''!8
             \pp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -676,7 +676,7 @@ i_RHVoiceIII = {
             ef'''!8
             - \staccato                                                                            %! IndicatorCommand
             - \tenuto                                                                              %! IndicatorCommand
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     
@@ -726,7 +726,7 @@ i_RHVoiceIII = {
             - \tenuto                                                                              %! IndicatorCommand
             
             r8
-            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! OverrideCommand(1)
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)                             %! baca_span_bar_extra_offset:OverrideCommand(1)
         }
     }
     {
@@ -734,9 +734,9 @@ i_RHVoiceIII = {
         \times 8/5 {
             
             % [_ RHVoiceIII measure 8]                                                             %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0.25                                           %! OverrideCommand(1)
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
-            \override TupletBracket.direction = #down                                              %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #0.25                                           %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
+            \override TupletBracket.direction = #down                                              %! baca_tuplet_bracket_down:OverrideCommand(1)
             \ottava #1                                                                             %! SpannerCommand
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
@@ -760,7 +760,7 @@ i_RHVoiceIII = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #down                                                       %! OverrideCommand(1)
+            \override Rest.direction = #down                                                       %! baca_rest_down:OverrideCommand(1)
             r4
             
             cs''!4
@@ -780,12 +780,12 @@ i_RHVoiceIII = {
             
             g'''4
             - \tenuto                                                                              %! IndicatorCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                                             %! SpannerCommand
             
             r4
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_down:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
         }
     }
     
@@ -1259,7 +1259,7 @@ i_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [_ LHVoiceV measure 3]                                                               %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #-0.5                                           %! OverrideCommand(1)
+            \once \override DynamicText.X-offset = #-0.5                                           %! baca_dynamic_text_x_offset:OverrideCommand(1)
             \dynamicUp                                                                             %! IndicatorCommand
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)                        %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             bf,,!8.
@@ -1282,7 +1282,7 @@ i_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r32
             
             d,8.
@@ -1298,7 +1298,7 @@ i_LHVoiceV = {
             r32
             
             r8
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     
@@ -1365,8 +1365,8 @@ i_LHVoiceVI = {
         \times 4/3 {
             
             % [_ LHVoiceVI measure 3]                                                              %! _comment_measure_numbers
-            \override TupletBracket.direction = #down                                              %! OverrideCommand(1)
-            \override TupletBracket.staff-padding = #6                                             %! OverrideCommand(1)
+            \override TupletBracket.direction = #down                                              %! baca_tuplet_bracket_down:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #6                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \ottava #-1                                                                            %! SpannerCommand
             \clef "bass"                                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -1394,16 +1394,16 @@ i_LHVoiceVI = {
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
             
-            \override Rest.direction = #down                                                       %! OverrideCommand(1)
+            \override Rest.direction = #down                                                       %! baca_rest_down:OverrideCommand(1)
             r4
             
             ef,,!8
             \ottava #0                                                                             %! SpannerCommand
             
             r4
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_down:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_down:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     

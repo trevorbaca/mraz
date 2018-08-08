@@ -886,7 +886,7 @@ A_LHVoiceV = {
         \scaleDurations #'(1 . 1) {
             
             % [A LHVoiceV measure 10 / measure 1]                                                  %! _comment_measure_numbers
-            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \override TupletBracket.direction = #up                                                %! baca_tuplet_bracket_up:OverrideCommand(1)
             \ottava #-1                                                                            %! SpannerCommand
             \dynamicUp                                                                             %! IndicatorCommand
             \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1)                   %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -943,7 +943,7 @@ A_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r32
             
             a,,8
@@ -968,7 +968,7 @@ A_LHVoiceV = {
             a,,8
             
             r32
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     {
@@ -1028,7 +1028,7 @@ A_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r32
             
             d,8.
@@ -1042,7 +1042,7 @@ A_LHVoiceV = {
             b,,8.
             
             r32
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     {
@@ -1133,7 +1133,7 @@ A_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r4...
             
             c,,32
@@ -1147,7 +1147,7 @@ A_LHVoiceV = {
             ef,,!32
             
             r4...
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     {
@@ -1185,7 +1185,7 @@ A_LHVoiceV = {
         \times 16/15 {
             
             % [A LHVoiceV measure 18 / measure 9]                                                  %! _comment_measure_numbers
-            \override TupletBracket.staff-padding = #3                                             %! OverrideCommand(1)
+            \override TupletBracket.staff-padding = #3                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             fs,,!8
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                                          %! FIGURE_NAME_MARKUP
@@ -1229,7 +1229,7 @@ A_LHVoiceV = {
             f,8
             
             r32
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     {
@@ -1255,13 +1255,13 @@ A_LHVoiceV = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r4...
             
             g,,32
             
             r4...
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     {
@@ -1336,7 +1336,7 @@ A_LHVoiceV = {
             \ottava #0                                                                             %! SpannerCommand
             
             r32
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_up:OverrideCommand(2)
             
         }
     }
@@ -1387,8 +1387,8 @@ A_LHVoiceVInserts = {
 A_LHVoiceVI = {
     
     % [A LHVoiceVI measure 10 / measure 1]                                                         %! _comment_measure_numbers
-    \override Script.direction = #down                                                             %! OverrideCommand(1)
-    \override TupletBracket.staff-padding = #6                                                     %! OverrideCommand(1)
+    \override Script.direction = #down                                                             %! baca_script_down:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #6                                                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     \clef "bass"                                                                                   %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)                            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1402,7 +1402,7 @@ A_LHVoiceVI = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
             
-            \override Stem.direction = #down                                                       %! OverrideCommand(1)
+            \override Stem.direction = #down                                                       %! baca_stem_down:OverrideCommand(1)
             \once \override LHVoiceVI.DynamicText.color = #(x11-color 'DeepPink1)                  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af,,!4
             \f                                                                                     %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1425,7 +1425,7 @@ A_LHVoiceVI = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.staff-position = #-10                                                   %! OverrideCommand(1)
+            \override Rest.staff-position = #-10                                                   %! baca_rest_position:OverrideCommand(1)
             r4
             
             c,,4
@@ -1466,14 +1466,14 @@ A_LHVoiceVI = {
         %%%             }                                                                          %! FIGURE_NAME_MARKUP
         %%%     }                                                                                  %! FIGURE_NAME_MARKUP
             
-            \override Rest.direction = #up                                                         %! OverrideCommand(1)
+            \override Rest.direction = #up                                                         %! baca_rest_up:OverrideCommand(1)
             r4
             
             ef,,!8
             - \tenuto                                                                              %! IndicatorCommand
             
             r4
-            \revert Rest.direction                                                                 %! OverrideCommand(2)
+            \revert Rest.direction                                                                 %! baca_rest_up:OverrideCommand(2)
         }
     }
     
@@ -1509,7 +1509,7 @@ A_LHVoiceVI = {
             
             r8.
             
-            \once \override NoteColumn.force-hshift = #-1                                          %! OverrideCommand(1)
+            \once \override NoteColumn.force-hshift = #-1                                          %! baca_note_colun_shift:OverrideCommand(1)
             e,,16
             - \tenuto                                                                              %! IndicatorCommand
             
@@ -1627,10 +1627,10 @@ A_LHVoiceVI = {
             
             g,,8
             - \tenuto                                                                              %! IndicatorCommand
-            \revert Stem.direction                                                                 %! OverrideCommand(2)
+            \revert Stem.direction                                                                 %! baca_stem_down:OverrideCommand(2)
             
             r4
-            \revert Rest.staff-position                                                            %! OverrideCommand(2)
+            \revert Rest.staff-position                                                            %! baca_rest_position:OverrideCommand(2)
         }
     }
     
@@ -1638,8 +1638,8 @@ A_LHVoiceVI = {
     
     % [A LHVoiceVI measure 21 / measure 12]                                                        %! _comment_measure_numbers
     s1 * 1/2                                                                                       %! _make_measure_silences
-    \revert Script.direction                                                                       %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
+    \revert Script.direction                                                                       %! baca_script_down:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     
 }
 

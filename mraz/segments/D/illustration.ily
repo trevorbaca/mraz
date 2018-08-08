@@ -167,8 +167,8 @@ D_RHVoiceIII = {
         \times 4/3 {
             
             % [D RHVoiceIII measure 78 / measure 1]                                                %! _comment_measure_numbers
-            \override TupletBracket.staff-padding = #7                                             %! OverrideCommand(1)
-            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \override TupletBracket.staff-padding = #7                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+            \override TupletBracket.direction = #up                                                %! baca_tuplet_bracket_up:OverrideCommand(1)
             \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)                      %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             fs'''!8
             \pp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -219,8 +219,8 @@ D_RHVoiceIII = {
             - \tenuto                                                                              %! IndicatorCommand
             
             r8
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_up:OverrideCommand(2)
         }
     }
     {
@@ -228,8 +228,8 @@ D_RHVoiceIII = {
         \times 4/3 {
             
             % [D RHVoiceIII measure 79 / measure 2]                                                %! _comment_measure_numbers
-            \override TupletBracket.staff-padding = #7                                             %! OverrideCommand(1)
-            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \override TupletBracket.staff-padding = #7                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+            \override TupletBracket.direction = #up                                                %! baca_tuplet_bracket_up:OverrideCommand(1)
             bf'''!8
             - \staccato                                                                            %! IndicatorCommand
             - \tenuto                                                                              %! IndicatorCommand
@@ -258,8 +258,8 @@ D_RHVoiceIII = {
             ef'''!8
             - \staccato                                                                            %! IndicatorCommand
             - \tenuto                                                                              %! IndicatorCommand
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_up:OverrideCommand(2)
         }
     }
     {
@@ -313,7 +313,7 @@ D_RHVoiceIII = {
         \times 5/4 {
             
             % [D RHVoiceIII measure 81 / measure 4]                                                %! _comment_measure_numbers
-            \override TupletBracket.direction = #up                                                %! OverrideCommand(1)
+            \override TupletBracket.direction = #up                                                %! baca_tuplet_bracket_up:OverrideCommand(1)
             af''!8
             - \staccato                                                                            %! IndicatorCommand
             - \tenuto                                                                              %! IndicatorCommand
@@ -346,7 +346,7 @@ D_RHVoiceIII = {
             a''8
             - \staccato                                                                            %! IndicatorCommand
             - \tenuto                                                                              %! IndicatorCommand
-            \revert TupletBracket.direction                                                        %! OverrideCommand(2)
+            \revert TupletBracket.direction                                                        %! baca_tuplet_bracket_up:OverrideCommand(2)
             
         }
     }
@@ -549,7 +549,7 @@ D_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
             
-            \override TupletBracket.staff-padding = #3                                             %! OverrideCommand(1)
+            \override TupletBracket.staff-padding = #3                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)                       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             g'16
             \mp                                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -588,7 +588,7 @@ D_LHVoiceIV = {
             - \tenuto                                                                              %! IndicatorCommand
             
             r16
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     
@@ -597,7 +597,7 @@ D_LHVoiceIV = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
             
-            \override TupletBracket.staff-padding = #3                                             %! OverrideCommand(1)
+            \override TupletBracket.staff-padding = #3                                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             b'16
             - \tenuto                                                                              %! IndicatorCommand
         %%% ^ \markup {                                                                            %! FIGURE_NAME_MARKUP
@@ -634,7 +634,7 @@ D_LHVoiceIV = {
             - \tenuto                                                                              %! IndicatorCommand
             
             r8
-            \revert TupletBracket.staff-padding                                                    %! OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
     
